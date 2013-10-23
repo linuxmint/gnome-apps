@@ -35,8 +35,6 @@
 #include "logview-manager.h"
 #include "logview-filter-manager.h"
 
-#include <launchpad-integration.h>
-
 #define APP_NAME _("System Log Viewer")
 #define SEARCH_START_MARK "lw-search-start-mark"
 #define SEARCH_END_MARK "lw-search-end-mark"
@@ -1294,8 +1292,6 @@ logview_window_init (LogviewWindow *logview)
   res = gtk_ui_manager_add_ui_from_file (priv->ui_manager,
                                          LOGVIEW_DATADIR "/logview-toolbar.xml",
                                          &error);
-
-  launchpad_integration_add_ui(priv->ui_manager, "ui/LogviewMenu/HelpMenu/LaunchpadItems");
 
   if (res == FALSE) {
     priv->ui_manager = NULL;

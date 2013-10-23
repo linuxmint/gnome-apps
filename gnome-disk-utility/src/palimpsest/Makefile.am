@@ -32,7 +32,6 @@ palimpsest_CFLAGS = 					\
 	$(DBUS_GLIB_CFLAGS)				\
 	$(GNOME_KEYRING_CFLAGS)				\
 	$(GTK3_CFLAGS)					\
-	$(LAUNCHPAD_INTEGRATION_CFLAGS)			\
 	$(UNIQUE_CFLAGS)				\
 	$(X11_CFLAGS)					\
 	$(WARN_CFLAGS)					\
@@ -48,7 +47,6 @@ palimpsest_LDADD = 					\
 	$(DBUS_GLIB_LIBS)				\
 	$(GNOME_KEYRING_LIBS)				\
 	$(GTK3_LIBS)					\
-	$(LAUNCHPAD_INTEGRATION_LIBS)			\
 	$(UNIQUE_LIBS)					\
 	$(X11_LIBS)					\
 	$(INTLLIBS)					\

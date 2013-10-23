@@ -41,12 +41,10 @@ gnome_system_log_SOURCES = 	\
 	$(BUILT_SOURCES)
 
 gnome_system_log_CFLAGS =	\
-	$(LAUNCHPAD_INTEGRATION_CFLAGS) \
 	$(LOGVIEW_CFLAGS)		\
 	$(NULL)
 
 gnome_system_log_LDADD =	\
-	$(LAUNCHPAD_INTEGRATION_LIBS)   \
 	$(LOGVIEW_LIBS)		\
 	$(Z_LIBS)		\
 	-lm

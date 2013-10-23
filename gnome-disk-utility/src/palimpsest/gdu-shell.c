@@ -29,7 +29,6 @@
 #include <glib-object.h>
 #include <string.h>
 #include <glib/gi18n.h>
-#include <launchpad-integration.h>
 
 #include <gdu/gdu.h>
 #include <gdu-gtk/gdu-gtk.h>
@@ -830,7 +829,6 @@ static const gchar *ui =
 #if 0
         "      <menuitem action='contents'/>"
 #endif
-        "      <placeholder name='LaunchpadItems'/>"
         "      <menuitem action='about'/>"
         "    </menu>"
         "  </menubar>"
@@ -871,9 +869,6 @@ create_ui_manager (GduShell *shell)
                 g_error_free (error);
                 gtk_main_quit ();
         }
-
-        /* Add launchpad hooks */
-        launchpad_integration_add_ui (ui_manager, "/menubar/help/LaunchpadItems");
 
         return ui_manager;
 }
