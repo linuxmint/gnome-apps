@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="base" xml:lang="gl">
+
+    <info>
+        <link type="guide" xref="index#number"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Base numérica</title>
+    
+    <p>Para escribir números nunha base numérica particular use <link xref="superscript">números subscritos</link>. Os seguintes números son equivalentes.</p>
+    <example>
+    <p>1001011₂</p>    
+    <p>113₈</p>
+    <p>75</p>
+    <p>4B₁₆</p>
+    </example>
+    <p>Cando este en <link xref="mouse">modo programación</link> están os botóns para binario (<keyseq><key>Ctrl</key><key>B</key></keyseq>), octal (<keyseq><key>Ctrl</key><key>0</key></keyseq>) e hexadecimal (<keyseq><key>Ctrl</key><key>H</key></keyseq>).</p>
+    <p>Para estabelecer a base na que se mostran os resultados en cambio ao <link xref="number-display">formato do resultado</link>.</p>
+    <p>Para cambiar a ase do resultado actual use o botón base ou <keyseq><key>Ctrl</key><key>D</key></keyseq> para mostrar a forma decimal.</p>
+</page>

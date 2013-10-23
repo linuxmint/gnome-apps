@@ -1,0 +1,1643 @@
+# Czech translation of gcalctool.
+# Copyright (C) 2003, 2004, 2005, 2006, 2009, 2010 the author(s) of gcalctool.
+# Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+# This file is distributed under the same license as the gcalctool package.
+#
+# Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+# Michal Bukovjan <bukm@centrum.cz>, 2003.
+# Jakub Friedl <jfriedl@suse.cz>, 2006.
+# Petr Pulc <petrpulc@gmail.com>, 2009.
+# Petr Kovar <pknbe@volny.cz>, 2009.
+# Marek Černocký <marek@manet.cz>, 2009, 2010, 2011, 2012, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gcalctool master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=http://"
+"bugzilla.gnome.org/&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-01-09 09:15+0000\n"
+"PO-Revision-Date: 2013-02-19 15:23+0100\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#. Accessible name for the inverse button
+#: ../data/buttons-advanced.ui.h:2 ../data/buttons-programming.ui.h:24
+msgid "Inverse"
+msgstr "Převrácená hodnota"
+
+#. Accessible name for the factorize button
+#: ../data/buttons-advanced.ui.h:4 ../data/buttons-programming.ui.h:2
+msgid "Factorize"
+msgstr "Faktorizovat"
+
+#. Accessible name for the factorial button
+#: ../data/buttons-advanced.ui.h:6 ../data/buttons-programming.ui.h:22
+msgid "Factorial"
+msgstr "Faktoriál"
+
+#. Label on the solve button (clicking this solves the displayed calculation)
+#: ../data/buttons-advanced.ui.h:8 ../data/buttons-basic.ui.h:2
+#: ../data/buttons-financial.ui.h:76 ../data/buttons-programming.ui.h:6
+msgid "="
+msgstr "="
+
+#. Accessible name for the subscript mode button
+#: ../data/buttons-advanced.ui.h:10 ../data/buttons-programming.ui.h:8
+msgid "Subscript"
+msgstr "Dolní index"
+
+#. Accessible name for the superscript mode button
+#: ../data/buttons-advanced.ui.h:12 ../data/buttons-programming.ui.h:10
+msgid "Superscript"
+msgstr "Horní index"
+
+#. Accessible name for the scientific exponent button
+#: ../data/buttons-advanced.ui.h:14
+msgid "Scientific Exponent"
+msgstr "Vědecký exponent"
+
+#. Accessible name for the memory button
+#. Accessible name for the memory value button
+#. Tooltip for the memory button
+#: ../data/buttons-advanced.ui.h:16 ../data/buttons-financial.ui.h:72
+#: ../src/math-buttons.vala:384
+msgid "Memory"
+msgstr "Paměť"
+
+#. The label on the memory button
+#: ../data/buttons-advanced.ui.h:18 ../data/buttons-financial.ui.h:74
+#: ../data/buttons-programming.ui.h:14
+msgid "x"
+msgstr "x"
+
+#. Accessible name for the absolute value button
+#: ../data/buttons-advanced.ui.h:20 ../data/buttons-programming.ui.h:4
+msgid "Absolute Value"
+msgstr "Absolutní hodnota"
+
+#. Accessible name for the exponentiation (x to the power of y) button
+#: ../data/buttons-advanced.ui.h:22 ../data/buttons-basic.ui.h:4
+#: ../data/buttons-financial.ui.h:98 ../data/buttons-programming.ui.h:26
+msgid "Exponent"
+msgstr "Mocnina"
+
+#. Accessible name for the store value button
+#: ../data/buttons-advanced.ui.h:24 ../data/buttons-programming.ui.h:12
+msgid "Store"
+msgstr "Zapamtovat"
+
+#. Title of Compounding Term dialog
+#. Tooltip for the compounding term button
+#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.vala:400
+msgid "Compounding Term"
+msgstr "Doba úročení"
+
+#. Payment Period Dialog: Button to calculate result
+#: ../data/buttons-financial.ui.h:4
+msgid "C_alculate"
+msgstr "Spočít_at"
+
+#. Periodic Interest Rate Dialog: Label before present value input
+#: ../data/buttons-financial.ui.h:6
+msgid "Present _Value:"
+msgstr "Současná _hodnota:"
+
+#. Payment Period Dialog: Label before periodic interest rate input
+#: ../data/buttons-financial.ui.h:8
+msgid "Periodic Interest _Rate:"
+msgstr "Ú_roková sazba za období:"
+
+#. Compounding Term Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:10
+msgid ""
+"Calculates the number of compounding periods necessary to increase an "
+"investment of present value to a future value, at a fixed interest rate per "
+"compounding period."
+msgstr ""
+"Vypočítá počet úročených období nutných k navýšení investice ze současné "
+"hodnoty na budoucí hodnotu při fixní úrokové sazbě po celé úročené období."
+
+#. Periodic Interest Rate Dialog: Label before future value input
+#: ../data/buttons-financial.ui.h:12
+msgid "_Future Value:"
+msgstr "_Budoucí hodnota:"
+
+#. Title of Double-Declining Depreciation dialog
+#: ../data/buttons-financial.ui.h:14
+msgid "Double-Declining Depreciation"
+msgstr "Dvojitě degresivní odpis"
+
+#. Double-Declining Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:16
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the double-declining balance method."
+msgstr ""
+"Vypočítá zrychlené odpisy dané aktivy za určité období pomocí dvojité "
+"degresivní metody odpisu."
+
+#. Gross Profit Margin Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:18
+msgid "C_ost:"
+msgstr "Ná_klady:"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before life input
+#: ../data/buttons-financial.ui.h:20
+msgid "_Life:"
+msgstr "Ži_votnost:"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before period input
+#: ../data/buttons-financial.ui.h:22
+msgid "_Period:"
+msgstr "_Období:"
+
+#. Title of Future Value dialog
+#. Tooltip for the future value button
+#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.vala:404
+msgid "Future Value"
+msgstr "Budoucí hodnota"
+
+#. Future Value Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:26
+msgid ""
+"Calculates the future value of an investment based on a series of equal "
+"payments at a periodic interest rate over the number of payment periods in "
+"the term."
+msgstr ""
+"Vypočítá budoucí hodnotu investic založenou na sérii stejnoměrných plateb s "
+"pravidelnou úrokovou sazbou po zadaný počet platebních období v dané lhůtě."
+
+#. Payment Period Dialog: Label before periodic payment input
+#: ../data/buttons-financial.ui.h:28
+msgid "_Periodic Payment:"
+msgstr "_Pravidelná splátka:"
+
+#. Present Value Dialog: Label before number of periods input
+#: ../data/buttons-financial.ui.h:30
+msgid "_Number of Periods:"
+msgstr "_Počet období:"
+
+#. Title of Gross Profit Margin dialog
+#. Tooltip for the gross profit margin button
+#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.vala:418
+msgid "Gross Profit Margin"
+msgstr "Hrubá marže"
+
+#. Gross Profit Margin Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:34
+msgid ""
+"Calculates the resale price of a product, based on the product cost and the "
+"wanted gross profit margin."
+msgstr ""
+"Vypočítá prodejní cenu produktu založenou na nákladech na produkt a "
+"požadované hrubé marži."
+
+#. Gross Profit Margin Dialog: Label before margin input
+#: ../data/buttons-financial.ui.h:36
+msgid "_Margin:"
+msgstr "_Marže:"
+
+#. Title of Periodic Payment dialog
+#. Tooltip for the periodic payment button
+#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.vala:416
+msgid "Periodic Payment"
+msgstr "Pravidelná splátka"
+
+#. Periodic Payment Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:40
+msgid ""
+"Calculates the amount of the periodic payment of a loan, where payments are "
+"made at the end of each payment period. "
+msgstr ""
+"Spočítá výši pravidelné splátky půjčky, kde jsou platby prováděny na konci "
+"každého platebního období. "
+
+#. Periodic Payment Dialog: Label before principal input
+#: ../data/buttons-financial.ui.h:42
+msgid "_Principal:"
+msgstr "Pů_jčka:"
+
+#. Periodic Interest Rate Dialog: Label before term input
+#: ../data/buttons-financial.ui.h:44
+msgid "_Term:"
+msgstr "_Doba:"
+
+#. Title of Present Value dialog
+#. Tooltip for the present value button
+#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.vala:414
+msgid "Present Value"
+msgstr "Současná hodnota"
+
+#. Present Value Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:48
+msgid ""
+"Calculates the present value of an investment based on a series of equal "
+"payments discounted at a periodic interest rate over the number of payment "
+"periods in the term. "
+msgstr ""
+"Vypočítá současnou hodnotu investice založené na sérii stejnoměrných plateb "
+"sníženou o pravidelnou úrokovou sazbu po zadaný počet platebních období v "
+"dané lhůtě."
+
+#. Title of Periodic Interest Rate dialog
+#. Tooltip for the periodic interest rate button
+#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.vala:412
+msgid "Periodic Interest Rate"
+msgstr "Úroková sazba za období"
+
+#. Periodic Interest Rate Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:52
+msgid ""
+"Calculates the periodic interest necessary to increase an investment to a "
+"future value, over the number of compounding periods. "
+msgstr ""
+"Vypočítá měsíční úrok nutný k navýšení investice ze současné hodnoty na "
+"budoucí hodnotu po zadaný počet úročných období."
+
+#. Title of Straight-Line Depreciation dialog
+#: ../data/buttons-financial.ui.h:54
+msgid "Straight-Line Depreciation"
+msgstr "Lineární odpisy"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before cost input
+#: ../data/buttons-financial.ui.h:56
+msgid "_Cost:"
+msgstr "_Náklady:"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Label before salvage input
+#: ../data/buttons-financial.ui.h:58
+msgid "_Salvage:"
+msgstr "_Zůstatek:"
+
+#. Straight-Line Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:60
+msgid ""
+"Calculates the straight-line depreciation of an asset for one period. The "
+"straight-line method of depreciation divides the depreciable cost evenly "
+"over the useful life of an asset. The useful life is the number of periods, "
+"typically years, over which an asset is depreciated. "
+msgstr ""
+"Vypočítává lineární odpisy dané aktivy za určité období. Lineární metoda "
+"odpisu dělí odepisovanou hodnotu rovnoměrně po celou použitelnou životnost "
+"aktiva. Použitelná životnost je počet období, typicky let, po kterou je "
+"aktivum odepisováno."
+
+#. Title of Sum-of-the-Years'-Digits Depreciation dialog
+#: ../data/buttons-financial.ui.h:62
+msgid "Sum-of-the-Years'-Digits Depreciation"
+msgstr "Hodnota degresivního odpisu pro období"
+
+#. Sum-of-the-Years'-Digits Depreciation Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:64
+msgid ""
+"Calculates the depreciation allowance on an asset for a specified period of "
+"time, using the Sum-of-the-Years'-Digits method. This method of depreciation "
+"accelerates the rate of depreciation, so that more depreciation expense "
+"occurs in earlier periods than in later ones. The useful life is the number "
+"of periods, typically years, over which an asset is depreciated. "
+msgstr ""
+"Vypočítá hodnotu degresivního odpisu pro zadané období s použitím metody SYD "
+"(Sum of The Years' Digits). Jedná se o degresivní metodu odpisů, takže z "
+"počátku je hodnota odpisů vyšší a časem klesá.  Životnost je počet období, "
+"typicky v letech, po které je majetek odepisován."
+
+#. Title of Payment Period dialog
+#: ../data/buttons-financial.ui.h:66
+msgid "Payment Period"
+msgstr "Platební období"
+
+#. Payment Period Dialog: Label before future value input
+#: ../data/buttons-financial.ui.h:68
+msgid "Future _Value:"
+msgstr "Budoucí _hodnota:"
+
+#. Payment Period Dialog: Description of calculation
+#: ../data/buttons-financial.ui.h:70
+msgid ""
+"Calculates the number of payment periods that are necessary during the term "
+"of an ordinary annuity, to accumulate a future value, at a periodic interest "
+"rate."
+msgstr ""
+"Vypočítá počet platebních období nutných při pravidelných platbách k získání "
+"budoucí hodnoty za dané pravidelné úrokové sazby."
+
+#. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
+#: ../data/buttons-financial.ui.h:78
+msgid "Ctrm"
+msgstr "Ctrm"
+
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method. See also: http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:80
+msgid "Ddb"
+msgstr "Ddb"
+
+#. Calculates the future value of an investment based on a series of equal payments, each of amount pmt, at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Future_value
+#: ../data/buttons-financial.ui.h:82
+msgid "Fv"
+msgstr "Fv"
+
+#. Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value of fv, at a periodic interest rate of int. Each payment is equal to amount pmt. See also: http://en.wikipedia.org/wiki/Annuity_(finance_theory)
+#: ../data/buttons-financial.ui.h:84
+msgid "Term"
+msgstr "Term"
+
+#. Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The depreciable cost is cost - salvage. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:86
+msgid "Syd"
+msgstr "Syd"
+
+#. Calculates the straight-line depreciation of an asset for one period. The depreciable cost is cost - salvage. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. See also: http://en.wikipedia.org/wiki/Depreciation
+#: ../data/buttons-financial.ui.h:88
+msgid "Sln"
+msgstr "Sln"
+
+#. Calculates the periodic interest necessary to increase an investment of present value pv to a future value of fv, over the number of compounding periods in term. See also: http://en.wikipedia.org/wiki/Interest
+#: ../data/buttons-financial.ui.h:90
+msgid "Rate"
+msgstr "Rate"
+
+#. Calculates the present value of an investment based on a series of equal payments, each of amount pmt, discounted at a periodic interest rate of int, over the number of payment periods in the term. See also: http://en.wikipedia.org/wiki/Present_value
+#: ../data/buttons-financial.ui.h:92
+msgid "Pv"
+msgstr "Pv"
+
+#. Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. See also: http://en.wikipedia.org/wiki/Amortization_schedule
+#: ../data/buttons-financial.ui.h:94
+msgid "Pmt"
+msgstr "Pmt"
+
+#. Calculates the resale price of a product, based on the product cost and the wanted gross profit margin. See also: http://en.wikipedia.org/wiki/Gross_profit_margin
+#: ../data/buttons-financial.ui.h:96
+msgid "Gpm"
+msgstr "Gpm"
+
+#. Accessible name for the shift left button
+#. Tooltip for the shift left button
+#: ../data/buttons-programming.ui.h:16 ../src/math-buttons.vala:396
+msgid "Shift Left"
+msgstr "Posun vlevo"
+
+#. Accessible name for the shift right button
+#. Tooltip for the shift right button
+#: ../data/buttons-programming.ui.h:18 ../src/math-buttons.vala:398
+msgid "Shift Right"
+msgstr "Posun vpravo"
+
+#. Accessible name for the insert character button
+#: ../data/buttons-programming.ui.h:20
+msgid "Insert Character"
+msgstr "Vložit znak"
+
+#. Title of insert character code dialog
+#. Tooltip for the insert character code button
+#: ../data/buttons-programming.ui.h:28 ../src/math-buttons.vala:386
+msgid "Insert Character Code"
+msgstr "Vložit kód znaku"
+
+#. Insert ASCII dialog: Label before character entry
+#: ../data/buttons-programming.ui.h:30
+msgid "Ch_aracter:"
+msgstr "Z_nak:"
+
+#. Insert ASCII dialog: Button to insert selected character
+#: ../data/buttons-programming.ui.h:32
+msgid "_Insert"
+msgstr "_Vložit"
+
+#. Program name in the about dialog
+#. Title of main window
+#: ../data/gnome-calculator.desktop.in.h:1 ../src/gnome-calculator.vala:265
+#: ../src/math-window.vala:29
+msgid "Calculator"
+msgstr "Kalkulačka"
+
+#: ../data/gnome-calculator.desktop.in.h:2
+msgid "Perform arithmetic, scientific or financial calculations"
+msgstr "Provádí aritmetické, vědecké i finanční výpočty"
+
+#: ../data/gnome-calculator.desktop.in.h:3
+msgid "calculation;arithmetic;scientific;financial;"
+msgstr "kalkulace;výpočty;vědecká;finanční;"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:1
+msgid "Accuracy value"
+msgstr "Hodnota přesnosti"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:2
+msgid "The number of digits displayed after the numeric point"
+msgstr "Počet číslic zobrazených za desetinnou čárkou"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:3
+msgid "Word size"
+msgstr "Velikost slova"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:4
+msgid "The size of the words used in bitwise operations"
+msgstr "Velikost slov použitých při bitových operacích"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:5
+msgid "Numeric Base"
+msgstr "Číselná soustava"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:6
+msgid "The numeric base"
+msgstr "Číselná soustava"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:7
+msgid "Show Thousands Separators"
+msgstr "Zobrazovat oddělovač tisíců"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:8
+msgid "Indicates whether thousands separators are shown in large numbers."
+msgstr "Udává, zda se u velkých čísel mají zobrazovat oddělovače tisíců."
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:9
+msgid "Show Trailing Zeroes"
+msgstr "Zobrazovat koncové nuly"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:10
+msgid ""
+"Indicates whether any trailing zeroes after the numeric point should be "
+"shown in the display value."
+msgstr ""
+"Udává, zda se u zobrazené hodnoty mají vypisovat koncové nuly za desetinnou "
+"čárkou."
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:11
+msgid "Number format"
+msgstr "Formát čísla"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:12
+msgid "The format to display numbers in"
+msgstr "Formát, ve kterém se mají zobrazovat čísla"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:13
+msgid "Angle units"
+msgstr "Úhlové jednotky"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:14
+msgid "The angle units to use"
+msgstr "Úhlové jednotky, které se mají používat"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:15
+msgid "Button mode"
+msgstr "Tlačítko režimu"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:16
+msgid "The button mode"
+msgstr "Tlačítko režimu"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:17
+msgid "Source currency"
+msgstr "Zdrojová měna"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:18
+msgid "Currency of the current calculation"
+msgstr "Měna současného rozpočtu"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:19
+msgid "Target currency"
+msgstr "Cílová měna"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:20
+msgid "Currency to convert the current calculation into"
+msgstr "Měna, na kterou se má současný rozpočet převést"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:21
+msgid "Source units"
+msgstr "Zdrojová měna"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:22
+msgid "Units of the current calculation"
+msgstr "Jednotky současného výpočtu"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:23
+msgid "Target units"
+msgstr "Cílová měna"
+
+#: ../data/org.gnome.calculator.gschema.xml.in.h:24
+msgid "Units to convert the current calculation into"
+msgstr "Jednotky, na které se má současný výpočet převést"
+
+#: ../src/currency.vala:28
+msgid "UAE Dirham"
+msgstr "Dirham SAE"
+
+#: ../src/currency.vala:29
+msgid "Australian Dollar"
+msgstr "Australský dolar"
+
+#: ../src/currency.vala:30
+msgid "Bulgarian Lev"
+msgstr "Bulharská leva"
+
+#: ../src/currency.vala:31
+msgid "Bahraini Dinar"
+msgstr "Bahrajnský dinár"
+
+#: ../src/currency.vala:32
+msgid "Brunei Dollar"
+msgstr "Brunejský dolar"
+
+#: ../src/currency.vala:33
+msgid "Brazilian Real"
+msgstr "Brazilský reál"
+
+#: ../src/currency.vala:34
+msgid "Botswana Pula"
+msgstr "Botswanská pula"
+
+#: ../src/currency.vala:35
+msgid "Canadian Dollar"
+msgstr "Kanadský dolar"
+
+#: ../src/currency.vala:36
+msgid "CFA Franc"
+msgstr "Frank CFA"
+
+#: ../src/currency.vala:37
+msgid "Swiss Franc"
+msgstr "Švýcarský frank"
+
+#: ../src/currency.vala:38
+msgid "Chilean Peso"
+msgstr "Chilské peso"
+
+#: ../src/currency.vala:39
+msgid "Chinese Yuan"
+msgstr "Čínský jüan"
+
+#: ../src/currency.vala:40
+msgid "Colombian Peso"
+msgstr "Kolumbijské peso"
+
+#: ../src/currency.vala:41
+msgid "Czech Koruna"
+msgstr "Česká koruna"
+
+#: ../src/currency.vala:42
+msgid "Danish Krone"
+msgstr "Dánská koruna"
+
+#: ../src/currency.vala:43
+msgid "Algerian Dinar"
+msgstr "Alžírský dinár"
+
+#: ../src/currency.vala:44
+msgid "Estonian Kroon"
+msgstr "Estonská koruna"
+
+#: ../src/currency.vala:45
+msgid "Euro"
+msgstr "Euro"
+
+#: ../src/currency.vala:46
+msgid "Pound Sterling"
+msgstr "Britská libra"
+
+#: ../src/currency.vala:47
+msgid "Hong Kong Dollar"
+msgstr "Honkongský dolar"
+
+#: ../src/currency.vala:48
+msgid "Croatian Kuna"
+msgstr "Chorvatská kuna"
+
+#: ../src/currency.vala:49
+msgid "Hungarian Forint"
+msgstr "Maďarský forint"
+
+#: ../src/currency.vala:50
+msgid "Indonesian Rupiah"
+msgstr "Indonéská rupie"
+
+#: ../src/currency.vala:51
+msgid "Israeli New Shekel"
+msgstr "Izraelský nový šekel"
+
+#: ../src/currency.vala:52
+msgid "Indian Rupee"
+msgstr "Indická rupie"
+
+#: ../src/currency.vala:53
+msgid "Iranian Rial"
+msgstr "Iránský reál"
+
+#: ../src/currency.vala:54
+msgid "Icelandic Krona"
+msgstr "Islandská koruna"
+
+#: ../src/currency.vala:55
+msgid "Japanese Yen"
+msgstr "Japonský jen"
+
+#: ../src/currency.vala:56
+msgid "South Korean Won"
+msgstr "Jihokorejský won"
+
+#: ../src/currency.vala:57
+msgid "Kuwaiti Dinar"
+msgstr "Kuvajtský dinár"
+
+#: ../src/currency.vala:58
+msgid "Kazakhstani Tenge"
+msgstr "Kazachstánské tenge"
+
+#: ../src/currency.vala:59
+msgid "Sri Lankan Rupee"
+msgstr "Srílanská rupie"
+
+#: ../src/currency.vala:60
+msgid "Lithuanian Litas"
+msgstr "Litevský litas"
+
+#: ../src/currency.vala:61
+msgid "Latvian Lats"
+msgstr "Lotyšský lat"
+
+#: ../src/currency.vala:62
+msgid "Libyan Dinar"
+msgstr "Libyjský dinár"
+
+#: ../src/currency.vala:63
+msgid "Mauritian Rupee"
+msgstr "Mauricijská rupie"
+
+#: ../src/currency.vala:64
+msgid "Mexican Peso"
+msgstr "Mexické peso"
+
+#: ../src/currency.vala:65
+msgid "Malaysian Ringgit"
+msgstr "Malajsijský ringgit"
+
+#: ../src/currency.vala:66
+msgid "Norwegian Krone"
+msgstr "Norská koruna"
+
+#: ../src/currency.vala:67
+msgid "Nepalese Rupee"
+msgstr "Nepálská rupie"
+
+#: ../src/currency.vala:68
+msgid "New Zealand Dollar"
+msgstr "Novozélandský dolar"
+
+#: ../src/currency.vala:69
+msgid "Omani Rial"
+msgstr "Ománský rial"
+
+#: ../src/currency.vala:70
+msgid "Peruvian Nuevo Sol"
+msgstr "Peruánské nuevo sol"
+
+#: ../src/currency.vala:71
+msgid "Philippine Peso"
+msgstr "Filipínské peso"
+
+#: ../src/currency.vala:72
+msgid "Pakistani Rupee"
+msgstr "Pakistánská rupie"
+
+#: ../src/currency.vala:73
+msgid "Polish Zloty"
+msgstr "Polský złoty"
+
+#: ../src/currency.vala:74
+msgid "Qatari Riyal"
+msgstr "Katarský rial"
+
+#: ../src/currency.vala:75
+msgid "New Romanian Leu"
+msgstr "Nové rumunské leu"
+
+#: ../src/currency.vala:76
+msgid "Russian Rouble"
+msgstr "Ruský rubl"
+
+#: ../src/currency.vala:77
+msgid "Saudi Riyal"
+msgstr "Saúdskoarabský rial"
+
+#: ../src/currency.vala:78
+msgid "Swedish Krona"
+msgstr "Švédská koruna"
+
+#: ../src/currency.vala:79
+msgid "Singapore Dollar"
+msgstr "Singapurský dolar"
+
+#: ../src/currency.vala:80
+msgid "Thai Baht"
+msgstr "Thajský baht"
+
+#: ../src/currency.vala:81
+msgid "Tunisian Dinar"
+msgstr "Tuniský dinár"
+
+#: ../src/currency.vala:82
+msgid "New Turkish Lira"
+msgstr "Nová turecká lira"
+
+#: ../src/currency.vala:83
+msgid "T&T Dollar (TTD)"
+msgstr "Dolar Trinidadu a Tobaga"
+
+#: ../src/currency.vala:84
+msgid "US Dollar"
+msgstr "Americký dolar"
+
+#: ../src/currency.vala:85
+msgid "Uruguayan Peso"
+msgstr "Uruguayské peso"
+
+#: ../src/currency.vala:86
+msgid "Venezuelan Bolívar"
+msgstr "Venezuelský bolívar"
+
+#: ../src/currency.vala:87
+msgid "South African Rand"
+msgstr "Jihoafrický rand"
+
+#: ../src/financial.vala:114
+msgid "Error: the number of periods must be positive"
+msgstr "Chyba: počet období musí být kladný"
+
+#: ../src/gnome-calculator.vala:80
+msgid "Basic"
+msgstr "Základní"
+
+#: ../src/gnome-calculator.vala:81
+msgid "Advanced"
+msgstr "Pokročilá"
+
+#: ../src/gnome-calculator.vala:82
+msgid "Financial"
+msgstr "Finanční"
+
+#: ../src/gnome-calculator.vala:83
+msgid "Programming"
+msgstr "Programátorská"
+
+#: ../src/gnome-calculator.vala:84
+msgid "Mode"
+msgstr "Režim"
+
+#. Title of preferences dialog
+#: ../src/gnome-calculator.vala:87 ../src/math-preferences.vala:26
+msgid "Preferences"
+msgstr "Předvolby"
+
+#: ../src/gnome-calculator.vala:91
+msgid "About Calculator"
+msgstr "O kalkulačce"
+
+#: ../src/gnome-calculator.vala:92
+msgid "Help"
+msgstr "Nápověda"
+
+#: ../src/gnome-calculator.vala:93
+msgid "Quit"
+msgstr "Ukončit"
+
+#. Translators: Error message displayed when unable to launch help browser
+#: ../src/gnome-calculator.vala:228
+msgid "Unable to open help file"
+msgstr "Nelze otevřít soubor s nápovědou"
+
+#. The translator credits. Please translate this with your name (s).
+#: ../src/gnome-calculator.vala:258
+msgid "translator-credits"
+msgstr ""
+"Miloslav Trmač <mitr@volny.cz>\n"
+"Michal Bukovjan <bukm@centrum.cz>\n"
+"Petr Pulc <petrpulc@gmail.com>\n"
+"Marek Černocký <marek@manet.cz>"
+
+#. Short description in the about dialog
+#: ../src/gnome-calculator.vala:272
+msgid "Calculator with financial and scientific modes."
+msgstr "Kalkulačka s finančním a vědeckým režimem."
+
+#: ../src/gnome-calculator.vala:305
+msgid "Solve given equation"
+msgstr "Vypočítat zadaný výraz"
+
+#: ../src/gnome-calculator.vala:313
+msgid "Start with given equation"
+msgstr "Spustit se zadaným výrazem"
+
+#: ../src/gnome-calculator.vala:322
+msgid "Show release version"
+msgstr "Zobrazit verzi vydání"
+
+#. Configure buttons
+#. Tooltip for the Pi button
+#: ../src/math-buttons.vala:298
+msgid "Pi [Ctrl+P]"
+msgstr "Ludolfovo číslo Pí [Ctrl+P]"
+
+#. Tooltip for the Euler's Number button
+#: ../src/math-buttons.vala:300
+msgid "Euler’s Number"
+msgstr "Eulerovo číslo"
+
+#. Tooltip for the subscript button
+#: ../src/math-buttons.vala:304
+msgid "Subscript mode [Alt]"
+msgstr "Režim dolního indexu [Alt]"
+
+#. Tooltip for the superscript button
+#: ../src/math-buttons.vala:306
+msgid "Superscript mode [Ctrl]"
+msgstr "Režim horního indexu [Ctrl]"
+
+#. Tooltip for the scientific exponent button
+#: ../src/math-buttons.vala:308
+msgid "Scientific exponent [Ctrl+E]"
+msgstr "Vědecký exponent [Ctrl+E]"
+
+#. Tooltip for the add button
+#: ../src/math-buttons.vala:310
+msgid "Add [+]"
+msgstr "Sčítání [+]"
+
+#. Tooltip for the subtract button
+#: ../src/math-buttons.vala:312
+msgid "Subtract [-]"
+msgstr "Odčítání [-]"
+
+#. Tooltip for the multiply button
+#: ../src/math-buttons.vala:314
+msgid "Multiply [*]"
+msgstr "Násobení [*]"
+
+#. Tooltip for the divide button
+#: ../src/math-buttons.vala:316
+msgid "Divide [/]"
+msgstr "Dělení [/]"
+
+#. Tooltip for the modulus divide button
+#: ../src/math-buttons.vala:318
+msgid "Modulus divide"
+msgstr "Zbytek po dělení"
+
+#. Tooltip for the additional functions button
+#: ../src/math-buttons.vala:320
+msgid "Additional Functions"
+msgstr "Doplňující funkce"
+
+#. Tooltip for the exponent button
+#: ../src/math-buttons.vala:322
+msgid "Exponent [^ or **]"
+msgstr "Mocnina [^ nebo **]"
+
+#. Tooltip for the square button
+#: ../src/math-buttons.vala:324
+msgid "Square [Ctrl+2]"
+msgstr "Druhá mocnina [Ctrl+2]"
+
+#. Tooltip for the percentage button
+#: ../src/math-buttons.vala:326
+msgid "Percentage [%]"
+msgstr "Procenta [%]"
+
+#. Tooltip for the factorial button
+#: ../src/math-buttons.vala:328
+msgid "Factorial [!]"
+msgstr "Faktoriál [!]"
+
+#. Tooltip for the absolute value button
+#: ../src/math-buttons.vala:330
+msgid "Absolute value [|]"
+msgstr "Absolutní hodnota [|]"
+
+#. Tooltip for the complex argument component button
+#: ../src/math-buttons.vala:332
+msgid "Complex argument"
+msgstr "Argument komplexního čísla"
+
+#. Tooltip for the complex conjugate button
+#: ../src/math-buttons.vala:334
+msgid "Complex conjugate"
+msgstr "Komplexně sdružené číslo"
+
+#. Tooltip for the root button
+#: ../src/math-buttons.vala:336
+msgid "Root [Ctrl+R]"
+msgstr "Odmocnina [Ctrl+R]"
+
+#. Tooltip for the square root button
+#: ../src/math-buttons.vala:338
+msgid "Square root [Ctrl+R]"
+msgstr "Druhá odmocnina [Ctrl+R]"
+
+#. Tooltip for the logarithm button
+#: ../src/math-buttons.vala:340
+msgid "Logarithm"
+msgstr "Logaritmus"
+
+#. Tooltip for the natural logarithm button
+#: ../src/math-buttons.vala:342
+msgid "Natural Logarithm"
+msgstr "Přirozený logaritmus"
+
+#. Tooltip for the sine button
+#: ../src/math-buttons.vala:344
+msgid "Sine"
+msgstr "Sinus"
+
+#. Tooltip for the cosine button
+#: ../src/math-buttons.vala:346
+msgid "Cosine"
+msgstr "Kosinus"
+
+#. Tooltip for the tangent button
+#: ../src/math-buttons.vala:348
+msgid "Tangent"
+msgstr "Tangent"
+
+#. Tooltip for the hyperbolic sine button
+#: ../src/math-buttons.vala:350
+msgid "Hyperbolic Sine"
+msgstr "Hyperbolický sinus"
+
+#. Tooltip for the hyperbolic cosine button
+#: ../src/math-buttons.vala:352
+msgid "Hyperbolic Cosine"
+msgstr "Hyperbolický kosinus"
+
+#. Tooltip for the hyperbolic tangent button
+#: ../src/math-buttons.vala:354
+msgid "Hyperbolic Tangent"
+msgstr "Hyperbolický tangent"
+
+#. Tooltip for the inverse button
+#: ../src/math-buttons.vala:356
+msgid "Inverse [Ctrl+I]"
+msgstr "Převrácená hodnota"
+
+#. Tooltip for the boolean AND button
+#: ../src/math-buttons.vala:358
+msgid "Boolean AND"
+msgstr "Logická konjunkce AND"
+
+#. Tooltip for the boolean OR button
+#: ../src/math-buttons.vala:360
+msgid "Boolean OR"
+msgstr "Logická disjunkce OR"
+
+#. Tooltip for the exclusive OR button
+#: ../src/math-buttons.vala:362
+msgid "Boolean Exclusive OR"
+msgstr "Logická exkluzivní disjunkce XOR"
+
+#. Tooltip for the boolean NOT button
+#: ../src/math-buttons.vala:364
+msgid "Boolean NOT"
+msgstr "Logická negace NOT"
+
+#. Tooltip for the integer component button
+#: ../src/math-buttons.vala:366 ../src/math-buttons.vala:809
+msgid "Integer Component"
+msgstr "Celá část"
+
+#. Tooltip for the fractional component button
+#: ../src/math-buttons.vala:368 ../src/math-buttons.vala:811
+msgid "Fractional Component"
+msgstr "Desetinná část"
+
+#. Tooltip for the real component button
+#: ../src/math-buttons.vala:370
+msgid "Real Component"
+msgstr "Reálná část"
+
+#. Tooltip for the imaginary component button
+#: ../src/math-buttons.vala:372
+msgid "Imaginary Component"
+msgstr "Imaginární část"
+
+#. Tooltip for the ones' complement button
+#: ../src/math-buttons.vala:374
+msgid "Ones' Complement"
+msgstr "Jedničkový doplněk"
+
+#. Tooltip for the two's complement button
+#: ../src/math-buttons.vala:376
+msgid "Two's Complement"
+msgstr "Dvojkový doplněk"
+
+#. Tooltip for the truncate button
+#: ../src/math-buttons.vala:378
+msgid "Truncate"
+msgstr "Oříznout hodnotu"
+
+#. Tooltip for the start group button
+#: ../src/math-buttons.vala:380
+msgid "Start Group [(]"
+msgstr "Začátek bloku [(]"
+
+#. Tooltip for the end group button
+#: ../src/math-buttons.vala:382
+msgid "End Group [)]"
+msgstr "Konec bloku [)]"
+
+#. Tooltip for the solve button
+#: ../src/math-buttons.vala:388
+msgid "Calculate Result"
+msgstr "Spočítat výsledek"
+
+#. Tooltip for the factor button
+#: ../src/math-buttons.vala:390
+msgid "Factorize [Ctrl+F]"
+msgstr "Faktorizovat [Ctrl+F]"
+
+#. Tooltip for the clear button
+#: ../src/math-buttons.vala:392
+msgid "Clear Display [Escape]"
+msgstr "Smazat displej [Escape]"
+
+#. Tooltip for the undo button
+#: ../src/math-buttons.vala:394
+msgid "Undo [Ctrl+Z]"
+msgstr "Zpět [Ctrl+Z]"
+
+#. Tooltip for the double declining depreciation button
+#: ../src/math-buttons.vala:402
+msgid "Double Declining Depreciation"
+msgstr "Dvojitě degresivní odpis"
+
+#. Tooltip for the financial term button
+#: ../src/math-buttons.vala:406
+msgid "Financial Term"
+msgstr "Platební období"
+
+#. Tooltip for the sum of the years digits depreciation button
+#: ../src/math-buttons.vala:408
+msgid "Sum of the Years Digits Depreciation"
+msgstr "Hodnota degresivního odpisu pro období"
+
+#. Tooltip for the straight line depreciation button
+#: ../src/math-buttons.vala:410
+msgid "Straight Line Depreciation"
+msgstr "Lineární odpisy"
+
+#. Number display mode combo: Binary, e.g. 10011010010₂
+#: ../src/math-buttons.vala:523
+msgid "Binary"
+msgstr "Dvojkový"
+
+#. Number display mode combo: Octal, e.g. 2322₈
+#: ../src/math-buttons.vala:527
+msgid "Octal"
+msgstr "Osmičkový"
+
+#. Number display mode combo: Decimal, e.g. 1234
+#: ../src/math-buttons.vala:531
+msgid "Decimal"
+msgstr "Desítkový"
+
+#. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
+#: ../src/math-buttons.vala:535
+msgid "Hexadecimal"
+msgstr "Šestnáctkový"
+
+#. Left Shift Popup: Menu item to shift left by n places (n < 10)
+#. Right Shift Popup: Menu item to shift right by n places (n < 10)
+#: ../src/math-buttons.vala:740 ../src/math-buttons.vala:777
+#, c-format
+msgid "_%d place"
+msgid_plural "_%d places"
+msgstr[0] "_%d místo"
+msgstr[1] "_%d místa"
+msgstr[2] "_%d míst"
+
+#. Left Shift Popup: Menu item to shift left by n places (n >= 10)
+#. Right Shift Popup: Menu item to shift right by n places (n >= 10)
+#: ../src/math-buttons.vala:745 ../src/math-buttons.vala:782
+#, c-format
+msgid "%d place"
+msgid_plural "%d places"
+msgstr[0] "%d místo"
+msgstr[1] "%d místa"
+msgstr[2] "%d míst"
+
+#. Tooltip for the round button
+#: ../src/math-buttons.vala:813
+msgid "Round"
+msgstr "Zaokrouhlit"
+
+#. Tooltip for the floor button
+#: ../src/math-buttons.vala:815
+msgid "Floor"
+msgstr "Zaokrouhlit dolů"
+
+#. Tooltip for the ceiling button
+#: ../src/math-buttons.vala:817
+msgid "Ceiling"
+msgstr "Zaokrouhlit nahoru"
+
+#. Tooltip for the ceiling button
+#: ../src/math-buttons.vala:819
+msgid "Sign"
+msgstr "Znaménko"
+
+#. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
+#: ../src/math-converter.vala:46
+msgid " in "
+msgstr " na "
+
+#. Tooltip for swap conversion button
+#: ../src/math-converter.vala:60
+msgid "Switch conversion units"
+msgstr "Přepnout převodní jednotky"
+
+#. Digits localized for the given language
+#: ../src/math-equation.vala:171
+msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
+msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
+
+#. Error shown when trying to undo with no undo history
+#: ../src/math-equation.vala:487
+msgid "No undo history"
+msgstr "Žádná položka v historii změn"
+
+#. Error shown when trying to redo with no redo history
+#: ../src/math-equation.vala:503
+msgid "No redo history"
+msgstr "Žádná položka v historii opakování změn"
+
+#: ../src/math-equation.vala:732
+msgid "No sane value to store"
+msgstr "Nesmyslná hodnota pro uložení"
+
+#. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
+#: ../src/math-equation.vala:888
+msgid "Overflow. Try a bigger word size"
+msgstr "Došlo k přetečení. Zkuste větší velikost slova."
+
+#. Error displayed to user when they an unknown variable is entered
+#: ../src/math-equation.vala:893
+#, c-format
+msgid "Unknown variable '%s'"
+msgstr "Neznámá proměnná „%s“"
+
+#. Error displayed to user when an unknown function is entered
+#: ../src/math-equation.vala:900
+#, c-format
+msgid "Function '%s' is not defined"
+msgstr "Funkce „%s“ není definovaná"
+
+#. Error displayed to user when an conversion with unknown units is attempted
+#: ../src/math-equation.vala:907
+msgid "Unknown conversion"
+msgstr "Neznámý převod"
+
+#: ../src/math-equation.vala:915
+#, c-format
+msgid "Malformed expression at token '%s'"
+msgstr "Chybný výraz v místě symbolu „%s“"
+
+#. Unknown error.
+#. Error displayed to user when they enter an invalid calculation
+#: ../src/math-equation.vala:920 ../src/math-equation.vala:925
+msgid "Malformed expression"
+msgstr "Nesprávný výraz"
+
+#: ../src/math-equation.vala:936
+msgid "Calculating"
+msgstr "Počítá se"
+
+#. Error displayed when trying to factorize a non-integer value
+#: ../src/math-equation.vala:1063
+msgid "Need an integer to factorize"
+msgstr "Pro rozklad na součin prvočísel je zapotřebí celé číslo"
+
+#. This message is displayed in the status bar when a bit shift operation is performed and the display does not contain a number
+#: ../src/math-equation.vala:1117
+msgid "No sane value to bitwise shift"
+msgstr "Nesmyslná hodnota pro bitový posun"
+
+#. Message displayed when cannot toggle bit in display
+#: ../src/math-equation.vala:1131
+msgid "Displayed value not an integer"
+msgstr "Zobrazená hodnota není celé číslo"
+
+#. Label on close button in preferences dialog
+#: ../src/math-preferences.vala:29
+msgid "_Close"
+msgstr "_Zavřít"
+
+#. Preferences dialog: Label for number format combo box
+#: ../src/math-preferences.vala:39
+msgid "Number _Format:"
+msgstr "_Formát čísla:"
+
+#. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
+#: ../src/math-preferences.vala:56
+msgid "Automatic"
+msgstr "Automaticky"
+
+#. Number display mode combo: Fixed, e.g. 1234
+#: ../src/math-preferences.vala:60
+msgid "Fixed"
+msgstr "Pevný"
+
+#. Number display mode combo: Scientific, e.g. 1.234×10^3
+#: ../src/math-preferences.vala:64
+msgid "Scientific"
+msgstr "Vědecký"
+
+#. Number display mode combo: Engineering, e.g. 1.234k
+#: ../src/math-preferences.vala:68
+msgid "Engineering"
+msgstr "Inženýrský"
+
+#. Label used in preferences dialog.  The %d is replaced by a spinbutton
+#: ../src/math-preferences.vala:88
+#, c-format
+msgid "Show %d decimal _places"
+msgstr "Zobrazovat %d desetinných _míst"
+
+#. Preferences dialog: label for show trailing zeroes check button
+#: ../src/math-preferences.vala:115
+msgid "Show trailing _zeroes"
+msgstr "Zobrazovat koncové _nuly"
+
+#. Preferences dialog: label for show show thousands separator check button
+#: ../src/math-preferences.vala:121
+msgid "Show _thousands separators"
+msgstr "Zobrazovat _oddělovače tisíců"
+
+#. Preferences dialog: Label for angle unit combo box
+#: ../src/math-preferences.vala:127
+msgid "_Angle units:"
+msgstr "Ú_hlové jednotky:"
+
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
+#: ../src/math-preferences.vala:143 ../src/unit.vala:38
+msgid "Degrees"
+msgstr "Stupně"
+
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
+#: ../src/math-preferences.vala:147 ../src/unit.vala:39
+msgid "Radians"
+msgstr "Radiány"
+
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
+#: ../src/math-preferences.vala:151 ../src/unit.vala:40
+msgid "Gradians"
+msgstr "Grady"
+
+#. Preferences dialog: Label for word size combo box
+#: ../src/math-preferences.vala:157
+msgid "Word _size:"
+msgstr "Délka _slova:"
+
+#. Word size combo: 8 bits
+#: ../src/math-preferences.vala:171
+msgid "8 bits"
+msgstr "8 bitů"
+
+#. Word size combo: 16 bits
+#: ../src/math-preferences.vala:173
+msgid "16 bits"
+msgstr "16 bitů"
+
+#. Word size combo: 32 bits
+#: ../src/math-preferences.vala:175
+msgid "32 bits"
+msgstr "32 bitů"
+
+#. Word size combo: 64 bits
+#: ../src/math-preferences.vala:177
+msgid "64 bits"
+msgstr "64 bitů"
+
+#. Translators: Error display when attempting to take argument of zero
+#: ../src/number.vala:652
+msgid "Argument not defined for zero"
+msgstr "Argument není definován pro nulu"
+
+#. Translators: Error displayed when attempted to raise 0 to a negative re_exponent
+#: ../src/number.vala:909 ../src/number.vala:1858
+msgid "The power of zero is undefined for a negative exponent"
+msgstr "Mocnina nuly není definovaná pro záporný exponent"
+
+#. Translators: Error displayed when attempting to take logarithm of zero
+#: ../src/number.vala:992 ../src/number.vala:1025
+msgid "Logarithm of zero is undefined"
+msgstr "Logaritmus nuly je nedefinovaný"
+
+#. Translators: Error displayed when attempted take the factorial of a fractional number
+#: ../src/number.vala:1043
+msgid "Factorial is only defined for natural numbers"
+msgstr "Faktoriál je definovaný pouze pro přirozená čísla"
+
+#. Translators: Error displayed attempted to divide by zero
+#: ../src/number.vala:1119 ../src/number.vala:2608
+msgid "Division by zero is undefined"
+msgstr "Dělení nulou není definováné"
+
+#. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
+#: ../src/number.vala:1159
+msgid "Modulus division is only defined for integers"
+msgstr "Zbytek po dělení je definován pouze pro celá čísla"
+
+#. Translators: Error displayed when tangent value is undefined
+#: ../src/number.vala:1227
+msgid ""
+"Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
+msgstr ""
+"Tangens není definován pro úhly, které jsou násobky π (180°) a to od π∕2 "
+"(90°)"
+
+#. Translators: Error displayed when inverse sine value is undefined
+#: ../src/number.vala:1265
+msgid "Inverse sine is undefined for values outside [-1, 1]"
+msgstr "Inverzní sinus není definován pro hodnoty mimo interval [-1, 1]"
+
+#. Translators: Error displayed when inverse cosine value is undefined
+#: ../src/number.vala:1280
+msgid "Inverse cosine is undefined for values outside [-1, 1]"
+msgstr "Inverzní kosinus není definován pro hodnoty mimo interval [-1, 1]"
+
+#. Translators: Error displayed when inverse hyperbolic cosine value is undefined
+#: ../src/number.vala:1477
+msgid "Inverse hyperbolic cosine is undefined for values less than one"
+msgstr ""
+"Inverzní hyperbolický kosinus není definován pro hodnoty menší než jedna"
+
+#. Translators: Error displayed when inverse hyperbolic tangent value is undefined
+#: ../src/number.vala:1496
+msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
+msgstr ""
+"Inverzní hyperbolický tangens není definován pro hodnoty mimo interval [-1, "
+"1]"
+
+#. Translators: Error displayed when boolean AND attempted on non-integer values
+#: ../src/number.vala:1515
+msgid "Boolean AND is only defined for positive integers"
+msgstr "Logická konjunkce AND je definovaná pouze pro celá kladná čísla"
+
+#. Translators: Error displayed when boolean OR attempted on non-integer values
+#: ../src/number.vala:1527
+msgid "Boolean OR is only defined for positive integers"
+msgstr "Logická disjunkce OR je definovaná pouze pro celá kladná čísla"
+
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#: ../src/number.vala:1539
+msgid "Boolean XOR is only defined for positive integers"
+msgstr ""
+"Logická exkluzivní disjunkce XOR je definovaná pouze pro celá kladná čísla"
+
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#: ../src/number.vala:1551
+msgid "Boolean NOT is only defined for positive integers"
+msgstr "Logická negace NOT je definovaná pouze pro celá kladná čísla"
+
+#. Translators: Error displayed when bit shift attempted on non-integer values
+#: ../src/number.vala:1574
+msgid "Shift is only possible on integer values"
+msgstr "Posun je možný pouze u celočíselných hodnot"
+
+#: ../src/number.vala:1878
+msgid "Root must be non-zero"
+msgstr "Odmocnitel musí být nenulový"
+
+#: ../src/number.vala:1895
+msgid "Negative root of zero is undefined"
+msgstr "Záporná odmocnina z nuly je nedefinovaná"
+
+#: ../src/number.vala:1902
+msgid "nth root of negative number is undefined for even n"
+msgstr "n-tá odmocnina záporného čísla není definovaná pro sudé n"
+
+#: ../src/number.vala:2225
+msgid "Overflow: the result couldn't be calculated"
+msgstr "Přetečení: výsledek nelze vypočítat"
+
+#: ../src/number.vala:2553
+msgid "Reciprocal of zero is undefined"
+msgstr "Převrácená hodnota nuly není definovaná"
+
+#: ../src/unit.vala:29
+msgid "Angle"
+msgstr "Úhel"
+
+#: ../src/unit.vala:30
+msgid "Length"
+msgstr "Délka"
+
+#: ../src/unit.vala:31
+msgid "Area"
+msgstr "Plocha"
+
+#: ../src/unit.vala:32
+msgid "Volume"
+msgstr "Objem"
+
+#: ../src/unit.vala:33
+msgid "Weight"
+msgstr "Hmotnost"
+
+#: ../src/unit.vala:34
+msgid "Duration"
+msgstr "Čas"
+
+#: ../src/unit.vala:35
+msgid "Temperature"
+msgstr "Teplota"
+
+#: ../src/unit.vala:41
+msgid "Parsecs"
+msgstr "Parseky"
+
+#: ../src/unit.vala:42
+msgid "Light Years"
+msgstr "Světelné roky"
+
+#: ../src/unit.vala:43
+msgid "Astronomical Units"
+msgstr "Astronomické jednotky"
+
+#: ../src/unit.vala:44
+msgid "Nautical Miles"
+msgstr "Námořní míle"
+
+#: ../src/unit.vala:45
+msgid "Miles"
+msgstr "Míle"
+
+#: ../src/unit.vala:46
+msgid "Kilometers"
+msgstr "Kilometry"
+
+#: ../src/unit.vala:47
+msgid "Cables"
+msgstr "Kabely"
+
+#: ../src/unit.vala:48
+msgid "Fathoms"
+msgstr "Sáhy"
+
+#: ../src/unit.vala:49
+msgid "Meters"
+msgstr "Metry"
+
+#: ../src/unit.vala:50
+msgid "Yards"
+msgstr "Yardy"
+
+#: ../src/unit.vala:51
+msgid "Feet"
+msgstr "Stopy"
+
+#: ../src/unit.vala:52
+msgid "Inches"
+msgstr "Palce"
+
+#: ../src/unit.vala:53
+msgid "Centimeters"
+msgstr "Centimetry"
+
+#: ../src/unit.vala:54
+msgid "Millimeters"
+msgstr "Milimetry"
+
+#: ../src/unit.vala:55
+msgid "Micrometers"
+msgstr "Mikrometry"
+
+#: ../src/unit.vala:56
+msgid "Nanometers"
+msgstr "Nanometry"
+
+#: ../src/unit.vala:57
+msgid "Hectares"
+msgstr "Hektary"
+
+#: ../src/unit.vala:58
+msgid "Acres"
+msgstr "Akry"
+
+#: ../src/unit.vala:59
+msgid "Square Meters"
+msgstr "Metry čtverečné"
+
+#: ../src/unit.vala:60
+msgid "Square Centimeters"
+msgstr "Centimetry čtverečné"
+
+#: ../src/unit.vala:61
+msgid "Square Millimeters"
+msgstr "Milimetry čtverečné"
+
+#: ../src/unit.vala:62
+msgid "Cubic Meters"
+msgstr "Metry krychlové"
+
+#: ../src/unit.vala:63
+msgid "Gallons"
+msgstr "Galony"
+
+#: ../src/unit.vala:64
+msgid "Litres"
+msgstr "Litry"
+
+#: ../src/unit.vala:65
+msgid "Quarts"
+msgstr "Kvarty"
+
+#: ../src/unit.vala:66
+msgid "Pints"
+msgstr "Pinty"
+
+#: ../src/unit.vala:67
+msgid "Millilitres"
+msgstr "Mililitry"
+
+#: ../src/unit.vala:68
+msgid "Microlitres"
+msgstr "Mikrolitry"
+
+#: ../src/unit.vala:69
+msgid "Tonnes"
+msgstr "Tuny"
+
+#: ../src/unit.vala:70
+msgid "Kilograms"
+msgstr "Kilogramy"
+
+#: ../src/unit.vala:71
+msgid "Pounds"
+msgstr "Libry"
+
+#: ../src/unit.vala:72
+msgid "Ounces"
+msgstr "Unce"
+
+#: ../src/unit.vala:73
+msgid "Grams"
+msgstr "Gramy"
+
+#: ../src/unit.vala:74
+msgid "Years"
+msgstr "Roky"
+
+#: ../src/unit.vala:75
+msgid "Days"
+msgstr "Dny"
+
+#: ../src/unit.vala:76
+msgid "Hours"
+msgstr "Hodiny"
+
+#: ../src/unit.vala:77
+msgid "Minutes"
+msgstr "Minuty"
+
+#: ../src/unit.vala:78
+msgid "Seconds"
+msgstr "Sekundy"
+
+#: ../src/unit.vala:79
+msgid "Milliseconds"
+msgstr "Milisekundy"
+
+#: ../src/unit.vala:80
+msgid "Microseconds"
+msgstr "Mikrosekundy"
+
+#: ../src/unit.vala:81
+msgid "Celsius"
+msgstr "Stupně Celsia"
+
+#: ../src/unit.vala:82
+msgid "Farenheit"
+msgstr "Stupně Farenheita"
+
+#: ../src/unit.vala:83
+msgid "Kelvin"
+msgstr "Stupně Kelvina"
+
+#: ../src/unit.vala:84
+msgid "Rankine"
+msgstr "Stupeň Rankina"
+
+#: ../src/unit.vala:86
+msgid "Currency"
+msgstr "Měna"
+
+#. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
+#: ../src/unit.vala:92
+#, c-format
+msgid "%s%%s"
+msgstr "%%s %s"

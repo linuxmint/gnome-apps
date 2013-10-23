@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="base" xml:lang="el">
+
+    <info>
+        <link type="guide" xref="index#number"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Αριθμητική βάση</title>
+    
+    <p>Για να εισάγετε αριθμούς σε συγκεκριμένη αριθμητική βάση χρησιμοποιήστε <link xref="superscript">δείκτες</link>. Οι ακόλουθοι αριθμοί είναι ισάξιοι.</p>
+    <example>
+    <p>1001011₂</p>    
+    <p>113₈</p>
+    <p>75</p>
+    <p>4B₁₆</p>
+    </example>
+    <p>Όταν είστε στην <link xref="mouse">προγραμματιστική λειτουργία</link> υπάρχουν κουμπιά για δυαδικό (<keyseq><key>Ctrl</key><key>B</key></keyseq>), οκταδικό (<keyseq><key>Ctrl</key><key>O</key></keyseq>) και δεκαεξαδικό (<keyseq><key>Ctrl</key><key>H</key></keyseq>) σύστημα.</p>
+    <p>Για να ορίσετε τη βάση στην οποία εμφανίζονται τα αποτελέσματα αλλάξτε τη <link xref="number-display">μορφή αποτελέσματος</link>.</p>
+    <p>Για να αλλάξετε τη βάση του τρέχοντος αποτελέσματος χρησιμοποιήστε ένα κουμπί βάσης ή πιέστε <keyseq><key>Ctrl</key><key>D</key></keyseq> για να το εμφανίσετε σε δεκαδική μορφή.</p>
+</page>

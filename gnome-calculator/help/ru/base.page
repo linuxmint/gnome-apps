@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="base" xml:lang="ru">
+
+    <info>
+        <link type="guide" xref="index#number"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yuriy Penkin</mal:name>
+      <mal:email>yuriy.penkin@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aleksey Kabanov</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Основания системы счисления</title>
+    
+    <p>Для ввода чисел в другой системе счисления используйте <link xref="superscript">подстрочные индексы</link>. Следующие числа эквивалентны.</p>
+    <example>
+    <p>1001011₂</p>    
+    <p>113₈</p>
+    <p>75</p>
+    <p>4B₁₆</p>
+    </example>
+    <p>В <link xref="mouse">режиме программирования</link> доступны кнопки для двоичного (<keyseq><key>Ctrl</key><key>B</key></keyseq>), восьмиричного (<keyseq><key>Ctrl</key><key>O</key></keyseq>) и шестнадцатиричного (<keyseq><key>Ctrl</key><key>H</key></keyseq>) счислений.</p>
+    <p>
+    To set the base that results are shown in change the <link xref="number-display">result format</link>.
+    </p>
+    <p>
+    To change the base of the current result use a base button or <keyseq><key>Ctrl</key><key>D</key></keyseq> to show in decimal form.
+    </p>
+</page>

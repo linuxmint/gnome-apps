@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="number-display" xml:lang="el">
+
+    <info>
+        <link type="guide" xref="index#number"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Μορφή αποτελέσματος</title>
+    
+    <p>Η μορφή που χρησιμοποιείται για την εμφάνιση των αποτελεσμάτων μπορεί να αλλαχτεί από το μενού <guiseq><gui>Αριθμομηχανή</gui><gui>Προτιμήσεις</gui></guiseq>.</p>
+    <table>
+    <tr>
+    <td><p>Δεκαδική</p></td>
+    <td><p>Τα αποτελέσματα εμφανίζονται ως δεκαδικοί αριθμοί</p></td>
+    </tr>
+    <tr>
+    <td><p>Επιστημονική</p></td>
+    <td><p>Τα αποτελέσματα εμφανίζονται σε <link xref="scientific">επιστημονική μορφή</link></p></td>
+    </tr>
+    <tr>
+    <td><p>Τεχνολογική</p></td>
+    <td><p>Τα αποτελέσματα εμφανίζονται με επιστημονική μορφή, αλλά ο εκθέτης είναι πάντα πολλαπλάσιο του τρία</p></td>
+    </tr>
+    <tr>
+    <td><p>Δυαδική</p></td>
+    <td><p>Τα αποτελέσματα εμφανίζονται ως <link xref="base">δυαδικοί αριθμοί</link></p></td>
+    </tr>
+    <tr>
+    <td><p>Οκταδική</p></td>
+    <td><p>Τα αποτελέσματα εμφανίζονται ως <link xref="base">οκταδικοί αριθμοί</link></p></td>
+    </tr>
+    <tr>
+    <td><p>Δεκαεξαδική</p></td>
+    <td><p>Τα αποτελέσματα εμφανίζονται ως <link xref="base">δεκαεξαδικοί αριθμοί</link></p></td>
+    </tr>
+    </table>
+    <p>Ο αριθμός των δεκαδικών ψηφίων, αν τελικά μηδενικά και εάν τα διαχωριστικά χιλιάδων θα εμφανίζονται μπορούν επίσης να ρυθμιστούν.</p>
+</page>

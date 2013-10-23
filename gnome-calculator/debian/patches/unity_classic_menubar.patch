@@ -1,0 +1,141 @@
+Index: gnome-calculator-3.8.2/src/gnome-calculator.vala
+===================================================================
+--- gnome-calculator-3.8.2.orig/src/gnome-calculator.vala	2013-06-05 20:19:30.044175344 +0200
++++ gnome-calculator-3.8.2/src/gnome-calculator.vala	2013-06-05 20:31:24.052186919 +0200
+@@ -74,33 +74,110 @@
+         buttons.notify["mode"].connect ((pspec) => { mode_cb (); });
+         mode_cb ();
+ 
+-        var menu = new Menu ();
++        if (Environment.get_variable("XDG_CURRENT_DESKTOP") == "Unity")
++        {
++            var menubar = new Menu ();
+ 
+-        var section = new Menu ();
+-        section.append (_("Basic"), "app.mode::basic");
+-        section.append (_("Advanced"), "app.mode::advanced");
+-        section.append (_("Financial"), "app.mode::financial");
+-        section.append (_("Programming"), "app.mode::programming");
+-        menu.append_section (_("Mode"), section);
+-
+-        section = new Menu ();
+-        section.append (_("Preferences"), "app.preferences");
+-        menu.append_section (null, section);
+-
+-        section = new Menu ();
+-        section.append (_("About Calculator"), "app.about");
+-        section.append (_("Help"), "app.help");
+-        section.append (_("Quit"), "app.quit");
+-        menu.append_section (null, section);
+-
+-        set_app_menu (menu);
+-
+-        add_accelerator ("<control>Q", "app.quit", null);
+-        add_accelerator ("F1", "app.help", null);
+-        add_accelerator ("<control>C", "app.copy", null);
+-        add_accelerator ("<control>V", "app.paste", null);
+-        add_accelerator ("<control>Z", "app.undo", null);
+-        add_accelerator ("<control><shift>Z", "app.redo", null);
++            // Edit menu
++            var menu = new Menu ();
++
++            var section = new Menu ();
++
++            var item = new MenuItem (_("Copy"), "app.copy");
++            item.set_attribute ("accel", "s", "<control>C");
++            section.append_item (item);
++
++            item = new MenuItem (_("Paste"), "app.paste");
++            item.set_attribute ("accel", "s", "<control>V");
++            section.append_item (item);
++
++            menu.append_section (null, section);
++
++            section = new Menu ();
++
++            item = new MenuItem (_("Undo"), "app.undo");
++            item.set_attribute ("accel", "s", "<control>Z");
++            section.append_item (item);
++
++            item = new MenuItem (_("Redo"), "app.redo");
++            item.set_attribute ("accel", "s", "<control><shift>Z");
++            section.append_item (item);
++
++            menu.append_section (null, section);
++
++            section = new Menu ();
++            section.append (_("Preferences"), "app.preferences");
++            menu.append_section (null, section);
++
++            section = new Menu();
++
++            item = new MenuItem (_("Quit"), "app.quit");
++            item.set_attribute ("accel", "s", "<control>Q");
++            section.append_item (item);
++
++            menu.append_section (null, section);
++
++            menubar.append_submenu (_("Edit"), menu);
++
++            // Mode menu
++            menu = new Menu ();
++
++            section = new Menu ();
++            section.append (_("Basic"), "app.mode::basic");
++            section.append (_("Advanced"), "app.mode::advanced");
++            section.append (_("Financial"), "app.mode::financial");
++            section.append (_("Programming"), "app.mode::programming");
++            menu.append_section (null, section);
++
++            menubar.append_submenu(_("Mode"), menu);
++
++            // Help menu
++            menu = new Menu ();
++
++            section = new Menu ();
++
++            item = new MenuItem (_("Contents"), "app.help");
++            item.set_attribute ("accel", "s", "F11");
++            section.append_item (item);
++
++            section.append (_("About"), "app.about");
++            menu.append_section (null, section);
++
++            menubar.append_submenu(_("Help"), menu);
++
++            set_menubar (menubar);
++        }
++        else
++        {
++
++            var menu = new Menu ();
++
++            var section = new Menu ();
++            section.append (_("Basic"), "app.mode::basic");
++            section.append (_("Advanced"), "app.mode::advanced");
++            section.append (_("Financial"), "app.mode::financial");
++            section.append (_("Programming"), "app.mode::programming");
++            menu.append_section (_("Mode"), section);
++
++            section = new Menu ();
++            section.append (_("Preferences"), "app.preferences");
++            menu.append_section (null, section);
++
++            section = new Menu ();
++            section.append (_("About Calculator"), "app.about");
++            section.append (_("Help"), "app.help");
++            section.append (_("Quit"), "app.quit");
++            menu.append_section (null, section);
++
++            set_app_menu (menu);
++
++            add_accelerator ("<control>Q", "app.quit", null);
++            add_accelerator ("F1", "app.help", null);
++            add_accelerator ("<control>C", "app.copy", null);
++            add_accelerator ("<control>V", "app.paste", null);
++            add_accelerator ("<control>Z", "app.undo", null);
++            add_accelerator ("<control><shift>Z", "app.redo", null);
++        }
+     }
+ 
+     protected override void activate ()

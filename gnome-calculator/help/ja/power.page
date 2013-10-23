@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="power" xml:lang="ja">
+
+    <info>
+        <link type="guide" xref="index#equation"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星　柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>累乗と根</title>
+    
+    <p>値の後に<link xref="superscript">上付き数字</link>を置くことで累乗を入力できます。</p>
+    <example>
+    <p>5²</p>
+    </example>
+    <p>逆数記号 ⁻¹ (<keyseq><key>Ctrl</key><key>I</key></keyseq>) を使えば、逆数を入力できます。</p>
+    <example>
+    <p>3⁻¹</p>
+    </example>
+    <p>^ 記号を使って累乗を計算することもできます。これは、指数を式とすることを可能にします。</p>
+    <example>
+    <p>5^(6−2)</p>
+    </example>
+    <p>キーボードに <key>^</key> キーがない場合は、<key>*</key> キー 2 回を使用できます。</p>
+    <p>ルート記号 (<keyseq><key>Ctrl</key><key>R</key></keyseq>) を使えば、平方根を計算できます。</p>
+    <example>
+    <p>√2</p>
+    </example>
+    <p>ルート記号の前に<link xref="superscript">下付き数字</link>を置くことで n 乗根を計算できます。</p>
+    <example>
+    <p>₃√2</p>
+    </example>
+</page>
