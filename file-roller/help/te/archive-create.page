@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-create" xml:lang="te">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <revision pkgversion="3.4" date="2012-01-18" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>మార్టా బొగ్డానోవిక్జ్</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>క్రియేటివ్ కామన్స్ షేర్ ఎలైక్ 3.0</p>
+    </license>
+    <desc>Add files or folders to a new archive.</desc>
+  </info>
+
+  <title>ఒక కొత్త సంగ్రహాన్ని సృష్టించుట</title>
+
+  <p>Create a new archive with <app>Archive Manager</app> by following these
+  steps:</p>
+
+  <steps>
+    <item>
+      <p>Click the <gui>Create a new archive</gui> toolbar button, or click
+      <guiseq><gui style="menu">Archive</gui>
+      <gui style="menuitem">New</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>The file chooser will open: name your new archive file and choose the
+      location for it to be saved to, then click <gui>Create</gui> to
+      continue.</p>
+      <note style="tip">
+	<p>In this dialog, you may also choose the file format that you want to
+	use: available extensions are listed at the bottom. If you do not choose
+	a file format, the new archive will be a <file>tar.gz</file>.</p>
+	<p>By clicking <gui>Other Options</gui> you can set a password, or
+	split your new archive into smaller, individual files by selecting the
+	relevant option and specifying the volume for each part in
+	<gui>MB</gui>.</p>
+      </note>
+    </item>
+    <item>
+      <p>Add the desired files to your archive by clicking the <gui>Add files
+      to the archive</gui> toolbar button, or by clicking <guiseq><gui style="menu">Edit</gui> <gui style="menuitem">Add files</gui></guiseq>.
+      <app>Archive Manager</app> also allows you to add whole folders by
+      clicking the <gui>Add a folder to the archive</gui> toolbar button, or
+      selecting <guiseq><gui style="menu">Edit</gui> <gui style="menuitem">Add
+      a folder</gui></guiseq>.</p>
+      <note style="tip">
+        <p>మీ సంగ్రహానికి ఒక సంచయాన్ని జతచేసినపుడు, మీకు కొన్ని ఐచ్ఛికాలు చూపించబడతాయి:</p>
+        <list>
+          <item><p>Whether to include subfolders or not.</p></item>
+          <item><p>Choose which files should be included.</p></item>
+          <item><p>Select which subfolders or files are to be excluded.</p></item>
+        </list>
+	<p>Not all archive file formats support folders — if the file format
+	that you are using does not, you will not be warned. If the file format
+	that you are using does not support folders, the files from the folders
+	will be added, but not the folder itself.</p>
+      </note>
+    </item>
+    <item>
+      <p>Once you finish adding files, the archive is ready; you do not need to
+      save it.</p>
+    </item>
+  </steps>
+
+</page>

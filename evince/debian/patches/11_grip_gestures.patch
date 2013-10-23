@@ -1,0 +1,483 @@
+Index: evince-3.5.5/configure.ac
+===================================================================
+--- evince-3.5.5.orig/configure.ac	2012-08-07 19:53:09.000000000 +0200
++++ evince-3.5.5/configure.ac	2012-08-07 22:36:32.641968914 +0200
+@@ -331,6 +331,17 @@
+    AC_DEFINE([HAVE_DESKTOP_SCHEMAS], [1], [Whether GSettings Desktop Schemas are available])
+ fi
+ 
++# ****************
++# Open Input Framework (optional)
++# ****************
++GRIP_REQUIRED=0.3.0
++
++AC_ARG_WITH([libgrip], AC_HELP_STRING([--with-libgrip], [enable libgrip support]), [], [with_libgrip=no])
++AS_IF([test "x$with_libgrip" = "xyes"],[
++  PKG_CHECK_MODULES([LIBGRIP], [libgrip >= $GRIP_REQUIRED],
++                    [AC_DEFINE(HAVE_LIBGRIP, 1, [libgrip support])])
++])
++
+ dnl Debug mode
+ 
+ AC_ARG_ENABLE([debug],
+@@ -355,8 +366,8 @@
+ AC_SUBST(LIBDOCUMENT_CFLAGS)
+ AC_SUBST(LIBDOCUMENT_LIBS)
+ 
+-LIBVIEW_CFLAGS="$LIBVIEW_CFLAGS $GTKUNIXPRINT_CFLAGS $DEBUG_FLAGS"
+-LIBVIEW_LIBS="$LIBVIEW_LIBS $GTKUNIXPRINT_LIBS -lm"
++LIBVIEW_CFLAGS="$LIBVIEW_CFLAGS $GTKUNIXPRINT_CFLAGS $LIBGRIP_CFLAGS $DEBUG_FLAGS"
++LIBVIEW_LIBS="$LIBVIEW_LIBS $GTKUNIXPRINT_LIBS $LIBGRIP_LIBS -lm"
+ AC_SUBST(LIBVIEW_CFLAGS)
+ AC_SUBST(LIBVIEW_LIBS)
+ 
+@@ -861,5 +872,6 @@
+ Keyring integration ......:  $with_keyring
+ Session Manager client ...:  $with_smclient
+ GTK+ Unix Print ..........:  $with_gtk_unix_print
++Libgrip gestures..........:  $with_libgrip
+ 
+ ])
+Index: evince-3.5.5/libview/ev-view-private.h
+===================================================================
+--- evince-3.5.5.orig/libview/ev-view-private.h	2012-08-07 19:40:24.000000000 +0200
++++ evince-3.5.5/libview/ev-view-private.h	2012-08-07 22:36:32.797968916 +0200
+@@ -202,6 +202,18 @@
+ 
+ 	/* Accessibility */
+ 	gboolean a11y_enabled;
++
++#ifdef HAVE_LIBGRIP
++	/* Gesture state */
++	gboolean enable_gestures;
++	gdouble drag_start_x;
++	gdouble drag_start_y;
++	gdouble pinch_start_x;
++	gdouble pinch_start_y;
++	gdouble pinch_start_radius;
++	gdouble pinch_start_scale;
++	gdouble rotate_start;
++#endif
+ };
+ 
+ struct _EvViewClass {
+Index: evince-3.5.5/libview/ev-view.c
+===================================================================
+--- evince-3.5.5.orig/libview/ev-view.c	2012-08-07 19:40:24.000000000 +0200
++++ evince-3.5.5/libview/ev-view.c	2012-08-07 22:36:32.957968919 +0200
+@@ -28,6 +28,10 @@
+ #include <gtk/gtk.h>
+ #include <gdk/gdkkeysyms.h>
+ 
++#ifdef HAVE_LIBGRIP
++#include <libgrip/grip.h>
++#endif
++
+ #include "ev-mapping-list.h"
+ #include "ev-document-forms.h"
+ #include "ev-document-images.h"
+@@ -73,6 +77,9 @@
+ 	PROP_VADJUSTMENT,
+ 	PROP_HSCROLL_POLICY,
+ 	PROP_VSCROLL_POLICY
++#ifdef HAVE_LIBGRIP
++	,PROP_ENABLE_GESTURES
++#endif
+ };
+ 
+ static guint signals[N_SIGNALS];
+@@ -97,6 +104,11 @@
+ #define ZOOM_IN_FACTOR  1.2
+ #define ZOOM_OUT_FACTOR (1.0/ZOOM_IN_FACTOR)
+ 
++#ifdef HAVE_LIBGRIP
++#define GESTURE_DRAG_VELOCITY  1.0
++#define GESTURE_ROTATE_ANGLE   1.0
++#endif
++
+ #define SCROLL_TIME 150
+ 
+ /*** Scrolling ***/
+@@ -297,6 +309,14 @@
+ 							      gpointer            data);
+ static void       ev_view_update_primary_selection           (EvView             *ev_view);
+ 
++/*** Gestures ***/
++#ifdef HAVE_LIBGRIP
++static void       _oif_ev_gesture_callback                   (GtkWidget          *widget,
++							      GripTimeType        time_type,
++							      GripGestureEvent   *event,
++							      gpointer            user_data);
++#endif
++
+ G_DEFINE_TYPE_WITH_CODE (EvView, ev_view, GTK_TYPE_CONTAINER,
+ 			 G_IMPLEMENT_INTERFACE (GTK_TYPE_SCROLLABLE, NULL))
+ 
+@@ -3018,6 +3038,123 @@
+ 	return FALSE;
+ }
+ 
++#ifdef HAVE_LIBGRIP
++
++static void
++_oif_ev_gesture_callback (GtkWidget        *widget,
++			   GripTimeType      time_type,
++			   GripGestureEvent *event,
++			   gpointer          user_data)
++  {
++	EvView *view = EV_VIEW (widget);
++
++	if (time_type == GRIP_TIME_START) {
++		switch (event->type) {
++		case GRIP_GESTURE_DRAG: {
++			GripEventGestureDrag *drag = (GripEventGestureDrag *)event;
++
++			view->drag_start_x = drag->position_x;
++			view->drag_start_y = drag->position_y;
++
++			break;
++		}
++
++		case GRIP_GESTURE_PINCH: {
++			GripEventGesturePinch *pinch = (GripEventGesturePinch *)event;
++
++			view->pinch_start_x = pinch->focus_x;
++			view->pinch_start_y = pinch->focus_y;
++			view->pinch_start_radius = pinch->radius;
++			view->pinch_start_scale = ev_document_model_get_scale(view->model);
++			break;
++		}
++
++		case GRIP_GESTURE_ROTATE: {
++		       GripEventGestureRotate *rotate = (GripEventGestureRotate *)event;
++		       view->rotate_start = rotate->angle;
++		       break;
++		}
++
++		default:
++			break;
++		}
++	} else if (time_type == GRIP_TIME_END) {
++		switch (event->type) {
++		case GRIP_GESTURE_DRAG: {
++			GripEventGestureDrag *drag = (GripEventGestureDrag *)event;
++
++			if (abs(drag->velocity_y) > abs(drag->velocity_x)) {
++				if (drag->velocity_y >= GESTURE_DRAG_VELOCITY &&
++				    drag->position_y > view->drag_start_y) {
++					ev_view_previous_page (view);
++				} else if (drag->velocity_y <= -GESTURE_DRAG_VELOCITY &&
++					   drag->position_y < view->drag_start_y) {
++					ev_view_next_page (view);
++				}
++			} else {
++				if (drag->velocity_x >= GESTURE_DRAG_VELOCITY &&
++				    drag->position_x > view->drag_start_x) {
++					ev_view_previous_page (view);
++				} else if (drag->velocity_x <= -GESTURE_DRAG_VELOCITY &&
++					   drag->position_x < view->drag_start_x) {
++					ev_view_next_page (view);
++				}
++			}
++
++			break;
++		}
++
++		default:
++			break;
++		}
++	} else {
++		switch (event->type) {
++		case GRIP_GESTURE_PINCH: {
++			GripEventGesturePinch *pinch = (GripEventGesturePinch *)event;
++			gdouble zoom_factor = pinch->radius / view->pinch_start_radius;
++
++			view->pending_scroll = SCROLL_TO_KEEP_POSITION;
++			ev_document_model_set_scale(view->model,
++			    view->pinch_start_scale * zoom_factor);
++			break;
++
++		}
++
++		case GRIP_GESTURE_DRAG: {
++			GripEventGestureDrag *drag = (GripEventGestureDrag *)event;
++
++			gdouble delta_x = -drag->delta_x;
++			gdouble delta_y = -drag->delta_y;
++			_oif_ev_view_drag (view, delta_x, delta_y);
++			break;
++		}
++
++		case GRIP_GESTURE_ROTATE: {
++			GripEventGestureRotate *rotate = (GripEventGestureRotate *)event;
++			gint rotation = ev_document_model_get_rotation (view->model);
++			gdouble cumulative_rotate = rotate->angle - view->rotate_start;
++
++			if (cumulative_rotate >= GESTURE_ROTATE_ANGLE) {
++				ev_document_model_set_rotation (view->model,
++								rotation + 90);
++				view->rotate_start = rotate->angle;
++			} else if (cumulative_rotate <= -GESTURE_ROTATE_ANGLE) {
++				ev_document_model_set_rotation (view->model,
++								rotation - 90);
++				view->rotate_start = rotate->angle;
++			}
++
++			break;
++		}
++
++		default:
++			break;
++		}
++	}
++}
++
++#endif
++
+ /*** GtkWidget implementation ***/
+ 
+ static void
+@@ -4641,6 +4778,11 @@
+ 	case PROP_VSCROLL_POLICY:
+ 		g_value_set_enum (value, view->vscroll_policy);
+ 		break;
++#ifdef HAVE_LIBGRIP
++	case PROP_ENABLE_GESTURES:
++		g_value_set_boolean (value, view->enable_gestures);
++		break;
++#endif
+ 	default:
+ 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
+ 		break;
+@@ -4672,6 +4814,41 @@
+ 		view->vscroll_policy = g_value_get_enum (value);
+ 		gtk_widget_queue_resize (GTK_WIDGET (view));
+ 		break;
++#ifdef HAVE_LIBGRIP
++	case PROP_ENABLE_GESTURES:
++		view->enable_gestures = g_value_get_boolean (value);
++
++		if (view->enable_gestures) {
++			grip_gesture_manager_register_window (
++				grip_gesture_manager_get(),
++				GTK_WIDGET (view),
++				GRIP_GESTURE_PINCH,
++				GRIP_DEVICE_ALL,
++				2,
++				_oif_ev_gesture_callback,
++				NULL, NULL);
++
++			grip_gesture_manager_register_window (
++				grip_gesture_manager_get(),
++				GTK_WIDGET (view),
++				GRIP_GESTURE_DRAG,
++				GRIP_DEVICE_TOUCHSCREEN,
++				2,
++				_oif_ev_gesture_callback,
++				NULL, NULL);
++
++			grip_gesture_manager_register_window (
++				grip_gesture_manager_get(),
++				GTK_WIDGET (view),
++				GRIP_GESTURE_ROTATE,
++				GRIP_DEVICE_ALL,
++				2,
++				_oif_ev_gesture_callback,
++				NULL, NULL);
++		}
++
++		break;
++#endif
+ 	default:
+ 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
+ 		break;
+@@ -4880,6 +5057,16 @@
+ 		         G_TYPE_NONE, 0,
+ 			 G_TYPE_NONE);
+ 
++#ifdef HAVE_LIBGRIP
++	g_object_class_install_property (object_class,
++					 PROP_ENABLE_GESTURES,
++					 g_param_spec_boolean ("enable-gestures",
++							       "Enable gestures",
++							       "Whether to enable gestures",
++							       TRUE,
++							       G_PARAM_WRITABLE));
++#endif
++
+ 	binding_set = gtk_binding_set_by_class (class);
+ 
+         add_scroll_binding_keypad (binding_set, GDK_KEY_Left,  0, GTK_SCROLL_STEP_BACKWARD, TRUE);
+@@ -5481,6 +5668,50 @@
+ 	ev_document_model_set_scale (view->model, scale);
+ }
+ 
++#ifdef HAVE_LIBGRIP
++void
++_oif_ev_view_drag (EvView  *view,
++		    gdouble  x,
++		    gdouble  y)
++{
++	gdouble value;
++
++	value = gtk_adjustment_get_value (view->vadjustment);
++	value = CLAMP (value + y, 0,
++		       gtk_adjustment_get_upper (view->vadjustment) - gtk_adjustment_get_page_size (view->vadjustment));
++	gtk_adjustment_set_value (view->vadjustment, value);
++
++	value = gtk_adjustment_get_value (view->hadjustment);
++	value = CLAMP (value + x, 0,
++		       gtk_adjustment_get_upper (view->hadjustment) - gtk_adjustment_get_page_size (view->hadjustment));
++	gtk_adjustment_set_value (view->hadjustment, value);
++}
++
++void
++_oif_ev_view_zoom_in_smooth (EvView *view, float factor)
++{
++	gdouble scale;
++
++	g_return_if_fail (view->sizing_mode == EV_SIZING_FREE);
++
++	view->pending_scroll = SCROLL_TO_CENTER;
++	scale = ev_document_model_get_scale (view->model) * factor;
++	ev_document_model_set_scale (view->model, scale);
++}
++
++void
++_oif_ev_view_zoom_out_smooth (EvView *view, float factor)
++{
++	gdouble scale;
++
++	g_return_if_fail (view->sizing_mode == EV_SIZING_FREE);
++
++	view->pending_scroll = SCROLL_TO_CENTER;
++	scale = ev_document_model_get_scale (view->model) * factor;
++	ev_document_model_set_scale (view->model, scale);
++}
++#endif
++
+ void
+ ev_view_zoom_in (EvView *view)
+ {
+Index: evince-3.5.5/libview/ev-view.h
+===================================================================
+--- evince-3.5.5.orig/libview/ev-view.h	2012-06-03 10:14:41.000000000 +0200
++++ evince-3.5.5/libview/ev-view.h	2012-08-07 22:36:33.057968916 +0200
+@@ -103,6 +103,17 @@
+                                            gint          page,
+                                            GdkRectangle *page_area,
+                                            GtkBorder    *border);
++
++#ifdef HAVE_LIBGRIP
++void           _oif_ev_view_drag       (EvView       *view,
++                                        gdouble       x,
++                                        gdouble       y);
++void           _oif_ev_view_zoom_in_smooth (EvView   *view,
++                                            float factor);
++void           _oif_ev_view_zoom_out_smooth (EvView   *view,
++                                             float factor);
++#endif
++
+ /* Annotations */
+ void           ev_view_focus_annotation      (EvView          *view,
+ 					      EvMapping       *annot_mapping);
+Index: evince-3.5.5/shell/ev-application.c
+===================================================================
+--- evince-3.5.5.orig/shell/ev-application.c	2012-08-07 13:18:12.000000000 +0200
++++ evince-3.5.5/shell/ev-application.c	2012-08-07 22:36:33.129968918 +0200
+@@ -64,6 +64,9 @@
+ #ifdef WITH_SMCLIENT
+ 	EggSMClient *smclient;
+ #endif
++#ifdef HAVE_LIBGRIP
++        gboolean gestures_enabled;
++#endif
+ };
+ 
+ struct _EvApplicationClass {
+@@ -115,6 +118,20 @@
+                        NULL);
+ }
+ 
++#ifdef HAVE_LIBGRIP
++gboolean
++_oif_ev_application_get_gestures_enabled (EvApplication  *application)
++{
++  return application->gestures_enabled;
++}
++
++void
++_oif_ev_application_set_gestures_enabled (EvApplication  *application, gboolean enabled)
++{
++  application->gestures_enabled = enabled;
++}
++#endif
++
+ /* Session */
+ gboolean
+ ev_application_load_session (EvApplication *application)
+Index: evince-3.5.5/shell/ev-application.h
+===================================================================
+--- evince-3.5.5.orig/shell/ev-application.h	2012-08-07 13:18:12.000000000 +0200
++++ evince-3.5.5/shell/ev-application.h	2012-08-07 22:36:33.129968918 +0200
+@@ -71,6 +71,11 @@
+ 
+ const gchar      *ev_application_get_dot_dir         (EvApplication   *application,
+                                                       gboolean         create);
++#ifdef HAVE_LIBGRIP
++gboolean          _oif_ev_application_get_gestures_enabled (EvApplication  *application);
++void              _oif_ev_application_set_gestures_enabled (EvApplication  *application,
++                                                            gboolean enabled);
++#endif
+ 
+ G_END_DECLS
+ 
+Index: evince-3.5.5/shell/ev-window.c
+===================================================================
+--- evince-3.5.5.orig/shell/ev-window.c	2012-08-07 18:54:10.000000000 +0200
++++ evince-3.5.5/shell/ev-window.c	2012-08-07 22:36:33.141968916 +0200
+@@ -7428,6 +7428,10 @@
+ 	gtk_widget_show (ev_window->priv->view_box);
+ 
+ 	ev_window->priv->view = ev_view_new ();
++#ifdef HAVE_LIBGRIP
++	g_object_set(ev_window->priv->view, "enable-gestures",
++		     _oif_ev_application_get_gestures_enabled (EV_APP), NULL);
++#endif
+ 	ev_view_set_page_cache_size (EV_VIEW (ev_window->priv->view), PAGE_CACHE_SIZE);
+ 	ev_view_set_model (EV_VIEW (ev_window->priv->view), ev_window->priv->model);
+ 
+Index: evince-3.5.5/shell/main.c
+===================================================================
+--- evince-3.5.5.orig/shell/main.c	2012-08-07 12:48:41.000000000 +0200
++++ evince-3.5.5/shell/main.c	2012-08-07 22:36:33.141968916 +0200
+@@ -59,6 +59,9 @@
+ static gboolean unlink_temp_file = FALSE;
+ static gchar   *print_settings;
+ static const char **file_arguments = NULL;
++#ifdef HAVE_LIBGRIP
++static gboolean disable_gestures = FALSE;
++#endif
+ 
+ 
+ static gboolean
+@@ -84,6 +87,9 @@
+ 	{ "find", 'l', 0, G_OPTION_ARG_STRING, &ev_find_string, N_("The word or phrase to find in the document"), N_("STRING")},
+ 	{ "unlink-tempfile", 'u', G_OPTION_FLAG_HIDDEN, G_OPTION_ARG_NONE, &unlink_temp_file, NULL, NULL },
+ 	{ "print-settings", 't', G_OPTION_FLAG_HIDDEN, G_OPTION_ARG_FILENAME, &print_settings, NULL, NULL },
++#ifdef HAVE_LIBGRIP
++	{ "disable-gestures", 'g', G_OPTION_FLAG_HIDDEN, G_OPTION_ARG_NONE, &disable_gestures, NULL, NULL },
++#endif
+ 	{ "version", 0, G_OPTION_FLAG_NO_ARG | G_OPTION_FLAG_HIDDEN, G_OPTION_ARG_CALLBACK, option_version_cb, NULL, NULL },
+ 	{ G_OPTION_REMAINING, 0, 0, G_OPTION_ARG_FILENAME_ARRAY, &file_arguments, NULL, N_("[FILE…]") },
+ 	{ NULL }
+@@ -322,6 +328,9 @@
+         }
+ 
+ 	ev_application_load_session (application);
++#ifdef HAVE_LIBGRIP
++	_oif_ev_application_set_gestures_enabled (EV_APP, !disable_gestures);
++#endif
+ 	load_files (file_arguments);
+ 
+ 	/* Change directory so we don't prevent unmounting in case the initial cwd

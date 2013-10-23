@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-open" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <revision pkgversion="3.4" date="2011-12-08" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+    <desc>Abrir un arquivo existente.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Abrir un arquivo</title>
+
+  <p>Abra un arquivo existente co <app>Xestor de arquivos</app> seguinte estes pasos:</p>
+
+  <list>
+    <item>
+      <p>premendo o botón <gui>Abrir</gui> da barra de ferramentas</p>
+    </item>
+    <item>
+      <p>premendo en <guiseq><gui style="menu">Arquivo</gui><gui style="menuitem">Abrir…</gui></guiseq></p>
+    </item>
+  </list>
+
+  <p>Tamén pode usar a opción <gui>Abrir recente</gui> das seguintes maneiras:</p>
+
+  <list>
+    <item>
+      <p>premendo o botón <media type="image" mime="image/png" src="figures/file-roller-open-recent.png"> Abrir un arquivo usado recentemente</media> na barra de ferramentas e seleccionar un ficheiro</p>
+    </item>
+    <item>
+      <p>premendo <guiseq><gui style="menu">Arquivo</gui><gui style="menuitem">Abrir recente</gui></guiseq> para ver unha lista dos arquivos usados recentemente</p>
+    </item>
+  </list>
+
+  <note>
+    <p>Se o <app>Xestor de arquivos</app> non pode abrir o seu arquivo usado recentemente, e mostra a mensaxe de erro <gui>O ficheiro non existe</gui>, pode deberse a que a localización do arquivo cambiou. Neste caso, pode usar a opción <gui>Abrir</gui> para buscalo.</p>
+  </note>
+
+</page>

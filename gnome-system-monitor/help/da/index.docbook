@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.24.4">
+<!ENTITY manrevision "2.2">
+<!ENTITY date "March 2009">
+<!ENTITY app "System Monitor">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="da">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Manual til Systemovervågning, V2.2</title>
+
+    <copyright lang="en">
+      <year>2009</year>
+      <holder>Paul Cutler</holder>
+    </copyright>
+    <copyright lang="en">
+      <year>2004</year>
+      <holder>Sun Microsystems</holder>
+    </copyright>
+    <copyright lang="en">
+      <year>2001</year>
+      <year>2002</year>
+      <year>2004</year>
+      <holder>Bill Day</holder>
+    </copyright>
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+   -->
+
+    <publisher role="maintainer">
+      <publishername>GNOME-dokumentationsprojektet</publishername>
+    </publisher>
+
+     <legalnotice id="legalnotice">
+	<para>Der gives tilladelse til at kopiere, distribuere og/eller ændre dette dokument under betingelserne i GNU Free Documentation License (GFDL), version 1.1 eller enhver nyere version, udgivet af Free Software Foundation uden invariante afsnit, uden forsidetekster, og uden bagsidetekster. Du kan finde en kopi af GFDL'en her: <ulink type="help" url="help:fdl">link</ulink>, eller i filen COPYING-DOCS der distribueres med denne manual.</para>
+         <para>Denne manual er en del af GNOME-manualsamlingen distribueret under GFDL. Hvis du vil distribuere denne manual separat fra denne samling, kan du gøre det ved at tilføje en kopi af licensen til manualen, som beskrevet i sektion 6 af licensen.</para>
+
+	<para>Mange af navnene brugt af firmaer til at skelne deres produkter og tjenester er registrerede varemærker. Der hvor disse navne optræder i GNOME-dokumentationen, og medlemmerne af GNOME-dokumentationsprojektet er blevet gjort opmærksomme på disse varemærker, er navnene skrevet med store bogstaver eller store forbogstaver.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+        other legal stuff such as "NO WARRANTY" statement. Please do not change
+        any of this. -->
+
+  <authorgroup>
+    <author lang="en">
+      <firstname>Sun</firstname>
+      <surname>GNOME Documentation Team</surname>
+      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+    </author>
+    <author lang="en">
+      <firstname>Bill</firstname>
+      <surname>Day</surname>
+      <affiliation><address><email>billday@bellatlantic.net</email></address></affiliation>
+    </author>
+      <author lang="en">
+        <firstname>Paul</firstname>
+        <surname>Cutler</surname>
+        <affiliation>
+          <orgname>GNOME Documentation Project</orgname>
+          <address><email>pcutler@foresightlinux.org</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+
+    <othercredit role="translator">
+      <firstname>Latin</firstname>
+      <surname>Translator 1</surname>
+      <affiliation>
+        <orgname>Latin Translation Team</orgname>
+        <address> <email>translator@gnome.org</email> </address>
+      </affiliation>
+      <contrib>Latin translation</contrib>
+    </othercredit>
+-->
+    </authorgroup>
+
+    <releaseinfo revision="2.28" role="review">
+      <ulink type="review" url="http://bugzilla.gnome.org/show_bug.cgi?id=500559"/>
+    </releaseinfo>
+
+    <revhistory>
+      <revision lang="en">
+        <revnumber>System Monitor Manual V2.2</revnumber>
+        <date>March 2009</date>
+        <revdescription>
+          <para role="author" lang="en">Paul Cutler
+            <email>pcutler@foresightlinux.org</email>
+          </para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+      <revision lang="en">
+        <revnumber>System Monitor Manual V2.1</revnumber>
+        <date>February 2004</date>
+        <revdescription>
+          <para role="author" lang="en">Sun GNOME Documentation Team</para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+      <revision lang="en">
+        <revnumber>System Monitor Manual V2.0</revnumber>
+        <date>November 2002</date>
+        <revdescription>
+          <para role="author" lang="en">Bill Day <email>billday@bellatlantic.net</email>
+          </para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+      <revision lang="en">
+        <revnumber>Procman Manual V0.11</revnumber>
+        <date>January 2002</date>
+        <revdescription>
+          <para role="author" lang="en">Bill Day
+            <email>billday@bellatlantic.net</email>
+          </para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Denne manual beskriver version 2.24.4 af Systemovervågning.</releaseinfo>
+
+    <legalnotice>
+      <title>Tilbagemelding</title>
+      <para>Følg vejledningen på <ulink url="ghelp:gnome-feedback" type="help">GNOME-feedbacksiden</ulink> for at rapportere fejl eller indsende forslag til programmet Systemovervågning eller denne manual.</para>
+
+<!-- Translators may also add here feedback address for translations -->
+
+    </legalnotice>
+    <abstract role="description">
+      <para>Systemovervågning giver brugere en grafisk brugergrænseflade til at overvåge CPU, netværk og hukommelsesaktivitet, såvel som funktioner til at gennemse og stoppe systemprocesser.</para>
+    </abstract>
+  </articleinfo>
+
+  <indexterm zone="index" lang="en">
+    <primary>System Monitor</primary>
+  </indexterm>
+  <indexterm zone="index" lang="en">
+    <primary>gnome-system-monitor</primary>
+  </indexterm>
+  <indexterm zone="index" lang="en">
+    <primary>procman</primary>
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+ <!-- ============= Introduction ============================== -->
+  <sect1 id="gnome-system-monitor-intro">
+    <title>Introduktion</title>
+    <para>Programmet <application>Systemovervågning</application> lader dig vise grundlæggende systeminformation og overvåge systemprocesser, brug af systemressourcer, samt filsystemer. Du kan også bruge <application>Systemovervågning</application> til at ændre opførslen af dit system.</para>
+    <para>Programvinduet for <application>Systemovervågning</application> indeholder fire afsnit inddelt i faneblade:</para>
+    <variablelist>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>System</guilabel>
+        </term>
+        <listitem>
+          <para>Viser diverse grundlæggende informationer om computerens hardware og software.</para>
+          <variablelist>
+            <varlistentry>
+              <term>Distribution</term>
+              <listitem>
+                <itemizedlist>
+                  <listitem>
+                    <para>Distributionsversion</para>
+                  </listitem>
+                  <listitem>
+                    <para>Linux-kerneversion</para>
+                  </listitem>
+                  <listitem>
+                    <para>GNOME-version</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Hardware</term>
+              <listitem>
+                <itemizedlist>
+                  <listitem>
+                    <para>Installeret hukommelse</para>
+                  </listitem>
+                  <listitem>
+                    <para>Processorer og hastigheder</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Systemstatus</term>
+              <listitem>
+                <itemizedlist>
+                  <listitem>
+                    <para>Aktuel tilgængelig diskplads</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>Processes</guilabel>
+        </term>
+        <listitem>
+          <para>Viser de aktive processer og deres indbyrdes relationer. Giver detaljeret information om hver enkelt proces, og lader dig styre aktive processer.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>Resources</guilabel>
+        </term>
+        <listitem>
+          <para>Viser det aktuelle forbrug af følgende systemressourcer:</para>
+          <itemizedlist>
+            <listitem>
+              <para>CPU-tid (processortidsforbrug)</para>
+            </listitem>
+            <listitem>
+              <para>Hukommelse og swap-plads</para>
+            </listitem>
+            <listitem>
+              <para>Netværksaktivitet</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>File Systems</guilabel>
+        </term>
+        <listitem>
+          <para>Opskriver alle monterede filsystemer samt grundlæggende information om hvert af dem.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="gnome-system-monitor-getting-started">
+    <title>Kom godt i gang</title>
+
+<!-- ============= To Start System Monitor ============================ -->
+    <sect2 id="gnome-system-monitor-to-start">
+      <title>Start af Systemovervågning</title>
+      <para>Du kan starte <application>Systemovervågning</application> på følgende måder:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Menuen <guimenu>System</guimenu></term>
+          <listitem>
+            <para lang="en">
+              Choose <menuchoice><guimenu>Administration</guimenu> <guimenuitem>System Monitor</guimenuitem></menuchoice>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Kommandolinje</term>
+          <listitem>
+            <para>Kør følgende kommando: <command>gnome-system-monitor</command></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-when-you-start">
+      <title>Når du starter Systemovervågning</title>
+      <para>Når du starter <application>Systemovervågning</application>, vil følgende vinduer blive vist:</para>
+      <figure id="gnome-system-monitor-window">
+        <title>Vinduet for Systemovervågning</title>
+        <screenshot>
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/gnome-system-monitor_window.png" format="PNG"/>
+            </imageobject>
+            <textobject> <phrase>Shows System Monitor main window.</phrase>
+            </textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+      <para>Vinduet for <application>Systemovervågning</application> indeholder følgende elementer:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Menubjælke</term>
+          <listitem>
+            <para>Menuerne i menubjælken indeholder alle de kommandoer, du behøver for at bruge <application>Systemovervågning</application>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Visningsområde</term>
+          <listitem>
+            <para>Visningsområdet indeholder systemovervågningsinformationerne. Visningsområdet består af følgende afsnit, inddelt i faneblade:</para>
+            <itemizedlist>
+              <listitem>
+                <para lang="en">
+                  <guilabel>System</guilabel>
+                </para>
+                <para>Indeholder en liste af grundlæggende systemegenskaber, såsom versioner af systemsoftware, hardwarespecifikationer og status.</para>
+              </listitem>
+              <listitem>
+                <para lang="en">
+                  <guilabel>Processes</guilabel>
+                </para>
+                <para>Indeholder en liste af processer, organiseret som en tabel, en liste af gennemsnitsbelastninger over de sidste minutter, samt en <guibutton>Afbryd proces</guibutton>-knap.</para>
+              </listitem>
+              <listitem>
+                <para lang="en">
+                  <guilabel>Resources</guilabel>
+                </para>
+                <para>Indeholder en graf over <guilabel>Processorforbrug</guilabel>, <guilabel>Hukommelsesforbrug</guilabel> og swap, samt <guilabel>Netværkshistorik</guilabel>.</para>
+              </listitem>
+              <listitem>
+                <para lang="en">
+                  <guilabel>File Systems</guilabel>
+                </para>
+                <para>Indeholder en tabel over de filsystemer, der i øjeblikket er monteret.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Statusbjælke</term>
+          <listitem>
+            <para>Statusbjælken viser informationer om de <application>Systemovervågning</application>s nuværende aktivitet samt kontekstinformation om menuelementerne.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="gnome-system-monitor-usage">
+    <title>Brug</title>
+
+    <sect2 id="gnome-system-monitor-display-basic-info">
+      <title>Vis grundlæggende systeminformationer</title>
+      <para>Vælg fanebladet <guilabel>System</guilabel> for at vise grundlæggende systeminformation.</para>
+      <para>I fanebladet <guilabel>System</guilabel>, organiseres informationerne i tre grupper:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Systeminformation</para>
+        </listitem>
+        <listitem>
+          <para>Hardware</para>
+        </listitem>
+        <listitem>
+          <para>Systemstatus</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-display-processlist">
+      <title>Vis proceslisten</title>
+      <para>Vælg fanebladet <guilabel>Processer</guilabel> for at vise proceslisten.</para>
+      <para>I fanebladet <guilabel>Processer</guilabel> organiseres processerne som en tabel. Rækkerne i tabellen viser information om processerne. Kolonnerne repræsenterer informationsfelter for hver proces, såsom navnet på brugeren, der ejer processen, mængden af hukommelse som processen bruger, og så videre. Fra venstre til højre viser <guilabel>Processer</guilabel>-fanebladet som standard følgende kolonner:</para>
+      <itemizedlist>
+          <listitem>
+            <para>Procesnavn</para>
+          </listitem>
+          <listitem>
+            <para>Status</para>
+          </listitem>
+          <listitem>
+            <para>%CPU</para>
+          </listitem>
+          <listitem>
+            <para>Prioritet</para>
+          </listitem>
+          <listitem>
+            <para>Id</para>
+          </listitem>
+          <listitem>
+            <para>Hukommelse</para>
+          </listitem>
+      </itemizedlist>
+        <para>Se <xref linkend="gnome-system-monitor-prefs-proclist"/> for information om hvordan de viste kolonner i proceslisten ændres.</para>
+
+      <sect3 id="gnome-system-monitor-display-processlist-child">
+        <title>Ophavsprocesser og underprocesser</title>
+        <para>En ophavsproces er en proces, der har startet en anden proces. Den startede proces er en underproces af ophavsprocessen. Som standard viser <application>Systemovervågning</application> ikke procesafhængigheder. Information om hvordan standardopførslen ændres kan ses på <xref linkend="gnome-system-monitor-modify-processlist-viewdeps"/>.</para>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-display-processlist-priority">
+        <title>Procesprioritet og nice-værdier</title>
+      <para>Processer køres i prioriteret rækkefølge: Højprioritetsprocesser køres før lavprioritetsprocesser. Underprocesser nedarver generelt deres prioritet fra ophavsprocessen.</para>
+      <para>Prioriteten af en proces indstilles gennem processens nice-værdi på følgende vis:</para>
+      <itemizedlist>
+        <listitem>
+          <para>En nice-værdi på 0 betyder, at processen har normal prioritet.</para>
+        </listitem>
+        <listitem>
+          <para>Højere nice-værdi betyder lavere prioritet.</para>
+        </listitem>
+        <listitem>
+          <para>Lavere nice-værdi betyder højere prioritet.</para>
+        </listitem>
+      </itemizedlist>
+      <para>Information om ændring af procesprioritet kan findes på <xref linkend="gnome-system-monitor-change-priority"/>.</para>
+      </sect3>
+
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-sort-processlist">
+      <title>Sortér proceslisten</title>
+      <para>Gør som følger for at sortere proceslisten:</para>
+      <orderedlist>
+        <listitem>
+          <para>Vælg fanebladet <guilabel>Processer</guilabel> for at få vist proceslisten.</para>
+        </listitem>
+        <listitem>
+          <para>Som standard sorteres processer efter navn, i alfabetisk rækkefølge. Klik på kolonneoverskriften <guilabel>Procesnavn</guilabel> for at få dem vist i omvendt alfabetisk rækkefølge.</para>
+        </listitem>
+        <listitem>
+          <para>Klik på en kolonneoverskrift for at sortere processerne efter den information, der fremgår i kolonnen, i alfabetisk eller numerisk orden.</para>
+        </listitem>
+        <listitem>
+          <para>Klik på kolonneoverskriften igen for at sortere dataene i omvendt alfabetisk eller omvendt numerisk rækkefølge.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-modify-processlist">
+      <title>Ændr indholdet af proceslisten</title>
+      <para>Du kan ændre indholdet af proceslisten på adskillige måder.</para>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-all">
+        <title>Vis alle processer</title>
+        <para>Gør som følger for at få vist alle processer i proceslisten:</para>
+        <orderedlist>
+          <listitem>
+            <para>Vælg fanebladet <guilabel>Processer</guilabel> for at få vist proceslisten.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">
+              Choose
+              <menuchoice>
+                <guimenu>View</guimenu>
+                <guimenuitem>All Processes</guimenuitem>
+              </menuchoice>.
+            </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-my">
+        <title>Vis kun processer, der ejes af den aktuelle bruger</title>
+        <para>Gør som følger for, kun at få vist processer, der ejes af den aktuelle bruger:</para>
+        <orderedlist>
+          <listitem>
+            <para>Vælg fanebladet <guilabel>Processer</guilabel> for at få vist proceslisten.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">
+              Choose
+              <menuchoice>
+                <guimenu>View</guimenu>
+                <guimenuitem>My Processes</guimenuitem>
+              </menuchoice>.
+            </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-active">
+        <title>Vis kun aktive processer</title>
+        <para>Gør som følger for, kun at få vist de aktive processer i proceslisten:</para>
+        <orderedlist>
+          <listitem>
+            <para>Vælg fanebladet <guilabel>Processer</guilabel> for at få vist proceslisten.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">
+              Choose
+              <menuchoice>
+                <guimenu>View</guimenu>
+                <guimenuitem>Active Processes</guimenuitem>
+              </menuchoice>.
+            </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-viewdeps">
+        <title>Vis afhængigheder</title>
+        <para>Gør som følger for at få vist procesafhængigheder i proceslisten:</para>
+        <orderedlist>
+          <listitem>
+            <para>Vælg fanebladet <guilabel>Processer</guilabel> for at få vist proceslisten.</para>
+          </listitem>
+          <listitem>
+            <para>Vælg <menuchoice><guimenu>Vis</guimenu><guimenuitem>Afhængigheder</guimenuitem></menuchoice>.</para>
+          </listitem>
+        </orderedlist>
+        <para>Hvis menupunktet <guimenuitem>Afhængigheder</guimenuitem> er valgt, vil processerne blive vist således:</para>
+        <itemizedlist>
+          <listitem>
+            <para>Ophavsprocesser angives ved at trekantsymbol til venstre for procesnavnet. Klik på et trekantsymbol for at få vist eller skjult de tilhørende underprocesser.</para>
+          </listitem>
+          <listitem>
+            <para>Underprocesser anføres indrykket sammen med deres ophavsprocesser.</para>
+          </listitem>
+        </itemizedlist>
+        <para>Hvis menupunktet <guimenuitem>Afhængigheder</guimenuitem> ikke er valgt:</para>
+        <itemizedlist>
+          <listitem>
+            <para>Ophavsprocesser og underprocesser kan ikke skelnes.</para>
+          </listitem>
+          <listitem>
+            <para>Alle processer anføres i alfabetisk rækkefølge.</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-memory-map">
+      <title>Vis hukommelsesområder for en proces</title>
+      <para>Gør som følger for at få vist hukommelsesområderne for en proces:</para>
+      <orderedlist>
+        <listitem>
+          <para>Vælg fanebladet <guilabel>Processer</guilabel> for at få vist proceslisten.</para>
+        </listitem>
+        <listitem>
+          <para>Vælg processen i proceslisten.</para>
+        </listitem>
+        <listitem>
+          <para>Vælg <menuchoice><guimenu>Vis</guimenu><guimenuitem>Hukommelsesområder</guimenuitem></menuchoice>.</para>
+        </listitem>
+      </orderedlist>
+      <para>Dialogvinduet <guilabel>Hukommelsesområder</guilabel> viser informationerne som en tabel. Navnet på processen vises over hukommelsesområdetabellen. Fra venstre til højre, viser <guilabel>Hukommelsesområder</guilabel>-dialogvinduet følgende kolonner:</para>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Filename</guilabel></term>
+          <listitem>
+            <para>Placeringen af et delt bibliotek, som i øjeblikket bruges af processen. Hvis dette felt står tomt, beskriver hukommelsesinformationen i denne række et hukommelsesområde, der ejes af processen hvis navn vises over tabellen.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM Start</guilabel></term>
+          <listitem>
+            <para>Adressen hvorpå hukommelsessegmentet begynder.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM End</guilabel></term>
+          <listitem>
+            <para>Adressen hvorpå hukommelsessegmentet slutter.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM Size</guilabel></term>
+          <listitem>
+            <para>Størrelsen af hukommelsessegmentet.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Flags</guilabel></term>
+          <listitem>
+            <para>Følgende flag beskriver de forskellige typer af hukommelsessegment, processen kan tilgå:</para>
+            <variablelist>
+              <varlistentry>
+                <term>p</term>
+                <listitem>
+                  <para>Hukommelsessegmentet er privat for processen, og kan ikke tilgås af andre processer.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>r</term>
+                <listitem>
+                  <para>Processen har rettigheder til at læse fra hukommelsessegmentet.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>s</term>
+                <listitem>
+                  <para>Hukommelsessegmentet deles med andre processer.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>w</term>
+                <listitem>
+                  <para>Processen har rettigheder til at skrive til hukommelsessegmentet.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>x</term>
+                <listitem>
+                  <para>Processen har rettigheder til at køre instruktioner, der indeholdes i hukommelsessegmentet.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM Offset</guilabel></term>
+          <listitem>
+            <para>Hukommelsessegmentets afsæt for virtuel hukommelse.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Device</guilabel></term>
+          <listitem>
+            <para>Over- og underenhedsnummer for enheden hvorpå den delte biblioteksfil er placeret.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Inode</guilabel></term>
+          <listitem>
+            <para>Inoden på enheden, hvorfra det delte biblioteks placering er indlæst i hukommelsen.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para>Klik på en kolonneoverskrift for at sortere data efter informationen i den pågældende kolonne i alfabetisk eller numerisk rækkefølge. Klik på overskriften igen for at sortere i omvendt rækkefølge.</para>
+      <para>Klik på <guibutton>Luk</guibutton> for at lukke <guilabel>Hukommelsesområder</guilabel>-dialogvinduet.</para>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-change-priority">
+      <title>Ændr prioriteten for en proces</title>
+      <para>Gør som følger for at ændre prioriteten for en proces:</para>
+      <orderedlist>
+        <listitem>
+          <para>Vælg fanebladet <guilabel>Processer</guilabel> for at få vist proceslisten.</para>
+        </listitem>
+        <listitem>
+          <para>Vælg processen, hvis prioritet du vil ændre.</para>
+        </listitem>
+        <listitem>
+          <para>Vælg <menuchoice><guimenu>Redigér</guimenu><guimenuitem>Skift prioritet</guimenuitem></menuchoice>. Dialogvinduet <guilabel>Skift prioritet</guilabel> bliver dermed vist.</para>
+        </listitem>
+        <listitem>
+          <para>Brug skydeknappen til at indstille processens nice-værdi.</para>
+          <para>Nice-værdien angiver processens prioritet: lavere nice-værdi betyder højere prioritet.</para>
+          <para>Brugere, der ikke er root, skal indtaste root-adgangskoden for at angive en nice-værdi, der er lavere end nul.</para>
+        </listitem>
+        <listitem>
+          <para>Klik på knappen <guibutton>Skift prioritet</guibutton>.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+
+    <sect2 id="gnome-system-monitor-end-process">
+      <title>Afslut en proces</title>
+      <para>Gør som følger for at afslutte en proces:</para>
+      <orderedlist>
+        <listitem>
+          <para>Vælg fanebladet <guilabel>Processer</guilabel> for at få vist proceslisten.</para>
+        </listitem>
+        <listitem>
+          <para>Vælg processen, du vil afslutte.</para>
+        </listitem>
+        <listitem>
+          <para>Vælg <menuchoice><guimenu>Redigér</guimenu><guimenuitem>Afslut proces</guimenuitem></menuchoice>, eller klik på knappen <guibutton>Afslut proces</guibutton>.</para>
+          <para>Som standard vil der blive spurgt om bekræftelse. Information om hvordan bekræftelsesforespørgslen indstilles til at blive eller ikke blive vist, kan findes på <xref linkend="gnome-system-monitor-prefs-proclist"/>.</para>
+        </listitem>
+        <listitem>
+          <para>Klik på knappen <guibutton>Afslut proces</guibutton> for at bekræfte at du vil afslutte processen. <application>Systemovervågning</application> tvinger processen til at afslutte normalt.</para>
+        </listitem>
+      </orderedlist>
+      <para>Dette er den foretrukne måde at stoppe en proces.</para>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-terminate-process">
+      <title>Terminér en proces</title>
+      <para>Gør som følger for at terminere en proces:</para>
+      <orderedlist>
+        <listitem>
+          <para>Vælg fanebladet <guilabel>Processer</guilabel> for at få vist proceslisten.</para>
+        </listitem>
+        <listitem>
+          <para>Vælg processen, du vil terminere.</para>
+        </listitem>
+        <listitem>
+          <para>Vælg <menuchoice><guimenu>Redigér</guimenu><guimenuitem>Terminér proces</guimenuitem></menuchoice>.</para>
+          <para>Som standard vil der blive spurgt om bekræftelse. Information om hvordan bekræftelsesforespørgslen indstilles til at blive eller ikke blive vist, kan findes på <xref linkend="gnome-system-monitor-prefs-proclist"/>.</para>
+        </listitem>
+        <listitem>
+          <para>Klik på knappen <guibutton>Terminér proces</guibutton> for at bekræfte at du vil terminere processen. <application>Systemovervågning</application> tvinger processen til at slutte omgående.</para>
+        </listitem>
+      </orderedlist>
+      <para>En proces bør normalt kun termineres hvis du ikke kan afslutte processen på normal vis, som beskrevet i <xref linkend="gnome-system-monitor-end-process"/>.</para>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-cpu">
+      <title>Overvåg processorforbrug</title>
+      <para>Vælg fanebladet <guilabel>Ressourcer</guilabel> for at overvåge processorforbruget.</para>
+      <para><application>Systemovervågning</application> viser historikken for processorforbruget i grafisk format. Under grafen vises i øvrigt også det øjeblikkelige processorforbrug i procent.</para>
+    </sect2>
+
+
+    <sect2 id="gnome-system-monitor-memory">
+      <title>Overvåg hukommelses- og swapforbrug</title>
+      <para>Vælg fanebladet <guilabel>Ressourcer</guilabel> for at overvåge hukommelses- og swapforbrug.</para>
+      <para><application>Systemovervågning</application> viser historikken for hukommelses- og swappladsforbrug i grafisk format. Under grafen vises i øvrigt følgende talværdier:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Brugt hukommelse ud af samlet hukommelse</para>
+        </listitem>
+        <listitem>
+          <para>Brugt swapplads ud af samlet swapplads</para>
+        </listitem>
+      </itemizedlist>
+
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-network">
+      <title>Overvåg netværksaktivitet</title>
+      <para>Vælg fanebladet <guilabel>Ressourcer</guilabel> for at overvåge netværksaktivitet.</para>
+      <para><application>Systemovervågning</application> viser netværkshistorikken i grafisk format. Under grafen vises i øvrigt følgende talværdier:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Modtaget data per sekund og samlet</para>
+        </listitem>
+        <listitem>
+          <para>Sendt data per sekund og samlet</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-disk">
+      <title>Overvåg filsystemer</title>
+      <para>Vælg fanebladet <guilabel>Filsystemer</guilabel> for at overvåge filsystemer.</para>
+      <para><application>Systemovervågning</application> viser monterede filsystemer i et tabelformat. Fra venstre til højre, indeholder tabellen følgende kolonner:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Enhed</term>
+          <listitem>
+            <para>Placering af blokfil</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Mappe</term>
+          <listitem>
+            <para>Monteringspunkt (mappe der tilgås) for enheden</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Type</term>
+          <listitem>
+            <para>Filsystemtype</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Total</term>
+          <listitem>
+            <para>Total kapacitet</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Fri</term>
+          <listitem>
+            <para>Mængden af plads, der ikke bruges</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Tilgængelig</term>
+          <listitem>
+            <para>Mængden af plads, der kan bruges</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Brugt</term>
+          <listitem>
+            <para>Mængden af plads, der er brugt (og procentdel af Total)</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="gnome-system-monitor-prefs">
+    <title>Indstillinger</title>
+    <para>Vælg <menuchoice><guimenu>Redigér</guimenu><guimenuitem>Indstillinger</guimenuitem></menuchoice> for at ændre indstillinger for <application>Systemovervågning</application>. Dialogvinduet <guilabel>Indstillinger</guilabel> indeholder følgende fanebladsafsnit:</para>
+
+    <sect2 id="gnome-system-monitor-prefs-proclist">
+      <title>Processer</title>
+        <variablelist>
+          <varlistentry>
+            <term lang="en">
+              <guilabel>Behavior</guilabel>
+            </term>
+            <listitem>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Update interval in seconds</guilabel>
+                  </para>
+                  <para>Brug denne drejeboks til at angive intervallet mellem opdateringer af proceslisten.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Enable smooth refresh</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at opdatere blødt.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Alert before ending or killing processes</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få bedt om bekræftelse, når en proces afsluttes eller termineres.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Divide CPU usage by CPU count</guilabel>
+                  </para>
+                  <para>Vælg denne for at dividere hver proces' CPU% i procestabellen med antallet af CPU'er.</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term lang="en">
+              <guilabel>Information Fields</guilabel>
+            </term>
+            <listitem>
+              <para>Brug følgende indstillinger til at væge de felter, der vises i proceslisten:</para>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Process Name</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at vise procesnavnet. Denne kolonne kan også indeholde et ikon, der viser programmet, der er tilknyttet processen.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>User</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få vist navnet på den bruger, der ejer processen.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Status</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få vist den aktuelle status af processen: sover eller kører.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Virtual Memory</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få vist mængden af virtuel hukommelse, der er allokeret til processen.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Resident Memory</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få vist mængden af fysisk hukommelse, der er allokeret til processen.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Writable Memory</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få vist mængden af hukommelse, processen kan skrive til.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Shared Memory</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få vist mængden af delt hukommelse, der er allokeret til processen. Delt hukommelse er hukommelse, der kan tilgås af andre processer.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>X Server Memory</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få vist mængden af X-serverhukommelse, der bruges af processen.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>% CPU</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få vist processens aktuelle processorforbrug i procent.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>CPU Time</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få vist mængden af processortid, processen har brugt.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Started</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få vist processens starttidspunkt.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Nice</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at vise processens nice-værdi. Nice-værdien angiver processens prioritet: lavere nice-værdi svarer til højere prioritet.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                <guilabel>ID</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få vist procesidentifikationsnummeret, også kaldet pid. Pid'en er et tal, der entydigt identificerer processen. Du kan bruge pid'en til at manipulere processen på kommandolinjen.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Memory</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få vist mængden af systemhukommelse, der i øjeblikket bruges af processen.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Security Context</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få vist sikkerhedskonteksten, hvori processen kører.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Command Line</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få vist kommandolinjen, der blev brugt til at starte processen, inklusive argumenter.</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-prefs-resmon">
+      <title>Ressourcer</title>
+        <variablelist>
+          <varlistentry>
+            <term lang="en"><guilabel>Graphs</guilabel></term>
+            <listitem>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Update interval in seconds</guilabel>
+                  </para>
+                  <para>Brug denne drejeboks til at angive, hvor ofte du vil have graferne i <application>Systemovervågning</application> opdateret.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Show network speed in bits</guilabel>
+                  </para>
+                  <para lang="en">
+                    Select this option to use bits instead of bytes for displaying network speed in the <application>System Monitor</application> graphs.
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-prefs-filesystems">
+      <title>Filsystemer</title>
+        <variablelist>
+          <varlistentry>
+            <term lang="en"><guilabel>Behavior</guilabel></term>
+            <listitem>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Update interval in seconds</guilabel>
+                  </para>
+                  <para>Brug denne drejeboks til at angive, hvor ofte du vil have tabellen <guilabel>Filsystemer</guilabel> opdateret.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Show all file systems</guilabel>
+                  </para>
+                  <para>Vælg denne indstilling for at få vist alle filsystemer, inklusive midlertidige og systemfilsystemer.</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+
+        </variablelist>
+    </sect2>
+
+  </sect1>
+
+</article>

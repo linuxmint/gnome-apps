@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="movingaround" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#reading"/>
+    <desc>Περιήγηση, κύλιση και εστίαση.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Στυλιανός Παπαναστασίου</mal:name>
+      <mal:email>stelios@dcs.gla.ac.uk</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μιχάλης Κοτσαρίνης</mal:name>
+      <mal:email>mk73628@gmail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Μετακίνηση μέσα σε έγγραφο</title>
+<p>Μπορείτε να μετακινηθείτε μέσα σε μια σελίδα του εγγράφου με οποιαδήποτε από τις ακόλουθες μεθόδους:</p>
+<list>
+ <item>
+  <p>Κύλιση πάνω και κάτω με τον τροχό του ποντικιού. Για μετακίνηση στη σελίδα απλά με κίνηση του ποντικιού:</p>
+ <steps>
+  <item><p>Δεξί κλικ στη σελίδα και επιλέξτε <gui>Αυτόματη κύλιση</gui>.</p></item>
+  <item><p>Μετακινήστε το δείκτη του ποντικιού προς το κάτω μέρος του παραθύρου για κύλιση προς τα κάτω· θα κυλήσει γρηγορότερα ανάλογα με το πόσο κάτω θα μετακινήσετε το παράθυρο.</p></item>
+ <item><p>Για να σταματήσετε την αυτόματη κύλιση, κάντε κλικ οπουδήποτε στο έγγραφο.</p></item>
+ </steps>
+ </item>
+ <item>
+  <p>Χρησιμοποιήστε τη γραμμή κύλισης στο παράθυρο του εγγράφου.</p>
+ </item>
+ <item>
+  <p>Χρησιμοποιήστε τα πάνω και κάτω πλήκτρα βέλους του πληκτρολογίου.</p>
+ </item>
+ <item>
+  <p>Συρθείτε γύρω από τη σελίδα με το ποντίκι σας, σαν να την κρατούσατε. Για να το κάνετε:</p>
+
+    <list>
+     <item>
+      <p>Μετακινήστε το δείκτη του ποντικιού πάνω από τη σελίδα και κρατήστε πατημένο το μεσαίο κουμπί για τη σύρετε ολόγυρα.</p>
+     </item>
+      <item>
+      <p>Αν δεν έχετε μεσαίο κουμπί στο ποντίκι σας, κρατήστε πατημένα το αριστερό και το δεξί κουμπί ταυτόχρονα και μετά σύρετε.</p>
+     </item>
+    </list>
+</item>
+</list>
+
+<section id="between-pages">
+  <title>Ξεφύλλισμα σελίδων</title>
+
+  <p>Μπορείτε να μετακινηθείτε μεταξύ των σελίδων ενός εγγράφου με μία από τις ακόλουθες μεθόδους:</p>
+
+  <list>
+   <item><p>Κλικ στα κουμπιά <gui>Προηγούμενο</gui> ή <gui>Επόμενο</gui> στη <link xref="toolbar">εργαλειοθήκη</link>.</p></item>
+   <item><p>Χρησιμοποιήστε το μενού μετάβαση:</p>
+    <list>
+     <item><p><guiseq><gui>Μετάβαση</gui><gui>Επόμενη σελίδα</gui></guiseq></p></item>
+     <item><p><guiseq><gui>Μετάβαση</gui><gui>Προηγούμενη σελίδα</gui></guiseq></p></item>
+    </list>
+   </item>
+  <item><p>Πατήστε τα κουμπιά <keyseq><key>Ctrl</key><key>Page Up</key></keyseq> ή <keyseq><key>Ctrl</key><key>Page Down</key></keyseq> στο πληκτρολόγιο.</p></item>
+  <item><p>Για να μεταβείτε σε συγκεκριμένη σελίδα:</p>
+  <list>
+   <item><p>Πληκτρολογήστε έναν αριθμό σελίδας στο εργαλείο 'επιλογή σελίδας' στην <link xref="toolbar">εργαλειοθήκη</link> και πατήστε <key>Εισαγωγή</key>.</p></item>
+   <item><p>Αν θέλετε να μεταβείτε στην αρχή ή το τέλος του εγγράφου:</p>
+     <list>
+       <item><p>Πατήστε <guiseq><gui>Μετάβαση</gui><gui>Πρώτη σελίδα</gui></guiseq>. Μπορείτε επίσης να πατήσετε <keyseq><key>Ctrl</key><key>Home</key></keyseq> στο πληκτρολόγιό σας.</p></item>
+       <item><p>Πατήστε <guiseq><gui>Μετάβαση</gui><gui>Τελευταία σελίδα</gui></guiseq> ή πατήσετε <keyseq><key>Ctrl</key><key>End</key></keyseq> στο πληκτρολόγιό σας.</p></item>
+     </list></item>
+    </list></item>
+  <item><p>Για να μετακινηθείτε δέκα σελίδες τη φορά, πατήστε <keyseq><key>Shift</key><key>Page Up</key></keyseq> ή <keyseq><key>Shift</key><key>Page Down</key></keyseq>.</p>
+
+  <note style="tip"><p>Μπορείτε να μετακινήστε μια σελίδα τη φορά, ως προεπιλογή. Αν επιθυμείτε να μετακινήστε μεταξύ των σελίδων απλά με κύλιση ή σύρσιμο, κλικ στο <guiseq><gui>Προβολή</gui><gui>Συνεχής</gui></guiseq>.</p></note>
+  </item>
+</list>
+
+</section>
+
+<section id="navigating">
+  <title>Περιήγηση με λίστα σελίδων ή πίνακα περιεχομένων</title>
+
+  <p>Για να κάνετε την πλευρική στήλη ορατή πατήστε <guiseq><gui>Προβολή</gui><gui>Πλευρική στήλη</gui></guiseq> στη εργαλειοθήκη ή πατήστε το <key>F9</key> στο πληκτρολόγιο. Θα πρέπει να δείτε μια προεπισκόπηση όλων των σελίδων στο έγγραφο.</p>
+
+  <p>Μπορείτε να μετακινηθείτε μεταξύ των σελίδων με κλικ σε αυτές στην πλευρική στήλη.</p>
+
+  <note>
+  <p>Μερικά έγγραφα έχουν ευρετήριο ή πίνακα περιεχομένων, τα οποία μπορείτε να εμφανίσετε στην πλευρική στήλη. Κάντε κλικ στην πτυσσόμενη λίστα στην κορυφή της πλευρικής στήλης και επιλέξτε <gui>Ευρετήριο</gui> για να τα προβάλετε.</p>
+  <note style="tip"><p>Τα περισσότερα έγγραφα δεν χρησιμοποιούν αυτό το γνώρισμα, έτσι δεν θα μπορέσετε να προβάλετε το ευρετήριο τους στην πλευρική στήλη.</p></note>
+</note>
+
+</section>
+
+<section id="zoom">
+ <title>Μεγέθυνση και σμίκρυνση</title>
+ <list>
+ <item><p>Πατήστε <guiseq><gui>Προβολή</gui><gui>Μεγέθυνση</gui></guiseq> ή χρησιμοποιήστε τη συντόμευση πληκτρολογίου <keyseq><key>Ctrl</key><key>+</key></keyseq> για μεγέθυνση.</p></item>
+<item><p>Πατήστε <guiseq><gui>Προβολή</gui><gui>Σμίκρυνση</gui></guiseq> ή χρησιμοποιήστε τη συντόμευση πληκτρολογίου <keyseq><key>Ctrl</key><key>-</key></keyseq> για σμίκρυνση.</p></item>
+</list>
+
+<p>Εναλλακτικά, μπορείτε να κάνετε ένα από τα ακόλουθα:</p>
+<list>
+ <item><p>κρατήστε πατημένο το <key>Ctrl</key> και χρησιμοποιήστε τον τροχό του ποντικιού για εστίαση.</p></item>
+ <item><p>επιλέξτε το επιθυμητό ποσοστό εστίασης από το πτυσσόμενο μενού πάνω από το παράθυρο.</p>
+ <media type="image" src="figures/zoom.png"/>
+ </item>
+</list>
+<note>
+<p>Η επιλογή <gui>Βέλτιστη προσαρμογή</gui> θα κάνει τη σελίδα του εγγράφου να προσαρμόζει ολόκληρο το <em>ύψος</em> του παραθύρου.</p>
+<p>Η επιλογή <gui>Προσαρμογή πλάτους σελίδας</gui> θα κάνει τη σελίδα του εγγράφου να γεμίζει όλο το <em>πλάτος</em> του παραθύρου.</p>
+<p>Αν θέλετε να βλέπετε δύο σελίδες ταυτόχρονα, τη μια δίπλα στην άλλη, όπως στα βιβλία, κλικ στο <guiseq><gui>Προβολή</gui><gui>Διπλή</gui></guiseq>.</p>
+</note>
+<p>Μπορείτε να χρησιμοποιήσετε ολόκληρη την οθόνη σας για να προβάλετε το έγγραφο:</p>
+
+<list>
+   <item><p>Πατήστε <guiseq><gui>Προβολή</gui><gui>Πλήρης οθόνη</gui></guiseq> ή πατήστε το <key>F11</key>.</p></item>
+   <item><p>Για έξοδο από τη λειτουργία πλήρους οθόνης:</p>
+    <list>
+      <item><p>Πατήστε το <key>F11</key> ή το <key>Escape</key></p></item>
+      <item><p>ή κλικ στο κουμπί <gui>Έξοδος από πλήρη οθόνη</gui> στην κορυφή της οθόνης.</p></item>
+    </list>
+   </item>
+</list>
+</section>
+
+</page>

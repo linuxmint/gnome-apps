@@ -1,0 +1,468 @@
+# translation of lv.po to Latvian
+# gnome-utils for Latvian
+# Copyright (C) 2000, 2006, 2007, 2009 Free Software Foundation, Inc.
+# Pēeris Krišjāis <peterisk@apollo.lv>, 2000.
+# Artis Trops <hornet@navigators.lv>, 2000.
+# sTYLEeX <styleex@inbox.lv>, 2006.
+# Raivis Dejus <orvils@gmail.com>, 2006, 2007, 2009.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2010, 2011.
+# Rudolfs <rudolfs.mazurs@gmail.com>, 2011.
+# Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: lv\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2011-09-07 11:37+0300\n"
+"Last-Translator: Rūdofls Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 1.1\n"
+
+# logview/logview.c:268
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "Žurnāla failu skatītājs"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Skatīt vai novērot sistēmas žurnāla failu"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "Galvenā loga augstums pikseļos"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "Saraksts ar saglabātiem filtriem"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "Saraksts ar saglabātiem regulāro izteiksmju filtriem"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "Žurnāla fails, ko atvērt pēc palaišanas"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "Žurnālu faili, kurus atvērt pēc palaišanas"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "Žurnāla rādīšanai izmantotais fonts"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"Norāda pēc palaišanas atveramo žurnālu failu sarakstu. Noklusētais saraksts "
+"tiek izveidots, nolasot /etc/syslog.conf."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "Norāda žurnālu skatītāja galvenā loga augstumu pikseļos."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"Norāda pēc palaišanas rādāmo žurnāla failu. Noklusētais ir vai nu /var/adm/"
+"messages vai arī /var/log/messages, atkarībā no jūsu operētājsistēmas."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"Norāda fiksētā platuma fonta izmēru, kurš tiek lietots žurnāla rādīšanai "
+"galvenā koka skatā. Noklusētā vērtība tiek ņemta no termināļa noklusētā "
+"fonta izmēra."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "Norāda žurnālu skatītāja galvenā loga platumu pikseļos."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "Galvenā loga platums pikseļos"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "Fons:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "Efekts:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "Priekšplāns:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "Slēpt"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "Izcelt"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "_Nosaukums:"
+
+# gsearchtool/gsearchtool.c:49
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "_Regulāra izteiksme:"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"Šī ir brīva programmatūra; jūs varat to brīvi modificēt un/vai izplatīt "
+"saskaņā ar Free Software Foundation GNU Vispārējās publiskās licences 2 vai "
+"kādas brīvi izvēlētas vēlākas versijas noteikumiem."
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"Šī programma tiek izplatīta ar cerību, ka tā būs noderīga, tā tiek izplatīta "
+"BEZ JEBKĀDAS GARANTIJAS vai DERĪBAS KĀDAM MĒRĶIM. Sīkāku informāciju "
+"meklējiet GNU Vispārējās publiskās licences tekstā."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"Jums vajadzēja kopā ar šo programmu saņemt GNU General Public License "
+"kopiju. Ja tas tā nav, tad rakstiet Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"Raivis Dejus <orvils@gmail.com>\n"
+"Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "Nevar atvērt failu %s"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "Filtra nosaukums ir tukšs!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "Filtra nosaukums nevar saturēt ':' rakstzīmi"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "Regulārā izteiksme ir tukša!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "Regulārā izteiksme ir nederīga: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "Lūdzu, norādiet priekšplāna vai fona krāsu!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "Rediģēt filtru"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "Pievienot jaunu filtru"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "Filtri"
+
+# gdictsrc/gdict-app.c:381
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_Meklēt:"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "Meklēt iepriekšējo"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "Meklēt iepriekšējo virknes parādīšanos"
+
+# gdictsrc/gdict-app.c:381
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "Meklēt nākamo"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "Meklēt nākamo virknes parādīšanos"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "Attīrīt meklēšanas virkni"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr ""
+"Kļūda, atarhivējot ar GZip saarhivētu žurnālu. Iespējams fails ir bojāts."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "Jums nav nepieciešamo atļauju, lai lasītu šo failu."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "Fails nav normāls fails vai arī nav teksta fails."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr "Šī sistēmas žurnālu versija neatbalsta ar GZip arhivētus žurnālus."
+
+# gdictsrc/gdict-app.c:117
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "Ielādē..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Rādīt lietotnes versiju"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[LOGFILE...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - pārlūko un novēro sistēmas žurnālus"
+
+# logview/logview.c:268
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "Žurnālu skatītājs"
+
+# logview/logview.c:268
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "Sistēmas žurnālu skatītājs"
+
+# logview/info.c:165
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "pēdējās izmaiņas: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d rindas (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "Atvērt žurnālu"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Kļūda, parādot palīdzību: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "Apliekts"
+
+# gdictsrc/gdict-app.c:133 gdictsrc/gdict-app.c:266
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "Netika atrasts"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "GNOME sistēmas žurnāla skatītājs."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "_Fails"
+
+# logview/actions.c:120
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "R_ediģēt"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "_Skats"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "_Filtri"
+
+# gcharmap/src/interface.c:208 gnome-find/gnome-find.c:89
+# gstripchart/gstripchart.c:1784 gstripchart/gstripchart.c:2071
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "_Palīdzība"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "_Atvērt..."
+
+# logview/logview.c:674
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "Atvērt žurnāla failu"
+
+# gcharmap/src/interface.c:190 mini-utils/gcolorsel/menus.c:93
+# mini-utils/gcolorsel/menus.c:954 mini-utils/gshutdown/gshutdown.c:153
+# mini-utils/gshutdown/gshutdown.c:594 mini-utils/gsu/gsu-gui-api.c:39
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "Aiz_vērt"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "Aizvērt šo žurnālu"
+
+# logview/actions.c:120
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "_Iziet"
+
+# logview/logview.c:268
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "Iziet no žurnālu skatītāja"
+
+# gcharmap/src/interface.c:71 gcharmap/src/interface.c:196
+# gdictsrc/gdict-app.c:520 gtt/toolbar.c:163
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "_Kopēt"
+
+# gcharmap/src/interface.c:76
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "Kopēt izvēlēto"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "Izvēlēties _visu"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "Izvēlēties visu žurnālu"
+
+# gdictsrc/gdict-pref-dialog.c:161
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "_Meklēt..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "Meklēt vārdu vai frāzi žurnālā"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "Lielāks teksta izmērs"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "Mazāks teksta izmērs"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "Normāls teksta izmērs"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "Pārvaldīt filtrus"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "Pārvaldīt filtrus"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "_Saturs"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "Atvērt palīdzības saturu žurnālu skatītājam"
+
+# gdictsrc/gdict-applet.c:130 mini-utils/gcolorsel/menus.c:1098
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "P_ar"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "Parādīt dialogu par žurnālu skatītāju"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "_Statusa josla"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "Rādīt statusa joslu"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "Sānu _rūts"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "Parādīt sānu rūti"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "Rādīt tikai atbilstošas"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "Rādīt tikai tās rindas, kas atbilst kādam no dotajiem filtriem"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "_Automātiskā ritināšana"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "Automātiski ritināt, kad parādās jaunas rindas"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "Nevar nolasīt no \"%s\""
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "Versija: "
+
+# logview/logrtns.c:202
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "Nevar atvērt sekojošus failus:"

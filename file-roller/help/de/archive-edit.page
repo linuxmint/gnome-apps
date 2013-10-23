@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-edit" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <link type="seealso" xref="archive-create"/>
+    <revision pkgversion="3.4" date="2011-12-08" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>Den Inhalt Ihres Archivs ändern.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jpetersen@jpetersen.org</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008, 2009, 2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@googlemail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ein Archiv bearbeiten</title>
+
+  <p>Der <app>Archivmanager</app> ermöglicht die Bearbeitung vorhandener Archive durch Hinzufügen und Entfernen von Dateien oder durch Ändern der Namen. Gehen Sie mit Ordnern genauso um wie mit Dateien.</p>
+
+  <terms>
+    <item>
+    <title>Dateien hinzufügen</title>
+    <p>Fügen Sie Dateien einem bestehenden Archiv hinzu, indem Sie den Anweisungen auf der Seite <link xref="archive-create"/> folgen.</p>
+    </item>
+    <item>
+    <title>Dateien entfernen</title>
+      <steps>
+        <item><p>Wählen Sie die Datei.</p></item>
+        <item><p>Wählen Sie <guiseq><gui style="menu">Bearbeiten</gui><gui style="menuitem">Löschen</gui></guiseq> oder klicken Sie mit der rechten Maustaste auf die gewählte Datei und wählen Sie <gui>Löschen</gui>.</p></item>
+      </steps>
+    </item>
+    <item>
+    <title>Dateien umbenennen</title>
+      <steps>
+        <item><p>Wählen Sie die Datei.</p></item>
+        <item><p>Wählen Sie <guiseq><gui style="menu">Bearbeiten</gui><gui style="menuitem">Umbenennen</gui></guiseq> oder klicken Sie mit der rechten Maustaste auf die gewählte Datei und wählen Sie <gui>Umbenennen</gui>.</p></item>
+        <item><p>Geben Sie den Namen der neuen Datei in den geöffneten Dialog ein.</p></item>
+        <item><p>Bestätigen Sie den Namen durch einen Klick auf <gui>Umbenennen</gui>.</p></item>
+      </steps>
+    </item>
+  </terms>
+
+</page>

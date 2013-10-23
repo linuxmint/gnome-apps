@@ -1,0 +1,444 @@
+# gnome-utils ko.po
+# This file is distributed under the same license as the gnome-util package.
+#
+# update by Young-Ho, Cha <ganadist@chollian.net>, 2001
+# Changwoo Ryu <cwryu@debian.org>, 1998, 2002-2006, 2007, 2008, 2009, 2010, 2011.
+#
+# 새로 번역하시는 분은 아래 translator-credits에 추가하세요.
+#
+# 주의:
+# - Baobab은 "바오밥"으로 음역
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2011-09-23 06:19+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "로그 파일 보기"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "시스템의 로그 파일을 보거나 상태 변화를 봅니다"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "기본 창 높이(픽셀)"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "저장한 필터 목록"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "저장한 정규식 필터 목록"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "시작할 때 열어 볼 로그 파일"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "시작할 때 열어 볼 로그 파일"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "로그 보기에서 쓰이는 글꼴의 크기"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"시작할 때 열어 볼 로그 파일의 목록을 지정합니다. 기본 목록은 /etc/syslog."
+"conf 파일을 읽어서 만듭니다."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "로그 보기 프로그램의 기본창 높이(픽셀)."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"시작할 때 열어 볼 로그 파일을 지정합니다. 기본값은 운영체제에 따라 /var/adm/"
+"messages 아니면 /var/log/messages입니다."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"기본 로그 보기에서 쓰이는 고정폭 글꼴의 크기를 지정합니다. 터미널 글꼴 크기"
+"를 기본값으로 가져옵니다."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "로그 보기 프로그램 기본 창의 너비를 픽셀로 지정합니다."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "기본 창 너비(픽셀)"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "배경:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "효과:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "전경:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "숨기기"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "강조"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "이름(_N):"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "정규식(_R):"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"이 프로그램은 자유 소프트웨어입니다. 소프트웨어의 피양도자는 자유 소프트웨어 "
+"재단이 공표한 GNU 일반 공중 사용 허가서 2판 또는 그 이후 판을 임의로 선택해"
+"서, 그 규정에 따라 프로그램을 개작하거나 재배포할 수 있습니다."
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"이 프로그램은 유용하게 사용될 수 있으리라는 희망에서 배포되고 있지만, 특정한 "
+"목적에 맞는 적합성 여부나 판매용으로 사용할 수 있으리라는 묵시적인 보증을 포"
+"함한 어떠한 형태의 보증도 제공하지 않습니다. 보다 자세한 사항에 대해서는 GNU "
+"일반 공중 사용 허가서를 참고하시기 바랍니다."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"GNU 일반 공중 사용 허가서는 이 프로그램과 함께 제공됩니다. 만약, 이 문서가 누"
+"락되어 있다면 다음으로 연락하십시오: Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"류창우 <cwryu debian.org>\n"
+"차영호 <ganadist gmail.com>"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "%s 파일을 열 수 없습니다"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "필터 이름이 비었습니다!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "필터 이름에는 ':' 문자가 들어갈 수 없습니다"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "정규식이 비었습니다!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "정규식이 올바르지 않습니다: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "전경색 혹은 배경색을 지정하십시오!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "필터 편집"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "새 필터 추가"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "필터"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "찾기(_F):"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "이전 찾기"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "이전에 있는 검색 문자열을 찾습니다"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "다음 찾기"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "다음에 있는 검색 문자열을 찾습니다"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "검색 문자열 지우기"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr ""
+"GZIP 압축한 로그의 압축을 푸는 중 오류가 발생했습니다. 파일이 손상되었을 수 "
+"있습니다."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "파일을 읽을 권한이 없습니다."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "파일이 일반 파일이 아니거나 텍스트 파일이 아닙니다."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr "이 시스템 로그는 GZIP 압축한 로그를 지원하지 않습니다."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "읽어들이는 중입니다..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "프로그램의 버전을 봅니다"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[로그파일...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - 로그를 찾아보고 감시합니다"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "시스템 로그 보기"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "시스템 로그 보기"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "마지막 업데이트: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d번째 줄 (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "로그 열기"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "도움말을 표시하는 데 오류가 발생했습니다: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "반대쪽부터 다시 찾음"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "일치 하는것이 없습니다"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "그놈 시스템 로그 보기 프로그램."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "파일(_F)"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "편집(_E)"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "보기(_V)"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "필터(_F)"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "도움말(_H)"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "열기(_O)..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "파일에서 로그 열기"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "닫기(_C)"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "이 로그를 닫습니다"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "끝내기(_Q)"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "로그 보기 프로그램을 끝냅니다"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "복사(_C)"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "선택한 부분을 복사합니다"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "모두 선택(_A)"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "전체 로그를 선택합니다"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "찾기(_F)..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "로그에서 단어나 문구를 찾아 봅니다"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "큰 글자 크기"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "작은 글자 크기"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "보통 글자 크기"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "필터 관리"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "필터 관리"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "차례(_C)"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "로그 보기 프로그램에 대한 도움말의 차례를 엽니다"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "정보(_A)"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "로그 보기 프로그램의 정보 대화 상자를 봅니다"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "상태 표시줄(_S)"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "상태 표시줄을 봅니다"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "가장자리 창(_P)"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "가장자리 창을 표시합니다"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "맞는 항목만 표시"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "필터에 하나라도 맞는 줄만 표시합니다"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "자동 스크롤(_A)"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "새 줄이 나타나면 자동으로 스크롤합니다"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "\"%s\"에서 읽을 수 없습니다"
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "버전: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "다음 파일을 열 수 없습니다:"

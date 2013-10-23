@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="base" xml:lang="ca">
+
+    <info>
+        <link type="guide" xref="index#number"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Joan Duran</mal:name>
+      <mal:email>jodufi@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sergi Morraja</mal:name>
+      <mal:email>sergi256@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Bases numèriques</title>
+    
+    <p>Per introduir números en una base en concret utilitzeu <link xref="superscript">números de subíndexs</link>. Els números següents són equivalents.</p>
+    <example>
+    <p>1001011₂</p>    
+    <p>113₈</p>
+    <p>75</p>
+    <p>4B₁₆</p>
+    </example>
+    <p>En el <link xref="mouse">mode de programació</link> hi ha botons pel sistema binari (<keyseq><key>Ctrl</key><key>B</key></keyseq>), l'octal (<keyseq><key>Ctrl</key><key>O</key></keyseq>) i l'hexadecimal (<keyseq><key>Ctrl</key><key>H</key></keyseq>). </p>
+    <p>Per establir la base en que es mostren els resultats canvieu el <link xref="number-display">format del resultat</link>.</p>
+    <p>Per canviar la base del resultat actual utilitzeu els botons de bases o <keyseq><key>Ctrl</key><key>D</key></keyseq> per mostrar la forma decimal.</p>
+</page>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-open" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <revision pkgversion="3.4" date="2011-12-08" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>Άνοιγμα υπάρχοντος συμπιεσμένου αρχείου</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Άνοιγμα ενός συμπιεσμένου αρχείου</title>
+
+  <p>Μπορείτε να ανοίξετε ένα υπάρχον συμπιεσμένο αρχείο με τον <application>Διαχειριστή συμπιεσμένων αρχείων</application>:</p>
+
+  <list>
+    <item>
+      <p>κάνοντας κλικ στο κουμπί της εργαλειοθήκης <gui>Άνοιγμα</gui></p>
+    </item>
+    <item>
+      <p>κάνοντας κλικ στο <guiseq><gui style="menu">Συμπιεσμένο αρχείο</gui> <gui style="menuitem">Άνοιγμα</gui></guiseq></p>
+    </item>
+  </list>
+
+  <p>Επίσης μπορείτε να χρησιμοποιήσετε την επιλογή <gui>Άνοιγμα πρόσφατα</gui>:</p>
+
+  <list>
+    <item>
+      <p>κάνοντας κλικ στο κουμπί της εργαλειοθήκης <media type="image" mime="image/png" src="figures/file-roller-open-recent.png"> Άνοιγμα ενός πρόσφατα χρησιμοποιημένου συμπιεσμένου αρχείου</media> και επιλέγοντας ένα αρχείο</p>
+    </item>
+    <item>
+      <p>κάνοντας κλικ στο <guiseq><gui style="menu">Συμπιεσμένο αρχείο</gui> <gui style="menuitem">Άνοιγμα πρόσφατου</gui></guiseq> για να δείτε τα πρόσφατα χρησιμοποιούμενα συμπιεσμένα αρχεία.</p>
+    </item>
+  </list>
+
+  <note>
+    <p>Αν ο <app>Διαχειριστής συμπιεσμένων αρχείων</app> δε μπορεί να ανοίξει τα πρόσφατα χρησιμοποιημένα αρχεία και εμφανίζει το μήνυμα λάθους <gui>Το αρχείο δεν υπάρχει</gui>, τότε μπορεί να έχει αλλάξει η τοποθεσία του συμπιεσμένου αρχείου. Δοκιμάστε την επιλογή <gui>Άνοιγμα</gui> για να το αναζητήσετε.</p>
+  </note>
+
+</page>

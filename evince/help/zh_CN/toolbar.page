@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="toolbar" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <desc><link xref="toolbar#view">显示，隐藏</link> 和 <link xref="toolbar#edit">编辑</link> 工具栏。</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  </info>
+
+<title>工具栏</title>
+
+<section id="view">
+<title>显示和隐藏工具栏</title>
+  <p>单击 <guiseq><gui>查看</gui><gui>工具栏</gui></guiseq>。</p>
+<p>默认的工具栏仅包括基本工具：</p>
+<media type="image" src="figures/evince-toolbar-default.png" width="475"/>
+<list>
+<item><p>可用来在页面之间 <link xref="movingaround#between-pages">移动</link> 的 <gui>上一页</gui> 和 <gui>下一页</gui>。</p></item>
+<item><p>一个调节 <link xref="movingaround#zoom">缩放</link> 级别的工具。&gt;</p></item>
+<item><p>页面选择 <link xref="movingaround#between-pages">工具。</link></p></item>
+</list>
+<p>如果您倾向于不同的组合您可以 <link xref="toolbar#modify">编辑</link> 工具栏。</p>
+</section>
+
+<section id="modify">
+<title>添加，移除和重新安排工具栏中的工具。</title>
+<steps>
+<item><p><link xref="toolbar#view">显示</link> 工具栏。</p></item>
+<item><p>单击 <guiseq><gui>编辑</gui><gui>工具栏</gui></guiseq>。</p></item>
+</steps>
+<p><gui>工具栏编辑器</gui> 包括不在工具栏中的项目和分隔符。</p>
+<media type="image" src="figures/evince-toolbar-editor.png" width="475"/>
+
+<terms>
+  <item><title>在工具栏中添加新项目：</title>
+        <p>将它们从工具栏编辑器中拖动到工具栏上。</p></item>
+
+  <item><title>从工具栏中移除项目：</title>
+        <p>将它们从工具栏中拖动到工具栏编辑器上。</p></item>
+
+   <item><title>要重新安排工具栏中的项目：</title>
+         <p>将它们拖动到工具栏上的新位置。</p></item>
+</terms>
+<p>当您结束编辑工具栏后，点击工具栏编辑器窗口中的 <gui>关闭</gui>。</p>
+</section>
+</page>

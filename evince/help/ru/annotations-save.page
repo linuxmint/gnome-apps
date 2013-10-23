@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="annotations-save" xml:lang="ru">
+<info>
+  <link type="guide" xref="index#annotations"/>
+ <desc>Как сохранять аннотации.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Тифани Антопольски (Tiffany Antopolski)</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+</info>
+<title>Сохранение копии документа PDF с аннотациями</title>
+ <p>Чтобы сохранить копию документа PDF с аннотациями с помощью <app>приложения для просмотра документов</app> или другого приложения для просмотра PDF, которое <em>поддерживает аннотации</em>:</p>
+  <steps>
+   <item>
+     <p>
+      <guiseq><gui>File</gui><gui>Save a copy</gui></guiseq>
+     </p>
+   </item>
+   <item>
+     <p>Выберите имя файла и папку, в которой должен быть сохранён файл, затем нажмите <gui>Сохранить</gui>. PDF будет сохранён в указанной папке.</p>
+    </item>
+   </steps>
+   <p>Аннотации добавляются согласно спецификации PDF, поэтому большинство приложений для чтения PDF смогут их прочитать. Приложения для просмотра документов Okular не поддерживает аннотации. Adobe Reader поддерживает аннотации.</p>
+
+</page>

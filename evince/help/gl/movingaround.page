@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="movingaround" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#reading"/>
+    <desc>Navegar, desprazarse e ampliar.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Diéguez</mal:name>
+      <mal:email>frandieguez@ubuntu.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Moverse no documento</title>
+<p>Pode moverse por cada páxina do documento das seguintes formas:</p>
+<list>
+ <item>
+  <p>Desprazándose co rato cara arriba ou cara abaixo. Para moverse por unha páxina movendo o rato:</p>
+ <steps>
+  <item><p>Prema co botón dereito sobre a páxina e seleccione <gui>Autodesprazar</gui>.</p></item>
+  <item><p>Mova o punteiro do rato cara a parte inferior da xanela para desprazarse cara abaixo, isto desprazarase máis rápido dependendo de canto de perto estea da parte inferior da xanela.</p></item>
+ <item><p>Para deter o autodesprazamento prema en calquera lugar do documento.</p></item>
+ </steps>
+ </item>
+ <item>
+  <p>Usar a barra de desprazamento na xanela do documento.</p>
+ </item>
+ <item>
+  <p>Usar as frechas de cursor arriba e abaixo do seu teclado.</p>
+ </item>
+ <item>
+  <p>Arrastrar unha páxina co seu rato, como se a agarrara. Para facer isto:</p>
+
+    <list>
+     <item>
+      <p>Mova o seu punteiro do rato sobre a páxina mentres mantén o botón do medio do rato para arrastrala.</p>
+     </item>
+      <item>
+      <p>Se non ten un botón medio no rato, manteña os botóns esquerdo e dereito do rato ao mesmo tempo, e logo arrastre.</p>
+     </item>
+    </list>
+</item>
+</list>
+
+<section id="between-pages">
+  <title>Cambiar entre páxinas</title>
+
+  <p>Pode moverse entre as páxinas do documento usando un dos seguintes métodos:</p>
+
+  <list>
+   <item><p>Prema sobre os botón <gui>Anterior</gui> ou <gui>Seguinte</gui> da <link xref="toolbar">barra de ferramentas</link>..</p></item>
+   <item><p>Use o menú Ir:</p>
+    <list>
+     <item><p><guiseq><gui>Ficheiro</gui><gui>Seguinte páxina</gui></guiseq></p></item>
+     <item><p><guiseq><gui>Ficheiro</gui><gui>Páxina anterior</gui></guiseq></p></item>
+    </list>
+   </item>
+  <item><p>Prema os botóns <keyseq><key>Ctrl</key><key>Av Páx</key></keyseq> ou <keyseq><key>Ctrl</key><key>Ret Páx</key></keyseq> no seu teclado</p></item>
+  <item><p>Ir a unha páxina específica:</p>
+  <list>
+   <item><p>Escriba o número de páxina na caixa de texto desde a <link xref="toolbar">barra de ferramentas</link> e prema <key>Intro</key>.</p></item>
+   <item><p>Se quere ir ao comezo ou final dun documento:</p>
+     <list>
+       <item><p>Prema <guiseq><gui>Ir</gui><gui>Primeira páxina</gui></guiseq>. Tamén poe premer <keyseq><key>Ctrl</key><key>Inicio</key></keyseq> desde o seu teclado.</p></item>
+       <item><p>Prema <guiseq><gui>Ir</gui><gui>Última páxina</gui></guiseq> ou prema <guiseq><gui>Ctrl</gui><gui>Fin</gui></guiseq> no seu teclado.</p></item>
+     </list></item>
+    </list></item>
+  <item><p>Para avanzar 10 páxinas á vez prema <keyseq><key>Maiús</key><key>Ret Páx</key></keyseq> ou <keyseq><key>Maiús</key><key>Av Páx</key></keyseq>.</p>
+
+  <note style="tip"><p>Só pode moverse ao redor dunha páxina á vez. Se quere moverse entre páxinas desprazándose ou arrastrando, prema <guiseq><gui>Ver</gui><gui>Continuo</gui></guiseq>.</p></note>
+  </item>
+</list>
+
+</section>
+
+<section id="navigating">
+  <title>Navegar cunha lista de páxinas ou unha táboa de contidos</title>
+
+  <p>Prema facer visíbel o panel lateral <guiseq><gui>Ver</gui><gui>Panel lateral</gui></guiseq> sobre a barra de ferramentas, ou prema <key>F9</key> no seu teclado. Debería ver unha vista previa de todas as páxinas do documento.</p>
+
+  <p>Pode moverse entre as páxinas premendo sobre elas no panel lateral.</p>
+
+  <note>
+  <p>Algúns documentos teñen un índice ou táboa de contidos que pode mostrar no panel lateral. Prema na lista despregábel na parte superior do panel lateral e seleccione <gui>Índice</gui> para mostralo.</p>
+  <note style="tip"><p>A maioría dos documentos no usan esta característica, polo que on poderá ver o seu índice no panel lateral.</p></note>
+</note>
+
+</section>
+
+<section id="zoom">
+ <title>Ampliar e reducir</title>
+ <list>
+ <item><p>Prema <guiseq><gui>Ver</gui><gui/>Aumentar</guiseq> ou empregue os atallos do teclado <keyseq><key>Ctrl</key><key>+</key></keyseq> para aumentalo.</p></item>
+<item><p>Prema <guiseq><gui>Ver</gui><gui/>Reducir</guiseq> ou empregue os atallos do teclado <keyseq><key>Ctrl</key><key>-</key></keyseq> para reducilo.</p></item>
+</list>
+
+<p>De forma alternativa, pode facer unha das seguintes alternativas:</p>
+<list>
+ <item><p>manter presionado <key>Ctrl</key> e usar a roda do seu rato para aumentar.</p></item>
+ <item><p>seleccionar a porcentaxe de aumento desexada desde o menú despregábel na parte superior da xanela.</p>
+ <media type="image" src="figures/zoom.png"/>
+ </item>
+</list>
+<note>
+<p>A opción <gui>Axuste óptimo</gui> fai que a páxina do documento se axuste á <em>altura</em> da xanela.</p>
+<p>A opción <gui>Axustar á largura da páxina</gui> fai que a páxina do documento se axuste ao <em>ancho</em> da xanela.</p>
+<p>Se quere ver dúas páxinas á vez, lado a lado, como un libro, prema <guiseq><gui>Ver</gui><gui>Dual</gui></guiseq>.</p>
+</note>
+<p>Pode usar toda a súa pantalla par ver o documento:</p>
+
+<list>
+   <item><p>Prema <guiseq><gui>Ver</gui><gui>Pantalla completa</gui></guiseq> ou prema <key>F11</key>.</p></item>
+   <item><p>Para saír do modo pantalla completa:</p>
+    <list>
+      <item><p>Prema <key>F11</key> ou <key>Escape</key></p></item>
+      <item><p>ou prema o botón <gui>Saír do modo pantalla completa</gui> na parte superior da xanela</p></item>
+    </list>
+   </item>
+</list>
+</section>
+
+</page>

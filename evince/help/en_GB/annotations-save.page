@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="annotations-save" xml:lang="en-GB">
+<info>
+  <link type="guide" xref="index#annotations"/>
+ <desc>How to save your annotations.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+</info>
+<title>Save a copy of an annotated PDF</title>
+ <p>
+  To save a copy of your annotated PDF for future viewing using the <app>document viewer</app> or any other PDF viewer <em>that supports annotations</em>:
+ </p>
+  <steps>
+   <item>
+     <p>
+      <guiseq><gui>File</gui><gui>Save a copy</gui></guiseq>
+     </p>
+   </item>
+   <item>
+     <p>
+      Choose a name and folder in which to save the file, then click <gui>Save</gui>.
+      The PDF will be saved in the folder you chose.
+     </p>
+    </item>
+   </steps>
+   <p>
+   Annotations are added according to the PDF specification. Therefore, most PDF readers should be able to read them. The Okular document viewer does not support them. Adobe Reader is known to work.
+   </p>
+
+</page>

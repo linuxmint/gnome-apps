@@ -1,0 +1,1567 @@
+# Uighur translation for file-roller
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Sahran <sahran@live.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: file-roller\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=file-"
+"roller&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-04-04 19:44+0000\n"
+"PO-Revision-Date: 2011-04-20 13:57+0600\n"
+"Last-Translator: Sahran <sahran.ug@gmail.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../copy-n-paste/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "ھۆججەت ئىناۋەتلىك .desktop ھۆججىتى ئەمەس."
+
+#: ../copy-n-paste/eggdesktopfile.c:190
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "تونۇيالمىغان ئۈستەلئۈستى ھۆججەت نەشرى '%s'"
+
+#: ../copy-n-paste/eggdesktopfile.c:970
+#, c-format
+msgid "Starting %s"
+msgstr "%s قوزغىلىۋاتىدۇ"
+
+#: ../copy-n-paste/eggdesktopfile.c:1112
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "پىروگرامما بۇيرۇق قۇرىدا پۈتۈكنى قوبۇل قىلالمايدۇ"
+
+#: ../copy-n-paste/eggdesktopfile.c:1180
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "تونۇمايدىغان ئىجرا تاللانمىسى: %d"
+
+#: ../copy-n-paste/eggdesktopfile.c:1385
+#, c-format
+msgid "Can't pass documents to this desktop element"
+msgstr "بۇ ئۈستەلئۈستى ئېلېمېنتقا پۈتۈك يەتكۈزەلمەيدۇ"
+
+#: ../copy-n-paste/eggdesktopfile.c:1406
+#, c-format
+msgid "Not a launchable item"
+msgstr "ئىجراچان تۈر ئەمەس"
+
+#: ../copy-n-paste/eggsmclient.c:226
+msgid "Disable connection to session manager"
+msgstr "ئەڭگىمە باشقۇرغۇچقا باغلىنىشنى چەكلە"
+
+#: ../copy-n-paste/eggsmclient.c:229
+msgid "Specify file containing saved configuration"
+msgstr "سەپلىمە ساقلانغان ھۆججەتنى بەلگىلە"
+
+#: ../copy-n-paste/eggsmclient.c:229
+msgid "FILE"
+msgstr "ھۆججەت"
+
+#: ../copy-n-paste/eggsmclient.c:232
+msgid "Specify session management ID"
+msgstr "ئەڭگىمە باشقۇرغۇ ID سېنى بەلگىلە"
+
+#: ../copy-n-paste/eggsmclient.c:232
+msgid "ID"
+msgstr "ID"
+
+#: ../copy-n-paste/eggsmclient.c:253
+msgid "Session management options:"
+msgstr "ئەڭگىمە باشقۇرغۇچ تاللانمىلىرى:"
+
+#: ../copy-n-paste/eggsmclient.c:254
+msgid "Show session management options"
+msgstr "ئەڭگىمە باشقۇرغۇچ تاللانمىلىرىنى كۆرسەت"
+
+#: ../data/file-roller.desktop.in.in.h:1 ../src/fr-window.c:1996
+#: ../src/fr-window.c:5452
+msgid "Archive Manager"
+msgstr "ئارخىپ باشقۇرغۇچ"
+
+#: ../data/file-roller.desktop.in.in.h:2
+msgid "Create and modify an archive"
+msgstr "ئارخىپ قۇرۇپ ئۆزگەرت"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:1
+msgid "Compression level"
+msgstr "پرېسلاش دەرىجىسى"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:2
+msgid ""
+"Compression level used when adding files to an archive. Possible values: "
+"very-fast, fast, normal, maximum."
+msgstr ""
+"پرېسلاش دەرىجىسى ھۆججەتنى ئارخىپقا قوشقاندا ئىشلىتىلىدۇ. قىممەتلىرى: "
+"ئىنتايىن تېز، تېز، نورمال، ئەڭ چوڭ"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:3
+msgid "Default volume size"
+msgstr "كۆڭۈلدىكى دىسكا چوڭلۇقى"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:4
+msgid "Display path"
+msgstr "يولنى كۆرسەت"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:5
+msgid "Display size"
+msgstr "چوڭلۇقىنى كۆرسىتىدۇ"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:6
+msgid "Display the path column in the main window."
+msgstr "ئاساسىي كۆزنەكتە يول ئىستونىنى كۆرسىتىدۇ"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:7
+msgid "Display the size column in the main window."
+msgstr "ئاساسىي كۆزنەكتە چوڭلۇق ئىستونىنى كۆرسىتىدۇ"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:8
+msgid "Display the time column in the main window."
+msgstr "ئاساسىي كۆزنەكتە ۋاقىت ئىستونىنى كۆرسىتىدۇ"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:9
+msgid "Display the type column in the main window."
+msgstr "ئاساسىي كۆزنەكتە تىپ ئىستونىنى كۆرسىتىدۇ"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:10
+msgid "Display time"
+msgstr "ۋاقىت كۆرسەت"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:11
+msgid "Display type"
+msgstr "تىپنى كۆرسەت"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:12
+msgid "Do not overwrite newer files"
+msgstr "ئەڭ يېڭى ھۆججەتلەرنى قاپلىما"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:13
+msgid "Editors"
+msgstr "تەھرىرلىگۈچ"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:14
+msgid "Encrypt the archive header"
+msgstr "ئارخىپ قېشىنى شىفىرلايدۇ"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:15
+msgid "How to sort files"
+msgstr "ھۆججەتنى قانداق تەرتىپلەيدۇ"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:16
+msgid ""
+"If true will display icons depending on the file type (slower), otherwise "
+"will use always the same icon for all files (faster)."
+msgstr ""
+"ئەگەر true (راست) بولسا ھۆججەت تىپىغا ئاساسەن سىنبەلگىنى كۆرسىتىدۇ (ئاستاراق)"
+"، ئۇنداق بولمىسا ھەممە ھۆججەتكە ئوخشاش سىنبەلگە ئىشلىتىدۇ (تېزراق)."
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:17
+msgid "List Mode"
+msgstr "تىزىش ھالىتى"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:18
+msgid ""
+"List of applications entered in the 'Open File' dialog and not associated "
+"with the file type."
+msgstr ""
+"«ھۆججەت ئاچ» سۆزلەشكۈگە كىرىپ، بۇ خىل ھۆججەت تىپى بىلەن باغلانمىغان "
+"پىروگرامما تىزىمىنى كۆرسىتىدۇ."
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:19
+msgid "Max history length"
+msgstr "ئىزنىڭ ئەڭ چوڭ قىممىتى"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:20
+msgid "Max number of items in the 'Open Recents' submenu."
+msgstr "«يېقىنقىنى ئاچ» تارماق تىزىملىكىدىكى تۈرلەرنىڭ ئەڭ چوڭ سانى"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:21
+msgid "Name column width"
+msgstr "ئات ئىستون كەڭلىكى"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:22
+msgid "Overwrite existing files"
+msgstr "بار ھۆججەتلەرنى قاپلىۋەت"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:23
+msgid "Recreate the folders stored in the archive"
+msgstr "ئارخىپقا ساقلانغان قىسقۇچلارنى قايتا قۇرىدۇ"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:24
+msgid "Sort type"
+msgstr "تەرتىپلەش تىپى"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:25
+msgid "The default size for volumes."
+msgstr "دىسكىلارنىڭ كۆڭۈلدىكى چوڭلۇقى."
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:26
+msgid "The default width of the name column the file list."
+msgstr "ھۆججەت تىزىمىدىكى ئات ئىستونىنىڭ كۆڭۈلدىكى كەڭلىكى."
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:27
+msgid ""
+"Use 'all-files' to view all the files in the archive in a single list, use "
+"'as-folder' to navigate the archive as a folder."
+msgstr ""
+"«بارلىق ھۆججەت» نى ئىشلەتسىڭىز ئارخىپتىكى بارلىق ھۆججەتلەرنى تاق تىزىمدا "
+"كۆرەلەيسىز؛ «قىسقۇچتەك» دېگەننى ئىشلەتسىڭىز ئارخىپنى قىسقۇچنى كۆرگەندەك "
+"كۆرەلەيسىز."
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:28
+msgid "Use mime icons"
+msgstr "mime سىنبەلگىسىنى ئىشلەت"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:29
+msgid "View statusbar"
+msgstr "ھالەت بالداقنى كۆرسەت"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:30 ../src/ui.h:235
+msgid "View the folders pane"
+msgstr "قىسقۇچ تاختىنى كۆرسەت"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:31
+msgid "View toolbar"
+msgstr "قورال بالداقنى كۆرسەت"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:32
+msgid ""
+"What criteria must be used to arrange files. Possible values: name, size, "
+"type, time, path."
+msgstr ""
+"ھۆججەت تەرتىپلەش ئۆلچىمى. ئىشلەتكىلى بولىدىغان قىممىتى: ئاتى، چوڭلۇقى، تىپى، "
+"ۋاقتى، يول."
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:33
+msgid "Whether to display the folders pane."
+msgstr "قىسقۇچ كۆزنەكچىسىنى كۆرسىتەمدۇ يوق."
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:34
+msgid "Whether to display the statusbar."
+msgstr "ھالەت بالدىقىنى كۆرسىتەمدۇ يوق."
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:35
+msgid "Whether to display the toolbar."
+msgstr "قورال بالدىقىنى كۆرسىتەمدۇ يوق."
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:36
+msgid ""
+"Whether to encrypt the archive header. If the header is encrypted the "
+"password will be required to list the archive content as well."
+msgstr ""
+"ئارخىپ بېشىنى شىفىرلامدۇ يوق. ئەگەر باش شىفىرلانسا ئارخىپ مەزمۇنىنى "
+"كۆرسىتىشتە ئىم كىرگۈزۈشنى تەلەپ قىلىدۇ."
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:37
+msgid ""
+"Whether to sort in ascending or descending direction. Possible values: "
+"ascending, descending."
+msgstr ""
+"ئۆسكۈچى ياكى كېمەيگۈچى تەرتىپتە تىزامدۇ يوق. ئىشلەتكىلى بولىدىغان قىممىتى: "
+"ئۆسكۈچى، كېمەيگۈچى"
+
+#: ../data/ui/add-options.ui.h:1
+msgid "Load Options"
+msgstr "تاللانما يۈكلە"
+
+#: ../data/ui/batch-add-files.ui.h:1 ../src/fr-stock.c:41
+msgid "C_reate"
+msgstr "قۇر(_R)"
+
+#: ../data/ui/batch-add-files.ui.h:2
+msgid "Compress"
+msgstr "پرېس"
+
+#: ../data/ui/batch-add-files.ui.h:3
+msgid "Location"
+msgstr "ئورنى"
+
+#. MB means megabytes
+#: ../data/ui/batch-add-files.ui.h:5 ../data/ui/new.ui.h:2
+msgid "MB"
+msgstr "مېگابايت"
+
+#. this is part of a sentence, for example "split into volumes of 10.0 MB", where MB stands for megabyte.
+#: ../data/ui/batch-add-files.ui.h:7 ../data/ui/new.ui.h:3
+msgid "Split into _volumes of"
+msgstr "دىسكىنى پارچىلاش سانى(_V)"
+
+#: ../data/ui/batch-add-files.ui.h:8 ../data/ui/new.ui.h:4
+#: ../data/ui/password.ui.h:3
+msgid "_Encrypt the file list too"
+msgstr "ھۆججەت تىزىملىكىنىمۇ شىفىرلا(_E)"
+
+#: ../data/ui/batch-add-files.ui.h:9
+msgid "_Filename:"
+msgstr "ھۆججەت ئاتى(_F)"
+
+#. Translators: after the colon there is a folder name.
+#: ../data/ui/batch-add-files.ui.h:10 ../src/fr-window.c:5879
+msgid "_Location:"
+msgstr "ئورنى(_L):"
+
+#: ../data/ui/batch-add-files.ui.h:11 ../data/ui/new.ui.h:5
+msgid "_Other Options"
+msgstr "باشقا تاللانما(_O)"
+
+#: ../data/ui/batch-add-files.ui.h:12 ../data/ui/batch-password.ui.h:2
+#: ../data/ui/new.ui.h:6 ../data/ui/password.ui.h:4
+msgid "_Password:"
+msgstr "ئىم(_P):"
+
+#: ../data/ui/batch-password.ui.h:1
+msgid "<span weight=\"bold\" size=\"larger\">Password required</span>"
+msgstr "<span weight=\"bold\" size=\"larger\">ئىم زۆرۈر</span>"
+
+#: ../data/ui/delete.ui.h:1
+msgid "Delete"
+msgstr "ئۆچۈر"
+
+#: ../data/ui/delete.ui.h:2 ../src/dlg-extract.c:362
+msgid "_All files"
+msgstr "ھەممە ھۆججەت(_A)"
+
+#: ../data/ui/delete.ui.h:3 ../src/dlg-extract.c:348
+msgid "_Files:"
+msgstr "ھۆججەتلەر(_F):"
+
+#: ../data/ui/delete.ui.h:4 ../src/dlg-extract.c:369
+msgid "_Selected files"
+msgstr "تاللانغان ھۆججەتلەر(_S)"
+
+#: ../data/ui/delete.ui.h:5 ../src/dlg-extract.c:359
+msgid "example: *.txt; *.doc"
+msgstr "مەسىلەن: *.txt; *.doc"
+
+#: ../data/ui/password.ui.h:1
+msgid ""
+"<i><b>Note:</b> the password will be used to encrypt files you add to the "
+"current archive, and to decrypt files you extract from the current archive. "
+"When the archive is closed the password will be deleted.</i>"
+msgstr ""
+"<i><b>دىققەت:</b> سىز نۆۋەتتىكى ئارخىپقا قوشقان ھۆججەت مەزكۇر ئىمنى ئىشلىتىپ "
+"شىفىرلىنىدۇ،  نۆۋەتتىكى ئارخىپ ھۆججەتنى پرېستىن يەشكەندە مەزكۇر ئىمنى "
+"ئىشلىتىپ شىفىرنى يېشىدۇ. ئارخىپ ھۆججەتنى ياپقاندا، ئىم ئۆچۈرۈلىدۇ.</i>"
+
+#: ../data/ui/password.ui.h:2
+msgid "Password"
+msgstr "ئىم"
+
+#: ../data/ui/update.ui.h:1
+msgid "S_elect the files you want to update:"
+msgstr "يېڭىلايدىغان ھۆججەتنى تاللاڭ(_E):"
+
+#. secondary text
+#: ../data/ui/update.ui.h:2 ../src/dlg-update.c:175 ../src/dlg-update.c:203
+#, c-format
+msgid ""
+"The file has been modified with an external application. If you don't update "
+"the file in the archive, all of your changes will be lost."
+msgid_plural ""
+"%d files have been modified with an external application. If you don't "
+"update the files in the archive, all of your changes will be lost."
+msgstr[0] ""
+"%d دانە ھۆججەت سىرتقى پروگراممىدا ئۆزگەرتىلدى. ئەگەر ئارخىپتىكى ھۆججەتنى "
+"يېڭىلىمىسىڭىز ئۆزگەرتىشلىرىڭىزنىڭ ھەممىسى يوقىلىدۇ."
+
+#: ../data/ui/update.ui.h:3
+msgid "_Update"
+msgstr "يېڭىلا(_U)"
+
+#: ../nautilus/nautilus-fileroller.c:314
+msgid "Extract Here"
+msgstr "بۇ جايغا يەش"
+
+#. Translators: the current position is the current folder
+#: ../nautilus/nautilus-fileroller.c:316
+msgid "Extract the selected archive to the current position"
+msgstr "تاللانغان ئارخىپنى نۆۋەتتىكى ئورۇنغا يەش"
+
+#: ../nautilus/nautilus-fileroller.c:333
+msgid "Extract To..."
+msgstr "يېشىش ئورنى…"
+
+#: ../nautilus/nautilus-fileroller.c:334
+msgid "Extract the selected archive"
+msgstr "تاللانغان ئارخىپنى يەش"
+
+#: ../nautilus/nautilus-fileroller.c:353
+msgid "Compress..."
+msgstr "پرېس…"
+
+#: ../nautilus/nautilus-fileroller.c:354
+msgid "Create a compressed archive with the selected objects"
+msgstr "تاللانغان جىسىملاردىن پرېسلانغان ئارخىپ قۇر"
+
+#: ../src/actions.c:156 ../src/actions.c:195 ../src/actions.c:231
+#: ../src/dlg-batch-add.c:169 ../src/dlg-batch-add.c:185
+#: ../src/dlg-batch-add.c:214 ../src/dlg-batch-add.c:259
+#: ../src/dlg-batch-add.c:305 ../src/fr-window.c:2985
+msgid "Could not create the archive"
+msgstr "ئارخىپ قۇرالمىدى"
+
+#: ../src/actions.c:158 ../src/dlg-batch-add.c:171 ../src/dlg-batch-add.c:307
+msgid "You have to specify an archive name."
+msgstr "چوقۇم ئارخىپ ئاتىنى بەلگىلەڭ."
+
+#: ../src/actions.c:197
+msgid "You don't have permission to create an archive in this folder"
+msgstr "سىزنىڭ بۇ قىسقۇچتا ئارخىپ قۇرۇش ھوقۇقىڭىز يوق"
+
+#: ../src/actions.c:233 ../src/dlg-package-installer.c:266
+#: ../src/dlg-package-installer.c:275 ../src/dlg-package-installer.c:303
+#: ../src/fr-archive.c:1178 ../src/fr-window.c:6094 ../src/fr-window.c:6270
+msgid "Archive type not supported."
+msgstr "قوللىمايدىغان ئارخىپ تىپى"
+
+#: ../src/actions.c:247
+msgid "Could not delete the old archive."
+msgstr "كونا ئارخىپنى ئۆچۈرەلمىدى."
+
+#: ../src/actions.c:381 ../src/fr-window.c:5937
+msgid "Open"
+msgstr "ئاچ"
+
+#: ../src/actions.c:392 ../src/dlg-new.c:312 ../src/fr-window.c:5277
+msgid "All archives"
+msgstr "ھەممە ئارخىپ"
+
+#: ../src/actions.c:399 ../src/dlg-new.c:319
+msgid "All files"
+msgstr "ھەممە ھۆججەتلەر"
+
+#: ../src/actions.c:793 ../src/fr-window.c:7120
+msgid "Last Output"
+msgstr "ئاخىرقى چىقىرىش"
+
+#: ../src/actions.c:853
+msgid "Copyright © 2001–2010 Free Software Foundation, Inc."
+msgstr "نەشر ھوقۇقى © 2001–2010 ئەركىن يۇمشاق دېتال فوندىغا تەۋە."
+
+#: ../src/actions.c:854
+msgid "An archive manager for GNOME."
+msgstr "GNOME نىڭ ئارخىپ باشقۇرغۇچىسى."
+
+#: ../src/actions.c:857
+msgid "translator-credits"
+msgstr ""
+"Gheyret Kenji <gheyret@gmail.com>\n"
+"Sahran<sahran@live.com>"
+
+#: ../src/dlg-add-files.c:99 ../src/dlg-add-folder.c:129
+msgid "Could not add the files to the archive"
+msgstr "ھۆججەتلەرنى ئارخىپقا قوشالمىدى"
+
+#: ../src/dlg-add-files.c:100 ../src/dlg-add-folder.c:130
+#, c-format
+msgid "You don't have the right permissions to read files from folder \"%s\""
+msgstr "\"%s\" قىسقۇچنىڭ ئىچىدىكى ھۆججەتلەرنى ئوقۇش ھوقۇقىڭىز يوق."
+
+#: ../src/dlg-add-files.c:148 ../src/ui.h:48
+msgid "Add Files"
+msgstr "ھۆججەت قوشۇش"
+
+#. Translators: add a file to the archive only if the disk version is
+#. * newer than the archive version.
+#: ../src/dlg-add-files.c:164 ../src/dlg-add-folder.c:230
+msgid "Add only if _newer"
+msgstr "يېڭى ھۆججەتنىلا قوش(_N)"
+
+#: ../src/dlg-add-folder.c:216
+msgid "Add a Folder"
+msgstr "قىسقۇچ قوش"
+
+#: ../src/dlg-add-folder.c:231
+msgid "_Include subfolders"
+msgstr "تارماق قىسقۇچمۇ ئىچىدە(_I)"
+
+#: ../src/dlg-add-folder.c:232
+msgid "Exclude folders that are symbolic lin_ks"
+msgstr "بەلگە ئۇلانمىلىق قىسقۇچ بۇنىڭ سىرتىدا(_K)"
+
+#: ../src/dlg-add-folder.c:235 ../src/dlg-add-folder.c:241
+#: ../src/dlg-add-folder.c:247
+msgid "example: *.o; *.bak"
+msgstr "مەسىلەن: *.o; *.bak"
+
+#: ../src/dlg-add-folder.c:236
+msgid "Include _files:"
+msgstr "ھۆججەتلەر ئىچىدە(_F):"
+
+#: ../src/dlg-add-folder.c:242
+msgid "E_xclude files:"
+msgstr "ھۆججەتلەر سىرتىدا(_X):"
+
+#: ../src/dlg-add-folder.c:248
+msgid "_Exclude folders:"
+msgstr "قىسقۇچ سىرتىدا(_E):"
+
+#: ../src/dlg-add-folder.c:252
+msgid "_Load Options"
+msgstr "تاللانما يۈكلە(_L)"
+
+#: ../src/dlg-add-folder.c:253
+msgid "Sa_ve Options"
+msgstr "تاللانما ساقلا(_V)"
+
+#: ../src/dlg-add-folder.c:254
+msgid "_Reset Options"
+msgstr "تاللانما ئەسلىگە قايتۇر(_R)"
+
+#: ../src/dlg-add-folder.c:882
+msgid "Save Options"
+msgstr "تاللانما ساقلا"
+
+#: ../src/dlg-add-folder.c:883
+msgid "Options Name:"
+msgstr "تاللانما ئاتى:"
+
+#: ../src/dlg-ask-password.c:122
+#, c-format
+msgid "Enter the password for the archive '%s'."
+msgstr "ئارخىپ ھۆججەت '%s' نىڭ ئىمنى كىرگۈزۈڭ."
+
+#. Translators: the name references to a filename.  This message can appear when renaming a file.
+#: ../src/dlg-batch-add.c:186 ../src/fr-window.c:7435
+#, c-format
+msgid ""
+"The name \"%s\" is not valid because it cannot contain the characters: %s\n"
+"\n"
+"%s"
+msgstr ""
+"بۇ ھۆججەت ئاتى \"%s\" ئىناۋەتسىز چۈنكى ئۇ ئۆز ئىچىگە ئالمايدىغان ھەرپلەر: %"
+"s\n"
+"%s"
+
+#: ../src/dlg-batch-add.c:189 ../src/fr-window.c:7425 ../src/fr-window.c:7430
+#: ../src/fr-window.c:7435 ../src/fr-window.c:7471 ../src/fr-window.c:7473
+msgid "Please use a different name."
+msgstr "باشقا ئات ئىشلىتىڭ."
+
+#: ../src/dlg-batch-add.c:216
+msgid ""
+"You don't have the right permissions to create an archive in the destination "
+"folder."
+msgstr "سىزنىڭ نىشان قىسقۇچتا ئارخىپ قۇرۇش ھوقۇقىڭىز يوق."
+
+#: ../src/dlg-batch-add.c:232 ../src/dlg-extract.c:102 ../src/fr-window.c:6691
+#, c-format
+msgid ""
+"Destination folder \"%s\" does not exist.\n"
+"\n"
+"Do you want to create it?"
+msgstr ""
+"نىشان قىسقۇچ \"%s\" مەۋجۇت ئەمەس. \n"
+"\n"
+"بۇ قىسقۇچنى قۇرامسىز؟"
+
+#: ../src/dlg-batch-add.c:241 ../src/dlg-extract.c:111 ../src/fr-window.c:6700
+msgid "Create _Folder"
+msgstr "قىسقۇچ قۇر(_F)"
+
+#: ../src/dlg-batch-add.c:260 ../src/dlg-extract.c:131 ../src/fr-window.c:6717
+#, c-format
+msgid "Could not create the destination folder: %s."
+msgstr "نىشان قىسقۇچنى قۇرالمايدۇ: %s."
+
+#: ../src/dlg-batch-add.c:277
+msgid "Archive not created"
+msgstr "ئارخىپ قۇرۇلمىدى"
+
+#: ../src/dlg-batch-add.c:325
+msgid "The archive is already present.  Do you want to overwrite it?"
+msgstr "ئارخىپ مەۋجۇت. ئۇنى قاپلىۋېتەمسىز؟"
+
+#: ../src/dlg-batch-add.c:328
+msgid "_Overwrite"
+msgstr "قاپلا(_O)"
+
+#: ../src/dlg-extract.c:130 ../src/dlg-extract.c:148 ../src/dlg-extract.c:175
+#: ../src/fr-window.c:4210 ../src/fr-window.c:6721 ../src/fr-window.c:6740
+#: ../src/fr-window.c:6745
+msgid "Extraction not performed"
+msgstr "يېشىش مەشغۇلاتىنى ئىجرا قىلىنمىدى"
+
+#: ../src/dlg-extract.c:176 ../src/fr-window.c:4373 ../src/fr-window.c:4453
+#, c-format
+msgid ""
+"You don't have the right permissions to extract archives in the folder \"%s\""
+msgstr "سىزنىڭ بۇ ئارخىپنى \"%s\" قىسقۇچقا يېشىش ھوقۇقىڭىز يوق"
+
+#: ../src/dlg-extract.c:331 ../src/dlg-extract.c:429 ../src/ui.h:123
+msgid "Extract"
+msgstr "ئايرىش"
+
+#: ../src/dlg-extract.c:380
+msgid "Actions"
+msgstr "مەشغۇلاتلار"
+
+#: ../src/dlg-extract.c:396
+msgid "Re-crea_te folders"
+msgstr "قىسقۇچنى قايتا قۇر(_T)"
+
+#: ../src/dlg-extract.c:400
+msgid "Over_write existing files"
+msgstr "مەۋجۇت ھۆججەتنى قاپلا(_W)"
+
+#: ../src/dlg-extract.c:404
+msgid "Do not e_xtract older files"
+msgstr "كونا ھۆججەتنى يەشمە(_X)"
+
+#: ../src/dlg-new.c:440
+msgctxt "File"
+msgid "New"
+msgstr "يېڭى"
+
+#: ../src/dlg-new.c:453
+msgctxt "File"
+msgid "Save"
+msgstr "ساقلا"
+
+#: ../src/dlg-package-installer.c:107 ../src/dlg-package-installer.c:217
+msgid "There was an internal error trying to search for applications:"
+msgstr "پروگرامما ئىزدەشنى سىنىغاندا ئىچكى خاتالىق كۆرۈلدى:"
+
+#: ../src/dlg-package-installer.c:285
+#, c-format
+msgid ""
+"There is no command installed for %s files.\n"
+"Do you want to search for a command to open this file?"
+msgstr ""
+"%s ھۆججەتكە بۇيرۇق ئورنىتىلمىغان.\n"
+"بۇ ھۆججەتنى ئاچىدىغان بۇيرۇق ئىزدەمسىز؟"
+
+#: ../src/dlg-package-installer.c:290
+msgid "Could not open this file type"
+msgstr "بۇ ھۆججەت تىپىنى ئاچالمىدى"
+
+#: ../src/dlg-package-installer.c:293
+msgid "_Search Command"
+msgstr "بۇيرۇق ئىزدە(_S)"
+
+#. Translators: after the colon there is a folder name.
+#: ../src/dlg-prop.c:106
+msgid "Location:"
+msgstr "ئورنى:"
+
+#: ../src/dlg-prop.c:118
+msgctxt "File"
+msgid "Name:"
+msgstr "ئاتى:"
+
+#: ../src/dlg-prop.c:124
+#, c-format
+msgid "%s Properties"
+msgstr "%s خاسلىقى"
+
+#: ../src/dlg-prop.c:133
+msgid "Modified on:"
+msgstr "ئۆزگەرتكەن ۋاقىت:"
+
+#: ../src/dlg-prop.c:143
+msgid "Archive size:"
+msgstr "ئارخىپ چوڭلۇقى:"
+
+#: ../src/dlg-prop.c:154
+msgid "Content size:"
+msgstr "مۇندەرىجە چوڭلۇقى:"
+
+#: ../src/dlg-prop.c:174
+msgid "Compression ratio:"
+msgstr "پرېس نىسبىتى:"
+
+#: ../src/dlg-prop.c:189
+msgid "Number of files:"
+msgstr "ھۆججەت سانى:"
+
+#: ../src/dlg-update.c:163
+#, c-format
+msgid "Update the file \"%s\" in the archive \"%s\"?"
+msgstr "\"%s\" ھۆججەتنى \"%s\" ئارخىپتىن يېڭىلامسىز؟"
+
+#: ../src/dlg-update.c:192
+#, c-format
+msgid "Update the files in the archive \"%s\"?"
+msgstr "\"%s\" ئارخىپتىكى ھۆججەتنى يېڭىلامسىز؟"
+
+#: ../src/eggfileformatchooser.c:236
+#, c-format
+msgid "File _Format: %s"
+msgstr "ھۆججەت فورماتى(_F): %s"
+
+#: ../src/eggfileformatchooser.c:397
+msgid "All Files"
+msgstr "ھەممە ھۆججەتلەر"
+
+#: ../src/eggfileformatchooser.c:398
+msgid "All Supported Files"
+msgstr "قوللايدىغان ھەممە ھۆججەتلەر"
+
+#: ../src/eggfileformatchooser.c:407
+msgid "By Extension"
+msgstr "كېڭەيتىلمە ئاتى بويىچە"
+
+#: ../src/eggfileformatchooser.c:422
+msgid "File Format"
+msgstr "ھۆججەت فورماتى"
+
+#: ../src/eggfileformatchooser.c:440
+msgid "Extension(s)"
+msgstr "كېڭەيتىلمە(لەر)"
+
+#: ../src/eggfileformatchooser.c:675
+#, c-format
+msgid ""
+"The program was not able to find out the file format you want to use for `%"
+"s'. Please make sure to use a known extension for that file or manually "
+"choose a file format from the list below."
+msgstr ""
+"پروگرامما سىز قوللانماقچى بولغان `%s' تاللانمىنىڭ ھۆججەت فورماتىنى "
+"تاپالمىدى. ھۆججەتكە مەلۇملۇق فورمات ئىشلىتىلگەننى جەزملەڭ ياكى تۆۋەندىكى "
+"تىزىملىكتىن ھۆججەت فورماتىدىن بىرنى قولدا تاللاڭ"
+
+#: ../src/eggfileformatchooser.c:682
+msgid "File format not recognized"
+msgstr "ھۆججەت فورماتىنى تونۇيالمىدى"
+
+#: ../src/fr-archive.c:1158
+msgid "File not found."
+msgstr "ھۆججەت تېپىلمىدى."
+
+#: ../src/fr-archive.c:1261
+#, c-format
+msgid "The file doesn't exist"
+msgstr "ھۆججەت مەۋجۇت ئەمەس"
+
+#: ../src/fr-archive.c:2427
+msgid "You don't have the right permissions."
+msgstr "سىزنىڭ توغرا ھوقۇقىڭىز يوق."
+
+#: ../src/fr-archive.c:2427
+msgid "This archive type cannot be modified"
+msgstr "بۇ ئارخىپ تىپىنى ئۆزگەرتەلمەيدۇ"
+
+#: ../src/fr-archive.c:2439
+msgid "You can't add an archive to itself."
+msgstr "ئارخىپ ھۆججەتنى ئۆزىگە قوشالمايسىز."
+
+#. Translators: after the colon there is a filename.
+#: ../src/fr-command-7z.c:295 ../src/fr-command-rar.c:433
+#: ../src/fr-command-tar.c:307
+msgid "Adding file: "
+msgstr "ھۆججەت قوش: "
+
+#. Translators: after the colon there is a filename.
+#: ../src/fr-command-7z.c:416 ../src/fr-command-rar.c:560
+#: ../src/fr-command-tar.c:426
+msgid "Extracting file: "
+msgstr "ھۆججەت يەش: "
+
+#. Translators: after the colon there is a filename.
+#: ../src/fr-command-rar.c:511 ../src/fr-command-tar.c:372
+msgid "Removing file: "
+msgstr "ھۆججەت چىقىرىۋەت: "
+
+#: ../src/fr-command-rar.c:688
+#, c-format
+msgid "Could not find the volume: %s"
+msgstr "دىسكىنى تاپالمىدى: %s"
+
+#: ../src/fr-command-tar.c:381 ../src/fr-window.c:2332
+msgid "Deleting files from archive"
+msgstr "ئارخىپتىن ھۆججەت ئۆچۈر"
+
+#: ../src/fr-command-tar.c:485
+msgid "Recompressing archive"
+msgstr "ئارخىپنى قايتا پرېسلا"
+
+#: ../src/fr-command-tar.c:736
+msgid "Decompressing archive"
+msgstr "ئارخىپنى قايتا يەش"
+
+#: ../src/fr-init.c:58
+msgid "7-Zip (.7z)"
+msgstr "7-Zip (.7z)"
+
+#: ../src/fr-init.c:59
+msgid "Tar compressed with 7z (.tar.7z)"
+msgstr "7z تا پرېسلانغان Tar (.tar.7z)"
+
+#: ../src/fr-init.c:60
+msgid "Ace (.ace)"
+msgstr "Ace (.ace)"
+
+#: ../src/fr-init.c:62
+msgid "Ar (.ar)"
+msgstr "Ar (.ar)"
+
+#: ../src/fr-init.c:63
+msgid "Arj (.arj)"
+msgstr "Arj (.arj)"
+
+#: ../src/fr-init.c:65
+msgid "Tar compressed with bzip2 (.tar.bz2)"
+msgstr "bzip2 دا پرېسلانغان Tar (.tar.bz2)"
+
+#: ../src/fr-init.c:67
+msgid "Tar compressed with bzip (.tar.bz)"
+msgstr "bzip دا پرېسلانغان Tar (.tar.bz2)"
+
+#: ../src/fr-init.c:68
+msgid "Cabinet (.cab)"
+msgstr "Cabinet (.cab)"
+
+#: ../src/fr-init.c:69
+msgid "Rar Archived Comic Book (.cbr)"
+msgstr "Rar پرېسلىغان ھەجۋى كىتاب (.cbr)"
+
+#: ../src/fr-init.c:70
+msgid "Zip Archived Comic Book (.cbz)"
+msgstr "Zip پرېسلىغان ھەجۋى كىتاب (.cbr)"
+
+#: ../src/fr-init.c:73
+msgid "Tar compressed with gzip (.tar.gz)"
+msgstr "gzip دا پرېسلانغان Tar (.tar.gz)"
+
+#: ../src/fr-init.c:76
+msgid "Ear (.ear)"
+msgstr "Ear (.ear)"
+
+#: ../src/fr-init.c:77
+msgid "Self-extracting zip (.exe)"
+msgstr "ئۆزى يېشىلىدىغان zip (.exe)"
+
+#: ../src/fr-init.c:79
+msgid "Jar (.jar)"
+msgstr "Jar (.jar)"
+
+#: ../src/fr-init.c:80
+msgid "Lha (.lzh)"
+msgstr "Lha (.lzh)"
+
+#: ../src/fr-init.c:81
+msgid "Lrzip (.lrz)"
+msgstr "Lrzip (.lrz)"
+
+#: ../src/fr-init.c:82
+msgid "Tar compressed with lrzip (.tar.lrz)"
+msgstr "lrzip دا پرېسلانغان Tar (.tar.lrz)"
+
+#: ../src/fr-init.c:84
+msgid "Tar compressed with lzip (.tar.lz)"
+msgstr "lzip دا پرېسلانغان Tar (.tar.lz)"
+
+#: ../src/fr-init.c:86
+msgid "Tar compressed with lzma (.tar.lzma)"
+msgstr "lzma دا پرېسلانغان Tar (.tar.lzma)"
+
+#: ../src/fr-init.c:88
+msgid "Tar compressed with lzop (.tar.lzo)"
+msgstr "lzop دا پرېسلانغان Tar (.tar.lzo)"
+
+#: ../src/fr-init.c:89
+msgid "Windows Imaging Format (.wim)"
+msgstr "Windows رەسىم فورماتى(.wim)"
+
+#: ../src/fr-init.c:90
+msgid "Rar (.rar)"
+msgstr "Rar (.rar)"
+
+#: ../src/fr-init.c:93
+msgid "Tar uncompressed (.tar)"
+msgstr "پرېسلانمىغان Tar (.tar)"
+
+#: ../src/fr-init.c:94
+msgid "Tar compressed with compress (.tar.Z)"
+msgstr "compress تا پرېسلانغان Tar (.tar.Z)"
+
+#: ../src/fr-init.c:96
+msgid "War (.war)"
+msgstr "War (.war)"
+
+#: ../src/fr-init.c:97
+msgid "Xz (.xz)"
+msgstr "Xz (.xz)"
+
+#: ../src/fr-init.c:98
+msgid "Tar compressed with xz (.tar.xz)"
+msgstr "xz دا پرېسلانغان Tar (.tar.xz)"
+
+#: ../src/fr-init.c:99
+msgid "Zoo (.zoo)"
+msgstr "Zoo (.zoo)"
+
+#: ../src/fr-init.c:100
+msgid "Zip (.zip)"
+msgstr "Zip (.zip)"
+
+#: ../src/fr-stock.c:42 ../src/fr-stock.c:43
+msgid "_Add"
+msgstr "قوش(_A)"
+
+#: ../src/fr-stock.c:44
+msgid "_Extract"
+msgstr "يەش(_E)"
+
+#: ../src/fr-window.c:1532
+#, c-format
+msgid "%d object (%s)"
+msgid_plural "%d objects (%s)"
+msgstr[0] "%d نەڭ (%s)"
+
+#: ../src/fr-window.c:1537
+#, c-format
+msgid "%d object selected (%s)"
+msgid_plural "%d objects selected (%s)"
+msgstr[0] "%d نەڭ تاللاندى (%s)"
+
+#: ../src/fr-window.c:1607
+msgid "Folder"
+msgstr "قىسقۇچ"
+
+#: ../src/fr-window.c:2004
+msgid "[read only]"
+msgstr "[ئوقۇشقىلا]"
+
+#: ../src/fr-window.c:2255
+#, c-format
+msgid "Could not display the folder \"%s\""
+msgstr "قىسقۇچ \"%s\" نى كۆرسىتەلمەيدۇ"
+
+#: ../src/fr-window.c:2323 ../src/fr-window.c:2353
+msgid "Creating archive"
+msgstr "ئارخىپ قۇرۇۋاتىدۇ"
+
+#: ../src/fr-window.c:2326
+msgid "Loading archive"
+msgstr "ئارخىپ يۈكلەۋاتىدۇ"
+
+#: ../src/fr-window.c:2329
+msgid "Reading archive"
+msgstr "ئارخىپ ئوقۇۋاتىدۇ"
+
+#: ../src/fr-window.c:2335
+msgid "Testing archive"
+msgstr "ئارخىپ سىناۋاتىدۇ"
+
+#: ../src/fr-window.c:2338
+msgid "Getting the file list"
+msgstr "ھۆججەت تىزىملىكىگە ئېرىشىۋاتىدۇ"
+
+#: ../src/fr-window.c:2341 ../src/fr-window.c:2350
+msgid "Copying the file list"
+msgstr "ھۆججەت تىزىملىكىنى كۆچۈرۈۋاتىدۇ"
+
+#: ../src/fr-window.c:2344
+msgid "Adding files to archive"
+msgstr "ئارخىپقا ھۆججەت قوشۇۋاتىدۇ"
+
+#: ../src/fr-window.c:2347
+msgid "Extracting files from archive"
+msgstr "ئارخىپتىن ھۆججەت يېشىۋاتىدۇ"
+
+#: ../src/fr-window.c:2356
+msgid "Saving archive"
+msgstr "ئارخىپ ساقلاۋاتىدۇ"
+
+#: ../src/fr-window.c:2524
+msgid "_Open the Archive"
+msgstr "ئارخىپ ئاچ(_O)"
+
+#: ../src/fr-window.c:2525
+msgid "_Show the Files"
+msgstr "ھۆججەت كۆرسەت(_S)"
+
+#: ../src/fr-window.c:2570
+msgid "Archive:"
+msgstr "ئارخىپ:"
+
+#: ../src/fr-window.c:2741
+msgid "Extraction completed successfully"
+msgstr "يېشىش مۇۋەپپەقىيەتلىك تاماملاندى"
+
+#: ../src/fr-window.c:2764
+msgid "Archive created successfully"
+msgstr "ئارخىپ مۇۋەپپەقىيەتلىك قۇرۇلدى"
+
+#: ../src/fr-window.c:2812
+msgid "please wait..."
+msgstr "سەل كۈتۈڭ…"
+
+#: ../src/fr-window.c:2897 ../src/fr-window.c:3032
+msgid "Command exited abnormally."
+msgstr "بۇيرۇق بىنورمال چېكىندى."
+
+#: ../src/fr-window.c:2990
+msgid "An error occurred while extracting files."
+msgstr "ھۆججەت يېشىۋاتقاندا خاتالىق كۆرۈلدى."
+
+#: ../src/fr-window.c:2996
+#, c-format
+msgid "Could not open \"%s\""
+msgstr "\"%s\" ئاچالمىدى"
+
+#: ../src/fr-window.c:3001
+msgid "An error occurred while loading the archive."
+msgstr "ئارخىپ يۈكلەۋاتقاندا خاتالىق كۆرۈلدى."
+
+#: ../src/fr-window.c:3005
+msgid "An error occurred while deleting files from the archive."
+msgstr "ئارخىپتىن ھۆججەت ئۆچۈرۈۋاتقاندا خاتالىق كۆرۈلدى."
+
+#: ../src/fr-window.c:3011
+msgid "An error occurred while adding files to the archive."
+msgstr "ئارخىپقا ھۆججەت قوشۇۋاتقاندا خاتالىق كۆرۈلدى."
+
+#: ../src/fr-window.c:3015
+msgid "An error occurred while testing archive."
+msgstr "ئارخىپ سىناۋاتقاندا خاتالىق كۆرۈلدى."
+
+#: ../src/fr-window.c:3019
+msgid "An error occurred while saving the archive."
+msgstr "ئارخىپ ساقلاۋاتقاندا خاتالىق كۆرۈلدى."
+
+#: ../src/fr-window.c:3023
+msgid "An error occurred."
+msgstr "خاتالىق كۆرۈلدى."
+
+#: ../src/fr-window.c:3029
+msgid "Command not found."
+msgstr "بۇيرۇق تېپىلمىدى."
+
+#: ../src/fr-window.c:3231
+msgid "Test Result"
+msgstr "سىناش نەتىجىسى"
+
+#: ../src/fr-window.c:4053 ../src/fr-window.c:8022 ../src/fr-window.c:8056
+#: ../src/fr-window.c:8306
+msgid "Could not perform the operation"
+msgstr "بۇ مەشغۇلاتنى ئىجرا قىلالمايدۇ"
+
+#: ../src/fr-window.c:4079
+msgid ""
+"Do you want to add this file to the current archive or open it as a new "
+"archive?"
+msgstr ""
+"بۇ ھۆججەتنى نۆۋەتتىكى ئارخىپقا قوشامسىز ياكى ئۇنى يېڭى ئارخىپتا ئاچامسىز؟"
+
+#: ../src/fr-window.c:4109
+msgid "Do you want to create a new archive with these files?"
+msgstr "بۇ ھۆججەتلەردىن يېڭى ئارخىپ قۇرامسىز؟"
+
+#: ../src/fr-window.c:4112
+msgid "Create _Archive"
+msgstr "ئارخىپ قۇر(_A)"
+
+#: ../src/fr-window.c:4702 ../src/fr-window.c:5783
+msgid "Folders"
+msgstr "قىسقۇچ"
+
+#: ../src/fr-window.c:4740
+msgctxt "File"
+msgid "Size"
+msgstr "چوڭلۇقى"
+
+#: ../src/fr-window.c:4741
+msgctxt "File"
+msgid "Type"
+msgstr "تىپى"
+
+#: ../src/fr-window.c:4742
+msgctxt "File"
+msgid "Date Modified"
+msgstr "ئۆزگەرتكەن چېسلا"
+
+#: ../src/fr-window.c:4743
+msgctxt "File"
+msgid "Location"
+msgstr "ئورنى"
+
+#: ../src/fr-window.c:4752
+msgctxt "File"
+msgid "Name"
+msgstr "ئاتى"
+
+#: ../src/fr-window.c:5704
+msgid "Find:"
+msgstr "ئىزدە:"
+
+#: ../src/fr-window.c:5791
+msgid "Close the folders pane"
+msgstr "قىسقۇچ تاختىنى ياپ"
+
+#: ../src/fr-window.c:5934 ../src/fr-window.c:5937 ../src/ui.h:141
+#: ../src/ui.h:145
+msgid "Open archive"
+msgstr "ئارخىپ ئاچ"
+
+#: ../src/fr-window.c:5935
+msgid "Open a recently used archive"
+msgstr "يېقىندا ئىشلەتكەن ئارخىپنى ئاچ"
+
+#: ../src/fr-window.c:6262
+#, c-format
+msgid "Could not save the archive \"%s\""
+msgstr "\"%s\" ئارخىپنى ساقلىيالمىدى"
+
+#. Translators: the name references to a filename.  This message can appear when renaming a file.
+#: ../src/fr-window.c:7425
+msgid "The new name is void."
+msgstr "يېڭى ئات بوش."
+
+#. Translators: the name references to a filename.  This message can appear when renaming a file.
+#: ../src/fr-window.c:7430
+msgid "The new name is equal to the old one."
+msgstr "يېڭى ئات بىلەن كونا ئات ئوخشاش."
+
+#: ../src/fr-window.c:7471
+#, c-format
+msgid ""
+"A folder named \"%s\" already exists.\n"
+"\n"
+"%s"
+msgstr ""
+"\"%s\" قىسقۇچ ئاتى مەۋجۇت.\n"
+"\n"
+"%s"
+
+#: ../src/fr-window.c:7473
+#, c-format
+msgid ""
+"A file named \"%s\" already exists.\n"
+"\n"
+"%s"
+msgstr ""
+"\"%s\" ھۆججەت ئاتى مەۋجۇت.\n"
+"\n"
+"%s"
+
+#: ../src/fr-window.c:7543
+msgid "Rename"
+msgstr "ئات ئۆزگەرت"
+
+#: ../src/fr-window.c:7544
+msgid "New folder name"
+msgstr "يېڭى قىسقۇچ ئاتى"
+
+#: ../src/fr-window.c:7544
+msgid "New file name"
+msgstr "يېڭى ھۆججەت ئاتى"
+
+#: ../src/fr-window.c:7548
+msgid "_Rename"
+msgstr "ئات ئۆزگەرت(_R)"
+
+#: ../src/fr-window.c:7565 ../src/fr-window.c:7585
+msgid "Could not rename the folder"
+msgstr "قىسقۇچ ئاتىنى ئۆزگەرتەلمىدى"
+
+#: ../src/fr-window.c:7565 ../src/fr-window.c:7585
+msgid "Could not rename the file"
+msgstr "ھۆججەت ئاتىنى ئۆزگەرتەلمىدى"
+
+#: ../src/fr-window.c:7983
+msgid "Paste Selection"
+msgstr "تاللانغاننى چاپلا"
+
+#: ../src/fr-window.c:7984
+msgid "Destination folder"
+msgstr "نىشان قىسقۇچ"
+
+#: ../src/fr-window.c:8585
+msgid "Add files to an archive"
+msgstr "ھۆججەتنى قىسقۇچقا قوش"
+
+#: ../src/fr-window.c:8629
+msgid "Extract archive"
+msgstr "ئارخىپ يەش"
+
+#. This is the time format used in the "Date Modified" column and
+#. * in the Properties dialog.  See the man page of strftime for an
+#. * explanation of the values.
+#: ../src/glib-utils.c:560
+msgid "%d %B %Y, %H:%M"
+msgstr "%Y-يىلى %d - %B، %H:%M"
+
+#. Expander
+#: ../src/gtk-utils.c:416
+msgid "Command _Line Output"
+msgstr "بۇيرۇق قۇرى چىقار(_L)"
+
+#: ../src/gtk-utils.c:753
+msgid "Could not display help"
+msgstr "ياردەمنى كۆرسىتەلمىدى"
+
+#: ../src/main.c:51
+msgid "Add files to the specified archive and quit the program"
+msgstr "ھۆججەتلەرنى بەلگىلەنگەن ئارخىپقا قوشۇپ ئاندىن پروگراممىدىن چېكىن"
+
+#: ../src/main.c:52
+msgid "ARCHIVE"
+msgstr "ئارخىپ"
+
+#: ../src/main.c:55
+msgid "Add files asking the name of the archive and quit the program"
+msgstr "ھۆججەت قوشۇشتا ئارخىپ ئاتىنى سوراپ ئاندىن پروگراممىدىن چېكىن"
+
+#: ../src/main.c:59
+msgid "Extract archives to the specified folder and quit the program"
+msgstr "ئارخىپنى بەلگىلەنگەن قىسقۇچقا يېشىپ ئاندىن پروگراممىدىن چېكىن"
+
+#: ../src/main.c:60 ../src/main.c:72
+msgid "FOLDER"
+msgstr "قىسقۇچ"
+
+#: ../src/main.c:63
+msgid "Extract archives asking the destination folder and quit the program"
+msgstr "ئارخىپ يېشىشتە نىشان قىسقۇچنى سوراپ ئاندىن پروگراممىدىن چېكىن"
+
+#: ../src/main.c:67
+msgid ""
+"Extract the contents of the archives in the archive folder and quit the "
+"program"
+msgstr "ئارخىپ مەزمۇنىنى ئارخىپ قىسقۇچقا يېشىپ ئاندىن پروگراممىدىن چېكىن"
+
+#: ../src/main.c:71
+msgid "Default folder to use for the '--add' and '--extract' commands"
+msgstr "'--add' ۋە '--extract' بۇيرۇقى ئىشلەتكەن كۆڭۈلدىكى قىسقۇچ"
+
+#: ../src/main.c:75
+msgid "Create destination folder without asking confirmation"
+msgstr "جەزملەشنى سورىمايلا قۇرغان نىشان قىسقۇچ"
+
+#: ../src/main.c:296 ../src/server.c:444
+msgid "- Create and modify an archive"
+msgstr "- ئارخىپ قۇر ھەمدە ئۆزگەرت"
+
+#: ../src/main.c:312 ../src/server.c:457
+msgid "File Roller"
+msgstr "ھۆججەت تايلىغۇچ"
+
+#: ../src/ui.h:31
+msgid "_Archive"
+msgstr "ئارخىپ(_A)"
+
+#: ../src/ui.h:32
+msgid "_Edit"
+msgstr "تەھرىر(_E)"
+
+#: ../src/ui.h:33
+msgid "_View"
+msgstr "كۆرۈنۈش(_V)"
+
+#: ../src/ui.h:34
+msgid "_Help"
+msgstr "ياردەم(_H)"
+
+#: ../src/ui.h:35
+msgid "_Arrange Files"
+msgstr "ھۆججەت تىز(_A)"
+
+#. Translators: this is the label for the "open recent file" sub-menu.
+#: ../src/ui.h:37
+msgid "Open _Recent"
+msgstr "يېقىنقىنى ئاچ(_R)"
+
+#: ../src/ui.h:41
+msgid "Information about the program"
+msgstr "پروگرامما ھەققىدىكى ئۇچۇر"
+
+#: ../src/ui.h:44
+msgid "_Add Files..."
+msgstr "ھۆججەت قوش(_A)…"
+
+#: ../src/ui.h:45 ../src/ui.h:49
+msgid "Add files to the archive"
+msgstr "ھۆججەتنى ئارخىپقا قوش"
+
+#: ../src/ui.h:52
+msgid "Add a _Folder..."
+msgstr "قىسقۇچقا قوش(_F)…"
+
+#: ../src/ui.h:53 ../src/ui.h:57
+msgid "Add a folder to the archive"
+msgstr "ھۆججەتنى ئارخىپقا قوش"
+
+#: ../src/ui.h:56
+msgid "Add Folder"
+msgstr "قىسقۇچ قوش"
+
+#: ../src/ui.h:61
+msgid "Close the current archive"
+msgstr "نۆۋەتتىكى ئارخىپنى ياپ"
+
+#: ../src/ui.h:64
+msgid "Contents"
+msgstr "مەزمۇن"
+
+#: ../src/ui.h:65
+msgid "Display the File Roller Manual"
+msgstr "ھۆججەت تايلىغۇچ قوللانمىسىنى كۆرسەت"
+
+#: ../src/ui.h:70 ../src/ui.h:91
+msgid "Copy the selection"
+msgstr "تاللىغاننى كۆچۈر"
+
+#: ../src/ui.h:74 ../src/ui.h:95
+msgid "Cut the selection"
+msgstr "تاللىغاننى كەس"
+
+#: ../src/ui.h:78 ../src/ui.h:99
+msgid "Paste the clipboard"
+msgstr "چاپلاش تاختىسىدىن چاپلا"
+
+#: ../src/ui.h:81 ../src/ui.h:102
+msgid "_Rename..."
+msgstr "ئات ئۆزگەرت(_R)…"
+
+#: ../src/ui.h:82 ../src/ui.h:103
+msgid "Rename the selection"
+msgstr "تاللىغاننىڭ ئاتىنى ئۆزگەرت"
+
+#: ../src/ui.h:86 ../src/ui.h:107
+msgid "Delete the selection from the archive"
+msgstr "ئارخىپتىن تاللىغاننى ئۆچۈر"
+
+#: ../src/ui.h:111
+msgid "Dese_lect All"
+msgstr "ھەممىنى تاللىما(_L)"
+
+#: ../src/ui.h:112
+msgid "Deselect all files"
+msgstr "ھېچنېمە تاللىما"
+
+#: ../src/ui.h:115 ../src/ui.h:119
+msgid "_Extract..."
+msgstr "يەش(_E)…"
+
+#: ../src/ui.h:116 ../src/ui.h:120 ../src/ui.h:124
+msgid "Extract files from the archive"
+msgstr "ئارخىپتىن ھۆججەت يەش"
+
+#: ../src/ui.h:127
+msgid "Find..."
+msgstr "ئىزدە…"
+
+#: ../src/ui.h:132
+msgid "_Last Output"
+msgstr "ئاخىرقى چىقىرىش(_L)"
+
+#: ../src/ui.h:133
+msgid "View the output produced by the last executed command"
+msgstr "ئاخىرقى قېتىم ئىجرا قىلغان بۇيرۇق شەكىللەندۈرگەن چىقىرىشنى كۆرسەت"
+
+#: ../src/ui.h:136
+msgid "New..."
+msgstr "يېڭى…"
+
+#: ../src/ui.h:137
+msgid "Create a new archive"
+msgstr "يېڭى ئارخىپ قۇر"
+
+#: ../src/ui.h:140
+msgid "Open..."
+msgstr "ئاچ…"
+
+#: ../src/ui.h:148
+msgid "_Open With..."
+msgstr "ئاچقۇز(_O)…"
+
+#: ../src/ui.h:149
+msgid "Open selected files with an application"
+msgstr "تاللىغان ھۆججەتنى پروگراممىدا ئاچ"
+
+#: ../src/ui.h:152
+msgid "Pass_word..."
+msgstr "ئىم(_W)…"
+
+#: ../src/ui.h:153
+msgid "Specify a password for this archive"
+msgstr "ئارخىپقا ئىم بەلگىلەڭ"
+
+#: ../src/ui.h:157
+msgid "Show archive properties"
+msgstr "ئارخىپ خاسلىقىنى كۆرسەت"
+
+#: ../src/ui.h:161
+msgid "Reload current archive"
+msgstr "نۆۋەتتىكى ئارخىپنى قايتا يۈكلە"
+
+#: ../src/ui.h:164
+msgid "Save As..."
+msgstr "باشقا ئاتتا ساقلا…"
+
+#: ../src/ui.h:165
+msgid "Save the current archive with a different name"
+msgstr "نۆۋەتتىكى ئارخىپنى باشقا ئاتتا ساقلا"
+
+#: ../src/ui.h:169
+msgid "Select all files"
+msgstr "ھەممە ھۆججەتنى تاللا"
+
+#: ../src/ui.h:173
+msgid "Stop current operation"
+msgstr "نۆۋەتتىكى مەشغۇلاتنى توختات"
+
+#: ../src/ui.h:176
+msgid "_Test Integrity"
+msgstr "مۇكەممەللىكنى تەكشۈر(_T)"
+
+#: ../src/ui.h:177
+msgid "Test whether the archive contains errors"
+msgstr "ئارخىپ ھۆججەت خاتالىقىنى سىنا"
+
+#: ../src/ui.h:181 ../src/ui.h:185
+msgid "Open the selected file"
+msgstr "تاللانغان ھۆججەتنى ئاچ"
+
+#: ../src/ui.h:189 ../src/ui.h:193
+msgid "Open the selected folder"
+msgstr "تاللانغان قىسقۇچنى ئاچ"
+
+#: ../src/ui.h:198
+msgid "Go to the previous visited location"
+msgstr "ئالدىنقى زىيارەت قىلغان ئورۇنغا يۆتكەل"
+
+#: ../src/ui.h:202
+msgid "Go to the next visited location"
+msgstr "كېيىنكى زىيارەت قىلغان ئورۇنغا يۆتكەل"
+
+#: ../src/ui.h:206
+msgid "Go up one level"
+msgstr "يۇقىرىغا بىر دەرىجە ئۆرلەيدۇ"
+
+#. Translators: the home location is the home folder.
+#: ../src/ui.h:211
+msgid "Go to the home location"
+msgstr "باش ئورۇنغا يۆتكەل"
+
+#: ../src/ui.h:219
+msgid "_Toolbar"
+msgstr "قورال بالداق(_T)"
+
+#: ../src/ui.h:220
+msgid "View the main toolbar"
+msgstr "ئاساسىي قورال بالداقنى كۆرسەت"
+
+#: ../src/ui.h:224
+msgid "Stat_usbar"
+msgstr "ھالەت بالداق(_U)"
+
+#: ../src/ui.h:225
+msgid "View the statusbar"
+msgstr "قورال بالداقنى كۆرسەت"
+
+#: ../src/ui.h:229
+msgid "_Reversed Order"
+msgstr "ئەكسى تەرتىپ(_R)"
+
+#: ../src/ui.h:230
+msgid "Reverse the list order"
+msgstr "تىزىملىك ئەكسى تەرتىپتە"
+
+#: ../src/ui.h:234
+msgid "_Folders"
+msgstr "قىسقۇچ(_F)"
+
+#: ../src/ui.h:244
+msgid "View All _Files"
+msgstr "ھەممە ھۆججەتنى كۆرسەت(_F)"
+
+#: ../src/ui.h:247
+msgid "View as a F_older"
+msgstr "قىسقۇچتەك كۆرسەت(_O)"
+
+#: ../src/ui.h:255
+msgid "by _Name"
+msgstr "ئاتى بويىچە(_N)"
+
+#: ../src/ui.h:256
+msgid "Sort file list by name"
+msgstr "ھۆججەت تىزىملىكىنى ئاتى بويىچە تەرتىپلە"
+
+#: ../src/ui.h:258
+msgid "by _Size"
+msgstr "چوڭلۇقى بويىچە(_S)"
+
+#: ../src/ui.h:259
+msgid "Sort file list by file size"
+msgstr "ھۆججەت تىزىملىكىنى چوڭلۇقى بويىچە تەرتىپلە"
+
+#: ../src/ui.h:261
+msgid "by T_ype"
+msgstr "تىپى بويىچە(_Y)"
+
+#: ../src/ui.h:262
+msgid "Sort file list by type"
+msgstr "ھۆججەت تىزىملىكىنى تىپى بويىچە تەرتىپلە"
+
+#: ../src/ui.h:264
+msgid "by _Date Modified"
+msgstr "ئۆزگەرتكەن چېسلا بويىچە(_D)"
+
+#: ../src/ui.h:265
+msgid "Sort file list by modification time"
+msgstr "ھۆججەت تىزىملىكىنى ئۆزگەرتكەن چېسلا بويىچە تەرتىپلە"
+
+#. Translators: this is the "sort by file location" menu item
+#: ../src/ui.h:268
+msgid "by _Location"
+msgstr "ئورنى بويىچە(_L)"
+
+#. Translators: location is the file location
+#: ../src/ui.h:270
+msgid "Sort file list by location"
+msgstr "ھۆججەت تىزىملىكىنى ئورنى بويىچە تەرتىپلە"
+
+#~ msgid "A_vailable application:"
+#~ msgstr "پروگراممىلار(_V):"
+
+#~ msgid "Open Files"
+#~ msgstr "ئوچۇق ھۆججەتلەر"
+
+#~ msgid "R_ecent applications:"
+#~ msgstr "يېقىنقى پروگراممىلار(_E):"
+
+#~ msgid "_Application:"
+#~ msgstr "پروگرامما(_A):"
+
+#~ msgid ""
+#~ "File Roller is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the GNU General Public License as published by the "
+#~ "Free Software Foundation; either version 2 of the License, or (at your "
+#~ "option) any later version."
+#~ msgstr ""
+#~ "File Roller ئەركىن يۇمشاق دېتال؛ سىز ئەركىن يۇمشاق دېتال ۋەخپىسى "
+#~ "تارقاتقان GNU ئادەتتىكى ئاممىۋى ئىجازەتنامە بويىچە ئۇنى قايتا تارقىتىپ "
+#~ "ياكى ئۆزگەرتەلەيسىز؛ سىز شۇ ئىجازەت كېلىشىمىنىڭ ئىككىنچى نەشرى ياكى "
+#~ "يۇقىرى نەشرىنى ئىشلىتىڭ."
+
+#~ msgid ""
+#~ "File Roller is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General "
+#~ "Public License for more details."
+#~ msgstr ""
+#~ "File Roller  نى تارقىتىشتىكى مەقسەت سىزگە قۇلايلىق ئېلىپ كېلىش، ئەمما "
+#~ "سودا ياكى باشقا ئالاھىدە قوللىنىشقا نىسبەتەن ھېچقانداق كاپالەت يوق.  GNU "
+#~ "ئادەتتىكى ئاممىۋى ئىجازەت كېلىشىمىنى كۆرۈپ تېخىمۇ كۆپ تەپسىلاتقا ئېرىشىڭ."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with File Roller; if not, write to the Free Software Foundation, Inc., 51 "
+#~ "Franklin St, Fifth Floor, Boston, MA  02110-1301 USA"
+#~ msgstr ""
+#~ "سىز File Roller نى تاپشۇرۇۋېلىش بىلەن بىللە GNU ئادەتتىكى ئاممىۋى ئىجازەت "
+#~ "كېلىشىمىنىڭ كۆچۈرۈلمىسىدىن بىر نۇسخا تاپشۇرۇۋالىسىز؛ ئەگەر "
+#~ "تاپشۇرۇۋالمىغان بولسىڭىز ئەركىن يۇمشاق دېتال فوندىغا خەت يېزىڭ. مەنزىل:  "
+#~ "51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA"
+
+#~ msgid "_File"
+#~ msgstr "ھۆججەت(_F)"

@@ -1,0 +1,446 @@
+# translation of te.po to Telugu
+# Telugu translation of gnome-utils.
+# Copyright (C) 2007,2012 Swecha Telugu Localisation Team <localisation@swecha.org>
+# This file is distributed under the same license as the gnome-utils package.
+#
+#
+# Pramod <pramodfsf@gmail.com>, 2007.
+# Krishna Babu K <kkrothap@redhat.com>, 2007, 2009, 2010.
+# Bhuvan Krishna <bhuvan@swecha.net>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: te\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"system-log&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-10-07 07:11+0000\n"
+"PO-Revision-Date: 2012-03-20 01:40+0530\n"
+"Last-Translator: Bhuvan Krishna <bhuvan@swecha.net>\n"
+"Language-Team: Telugu <indlinux-telugu@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: te\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "లాగ్ దస్త్రపు దర్శిని"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "దర్శించు లేదా దర్శిని వ్యవస్థ log దస్త్రములు"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "పిక్సెల్స్ లో మూల గవాక్షం యొక్క ఎత్తు"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "దాచివున్న  వడపోతుల జాబిత"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "దాచివున్న  regexp వడపోతుల జాబిత"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "మొదలు పెట్టినపుడు log దస్త్రం ను తెరుచుటకు"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "మొదలు పెట్టినపుడు log దస్త్రాల ను తెరుచుటకు"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "అక్షరశైలి యొక్క పరిమాణము log ను దర్శించుటకు వాడబడినది"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"ప్రారంభం నందు తెరువుటకు లాగ్ దస్త్రముల జాబితాను తెలియపరచండి.అప్రమేయ జాబితా /etc/syslog.conf "
+"చదువుట ద్వారా సృష్టించబడుతుంది."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "పిక్సెల్స్ లో మూల గవాక్షం log దర్శకి యొక్క ఎత్తును నిర్థేశిస్తుంది."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"ప్రారంభంనందు ప్రదర్శితమయ్యే లాగ్ దస్త్రాన్ని తెలియజేస్తుంది.అప్రమేయమనునది మీ ఆపరేటింగ్ సిస్టమ్ పై ఆధారపడి, /"
+"var/adm/messages కాని లేదా /var/log/messages కాని అవుతుంది."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"లాగ్ ను ప్రధాన ట్రీ దర్శిని లో ప్రదర్శించుటకు ఉపయోగించు నిర్దేశిత-వెడల్పు ఫాంటు యొక్క పరిమాణంను "
+"తెలియజేస్తుంది.అప్రమేయం అప్రమేయ టెర్మినల్ ఫాంటు పరిమాణంనుండి తీసుకోబడుతుంది."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "పిక్సెల్స్ లో మూల గవాక్షం log దర్శకి యొక్క పొడవును నిర్థేశిస్తుంది."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "పిక్సెల్స్ లో మూల గవాక్షం యొక్క పొడవు"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "పూర్వరంగం:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "పర్యవసానం:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "దృశ్యరంగం:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "దాచు"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "ఉద్దేపించు"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "నామము(_N):"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "క్రమబద్ద వ్యక్తీకరణ_R:"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"ఈ ప్రోగ్రామ్ ఉచిత సాఫ్టువేరు; మీరు దానిని ఉచిత సాఫ్టువేరు సంస్థ ద్వారా ప్రచురించబడిన GNU జనరల్ పబ్లిక్ "
+"లైసెన్సు వర్షన్ 2, లేదా (మీ ఐచ్చికము వద్ద) దాని తర్వాతి వర్షన్‌కు లోబడి పునఃపంపిణి చేయవచ్చును మరియు/లేదా "
+"సవరించవచ్చును;"
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"ఈ ప్రోగ్రామ్ అది వుపయోగపడుతుంది అనే వుద్దేశ్యముతో పంపిణి చేయబడింది, అయితే ఎటువంటి హామి లేదు; కనీసం "
+"వ్యాపారపరంగా లేదా ఫలానా ప్రయోజనం కొరకు ప్రత్యేకించి అనికూడా లేదు.  మరింత సమాచారము కొరకు GNU జనరల్ "
+"పబ్లిక్ లైసెన్సును చూడండి."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"ఈ ప్రోగ్రామ్‌తో మీరు వొక GNU జనరల్ పబ్లిక్ లైసెన్సు నకలును కూడా పొందివుంటారు; పొందకపోతే, Free "
+"Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  "
+"02110-1301, USAకు వ్రాయండి."
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"Pramod <pramodfsf@gmail.com>\n"
+"Krishna Babu K <kkrothap@redhat.com>"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "దస్త్రము %sను తెరువుట అసాధ్యము"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "వడపోత నామము ఖాళీగావుంది!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "వడపోత నామము ':' అక్షరమును కలిగివుండక పోవచ్చును"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "సాధారణ సమీకరణం ఖాళీగా వుంది!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "సాధారణ సమీకరణం చెల్లనిది: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "దయచేసి ఫోర్‌గ్రౌండ్ లేదా బ్యాక్‌గ్రౌండ్ రంగును తెలుపండి!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "వడపోతను సరికూర్చుము"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "కొత్త వడపోతను జతచేయి"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "వడపోతలు"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "కనుగొనుము (_F):"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "ముందుది కనుగొనుము"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "వెతుకుమాట యొక్క సంభవించునది ముందుది వెతుకు"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "తరువాతది కనుగొనుము"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "వెతుకుమాట యొక్క సంభవించునది తరువాత వెతుకు"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "శోధన పదబందం(స్ట్రింగు)ను శుభ్రముచేయుము"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "GZipped లాగ్‌ను విడమర్చుతుంటే(అన్‌కంప్రెస్) దోషము. బహుశా దస్త్రము పాడైవుంటుంది."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "దస్త్రమును చదువుటకు మీరు తగినన్ని అనుమతులు కలిగిలేరు."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "దస్త్రము సాదారణ దస్త్రముకాదు లేదా టెక్స్ట్ దస్త్రముకాదు."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr "సిస్టమ్ లాగ్‌యొక్క ఈ వర్షన్ GZipped లాగ్‌లను మద్దతించదు."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "లోడవుచున్నది..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "కార్యక్షేత్రముల వివరణము చూపుము"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[LOGFILE...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr "-అన్వేషణ మరియు దర్శిని logs"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "Log దర్శకి"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "వ్యవస్థ Log దర్శకి"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "చివరి తాజాపరచు: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d లైనులు (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "log తెరువుము"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "సహాయమును ప్రదర్శించుటలో అక్కడ వొక దోషమువుంది: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "పొట్లం కట్టబడిన"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "లభించలేదు"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "వ్యవస్థ Log దర్శకి గ్నోమ్ కొరకు."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "దస్త్రం(_F)"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "సరిచేయు(_E)"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "దర్శనం(_V)"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "వడపోతలు (_F)"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "సహాయము(_H)"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "తెరచు(_O)..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "దస్త్రం నుండి log తెరువుము"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "మూసివేయు(_C)"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "ఈ log మూసివేయు"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "త్యజించు(_Q)"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "log దర్శకిని త్యజించు"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "నకలుతీయు(_C)"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "ఎంపికను నకలుతీయు"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "అన్నింటిని ఎంచుకొను(_A)"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "మొత్తం log ను ఎంచుకొను"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "కనుగొనుము (_F)..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "లాగ్‌నందు పదమును లేదా మాట(ఫ్రేజ్)ను కనుగొనుము"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "పెద్దదైన పాఠం పరిమాణం"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "చిన్నదైన పాఠం పరిమాణం"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "సాధారణమైన పాఠం పరిమాణం"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "వడపోతలను నిర్వహించుము"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "వడపోతలను నిర్వహించుము"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "సారాలు(_C)"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "log దర్శకి కొరకు సహాయ సారములను తెరువుము"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "గురించి(_A)"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr " log దర్శకి కొరకు గురించి వివరణ చూపుము"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "సుస్థితి పట్టీ(_S)"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "సుస్థితి పట్టీ చూపుము"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "పక్క ప్యాన్(_P)"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "పక్క ప్యాన్ చూపుము"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "పోలికలను మాత్రమే చూపుము"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "ఇచ్చిన వడపోతలలో వొక దానిని పోలు పంక్తులను మాత్రమే చూపుము"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "స్వయం గ జరుపు _A"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "కొత్త వరుస కనిపిస్తే స్వయం చాలకంగ జరుపు"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "\"%s\" నుండి చదవలేకపోతున్న"
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "వివరణము:"
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "ఈ క్రింది దస్త్రములను తెరువలేక పోయింది:"

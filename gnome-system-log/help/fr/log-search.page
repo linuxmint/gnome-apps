@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="log-search" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#main"/>
+    <revision version="3.3" date="2011-10-30" status="review"/>
+    <desc>Rechercher du texte dans le journal actuellement ouvert.</desc>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Partage des Conditions Initiales à l'Identique 3.0 Unported.</p>
+    </license>
+
+  </info>
+
+  <title>Recherche dans le journal</title>
+
+  <p>Pour faire une recherche dans le journal actuellement ouvert :</p>
+
+  <steps>
+    <item>
+      <p>Affichez la barre de recherche en appuyant sur <keyseq><key>Ctrl</key><key>F</key></keyseq>, ou en cliquant sur <guiseq><gui>Affichage</gui><gui>Rechercher...</gui></guiseq>. La barre apparaît en dessous du journal.</p>
+    </item>
+    <item>
+      <p>Saisissez vos critères de recherche dans le champ et appuyez sur <key>Entrée</key> pour afficher le premier résultat.</p>
+      <note style="tip">
+        <p>Les termes de recherche sont sensibles à la casse.</p>
+      </note>
+    </item>
+    <item>
+      <p>Cliquez sur les boutons <gui>Rechercher le précédent</gui> et <gui>Rechercher le suivant</gui> pour parcourir les résultats.</p>
+      <note style="tip">
+        <p>Si vous ne voyez pas le résultat surligné, essayez de faire défiler sur la gauche.</p>
+      </note>
+    </item>
+    <item>
+      <p>Appuyez sur <key>Échap</key> pour masquer la barre de recherche quand vous avez terminé.</p>
+      <note style="tip">
+        <p>Vous ne pouvez masquer la <gui>barre de recherche</gui> que quand celle-ci est sélectionnée. Elle disparaît d'elle-même dès que vous affichez un autre journal.</p>
+      </note>
+    </item>
+  </steps>
+
+
+
+</page>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="log-filter" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#main"/>
+    <link type="seealso" xref="log-search"/>
+    <revision version="3.3" date="2011-10-30" status="review"/>
+    <desc>Vključitev ali izključitev prikaznih vrstic s pomočjo logičnih izrazov.</desc>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+
+    <license>
+      <p>Dovoljenje Creative Commons - deljenje pod istimi pogoji 3.0</p>
+    </license>
+
+  </info>
+
+  <title>Filtriranje dnevnika</title>
+
+  <p>Pregledovalnik dnevnikov vam omogoča filtriranje vsebine na osnovi logičnih izrazov. Za nastavitev ali upravljanje novega filtra:</p>
+
+  <steps>
+    <item>
+      <p>Odprite pogovorno okno upravljalnika filtrov s klikom na <guiseq><gui>Filtri:</gui><gui>Upravljaj filtre</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Kliknite <gui>Dodaj</gui> za dodajane novega filtra ali izbiro obstoječega filtra in kliknite <gui>Lastnosti</gui> za njegovo urejanje.</p>
+    </item>
+    <item>
+      <p>Izpolnite obrazec ali uredite polja, ki jih želite spremeniti:</p>
+      <terms>
+        <item>
+          <title>Ime:</title>
+          <p>Novo določilo za filter </p>
+        </item>
+        <item>
+          <title>Logični izraz:</title>
+          <p>Kaj naj filter filtrira</p>
+        </item>
+        <item>
+          <title>Poudarek:</title>
+          <p>Ta možnost poudari vrstico, ki vsebuje logični izraz</p>
+          <terms>
+            <item>
+              <title>Ozadje:</title>
+              <p>To je barva pisave</p>
+              <note style="tip">
+                <p>Privzeta barva pisave je črna, ki ne poudarja besedila.</p>
+              </note>
+            </item>
+            <item>
+              <title>Ospredje:</title>
+              <p>To je barva poudarjanja</p>
+              <note style="tip">
+                <p>Privzeta barva poudarjanja je črna, ki kot rezultat prikaže neprekinjene črne črne, zato bi jo bilo pametno spremeniti.</p>
+              </note>
+            </item>
+          </terms>
+        </item>
+        <item>
+          <title>Skrij:</title>
+          <p>Ta možnost iz prikazanega dnevnika skrije vrstice, ki vsebujejo logične izraze</p>
+        </item>
+      </terms>
+    </item>
+    <item>
+      <p>Kliknite <gui>Uveljavi</gui> za shranitev novega filtra ali shranitev sprememb obstoječega</p>
+    </item>
+    <item>
+      <p>V pogovornem oknu upravljalnika filtrov kliknite <gui>Zapri</gui> za uveljavitev sprememb.</p>
+    </item>
+  </steps>
+
+  <p>Izberite polje poleg imena filtra, ki ga želite omogočiti v <gui>Filtri:</gui>. Če želite videti le filtre, ki imajo omogočeno <gui>Poudarjanje</gui> in so izbrani, izberite <guiseq><gui>Filteri:</gui><gui>Pokaži le ujemanja</gui></guiseq>.</p>
+
+  <note style="tip">
+    <p>Če obstaja spor med filtrom skrivanja in poudarjanja, bo vrstica morda prikazana kot prazna vrstica.</p>
+  </note>
+
+  <note style="bug">
+    <p>Če odstranite izbiro filtra medtem ko si ogledujete le ujemanja, bo dnevnik prikazal vrstice brez oblikovanja ne glede na to ali so bile prej skrite ali poudarjene. Filter bi moral biti ponastavljen, ko izberete poudarjen filter.</p>
+  </note>
+
+</page>

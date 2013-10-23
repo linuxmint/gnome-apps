@@ -1,0 +1,26 @@
+Description: Patch to fix ubuntu bug #654867
+ This patch fixes ubuntu bug #654867 by making sure the PythonConsoleConfig
+ gconf class is used in the python console plugin configuration dialog.
+ Patch created by Jason Conti
+
+Bug-Ubuntu: https://launchpad.net/bugs/654867
+--- a/plugins/pythonconsole/pythonconsole/config.py-backup	2010-10-04 17:37:27.634246001 -0400
++++ b/plugins/pythonconsole/pythonconsole/config.py	2010-10-04 17:38:39.034246002 -0400
+@@ -68,7 +68,7 @@
+             return default
+ 
+         val = PythonConsoleConfig.gconf.client_get_default().get(key)
+-        if val is not None and val.type == gconf.VALUE_STRING:
++        if val is not None and val.type == PythonConsoleConfig.gconf.VALUE_STRING:
+             return val.get_string()
+         else:
+             return default
+@@ -78,7 +78,7 @@
+         if not PythonConsoleConfig.gconf:
+             return
+ 
+-        v = PythonConsoleConfig.gconf.Value(gconf.VALUE_STRING)
++        v = PythonConsoleConfig.gconf.Value(PythonConsoleConfig.gconf.VALUE_STRING)
+         v.set_string(value)
+         PythonConsoleConfig.gconf.client_get_default().set(key, v)
+

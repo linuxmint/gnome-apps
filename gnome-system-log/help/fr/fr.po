@@ -1,0 +1,464 @@
+# French translation of gnome-utils-logview documentation.
+# Copyright (C) 2006-2012 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-utils
+# documentation package.
+#
+# Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
+# Alain Lojewski <allomervan@gmail.com>, 2012
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils-logview documentation\n"
+"POT-Creation-Date: 2012-03-21 22:23+0000\n"
+"PO-Revision-Date: 2012-03-25 17:30+0100\n"
+"Last-Translator: Alain Lojewski <allomervan@gmail.com>\n"
+"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: C/pref-font-size.page:8(desc)
+msgid "Increase or decrease the size of the text."
+msgstr "Augmenter ou diminuer la taille du texte."
+
+#: C/pref-font-size.page:11(name) C/log-view.page:12(name)
+#: C/log-search.page:11(name) C/log-filter.page:12(name)
+#: C/log-copy.page:11(name) C/log-close.page:12(name)
+#: C/introduction.page:11(name)
+msgid "Ekaterina Gerasimova"
+msgstr "Ekaterina Gerasimova"
+
+#: C/pref-font-size.page:12(email) C/log-view.page:13(email)
+#: C/log-search.page:12(email) C/log-filter.page:13(email)
+#: C/log-copy.page:12(email) C/log-close.page:13(email)
+#: C/introduction.page:12(email)
+msgid "kittykat3756@googlemail.com"
+msgstr "kittykat3756@googlemail.com"
+
+#: C/pref-font-size.page:16(p) C/log-view.page:17(p) C/log-search.page:16(p)
+#: C/log-filter.page:17(p) C/log-copy.page:16(p) C/log-close.page:17(p)
+#: C/introduction.page:16(p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr ""
+"Creative Commons Partage des Conditions Initiales à l'Identique 3.0 Unported."
+
+#: C/pref-font-size.page:21(title)
+msgid "Change font size"
+msgstr "Modification de la taille de police"
+
+#: C/pref-font-size.page:23(p)
+msgid ""
+"You can increase, decrease and reset the font size that the log is displayed "
+"in:"
+msgstr ""
+"Vous pouvez augmenter, diminuer et réinitialiser la taille de la police "
+"servant à afficher le journal :"
+
+#: C/pref-font-size.page:28(title)
+msgid "Increase font size"
+msgstr "Augmentation de la taille de police"
+
+#: C/pref-font-size.page:29(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Zoom In</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>+</key></keyseq>"
+msgstr ""
+"Cliquez sur <guiseq><gui>Affichage</gui><gui>Zoom avant</gui></guiseq>, ou "
+"appuyez sur <keyseq><key>Ctrl</key><key>+</key></keyseq>"
+
+#: C/pref-font-size.page:33(title)
+msgid "Decrease font size"
+msgstr "Diminution de la taille de police"
+
+#: C/pref-font-size.page:34(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Zoom Out</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>-</key></keyseq>"
+msgstr ""
+"Cliquez sur <guiseq><gui>Affichage</gui><gui>Zoom arrière</gui></guiseq>, ou "
+"appuyez sur <keyseq><key>Ctrl</key><key>-</key></keyseq>"
+
+#: C/pref-font-size.page:38(title)
+msgid "Reset to default size"
+msgstr "Réinitialisation à la taille par défaut"
+
+#: C/pref-font-size.page:39(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Normal Size</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>0</key></keyseq>"
+msgstr ""
+"Cliquez sur <guiseq><gui>Affichage</gui><gui>Taille normale</gui></guiseq>, "
+"ou appuyez sur <keyseq><key>Ctrl</key><key>0</key></keyseq>"
+
+#: C/log-view.page:9(desc)
+msgid "Open and view logs."
+msgstr "Ouvrir et afficher les journaux."
+
+#: C/log-view.page:22(title)
+msgid "Open log"
+msgstr "Ouverture du journal"
+
+#: C/log-view.page:24(p)
+msgid ""
+"Open logs by clicking <guiseq><gui>File</gui><gui>Open</gui></guiseq>. Your "
+"opened logs will be displayed in the side pane, to the left of the main "
+"area. You can view a log in the side pane by clicking it."
+msgstr ""
+"Pour ouvrir les journaux, cliquez sur <guiseq><gui>Fichier</"
+"gui><gui>Ouvrir...</gui></guiseq>. Les journaux ouverts sont affichés dans "
+"le panneau latéral, à gauche de la zone principale. Cliquez sur un journal "
+"du panneau latéral pour l'ouvrir."
+
+#: C/log-view.page:29(p)
+msgid ""
+"You can expand some logs. This will show you a list of dates. By clicking "
+"one of the dates, you can view only the log lines from that date, instead of "
+"the whole log."
+msgstr ""
+"Vous pouvez dérouler l'arborescence de certains journaux. Vous voyez alors "
+"apparaître une liste de dates. Si vous cliquez sur une date, vous n'affichez "
+"que les lignes du journal relatives à cette date au lieu de l'ensemble du "
+"journal."
+
+#: C/log-view.page:34(p)
+msgid ""
+"The logs you have open when you quit the log viewer will be opened when you "
+"start it up again."
+msgstr ""
+"Si vous fermez puis ouvrez le visionneur de journaux, vous retrouvez le même "
+"affichage qu'avant sa fermeture."
+
+#: C/log-search.page:8(desc)
+msgid "Search the text in the log that you are currently viewing."
+msgstr "Rechercher du texte dans le journal actuellement ouvert."
+
+#: C/log-search.page:21(title)
+msgid "Search log"
+msgstr "Recherche dans le journal"
+
+#: C/log-search.page:23(p)
+msgid "To search the log you are currently viewing:"
+msgstr "Pour faire une recherche dans le journal actuellement ouvert :"
+
+#: C/log-search.page:27(p)
+msgid ""
+"Show the <gui>Find</gui> bar by pressing <keyseq><key>Ctrl</key><key>F</"
+"key></keyseq>, or by clicking <guiseq><gui>View</gui><gui>Find</gui></"
+"guiseq>. The bar will be shown below the log."
+msgstr ""
+"Affichez la barre de recherche en appuyant sur <keyseq><key>Ctrl</"
+"key><key>F</key></keyseq>, ou en cliquant sur <guiseq><gui>Affichage</"
+"gui><gui>Rechercher...</gui></guiseq>. La barre apparaît en dessous du "
+"journal."
+
+#: C/log-search.page:33(p)
+msgid ""
+"Enter your search term into the field and press <key>Enter</key> to see the "
+"first result."
+msgstr ""
+"Saisissez vos critères de recherche dans le champ et appuyez sur "
+"<key>Entrée</key> pour afficher le premier résultat."
+
+#: C/log-search.page:36(p)
+msgid "The search is case sensitive."
+msgstr "Les termes de recherche sont sensibles à la casse."
+
+#: C/log-search.page:40(p)
+msgid ""
+"Use the <gui>Find Previous</gui> and <gui>Find Next</gui> buttons to browse "
+"through the results."
+msgstr ""
+"Cliquez sur les boutons <gui>Rechercher le précédent</gui> et "
+"<gui>Rechercher le suivant</gui> pour parcourir les résultats."
+
+#: C/log-search.page:43(p)
+msgid "If you can not see the result highlighted, try scrolling to the left."
+msgstr ""
+"Si vous ne voyez pas le résultat surligné, essayez de faire défiler sur la "
+"gauche."
+
+#: C/log-search.page:47(p)
+msgid ""
+"Press <key>Esc</key> to hide the find bar once you are finished with the "
+"search."
+msgstr ""
+"Appuyez sur <key>Échap</key> pour masquer la barre de recherche quand vous "
+"avez terminé."
+
+#: C/log-search.page:50(p)
+msgid ""
+"You can only hide the <gui>find bar</gui> if you are currently focused on "
+"the search field. The bar will hide itself if you view another log."
+msgstr ""
+"Vous ne pouvez masquer la <gui>barre de recherche</gui> que quand celle-ci "
+"est sélectionnée. Elle disparaît d'elle-même dès que vous affichez un autre "
+"journal."
+
+#: C/log-filter.page:9(desc)
+msgid "Include or exclude shown lines using regular expressions."
+msgstr ""
+"Inclure ou exclure l'affichage de lignes en utilisant des expressions "
+"régulières."
+
+#: C/log-filter.page:22(title)
+msgid "Filter log"
+msgstr "Filtrage du journal"
+
+#: C/log-filter.page:24(p)
+msgid ""
+"The log viewer allows you to filter log content based on regular "
+"expressions. To set up or manage a new filter:"
+msgstr ""
+"Le visionneur de journaux vous permet de filtrer le contenu d'un journal sur "
+"la base d'expressions régulières. Pour définir ou gérer un nouveau filtre :"
+
+#: C/log-filter.page:29(p)
+msgid ""
+"Open the filter manager dialog by clicking <guiseq><gui>Filters:</"
+"gui><gui>Manage Filters</gui></guiseq>."
+msgstr ""
+"Cliquez sur <guiseq><gui>Filtres</gui><gui>Gérer les filtres</gui></guiseq> "
+"pour ouvrir la boîte de dialogue."
+
+#: C/log-filter.page:33(p)
+msgid ""
+"Click <gui>Add</gui> to add a new filter, or select an existing filter and "
+"click <gui>Properties</gui> to edit it."
+msgstr ""
+"Cliquez sur <gui>Ajouter</gui> pour ajouter un nouveau filtre, ou "
+"sélectionnez un filtre existant et cliquez sur <gui>Propriétés</gui> pour le "
+"modifier."
+
+#: C/log-filter.page:37(p)
+msgid "Fill in the form or edit the fields that you wish to change:"
+msgstr "Renseignez ou modifiez les champs que vous voulez :"
+
+#: C/log-filter.page:40(title)
+msgid "Name:"
+msgstr "Nom :"
+
+#: C/log-filter.page:41(p)
+msgid "The identifier for the filter"
+msgstr "L'identifiant du filtre"
+
+#: C/log-filter.page:44(title)
+msgid "Regular Expression:"
+msgstr "Expression régulière :"
+
+#: C/log-filter.page:45(p)
+msgid "What the filter will filter for"
+msgstr "Ce que le filtre va filtrer"
+
+#: C/log-filter.page:48(title)
+msgid "Highlight:"
+msgstr "Surbrillance :"
+
+#: C/log-filter.page:49(p)
+msgid "This option emphasizes the line containing the regular expression"
+msgstr "Cette option met en valeur la ligne contenant l'expression régulière"
+
+#: C/log-filter.page:52(title)
+msgid "Background:"
+msgstr "Arrière-plan :"
+
+#: C/log-filter.page:53(p)
+msgid "This is the font color"
+msgstr "Ceci est la couleur de la police"
+
+#: C/log-filter.page:55(p)
+msgid "The default font color is black, which does not emphasize the text."
+msgstr ""
+"La couleur par défaut de la police est le noir, ce qui ne met pas le texte "
+"en valeur."
+
+#: C/log-filter.page:60(title)
+msgid "Foreground:"
+msgstr "Premier plan :"
+
+#: C/log-filter.page:61(p)
+msgid "This is the highlight color"
+msgstr "Ceci est la couleur de surbrillance"
+
+#: C/log-filter.page:63(p)
+msgid ""
+"The default highlight color is black, which shows solid black lines as a "
+"result, so it would be wise to change it."
+msgstr ""
+"La couleur par défaut de la surbrillance est le noir et affiche donc des "
+"lignes noires épaisses, il est par conséquent judicieux d'en changer."
+
+#: C/log-filter.page:70(title)
+msgid "Hide:"
+msgstr "Masquage :"
+
+#: C/log-filter.page:71(p)
+msgid ""
+"This option hides the lines containing the regular expression from the shown "
+"log"
+msgstr ""
+"Cette option masque les lignes contenant l'expression régulière du journal "
+"affiché"
+
+#: C/log-filter.page:77(p)
+msgid ""
+"Click <gui>Apply</gui> to save the new filter or save changes to an existing "
+"one"
+msgstr ""
+"Pour enregistrer le nouveau filtre ou les modifications apportées à un "
+"filtre existant, cliquez sur <gui>Appliquer</gui>"
+
+#: C/log-filter.page:81(p)
+msgid ""
+"Back at the filter manager dialog, click <gui>Close</gui> to apply the "
+"changes."
+msgstr ""
+"De retour à la boîte de dialogue du gestionnaire de filtres, cliquez sur "
+"<gui>Fermer</gui> pour appliquer les modifications."
+
+#: C/log-filter.page:86(p)
+msgid ""
+"Check the box next to the name of the filter that you want to enable in "
+"<gui>Filters:</gui>. If you want to view only the filters which have "
+"<gui>Highlight</gui> enabled and are checked, check <guiseq><gui>Filters:</"
+"gui><gui>Show matches only</gui></guiseq>."
+msgstr ""
+"Pour activer un filtre, cochez la case devant son nom dans le menu "
+"<gui>Filtres</gui>. Pour n'afficher que les filtres qui ont activé la "
+"<gui>Surbrillance</gui> et qui sont actifs, cochez la case <guiseq><gui>Filtres</"
+"gui><gui>Afficher uniquement les correspondances</gui></guiseq>."
+
+#: C/log-filter.page:92(p)
+msgid ""
+"If there is a conflict between a hidden and a highlighted filter, the line "
+"many show as an empty white line."
+msgstr ""
+"S'il y a conflit entre un filtre à masquage et un autre à surbrillance, la "
+"ligne devient blanche et vide."
+
+#: C/log-filter.page:97(p)
+msgid ""
+"If you uncheck a filter while viewing only matches, the log will show the "
+"lines without any formatting, regardless of whether they were hidden or "
+"highlighted before. The filter should reset when you check a highlighted "
+"filter."
+msgstr ""
+"Si vous visionnez uniquement les correspondances et que vous désactivez un "
+"filtre, le journal affiche les lignes non formatées sans tenir compte si "
+"elles étaient masquées ou en surbrillance auparavant. Le filtre devrait "
+"se réinitialiser dès que vous cochez un filtre en surbrillance."
+
+#: C/log-copy.page:8(desc)
+msgid "Copy text from the log."
+msgstr "Copier du texte du journal."
+
+#: C/log-copy.page:20(title)
+msgid "Copy log"
+msgstr "Copie d'un journal"
+
+#: C/log-copy.page:22(p)
+msgid ""
+"Highlight the section of the log that you want to copy with the cursor and "
+"press <keyseq><key>Ctrl</key><key>C</key></keyseq>, or click "
+"<guiseq><gui>Edit</gui><gui>Copy</gui></guiseq>."
+msgstr ""
+"Surlignez avec le curseur la portion de texte que vous souhaitez copier et "
+"appuyez sur <keyseq><key>Ctrl</key><key>C</key></keyseq>, ou cliquez sur "
+"<guiseq><gui>Édition</gui><gui>Copier</gui></guiseq>."
+
+#: C/log-copy.page:27(p)
+msgid ""
+"You can press <keyseq><key>Ctrl</key><key>A</key></keyseq>, or click "
+"<guiseq><gui>Edit</gui><gui>Select All</gui></guiseq>, to select all the "
+"text in the log which you are currently viewing."
+msgstr ""
+"Pour sélectionner tout le texte du journal actuel, appuyez sur "
+"<keyseq><key>Ctrl</key><key>A</key></keyseq>, ou cliquez sur "
+"<guiseq><gui>Édition</gui><gui>Tout sélectionner</gui></guiseq>."
+
+#: C/log-close.page:9(desc)
+msgid "Remove the log you are currently viewing from the <gui>side pane</gui>."
+msgstr "Supprimer le journal actuel du <gui>panneau latéral</gui>."
+
+#: C/log-close.page:21(title)
+msgid "Close log"
+msgstr "Fermeture du journal"
+
+#: C/log-close.page:23(p)
+msgid ""
+"Close the log that you are currently viewing by pressing <keyseq><key>Ctrl</"
+"key><key>W</key></keyseq>, or by clicking <guiseq><gui>File</gui><gui>Close</"
+"gui></guiseq>. This removes it from the <gui>side pane</gui> until you open "
+"the log again."
+msgstr ""
+"Pour fermer le journal actuel, appuyez sur <keyseq><key>Ctrl</key><key>W</"
+"key></keyseq>, ou cliquez sur <guiseq><gui>Fichier</gui><gui>Fermer</gui></"
+"guiseq>. Ceci le supprime du panneau latéral jusqu'à sa réouverture."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/introduction.page:40(None)
+msgid ""
+"@@image: 'figures/log-viewer-main.png'; md5=019eaf56737c3fd7c1ae085e77962384"
+msgstr ""
+"@@image: 'figures/log-viewer-main.png'; md5=019eaf56737c3fd7c1ae085e77962384"
+
+#: C/introduction.page:8(desc)
+msgid "Introduction to the <app>GNOME System Log</app>."
+msgstr "Introduction au <app>Visionneur de journaux système GNOME</app>."
+
+#: C/introduction.page:20(title)
+msgid "Introduction"
+msgstr "Introduction"
+
+#: C/introduction.page:22(p)
+msgid ""
+"<app>Log File Viewer</app> is a graphical, menu-driven viewer that you can "
+"use to view and monitor your system logs. <app>Log File Viewer</app> comes "
+"with a few functions that can help you manage your logs, including a log "
+"monitor and log statistics display."
+msgstr ""
+"Le <app>Visionneur de journaux système</app> est un visionneur graphique, "
+"piloté par des menus que vous pouvez utiliser pour voir et surveiller les "
+"journaux de votre système. Le <app>Visionneur de journaux système</app> vous "
+"propose quelques fonctionnalités qui vous aideront à gérer vos journaux, "
+"comme un contrôleur de journaux et de statistiques."
+
+#: C/introduction.page:27(p)
+msgid ""
+"<app>Log File Viewer</app> is useful if you are new to system administration "
+"because it provides an easier, more user-friendly display of your logs than "
+"a text display of the log file. It is also useful for more experienced "
+"administrators, as it contains a monitor to enable you to continuously "
+"monitor crucial logs."
+msgstr ""
+"Le <app>Visionneur de journaux système</app> est utile si vous êtes un "
+"administrateur système débutant car il propose un affichage de vos journaux "
+"système plus simple et plus pratique qu'une représentation textuelle pure. "
+"Il est également utile pour les administrateurs chevronnés car il contient "
+"une console de surveillance permettant d'examiner les journaux cruciaux en "
+"continu."
+
+#: C/introduction.page:34(p)
+msgid ""
+"<app>Log File Viewer</app> is useful only to those who have access to the "
+"system log files, which generally requires root access."
+msgstr ""
+"Le <app>Visionneur de journaux système</app> est utile seulement pour les "
+"utilisateurs ayant accès aux journaux système, ce qui demande généralement "
+"d'avoir un accès root."
+
+#: C/index.page:5(title)
+msgid "Log File Viewer Help"
+msgstr "Aide du visionneur de journaux système"
+
+#: C/index.page:8(title)
+msgid "Working with the <app>Log File Viewer</app>"
+msgstr "Utilisation du <app>Visionneur de journaux système</app>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/index.page:0(None)
+msgid "translator-credits"
+msgstr ""
+"Jonathan Ernst <jonathan@ernstfamily.ch>, 2006\n"
+"Alain Lojewski <allomervan@gmail.com>, 2012"

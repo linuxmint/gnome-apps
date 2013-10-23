@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-create" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <revision pkgversion="3.4" date="2012-01-18" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>Fájlok vagy mappák hozzáadása új archívumhoz.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Új archívum létrehozása</title>
+
+  <p>Tegye a következőket új archívum létrehozásához az <app>Archívumkezelővel</app>:</p>
+
+  <steps>
+    <item>
+      <p>Nyomja meg az <gui>Új archívum létrehozása</gui> eszköztárgombot, vagy válassza ki az <guiseq><gui style="menu">Archívum</gui><gui style="menuitem">Új</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Megnyílik a fájlválasztó. Ennek használatával nevezze el az új archívumfájlt, és válassza ki a mentéshez használandó helyet, majd kattintson a <gui>Létrehozás</gui> gombra a folytatáshoz.</p>
+      <note style="tip">
+	<p>Ebben az ablakban kiválaszthatja a kívánt fájlformátumot, az elérhető kiterjesztések listája alább látható. Ha nem választ fájlformátumot, akkor az új archívum <file>tar.gz</file> formátumú lesz.</p>
+	<p>A <gui>További beállítások</gui> alatt beállíthat jelszót, vagy kisebb darabokra vághatja az új archívumot. A kötetek méretét <gui>MB</gui>-ban adhatja meg.</p>
+      </note>
+    </item>
+    <item>
+      <p>Vegye fel a kívánt fájlokat az archívumba a <gui>Fájlok hozzáadása az archívumhoz</gui> eszköztárgomb megnyomásával, vagy a <guiseq><gui style="menu">Szerkesztés</gui><gui style="menuitem">Fájlok hozzáadása</gui></guiseq> menüpont kiválasztásával. Az <app>Archívumkezelő</app> lehetővé teszi teljes mappák hozzáadását is a <gui>Mappa hozzáadása az archívumhoz</gui> eszköztárgomb megnyomásával, vagy a <guiseq><gui style="menu">Szerkesztés</gui><gui style="menuitem">Mappa hozzáadása</gui></guiseq> menüpont kiválasztásával. </p>
+      <note style="tip">
+        <p>Mappa hozzáadásakor elérhet néhány további beállítást:</p>
+        <list>
+          <item><p>Almappák hozzáadása.</p></item>
+          <item><p>Felvenni kívánt fájlok.</p></item>
+          <item><p>Kizárandó almappák vagy fájlok.</p></item>
+        </list>
+	<p>Nem minden archívumfájl-formátum támogatja a mappákat – ha az éppen használt fájlformátum ilyen, arról nem kap figyelmeztetést. Ha a mappákat nem támogató fájlformátumot használ, akkor a mappa fájljai felvételre kerülnek, de maga a mappa nem.</p>
+      </note>
+    </item>
+    <item>
+      <p>A fájlok hozzáadásának befejezésekor az archívum kész van: nem kell mentenie.</p>
+    </item>
+  </steps>
+
+</page>

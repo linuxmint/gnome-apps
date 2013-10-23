@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="base" xml:lang="lv">
+
+    <info>
+        <link type="guide" xref="index#number"/>
+    </info>
+
+	<title>Skaitļu bāzes</title>
+    
+    <p>Lai ievadītu skaitļus noteiktā skaitļu bāzē, izmanto <link xref="superscript">apakšraksta skaitļus</link>. Sekojošie skaitļi ir vienādi.</p>
+    <example>
+    <p>1001011₂</p>    
+    <p>113₈</p>
+    <p>75</p>
+    <p>4B₁₆</p>
+    </example>
+    <p><link xref="mouse">Programmēšanas režīmā</link>ir pogas binārajam (<keyseq><key>Ctrl</key><key>B</key></keyseq>), oktālajam (<keyseq><key>Ctrl</key><key>O</key></keyseq>) un heksadecimālajam (<keyseq><key>Ctrl</key><key>H</key></keyseq>) režīmam.</p>
+    <p>Lai iestatītu bāzi, kādā tiek attēloti rezultāti, pamaini <link xref="number-display">rezultātu formātu</link>.</p>
+    <p>Lai mainītu bāzi, kurā rezultāts tiek attēlots, izmanto attiecīgo pogu vai <keyseq><key>Ctrl</key><key>D</key></keyseq>, lai rezultātu parādītu decimālā formātā.</p>
+</page>

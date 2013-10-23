@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="toolbar" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <desc>ツールバーの<link xref="toolbar#view">表示、非表示</link>または<link xref="toolbar#edit">編集</link>。</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  </info>
+
+<title>ツールバー</title>
+
+<section id="view">
+<title>ツールバーの表示または非表示</title>
+  <p><guiseq><gui>表示</gui><gui>ツールバー</gui></guiseq>をクリックします。</p>
+<p>デフォルトのツールバーには、基本的なツールのセットのみが含まれています。</p>
+<media type="image" src="figures/evince-toolbar-default.png" width="475"/>
+<list>
+<item><p>ページからページへの<link xref="movingaround#between-pages">移動</link>を行う<gui>前へ</gui>および<gui>次へ</gui></p></item>
+<item><p><link xref="movingaround#zoom">ズーム</link>・レベルを調整するためのツール</p></item>
+<item><p>ページ選択<link xref="movingaround#between-pages">ツール</link></p></item>
+</list>
+<p>異なるツールのセットがお好みの場合、ツールバーを<link xref="toolbar#modify">編集</link>できます。</p>
+</section>
+
+<section id="modify">
+<title>ツールバーへのツールの追加、削除および整理</title>
+<steps>
+<item><p>ツールバーを<link xref="toolbar#view">表示</link>します。</p></item>
+<item><p><guiseq><gui>編集</gui><gui>ツールバー</gui></guiseq>をクリックします。</p></item>
+</steps>
+<p><gui>ツールバーエディター</gui>は、ツールバーにない項目とセパレーターを含んでいます。</p>
+<media type="image" src="figures/evince-toolbar-editor.png" width="475"/>
+
+<terms>
+  <item><title>ツールバーに新しい項目を追加するには</title>
+        <p>ツールバーエディターからツールバーへ追加したい項目をドラッグします。</p></item>
+
+  <item><title>ツールバーから項目を削除するには</title>
+        <p>ツールバーからツールバーエディターへ削除したい項目をドラッグします。</p></item>
+
+   <item><title>ツールバー上の項目を整理するには</title>
+         <p>ツールバー上の新しい位置へ移動したい項目をドラッグします。</p></item>
+</terms>
+<p>ツールバーの編集が完了したならば、ツールバーエディターのウィンドウにある<gui>閉じる</gui>をクリックします。</p>
+</section>
+</page>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="number-display" xml:lang="sl">
+
+    <info>
+        <link type="guide" xref="index#number"/>
+    </info>
+
+	<title>Oblika rezultata</title>
+    
+    <p>Obliko za prikaz rezultatov lahko spremenite v meniju <guiseq><gui>Računalo</gui><gui>Možnosti</gui></guiseq>.</p>
+    <table>
+    <tr>
+    <td><p>Desetiško</p></td>
+    <td><p>Razultati so prikazani kot decimalna števila</p></td>
+    </tr>
+    <tr>
+    <td><p>Znanstven</p></td>
+    <td><p>Razultati so prikazani kot <link xref="base">znanstvenem zapisu</link></p></td>
+    </tr>
+    <tr>
+    <td><p>Inženirstvo</p></td>
+    <td><p>Rezultati so prikazani v znanstvenem zapisu z izjemo potence, ki je vedno večkratnik števila tri</p></td>
+    </tr>
+    <tr>
+    <td><p>Dvojiško</p></td>
+    <td><p>Razultati so prikazani kot <link xref="base">binarna števila</link></p></td>
+    </tr>
+    <tr>
+    <td><p>Osmiško</p></td>
+    <td><p>Razultati so prikazani kot <link xref="base">osmiška števila</link></p></td>
+    </tr>
+    <tr>
+    <td><p>Šestnajstiško</p></td>
+    <td><p>Razultati so prikazani kot <link xref="base">šestnajstiška števila</link></p></td>
+    </tr>
+    </table>
+    <p>Mogoče je nastaviti število decimalnih števil in  sledeče ničle ter ločnice tisočic (če so prikazane).</p>
+</page>

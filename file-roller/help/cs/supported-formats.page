@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="supported-formats" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.4" date="2011-11-21" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc><app>Archive Manager</app> works with a number of different file formats.</desc>
+  </info>
+
+  <title>Podporované formáty souboru</title>
+
+  <p>File formats that are supported by <app>Archive Manager</app> include:</p>
+
+  <list type="numbered">
+    <item><p>Pouze archivy</p>
+      <list>
+        <item><p>Malý indexovaný archiv AIX (<file>.ar</file>)</p></item>
+        <item><p>Soubor obrazu ISO-9660 [Jen pro čtení] (<file>.iso</file>)</p></item>
+        <item><p>Soubor TAR (<file>.tar</file>)</p></item>
+      </list>
+    </item>
+    <item><p>Archiv a komprese</p>
+      <list>
+        <item><p>Java archiv (<file>.jar</file>)</p></item>
+        <item><p>Komprimovaný archiv WinRAR (<file>.rar</file>)</p></item>
+        <item><p>Archiv tar s kompresí:</p>
+          <list>
+            <item><p><filename>.tar.gz</filename> nebo <filename>.tgz</filename></p></item>
+            <item><p><filename>.tar.bz</filename> nebo <filename>.tbz</filename></p></item>
+            <item><p><filename>.tar.bz2</filename> nebo <filename>.tbz2</filename></p></item>
+            <item><p><filename>.tar.lzo</filename> nebo <filename>.tzo</filename></p></item>
+            <item><p>7zip (<file>.tar.7z</file>)</p></item>
+            <item><p>xz (<file>.tar.xz</file>)</p></item>
+          </list>
+        </item>
+        <item><p>Soubor Cabinet (<file>.cab</file>)</p></item>
+        <item><p>Komiks archivovaný pomocí ZIP (<file>.cbz</file>)</p></item>
+        <item><p>ZIP Archiv (<file>.zip</file>)</p></item>
+        <item><p>Komprimované nearchivní soubory (<file>.zoo</file>)</p></item>
+      </list>
+    </item>
+  </list>
+
+<!-- TODO: how does one install the plugins? -->
+  <note>
+    <p>For some file formats, <app>Archive Manager</app> may require additional
+    plugins.</p>
+  </note>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="synctex" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#synctex" group="first"/>
+    <desc>Доступна поддержка SyncTeX</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Тифани Антопольски (Tiffany Antopolski)</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+<title>Что такое SyncTeX?</title>
+<p>SyncTeX — это метод, который позволяет синхронизировать исходный файл в формате TeX и выходной документ в формате PDF.</p>
+
+<section id="screen-cast">
+ <title>Демонстрация</title>
+  <media type="video" width="500" mime="application/ogg" src="figures/synctex_screencast.ogv">
+     <tt:tt xmlns:tt="http://www.w3.org/ns/ttml">
+       <tt:body>
+        <tt:div begin="3s" end="30s">
+         <tt:p>Чтобы выполнить синхронизацию нажмите <keyseq><key>Ctrl</key>+ левая кнопка мыши</keyseq>.</tt:p>
+        </tt:div>
+       </tt:body>
+      </tt:tt>
+  </media>
+</section>
+</page>

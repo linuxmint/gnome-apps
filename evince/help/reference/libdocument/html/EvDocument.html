@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>EvDocument</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Evince Document Library Reference Manual">
+<link rel="up" href="document-interfaces.html" title="Part I. Document Interfaces">
+<link rel="prev" href="EvAsyncRenderer.html" title="EvAsyncRenderer">
+<link rel="next" href="EvDocumentAnnotations.html" title="EvDocumentAnnotations">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="EvAsyncRenderer.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="document-interfaces.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Evince Document Library Reference Manual</th>
+<td><a accesskey="n" href="EvDocumentAnnotations.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#EvDocument.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#EvDocument.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#EvDocument.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="EvDocument"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EvDocument.top_of_page"></a>EvDocument</span></h2>
+<p>EvDocument</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="EvDocument.synopsis"></a><h2>Synopsis</h2>
+<a name="EvDocumentError"></a><a name="EvRectangle"></a><pre class="synopsis">struct              <a class="link" href="EvDocument.html#EvDocument-struct" title="struct EvDocument">EvDocument</a>;
+struct              <a class="link" href="EvDocument.html#EvDocumentClass" title="struct EvDocumentClass">EvDocumentClass</a>;
+                    <a class="link" href="EvDocument.html#EvDocumentPrivate" title="EvDocumentPrivate">EvDocumentPrivate</a>;
+#define             <a class="link" href="EvDocument.html#EV-DOCUMENT-ERROR:CAPS" title="EV_DOCUMENT_ERROR">EV_DOCUMENT_ERROR</a>
+#define             <a class="link" href="EvDocument.html#EV-DOC-MUTEX-LOCK:CAPS" title="EV_DOC_MUTEX_LOCK">EV_DOC_MUTEX_LOCK</a>
+#define             <a class="link" href="EvDocument.html#EV-DOC-MUTEX-UNLOCK:CAPS" title="EV_DOC_MUTEX_UNLOCK">EV_DOC_MUTEX_UNLOCK</a>
+enum                <a class="link" href="EvDocument.html#EvDocumentError-enum" title="enum EvDocumentError">EvDocumentError</a>;
+                    <a class="link" href="EvDocument.html#EvPoint" title="EvPoint">EvPoint</a>;
+struct              <a class="link" href="EvDocument.html#EvRectangle-struct" title="struct EvRectangle">EvRectangle</a>;
+struct              <a class="link" href="EvDocument.html#EvDocumentBackendInfo" title="struct EvDocumentBackendInfo">EvDocumentBackendInfo</a>;
+<span class="returnvalue">GQuark</span>              <a class="link" href="EvDocument.html#ev-document-error-quark" title="ev_document_error_quark ()">ev_document_error_quark</a>             (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">GMutex</span> *            <a class="link" href="EvDocument.html#ev-document-get-doc-mutex" title="ev_document_get_doc_mutex ()">ev_document_get_doc_mutex</a>           (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="EvDocument.html#ev-document-doc-mutex-lock" title="ev_document_doc_mutex_lock ()">ev_document_doc_mutex_lock</a>          (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="EvDocument.html#ev-document-doc-mutex-unlock" title="ev_document_doc_mutex_unlock ()">ev_document_doc_mutex_unlock</a>        (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="EvDocument.html#ev-document-doc-mutex-trylock" title="ev_document_doc_mutex_trylock ()">ev_document_doc_mutex_trylock</a>       (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">GMutex</span> *            <a class="link" href="EvDocument.html#ev-document-get-fc-mutex" title="ev_document_get_fc_mutex ()">ev_document_get_fc_mutex</a>            (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="EvDocument.html#ev-document-fc-mutex-lock" title="ev_document_fc_mutex_lock ()">ev_document_fc_mutex_lock</a>           (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="EvDocument.html#ev-document-fc-mutex-unlock" title="ev_document_fc_mutex_unlock ()">ev_document_fc_mutex_unlock</a>         (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="EvDocument.html#ev-document-fc-mutex-trylock" title="ev_document_fc_mutex_trylock ()">ev_document_fc_mutex_trylock</a>        (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a class="link" href="EvDocumentInfo.html" title="ev-document-info"><span class="returnvalue">EvDocumentInfo</span></a> *    <a class="link" href="EvDocument.html#ev-document-get-info" title="ev_document_get_info ()">ev_document_get_info</a>                (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="EvDocument.html#ev-document-get-backend-info" title="ev_document_get_backend_info ()">ev_document_get_backend_info</a>        (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvDocument.html#EvDocumentBackendInfo" title="struct EvDocumentBackendInfo"><span class="type">EvDocumentBackendInfo</span></a> *info</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="EvDocument.html#ev-document-load" title="ev_document_load ()">ev_document_load</a>                    (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *uri</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="EvDocument.html#ev-document-load-stream" title="ev_document_load_stream ()">ev_document_load_stream</a>             (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><span class="type">GInputStream</span> *stream</code></em>,
+                                                         <em class="parameter"><code><span class="type">EvDocumentLoadFlags</span> flags</code></em>,
+                                                         <em class="parameter"><code><span class="type">GCancellable</span> *cancellable</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="EvDocument.html#ev-document-load-gfile" title="ev_document_load_gfile ()">ev_document_load_gfile</a>              (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><span class="type">GFile</span> *file</code></em>,
+                                                         <em class="parameter"><code><span class="type">EvDocumentLoadFlags</span> flags</code></em>,
+                                                         <em class="parameter"><code><span class="type">GCancellable</span> *cancellable</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="EvDocument.html#ev-document-save" title="ev_document_save ()">ev_document_save</a>                    (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *uri</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="EvDocument.html#ev-document-get-n-pages" title="ev_document_get_n_pages ()">ev_document_get_n_pages</a>             (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);
+<a class="link" href="EvPage.html" title="EvPage"><span class="returnvalue">EvPage</span></a> *            <a class="link" href="EvDocument.html#ev-document-get-page" title="ev_document_get_page ()">ev_document_get_page</a>                (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> index</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="EvDocument.html#ev-document-get-page-size" title="ev_document_get_page_size ()">ev_document_get_page_size</a>           (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> page_index</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> *width</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> *height</code></em>);
+<span class="returnvalue">gchar</span> *             <a class="link" href="EvDocument.html#ev-document-get-page-label" title="ev_document_get_page_label ()">ev_document_get_page_label</a>          (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> page_index</code></em>);
+<a href="/home/carlos/gnome/share/gtk-doc/html/cairo/cairo-cairo-surface-t.html#cairo-surface-t"><span class="returnvalue">cairo_surface_t</span></a> *   <a class="link" href="EvDocument.html#ev-document-render" title="ev_document_render ()">ev_document_render</a>                  (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvRenderContext.html" title="EvRenderContext"><span class="type">EvRenderContext</span></a> *rc</code></em>);
+const <span class="returnvalue">gchar</span> *       <a class="link" href="EvDocument.html#ev-document-get-uri" title="ev_document_get_uri ()">ev_document_get_uri</a>                 (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);
+const <span class="returnvalue">gchar</span> *       <a class="link" href="EvDocument.html#ev-document-get-title" title="ev_document_get_title ()">ev_document_get_title</a>               (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="EvDocument.html#ev-document-is-page-size-uniform" title="ev_document_is_page_size_uniform ()">ev_document_is_page_size_uniform</a>    (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="EvDocument.html#ev-document-get-max-page-size" title="ev_document_get_max_page_size ()">ev_document_get_max_page_size</a>       (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><span class="type">gdouble</span> *width</code></em>,
+                                                         <em class="parameter"><code><span class="type">gdouble</span> *height</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="EvDocument.html#ev-document-check-dimensions" title="ev_document_check_dimensions ()">ev_document_check_dimensions</a>        (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="EvDocument.html#ev-document-get-max-label-len" title="ev_document_get_max_label_len ()">ev_document_get_max_label_len</a>       (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="EvDocument.html#ev-document-has-text-page-labels" title="ev_document_has_text_page_labels ()">ev_document_has_text_page_labels</a>    (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="EvDocument.html#ev-document-find-page-by-label" title="ev_document_find_page_by_label ()">ev_document_find_page_by_label</a>      (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *page_label</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *page_index</code></em>);
+<span class="returnvalue">GdkPixbuf</span> *         <a class="link" href="EvDocument.html#ev-document-get-thumbnail" title="ev_document_get_thumbnail ()">ev_document_get_thumbnail</a>           (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvRenderContext.html" title="EvRenderContext"><span class="type">EvRenderContext</span></a> *rc</code></em>);
+<span class="returnvalue">gint</span>                <a class="link" href="EvDocument.html#ev-rect-cmp" title="ev_rect_cmp ()">ev_rect_cmp</a>                         (<em class="parameter"><code><a class="link" href="EvDocument.html#EvRectangle"><span class="type">EvRectangle</span></a> *a</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvDocument.html#EvRectangle"><span class="type">EvRectangle</span></a> *b</code></em>);
+#define             <a class="link" href="EvDocument.html#EV-TYPE-RECTANGLE:CAPS" title="EV_TYPE_RECTANGLE">EV_TYPE_RECTANGLE</a>
+<span class="returnvalue">GType</span>               <a class="link" href="EvDocument.html#ev-rectangle-get-type" title="ev_rectangle_get_type ()">ev_rectangle_get_type</a>               (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a class="link" href="EvDocument.html#EvRectangle"><span class="returnvalue">EvRectangle</span></a> *       <a class="link" href="EvDocument.html#ev-rectangle-new" title="ev_rectangle_new ()">ev_rectangle_new</a>                    (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a class="link" href="EvDocument.html#EvRectangle"><span class="returnvalue">EvRectangle</span></a> *       <a class="link" href="EvDocument.html#ev-rectangle-copy" title="ev_rectangle_copy ()">ev_rectangle_copy</a>                   (<em class="parameter"><code><a class="link" href="EvDocument.html#EvRectangle"><span class="type">EvRectangle</span></a> *ev_rect</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="EvDocument.html#ev-rectangle-free" title="ev_rectangle_free ()">ev_rectangle_free</a>                   (<em class="parameter"><code><a class="link" href="EvDocument.html#EvRectangle"><span class="type">EvRectangle</span></a> *ev_rect</code></em>);
+#define             <a class="link" href="EvDocument.html#EV-BACKEND-IMPLEMENT-INTERFACE:CAPS" title="EV_BACKEND_IMPLEMENT_INTERFACE()">EV_BACKEND_IMPLEMENT_INTERFACE</a>      (TYPE_IFACE,
+                                                         iface_init)
+#define             <a class="link" href="EvDocument.html#EV-BACKEND-REGISTER-WITH-CODE:CAPS" title="EV_BACKEND_REGISTER_WITH_CODE()">EV_BACKEND_REGISTER_WITH_CODE</a>       (BackendName,
+                                                         backend_name,
+                                                         CODE)
+#define             <a class="link" href="EvDocument.html#EV-BACKEND-REGISTER:CAPS" title="EV_BACKEND_REGISTER()">EV_BACKEND_REGISTER</a>                 (BackendName,
+                                                         backend_name)
+</pre>
+</div>
+<div class="refsect1">
+<a name="EvDocument.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GObject
+   +----EvDocument
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----EvDocumentError
+</pre>
+<pre class="synopsis">
+  GBoxed
+   +----EvRectangle
+</pre>
+</div>
+<div class="refsect1">
+<a name="EvDocument.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="EvDocument.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="EvDocument-struct"></a><h3>struct EvDocument</h3>
+<pre class="programlisting">struct EvDocument;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvDocumentClass"></a><h3>struct EvDocumentClass</h3>
+<pre class="programlisting">struct EvDocumentClass {
+        GObjectClass base_class;
+
+        /* Virtual Methods  */
+        gboolean          (* load)            (EvDocument      *document,
+                                               const char      *uri,
+                                               GError         **error);
+        gboolean          (* save)            (EvDocument      *document,
+                                               const char      *uri,
+                                               GError         **error);
+        gint              (* get_n_pages)     (EvDocument      *document);
+	EvPage          * (* get_page)        (EvDocument      *document,
+					       gint             index);
+        void              (* get_page_size)   (EvDocument      *document,
+                                               EvPage          *page,
+                                               double          *width,
+                                               double          *height);
+        gchar           * (* get_page_label)  (EvDocument      *document,
+                                               EvPage          *page);
+        cairo_surface_t * (* render)          (EvDocument      *document,
+                                               EvRenderContext *rc);
+	GdkPixbuf       * (* get_thumbnail)   (EvDocument      *document,
+					       EvRenderContext *rc);
+        EvDocumentInfo  * (* get_info)        (EvDocument      *document);
+        gboolean          (* get_backend_info)(EvDocument      *document,
+                                               EvDocumentBackendInfo *info);
+        gboolean	  (* support_synctex) (EvDocument      *document);
+
+        /* GIO streams */
+        gboolean          (* load_stream)     (EvDocument          *document,
+                                               GInputStream        *stream,
+                                               EvDocumentLoadFlags  flags,
+                                               GCancellable        *cancellable,
+                                               GError             **error);
+        gboolean          (* load_gfile)      (EvDocument          *document,
+                                               GFile               *file,
+                                               EvDocumentLoadFlags  flags,
+                                               GCancellable        *cancellable,
+                                               GError             **error);
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvDocumentPrivate"></a><h3>EvDocumentPrivate</h3>
+<pre class="programlisting">typedef struct _EvDocumentPrivate EvDocumentPrivate;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EV-DOCUMENT-ERROR:CAPS"></a><h3>EV_DOCUMENT_ERROR</h3>
+<pre class="programlisting">#define EV_DOCUMENT_ERROR ev_document_error_quark ()
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EV-DOC-MUTEX-LOCK:CAPS"></a><h3>EV_DOC_MUTEX_LOCK</h3>
+<pre class="programlisting">#define EV_DOC_MUTEX_LOCK (ev_document_doc_mutex_lock ())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EV-DOC-MUTEX-UNLOCK:CAPS"></a><h3>EV_DOC_MUTEX_UNLOCK</h3>
+<pre class="programlisting">#define EV_DOC_MUTEX_UNLOCK (ev_document_doc_mutex_unlock ())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvDocumentError-enum"></a><h3>enum EvDocumentError</h3>
+<pre class="programlisting">typedef enum {
+        EV_DOCUMENT_ERROR_INVALID,
+        EV_DOCUMENT_ERROR_ENCRYPTED
+} EvDocumentError;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvPoint"></a><h3>EvPoint</h3>
+<pre class="programlisting">typedef struct {
+        double x;
+        double y;
+} EvPoint;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvRectangle-struct"></a><h3>struct EvRectangle</h3>
+<pre class="programlisting">struct EvRectangle {
+	gdouble x1;
+	gdouble y1;
+	gdouble x2;
+	gdouble y2;
+};
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvDocumentBackendInfo"></a><h3>struct EvDocumentBackendInfo</h3>
+<pre class="programlisting">struct EvDocumentBackendInfo {
+	const gchar *name;
+	const gchar *version;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-error-quark"></a><h3>ev_document_error_quark ()</h3>
+<pre class="programlisting"><span class="returnvalue">GQuark</span>              ev_document_error_quark             (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-get-doc-mutex"></a><h3>ev_document_get_doc_mutex ()</h3>
+<pre class="programlisting"><span class="returnvalue">GMutex</span> *            ev_document_get_doc_mutex           (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-doc-mutex-lock"></a><h3>ev_document_doc_mutex_lock ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                ev_document_doc_mutex_lock          (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-doc-mutex-unlock"></a><h3>ev_document_doc_mutex_unlock ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                ev_document_doc_mutex_unlock        (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-doc-mutex-trylock"></a><h3>ev_document_doc_mutex_trylock ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            ev_document_doc_mutex_trylock       (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-get-fc-mutex"></a><h3>ev_document_get_fc_mutex ()</h3>
+<pre class="programlisting"><span class="returnvalue">GMutex</span> *            ev_document_get_fc_mutex            (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-fc-mutex-lock"></a><h3>ev_document_fc_mutex_lock ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                ev_document_fc_mutex_lock           (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-fc-mutex-unlock"></a><h3>ev_document_fc_mutex_unlock ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                ev_document_fc_mutex_unlock         (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-fc-mutex-trylock"></a><h3>ev_document_fc_mutex_trylock ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            ev_document_fc_mutex_trylock        (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-get-info"></a><h3>ev_document_get_info ()</h3>
+<pre class="programlisting"><a class="link" href="EvDocumentInfo.html" title="ev-document-info"><span class="returnvalue">EvDocumentInfo</span></a> *    ev_document_get_info                (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-get-backend-info"></a><h3>ev_document_get_backend_info ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            ev_document_get_backend_info        (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvDocument.html#EvDocumentBackendInfo" title="struct EvDocumentBackendInfo"><span class="type">EvDocumentBackendInfo</span></a> *info</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-load"></a><h3>ev_document_load ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            ev_document_load                    (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *uri</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>
+Loads <em class="parameter"><code>document</code></em> from <em class="parameter"><code>uri</code></em>.
+</p>
+<p>
+On failure, <code class="literal">FALSE</code> is returned and <em class="parameter"><code>error</code></em> is filled in.
+If the document is encrypted, EV_DEFINE_ERROR_ENCRYPTED is returned.
+If the backend cannot load the specific document, EV_DOCUMENT_ERROR_INVALID
+is returned. Other errors are possible too, depending on the backend
+used to load the document and the URI, e.g. <span class="type">GIOError</span>, <span class="type">GFileError</span>, and
+<span class="type">GConvertError</span>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>document</code></em> :</span></p></td>
+<td>a <a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>uri</code></em> :</span></p></td>
+<td>the document's URI</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <span class="type">GError</span> location to store an error, or <code class="literal">NULL</code>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<code class="literal">TRUE</code> on success, or <code class="literal">FALSE</code> on failure.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-load-stream"></a><h3>ev_document_load_stream ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            ev_document_load_stream             (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><span class="type">GInputStream</span> *stream</code></em>,
+                                                         <em class="parameter"><code><span class="type">EvDocumentLoadFlags</span> flags</code></em>,
+                                                         <em class="parameter"><code><span class="type">GCancellable</span> *cancellable</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p class="since">Since 3.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-load-gfile"></a><h3>ev_document_load_gfile ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            ev_document_load_gfile              (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><span class="type">GFile</span> *file</code></em>,
+                                                         <em class="parameter"><code><span class="type">EvDocumentLoadFlags</span> flags</code></em>,
+                                                         <em class="parameter"><code><span class="type">GCancellable</span> *cancellable</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p class="since">Since 3.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-save"></a><h3>ev_document_save ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            ev_document_save                    (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *uri</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>
+Saves <em class="parameter"><code>document</code></em> to <em class="parameter"><code>uri</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>uri</code></em> :</span></p></td>
+<td>the target URI</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>a <span class="type">GError</span> location to store an error, or <code class="literal">NULL</code>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<code class="literal">TRUE</code> on success, or <code class="literal">FALSE</code> on error with <em class="parameter"><code>error</code></em> filled in</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-get-n-pages"></a><h3>ev_document_get_n_pages ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>                ev_document_get_n_pages             (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-get-page"></a><h3>ev_document_get_page ()</h3>
+<pre class="programlisting"><a class="link" href="EvPage.html" title="EvPage"><span class="returnvalue">EvPage</span></a> *            ev_document_get_page                (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> index</code></em>);</pre>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>document</code></em> :</span></p></td>
+<td>a <a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>Newly created <a class="link" href="EvPage.html" title="EvPage"><span class="type">EvPage</span></a> for the given index. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-get-page-size"></a><h3>ev_document_get_page_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                ev_document_get_page_size           (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> page_index</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> *width</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> *height</code></em>);</pre>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>document</code></em> :</span></p></td>
+<td>a <a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>page_index</code></em> :</span></p></td>
+<td>index of page</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>width</code></em> :</span></p></td>
+<td>return location for the width of the page, or <code class="literal">NULL</code>. <span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>height</code></em> :</span></p></td>
+<td>return location for the height of the page, or <code class="literal">NULL</code>. <span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-get-page-label"></a><h3>ev_document_get_page_label ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *             ev_document_get_page_label          (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> page_index</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-render"></a><h3>ev_document_render ()</h3>
+<pre class="programlisting"><a href="/home/carlos/gnome/share/gtk-doc/html/cairo/cairo-cairo-surface-t.html#cairo-surface-t"><span class="returnvalue">cairo_surface_t</span></a> *   ev_document_render                  (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvRenderContext.html" title="EvRenderContext"><span class="type">EvRenderContext</span></a> *rc</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-get-uri"></a><h3>ev_document_get_uri ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *       ev_document_get_uri                 (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-get-title"></a><h3>ev_document_get_title ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *       ev_document_get_title               (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-is-page-size-uniform"></a><h3>ev_document_is_page_size_uniform ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            ev_document_is_page_size_uniform    (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-get-max-page-size"></a><h3>ev_document_get_max_page_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                ev_document_get_max_page_size       (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><span class="type">gdouble</span> *width</code></em>,
+                                                         <em class="parameter"><code><span class="type">gdouble</span> *height</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-check-dimensions"></a><h3>ev_document_check_dimensions ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            ev_document_check_dimensions        (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-get-max-label-len"></a><h3>ev_document_get_max_label_len ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>                ev_document_get_max_label_len       (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-has-text-page-labels"></a><h3>ev_document_has_text_page_labels ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            ev_document_has_text_page_labels    (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-find-page-by-label"></a><h3>ev_document_find_page_by_label ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            ev_document_find_page_by_label      (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *page_label</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *page_index</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-document-get-thumbnail"></a><h3>ev_document_get_thumbnail ()</h3>
+<pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *         ev_document_get_thumbnail           (<em class="parameter"><code><a class="link" href="EvDocument.html" title="EvDocument"><span class="type">EvDocument</span></a> *document</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvRenderContext.html" title="EvRenderContext"><span class="type">EvRenderContext</span></a> *rc</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-rect-cmp"></a><h3>ev_rect_cmp ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>                ev_rect_cmp                         (<em class="parameter"><code><a class="link" href="EvDocument.html#EvRectangle"><span class="type">EvRectangle</span></a> *a</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvDocument.html#EvRectangle"><span class="type">EvRectangle</span></a> *b</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EV-TYPE-RECTANGLE:CAPS"></a><h3>EV_TYPE_RECTANGLE</h3>
+<pre class="programlisting">#define EV_TYPE_RECTANGLE (ev_rectangle_get_type ())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-rectangle-get-type"></a><h3>ev_rectangle_get_type ()</h3>
+<pre class="programlisting"><span class="returnvalue">GType</span>               ev_rectangle_get_type               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-rectangle-new"></a><h3>ev_rectangle_new ()</h3>
+<pre class="programlisting"><a class="link" href="EvDocument.html#EvRectangle"><span class="returnvalue">EvRectangle</span></a> *       ev_rectangle_new                    (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-rectangle-copy"></a><h3>ev_rectangle_copy ()</h3>
+<pre class="programlisting"><a class="link" href="EvDocument.html#EvRectangle"><span class="returnvalue">EvRectangle</span></a> *       ev_rectangle_copy                   (<em class="parameter"><code><a class="link" href="EvDocument.html#EvRectangle"><span class="type">EvRectangle</span></a> *ev_rect</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-rectangle-free"></a><h3>ev_rectangle_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                ev_rectangle_free                   (<em class="parameter"><code><a class="link" href="EvDocument.html#EvRectangle"><span class="type">EvRectangle</span></a> *ev_rect</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EV-BACKEND-IMPLEMENT-INTERFACE:CAPS"></a><h3>EV_BACKEND_IMPLEMENT_INTERFACE()</h3>
+<pre class="programlisting">#define             EV_BACKEND_IMPLEMENT_INTERFACE(TYPE_IFACE, iface_init)</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EV-BACKEND-REGISTER-WITH-CODE:CAPS"></a><h3>EV_BACKEND_REGISTER_WITH_CODE()</h3>
+<pre class="programlisting">#define             EV_BACKEND_REGISTER_WITH_CODE(BackendName, backend_name, CODE)</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EV-BACKEND-REGISTER:CAPS"></a><h3>EV_BACKEND_REGISTER()</h3>
+<pre class="programlisting">#define             EV_BACKEND_REGISTER(BackendName, backend_name)</pre>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>

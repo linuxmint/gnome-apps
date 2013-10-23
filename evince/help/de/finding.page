@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="finding" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#reading"/>
+    <desc>Ein Wort oder einen Ausdruck im Dokument suchen.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008, 2009, 2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@googlemail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wolfgang Stöggl</mal:name>
+      <mal:email>c72578@yahoo.de</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gabor Karsay</mal:name>
+      <mal:email>gabor.karsay@gmx.at</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Text in einem Dokument suchen</title>
+<steps>
+    <item><p>Klicken Sie auf <guiseq><gui>Bearbeiten</gui><gui>Suchen</gui></guiseq> oder tippen Sie <keyseq><key>Strg</key><key>F</key></keyseq> oder <key>/</key>, um das Suchfeld zu öffnen.</p></item>
+
+    <item><p>Tippen Sie das Wort oder den Ausdruck ein, nach dem Sie suchen möchten. Die Suche startet automatisch.</p></item>
+
+    <item><p>Mit den Knöpfen <gui>Rückwärts suchen</gui> und <gui>Weiter suchen</gui> können Sie die Suchtreffer durchgehen.</p></item>
+
+    <item>
+     <p>Klicken Sie beliebig ins Dokument, um die Suchleiste zu verbergen.</p>
+    </item>
+</steps>
+
+<p>Falls das Wort oder der Suchbegriff im gesamten Dokument nicht vorkommen, erhalten Sie die Fehlermeldung <em>Nicht gefunden</em>. Wenn es allerdings mindestens einmal vorkommt, dann wird die Anzahl der Vorkommen auf jeder Seite angezeigt. Dies wird ersichtlich, wenn Sie wie oben beschrieben von einem Treffer zum nächsten springen oder durch das Dokument rollen.</p>
+
+<note>
+  <p>Sie können nur PDF-Dokumente durchsuchen. Einige PDF-Dokumente können nicht durchsucht werden, weil der Text tatsächlich als digitales Bild im Dokument hinterlegt ist.</p>
+</note>
+
+</page>

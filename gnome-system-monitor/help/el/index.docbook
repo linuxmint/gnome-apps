@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.24.4">
+<!ENTITY manrevision "2.2">
+<!ENTITY date "March 2009">
+<!ENTITY app "System Monitor">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Εγχειρίδιο Παρακολούθησης συστήματος, έκδοση 2.2</title>
+
+    <copyright><year>2009</year> <holder>Paul Cutler</holder></copyright>
+    <copyright><year>2004</year> <holder>Sun Microsystems</holder></copyright>
+    <copyright><year>2001</year> <year>2002</year> <year>2004</year> <holder>Bill Day</holder></copyright>
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+   -->
+
+    <publisher role="maintainer">
+      <publishername>Έργο τεκμηρίωσης GNOME</publishername>
+    </publisher>
+
+     <legalnotice id="legalnotice">
+	<para>Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή μεταγενέστερη εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά Εδάφια, χωρίς Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε να βρείτε ένα αντίγραφο της GFDL σε αυτόν τον <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε με αυτόν τον οδηγό.</para>
+         <para>Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του GNOME όπως διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 της άδειας.</para>
+
+	<para>Πολλές από τις ονομασίες που χρησιμοποιούνται από εταιρείες για τη διαφοροποίηση των προϊόντων και υπηρεσιών τους έχουν καταχωρηθεί ως εμπορικά σήματα. Οπουδήποτε στην τεκμηρίωση του GNOME εμφανίζονται αυτές οι ονομασίες, και εφόσον τα μέλη του Έργου τεκμηρίωσης του GNOME έχουν λάβει γνώση αυτών των εμπορικών σημάτων, οι ονομασίες αυτές θα γράφονται με κεφαλαίους χαρακτήρες ή με κεφαλαίους τους αρχικούς χαρακτήρες.</para>
+
+	<para>ΤΟ ΈΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΑΔΕΙΑΣ GNU FREE DOCUMENTATION ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <orderedlist>
+		<listitem>
+		  <para>Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ ΟΤΙ ΜΠΟΡΕΙ ΝΑ ΕΞΥΠΗΡΕΤΗΣΕΙ ΚΑΠΟΙΟ ΣΚΟΠΟ Η ΟΤΙ ΕΙΝΑΙ ΧΩΡΙΣ ΣΦΑΛΜΑ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ ΓΙΑ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ ΚΑΙ ΛΕΙΤΟΥΡΓΙΚΟΤΗΤΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ.</para>
+		</listitem>
+		<listitem>
+		  <para>ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+        other legal stuff such as "NO WARRANTY" statement. Please do not change
+        any of this. -->
+
+  <authorgroup>
+    <author><firstname>Sun</firstname> <surname>Ομάδα τεκμηρίωσης του GNOME</surname> <affiliation> <orgname>Sun Microsystems</orgname> </affiliation></author>
+    <author><firstname>Bill</firstname> <surname>Day</surname> <affiliation><address><email>billday@bellatlantic.net</email></address></affiliation></author>
+      <author><firstname>Paul</firstname> <surname>Cutler</surname> <affiliation> <orgname>Ομάδα τεκμηρίωσης του GNOME</orgname> <address><email>pcutler@foresightlinux.org</email></address> </affiliation></author>
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+
+    <othercredit role="translator">
+      <firstname>Latin</firstname>
+      <surname>Translator 1</surname>
+      <affiliation>
+        <orgname>Latin Translation Team</orgname>
+        <address> <email>translator@gnome.org</email> </address>
+      </affiliation>
+      <contrib>Latin translation</contrib>
+    </othercredit>
+-->
+    </authorgroup>
+
+    <releaseinfo revision="2.28" role="review">
+      <ulink type="review" url="http://bugzilla.gnome.org/show_bug.cgi?id=500559"/>
+    </releaseinfo>
+
+    <revhistory>
+      <revision><revnumber>Εγχειρίδιο Παρακολούθησης συστήματος V2.2</revnumber> <date>Μάρτιος 2009</date> <revdescription>
+          <para role="author">Paul Cutler <email>pcutler@foresightlinux.org</email></para>
+          <para role="publisher">Έργο τεκμηρίωσης GNOME</para>
+        </revdescription></revision>
+      <revision><revnumber>Εγχειρίδιο Παρακολούθησης συστήματος V2.1</revnumber> <date>Φεβρουάριος 2004</date> <revdescription>
+          <para role="author">Ομάδα τεκμηρίωσης GNOME της Sun</para>
+          <para role="publisher">Έργο τεκμηρίωσης GNOME</para>
+        </revdescription></revision>
+      <revision><revnumber>Εγχειρίδιο Παρακολούθησης συστήματος V2.0</revnumber> <date>Νοέμβριος 2002</date> <revdescription>
+          <para role="author">Bill Day <email>billday@bellatlantic.net</email></para>
+          <para role="publisher">Έργο τεκμηρίωσης GNOME</para>
+        </revdescription></revision>
+      <revision><revnumber>Εγχειρίδιο Procman V0.11</revnumber> <date>Ιανουάριος 2002</date> <revdescription>
+          <para role="author">Bill Day <email>billday@bellatlantic.net</email></para>
+          <para role="publisher">Έργο τεκμηρίωσης GNOME</para>
+        </revdescription></revision>
+    </revhistory>
+
+    <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.24.4 της «Παρακολούθησης συστήματος».</releaseinfo>
+
+    <legalnotice>
+      <title>Ανάδραση</title>
+      <para>Για να αναφέρετε κάποιο σφάλμα ή να προτείνετε κάτι που αφορά την εφαρμογή «Παρακολούθηση συστήματος» ή αυτό το εγχειρίδιο, ακολουθήστε τις οδηγίες στην σελίδα <ulink url="ghelp:gnome-feedback" type="help">GNOME Feedback Page</ulink>.</para>
+
+<!-- Translators may also add here feedback address for translations -->
+
+    </legalnotice>
+    <abstract role="description">
+      <para>Η Παρακολούθηση συστήματος παρέχει στους χρήστες μια γραφική διεπαφή για την παρακαλούθηση της κεντρικής μονάδας επεξεργασίας (CPU), του δικτύου και των δραστηριοτήτων της μνήμης, καθώς επίσης και ένα τρόπο προβολής και διακοπής των υπηρεσιών του συστήματος.</para>
+    </abstract>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname> Στέργιος Προσινικλής</firstname>
+      </personname>
+      <email>steriosprosiniklis@gmail.com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2009</year>
+      
+      <holder> Στέργιος Προσινικλής</holder>
+    </copyright>
+  </articleinfo>
+
+  <indexterm zone="index"><primary>Παρακολούθηση συστήματος</primary></indexterm>
+  <indexterm zone="index"><primary>gnome-system-monitor</primary></indexterm>
+  <indexterm zone="index"><primary>procman</primary></indexterm>
+
+<!-- ============= Document Body ============================= -->
+ <!-- ============= Introduction ============================== -->
+  <sect1 id="gnome-system-monitor-intro">
+    <title>Εισαγωγή</title>
+    <para>Η εφαρμογή <application>Παρακολούθηση συστήματος</application> σας επιτρέπει να προβάλλετε βασικές πληροφορίες για το σύστημα και να παρακολουθείτε τις διεργασίες του,την χρήση πόρων και τα συστήματα αρχείων. Μπορείτε επίσης να χρησιμοποιήσετε την <application>Παρακολούθηση συστήματος</application> για να τροποποιήσετε την συμπεριφορά του συστήματος σας.</para>
+    <para>Το παράθυρο της <application>Παρακολούθησης συστήματος</application> περιέχει τέσσερεις ενότητες σε καρτέλλες:</para>
+    <variablelist>
+      <varlistentry>
+        <term><guilabel>Σύστημα</guilabel></term>
+        <listitem>
+          <para>Προβάλλει διάφορες βασικές πληροφορίες για το υλικό και το λογισμικό του υπολογιστή.</para>
+          <variablelist>
+            <varlistentry>
+              <term>Κυκλοφορία</term>
+              <listitem>
+                <itemizedlist>
+                  <listitem>
+                    <para>Έκδοση διανομής</para>
+                  </listitem>
+                  <listitem>
+                    <para>Έκδοση πυρήνα Linux</para>
+                  </listitem>
+                  <listitem>
+                    <para>Έκδοση του GNOME</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Υλικό</term>
+              <listitem>
+                <itemizedlist>
+                  <listitem>
+                    <para>Εγκατεστημένη μνήμη</para>
+                  </listitem>
+                  <listitem>
+                    <para>Επεξεργαστές και ταχύτητες τους</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Κατάσταση συστήματος</term>
+              <listitem>
+                <itemizedlist>
+                  <listitem>
+                    <para>Διαθέσιμος χώρος δίσκου</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><guilabel>Διαδικασίες</guilabel></term>
+        <listitem>
+          <para>Προβάλλει τις ενεργές διεργασίες και τις μεταξύ τους σχέσεις. Παρέχει λεπτομερείς πληροφορίες για μεμονωμένες διεργασίες και σας δίνει την δυνατότητα ελέγχου των ενεργών διεργασιών.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><guilabel>Πόροι</guilabel></term>
+        <listitem>
+          <para>Προβάλλει την τρέχουσα χρήση των ακόλουθων πόρων συστήματος:</para>
+          <itemizedlist>
+            <listitem>
+              <para>Ιστορικό CPU</para>
+            </listitem>
+            <listitem>
+              <para>Ιστορικό μνήμης/εναλλαγής</para>
+            </listitem>
+            <listitem>
+              <para>Ιστορικό δικτύου</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><guilabel>Συστήματα αρχείων</guilabel></term>
+        <listitem>
+          <para>Παρουσιάζει λίστα όλων των προσαρτημένων συστημάτων αρχείων και βασικές πληροφορίες για το καθένα.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="gnome-system-monitor-getting-started">
+    <title>Ξεκινώντας</title>
+
+<!-- ============= To Start System Monitor ============================ -->
+    <sect2 id="gnome-system-monitor-to-start">
+      <title>Εκκίνηση «Παρακολούθησης συστήματος»</title>
+      <para>Μπορείτε να εκκινήσετε την <application>Παρακολούθηση συστήματος</application> με τους εξής τρόπους:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Μενού <guimenu>Σύστημα</guimenu></term>
+          <listitem>
+            <para>Επιλέξτε <menuchoice><guimenu>Διαχείριση συστήματος</guimenu> <guimenuitem>Παρακολούθηση συστήματος</guimenuitem></menuchoice>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Γραμμή εντολών</term>
+          <listitem>
+            <para>Εκτελέστε την εντολή: <command>gnome-system-monitor</command></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-when-you-start">
+      <title>Κατά την εκκίνηση της «Παρακολούθησης συστήματος»</title>
+      <para>Όταν ξεκινά η <application>Παρακολούθηση συστήματος</application>, προβάλλεται το παρακάτω παράθυρο:</para>
+      <figure id="gnome-system-monitor-window">
+        <title>Παράθυρο «Παρακολούθησης συστήματος»</title>
+        <screenshot>
+          <mediaobject><imageobject> <imagedata fileref="figures/gnome-system-monitor_window.png" format="PNG"/> </imageobject> <textobject> <phrase>Το κύριο παράθυρο της Παρακολούθησης συστήματος.</phrase> </textobject></mediaobject>
+        </screenshot>
+      </figure>
+      <para>Το παράθυρο της εφαρμογής <application>Παρακολούθηση συστήματος</application> περιέχει τα εξής στοιχεία:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Γραμμή μενού</term>
+          <listitem>
+            <para>Οι εργαλειοθήκες στην γραμμή μενού περιέχουν όλες τις εντολές που χρειάζεστε για να εργαστείτε με την <application>Παρακολούθηση συστήματος</application>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Περιοχή προβολής</term>
+          <listitem>
+            <para>Η περιοχή προβολής περιέχει τις πληροφορίες της παρακολούθησης συστήματος. Περιέχει τις εξής ενότητες σε καρτέλλες:</para>
+            <itemizedlist>
+              <listitem>
+                <para><guilabel>Σύστημα</guilabel></para>
+                <para>Περιέχει μία λίστα βασικών ιδιοτήτων του συστήματος, όπως οι εκδόσεις λογισμικού του συστήματος και οι προδιαγραφές και η κατάσταση του υλισμικού.</para>
+              </listitem>
+              <listitem>
+                <para><guilabel>Διαδικασίες</guilabel></para>
+                <para>Περιέχει λίστα διεργασιών που παρουσιάζεται σε πίνακα, λίστα του μέσου φόρτου για τα τελευταία λεπτά και το πλήκτρο <guibutton>Τερματισμός διεργασίας</guibutton>.</para>
+              </listitem>
+              <listitem>
+                <para><guilabel>Πόροι</guilabel></para>
+                <para>Περιέχει το γράφημα του <guilabel>Ιστορικού CPU</guilabel>, το γράφημα του <guilabel>Ιστορικού μνήμης/εναλλαγής</guilabel> και το γράφημα του <guilabel>Ιστορικού δικτύου</guilabel>.</para>
+              </listitem>
+              <listitem>
+                <para><guilabel>Συστήματα αρχείων</guilabel></para>
+                <para>Περιέχει τον πίνακα των προσαρτημένων συστημάτων αρχείων.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Γραμμή κατάστασης</term>
+          <listitem>
+            <para>Η γραμμή κατάστασης προβάλλει πληροφορίες για την τρέχουσα δραστηριότητα της <application>Παρακολούθησης συστήματος</application> και πληροφορίες σχετικές με τα στοιχεία του μενού.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="gnome-system-monitor-usage">
+    <title>Χρήση</title>
+
+    <sect2 id="gnome-system-monitor-display-basic-info">
+      <title>Προβολή βασικών πληροφοριών συστήματος</title>
+      <para>Για να προβάλετε βασικές πληροφορίες συστήματος, επιλέξτε την καρτέλα <guilabel>Σύστημα</guilabel>.</para>
+      <para>Στην καρτέλα <guilabel>Σύστημα</guilabel>, οι πληροφορίες παρουσιάζονται σε τρεις ομάδες:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Πληροφορίες συστήματος</para>
+        </listitem>
+        <listitem>
+          <para>Υλικό</para>
+        </listitem>
+        <listitem>
+          <para>Κατάσταση συστήματος</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-display-processlist">
+      <title>Προβολή λίστας διεργασιών</title>
+      <para>Για να προβάλετε την λίστα διεργασιών, επιλέξτε την καρτέλα <guilabel>Διεργασίες</guilabel>.</para>
+      <para>Στην καρτέλα <guilabel>Διεργασίες</guilabel>, οι διεργασίες παρουσιάζονται σε πίνακα. Οι γραμμές του πίνακα προβάλλουν πληροφορίες για τις διεργασίες, Οι στήλες αναπαριστούν πεδία πληροφόρησης για τις διεργασίες, όπως το όνομα του χρήστη στον οποίο ανήκει η διεργασία, η ποσότητα μνήμης που χρησιμοποιεί η διεργασία, κλπ. Από αριστερά προς τα δεξιά, η καρτέλα <guilabel>Διεργασίες</guilabel> προβάλλει από προεπιλογή τις εξής στήλες:</para>
+      <itemizedlist>
+          <listitem>
+            <para>Όνομα διεργασίας</para>
+          </listitem>
+          <listitem>
+            <para>Κατάσταση</para>
+          </listitem>
+          <listitem>
+            <para>%CPU</para>
+          </listitem>
+          <listitem>
+            <para>Ωραιοποίηση(Nice)</para>
+          </listitem>
+          <listitem>
+            <para>ID</para>
+          </listitem>
+          <listitem>
+            <para>Μνήμη</para>
+          </listitem>
+      </itemizedlist>
+        <para>Για πληροφορίες σχετικές με τον τρόπο αλλαγής των στηλών που προβάλλει η λίστα διεργασιών, βλέπε <xref linkend="gnome-system-monitor-prefs-proclist"/>.</para>
+
+      <sect3 id="gnome-system-monitor-display-processlist-child">
+        <title>Γονικές και θυγατρικές διεργασίες</title>
+        <para>Γονική διεργασία είναι αυτή που παράγει μία άλλη διεργασία. Η παραχθείσα διεργασία είναι θυγατρική της αρχικής γονικής διεργασίας. Από προεπιλογή, η <application>Παρακολούθηση συστήματος</application> δεν προβάλλει τις εξαρτήσεις των διεργασιών. Για πληροφορίες σχετικές με την αλλαγή της προεπιλεγμένης συμπεριφοράς προβολής, βλέπε <xref linkend="gnome-system-monitor-modify-processlist-viewdeps"/>.</para>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-display-processlist-priority">
+        <title>Προτεραιότητα διεργασίας και τιμές ωραιοποίησης</title>
+      <para>Οι διεργασίες εκτελούνται με σειρά προτεραιότητας: διεργασίες υψηλής προτεραιότητας εκτελούνται πριν από διεργασίες χαμηλής προτεραιότητας. Οι θυγατρικές διεργασίες συνήθως κληρονομούν την προτεραιότητα τους από τις γονικές τους.</para>
+      <para>Η προτεραιότητα μίας διεργασίας ορίζεται από την τιμή ωραιοποίησης της, ως εξής:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Τιμή ωραιοποίησης 0 σημαίνει ότι η διεργασία έχει κανονική προτεραιότητα.</para>
+        </listitem>
+        <listitem>
+          <para>Όσο υψηλότερη είναι η τιμή ωραιοποίησης, τόσο χαμηλότερη είναι η προτεραιότητα.</para>
+        </listitem>
+        <listitem>
+          <para>Όσο χαμηλότερη είναι η τιμή ωραιοποίησης, τόσο υψηλότερη είναι η προτεραιότητα.</para>
+        </listitem>
+      </itemizedlist>
+      <para>Για πληροφορίες γύρω από την αλλαγή προτεραιότητας μίας διεργασίας, βλέπε <xref linkend="gnome-system-monitor-change-priority"/>.</para>
+      </sect3>
+
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-sort-processlist">
+      <title>Ταξινόμηση της λίστας διεργασιών</title>
+      <para>Για την ταξινόμηση της λίστας διεργασιών, εκτελέστε τις εξής ενέργειες:</para>
+      <orderedlist>
+        <listitem>
+          <para>Επιλέξτε την καρτέλα <guilabel>Διεργασίες</guilabel> για να προβάλετε την λίστα διεργασιών.</para>
+        </listitem>
+        <listitem>
+          <para>Από προεπιλογή, οι διεργασίες ταξινομούνται κατά αλφαβητική σειρά. Για να τις ταξινομήσετε σε αντίστροφη σειρά, κάντε κλικ στην επικεφαλίδα της στήλης <guilabel>Όνομα διεργασίας</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Με κλικ στην επικεφαλίδα οποιασδήποτε στήλης ταξινομείτε τις διεργασίες με βάση το περιεχόμενο της στήλης, σε αλφαβητική ή αριθμητική σειρά.</para>
+        </listitem>
+        <listitem>
+          <para>Με επαναληπτικό κλικ στην επικεφαλίδα της στήλης ταξινομείτε τα δεδομένα με αντίστροφη αλφαβητική ή αριθμητική σειρά.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-modify-processlist">
+      <title>Τροποποίηση των περιεχομένων της λίστας διεργασιών</title>
+      <para>Μπορείτε να τροποποιήσετε τα περιεχόμενα της λίστας διεργασιών με διάφορους τρόπους.</para>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-all">
+        <title>Εμφάνιση όλων των διεργασιών</title>
+        <para>Για να εμφανίσετε όλες τις διεργασίες στην λίστα διεργασιών, εκτελέστε τις εξής ενέργειες:</para>
+        <orderedlist>
+          <listitem>
+            <para>Επιλέξτε την καρτέλα <guilabel>Διεργασίες</guilabel> για να προβάλετε την λίστα διεργασιών.</para>
+          </listitem>
+          <listitem>
+            <para>Επιλέξτε <menuchoice> <guimenu>Προβολή</guimenu> <guimenuitem>Όλες οι διεργασίες</guimenuitem> </menuchoice>.</para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-my">
+        <title>Εμφάνιση μόνο των διεργασιών του τρέχοντα χρήστη</title>
+        <para>Για να εμφανίσετε μόνο τις διεργασίες που ανήκουν στον τρέχοντα χρήστη, εκτελέστε τις εξής ενέργειες:</para>
+        <orderedlist>
+          <listitem>
+            <para>Επιλέξτε την καρτέλα <guilabel>Διεργασίες</guilabel> για να προβάλετε την λίστα διεργασιών.</para>
+          </listitem>
+          <listitem>
+            <para>Επιλέξτε <menuchoice> <guimenu>Προβολή</guimenu> <guimenuitem>Οι διεργασίες μου</guimenuitem> </menuchoice>.</para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-active">
+        <title>Εμφάνιση μόνο των ενεργών διεργασιών</title>
+        <para>Για να εμφανίσετε μόνο τις ενεργές διεργασίες στην λίστα διεργασιών, εκτελέστε τις εξής ενέργειες:</para>
+        <orderedlist>
+          <listitem>
+            <para>Επιλέξτε την καρτέλα <guilabel>Διεργασίες</guilabel> για να προβάλετε την λίστα διεργασιών.</para>
+          </listitem>
+          <listitem>
+            <para>Επιλέξτε <menuchoice> <guimenu>Προβολή</guimenu> <guimenuitem>Ενεργές διεργασίες</guimenuitem> </menuchoice>.</para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-viewdeps">
+        <title>Εμφάνιση εξαρτήσεων</title>
+        <para>Για να εμφανίσετε τις εξαρτήσεις των διεργασιών στην λίστα διεργασιών, εκτελέστε τις εξής ενέργειες:</para>
+        <orderedlist>
+          <listitem>
+            <para>Επιλέξτε την καρτέλα <guilabel>Διεργασίες</guilabel> για να προβάλετε την λίστα διεργασιών.</para>
+          </listitem>
+          <listitem>
+            <para>Επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Εξαρτήσεις</guimenuitem></menuchoice>.</para>
+          </listitem>
+        </orderedlist>
+        <para>Αν επιλεγεί το στοιχείο μενού <guimenuitem>Εξαρτήσεις</guimenuitem>, οι διεργασίες προβάλλονται στην λίστα ως εξής:</para>
+        <itemizedlist>
+          <listitem>
+            <para>Οι γονικές διεργασίες υποδεικνύονται με ένα τριγωνικό σύμβολο μπροστά από το όνομα τους. Με κλικ στο τριγωνικό σύμβολο εμφανίζονται ή κρύβονται οι συγγενείς θυγατρικές διεργασίες.</para>
+          </listitem>
+          <listitem>
+            <para>Οι θυγατρικές διεργασίες συνδέονται, και εμφανίζονται στην λίστα μαζί τις γονικές τους διεργασίες.</para>
+          </listitem>
+        </itemizedlist>
+        <para>Αν το στοιχείο μενού <guimenuitem>Εξαρτήσεις</guimenuitem> δεν επιλεγεί:</para>
+        <itemizedlist>
+          <listitem>
+            <para>Γονικές και θυγατρικές διεργασίες δεν διακρίνονται.</para>
+          </listitem>
+          <listitem>
+            <para>Όλες οι διεργασίες εμφανίζονται στην λίστα με αλφαβητική σειρά.</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-memory-map">
+      <title>Εμφάνιση χαρτών μνήμης της διεργασίας</title>
+      <para>Για να προβάλετε τους χάρτες μνήμης μίας διεργασίας, εκτελέστε τις εξής ενέργειες:</para>
+      <orderedlist>
+        <listitem>
+          <para>Επιλέξτε την καρτέλα <guilabel>Διεργασίες</guilabel> για να προβάλετε την λίστα διεργασιών.</para>
+        </listitem>
+        <listitem>
+          <para>Επιλέξτε την διεργασία στην λίστα διεργασιών.</para>
+        </listitem>
+        <listitem>
+          <para>Επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Χάρτες μνήμης</guimenuitem></menuchoice>.</para>
+        </listitem>
+      </orderedlist>
+      <para>Ο διάλογος <guilabel>Χάρτες μνήμης</guilabel> θα προβάλει τις πληροφορίες σε συνοπτική μορφή. Το όνομα της διεργασίας προβάλλεται πάνω από τον πίνακα του χάρτη μνήμης. Από αριστερά προς τα δεξιά, ο διάλογος <guilabel>Χάρτες μνήμης</guilabel> προβάλει τις εξής στήλες:</para>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Όνομα αρχείου</guilabel></term>
+          <listitem>
+            <para>Θέση της κοινόχρηστης βιβλιοθήκης που χρησιμοποιείται τώρα από την διεργασία. Αν αυτό το πεδίο είναι κενό, οι πληροφορίες μνήμης σε αυτήν την σειρά περιγράφουν μνήμη που ανήκει στην διεργασία το όνομα της οποίας προβάλλεται πάνω από τον πίνακα των χαρτών μνήμης.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Αρχή VM</guilabel></term>
+          <listitem>
+            <para>Η διεύθυνση από την οποία αρχίζει το τμήμα μνήμης.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Τέλος VM</guilabel></term>
+          <listitem>
+            <para>Η διεύθυνση στην οποία τελειώνει το τμήμα μνήμης.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Μέγεθος VM</guilabel></term>
+          <listitem>
+            <para>Το μέγεθος του τμήματος μνήμης.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Σημαίες</guilabel></term>
+          <listitem>
+            <para>Οι παρακάτω σημαίες περιγράφουν τους διάφορους τύπους πρόσβασης σε τμήματα μνήμης που μπορεί να έχει η διεργασία:</para>
+            <variablelist>
+              <varlistentry>
+                <term>p</term>
+                <listitem>
+                  <para>Το τμήμα μνήμης είναι ιδιοκτησία της διεργασίας, και δεν είναι προσβάσιμο από άλλες διεργασίες.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>r</term>
+                <listitem>
+                  <para>Η διεργασία έχει άδεια ανάγνωσης για το τμήμα μνήμης.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>s</term>
+                <listitem>
+                  <para>Το τμήμα μνήμης είναι κοινό με άλλες διεργασίες.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>w</term>
+                <listitem>
+                  <para>Η διεργασία έχει άδεια εγγραφής στο τμήμα μνήμης.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>x</term>
+                <listitem>
+                  <para>Η διεργασία έχει άδεια εκτέλεσης εντολών που περιέχονται στο τμήμα μνήμης.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Μετατόπιση VM</guilabel></term>
+          <listitem>
+            <para>Η μετατόπιση εικονικής μνήμης στο τμήμα μνήμης.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Συσκευή</guilabel></term>
+          <listitem>
+            <para>Ο μέγιστοι και ελάχιστοι αριθμοί συσκευής στις οποίες βρίσκεται το όνομα αρχείου της κοινόχρηστης βιβλιοθήκης.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Inode</guilabel></term>
+          <listitem>
+            <para>Ο κόμβος στην συσκευή από τον οποίο φορτώνεται στην μνήμη η θέση της κοινόχρηστης βιβλιοθήκης.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para>Με κλικ στην επικεφαλίδα οποιασδήποτε στήλης ταξινομείτε τις διεργασίες με βάση το περιεχόμενο της στήλης, σε αλφαβητική ή αριθμητική σειρά. Με επαναληπτικό κλικ στην επικεφαλίδα της στήλης ταξινομείτε τα δεδομένα με αντίστροφη αλφαβητική ή αριθμητική σειρά.</para>
+      <para>Κάντε κλικ στο <guibutton>Κλείσιμο</guibutton> για να κλείσετε τον διάλογο <guilabel>Χάρτες μνήμης</guilabel>.</para>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-change-priority">
+      <title>Αλλαγή της προτεραιότητας μίας διεργασίας</title>
+      <para>Για να αλλάξετε την προτεραιότητα μίας διεργασίας, εκτελέστε τις εξής ενέργειες:</para>
+      <orderedlist>
+        <listitem>
+          <para>Επιλέξτε την καρτέλα <guilabel>Διεργασίες</guilabel> για να προβάλετε την λίστα διεργασιών.</para>
+        </listitem>
+        <listitem>
+          <para>Επιλέξτε την διεργασία της οποίας την προτεραιότητα θέλετε να αλλάξετε.</para>
+        </listitem>
+        <listitem>
+          <para>Επιλέξτε <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Αλλαγή προτεραιότητας...</guimenuitem></menuchoice>. Ο διάλογος<guilabel>Αλλαγή προτεραιότητας</guilabel> θα προβληθεί.</para>
+        </listitem>
+        <listitem>
+          <para>Χρησιμοποιήστε τον ρυθμιστή για να ορίσετε την τιμή ωραιοποίησης της διεργασίας.</para>
+          <para>Η τιμή ωραιοποίησης ορίζει την προτεραιότητα της διεργασίας: όσο χαμηλότερη είναι η τιμή ωραιοποίησης, τόσο υψηλότερη είναι η προτεραιότητα.</para>
+          <para>Για να προσδιορίσετε τιμή ωραιοποίησης μικρότερη από το μηδέν, αν είστε απλοί χρήστες, πρέπει να εισάγετε τον κωδικό υπερχρήστη.</para>
+        </listitem>
+        <listitem>
+          <para>Κάντε κλικ στο πλήκτρο <guibutton>Αλλαγή προτεραιότητας</guibutton>.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+
+    <sect2 id="gnome-system-monitor-end-process">
+      <title>Τερματισμός διεργασίας</title>
+      <para>Για να τερματίσετε μία διεργασία, εκτελέστε τις εξής ενέργειες:</para>
+      <orderedlist>
+        <listitem>
+          <para>Επιλέξτε την καρτέλα <guilabel>Διεργασίες</guilabel> για να προβάλετε την λίστα διεργασιών.</para>
+        </listitem>
+        <listitem>
+          <para>Επιλέξτε την διεργασία που θέλετε να τερματίσετε.</para>
+        </listitem>
+        <listitem>
+          <para>Επιλέξτε <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Τερματισμός διεργασίας</guimenuitem></menuchoice>, ή πατήστε το πλήκτρο <guibutton>Τερματισμός διεργασίας</guibutton>.</para>
+          <para>Από προεπιλογή, προβάλλεται μία προειδοποίηση. Για πληροφορίες σχετικές με την προβολή ή μη, της προειδοποίησης, βλέπε <xref linkend="gnome-system-monitor-prefs-proclist"/>.</para>
+        </listitem>
+        <listitem>
+          <para>Κάντε κλικ στο πλήκτρο <guibutton>Τερματισμός διεργασίας</guibutton> για να επιβεβαιώσετε τον τερματισμό. Η <application>Παρακολούθηση συστήματος</application> θα εξαναγκάσει την διεργασία να τερματιστεί κανονικά.</para>
+        </listitem>
+      </orderedlist>
+      <para>Αυτός είναι ο προτιμώμενος τρόπος τερματισμού μίας διεργασίας.</para>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-terminate-process">
+      <title>Βίαιος τερματισμός διεργασίας</title>
+      <para>Για να τερματίσετε βίαια μία διεργασία, εκτελέστε τις εξής ενέργειες:</para>
+      <orderedlist>
+        <listitem>
+          <para>Επιλέξτε την καρτέλα <guilabel>Διεργασίες</guilabel> για να προβάλετε την λίστα διεργασιών.</para>
+        </listitem>
+        <listitem>
+          <para>Επιλέξτε την διεργασία που θέλετε να τερματίσετε.</para>
+        </listitem>
+        <listitem>
+          <para>Επιλέξτε <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Βίαιος τερματισμός διεργασίας</guimenuitem></menuchoice>.</para>
+          <para>Από προεπιλογή, προβάλλεται μία προειδοποίηση. Για πληροφορίες σχετικές με την προβολή ή μη, της προειδοποίησης, βλέπε <xref linkend="gnome-system-monitor-prefs-proclist"/>.</para>
+        </listitem>
+        <listitem>
+          <para>Πατήστε το πλήκτρο <guibutton>Βίαιος τερματισμός διεργασίας</guibutton> για να επιβεβαιώσετε ότι θέλετε να τερματίσετε την διεργασία. Η <application>Παρακολούθηση συστήματος</application> θα εξαναγκάσει την διεργασία να τερματίσει άμεσα.</para>
+        </listitem>
+      </orderedlist>
+      <para>Συνήθως εξαναγκάζετε μία διεργασία να τερματίσει βίαια μόνο αν δεν μπορείτε να την τερματίσετε κανονικά όπως περιγράφεται στην <xref linkend="gnome-system-monitor-end-process"/>.</para>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-cpu">
+      <title>Παρακολούθηση χρήσης CPU</title>
+      <para>Για την παρακολούθηση της χρήσης CPU, επιλέξτε την καρτέλα <guilabel>Πόροι</guilabel>.</para>
+      <para>Η <application>Παρακολούθηση συστήματος</application> προβάλλει το ιστορικό χρήσης της CPU σε γράφημα. Κάτω από αυτό η <application>Παρακολούθηση συστήματος</application> προβάλλει επίσης την τρέχουσα χρήση της CPU, σαν ποσοστό επί τοις εκατό.</para>
+    </sect2>
+
+
+    <sect2 id="gnome-system-monitor-memory">
+      <title>Παρακολούθηση ιστορικού χρήσης μνήμης και εναλλαγής</title>
+      <para>Για να παρακολουθήσετε το ιστορικό χρήσης μνήμης και εναλλαγής, επιλέξτε την καρτέλα <guilabel>Πόροι</guilabel>.</para>
+      <para>Η <application>Παρακολούθηση συστήματος</application> προβάλλει το ιστορικό χρήσης μνήμης και εναλλαγής σε γράφημα. Κάτω από το γράφημα, η <application>Παρακολούθηση συστήματος</application> προβάλλει επίσης τις ακόλουθες αριθμητικές τιμές:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Μέρος της συνολικής μνήμης που χρησιμοποιείται</para>
+        </listitem>
+        <listitem>
+          <para>Μέγεθος σε χρήση για το αρχείο εναλλαγής και το συνολικό μέγεθος του αρχείου εναλλαγής</para>
+        </listitem>
+      </itemizedlist>
+
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-network">
+      <title>Παρακολούθηση δραστηριότητας δικτύου</title>
+      <para>Για να παρακολουθήσετε την δραστηριότητα δικτύου, επιλέξτε την καρτέλα <guilabel>Πόροι</guilabel>.</para>
+      <para>Η <application>Παρακολούθηση συστήματος</application> προβάλλει το ιστορικό χρήσης δικτύου σε γράφημα. Κάτω από αυτό, η <application>Παρακολούθηση συστήματος</application> επίσης προβάλλει τις ακόλουθες αριθμητικές τιμές:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Συνολικά και ανά δευτερόλεπτο, ληφθέντα δεδομένα</para>
+        </listitem>
+        <listitem>
+          <para>Συνολικά και ανά δευτερόλεπτο, απεσταλμένα δεδομένα</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-disk">
+      <title>Παρακολούθηση συστημάτων αρχείων</title>
+      <para>Για να παρακολουθήσετε τα συστήματα αρχείων, επιλέξτε την καρτέλα <guilabel>Συστήματα αρχείων</guilabel>.</para>
+      <para>Η <application>Παρακολούθηση συστήματος</application> προβάλλει τα προσαρτημένα συστήματα αρχείων σε πίνακα. Από αριστερά προς τα δεξιά, ο πίνακας περιέχει τις εξής στήλες:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Συσκευή</term>
+          <listitem>
+            <para>Θέση του τόμου αρχείων</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Κατάλογος</term>
+          <listitem>
+            <para>Σημείο προσάρτησης της συσκευής (Κατάλογος πρόσβασης)</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Είδος</term>
+          <listitem>
+            <para>Είδος συστήματος αρχείων</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Σύνολο</term>
+          <listitem>
+            <para>Συνολική χωρητικότητα</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Ελεύθερα</term>
+          <listitem>
+            <para>Χώρος που δεν χρησιμοποιείται</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Διαθέσιμα</term>
+          <listitem>
+            <para>Χώρος που μπορεί να χρησιμοποιηθεί</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Σε χρήση</term>
+          <listitem>
+            <para>Χώρος που χρησιμοποιείται (και ποσοστό επί του συνόλου)</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="gnome-system-monitor-prefs">
+    <title>Προτιμήσεις</title>
+    <para>Για να διαμορφώσετε την<application>Παρακολούθηση συστήματος</application>, επιλέξτε <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Προτιμήσεις</guimenuitem></menuchoice>. Ο διάλογος <guilabel> Προτιμήσεις παρακολούθησης συστήματος</guilabel> περιέχει τις εξής ενότητες σε καρτέλες:</para>
+
+    <sect2 id="gnome-system-monitor-prefs-proclist">
+      <title>Διεργασίες</title>
+        <variablelist>
+          <varlistentry>
+            <term><guilabel>Συμπεριφορά</guilabel></term>
+            <listitem>
+              <itemizedlist>
+                <listitem>
+                  <para><guilabel>Διάστημα ανανέωσης σε δευτερόλεπτα</guilabel></para>
+                  <para>Χρησιμοποιήστε το κυλιόμενο πεδίο επιλογής για να προσδιορίσετε το διάστημα ανανέωσης της λίστας διεργασιών.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Ενεργοποίηση ομαλής ανανέωσης</guilabel></para>
+                  <para>Ενεργοποιήστε την επιλογή για να έχετε ομαλή ανανέωση.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Εμφάνιση διαλόγου προειδοποίησης κατά τον τερματισμό ή βίαιο τερματισμό διεργασιών</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται μία προειδοποίηση κατά τον τερματισμό ή τον βίαιο τερματισμό μίας διεργασίας.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Διαίρεση της χρήσης CPU με τον αριθμό CPU</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την λειτουργία για να διαιρέσετε το %CPU κάθε διεργασίας στον πίνακα διεργασιών με τον αριθμό των CPU.</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><guilabel>Πεδία πληροφορίας</guilabel></term>
+            <listitem>
+              <para>Χρησιμοποιήστε τις παρακάτω επιλογές για να ορίσετε ποια πεδία θα προβάλλονται στην λίστα διεργασιών:</para>
+              <itemizedlist>
+                <listitem>
+                  <para><guilabel>Όνομα διεργασίας</guilabel></para>
+                  <para>Ορίστε αυτή την επιλογή για να προβάλλεται το όνομα της διεργασίας. Αυτή η στήλη μπορεί επίσης να περιέχει ένα εικονίδιο που υποδεικνύει την εφαρμογή που συνδέεται με την διεργασία.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Χρήστης</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται το όνομα του χρήστη στον οποίο ανήκει η διεργασία.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Κατάσταση</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται η τρέχουσα κατάσταση της διεργασίας: «Υπό αναστολή» ή «Σε εκτέλεση».</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Εικονική μνήμη</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται η ποσότητα εικονικής μνήμης που κατανέμεται στην διεργασία.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Παραμένουσα μνήμη</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται η ποσότητα φυσικής μνήμης που κατανέμεται στην διεργασία.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Εγγράψιμη μνήμη</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται η ποσότητα μνήμης στην οποία μπορεί να εγγράψει η διεργασία.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Κοινόχρηστη μνήμη</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται η ποσότητα κοινόχρηστης μνήμης που κατανέμεται στην διεργασία. Η κοινόχρηστη μνήμη είναι αυτή που μπορεί να προσπελαστεί και από άλλη διεργασία.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Μνήμη εξυπηρετητή X</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται η ποσότητα μνήμης εξυπηρετητή Χ που χρησιμοποιείται από την διεργασία.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>% CPU</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται το ποσοστό (%) του χρόνου της CPU που χρησιμοποιείται κάθε στιγμή από την διεργασία.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Ώρα CPU</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται η ποσότητα χρόνου της CPU που χρησιμοποιήθηκε από την διεργασία.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Ώρα έναρξης</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται πότε ξεκίνησε η διεργασία.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Nice</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται η τιμή ωραιοποίησης της διεργασίας. Η τιμή ωραιοποίησης ορίζει την προτεραιότητα της διεργασίας: όσο χαμηλότερη η τιμή ωραιοποίησης, τόσο υψηλότερη η προτεραιότητα.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>ID</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται το αναγνωριστικό της διεργασίας, που είναι επίσης γνωστό σαν «pid». Το «pid» είναι ένας αριθμός που προσδιορίζει την ταυτότητα μίας διεργασίας με μοναδικό τρόπο. Μπορείτε να χρησιμοποιήσετε το «pid» για να χειριστείτε την διεργασία στην γραμμή εντολών.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Μνήμη</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται η ποσότητα μνήμης συστήματος που χρησιμοποιείται κάθε στιγμή από την διεργασία.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Περιβάλλον ασφάλειας</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται το πλαίσιο ασφαλείας μέσα στο οποίο εκτελείται η διεργασία.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Γραμμή εντολών</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλλεται η γραμμή εντολών που χρησιμοποιήθηκε για την έναρξη της διεργασίας, συμπεριλαμβανομένων των ορισμάτων.</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-prefs-resmon">
+      <title>Πόροι</title>
+        <variablelist>
+          <varlistentry>
+            <term><guilabel>Γραφήματα</guilabel></term>
+            <listitem>
+              <itemizedlist>
+                <listitem>
+                  <para><guilabel>Διάστημα ανανέωσης σε δευτερόλεπτα</guilabel></para>
+                  <para>Χρησιμοποιήστε το κυλιόμενο πεδίο επιλογής για να προσδιορίσετε πόσο συχνά θέλετε να ενημερώνονται τα γραφήματα της <application>Παρακολούθησης συστήματος</application>.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Εμφάνιση της ταχύτητας δικτύου σε bits</guilabel></para>
+                  <para>Επιλέξτε αυτήν την επιλογή για να χρησιμοποιήσετε bits αντί των bytes για την εμφάνιση της ταχύτητας δικτύου στα γραφήματα της <application>Παρακολούθησης συστήματος</application>.</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-prefs-filesystems">
+      <title>Συστήματα αρχείων</title>
+        <variablelist>
+          <varlistentry>
+            <term><guilabel>Συμπεριφορά</guilabel></term>
+            <listitem>
+              <itemizedlist>
+                <listitem>
+                  <para><guilabel>Διάστημα ανανέωσης σε δευτερόλεπτα</guilabel></para>
+                  <para>Χρησιμοποιήστε το κυλιόμενο πεδίο για να προσδιορίσετε πόσο συχνά θέλετε να ενημερώνεται ο πίνακας <guilabel>Συστήματα αρχείων</guilabel>.</para>
+                </listitem>
+                <listitem>
+                  <para><guilabel>Εμφάνιση όλων των συστημάτων αρχείων</guilabel></para>
+                  <para>Ενεργοποιήστε αυτή την επιλογή για να εμφανίζονται όλα τα συστήματα αρχείων, συμπεριλαμβανομένων των προσωρινών και του συστήματος.</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+
+        </variablelist>
+    </sect2>
+
+  </sect1>
+
+</article>

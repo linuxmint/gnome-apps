@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-open" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <revision pkgversion="3.4" date="2011-12-08" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>创作共同署名，相同方式同享许可 3.0</p>
+    </license>
+    <desc>打开已有归档文件。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Zhang Miao</mal:name>
+      <mal:email>mymzhang@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>YunQiang Su</mal:name>
+      <mal:email>wzssyqa@gmail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>打开归档文件</title>
+
+  <p>You can open an existing archive with <app>Archive Manager</app> by:</p>
+
+  <list>
+    <item>
+      <p>clicking the <gui>Open</gui> toolbar button</p>
+    </item>
+    <item>
+      <p>clicking <guiseq><gui style="menu">Archive</gui>
+      <gui style="menuitem">Open</gui></guiseq></p>
+    </item>
+  </list>
+
+  <p>You may also use the <gui>Open Recent</gui> option by:</p>
+
+  <list>
+    <item>
+      <p>clicking the <media type="image" mime="image/png" src="figures/file-roller-open-recent.png"> Open a recently used
+      archive</media> toolbar button and selecting a file</p>
+    </item>
+    <item>
+      <p>clicking <guiseq><gui style="menu">Archive</gui>
+      <gui style="menuitem">Open Recent</gui></guiseq> to see the list of
+      recently used archives</p>
+    </item>
+  </list>
+
+  <note>
+    <p>If <app>Archive Manager</app> cannot open your recently used archive and
+    shows the error message <gui>The file doesn't exist</gui>, it may be that
+    the location of the archive file has changed. You can try using the
+    <gui>Open</gui> option to search for it.</p>
+  </note>
+
+</page>

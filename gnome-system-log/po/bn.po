@@ -1,0 +1,454 @@
+# Bengali Translation of Gnome-Utils
+# Copyright (C) 2005 Free Software Foundation.
+# This file is distributed under the same license as the gnome-utils package.
+#
+# Runa Bhattacharjee <runa@bengalinux.org>, 2005.
+# Runa Bhattacharjee <runab@redhat.com>, 2008, 2009.
+# Maruf Ovee <maruf@ankur.org.bd>, 2009.
+# Sadia Afroz <sadia@ankur.org.bd>, 2010.
+# Israt Jahan <israt@ankur.org.bd>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bn\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2010-03-24 16:04+0600\n"
+"Last-Translator: Israt Jahan <israt@ankur.org.bd>\n"
+"Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
+"Language: bn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "লগ ফাইল প্রদর্শন ব্যবস্থা"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "সিস্টেম লগ ফাইল পড়ুন অথবা পর্যবেক্ষণ করুন"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "প্রধান উইন্ডোর উচ্চতা, পিক্সেল অনুযায়ী নির্ধারিত"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "প্রারম্ভে খোলার উদ্দেশ্যে চিহ্নিত লগ ফাইল"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "প্রারম্ভে খোলার উদ্দেশ্যে চিহ্নিত লগ ফাইল"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "লগ প্রদর্শনের জন্য ব্যবহৃত ফন্টের মাপ"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"প্রারম্ভে খোলার উদ্দেশ্যে লগ ফাইলের তালিকা উল্লেখ করে। /etc/syslog.conf ফাইল থেকে "
+"একটি ডিফল্ট তালিকা নির্মিত হয়।"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "লগ প্রদর্শনের প্রধান উইন্ডোর উচ্চতা, পিক্সেল অনুযায়ী নির্ধারিত হয়।"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"প্রারম্ভে খোলার উদ্দেশ্যে লগ ফাইল নির্ধারণ করে। ব্যবহৃত অপারেটিং সিস্টেমের উপর ভিত্তি "
+"করে ডিফল্টরূপে /var/adm/messages অথবা /var/log/messages প্রয়োগ করা হবে।"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"মূল ট্রি-ভিউয়ের মধ্যে লগ প্রদর্শনের জন্য ব্যবহৃত স্থায়ী-প্রস্থের ফন্টের মাপ নির্ধারণ করে। "
+"টার্মিনালে ব্যবহৃত ডিফল্ট ফন্টের থেকে ডিফল্ট মান নির্ধারণ করা হয়।"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "লগ প্রদর্শনের প্রধান উইন্ডোর প্রস্থ, পিক্সেল অনুযায়ী নির্ধারিত হয়।"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "প্রধান উইন্ডোর প্রস্থ, পিক্সেল অনুযায়ী নির্ধারিত"
+
+# Translated by sadia
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "পটভূমি:"
+
+# Translated by sadia
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "আবহ:"
+
+# Translated by sadia
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "পুরোভূমি:"
+
+# Translated by sadia
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "আড়াল করা হবে"
+
+# Translated by sadia
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "হাইলাইট"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "নাম (_N):"
+
+# Translated by sadia
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "স্বাভাবিক এক্সপ্রেশন: (_R)"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"এই প্রোগ্রামটি একটি মুক্ত সফ্টওয়্যার; Free Software Foundation দ্বারা প্রকাশিত GNU "
+"General Public License-র শর্তানুযায়ী এটি বিতরণ ও পরিবর্তন করা যাবে; লাইসেন্সের "
+"সংস্করণ ২ অথবা (আপনার সুবিধানুযায়ী) ঊর্ধ্বতন কোনো সংস্করণের অধীন।"
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"এই প্রোগ্রামটি বিতরণ করার মূল উদ্দেশ্য যে ব্যবহারকারীরা এর দ্বারা উপকৃত হবেন, কিন্তু "
+"এটির জন্য কোনো সুস্পষ্ট ওয়ারেন্টি উপস্থিত নেই; বাণিজ্যিক ও কোনো সুনির্দিষ্ট কর্ম সাধনের "
+"জন্য অন্তর্নিহীত ওয়ারেন্টিও অনুপস্থিত। অধিক জানতে GNU General Public License পড়ুন।"
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"এই প্রোগ্রামের সাথে GNU General Public License-র একটি প্রতিলিপি উপলব্ধ হওয়া "
+"উচিত; না থাকলে নিম্নলিখিত ঠিকানায় লিখে তা সংগ্রহ করুন Free Software Foundation, "
+"Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"অঙ্কুর প্রকল্পের পক্ষে, রুণা ভট্টাচার্য্য (runa@bengalinux.org)\n"
+"মারুফ অভি <maruf@ankur.org.bd>\n"
+"সাদিয়া আফরোজ <sadia@ankur.org.bd>\n"
+"ইসরাত জাহান <israt@ankur.org.bd>"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "%s ফাইল প্রদর্শন করা সম্ভব নয়"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "পরিশোধকের নাম ফাঁকা!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "পরিশোধকের নামের মধ্যে ':' চিহ্নটি অন্তর্ভুক্ত করা যাবে না"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "রেগুলার এক্সপ্রেশন ফাঁকা!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "রেগুলার এক্সপ্রেশন বৈধ নয়: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "অনুগ্রহ করে পটভূমি অথবা অগ্রভূমির রংয়ের মধ্যে শুধুমাত্র একটি উল্লেখ করুন!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "পরিশোধক সম্পাদনা"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "নতুন পরিশোধক যোগ করুন"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "পরিশোধক"
+
+# msgstr "পংক্তিটি খঁুজে পাওয়া যায়নি"
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "সন্ধান করুন (_F):"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "পূর্ববর্তী উপস্থিতি অনুসন্ধান"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "অনুসন্ধান করা স্ট্রিং এর পূর্ববর্তী উপস্থিতি সনাক্ত করুন"
+
+# msgstr "পংক্তিটি খঁুজে পাওয়া যায়নি"
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "পরবর্তী উপস্থিতি অনুসন্ধান"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "অনুসন্ধান করা স্ট্রিং এর পরবর্তী উপস্থিতি সনাক্ত করুন"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "অনুসন্ধান স্ট্রিং মুছে ফেলুন"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr ""
+"GZip করা লগ ফাইল আন-কম্প্রেস করতে ত্রুটি দেখা দিয়েছে। সম্ভবত ফাইলটি ত্রুটিপূর্ণ।"
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "ফাইলটি পড়ার জন্য প্রয়োজনীয় অধিকার, আপনার নেই।"
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "ফাইলটি সাধারণ ফাইল অথবা টেক্সট ফাইল নয়।"
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr "System Log-র বর্তমান সংস্করণ দ্বারা GZip করা লগ ফাইল সমর্থিত হয় না।"
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "লোড করা হচ্ছে..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "অ্যাপ্লিকেশনের সংস্করণ সংখ্যা প্রদর্শন করা হবে"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[LOGFILE...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - লগ ব্রাউজ ও পর্যবেক্ষণ করুন"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "লগ প্রদর্শক"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "সিস্টেম লগ প্রদর্শক"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "সর্বশেষ পরিবর্তন : %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d লাইন (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "লগ খুলুন"
+
+# msgstr "'%s' ফাইলটিতে কিছু লেখা নেই"
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "সাহায্য প্রদর্শন করতে সমস্যা: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "বিভাজিত"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "পাওয়া যায়নি"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "GNOME-এ ব্যবহারযোগ্য সিস্টেম লগ প্রদর্শক।"
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "ফাইল (_F)"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "সম্পাদনা (_E)"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "প্রদর্শন (_V)"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "পরিশোধক (_F)"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "সহায়তা (_H)"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "খুলুন...(_O)"
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "ফাইল থেকে একটি লগ খুলুন"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "বন্ধ করুন (_C)"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "বর্তমান লগ বন্ধ করুন"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "প্রস্থান (_Q)"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "লগ প্রদর্শক থেকে প্রস্থান"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "অনুলিপি করুন (_C)"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "নির্বাচিত অংশ অনুলিপি করুন"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "সব নির্বাচন করুন (_A)"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "সম্পূর্ণ লগ নির্বাচন করুন"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "সন্ধান করুন...(_F)"
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "লগের মধ্যে একটি শব্দ অথবা বাক্যাংশ সন্ধান করুন"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "হরফের মাপ বৃদ্ধি করুন"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "হরফের মাপ হ্রাস করুন"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "হরফের স্বাভাবিক মাপ"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "পরিশোধক ব্যবস্থাপনা"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "পরিশোধক ব্যবস্থাপনা"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "বিষয়বস্তু(_C)"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "লগ প্রদর্শক সংক্রান্ত সহায়িকা প্রদর্শন"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "পরিচিতি (_A)"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "লগ প্রদর্শকের পরিচিতি প্রদর্শন"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "স্ট্যাটাস-বার (_S)"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "স্ট্যাটাস-বার প্রদর্শন করা হবে"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "পার্শ্ববর্তী পেন (_P)"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "পার্শ্ববর্তী পেন প্রদর্শন করা হবে"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "শুধুমাত্র মিল প্রদর্শন করা হবে"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr ""
+"উল্লিখিত যে কোনো একটি পরিশোধকের সাথে মিল পাওয়া পংক্তিগুলি শুধুমাত্র প্রদর্শন করা হবে"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr ""
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr ""
+
+# Translated by sadia
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "\"%s\" থেকে পড়া যাচ্ছে না"
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "সংস্করণ: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "নিম্নলিখিত ফাইল খুলতে ব্যর্থ:"

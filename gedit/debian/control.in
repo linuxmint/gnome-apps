@@ -1,0 +1,105 @@
+Source: gedit
+Section: gnome
+Priority: optional
+Maintainer: Linux Mint <root@linuxmint.com>
+Build-Depends: cdbs (>= 0.4.41),
+               debhelper (>= 5.0.37.2),
+               gnome-pkg-tools (>= 0.10),
+               dh-autoreconf,
+               gnome-common,
+               python-support (>= 0.3),
+               intltool (>= 0.40.0),
+               gnome-doc-utils (>= 0.9.0),
+               gtk-doc-tools (>= 1.0),
+               libenchant-dev (>= 1.2.0),
+               iso-codes (>= 0.35),
+               libsm-dev (>= 2:1.0),
+               libxml2-dev (>= 2.5.0),
+               libglib2.0-dev (>= 2.23.1),
+               libgtk2.0-dev (>= 2.19.0),
+               libgtksourceview2.0-dev (>= 2.9.7),
+               libgconf2-dev,
+               libx11-dev,
+               python-dev (>= 2.5),
+               python-gobject-dev (>= 2.15.4),
+               python-gtk2-dev (>= 2.12.0),
+               python-gtksourceview2 (>= 2.9.2),
+               scrollkeeper
+Build-Depends-Indep: libglib2.0-doc,
+                     libgtk2.0-doc,
+                     libgtksourceview2.0-doc
+Standards-Version: 3.9.0
+XS-Python-Version: >= 2.5
+Vcs-Bzr: https://code.launchpad.net/~ubuntu-desktop/gedit/ubuntu
+Homepage: http://www.gnome.org/projects/gedit/
+
+Package: gedit
+Architecture: any
+Depends: ${misc:Depends},
+         ${python:Depends},
+         ${shlibs:Depends},
+         gedit-common (>= ${gnome:Version}),
+         gedit-common (<< ${gnome:NextVersion}),
+         python-gtksourceview2 (>= 2.9.2),
+         python-gobject (>= 2.15.4),
+         python-gtk2 (>= 2.12.0),
+         iso-codes
+Replaces: gedit-common (<< 2.16.2-3)
+Conflicts: gedit-common (<= 2.10.5-1)
+Breaks: seahorse (<< 2.24),
+        seahorse-plugins (<< 2.26)
+Recommends: zenity,
+            yelp
+XB-Python-Version: ${python:Versions}
+Description: official text editor of the GNOME desktop environment
+ gedit is a text editor which supports most standard editor features,
+ extending this basic functionality with other features not usually
+ found in simple text editors. gedit is a graphical application which
+ supports editing multiple text files in one window (known sometimes as
+ tabs or MDI).
+ .
+ gedit fully supports international text through its use of the Unicode
+ UTF-8 encoding in edited files. Its core feature set includes syntax
+ highlighting of source code, auto indentation and printing and print preview
+ support.
+ .
+ gedit is also extensible through its plugin system, which currently
+ includes support for spell checking, comparing files, viewing CVS
+ ChangeLogs, and adjusting indentation levels.
+
+Package: gedit-common
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: gedit
+Description: official text editor of the GNOME desktop environment (support files)
+ gedit is a text editor which supports most standard editor features,
+ extending this basic functionality with other features not usually
+ found in simple text editors.
+ .
+ This package contains gedit's architecture-independent support files.
+
+Package: gedit-dev
+Architecture: all
+Section: devel
+Depends: ${misc:Depends},
+         gedit (>= ${gnome:Version}),
+         gedit (<< ${gnome:NextVersion}),
+         libgtksourceview2.0-dev (>= 2.8.0)
+Replaces: gedit-common (<< 2.16.2-3)
+Description: official text editor of the GNOME desktop environment (development files)
+ gedit is a text editor which supports most standard editor features,
+ extending this basic functionality with other features not usually
+ found in simple text editors. gedit is a graphical application which
+ supports editing multiple text files in one window (known sometimes as
+ tabs or MDI).
+ .
+ gedit fully supports international text through its use of the Unicode
+ UTF-8 encoding in edited files. Its core feature set includes syntax
+ highlighting of source code, auto indentation and printing and print preview
+ support.
+ .
+ gedit is also extensible through its plugin system, which currently
+ includes support for spell checking, comparing files, viewing CVS
+ ChangeLogs, and adjusting indentation levels.
+ .
+ This package is required to build plugins for gedit.

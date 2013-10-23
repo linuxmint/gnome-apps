@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="function" xml:lang="lv">
+
+    <info>
+        <link type="guide" xref="index#equation"/>
+    </info>
+
+	<title>Funkcijas</title>
+    
+    <p>Funkcijas var tikt izmantotas, ievadot funkcijas nosaukumu, tam sekojot funkcijas argumentam. Ja arguments nav skaitlis vai <link xref="variable">mainīgais</link>, izmanto iekavas ap argumentu.</p>
+    <example>
+    <p>sin 30</p>
+    <p>abs (5−9)</p>
+    </example>
+    <p>Sekojošās funkcijas ir noteiktas.</p>
+    <table>
+    <tr>
+    <td><p>abs</p></td>
+    <td><p><link xref="absolute">Absolūtā vērtība</link></p></td>
+    </tr>
+    <tr>
+    <td><p>cos</p></td>
+    <td><p><link xref="trigonometry">Kosinuss</link></p></td>
+    </tr>
+    <tr>
+    <td><p>cosh</p></td>
+    <td><p><link xref="trigonometry">Hiperboliskais kosinuss</link></p></td>
+    </tr>
+    <tr>
+    <td><p>frac</p></td>
+    <td><p>Daļveida daļa</p></td>
+    </tr>
+    <tr>
+    <td><p>int</p></td>
+    <td><p>Veselā daļa</p></td>
+    </tr>
+    <tr>
+    <td><p>ln</p></td>
+    <td><p><link xref="logarithm">Naturālais logaritms</link></p></td>
+    </tr>
+    <tr>
+    <td><p>log</p></td>
+    <td><p><link xref="logarithm">Logaritms</link></p></td>
+    </tr>
+    <tr>
+    <td><p>not</p></td>
+    <td><p><link xref="boolean">Loģiskais NE</link></p></td>
+    </tr>
+    <tr>
+    <td><p>ones</p></td>
+    <td><p>Vieninieku papildkods</p></td>
+    </tr>
+    <tr>
+    <td><p>sin</p></td>
+    <td><p><link xref="trigonometry">Sinuss</link></p></td>
+    </tr>
+    <tr>
+    <td><p>sinh</p></td>
+    <td><p><link xref="trigonometry">Hiperboliskais sinuss</link></p></td>
+    </tr>
+    <tr>
+    <td><p>sqrt</p></td>
+    <td><p><link xref="power">Kvadrātsakne</link></p></td>
+    </tr>
+    <tr>
+    <td><p>tan</p></td>
+    <td><p><link xref="trigonometry">Tangenss</link></p></td>
+    </tr>
+    <tr>
+    <td><p>tanh</p></td>
+    <td><p><link xref="trigonometry">Hiperboliskais tangenss</link></p></td>
+    </tr>
+    <tr>
+    <td><p>twos</p></td>
+    <td><p>Divnieku papildkods</p></td>
+    </tr>
+    </table>
+    <p><app>GCalctool</app> neatbalsta lietotāja definētas funkcijas.</p>
+</page>

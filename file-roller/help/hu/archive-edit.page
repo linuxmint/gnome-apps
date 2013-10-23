@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-edit" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <link type="seealso" xref="archive-create"/>
+    <revision pkgversion="3.4" date="2011-12-08" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>Archívum tartalmának módosítása.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Archívum szerkesztése</title>
+
+  <p>Az <app>Archívumkezelő</app> segítségével módosíthatja a meglévő archívumokat: fájlokat adhat hozzájuk, eltávolíthatja a fölöslegeseket vagy átnevezheti azokat. A mappákat a fájlokkal azonos módon kezelheti.</p>
+
+  <terms>
+    <item>
+    <title>Fájlok hozzáadása</title>
+    <p>A meglévő archívumhoz fájlokat adhat az <link xref="archive-create">archívum létrehozására</link> vonatkozó utasításokat követve.</p>
+    </item>
+    <item>
+    <title>Fájlok eltávolítása</title>
+      <steps>
+        <item><p>Válassza ki a fájlt.</p></item>
+        <item><p>Válassza ki a <guiseq><gui style="menu">Szerkesztés</gui><gui style="menuitem">Törlés</gui></guiseq> menüpontot, vagy a fájl helyi menüjének <gui>Törlés</gui> pontját.</p></item>
+      </steps>
+    </item>
+    <item>
+    <title>Fájlok átnevezése</title>
+      <steps>
+        <item><p>Válassza ki a fájlt.</p></item>
+        <item><p>Válassza ki a <guiseq><gui style="menu">Szerkesztés</gui><gui style="menuitem">Átnevezés</gui></guiseq> menüpontot, vagy a fájl helyi menüjének <gui>Átnevezés</gui> pontját</p></item>
+        <item><p>Adja meg az új fájlnevet a megnyíló ablakban.</p></item>
+        <item><p>Erősítse meg a nevet az <gui>Átnevezés</gui> gomb megnyomásával.</p></item>
+      </steps>
+    </item>
+  </terms>
+
+</page>

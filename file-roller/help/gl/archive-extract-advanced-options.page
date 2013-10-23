@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-extract-advanced-options" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <revision pkgversion="3.4" date="2012-03-06" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+    <desc>Especifique as súas preferencias para extraer arquivos.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Opcións avanzadas para extraer arquivos</title>
+
+  <p>O <app>Xestor de arquivos</app> ofrece diferentes opcións para extraer un arquivo. Pode ver estas opcións no diálogo do selector de ficheiros que usa para escoller a localización dos ficheiros extraídos. Na parte inferior deste diálogo, pode decidir se quere extraer:</p>
+
+  <terms>
+    <item>
+      <title><gui>Todos os ficheiros</gui></title>
+      <p>Extraeranse todos os ficheiros e cartafoles do arquivo.</p>
+    </item>
+    <item>
+      <title><gui>Ficheiros seleccionados</gui></title>
+      <p>O <app>Xestor de arquivos</app> extrae só os ficheiros seleccionados.</p>
+      <note>
+        <p>Debe seleccionar os ficheiros que desexa extraer antes de premer <guiseq><gui style="menu">Arquivo</gui><gui style="menuitem">Extraer</gui></guiseq>. Pode facelo premendo sobre o nome do arquivo. Prema <key>Ctrl</key> ou <key>Maiús</key>, para seleccionar máis dun arquivo.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Ficheiros</gui></title>
+      <p>Pode escribir os nomes dos ficheiros que quere extraer. Separe os ficheiros con un punto e coma (<key>;</key>)</p>
+      <note>
+        <p>O nome de ficheiro debe ter unha extensión. Por exemplo, pode usar o asterisco (<file>*</file>) como un comodín. Por exemplo para seleccionar todos os ficheiros <file>.txt</file> escriba <file>*.txt</file>.</p>
+      </note>
+    </item>
+  </terms>
+
+  <p>No diálogo do selector de ficheiros pode escoller se quere:</p>
+  <terms>
+    <item>
+      <title><gui>Manter a estrutura de cartafoles</gui></title>
+      <p>Marque esta opción se quere manter a estrutura de cartafoles, tal e como estaba no arquivador.</p>
+    </item>
+    <item>
+      <title><gui>Non sobrescribir ficheiros máis novos</gui></title>
+      <p>Esta opción non sobrescribirá ficheiros existentes co mesmo nome que teñan unha data de modificación máis recente que a dos que están no arquivo.</p>
+    </item>
+  </terms>
+
+  <p>Estas <gui>Accións</gui> móstranse na parte inferior do diálogo.</p>
+
+</page>

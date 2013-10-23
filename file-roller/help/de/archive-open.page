@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-open" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <revision pkgversion="3.4" date="2011-12-08" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>Ein vorhandenes Archiv öffnen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jpetersen@jpetersen.org</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008, 2009, 2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@googlemail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ein Archiv öffnen</title>
+
+  <p>Öffnen Sie ein bestehendes Archiv mit dem <app>Archivmanager</app> wie folgt:</p>
+
+  <list>
+    <item>
+      <p>Klicken Sie auf den Knopf <gui>Öffnen</gui> in der Werkzeugleiste</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <guiseq><gui style="menu">Archiv</gui><gui style="menuitem">Öffnen</gui></guiseq></p>
+    </item>
+  </list>
+
+  <p>Sie können auch die Option <gui>Zuletzt geöffnet</gui> wie folgt verwenden:</p>
+
+  <list>
+    <item>
+      <p>Klicken Sie auf den Werkzeugleistenknopf <media type="image" mime="image/png" src="figures/file-roller-open-recent.png">Ein zuletzt geöffnetes Archiv öffnen</media> und wählen Sie eine Datei.</p>
+    </item>
+    <item>
+      <p>Wählen Sie <guiseq><gui style="menu">Archiv</gui><gui style="menuitem">Zuletzt geöffnet</gui></guiseq>, um die Liste zuletzt verwendeter Archive zu sehen.</p>
+    </item>
+  </list>
+
+  <note>
+    <p>Wenn der <app>Archivmanager</app> Ihre zuletzt geöffneten Archive nicht öffnen kann und die Fehlermeldung <gui>Die Datei ist nicht vorhanden</gui> ausgibt, so hat sich gegebenenfalls der Ort des Archivs geändert. Verwenden Sie dann <gui>Öffnen</gui>, um danach zu suchen.</p>
+  </note>
+
+</page>

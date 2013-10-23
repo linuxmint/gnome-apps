@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="synctex-support" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="index#synctex" group="second"/>
+    <desc>SyncTeX 지원 추가는 어떻게 할까요.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>크리에이티브 커먼즈 동일조건변경허락 3.0</p>
+    </license>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Seong-ho Cho</mal:name>
+      <mal:email>darkcircle.0426@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>SyncTeX 설정</title>
+<p>SyncTeX 지원을 추가하려면 다음 패키지를 설치할 필요가 있습니다:</p>
+<list>
+  <item>
+    <p>texlive-extra-utils</p>
+  </item>
+  <item>
+    <p>gedit-plugins</p>
+  </item>
+</list>
+
+<p><app>지에디트</app>에서 SyncTeX 플러그인을 활성화 하려면:</p>
+<steps>
+   <item>
+    <p><guiseq><gui>편집</gui><gui>기본 설정</gui><gui>플러그인</gui></guiseq> 탭을 누릅니다.</p>
+   </item>
+   <item>
+    <p><gui>SyncTeX</gui>를 누릅니다.</p>
+   </item>
+</steps>
+</page>

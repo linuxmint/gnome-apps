@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="function" xml:lang="it">
+
+    <info>
+        <link type="guide" xref="index#equation"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Paolo Stivanin</mal:name>
+      <mal:email>paolostivanin@yahoo.it</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luca Ferretti</mal:name>
+      <mal:email>lferrett@gnome.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Funzioni</title>
+    
+    <p>È possibile usare le funzioni inserendo il nome della funzione stessa seguito dall'argomento della funzione. Se l'argomento non è un numero o una <link xref="variable">variabile</link>, allora utilizzare le parentesi per delimitare l'argomento.</p>
+    <example>
+    <p>sin 30</p>
+    <p>abs (5−9)</p>
+    </example>
+    <p>Sono definite le seguenti funzioni.</p>
+    <table>
+    <tr>
+    <td><p>abs</p></td>
+    <td><p><link xref="absolute">Valore assoluto</link></p></td>
+    </tr>
+    <tr>
+    <td><p>cos</p></td>
+    <td><p><link xref="trigonometry">Coseno</link></p></td>
+    </tr>
+    <tr>
+    <td><p>cosh</p></td>
+    <td><p><link xref="trigonometry">Coseno iperbolico</link></p></td>
+    </tr>
+    <tr>
+    <td><p>frac</p></td>
+    <td><p>Parte frazionaria</p></td>
+    </tr>
+    <tr>
+    <td><p>int</p></td>
+    <td><p>Parte intera</p></td>
+    </tr>
+    <tr>
+    <td><p>ln</p></td>
+    <td><p><link xref="logarithm">Logaritmo naturale</link></p></td>
+    </tr>
+    <tr>
+    <td><p>log</p></td>
+    <td><p><link xref="logarithm">Logaritmo</link></p></td>
+    </tr>
+    <tr>
+    <td><p>not</p></td>
+    <td><p><link xref="boolean">NOT booleano</link></p></td>
+    </tr>
+    <tr>
+    <td><p>ones</p></td>
+    <td><p>Complemento a uno</p></td>
+    </tr>
+    <tr>
+    <td><p>sin</p></td>
+    <td><p><link xref="trigonometry">Seno</link></p></td>
+    </tr>
+    <tr>
+    <td><p>sinh</p></td>
+    <td><p><link xref="trigonometry">Seno iperbolico</link></p></td>
+    </tr>
+    <tr>
+    <td><p>sqrt</p></td>
+    <td><p><link xref="power">Radice quadrata</link></p></td>
+    </tr>
+    <tr>
+    <td><p>tan</p></td>
+    <td><p><link xref="trigonometry">Tangente</link></p></td>
+    </tr>
+    <tr>
+    <td><p>tanh</p></td>
+    <td><p><link xref="trigonometry">Tangente iperbolica</link></p></td>
+    </tr>
+    <tr>
+    <td><p>twos</p></td>
+    <td><p>Complemento a due</p></td>
+    </tr>
+    </table>
+    <p><app>GCalctool</app> non supporta funzioni definite dall'utente.</p>
+</page>

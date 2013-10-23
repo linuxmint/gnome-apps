@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>EvSidebarAttachments</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Evince Programmer's Reference Manual">
+<link rel="up" href="evince-frontend.html" title="Part I. Frontend">
+<link rel="prev" href="evince-frontend.html" title="Part I. Frontend">
+<link rel="next" href="evince-ev-properties-dialog.html" title="ev-properties-dialog">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="evince-frontend.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="evince-frontend.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Evince Programmer's Reference Manual</th>
+<td><a accesskey="n" href="evince-ev-properties-dialog.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#EvSidebarAttachments.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#EvSidebarAttachments.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#EvSidebarAttachments.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#EvSidebarAttachments.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
+                   | 
+                  <a href="#EvSidebarAttachments.signals" class="shortcut">Signals</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="EvSidebarAttachments"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EvSidebarAttachments.top_of_page"></a>EvSidebarAttachments</span></h2>
+<p>EvSidebarAttachments</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="EvSidebarAttachments.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">struct              <a class="link" href="EvSidebarAttachments.html#EvSidebarAttachments-struct" title="struct EvSidebarAttachments">EvSidebarAttachments</a>;
+struct              <a class="link" href="EvSidebarAttachments.html#EvSidebarAttachmentsClass" title="struct EvSidebarAttachmentsClass">EvSidebarAttachmentsClass</a>;
+                    <a class="link" href="EvSidebarAttachments.html#EvSidebarAttachmentsPrivate" title="EvSidebarAttachmentsPrivate">EvSidebarAttachmentsPrivate</a>;
+<span class="returnvalue">GtkWidget</span> *         <a class="link" href="EvSidebarAttachments.html#ev-sidebar-attachments-new" title="ev_sidebar_attachments_new ()">ev_sidebar_attachments_new</a>          (<em class="parameter"><code><span class="type">void</span></code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="EvSidebarAttachments.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GObject
+   +----GInitiallyUnowned
+         +----GtkWidget
+               +----GtkContainer
+                     +----GtkBox
+                           +----GtkVBox
+                                 +----EvSidebarAttachments
+</pre>
+</div>
+<div class="refsect1">
+<a name="EvSidebarAttachments.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EvSidebarAttachments implements
+ AtkImplementorIface,  GtkBuildable,  GtkOrientable and  <a class="link" href="EvSidebarPage.html" title="EvSidebarPage">EvSidebarPage</a>.</p>
+</div>
+<div class="refsect1">
+<a name="EvSidebarAttachments.signals"></a><h2>Signals</h2>
+<pre class="synopsis">
+  "<a class="link" href="EvSidebarAttachments.html#EvSidebarAttachments-popup" title='The "popup" signal'>popup</a>"                                          : <code class="literal">Action</code>
+</pre>
+</div>
+<div class="refsect1">
+<a name="EvSidebarAttachments.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="EvSidebarAttachments.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="EvSidebarAttachments-struct"></a><h3>struct EvSidebarAttachments</h3>
+<pre class="programlisting">struct EvSidebarAttachments;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvSidebarAttachmentsClass"></a><h3>struct EvSidebarAttachmentsClass</h3>
+<pre class="programlisting">struct EvSidebarAttachmentsClass {
+	GtkVBoxClass base_class;
+
+	/* Signals */
+	void (*popup_menu) (EvSidebarAttachments *ev_attachbar,
+			    EvAttachment    *attachment);
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvSidebarAttachmentsPrivate"></a><h3>EvSidebarAttachmentsPrivate</h3>
+<pre class="programlisting">typedef struct _EvSidebarAttachmentsPrivate EvSidebarAttachmentsPrivate;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-sidebar-attachments-new"></a><h3>ev_sidebar_attachments_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkWidget</span> *         ev_sidebar_attachments_new          (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EvSidebarAttachments.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EvSidebarAttachments-popup"></a><h3>The <code class="literal">"popup"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="EvSidebarAttachments.html" title="EvSidebarAttachments"><span class="type">EvSidebarAttachments</span></a> *evsidebarattachments,
+                                                        <span class="type">gpointer</span>              arg1,
+                                                        <span class="type">gpointer</span>              user_data)                 : <code class="literal">Action</code></pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>

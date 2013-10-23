@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "0.1">
+<!ENTITY manrevision "0.1">
+<!ENTITY date "June 2008">
+<!ENTITY app "<application>Palimpsest Disk Utility</application>">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<article id="index" lang="ro">
+  <articleinfo>
+    <title><application>Utilitarul de disc Palimpsest</application> Manual</title>
+    <abstract role="description">
+      <para>Acest document descrie aplicația Utilitarul de disc Palimpsest.</para>
+    </abstract>
+    <copyright> 
+      <year>2008</year> 
+      <holder>David Zeuthen</holder> 
+    </copyright><copyright><year>2011</year><holder>Căpățînă Alexandru (alex.kapa94@yahoo.com)</holder></copyright> 
+    <publisher> 
+      <publishername>Proiectul de documentație GNOME</publishername> 
+    </publisher> 
+      <legalnotice id="legalnotice">
+	<para>Aveți permisiunea de a copia, distribui și/sau modifica acest document în concordanță cu termenii Licenței de Documentație Liberă GNU (GFDL), Versiunea 1.1 sau o altă versiune mai nouă publicată de către Fundația pentru Software Liber fără Secțiunile Invariate, fără Texte de Prefață și fără Texte de Postfață. Puteți găsi o copie a GFDL-ului aici <ulink type="help" url="ghelp:fdl">link</ulink> sau în fișierul COPYING-DOCS distribuit în acest manual.</para>
+         <para>Acest manual face parte dintr-o colecție a manualelor GNOME distribuite sub GDFL. Dacă doriți sa distribuiți acest manual separat de colecție, puteți face asta prin a trimite o copie a licenței manualului, așa cum este descris în secțiunea 6 a licenței.</para>
+
+	<para>Multe din numele folosite de către companii pentru a-și distinge produsele și serviciile sunt revendicate ca fiind marcă înregistrată. Când acele nume apar în orice documentație GNOME și membrii Proiectului de Documentație sunt la cunoștință cu aceste mărci înregistrate, atunci aceste nume sunt scrise cu majuscule tot cuvântul sau doar prima literă.</para>
+
+	<para>DOCUMENTUL ȘI VERSIUNILE MODIFICATE ALE ACESTUIA SUNT FURNIZATE ÎN CONCORDANȚĂ CU TERMENII LICENȚEI DE DOCUMENTAȚIE LIBERĂ GNU CU VIITOAREA ÎNȚELEGERE CĂ: <orderedlist>
+		<listitem>
+		  <para>DOCUMENTUL ESTE FURNIZAT FĂRĂ GARANȚIE DE ORICE FEL, FIE EMISĂ SAU SUGERATĂ, INCLUZÂND, FĂRĂ LIMITAȚII, ACEEA CĂ DOCUMENTUL SAU VERSIUNEA MODIFICATĂ A DOCUMENTULUI ESTE FĂRĂ DEFECTE DE COMERCIALIZARE, POTRIVITĂ PENTRU UN ANUMIT SCOP SAU NEDĂUNĂTOARE. ÎNTREGUL RISC ÎN CEEA CE PRIVEȘTE CALITATEA, ACURATEȚEA ȘI PERFORMANȚA DOCUMENTULUI SAU VERSIUNII MODIFICATE A ACESTUIA DEPINDE DE DUMNEAVOASTRĂ. ÎN CAZ CĂ UN DOCUMENT SAU O VERSIUNE MODIFICATĂ SE DOVEDEȘTE A AVEA LIPSURI ÎN ORICE FEL, DUMNEAVOASTRĂ (NU SCRIITORUL INIȚIAL, AUTOR SAU ALT CONTRIBUITOR) VĂ VEȚI ASUMA COSTUL NECESAR SERVICIILOR, REPARĂRII SAU CORECTĂRII SALE. ACEST CERTIFICAT DE NEGARANȚIE CONSTITUIE O PARTE ESENȚIALĂ A LICENȚEI. NICIO UTILIZARE A DOCUMENTULUI SAU A UNEI VERSIUNI MODIFICATE A ACESTUIA NU ESTE AUTORIZATĂ CU EXCEPȚIA ACESTUI CERTIFICAT DE NEGARANȚIE; ȘI</para>
+		</listitem>
+		<listitem>
+		  <para>SUB NICIO FORMA SAU TEORIE JURIDICĂ, FIE ÎN DAUNE (INCLUZÂND NEGLIJENȚA), CONTRACT, SAU ALTCEVA, VA TREBUI AUTORUL, SCRIITORUL INIȚIAL, ORICE ALT CONTRIBUITOR SAU ORICE DISTRIBUITOR AL DOCUMENTULUI SAU A UNEI VERSIUNI MODIFICATE A ACESTUIA, SAU FURNIZOR DE ORICE FEL, SĂ FIE RĂSPUNZĂTOR FAȚĂ DE ORICE PERSOANĂ PENTRU O DAUNĂ ÎN MOD DIRECT, INDIRECT, SPECIAL, ÎNTÂMPLĂTOR SAU ÎN CONSECINȚĂ, DE ORICE FEL INCLUZÂND, FĂRĂ LIMITAȚII, DAUNELE DIN CAUZA PIERDERII FONDULUI COMERCIAL, OPRIREA ACTIVITĂȚII, DEFECȚIUNEA CALCULATORULUI, SAU ORICE ALTE DAUNE SAU PIERDERI REZULTATE DE SAU CORELATE CU UTILIZAREA ACESTUI DOCUMENT SAU A UNEI VERSIUNI MODIFICATE A ACESTUIA, CHIAR DACĂ ACESTE PERSOANE AU FOST INFORMATE DE POSIBILITATEA UNOR ASTFEL DE DAUNE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+    <authorgroup>
+      <author role="maintainer">
+	<firstname>David</firstname> <surname>Zeuthen</surname>
+	<affiliation>
+	  <address>
+	    <email>davidz@redhat.com</email>
+	  </address>
+	</affiliation>
+      </author>
+    </authorgroup>
+    <revhistory>
+      <revision>
+	<revnumber>Manualul Utilitarului de disc Palimpsest V 0.1</revnumber>
+	<date>2008</date>
+	<revdescription>
+	  <para role="author">David Zeuthen <email>davidz@redhat.com</email></para>
+	</revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Acest manual descrie versiunea 0.1 a Utilitarului de disc Palimpsest.</releaseinfo> 
+      <legalnotice> 
+      <title>Sugestii</title> 
+      <para>Pentru a raporta un defect sau a face o sugestie asupra aplicației <application>Utilitarul de disc Palimpsest</application> sau acestui manual, urmăriți indicațiile din <ulink url="ghelp:gnome-feedback" type="help">Pagina de sugestii GNOME</ulink>.</para>
+      </legalnotice>
+  </articleinfo>
+
+  <sect1 id="intro">
+    <title>Introducere.</title>
+      <para>Acesta este ghidul utilizatorului <application>Utilitarului de disc Palimpsest</application>.</para>
+    <figure id="mainwindow-fig"> 
+	<title><application>Utilitarul de disc Palimpsest</application> Manual</title> 
+	<screenshot> 
+	  <mediaobject> 
+	    <imageobject><imagedata fileref="figures/main-app.png" format="PNG"/> 
+	    </imageobject>
+	    
+	    <textobject> 
+	      <phrase>Arată fereastra principală <application>Utilitarul de disc Palimpsest</application>.</phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+    </figure>
+  </sect1>
+ 
+   <sect1 id="advanced">
+      <title>Utilitarul Avansat de disc Palimpsest.</title> 
+      <para>Utilitarul de disc Palimpsest este un program complex, cu multe funcții avansate.</para>
+
+   </sect1>
+
+</article>

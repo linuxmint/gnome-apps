@@ -1,0 +1,1907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appversion "2.16">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "July 2006">
+<!ENTITY app "gedit">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.GNOME.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+
+-->
+<!-- =============Document Header ============================= -->
+<?db.chunk.max_depth 2?>
+<article id="index" lang="zh_CN">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+	 <title>Gedit 手册</title>
+	 <copyright>
+		<year>2007</year>
+		<holder>GNOME 文档项目</holder> </copyright>	 
+	 <copyright>
+		<year>2002</year>
+		<year>2003</year>
+		<year>2004</year>
+		<holder>Sun Microsystems</holder> </copyright>
+	 <copyright>
+		<year>2000</year>
+		<holder>Eric Baudais</holder> </copyright>
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+	 <publisher role="maintainer">
+		<publishername>GNOME 文档项目</publishername>
+	 </publisher>
+
+	 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+	 <authorgroup>
+           <author>
+             <firstname>Joachim</firstname>
+             <surname>Noreiko</surname>
+           </author>
+		<author>
+		  <firstname>GNOME 文档项目</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>GNOME</orgname>
+		  </affiliation>
+		</author>
+		<author>
+			<firstname>Hal</firstname> 
+			<surname>Canary</surname>
+			<contrib>添加快捷键表</contrib>
+		</author>		
+		<author>
+		  <firstname>Sun Java Desktop System Documentation Team</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>Sun Microsystems</orgname>
+			 <address><email>gdocteam@sun.com</email></address>
+		  </affiliation>
+		</author>
+		<author>
+		  <firstname>Eric</firstname>
+		  <surname>Baudais</surname>
+		  <affiliation>
+			 <orgname>GNOME 文档项目</orgname>
+			 <address> <email>baudais@okstate.edu</email> </address>
+		  </affiliation>
+		</author>
+		<othercredit role="reviewer">
+			<firstname>Baris</firstname>
+			<surname>Cicek 提供了 gedit 应用程序早期修订的信息。</surname>
+			<contrib>致谢</contrib>
+    </othercredit>
+		<othercredit role="reviewer">
+			<firstname>Ajit</firstname>
+			<surname>George 提供了有关插件的信息。</surname>
+			<contrib>致谢</contrib>
+    </othercredit>
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname>
+	<surname>Translator 1</surname>
+	<affiliation>
+	  <orgname>Latin Translation Team</orgname>
+	  <address> <email>translator@gnome.org</email> </address>
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+	 </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+	 <revhistory>
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+		<revision>
+		  <revnumber>gedit V1.0</revnumber>
+		  <date>2000</date>
+		  <revdescription>
+			 <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+			 <para role="publisher">GNOME 文档项目</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit 手册 V2.0</revnumber>
+		  <date>2002年3月</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME 文档项目</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit 手册 V2.1</revnumber>
+		  <date>2002年6月</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME 文档项目</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit 手册 V2.2</revnumber>
+		  <date>2002年8月</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME 文档项目</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit 手册 V2.3</revnumber>
+		  <date>2002年9月</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME 文档项目</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit 手册 V2.4</revnumber>
+		  <date>2003年1月</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME 文档项目</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit 手册 V2.5</revnumber>
+		  <date>2003年3月</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME 文档项目</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit 手册 V2.6</revnumber>
+		  <date>2003年9月</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME 文档项目</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>gedit 手册 V2.7</revnumber>
+		  <date>2003年3月</date>
+		  <revdescription>
+			 <para role="author">Sun GNOME Documentation Team</para>
+			 <para role="publisher">GNOME 文档项目</para>
+		  </revdescription>
+		</revision>
+   	<revision>
+		  <revnumber>gedit 手册 V2.8</revnumber>
+		  <date>2006年7月</date>
+		  <revdescription>
+			 <para role="author">Sun Java Desktop System Documentation Team</para>
+			 <para role="publisher">GNOME 文档项目</para>
+		  </revdescription>
+		</revision>
+   		<revision>
+		  <revnumber>gedit 手册 V2.9</revnumber>
+		  <date>2006年7月</date>
+		  <revdescription>
+			 <para role="author">GNOME 文档小组</para>
+			 <para role="publisher">GNOME 文档项目</para>
+		  </revdescription>
+		</revision>
+	 </revhistory>
+	 <releaseinfo>本手册介绍 gedit 2.16 版。</releaseinfo>
+	 <legalnotice>
+		<title>反馈</title>
+		<para>要报告关于 <application>gedit</application> 应用程序或本手册的错误或提出建议，请参照 <ulink url="ghelp:gnome-feedback" type="help">GNOME 反馈页</ulink> 中的指导。</para>
+<!-- Translators may also add here feedback address for translations -->
+	 </legalnotice>
+    <abstract role="description">
+      <para>gedit 是一个 GNOME 桌面环境下的文本编辑器，还可以对文档进行打印、拼写检查、查找替换，以及高亮语法等。更更多的特性可以通过插件来实现。</para>
+    </abstract>
+  </articleinfo>
+  <indexterm><primary>gedit</primary></indexterm>
+  <indexterm><primary>文本编辑器</primary></indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="gedit-intro">
+	 <title>简介</title>
+
+   <!-- removed ids, here as anchors to prevent possible breakage -->
+	 <anchor id="gedit-customize-toolbar"/>
+
+	 <para><application>gedit</application> 允许您创建和编辑文本文件。</para>
+
+	 <para><application>gedit</application> 的目标是，实现一个简单易用的文本编辑器。更强大的功能可以通过不同的 <firstterm>插件</firstterm>，来实现执行各种文字编辑相关的任务。</para>
+  </sect1>
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="gedit-getting-started">
+	 <title>快速入门</title>
+
+<!-- ============= To Start gedit ============================ -->
+	 <sect2 id="gedit-to-start">
+		<title>启动 gedit</title>
+		<para>可以通过以下方式启动 <application>gedit</application>：</para>
+		<variablelist>
+    		<varlistentry>
+    		<term><guimenu>应用程序</guimenu> 菜单</term>
+    		<listitem>
+    		<para>选择 <menuchoice><guisubmenu>附件</guisubmenu><guimenuitem>文本编辑器</guimenuitem></menuchoice>。</para>
+    		</listitem>
+    		</varlistentry>
+    		<varlistentry>
+    		<term>命令行</term>
+    		<listitem>
+    		<para>执行以下命令： <command>gedit</command></para>
+    		</listitem>
+    		</varlistentry>
+    		</variablelist>
+    <para>默认情况下，当您在文件管理器中打开一个文本文件，gedit 会自动运行，显示这个文档。</para>
+	</sect2>
+
+	<sect2 id="gedit-when-you-start">
+
+		<title>gedit 窗口</title>
+		<para>在启动 <application>gedit</application> 时，系统会显示下面的窗口。</para>
+
+		<figure id="gedit-window">
+		  <title>gedit 窗口</title>
+		  <screenshot>
+			 <mediaobject>
+				<imageobject>
+				  <imagedata fileref="figures/gedit_window.png" format="PNG"/>
+					 </imageobject>
+				<textobject> <phrase>显示 gedit 主窗口。</phrase>
+				</textobject>
+			</mediaobject>
+		  </screenshot>
+		</figure>
+
+		<para>该 <application>gedit</application> 窗口包含以下元件：</para>
+		<variablelist>
+		  <varlistentry> <term>菜单栏</term>
+			 <listitem>
+				<para>菜单栏上的菜单包含您在 <application>gedit</application> 中处理文件所需的所有命令。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>工具栏</term>
+			 <listitem>
+				<para>工具栏包含您可以从菜单栏访问的命令的子集。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>显示区域</term>
+			 <listitem>
+				<para>该区域包含您正在编辑的文件的文本。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>状态栏</term>
+			 <listitem>
+				<para>状态栏显示关于当前 <application>gedit</application> 活动的信息和菜单项的相关信息。状态栏也显示下面的信息：</para>
+		  <itemizedlist>
+		  <listitem>
+		  <para>光标位置：显示光标所处的行号和列号。</para>
+		  </listitem>
+		  <listitem>
+		  <para>编辑模式：如果编辑器处于插入模式，则该状态栏显示 <guilabel>插入</guilabel>。如果编辑器处于覆盖模式，状态栏显示 <guilabel>覆盖</guilabel>。按 <keycap>Insert</keycap> 键切换两种编辑模式。</para>
+		  </listitem>
+		  </itemizedlist>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>侧栏</term>
+			 <listitem>
+				<para>侧栏中显示打开文档的列表，其他信息取决于您启用了哪些插件。</para>
+				<para>默认侧边栏没有显示，要显示它，点菜单 <menuchoice><guimenu>查看</guimenu><guimenuitem>侧边栏</guimenuitem></menuchoice>。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>底部面板</term>
+			 <listitem>
+				<para>底部面板用于一些编程工具，像 <application>Python 控制台</application> 插件，在这儿显示输出。</para>
+				<para>默认底部栏不显示，要显示它，点菜单 <menuchoice><guimenu>查看</guimenu><guimenuitem>底部栏</guimenuitem></menuchoice>。</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>当在 <application>gedit</application> 窗口中右击时，应用程序将会显示一个弹出菜单。该弹出菜单包含最常用的文本编辑命令。</para>
+
+		<para>像其它的 GNOME 应用程序一样，运行 <application>gedit</application> 的方法有好几种：可以用菜单，可以用工具栏，或者用快捷键。所有程序通用的快捷键列在 <ulink type="help" url="ghelp:user-guide?shortcuts-apps">用户指南</ulink> 中。</para>
+	 </sect2>
+
+<!-- ============= To Open Multiple Files from the Command Line ========= -->
+	 <sect2 id="gedit-run-from-cmd-line">
+		<title>从命令行运行 gedit</title>
+		<para>您可以从命令行运行 <application>gedit</application>，并且打开一个文件或多个文件。要从命令行打开多个文件，请键入下面的命令，然后按下<keycap>回车</keycap>键：</para>
+		<para><command>gedit <replaceable>file1.txt file2.txt file3.txt</replaceable></command></para>
+		<para>另外，您也可以指定一个 URI 作为文件名。</para>
+    <para>更多运行 <application>gedit</application> 的相关信息，请参阅： <ulink url="man:gedit" type="man"><citerefentry><refentrytitle>gedit</refentrytitle><manvolnum>1</manvolnum></citerefentry></ulink>。</para>
+	 </sect2>
+  </sect1>
+<!-- ================ Usage ================================ -->
+  <sect1 id="gedit-usage">
+	 <title>文件操作</title>
+
+<!-- ============= To Create a New File ======================== -->
+	 <sect2 id="gedit-create-new-file">
+		<title>创建新文档</title>
+		<para>要创建一个新文件，点菜单 <menuchoice><guimenu>文件</guimenu><guimenuitem>新建</guimenuitem></menuchoice>。在 <application>gedit</application> 窗口中，就会显示一个新的空白文档。</para>
+	 </sect2>
+
+<!-- ============= To Open a File ============================= -->
+	 <sect2 id="gedit-open-file">
+		<title>打开文件</title>
+		<para>要打开文件，点菜单 <menuchoice><guimenu>文件</guimenu><guimenuitem>打开</guimenuitem></menuchoice>，出来一个 <guilabel>打开文件</guilabel> 对话框。选择要打开的文件，然后点 <guibutton>确定</guibutton>。该文件就会显示在 <application>gedit</application> 窗口中。</para>
+
+		<para>应用程序会记住您最近编辑的五个文件，并显示在 <menuchoice><guimenu>文件</guimenu></menuchoice> 菜单中。您也可以点击工具栏上的 <inlinemediaobject><imageobject><imagedata fileref="figures/gedit_recent_files_menu_icon.png" format="PNG"/></imageobject><textobject><phrase>显示最近访问过的文件菜单图标。</phrase></textobject></inlinemediaobject> 图标来显示最近访问过的文件的列表。</para>
+
+		<note><para>您可以在 <application>gedit</application> 中打开多个文件。程序将为每个打开的程序在窗口里增加一个标签。更多相关信息，请参阅：<xref linkend="gedit-tabs"/>。</para></note>
+
+	 </sect2>
+
+<!-- ============= To Save a File ============================== -->
+	 <sect2 id="gedit-save-file">
+		<title>保存文件</title>
+		<para>您可以使用以下几种方法来保存文件：</para>
+		<itemizedlist>
+		  <listitem><para>要保存一个已经存在的文件，点菜单 <menuchoice><guimenu>文件</guimenu><guimenuitem>保存</guimenuitem></menuchoice> 命令。</para>
+		  </listitem>
+		  <listitem><para>要保存新文件或者用新的文件名保存一个现存的文件，请选择 <menuchoice><guimenu>文件</guimenu><guimenuitem>另存为</guimenuitem></menuchoice>。在 <guilabel>另存为</guilabel> 对话框中输入文件名，然后点击 <guibutton>保存</guibutton>。</para>
+		  </listitem>
+		  <listitem><para>如果要保存 <application>gedit</application> 中当前打开的所有文件，请选择 <menuchoice><guimenu>文档</guimenu><guimenuitem>全部保存</guimenuitem></menuchoice>。</para>
+		  </listitem>
+		</itemizedlist>
+		<para>如果要关闭 <application>gedit</application> 中打开的所有文件，点菜单 <menuchoice><guimenu>文档</guimenu><guimenuitem>全部关闭</guimenuitem></menuchoice>。</para>
+	 </sect2>
+
+<!-- ============= To Open a File from a URI ======================= -->
+	 <sect2 id="gedit-open-from-uri">
+		<title>从 URI 打开文件</title>
+		<para>要通过统一资源标识符 (URI) 打开文件，请执行以下步骤：</para>
+		<orderedlist>
+		<listitem>
+		<para>点菜单  <menuchoice><guimenu>文件</guimenu><guimenuitem>打开位置</guimenuitem></menuchoice>，出来一个 <guilabel>打开位置</guilabel> 对话框。</para>
+		</listitem>
+		<listitem>
+		<para>输入您想打开文件的 URI。</para>
+		</listitem>
+		<listitem>
+		<para>在 <guilabel>字符编码</guilabel> 下拉列表中，可以选择适当的字符编码。</para>
+		</listitem>
+		<listitem>
+		<para>点 <guibutton>打开</guibutton>。</para>
+		</listitem>
+		</orderedlist>
+		<para>有效的 <replaceable>URI</replaceable> 包括 <literal>http:</literal>、<literal>ftp:</literal>、<literal>file:</literal> 和所有 <literal>gnome-vfs</literal> 支持的格式。</para>
+		<para>某些类型的 URI 会以只读方式打开，当您更改后必须另存到其他位置。 HTTP 只允许读取文件。从 FTP 上打开的文件一般也是只读，因为并不是所有 FTP 服务器能够处理远程保存文件。</para>
+		<warning><para>保存到远程服务器，可以通过 <ulink type="help" url="ghelp:gconf-editor"><application>配置编辑器</application></ulink> 来启用，设置 <systemitem>/apps/gedit-2/preferences/editor/save/writable_vfs_schemes</systemitem>，但这可能导致错误发生。</para></warning>
+	 </sect2>
+
+<!-- ============= Working with tabs ======================== -->
+	 <sect2 id="gedit-tabs">
+	   <title>标签操作</title>
+
+		 <para>当打开多个文件时，<application>gedit</application> 在上边为每个文档显示一个 <firstterm>tab</firstterm>，要切换文档，点击标签即可。</para>
+		 <para>要移动文档到另外的 <application>gedit</application> 窗口，只要把这个文档标签拖过去即可。</para>
+		 <para>要移动一个文档到新的 <application>gedit</application> 窗口，或者拖动标签到桌面上，也可以点菜单 <menuchoice><guimenu>文档</guimenu><guimenuitem>移动到新窗口</guimenuitem></menuchoice>。</para>
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="working-with-text">
+    <title>文本操作</title>
+
+<!-- ============= To Edit Text ================================ -->
+	 <sect2 id="gedit-edit-text">
+		<title>编辑文本</title>
+		<para>您可以通过以下方法来编辑文件中的文本：</para>
+		<itemizedlist>
+		  <listitem><para>通过键盘来输入文字。<firstterm>光标插入点</firstterm> 指示新的文本将输入到这里。要插入到别处，可以用方向键或鼠标点击来改变光标插入点位置。</para>
+		  </listitem>
+		  <listitem><para>要将选定的文本复制到剪贴板，点菜单 <menuchoice><guimenu>编辑</guimenu><guimenuitem>复制</guimenuitem></menuchoice>。</para>
+		  </listitem>
+		  <listitem><para>要将选定的文本剪切到剪贴板中，点菜单 <menuchoice><guimenu>编辑</guimenu><guimenuitem>剪切</guimenuitem></menuchoice>。</para>
+		  </listitem>
+		  <listitem><para>要从文件中永久删除选定的文本，点菜单 <menuchoice><guimenu>编辑</guimenu><guimenuitem>删除</guimenuitem></menuchoice>。</para>
+		  </listitem>
+		  <listitem><para>要在光标位置插入剪贴板中的内容，点菜单 <menuchoice><guimenu>编辑</guimenu><guimenuitem>粘贴</guimenuitem></menuchoice>。您必须要在gedit 或其他程序里，先剪切或者复制文本，然后才能粘贴文本。</para>
+		  </listitem>
+		  <listitem><para>要选择文件中的所有文本，点菜单 <menuchoice><guimenu>编辑</guimenu><guimenuitem>全部选定</guimenuitem></menuchoice>。</para>
+		  </listitem>
+		</itemizedlist>
+	 </sect2>
+<!-- ============== To Undo or Redo Edits ====================== -->
+	 <sect2 id="gedit-undo-redo-edits">
+		<title>撤销和重做</title>
+		<para>要撤销你做的更改，点菜单 <menuchoice><guimenu>编辑</guimenu><guimenuitem>撤销</guimenuitem></menuchoice>。要恢复一个操作，点菜单 <menuchoice><guimenu>编辑</guimenu><guimenuitem>重做</guimenuitem></menuchoice>。</para>
+	 </sect2>
+
+	</sect1>
+	<sect1 id="gedit-find">
+		<title>查找和替换文本</title>
+
+		<para>在  <application>gedit</application> 中，有两种方法搜索文本。您可以使用 <guilabel>查找</guilabel> 对话框来搜索指定的一段文字，也可以使用 <guilabel>增量搜索</guilabel> 高亮匹配您输入的文本。</para>
+
+<!-- ============= To Find Text ================================ -->
+	 <sect2 id="gedit-find-text">
+		<title>查找文本</title>
+		<para>要在文件中搜索文本字符串，请按以下步骤操作：</para>
+		<orderedlist>
+		  <listitem><para>点菜单 <menuchoice><guimenu>搜索</guimenu><guimenuitem>查找</guimenuitem></menuchoice>，显示 <guilabel>查找</guilabel> 对话框。</para>
+		  </listitem>
+		  <listitem><para>在 <guilabel>搜索框</guilabel> 里输入您要查找的字符串，可以包括换行符和制表符，请参阅：<xref linkend="gedit-find-escapes"/>。</para>
+		  </listitem>
+		  <listitem><para>点击 <guibutton>查找</guibutton> 就可以从当前位置开始搜索字符串。如果 <application>gedit</application> 找到了该字符串，就会选中第一个匹配项，其他的匹配项则会高亮显示。</para>
+		  </listitem>
+		  <listitem><para>要查找下一个匹配项，继续点 <guibutton>查找</guibutton>，也可以点菜单 <menuchoice><guimenu>搜索</guimenu><guimenuitem>查找下一个</guimenuitem></menuchoice>。要查找前一个匹配项，点菜单 <menuchoice><guimenu>搜索</guimenu><guimenuitem>查找上一个</guimenuitem></menuchoice>。</para>
+		  </listitem>
+		</orderedlist>
+		<para>关闭了 <guilabel>查找</guilabel> 对话框后，您还可以通过 <menuchoice><guimenu>搜索</guimenu><guimenuitem>查找下一个</guimenuitem></menuchoice> 命令，或者 <menuchoice><guimenu>搜索</guimenu><guimenuitem>查找上一个</guimenuitem></menuchoice> ，来搜索另外的匹配项。</para>
+		<para>要清除所有高亮文本，点菜单 <menuchoice><guimenu>搜索</guimenu><guimenuitem>清除高亮显示</guimenuitem></menuchoice>。</para>
+	 </sect2>
+
+	 <sect2 id="gedit-find-incremental">
+	   <title>增量搜索</title>
+
+	   <para>增量搜索会高亮匹配文档中，您要查找的文本。(这个特性类似于一些网页浏览器中的搜索功能。)</para>
+	   <para>要开始一个增量搜索，点菜单 <menuchoice><guimenu>搜索</guimenu><guimenuitem>增量搜索</guimenuitem></menuchoice>。在工作区顶部出现一个搜索框。</para>
+	   <para>输入后，文档中匹配的文本都会高亮显示，第一个匹配项也会被选中。</para>
+	   <para>要想跳到第二个匹配项，按组合键 <keycombo><keycap>Ctrl</keycap><keycap>G</keycap></keycombo>。按 <keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>G</keycap></keycombo> 回到前一个匹配项。</para>
+	   <tip><para>您也可以使用上下方向键或鼠标滚轮，在各个匹配项之前切换。</para></tip>
+	 </sect2>
+
+<!-- ============= To Find and Replace Text =================== -->
+	 <sect2 id="gedit-find-replace-text">
+		<title>替换文本</title>
+
+		<para>要在文件中搜索一个字符串，并用另一个字符串替换该字符串，请执行以下步骤：</para>
+		<orderedlist>
+		  <listitem><para>选择<menuchoice><guimenu>“搜索”</guimenu><guimenuitem>“替换”</guimenuitem></menuchoice>，显示<guilabel>“替换”</guilabel>对话框。</para>
+		  </listitem>
+		  <listitem><para>在 <guilabel>搜索框</guilabel> 中输入您想查找的字符。还可以输入特殊字符，像换行符或制表符，请参阅： <xref linkend="gedit-find-escapes"/>。</para></listitem>
+		  <listitem><para>在 <guilabel>替换为</guilabel> 文本框中输入用来替换查找到的字符串的字符串。</para>
+		  </listitem>
+		</orderedlist>
+
+		<para>在替换之前如果想检查一下，点击 <guibutton>查找</guibutton>，如果 <application>gedit</application> 找到对应的字符，将会选中它，然后点 <guibutton>替换</guibutton>，就可以替换找到的字符。要查找下一个匹配项，继续点 <guibutton>查找</guibutton>。</para>
+		<para>要替换文档中的所有匹配项，点 <guibutton>替换全部</guibutton>。</para>
+	 </sect2>
+
+<!-- ============= Find and Replace Options ============================ -->
+  <sect2 id="gedit-find-options">
+		<title>查找和替换选项</title>
+		<para><guilabel>查找</guilabel> 对话框和 <guilabel>替换</guilabel> 对话框，都有下面的这些选项：</para>
+		<itemizedlist>
+		  <listitem><para>选中 <guilabel>区分大小写</guilabel> 选项，仅查找完全匹配大小写的字符串。例如，选中 <guilabel>区分大小写</guilabel>， “TEXT”和“text”是不一样的。</para>
+		  </listitem>
+		  <listitem><para>选中 <guilabel>匹配整个单词</guilabel> 选项，只是查找那些与您键入文本的整个单词相同的字符串。例如，选中了 <guilabel>匹配整个单词</guilabel> 选项，“text”和“texture”是不匹配的。</para>
+		  </listitem>
+		  <listitem><para>选中 <guilabel>反向搜索</guilabel>，就会向着文件开头的方向搜索。</para>
+		  </listitem>
+		  <listitem><para>选中 <guilabel>回到头部继续搜索</guilabel> 选项，当搜索到文件尾以后，接着从文件开头继续搜索。</para>
+		  </listitem>
+		</itemizedlist>
+  </sect2>
+
+<!-- ============= Special Characters ============================ -->
+	 <sect2 id="gedit-find-escapes">
+	   <title>特殊的字符</title>
+	     <para>您可以在查找或替换文本中，包括下列转义字符：</para>
+			 <variablelist>
+        <varlistentry>
+          <term><literal>\n</literal></term>
+    				<listitem>
+              <para>插入一个新行。</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><literal>\t</literal></term>
+    				<listitem>
+              <para>插入一个 Tab 制表符。</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><literal>\r</literal></term>
+    				<listitem>
+              <para>插入一个回车符</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><literal>\\</literal></term>
+    				<listitem>
+              <para>反斜杠转义字符在搜索时会被忽略。例如如果您想查找文字 "<literal>\n</literal>" ，您需要在 <guilabel>搜索框</guilabel> 里输入 "\\n"。或者如果您要查找连续的反斜杠，您必须输入两个反斜杠来搜索它。</para>
+    				</listitem>
+        </varlistentry>
+			 </variablelist>
+    </sect2>
+
+<!-- ============= To Position the Cursor on a Specific Line ======================= -->
+    <sect2 id="gedit-goto-line">
+      <title>将光标定位到指定的行</title>
+
+      <para>要把定位光标到当前文件指定的行，点菜单 <menuchoice><guimenu>搜索</guimenu><guimenuitem>转到行</guimenuitem></menuchoice>。在工作区顶部出现一个行号文本框。</para>
+      <para>输入您想转到的行，文档会自动跳转到这一行显示。</para>
+      <para>要去掉这个文本框，并将光标移到指定行，按一下 <keycap>回车键</keycap>。</para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="gedit-printing">
+    <title>打印</title>
+
+<!-- ============= To Set the Page Options ============================ -->
+	 <sect2 id="gedit-page-setup">
+		<title>设置页面选项</title>
+
+		<para>要设置页面选项，点菜单 <menuchoice><guimenu>文件</guimenu><guimenuitem>页面设置</guimenuitem></menuchoice>，出来一个 <guilabel>页面设置</guilabel> 对话框。</para>
+
+		<para><guilabel>页面设置</guilabel> 对话框允许您设定下面这些打印选项：</para>
+
+		<sect3 id="gedit-page-setup-general">
+		<title>常规标签</title>
+	 	<variablelist>
+		  <varlistentry> <term><guilabel>打印出高亮格式</guilabel> </term>
+			 <listitem>
+				<para>选中此项，打印高亮语法格式。更多相关信息，请参阅：<xref linkend="gedit-set-highlightmode"/>。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>打印页眉</guilabel> </term>
+			 <listitem>
+				<para>如果选择此选项，系统会在打印时打印每页的页眉。您不能配置页眉。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>行号</guilabel>
+			 </term>
+			 <listitem>
+				<para>选中 <guilabel>打印行号</guilabel> 选项，打印文件时也包括行号。</para>
+				<para>在 <guilabel>每几行打印一次行</guilabel> 微调按钮框中，设定多久打印一次行号，例如每 5 行打印一次，每 10 行 打印一次，等等。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>文本换行</guilabel> </term>
+			 <listitem>
+                            <para>选中 <guilabel>允许文本换行</guilabel>，当您打印一个文件时，将自动换行文本字符。程序在统计行数时，将折行还是算作一行。</para>
+				<para>选中 <guilabel>不将一个单词拆在两行</guilabel> 选项，会将整个单词换到下一行，当您打印文件时，将自动换行文本单词。</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		</sect3>
+
+		<sect3 id="gedit-page-setup-fonts">
+	 		<title>字体</title>
+	 	<variablelist>
+		  <varlistentry> <term><guilabel>正文</guilabel> </term>
+			 <listitem>
+				<para>单击此按钮可以选择打印文件正文文本所用的字体。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>行号</guilabel>
+			 </term>
+			 <listitem>
+				<para>单击此按钮可以选择打印行号所用的字体。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>页眉和页脚</guilabel> </term>
+			 <listitem>
+				<para>单击此按钮可以选择打印文件页眉、页脚所用的字体。</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>要在 <application>gedit</application> 中，将打印字体恢复到默认字体，点击 <guibutton>恢复为默认字体</guibutton>。</para>
+		</sect3>
+
+	 </sect2>
+
+<!-- ============= To Print a File ============================ -->
+	 <sect2 id="gedit-print-file">
+		<title>打印文档</title>
+		<para>您可以使用 <application>gedit</application> 来执行以下打印操作：</para>
+		<itemizedlist>
+		  <listitem><para>用打印机来打印文档。</para>
+		  </listitem>
+		  <listitem><para>将打印命令的输出打印到文件中。</para>
+		  </listitem>
+		</itemizedlist>
+		<para>如果是打印到文件中，<application>gedit</application> 会将该文件的输出发送到一个印前格式的文件中。最常用的印前格式是 PostScript 格式和可移植文档格式 (PDF)。</para>
+
+		<para>要预览要打印的页面，请选择 <menuchoice><guimenu>文件</guimenu><guimenuitem>打印预览</guimenuitem></menuchoice>。</para>
+
+		<para>要将当前文件打印到打印机或者一个文件中，点菜单 <menuchoice><guimenu>文件</guimenu><guimenuitem>打印</guimenuitem></menuchoice>，显示 <guilabel>打印</guilabel> 对话框。</para>
+
+		<para><guilabel>打印</guilabel> 对话框允许您指定以下打印选项：</para>
+
+		<sect3 id="print-dialog-job">
+		<title>任务区段</title>
+		<variablelist>
+	 		<varlistentry> <term><guilabel>打印范围</guilabel> </term>
+			 <listitem>
+				<para>选择以下一个选项，以确定要打印的页数：</para>
+				<itemizedlist>
+				<listitem>
+				<para><guilabel>全部</guilabel></para>
+				<para>如果选择该选项，将打印文件中的所有页。</para>
+				</listitem>
+				<listitem>
+				<para><guilabel>行</guilabel></para>
+				<para>选中此项，仅打印指定行。使用 <guilabel>从</guilabel> 和 <guilabel>到</guilabel> 微调按钮框，指定打印行的范围。</para>
+				</listitem>
+				<listitem>
+				<para><guilabel>选定范围</guilabel></para>
+				<para>如果选择该选项，将只打印选定的文本。该选项只有在选定了文本时才可用。</para>
+				</listitem>
+
+				</itemizedlist>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>副本</guilabel> </term>
+			 <listitem>
+				<para>点击 <guilabel>副本数</guilabel> 微调按钮框，指定您想打印的份数。</para>
+				<para>如果您要该文件的多个副本，则可以 <guilabel>顺序</guilabel> 选项中指定副本打印的顺序。</para>
+			 </listitem>
+		  	</varlistentry>
+			</variablelist>
+		</sect3>
+
+		<sect3 id="print-dialog-printer">
+		<title>打印机标签段</title>
+	<variablelist>
+	  <varlistentry> <term><guilabel>打印机</guilabel> </term>
+	    <listitem>
+	      <para>点击下拉列表，选择您想要用来打印文件的打印机。</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>设置</guilabel> </term>
+	    <listitem>
+	      <para>点击下拉列表，设定打印机选项。</para>
+	      <para>要配置打印机，点 <guibutton>配置</guibutton>。例如，你可以启用或禁用双面打印，或放入打印队列中，如果打印机支持此项功能。</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>位置</guilabel> </term>
+	    <listitem>
+	      <para>点击下拉列表，选择下面一个打印目标：</para>
+	      <variablelist>
+	        <varlistentry>
+	          <term><guilabel>CUPS</guilabel></term>
+	          <listitem>
+	            <para>将文件打印到 CUPS 打印机。</para>
+	            <note>
+	              <para>如果选择的打印机是一个 CUPS 打印机，<guilabel>CUPS</guilabel> 是下拉列表中的唯一一项。</para>
+	            </note>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term><guilabel>lpr</guilabel></term>
+	          <listitem>
+	            <para>将文件打印到打印机。</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term><guilabel>文件</guilabel></term>
+	          <listitem>
+	            <para>将文件打印输出到一个 PostScript 文件中。</para>
+	            <para>点 <guibutton>另存为</guibutton> 出来一个对话框，您可以指定 PostScript 文件保存的位置和文件名。</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term><guilabel>自定义</guilabel></term>
+	          <listitem>
+	            <para>使用指定的命令来打印文件。</para>
+	            <para>在文本框中输入命令的名称，包括所有的命令行参数。</para>
+	          </listitem>
+	        </varlistentry>
+	      </variablelist>
+            </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>状态</guilabel> </term>
+	    <listitem>
+	      <para>在这个版本的 gedit 中，不支持这个功能。</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>类型</guilabel> </term>
+	    <listitem>
+	      <para>在这个版本的 gedit 中，不支持这个功能。</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>注释</guilabel> </term>
+	    <listitem>
+	      <para>在这个版本的 gedit 中，不支持这个功能。</para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+	</sect3>
+
+		<sect3 id="print-dialog-paper">
+		<title>纸张标签段</title>
+		<variablelist>
+	 		<varlistentry> <term><guilabel>纸张大小</guilabel> </term>
+			 <listitem>
+				<para>使用此下拉列表可以选择您用来打印该文件的纸张的大小。</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>纸张宽度</guilabel> </term>
+			 <listitem>
+				<para>点击微调按钮框指定纸张宽度，在旁边的下拉列表中可以更改用度量单位。</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>纸张高度</guilabel> </term>
+			 <listitem>
+				<para>使用此微调按钮框可以指定纸张高度。</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>送纸方向</guilabel> </term>
+			 <listitem>
+				<para>使用此下拉列表可以选择打印机中的纸张方向。</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>纸张方向</guilabel> </term>
+			 <listitem>
+				<para>使用此下拉列表可以选择纸张方向。</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>布局</guilabel> </term>
+			 <listitem>
+				<para>使用此下拉列表可以选择纸张布局。您选择的每个布局的预览会显示在 <guilabel>预览</guilabel>区域中。</para>
+			 </listitem>
+		  	</varlistentry>
+          <varlistentry> <term><guilabel>纸盘</guilabel> </term>
+            <listitem>
+              <para>点下拉列表，选择纸盘。</para>             </listitem>
+          </varlistentry>
+		</variablelist>
+		</sect3>
+
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="gedit-programming-features">
+	  <title>程序特性</title>
+
+	  <para><application>gedit</application> 的一些特性由插件提供。例如，标记列表插件提供一个不同标记语言的常用标记列表：请参阅 <xref linkend="gedit-tag-list-plugin"/>。</para>
+
+<!-- ============= Syntax Highlighting =================== -->
+	 <sect2 id="gedit-set-highlightmode">
+	 <title>高亮语法格式</title>
+	 <para>高亮语法格式，将不同部分文本显示不同颜色，使得源代码更容易阅读。</para>
+
+	 <para><application>gedit</application> 针对文本的类型，选择一个合适的高亮语法模式。要替换高亮语法模式，点菜单 <menuchoice><guimenu>查看</guimenu><guimenuitem>高亮语法模式</guimenuitem></menuchoice>，然后选择下面的一种。</para>
+		  <variablelist>
+		    <varlistentry>
+		      <term><guimenuitem>普通</guimenuitem></term>
+		      <listitem>
+		        <para>不显示高亮语法格式</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>源代码</guisubmenu></term>
+		      <listitem>
+		        <para>显示编辑源代码的高亮语法格式。在 <guisubmenu>源代码</guisubmenu> 子菜单中，再选择源代码类型。</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>标记语言</guisubmenu></term>
+		      <listitem>
+		        <para>显示标记语言的高亮语法格式。在 guisubmenu&gt;标记语言</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>脚本</guisubmenu></term>
+		      <listitem>
+		        <para>显示编辑脚本语言的高亮语法格式。在 <guisubmenu>脚本语言</guisubmenu> 子菜单中，选择一种脚本语言类型。</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>其他</guisubmenu></term>
+		      <listitem>
+		        <para>显示编辑其他代码的高亮语法格式。在 <guisubmenu>其他</guisubmenu> 子菜单中选择一种代码类型。</para>
+		      </listitem>
+		    </varlistentry>
+		  </variablelist>
+	 </sect2>
+
+<!-- ============= To Pipe the Output of a Command to a File ======= -->
+	 <sect2 id="gedit-pipe-output">
+		<title>通过管道命令输出到文件</title>
+		<para>您可以使用 <application>gedit</application> 将命令的输出输送到文本文件中。例如，要将 <command>ls</command> 命令的输出输送到一个文本文件中，输入 <command>ls | gedit</command>，然后按 <keycap>回车键</keycap>。</para>
+		<para><command>ls</command> 命令的输出就会显示在 <application>gedit</application> 窗口的一个新文件中。</para>
+		<para>另外，您也可以使用<application>外部工具</application> 插件，把命令输出到当前文件。</para>
+	 </sect2>
+  </sect1>
+
+<!-- ================ Shortcut Keys ============================= -->
+<sect1 id="gedit-shortcutkeys"> 
+  <title>快捷键</title>
+  <para>使用快捷键执行常用任务，比用鼠标和菜单要快。下表列出了 <application>gedit</application> 的常用快捷键。</para>
+  <para>更多快捷键，请参阅：<ulink type="help" url="ghelp:user-guide?keyboard-skills">桌面用户指南</ulink>。</para>
+
+  <!-- ============= Tabs ======================== -->
+	<bridgehead>制表符</bridgehead>
+	<para>标签快捷键：</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>快捷键</para></entry>
+          <entry colname="COLSPEC1" align="left"> 
+            <para>命令</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">               
+          <entry><para>Ctrl + Alt + PageUp</para></entry>
+          <entry><para>切换到左边的标签页。</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Ctrl + Alt + PageDown</para></entry>
+          <entry><para>切换到右边的标签页。</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Ctrl + W</para></entry>
+          <entry><para>关闭标签页。</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Ctrl + Shift + L</para></entry>
+          <entry><para>保存全部标签页。</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Ctrl + Shift + W</para></entry>
+          <entry><para>关闭全部标签页。</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Alt + n</para></entry>
+          <entry><para>跳到第 n 个标签页(n 是数字)。</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+  <!-- ============= Files ======================== -->
+	<bridgehead>文件</bridgehead>
+	<para>文件操作的快捷键：</para>
+  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>快捷键</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>命令</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>Ctrl + N</para></entry>
+                        <entry><para>创建新文件</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + O</para></entry>
+                        <entry><para>打开文档。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + L</para></entry>
+                        <entry><para>打开位置。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + S</para></entry>
+                        <entry><para>保存当前文档。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + S</para></entry>
+                        <entry><para>用一个新的文件名保存当前文档。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + P</para></entry>
+                        <entry><para>打印当前文档。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + P</para></entry>
+                        <entry><para>打印预览。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + W</para></entry>
+                        <entry><para>关闭当前文档。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Q</para></entry>
+                        <entry><para>退出 Gedit。</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Edit ======================= -->
+	<bridgehead>编辑</bridgehead>
+	<para>编辑文档的快捷键：</para>	
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>快捷键</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>命令</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + Z</para></entry>
+                        <entry><para>撤销上一次操作。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + Z</para></entry>
+                        <entry><para>重做最上一次的撤销操作。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + X</para></entry>
+                        <entry><para>剪切选中的文本或区域，并放到剪贴板中。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + C</para></entry>
+                        <entry><para>复制选中的文本或区域，并放到剪贴板中。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + V</para></entry>
+                        <entry><para>从剪贴板中粘贴内容。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + A</para></entry>
+                        <entry><para>全选</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + D</para></entry>
+                        <entry><para>删除当前行。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Alt + Up</para></entry>
+                        <entry><para>将选中的行上移一行。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Alt + Down</para></entry>
+                        <entry><para>将选中的行下移一行。</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Panes ======================= -->
+	<bridgehead>面板</bridgehead>
+	<para>显示和隐藏面板的快捷键：</para>	
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>快捷键</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>命令</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>F9</para></entry>
+                        <entry><para>显示/隐藏侧边栏。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + F9</para></entry>
+                        <entry><para>显示/隐藏底边栏。</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Search ======================= -->
+	<bridgehead>搜索</bridgehead>
+	<para>搜索的快捷键：</para>	
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>快捷键</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>命令</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>Ctrl + F</para></entry>
+                        <entry><para>查找字符串。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + G</para></entry>
+                        <entry><para>查找下一个匹配的字符串。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + G</para></entry>
+                        <entry><para>查找前一个匹配的字符串。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + K</para></entry>
+                        <entry><para>交互式搜索。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + H</para></entry>
+                        <entry><para>查找并替换</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + K</para></entry>
+                        <entry><para>清除高亮显示。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + I</para></entry>
+                        <entry><para>跳转到行。</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Tools ======================= -->
+	<bridgehead>工具</bridgehead>
+	<para>工具快捷键：</para>	
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>快捷键</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>命令</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>Shift + F7</para></entry>
+                        <entry><para>检查拼写(使用插件)。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Alt + F12</para></entry>
+                        <entry><para>删除尾部空格(使用插件)。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + T</para></entry>
+                        <entry><para>缩进(使用插件)。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + T</para></entry>
+                        <entry><para>清除缩进(使用插件)。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>F8</para></entry>
+                        <entry><para>在当前文件夹运行“make”命令(用插件)。</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + D</para></entry>
+                        <entry><para>文件夹列表(使用插件)。</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Help ======================= -->
+	<bridgehead>帮助</bridgehead>
+	<para>帮助的快捷键：</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>快捷键</para></entry>
+          <entry colname="COLSPEC1" align="left"> 
+            <para>命令</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">               
+          <entry><para>F1</para></entry>
+          <entry><para>打开 <application>gedit</application> 的用户手册。</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect1>
+
+
+
+<!-- ============= Preferences ============================= -->
+  <sect1 id="gedit-prefs">
+    <title>首选项</title>
+
+    <para>要配置 <application>gedit</application>，点菜单 <menuchoice><guimenu>编辑</guimenu><guimenuitem>首选项</guimenuitem></menuchoice>。 <guilabel>首选项</guilabel> 对话框包含以下类别：</para>
+    <itemizedlist>
+      <listitem><para><xref linkend="gedit-prefs-view"/></para></listitem>
+      <listitem><para><xref linkend="gedit-prefs-editor"/></para></listitem>
+      <listitem><para><xref linkend="gedit-prefs-fontsandcolors"/></para></listitem>
+      <listitem><para><xref linkend="gedit-prefs-plugins"/></para></listitem>
+    </itemizedlist>
+
+    <sect2 id="gedit-prefs-view">
+      <title>查看</title>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>文本换行</guilabel> </term>
+          <listitem>
+            <para>选中 <guilabel>允许文本换行</guilabel> 选项，长的文本行会折行，而不是跑到文本窗口外边。这就不需要使用水平滚动条。</para>
+            <para>选中 <guilabel>不将一个单词拆在两行</guilabel> 选项，会将整个单词换到下一行，使文本更容易阅读。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>行号</guilabel></term>
+          <listitem>
+            <para>选中 <guilabel>显示行号</guilabel>，在 <application>gedit</application> 窗口的左侧显示行号。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>当前行</guilabel></term>
+          <listitem>
+            <para>选中 <guilabel>高亮显示当前行</guilabel> 选项，光标所在的行会高亮显示。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>右边距</guilabel></term>
+          <listitem>
+            <para>选中 <guilabel>显示右边距</guilabel> 选项，显示一条竖线指示右边距。</para>
+            <para>在 <guilabel>右边距位于列</guilabel> 微调按钮框，指定竖线所在的列号位置。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>括号匹配</guilabel></term>
+          <listitem>
+            <para>选中 <guilabel>高亮显示匹配的括号</guilabel> 选项，当光标位于括号位置时，高亮显示匹配的另一个括号。</para>
+          </listitem>
+        </varlistentry>
+
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gedit-prefs-editor">
+      <title>编辑器</title>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>制表符</guilabel> </term>
+          <listitem>
+            <para>在 <guilabel>Tab 宽度</guilabel> 微调按钮框里，指定当您按下 <keycap>Tab</keycap> 键时，<application>gedit</application> 插入的空格宽度。</para>
+            <para>选中 <guilabel>插入空格替代制表符</guilabel>，指定当您按下 <keycap>Tab</keycap> 键时，<application>gedit</application> 插入空格而不是制表符。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>自动缩进</guilabel> </term>
+          <listitem>
+            <para>选中 <guilabel>启用自动缩进</guilabel>，指定下一行在缩进后再开始。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>保存文件</guilabel> </term>
+          <listitem>
+            <para>选中 <guilabel>在保存之前创建一个文件备份</guilabel>，在每次保存文件的时候创建文件的备份副本。备份文件的文件名的末尾包含一个 ~。</para>
+            <para>选中 <guilabel>自动保存，每隔...分钟</guilabel>，在指定的时间间隔后，会自动保存当前文件。使用微调按钮框可以指定多久保存一次文件。</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gedit-prefs-fontsandcolors">
+      <title>字体和颜色选项</title>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>字体</guilabel> </term>
+          <listitem>
+            <para>选中 <guilabel>使用默认主题字体</guilabel>， 该选项，将在 <application>gedit</application> 文本窗口中使用默认系统字体来显示文本。</para>
+            <para><guilabel>编辑器字体</guilabel> 显示 <application>gedit</application> 用来显示文本的字体。 单击该按钮可以指定文本使用的字体、样式和大小。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>颜色方案</guilabel></term>
+          <listitem>
+            <para>您可以从颜色方案列表中选择一种颜色方案。默认情况下，安装有下面的颜色方案：</para>
+            <variablelist>
+              <varlistentry>
+                <term><guilabel>经典</guilabel></term>
+                <listitem>
+                  <para>基于 gvim 颜色方案的经典颜色方案。</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term><guilabel>Cobalt</guilabel></term>
+                <listitem>
+                  <para>蓝色主题颜色方案。</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term><guilabel>Kate</guilabel></term>
+                <listitem>
+                  <para>用于 Kate 文本编辑器的颜色方案。</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term><guilabel>Oblivion</guilabel></term>
+                <listitem>
+                  <para>用于 Tango 调色板的黑色主题方案。</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term><guilabel>Tango</guilabel></term>
+                <listitem>
+                  <para>用于 Tango 的颜色方案。</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+            <para>您可以通过点击 <guilabel>添加...</guilabel>，选择一个颜色方案文件，来添加一个新的颜色方案</para>
+            <para>您可以通过点击 <guilabel>删除</guilabel>，删除选中的颜色方案</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gedit-prefs-plugins">
+      <title>插件</title>
+      <para>通过插件给 <application>gedit</application> 添加扩展特性。更多相关信息，请参阅：<xref linkend="gedit-plugins-overview"/>。</para>
+
+<!-- ============= To Load gedit Plugins ========================= -->
+	 <sect3 id="gedit-install-plugins">
+		<title>启用一个插件</title>
+		<para>要启用一个 <application>gedit</application> 插件，请安下面的步骤操作：</para>
+                <orderedlist>
+                  <listitem>
+                    <para>点菜单 <menuchoice><guimenu>编辑</guimenu><guimenuitem>首选项</guimenuitem></menuchoice>。</para>
+                  </listitem>
+                  <listitem>
+                    <para>点击 <guilabel>插件</guilabel> 标签。</para>
+                  </listitem>
+                  <listitem>
+                    <para>选中您想启用的插件名称旁边的复选框。</para>
+                  </listitem>
+                  <listitem>
+                    <para>点 <guibutton>关闭</guibutton> 按钮，关闭 <guilabel>首选项</guilabel> 对话框。</para>
+                  </listitem>
+                </orderedlist>
+	 </sect3>
+
+<!-- ============= To Remove gedit Plugins ========================= -->
+  	 <sect3 id="gedit-remove-plugins">
+  		<title>禁用一个插件</title>
+  		<para>当您退出了 <application>gedit</application>，但插件仍保持启用状态。</para>
+  		<para>要禁用一个 <application>gedit</application> 插件，请按下面的步骤操作：</para>
+                  <orderedlist>
+                    <listitem>
+                      <para>点菜单 <menuchoice><guimenu>编辑</guimenu><guimenuitem>首选项</guimenuitem></menuchoice>。</para>
+                    </listitem>
+                    <listitem>
+                      <para>点击 <guilabel>插件</guilabel> 标签。</para>
+                    </listitem>
+                    <listitem>
+                      <para>不选中插件名称旁边的复选框，就可以禁用它。</para>
+                    </listitem>
+                    <listitem>
+                      <para>点 <guibutton>关闭</guibutton> 按钮，关闭 <guilabel>首选项</guilabel> 对话框。</para>
+                    </listitem>
+                  </orderedlist>
+  	 </sect3>
+	 </sect2>
+
+ </sect1>
+<!-- ============= To Use the gedit Plugins ========================= -->
+	 <sect1 id="gedit-plugins">
+		<title>插件</title>
+		<sect2 id="gedit-plugins-overview">
+		  <title>使用插件</title>
+  		<para>您可以通过启用 <firstterm>插件</firstterm> 为 <application>gedit</application> 添加扩展特性。插件是一个额外的小程序，可以增强应用程序的功能。插件会在 <application>gedit</application> 中增加新的菜单项，提供新的特性。</para>
+  		<para><application>gedit</application> 内置了一些插件，您也可以安装更多，<ulink type="http" url="http://live.gnome.org/Gedit/Plugins">gedit website</ulink> 中，列出了第三方开发的插件。</para>
+  		<para>要启用或禁用一个插件，或者查看当前启用了哪些插件，请使用 <link linkend="gedit-prefs-plugins">插件选项</link>。</para>
+  		<para>下面的插件是 <application>gedit</application> 内置的插件。</para>
+  		<!-- Not yet documented:
+  		File browser
+  		-->
+  		<itemizedlist>
+  		  <listitem>
+  		    <para><link linkend="gedit-change-case-plugin"><application>改变大小写</application></link> 允许您更改选中文本的大小写。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-document-statistics-plugin">文档统计</link></application> 显示文档的行数、单词数和字符数。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-external-tools-plugin">外部工具</link></application> 允许您在 <application>gedit</application> 中激活外部的命令。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application>文件浏览器</application> 允许您在侧边栏浏览文件和文件夹。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-indent-lines-plugin">行缩进</link></application> 为选中的行添加或清除缩进。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-insert-date-time-plugin">插入日期/时间</link></application> 在文档中插入当前的日期和时间。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-modelines-plugin">Modelines</link></application> 允许您为特殊的文档设置编辑器选项，支持 <application>Emacs</application>、<application>Kate</application> 和 <application>Vim</application> 风格的 modelines。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-python-console-plugin">Python 控制台</link></application> 运行您在 python 编程语言中运行命令。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-snippets-plugin">片段</link></application> 允许您存储常用的文本片段，并快速插入到文档中。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-sort-plugin">排序</link></application> 按字母顺序排列选定的行。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-spell-checker-plugin">拼写检查</link></application> 检查选定文本的拼写正确性，或者标记文档中的错误。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-tag-list-plugin">标记列表</link></application> 允许您从侧栏中插入常用的 HTML 或其他语言标记。</para>
+  		  </listitem>
+  		</itemizedlist>
+
+	<note><para>关于创建插件的更多信息，请参阅：<ulink type="http" url="http://live.gnome.org/Gedit/Plugins"><application>gedit</application> 网站</ulink>。</para></note>
+  	</sect2>
+
+<sect2 id="gedit-change-case-plugin">
+<title>更改大小写插件</title>
+	<para><application>更改大小写</application> 插件更改选中文本的大小写状态。</para>
+	 <para>当 <application>改变大小写</application> 插件启用后，下面的项将添加到 <guimenu>编辑</guimenu> 菜单：</para>
+
+  <informaltable frame="all">
+    <tgroup cols="3" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="33*"/>
+      <colspec colname="COLSPEC1" colwidth="33*"/>
+      <colspec colname="COLSPEC2" colwidth="33*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>菜单项</para></entry>
+          <entry colname="COLSPEC1">
+            <para>操作</para></entry>
+          <entry colname="COLSPEC2">
+            <para>举例</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para><menuchoice><guimenu>编辑</guimenu>
+<guisubmenu>改变大小写</guisubmenu><guimenuitem>全部大写字母</guimenuitem></menuchoice></para></entry>
+          <entry><para>把字符都改成大写字母。</para></entry>
+          <entry><para><literal>This text</literal> 将变成 <literal>THIS TEXT</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para><menuchoice><guimenu>编辑</guimenu>
+<guisubmenu>改变大小写</guisubmenu><guimenuitem>全部小写字母</guimenuitem></menuchoice></para></entry>
+          <entry><para>把字符都改成小写字母。</para></entry>
+          <entry><para><literal>This Text</literal> 将变成 <literal>this text</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para><menuchoice><guimenu>编辑</guimenu>
+<guisubmenu>改变大小写</guisubmenu><guimenuitem>反转大小写</guimenuitem></menuchoice></para></entry>
+          <entry><para>把小写字母改成大写，把大写字母改成小写。</para></entry>
+          <entry><para><literal>This Text</literal> 将变成 <literal>tHIS tEXT</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para><menuchoice><guimenu>编辑</guimenu>
+<guisubmenu>改变大小写</guisubmenu><guimenuitem>字首大写</guimenuitem></menuchoice></para></entry>
+          <entry><para>每个单词的第一个字母改成大写。</para></entry>
+          <entry><para><literal>this text</literal> 将变成 <literal>This Text</literal></para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect2>
+
+<sect2 id="gedit-document-statistics-plugin">
+<title>文档统计插件</title>
+	<para><application>文档统计插件</application> 统计当前文件的行数、单词数、字数(含空格)、字数(不含空格)、字节数。该插件将结果显示在一个<guilabel>文档统计信息</guilabel> 对话框中。 要使用文档统计插件，请按以下步骤操作：</para>
+		<orderedlist>
+		  <listitem><para>点菜单 <menuchoice><guimenu>工具</guimenu><guimenuitem>文档统计</guimenuitem></menuchoice>，出来一个 <guilabel>文档统计信息</guilabel> 对话框。<guilabel>文档统计信息</guilabel> 对话框显示文件的以下信息：</para>
+		      <itemizedlist>
+		      <listitem><para>当前文档中的行数。</para>
+		      </listitem>
+		      <listitem><para>当前文档中的字数。</para>
+		      </listitem>
+		      <listitem><para>当前文档中的字符数（包括空格）。</para>
+		      </listitem>
+		      <listitem><para>当前文档中的字符数（不包括空格）。</para>
+		      </listitem>
+		      <listitem><para>当前文档中的字节数。</para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem><para>在 <guilabel>文档统计信息</guilabel> 对话框打开时，您可以继续在 <application>gedit</application> 里编辑文件。 要刷新 <guilabel>文档统计信息</guilabel> 对话框的内容，点击 <guibutton>更新</guibutton> 按钮。</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="gedit-external-tools-plugin">
+  <title>外部工具插件</title>
+  <para>The <application>External Tools</application> 允许您在 <application>gedit</application> 中运行外部命令。您可以通过管道命令来编辑它们的输出(例如 <application>sed</application>)，或者启动一个预编译命令(如 <application>make</application>)。</para>
+  <para>使用 <guilabel>外部工具管理器</guilabel> 来创建和编辑命令。要运行一个外部命令，点 <guimenu>工具</guimenu> 菜单。</para>
+
+  <sect3 id="gedit-external-tools-plugin-builtin">
+    <title>内置命令</title>
+    <para>下面的命令由 <application>外部工具</application> 插件提供：</para>
+    <variablelist>
+      <varlistentry><term>Build</term>
+        <listitem>
+          <para>在当前文档的文件夹下，运行 <application>make</application> 命令。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>列出文件夹</term>
+        <listitem>
+          <para>在一个新文档中，列出当前文件夹的内容。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>环境变量</term>
+        <listitem>
+          <para>在底部面板显示环境变量。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Grep</term>
+        <listitem>
+          <para>使用匹配模式，在当前文件夹中的全部文件中搜索匹配项。结果显示在底部面板。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>删除尾部空格</term>
+        <listitem>
+          <para>删除文档中每一行的尾部空格。</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect3>
+
+  <sect3 id="gedit-external-tools-plugin-define">
+    <title>定义一个命令</title>
+    <para>要添加一个外部命令，点菜单 <menuchoice><guimenu>工具</guimenu><guimenuitem>外部工具</guimenuitem></menuchoice>。</para>
+    <para>在 <guilabel>外部工具管理器</guilabel> 窗口中，点 <guibutton>新建</guibutton>。您可以指定命令的下面内容细节：</para>
+    <variablelist>
+      <varlistentry><term>说明</term>
+        <listitem>
+          <para>当选中菜单命令时，这个描述将显示在状态栏。</para>
+        </listitem>     
+      </varlistentry>
+      <varlistentry><term>快捷键</term>
+        <listitem>
+          <para>输入此命令的快捷键。</para>
+        </listitem>     
+      </varlistentry>
+      <varlistentry><term>命令</term>
+        <listitem>
+          <para>要运行的命令。一些 <application>gedit</application> 环境变量可以传递给命令，请参阅 <xref linkend="gedit-external-tools-plugin-variables"/>。</para>
+        </listitem>     
+      </varlistentry>
+      <varlistentry><term>输入</term>
+        <listitem>
+          <para>这个内容将传递给命令(像 <systemitem>stdin</systemitem>)：当前文档的全部文本、段、行或词。</para>
+        </listitem>     
+      </varlistentry>
+      <varlistentry><term>输出窗口</term>
+        <listitem>
+          <para>输出这个命令做了什么：显示在底部面板、放入一个新文档，或者放到当前文档，放在文档尾部、光标位置，或者替换这一段、替换整个文档。</para>
+        </listitem>     
+      </varlistentry>
+      <varlistentry><term>适用性</term>
+        <listitem>
+          <para>确定哪一类文档会被这个命令影响，例如是否保存，本地还是远程。</para>
+        </listitem>     
+      </varlistentry>
+    </variablelist>
+
+  </sect3>
+  
+  <sect3 id="gedit-external-tools-plugin-edit">
+    <title>编辑和删除工具</title>
+    <para>要编辑一个工具，在列表中选中它，然后更改它的属性。</para>
+    <para>要重命名一个工具，在列表中再点击它一次。</para>
+    <para>要恢复您已经改变了的内置工具，点 <guilabel>还原/guilabel&gt; 按钮。</guilabel></para>
+    <para>要删除一个工具，在列表中选中它，然后点 <guibutton>删除</guibutton>。您不能删除内置的工具，只能删除您自己创建的工具。</para>
+  </sect3>
+  
+  <sect3 id="gedit-external-tools-plugin-variables">    
+    <title>变量</title>
+    <para>在 <guilabel>命令</guilabel> 文本框中，您可以使用下面的变量：</para>
+    <itemizedlist>
+      <listitem>
+        <para>GEDIT_CURRENT_DOCUMENT_URI</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_CURRENT_DOCUMENT_NAME</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_CURRENT_DOCUMENT_SCHEME</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_CURRENT_DOCUMENT_PATH</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_CURRENT_DOCUMENT_DIR</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_DOCUMENTS_URI</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_DOCUMENTS_PATH</para>
+      </listitem>
+    </itemizedlist>
+  </sect3>
+</sect2>
+
+<sect2 id="gedit-file-browser-plugin">    
+  <title>文件浏览器插件</title>
+  <para><application>文件浏览器</application> 插件，在侧栏中显示您的文件和文件夹，允许你快速打开文件。</para>
+  <para>要显示文件浏览器，点菜单 <menuchoice><guimenu>查看</guimenu><guimenuitem>侧边栏</guimenuitem></menuchoice>，然后点击面板下边的文件浏览器图标。</para>
+  <sect3 id="gedit-file-browser-plugin-browsing">    
+    <title>浏览文件</title>
+    <para>文件浏览器标签开始只显示文件管理器书签。要浏览每一项的内容，在标签上双击。</para>
+    <para>要显示上一级父目录，在下拉列表中选择，或者点文件管理器工具栏的向上箭头。</para>
+    <para>要显示您当前工作的文件夹中包含的内容，在文件列表中点右键，选 <guimenuitem>当前文件夹设定为根目录</guimenuitem>。</para>
+  </sect3>
+  <sect3 id="gedit-file-browser-plugin-open">    
+    <title>打开文件</title>
+    <para>要在 <application>gedit</application> 里打开一个文件，在文件列表中双击它。</para>
+  </sect3>
+  <sect3 id="gedit-file-browser-plugin-create">    
+    <title>创建文件和文件夹</title>
+    <para>要在当前文件夹中创建一个新的空文本文件，在文件列表里点右键，选 <guimenuitem>新建文件</guimenuitem>。</para>
+    <para>要在当前文件夹中创建一个新的文件夹，在文件列表里点右键，选 <guimenuitem>新建文件夹</guimenuitem>。</para>
+    </sect3>
+</sect2>
+
+<sect2 id="gedit-indent-lines-plugin">
+<title>缩进行插件</title>
+	<para><application>缩进行</application> 插件，在行的开头添加或清除空白缩进。</para>
+	<para>要对文本使用缩进或取消缩进，请按下面的步骤操作：</para>
+  	<orderedlist>
+		  <listitem><para>选择所需缩进行。要对单行进行缩进或取消缩进，请将光标放在该行的任意位置上。</para>
+		  </listitem>
+		  <listitem>
+		    <itemizedlist>
+		      <listitem>
+		        <para>要缩进文本，点菜单 <menuchoice><guimenu>编辑</guimenu><guimenuitem>缩进</guimenuitem></menuchoice>。</para>
+		      </listitem>
+		      <listitem>
+		        <para>要取消缩进，点菜单 <menuchoice><guimenu>编辑</guimenu><guimenuitem>取消缩进</guimenuitem></menuchoice>。</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+	<para>空白的数量，或者是否使用 Tab 制表符，使用空格字符，取决于编辑器首选项中的 <guilabel>制表符</guilabel> 设置，请参阅：<xref linkend="gedit-prefs-editor"/>。</para>
+
+</sect2>
+
+<sect2 id="gedit-insert-date-time-plugin">
+<title>插入日期/时间插件</title>
+	<para><application>插入日期/时间</application> 插件可以在文档中插入当前的日期和时间。 要使用插入日期/时间插件，请按以下步骤操作：</para>
+		<orderedlist>
+		  <listitem><para>点菜单 <menuchoice><guimenu>编辑</guimenu><guimenuitem>插入日期和时间</guimenuitem></menuchoice>。</para>
+        <para>如果您还没配置“插入日期/时间”插件配置为不提示格式自动插入方式，<application>gedit</application> 将显示 guilabel&gt;</para>
+				<para>如果您已经配置了 <application>gedit</application> 使用一种指定的日期/时间格式，就不会显示<guilabel>插入日期和时间</guilabel> 对话框，在当前光标位置处自动插入日期/时间。</para>
+		  </listitem>
+		</orderedlist>
+
+<sect3 id="gedit-date-time-configure">
+<title>配置插入日期/时间插件</title>
+<para>要配置插入日期/时间插件，请执行以下步骤：</para>
+		<orderedlist>
+		  <listitem> <para>点菜单 <menuchoice><guimenu>编辑</guimenu><guimenuitem>首选项</guimenuitem></menuchoice>。</para>
+		  </listitem>
+		  <listitem> <para>点击 <guilabel>插件</guilabel> 标签。</para>
+		  </listitem>
+		  <listitem> <para>选择 <guilabel>插入日期/时间</guilabel>插件。</para>
+		  </listitem>
+		  <listitem> <para>点 <guibutton>配置插件</guibutton> 按钮，出来一个 <guilabel>配置插入日期/时间插件</guilabel> 对话框。</para>
+		  </listitem>
+		  <listitem> <para>如下所述，选择其中一个选项：</para>
+		      <itemizedlist>
+		      <listitem><para>要在每次插入日期/时间时，都指定日期/时间的格式，请选择 <guilabel>提示输入格式 </guilabel> 选项。</para>
+		      </listitem>
+		      <listitem><para>要在每次插入日期/时间时使用 <application>gedit</application> 提供的同一日期/时间格式，请选择 <guilabel>使用选定的格式</guilabel> 选项，然后从列表中选择合适的格式。选择此选项后，<application>gedit</application> 便不会在您点 <menuchoice><guimenu>编辑</guimenu><guimenuitem>插入日期和时间</guimenuitem></menuchoice> 时提示您输入日期/时间格式。</para>
+		      </listitem>
+		      <listitem><para>要在每次插入日期/时间时使用同一定制日期/时间格式，请选择 <guilabel>使用定制格式</guilabel> 选项，然后在文本框中输入合适的格式。有关如何指定定制格式的更多信息，请参阅 <ulink url="man:strftime" type="man"><citerefentry><refentrytitle>strftime</refentrytitle><manvolnum>3</manvolnum></citerefentry></ulink>。选择此选项后，<application>gedit</application> 便不会在您点 <menuchoice><guimenu>编辑</guimenu><guimenuitem>插入日期和时间</guimenuitem></menuchoice> 时提示您输入日期/时间格式。</para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem> <para>单击 <guibutton>确定</guibutton>，关闭 <guilabel>配置插入日期/时间插件</guilabel> 对话框。</para>
+		  </listitem>
+		  <listitem> <para>要关闭 <guilabel>首选项</guilabel> 对话框，请单击 <guibutton>关闭</guibutton>。</para>
+		  </listitem>
+		</orderedlist>
+</sect3>
+</sect2>
+
+<sect2 id="gedit-modelines-plugin">
+  <title>Modelines 插件</title>
+    <para><application>Modelines</application> 允许您为特殊的文档设置选项。<firstterm>modeline</firstterm> 是在文档开头或结束的一行文本，可以由 <application>gedit</application> 识别。</para>
+    <para>使用 modelines 设置的选项，会覆盖在首选项对话框里设定的选项。</para>
+    <para>您可以用 modelines 设定下面的选项：</para>
+    <itemizedlist>
+      <listitem>
+        <para>Tab 制表符宽度</para>
+      </listitem>
+      <listitem>
+        <para>缩进宽度</para>
+      </listitem>
+      <listitem>
+        <para>插入空格而不是制表符</para>
+      </listitem>
+      <listitem>
+        <para>文本换行</para>
+      </listitem>
+      <listitem>
+        <para>右边距宽度</para>
+      </listitem>
+    </itemizedlist>
+
+    <para><application>Modelines</application> 支持其他文本编辑器的子选项，像 <application>Emacs</application>、<application>Kate</application> 和 <application>Vim</application>。</para>
+
+    <sect3 id="gedit-modelines-plugin-emacs">
+      <title>Emacs Modelines</title>
+      <para>为 <application>Emacs</application> modelines 扫描文档开头的两行。</para>
+      <para>支持 <application>Emacs</application> 的制表符宽度、缩进量、缩进模式和自动换行。更多相关信息，请参阅：<ulink type="http" url="http://www.delorie.com/gnu/docs/emacs/emacs_486.html">GNU Emacs 手册</ulink>。</para>
+    </sect3>
+    <sect3 id="gedit-modelines-plugin-kate">
+      <title>Kate Modelines</title>
+      <para>为 <application>Kate</application> modelines 扫描文档开头和最后十行。</para>
+      <para>支持 <application>Emacs</application> 的制表符宽度、缩进量、空格缩进、单词换行和单词列换行。更多相关信息，请参阅： <ulink type="http" url="http://www.kate-editor.org/article/katepart_modelines">Kate 网站</ulink>。</para>
+    </sect3>
+    <sect3 id="gedit-modelines-plugin-vim">
+      <title>Vim Modelines</title>
+      <para>为 <application>Vim</application> modelines 扫描文档开头和最后的三行。</para>
+      <para>支持 <application>Emacs</application> 的 et、expandtab、ts、tabstop、sw、shiftwidth、wrap 和 textwidth。更多相关信息，请参阅：<ulink type="http" url="http://vimdoc.sourceforge.net/htmldoc/options.html#modeline">Vim 网站</ulink>。</para>
+    </sect3>
+</sect2>
+
+<sect2 id="gedit-python-console-plugin">    
+  <title>Python 控制台插件</title>
+  <para><application>Python 控制台</application> 插件允许您在 <application>gedit</application> 中运行 python 编程语言中命令。启用该插件会在底部栏添加一个标签。显示最近输出结果和命令提示符域。</para>
+  <caution><para>命令进入 python 控制台运行前并不检查。因而它可能导致 <application>gedit</application> 挂起，例如输入了一个无限循环。</para></caution>
+</sect2>
+
+<sect2 id="gedit-snippets-plugin">
+<title>片段插件</title>
+  <para><application>片段</application> 插件，允许您存储常用的文本片段，称作<firstterm>片段</firstterm>，可以很方便地插入文档中。</para>
+    <para>片段指定到了当前语言格式。例如，当您在 HTML 下操作，您可以从片段列表中选择有用的 HTML 片段。另外，一些片段是全局的，可用于所有的文档。</para>
+    <para><application>gedit</application> 提供了许多内置的片段，可以被设置。</para>
+
+  <sect3 id="gedit-snippets-plugin-insert">
+    <title>插入片段</title>
+    <para>要在文档中插入一个片段，输入它的 <firstterm>Tab 触发器</firstterm>，然后按 <keycap>Tab</keycap>。片段触发器通常是片段的开头几个字符，或者是一些其他短的好记的字符。</para>
+    <para>另外，按 <keycombo><keycap>Ctrl</keycap><keycap>Space</keycap></keycombo> 键，查看您可以使用的片段列表。</para>
+  </sect3>
+
+  <sect3 id="gedit-snippets-plugin-add">
+    <title>添加片段</title>
+    <para>要创建一个新片段，请按下面的步骤操作：</para>
+      <orderedlist>
+        <listitem>
+          <para>点菜单 <menuchoice><guimenu>工具</guimenu><guimenuitem>管理片段</guimenuitem></menuchoice>，出来一个 <guilabel>片段管理器</guilabel> 窗口。</para>
+        </listitem>
+        <listitem>
+          <para>片段列表按语言分组。选择您想添加片段的语言，或者那个语言的片段组。要为所有语言添加片段，点列表顶部的全局。默认显示您当前编辑文档的格式。</para>
+        </listitem>
+        <listitem>
+          <para>点 <guibutton>新建</guibutton>，列表中出来一个新的片段。</para>
+        </listitem>
+        <listitem>
+          <para>为新片段输入下面的信息：</para>
+          <variablelist>
+            <varlistentry><term>名称</term>
+              <listitem>
+                <para>在文本框中输入片段的名称。片段名称仅仅是它作用的提示。您可以通过点击它来改变名称。</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>片段文本</term>
+              <listitem>
+                <para>在<guilabel>编辑片段</guilabel> 文本框中，输入片段的内容。您可以使用特殊代码，请参阅：<xref linkend="gedit-snippets-plugin-syntax"/>。</para>
+                <tip><para>您可以切换到文档窗口，复制里面的文本，而不需要关闭 <guilabel>片段管理器</guilabel> 窗口。</para></tip>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Tab 触发器</term>
+              <listitem>
+                <para>为片段输入标记触发器。这个文本是您输入后按 <keycap>Tab</keycap> 键，就会插入片段。</para>
+                <para>标记必须是单个由字母组成的词，或者是单个字符。<guilabel>Tab 触发器</guilabel> 会用红色高亮显示，表示输入了一个触发器。</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>快捷键</term>
+              <listitem>
+                <para>输入用来插入片段的快捷键。</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+
+        </listitem>
+      </orderedlist>
+  </sect3>
+  <sect3 id="gedit-snippets-plugin-edit">
+    <title>编辑和删除片段</title>
+    <para>要编辑一个片段，在列表中选中它，然后更改它的文本和激活属性。</para>
+    <para>要重命名一个片段，在列表中再次点击它。</para>
+    <para>要恢复您更改了的内置片段，点 <guilabel>复原</guilabel> 按钮。</para>
+    <para>要删除一个片段，在列表中选中它，然后点 <guibutton>删除</guibutton>。您不能删除内置的片段，只能删除您自己创建的片段。</para>
+  </sect3>
+
+  <sect3 id="gedit-snippets-plugin-syntax">
+    <title>替代片段</title>
+    <para>除了插入已经存储的文本，片段可以包括自定义文本，或者标记空格，您可以添加自己文本。</para>
+
+    <para/>
+
+    <para>您可以在片段文本中使用下面的占位符代码：</para>
+      <variablelist>
+        <varlistentry><term>Tab 占位符</term>
+          <listitem>
+            <para><literal>$<replaceable>n</replaceable></literal> 定义一个 tab 占位符，<literal>n</literal> 是从 1 开始的数字。</para>
+            <para><literal>${<replaceable>n</replaceable>:<replaceable>default</replaceable>}</literal> 用默认值定义一个 tab 占位符。</para>
+            <para>tab 占位符在片段文本中标记一个区域，您可以在插入片段后添加额外的文本。</para>
+            <para>要使用 tab 占位符，像平常一样插入片段。光标定位于第一个 tab 占位符。输入文本，然后按 <keycap>Tab</keycap> 到下一个 tab 占位符。占位符的序号定义了在文本中各个 tab 的位置。</para>
+            <para>按 <keycombo><keycap>Shift</keycap><keycap>Tab</keycap></keycombo> 返回到上一个 tab 占位符。当再没有占位符时，按 <keycap>Tab</keycap> 键结束片段，或者到最后一个占位符，如果它存在的话。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Mirror 占位符</term>
+          <listitem>
+            <para>重复 tab 占位符，将会映像已经定义的占位符。这就可以让您输入一次而重复多次这个片段。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>End 占位符</term>
+          <listitem>
+            <para><literal>$0</literal> 定义最后占位符。这就允许您完成片段操作，而不是光标停在最后一个片段文本。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>环境变量</term>
+          <listitem>
+            <para>环境变量是指像 <literal>$PATH</literal> 和 <literal>$HOME</literal>，可以在片段中替代。下面的变量可以在 <application>gedit</application> 中使用：</para>
+            <variablelist>
+              <varlistentry><term>$GEDIT_SELECTED_TEXT</term>
+                <listitem>
+                  <para>当前选中的文本。</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$GEDIT_FILENAME</term>
+                <listitem>
+                  <para>文档的完整名称，对于还没有保存的问道，是一个空字符串。</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$GEDIT_BASENAME</term>
+                <listitem>
+                  <para>文档文件名的基本名，对于还没保存的文档，是一个空字符串。</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$GEDIT_CURRENT_WORD</term>
+                <listitem>
+                  <para>文档里光标所在位置的词。当使用这个变量时，当前词将会被片段替代。</para>
+                </listitem>
+              </varlistentry>
+
+            </variablelist>
+
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Shell 占位符</term>
+          <listitem>
+            <para><literal>$(<replaceable>cmd</replaceable>)</literal> 会被 shell 里运行的 <replaceable>cmd</replaceable> 结果替换。</para>
+            <para><literal>$(<replaceable>n</replaceable>:<replaceable>cmd</replaceable>)</literal> 允许您给这个占位符一个索引，这儿的 <replaceable>n</replaceable> 是一个从 1 开始的数字。使用 <literal>$<replaceable>n</replaceable></literal>，用一个 shell 的输出，作为另一个的输入。</para>
+          </listitem>     
+        </varlistentry>
+        <varlistentry><term>Python 占位符</term>
+          <listitem>
+            <para><literal>$&lt;<replaceable>cmd</replaceable>&gt;</literal> 在 python 解释器里，用结果值来替换。</para>
+            <para><literal>$&lt;<replaceable>a</replaceable>:<replaceable>cmd</replaceable>&gt;</literal> 指定另一个 python 占位符作为附属，<replaceable>a</replaceable> 给出它在片段里的顺序。这就允许您在另一个片段里使用 python 的功能定义。要指定几个附属，用逗号分隔开： <literal>$&lt;<replaceable>a</replaceable>,<replaceable>b</replaceable>:<replaceable>cmd</replaceable>&gt;</literal></para>
+            <para>要在所有 python 片段里使用变量，用 <literal>global</literal> 声明它。</para>
+          </listitem>     
+        </varlistentry>
+      </variablelist>
+  </sect3>
+
+</sect2>
+
+<sect2 id="gedit-sort-plugin">
+<title>排序插件</title>
+	<para><application>排序</application> 插件，可以按字母顺序排列选中的行。</para>
+		  <caution><para>该排序操作无法取消，所以您应在执行排序前保存文件。要在执行排序操作后恢复为已保存的文件，点菜单 <menuchoice><guimenu>文件</guimenu><guimenuitem>复原</guimenuitem></menuchoice>。</para>
+		  </caution>
+              <para>要使用排序插件，请执行以下步骤：</para>
+		<orderedlist>
+		  <listitem>
+		    <para>选中你想排序的行。</para>
+		  </listitem>
+		  <listitem><para>点菜单 <menuchoice><guimenu>编辑</guimenu><guimenuitem>排序</guimenuitem></menuchoice>，出来一个 <guilabel>排序</guilabel> 对话框。</para>
+		  </listitem>
+		  <listitem><para>设定您想要的排序选项：</para>
+		    <itemizedlist>
+    		  <listitem>
+    		    <para>要按反向顺序排列文本，选中 <guilabel>逆序顺序</guilabel> 选项。</para>
+    		  </listitem>
+    		  <listitem><para>要删除重复的行，选中 <guilabel>删除重复内容</guilabel> 选项。</para>
+    		  </listitem>
+    		  <listitem><para>要忽略大小写，选中 <guilabel>忽略大小写</guilabel> 选项。</para>
+    		  </listitem>
+    		  <listitem><para>要指定排序的开始位置，请在 <guilabel>起始列</guilabel> 微调按钮框中设定开始排序的字符列。</para>
+    		  </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para>要执行排序操作，点击 <guibutton>排序</guibutton> 按钮。</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="gedit-spell-checker-plugin">
+<title>拼写检查插件</title>
+	<para><application>拼写检查</application> 检查选中文本的拼写。您可以在指定的语言里，配置 <application>gedit</application> 自动简单拼写，或者您可以手动检查拼写。语言设置、自动拼写检查属性，应用于每个文档。要使用拼写检查插件，请按下面的步骤操作：</para>
+		<orderedlist>
+		  <listitem><para>点菜单 <menuchoice><guimenu>工具</guimenu><guimenuitem>设置语言</guimenuitem></menuchoice>，出来一个 <guilabel>设置语言</guilabel> 对话框。在列表中选择合适的语言，然后点 <guibutton>确定</guibutton>，关闭 <guilabel>设置语言</guilabel> 对话框。</para>
+		  </listitem>
+		  <listitem><para>要启用自动拼写检查，点菜单 <menuchoice><guimenu>工具</guimenu><guimenuitem>自动检查拼写</guimenuitem></menuchoice>。要取消自动拼写检查，再次点 <menuchoice><guimenu>工具</guimenu><guimenuitem>自动检查拼写</guimenuitem></menuchoice>。当启用自动拼写检查，在 <guimenuitem>自动检查拼写</guimenuitem> 菜单项旁边会出现一个图标。默认情况下，每次 <application>gedit</application> 启动时，不启用自动拼写检查。</para>
+                            <para>未知拼写的词会显示不同的颜色和带有下划线。在词语上点右键，然后从弹出菜单里选择 <guimenu>拼写建议</guimenu>：</para>
+		    <itemizedlist>
+		      <listitem><para>要替换未知拼写，从 <guimenu>拼写建议</guimenu> 菜单里选择一项。</para>
+		      </listitem>
+		      <listitem><para>要添加未知拼写到您的个人字典，选择 <menuchoice><guimenu>拼写建议</guimenu><guimenuitem>添加</guimenuitem></menuchoice>。</para>
+		      </listitem>
+		      <listitem><para>要忽略所有这个未知的拼写，以便它们不再显示未知拼写，但不添加到您的个人字典中，选择 <menuchoice><guimenu>拼写建议</guimenu><guimenuitem>全部忽略</guimenuitem></menuchoice>。在当前 <application>gedit</application> 中会忽略所有这个未知的词。</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para>要手动进行拼写检查，点菜单 <menuchoice><guimenu>工具</guimenu><guimenuitem>拼写检查</guimenuitem></menuchoice>。</para>
+				<para>如果这儿没有拼写错误，出来一个 <guilabel>信息</guilabel> 对话框，提示没有包含错误拼写。点 <guibutton>确定</guibutton> 关闭这个 <guilabel>信息</guilabel> 对话框。</para>
+				<para>如果发现错误拼写，出来一个 <guilabel>检查拼写</guilabel> 对话框：</para>
+		    <itemizedlist>
+		      <listitem><para><guilabel>拼错的词</guilabel> 显示在对话框的顶部。</para>
+		      </listitem>
+		      <listitem><para>一个建议的拼写会显示在 <guilabel>更改为</guilabel> 文本框里。您可以在 <guilabel>建议</guilabel> 里，选择其他词语来替换，或者您可以直接输入到 <guilabel>更改为</guilabel> 文本框里。</para>
+		      </listitem>
+		      <listitem><para>要检查 <guilabel>更改为</guilabel> 文本框里的拼写，点 <guibutton>检查单词</guibutton> 按钮。如果这是一个已知的词，<guilabel>建议</guilabel> 列表被这个词替换 <literal>(正确拼写)</literal>。如果这个词也未知，新的项出现在 <guilabel>建议</guilabel> 列表中。</para>
+		      </listitem>
+		      <listitem><para>要忽略当前的检查，点 <guibutton>忽略</guibutton>。要忽略所有这个未知词的检查，点 <guibutton>全部忽略</guibutton>。在当前 <application>gedit</application> 中不再对这个词检查。</para>
+		      </listitem>
+		      <listitem><para>要用 <guilabel>更改为</guilabel> 文本框里的词，替换当前检查的未知词，点 <guibutton>更改</guibutton> 按钮。要把所有这个未知词替换为 <guilabel>更改为</guilabel> 文本框里的词，点 <guibutton>全部更改</guibutton>。</para>
+		      </listitem>
+		      <listitem><para>要添加未知单词到您的个人字典，点 <guibutton>添加单词</guibutton>。</para>
+		      </listitem>
+		      <listitem><para>要关闭 <guilabel>拼写检查</guilabel> 对话框，点 <guibutton>关闭</guibutton>。</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="gedit-tag-list-plugin">
+<title>标记列表插件</title>
+	<para><application>标记列表</application> 插件，允许您从侧栏中插入通用标记。</para>
+  <para>要使用标记列表插件，请按以下步骤操作：</para>
+		<orderedlist>
+		  <listitem><para>点菜单 <menuchoice><guimenu>查看</guimenu><guimenuitem>侧边栏</guimenuitem></menuchoice>。</para>
+		  </listitem>
+		  <listitem>
+		    <para>默认情况下，侧边栏显示包含打开文档列表的标签。点击侧栏底部一个 + 图标的标签，显示标记列表。</para>
+		  </listitem>
+		  <listitem><para>在下拉列表中选择合适的标记种类。例如，<guilabel>HTML - 标记</guilabel>。</para>
+		  </listitem>
+		  <listitem><para>卷动该标记列表查找所需的标记。</para>
+		  </listitem>
+		  <listitem><para>要在当前文件的光标位置插入标记，请双击标记列表中的标记。您也可以按照如下步骤插入标记：</para>
+		    <itemizedlist>
+		      <listitem><para>要在当前文件中插入标记，并将焦点从 <guilabel>标记列表</guilabel> 栏移到工作区，按一下 <keycap>回车键</keycap>。</para>
+		      </listitem>
+		      <listitem><para>要在当前文件中插入标记，并将焦点仍保留在 <guilabel>标记列表</guilabel> 栏，按 <keycombo><keycap>Shift</keycap><keycap>回车键</keycap></keycombo>。</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+</sect1>
+
+</article>

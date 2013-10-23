@@ -1,0 +1,59 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="guide"
+      id="log-search">
+
+  <info>
+    <link type="guide" xref="index#main"/>
+    <revision version="3.3" date="2011-10-30" status="review"/>
+    <desc>Search the text in the log that you are currently viewing.</desc>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  </info>
+
+  <title>Search log</title>
+
+  <p>To search the log you are currently viewing:</p>
+
+  <steps>
+    <item>
+      <p>Show the <gui>Find</gui> bar by pressing
+      <keyseq><key>Ctrl</key><key>F</key></keyseq>, or by clicking
+      <guiseq><gui>View</gui><gui>Find</gui></guiseq>. The bar will be shown
+      below the log.</p>
+    </item>
+    <item>
+      <p>Enter your search term into the field and press <key>Enter</key> to see
+      the first result.</p>
+      <note style="tip">
+        <p>The search is case sensitive.</p>
+      </note>
+    </item>
+    <item>
+      <p>Use the <gui>Find Previous</gui> and <gui>Find Next</gui> buttons to
+      browse through the results.</p>
+      <note style="tip">
+        <p>If you can not see the result highlighted, try scrolling to the left.</p>
+      </note>
+    </item>
+    <item>
+      <p>Press <key>Esc</key> to hide the find bar once you are finished with
+      the search.</p>
+      <note style="tip">
+        <p>You can only hide the <gui>find bar</gui> if you are currently
+        focused on the search field. The bar will hide itself if you view
+        another log.</p>
+      </note>
+    </item>
+  </steps>
+
+
+
+</page>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="convertpdf" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <desc>Tu vari konvertēt dokumentu uz PDF formātu „drukājot“ to failā.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0 licence</p>
+    </license>
+
+  </info>
+
+<title>Dokumenta konvertēšana uz PDF</title>
+
+<p>Tu vari konvertēt sekojošos dokumentu formātus uz PDF formātu:</p>
+<list>
+ <item><p>Device Independent formātam (.dvi)</p></item>
+ <item><p>PostScript (.ps)</p></item>
+</list>
+<p>Tas strādā, atverot failu <app>dokumentu skatītāja</app> lietotnē un „drukājot“ dokumentu kā PDF failu.</p>
+<steps>
+    <item>
+      <p>Spied <guiseq><gui>Fails</gui><gui>Drukāt</gui></guiseq> un dodies uz  <gui>Vispārīgi</gui> cilni.</p>
+    </item>
+    <item>
+      <p>Izvēlies <gui>Drukāt failā</gui> un paņem PDF kā <gui>Izvades formātu</gui>.</p>
+    </item>
+    <item>
+      <p>Izvēlies nosaukumu un mapi, kurā vēlies saglabāt failu, tad nospied <gui>Drukāt</gui>. PDF fails tiks saglabāts šajā mapē.</p>
+    </item>
+</steps>
+<note>
+<p>Tu nevari izvēlēties tekstu PostScript vai .dvi failos, bet parasti to var izdarīt PDF failos. .dvi vai PostScript failu konvertēšana uz PDF nepadarīs tekstu izvēlamu. Tā ir tāpēc, ka teksts, pats par sevi, netiek saglabāts failā (tā ir tikai bilde par to, kā izskatās teksts), tātad nav nekāda veida kā atgūt to un ievietot PDF failā. Tu vari izmantot <em>Optisko rakstzīmju atpazīšanas</em> (OCR) programmatūru, lai atpazītu tekstu failos, ja tas ir nepieciešams.</p>
+</note>
+
+</page>

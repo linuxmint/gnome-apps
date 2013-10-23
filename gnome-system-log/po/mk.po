@@ -1,0 +1,456 @@
+# translation of gnome-utils.HEAD.mk.po to Macedonian
+# translation of gnome-utils.HEAD.mk.po to
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Dimitar Indovski <dime@gord.com.mk>, 2002.
+# Stojan Pesov <ekofobic@usa.net>, 2002.
+# Bozidar Proevski <bobibobi@freemail.com.mk>, 2002.
+# Kostovski Jovan <chombium@freemail.com.mk>, 2003.
+# Darko Nikolovski <darkon@macedonia.homelinux.org>, 2003.
+# Vladislav Bidikov <bidikovi@mail.com.mk>, 2003.
+# Arangel Angov <ufo@linux.net.mk>, 2004, 2007, 2008.
+# Арангел Ангов <ufo@linux.net.mk>, 2005.
+# Jovan Naumovski <jovan@lugola.net>, 2006, 2007, 2008.
+# Arangel Angov <arangel@linux.net.mk>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils.HEAD.mk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2008-09-25 00:38+0200\n"
+"Last-Translator: Jovan Naumovski <jovan@lugola.net>\n"
+"Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
+"Language: mk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural= n==1 || n%10==1 ? 0 : 1\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+#, fuzzy
+msgid "Log File Viewer"
+msgstr "Лог прегледувач"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Прегледај или набљудувај системски лог датотеки"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "Висина во пиксели на главниот прозорец"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "Лог датотека да се отвори при подигнување"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "Лог датотеки кои ќе се отворат при подигнување"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "Големина на фонтот за приказ на логот"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"Одредува листа на лог датотеки кои треба да се отворат при подигнување. "
+"Стандардната листа е креирана со вчитување на /etc/syslog.conf."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr ""
+"Ја одредува висината во пиксели на главниот прозорец на прегледувачот на "
+"логови."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"Ја одредува лог датотека која треба да се отвори при подигнување. Стандардна "
+"датотека или /var/adm/порака или /var/log/пораки, зависно од вашиот "
+"оперативен систем."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"Ја одредува големината на фонтот со фиксна ширина употребен за приказ на "
+"логот во главниот преглед на дрвото. Стандардната големина е земена од "
+"големината на фонтот во терминалот."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr ""
+"Ја одредува големината во пиксели на прозорецот на прегледувачот на логови."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "Ширина на главниот прозорец во пиксели"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:2
+#, fuzzy
+msgid "Effect:"
+msgstr "Ефекти"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "_Име:"
+
+#: ../data/logview-filter.ui.h:7
+#, fuzzy
+msgid "_Regular Expression:"
+msgstr "Името се совпаѓа со регуларниот израз"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"Арангел Ангов\n"
+"ufo@linux.net.mk"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:94
+#, fuzzy
+msgid "Filter name is empty!"
+msgstr "Датотеката е празна"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:506
+#, fuzzy
+msgid "Filters"
+msgstr "_Филтер:"
+
+#: ../src/logview-findbar.c:173
+#, fuzzy
+msgid "_Find:"
+msgstr "Н_ајди:"
+
+#: ../src/logview-findbar.c:188
+#, fuzzy
+msgid "Find Previous"
+msgstr "Најди пре_тходно"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr ""
+
+#: ../src/logview-findbar.c:196
+#, fuzzy
+msgid "Find Next"
+msgstr "Најди сле_дно"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr ""
+
+#: ../src/logview-findbar.c:206
+#, fuzzy
+msgid "Clear the search string"
+msgstr "Изберете \"%s\" опција за пребарување"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr ""
+
+#: ../src/logview-log.c:642
+#, fuzzy
+msgid "You don't have enough permissions to read the file."
+msgstr "Најверојатно немате пермисии за запишување во документот."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr ""
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr ""
+
+#: ../src/logview-loglist.c:315
+#, fuzzy
+msgid "Loading..."
+msgstr "Пребарувам..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Прикажи ја верзијата на апликацијата"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr ""
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - Прелистувај и надгледувај логови"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "Лог прегледувач"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "Системски лог прегледувач"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "последно ажурирање: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d линии (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "Отвори лог"
+
+#: ../src/logview-window.c:357
+#, fuzzy, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Се појави грешка при обидот за прикажување на помош."
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr ""
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "Нема пронајдени совпаѓања"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "Системски log прегледник за GNOME."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "_Датотека"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "_Уреди"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "_Поглед"
+
+#: ../src/logview-window.c:817
+#, fuzzy
+msgid "_Filters"
+msgstr "_Филтер:"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "_Помош"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "_Отвори..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "Отвори лог од датотека"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "_Затвори"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "Затвори го логот"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "_Излез"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "Излези од прегледувачот на логови"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "_Копирај"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "Копирај го избраното"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "Избери _сѐ"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "Избери го целиот лог"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr ""
+
+#: ../src/logview-window.c:831
+#, fuzzy
+msgid "Find a word or phrase in the log"
+msgstr "Најди збор во документот"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "Поголем текст"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "Помал текст"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "Нормален текст"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr ""
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr ""
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "_Содржини"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "Отвори ја содржината со помоша за прегледувачот на логови"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "З_а"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "Покажи го дијалогот „За“, за прегледувачот на логови"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "_Лента за статус"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "Прикажи статусна лента"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "Страничен _панел"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "Покажи странична лента"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr ""
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr ""
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr ""
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr ""
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr ""
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "Верзија: "
+
+#: ../src/logview-window.c:1500
+#, fuzzy
+msgid "Could not open the following files:"
+msgstr "Не можам да ја отворам папката \"%s\""

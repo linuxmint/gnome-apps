@@ -1,0 +1,458 @@
+# translation of eu.po to Basque
+# Copyright (C) 2005, 2006, 2007, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
+# This file is distributed under the same license as the baobab package.
+# Mikel Olasagasti <hey_neken@mundurat.net>, 2005.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2005, 2006, 2007, 2008, 2009, 2010, 2011.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2007.
+# Julen Ruiz Aizpuru <julenx@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: eu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2011-09-23 11:26+0200\n"
+"Last-Translator: Julen Ruiz Aizpuru <julenx@gmail.com>\n"
+"Language-Team: librezale@librezale.org\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1-beta1\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "Egunkari-fitxategien ikustailea"
+
+#
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Ikusi edo monitorizatu sistemaren egunkari-fitxategiak"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "Leiho nagusiaren altuera (pixeletan)"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "Gordetako iragazkien zerrenda"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "Gordetako adierazpen erregularren iragazkien zerrenda"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "Abiaraztean irekiko den egunkari-fitxategia"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "Abiaraztean irekiko diren egunkari-fitxategiak"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "Letra-tamaina egunkaria bistaratzeko"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"Abiaraztean irekiko den egunkari-fitxategia zehazten du. Zerrenda "
+"lehenetsia /etc/syslog.conf irakurtzean sortzen da."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr ""
+"Egunkari-ikustailearen leiho nagusiaren altuera zehazten du (pixeletan)."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"Abiaraztean irekiko den egunkari-fitxategia zehazten du. Lehenetsia /var/adm/"
+"messages edo /var/log/messages da, zure sistema eragilearen arabera."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"Zuhaitzeko leiho nagusiaren ikuspegian erabilitako finkatutako zabaleradun "
+"letra-tamaina zehazten du. Lehenetsi gisa terminal lehenetsiko letra-"
+"tipoaren tamaina izaten da."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr ""
+"Egunkari-ikustailearen leiho nagusiaren zabalera zehazten du (pixeletan)"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "Leiho nagusiaren zabalera (pixeletan)"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "Atzeko planoa:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "Efektua:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "Aurreko planoa:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "Ezkutatu"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "Nabarmendu"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "_Izena:"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "_Adierazpen erregularra:"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"Programa hau software librea da; birbana eta/edo alda dezakezu Software "
+"Foundation-ek argitaratutako GNU Lizentzia Publiko Orokorraren 2. bertsioan, "
+"edo (nahiago baduzu) beste berriago batean, jasotako baldintzak betez gero."
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"Egunkari-ikustailea erabilgarria izango delakoan banatzen da, baina, INOLAKO "
+"BERMERIK GABE; era berean, ez da bermatzen beraren EGOKITASUNA "
+"MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO. Argibide gehiago "
+"nahi izanez gero, ikus GNU Lizentzia Publiko Orokorra."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"Programa honekin batera GNU Lizentzia Publiko Orokorraren kopia bat jasoko "
+"zenuen; hala ez bada, idatzi hona: Free SoftwareFoundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"Mikel Olasagasti Uranga <hey_neken@mundurat.net>\n"
+"Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"Julen Ruiz Aizpuru <julenx@gmail.com>"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "Ezin da %s fitxategia ireki"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "Iragazkiaren izena hutsik dago."
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "Iragazkiaren izenak ezin du ':' karakterea eduki"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "Adierazpen erregularra hutsik dago."
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "Adierazpen erregularra baliogabea da: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "Zehaztu aurreko edo atzeko planoko kolorea."
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "Editatu iragazkia"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "Gehitu iragazki berria"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "Iragazkiak"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_Bilatu:"
+
+#
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "Bilatu aurrekoa"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "Bilatu bilaketa-katearen aurreko agerraldia"
+
+#
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "Bilatu hurrengoa"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "Bilatu bilaketa-katearen hurrengo agerraldia"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "Garbitu bilaketa-katea"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr ""
+"Errorea Gzip-ekin konprimitutako egunkaria deskonprimitzean. Fitxategia "
+"hondatuta egon daiteke."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "Ez duzu fitxategia irakurtzeko nahikoa baimenik."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "Fitxategia ez da fitxategi arrunta edo ez da testu-fitxategia."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr ""
+"Sistemako egunkariaren bertsio honek ez du Gzip-ekin konprimitutako "
+"egunkaririk onartzen."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "Kargatzen..."
+
+#
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Erakutsi aplikazioaren bertsioa"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[EGUNKARIA...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - Arakatu eta monitorizatu egunkariak"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "Egunkari-ikustailea"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "Sistemaren egunkari-ikustailea"
+
+#
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "azken eguneraketa: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d lerro (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "Ireki egunkaria"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Errorea gertatu da laguntza bistaratzean: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "Doituta"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "Ez da aurkitu"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "GNOMErako sistemaren egunkari-ikustailea."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "_Fitxategia"
+
+#
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "_Editatu"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "_Ikusi"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "_Iragazkiak"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "_Laguntza"
+
+#
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "_Ireki..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "Ireki egunkaria fitxategitik"
+
+#
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "It_xi"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "Itxi egunkaria"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "I_rten"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "Irten egunkari-ikustailetik"
+
+#
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "_Kopiatu"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "Hautapena kopiatzen du"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "Hautatu _denak"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "Hautatu egunkari osoa"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "_Bilatu..."
+
+#
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "Bilatu hitza edo esaldia egunkarian"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "Handiagotu testuaren tamaina"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "Txikiagotu testuaren tamaina"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "Testuaren tamaina normala"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "Kudeatu iragazkiak"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "Kudeatu iragazkiak"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "_Edukia"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "Ireki egunkari-ikustailearen laguntzako edukia"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "_Honi buruz"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "Erakutsi egunkari-ikustailearen 'honi buruz' elkarrizketa-koadroa"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "_Egoera-barra"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "Erakutsi egoera-barra"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "Albo-pa_nela"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "Erakutsi alboko panela"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "Erakutsi bat datoztenak soilik"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "Emandako iragazkietariko batekin bat datozten lerroak soilik erakutsi"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "_Korritu automatikoki"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "Korritu automatikoki behera lerro berriak agertzean"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "Ezin da \"%s\"(e)tik irakurri"
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "Bertsioa: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "Ezin izan dira honako fitxategiak ireki:"

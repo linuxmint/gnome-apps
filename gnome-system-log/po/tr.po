@@ -1,0 +1,444 @@
+# Turkish translation of gnome-utils.
+# Copyright (C) 2003 gnome-utils' copyright holder
+# This file is distributed under the same license as the gnome-utils package.
+#
+# Barbaros Uluta�_ <tebarul@yahoo.com>, 2003.
+# Rıdvan CAN <ridvan@linuxdeneyimi.com>, 2003.
+# Deniz Koçak <lenduha@gmail.com>, 2005.
+# Baris Cicek <baris@teamforce.name.tr>, 2004, 2005, 2008, 2009.
+# İlker DAĞLI <ilker@ilkerdagli.info>, 2011.
+# Muhammet Kara <muhammet.k@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2011-07-03 13:07+0300\n"
+"Last-Translator: Muhammet Kara <muhammet.k@gmail.com>\n"
+"Language-Team: Turkish <gnome-turk@gnome.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "Günlük Dosyası Görüntüleyicisi"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Sistem günlük dosyalarını göster ya da izle"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "Ana pencerenin benek olarak yüksekliği"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "Kaydedilmiş filtreler listesi"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "Kaydedilmiş regexp filtreleri listesi"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "Başlangıçta açılacak günlük dosyası"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "Başlangıçta açılacak günlük dosyaları"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "Günlüğü göstermek için kullanılan yazıtipi boyutu"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"Başlangıçta açılacak günlük dosyalarının listesini belirtir. /etc/syslog."
+"conf dosyası okunarak öntanımlı bir liste oluşturulur."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr ""
+"Günlük görüntüleyicisinin ana pencere yüksekliğini benek cinsinden belirtir."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"Başlangıçta açılacak günlük dosyasını belirtir. Öntanımlı değer işletim "
+"sisteminize bağlı olarak ya /var/adm/messages ya da /var/log/messages "
+"olabilir."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"Ana ağaç görünümü içindeki kaydın gösterilmesi için kullanılacak fixed-width "
+"yazıtipi boyutu belirler. Öntanımlı olan öntanımlı terminal yazıtipinden "
+"alınmıştır."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "Benek cinsinden günlük görüntüleyici ana pencere genişliğini belirtir"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "Ana pencerenin benek olarak genişliği"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "Arkaplan:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "Etki:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "Önalan:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "Gizle"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "Vurgula"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "İ_sim:"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "_Düzenli İfade:"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"Bu program bir özgür yazılımdır ve Özgür Yazılım Vakfı tarafından yayınlanan "
+"GNU Genel Kamu Lisansı sürüm 2 ya da (tercihinize göre) daha sonraki "
+"sürümleri altında tekrar dağıtabilir ya da değiştirebilirsiniz."
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"Bu program faydalı olacağı umut edilerek dağıtılmaktadır, fakat HİÇBİR "
+"GARANTİSİ YOKTUR; hatta ÜRÜN DEĞERİ ya da BİR AMACA UYGUNLUK gibi garantiler "
+"de vermez.  Lütfen daha fazla detay için GNU Genel Kamu Lisansı'nı inceleyin."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"Bu programla birlikte GNU Genel Kamu Lisansı'nın bir kopyasını almış "
+"olmalısınız; eğer almadıysanız, the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA adresine yazınız."
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr "Barış Çiçek <baris@teamforce.name.tr>"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "%s dosyasını açmak imkansız"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "Filtre ismi boş!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "Filtre ismi ':' karakteri içeremez"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "Düzenli ifade boş!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "Düzenli ifade geçersiz: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "Lütfen ya ön ya da arka plan rengini belirtin!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "Filtre düzenle"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "Yeni filtre ekle"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "Filtreler"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_Bul:"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "Öncekini Bul"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "Arama dizgisinin önceki yerini bul"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "Sonrakini Bul"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "Arama dizgisinin bir sonraki yerini bul"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "Arama dizgisini temizle"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "GZip ile sıkıştırılmış günlük açılırken hata. Dosya bozuk olabilir."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "Dosyayı okumak için yeterli haklara sahip değilsiniz."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "Dosyası normal bir dosya değil veya bir metin dosyası değil."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr ""
+"Sistem Günlüğü'nü bu sürümü GZip ile sıkıştırılmış günlükleri desteklemez."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "Yükleniyor..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Uygulamanın sürümünü göster"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[GÜNLÜK DOSYASI...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - Günlüklere gözat ve izle"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "Günlük Görüntüleyicisi"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "Sistem Günlük Görüntüleyicisi"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "son güncelleme : %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d satır (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "Günlük Aç"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Yardım gösterilirken bir hata oluştu: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "Katlanmış"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "Bulunamadı"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "GNOME için sistem günlük görüntüleyici."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "_Dosya"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "_Düzenle"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "_Görüntüle"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "_Filtreler"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "_Yardım"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "_Aç..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "Dosyadan günlük aç"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "_Kapat"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "Günlüğü kapat"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "Çı_k"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "Günlük görüntüleyicisinden çık"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "_Kopyala"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "Seçimi kopyala"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "_Tümünü Seç"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "Tüm günlüğü seç"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "_Bul..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "Günlük içinde bir kelime ya da öbek ara"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "Daha büyük metin boyutu"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "Daha küçük metin boyutu"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "Normal metin boyutu"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "Filtreleri Yönet"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "Filtreleri yönet"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "_İçindekiler"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "Günlük görüntüleyici için yardım dosyasını aç"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "_Hakkında"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "Günlük görüntüleyici için hakkında penceresini göster"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "_Durum Çubuğu"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "Durum Çubuğunu Göster"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "_Kenar Çubuğu"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "Kenar Çubuğunu Göster"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "Sadece eşleşmeler"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr ""
+"Sadece bir ya da daha fazla girilen filtre ile eşleşen satırları göster"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "_Otomatik Kaydır"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "Yeni satırlar ortaya çıktığında otomatik olarak aşağı kaydır"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "\"%s\" okunamıyor"
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "Sürüm: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "Aşağıdaki dosyalar açılamadı:"

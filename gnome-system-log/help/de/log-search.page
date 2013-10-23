@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="log-search" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#main"/>
+    <revision version="3.3" date="2011-10-30" status="review"/>
+    <desc>Nach Text im aktuell geöffneten Protokoll suchen.</desc>
+
+    <credit type="author">
+      <name>Jekaterina Gerassimowa</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  </info>
+
+  <title>Protokoll durchsuchen</title>
+
+  <p>Sie können das aktuell geöffnete Protokoll folgendermaßen durchsuchen:</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Ansicht</gui><gui>Suchen</gui></guiseq> oder drücken Sie <keyseq><key>Strg</key><key>F</key></keyseq>, um die <gui>Suchleiste</gui> zu öffnen. Die Suchleiste wird unterhalb des Protokolls angezeigt.</p>
+    </item>
+    <item>
+      <p>Geben Sie Ihren Suchbegriff ein und drücken Sie die <key>Eingabetaste</key>, um das erste Ergebnis zu sehen.</p>
+      <note style="tip">
+        <p>Für die Suche wird Groß-/Kleinschreibung berücksichtigt.</p>
+      </note>
+    </item>
+    <item>
+      <p>Verwenden Sie die Knöpfe <gui>Rückwärts suchen</gui> und <gui>Weitersuchen</gui>, um die Suchergebnisse zu durchblättern.</p>
+      <note style="tip">
+        <p>Falls Sie das hervorgehobene Suchergebnis nicht sehen können, rollen Sie in der Ansicht nach links.</p>
+      </note>
+    </item>
+    <item>
+      <p>Drücken Sie <key>Esc</key>, um die Suchleiste zu schließen, sobald Sie die Suche beendet haben.</p>
+      <note style="tip">
+        <p>Sie können die <gui>Suchleiste</gui> nur dann schließen, wenn das Suchfeld fokussiert ist. Sobald Sie ein anderes Protokoll öffnen, wird die Suchleiste automatisch geschlossen.</p>
+      </note>
+    </item>
+  </steps>
+
+
+
+</page>

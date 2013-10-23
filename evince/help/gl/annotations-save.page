@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="annotations-save" xml:lang="gl">
+<info>
+  <link type="guide" xref="index#annotations"/>
+ <desc>Como gardar as súas anotacións.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Diéguez</mal:name>
+      <mal:email>frandieguez@ubuntu.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  </info>
+<title>Gardar unha copia dun PDF anotado</title>
+ <p>Para gardar unha copia dun PDF anotado para velo posteriormente usando o <app>Visor de documentos</app> ou calquera outro visor de documentos <em>que sexa compatíbel coas anotacións</em>:</p>
+  <steps>
+   <item>
+     <p><guiseq><gui>Ficheiro</gui><gui>Gardar unha cpia</gui></guiseq></p>
+   </item>
+   <item>
+     <p>Seleccione o nome e cartafol onde gardar o ficheiro, prema <gui>Gardar</gui>. O PDF gardarase no cartafol que seleccionou.</p>
+    </item>
+   </steps>
+   <p>As anotacións engádense segundo a especificación do PDF. Polo tanto, a maioría dos lectores PDF deberían poder lelas. O visor de documentos  Okular&gt; polo momento non as admite. Adobe Reader si que pode.</p>
+
+</page>

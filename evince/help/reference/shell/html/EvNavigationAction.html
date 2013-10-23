@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>EvNavigationAction</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Evince Programmer's Reference Manual">
+<link rel="up" href="evince-frontend.html" title="Part I. Frontend">
+<link rel="prev" href="evince-ev-media-player-keys.html" title="ev-media-player-keys">
+<link rel="next" href="EvFileMonitor.html" title="EvFileMonitor">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="evince-ev-media-player-keys.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="evince-frontend.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Evince Programmer's Reference Manual</th>
+<td><a accesskey="n" href="EvFileMonitor.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#EvNavigationAction.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#EvNavigationAction.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#EvNavigationAction.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#EvNavigationAction.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
+                   | 
+                  <a href="#EvNavigationAction.signals" class="shortcut">Signals</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="EvNavigationAction"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EvNavigationAction.top_of_page"></a>EvNavigationAction</span></h2>
+<p>EvNavigationAction</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="EvNavigationAction.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">struct              <a class="link" href="EvNavigationAction.html#EvNavigationAction-struct" title="struct EvNavigationAction">EvNavigationAction</a>;
+                    <a class="link" href="EvNavigationAction.html#EvNavigationActionPrivate" title="EvNavigationActionPrivate">EvNavigationActionPrivate</a>;
+struct              <a class="link" href="EvNavigationAction.html#EvNavigationActionClass" title="struct EvNavigationActionClass">EvNavigationActionClass</a>;
+<span class="returnvalue">void</span>                <a class="link" href="EvNavigationAction.html#ev-navigation-action-set-history" title="ev_navigation_action_set_history ()">ev_navigation_action_set_history</a>    (<em class="parameter"><code><a class="link" href="EvNavigationAction.html" title="EvNavigationAction"><span class="type">EvNavigationAction</span></a> *action</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvHistory.html" title="EvHistory"><span class="type">EvHistory</span></a> *history</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="EvNavigationAction.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GObject
+   +----GtkAction
+         +----EvNavigationAction
+</pre>
+</div>
+<div class="refsect1">
+<a name="EvNavigationAction.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EvNavigationAction implements
+ GtkBuildable.</p>
+</div>
+<div class="refsect1">
+<a name="EvNavigationAction.signals"></a><h2>Signals</h2>
+<pre class="synopsis">
+  "<a class="link" href="EvNavigationAction.html#EvNavigationAction-activate-link" title='The "activate-link" signal'>activate-link</a>"                                  : <code class="literal">Action</code>
+</pre>
+</div>
+<div class="refsect1">
+<a name="EvNavigationAction.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="EvNavigationAction.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="EvNavigationAction-struct"></a><h3>struct EvNavigationAction</h3>
+<pre class="programlisting">struct EvNavigationAction;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvNavigationActionPrivate"></a><h3>EvNavigationActionPrivate</h3>
+<pre class="programlisting">typedef struct _EvNavigationActionPrivate EvNavigationActionPrivate;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvNavigationActionClass"></a><h3>struct EvNavigationActionClass</h3>
+<pre class="programlisting">struct EvNavigationActionClass {
+	GtkActionClass parent_class;
+
+	void (* activate_link) (EvNavigationAction *action,
+			        EvLink             *link);
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-navigation-action-set-history"></a><h3>ev_navigation_action_set_history ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                ev_navigation_action_set_history    (<em class="parameter"><code><a class="link" href="EvNavigationAction.html" title="EvNavigationAction"><span class="type">EvNavigationAction</span></a> *action</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvHistory.html" title="EvHistory"><span class="type">EvHistory</span></a> *history</code></em>);</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EvNavigationAction.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="EvNavigationAction-activate-link"></a><h3>The <code class="literal">"activate-link"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="EvNavigationAction.html" title="EvNavigationAction"><span class="type">EvNavigationAction</span></a> *evnavigationaction,
+                                                        <span class="type">GObject</span>            *arg1,
+                                                        <span class="type">gpointer</span>            user_data)               : <code class="literal">Action</code></pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>evnavigationaction</code></em> :</span></p></td>
+<td>the object which received the signal.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>

@@ -1,0 +1,477 @@
+# translation of gnome-utils.gnome-2-26.po to Ελληνικά
+# gnome-utils Greek translation.
+# Copyright (C) 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2008, 2009 Free Software Foundation, Inc.
+#
+#    385 translated messages, 127 fuzzy translations, 188 untranslated messages.
+#    Finished! now, 700 messages fully translated.
+# simos: 780 messages, visual verification, 14Feb2001 (sgpbea).
+# simos: 483 messages, 30Oct2002, translation review.
+# kostas: 483 messages, 30Oct2002, completed translation for GNOME2.
+# kostas: 468 messages, unfuzzy 3, 07Jan2003, one more update.
+# Spiros Papadimitriou <spapadim+@cs.cmu.edu>, 2000.
+# Simos Xenitellis <simos@hellug.gr>, 2000, 2001, 2002.
+# Nikos Charonitakis <frolix68@yahoo.gr>, 2003, 2004.
+# Kostas Papadimas <pkst@gnome.org>, 2002, 2003, 2004, 2005, 2006, 2008.
+# Jennie Petoumenou <epetoumenou@gmail.com>, 2009.
+# Fotis Tsamis <ftsamis@gmail.com>, 2009.
+# Sterios Prosiniklis <steriosprosiniklis@gmail.com>, 2009.
+# spyros:
+#    translated around 500 messages, in 2000.
+# simos:
+#    updated this:
+#    One more update, now 701 total messages.
+# kostas: 26 Dec2002, updated translation for Gnome 2.1x
+# kostas: 03Aug2003, update translation for 2.4
+# Nikos: 13Oct2003, review translation for 2.4
+# Nikos: 17Nov2003, update translation for 2.6
+# kostas: 25Jan2004, updates and fixes
+# Nikos: 19Feb2004 update translation
+# Kostas: 14Jan2006 update for 2.14
+# Simos Xenitellis <simos.lists@googlemail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils.gnome-2-26\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2010-03-27 20:22+0200\n"
+"Last-Translator: Simos Xenitellis <simos.lists@googlemail.com>\n"
+"Language-Team: Greek <team@lists.gnome.gr>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "Παρακολούθηση αρχείων καταγραφών"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Εμφάνιση ή παρακολούθηση των αρχείων καταγραφής συστήματος"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "Το ύψος του κύριου παραθύρου σε εικονοστοιχεία"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "Αρχείο καταγραφής για άνοιγμα κατά την εκκίνηση"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "Αρχείο καταγραφής για άνοιγμα κατά την εκκίνηση"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "Το μέγεθος της γραμματοσειράς απεικόνισης της καταγραφής"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"Καθορίζει μια λίστα αρχείων καταγραφής που θα ανοίγει κατά την εκκίνηση. Η "
+"προεπιλογή  είναι η ανάγνωση του /etc/syslog.conf."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr ""
+"Καθορίζει το ύψος του κύριου παραθύρου προβολής καταγραφών σε εικοστοιχεία."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"Καθορίζει το αρχείο καταγραφής που θα ανοίγει κατά την εκκίνηση. Η "
+"προεπιλογή  είναι μηνύματα  /var/log/, ανάλογα με τη διανομή σας."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"Καθορίζει το μέγεθος της σταθερού πλάτους γραμματοσειράς που χρησιμοποιείται "
+"για την απεικόνισης της καταγραφής στη προβολή του κύριου δέντρου.Το "
+"προεπιλεγμένο μέγεθος είναι το προεπιλεγμένο μέγεθος γραμματοσειράς "
+"τερματικού."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr ""
+"Καθορίζει το πλάτος σε εικονοστοιχεία του κυρίου παραθύρου προβολής "
+"καταγραφών"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "Πλάτος του κυρίου παραθύρου σε εικονοστοιχεία"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "Παρασκήνιο:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "Εφέ:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "Προσκήνιο:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "Απόκρυψη"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "Επισήμανση"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "Ό_νομα:"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "_Κανονική έκφραση:"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Επιτρέπεται η αναδιανομή ή/και η "
+"τροποποίησή του υπό τους όρους της Γενικής Άδειας Δημόσιας Χρήσης GNU (GNU "
+"General Public License) όπως αυτή δημοσιεύεται από το Ίδρυμα Ελεύθερου "
+"Λογισμικού (Free Software Foundation) -είτε της έκδοσης 2 της άδειας, είτε "
+"(κατ' επιλογήν) οποιασδήποτε μεταγενέστερης έκδοσης."
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"Αυτό το πρόγραμμα διανέμεται με την ελπίδα οτι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ "
+"ΚΑΜΙΑ ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ -χωρίς ακόμη και την έμμεση εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ "
+"ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε για περισσότερες λεπτομέρειες "
+"τη Γενική Άδεια Δημόσιας Χρήσης GNU (GNU General Public License)."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"Θα πρέπει να έχετε λάβει ένα αντίγραφο της Γενικής Άδειας Δημόσιας Χρήσης "
+"GNU (GNU General Public License) μαζί με αυτό το πρόγραμμα. Αν όχι, "
+"επικοινωνήστε γραπτώς με το Ίδρυμα Ελεύθερου Λογισμικού (Free Software "
+"Foundation, Inc.), 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, "
+"USA"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"Σπύρος Παπαδημητρίου <spapadim+@cs.cmu.edu>\n"
+"Συμεών (σίμος) Ξενιτέλλης <simos@hellug.gr>\n"
+"Κώστας Παπαδήμας <pkst@gnome.org>\n"
+"Νίκος Χαρωνιτάκης <nikosx@gmail.com>"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "Αδύνατο το άνοιγμα του αρχείου %s"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "Το όνομα του φίλτρου είναι άδειο!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "Το όνομα του φίλτρου δε μπορεί να περιέχει το χαρακτήρα ':'"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "Η κανονική έκφραση είναι άδεια!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "Η κανονική έκφραση είναι άκυρη: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "Παρακαλώ καθορίστε είτε το χρώμα του προσκηνίου είτε του παρασκηνίου!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "Επεξεργασία φίλτρου"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "Προσθήκη νέου φίλτρου"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "Φίλτρα"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "Εύ_ρεση:"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "Εύρεση _προηγούμενου"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "Εύρεση της προηγούμενης εμφάνισης του ζητούμενου αλφαριθμητικού"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "Εύρεση επό_μενου"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "Εύρεση της επόμενης εμφάνισης του ζητούμενου αλφαριθμητικού"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "Καθαρισμός του ζητούμενου αλφαριθμητικού"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr ""
+"Σφάλμα κατά την αποσυμπίεση της καταγραφής σε μορφή GZip. Το αρχείο μπορεί "
+"να είναι κατεστραμμένο."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "Δεν έχετε τα απαραίτητα δικαιώματα για ανάγνωση του αρχείου."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "Το αρχείο δεν είναι κανονικό αρχείο ή δεν είναι αρχείο κειμένου."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr "Αυτή η έκδοση του System Log δεν υποστηρίζει καταγραφές μορφής GZip."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "Φόρτωση..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Προβολή της έκδοσης της εφαρμογής"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[ΑΡΧΕΙΟΚΑΤΑΓΡΑΦΗΣ...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr "- Εξερεύνηση και παρακολούθηση καταγραφών"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "Παρακολούθηση Καταγραφών"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "Παρακολούθηση καταγραφών συστήματος"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "τελευταία ενημέρωση: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d γραμμές (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "Άνοιγμα αρχείου καταγραφής"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Υπήρξε σφάλμα κατά την εμφάνιση της βοήθειας: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "Αναδιπλωμένο"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "Δε βρέθηκαν"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "Μια εφαρμογή προβολής καταγραφών συστήματος για το GNOME."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "Α_ρχείο"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "_Επεξεργασία"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "Προ_βολή"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "_Φίλτρα"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "_Βοήθεια"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "Άν_οιγμα..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "Άνοιγμα καταγραφής από αρχείο"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "Κλεί_σιμο"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "Κλείσιμο αυτού του αρχείου καταγραφής"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "Έ_ξοδος"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "Κλείσιμο παρακολούθησης καταγραφών συστήματος"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "Αντι_γραφή"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "Αντιγραφή της επιλογής"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "Επιλογή ό_λων"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "Επιλογή όλου του αρχείου καταγραφής"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "Εύ_ρεση..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "Εύρεση μια λέξης ή φράσης στην καταγραφή"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "Μεγαλύτερο μέγεθος κειμένου"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "Μικρότερο μέγεθος κειμένου"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "Κανονικό μέγεθος κειμένου"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "Διαχείριση φίλτρων"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "Διαχείριση φίλτρων"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "_Περιεχόμενα"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "Άνοιγμα των περιεχομένων βοήθειας για την εφαρμογή προβολής καταγραφών"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "_Περί"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "Προβολή του διαλόγου Περί για τον επεξεργαστή gconf"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "_Γραμμή κατάστασης"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "Προβολή γραμμής κατάστασης"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "Πλευρική _στήλη"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "Προβολή της πλευρικής στηλης"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "Εμφάνιση μόνο ταιριασμάτων"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr ""
+"Να εμφανίζονται μόνο οι γραμμές που ταιριάζουν με ένα από τα φίλτρα που "
+"δίνονται"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr ""
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr ""
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "Αδυναμία ανάγνωσης από «%s»"
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "Έκδοση : "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "Αδυναμία ανοίγματος των ακόλουθων αρχείων:"

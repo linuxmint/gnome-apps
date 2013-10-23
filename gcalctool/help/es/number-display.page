@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="number-display" xml:lang="es">
+
+    <info>
+        <link type="guide" xref="index#number"/>
+    
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  </info>
+
+	<title>Formato del resultado</title>
+    
+    <p>Se puede cambiar el formato usado para mostrar los resultados en el menú <guiseq><gui>Calculadora</gui><gui>Preferencias</gui></guiseq>.</p>
+    <table>
+    <tr>
+    <td><p>Decimal</p></td>
+    <td><p>Los resultados se muestran como números decimales</p></td>
+    </tr>
+    <tr>
+    <td><p>Científico</p></td>
+    <td><p>Los resultados se muestran en <link xref="scientific">notación científica</link>.</p></td>
+    </tr>
+    <tr>
+    <td><p>Ingeniería</p></td>
+    <td><p>Los resultados se muestran en notación científica excepto cuando el exponente es siempre múltiplo de tres</p></td>
+    </tr>
+    <tr>
+    <td><p>Binario</p></td>
+    <td><p>Los resultados se muestran como <link xref="base">números binarios</link></p></td>
+    </tr>
+    <tr>
+    <td><p>Octal</p></td>
+    <td><p>Los resultados se muestran como <link xref="base">números octales</link></p></td>
+    </tr>
+    <tr>
+    <td><p>Hexadecimal</p></td>
+    <td><p>Los resultados se muestran como <link xref="base">números hexadecimales</link></p></td>
+    </tr>
+    </table>
+    <p>El número de lugares decimales, si se muestran los ceros excedentes y los separadores de miles también se pueden configurar.</p>
+</page>

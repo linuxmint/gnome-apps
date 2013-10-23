@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="finding" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#reading"/>
+    <desc>Εύρεση λέξης ή φράσης μέσα στο έγγραφο.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Στυλιανός Παπαναστασίου</mal:name>
+      <mal:email>stelios@dcs.gla.ac.uk</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μιχάλης Κοτσαρίνης</mal:name>
+      <mal:email>mk73628@gmail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Εύρεση κειμένου σε έγγραφο</title>
+<steps>
+    <item><p>Πατήστε <guiseq><gui>Επεξεργασία</gui><gui>Εύρεση</gui></guiseq> ή πατήστε <keyseq><key>Ctrl</key><key>F</key></keyseq> ή <key>/</key> για να εμφανίσετε ένα πλαίσιο αναζήτησης.</p></item>
+
+    <item><p>Πληκτρολογήστε τη λέξη ή φράση που θέλετε να αναζητήσετε και η αναζήτηση θα ξεκινήσει αυτόματα.</p></item>
+
+    <item><p>Τα κουμπιά <gui>Εύρεση προηγούμενου</gui> και <gui>Εύρεση επόμενου</gui> σας επιτρέπουν να μεταβείτε από το ένα αποτέλεσμα στο άλλο.</p></item>
+
+    <item>
+     <p>Για απόκρυψη της γραμμής αναζήτησης, κλικ οπουδήποτε στο έγγραφο.</p>
+    </item>
+</steps>
+
+<p>Εάν η αναζητούμενη λέξη ή φράση δεν παρουσιάζεται σε όλο το έγγραφο, το μήνυμα θα λέει <em>δεν βρέθηκε</em>. Όμως, εάν εμφανίζεται στο έγγραφο τουλάχιστον μια φορά, το μήνυμα θα σας πληροφορήσει πόσες φορές εμφανίζεται η αναζητούμενη λέξη σε κάθε σελίδα. Αυτό είναι προφανές εάν μεταβείτε από ένα αποτέλεσμα σε ένα άλλο όπως περιγράφηκε παραπάνω ή εάν περιηγηθείτε στο έγγραφο.</p>
+
+<note>
+  <p>Μόνο τα έγγραφα PDF είναι αναζητήσιμα. Μερικά έγγραφα PDF δεν είναι αναζητήσιμα επειδή το κείμενό τους είναι κωδικοποιημένο στο έγγραφο ως εικόνα.</p>
+</note>
+
+</page>

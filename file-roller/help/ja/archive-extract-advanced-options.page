@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-extract-advanced-options" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <revision pkgversion="3.4" date="2012-03-06" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>アーカイブ展開に関する好みを指定します。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星　柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>アーカイブ展開に関する高度なオプション</title>
+
+  <p><app>アーカイブマネージャー</app>は、アーカイブを展開する際に様々なオプションを提示します。ファイル選択ダイアログ内に、ファイルを展開する場所を選択するのに利用できるオプションが表示されます。このダイアログの下部で展開する方法を決定できます。</p>
+
+  <terms>
+    <item>
+      <title><gui>すべてのファイル</gui></title>
+      <p>アーカイブ内にあるすべてのファイルとフォルダーが展開されます。</p>
+    </item>
+    <item>
+      <title><gui>選択したファイル</gui></title>
+      <p><app>アーカイブマネージャー</app>は、選択されたファイルのみを展開します。</p>
+      <note>
+        <p><guiseq><gui style="menu">アーカイブ</gui><gui style="menuitem">展開</gui></guiseq>をクリックする前に展開したいと思うファイルを選択する必要があります。ファイル名をクリックすることでファイルを選択できます。<key>Ctrl</key> または <key>Shift</key> キーを使えば、複数のファイルを選択できます。</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>ファイル</gui></title>
+      <p>展開したいと思うファイルの名前を入力することができます。個々のファイルは、セミコロン (<key>;</key>) を使って区切ります。</p>
+      <note>
+        <p>ファイル名には、ファイルの拡張子を続ける必要があります。ワイルドカードとしてアスタリスク (<key>*</key>) を使用できます。たとえば、すべての <file>.txt</file> がついたファイルを展開するには、<file>*.txt</file> と入力します。</p>
+      </note>
+    </item>
+  </terms>
+
+  <p>ファイル選択ダイアログで目的の操作を指定できます。</p>
+  <terms>
+    <item>
+      <title><gui>フォルダー構造を維持する</gui></title>
+      <p>フォルダー構造をアーカイブ内と同様に維持したい場合は、このオプションにチェックを入れます。</p>
+    </item>
+    <item>
+      <title><gui>より新しいファイルは上書きしない</gui></title>
+      <p>このオプションを指定するとアーカイブ内の更新日時より新しい更新日時の同名ファイルを上書きしません。</p>
+    </item>
+  </terms>
+
+  <p>これらの<gui>アクション</gui>は、ダイアログの下部に一覧表示されています。</p>
+
+</page>

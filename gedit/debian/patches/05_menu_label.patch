@@ -1,0 +1,29 @@
+Description: Don't display in menu as "gedit Text Editor"
+Author: Robert Ancell <robert.ancell@canonical.com>
+
+Index: gedit-2.30.3/data/gedit.desktop.in
+===================================================================
+--- gedit-2.30.3.orig/data/gedit.desktop.in	2010-06-24 14:48:17.953164002 +1000
++++ gedit-2.30.3/data/gedit.desktop.in	2010-06-24 14:48:13.593164002 +1000
+@@ -10,7 +10,7 @@
+ Icon=accessories-text-editor
+ Categories=GNOME;GTK;Utility;TextEditor;
+ X-GNOME-DocPath=gedit/gedit.xml
+-_X-GNOME-FullName=gedit Text Editor
++_X-GNOME-FullName=Text Editor
+ X-GNOME-Bugzilla-Bugzilla=GNOME
+ X-GNOME-Bugzilla-Product=gedit
+ X-GNOME-Bugzilla-Component=general
+Index: gedit-2.30.3/data/gedit.desktop.in.in
+===================================================================
+--- gedit-2.30.3.orig/data/gedit.desktop.in.in	2010-06-24 14:48:17.973164002 +1000
++++ gedit-2.30.3/data/gedit.desktop.in.in	2010-06-24 14:48:09.773164002 +1000
+@@ -10,7 +10,7 @@
+ Icon=accessories-text-editor
+ Categories=GNOME;GTK;Utility;TextEditor;
+ X-GNOME-DocPath=gedit/gedit.xml
+-_X-GNOME-FullName=gedit Text Editor
++_X-GNOME-FullName=Text Editor
+ X-GNOME-Bugzilla-Bugzilla=GNOME
+ X-GNOME-Bugzilla-Product=gedit
+ X-GNOME-Bugzilla-Component=general

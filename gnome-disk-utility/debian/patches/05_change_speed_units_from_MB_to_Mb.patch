@@ -1,0 +1,34 @@
+From: Robert Roth <robert.roth.off@gmail.com>
+Subject: [PATCH] Fix connection speed unit to use Mb instead of MB(bug 663272)
+Origin: other, http://bugzilla-attachments.gnome.org/attachment.cgi?id=200556
+Bug: https://bugzilla.gnome.org/show_bug.cgi?id=663272
+Bug-Ubuntu: https://bugs.launchpad.net/ubuntu/+source/gnome-disk-utility/+bug/631638
+
+---
+ src/gdu/gdu-util.c |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/src/gdu/gdu-util.c b/src/gdu/gdu-util.c
+index e27c331..c6241d7 100644
+--- a/src/gdu/gdu-util.c
++++ b/src/gdu/gdu-util.c
+@@ -885,13 +885,13 @@ gdu_util_get_speed_for_display (guint64 speed)
+ 
+         if (speed < 1000 * 1000) {
+                 displayed_speed = (double) speed / 1000.0;
+-                str = g_strdup_printf (_("%.1f kB/s"), displayed_speed);
++                str = g_strdup_printf (_("%.1f kb/s"), displayed_speed);
+         } else if (speed < 1000 * 1000 * 1000) {
+                 displayed_speed = (double) speed / 1000.0 / 1000.0;
+-                str = g_strdup_printf (_("%.1f MB/s"), displayed_speed);
++                str = g_strdup_printf (_("%.1f Mb/s"), displayed_speed);
+         } else {
+                 displayed_speed = (double) speed / 1000.0 / 1000.0 / 1000.0;
+-                str = g_strdup_printf (_("%.1f GB/s"), displayed_speed);
++                str = g_strdup_printf (_("%.1f Gb/s"), displayed_speed);
+         }
+ 
+         return str;
+-- 
+1.7.5.4
+

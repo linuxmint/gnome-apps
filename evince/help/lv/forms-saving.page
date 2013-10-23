@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="forms-saving" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#forms"/>
+    <desc>Pārliecinies, ka esi saglabājis dokumentu, citādi visa ievadītā informācija pazudīs.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0 licence</p>
+    </license>
+  </info>
+
+<title>Formas saglabāšana</title>
+
+<p>Kad esi to aizpildījis, formu var saglabāt vienā no diviem veidiem:</p>
+
+<list type="numbered">
+<item><p>Lai saglabātu kopiju, kura var tikt rediģēta arī vēlāk (forma paliek interaktīva):</p>
+   <steps>
+    <item>
+      <p>
+      <guiseq><gui>File</gui><gui>Save a copy</gui></guiseq>
+    </p>
+     </item>
+ <item>
+      <p>Izvēlies nosaukumu un mapi, kurā saglabāsi failu, nospied <gui>Saglabāt</gui>. PDF fails tiks saglabāts šajā mapē.</p>
+    </item>
+   </steps>
+</item>
+<item><p>Lai iegūtu kopiju, kuru vairs nevarēs rediģēt (piemēram, lai to sūtītu pa e-pastu vai publicētu tiešsaistē):</p>
+   <steps>
+    <item>
+      <p>Spied <guiseq><gui>Fails</gui><gui>Drukāt</gui></guiseq> un dodies uz  <gui>Vispārīgi</gui> cilni.</p>
+    </item>
+    <item>
+      <p>Izvēlies <gui>Drukāt failā</gui> un paņem PDF kā <gui>Izvades formātu</gui>.</p>
+    </item>
+    <item>
+      <p>Izvēlies nosaukumu un mapi, kurā vēlies saglabāt failu, un spied <gui>Drukāt</gui>. PDF fails tiks saglabāts šajā mapē.</p>
+    </item>
+   </steps>
+</item>
+</list>
+
+<note style="bug">
+<p>Šifrētu failu kopijas nevar saglabāt vai drukāt.</p>
+</note>
+
+</page>

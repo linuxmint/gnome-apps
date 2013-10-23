@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-edit" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <link type="seealso" xref="archive-create"/>
+    <revision pkgversion="3.4" date="2011-12-08" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Марта Богданович (Marta Bogdanowicz)</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>Изменить содержимое архива.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>omerta13@yandex.ru</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Изменение архива</title>
+
+  <p>С помощью <app>Менеджера архивов</app> можно изменить существующий архив, добавив в него новые файлы, удалив ненужные или изменив их имена. С папками можно выполнять те же действия, что и с файлами.</p>
+
+  <terms>
+    <item>
+    <title>Добавление файлов</title>
+    <p>Добавьте файлы в существующий архив, следуя инструкциям на странице <link xref="archive-create">создание архива</link>.</p>
+    </item>
+    <item>
+    <title>Удаление файлов</title>
+      <steps>
+        <item><p>Выберите файл.</p></item>
+        <item><p>Выберите <guiseq><gui style="menu">Правка</gui><gui style="menuitem">Удалить</gui></guiseq>, или нажмите правой кнопкой мыши по выделенному файлу и выберите <gui>Удалить</gui>.</p></item>
+      </steps>
+    </item>
+    <item>
+    <title>Переименование файлов</title>
+      <steps>
+        <item><p>Выберите файл.</p></item>
+        <item><p>Выберите <guiseq><gui style="menu">Правка</gui><gui style="menuitem">Переименовать</gui></guiseq>, или нажмите правой кнопкой мыши по выделенному файлу и выберите <gui>Переименовать</gui>.</p></item>
+        <item><p>Введите новое имя файла в открывшемся диалоговом окне.</p></item>
+        <item><p>Подтвердите действие, нажав <gui>Переименовать</gui>.</p></item>
+      </steps>
+    </item>
+  </terms>
+
+</page>

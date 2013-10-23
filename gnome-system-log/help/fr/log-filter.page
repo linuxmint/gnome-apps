@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="log-filter" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#main"/>
+    <link type="seealso" xref="log-search"/>
+    <revision version="3.3" date="2011-10-30" status="review"/>
+    <desc>Inclure ou exclure l'affichage de lignes en utilisant des expressions régulières.</desc>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Partage des Conditions Initiales à l'Identique 3.0 Unported.</p>
+    </license>
+
+  </info>
+
+  <title>Filtrage du journal</title>
+
+  <p>Le visionneur de journaux vous permet de filtrer le contenu d'un journal sur la base d'expressions régulières. Pour définir ou gérer un nouveau filtre :</p>
+
+  <steps>
+    <item>
+      <p>Cliquez sur <guiseq><gui>Filtres</gui><gui>Gérer les filtres</gui></guiseq> pour ouvrir la boîte de dialogue.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Ajouter</gui> pour ajouter un nouveau filtre, ou sélectionnez un filtre existant et cliquez sur <gui>Propriétés</gui> pour le modifier.</p>
+    </item>
+    <item>
+      <p>Renseignez ou modifiez les champs que vous voulez :</p>
+      <terms>
+        <item>
+          <title>Nom :</title>
+          <p>L'identifiant du filtre</p>
+        </item>
+        <item>
+          <title>Expression régulière :</title>
+          <p>Ce que le filtre va filtrer</p>
+        </item>
+        <item>
+          <title>Surbrillance :</title>
+          <p>Cette option met en valeur la ligne contenant l'expression régulière</p>
+          <terms>
+            <item>
+              <title>Arrière-plan :</title>
+              <p>Ceci est la couleur de la police</p>
+              <note style="tip">
+                <p>La couleur par défaut de la police est le noir, ce qui ne met pas le texte en valeur.</p>
+              </note>
+            </item>
+            <item>
+              <title>Premier plan :</title>
+              <p>Ceci est la couleur de surbrillance</p>
+              <note style="tip">
+                <p>La couleur par défaut de la surbrillance est le noir et affiche donc des lignes noires épaisses, il est par conséquent judicieux d'en changer.</p>
+              </note>
+            </item>
+          </terms>
+        </item>
+        <item>
+          <title>Masquage :</title>
+          <p>Cette option masque les lignes contenant l'expression régulière du journal affiché</p>
+        </item>
+      </terms>
+    </item>
+    <item>
+      <p>Pour enregistrer le nouveau filtre ou les modifications apportées à un filtre existant, cliquez sur <gui>Appliquer</gui></p>
+    </item>
+    <item>
+      <p>De retour à la boîte de dialogue du gestionnaire de filtres, cliquez sur <gui>Fermer</gui> pour appliquer les modifications.</p>
+    </item>
+  </steps>
+
+  <p>Pour activer un filtre, cochez la case devant son nom dans le menu <gui>Filtres</gui>. Pour n'afficher que les filtres qui ont activé la <gui>Surbrillance</gui> et qui sont actifs, cochez la case <guiseq><gui>Filtres</gui><gui>Afficher uniquement les correspondances</gui></guiseq>.</p>
+
+  <note style="tip">
+    <p>S'il y a conflit entre un filtre à masquage et un autre à surbrillance, la ligne devient blanche et vide.</p>
+  </note>
+
+  <note style="bug">
+    <p>Si vous visionnez uniquement les correspondances et que vous désactivez un filtre, le journal affiche les lignes non formatées sans tenir compte si elles étaient masquées ou en surbrillance auparavant. Le filtre devrait se réinitialiser dès que vous cochez un filtre en surbrillance.</p>
+  </note>
+
+</page>

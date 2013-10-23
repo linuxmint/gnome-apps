@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="toolbar" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <desc><link xref="toolbar#view">Управление отображением</link> и <link xref="toolbar#edit">изменение</link> панели инструментов.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Тифани Антопольски (Tiffany Antopolski)</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  </info>
+
+<title>Панель инструментов</title>
+
+<section id="view">
+<title>Управление панелью инструментов</title>
+  <p>Выберите в меню <guiseq><gui>Вид</gui><gui>Панель инструментов</gui></guiseq>.</p>
+<p>Панель инструментов по умолчанию содержит только основные инструменты:</p>
+<media type="image" src="figures/evince-toolbar-default.png" width="475"/>
+<list>
+<item><p>Пункты <gui>Предыдущая</gui> и <gui>Следующая</gui> используются для <link xref="movingaround#between-pages">перемещения</link> от одной страницы к другой.</p></item>
+<item><p>Инструмент для управления <link xref="movingaround#zoom">масштабом</link>.</p></item>
+<item><p><link xref="movingaround#between-pages">Инструмент</link> для выбора страницы.</p></item>
+</list>
+<p>Вы можете <link xref="toolbar#modify">изменить</link> панель инструментов.</p>
+</section>
+
+<section id="modify">
+<title>Добавление, удаление и перемещение элементов в панели инструментов.</title>
+<steps>
+<item><p>Сделайте панель инструментов <link xref="toolbar#view">видимой</link>.</p></item>
+<item><p>Выберите в меню <guiseq><gui>Правка</gui><gui>Панель инструментов</gui></guiseq>.</p></item>
+</steps>
+<p><gui>Редактор панели инструментов</gui> содержит элементы, которых нет в панели инструментов, а также элемент-разделитель.</p>
+<media type="image" src="figures/evince-toolbar-editor.png" width="475"/>
+
+<terms>
+  <item><title>Чтобы добавить новые элементы в панель инструментов:</title>
+        <p>перетащите их с помощью мыши из редактора в панель инструментов.</p></item>
+
+  <item><title>Чтобы удалить элементы из панели инструментов:</title>
+        <p>перетащите их с помощью мыши из панели инструментов в редактор панели инструментов.</p></item>
+
+   <item><title>Чтобы изменить порядок элементов в панели инструментов:</title>
+         <p>перетащите их с помощью мыши на новые места в панели инструментов.</p></item>
+</terms>
+<p>Когда вы закончите изменение панели инструментов, нажмите <gui>Закрыть</gui> в окне редактора панели инструментов.</p>
+</section>
+</page>

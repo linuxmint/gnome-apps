@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-create" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <revision pkgversion="3.4" date="2012-01-18" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>新しいアーカイブにファイルやフォルダーを追加します。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星　柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>新しいアーカイブの作成</title>
+
+  <p>以下の手順で <app>アーカイブマネージャー</app>を使って新しいアーカイブを作成します。</p>
+
+  <steps>
+    <item>
+      <p><gui>新しいアーカイブファイルを生成します</gui>というツールバーボタンをクリックするか、<guiseq><gui style="menu">アーカイブ</gui><gui style="menuitem">新規</gui></guiseq>をクリックします。</p>
+    </item>
+    <item>
+      <p>ファイル選択ダイアログが開きます。新しいアーカイブファイルの名前と保存する場所を選択し、<gui>作成</gui>をクリックします。</p>
+      <note style="tip">
+	<p>このダイアログでは、利用したいファイル形式も選択できます。利用可能な拡張子が、ドロップダウンリストに表示されます。もし、ファイル形式を選択しなかった場合、新しいアーカイブは、<file>tar.gz</file> 形式になります。</p>
+	<p><gui>その他のオプション</gui>をクリックすれば、パスワードを設定できたり、適切なオプションを選択し <gui>MB</gui> で容量を指定することで新しいアーカイブをより小さい個別のファイルに分割することができます。</p>
+      </note>
+    </item>
+    <item>
+      <p><gui>ファイルをアーカイブへ追加します</gui>というツールバーボタンをクリックするか、<guiseq><gui style="menu">編集</gui><gui style="menuitem">ファイルの追加</gui></guiseq>をクリックすることにより、望みのファイルを追加します。<app>アーカイブマネージャー</app>を使えば、フォルダー全体を追加することもできます。これを行うには、<gui>フォルダーをアーカイブへ追加します</gui>というツールバーボタンをクリックするか、<guiseq><gui style="menu">編集</gui><gui style="menuitem">フォルダーの追加</gui></guiseq>を選択します。</p>
+      <note style="tip">
+        <p>アーカイブにフォルダーを追加する際にいくつかのオプションを提示されます。</p>
+        <list>
+          <item><p>サブフォルダーを含めるかどうか</p></item>
+          <item><p>どのファイルを含めるべきかの選択</p></item>
+          <item><p>どのサブフォルダーやファイルを除外するかの選択</p></item>
+        </list>
+	<p>すべてのアーカイブファイル形式がフォルダーをサポートしているわけではありません。使用しているファイル形式がサポートしていなけれも警告されません。もし、使用しているファイル形式がフォルダーをサポートしていなければ、フォルダーからファイルが追加されますが、フォルダー自身は追加されません。</p>
+      </note>
+    </item>
+    <item>
+      <p>ファイルの追加が完了すれば、アーカイブは準備完了です。保存の操作は必要ありません。</p>
+    </item>
+  </steps>
+
+</page>

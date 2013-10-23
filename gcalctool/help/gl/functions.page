@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="function" xml:lang="gl">
+
+    <info>
+        <link type="guide" xref="index#equation"/>
+    </info>
+
+	<title>Funcións</title>
+    
+    <p>As fraccións pódense usar inserindo o nome da función seguido do argumento da función. Se o argumento non é un número ou unha <link xref="variable">variábel</link> entón use os parénteses para o argumento.</p>
+    <example>
+    <p>sin 30</p>
+    <p>abs (5−9)</p>
+    </example>
+    <p>As seguinte funcións sempre están definidas</p>
+    <table>
+    <tr>
+    <td><p>abs</p></td>
+    <td><p><link xref="absolute">Absolute Value</link></p></td>
+    </tr>
+    <tr>
+    <td><p>cos</p></td>
+    <td><p><link xref="trigonometry">Cosine</link></p></td>
+    </tr>
+    <tr>
+    <td><p>cosh</p></td>
+    <td><p><link xref="trigonometry">Hyperbolic Cosine</link></p></td>
+    </tr>
+    <tr>
+    <td><p>frac</p></td>
+    <td><p>Comproñente fraccional</p></td>
+    </tr>
+    <tr>
+    <td><p>int</p></td>
+    <td><p>Compoñente enteiro</p></td>
+    </tr>
+    <tr>
+    <td><p>ln</p></td>
+    <td><p><link xref="logarithm">Natural Logarithm</link></p></td>
+    </tr>
+    <tr>
+    <td><p>log</p></td>
+    <td><p><link xref="logarithm">Logarithm</link></p></td>
+    </tr>
+    <tr>
+    <td><p>not</p></td>
+    <td><p><link xref="boolean">Boolean NOT</link></p></td>
+    </tr>
+    <tr>
+    <td><p>ones</p></td>
+    <td><p>Complemento a un</p></td>
+    </tr>
+    <tr>
+    <td><p>sen</p></td>
+    <td><p><link xref="trigonometry">Sine</link></p></td>
+    </tr>
+    <tr>
+    <td><p>sinh</p></td>
+    <td><p><link xref="trigonometry">Hyperbolic Sine</link></p></td>
+    </tr>
+    <tr>
+    <td><p>sqrt</p></td>
+    <td><p><link xref="power">Square Root</link></p></td>
+    </tr>
+    <tr>
+    <td><p>tan</p></td>
+    <td><p><link xref="trigonometry">Tangent</link></p></td>
+    </tr>
+    <tr>
+    <td><p>tanh</p></td>
+    <td><p><link xref="trigonometry">Hyperbolic Tangent</link></p></td>
+    </tr>
+    <tr>
+    <td><p>twos</p></td>
+    <td><p>Complemento a dous</p></td>
+    </tr>
+    </table>
+    <p>
+    <app>GCalctool</app> does not support user-defined functions.
+    </p>
+</page>

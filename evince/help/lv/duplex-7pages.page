@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="duplex-7page" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="print-booklet#doubleSided"/>
+    <title type="sort">07-Page Booklet</title>
+    <desc>Izdrukā 7 lapu brošūru.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0 licence</p>
+    </license>
+
+  </info>
+
+<title>7 lapu brošūra</title>
+
+<steps>
+ <item>
+  <p>Spied <guiseq><gui>Fails</gui><gui>Drukāt</gui></guiseq>.</p>
+ </item>
+
+
+ <item>
+  <p>Izvēlies <gui>Vispārīgi</gui> cilni.</p>
+  <p>Zem <em>Drukāt</em>, izvēlies <gui>Lapas</gui>.</p>
+  <p>Ievadi lapu numurus šādā secībā: 7, 2, 1</p>
+
+ </item>
+ <item>
+  <p>Izvēlies <gui>Lappuses iestatīšana</gui> cilni.</p>
+  <p><em>Izkārtojums</em> sadaļā, <gui>Divpusējs</gui> opcijā izvēlies <gui>Īsās malas iesējums</gui>.</p>
+  <p><gui>Lapas lappusē</gui> opcijā izvēlies <gui>2</gui>.</p>
+  <p><gui>Lapu secība</gui> izvēlnē izvēlies <gui>No labās uz kreiso</gui>.</p>
+ <p>Spied <gui>Drukāt</gui>.</p>
+ </item>
+
+ <item>
+  <p>Spied <guiseq><gui>Fails</gui><gui>Drukāt</gui></guiseq>.</p>
+ </item>
+ <item>
+  <p>Izvēlies <gui>Vispārīgi</gui> cilni.</p>
+  <p>Ievadi atlikušo lapu numurus šādā secībā: 6, 3, 4, 5</p>
+ </item>
+
+
+<item>
+  <p>Izvēlies <gui>Lappuses iestatīšana</gui> cilni.</p>
+  <p><gui>Lapu secības</gui> izvēlnē nomaini opciju uz <gui>No kreisās uz labo</gui>.</p>
+  <p>Spied <gui>Drukāt</gui>.</p>
+ </item>
+</steps>
+<note>
+   <p>8 lapu brošūru izdrukāt ir vieglāk. Tu varētu vēlēties pievienot tukšu lapu, lai kopējais PDF dokuments sastāvētu no 8. Lai to paveiktu, tu vari:</p>
+<steps>
+ <item>
+  <p>Izveidot tukšu PDF dokumentu, izmantojot <app>LibreOffice Writer</app>.</p>
+ </item>
+ <item>
+  <p>Sapludināt tukšo PDF ar savu PDF dokumentu, izmantojot <app>PDF-Shuffler</app>, noliekot tukšo lapu dokumenta beigās.</p>
+
+ </item>
+ <item>
+  <p>Seko soļiem par to, kā izdrukāt <link xref="duplex-8page">8 lapu brošūru</link>.</p>
+ </item>
+</steps>
+</note>
+</page>

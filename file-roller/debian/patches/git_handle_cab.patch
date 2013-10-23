@@ -1,0 +1,23 @@
+From c9b2bef7fb1526992e6d709f04cfd9306e0cfc77 Mon Sep 17 00:00:00 2001
+From: Mantas Kriaučiūnas <mantas@akl.lt>
+Date: Wed, 28 Nov 2012 14:58:20 +0000
+Subject: Add Microsoft Cabinet to the supported mime types
+
+[bug #689205]
+---
+diff --git a/data/file-roller.desktop.in.in b/data/file-roller.desktop.in.in
+index 8ae10d9..4298805 100644
+--- a/data/file-roller.desktop.in.in
++++ b/data/file-roller.desktop.in.in
+@@ -9,7 +9,7 @@ Terminal=false
+ Type=Application
+ Icon=file-roller
+ Categories=GTK;GNOME;Utility;Archiving;Compression;
+-MimeType=application/x-7z-compressed;application/x-7z-compressed-tar;application/x-ace;application/x-alz;application/x-ar;application/x-arj;application/x-bzip;application/x-bzip-compressed-tar;application/x-bzip1;application/x-bzip1-compressed-tar;application/x-cabinet;application/x-cbr;application/x-cbz;application/x-cd-image;application/x-compress;application/x-compressed-tar;application/x-cpio;application/x-deb;application/x-ear;application/x-ms-dos-executable;application/x-gtar;application/x-gzip;application/x-gzpostscript;application/x-java-archive;application/x-lha;application/x-lhz;application/x-lrzip;application/x-lrzip-compressed-tar;application/x-lzip;application/x-lzip-compressed-tar;application/x-lzma;application/x-lzma-compressed-tar;application/x-lzop;application/x-lzop-compressed-tar;application/x-ms-wim;application/x-rar;application/x-rar-compressed;application/x-rpm;application/x-rzip;application/x-tar;application/x-tarz;application/x-stuffit;application/x-war;application/x-xz;application/x-xz-compressed-tar;application/x-zip;application/x-zip-compressed;application/x-zoo;application/zip;application/x-archive;
++MimeType=application/x-7z-compressed;application/x-7z-compressed-tar;application/x-ace;application/x-alz;application/x-ar;application/x-arj;application/x-bzip;application/x-bzip-compressed-tar;application/x-bzip1;application/x-bzip1-compressed-tar;application/x-cabinet;application/x-cbr;application/x-cbz;application/x-cd-image;application/x-compress;application/x-compressed-tar;application/x-cpio;application/x-deb;application/x-ear;application/x-ms-dos-executable;application/x-gtar;application/x-gzip;application/x-gzpostscript;application/x-java-archive;application/x-lha;application/x-lhz;application/x-lrzip;application/x-lrzip-compressed-tar;application/x-lzip;application/x-lzip-compressed-tar;application/x-lzma;application/x-lzma-compressed-tar;application/x-lzop;application/x-lzop-compressed-tar;application/x-ms-wim;application/x-rar;application/x-rar-compressed;application/x-rpm;application/x-rzip;application/x-tar;application/x-tarz;application/x-stuffit;application/x-war;application/x-xz;application/x-xz-compressed-tar;application/x-zip;application/x-zip-compressed;application/x-zoo;application/zip;application/x-archive;application/vnd.ms-cab-compressed;
+ X-GNOME-DocPath=file-roller/file-roller.xml
+ X-GNOME-Bugzilla-Bugzilla=GNOME
+ X-GNOME-Bugzilla-Product=file-roller
+--
+cgit v0.9.0.2
+

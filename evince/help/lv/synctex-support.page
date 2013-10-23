@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="synctex-support" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#synctex" group="second"/>
+    <desc>Kā pievienot SyncTeX atbalstu.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0 licence</p>
+    </license>
+
+  </info>
+
+<title>Iestatīt SyncTeX</title>
+<p>Lai varētu pievienot SyncTeX atbalstu, jāuzinstalē sekojošās pakotnes:</p>
+<list>
+  <item>
+    <p>texlive-extra-utils</p>
+  </item>
+  <item>
+    <p>gedit-plugins</p>
+  </item>
+</list>
+
+<p><app>Gedit</app> lietotnē aktivē SyncTeX spraudni:</p>
+<steps>
+   <item>
+    <p>Spied uz <guiseq><gui>Rediģēt</gui><gui>Iestatījumi</gui><gui>Spraudņi</gui></guiseq> cilnes.</p>
+   </item>
+   <item>
+    <p>Atzīmē <gui>SyncTeX</gui>.</p>
+   </item>
+</steps>
+</page>

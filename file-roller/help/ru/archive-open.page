@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-open" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <revision pkgversion="3.4" date="2011-12-08" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Марта Богданович (Marta Bogdanowicz)</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>Открыть существующий архив.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>omerta13@yandex.ru</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Открытие архива</title>
+
+  <p>Чтобы открыть существующий архив в <app>Менеджере архивов</app>, выполните следующее:</p>
+
+  <list>
+    <item>
+      <p>нажмите кнопку <guibutton>Открыть</guibutton> в панели инструментов</p>
+    </item>
+    <item>
+      <p>выберите <guiseq><gui style="menu">Архив</gui> <gui style="menuitem">Открыть</gui></guiseq></p>
+    </item>
+  </list>
+
+  <p>Также можно воспользоваться функцией <gui>Открыть недавние</gui>:</p>
+
+  <list>
+    <item>
+      <p>нажмите кнопку панели инструментов <media type="image" mime="image/png" src="figures/file-roller-open-recent.png"> Открыть недавно использованный архив</media> и выберите файл</p>
+    </item>
+    <item>
+      <p>выберите <guiseq><gui style="menu">Архив</gui> <gui style="menuitem">Открыть недавние</gui></guiseq>, чтобы увидеть список недавно использованных архивов</p>
+    </item>
+  </list>
+
+  <note>
+    <p>Если <app>Менеджер архивов</app> не сможет открыть недавно использованный архив, он покажет сообщение об ошибке <gui>«Файл не существует»</gui>. Причина может быть в изменении местоположения файла архива. В таком случае выберите <gui>Открыть</gui>, чтобы найти файл.</p>
+  </note>
+
+</page>

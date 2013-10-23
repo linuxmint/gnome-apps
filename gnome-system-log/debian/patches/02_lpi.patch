@@ -1,0 +1,66 @@
+Index: gnome-system-log-3.3.1/configure.ac
+===================================================================
+--- gnome-system-log-3.3.1.orig/configure.ac	2011-10-25 11:23:57.000000000 -0400
++++ gnome-system-log-3.3.1/configure.ac	2012-03-12 21:50:26.492733700 -0400
+@@ -61,6 +61,10 @@
+ GLIB_MIN_VERSION=2.31.0
+ GTK_MIN_VERSION=3.0.0
+ 
++PKG_CHECK_MODULES(LAUNCHPAD_INTEGRATION, launchpad-integration-3.0)
++AC_SUBST(LAUNCHPAD_INTEGRATION_CFLAGS)
++AC_SUBST(LAUNCHPAD_INTEGRATION_LIBS)
++
+ PKG_CHECK_MODULES(LOGVIEW,
+                   glib-2.0 >= $GLIB_MIN_VERSION
+                   gtk+-3.0 >= $GTK_MIN_VERSION)
+Index: gnome-system-log-3.3.1/data/logview-toolbar.xml
+===================================================================
+--- gnome-system-log-3.3.1.orig/data/logview-toolbar.xml	2011-10-04 11:13:20.000000000 -0400
++++ gnome-system-log-3.3.1/data/logview-toolbar.xml	2012-03-12 21:51:43.097113565 -0400
+@@ -29,6 +29,7 @@
+     </menu>
+     <menu action="HelpMenu">
+       <menuitem action="HelpContents"/>
++        <placeholder name="LaunchpadItems"/>
+       <menuitem action="AboutAction"/>
+     </menu>
+   </menubar>
+Index: gnome-system-log-3.3.1/src/Makefile.am
+===================================================================
+--- gnome-system-log-3.3.1.orig/src/Makefile.am	2011-10-04 11:13:20.000000000 -0400
++++ gnome-system-log-3.3.1/src/Makefile.am	2012-03-12 21:54:15.225867961 -0400
+@@ -41,10 +41,12 @@
+ 	$(BUILT_SOURCES)
+ 
+ gnome_system_log_CFLAGS =	\
++	$(LAUNCHPAD_INTEGRATION_CFLAGS) \
+ 	$(LOGVIEW_CFLAGS)		\
+ 	$(NULL)
+ 
+ gnome_system_log_LDADD =	\
++	$(LAUNCHPAD_INTEGRATION_LIBS)   \
+ 	$(LOGVIEW_LIBS)		\
+ 	$(Z_LIBS)		\
+ 	-lm
+Index: gnome-system-log-3.3.1/src/logview-window.c
+===================================================================
+--- gnome-system-log-3.3.1.orig/src/logview-window.c	2011-10-25 11:26:28.000000000 -0400
++++ gnome-system-log-3.3.1/src/logview-window.c	2012-03-12 21:53:06.033524813 -0400
+@@ -35,6 +35,8 @@
+ #include "logview-manager.h"
+ #include "logview-filter-manager.h"
+ 
++#include <launchpad-integration.h>
++
+ #define APP_NAME _("System Log Viewer")
+ #define SEARCH_START_MARK "lw-search-start-mark"
+ #define SEARCH_END_MARK "lw-search-end-mark"
+@@ -1294,6 +1296,8 @@
+                                          LOGVIEW_DATADIR "/logview-toolbar.xml",
+                                          &error);
+ 
++  launchpad_integration_add_ui(priv->ui_manager, "ui/LogviewMenu/HelpMenu/LaunchpadItems");
++
+   if (res == FALSE) {
+     priv->ui_manager = NULL;
+     g_critical ("Can't load the UI description: %s", error->message);

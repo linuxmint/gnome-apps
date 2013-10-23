@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="introduction" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.4" date="2012-01-18" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>Εισαγωγή στον <app>Διαχειριστή συμπιεσμένων αρχείων</app> του GNOME.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Εισαγωγή</title>
+
+  <p>Ο <app>Διαχειριστής συμπιεσμένων αρχείων</app> είναι μια εφαρμογή διαχείρισης συμπιεσμένων αρχείων, όπως για παράδειγμα, αρχεία <file>.zip</file> ή <file>.tar</file> και έχει σχεδιαστεί να είναι εύκολος στη χρήση του. Ο <app>Διαχειριστής συμπιεσμένων αρχείων</app> παρέχει όλα τα εργαλεία που είναι απαραίτητα για τη δημιουργία, επεξεργασία και αποσυμπίεση των αρχείων.</p>
+
+  <note style="advanced">
+    <p>Ένα συμπιεσμένο αρχείο αποτελείται από ένα ή περισσότερα αρχεία και φακέλους, μαζί με μεταδεδομένα και μπορεί να είναι πλήρως ή εν μέρη κρυπτογραφημένο. Τα συμπιεσμένα αρχεία είναι χρήσιμα για αποθήκευση και μεταφορά δεδομένων μεταξύ υπολογιστών καθώς σας επιτρέπουν να συλλέξετε πολλά αρχεία σ' ένα.</p>
+  </note>
+
+  <p>Με τον <app>Διαχειριστή συμπιεσμένων αρχείων</app> μπορείτε να:</p>
+  <list>
+    <item><p>δημιουργήσετε ένα νέο συμπιεσμένο αρχείο</p></item>
+    <item><p>δείτε τα περιεχόμενα ενός υπάρχοντος συμπιεσμένου αρχείου</p></item>
+    <item><p>δείτε τα αρχεία που περιέχει το συμπιεσμένο αρχείο</p></item>
+    <item><p>επεξεργαστείτε ένα υπάρχον συμπιεσμένο αρχείο</p></item>
+    <item><p>αποσυμπιέσετε αρχεία από ένα συμπιεσμένο αρχείο</p></item>
+  </list>
+
+  <figure>
+    <title>Προβολή ενός αρχείου με τον <app>Διαχειριστή συμπιεσμένων αρχείων</app></title>
+    <media type="image" mime="image/png" src="figures/file-roller-main-window.png">
+    <p>Στιγμιότυπο από το κύριο παράθυρο του <app>Διαχειριστή συμπιεσμένων αρχείων</app>.</p>
+    </media>
+  </figure>
+
+</page>

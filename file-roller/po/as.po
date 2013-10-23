@@ -1,0 +1,1780 @@
+# translation of as.po to Assamese
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Amitakhya Phukan <amitakhya@svn.gnome.org>, 2008.
+# Amitakhya Phukan <aphukan@fedoraproject.org>, 2009.
+# Nilamdyuti Goswami <ngoswami@redhat.com>, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: as\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
+"cgi?product=file-roller&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-08-11 20:48+0000\n"
+"PO-Revision-Date: 2012-08-13 13:46+0530\n"
+"Last-Translator: Nilamdyuti Goswami <ngoswami@redhat.com>\n"
+"Language-Team: as_IN <kde-i18n-doc@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1)\n"
+"X-Generator: Lokalize 1.0\n"
+
+#: ../copy-n-paste/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "ফাইল এটা বৈধ .desktop ফাইল নহয়"
+
+#: ../copy-n-paste/eggdesktopfile.c:190
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "ডেস্কটপ ফাইলৰ অজ্ঞাত সংস্কৰণ '%s'"
+
+#: ../copy-n-paste/eggdesktopfile.c:970
+#, c-format
+msgid "Starting %s"
+msgstr "%s আৰম্ভ কৰা হৈছে"
+
+#: ../copy-n-paste/eggdesktopfile.c:1112
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "এই এপ্লিকেচন দ্বাৰা কমান্ড-শাৰীৰ মাধ্যমে ফাইল গ্ৰহণ কৰা নহয়"
+
+#: ../copy-n-paste/eggdesktopfile.c:1180
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "অপৰিচিত লঞ্চ বিকল্প: %d"
+
+#: ../copy-n-paste/eggdesktopfile.c:1385
+#, c-format
+msgid "Can't pass documents to this desktop element"
+msgstr "এই ডেস্কটপ উপাদানলে দস্তাবেজসমুহ দিব নোৱাৰি"
+
+#: ../copy-n-paste/eggdesktopfile.c:1406
+#, c-format
+msgid "Not a launchable item"
+msgstr "লঞ্চ কৰিব পৰা বস্তু নহয় "
+
+#
+#: ../copy-n-paste/eggsmclient.c:226
+msgid "Disable connection to session manager"
+msgstr "অধিবেশন ব্যৱস্থাপকৰ সৈতে সংযোগ অসামৰ্থবান কৰক"
+
+#
+#: ../copy-n-paste/eggsmclient.c:229
+msgid "Specify file containing saved configuration"
+msgstr "সংৰক্ষিত সংৰূপ সহ ফাইল ধাৰ্য্য কৰক"
+
+#
+#: ../copy-n-paste/eggsmclient.c:229
+msgid "FILE"
+msgstr "FILE"
+
+#
+#: ../copy-n-paste/eggsmclient.c:232
+msgid "Specify session management ID"
+msgstr "অধিবেশন ব্যৱস্থাপনাৰ ID উল্লেখ কৰক"
+
+#: ../copy-n-paste/eggsmclient.c:232
+msgid "ID"
+msgstr "ID"
+
+#
+#: ../copy-n-paste/eggsmclient.c:253
+msgid "Session management options:"
+msgstr "অধিবেশন ব্যৱস্থাপনা বিকল্পসমূহ:"
+
+#
+#: ../copy-n-paste/eggsmclient.c:254
+msgid "Show session management options"
+msgstr "অধিবেশন ব্যৱস্থাপনা বিকল্পসমূহ প্ৰদৰ্শন কৰক"
+
+#: ../data/file-roller.desktop.in.in.h:1 ../src/fr-window.c:1955
+#: ../src/fr-window.c:5331
+msgid "Archive Manager"
+msgstr "আৰ্কাইভ ব্যৱস্থাপক"
+
+#: ../data/file-roller.desktop.in.in.h:2
+msgid "Create and modify an archive"
+msgstr "আৰ্কাইভ সৃষ্টি আৰু পৰিবৰ্তন কৰক"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:1
+msgid "How to sort files"
+msgstr "ফাইলসমূহ কেনেকে সজোৱা হব"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:2
+msgid ""
+"What criteria must be used to arrange files. Possible values: name, size, "
+"type, time, path."
+msgstr ""
+"ফাইলসমূহ সজাবলে কি পদ্ধতি ব্যৱহাৰ কৰা হব। সম্ভাব্য মানসমূহ: নাম, আকাৰ, ধৰণ, সময়, "
+"পথ।"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:3
+msgid "Sort type"
+msgstr "ধৰণ সজোৱা"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:4
+msgid ""
+"Whether to sort in ascending or descending direction. Possible values: "
+"ascending, descending."
+msgstr "আৰোহন দিশত নে অৱতৰন দিশত সজোৱা হব। সম্ভাব্য মান: আৰোহন, অৱতৰন।"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:5
+msgid "List Mode"
+msgstr "অৱস্থা তালিকাভুক্ত কৰক"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:6
+msgid ""
+"Use 'all-files' to view all the files in the archive in a single list, use "
+"'as-folder' to navigate the archive as a folder."
+msgstr ""
+"আৰ্কাইভত থকা ফাইলসমূহক এটা তালিকাত চাবলে 'সকলোবোৰ ফাইল' ব্যৱহাৰ কৰক , আৰু "
+"আৰ্কাইভটো এটা ফোল্ডাৰ হিচাপে বিস্তাৰ কৰিবলে 'ফোল্ডাৰ হিচাপে' ব্যৱহাৰ কৰক।"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:7
+msgid "Display type"
+msgstr "ধৰণ প্ৰদৰ্শন কৰক"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:8
+msgid "Display the type column in the main window."
+msgstr "মূখ্য উইন্ডোত ধৰণ স্তম্ভ প্ৰদৰ্শন কৰক।"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:9
+msgid "Display size"
+msgstr "প্ৰদৰ্শনৰ আকাৰ"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:10
+msgid "Display the size column in the main window."
+msgstr "মূখ্য উইন্ডোত আকাৰ স্তম্ভ প্ৰদৰ্শন কৰক।"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:11
+msgid "Display time"
+msgstr "সময় প্ৰদৰ্শন কৰক"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:12
+msgid "Display the time column in the main window."
+msgstr "মূখ্য উইন্ডোত সময় স্তম্ভ প্ৰদৰ্শন কৰক।"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:13
+msgid "Display path"
+msgstr "প্ৰদৰ্শনৰ পথ"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:14
+msgid "Display the path column in the main window."
+msgstr "মূখ্য উইন্ডোত পথ স্তম্ভ প্ৰদৰ্শন কৰক।"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:15
+msgid "Name column width"
+msgstr "স্তম্ভ প্ৰস্তৰ নাম দিয়ক"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:16
+msgid "The default width of the name column in the file list."
+msgstr "ফাইল তালিকাত নাম স্তম্ভৰ অবিকল্পিত প্ৰস্থ।"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:17
+msgid "Max history length"
+msgstr "সৰ্বাধিক ইতিহাস দৈৰ্ঘ্য"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:18
+msgid "Max number of items in the 'Open Recents' submenu."
+msgstr "'শেহতীয়াসমূহ খোলা'  উপমেনুত থকা বস্তুসমূহৰ সৰ্বাধিক নম্বৰ।"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:19
+msgid "View toolbar"
+msgstr "টুলবাৰ দৰ্শন কৰক"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:20
+msgid "Whether to display the toolbar."
+msgstr "টুলবাৰ প্ৰদৰ্শন কৰা হব নে।"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:21
+msgid "View statusbar"
+msgstr "অৱস্থাবাৰ দৰ্শন কৰক"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:22
+msgid "Whether to display the statusbar."
+msgstr "অৱস্থাবাৰ প্ৰদৰ্শন কৰা হব নে।"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:23 ../src/ui.h:212
+msgid "View the folders pane"
+msgstr "ফোল্ডাৰৰ পেইন দৰ্শন কৰক"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:24
+msgid "Whether to display the folders pane."
+msgstr "ফোল্ডাৰৰ পেইন প্ৰদৰ্শন কৰা হব নে।"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:25
+msgid "Editors"
+msgstr "সম্পাদক সকল"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:26
+msgid ""
+"List of applications entered in the 'Open File' dialog and not associated "
+"with the file type."
+msgstr ""
+"'ফাইল খোলা' ডাইলগত সোমোৱা সেইসমূহ এপ্লিকেচনৰ তালিকা যিসমূহ ফাইলৰ ধৰণৰ সৈতে "
+"সংযুক্ত নহয়।"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:27
+msgid "Compression level"
+msgstr "সংকোচনৰ স্তৰ"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:28
+msgid ""
+"Compression level used when adding files to an archive. Possible values: "
+"very-fast, fast, normal, maximum."
+msgstr ""
+"এটা আৰ্কাইভলে ফাইলসমূহ যোগ কৰোতে ব্যৱহাৰ কৰা সংকোচনৰ স্তৰ। সম্ভাব্য মানসমূহ: অতি-"
+"শিঘ্ৰ, শিঘ্ৰ, স্বাভাৱিক, উচ্চতম।"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:29
+msgid "Encrypt the archive header"
+msgstr "আৰ্কাইভ হেডাৰক ইনক্ৰিপ্ট কৰক"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:30
+msgid ""
+"Whether to encrypt the archive header. If the header is encrypted the "
+"password will be required to list the archive content as well."
+msgstr ""
+"আৰ্কাইভ হেডাৰক ইনক্ৰিপ্ট কৰা হব নে। যদি হেডাৰটো ইনক্ৰিপ্টেড তেন্তে আৰ্কাইভৰ অন্তৰ্ভুক্ত "
+"বস্তু দেখাবলে পাছৱাৰ্ডৰ প্ৰয়োজন হব।"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:31
+msgid "Do not overwrite newer files"
+msgstr "নতুন ফাইলসমূহক পুনৰ নিলিখিব"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:32
+msgid "Recreate the folders stored in the archive"
+msgstr "আৰ্কাইভত সংৰক্ষীত ফোল্ডাৰসমূহ পুনৰ সৃষ্টি কৰক"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:33
+msgid "Default volume size"
+msgstr "অবিকল্পিত আয়তনৰ আকাৰ"
+
+#: ../data/org.gnome.FileRoller.gschema.xml.in.h:34
+msgid "The default size for volumes."
+msgstr "আয়তনসমূহৰ অবিকল্পিত আকাৰ।"
+
+#: ../nautilus/nautilus-fileroller.c:327
+msgid "Extract Here"
+msgstr "ইয়াত নিষ্কাষণ কৰক"
+
+#. Translators: the current position is the current folder
+#: ../nautilus/nautilus-fileroller.c:329
+msgid "Extract the selected archive to the current position"
+msgstr "বৰ্তমান অৱস্থানত নিৰ্বাচিত আৰ্কাইভ নিষ্কাষণ কৰক"
+
+#: ../nautilus/nautilus-fileroller.c:346
+msgid "Extract To..."
+msgstr "নিষ্কাষণ কৰাৰ অৱস্থান..."
+
+#: ../nautilus/nautilus-fileroller.c:347
+msgid "Extract the selected archive"
+msgstr "নিৰ্বাচিত আৰ্কাইভ নিষ্কাষণ কৰক"
+
+#: ../nautilus/nautilus-fileroller.c:366
+msgid "Compress..."
+msgstr "সংকোচিত কৰক..."
+
+#: ../nautilus/nautilus-fileroller.c:367
+msgid "Create a compressed archive with the selected objects"
+msgstr "নিৰ্বাচিত বস্তু সহযোগে সংকোচিত আৰ্কাইভ সৃষ্টি কৰক"
+
+#: ../src/actions.c:112 ../src/fr-window.c:5626 ../src/fr-window.c:6165
+msgid "Open"
+msgstr "খোলক"
+
+#: ../src/actions.c:125 ../src/fr-window.c:5169
+msgid "All archives"
+msgstr "সকলো আৰ্কাইভ"
+
+#: ../src/actions.c:132
+msgid "All files"
+msgstr "সকলো ফাইল"
+
+#: ../src/actions.c:499
+msgid "Copyright © 2001–2010 Free Software Foundation, Inc."
+msgstr "স্বত্বাধিকাৰ © ২০০১-২০১০ Free Software Foundation, Inc."
+
+#: ../src/actions.c:500
+msgid "An archive manager for GNOME."
+msgstr "GNOME ৰ বাবে এটা  আৰ্কাইভ ব্যৱস্থাপক"
+
+#: ../src/actions.c:503
+msgid "translator-credits"
+msgstr ""
+"অমিতাক্ষ ফুকন (aphukan@fedoraproject.org), নীলমদ্যুতি গোস্বামী (ngoswami@redhat."
+"com)"
+
+#: ../src/dlg-add.c:116
+msgid "Could not add the files to the archive"
+msgstr "আৰ্কাইভলে ফাইল যোগ কৰা নাযায়"
+
+#: ../src/dlg-add.c:117
+#, c-format
+msgid "You don't have the right permissions to read files from folder \"%s\""
+msgstr "\"%s\" ফোল্ডাৰৰ পৰা ফাইল পঢ়াৰ পৰ্যাপ্ত অনুমতি আপোনাৰ নাই"
+
+#: ../src/dlg-add.c:182 ../src/ui.h:46
+msgid "Add Files"
+msgstr "ফাইলসমূহ যোগ কৰক"
+
+#: ../src/dlg-add.c:193
+msgid "_Options"
+msgstr "বিকল্পসমূহ (_O)"
+
+#. load options
+#: ../src/dlg-add.c:202 ../src/ui/add-options.ui.h:1
+msgid "Load Options"
+msgstr "বিকল্পসমূহ ল'ড কৰক"
+
+#. save options
+#: ../src/dlg-add.c:209 ../src/dlg-add.c:824
+msgid "Save Options"
+msgstr "সংৰক্ষণ বিকল্পসমূহ "
+
+#. clear options
+#: ../src/dlg-add.c:216
+msgid "Reset Options"
+msgstr "বিকল্পসমূহ পুনৰ সংহতি কৰক"
+
+#: ../src/dlg-add.c:825
+msgid "_Options Name:"
+msgstr "বিকল্পসমূহৰ নাম (_O):"
+
+#. Translators: %s is a filename
+#: ../src/dlg-ask-password.c:131
+#, c-format
+msgid "Password required for \"%s\""
+msgstr "\"%s\" ৰ বাবে পাছৱাৰ্ডৰ প্ৰয়োজন"
+
+#: ../src/dlg-ask-password.c:139
+#| msgid "Password"
+msgid "Wrong password."
+msgstr "ভুল পাছৱাৰ্ড।"
+
+#: ../src/dlg-batch-add.c:81 ../src/main.c:412 ../src/main.c:778
+msgid "Compress"
+msgstr "সংকোচিত কৰক"
+
+#: ../src/dlg-extract.c:96 ../src/fr-window.c:6690
+#, c-format
+msgid ""
+"Destination folder \"%s\" does not exist.\n"
+"\n"
+"Do you want to create it?"
+msgstr ""
+"গন্তব্য ফোল্ডাৰ \"%s\" বৰ্তমানে অনুপস্থিত।\n"
+"\n"
+"সৃষ্টি কৰিব নেকি ?"
+
+#: ../src/dlg-extract.c:105 ../src/fr-window.c:6699
+msgid "Create _Folder"
+msgstr "ফোল্ডাৰ সৃষ্টি কৰক (_F)"
+
+#: ../src/dlg-extract.c:124 ../src/dlg-extract.c:142 ../src/dlg-extract.c:169
+#: ../src/fr-window.c:4118 ../src/fr-window.c:6595 ../src/fr-window.c:6600
+#: ../src/fr-window.c:6720 ../src/fr-window.c:6739 ../src/fr-window.c:6744
+msgid "Extraction not performed"
+msgstr "নিষ্কাষণ কৰা নহল"
+
+#: ../src/dlg-extract.c:125 ../src/fr-window.c:6716
+#, c-format
+msgid "Could not create the destination folder: %s."
+msgstr "গন্তব্য ফোল্ডাৰ সৃষ্টি কৰা নাযায়: %s।"
+
+#: ../src/dlg-extract.c:170 ../src/fr-window.c:4284 ../src/fr-window.c:4368
+#, c-format
+msgid "You don't have the right permissions to extract archives in the folder \"%s\""
+msgstr "\"%s\" ফোল্ডাৰত আৰ্কাইভ নিষ্কাষণ কৰাৰ বাবে আপোনাৰ পৰ্যাপ্ত অনুমতি নাই"
+
+#: ../src/dlg-extract.c:283 ../src/ui/extract-dialog-options.ui.h:1
+#: ../src/ui.h:113
+msgid "Extract"
+msgstr "নিষ্কাষণ কৰক"
+
+#: ../src/dlg-package-installer.c:107 ../src/dlg-package-installer.c:220
+msgid "There was an internal error trying to search for applications:"
+msgstr "এপ্লিকেচনসমূহ সন্ধান কৰাৰ চেষ্টাত এটা অভ্যন্তৰীয় ত্ৰুটি হৈছিল:"
+
+#: ../src/dlg-package-installer.c:269 ../src/dlg-package-installer.c:278
+#: ../src/dlg-package-installer.c:306 ../src/fr-archive.c:819
+#: ../src/fr-window.c:3848 ../src/fr-window.c:7295 ../src/fr-window.c:7651
+#: ../src/fr-window.c:9177
+msgid "Archive type not supported."
+msgstr "এই ধৰণৰ আৰ্কাইভ সমৰ্থিত নহয়।"
+
+#: ../src/dlg-package-installer.c:288
+#, c-format
+msgid ""
+"There is no command installed for %s files.\n"
+"Do you want to search for a command to open this file?"
+msgstr ""
+"%s ফাইলসমূহৰ কাৰণে কোনো কমান্ড ইনস্টল নাই।\n"
+"এই ফাইলটো খোলিবলে এটা কমান্ড বিচাৰিবলে ইচ্ছুক নেকি?"
+
+#: ../src/dlg-package-installer.c:293
+msgid "Could not open this file type"
+msgstr "এই ফাইলৰ ধৰণ খোলিব নোৱাৰি"
+
+#: ../src/dlg-package-installer.c:296
+msgid "_Search Command"
+msgstr "সন্ধান কমান্ড (_S)"
+
+#: ../src/dlg-password.c:91
+#, c-format
+#| msgid "Enter the password for the archive '%s'."
+msgid "Enter a password for \"%s\""
+msgstr "\"%s\" ৰ বাবে এটা পাছৱাৰ্ড সুমুৱাওক"
+
+#: ../src/dlg-prop.c:96
+#, c-format
+msgid "%s Properties"
+msgstr "%s  বৈশিষ্ট্যসমূহ"
+
+#: ../src/dlg-update.c:162
+#, c-format
+msgid "Update the file \"%s\" in the archive \"%s\"?"
+msgstr "\"%s\" ফাইলটো, \"%s\" আৰ্কাইভত আপডেইট কৰিব নেকি ?"
+
+#. secondary text
+#: ../src/dlg-update.c:173 ../src/dlg-update.c:198 ../src/ui/update.ui.h:2
+#, c-format
+msgid ""
+"The file has been modified with an external application. If you don't update "
+"the file in the archive, all of your changes will be lost."
+msgid_plural ""
+"%d files have been modified with an external application. If you don't "
+"update the files in the archive, all of your changes will be lost."
+msgstr[0] ""
+"ফাইলটো এটা বহিৰ্তম এপ্লিকেচন সহযোগে পৰিবৰ্তন কৰা হৈছে। যদি আপুনি বৰ্তমান আৰ্কাইভত "
+"উপস্থিত ফাইল আপডেইট নকৰে, আপোনাৰ কৰা সকলো পৰিবৰ্তন হেৰাই যাব।"
+msgstr[1] ""
+"%d ফাইলসমূহ এটা বহিৰ্তম এপ্লিকেচন সহযোগে পৰিবৰ্তন কৰা হৈছে। যদি আপুনি বৰ্তমান "
+"আৰ্কাইভত উপস্থিত ফাইল আপডেইট নকৰে, আপোনাৰ কৰা সকলো পৰিবৰ্তন হেৰাই যাব।"
+
+#: ../src/dlg-update.c:188
+#, c-format
+msgid "Update the files in the archive \"%s\"?"
+msgstr "\"%s\" আৰ্কাইভত ফাইলসমূহ আপডেইট কৰিব নেকি ?"
+
+#: ../src/fr-archive.c:1944
+msgid "You don't have the right permissions."
+msgstr "আপোনাৰ পৰ্যাপ্ত অনুমতি নাই।"
+
+#
+#: ../src/fr-archive.c:1944
+msgid "This archive type cannot be modified"
+msgstr "এই ধৰণৰ আৰ্কাইভ পৰিবৰ্তন কৰা সম্ভৱ নহয়"
+
+#: ../src/fr-archive.c:1958
+msgid "You can't add an archive to itself."
+msgstr "এটা আৰ্কাইভক নিজৰ মাজত যোগ কৰা সম্ভৱ নহয়।"
+
+#. Translators: %s is a filename.
+#: ../src/fr-command-7z.c:297 ../src/fr-command-rar.c:325
+#: ../src/fr-command-tar.c:305
+#, c-format
+msgid "Adding \"%s\""
+msgstr "\"%s\" যোগ কৰা হৈছে"
+
+#. Translators: %s is a filename.
+#: ../src/fr-command-7z.c:420 ../src/fr-command-rar.c:455
+#: ../src/fr-command-tar.c:426
+#, c-format
+msgid "Extracting \"%s\""
+msgstr "\"%s\" নিষ্কাষণ কৰা হৈছে"
+
+#: ../src/fr-command.c:597
+#, c-format
+msgid "Archive not found"
+msgstr "আৰ্কাইভ পোৱা নগল।"
+
+#. Translators: %s is a filename.
+#: ../src/fr-command-rar.c:406 ../src/fr-command-tar.c:371
+#, c-format
+msgid "Removing \"%s\""
+msgstr "\"%s\" আতৰোৱা হৈছে"
+
+#: ../src/fr-command-rar.c:581
+#, c-format
+msgid "Could not find the volume: %s"
+msgstr "উল্লিখিত আয়তন পোৱা নাযায়: %s"
+
+#: ../src/fr-command-tar.c:381
+msgid "Deleting files from archive"
+msgstr "আৰ্কাইভৰ পৰা ফাইলসমূহ আঁতৰুৱা হৈছে"
+
+#: ../src/fr-command-tar.c:486
+msgid "Recompressing archive"
+msgstr "আৰ্কাইভ পুনৰ সংকোচন কৰা হৈছে"
+
+#: ../src/fr-command-tar.c:725
+msgid "Decompressing archive"
+msgstr "আৰ্কাইভ অসংকোচিত কৰা হৈছে"
+
+#: ../src/fr-file-selector-dialog.c:588
+msgid "File System"
+msgstr "ফাইল চিস্টেম"
+
+#: ../src/fr-file-selector-dialog.c:1331 ../src/fr-file-selector-dialog.c:1376
+msgid "Could not load the location"
+msgstr "অৱস্থান ল'ড কৰিব নোৱাৰি"
+
+#: ../src/fr-new-archive-dialog.c:331 ../src/fr-new-archive-dialog.c:350
+#: ../src/fr-new-archive-dialog.c:366 ../src/fr-new-archive-dialog.c:414
+#: ../src/fr-window.c:2812
+msgid "Could not create the archive"
+msgstr "আৰ্কাইভ সৃষ্টি কৰা নাযায়"
+
+#: ../src/fr-new-archive-dialog.c:333 ../src/fr-new-archive-dialog.c:352
+msgid "You have to specify an archive name."
+msgstr "আপুনি আৰ্কাইভৰ এটা নাম ধাৰ্য্য কৰিব লাগিব।"
+
+#: ../src/fr-new-archive-dialog.c:416
+msgid "You don't have permission to create an archive in this folder"
+msgstr "এই ফোল্ডাৰত আৰ্কাইভ সৃষ্টি কৰাৰ বাবে আপোনাৰ অনুমতি নাই"
+
+#: ../src/fr-new-archive-dialog.c:435
+#, c-format
+msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+msgstr ""
+"\"%s\" নামৰ এটা ফাইল ইতিমধ্য অস্তিত্ববান। আপুনি ইয়াক প্ৰতিস্থাপন কৰিব বিচাৰে "
+"নেকি?"
+
+#: ../src/fr-new-archive-dialog.c:436
+#, c-format
+msgid "The file already exists in \"%s\".  Replacing it will overwrite its contents."
+msgstr ""
+"ফাইল ইতিমধ্যে \"%s\" ত অস্তিত্ববান। ইয়াক প্ৰতিস্থাপন কৰিলে ইয়াৰ সমলসমূহ পুনৰ লিখা "
+"হব।"
+
+#: ../src/fr-new-archive-dialog.c:443 ../src/fr-window.c:6533
+msgid "_Replace"
+msgstr "প্ৰতিস্থাপন কৰক (_R)"
+
+#: ../src/fr-new-archive-dialog.c:458
+msgid "Could not delete the old archive."
+msgstr "পুৰনি আৰ্কাইভ মচিব নোৱাৰি।"
+
+#: ../src/fr-stock.c:41
+msgid "C_reate"
+msgstr "সৃষ্টি কৰক (_r)"
+
+#: ../src/fr-stock.c:42 ../src/fr-stock.c:43
+msgid "_Add"
+msgstr "যোগ কৰক (_A)"
+
+#: ../src/fr-stock.c:44
+msgid "_Extract"
+msgstr "নিষ্কাষণ কৰক (_E)"
+
+#: ../src/fr-window.c:1043
+msgid "Operation completed"
+msgstr "কাৰ্য্য সম্পূৰ্ণ হল"
+
+#: ../src/fr-window.c:1160
+#, c-format
+msgid "%d object (%s)"
+msgid_plural "%d objects (%s)"
+msgstr[0] "%d বস্তু (%s)"
+msgstr[1] "%d বস্তুসমূহ (%s)"
+
+#: ../src/fr-window.c:1165
+#, c-format
+msgid "%d object selected (%s)"
+msgid_plural "%d objects selected (%s)"
+msgstr[0] "%d বস্তু নিৰ্বাচিত (%s)"
+msgstr[1] "%d বস্তু নিৰ্বাচিত (%s)"
+
+#: ../src/fr-window.c:1584
+msgid "Folder"
+msgstr "ফোল্ডাৰ"
+
+#: ../src/fr-window.c:1963
+msgid "[read only]"
+msgstr "[অকল পাঠযোগ্য]"
+
+#: ../src/fr-window.c:2082
+#, c-format
+msgid "Could not display the folder \"%s\""
+msgstr "ফোল্ডাৰ \"%s\" প্ৰদৰ্শন কৰা সম্ভৱ নহয়"
+
+#. Translators: %s is a filename
+#: ../src/fr-window.c:2169 ../src/fr-window.c:2207
+#, c-format
+msgid "Creating \"%s\""
+msgstr "\"%s\" সৃষ্টি কৰা হৈছে"
+
+#. Translators: %s is a filename
+#: ../src/fr-window.c:2173
+#, c-format
+msgid "Loading \"%s\""
+msgstr "\"%s\" ল'ড কৰা হৈছে"
+
+#. Translators: %s is a filename
+#: ../src/fr-window.c:2177
+#, c-format
+msgid "Reading \"%s\""
+msgstr "\"%s\" পঢ়া হৈছে"
+
+#. Translators: %s is a filename
+#: ../src/fr-window.c:2181
+#, c-format
+msgid "Deleting the files from \"%s\""
+msgstr "\"%s\" ৰ পৰা ফাইলসমূহ মচি পেলোৱা হৈছে"
+
+#. Translators: %s is a filename
+#: ../src/fr-window.c:2185
+#, c-format
+msgid "Testing \"%s\""
+msgstr "\"%s\" পৰিক্ষা কৰা হৈছে"
+
+#: ../src/fr-window.c:2188
+msgid "Getting the file list"
+msgstr "ফাইলৰ তালিকা পঢ়া হৈছে"
+
+#. Translators: %s is a filename
+#: ../src/fr-window.c:2192
+#, c-format
+msgid "Copying the files to add to \"%s\""
+msgstr "\"%s\" লে যোগ কৰিবলে ফাইলসমূহ কপি কৰা হৈছে"
+
+#. Translators: %s is a filename
+#: ../src/fr-window.c:2196
+#, c-format
+msgid "Adding the files to \"%s\""
+msgstr "\"%s\" লে ফাইলসমূহ যোগ কৰা হৈছে"
+
+#. Translators: %s is a filename
+#: ../src/fr-window.c:2200
+#, c-format
+msgid "Extracting the files from \"%s\""
+msgstr "\"%s\" ৰ পৰা ফাইলসমূহ নিষ্কাষণ কৰা হৈছে"
+
+#: ../src/fr-window.c:2203
+msgid "Copying the extracted files to the destination"
+msgstr "নিষ্কাষিত ফাইলসমূহ গন্তব্যলে কপি কৰা হৈছে"
+
+#. Translators: %s is a filename
+#: ../src/fr-window.c:2212
+#, c-format
+msgid "Saving \"%s\""
+msgstr "\"%s\" সংৰক্ষণ কৰা হৈছে"
+
+#. Translators: %s is a filename
+#: ../src/fr-window.c:2219
+#, c-format
+msgid "Renaming the files in \"%s\""
+msgstr "\"%s\" ত ফাইলসমূহ পুনৰ নামকৰণ কৰা হৈছে"
+
+#. Translators: %s is a filename
+#: ../src/fr-window.c:2223
+#, c-format
+msgid "Updating the files in \"%s\""
+msgstr "\"%s\" ত ফাইলসমূহ আপডেইট কৰা হৈছে"
+
+#
+#: ../src/fr-window.c:2398
+msgid "_Open the Archive"
+msgstr "আৰ্কাইভ খোলক (_O)"
+
+#: ../src/fr-window.c:2399
+msgid "_Show the Files"
+msgstr "ফাইলসমূহ দেখুৱাওক (_S)"
+
+#: ../src/fr-window.c:2516
+#, c-format
+msgid "%d file remaining"
+msgid_plural "%'d files remaining"
+msgstr[0] "%d ফাইল অৱশিষ্ট"
+msgstr[1] "%'d ফাইলসমূহ অৱশিষ্ট"
+
+#: ../src/fr-window.c:2520 ../src/fr-window.c:3099
+msgid "Please wait…"
+msgstr "অনুগ্ৰহ কৰি অপেক্ষা কৰক..."
+
+#: ../src/fr-window.c:2578
+msgid "Extraction completed successfully"
+msgstr "সাফল্যৰ সৈতে সকল বস্তু নিষ্কাষণ কৰা হল"
+
+#. Translators: %s is a filename
+#: ../src/fr-window.c:2609 ../src/fr-window.c:6144
+#, c-format
+msgid "\"%s\" created successfully"
+msgstr "\"%s\" সফলভাৱে সৃষ্টি কৰা হল"
+
+#: ../src/fr-window.c:2699 ../src/fr-window.c:2868
+msgid "Command exited abnormally."
+msgstr "কমান্ড অস্বাভাবিকভাবে বন্ধ হৈ গৈছে।"
+
+#: ../src/fr-window.c:2817
+msgid "An error occurred while extracting files."
+msgstr "ফাইলসমূহ নিষ্কাষণ কৰোতে এটা ত্ৰুটি দেখা দিলে।"
+
+#: ../src/fr-window.c:2823
+#, c-format
+msgid "Could not open \"%s\""
+msgstr "\"%s\" খোলিব পৰা নগল"
+
+#: ../src/fr-window.c:2828
+msgid "An error occurred while loading the archive."
+msgstr "আৰ্কাইভ ল'ড কৰাৰ সময়ত এটা ত্ৰুটি দেখা দিলে।"
+
+#: ../src/fr-window.c:2832
+msgid "An error occurred while deleting files from the archive."
+msgstr "আৰ্কাইভৰ পৰা ফাইল মচাৰ সময়ত এটা ত্ৰুটি দেখা দিলে।"
+
+#: ../src/fr-window.c:2838
+msgid "An error occurred while adding files to the archive."
+msgstr "আৰ্কাইভত ফাইল যোগ কৰাৰ সময়ত এটা ত্ৰুটি দেখা দিলে।"
+
+#: ../src/fr-window.c:2842
+msgid "An error occurred while testing archive."
+msgstr "আৰ্কাইভ পৰীক্ষা কৰাৰ সময়ত এটা ত্ৰুটি দেখা দিলে।"
+
+#
+#: ../src/fr-window.c:2847
+msgid "An error occurred while saving the archive."
+msgstr "আৰ্কাইভ সংৰক্ষণ কৰাৰ সময়ত এটা ত্ৰুটি দেখা দিলে।"
+
+#: ../src/fr-window.c:2851
+msgid "An error occurred while renaming the files."
+msgstr "ফাইলসমূহ পুনৰ নামকৰণ কৰোতে এটা ত্ৰুটি দেখা দিলে।"
+
+#: ../src/fr-window.c:2855
+msgid "An error occurred while updating the files."
+msgstr "ফাইলসমূহ আপডেইট কৰোতে এটা ত্ৰুটি দেখা দিলে।"
+
+#
+#: ../src/fr-window.c:2859
+msgid "An error occurred."
+msgstr "এটা ত্ৰুটি দেখা দিছে।"
+
+#: ../src/fr-window.c:2865
+msgid "Command not found."
+msgstr "কমান্ড পোৱা নাযায়।"
+
+#: ../src/fr-window.c:3023
+msgid "Test Result"
+msgstr "পৰীক্ষাৰ ফলাফল"
+
+#: ../src/fr-window.c:3966 ../src/fr-window.c:8635 ../src/fr-window.c:8669
+#: ../src/fr-window.c:8935
+msgid "Could not perform the operation"
+msgstr "কাম পৰিৱেশন কৰিবলৈ ব্যৰ্থ"
+
+#: ../src/fr-window.c:3992
+msgid ""
+"Do you want to add this file to the current archive or open it as a new "
+"archive?"
+msgstr "এই ফাইলক বৰ্তমান আৰ্কাইভত যোগ কৰিব নে তাক নতুন আৰ্কাইভ ৰূপে খোলিব বিচাৰে?"
+
+#: ../src/fr-window.c:4022
+msgid "Do you want to create a new archive with these files?"
+msgstr "এই ফাইলসমূহ সহ এটা নতুন আৰ্কাইভ সৃষ্টি কৰিব নেকি ?"
+
+#: ../src/fr-window.c:4025
+msgid "Create _Archive"
+msgstr "আৰ্কাইভ সৃষ্টি কৰক (_A)"
+
+#: ../src/fr-window.c:4054 ../src/fr-window.c:7105
+msgid "New Archive"
+msgstr "নতুন আৰ্কাইভ"
+
+#: ../src/fr-window.c:4642
+msgid "Folders"
+msgstr "ফোল্ডাৰসমূহ"
+
+#: ../src/fr-window.c:4680 ../src/ui/file-selector.ui.h:5
+msgctxt "File"
+msgid "Size"
+msgstr "আকাৰ"
+
+#: ../src/fr-window.c:4681
+msgctxt "File"
+msgid "Type"
+msgstr "ধৰণ"
+
+#: ../src/fr-window.c:4682 ../src/ui/file-selector.ui.h:6
+msgctxt "File"
+msgid "Modified"
+msgstr "পৰিবৰ্তিত"
+
+#: ../src/fr-window.c:4683
+msgctxt "File"
+msgid "Location"
+msgstr "অৱস্থান"
+
+#: ../src/fr-window.c:4692 ../src/ui/file-selector.ui.h:4
+msgctxt "File"
+msgid "Name"
+msgstr "নাম"
+
+#: ../src/fr-window.c:5519
+msgid "Find:"
+msgstr "সন্ধান কৰক:"
+
+#. Translators: this is the label for the "open recent file" sub-menu.
+#: ../src/fr-window.c:5614
+msgid "Open _Recent"
+msgstr "শেহতীয়া খোলক (_R)"
+
+#: ../src/fr-window.c:5615 ../src/fr-window.c:5627
+msgid "Open a recently used archive"
+msgstr "শেহতীয়াভাৱে ব্যবহৃত আৰ্কাইভ খোলক"
+
+#
+#. Translators: after the colon there is a folder name.
+#: ../src/fr-window.c:5699 ../src/ui/file-selector.ui.h:1
+#: ../src/ui/new-archive-dialog.ui.h:2
+msgid "_Location:"
+msgstr "অৱস্থান (_L):"
+
+#: ../src/fr-window.c:6521
+#, c-format
+msgid "Replace file \"%s\"?"
+msgstr "ফাইল \"%s\" প্ৰতিস্থাপন কৰিব নে?"
+
+#: ../src/fr-window.c:6524
+#, c-format
+msgid "Another file with the same name already exists in \"%s\"."
+msgstr "একে নামৰ অন্যৰ ফাইল ইতিমধ্যে \"%s\" ত অস্তিত্ববান।"
+
+#: ../src/fr-window.c:6531
+msgid "Replace _All"
+msgstr "সকলো প্ৰতিস্থাপন কৰক (_A)"
+
+#: ../src/fr-window.c:6532
+msgid "_Skip"
+msgstr "বাদ দিয়ক (_S)"
+
+#: ../src/fr-window.c:7287 ../src/fr-window.c:7643
+#, c-format
+msgid "Could not save the archive \"%s\""
+msgstr "\"%s\" আৰ্কাইভ সংৰক্ষণ কৰিবলৈ ব্যৰ্থ"
+
+#: ../src/fr-window.c:7414
+msgid "Save"
+msgstr "সংৰক্ষণ কৰক"
+
+#: ../src/fr-window.c:7737
+msgid "Last Output"
+msgstr "সৰ্বশেষ আউটপুট"
+
+#. Translators: the name references to a filename.  This message can appear when renaming a file.
+#: ../src/fr-window.c:7959
+msgid "New name is void, please type a name."
+msgstr "নতুন নাম বৈধ নহয়, অনুগ্ৰহ কৰি এটা নাম টাইপ কৰক।"
+
+#. Translators: the name references to a filename.  This message can appear when renaming a file.
+#: ../src/fr-window.c:7964
+msgid "New name is the same as old one, please type other name."
+msgstr "নতুন নাম পুৰনিৰ সৈতে একে, অনুগ্ৰহ কৰি অন্য নাম টাইপ কৰক।"
+
+#. Translators: the %s references to a filename.  This message can appear when renaming a file.
+#: ../src/fr-window.c:7969
+#, c-format
+msgid ""
+"Name \"%s\" is not valid because it contains at least one of the following "
+"characters: %s, please type other name."
+msgstr ""
+"নাম \"%s\" বৈধ নহয় কাৰণ ই নিম্নলিখিত আখৰসমূহৰ অন্তত এটা: %s অন্তৰ্ভুক্ত কৰে, অনুগ্ৰহ "
+"কৰি অন্য নাম টাইপ কৰক।"
+
+#: ../src/fr-window.c:8005
+#, c-format
+msgid ""
+"A folder named \"%s\" already exists.\n"
+"\n"
+"%s"
+msgstr ""
+"\"%s\" নামে এটা ফোল্ডাৰ ইথিমধ্যে উপস্থিত।\n"
+"\n"
+"%s"
+
+#: ../src/fr-window.c:8005 ../src/fr-window.c:8007
+msgid "Please use a different name."
+msgstr "অনুগ্ৰহ কৰি এটা ভিন্ন নাম ব্যবহাৰ কৰক।"
+
+#: ../src/fr-window.c:8007
+#, c-format
+msgid ""
+"A file named \"%s\" already exists.\n"
+"\n"
+"%s"
+msgstr ""
+"\"%s\" নামে এটা ফাইল ইতিমধ্যে উপস্থিত।\n"
+"\n"
+"%s"
+
+#: ../src/fr-window.c:8077
+msgid "Rename"
+msgstr "পুনৰনামকৰণ"
+
+#: ../src/fr-window.c:8078
+msgid "_New folder name:"
+msgstr "নতুন ফোল্ডাৰৰ নাম (_N):"
+
+#: ../src/fr-window.c:8078
+msgid "_New file name:"
+msgstr "নতুন ফাইলৰ নাম (_N):"
+
+#: ../src/fr-window.c:8082
+msgid "_Rename"
+msgstr "পুনৰনামকৰণ (_R)"
+
+#: ../src/fr-window.c:8099 ../src/fr-window.c:8118
+msgid "Could not rename the folder"
+msgstr "ফোল্ডাৰৰ নাম পুনৰনামকৰণ কৰা সম্ভৱ নহয়"
+
+#: ../src/fr-window.c:8099 ../src/fr-window.c:8118
+msgid "Could not rename the file"
+msgstr "ফাইলৰ নাম পুনৰনামকৰণ কৰা সম্ভৱ নহয়"
+
+#. Translators: %s are archive filenames
+#: ../src/fr-window.c:8542
+#, c-format
+msgid "Moving the files from \"%s\" to \"%s\""
+msgstr "\"%s\" ৰ পৰা \"%s\" লে ফাইলসমূহ স্থানান্তৰ কৰা হৈছে"
+
+#. Translators: %s are archive filenames
+#: ../src/fr-window.c:8545
+#, c-format
+msgid "Copying the files from \"%s\" to \"%s\""
+msgstr "\"%s\" ৰ পৰা \"%s\" লে ফাইলসমূহ কপি কৰা হৈছে"
+
+#: ../src/fr-window.c:8596
+msgid "Paste Selection"
+msgstr "নিৰ্বাচিত অংশ পেইস্ট কৰক"
+
+#: ../src/fr-window.c:8597
+msgid "_Destination folder:"
+msgstr "গন্তব্য ফোল্ডাৰ (_D):"
+
+#: ../src/fr-window.c:9195
+msgid "Add files to an archive"
+msgstr "আৰ্কাইভত ফাইলসমূহ যোগ কৰক"
+
+#: ../src/fr-window.c:9239 ../src/main.c:448 ../src/main.c:484
+#: ../src/main.c:510 ../src/main.c:802
+msgid "Extract archive"
+msgstr "আৰ্কাইভ নিষ্কাষণ কৰক"
+
+#. This is the time format used in the "Date Modified" column and
+#. * in the Properties dialog.  See the man page of strftime for an
+#. * explanation of the values.
+#: ../src/glib-utils.c:733
+msgid "%d %B %Y, %H:%M"
+msgstr "%d %B %Y, %H:%M"
+
+#: ../src/gtk-utils.c:557
+msgid "Could not display help"
+msgstr "সহায় প্ৰদৰ্শন কৰিব নোৱাৰি"
+
+#: ../src/main.c:68
+msgid "Add files to the specified archive and quit the program"
+msgstr "নিৰ্বাচিত আৰ্কাইভত ফাইলসমূহ যোগ কৰি প্ৰগ্ৰামৰ পৰা প্ৰস্থান কৰক"
+
+#: ../src/main.c:69
+msgid "ARCHIVE"
+msgstr "ARCHIVE"
+
+#: ../src/main.c:72
+msgid "Add files asking the name of the archive and quit the program"
+msgstr "আৰ্কাইভৰ নাম সোধা ফাইলসমূহ যোগ কৰক আৰু প্ৰগ্ৰামৰ পৰা প্ৰস্থান কৰক"
+
+#: ../src/main.c:76
+msgid "Extract archives to the specified folder and quit the program"
+msgstr "উল্লিখিত ফোল্ডাৰত আৰ্কাইভ নিষ্কাষণ কৰি প্ৰগ্ৰামৰ পৰা প্ৰস্থান কৰক"
+
+#: ../src/main.c:77 ../src/main.c:89
+msgid "FOLDER"
+msgstr "FOLDER"
+
+#: ../src/main.c:80
+msgid "Extract archives asking the destination folder and quit the program"
+msgstr "গন্তব্য ফোল্ডাৰৰ নাম সোধা আৰ্কাইভ নিষ্কাষণ কৰক আৰু প্ৰগ্ৰাম বন্ধ কৰক"
+
+#: ../src/main.c:84
+msgid ""
+"Extract the contents of the archives in the archive folder and quit the "
+"program"
+msgstr "আৰ্কাইভ ফোল্ডাৰত আৰ্কাইভ নিষ্কাষণ কৰি প্ৰগ্ৰামৰ পৰা প্ৰস্থান কৰক"
+
+#: ../src/main.c:88
+msgid "Default folder to use for the '--add' and '--extract' commands"
+msgstr "'--add' আৰু '--extract' কমান্ডৰ বাবে ব্যবহৃত অবিকল্পিত ফোল্ডাৰ"
+
+#: ../src/main.c:92
+msgid "Create destination folder without asking confirmation"
+msgstr "নিশ্চিতকৰণ নহোৱাকে গন্তব্য ফোল্ডাৰ সৃষ্টি কৰক"
+
+#: ../src/main.c:96
+msgid "Use the notification system to notify the operation completion"
+msgstr "কাৰ্য্যৰ সমাপ্তি অধিসূচীত কৰিবলে অধিসূচনা প্ৰণালী ব্যৱহাৰ কৰক"
+
+#: ../src/main.c:99
+msgid "Start as a service"
+msgstr "এটা সেৱা হিচাপে আৰম্ভ কৰক"
+
+#: ../src/main.c:102
+msgid "Show version"
+msgstr "সংস্কৰণ দেখুৱাওক"
+
+#. manually set name and icon
+#: ../src/main.c:629
+msgid "File Roller"
+msgstr "File Roller"
+
+#: ../src/main.c:660
+msgid "- Create and modify an archive"
+msgstr "- এটা আৰ্কাইভ সৃষ্টি আৰু পৰিবৰ্তন কৰক"
+
+#: ../src/ui/add-dialog-options.ui.h:1
+msgid "Add"
+msgstr "যোগ কৰক"
+
+#
+#: ../src/ui/add-dialog-options.ui.h:2
+msgid "Include _files:"
+msgstr "ফাইলসমূহ অন্তৰ্ভুক্ত কৰক (_f):"
+
+#: ../src/ui/add-dialog-options.ui.h:3
+msgid "E_xclude files:"
+msgstr "ফাইলসমূহ বাদ দিয়ক (_x):"
+
+#
+#: ../src/ui/add-dialog-options.ui.h:4
+msgid "_Exclude folders:"
+msgstr "ফোল্ডাৰসমূহ বাদ দিয়ক: (_E)"
+
+#: ../src/ui/add-dialog-options.ui.h:5 ../src/ui/extract-dialog-options.ui.h:5
+msgid "example: *.o; *.bak"
+msgstr "উদাহৰণ: *.o; *.bak"
+
+#: ../src/ui/add-dialog-options.ui.h:6 ../src/ui/extract-dialog-options.ui.h:6
+msgid "Actions"
+msgstr "কাৰ্য্যসমূহ"
+
+#
+#: ../src/ui/add-dialog-options.ui.h:7
+msgid "Add only if _newer"
+msgstr "কেৱল নতুন হলে হে যোগ কৰক (_n)"
+
+#: ../src/ui/add-dialog-options.ui.h:8
+msgid "_Follow symbolic links"
+msgstr "সাংকেতিক লিঙ্কসমূহ অনুকৰণ কৰক (_F)"
+
+#: ../src/ui/app-menu.ui.h:1
+msgid "_New Archive"
+msgstr "নতুন আৰ্কাইভ (_N)"
+
+#: ../src/ui/app-menu.ui.h:2 ../src/ui.h:34
+msgid "_Help"
+msgstr "সহায় (_H)"
+
+#: ../src/ui/app-menu.ui.h:3
+msgid "_About Archive Manager"
+msgstr "আৰ্কাইভ ব্যৱস্থাপকৰ বিষয়ে (_A)"
+
+#: ../src/ui/app-menu.ui.h:4
+msgid "_Quit"
+msgstr "প্ৰস্থান কৰক (_Q)"
+
+#: ../src/ui/ask-password.ui.h:1 ../src/ui/new-archive-dialog-options.ui.h:1
+#: ../src/ui/new-archive-dialog.ui.h:4
+msgid "_Password:"
+msgstr "পাছৱাৰ্ড (_প):"
+
+#: ../src/ui/delete.ui.h:1
+msgid "Delete"
+msgstr "মচি পেলাওক"
+
+#: ../src/ui/delete.ui.h:2 ../src/ui/extract-dialog-options.ui.h:4
+msgid "_Files:"
+msgstr "ফাইলসমূহ (_F):"
+
+#: ../src/ui/delete.ui.h:3
+msgid "example: *.txt; *.doc"
+msgstr "উদাহৰণ: *.txt; *.doc"
+
+#: ../src/ui/delete.ui.h:4 ../src/ui/extract-dialog-options.ui.h:2
+msgid "_All files"
+msgstr "সকলো ফাইল (_A)"
+
+#: ../src/ui/delete.ui.h:5 ../src/ui/extract-dialog-options.ui.h:3
+msgid "_Selected files"
+msgstr "নিৰ্বাচিত ফাইলসমূহ (_S)"
+
+#: ../src/ui/error-dialog.ui.h:1
+msgid "C_ommand Line Output:"
+msgstr "কমান্ড শাৰী আউটপুট (_o):"
+
+#: ../src/ui/extract-dialog-options.ui.h:7
+msgid "_Keep directory structure"
+msgstr "ডাইৰেকটৰি অবয়ব ৰাখক (_K)"
+
+#: ../src/ui/extract-dialog-options.ui.h:8
+msgid "Do not _overwrite newer files"
+msgstr "নতুন ফাইলসমূহক পুনৰ নিলিখিব (_o)"
+
+#: ../src/ui/file-selector.ui.h:2 ../src/ui.h:188
+msgid "Go up one level"
+msgstr "এক স্তৰ উপৰত যাওক"
+
+#: ../src/ui/file-selector.ui.h:3
+msgid "Places"
+msgstr "স্থানসমূহ"
+
+#: ../src/ui/file-selector.ui.h:7
+msgid "_Select All"
+msgstr "সকলোবোৰ বাছক (_S)"
+
+#: ../src/ui/file-selector.ui.h:8 ../src/ui.h:101
+msgid "Dese_lect All"
+msgstr "সকলো অনিৰ্বাচিত কৰক (_l)"
+
+#: ../src/ui/file-selector.ui.h:9
+msgid "Show Hidden Files"
+msgstr "লুকুৱা ফাইলসমূহ দেখুৱাওক"
+
+#: ../src/ui.h:31
+msgid "_Archive"
+msgstr "আৰ্কাইভ (_A)"
+
+#: ../src/ui.h:32
+msgid "_Edit"
+msgstr "সম্পাদনা কৰক (_E)"
+
+#: ../src/ui.h:33
+msgid "_View"
+msgstr "দৰ্শন কৰক (_V)"
+
+#: ../src/ui.h:35
+msgid "_Arrange Files"
+msgstr "ফাইলসমূহ সজাওক (_A)"
+
+#: ../src/ui.h:39
+msgid "Information about the program"
+msgstr "প্ৰগ্ৰামৰ বিষয়ে তথ্য"
+
+#: ../src/ui.h:42
+msgid "_Add Files…"
+msgstr "ফাইলসমূহ যোগ কৰক (_A)…"
+
+#: ../src/ui.h:43 ../src/ui.h:47
+msgid "Add files to the archive"
+msgstr "আৰ্কাইভত ফাইলসমূহ যোগ কৰক"
+
+#: ../src/ui.h:51
+msgid "Close the current archive"
+msgstr "বৰ্তমান আৰ্কাইভ বন্ধ কৰক"
+
+#: ../src/ui.h:54
+msgid "Contents"
+msgstr "সমলসমূহ"
+
+#: ../src/ui.h:55
+msgid "Display the File Roller Manual"
+msgstr "File Roller হাতপুথি প্ৰদৰ্শন কৰক"
+
+#: ../src/ui.h:60 ../src/ui.h:81
+msgid "Copy the selection"
+msgstr "নিৰ্বাচিত অংশ কপি কৰক"
+
+#: ../src/ui.h:64 ../src/ui.h:85
+msgid "Cut the selection"
+msgstr "নিৰ্বাচিত অংশ কাট কৰক"
+
+#: ../src/ui.h:68 ../src/ui.h:89
+msgid "Paste the clipboard"
+msgstr "ক্লিপ-বোৰ্ডৰ পৰা পেইস্ট কৰক"
+
+#: ../src/ui.h:71 ../src/ui.h:92
+msgid "_Rename…"
+msgstr "পুনৰনামকৰণ কৰক (_R)…"
+
+#: ../src/ui.h:72 ../src/ui.h:93
+msgid "Rename the selection"
+msgstr "নিৰ্বাচিত অংশৰ নাম পুনৰনামকৰণ কৰক"
+
+#: ../src/ui.h:76 ../src/ui.h:97
+msgid "Delete the selection from the archive"
+msgstr "আৰ্কাইভৰ পৰা নিৰ্বাচিত ফাইল মচি পেলাওক"
+
+#: ../src/ui.h:102
+msgid "Deselect all files"
+msgstr "সকলো ফাইল অনিৰ্বাচিত কৰক"
+
+#: ../src/ui.h:105 ../src/ui.h:109
+msgid "_Extract…"
+msgstr "নিষ্কাষণ কৰক (_E)…"
+
+#: ../src/ui.h:106 ../src/ui.h:110 ../src/ui.h:114
+msgid "Extract files from the archive"
+msgstr "আৰ্কাইভৰ পৰা ফাইল নিষ্কাষণ কৰক"
+
+#: ../src/ui.h:117
+msgid "Find…"
+msgstr "সন্ধান কৰক…"
+
+#: ../src/ui.h:122
+msgid "New…"
+msgstr "নতুন…"
+
+#: ../src/ui.h:123
+msgid "Create a new archive"
+msgstr "এটা নতুন আৰ্কাইভ সৃষ্টি কৰক"
+
+#: ../src/ui.h:126
+msgid "Open…"
+msgstr "খোলক…"
+
+#: ../src/ui.h:127 ../src/ui.h:131
+msgid "Open archive"
+msgstr "আৰ্কাইভ খোলক"
+
+#: ../src/ui.h:134
+msgid "_Open With…"
+msgstr "সৈতে খোলক (_O)…"
+
+#: ../src/ui.h:135
+msgid "Open selected files with an application"
+msgstr "নিৰ্বাচন কৰা ফাইল এটা এপ্লিকেচনৰ সৈতে খোলক"
+
+#: ../src/ui.h:138
+msgid "Pass_word…"
+msgstr "পাছৱাৰ্ড (_w)…"
+
+#: ../src/ui.h:139
+msgid "Specify a password for this archive"
+msgstr "এই আৰ্কাইভৰ বাবে এটা পাছৱাৰ্ড ধাৰ্য্য কৰক"
+
+#: ../src/ui.h:143
+msgid "Show archive properties"
+msgstr "আৰ্কাইভৰ বৈশিষ্ট্যসমূহ দেখুৱাওক"
+
+#: ../src/ui.h:147
+msgid "Reload current archive"
+msgstr "বৰ্তমান আৰ্কাইভ পুনৰ ল'ড কৰক"
+
+#: ../src/ui.h:150
+msgid "Save As…"
+msgstr "এনেকৈ সংৰক্ষণ কৰক…"
+
+#: ../src/ui.h:151
+msgid "Save the current archive with a different name"
+msgstr "পৃথক নামে বৰ্তমান আৰ্কাইভ সংৰক্ষণ কৰক"
+
+#: ../src/ui.h:155
+msgid "Select all files"
+msgstr "সকলো ফাইল বাছক"
+
+#: ../src/ui.h:158
+msgid "_Test Integrity"
+msgstr "অক্ষণ্ডতা পৰীক্ষা কৰক (_T)"
+
+#: ../src/ui.h:159
+msgid "Test whether the archive contains errors"
+msgstr "আৰ্কাইভত ত্ৰুটি আছে নে সেয়া পৰীক্ষা কৰক"
+
+#
+#: ../src/ui.h:163 ../src/ui.h:167
+msgid "Open the selected file"
+msgstr "নিৰ্বাচিত ফাইল খোলক"
+
+#: ../src/ui.h:171 ../src/ui.h:175
+msgid "Open the selected folder"
+msgstr "নিৰ্বাচিত ফোল্ডাৰ খোলক"
+
+#: ../src/ui.h:180
+msgid "Go to the previous visited location"
+msgstr "আগতে ভ্ৰমণ কৰা অৱস্থানত যাওক"
+
+#: ../src/ui.h:184
+msgid "Go to the next visited location"
+msgstr "পৰবৰ্তী প্ৰদৰ্শিত অৱস্থানত যাওক"
+
+#. Translators: the home location is the home folder.
+#: ../src/ui.h:193
+msgid "Go to the home location"
+msgstr "ঘৰ অৱস্থানত যাওক"
+
+#: ../src/ui.h:201
+msgid "_Toolbar"
+msgstr "টুলবাৰ (_T)"
+
+#: ../src/ui.h:202
+msgid "View the main toolbar"
+msgstr "প্ৰধান টুলবাৰ দৰ্শন কৰক"
+
+#: ../src/ui.h:206
+msgid "Stat_usbar"
+msgstr "অৱস্থাবাৰ (_u)"
+
+#: ../src/ui.h:207
+msgid "View the statusbar"
+msgstr "অৱস্থাবাৰ দৰ্শন কৰক"
+
+#: ../src/ui.h:211
+msgid "_Folders"
+msgstr "ফোল্ডাৰসমূহ (_F)"
+
+#: ../src/ui.h:221
+msgid "View All _Files"
+msgstr "সকলো ফাইল দৰ্শন কৰক (_F)"
+
+#: ../src/ui.h:224
+msgid "View as a F_older"
+msgstr "এটা ফোল্ডাৰ হিচাপে দৰ্শন কৰক (_o)"
+
+#
+#: ../src/ui/new-archive-dialog-options.ui.h:2
+#: ../src/ui/new-archive-dialog.ui.h:5
+msgid "_Encrypt the file list too"
+msgstr "ফাইলৰ তালিকাও এনক্ৰিপ্ট কৰক (_E)"
+
+#. this is part of a sentence, for example "split into volumes of 10.0 MB", where MB stands for megabyte.
+#: ../src/ui/new-archive-dialog-options.ui.h:3
+#: ../src/ui/new-archive-dialog.ui.h:7
+msgid "Split into _volumes of"
+msgstr "আয়তনসমূহত বিভাজন কৰক (_v)"
+
+#
+#. MB means megabytes
+#: ../src/ui/new-archive-dialog-options.ui.h:5
+#: ../src/ui/new-archive-dialog.ui.h:9
+msgid "MB"
+msgstr "MB"
+
+#
+#: ../src/ui/new-archive-dialog-options.ui.h:6
+#: ../src/ui/new-archive-dialog.ui.h:10
+msgid "_Other Options"
+msgstr "অন্য বিকল্পসমূহ (_O)"
+
+#: ../src/ui/new-archive-dialog.ui.h:1
+msgid "_Filename:"
+msgstr "ফাইলৰ নাম (_F):"
+
+#: ../src/ui/new-archive-dialog.ui.h:3
+msgid "Location"
+msgstr "অৱস্থান"
+
+#: ../src/ui/password.ui.h:1
+msgid "Password"
+msgstr "পাছৱাৰ্ড"
+
+#: ../src/ui/password.ui.h:2
+msgid "_Encrypt the file list"
+msgstr "ফাইলৰ তালিকা এনক্ৰিপ্ট কৰক (_E)"
+
+#: ../src/ui/properties.ui.h:1
+msgctxt "File"
+msgid "Name:"
+msgstr "নাম:"
+
+#: ../src/ui/properties.ui.h:2
+msgid "Archive size:"
+msgstr "আৰ্কাইভৰ আকাৰ:"
+
+#. after the colon there is a folder name.
+#: ../src/ui/properties.ui.h:4
+msgid "Location:"
+msgstr "অৱস্থান:"
+
+#: ../src/ui/properties.ui.h:5
+msgid "Compression ratio:"
+msgstr "সংকোচনৰ অনুপাত:"
+
+#: ../src/ui/properties.ui.h:6
+msgid "Last modified:"
+msgstr "শেষ পৰিবৰ্তন কৰা হৈছিল:"
+
+#: ../src/ui/properties.ui.h:7
+msgid "Content size:"
+msgstr "সমলৰ আকাৰ:"
+
+#: ../src/ui/properties.ui.h:8
+msgid "Number of files:"
+msgstr "ফাইলসমূহৰ সংখ্যা:"
+
+#. after the colon there is a file type.
+#: ../src/ui/properties.ui.h:10
+msgid "Type:"
+msgstr "ধৰণ:"
+
+#: ../src/ui/update.ui.h:1
+msgid "_Update"
+msgstr "আপডেইট কৰক (_U)"
+
+#: ../src/ui/update.ui.h:3
+msgid "S_elect the files you want to update:"
+msgstr "আপুনি আপডেইট কৰিব বিচৰা ফাইলসমূহ বাছক (_e):"
+
+#~ msgid ""
+#~ "Note: the password will be used to encrypt files you add to the current "
+#~ "archive, and to decrypt files you extract from the current archive. When "
+#~ "the archive is closed the password will be deleted."
+#~ msgstr ""
+#~ "টোকা: বৰ্তমান আৰ্কাইভত সংযোজিত ফাইলসমূহ এনক্ৰিপ্ট কৰিবলৈ, আৰু আৰ্কাইভৰ পৰা "
+#~ "নিষ্কাষণ কৰা ফাইল ডিক্ৰিপ্ট কৰিবলৈ এই পাছৱাৰ্ডটো ব্যবহৃত হ'ব। আৰ্কাইভ বন্ধ কৰা "
+#~ "হ'লে পাছৱাৰ্ড মচি পেলোৱা হ'ব।"
+
+#~ msgid ""
+#~ "The name \"%s\" is not valid because it cannot contain the characters: "
+#~ "%s\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "নাম \"%s\" বৈধ নহয় কাৰণ ই এই আখৰসমূহ অন্তৰ্ভুক্ত কৰিব নোৱাৰে: %s\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "You don't have the right permissions to create an archive in the "
+#~ "destination folder."
+#~ msgstr "গন্তব্য ফোল্ডাৰত আৰ্কাইভ সৃষ্টি কৰাৰ বাবে আপোনাৰ পৰ্যাপ্ত অনুমতি নাই।"
+
+#~ msgid "Archive not created"
+#~ msgstr "আৰ্কাইভ সৃষ্টি কৰা হোৱা নাই"
+
+#~ msgid "The archive is already present.  Do you want to overwrite it?"
+#~ msgstr "আৰ্কাইভটো ইথিমধ্যে উপস্থিত। আপুনি কি ইয়াক প্ৰতিস্থাপন কৰিব বিচাৰে?"
+
+#~ msgid "_Overwrite"
+#~ msgstr "পুনৰ লিখক (_O)"
+
+#~ msgid "7-Zip"
+#~ msgstr "7-Zip"
+
+#~ msgid "Tar compressed with 7z"
+#~ msgstr "7z দ্বাৰা সংকোচন কৰা Tar"
+
+#~ msgid "Ace"
+#~ msgstr "Ace"
+
+#~ msgid "Ar"
+#~ msgstr "Ar"
+
+#~ msgid "Arj"
+#~ msgstr "Arj"
+
+#~ msgid "Tar compressed with bzip2"
+#~ msgstr "bzip2 দ্বাৰা সংকোচন কৰা Tar"
+
+#~ msgid "Tar compressed with bzip"
+#~ msgstr "bzip দ্বাৰা সংকোচন কৰা Tar"
+
+#~ msgid "Cabinet"
+#~ msgstr "কেবিনেট"
+
+#~ msgid "Rar Archived Comic Book"
+#~ msgstr "Rar আৰ্কাইভ কৰা কমিক কিতাপ"
+
+#~ msgid "Zip Archived Comic Book"
+#~ msgstr "Zip আৰ্কাইভ কৰা কমিক কিতাপ"
+
+#~ msgid "ISO Image"
+#~ msgstr "ISO ছবি"
+
+#~ msgid "Tar compressed with gzip"
+#~ msgstr "gzip দ্বাৰা সংকোচন কৰা Tar"
+
+#~ msgid "Cpio"
+#~ msgstr "Cpio"
+
+#~ msgid "Ear"
+#~ msgstr "Ear"
+
+#~ msgid "Self-extracting zip"
+#~ msgstr "স্বনিষ্কাষণ zip"
+
+#~ msgid "Jar"
+#~ msgstr "Jar"
+
+#~ msgid "Lha"
+#~ msgstr "Lha"
+
+#~ msgid "Lrzip"
+#~ msgstr "Lrzip"
+
+#~ msgid "Tar compressed with lrzip"
+#~ msgstr "lrzip দ্বাৰা সংকোচন কৰা Tar"
+
+#~ msgid "Tar compressed with lzip"
+#~ msgstr "lzip দ্বাৰা সংকোচন কৰা Tar"
+
+#~ msgid "Tar compressed with lzma"
+#~ msgstr "lzma দ্বাৰা সংকোচন কৰা Tar"
+
+#~ msgid "Tar compressed with lzop"
+#~ msgstr "lzop দ্বাৰা সংকোচন কৰা Tar"
+
+#~ msgid "Windows Imaging Format"
+#~ msgstr "Windows ছবি বিন্যাস"
+
+#~ msgid "Rar"
+#~ msgstr "Rar"
+
+#~ msgid "Tar uncompressed"
+#~ msgstr "অসংকোচিত Tar"
+
+#~ msgid "Tar compressed with compress"
+#~ msgstr "compress দ্বাৰা সংকোচন কৰা Tar"
+
+#~ msgid "War"
+#~ msgstr "War"
+
+#~ msgid "Xar"
+#~ msgstr "Xar"
+
+#~ msgid "Xz"
+#~ msgstr "Xz"
+
+#~ msgid "Tar compressed with xz"
+#~ msgstr "xz দ্বাৰা সংকোচন কৰা Tar"
+
+#~ msgid "Zoo"
+#~ msgstr "Zoo"
+
+#~ msgid "Zip"
+#~ msgstr "Zip"
+
+#~ msgctxt "File"
+#~ msgid "New"
+#~ msgstr "নতুন"
+
+#~ msgid "All Files"
+#~ msgstr "সকলো ফাইল"
+
+#~ msgid "All Supported Files"
+#~ msgstr "সকলো সমৰ্থিত ফাইল"
+
+#~ msgid "Password required for \"archive.tar.xz\""
+#~ msgstr "\"archive.tar.xz\" ৰ বাবে পাছৱাৰ্ডৰ প্ৰয়োজন"
+
+#~ msgid "Use mime icons"
+#~ msgstr "মাইম আইকনসমূহ ব্যৱহাৰ কৰক"
+
+#~ msgid ""
+#~ "If true will display icons depending on the file type (slower), otherwise "
+#~ "will use always the same icon for all files (faster)."
+#~ msgstr ""
+#~ "যদি সত্য হয় তেনেহলে আইকনসমূহ প্ৰদৰ্শন কৰিব ফাইলৰ ধৰণৰ (অদ্ৰুত) উপৰত ভিত্তি "
+#~ "কৰি, আৰু নহলে সদায় একেটা আইকন ব্যৱহাৰ কৰিব সকলো ফাইলৰ বাবে (দ্ৰুত)।"
+
+#~ msgid "Add a Folder"
+#~ msgstr "এটা ফোল্ডাৰ যোগ কৰক"
+
+#~ msgctxt "File"
+#~ msgid "Date Modified"
+#~ msgstr "পৰিবৰ্তনৰ তাৰিখ"
+
+#~ msgid "Filters"
+#~ msgstr "পৰিস্ৰাৱকসমূহ"
+
+#~ msgid "Add a _Folder…"
+#~ msgstr "এটা ফোল্ডাৰ যোগ কৰক (_F)…"
+
+#~ msgid "Add a folder to the archive"
+#~ msgstr "আৰ্কাইভত এটা ফোল্ডাৰ যোগ কৰক"
+
+#~ msgid "Add Folder"
+#~ msgstr "এটা ফোল্ডাৰ যোগ কৰক"
+
+#~ msgid "_Reversed Order"
+#~ msgstr "বিপৰীত ক্ৰম (_R)"
+
+#~ msgid "Reverse the list order"
+#~ msgstr "বিপৰীত দিশত তালিকাৰ ক্ৰম"
+
+#~ msgid "by _Name"
+#~ msgstr "নাম অনুযায়ী (_N)"
+
+#~ msgid "Sort file list by name"
+#~ msgstr "নাম অনুযায়ী ফাইল তালিকা সজাওক"
+
+#~ msgid "by _Size"
+#~ msgstr "আকাৰ অনুযায়ী (_S)"
+
+#~ msgid "Sort file list by file size"
+#~ msgstr "ফাইলৰ আকাৰ অনুযায়ী ফাইল তালিকা সজাওক"
+
+#~ msgid "by T_ype"
+#~ msgstr "ধৰণ অনুযায়ী (_y)"
+
+#~ msgid "Sort file list by type"
+#~ msgstr "ধৰণ অনুযায়ী ফাইল তালিকা সজাওক"
+
+#~ msgid "by _Date Modified"
+#~ msgstr "পৰিবৰ্তনৰ তাৰিখ অনুযায়ী (_D)"
+
+#~ msgid "Sort file list by modification time"
+#~ msgstr "ফাইলৰ পৰিবৰ্তনৰ সময় অনুযায়ী ফাইল তালিকা সজাওক"
+
+#~ msgid "by _Location"
+#~ msgstr "অৱস্থান অনুযায়ী (_L)"
+
+#~ msgid "Sort file list by location"
+#~ msgstr "ফাইলৰ অৱস্থান অনুযায়ী ফাইল তালিকা সজাওক"
+
+#~ msgid "Exclude folders that are symbolic lin_ks"
+#~ msgstr "সাংকেতিক লিঙ্ক ফোল্ডাৰসমূহ বাদ দিয়ক (_k)"
+
+#~ msgid "Do not e_xtract older files"
+#~ msgstr "পুৰনি ফাইলসমূহ নিষ্কাষণ নকৰিব (_x)"
+
+#~ msgid "Overwrite existing files"
+#~ msgstr "উপস্থিত ফাইল পুনৰ লিখক"
+
+#~ msgid "_Include subfolders"
+#~ msgstr "উপফোল্ডাৰসমূহ অন্তৰ্ভুক্ত কৰক (_I)"
+
+#~ msgid "Sa_ve Options"
+#~ msgstr "সংৰক্ষণৰ বিকল্পসমূহ (_v)"
+
+#~ msgid "Re-crea_te folders"
+#~ msgstr "ফোল্ডাৰ পুনৰ সৃষ্টি কৰক (_t)"
+
+#~ msgid "Over_write existing files"
+#~ msgstr "উপস্থিত ফাইলসমূহ পুনৰ লিখক (_w)"
+
+#~ msgid "File _Format: %s"
+#~ msgstr "ফাইল বিন্যাস (_F): %s "
+
+#~ msgid "By Extension"
+#~ msgstr "প্ৰসাৰণেৰে"
+
+#~ msgid "File Format"
+#~ msgstr "ফাইল বিন্যাস"
+
+#~ msgid "Extension(s)"
+#~ msgstr "প্ৰসাৰণ(সমূহ)"
+
+#~ msgid ""
+#~ "The program was not able to find out the file format you want to use for `"
+#~ "%s'. Please make sure to use a known extension for that file or manually "
+#~ "choose a file format from the list below."
+#~ msgstr ""
+#~ "আপুনি '%s' ৰ বাবে ব্যৱহাৰ কৰিব বিচৰা ফাইল সংৰূপ বিচাৰি পাবলে প্ৰগ্ৰামটো অক্ষম "
+#~ "হৈছিল। অনুগ্ৰহ কৰি নিশ্চিত হৈ লওক যে আপুনি ফাইলটোৰ কাৰণে এটা জ্ঞাত প্ৰসাৰণ "
+#~ "ব্যৱহাৰ কৰিব অথবা হস্তচালিতভাৱে নিম্নলিখিত তালিকাৰ পৰা এটা ফাইল সংৰূপ বাচি "
+#~ "লওক।"
+
+#~ msgid "File format not recognized"
+#~ msgstr "ফাইল বিন্যাস অপৰিচিত"
+
+#~ msgid "File not found."
+#~ msgstr "ফাইল পোৱা নগল।"
+
+#~ msgid "Ace (.ace)"
+#~ msgstr "Ace (.ace)"
+
+#~ msgid "Ar (.ar)"
+#~ msgstr "Ar (.ar)"
+
+#~ msgid "Arj (.arj)"
+#~ msgstr "Arj (.arj)"
+
+#~ msgid "Ear (.ear)"
+#~ msgstr "Ear (.ear)"
+
+#~ msgid "Jar (.jar)"
+#~ msgstr "Jar (.jar)"
+
+#~ msgid "Lha (.lzh)"
+#~ msgstr "Lha (.lzh)"
+
+#~ msgid "Lrzip (.lrz)"
+#~ msgstr "Lrzip (.lrz)"
+
+#~ msgid "Rar (.rar)"
+#~ msgstr "Rar (.rar)"
+
+#~ msgid "War (.war)"
+#~ msgstr "War (.war)"
+
+#~ msgid "Xz (.xz)"
+#~ msgstr "Xz (.xz)"
+
+#~ msgid "Zoo (.zoo)"
+#~ msgstr "Zoo (.zoo)"
+
+#~ msgid "Zip (.zip)"
+#~ msgstr "Zip (.zip)"
+
+#~ msgid "Stop current operation"
+#~ msgstr "বৰ্তমান কাম স্থগিত কৰক"
+
+#~ msgid "Adding file: "
+#~ msgstr "ফাইল যোগ কৰা হৈছে: "
+
+#~ msgid "Extracting file: "
+#~ msgstr "ফাইল নিষ্কাষণ কৰা হৈছে: "
+
+#~ msgid "Creating archive"
+#~ msgstr "আৰ্কাইভ সৃষ্টি কৰা  হৈছে"
+
+#~ msgid "Loading archive"
+#~ msgstr "আৰ্কাইভ ল'ড কৰা হৈছে"
+
+#~ msgid "Reading archive"
+#~ msgstr "আৰ্কাইভ পঢ়া হৈছে"
+
+#~ msgid "Testing archive"
+#~ msgstr "আৰ্কাইভ পৰীক্ষা কৰা হৈছে"
+
+#~ msgid "Saving archive"
+#~ msgstr "আৰ্কাইভ সংৰক্ষণ কৰা হৈছে"
+
+#~ msgid "Archive:"
+#~ msgstr "আৰ্কাইভ:"
+
+#~ msgid "Close the folders pane"
+#~ msgstr "ফোল্ডাৰসমূহৰ পেইন বন্ধ কৰক"
+
+#~ msgid "<span weight=\"bold\" size=\"larger\">Password required</span>"
+#~ msgstr "<span weight=\"bold\" size=\"larger\">পাছৱাৰ্ডৰ প্ৰয়োজন</span>"
+
+#~ msgid "The file doesn't exist"
+#~ msgstr "ফাইল উপস্থিত নাই"
+
+#~ msgid "The new name is void."
+#~ msgstr "নতুন নাম সঠিক নহয়।"
+
+#~ msgid "The new name is equal to the old one."
+#~ msgstr "নতুন নাম পুৰনি নামৰ অনুৰূপ।"
+
+#~ msgid "_Add Files..."
+#~ msgstr "ফাইলসমূহ যোগ কৰক... (_A)"
+
+#~ msgid "Add a _Folder..."
+#~ msgstr "এটা ফোল্ডাৰ যোগ কৰক... (_F)"
+
+#~ msgid "_Rename..."
+#~ msgstr "পুনৰনামকৰণ কৰক...(_R)"
+
+#~ msgid "_Extract..."
+#~ msgstr "নিষ্কাষণ কৰক...(_E)"
+
+#~ msgid "Find..."
+#~ msgstr "সন্ধান কৰক..."
+
+#~ msgid "_Last Output"
+#~ msgstr "সৰ্বশেষ আউটপুট (_L)"
+
+#~ msgid "View the output produced by the last executed command"
+#~ msgstr "সৰ্বশেষ সঞ্চালিত কমান্ডৰ আউটপুট দৰ্শন কৰক"
+
+#~ msgid "New..."
+#~ msgstr "নতুন..."
+
+#~ msgid "Open..."
+#~ msgstr "খোলক..."
+
+#~ msgid "Pass_word..."
+#~ msgstr "পাছৱাৰ্ড... (_w)"

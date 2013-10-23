@@ -1,0 +1,443 @@
+# translation of gnome-utils.master.ml.po to
+# This file is distributed under the same license as the gnome-utils package.
+# Copyright (C) 2003-2009 gnome-utils' COPYRIGHT HOLDER.
+#
+# FSF-India <locale@gnu.org.in>, 2003.
+# Ani Peter <apeter@redhat.com>, 2006, 2007, 2008.
+# Santhosh Thottingal <santhosh.thottingal@gmail.com>, 2007.
+# Reviewed by Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>, 2007.
+# Praveen Arimbrathodiyil <pravi.a@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils.master.ml\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2009-09-13 02:37+0530\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "ലോഗ് ഫയല്‍ ദര്‍ശിനി"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "സിസ്റ്റം ലോഗ് ഫയലുകള്‍ കാണുക അല്ലെങ്കില്‍ നിരീക്ഷിക്കുക"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "പ്റധാന ജാലകത്തിന്റെ ഉയരം പിക്സലുകളില്‍"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "ആരംഭിക്കുമ്പോള്‍ തുറക്കേണ്ട ലോഗ് ഫയല്‍"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "ആരംഭിക്കുമ്പോള്‍ തുറക്കേണ്ട ലോഗ് ഫയലുകള്‍"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "ലോഗ് കാണിക്കുന്നതിനായി ഉപയോഗിച്ച ലിപിയുടെ വ്യാപ്തി"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"ആരംഭത്തില്‍ തുറക്കുവാനുള്ള ലോഗ് ഫയലുകളുടെ ഒരു പട്ടിക വ്യക്തമാക്കുന്നു.  /etc/syslog.conf. "
+"സഹജമായ ഒരു പട്ടിക ഉണ്ടാക്കുന്നു."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "ലോഗ് പ്രദര്‍ശിനി പ്രധാന ജാലകത്തിന്റെ ഉയരം പിക്സലുകളില്‍ നല്‍കുക."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"ആരംഭത്തിലുള്ള ലോഗ് ഫയല്‍ വ്യക്തമാക്കുന്നു. നിങ്ങളുടെ ഓപ്പറേറ്റിങ് സിസ്റ്റമനുസരിച്ചുള്ള /var/adm/"
+"messages അല്ലെങ്കില്‍ /var/log/messages ആണു് സഹജമായുള്ളതു്."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"ലോഗ് പ്രധാന ട്രീ പ്രദര്‍ശിപ്പിക്കുന്നതിനായുള്ള സ്ഥിര-വീതിയുള്ള അക്ഷരസഞ്ചയത്തിന്റെ വ്യാപ്തി "
+"വ്യക്തമാക്കുന്നു. സ്വതവേയുള്ള ടെര്‍മിനല്‍ അക്ഷരസഞ്ചയത്തിന്റെ വ്യാപ്തിയാണു് സ്വതവേയുള്ളതു്."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "ലോഗ് പ്രദര്‍ശിനി പ്രധാന ജാലകത്തിന്റെ വീതി പിക്സലുകളില്‍ നല്‍കുക."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "പ്റധാന ജാലകത്തിന്രെ വീതി പിക്സലുകളില്‍"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:2
+#, fuzzy
+msgid "Effect:"
+msgstr "പ്രഭാവങ്ങള്‍"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "_പേരു്:"
+
+#: ../data/logview-filter.ui.h:7
+#, fuzzy
+msgid "_Regular Expression:"
+msgstr "റെഗുലര്‍ എക്സ്പ്രെഷന്‍ ശൂന്യമാണു്!"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"ഇതൊരു സ്വതന്ത്ര സോഫ്റ്റ്‌വെയറാണു്; നിങ്ങള്‍ക്കിതു് സ്വതന്ത്ര സോഫ്റ്റ്‌വെയര്‍ ഫൌണ്ടേഷന്‍ പ്രസിദ്ധീകരിച്ച ഗ്നു "
+"പൊതു അനുമതി പത്രത്തിന്റെ 2 മത്തെ പതിപ്പോ അല്ലെങ്കില്‍ (നിങ്ങള്‍ക്കു് വേണമെങ്കില്‍) അതിലും പുതിയൊരു "
+"പതിപ്പോ പ്രകാരം വിതരണം ചെയ്യുകയും മാറ്റം വരുത്തുകയും ചെയ്യാവുന്നതാണു്. "
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"ഇതു് നിങ്ങള്‍ക്കു് ഉപയോഗപ്രദമാകും എന്ന വിശ്വാസത്തില്‍, എന്നാല്‍ യാതൊരുവിധ ഉത്തരവാദിത്തങ്ങളോ ഒരു "
+"പ്രത്യേ‌ക ആവശ്യ‌ത്തിന് ഉതകുംവിധം വാണിജ്യസംബന്ധിയായ ഉത്തരവാദിത്തം പോലുമില്ലാതെയാണു് വിതരണം "
+"ചെയ്യുന്നതു്. കൂടുതല്‍ വിവരങ്ങള്‍ക്കു് ഗ്നു പൊതു അനുമതി പത്രിക കാണുക."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"നിങ്ങള്‍ക്ക് ഈ പ്രോഗ്രാമിനൊപ്പം ഗ്നൂ പൊതു അനുമതി പത്രികയുടെ ഒരു പകര്‍പ്പ് ലഭിച്ചിട്ടുണ്ടായിരിക്കണം; "
+"ഇല്ലാത്തപക്ഷം, Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, "
+"Boston, MA 02110-1301 USA എന്ന വിലാസത്തിലേയ്ക്കെഴുതുക."
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"അനി പീറ്റര്‍ <peter.ani@gmail.com>\n"
+"സന്തോഷ് തോട്ടിങ്ങല്‍ <santhosh.thottingal@gmail.com>"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "%s ഫയല്‍ തുറക്കുവാന്‍ സാധ്യമല്ല"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "ഫയല്‍ നാമം ശൂന്യമാണ്!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "ഫില്‍‌റ്ററില്‍ നാമത്തില്‍ ':' ഉണ്ടാകുവാന്‍ പാടില്ല"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "റെഗുലര്‍ എക്സ്പ്രെഷന്‍ ശൂന്യമാണു്!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "റെഗുലര്‍ എക്സ്പ്രെഷന്‍ തെറ്റാണു്: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "മുന്‍ഭാഗത്ത് അല്ലെങ്കില്‍ പശ്ചാത്തലത്തിലുള്ള നിറം ദയവായി വ്യക്തമാക്കുക!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "ഫില്‍‌റ്റര്‍ ചിട്ടപ്പെടുത്തുക"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "പുതിയ ഫില്‍‌റ്റര്‍ ചേര്‍ക്കുക"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "ഫില്‍‌റ്ററുകള്‍"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_കണ്ടെത്തുക:"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "മുമ്പുളളതു് കണ്ടെത്തുക"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "തെരയുന്ന സ്ട്രിങ് മുമ്പെവിടെയെന്നു് കണ്ടുപിടിക്കുക"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "അടുത്തതു് കണ്ടെത്തുക"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "തെരയുന്ന സ്ട്രിങ് അടുത്തതെവിടെയെന്നു് കണ്ടുപിടിക്കുക"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "തെരഞ്ഞ വാചകം മായ്ക്കുക"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "GZipped ലോഗ് അണ്‍കംപ്രസ്സ് ചെയ്യുമ്പോള്‍ പിശക്. ഫയല്‍ തെറ്റാവാം."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "ഈ ഫയല്‍ തുറക്കുവാനുള്ള അനുവാദം നിങ്ങള്‍ക്കില്ല."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "ഈ ഫയല്‍ ഒരു സാധാരണ ഫയലോ പദാവലി ഫയലോ അല്ല."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr "സിസ്റ്റം ലോഗിന്റെ ഈ പതിപ്പു് ജിസിപ്പു് ചെയ്ത ലോഗുകളെ പിന്തുണയ്ക്കുന്നില്ല."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "എടുത്തുകൊണ്ടിരിയ്ക്കുന്നു..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "പ്രയോഗത്തിന്റെ പതിപ്പു് കാണിക്കുക"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[LOGFILE...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - ലോഗുകള്‍ പരുതി അവ നിരീക്ഷിക്കുക"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "ലോഗ് നിരീക്ഷകന്‍"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "സിസ്റ്റം ലോഗ് നിരീക്ഷകന്‍"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "അവസാനമായി മാറ്റം വരുത്തിയത്: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d വരികള്‍ (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "ലോഗ് തുറക്കുക"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "സഹായം കാണിയ്ക്കുന്നതില്‍ ഒരു പിശകുണ്ടായി: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "ഒതുക്കിയതു്"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "കണ്ടെത്തിയില്ല"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "ഗ്നോമിനുള്ള സിസ്റ്റം ലോഗ് നിരീക്ഷന്‍."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "ഫയല്‍ (_F)"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "_ചിട്ട"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "_കാഴ്ച"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "_ഫില്‍‌റ്ററുകള്‍"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "സഹായം"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "തുറക്കുക... (_O)"
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "ഫയലില്‍ നിന്നും ഒരു ലോഗ് തുറക്കുക"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "അടയ്‍ക്കുക (_C)"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "ഈ ലോഗ് അടയ്ക്കുക"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "പുറത്ത് കടക്കുക (_Q)"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "ലോഗ് ദര്‍ശിനിയില്‍ നിന്നും പുറത്തു് കടക്കുക"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "പകര്‍ത്തുക (_C)"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "തിരഞ്ഞെടുത്തവ പകര്‍ത്തുക"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "എല്ലാം തിരഞ്ഞെടുക്കുക (_A)"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "ലോഗ് മുഴുവന്‍ തിരഞ്ഞെടുക്കുക"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "_കണ്ടുപിടിയ്ക്കുക..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "ഒരു വാക്ക് അല്ലെങ്കില്‍ വാചകം ലോഗില്‍ കണ്ടെത്തുക"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "വലിയ ടെക്സ്റ്റ് വ്യാപ്തി"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "ചെറിയ ടെക്സ്റ്റ് വ്യാപ്തി"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "സാധാരണ ടെക്സ്റ്റ് വലിപ്പം"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "ഫില്‍‌റ്ററുകള്‍ കൈകാര്യം ചെയ്യുക"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "ഫില്‍‌റ്ററുകള്‍ കൈകാര്യം ചെയ്യുക"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "_ഉളളടക്കം"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "ലോഗ് നിരീക്ഷകനുള്ള സഹായവിവരങ്ങള്‍ തുറക്കുക"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "ഈ പ്രയോഗത്തെപ്പറ്റി"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "ലോഗ് നിരീക്ഷകനുള്ള ഡയലോഗ് കാണിക്കുക"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "_അവസ്ഥാപട്ട"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "അവസ്ഥാ പട്ട കാണിക്കുക"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "പാര്‍ശ്വ _പലക"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "സൈഡ് പെയിന്‍ കാണിക്കുക"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "ചേരുന്നവ മാത്രം കാണിക്കുക"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "തന്നരിക്കുന്ന ഫില്‍‌റ്ററുകളില്‍ ഒന്നുമായി ചേരുന്ന വരികള്‍ മാത്രം കാണിക്കുക"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr ""
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr ""
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr ""
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "പതിപ്പു്: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "താഴെ പറയുന്ന ഫയലുകള്‍ തുറക്കുവാന്‍ സാധ്യമായില്ല:"

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="opening" xml:lang="da">
+
+  <info>
+    <link type="guide" xref="index#reading"/>
+    <desc>Åbn et dokument.</desc>
+   <link type="seealso" xref="formats"/>
+   <link type="seealso" xref="commandline"/>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  </info>
+
+<title>Åbn et dokument</title>
+
+ <p>Du kan åbne et dokument på en af følgende måder:</p>
+
+  <list>
+   <item><p>Dobbeltklik på filikonet i <app>filhåndteringen</app>.</p>
+    <note style="tip"><p>
+     Double clicking opens PDF, PostScript, .djvu, .dvi and Comic Book Archive files in the <app>Document Viewer</app> by default.
+     </p></note>
+   </item>
+
+   <item><p>Højreklik på et filikon i <app>filhåndteringen</app> og klik på <guiseq><gui>Åbn med</gui><gui>Dokumentfremviser</gui></guiseq>.</p>
+   </item>
+</list>
+
+<p>Hvis der allerede er et åbent dokumentfremviservindue, kan du:</p>
+ <list>
+   <item><p>trække et filikon ind i vinduet fra <app>filhåndteringen</app>. Den nye fil åbner i et nyt vindue (forudsat at filen er af en filtype, der understøttes af dokumentfremviseren).</p></item>
+  <item><p>vælg <guiseq><gui>Fil</gui><gui>Åbn</gui></guiseq> fra menulinjen. I dialogboksen Åbn dokument skal du vælge den fil, som du vil åbne, og klikke på <gui>Åbn</gui>. Filen åbnes i et nyt vindue.</p></item>
+</list>
+
+
+
+
+</page>

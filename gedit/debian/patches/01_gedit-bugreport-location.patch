@@ -1,0 +1,8 @@
+--- a/data/gedit.desktop.in.in
++++ b/data/gedit.desktop.in.in
+@@ -15,4 +15,4 @@
+ X-GNOME-Bugzilla-Product=gedit
+ X-GNOME-Bugzilla-Component=general
+ X-GNOME-Bugzilla-Version=@VERSION@
+-X-GNOME-Bugzilla-ExtraInfoScript=@FULL_LIBEXECDIR@/gedit-2/gedit-bugreport.sh
++X-GNOME-Bugzilla-ExtraInfoScript=/usr/share/gedit-2/gedit-bugreport

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="log-search" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#main"/>
+    <revision version="3.3" date="2011-10-30" status="review"/>
+    <desc>Buscar el texto en el registro que está viendo actualmente.</desc>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+
+  </info>
+
+  <title>Buscar en el registro</title>
+
+  <p>Para buscar en el registro que está viendo actualmente:</p>
+
+  <steps>
+    <item>
+      <p>Muestre la barra <gui>Buscar</gui> pulsando <keyseq><key>Ctrl</key><key>F</key></keyseq>, o pulsando <guiseq><gui>Ver</gui><gui>Buscar</gui></guiseq>. La barra se mostrará debajo del registro.</p>
+    </item>
+    <item>
+      <p>Escriba el término que buscar en el campo y pulse <key>Intro</key> para ver el primer resultado.</p>
+      <note style="tip">
+        <p>La búsqueda es sensible a mayúsculas</p>
+      </note>
+    </item>
+    <item>
+      <p>Use los botones <gui>Buscar anterior</gui> y <gui>Buscar siguiente</gui> para moverse entre los resultados de la búsqueda.</p>
+      <note style="tip">
+        <p>Si no ve ningún resultado resaltado, pruebe a moverse hacia la izquierda.</p>
+      </note>
+    </item>
+    <item>
+      <p>Pulse <key>Esc</key> para ocultar la barra de búsqueda cuando haya terminado.</p>
+      <note style="tip">
+        <p>Sólo puede ocultar la <gui>barra de búsqueda</gui> si el foco está actualmente en el campo de búsqueda. La barra se ocultar automáticamente si abre otro registro.</p>
+      </note>
+    </item>
+  </steps>
+
+
+
+</page>

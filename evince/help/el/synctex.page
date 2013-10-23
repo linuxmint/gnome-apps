@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="synctex" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#synctex" group="first"/>
+    <desc>Η υποστήριξη SyncTeX είναι διαθέσιμη.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Στυλιανός Παπαναστασίου</mal:name>
+      <mal:email>stelios@dcs.gla.ac.uk</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μιχάλης Κοτσαρίνης</mal:name>
+      <mal:email>mk73628@gmail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Τι είναι SyncTeX;</title>
+<p>SyncTeX είναι μια μέθοδος που ενεργοποιεί συγχρονισμό μεταξύ πηγαίου αρχείου TeX και της τελικής εξόδου PDF.</p>
+
+<section id="screen-cast">
+ <title>Επίδειξη βίντεο</title>
+  <media type="video" width="500" mime="application/ogg" src="figures/synctex_screencast.ogv">
+     <tt:tt xmlns:tt="http://www.w3.org/ns/ttml">
+       <tt:body>
+        <tt:div begin="3s" end="30s">
+         <tt:p>Πατήστε <keyseq><key>Ctrl</key>κλικ</keyseq> για συγχρονισμό.</tt:p>
+        </tt:div>
+       </tt:body>
+      </tt:tt>
+  </media>
+</section>
+</page>

@@ -1,0 +1,1196 @@
+gedit (2.30.4) petra; urgency=low
+
+  * 2.30.4
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 25 Apr 2013 14:09:07 +0100
+
+gedit (2.30.4-2ubuntu1) natty; urgency=low
+
+  * Merge from debian unstable.  Remaining changes: (LP: #708401)
+    - debian/control.in:
+      + Bump gedit-dev depends on libgtksourceview2.0-dev (>= 2.8.0)
+      + Build-Depends on dh-autoreconf, gnome-common.
+      + Build-Depends on liblaunchpad-integration-dev.
+      + Don't recommends python-gnome2 it's not used nowadays.
+    - debian/rules:
+      + Run autoreconf on build.
+    - debian/patches/01_lpi.patch:
+      + Launchpad integration.
+    - debian/patches/02_gconf_import.patch:
+      + Correct gconf import.
+    - debian/patches/05_menu_label.patch:
+      + Don't display in menu as "gedit Text Editor".
+    - debian/patches/06_lp_401692.patch:
+      + Default name of a new document is now 'Untitled Document'.
+    - debian/patches/07_intltool.patch:
+      + Don't use both Intltool and GNU gettext build system.
+    - debian/patches/90_autoreconf.patch:
+      + Dropped, autoreconf now runs on build.
+    - debian/watch:
+      + Watch unstable series.
+
+ -- Artur Rona <ari-tczew@ubuntu.com>  Thu, 27 Jan 2011 00:34:24 +0100
+
+gedit (2.30.4-2) unstable; urgency=low
+
+  * Recommend yelp. Closes: #600055.
+  * 10_pt_BR_po.patch: fix an important mistake in the Brazilian 
+    Portuguese translation. Closes: #603502.
+
+ -- Josselin Mouette <joss@debian.org>  Mon, 24 Jan 2011 21:18:12 +0100
+
+gedit (2.30.4-1ubuntu3) natty; urgency=low
+
+  * No-change rebuild for new python default
+
+ -- Didier Roche <didrocks@ubuntu.com>  Fri, 10 Dec 2010 12:58:38 +0100
+
+gedit (2.30.4-1ubuntu2) natty; urgency=low
+
+  * debian/patches/02_gconf_import.patch:
+    - correct gconf import, thanks Jason Conti and LaserJock (lp: #654867)
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Fri, 05 Nov 2010 19:10:00 +0100
+
+gedit (2.30.4-1ubuntu1) natty; urgency=low
+
+  * Resynchronise on Debian
+  * debian/control.in: don't recommends python-gnome2 it's not used nowadays
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Fri, 15 Oct 2010 15:39:12 +0200
+
+gedit (2.30.4-1) unstable; urgency=low
+
+  * New upstream translation release.
+  * 90_autoreconf.patch: updated for the new version.
+
+ -- Josselin Mouette <joss@debian.org>  Sat, 02 Oct 2010 13:55:04 +0200
+
+gedit (2.30.3-1ubuntu1) maverick; urgency=low
+
+  * Merge with Debian unstable, remaining Ubuntu changes:
+  * debian/control.in:
+    - Bump gedit-dev depends on libgtksourceview2.0-dev
+    - Build-depend on dh-autoreconf, gnome-common
+    - Build-depend on liblaunchpad-integration-dev
+    - Add Vcs-BZR link
+  * debian/rules:
+    - Use autoreconf.mk
+  * debian/patches/01_lpi.patch:
+    - Launchpad integration
+  * debian/patches/05_menu_label.patch:
+    - Don't display in menu as "gedit Text Editor"
+  * debian/patches/06_lp_401692.patch:
+    - Default name of a new document is now 'Untitled Document'.
+  * debian/patches/07_intltool.patch:
+    - Don't use both Intltool and GNU gettext build system
+  * debian/patches/90_autoreconf.patch:
+    - Obsolete as run from debian/rules
+  * debian/watch:
+    - Watch unstable versions
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Fri, 13 Aug 2010 14:59:13 +1000
+
+gedit (2.30.3-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+  * debian/patches/04_link_against_libICE.patch
+    - Link against libICE so we don't fail with stricter linkers like
+      binutils-gold. Closes: #554483
+  * debian/patches/90_autoreconf.patch
+    - Refresh as 04_link_against_libICE.patch changes configure.ac.
+  * debian/control.in
+    - Add Vcs-* fields.
+    - Drop Build-Depends on dpkg-dev (>= 1.13.19) as even oldstable has a more
+      recent version.
+    - Bump Standards-Version to 3.9.0. No further changes.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 17 Jul 2010 02:53:39 +0200
+
+gedit (2.30.2-1) unstable; urgency=low
+
+  * New upstream bugfix release:
+    + debian/patches/90_autoreconf.patch:
+      - Regenerated for the new version.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 19 Apr 2010 10:34:50 +0200
+
+gedit (2.30.0-1) unstable; urgency=low
+
+  * New upstream release.
+    - End of line conversion fixes. Closes: #480411.
+  * debian/control.in:
+    - Standards-Version is 3.8.4, no changes needed.
+    - Build-Depend:
+      - Bump to libglib2.0-dev (>= 2.23.1),
+        libgtksourceview2.0-dev (>= 2.9.7), libgtk2.0-dev (>= 2.19.0),
+        python-gtksourceview2 (>= 2.9.2) and gnome-doc-utils (>= 0.9.0).
+      - Add libx11-dev.
+      - Drop libattr1-dev.
+  * Switch to source format 3.0 (quilt).
+    - Add debian/source/format.
+    - Drop quilt from Build-Depends.
+    - Remove /usr/share/cdbs/1/rules/patchsys-quilt.mk include.
+  * debian/patches/02_system_elementtree.patch,
+    debian/patches/80_not_using_localmodlibs.patch:
+    - Removed, applied upstream.
+  * debian/patches/03_python_path.patch,
+    debian/patches/90_autoreconf.patch:
+    - Refreshed.
+  * debian/rules:
+    - Remove old lines referring ElementTree.py.
+
+ -- Luca Bruno <lethalman88@gmail.com>  Wed, 07 Apr 2010 08:22:36 +0200
+
+gedit (2.28.3-2) unstable; urgency=low
+
+  * debian/patches/80_not_using_localmodlibs.patch:
+    - Patch from Sebastien Bacher to fix the build with Python 2.6
+      as the default interpreter. Closes: #571488.
+  * debian/control.in:
+    - Standards-Version is 3.8.3, no changes needed.
+    - Build depend on quilt.
+  * debian/rules:
+    - Switch to quilt for patch management.
+  * debian/patches/03_python_path.patch:
+    - Also patch Makefile.am, so that the changes to Makefile.in are
+      preserved if we regenerate files.
+  * debian/patches/90_autoreconf.patch:
+    - Run autoreconf on top of 80_not_using_localmodlibs.patch.
+  * debian/patches:
+    - Refresh all patches.
+  * debian/gedit.lintian-overrides,
+    debian/gedit.lintian,
+    debian/rules:
+    - Rename gedit.lintian as gedit.lintian-overrides so that dh_lintian
+      installs it automatically. Thus stop installing it in debian/rules.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 04 Mar 2010 10:02:35 +0100
+
+gedit (2.28.3-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 20 Dec 2009 03:12:33 +0100
+
+gedit (2.28.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches/02_system_elementtree.patch,
+    debian/rules:
+    - Don't install code copies of ElementTree.py, use the system one
+      instead. Closes: #555344.
+  * debian/control.in:
+    - Bump python-dev build dependency and XS-Python-Version to >= 2.5
+      for the availability of ElementTree.py.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 11 Nov 2009 22:54:27 +0100
+
+gedit (2.28.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 10 Nov 2009 15:09:22 +0100
+
+gedit (2.28.0-1) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * New upstream release.
+  * Bump build-dep on GTK+.
+
+  [ Andrea Veri ]
+  * debian/copyright:
+    - added missing copyright headers.
+
+ -- Josselin Mouette <joss@debian.org>  Fri, 25 Sep 2009 20:16:26 +0200
+
+gedit (2.26.3-1) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * Break seahorse < 2.24 and seahorse-plugins < 2.26 because of the 
+    crash upon exit.
+  * Remove scrollkeeper dependency.
+
+  [ Emilio Pozuelo Monfort ]
+  * debian/patches/03_python_path.patch: add description and upstream
+    bug link.
+
+  [ Loïc Minier ]
+  * Drop trailing whitespace in control.
+
+  [ Andrea Veri ]
+  * New upstream release.
+  * debian/control.in:
+    - update Standards-version to 3.8.3. No changes needed.
+
+  [ Emilio Pozuelo Monfort ]
+  * debian/gedit.lintian:
+    - Update the manpage override to match the lintian warning.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 15 Sep 2009 20:25:46 +0200
+
+gedit (2.26.1-1) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * Add libglib2.0-doc, libgtk2.0-doc and libgtksourceview2.0-doc to
+    b-d-i to ensure proper xrefs.
+
+  [ Luca Bruno ]
+  * New upstream release.
+  * debian/control.in:
+    + Build-Depends version bumps:
+      - libgtksourceview2.0-dev to 2.4.0
+      - liblibglib2.0-dev to 2.18.0
+      - intltool to 0.40.0
+    + Update Standards-Version to 3.8.1. No changes needed.
+  * debian/patches:
+    + Removed 02_externaltools_locale.patch, applied upstream.
+    + Updated 03_python_path.patch to use a modified version of the
+      upstream patch.
+  * debian/gedit.install:
+    + Plugins ui files are now installed under share/ in gedit-common.
+    + Install usr/lib/gedit-2/plugin-loaders.
+
+  [ Emilio Pozuelo Monfort ]
+  * debian/copyright: point to GPL-2 rather than GPL.
+  * debian/control.in: remove unneeded Section entries, they are
+    inherited from the source.
+
+  [ Josselin Mouette ]
+  * New upstream release.
+
+ -- Josselin Mouette <joss@debian.org>  Wed, 22 Apr 2009 23:48:16 +0200
+
+gedit (2.24.3-1) unstable; urgency=low
+
+  * 02_externaltools_locale.patch: new patch. Use LC_MESSAGES to 
+    determine the current language for the external tools.
+    Closes: #510572.
+  * New upstream release.
+  * 03_python_path.patch: new patch. Pass GEDIT_PLUGINDIR 
+    to PySys_SetArgv as a big hackish workaround to CVE-2009-0314.
+    Closes: #513513.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 15 Mar 2009 12:17:40 +0100
+
+gedit (2.24.2-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 04 Jan 2009 10:16:32 +0100
+
+gedit (2.24.1-1) experimental; urgency=low
+
+  [ Loic Minier ]
+  * Replace homepage pseudo-field in description with a real source field in
+    control.
+  * Add note that dh_pysupport call should be made package specific or moved
+    to a different target.
+
+  [ Josselin Mouette ]
+  * Pass -pgedit to dh_pysupport.
+  * New upstream release.
+    + Document you need to escape backslashes. Closes: #361399.
+  * Massive update to (build-)dependencies, yay.
+  * Update list of installed files.
+  * Standards version is 3.8.0.
+  * Move gedit-bugreport.sh to /usr/share/gedit-2 and without extension.
+  * Provide a bug script that executes it for reportbug.
+  * 01_gedit-bugreport-location.patch:
+    + Update for the new location.
+    + Only patch the .in.in file, the other is always overwritten.
+  * 99_ltmain_as-needed.patch: updated to apply.
+  * Update gedit.menu to the new menu structure.
+
+ -- Josselin Mouette <joss@debian.org>  Fri, 14 Nov 2008 15:31:20 +0100
+
+gedit (2.22.3-1) unstable; urgency=low
+
+  * New upstream bugfix release:
+    + debian/patches/01_gedit-bugreport-location.patch,
+      debian/patches/99_ltmain_as-needed.patch:
+      - Updated to apply cleanly again.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 29 May 2008 09:52:41 +0200
+
+gedit (2.22.1-1) unstable; urgency=low
+
+  * New upstream bugfix release:
+    + debian/patches/01_gedit-bugreport-location.patch,
+      debian/patches/99_ltmain_as-needed.patch:
+      - Updated to apply cleanly again.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 09 Apr 2008 08:47:37 +0200
+
+gedit (2.22.0-1) unstable; urgency=low
+
+  * New upstream stable release:
+    + debian/control.in:
+      - Update build dependencies and dependencies.
+      - Update Standards-Version to 3.7.3, no additional changes needed.
+    + debian/patches/99_ltmain_as-needed.patch:
+      - Updated to apply cleanly again.
+    + debian/patches/01_gedit-bugreport-location.patch,
+      debian/gedit.install:
+      - Install the gedit-bugreport.sh script into /usr/lib/gedit-2 instead
+        of /usr/lib/gedit/gedit-2.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 17 Mar 2008 00:22:51 +0100
+
+gedit (2.20.4-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 01 Dec 2007 17:07:03 +0100
+
+gedit (2.20.3-1) unstable; urgency=low
+
+  * New upstream bugfix release:
+    + debian/patches/80_from_svn_load_tool_property_correctly.patch:
+      - Dropped, merged upstream.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 25 Oct 2007 11:26:58 +0200
+
+gedit (2.20.1-2) unstable; urgency=low
+
+  * debian/control.in:
+    + Fix python-gtksourceview2 dependency to make gedit installable.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 10 Oct 2007 13:18:49 +0200
+
+gedit (2.20.1-1) unstable; urgency=low
+
+  [ Loic Minier ]
+  * Drop useless gzip build-dep.
+
+  [ Sebastian Dröge ]
+  * New upstream release:
+    + debian/control.in:
+      - Update build dependencies and dependencies.
+    + debian/patches/99_ltmain_as-needed.patch:
+      - Updated for the new version.
+  * debian/patches/80_from_svn_load_tool_property_correctly.patch:
+    + Patch taken from Ubuntu/Upstream SVN to fix external tools loading
+      there properties correctly. See Gnome bug #484318.
+  * debian/control.in:
+    + Build depend on libattr1-dev.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sun, 30 Sep 2007 17:07:44 +0200
+
+gedit (2.18.2-1) unstable; urgency=low
+
+  [ Alan Baghumian ]
+  * Added home page link to the description (Closes: #364806).
+
+  [ Josselin Mouette ]
+  * 99_ltmain_as-needed.patch: get --as-needed back to work.
+
+  [ Loic Minier ]
+  * New upstream stable release; bug fixes and translations.
+
+ -- Loic Minier <lool@dooz.org>  Thu, 05 Jul 2007 14:06:44 +0200
+
+gedit (2.18.1-1) unstable; urgency=low
+
+  * Set LDFLAGS directly instead of via DEB_CONFIGURE_SCRIPT_ENV; build-dep on
+    cdbs >= 0.4.41.
+  * Don't overwrite DEB_CONFIGURE_EXTRA_FLAGS.
+  * Upload to unstable; drop check-dist include.
+  * Wrap build-deps and deps.
+  * Bump up Debhelper compatibility level to 5.
+    - Remove bogus /usr/lib/gedit-2/plugins/*.py from gedit.install.
+  * Add some ${misc:Depends}.
+  * Cleanups.
+  * New upstream release; no API change.
+    - Build-depend on gzip.
+
+ -- Loic Minier <lool@dooz.org>  Thu, 26 Apr 2007 10:34:19 +0200
+
+gedit (2.18.0-1) experimental; urgency=low
+
+  * New upstream release:
+    + debian/control: Add build-deps on libenchant-dev and iso-codes, which
+      are now needed for spell-checking.
+    + debian/patches/21_armenian-aspell.patch: Dropped, obsolete after switch
+      to libenchant
+    + debian/patches/30_mmap-handle-sigbus.patch: Dropped, included upstream.
+    + Added support for a notification if an opened file was changed on disk,
+      allowing to ignore the message or reload the file. (Closes: 382066)
+
+ -- Marc 'HE' Brockschmidt <he@debian.org>  Sun, 25 Mar 2007 19:56:42 +0200
+
+gedit (2.16.2-4) experimental; urgency=low
+
+  * Bump up the Replaces merged in 2.16.2-3 to << 2.16.2-3; thanks
+    Frédéric Péters.
+
+ -- Loic Minier <lool@dooz.org>  Mon, 12 Mar 2007 10:27:02 +0100
+
+gedit (2.16.2-3) experimental; urgency=low
+
+  [ Sven Arvidsson ]
+  * Merge 2.14.4-9.
+  * Move developers reference manual from -common to -dev.
+    - gedit-dev replaces gedit-common (<< 2.16.2-3)
+
+  [ Loic Minier ]
+  * Merge the final bits of 2.14.4-3 and up to version 2.14.4-8.
+    - Drop patch 10_double-key-events-breaks-xim, merged upstream.
+    - Drop patch debian/patches/20_arabic-aspell.patch, merged upstream.
+
+ -- Loic Minier <lool@dooz.org>  Sat, 10 Mar 2007 21:19:20 +0100
+
+gedit (2.16.2-2) experimental; urgency=low
+
+  [ Loic Minier ]
+  * Bump up gedit deps to follow Python build-deps as running with pygtk 2.8
+    causes crashes: python-gnome2-desktop >= 2.15.90, python-gtk2 >= 2.9.7,
+    python-glade2 >= 2.9.7; closes: #409665.
+  * Add a get-orig-source target to retrieve the upstream tarball.
+  * Add an epoch to the libgnomevfs2-dev build-dep; closes: #409607.
+  * Include the new check-dist Makefile to prevent accidental uploads to
+    unstable; bump build-dep on gnome-pkg-tools to >= 0.10.
+
+  [ Sven Arvidsson ]
+  * Recommend libgnomevfs2-bin, zenity and python-gnome2 required for
+    external tools (Closes: #388007)
+
+  [ Loic Minier ]
+  * Add a bogus libbonobo2-dev >= 2.15.0 build-dep for experimental buildds.
+
+ -- Loic Minier <lool@dooz.org>  Sun,  4 Feb 2007 18:44:54 +0100
+
+gedit (2.16.2-1) experimental; urgency=low
+
+  * New upstream release.
+  * 70_relibtoolize.patch: removed, unneeded now the libs are cleaned
+    up with clean-la.mk.
+  * Bump build-dependencies appropriately.
+  * Remove build-dependency on libgnome-keyring.
+  * Use gnome:Version and NextVersion for gedit-dev as well.
+  * Bump versions for gedit-dev dependencies.
+  * pycompat: removed, obsolete.
+  * rules: remove call to dh_python.
+  * rules, gedit-common.install: move icon installation to dh_install.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 19 Nov 2006 19:14:30 +0100
+
+gedit (2.14.4-9) unstable; urgency=medium
+
+  [ Sven Arvidsson ]
+  * Move desktop launcher from gedit-common to gedit
+    - Add recommends gedit to gedit-common.
+    - gedit replaces gedit-common (<< 2.14.4-9)
+    (Closes: #413948)
+
+  [ Loic Minier ]
+  * Urgency medium.
+
+ -- Loic Minier <lool@dooz.org>  Sat, 10 Mar 2007 20:52:36 +0100
+
+gedit (2.14.4-8) unstable; urgency=medium
+
+  * Update patch 30_mmap-handle-sigbus to also pull SVN r5510; thanks Paolo
+    Borelli.
+
+ -- Loic Minier <lool@dooz.org>  Tue, 27 Feb 2007 15:48:06 +0100
+
+gedit (2.14.4-7) unstable; urgency=medium
+
+  * New patch, 30_mmap-handle-sigbus, to handle SIGBUS properly which might be
+    triggered after I/O errors in mmap()ed files; backported from SVN r5511;
+    see GNOME #354046.
+
+ -- Loic Minier <lool@dooz.org>  Mon, 26 Feb 2007 17:15:12 +0100
+
+gedit (2.14.4-6) unstable; urgency=low
+
+  * Add a get-orig-source target to retrieve the upstream tarball.
+  * New patch, 21_armenian-aspell, to support Armenian in the aspell plugin;
+    thanks Alan Baghumian; closes: #406794.
+
+ -- Loic Minier <lool@dooz.org>  Sun, 14 Jan 2007 10:51:40 +0100
+
+gedit (2.14.4-5) unstable; urgency=low
+
+  * New patch, 20_arabic-aspell, to support Arabic in the aspell plugin;
+    thanks Mohammed Sameer; closes: #403710.
+
+ -- Loic Minier <lool@dooz.org>  Tue, 19 Dec 2006 10:56:55 +0100
+
+gedit (2.14.4-4) unstable; urgency=low
+
+  * Update patch 10_double-key-events-breaks-xim with the final upstream fix;
+    closes: #374640.
+
+ -- Loic Minier <lool@dooz.org>  Sun,  3 Dec 2006 13:20:33 +0100
+
+gedit (2.14.4-3) unstable; urgency=medium
+
+  [ Josselin Mouette ]
+  * Require gnome-pkg-tools 0.6.
+  * Use ${gnome:Version} and ${gnome:NextVersion}.
+  * Include the gnome-versions.mk snippet.
+
+  [ Loic Minier ]
+  * Change description to be "official text editor of the GNOME desktop
+    environment" instead of "light-weight text editor"; thanks Tshepang
+    Lekhonkhobe.
+  * New patch, 10_double-key-events-breaks-xim, to fix double sending of
+    keypress X events which broke XIM; from GNOME #376750; closes: #374640.
+
+ -- Loic Minier <lool@dooz.org>  Sat, 25 Nov 2006 17:41:27 +0100
+
+gedit (2.14.4-2) unstable; urgency=low
+
+  * Python support.
+    - Build-depend on python (>= 2.3), python-dev, python-gtk2-dev (>= 2.8.0),
+      python-gnome2-desktop-dev (>= 2.13.3), python-support (>= 0.3).
+    - Bump up Debhelper build-dep to 5.0.37.2.
+    - Set Python compatibility level to 2.
+    - Add XS-Python-Version with ">= 2.3".
+    - Add XB-Python-Version to gedit.
+    - Add a dh_pysupport call in binary-install/gedit, and pass
+      "/usr/lib/gedit-2/plugins" as a private module directory; add a
+      dh_python as well.
+    - From /usr/lib/gedit-2/plugins/, install *.py; from
+      /usr/lib/gedit-2/plugins/snippets and /externaltools, install *.py and
+      *.glade.
+    - Let gedit Depend on python-gnome2-desktop, python-gtk2, python-glade2,
+      ${python:Depends}.
+
+ -- Loic Minier <lool@dooz.org>  Wed, 30 Aug 2006 22:50:17 +0200
+
+gedit (2.14.4-1) unstable; urgency=low
+
+  * New upstream release; no API changes.
+    - Relibtoolize.
+  * Fix watch file.
+  * Drop obsolete build-deps on libbonoboui2-dev, libeel2-dev, and libpopt-dev
+    thanks Daniel Holbach.
+  * Drop obsolete dep on libeel2-dev of gedit-dev, thanks Daniel Holbach.
+  * Set Maintainer to the Debian GNOME team.
+  * Bump up Standards-Version to 3.7.2.
+
+ -- Loic Minier <lool@dooz.org>  Wed, 30 Aug 2006 17:16:10 +0200
+
+gedit (2.14.3-1) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * Make the package binNMU-safe.
+    + Build-depend on dpkg-dev 1.13.19.
+    + Use ${source:Version}.
+
+  [ Loic Minier ]
+  * Stop shipping *.la files in gedit-dev.
+    [debian/gedit-dev.install]
+  * New upstream release.
+    - Relibtoolize and rename relibtoolizing patch.
+      [debian/patches/01_relibtoolise.patch,
+       debian/patches/70_relibtoolize.patch]
+  * Permit installation of gedit-dev after binNMUs too by using ">="
+    ${Source-Version} instead of a strict "=".
+    [debian/control, debian/control.in]
+
+ -- Loic Minier <lool@dooz.org>  Mon, 29 May 2006 21:23:49 +0200
+
+gedit (2.14.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * [debian/patches/01_relibtoolise.patch] Updated.
+  * [debian/rules] Link --as-needed.
+  * [debian/control.in] Added gnome-doc-utils build dependency; tightened
+    gtk, libgnomeui and gnome-vfs build dependency per configure.ac .
+  * [debian/gedit.install] Dropped references to /usr/lib/bonobo .
+
+ -- J.H.M. Dassen (Ray) <jdassen@debian.org>  Sat, 29 Apr 2006 14:04:54 +0200
+
+gedit (2.12.1-2) unstable; urgency=low
+
+  [ Loic Minier ]
+  Loic Minier <lool@dooz.org>:
+  * Update watch file. [debian/watch]
+
+  J.H.M. Dassen (Ray) <jdassen@debian.org>:
+  * [debian/patches/01_relibtoolise.patch] Added to remove unused direct
+    library dependencies.
+
+  [ Josselin Mouette ]
+  * Upload to unstable.
+
+ -- Josselin Mouette <joss@debian.org>  Sun,  8 Jan 2006 15:00:23 +0100
+
+gedit (2.12.1-1) experimental; urgency=low
+
+  * New upstream version.
+
+ -- Sebastien Bacher <seb128@debian.org>  Mon, 24 Oct 2005 14:53:45 +0200
+
+gedit (2.10.5-2) unstable; urgency=low
+
+  * Move alternatives handling from gedit-common to gedit and make
+    gedit conflict with past gedit-common thanks to piuparts, Lars Wirzenius
+    and Josselin Mouette. (Closes: #328310) [debian/control,
+    debian/control.in, debian/gedit-common.postinst,
+    debian/gedit-common.prerm, debian/gedit.postinst, debian/gedit.prerm]
+
+ -- Loic Minier <lool@dooz.org>  Thu, 15 Sep 2005 22:32:52 +0200
+
+gedit (2.10.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * No NEWS in this release. [debian/gedit.docs]
+  * Use copyright and license appropriately. [debian/copyright]
+  * Update FSF address. [debian/copyright]
+
+ -- Loic Minier <lool@dooz.org>  Mon, 12 Sep 2005 22:24:31 +0200
+
+gedit (2.10.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add CDBS' utils.
+  * Bump up pspell build-dep to switch back to libaspell15.
+
+ -- Loic Minier <lool@dooz.org>  Sat,  6 Aug 2005 17:39:36 +0200
+
+gedit (2.10.3-4) unstable; urgency=low
+
+  [ Loic Minier ]
+  * Don't link with "--as-needed" as it migh break dlopening plugins.
+    [debian/rules]
+  * Bump libpspell-dev build-dep for the C++ transition.
+
+  [ Josselin Mouette ]
+  * Don't overwrite DEB_CONFIGURE_SCRIPT_ENV completely. [debian/rules]
+
+ -- Loic Minier <lool@dooz.org>  Mon, 11 Jul 2005 22:52:47 +0200
+
+gedit (2.10.3-2) unstable; urgency=low
+
+  * Fix typo in postinst and prerm.
+    [debian/gedit-common.postinst, debian/gedit-common.prerm]
+  * Remove dependency of gedit-common gedit, remobe obsolete "Replaces:".
+    [debian/control, debian/control.in]
+  * Bump Standards-Version to 3.6.2, no change needed.
+
+ -- Loic Minier <lool@dooz.org>  Fri, 24 Jun 2005 19:02:19 +0200
+
+gedit (2.10.3-1) unstable; urgency=high
+
+  * New upstream release.
+    - [SECURITY: CAN-2005-1686] format string vulnerability and DoS.
+    - 2.10 no longer loses data when saving in UTF-16 (closes: #261622).
+    - retains spellchecking options (closes: #271849).
+    - allows changing the cursor colour (closes: #283158).
+  * Upload to unstable.
+
+ -- Jordi Mallach <jordi@debian.org>  Wed,  8 Jun 2005 21:50:30 +0200
+
+gedit (2.10.2-2) experimental; urgency=low
+
+  * Josselin Mouette:
+    - Updated debian/watch.
+  * Loic Minier and Sebastien Bacher:
+    - Merge changes from 2.8.3-4.
+
+ -- Loic Minier <lool@dooz.org>  Thu,  2 Jun 2005 01:00:48 +0200
+
+gedit (2.10.2-1) experimental; urgency=low
+
+  * New upstream release.
+  * Bump build-dependencies appropriately.
+  * 01_relibtoolize.patch: dropped.
+  * Pass --as-needed to ld.
+
+ -- Josselin Mouette <joss@debian.org>  Thu, 14 Apr 2005 19:58:18 +0200
+
+gedit (2.8.3-4) unstable; urgency=low
+
+  * Ship Bonobo Activation Server file for Gedit that was lost in 2.8.2-3 and
+    simplify file lists for the gedit and gedit-common packages; also ship all
+    plugins again and some usual files.  (Closes: #311374)
+    [debian/gedit.install, debian/gedit-common.install]
+
+ -- Loic Minier <lool@dooz.org>  Tue, 31 May 2005 20:54:03 +0200
+
+gedit (2.8.3-3) unstable; urgency=medium
+
+  * GNOME Team upload.
+  * gedit-dev package needs to depend on libgnomeprintui2.2-dev,
+    libgtksourceview-dev, libgnomeui-dev, libglade2-dev, libeel2-dev
+  * Urgency medium as the above fixes a non-filled RC bug in Sarge package. 
+
+ -- Jose Carlos Garcia Sogo <jsogo@debian.org>  Fri,  1 Apr 2005 20:33:04 +0200
+
+gedit (2.8.3-2) unstable; urgency=low
+
+  * Build depend on pspell >= 0.60 since it's incompatible with the
+    previous 0.55 release (closes: #295901)
+
+ -- Loic Minier <lool@dooz.org>  Sat, 19 Feb 2005 11:40:51 +0100
+
+gedit (2.8.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches/00_intltoolize.patch: dropped (upstream intltoolized)
+  * debian/patches/01_relibtoolize.patch: updated
+  * debian/patches/02_cursor-color.patch: dropped (not applicable anymore)
+
+ -- Loic Minier <lool@dooz.org>  Sat, 12 Feb 2005 21:18:34 +0100
+
+gedit (2.8.2-4) unstable; urgency=low
+
+  * debian/patches/00_intltoolize.patch: added
+  * debian/patches/01_relibtoolize.patch: renamed and updated
+  * debian/patches/02_cursor-color.patch: fix cursor color on dark
+    backgrounds
+  * debian/*: various cleanups
+  * debian/gedit.lintian: lintian override for gedit
+  * debian/copyright: updated
+  * set myself as Maintainer
+  * debian/control: reverted intltool of -2
+
+ -- Loic Minier <lool@dooz.org>  Sat, 12 Feb 2005 17:14:08 +0100
+
+gedit (2.8.2-3) unstable; urgency=low
+
+  * debian/control.in:
+    - added cdbs to Build-Depends.
+    - create a gedit-dev package for devel files (closes: #283574).
+  * debian/gedit.install:
+    - install changecase plugin.
+  * debian/patches/01_relibtoolise.patch:
+    - switched from dpatch to a simple patch.
+  * debian/rules:
+    - switched to CDBS, should be policy compliant again (closes: #289890)
+
+ -- Sebastien Bacher <seb128@debian.org>  Wed, 26 Jan 2005 21:57:16 +0100
+
+gedit (2.8.2-2) unstable; urgency=low
+
+  * add intltool to the build-deps and hence remove libxml-parser-perl
+    since intltool depends on it and will automagically change the Perl
+    code in intltool-merge.in
+
+ -- Loic Minier <lool@dooz.org>  Wed, 19 Jan 2005 19:05:41 +0100
+
+gedit (2.8.2-1) unstable; urgency=low
+
+  * GNOME team upload.
+  * New upstream release.
+  * debian/patches/01_relibtoolise.dpatch: updated.
+
+ -- Jordi Mallach <jordi@debian.org>  Wed, 29 Dec 2004 17:56:50 +0100
+
+gedit (2.8.1-3) unstable; urgency=low
+
+  * GNOME team upload.
+  * Upload to unstable.
+  * debian/rules: don't symlink config.{sub,guess} on clean to allow
+    builds from SVN.
+  * debian/control.in: bump libgnomeui and gtksourceview requirements.
+
+ -- Jordi Mallach <jordi@debian.org>  Mon, 22 Nov 2004 00:27:55 +0100
+
+gedit (2.8.1-2) experimental; urgency=low
+
+  * GNOME team upload
+  * debian/control.in: build-depend on debhelper (>= 4.2.23) for
+    dh_desktop support.
+  * debian/rules: add a call to dh_desktop to register MIME types.
+  * debian/gedit.postinst: don't call update-mime-database by hand,
+    handled by dh_desktop.
+
+ -- Jordi Mallach <jordi@irati.invalid>  Tue,  9 Nov 2004 13:13:40 +0100
+
+gedit (2.8.1-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- J.H.M. Dassen (Ray) <jdassen@debian.org>  Mon, 11 Oct 2004 18:08:40 +0200
+
+gedit (2.8.0-1) experimental; urgency=low
+
+  * New upstream release.
+  * [debian/patches/01_relibtoolise.dpatch] Updated. Don't patch
+    config.{sub,guess} as debian/rules takes care of updating them. 
+    (Closes: #267288)
+
+ -- J.H.M. Dassen (Ray) <jdassen@debian.org>  Mon, 13 Sep 2004 18:54:52 +0200
+
+gedit (2.7.92-1) experimental; urgency=low
+
+  * New upstream development release.
+  * [debian/patches/01_relibtoolise.dpatch] Updated. (Closes: #267288)
+  * [debian/patches/02_finnish_dict.dpatch] Dropped; this has been integrated
+    upstream.
+
+ -- J.H.M. Dassen (Ray) <jdassen@debian.org>  Tue, 31 Aug 2004 21:56:58 +0200
+
+gedit (2.7.90-1) experimental; urgency=low
+
+  * New upstream development release.
+  * [debian/patches/01_relibtoolise.dpatch] Updated.
+  * [debian/rules] Ensure at build time that the library dependencies are
+    complete.
+  * [debian/gedit.postinst] Register with the new GNOME MIME system.
+
+ -- J.H.M. Dassen (Ray) <jdassen@debian.org>  Sat, 14 Aug 2004 12:54:22 +0200
+
+gedit (2.6.2-1) unstable; urgency=low
+
+  * GNOME Team Upload.
+  * New upstream release.
+  * debian/control.in:
+    - added dpatch to the Build-Depends.
+  * debian/patches/01_relibtoolise.dpatch:
+    - patch to reduce inflated dependencies (Closes: #243002).
+  * debian/patches/02_finnish_dict.dpatch:
+    - added the finnish dictionnary to the list of supported languages 
+      (Closes: #263391).
+  * debian/rules:
+    - use dpatch.
+  
+ -- Sebastien Bacher <seb128@debian.org>  Thu,  5 Aug 2004 12:23:49 +0200
+
+gedit (2.6.1-1) unstable; urgency=low
+
+  * GNOME Team Upload.
+  * New Upstream Release.  
+
+ -- Sebastien Bacher <seb128@debian.org>  Sun, 30 May 2004 12:52:45 +0200
+
+gedit (2.6.0-3) unstable; urgency=low
+
+  * GNOME Team Upload.
+  * Upload in unstable.
+
+ -- Sebastien Bacher <seb128@debian.org>  Thu, 27 May 2004 20:04:25 +0200
+
+gedit (2.6.0-2) experimental; urgency=low
+
+  Sebastien Bacher <seb128@debian.org>
+  * GNOME Team Upload to fix the FTBFS due to missing Build-Depends.
+  J.H.M. Dassen (Ray) <jdassen@debian.org>
+  * [debian/control.in] Added missing build dependency on libxml-parser-perl.
+
+ -- Sebastien Bacher <seb128@debian.org>  Fri, 16 Apr 2004 00:45:37 +0200
+
+gedit (2.6.0-1) experimental; urgency=low
+
+  * New upstream release.
+  * debian/rules:
+    + Add dh_scrollkeeper call, and remove scrollkeeper call from
+      gedit's postinst
+    + ditto for dh_gconf
+    + Make everything install into debian/tmp and copy selectively out of
+      that
+  * debian/control:
+    + Update Build-Depends for GNOME 2.6 versions of libraries required;
+      also, update debhelper to >= 4.1.84 to ensure we have dh_scrollkeeper
+      and dh_gconf
+    + Split package into two: gedit and gedit-common, the latter of which
+      contains architecture-independent files like translations, omf files
+      and pixmaps (Closes: Bug#233355)
+  * Rename debhelper files to gedit.filename.
+  * Replace xpm icon for gedit's Debian menu entry with better one provided
+    by mcINEK <kaioshin@gazeta.pl>. Thanks! (Closes: Bug#192601)
+
+ -- Joe Drew <drew@debian.org>  Wed, 31 Mar 2004 21:48:39 -0500
+
+gedit (2.4.1-2) unstable; urgency=low
+
+  * debian/control:
+    + Add GNOME team to Uploaders
+    + Correct spelling mistake in description
+    + Add gnome-pkg-tools to Build-Depends
+  * debian/rules:
+    + Remove include files and .pc file from package; nobody uses them.
+      Closes: Bug#221732
+
+ -- Joe Drew <drew@debian.org>  Tue, 30 Mar 2004 20:42:26 -0500
+
+gedit (2.4.1-1) unstable; urgency=low
+
+  * The "No more complaining" release, part 1.
+    (Subtitled: gtksourceview for everyone)
+  * New upstream release, part of GNOME 2.4 (Closes: Bug#217876)
+    + Now links only against libgnutls7 (Closes: Bug#213219)
+    + From my muddled look at the Finnish translation, the translation of
+      'Tab' is now correct. Please re-open if I'm wrong :)
+      (Closes: Bug#210454)
+    + There are no longer GdkPixbuf errors on start-up (Closes: Bug#214171)
+  * Update config.{guess,sub}
+  * debian/control:
+    + Update Build-Depends for GNOME 2.4 libraries and gtksourceview
+    + Update Standards-Version to 3.6.1
+  * debian/rules:
+    + Properly support DEB_BUILD_OPTIONS
+
+ -- Joe Drew <drew@debian.org>  Tue,  4 Nov 2003 15:00:44 -0500
+
+gedit (2.2.1-2) unstable; urgency=low
+
+  * Build-Depends on scrollkeeper. Pre-empting FTBFS bugs. 
+
+ -- Joe Drew <drew@debian.org>  Sat, 15 Mar 2003 19:00:29 -0500
+
+gedit (2.2.1-1) unstable; urgency=low
+
+  * New upstream release, part of GNOME 2.2.1. 
+
+ -- Joe Drew <drew@debian.org>  Sat, 15 Mar 2003 14:51:18 -0500
+
+gedit (2.2.0.1-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control: Rewrite description and make debhelper Build-Depends
+    versioned
+
+ -- Joe Drew <drew@debian.org>  Fri, 28 Feb 2003 17:54:05 -0500
+
+gedit (2.1.91-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Joe Drew <drew@debian.org>  Tue, 21 Jan 2003 20:25:45 -0500
+
+gedit (2.1.6-2) unstable; urgency=low
+
+  * debian/control:
+    + Update Build-Depends for libgnomevfs2-dev to >= 2.1.91-1, since we
+      require a GNOME 2 gnomevfs
+
+ -- Joe Drew <drew@debian.org>  Mon, 20 Jan 2003 16:01:39 -0500
+
+gedit (2.1.6-1) unstable; urgency=low
+
+  * New upstream release, a prerelease for GNOME 2.2
+  * debian/control:
+    + Add Build-Depends for libpspell-dev
+    + Add Build-Depends for libpopt-dev (just a failsafe)
+    + Update Standards-Version to 3.5.8
+  * debian/rules:
+    + Updates for Standards-Version 3.5.8
+
+ -- Joe Drew <drew@debian.org>  Mon, 20 Jan 2003 00:20:04 -0500
+
+gedit (2.0.6-1) unstable; urgency=low
+
+  * The 'Three IBM hard drives fail in two years. I'm sensing a pattern.'
+    release.
+  * New upstream release.
+
+ -- Joe Drew <drew@debian.org>  Sun,  1 Dec 2002 15:07:28 -0500
+
+gedit (2.0.5-1) unstable; urgency=low
+
+  * The 'rising back into horrible unlife' release.
+  * New upstream release
+    * Closes: Bug#154797 -- German translation: translator credits translated 
+                            correctly ;) 
+  * Acknowledge NMU - thanks, David! (Closes: Bug#156892, Bug#154575)
+  * Include Mikael Hedin's properly-sized gedit xpm icon. (Closes: Bug#155966)
+
+ -- Joe Drew <drew@debian.org>  Sat,  5 Oct 2002 18:23:30 -0400
+
+gedit (2.0.2-2.1) unstable; urgency=low
+
+  * NMU.
+  * Recompiled against libgtk2.0-0png3 because of png2->png3 transition.
+  * We don't a need a Build-Depends on libssl-dev now; closes: #154575.
+
+ -- Davide Puricelli (evo) <evo@debian.org>  Thu, 15 Aug 2002 23:51:59 +0200
+
+gedit (2.0.2-2) unstable; urgency=low
+
+  * Change menu file icon to an XPM. 
+
+ -- Joe Drew <drew@debian.org>  Sat, 27 Jul 2002 16:07:26 -0400
+
+gedit (2.0.2-1) unstable; urgency=low
+
+  * New upstream release
+    * Closes: Bug#147453 -- gedit can't open a file beginning with % 
+
+ -- Joe Drew <drew@debian.org>  Fri, 26 Jul 2002 08:12:31 -0400
+
+gedit (2.0.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Added libeel2-dev to build-depends, as upstream requires it now
+  * Change static link to gnome-text-editor created by `make install' to an
+    alternatives link.
+
+ -- Joe Drew <drew@debian.org>  Tue, 23 Jul 2002 18:25:35 -0400
+
+gedit (2.0.0-1) unstable; urgency=low
+
+  * New upstream release, based on GNOME 2 libraries. Repackaged
+    with dh_make.
+
+ -- Joe Drew <drew@debian.org>  Sun, 21 Jul 2002 21:51:21 -0400
+
+gedit (0.9.6-4) unstable; urgency=low
+
+  * Change /usr/share/doc/gedit/html to be an absolute link
+    to /usr/gnome/help/gedit/C (which is technically against
+    policy, but causes problems for people in real world
+    situations.)
+    Closes: Bug#84067, Bug#97631
+  * Correct typos in description (Closes: Bug#124664)
+  * Modify plugins' Makefile.am to add EXTRA_GNOME_CFLAGS,
+    which is necessary since libglade moved its header files.
+    Also re-ran automake.
+
+ -- Joe Drew <drew@debian.org>  Sun, 13 Jan 2002 02:13:27 -0500
+
+gedit (0.9.6-3) unstable; urgency=low
+
+  * Updating config.{sub,guess} for hppa/ia64 (Closes: Bug#104810) 
+
+ -- Joe Drew <drew@debian.org>  Sun, 15 Jul 2001 14:53:50 -0400
+
+gedit (0.9.6-2) unstable; urgency=low
+
+  * I am an idiot. Actually applied multibyte patch (Closes: Bug#90952) 
+
+ -- Joe Drew <drew@debian.org>  Sat, 28 Apr 2001 22:43:02 -0400
+
+gedit (0.9.6-1) unstable; urgency=low
+
+  * New upstream release
+  * Fixed where INSTALL_PROGRAM gets used in the rules file for
+    DEB_BUILD_OPTIONS.
+  * Corrected transposition of letters in description (Closes: Bug#92306)
+  * Applied multibyte patch (Closes: Bug#90952)
+  * Rebuilt with libgnomeprint15 (Closes: Bug#94427) 
+
+ -- Joe Drew <drew@debian.org>  Mon, 23 Apr 2001 23:22:30 -0400
+
+gedit (0.9.4-2) unstable; urgency=low
+
+  * New maintainer (Closes: Bug#84521)
+  * Can't reproduce bug, but put in preventative directory entries into
+    deb file which should stop this from happening (Closes: Bug#84067)
+  * Upgraded standards version to 3.5.2, implemented DEB_BUILD_OPTIONS
+
+ -- Joe Drew <drew@debian.org>  Wed, 28 Feb 2001 22:49:39 -0500
+
+gedit (0.9.4-1) unstable; urgency=low
+
+  * New maintaner for this package (closes: #80313).
+  * New upstream release (closes: #52404).
+  * Updated to Standards-Version 3.2.1.
+  * Changed: debian/{control, copyright, rules}.
+  * Closes: #33280, #51421, #52246, #58375, #66869, #69858, #77409.
+  * Added icon in xpm format.
+  * Upload sponsored by Bas Zoetekouw <bas@debian.org>.
+
+ -- Mariusz Przygodzki <dune@home.pl>  Mon,  1 Jan 2001 15:53:38 +0100
+
+gedit (0.9.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Robert S. Edmonds <stu@novare.net>  Wed,  9 Aug 2000 14:19:08 -0400
+
+gedit (0.6.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Robert S. Edmonds <stu@novare.net>  Sun, 16 Jan 2000 21:12:18 -0500
+
+gedit (0.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Robert S. Edmonds <stu@novare.net>  Sat, 27 Nov 1999 14:24:18 -0500
+
+gedit (0.5.4-1) unstable; urgency=low
+
+  * Fixed Bug#46351: gedit crashes on startup.
+  * Closes: bug#46351
+
+ -- Robert S. Edmonds <stu@novare.net>  Thu, 30 Sep 1999 20:37:40 -0400
+
+gedit (0.5.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Robert S. Edmonds <stu@novare.net>  Sat, 12 Jun 1999 15:53:50 -0400
+
+gedit (0.5.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Robert S. Edmonds <stu@novare.net>  Mon, 17 May 1999 20:17:13 -0400
+
+gedit (0.5.1-2) unstable; urgency=low
+
+  * GNOME staging area upload.
+
+ -- Robert S. Edmonds <stu@novare.net>  Thu,  4 Mar 1999 18:44:09 -0500
+
+gedit (0.5.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Robert S. Edmonds <stu@novare.net>  Sun, 28 Feb 1999 16:34:29 -0500
+
+gedit (0.5.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Robert S. Edmonds <stu@novare.net>  Sat,  6 Feb 1999 14:07:48 -0500
+
+gedit (0.4.9-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Robert S. Edmonds <stu@novare.net>  Thu,  4 Feb 1999 17:51:51 -0500
+
+gedit (0.4.8-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Robert S. Edmonds <stu@novare.net>  Sun, 10 Jan 1999 16:40:00 -0500
+
+gedit (0.3.2-2) unstable frozen; urgency=low
+
+  * Debian changelog file is now included in the package.
+  * gedit is now more stable than previous versions and fixes some nasty
+  * bugs.
+
+ -- Robert S. Edmonds <edmonds@freewwweb.com>  Sat, 11 Apr 1998 17:26:53 -0400
+
+gedit (0.3.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Manpage included! No longer links to the undocumented manpage.
+
+ -- Robert S. Edmonds <edmonds@freewwweb.com>  Mon,  6 Apr 1998 11:35:06 -0400
+
+gedit (0.3.1-2) unstable frozen; urgency=low
+
+  * Now gedit manpage links to the undocumented manpage.
+
+ -- Robert S. Edmonds <edmonds@freewwweb.com>  Mon, 30 Mar 1998 19:36:44 -0500
+
+gedit (0.3.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Robert S. Edmonds <edmonds@freewwweb.com>  Sun, 29 Mar 1998 17:03:32 -0500
+
+gedit (0.3.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Robert S. Edmonds <edmonds@freewwweb.com>  Thu, 26 Mar 1998 19:43:41 -0500
+
+gedit (0.2.1-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Robert S. Edmonds <edmonds@freewwweb.com>  Mon,  9 Mar 1998 17:24:56 -0500

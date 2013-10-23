@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="print-differentsize" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="printing"/>
+    <desc>Imprimir un documento nun papel de distinto tamaño, forma ou orientación.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Diéguez</mal:name>
+      <mal:email>frandieguez@ubuntu.com</mal:email>
+      <mal:years>2010-2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Cambiar o tamaño do papel ao imprimir</title>
+
+<p>Se quere cambiar o tamaño do papel do seu documento (por exemplo, imprimir un documento PDF de papel A4 nun papel tipo US Letter), pode cambiar o formato de impresión para o documento.</p>
+<steps>
+ <item><p>Prema <guiseq><gui>Ficheiro</gui><gui>Imprimir</gui></guiseq></p></item>
+ <item><p>Seleccione a lapela <gui>Configuración de páxina</gui>.</p></item>
+ <item><p>Embaixo da columna <em>Papel</em> seleccione o <em>Tamaño de papel</em> desde a lista despregábel.</p></item>
+ <item><p>Prema <gui>Imprimir</gui> e deberíase imprimir o seu documento.</p></item>
+</steps>
+
+<p>Tamén pode usar o menú <em>Orientación</em> para cambiar a unha orientación diferente:</p>
+
+<list>
+<item><p><gui>Vertical</gui></p></item>
+<item><p><gui>Apaisada</gui></p></item>
+<item><p><gui>Vertical invertida</gui></p></item>
+<item><p><gui>Apasiado invertido</gui></p></item>
+</list>
+</page>

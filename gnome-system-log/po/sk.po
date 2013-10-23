@@ -1,0 +1,444 @@
+# Slovak translation for gnome-utils.
+# Copyright (C) 2000, 2001, 2002, 2003, 2005, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-utils package.
+# Stanislav Višňovský <visnovsky@nenya.ms.mff.cuni.cz>, 2000, 2001, 2002.
+# Stanislav Višňovský <visnovsky@kde.org>, 2003.
+# Stanislav Višňovský <visnov@suse.cz>, 2003.
+# Ivan Noris <vix@vazka.sk>, 2005.
+# Pavol Klačanský <pavol@klacansky.com>, 2008, 2009, 2010, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2011-09-19 12:26+0200\n"
+"Last-Translator: Pavol Klačanský <pavol@klacansky.com>\n"
+"Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "Prehliadač systémových záznamov"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Zobrazte alebo sledujte súbory systémových záznamov"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "Výška hlavného okna v bodoch"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "Zoznam uložených filtrov"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "Zoznam uložených regulárnych výrazov na filtrovanie"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "Súbor so záznamom, ktorý sa má pri spustení otvoriť"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "Súbory so záznamami, ktoré sa majú pri spustení otvoriť"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "Veľkosť písma použitého na zobrazenie záznamov"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"Určuje zoznam záznamových súborov, ktoré sa majú otvoriť pri spustení. "
+"Predvolený zoznam je vytvorený zo súboru /etc/syslog.conf."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "Určuje výšku hlavného okna prehliadača záznamov v bodoch."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"Určuje súbor so záznamom otvorený po spustení. Predvolene je to /var/adm/"
+"messages alebo /var/log/messages v závislosti na vašom systéme."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"Určuje veľkosť písma s pevnou šírkou, ktoré sa použije pri zobrazení "
+"záznamov v hlavnom stromovom zobrazení. Predvolene sa použije veľkosť písma "
+"v termináli."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "Určuje šírku hlavného okna prehliadača záznamov v bodoch."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "Šírka hlavného okna v bodoch"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "Pozadie:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "Efekt:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "Popredie:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "Skryť"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "Zvýrazniť"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "_Názov:"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "_Regulárny výraz:"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"Tento program je slobodný softvér; môžete ho ďalej šíriť a/alebo upravovať "
+"podľa ustanovení Všeobecnej verejnej licencie GNU tak, ako bola vydaná "
+"organizáciou Free Software Foundation, a to buď verzie 2 tejto licencie, "
+"alebo (podľa vášho uváženia) ktorejkoľvek neskoršej verzie."
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"Tento program je rozširovaný v nádeji, že bude užitočný, avšak BEZ "
+"AKEJKOĽVEK ZÁRUKY. Neposkytujú sa ani odvodené záruky OBCHODOVATEĽNOSTI "
+"alebo VHODNOSTI PRE URČITÝ ÚČEL. Ďalšie podrobnosti hľadajte vo Všeobecnej "
+"verejnej licencii GNU."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"Kópiu Všeobecnej verejnej licencie GNU ste mali dostať spolu s týmto "
+"programom; ak sa tak nestalo, napíšte na Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"Stanislav Višňovský, Ivan Noris\n"
+"Pavol Klačanský <pavol@klacansky.com>"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "Je nemožné otvoriť súbor %s "
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "Názov filtra je prázdny!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "Názov filtra nesmie obsahovať znak \":\""
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "Regulárny výraz je prázdny!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "Regulárny výraz je neplatný: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "Určite, prosím, buď farbu popredia alebo pozadia!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "Upraviť filter"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "Pridať nový filter"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "Filtre"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_Nájsť:"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "Nájsť predchádzajúci"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "Nájsť predchádzajúci výskyt hľadaného reťazca"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "Nájsť ďalší"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "Nájsť ďalší výskyt hľadaného reťazca"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "Vymazať hľadaný reťazec"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr ""
+"Chyba počas rozbaľovania GZipovaného záznamu. Súbor mohol byť poškodený."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "Nemáte dostatočné práva na čítanie súboru."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "Súbor nie je normálny súbor alebo nie je textový súbor."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr "Táto verzia systémových záznamov nepodporuje GZipované záznamy."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "Načítava sa..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Zobraziť verziu aplikácie"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[SÚBORZÁZNAMU...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - Prehliadať a sledovať záznamy"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "Prehliadač záznamov"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "Prehliadač systémových záznamov"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "posledná aktualizácia: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d riadkov (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "Otvoriť záznam"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Nastala chyba pri zobrazovaní pomocníka: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "Zalomené"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "Nič nenájdené"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "Prehliadač systémových záznamov pre GNOME."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "_Súbor"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "_Upraviť"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "_Zobraziť"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "_Filtre"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "_Pomocník"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "_Otvoriť..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "Otvoriť záznam zo súboru"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "Zav_rieť"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "Zavrieť tento záznam"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "_Ukončiť"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "Ukončiť prehliadač systémových záznamov"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "_Kopírovať"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "Kopírovať výber"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "Vybr_ať všetko"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "Vybrať celý záznam"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "_Nájsť..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "Nájsť slovo alebo frázu v zázname"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "Väčšia veľkosť textu"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "Menšia veľkosť textu"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "Normálna veľkosť textu"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "Spravovať filtre"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "Spravovať filtre"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "Ob_sah"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "Otvoriť obsah pomocníka pre prehliadač systémových záznamov"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "_O programe"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "Zobraziť dialóg o aplikácii pre prehliadač systémových záznamov"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "_Stavová lišta"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "Zobraziť stavovú lištu"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "Bočný _panel"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "Zobraziť bočný panel"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "Zobraziť len zhody"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr ""
+"Zobraziť len také riadky, ktoré sa zhodujú s jedným zo zadaných filtrov"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "_Automaticky rolovať"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "Automaticky rolovať dole ak sa objavia nové riadky"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "Nemožno čítať z \"%s\""
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "Verzia: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "Nepodarilo sa otvoriť nasledujúce súbory:"

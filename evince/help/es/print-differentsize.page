@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="print-differentsize" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="printing"/>
+    <desc>Imprimir un documento en un papel de tamaño, forma u orientación diferentes.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Cambiar el tamaño del papel al imprimir</title>
+
+<p>Si quiere cambiar el tamaño del papel de su documento (por ejemplo, imprimir un PDF tamaño carta en un papel A4), puede cambiar el formato de impresión del documento.</p>
+<steps>
+ <item><p>Pulse <guiseq><gui>Archivo</gui><gui> Imprimir</gui></guiseq></p></item>
+ <item><p>Seleccione la pestaña <gui>Configuración de página</gui>.</p></item>
+ <item><p>Debajo de la columna <em>Papel</em>, seleccione el <em>Tamaño del papel</em> en la lista desplegable.</p></item>
+ <item><p>Pulse <gui>Print</gui> y su documento debería imprimirse.</p></item>
+</steps>
+
+<p>También puede usar el menú <em>Orientación</em> para elegir una orientación diferente:</p>
+
+<list>
+<item><p><gui>Vertical</gui></p></item>
+<item><p><gui>Apaisado</gui></p></item>
+<item><p><gui>Vertical invertido</gui></p></item>
+<item><p><gui>Apaisado invertido</gui></p></item>
+</list>
+</page>

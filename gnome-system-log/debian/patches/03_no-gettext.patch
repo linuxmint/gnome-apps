@@ -1,0 +1,14 @@
+Index: gnome-system-log-3.3.1/configure.ac
+===================================================================
+--- gnome-system-log-3.3.1.orig/configure.ac	2012-03-12 22:09:33.186419843 -0400
++++ gnome-system-log-3.3.1/configure.ac	2012-03-12 22:09:49.970503061 -0400
+@@ -21,9 +21,6 @@
+ 
+ AC_PATH_PROG(GLIB_GENMARSHAL, [glib-genmarshal])
+ 
+-AM_GNU_GETTEXT([external])
+-AM_GNU_GETTEXT_VERSION([0.17])
+-
+ AC_PROG_CC
+ AM_PROG_CC_C_O
+ AC_PROG_CXX

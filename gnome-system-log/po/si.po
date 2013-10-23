@@ -1,0 +1,431 @@
+# translation of si.po to Sinhala
+# Danishka Navin <snavin@redhat.com>, 2007.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Translators Danishka Navin <danishka@gmail.com>, Harshana Weerasinghe  <me@harshana.info>
+msgid ""
+msgstr ""
+"Project-Id-Version: si\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2007-09-17 09:07+0530\n"
+"Last-Translator: Danishka Navin <snavin@redhat.com>\n"
+"Language-Team: Sinhala <en@li.org>\n"
+"Language: si\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr ""
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:2
+#, fuzzy
+msgid "Effect:"
+msgstr "රංග සැරසිලි"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "නම (_N):"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr ""
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr "පරිවර්තන ස්තුතිය"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:94
+#, fuzzy
+msgid "Filter name is empty!"
+msgstr "හිස් ගොනුවකි"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:506
+#, fuzzy
+msgid "Filters"
+msgstr "පෙරහන (_F):"
+
+#: ../src/logview-findbar.c:173
+#, fuzzy
+msgid "_Find:"
+msgstr "සොයන්න (_i):"
+
+#: ../src/logview-findbar.c:188
+#, fuzzy
+msgid "Find Previous"
+msgstr "පෙර සෙවුම (_x)"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr ""
+
+#: ../src/logview-findbar.c:196
+#, fuzzy
+msgid "Find Next"
+msgstr "මීළඟ සෙවුම (_x)"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr ""
+
+#: ../src/logview-findbar.c:206
+#, fuzzy
+msgid "Clear the search string"
+msgstr "\"%s\" ‍සෙවීමේ විකල්පය තෝරන්න"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr ""
+
+#: ../src/logview-log.c:642
+#, fuzzy
+msgid "You don't have enough permissions to read the file."
+msgstr "ගොනුවට ලිවීම සදහා ඔබට අවසර නැත."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr ""
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr ""
+
+#: ../src/logview-loglist.c:315
+#, fuzzy
+msgid "Loading..."
+msgstr "පරිලෝකනය කරමින්..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "යෙදුමේ අනුවාදය පෙන්වන්න"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr ""
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr ""
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr ""
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr ""
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "අන්තිම යාවත්කාල කිරීම: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d පේලි (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr ""
+
+#: ../src/logview-window.c:357
+#, fuzzy, c-format
+msgid "There was an error displaying help: %s"
+msgstr "උදව් දර්ශනය කිරීමේදි දෝෂයක් තිබුණි."
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr ""
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "හමු නොවිනි"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr ""
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "ගොනු (_F)"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "සැකසුම් (_E)"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "දසුන (_V)"
+
+#: ../src/logview-window.c:817
+#, fuzzy
+msgid "_Filters"
+msgstr "පෙරහන (_F):"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "උදව් (_H)"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "විවෘත කරන්න... (_O)"
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr ""
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "වසන්න (_C)"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr ""
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "ඉවත් වන්න (_Q)"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr ""
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "පිටපත් කරන්න (_C)"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "තෝරාගත් කොටස අලවන්න"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "සියල්ල තෝරන්න (_A)"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr ""
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr ""
+
+#: ../src/logview-window.c:831
+#, fuzzy
+msgid "Find a word or phrase in the log"
+msgstr "ලේඛයේ පද ඛණ්ඩය සොයන්න"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "ලොකු අකුරු"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "කුඩා අකුරු"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "සාමාන්‍ය අකුරු"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr ""
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr ""
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "අන්තර්ගත (_C)"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr ""
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "සම්බන්ධව (_A)"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr ""
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "තත්ව පුවරුව (_S)"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "තත්ව තීරුව පෙන්වන්න"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "පැති පුවරුව (_P)"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "පැති කවුළුව පෙන්වන්න"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr ""
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr ""
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr ""
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr ""
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr ""
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "වෙළුම: "
+
+#: ../src/logview-window.c:1500
+#, fuzzy
+msgid "Could not open the following files:"
+msgstr "\"%s\" බහලුම විවෘත කල නොහැක"

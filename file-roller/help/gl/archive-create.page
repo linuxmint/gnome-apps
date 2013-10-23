@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-create" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <revision pkgversion="3.4" date="2012-01-18" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+    <desc>Engadir ficheiros e cartafoles ao novo arquivo.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Crear un arquivo novo</title>
+
+  <p>Crear un arquivo novo co <app>Xestor de arquivos</app>seguindo estes pasos:</p>
+
+  <steps>
+    <item>
+      <p>Prema no botón da barra de ferramentas <gui>Crear novo arquivo</gui>, ou prema <guiseq><gui style="menu">Arquivo</gui> <gui style="menuitem">Novo</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Abrirase o selector de ficheiros: póñalle nome ao seu novo ficheiro de arquivo e seleccione a localización onde gardalo, logo prema <gui>Crear</gui> para continuar.</p>
+      <note style="tip">
+	<p>Neste diálogo pode escoller o tipo de formato de ficheiro que quere usar: deberían mostrarse as extensións dispoñíbeis na parte inferior. Se non escolleu o formato de ficheiro, o novo ficheiro será un <file>tar.gz</file>.</p>
+	<p>Ao premer en <gui>Outras opcións</gui> pode estabelecer un contrasinal, ou dividir o seu novo ficheiro en ficheiro máis pequenos seleccionando a opción relevante e especifique o volume para cada parte en <gui>MB</gui>.</p>
+      </note>
+    </item>
+    <item>
+      <p>Engada os ficheiros que quere ao arquivo premendo no botón <gui>Engadir ficheiros ao arquivador</gui>, ou seleccionando <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Engadir ficheiros</gui></guiseq>. <app>O xestor de arquivos</app> tamén lle permite engadir cartafoles completos, premendo na icona <gui>Engadir un cartafol ao arquivo</gui>, ou seleccionando <guiseq><gui style="menu">Editar</gui><gui style="menuitem">Engadir un cartafol</gui></guiseq>.</p>
+      <note style="tip">
+        <p>Cando engada un cartafol a un arquivador, ofreceránselle varias opcións:</p>
+        <list>
+          <item><p>Indica se se deben incluír ou non os subcartafoles.</p></item>
+          <item><p>Escolla os ficheiros a incluir.</p></item>
+          <item><p>Seleccione que cartafoles ou ficheiros se deben excluír.</p></item>
+        </list>
+	<p>Non todos os formatos de ficheiro admiten cartafoles: se o formato de ficheiro que usa non é compatíbel, non se lle advertirá. Se o formato de ficheiro que esta usando non admite cartafoles, os ficheiros dos cartafoles engadiranse, pero non o cartafol en si mesmo.</p>
+      </note>
+    </item>
+    <item>
+      <p>Cando remate de engadir ficheiros, o arquivo estará listo; non ten que gardalo.</p>
+    </item>
+  </steps>
+
+</page>

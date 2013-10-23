@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="log-filter" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#main"/>
+    <link type="seealso" xref="log-search"/>
+    <revision version="3.3" date="2011-10-30" status="review"/>
+    <desc>Incluir o excluir las líneas mostradas usando expresiones regulares.</desc>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+
+  </info>
+
+  <title>Filtrar registro</title>
+
+  <p>El visor del registro de sucesos le permite filtrar el contenido de un registro usando expresiones regulares. Para configurar o gestionar un filtro nuevo:</p>
+
+  <steps>
+    <item>
+      <p>Abra el diálogo de gestión de filtros pulsando en <guiseq><gui>Filtros:</gui><gui>Gestionar filtros</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Pulse <gui>Añadir</gui> para añadir un filtro nuevo, o seleccione un filtro existente y pulse <gui>Propiedades</gui> para editarlo.</p>
+    </item>
+    <item>
+      <p>Rellene el formulario o edite los campos que quiera cambiar:</p>
+      <terms>
+        <item>
+          <title>Nombre:</title>
+          <p>El identificador del filtro</p>
+        </item>
+        <item>
+          <title>Expresión regular:</title>
+          <p>Para qué se usará el filtro</p>
+        </item>
+        <item>
+          <title>Resaltado:</title>
+          <p>Esta opción enfatiza la línea que contiene la expresión regular</p>
+          <terms>
+            <item>
+              <title>Fondo:</title>
+              <p>Este es el color de la tipografía</p>
+              <note style="tip">
+                <p>El color predeterminado es la tipografía es negro, que no enfatiza el texto.</p>
+              </note>
+            </item>
+            <item>
+              <title>Primer plano:</title>
+              <p>Este es el color del resaltado</p>
+              <note style="tip">
+                <p>El color de resaltado predeterminado es el negro, que muestra líneas negras sólidas como resultado, por que es posible que quiera cambiarlo.</p>
+              </note>
+            </item>
+          </terms>
+        </item>
+        <item>
+          <title>Ocultar:</title>
+          <p>Esta opción oculta las líneas que contengan la expresión regular en el registro mostrado</p>
+        </item>
+      </terms>
+    </item>
+    <item>
+      <p>Pulse <gui>Aplicar</gui> para guardar el filtro nuevo o para guardar los cambios en uno ya existente</p>
+    </item>
+    <item>
+      <p>Vuelva al diálogo de gestión de filtros y pulse <gui>Cerrar</gui> para aplicar los cambios.</p>
+    </item>
+  </steps>
+
+  <p>Marque la casilla junto al nombre del filtro que quiere activar en <gui>Filtros:</gui>. Si sólo quiere ver los filtros que tienen el <gui>Resaltado</gui> activado y que están marcados, marque <guiseq><gui>Filtros:</gui><gui>Sólo mostrar coincidencias</gui></guiseq>.</p>
+
+  <note style="tip">
+    <p>Si hay un conflicto entre un filtro oculto y uno resaltado, la línea se puede mostrar como una línea en blanco vacía.</p>
+  </note>
+
+  <note style="bug">
+    <p>Si desmarca un filtro mientras sólo está viendo coincidencias, el registro mostrará las líneas sin formatear, sin importar si antes estaban resaltadas u ocultas. El filtro se debe reiniciar cuando marque un filtro resaltado.</p>
+  </note>
+
+</page>

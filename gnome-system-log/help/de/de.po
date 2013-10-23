@@ -1,0 +1,465 @@
+# German translation of the logview manual.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2011.
+# Gabor Karsay <gabor.karsay@gmx.at>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2011-11-13 00:37+0000\n"
+"PO-Revision-Date: 2012-02-05 23:55+0100\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
+"Language-Team: Deutsch <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: C/pref-font-size.page:8(desc)
+msgid "Increase or decrease the size of the text."
+msgstr "Die Textgröße erhöhen oder verringern."
+
+#: C/pref-font-size.page:11(name) C/log-view.page:12(name)
+#: C/log-search.page:11(name) C/log-filter.page:12(name)
+#: C/log-copy.page:11(name) C/log-close.page:12(name)
+#: C/introduction.page:11(name)
+msgid "Ekaterina Gerasimova"
+msgstr "Jekaterina Gerassimowa"
+
+#: C/pref-font-size.page:12(email) C/log-view.page:13(email)
+#: C/log-search.page:12(email) C/log-filter.page:13(email)
+#: C/log-copy.page:12(email) C/log-close.page:13(email)
+#: C/introduction.page:12(email)
+msgid "kittykat3756@googlemail.com"
+msgstr "kittykat3756@googlemail.com"
+
+#: C/pref-font-size.page:16(p) C/log-view.page:17(p) C/log-search.page:16(p)
+#: C/log-filter.page:17(p) C/log-copy.page:16(p) C/log-close.page:17(p)
+#: C/introduction.page:16(p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0"
+
+#: C/pref-font-size.page:21(title)
+msgid "Change font size"
+msgstr "Textgröße ändern"
+
+#: C/pref-font-size.page:23(p)
+msgid ""
+"You can increase, decrease and reset the font size that the log is displayed "
+"in:"
+msgstr ""
+"Sie können die Schriftgröße, in der die Protokolle angezeigt werden, erhöhen, "
+"verringern und zurücksetzen:"
+
+#: C/pref-font-size.page:28(title)
+msgid "Increase font size"
+msgstr "Schrift vergrößern"
+
+#: C/pref-font-size.page:29(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Zoom In</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>+</key></keyseq>"
+msgstr ""
+"Wählen Sie <guiseq><gui>Ansicht</gui><gui>Heranzoomen</gui></guiseq> oder "
+"drücken Sie <keyseq><key>Strg</key><key>+</key></keyseq>."
+
+#: C/pref-font-size.page:33(title)
+msgid "Decrease font size"
+msgstr "Schrift verkleinern"
+
+#: C/pref-font-size.page:34(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Zoom Out</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>-</key></keyseq>"
+msgstr ""
+"Wählen Sie <guiseq><gui>Ansicht</gui><gui>Wegzoomen</gui></guiseq> oder "
+"drücken Sie <keyseq><key>Strg</key><key>-</key></keyseq>."
+
+#: C/pref-font-size.page:38(title)
+msgid "Reset to default size"
+msgstr "Auf Standardgröße zurücksetzen"
+
+#: C/pref-font-size.page:39(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Normal Size</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>0</key></keyseq>"
+msgstr ""
+"Wählen Sie <guiseq><gui>Ansicht</gui><gui>Normale Größe</gui></guiseq> oder "
+"drücken Sie <keyseq><key>Strg</key><key>0</key></keyseq>."
+
+#: C/log-view.page:9(desc)
+msgid "Open and view logs."
+msgstr "Protokolle öffnen und betrachten"
+
+#: C/log-view.page:22(title)
+msgid "Open log"
+msgstr "Protokoll öffnen"
+
+#: C/log-view.page:24(p)
+msgid ""
+"Open logs by clicking <guiseq><gui>File</gui><gui>Open</gui></guiseq>. Your "
+"opened logs will be displayed in the side pane, to the left of the main area. "
+"You can view a log in the side pane by clicking it."
+msgstr ""
+"Wählen Sie <guiseq><gui>Datei</gui><gui>Öffnen</gui></guiseq>, um Protokolle "
+"zu öffnen. Ihre geöffneten Protokolle werden in der Seitenleiste angezeigt, "
+"links von der Hauptansicht. Sie können eines der Protokolle in der "
+"Seitenleiste öffnen, indem Sie darauf klicken."
+
+#: C/log-view.page:29(p)
+msgid ""
+"You can expand some logs. This will show you a list of dates. By clicking one "
+"of the dates, you can view only the log lines from that date, instead of the "
+"whole log."
+msgstr ""
+"Einige Protokolle lassen sich ausklappen. Dadurch wird Ihnen eine Datumsliste "
+"angezeigt. Wenn Sie eines der Daten anklicken, können Sie nur die "
+"Protokollzeilen für dieses Datum anstelle des gesamten Protokolls anzeigen "
+"lassen."
+
+#: C/log-view.page:34(p)
+msgid ""
+"The logs you have open when you quit the log viewer will be opened when you "
+"start it up again."
+msgstr ""
+"Die beim Beenden des Systemprotokollbetrachters geöffneten Protokolle werden "
+"beim nächsten Start erneut geöffnet."
+
+#: C/log-search.page:8(desc)
+msgid "Search the text in the log that you are currently viewing."
+msgstr "Nach Text im aktuell geöffneten Protokoll suchen."
+
+#: C/log-search.page:21(title)
+msgid "Search log"
+msgstr "Protokoll durchsuchen"
+
+#: C/log-search.page:23(p)
+msgid "To search the log you are currently viewing:"
+msgstr "Sie können das aktuell geöffnete Protokoll folgendermaßen durchsuchen:"
+
+#: C/log-search.page:27(p)
+msgid ""
+"Show the <gui>Find</gui> bar by pressing <keyseq><key>Ctrl</key><key>F</key></"
+"keyseq>, or by clicking <guiseq><gui>View</gui><gui>Find</gui></guiseq>. The "
+"bar will be shown below the log."
+msgstr ""
+"Wählen Sie <guiseq><gui>Ansicht</gui><gui>Suchen</gui></guiseq> oder drücken "
+"Sie <keyseq><key>Strg</key><key>F</key></keyseq>, um die <gui>Suchleiste</"
+"gui> zu öffnen. Die Suchleiste wird unterhalb des Protokolls angezeigt."
+
+#: C/log-search.page:33(p)
+msgid ""
+"Enter your search term into the field and press <key>Enter</key> to see the "
+"first result."
+msgstr ""
+"Geben Sie Ihren Suchbegriff ein und drücken Sie die <key>Eingabetaste</key>, "
+"um das erste Ergebnis zu sehen."
+
+#: C/log-search.page:36(p)
+msgid "The search is case sensitive."
+msgstr "Für die Suche wird Groß-/Kleinschreibung berücksichtigt."
+
+#: C/log-search.page:40(p)
+msgid ""
+"Use the <gui>Find Previous</gui> and <gui>Find Next</gui> buttons to browse "
+"through the results."
+msgstr ""
+"Verwenden Sie die Knöpfe <gui>Rückwärts suchen</gui> und <gui>Weitersuchen</"
+"gui>, um die Suchergebnisse zu durchblättern."
+
+#: C/log-search.page:43(p)
+msgid "If you can not see the result highlighted, try scrolling to the left."
+msgstr ""
+"Falls Sie das hervorgehobene Suchergebnis nicht sehen können, rollen Sie in "
+"der Ansicht nach links."
+
+#: C/log-search.page:47(p)
+msgid ""
+"Press <key>Esc</key> to hide the find bar once you are finished with the "
+"search."
+msgstr ""
+"Drücken Sie <key>Esc</key>, um die Suchleiste zu schließen, sobald Sie die "
+"Suche beendet haben."
+
+#: C/log-search.page:50(p)
+msgid ""
+"You can only hide the <gui>find bar</gui> if you are currently focused on the "
+"search field. The bar will hide itself if you view another log."
+msgstr ""
+"Sie können die <gui>Suchleiste</gui> nur dann schließen, wenn das Suchfeld "
+"fokussiert ist. Sobald Sie ein anderes Protokoll öffnen, wird die Suchleiste "
+"automatisch geschlossen."
+
+#: C/log-filter.page:9(desc)
+msgid "Include or exclude shown lines using regular expressions."
+msgstr "Mit Hilfe regulärer Ausdrücke bestimmte Zeilen anzeigen oder verbergen."
+
+#: C/log-filter.page:22(title)
+msgid "Filter log"
+msgstr "Protokolle filtern"
+
+#: C/log-filter.page:24(p)
+msgid ""
+"The log viewer allows you to filter log content based on regular expressions. "
+"To set up or manage a new filter:"
+msgstr ""
+"Der Systemprotokollbetrachter ermöglicht Ihnen, Protokollinhalte auf der "
+"Basis regulärer Ausdrücke zu filtern. Sie können Filter folgendermaßen "
+"einrichten und verwalten:"
+
+#: C/log-filter.page:29(p)
+msgid ""
+"Open the filter manager dialog by clicking <guiseq><gui>Filters:</"
+"gui><gui>Manage Filters</gui></guiseq>."
+msgstr ""
+"Wählen Sie <guiseq><gui>Filter</gui><gui>Filter verwalten</gui></guiseq>, um "
+"den Dialog zur Filterverwaltung zu öffnen."
+
+#: C/log-filter.page:33(p)
+msgid ""
+"Click <gui>Add</gui> to add a new filter, or select an existing filter and "
+"click <gui>Properties</gui> to edit it."
+msgstr ""
+"Klicken Sie auf <gui>Hinzufügen</gui>, um einen neuen Filter hinzuzufügen, "
+"oder wählen Sie einen existierenden Filter und klicken Sie auf "
+"<gui>Eigenschaften</gui>, um ihn zu bearbeiten."
+
+#: C/log-filter.page:37(p)
+msgid "Fill in the form or edit the fields that you wish to change:"
+msgstr ""
+"Füllen Sie die Formularfelder aus oder bearbeiten Sie die Felder nach Ihren "
+"Wünschen:"
+
+#: C/log-filter.page:40(title)
+msgid "Name:"
+msgstr "Name:"
+
+#: C/log-filter.page:41(p)
+msgid "The identifier for the filter"
+msgstr "Die Bezeichnung für den Filter"
+
+#: C/log-filter.page:44(title)
+msgid "Regular Expression:"
+msgstr "Regulärer Ausdruck:"
+
+#: C/log-filter.page:45(p)
+msgid "What the filter will filter for"
+msgstr "Wonach gefiltert werden soll"
+
+#: C/log-filter.page:48(title)
+msgid "Highlight:"
+msgstr "Hervorheben:"
+
+#: C/log-filter.page:49(p)
+msgid "This option emphasizes the line containing the regular expression"
+msgstr "Diese Option hebt die Zeile hervor, die den regulären Ausdruck enthält."
+
+#: C/log-filter.page:52(title)
+msgid "Background:"
+msgstr "Hintergrund:"
+
+#: C/log-filter.page:53(p)
+msgid "This is the font color"
+msgstr "Dies ist die Schriftfarbe."
+
+#: C/log-filter.page:55(p)
+msgid "The default font color is black, which does not emphasize the text."
+msgstr ""
+"Die vorgegebene Schriftfarbe ist Schwarz, wodurch kein Text hervorgehoben "
+"wird."
+
+#: C/log-filter.page:60(title)
+msgid "Foreground:"
+msgstr "Vordergrund:"
+
+#: C/log-filter.page:61(p)
+msgid "This is the highlight color"
+msgstr "Dies ist die Hervorhebungsfarbe."
+
+#: C/log-filter.page:63(p)
+msgid ""
+"The default highlight color is black, which shows solid black lines as a "
+"result, so it would be wise to change it."
+msgstr ""
+"Die vorgegebene Hervorhebungsfarbe ist Schwarz, wodurch vollkommen schwarze "
+"Zeilen angezeigt werden. Daher ist es ratsam, diese zu ändern."
+
+#: C/log-filter.page:70(title)
+msgid "Hide:"
+msgstr "Verbergen:"
+
+#: C/log-filter.page:71(p)
+msgid ""
+"This option hides the lines containing the regular expression from the shown "
+"log"
+msgstr ""
+"Diese Option verbirgt die Zeilen aus dem angezeigten Protokoll, die den "
+"regulären Ausdruck enthalten."
+
+#: C/log-filter.page:77(p)
+msgid ""
+"Click <gui>Apply</gui> to save the new filter or save changes to an existing "
+"one"
+msgstr ""
+"Klicken Sie auf <gui>Anwenden</gui>, um den neuen Filter oder Änderungen an "
+"einem existierenden Filter zu speichern."
+
+#: C/log-filter.page:81(p)
+msgid ""
+"Back at the filter manager dialog, click <gui>Close</gui> to apply the "
+"changes."
+msgstr ""
+"Zurück im Dialog zur Filterverwaltung klicken Sie auf <gui>Schließen</gui>, "
+"um die Änderungen anzuwenden."
+
+#: C/log-filter.page:86(p)
+msgid ""
+"Check the box next to the name of the filter that you want to enable in "
+"<gui>Filters:</gui>. If you want to view only the filters which have "
+"<gui>Highlight</gui> enabled and are checked, check <guiseq><gui>Filters:</"
+"gui><gui>Show matches only</gui></guiseq>."
+msgstr ""
+"Aktivieren Sie das Ankreuzfeld neben dem Namen des Filters in <gui>Filter</"
+"gui>, den Sie aktivieren wollen. Falls Sie nur Filter betrachten wollen, für "
+"die <gui>Hervorheben</gui> aktiviert ist, aktivieren Sie <guiseq><gui>Filter</"
+"gui><gui>Nur Übereinstimmungen anzeigen</gui></guiseq>."
+
+#: C/log-filter.page:92(p)
+msgid ""
+"If there is a conflict between a hidden and a highlighted filter, the line "
+"many show as an empty white line."
+msgstr ""
+"Falls ein Konflikt zwischen einem verbergenden und einem hervorhebenden "
+"Filter besteht, werden Zeilen oft als leere weiße Zeilen angezeigt."
+
+#: C/log-filter.page:97(p)
+msgid ""
+"If you uncheck a filter while viewing only matches, the log will show the "
+"lines without any formatting, regardless of whether they were hidden or "
+"highlighted before. The filter should reset when you check a highlighted "
+"filter."
+msgstr ""
+"Wenn Sie einen Filter deaktivieren, während Sie nur Übereinstimmungen "
+"anzeigen lassen, werden im Protokoll nur die Zeilen ohne Formatierung "
+"angezeigt, unabhängig davon, ob sie vorher verborgen oder hervorgehoben "
+"wurden. Der Filter wird zurückgesetzt, sobald Sie einen hervorhebenden Filter "
+"aktivieren."
+
+#: C/log-copy.page:8(desc)
+msgid "Copy text from the log."
+msgstr "Text aus einem Protokoll kopieren."
+
+#: C/log-copy.page:20(title)
+msgid "Copy log"
+msgstr "Protokolle kopieren"
+
+#: C/log-copy.page:22(p)
+msgid ""
+"Highlight the section of the log that you want to copy with the cursor and "
+"press <keyseq><key>Ctrl</key><key>C</key></keyseq>, or click "
+"<guiseq><gui>Edit</gui><gui>Copy</gui></guiseq>."
+msgstr ""
+"Markieren Sie den Abschnitt des Protokolls, den Sie kopieren wollen, und "
+"drücken Sie <keyseq><key>Strg</key><key>C</key></keyseq> oder wählen Sie "
+"<guiseq><gui>Bearbeiten</gui><gui>Kopieren</gui></guiseq>."
+
+#: C/log-copy.page:27(p)
+msgid ""
+"You can press <keyseq><key>Ctrl</key><key>A</key></keyseq>, or click "
+"<guiseq><gui>Edit</gui><gui>Select All</gui></guiseq>, to select all the text "
+"in the log which you are currently viewing."
+msgstr ""
+"Sie können <keyseq><key>Strg</key><key>A</key></keyseq> drücken oder "
+"<guiseq><gui>Bearbeiten</gui><gui>Alles auswählen</gui></guiseq> wählen, um "
+"den gesamten Text im aktuell betrachteten Protokoll auszuwählen."
+
+#: C/log-close.page:9(desc)
+msgid "Remove the log you are currently viewing from the <gui>side pane</gui>."
+msgstr ""
+"Das aktuell betrachtete Protokoll aus der <gui>Seitenleiste</gui> entfernen."
+
+#: C/log-close.page:21(title)
+msgid "Close log"
+msgstr "Protokolle schließen"
+
+#: C/log-close.page:23(p)
+msgid ""
+"Close the log that you are currently viewing by pressing <keyseq><key>Ctrl</"
+"key><key>W</key></keyseq>, or by clicking <guiseq><gui>File</gui><gui>Close</"
+"gui></guiseq>. This removes it from the <gui>side pane</gui> until you open "
+"the log again."
+msgstr ""
+"Drücken Sie <keyseq><key>Strg</key><key>W</key></keyseq> oder wählen Sie "
+"<guiseq><gui>Datei</gui><gui>Schließen</gui></guiseq>, um das aktuell "
+"betrachtete Protokoll zu schließen. Dadurch wird es aus der "
+"<gui>Seitenleiste</gui> entfernt, bis Sie das Protokoll erneut öffnen."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/introduction.page:40(None)
+msgid ""
+"@@image: 'figures/log-viewer-main.png'; md5=019eaf56737c3fd7c1ae085e77962384"
+msgstr "translated"
+
+#: C/introduction.page:8(desc)
+msgid "Introduction to the <app>GNOME System Log</app>."
+msgstr "Einführung in den <app>Systemprotokollbetrachter</app>."
+
+#: C/introduction.page:20(title)
+msgid "Introduction"
+msgstr "Einführung"
+
+#: C/introduction.page:22(p)
+msgid ""
+"<app>Log File Viewer</app> is a graphical, menu-driven viewer that you can "
+"use to view and monitor your system logs. <app>Log File Viewer</app> comes "
+"with a few functions that can help you manage your logs, including a log "
+"monitor and log statistics display."
+msgstr ""
+"Der <app>Systemprotokollbetrachter</app> ist ein grafischer, menügesteuerter "
+"Betrachter, den Sie zum Betrachten und Überwachen Ihrer "
+"Systemprotokolldateien benutzen können. Der <app>Systemprotokollbetrachter</"
+"app> stellt einige Funktionen bereit, die Ihnen beim Verwalten Ihrer "
+"Protokolle helfen, beispielsweise eine Protokollüberwachung und eine "
+"Protokollstatistik."
+
+#: C/introduction.page:27(p)
+msgid ""
+"<app>Log File Viewer</app> is useful if you are new to system administration "
+"because it provides an easier, more user-friendly display of your logs than a "
+"text display of the log file. It is also useful for more experienced "
+"administrators, as it contains a monitor to enable you to continuously "
+"monitor crucial logs."
+msgstr ""
+"Wenn Sie noch unerfahren in der Systemverwaltung sind, stellt Ihnen der "
+"<app>Systemprotokollbetrachter</app> eine einfachere und "
+"benutzerfreundlichere Anzeige Ihrer Systemprotokolle zur Verfügung, im "
+"Gegensatz zur reinen Textansicht einer Protokolldatei. Auch für "
+"fortgeschrittenere Systemverwalter ist der <app>Systemprotokollbetrachter</"
+"app> nützlich, da er über eine Möglichkeit der permanenten Überwachung "
+"wichtiger Protokolle verfügt."
+
+#: C/introduction.page:34(p)
+msgid ""
+"<app>Log File Viewer</app> is useful only to those who have access to the "
+"system log files, which generally requires root access."
+msgstr ""
+"Der <app>Systemprotokollbetrachter</app> ist nur verwendbar, wenn Sie Zugriff "
+"auf die Systemprotokolldateien haben, was im Allgemeinen die Rechte des "
+"Systemverwalters erfordert."
+
+#: C/index.page:5(title)
+msgid "Log File Viewer Help"
+msgstr "Hilfe zum Systemprotokollbetrachter"
+
+#: C/index.page:8(title)
+msgid "Working with the <app>Log File Viewer</app>"
+msgstr "Arbeiten mit dem <app>Systemprotokollbetrachter</app>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/index.page:0(None)
+msgid "translator-credits"
+msgstr ""
+"Mario Blättermann <mario.blaettermann@gmail.com>, 2008-2011\n"
+"Gabor Karsay <gabor.karsay@gmx.at>, 2011."

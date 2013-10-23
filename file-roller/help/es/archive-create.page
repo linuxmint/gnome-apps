@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-create" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <revision pkgversion="3.4" date="2012-01-18" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+    <desc>Añadir archivos o carpetas al archivador nuevo.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@tecknolabs.com</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Crear un archivador nuevo</title>
+
+  <p>Cree un archivador nuevo con el <app>Gestor de archivadores</app>, siguiendo estos pasos:</p>
+
+  <steps>
+    <item>
+      <p>Pulse en el botón <gui>Crear un archivador nuevo</gui> en la barra de herramientas, o seleccione <guiseq><gui style="menu">Archivador</gui><gui>Nuevo</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Se abrirá el selector de archivos. asigne un nombre al archivador, elija la ubicación en la que se guardará y pulse <gui>Crear</gui>.</p>
+      <note style="tip">
+	<p>En este diálogo puede elegir el tipo de formato de archivo que quiere usar. Las extensiones disponibles se listan más abajo. Si no elige un formato de archivo, el nuevo archivador será <file>tar.gz</file>.</p>
+	<p>Pulsando en <gui>Otras opciones</gui> puede establecer una contraseña, dividir el archivador en archivos más pequeños seleccionando la opción correcta y especificando el tamaño de cada parte en <gui>MB</gui>.</p>
+      </note>
+    </item>
+    <item>
+      <p>Añada los archivos que quiere al archivador pulsando en el botón <gui>Añadir archivos al archivador</gui> de la barra de herramientas, o seleccionando <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Añadir archivos</gui></guiseq>. El <app>Gestor de archivadores</app> también le permite añadir carpetas completas. Para hacer esto, pulse el icono <gui>Añadir una carpeta al archivador</gui>, o seleccione <guiseq><gui style="menu">Editar</gui> <gui style="menuitem">Añadir una carpeta</gui></guiseq>.</p>
+      <note style="tip">
+        <p>Cuando añada una carpeta a un archivador, se le ofrecerán varias opciones:</p>
+        <list>
+          <item><p>indica si se deben incluir o no las subcarpetas.</p></item>
+          <item><p>Elija los archivos que se deben incluir.</p></item>
+          <item><p>Seleccione qué subcarpetas o archivos se deben excluir.</p></item>
+        </list>
+	<p>No todos los archivadores soportan carpetas; si el formato de archivo que está usando no las soporta, no se le advertirá. Se añadirán los archivos al archivador, pero no las carpetas como tales.</p>
+      </note>
+    </item>
+    <item>
+      <p>Una vez que haya terminado de añadir archivos, el archivador estará listo; no necesita guardarlo</p>
+    </item>
+  </steps>
+
+</page>

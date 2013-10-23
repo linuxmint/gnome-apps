@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="print-differentsize" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="printing"/>
+    <desc>Imprimer un document sur du papier de taille, forme ou orientation différente.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2006, 2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2006-2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Modification de la taille du papier lors de l'impression</title>
+
+<p>Si vous voulez modifier la taille des pages de votre document (par exemple, imprimer un PDF conçu pour une taille « US letter » sur du papier A4), vous pouvez modifier le format d'impression pour le document.</p>
+<steps>
+ <item><p>Cliquez sur <guiseq><gui>Fichier</gui><gui>Imprimer</gui></guiseq></p></item>
+ <item><p>Sélectionnez l'onglet <gui>Mise en page</gui>.</p></item>
+ <item><p>Dans la colonne <em>Papier</em>, choisissez la <em>taille du papier</em> dans la liste déroulante.</p></item>
+ <item><p>Cliquez sur <gui>Imprimer</gui> et votre document s'imprime.</p></item>
+</steps>
+
+<p>Vous pouvez aussi utiliser la liste <em>Orientation</em> pour choisir une orientation différente :</p>
+
+<list>
+<item><p><gui>Portrait</gui></p></item>
+<item><p><gui>Paysage</gui></p></item>
+<item><p><gui>Portrait inversé</gui></p></item>
+<item><p><gui>Paysage inversé</gui></p></item>
+</list>
+</page>

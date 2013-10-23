@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-create" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <revision pkgversion="3.4" date="2012-01-18" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>Προσθήκη αρχείων ή φακέλων σε συμπιεσμένο αρχείο.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Δημιουργία νέου συμπιεσμένου αρχείου</title>
+
+  <p>Δημιουργήστε ένα συμπιεσμένο αρχείο με τον <app>Διαχειριστή συμπιεσμένων αρχείων</app> ακολουθώντας τα βήματα:</p>
+
+  <steps>
+    <item>
+      <p>Κάντε κλικ στο κουμπί της εργαλειοθήκης <gui>Δημιουργία νέου συμπιεσμένου αρχείου</gui>, ή κλικ στο <guiseq><gui style="menu">Συμπιεσμένο αρχείο</gui> <gui style="menuitem">Νέο</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Θα ανοίξει ο επιλογέας αρχείων: δώστε ένα όνομα στο αρχείο και επιλέξτε την τοποθεσία αποθήκευσης, για να συνεχίσετε κάντε κλικ στη <gui>Δημιουργία</gui>.</p>
+      <note style="tip">
+	<p>Σε αυτόν το διάλογο, μπορείτε επίσης να επιλέξετε τον τύπο αρχείου που θέλετε να χρησιμοποιήσετε: τα διαθέσιμα πρόσθετα καταγράφονται στο κάτω μέρος. Αν δε θέλετε να επιλέξετε έναν τύπο αρχείου, το νέο συμπιεσμένο αρχείο θα είναι σε <file>tar.gz</file>.</p>
+	<p>Κάνοντας κλικ στις <gui>Άλλες επιλογές</gui> μπορείτε να ορίσετε έναν κωδικό, ή να διασπάσετε το νέο συμπιεσμένο σας αρχείο σε μικρότερα αρχεία, επιλέγοντας τη σχετική επιλογή και καθορίζοντας τον τόμο για κάθε κομμάτι σε <gui>MB</gui>.</p>
+      </note>
+    </item>
+    <item>
+      <p>Προσθέστε τα επιθυμητά σας αρχεία στο συμπιεσμένο αρχείο κάνοντας κλικ στο κουμπί της εργαλειοθήκης <gui>Προσθήκη αρχείων στο συμπιεσμένο αρχείο</gui>, ή κάνοντας κλικ στην <guiseq><gui style="menu">Επεξεργασία</gui> <gui style="menuitem">Προσθήκη αρχείων</gui></guiseq>. Ο <app>Διαχειριστής συμπιεσμένων αρχείων</app> σας επιτρέπει να προσθέσετε ολόκληρους φακέλους κάνοντας κλικ στο <gui>Προσθήκη φακέλου στο συμπιεσμένο αρχείο</gui> <guiseq><gui style="menu">Επεξεργασία</gui> <gui style="menuitem">Προσθήκη φακέλου</gui></guiseq>.</p>
+      <note style="tip">
+        <p>Όταν προσθέτετε ένα φάκελο στο συμπιεσμένο αρχείο, θα σας προσφερθούν ορισμένες επιλογές:</p>
+        <list>
+          <item><p>Αν θα συμπεριλαμβάνονται ή όχι οι υποφάκελοι.</p></item>
+          <item><p>Επιλέξτε ποια αρχεία πρέπει να συμπεριληφθούν.</p></item>
+          <item><p>Επιλέξτε ποιοι υποφάκελοι ή αρχεία θα εξαιρεθούν.</p></item>
+        </list>
+	<p>Δεν υποστηρίζουν όλοι οι τύποι αρχείων φακέλους — αν ο τύπος αρχείου που χρησιμοποιείτε δεν υποστηρίζει, τότε δεν θα προειδοποιηθείτε. Αν ο τύπος αρχείου που χρησιμοποιείτε δεν υποστηρίζει φακέλους, τα αρχεία του φακέλου θα προστεθούν, αλλά όχι ο ίδιος ο φάκελος.</p>
+      </note>
+    </item>
+    <item>
+      <p>Όταν τελειώσετε με την εισαγωγή των αρχείων, τότε το συμπιεσμένο αρχείο είναι έτοιμο και δεν χρειάζεται να το αποθηκεύσετε.</p>
+    </item>
+  </steps>
+
+</page>

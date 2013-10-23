@@ -1,0 +1,103 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="guide"
+      id="log-filter">
+
+  <info>
+    <link type="guide" xref="index#main"/>
+    <link type="seealso" xref="log-search"/>
+    <revision version="3.3" date="2011-10-30" status="review"/>
+    <desc>Include or exclude shown lines using regular expressions.</desc>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  </info>
+
+  <title>Filter log</title>
+
+  <p>The log viewer allows you to filter log content based on regular
+  expressions. To set up or manage a new filter:</p>
+
+  <steps>
+    <item>
+      <p>Open the filter manager dialog by clicking <guiseq><gui>Filters:</gui>
+      <gui>Manage Filters</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Click <gui>Add</gui> to add a new filter, or select an existing filter
+      and click <gui>Properties</gui> to edit it.</p>
+    </item>
+    <item>
+      <p>Fill in the form or edit the fields that you wish to change:</p>
+      <terms>
+        <item>
+          <title>Name:</title>
+          <p>The identifier for the filter</p>
+        </item>
+        <item>
+          <title>Regular Expression:</title>
+          <p>What the filter will filter for</p>
+        </item>
+        <item>
+          <title>Highlight:</title>
+          <p>This option emphasizes the line containing the regular expression</p>
+          <terms>
+            <item>
+              <title>Background:</title>
+              <p>This is the font color</p>
+              <note style="tip">
+                <p>The default font color is black, which does not emphasize the
+                text.</p>
+              </note>
+            </item>
+            <item>
+              <title>Foreground:</title>
+              <p>This is the highlight color</p>
+              <note style="tip">
+                <p>The default highlight color is black, which shows solid black
+                lines as a result, so it would be wise to change it.</p>
+              </note>
+            </item>
+          </terms>
+        </item>
+        <item>
+          <title>Hide:</title>
+          <p>This option hides the lines containing the regular expression from
+          the shown log</p>
+        </item>
+      </terms>
+    </item>
+    <item>
+      <p>Click <gui>Apply</gui> to save the new filter or save changes to an
+      existing one</p>
+    </item>
+    <item>
+      <p>Back at the filter manager dialog, click <gui>Close</gui> to apply the
+      changes.</p>
+    </item>
+  </steps>
+
+  <p>Check the box next to the name of the filter that you want to enable in
+  <gui>Filters:</gui>. If you want to view only the filters which have
+  <gui>Highlight</gui> enabled and are checked, check
+  <guiseq><gui>Filters:</gui><gui>Show matches only</gui></guiseq>.</p>
+
+  <note style="tip">
+    <p>If there is a conflict between a hidden and a highlighted filter, the
+     line many show as an empty white line.</p>
+  </note>
+
+  <note style="bug">
+    <p>If you uncheck a filter while viewing only matches, the log will show the
+    lines without any formatting, regardless of whether they were hidden or
+    highlighted before. The filter should reset when you check a highlighted
+    filter.</p>
+  </note>
+
+</page>

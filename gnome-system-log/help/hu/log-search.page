@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="log-search" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#main"/>
+    <revision version="3.3" date="2011-10-30" status="review"/>
+    <desc>Keressen az éppen olvasott naplóban.</desc>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  </info>
+
+  <title>Keresés a naplóban</title>
+
+  <p>Az éppen olvasott naplóban való kereséshez:</p>
+
+  <steps>
+    <item>
+      <p>Jelenítse meg a <gui>Keresősávot</gui> a <keyseq><key>Ctrl</key><key>F</key></keyseq> billentyűkombináció lenyomásával, vagy a <guiseq><gui>Nézet</gui><gui>Keresés</gui></guiseq> menüpont kiválasztásával. A sáv meg fog jelenni a napló alatt.</p>
+    </item>
+    <item>
+      <p>Gépelje be a keresett szöveget, majd nyomja le az <key>Entert</key> a keresés eredményének megtekintéséhez.</p>
+      <note style="tip">
+        <p>A keresés kis- és nagybetűérzékeny.</p>
+      </note>
+    </item>
+    <item>
+      <p>Használja az <gui>Előző találat</gui> és a <gui>Következő találat</gui> gombokat a találatok közti lépkedéshez.</p>
+      <note style="tip">
+        <p>Ha nem látja kiemelve az eredményt, akkor próbáljon meg balra görgetni.</p>
+      </note>
+    </item>
+    <item>
+      <p>Nyomja meg az <key>Esc</key> billentyűt a sáv elrejtéséhez, ha befejezte a keresést.</p>
+      <note style="tip">
+        <p>Csak akkor tudja eltüntetni a <gui>keresősávot</gui>, ha a fókusz éppen a keresőmezőn van. A sáv automatikusan elrejti magát, ha egy másik naplót kezd el nézni.</p>
+      </note>
+    </item>
+  </steps>
+
+
+
+</page>

@@ -1,0 +1,447 @@
+# Swedish messages for gnome-utils.
+# Copyright (C) 2000-2011 Free Software Foundation, Inc.
+# Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
+# Andreas Hyden <a.hyden@cyberpoint.se>.
+# Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
+# Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011.
+#
+# $Id: sv.po,v 1.161 2006/12/11 21:18:20 dnylande Exp $
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2011-08-02 00:26+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "Loggfilsvisare"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Visa eller övervaka systemloggfiler"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "Höjd på huvudfönstret i pixlar."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "Lista över sparade filter"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "Lista över sparade regexp-filter"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "Loggfil att öppna vid uppstart"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "Loggfiler att öppna vid uppstart"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "Storlek på typsnittet som används för att visa loggen"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"Anger en lista på loggfiler som öppnas vid uppstart. En standardlista skapas "
+"genom att läsa /etc/syslog.conf."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "Anger höjden på loggvisarens huvudfönster i pixlar."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"Anger den loggfil som visas vid uppstart. Standard är antingen /var/adm/"
+"messages eller /var/log/messages, beroende på ditt operativsystem."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"Anger storleken på det typsnitt med fast breddsteg som används för att visa "
+"loggen i huvudträdvyn. Standarden är tagen från storleken för "
+"standardterminaltypsnittet."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "Anger bredden på loggvisarens huvudfönster i pixlar."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "Bredd på huvudfönstret i pixlar"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "Bakgrund:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "Effekt:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "Förgrund:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "Dölj"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "Markera"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "_Namn:"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "_Reguljärt uttryck:"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"Detta program är fri programvara. Du kan distribuera det och/eller modifiera "
+"det under villkoren i GNU General Public License, publicerad av Free "
+"Software Foundation, antingen version 2 eller (om du så vill) någon senare "
+"version."
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"Detta program distribueras i hopp om att det ska vara användbart, men UTAN "
+"NÅGON SOM HELST GARANTI, även utan underförstådd garanti om SÄLJBARHET eller "
+"LÄMPLIGHET FÖR NÅGOT SPECIELLT ÄNDAMÅL. Se GNU General Public License för "
+"ytterligare information."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"Du bör ha fått en kopia av GNU General Public License tillsammans med detta "
+"program. Om inte, skriv till Free Software Foundation, Inc., 51 Franklin "
+"Street, Fifth Floor, Boston, MA  02110-1301, USA"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"Daniel Nylander <po@danielnylander.se>\n"
+"Christian Rose\n"
+"Martin Norbäck\n"
+"Andreas Hydén\n"
+"\n"
+"Skicka synpunkter på översättningen till\n"
+"<tp-sv@listor.tp-sv.se>."
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "Omöjligt att öppna filen %s"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "Filternamnet är tomt!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "Filternamn får inte innehålla tecknet \":\""
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "Reguljärt uttryck är tomt!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "Reguljärt uttryck är ogiltigt: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "Ange antingen förgrund- eller bakgrundsfärg!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "Redigera filter"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "Lägg till nytt filter"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "Filter"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_Sök:"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "Sök föregående"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "Sök föregående förekomst av söksträngen"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "Sök nästa"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "Sök nästa förekomst av söksträngen"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "Töm söksträngen"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "Fel vid uppackning av gzippad logg. Filen kan vara skadad."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "Du har inte tillräcklig behörighet för att läsa filen."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "Filen är inte en vanlig fil eller är inte en textfil."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr "Denna version av Systemlogg saknar stöd för gzippade loggar."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "Läser in..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Visa programmets versionsnummer"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[LOGGFIL...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - Bläddra och övervaka loggar"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "Loggvisare"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "Systemloggvisare"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "senast uppdaterad: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d rader (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "Öppna logg"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Det uppstod ett fel vid visning av hjälp: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "Radbruten"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "Hittades inte"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "En systemloggvisare för GNOME."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "_Arkiv"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "_Redigera"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "_Visa"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "_Filter"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "_Hjälp"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "_Öppna..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "Öppna en logg från fil"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "S_täng"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "Stäng denna logg"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "_Avsluta"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "Avsluta loggvisaren"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "_Kopiera"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "Kopiera markeringen"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "Markera _alla"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "Markera hela loggen"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "_Sök..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "Sök ett ord eller fras i loggen"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "Större textstorlek"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "Mindre textstorlek"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "Normal textstorlek"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "Hantera filter"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "Hantera filter"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "_Innehåll"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "Öppna loggvisarens hjälpinnehållssida"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "_Om"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "Visa omdialogrutan för loggvisaren"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "_Statusrad"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "Visa statusrad"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "Sido_panel"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "Visa sidopanel"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "Visa endast sökträffar"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "Visa endast rader som matchar ett av de angivna filtren"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "_Rulla automatiskt"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "Rulla automatiskt neråt när nya rader dyker upp"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "Kan inte läsa från \"%s\""
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "Version: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "Kunde inte öppna följande filer:"

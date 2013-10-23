@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.24.4">
+<!ENTITY manrevision "2.2">
+<!ENTITY date "March 2009">
+<!ENTITY app "System Monitor">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="eu">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Sistema-monitorearen eskuliburuaren 2.2 bertsioa</title>
+
+    <copyright lang="en">
+      <year>2009</year>
+      <holder>Paul Cutler</holder>
+    </copyright>
+    <copyright lang="en">
+      <year>2004</year>
+      <holder>Sun Microsystems</holder>
+    </copyright>
+    <copyright lang="en">
+      <year>2001</year>
+      <year>2002</year>
+      <year>2004</year>
+      <holder>Bill Day</holder>
+    </copyright>
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+   -->
+
+    <publisher role="maintainer">
+      <publishername>GNOME dokumentazio-proiektua</publishername>
+    </publisher>
+
+     <legalnotice id="legalnotice">
+	<para>Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko Free Software Foundation-ek argitaratutako GNU Dokumentazio Librearen Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe. GFDL lizentziaren kopia <ulink type="help" url="help:fdl">esteka</ulink> honetan edo eskuliburu honekin batera ematen den COPYING-DOCS fitxategian aurkituko duzu.</para>
+         <para>Eskuliburu hau GFDL lizentziarekin banatzen diren GNOME eskuliburuen bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, bana dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko diozu, lizentzian bertan 6. atalean azaltzen den bezala.</para>
+
+	<para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, eta GNOMEren Dokumentazio Proiektuko kideak marka komertzialak direla konturatu badira, orduan izen horiek maiuskulaz idatzita egongo dira, osorik edo hasierako letra maiuskulaz jarrita.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+        other legal stuff such as "NO WARRANTY" statement. Please do not change
+        any of this. -->
+
+  <authorgroup>
+    <author lang="en">
+      <firstname>Sun</firstname>
+      <surname>GNOME Documentation Team</surname>
+      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+    </author>
+    <author lang="en">
+      <firstname>Bill</firstname>
+      <surname>Day</surname>
+      <affiliation><address><email>billday@bellatlantic.net</email></address></affiliation>
+    </author>
+      <author lang="en">
+        <firstname>Paul</firstname>
+        <surname>Cutler</surname>
+        <affiliation>
+          <orgname>GNOME Documentation Project</orgname>
+          <address><email>pcutler@foresightlinux.org</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+
+    <othercredit role="translator">
+      <firstname>Latin</firstname>
+      <surname>Translator 1</surname>
+      <affiliation>
+        <orgname>Latin Translation Team</orgname>
+        <address> <email>translator@gnome.org</email> </address>
+      </affiliation>
+      <contrib>Latin translation</contrib>
+    </othercredit>
+-->
+    </authorgroup>
+
+    <releaseinfo revision="2.28" role="review">
+      <ulink type="review" url="http://bugzilla.gnome.org/show_bug.cgi?id=500559"/>
+    </releaseinfo>
+
+    <revhistory>
+      <revision lang="en">
+        <revnumber>System Monitor Manual V2.2</revnumber>
+        <date>March 2009</date>
+        <revdescription>
+          <para role="author" lang="en">Paul Cutler
+            <email>pcutler@foresightlinux.org</email>
+          </para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+      <revision lang="en">
+        <revnumber>System Monitor Manual V2.1</revnumber>
+        <date>February 2004</date>
+        <revdescription>
+          <para role="author" lang="en">Sun GNOME Documentation Team</para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+      <revision lang="en">
+        <revnumber>System Monitor Manual V2.0</revnumber>
+        <date>November 2002</date>
+        <revdescription>
+          <para role="author" lang="en">Bill Day <email>billday@bellatlantic.net</email>
+          </para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+      <revision lang="en">
+        <revnumber>Procman Manual V0.11</revnumber>
+        <date>January 2002</date>
+        <revdescription>
+          <para role="author" lang="en">Bill Day
+            <email>billday@bellatlantic.net</email>
+          </para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Sistema-monitorearen 2.24.4 bertsioa azaltzen da eskuliburu honetan.</releaseinfo>
+
+    <legalnotice>
+      <title>Oharra</title>
+      <para>Sistema-monitorearen aplikazioari nahiz eskuliburu honi buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:gnome-feedback" type="help">GNOMEra oharrak bidaltzeko orria</ulink>n aurkituko dituzu argibideak.</para>
+
+<!-- Translators may also add here feedback address for translations -->
+
+    </legalnotice>
+    <abstract role="description">
+      <para>Sistema-monitoreak erabiltzaile-interfaze grafikoa erabiltzen du PUZa, sarea eta memoria-jarduerak monitorizatzeko, baita sistema-prozesuak ikusteko eta geldiarazteko ere.</para>
+    </abstract>
+  </articleinfo>
+
+  <indexterm zone="index" lang="en">
+    <primary>System Monitor</primary>
+  </indexterm>
+  <indexterm zone="index" lang="en">
+    <primary>gnome-system-monitor</primary>
+  </indexterm>
+  <indexterm zone="index" lang="en">
+    <primary>procman</primary>
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+ <!-- ============= Introduction ============================== -->
+  <sect1 id="gnome-system-monitor-intro">
+    <title>Sarrera</title>
+    <para><application>Sistema-monitorea</application> aplikazioak aukera ematen dizu oinarrizko sistema-informazioa bistaratzeko eta sistema-prozesuak, sistema-prozesuen erabilera eta fitxategi-sistemak monitorizatzeko. Bestalde, zure sistemaren portaera aldatzeko ere erabil dezakezu <application>Sistema-monitorea</application>.</para>
+    <para><application>Sistema-monitorea</application>ren leihoak lau fitxa ditu:</para>
+    <variablelist>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>System</guilabel>
+        </term>
+        <listitem>
+          <para>Ordenagailuaren hardwareari eta softwareari buruzko oinarrizko datu batzuk bistaratzen ditu.</para>
+          <variablelist>
+            <varlistentry>
+              <term>Banaketa</term>
+              <listitem>
+                <itemizedlist>
+                  <listitem>
+                    <para>Banaketaren bertsioa</para>
+                  </listitem>
+                  <listitem>
+                    <para>Linux Kernel bertsioa</para>
+                  </listitem>
+                  <listitem>
+                    <para>GNOME bertsioa</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Hardwarea</term>
+              <listitem>
+                <itemizedlist>
+                  <listitem>
+                    <para>Instalatutako memoria</para>
+                  </listitem>
+                  <listitem>
+                    <para>Prozesadoreak eta abiadurak</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Sistema-egoera</term>
+              <listitem>
+                <itemizedlist>
+                  <listitem>
+                    <para>Uneko diskoko leku erabilgarria</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>Processes</guilabel>
+        </term>
+        <listitem>
+          <para>Prozesu aktiboak eta haien arteko harremanak erakusten ditu. Prozesu indibidualei buruzko xehetasunak ematen ditu, eta aukera ematen dizu prozesu aktiboak kontrolatzeko.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>Resources</guilabel>
+        </term>
+        <listitem>
+          <para>Unean sistema-baliabide hauek duten erabilera bistaratzen du:</para>
+          <itemizedlist>
+            <listitem>
+              <para>PUZ (prozesatzeko unitate zentrala) denbora</para>
+            </listitem>
+            <listitem>
+              <para>Memoria eta swap lekua</para>
+            </listitem>
+            <listitem>
+              <para>Sare-erabilera</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>File Systems</guilabel>
+        </term>
+        <listitem>
+          <para>Muntatutako fitxategi-sistema guztiak zerrendatzen ditu, bakoitzari buruzko oinarrizko informazioarekin.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="gnome-system-monitor-getting-started">
+    <title>Erabiltzen hasteko</title>
+
+<!-- ============= To Start System Monitor ============================ -->
+    <sect2 id="gnome-system-monitor-to-start">
+      <title>Sistema-monitorea abiarazteko</title>
+      <para>Aukera hauek dituzu <application>Sistema-monitorea</application> abiarazteko:</para>
+      <variablelist>
+        <varlistentry>
+          <term><guimenu>Sistema</guimenu> menua</term>
+          <listitem>
+            <para lang="en">
+              Choose <menuchoice><guimenu>Administration</guimenu> <guimenuitem>System Monitor</guimenuitem></menuchoice>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Komando-lerroa</term>
+          <listitem>
+            <para>Exekutatu komando hau: <command>gnome-system-monitor</command></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-when-you-start">
+      <title>Sistema-monitorea abiarazten duzunean</title>
+      <para><application>Sistema-monitorea</application> abiarazten duzunean, leiho hau azalduko da:</para>
+      <figure id="gnome-system-monitor-window">
+        <title>Sistema-monitorearen leihoa</title>
+        <screenshot>
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/gnome-system-monitor_window.png" format="PNG"/>
+            </imageobject>
+            <textobject> <phrase>Shows System Monitor main window.</phrase>
+            </textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+      <para><application>Sistema-monitorea</application>ren leihoak honako elementuak ditu:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Menu-barra</term>
+          <listitem>
+            <para>Menu-barrako menuek <application>Sistema-monitorea</application>rekin lan egiteko behar dituzun komando guztiak dituzte.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Bistaratze-area</term>
+          <listitem>
+            <para>Bistaratze-areak sistema-monitoreari buruzko informazio hau dauka. Bistaratze-areak ondoko fitxa hauek ditu:</para>
+            <itemizedlist>
+              <listitem>
+                <para lang="en">
+                  <guilabel>System</guilabel>
+                </para>
+                <para>Oinarrizko sistema-propietateen zerrenda dauka (sistemaren software-bertsioak, hardware-xehetasunak, egoera...).</para>
+              </listitem>
+              <listitem>
+                <para lang="en">
+                  <guilabel>Processes</guilabel>
+                </para>
+                <para>Prozesuen zerrenda dauka, taula gisa antolatuta, azken minututetako kargen bataz bestekoen zerrenda eta <guibutton>Amaitu prozesua</guibutton> botoia.</para>
+              </listitem>
+              <listitem>
+                <para lang="en">
+                  <guilabel>Resources</guilabel>
+                </para>
+                <para>Hiru grafiko dauzka: <guilabel>PUZaren historia</guilabel>, <guilabel>Memoria- eta swap-historia</guilabel> eta <guilabel>Sarearen historia</guilabel>.</para>
+              </listitem>
+              <listitem>
+                <para lang="en">
+                  <guilabel>File Systems</guilabel>
+                </para>
+                <para>Unean muntatutako fitxategi-sistemen taula dauka.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Egoera-barra</term>
+          <listitem>
+            <para>Egoera-barran <application>Sistema-monitorea</application>ren uneko jarduerari buruzko informazioa eta menu-elementuei buruzko informazioa azaltzen dira.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="gnome-system-monitor-usage">
+    <title>Erabilera</title>
+
+    <sect2 id="gnome-system-monitor-display-basic-info">
+      <title>Oinarrizko sistema-informazioa bistaratzeko</title>
+      <para>Oinarrizko sistema-informazioa bistaratzeko, hautatu <guilabel>Sistema</guilabel> fitxa.</para>
+      <para><guilabel>Sistema</guilabel> fitxan, informazioa hiru taldetan antolatzen da:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Sistemaren informazioa</para>
+        </listitem>
+        <listitem>
+          <para>Hardwarea</para>
+        </listitem>
+        <listitem>
+          <para>Sistema-egoera</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-display-processlist">
+      <title>Prozesuen zerrenda bistaratzeko</title>
+      <para>Prozesu-zerrenda bistaratzeko, hautatu <guilabel>Prozesuak</guilabel> fitxa.</para>
+      <para><guilabel>Prozesuak</guilabel> fitxan, taulan antolatuta azaltzen dira prozesuak. Taula-errenkadek prozesuei buruzko informazioa bistaratzen dute. Zutabeek prozesuei buruzko informazio-eremuak adierazten dituzte: prozesuaren jabearen izena, prozesuak unean erabilitako memoria kopurua... Ezkerretik eskuinera, <guilabel>Prozesuak</guilabel> fitxak ondoko zutabeak erakusten ditu modu lehenetsian:</para>
+      <itemizedlist>
+          <listitem>
+            <para>Prozesuaren izena</para>
+          </listitem>
+          <listitem>
+            <para>Egoera</para>
+          </listitem>
+          <listitem>
+            <para>PUZ %</para>
+          </listitem>
+          <listitem>
+            <para>Lehentasunaren balioa</para>
+          </listitem>
+          <listitem>
+            <para>IDa</para>
+          </listitem>
+          <listitem>
+            <para>Memoria</para>
+          </listitem>
+      </itemizedlist>
+        <para>Prozesu-zerrendako zutabeak nola aldatu jakiteko, ikus <xref linkend="gnome-system-monitor-prefs-proclist"/>.</para>
+
+      <sect3 id="gnome-system-monitor-display-processlist-child">
+        <title>Prozesu gurasoak eta prozesu umeak</title>
+        <para>Prozesu gurasoak beste prozesu batzuk abiarazten dituztenak dira. Abiarazitako prozesua jatorrizko prozesu gurasoaren prozesu umea da. Modu lehenetsian, <application>Sistema-monitoreak</application> ez du prozesuen arteko mendekotasunik erakusten. Bistaratze-portaera lehenetsia nola aldatu jakiteko, ikus <xref linkend="gnome-system-monitor-modify-processlist-viewdeps"/>.</para>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-display-processlist-priority">
+        <title>Prozesuaren lehentasuna eta lehentasunaren balioak</title>
+      <para>Prozesuak lehentasun-ordenan exekutatzen dira: lehentasun handiko prozesuak lehentasun txikikoak baino lehen exekutatzen dira. Prozesu umeek beren prozesu gurasoen lehentasuna heredatzen dute.</para>
+      <para>Prozesu baten lehentasuna prozesuaren lehentasunaren balioak erabakitzen du:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Lehentasun-balioa 0 bada, prozesuaren lehentasuna normala da.</para>
+        </listitem>
+        <listitem>
+          <para>Zenbat eta lehentasun-balio handiagoa izan, orduan eta txikiagoa izango da lehentasuna.</para>
+        </listitem>
+        <listitem>
+          <para>Zenbat eta lehentasun-balio txikiagoa izan, orduan eta handiagoa izango da lehentasuna.</para>
+        </listitem>
+      </itemizedlist>
+      <para>Prozesu baten lehentasuna nola aldatu jakiteko, ikus <xref linkend="gnome-system-monitor-change-priority"/>.</para>
+      </sect3>
+
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-sort-processlist">
+      <title>Prozesu-zerrenda ordenatzeko</title>
+      <para>Prozesu-zerrenda ordenatzeko, jarraitu urrats hauei:</para>
+      <orderedlist>
+        <listitem>
+          <para>Hautatu <guilabel>Prozesuak</guilabel> fitxa prozesu-zerrenda bistaratzeko.</para>
+        </listitem>
+        <listitem>
+          <para>Modu lehenetsian, izenaren arabera alfabetikoki ordenatuta daude zerrendan. Prozesuak alderantzizko ordena alfabetikoan zerrendatzeko, egin klik <guilabel>Prozesuaren izena</guilabel> zutabe-goiburuan.</para>
+        </listitem>
+        <listitem>
+          <para>Egin klik edozein zutabe-goiburutan prozesuak zutabe horretako informazioaren arabera ordenatzeko, alfabetikoki nahiz zenbakizko ordenan.</para>
+        </listitem>
+        <listitem>
+          <para>Egin klik berriro zutabe-goiburuan, datuak alderantzizko ordena alfabetikoan nahiz alderantzizko zenbakizko ordenan ordenatzeko.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-modify-processlist">
+      <title>Prozesu-zerrendako edukia aldatzeko</title>
+      <para>Hainbat eratan alda dezakezu prozesu-zerrendako edukia.</para>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-all">
+        <title>Prozesu guztiak erakusteko</title>
+        <para>Prozesu-zerrendako prozesu guztiak erakusteko, jarraitu ondoko urratsei:</para>
+        <orderedlist>
+          <listitem>
+            <para>Hautatu <guilabel>Prozesuak</guilabel> fitxa prozesu-zerrenda bistaratzeko.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">
+              Choose
+              <menuchoice>
+                <guimenu>View</guimenu>
+                <guimenuitem>All Processes</guimenuitem>
+              </menuchoice>.
+            </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-my">
+        <title>Uneko erabiltzailearen prozesuak bakarrik erakusteko</title>
+        <para>Uneko erabiltzailearen prozesuak bakarrik erakusteko, jarraitu urrats hauei:</para>
+        <orderedlist>
+          <listitem>
+            <para>Hautatu <guilabel>Prozesuak</guilabel> fitxa prozesu-zerrenda bistaratzeko.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">
+              Choose
+              <menuchoice>
+                <guimenu>View</guimenu>
+                <guimenuitem>My Processes</guimenuitem>
+              </menuchoice>.
+            </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-active">
+        <title>Prozesu aktiboak bakarrik erakusteko</title>
+        <para>Prozesu-zerrendako prozesu aktiboak bakarrik erakusteko, jarraitu ondoko urratsei:</para>
+        <orderedlist>
+          <listitem>
+            <para>Hautatu <guilabel>Prozesuak</guilabel> fitxa prozesu-zerrenda bistaratzeko.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">
+              Choose
+              <menuchoice>
+                <guimenu>View</guimenu>
+                <guimenuitem>Active Processes</guimenuitem>
+              </menuchoice>.
+            </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-viewdeps">
+        <title>Mendekotasunak erakusteko</title>
+        <para>Prozesu-zerrendako prozesu-mendekotasunak erakusteko, jarraitu ondoko urratsei:</para>
+        <orderedlist>
+          <listitem>
+            <para>Hautatu <guilabel>Prozesuak</guilabel> fitxa prozesu-zerrenda bistaratzeko.</para>
+          </listitem>
+          <listitem>
+            <para>Aukeratu <menuchoice><guimenu>Ikusi</guimenu><guimenuitem>Mendekotasunak</guimenuitem></menuchoice>.</para>
+          </listitem>
+        </orderedlist>
+        <para><guimenuitem>Mendekotasunak</guimenuitem> menu-elementua hautatuta badago, honela zerrendatuko dira prozesuak:</para>
+        <itemizedlist>
+          <listitem>
+            <para>Prozesu gurasoek hiruki-ikur bat izango dute prozesu-izenaren ezkerrean. Egin klik hirukiaren ikurrean, asoziatutako prozesu umeak erakusteko nahiz ezkutatzeko.</para>
+          </listitem>
+          <listitem>
+            <para>Prozesu umeak koska batekin azaltzen dira zerrendan, eta beren prozesu gurasoekin batera.</para>
+          </listitem>
+        </itemizedlist>
+        <para><guimenuitem>Mendekotasunak</guimenuitem> menu-elementua hautatuta ez badago:</para>
+        <itemizedlist>
+          <listitem>
+            <para>Prozesu gurasoak eta umeak ez dira desberdinduko.</para>
+          </listitem>
+          <listitem>
+            <para>Prozesu guztiak alfabetikoki ordenatuta azalduko dira zerrendan.</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-memory-map">
+      <title>Prozesu baten memoria-mapak bistaratzeko</title>
+      <para>Prozesu baten memoria-mapak bistaratzeko, jarraitu ondoko urratsei:</para>
+      <orderedlist>
+        <listitem>
+          <para>Hautatu <guilabel>Prozesuak</guilabel> fitxa prozesu-zerrenda bistaratzeko.</para>
+        </listitem>
+        <listitem>
+          <para>Hautatu prozesua zerrendan.</para>
+        </listitem>
+        <listitem>
+          <para>Aukeratu <menuchoice><guimenu>Ikusi</guimenu><guimenuitem>Memoria-mapak</guimenuitem></menuchoice>.</para>
+        </listitem>
+      </orderedlist>
+      <para><guilabel>Memoria-mapak</guilabel> elkarrizketa-koadroak taula-formatuan bistaratzen du informazioa. Prozesuaren izena memoria-maparen taularen gainean bistaratzen da. Ezkerretik eskuinera, <guilabel>Memoria-mapak</guilabel> fitxak ondoko zutabeak erakusten ditu:</para>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Filename</guilabel></term>
+          <listitem>
+            <para>Unean prozesua erabiltzen ari den liburutegi partekatuaren kokalekua. Eremu hau hutsik balego, errenkada honetako memoria-informazioak memoria-maparen taularen gainean bistaratzen den izeneko prozesuaren memoria deskribatuko du.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM Start</guilabel></term>
+          <listitem>
+            <para>Memoria-segmentua hasten den helbidea.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM End</guilabel></term>
+          <listitem>
+            <para>Memoria-segmentua amaitzen den helbidea.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM Size</guilabel></term>
+          <listitem>
+            <para>Memoria-segmentuaren tamaina.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Flags</guilabel></term>
+          <listitem>
+            <para>Ondoko banderek prozesuak izan ditzakeen memoria-segmentuko sarbide motak deskribatzen ditu:</para>
+            <variablelist>
+              <varlistentry>
+                <term>p</term>
+                <listitem>
+                  <para>Memoria-segmentua pribatua da prozesuarentzat, eta beste prozesurik ezin da bertan sartu.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>r</term>
+                <listitem>
+                  <para>Prozesuak baimena dauka memoria-segmentua irakurtzeko.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>s</term>
+                <listitem>
+                  <para>Memoria-segmentua beste prozesu batzuekin partekatzen da.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>w</term>
+                <listitem>
+                  <para>Prozesuak baimena dauka memoria-segmentuan idazteko.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>x</term>
+                <listitem>
+                  <para>Prozesuak baimena dauka memoria-segmentuko instrukzioak exekutatzeko.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM Offset</guilabel></term>
+          <listitem>
+            <para>Memoria-segmentuaren memoria birtualaren desplazamendua.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Device</guilabel></term>
+          <listitem>
+            <para>Partekatutako liburutegiaren fitxategi-izena kokatuta dagoen goragoko eta beheragoko gailu-zenbakiak.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Inode</guilabel></term>
+          <listitem>
+            <para>Partekatutako liburutegiaren kokalekua memorian kargatzeko erabiltzen den gailuko inodoa.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para>Egin klik edozein zutabe-goiburutan datuak zutabe horretako informazioaren arabera ordenatzeko, alfabetikoki nahiz zenbakizko ordenan. Egin klik berriro zutabe-goiburuan, datuak alderantzizko ordena alfabetikoan nahiz alderantzizko zenbakizko ordenan ordenatzeko.</para>
+      <para>Egin klik <guibutton>Itxi</guibutton> botoian, <guilabel>Memoria-mapak</guilabel> elkarrizketa-koadroa ixteko.</para>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-change-priority">
+      <title>Prozesu baten lehentasuna aldatzeko</title>
+      <para>Fitxategi baten lehentasuna aldatzeko, jarraitu urrats hauek:</para>
+      <orderedlist>
+        <listitem>
+          <para>Hautatu <guilabel>Prozesuak</guilabel> fitxa prozesu-zerrenda bistaratzeko.</para>
+        </listitem>
+        <listitem>
+          <para>Hautatu zein prozesuri aldatu nahi diozun lehentasuna.</para>
+        </listitem>
+        <listitem>
+          <para>Aukeratu <menuchoice><guimenu>Editatu</guimenu><guimenuitem>Aldatu lehentasuna</guimenuitem></menuchoice>. <guilabel>Aldatu lehentasuna</guilabel> elkarrizketa-koadroa bistaratzen da.</para>
+        </listitem>
+        <listitem>
+          <para>Erabili graduatzailea prozesuaren lehentasun-balioa ezartzeko.</para>
+          <para>Lehentasun-balioak prozesuaren lehentasuna ezartzen du: zenbat eta lehentasun-balio txikiagoa izan, orduan eta handiagoa izango da lehentasuna.</para>
+          <para>Zero baino baxuagoa den lehentasun-balio bat zehazteko, root-a ez diren erabiltzaileek root-aren pasahitza sartu beharko dute.</para>
+        </listitem>
+        <listitem>
+          <para>Egin klik tresna-barrako <guibutton>Aldatu lehentasuna</guibutton> botoian.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+
+    <sect2 id="gnome-system-monitor-end-process">
+      <title>Prozesu bat amaitzeko</title>
+      <para>Prozesu bat amaitzeko, jarraitu ondoko urratsak:</para>
+      <orderedlist>
+        <listitem>
+          <para>Hautatu <guilabel>Prozesuak</guilabel> fitxa prozesu-zerrenda bistaratzeko.</para>
+        </listitem>
+        <listitem>
+          <para>Hautatu amaitu nahi duzun prozesua.</para>
+        </listitem>
+        <listitem>
+          <para>Aukeratu <menuchoice><guimenu>Editatu</guimenu><guimenuitem>Amaitu prozesua</guimenuitem></menuchoice>, edo egin klik <guibutton>Amaitu prozesua</guibutton> botoian.</para>
+          <para>Modu lehenetsian, berresteko alerta bat bistaratuko da. Berresteko alerta  nola bistaratu eta ezkutatu jakiteko, ikus <xref linkend="gnome-system-monitor-prefs-proclist"/>.</para>
+        </listitem>
+        <listitem>
+          <para>Egin klik <guibutton>Amaitu prozesua</guibutton> botoian, prozesua amaitu nahi duzula berresteko. <application>Sistema-monitoreak</application> prozesua normal amaitzea behartzen du.</para>
+        </listitem>
+      </orderedlist>
+      <para>Prozesu bat geldiarazteko modu hobetsia da hau.</para>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-terminate-process">
+      <title>Prozesu bat eteteko</title>
+      <para>Prozesu bat eteteko, jarraitu ondoko urratsak:</para>
+      <orderedlist>
+        <listitem>
+          <para>Hautatu <guilabel>Prozesuak</guilabel> fitxa prozesu-zerrenda bistaratzeko.</para>
+        </listitem>
+        <listitem>
+          <para>Hautatu eten nahi duzun prozesua.</para>
+        </listitem>
+        <listitem>
+          <para>Aukeratu <menuchoice><guimenu>Editatu</guimenu><guimenuitem>Hil prozesua</guimenuitem></menuchoice>.</para>
+          <para>Modu lehenetsian, berresteko alerta bat bistaratuko da. Berresteko alerta  nola bistaratu eta ezkutatu jakiteko, ikus <xref linkend="gnome-system-monitor-prefs-proclist"/>.</para>
+        </listitem>
+        <listitem>
+          <para>Egin klik <guibutton>Hil prozesua</guibutton> botoian, prozesua eten nahi duzula berresteko. <application>Sistema-monitoreak</application> prozesua berehala amaitzea behartzen du.</para>
+        </listitem>
+      </orderedlist>
+      <para>Normalean, prozesuak hiltzen dira ezin direnean modu normalean amaitu, <xref linkend="gnome-system-monitor-end-process"/> atalean deskribatutakoaren arabera.</para>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-cpu">
+      <title>PUZ erabilera monitorizatzeko</title>
+      <para>PUZ erabilera monitorizatzeko, hautatu <guilabel>Baliabideak</guilabel> fitxa.</para>
+      <para><application>Sistema-monitoreak</application> formatu grafikoan bistaratzen du PUZ erabileraren historia. Grafikoaren azpian, <application>Sistema-monitoreak</application> uneko PUZ erabilera ere bistaratzen du, ehuneko gisa.</para>
+    </sect2>
+
+
+    <sect2 id="gnome-system-monitor-memory">
+      <title>Memoria eta swap-erabilera monitorizatzeko</title>
+      <para>Memoria eta swap-erabilera monitorizatzeko, hautatu <guilabel>Baliabideak</guilabel> fitxa.</para>
+      <para><application>Sistema-monitoreak</application> modu grafikoan bistaratzen ditu memoria-erabileraren historia eta swap-erabileraren historia. Grafikoaren azpian, <application>Sistema-monitoreak</application> ondoko balioak ere bistaratuko ditu:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Erabilitako memoria guztizko memoriarekiko</para>
+        </listitem>
+        <listitem>
+          <para>Erabilitako swap-a guztizko swap-arekiko</para>
+        </listitem>
+      </itemizedlist>
+
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-network">
+      <title>Sare-jarduera monitorizatzeko</title>
+      <para>Sare-jarduera monitorizatzeko, hautatu <guilabel>Baliabideak</guilabel> fitxa.</para>
+      <para><application>Sistema-monitoreak</application> formatu grafikoan bistaratzen du sarearen historia. Grafikoaren azpian, <application>Sistema-monitoreak</application> ondoko balioak ere bistaratuko ditu:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Jasotako datuak segundoko eta guztira</para>
+        </listitem>
+        <listitem>
+          <para>Bidalitako datuak segundoko eta guztira</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-disk">
+      <title>Fitxategi-sistemak monitorizatzeko</title>
+      <para>Fitxategi-sistemak monitorizatzeko, hautatu <guilabel>Fitxategi-sistemak</guilabel> fitxa.</para>
+      <para><application>Sistema-monitoreak</application> taula-formatuan erakusten ditu muntatutako fitxategi-sistemak. Ezkerretik eskuinera, ondoko zutabeak bistaratzen ditu taulak:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Gailua</term>
+          <listitem>
+            <para>Blokeo-fitxategiaren kokalekua</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Direktorioa</term>
+          <listitem>
+            <para>Gailuaren muntatze-puntua (sartu beharreko direktorioa)</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Mota</term>
+          <listitem>
+            <para>Fitxategi-sistema mota</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Guztira</term>
+          <listitem>
+            <para>Edukiera osoa</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Libre</term>
+          <listitem>
+            <para>Erabili gabeko leku kopurua</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Erabilgarri</term>
+          <listitem>
+            <para>Erabil daitekeen leku kopurua</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Erabilita</term>
+          <listitem>
+            <para>Erabilita dagoen leku kopurua (eta guztizkoaren ehunekoa)</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="gnome-system-monitor-prefs">
+    <title>Hobespenak</title>
+    <para><application>Sistema-monitorea</application> konfiguratzeko, aukeratu <menuchoice><guimenu>Editatu</guimenu><guimenuitem>Hobespenak</guimenuitem></menuchoice>. <guilabel>Hobespenak</guilabel> elkarrizketa-koadroak ondoko fitxak dauzka:</para>
+
+    <sect2 id="gnome-system-monitor-prefs-proclist">
+      <title>Prozesuak</title>
+        <variablelist>
+          <varlistentry>
+            <term lang="en">
+              <guilabel>Behavior</guilabel>
+            </term>
+            <listitem>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Update interval in seconds</guilabel>
+                  </para>
+                  <para>Erabili biratze-botoi hau prozesu-zerrenda eguneratzeko bitartea zehazteko.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Enable smooth refresh</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau leunki freskatzeko.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Alert before ending or killing processes</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau berresteko alerta bat bistara dadin prozesu bat amaitzen edo hiltzen duzunean.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Divide CPU usage by CPU count</guilabel>
+                  </para>
+                  <para>Hautatu hau prozesuen taulako prozesu bakoitzaren PUZ % zatitzeko PUZ kopuruaren arabera.</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term lang="en">
+              <guilabel>Information Fields</guilabel>
+            </term>
+            <listitem>
+              <para>Erabili ondoko aukerak prozesu-zerrendan bistaratu beharreko eremuak hautatzeko:</para>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Process Name</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesuaren izena bistaratzeko. Zutabe honek ikono bat ere eduki dezake, prozesuarekin asoziatuta dagoen aplikazioa adierazteko.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>User</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesuaren jabea den erabiltzailearen izena bistaratzeko.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Status</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesuaren uneko egoera bistaratzeko: lotan edo exekutatzen.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Virtual Memory</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesuari esleitutako memoria birtualaren kopurua bistaratzeko.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Resident Memory</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesuari esleitutako memoria fisikoaren kopurua bistaratzeko.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Writable Memory</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesuak idatz dezakeen memoria kopurua bistaratzeko.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Shared Memory</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesuari esleitutako memoria partekatuaren kopurua bistaratzeko. Memoria partekatua beste prozesu batek atzi dezakeena da.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>X Server Memory</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesuak erabilitako X zerbitzariaren memoria kopurua bistaratzeko.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>% CPU</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesua unean erabiltzen ari den PUZ denboraren ehunekoa bistaratzeko.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>CPU Time</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesua unean erabiltzen ari den PUZ denbora kopurua bistaratzeko.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Started</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesua noiz hasi den exekutatzen bistaratzeko.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Nice</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesuaren lehentasun-balioa bistaratzeko. Lehentasun-balioak prozesuaren lehentasuna ezartzen du: zenbat eta lehentasun-balio txikiagoa izan, orduan eta handiagoa izango da lehentasuna.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                <guilabel>ID</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesu-identifikatzailea bistaratzeko, pid gisa ere ezagutzen dena, alegia. Pid zenbakiak prozesua esklusiboki identifikatzen du. Pid-a erabil dezakezu prozesua komando-lerroan manipulatzeko.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Memory</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesuak unean erabilitako sistema-memoriaren kopurua bistaratzeko.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Security Context</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesua exekutatzen ari den segurtasun-testuingurua bistaratzeko.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Command Line</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau prozesua abiarazteko erabilitako komando-lerroa bistaratzeko, argumentuak barne.</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-prefs-resmon">
+      <title>Baliabideak</title>
+        <variablelist>
+          <varlistentry>
+            <term lang="en"><guilabel>Graphs</guilabel></term>
+            <listitem>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Update interval in seconds</guilabel>
+                  </para>
+                  <para>Erabili biratze-botoi hau <application>Sistema-monitorearen</application> grafikoak eguneratzea nahi duzun maiztasuna zehazteko.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Show network speed in bits</guilabel>
+                  </para>
+                  <para lang="en">
+                    Select this option to use bits instead of bytes for displaying network speed in the <application>System Monitor</application> graphs.
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-prefs-filesystems">
+      <title>Fitxategi-sistemak</title>
+        <variablelist>
+          <varlistentry>
+            <term lang="en"><guilabel>Behavior</guilabel></term>
+            <listitem>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Update interval in seconds</guilabel>
+                  </para>
+                  <para>Erabili biratze-botoi hau <guilabel>Fitxategi-sistemak</guilabel> taula eguneratzea nahi duzun maiztasuna.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Show all file systems</guilabel>
+                  </para>
+                  <para>Hautatu aukera hau fitxategi-sistema guztiak erakusteko, aldi baterakoak eta sistema-fitxategiak barne.</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+
+        </variablelist>
+    </sect2>
+
+  </sect1>
+
+</article>

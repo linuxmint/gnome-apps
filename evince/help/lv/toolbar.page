@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="toolbar" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <desc><link xref="toolbar#view">Parādīt, paslēpt</link> vai <link xref="toolbar#edit">rediģēt</link> rīkjoslu.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0 licence</p>
+    </license>
+
+  </info>
+
+<title>Rīkjosla</title>
+
+<section id="view">
+<title>Rādīt vai slēpt rīkjoslu</title>
+  <p>Nospied <guiseq><gui>Skats</gui><gui>Rīkjosla</gui></guiseq>.</p>
+<p>Pēc noklusējuma, rīkjosla satur tikai pamatrīkus:</p>
+<media type="image" src="figures/evince-toolbar-default.png" width="475"/>
+<list>
+<item><p><gui>Iepriekšējais</gui> un <gui>Nākamais</gui>, lai <link xref="movingaround#between-pages">pārvietotos</link> pa lapām.</p></item>
+<item><p>Rīks, lai piemērotu <link xref="movingaround#zoom">palielinājuma</link> līmeni.</p></item>
+<item><p>Lapas izvēles <link xref="movingaround#between-pages">rīks.</link></p></item>
+</list>
+<p>Tu vari <link xref="toolbar#modify">modificēt</link> rīkjoslu, ja tu dod priekšroku citiem rīkiem.</p>
+</section>
+
+<section id="modify">
+<title>Pievieno, izņem un pārkārto rīkus rīkjoslā.</title>
+<steps>
+<item><p><link xref="toolbar#view">Rādīt</link> rīkjoslu.</p></item>
+<item><p>Spied <guiseq><gui>Rediģēt</gui><gui>Rīkjosla</gui></guiseq>.</p></item>
+</steps>
+<p><gui>Rīkjoslu redaktors</gui> satur rīkus, kuri nav rīkjoslā, kā arī atdalītāja rīku.</p>
+<media type="image" src="figures/evince-toolbar-editor.png" width="475"/>
+
+<terms>
+  <item><title>Lai pievienotu jaunus rīkus rīkjoslai:</title>
+        <p>velc tos no rīkjoslas redaktora uz rīkjoslu.</p></item>
+
+  <item><title>Lai izņemtu rīkus no rīkjoslas:</title>
+        <p>velc tos prom no rīkjoslas uz rīkjoslas redaktoru.</p></item>
+
+   <item><title>Lai pārkārtotu rīkus rīkjoslā:</title>
+         <p>pārvelc to uz kādu citu vietu rīkjoslā.</p></item>
+</terms>
+<p>Kad esi pabeidzis rediģēt rīkjoslu, spied <gui>Aizvērt</gui>, rīkjoslas redaktora logā.</p>
+</section>
+</page>

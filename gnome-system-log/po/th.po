@@ -1,0 +1,442 @@
+# Thai translation for gnome-utils.
+# Copyright (C) 2004-2011 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-utils package.
+# Khunti Yeesoon <sc445138@bucc3.buu.ac.th>, 2003.
+# Paisa Seeluangsawat <paisa@users.sf.net>, 2004.
+# Supranee Thirawatthanasuk <supranee@opentle.org>, 2004.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2005-2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2011-09-18 14:16+0700\n"
+"Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "โปรแกรมอ่านแฟ้มปูม"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "อ่านหรือเฝ้าสังเกตปูมของระบบ"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "ความสูงของหน้าต่างหลักเป็นพิกเซล"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "รายการตัวกรองที่บันทึกไว้"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "รายการตัวกรองในรูปนิพจน์ปกติที่บันทึกไว้"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "แฟ้มปูมที่จะให้เปิดเมื่อเริ่มโปรแกรม"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "แฟ้มปูมที่จะให้เปิดเมื่อเริ่มโปรแกรม"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "ขนาดของแบบอักษรที่ใช้แสดงปูม"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"กำหนดรายชื่อแฟ้มปูมที่จะเปิดเมื่อเริ่มโปรแกรม ค่าปริยายของคีย์นี้จะสร้างจาก /etc/syslog.conf"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "กำหนดความสูงเป็นพิกเซลของหน้าต่างหลักของโปรแกรมดูปูมระบบ"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"กำหนดแฟ้มปูมที่จะแสดงเมื่อเริ่มโปรแกรม  ค่าปริยายเป็นได้ทั้ง /var/adm/messages หรือ /var/"
+"log/messages ตามแต่ระบบปฏิบัติการที่ใช้"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"กำหนดขนาดของแบบอักษรความกว้างคงที่ที่ใช้แสดงปูมในช่องแสดงหลัก "
+"ค่าปริยายจะใช้ขนาดปริยายของแบบอักษรเทอร์มินัล"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "กำหนดความกว้างเป็นพิกเซลของหน้าต่างหลักของโปรแกรมดูปูมระบบ"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "ความกว้างของหน้าต่างหลักเป็นพิกเซล"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "สีพื้นหลัง:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "เอฟเฟกต์:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "สีตัวอักษร:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "ซ่อน"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "เน้น"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "_ชื่อ:"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "_นิพจน์เรกิวลาร์"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"โปรแกรมนี้เป็นซอฟต์แวร์เสรี คุณสามารถแจกจ่ายต่อ และ/หรือ แก้ไขโปรแกรมได้ ภายใต้เงื่อนไขของ "
+"GNU General Public License ที่เผยแพร่โดยมูลนิธิซอฟต์แวร์เสรี ไม่ว่าจะเป็นสัญญาอนุญาตรุ่นที่ 2 "
+"หรือรุ่นถัดมา (ตามแต่คุณจะเลือก)"
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"โปรแกรมนี้เผยแพร่ด้วยความหวังว่าโปรแกรมจะมีประโยชน์ แต่ *ไม่มีการรับประกันใดๆ* "
+"ไม่มีแม้การรับประกัน *อรรถประโยชน์เชิงพาณิชย์* หรือ "
+"*ความเหมาะสมสำหรับวัตถุประสงค์เฉพาะกิจใดๆ* กรุณาอ่าน GNU General Public License "
+"เพื่อดูรายละเอียดเพิ่มเติม"
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"คุณควรจะได้รับสำเนาของ GNU General Public License มาพร้อมกับโปรแกรมนี้ ถ้าคุณไม่ได้รับ "
+"กรุณาติดต่อไปที่ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, "
+"Boston, MA 02110-1301 USA"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"Khunti Yeesoon\n"
+"ไพศาข์ สีเหลืองสวัสดิ์\n"
+"เทพพิทักษ์ การุญบุญญานันท์\n"
+"\n"
+"ถ้ามีเวลาโปรดมาช่วยกันแปล :-)\n"
+"http://gnome-th.sf.net"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "ไม่สามารถเปิดแฟ้ม %s"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "ชื่อตัวกรองว่างเปล่า!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "ชื่อตัวกรองจะใช้อักขระ ':' ไม่ได้"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "นิพจน์เรกิวลาร์ว่างเปล่า!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "นิพจน์เรกิวลาร์ไม่ถูกต้อง: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "กรุณาระบุสีตัวอักษรหรือสีพื้นหลัง!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "แก้ไขตัวกรอง"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "เพิ่มตัวกรองใหม่"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "ตัวกรอง"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_หา:"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "หาก่อนหน้า"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "หาคำในเนื้อความก่อนหน้าจุดที่แล้ว"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "หาต่อ"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "หาคำในเนื้อความถัดจากจุดที่แล้ว"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "ล้างคำค้น"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "เกิดข้อผิดพลาดขณะคลายปูมที่ GZip ไว้ แฟ้มอาจเสียหาย"
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "คุณไม่มีสิทธิ์เพียงพอที่จะอ่านแฟ้มนี้"
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "แฟ้มนี้ไม่ใช่แฟ้มปกติ หรือไม่ใช่แฟ้มข้อความ"
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr "โปรแกรมอ่านปูมของระบบรุ่นนี้ ไม่รองรับปูมที่ GZip ไว้"
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "กำลังอ่าน..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "แสดงรุ่นของโปรแกรม"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[LOGFILE...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - เรียกดูและเฝ้าสังเกตปูมต่างๆ"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "โปรแกรมอ่านปูม"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "โปรแกรมอ่านปูมของระบบ"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "เปลี่ยนแปลงล่าสุด: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d บรรทัด (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "เปิดปูม"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "เกิดข้อผิดพลาดขณะแสดงคำแนะนำ: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "เริ่มหาใหม่"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "ไม่พบ"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "โปรแกรมอ่านปูมของระบบสำหรับ GNOME"
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "แ_ฟ้ม"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "แ_ก้ไข"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "_มุมมอง"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "ตัว_กรอง"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "_วิธีใช้"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "_เปิด..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "เปิดแฟ้มปูม"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "ปิ_ด"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "ปิดปูมนี้"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "_ออก"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "ออกจากโปรแกรมอ่านปูมระบบ"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "_คัดลอก"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "คัดลอกข้อความที่เลือกเข้าคลิปบอร์ด"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "เลือกทั้ง_หมด"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "เลือกเนื้อหาทั้งหมดของปูม"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "_หา..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "หาคำหรือวลีในปูม"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "ขยายขนาดตัวอักษร"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "ลดขนาดตัวอักษร"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "ขนาดตัวอักษรปกติ"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "จัดการตัวกรอง"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "จัดการตัวกรอง"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "เนื้อ_หา"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "เปิดสารบัญเอกสารแนะนำวิธีใช้โปรแกรมอ่านปูมระบบ"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "เ_กี่ยวกับ"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "แสดงข้อมูลเกี่ยวกับโปรแกรมอ่านปูมระบบ"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "แถบ_สถานะ"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "แสดงแถบสถานะ"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "แถบ_ข้าง"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "แสดงแถบด้านข้าง"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "แสดงรายการที่ตรงเท่านั้น"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "แสดงเฉพาะบรรทัดที่ตรงกับตัวกรองเท่านั้น"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "เ_ลื่อนหน้าจออัตโนมัติ"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "เลื่อนหน้าจอลงโดยอัตโนมัติเมื่อมีข้อความบรรทัดใหม่"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "ไม่สามารถอ่านจาก \"%s\""
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "รุ่น: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "ไม่สามารถเปิดแฟ้มต่อไปนี้:"

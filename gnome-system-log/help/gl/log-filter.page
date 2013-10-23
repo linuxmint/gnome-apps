@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="log-filter" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#main"/>
+    <link type="seealso" xref="log-search"/>
+    <revision version="3.3" date="2011-10-30" status="review"/>
+    <desc>Incluír ou excluír as liñas mostradas usando expresións regulares.</desc>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+
+  </info>
+
+  <title>Filtrar rexistro</title>
+
+  <p>O visor de rexistro permítelle filtrar o contido do rexistro usando expresións regulares. Para configurar ou xestionar un filtro novo:</p>
+
+  <steps>
+    <item>
+      <p>Abra o diálogo de xestión de filtros premendo en <guiseq><gui>Filtros:</gui><gui>Xestionar filtros</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Prema <gui>Engadir</gui> para engadir un filtro novo, ou seleccoine un filtro existente e prema <gui>Propiedaes</gui> para editalo.</p>
+    </item>
+    <item>
+      <p>Complete o formulario ou edite os campos que queira cambiar:</p>
+      <terms>
+        <item>
+          <title>Nome:</title>
+          <p>O identificador do filtro</p>
+        </item>
+        <item>
+          <title>Expresión regular:</title>
+          <p>Para que se usará o filtro</p>
+        </item>
+        <item>
+          <title>Realzado:</title>
+          <p>Esta opción enfatiza a liña que contén a expresión regular</p>
+          <terms>
+            <item>
+              <title>Fondo:</title>
+              <p>Esta é a cor do tipo de letra</p>
+              <note style="tip">
+                <p>A cor predeterminada do tipo de letra é negra, que non enfatiza o texto.</p>
+              </note>
+            </item>
+            <item>
+              <title>Primeiro plano:</title>
+              <p>Esta é a cor do realzado</p>
+              <note style="tip">
+                <p>A cor de realzado predeterminada é o negro, que mostra liñas negras sólidas como resultado, por que é posíbel que queira cambialo.</p>
+              </note>
+            </item>
+          </terms>
+        </item>
+        <item>
+          <title>Ocultar:</title>
+          <p>Esta opción oculta as liñas que conteñan a expresión regular no rexistro mostrado</p>
+        </item>
+      </terms>
+    </item>
+    <item>
+      <p>Prema <gui>Aplicar</gui> para gardar o filtro novo ou para gardar os cambios nun xa existente</p>
+    </item>
+    <item>
+      <p>De volta no diálogo de xestión de filtros. Prema o botón <gui>Pechar</gui> para aplicar os cambios.</p>
+    </item>
+  </steps>
+
+  <p>Marque a casilla xunto ao nome do filtro que quere activar en <gui>Filtros:</gui>. Se só quere ver os filtros que ten o <gui>Realzado</gui> activado e que están marcados, marque <guiseq><gui>Filtros:</gui><gui>Só mostra coincidencias</gui></guiseq>.</p>
+
+  <note style="tip">
+    <p>Se hai un conflito entre un filtro oculto e un realzado, a liña pódese mostrar como unha liña en branco baleira.</p>
+  </note>
+
+  <note style="bug">
+    <p>Se desmarca un filtro mentres só está vendo coincidencias, o rexistro mostrará as liñas sen formatar, sen importar se antes estaban realzadas ou ocultas. O filtro débese reiniciar cando marque un filtro realzado.</p>
+  </note>
+
+</page>

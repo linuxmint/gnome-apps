@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="finding" xml:lang="ko">
+
+  <info>
+    <link type="guide" xref="index#reading"/>
+    <desc>문서의 단어나 문장을 찾흡니다.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <license>
+      <p>크리에이티브 커먼즈 동일조건변경허락 3.0</p>
+    </license>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Seong-ho Cho</mal:name>
+      <mal:email>darkcircle.0426@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>문서의 텍스트 찾기</title>
+<steps>
+    <item><p>검색 창을 표시하려면 <guiseq><gui>편집</gui><gui>찾기</gui></guiseq>를 누르거나 <keyseq><key>Ctrl</key><key>F</key></keyseq> 또는 <key>/</key>를 누릅니다.</p></item>
+
+    <item><p>검색할 단어나 문장을 입력하면 자동으로 검색을 시작할 것입니다.</p></item>
+
+    <item><p><gui>이전 찾기</gui>와 <gui>다음 찾기</gui> 단추는 이전 또는 다음 검색 결과로 건너뛰도록 합니다.</p></item>
+
+    <item>
+     <p>검색 표시줄을 숨기려면 문서 아무곳이나 누르세요.</p>
+    </item>
+</steps>
+
+<p>여러분이 검색한 단어나 문장이 전체 문서에서 나타나지 않는 경우 <em>없음</em>이라는 메시지가 뜰 것입니다. 그러나 적어도 한 개 이상 문서에 존재한다면 메시지는 각각의 페이지에서 몇 개의 단어를 찾았는지 알려줄 것입니다. 이는 위에 설명한대로 혹은 문서를 스크롤로 넘겨 한 개 이상의 결과를 지나칠 경우 나타나는 메시지 입니다.</p>
+
+<note>
+  <p>PDF 문서만 검색할 수 있습니다. 어떤 PDF 문서는 검색할 수 없는데 문서의 본문이 이미지 형식으로 인코딩되었기 때문입니다.</p>
+</note>
+
+</page>

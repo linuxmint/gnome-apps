@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="function" xml:lang="zh-TW">
+
+    <info>
+        <link type="guide" xref="index#equation"/>
+    </info>
+
+	<title>函數</title>
+    
+    <p>要使用函數，輸入函數的名稱，後面再加上參數。如果參數不是數字或 <link xref="variable">變數</link>，在參數兩旁使用括號。</p>
+    <example>
+    <p>sin 30</p>
+    <p>abs (5−9)</p>
+    </example>
+    <p>下面是預先定義的函數。</p>
+    <table>
+    <tr>
+    <td><p>abs</p></td>
+    <td><p><link xref="absolute">Absolute Value</link></p></td>
+    </tr>
+    <tr>
+    <td><p>cos</p></td>
+    <td><p><link xref="trigonometry">Cosine</link></p></td>
+    </tr>
+    <tr>
+    <td><p>cosh</p></td>
+    <td><p><link xref="trigonometry">Hyperbolic Cosine</link></p></td>
+    </tr>
+    <tr>
+    <td><p>frac</p></td>
+    <td><p>小數部分</p></td>
+    </tr>
+    <tr>
+    <td><p>int</p></td>
+    <td><p>整數部分</p></td>
+    </tr>
+    <tr>
+    <td><p>ln</p></td>
+    <td><p><link xref="logarithm">Natural Logarithm</link></p></td>
+    </tr>
+    <tr>
+    <td><p>log</p></td>
+    <td><p><link xref="logarithm">Logarithm</link></p></td>
+    </tr>
+    <tr>
+    <td><p>not</p></td>
+    <td><p><link xref="boolean">Boolean NOT</link></p></td>
+    </tr>
+    <tr>
+    <td><p>ones</p></td>
+    <td><p>1 的補數</p></td>
+    </tr>
+    <tr>
+    <td><p>sin</p></td>
+    <td><p><link xref="trigonometry">Sine</link></p></td>
+    </tr>
+    <tr>
+    <td><p>sinh</p></td>
+    <td><p><link xref="trigonometry">Hyperbolic Sine</link></p></td>
+    </tr>
+    <tr>
+    <td><p>sqrt</p></td>
+    <td><p><link xref="power">Square Root</link></p></td>
+    </tr>
+    <tr>
+    <td><p>tan</p></td>
+    <td><p><link xref="trigonometry">Tangent</link></p></td>
+    </tr>
+    <tr>
+    <td><p>tanh</p></td>
+    <td><p><link xref="trigonometry">Hyperbolic Tangent</link></p></td>
+    </tr>
+    <tr>
+    <td><p>twos</p></td>
+    <td><p>2 的補數</p></td>
+    </tr>
+    </table>
+    <p><app>GCalctool</app> 不支援使用者自定義的函數。</p>
+</page>

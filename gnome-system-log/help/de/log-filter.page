@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="log-filter" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#main"/>
+    <link type="seealso" xref="log-search"/>
+    <revision version="3.3" date="2011-10-30" status="review"/>
+    <desc>Mit Hilfe regulärer Ausdrücke bestimmte Zeilen anzeigen oder verbergen.</desc>
+
+    <credit type="author">
+      <name>Jekaterina Gerassimowa</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  </info>
+
+  <title>Protokolle filtern</title>
+
+  <p>Der Systemprotokollbetrachter ermöglicht Ihnen, Protokollinhalte auf der Basis regulärer Ausdrücke zu filtern. Sie können Filter folgendermaßen einrichten und verwalten:</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Filter</gui><gui>Filter verwalten</gui></guiseq>, um den Dialog zur Filterverwaltung zu öffnen.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Hinzufügen</gui>, um einen neuen Filter hinzuzufügen, oder wählen Sie einen existierenden Filter und klicken Sie auf <gui>Eigenschaften</gui>, um ihn zu bearbeiten.</p>
+    </item>
+    <item>
+      <p>Füllen Sie die Formularfelder aus oder bearbeiten Sie die Felder nach Ihren Wünschen:</p>
+      <terms>
+        <item>
+          <title>Name:</title>
+          <p>Die Bezeichnung für den Filter</p>
+        </item>
+        <item>
+          <title>Regulärer Ausdruck:</title>
+          <p>Wonach gefiltert werden soll</p>
+        </item>
+        <item>
+          <title>Hervorheben:</title>
+          <p>Diese Option hebt die Zeile hervor, die den regulären Ausdruck enthält.</p>
+          <terms>
+            <item>
+              <title>Hintergrund:</title>
+              <p>Dies ist die Schriftfarbe.</p>
+              <note style="tip">
+                <p>Die vorgegebene Schriftfarbe ist Schwarz, wodurch kein Text hervorgehoben wird.</p>
+              </note>
+            </item>
+            <item>
+              <title>Vordergrund:</title>
+              <p>Dies ist die Hervorhebungsfarbe.</p>
+              <note style="tip">
+                <p>Die vorgegebene Hervorhebungsfarbe ist Schwarz, wodurch vollkommen schwarze Zeilen angezeigt werden. Daher ist es ratsam, diese zu ändern.</p>
+              </note>
+            </item>
+          </terms>
+        </item>
+        <item>
+          <title>Verbergen:</title>
+          <p>Diese Option verbirgt die Zeilen aus dem angezeigten Protokoll, die den regulären Ausdruck enthalten.</p>
+        </item>
+      </terms>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Anwenden</gui>, um den neuen Filter oder Änderungen an einem existierenden Filter zu speichern.</p>
+    </item>
+    <item>
+      <p>Zurück im Dialog zur Filterverwaltung klicken Sie auf <gui>Schließen</gui>, um die Änderungen anzuwenden.</p>
+    </item>
+  </steps>
+
+  <p>Aktivieren Sie das Ankreuzfeld neben dem Namen des Filters in <gui>Filter</gui>, den Sie aktivieren wollen. Falls Sie nur Filter betrachten wollen, für die <gui>Hervorheben</gui> aktiviert ist, aktivieren Sie <guiseq><gui>Filter</gui><gui>Nur Übereinstimmungen anzeigen</gui></guiseq>.</p>
+
+  <note style="tip">
+    <p>Falls ein Konflikt zwischen einem verbergenden und einem hervorhebenden Filter besteht, werden Zeilen oft als leere weiße Zeilen angezeigt.</p>
+  </note>
+
+  <note style="bug">
+    <p>Wenn Sie einen Filter deaktivieren, während Sie nur Übereinstimmungen anzeigen lassen, werden im Protokoll nur die Zeilen ohne Formatierung angezeigt, unabhängig davon, ob sie vorher verborgen oder hervorgehoben wurden. Der Filter wird zurückgesetzt, sobald Sie einen hervorhebenden Filter aktivieren.</p>
+  </note>
+
+</page>

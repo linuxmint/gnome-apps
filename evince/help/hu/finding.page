@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="finding" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#reading"/>
+    <desc>Szó vagy kifejezés keresése a dokumentumban.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2011, 2012.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Szöveg keresése dokumentumokban</title>
+<steps>
+    <item><p>Válassza a <guiseq><gui>Szerkesztés</gui><gui>Keresés</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>F</key></keyseq> kombinációt, vagy a <key>/</key> billentyűt a keresőmező megjelenítéséhez.</p></item>
+
+    <item><p>Írja be a keresendő szót vagy kifejezést, és a keresés automatikusan megkezdődik.</p></item>
+
+    <item><p>Az <gui>Előző találat</gui> és <gui>Következő találat</gui> gombok lehetővé teszik a találatok közti lépkedést.</p></item>
+
+    <item>
+     <p>A keresősáv elrejtéséhez kattintson a dokumentumra.</p>
+    </item>
+</steps>
+
+<p>Ha a keresett szó vagy kifejezés nem fordul elő sehol a dokumentumban, akkor a <em>Nem található</em> üzenet jelenik meg. Ha azonban legalább egyszer előfordul, az üzenet megadja, hogy a keresett szó hányszor fordul elő az adott oldalon. Ez a találatok közti fent leírt lépkedésnél, vagy a dokumentum görgetésekor hasznos.</p>
+
+<note>
+  <p>Csak PDF-dokumentumokban lehet keresni. Egyes PDF-dokumentumokban azonban nem lehet keresni, mert szövegük a dokumentumban képként van tárolva.</p>
+</note>
+
+</page>

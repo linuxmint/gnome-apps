@@ -1,0 +1,36 @@
+From 7dc1b83ffb71ff32296c5b3375c4e5b037fe6696 Mon Sep 17 00:00:00 2001
+From: Martin Pitt <martin.pitt@ubuntu.com>
+Date: Fri, 23 Mar 2012 17:39:09 +0100
+Subject: [PATCH] Fix crash when devices disappear during gdu_pool_new()
+
+It can happen that gdu_pool_new is running while a device is going away. A
+common case is when a program is listening to "volume-added" and calling
+gdu_pool_new() in its signal handler. In some cases like loop devices mounted
+to /tmp/, "volume-added" is sent on unmounting, immediately followed by
+"volume-removed" on removing the loop device.
+
+Bug: https://bugzilla.gnome.org/show_bug.cgi?id=591660
+Bug-Ubuntu: https://launchpad.net/bugs/412237
+---
+ src/gdu/gdu-pool.c |    5 +++++
+ 1 files changed, 5 insertions(+), 0 deletions(-)
+
+diff --git a/src/gdu/gdu-pool.c b/src/gdu/gdu-pool.c
+index bd5eccf..dad6049 100644
+--- a/src/gdu/gdu-pool.c
++++ b/src/gdu/gdu-pool.c
+@@ -2105,6 +2105,11 @@ gdu_pool_new_for_address (const gchar     *ssh_user_name,
+ 
+                 device = _gdu_device_new_from_object_path (pool, object_path);
+ 
++                /* race condition: we might get called right before a device is
++                 * going away, such as in a signal handler for volume-added */
++                if (device == NULL)
++                        continue;
++
+                 g_hash_table_insert (pool->priv->object_path_to_device,
+                                      (gpointer) gdu_device_get_object_path (device),
+                                      device);
+-- 
+1.7.9.1
+

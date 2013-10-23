@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="power" xml:lang="zh-CN">
+
+    <info>
+        <link type="guide" xref="index#equation"/>
+    </info>
+
+	<title>幂和根</title>
+    
+    <p>幂是通过在一个数后面加上 <link xref="superscript">上标</link>。</p>
+    <example>
+    <p>5²</p>
+    </example>
+    <p>一个数的倒数可以通过输入倒数符号 ⁻¹ (<keyseq><key>Ctrl</key><key>I</key></keyseq>)。</p>
+    <example>
+    <p>3⁻¹</p>
+    </example>
+    <p>幂运算也可以使用 ^ 符号。这使幂成为一个代数式。</p>
+    <example>
+    <p>5^(6−2)</p>
+    </example>
+    <p>如果您的键盘上没有 <key>^</key> 键，也可以使用两个 <key>*</key>。</p>
+    <p>平方根运算可以使用根号(<keyseq><key>Ctrl</key><key>R</key></keyseq>)。</p>
+    <example>
+    <p>√2</p>
+    </example>
+    <p>n 次根式运算，可以在根号前面使用 <link xref="superscript">下标</link>。</p>
+    <example>
+    <p>₃√2</p>
+    </example>
+</page>

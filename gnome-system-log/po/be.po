@@ -1,0 +1,441 @@
+# Vital Khilko <dojlid@mova.org>, 2003.
+# Ales Nyakhaychyk <nab@mail.by>, 2003, 2004.
+# Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils.master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-20 23:13+0300\n"
+"PO-Revision-Date: 2011-10-20 23:13+0300\n"
+"Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
+"Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
+"Language: be\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "Праглядальнік журнальных файлаў"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Прагляд і назіранне за сістэмнымі журнальнымі файламі"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "Вышыня галоўнага акна ў пікселах"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "Спіс захаваных фільтраў"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "Спіс захаваных фільтраў на аснове рэгулярных выразаў"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "Журнальны файл для адкрыцця пры запуску"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "Журнальныя файлы для адкрыцця пры запуску"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "Памер шрыфту для паказу журнала"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"Вызначае спіс журнальных файлаў для адкрыцця пры запуску. Прадвызначаны спіс "
+"вычытваецца з файла /etc/syslog.conf."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "Вызначае вышыню галоўнага акна праглядальніка журналаў у пікселах."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"Вызначае журнальны файл для паказу пры запуску. У залежнасці ад аперацыйнай "
+"сістэмы, гэта можа быць /var/adm/messages ці /var/log/messages."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"Вызначае памер роўнашырокага шрыфту для паказу журнала ў галоўным рэжыме "
+"прагляду іерархіі. Прадвызначаным памерам з'яўляецца памер прадвызначанага "
+"шрыфту тэрмінала."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "Вызначае шырыню галоўнага акна праглядальніка журналаў у пікселах."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "Шырыня галоўнага акна ў пікселах"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "Фон:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "Эфекты:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "Пярэдні план:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "Схаваць"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "Падсветка"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "_Назва:"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "_Рэгулярны выраз:"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"Гэта праграма з'яўляецца свабодным апраграмаваннем. Вы можаце распаўсюджваць "
+"яе згодна з умовамі Агульнай Грамадскай Ліцэнзіі GNU (GPL), апублікаванай "
+"Фондам свабоднага апраграмавання, версіі 2 ці любой пазнейшай."
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"Гэта праграма распаўсюджваецца з надзеяй, што яна будзе карыснай, але без "
+"ніякіх гарантый, у тым ліку камерцыйнай вартасці праграмы і наогул яе "
+"карысці. Падрабязней глядзіце ў тэксце Агульнай Грамадскай Ліцэнзіі GNU "
+"(GPL)."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"Вы павінны былі атрымаць копію Агульнай Грамадскай Ліцэнзіі GNU (GPL) разам "
+"з гэтай праграмай. Калі вы не атрымалі яе, паведаміце пра гэта Фонду "
+"свабоднага апраграмавання на адрас: the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"Vital Khilko <dojlid@mova.org>\n"
+"Ales Nyakhaychyk <nab@mail.by>\n"
+"Ihar Hrachyshka <ihar.hrachyshka@gmail.com>"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "Не ўдалося адкрыць файл %s"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "Пустая назва фільтра."
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "Назва фільтра не можа змяшчаць знакаў двукроп'я"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "Пусты рэгулярны выраз."
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "Хібны рэгулярны выраз: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "Вызначыце колер фону ці пярэдняга плана."
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "Рэдагаваць фільтр"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "Дадаць новы фільтр"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "Фільтры"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_Шукаць:"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "Шукаць раней"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "Шукаць ранейшую адпаведнасць крытэрыю пошуку"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "Шукаць далей"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "Шукаць далейшую адпаведнасць крытэрыю пошуку"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "Ачысціць графу крытэрыя пошуку"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "Памылка скасавання сціску журнала ў фармаце gzip. Файл пашкоджаны."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "Вы не маеце дазволу на чытанне гэтага файла."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "Гэты файл не з'яўляецца звычайным тэкставым файлам."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr ""
+"Гэта версія праглядальніка сістэмных журналаў не падтрымлівае журналы ў "
+"фармаце gzip."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "Чытанне..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Паказаць нумар версіі праграмы"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[ЖУРНАЛ...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr "- Прагляд і назіранне за сістэмнымі журналамі"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "Праглядальнік журналаў"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "Праглядальнік сістэмных журналаў"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "апошняе абнаўленне: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d радкоў (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "Адкрыццё журнала"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Узнікла памылка паказу даведкі: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "Працягваць з пачатку/канца"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "Не знойдзена"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "Праглядальнік сістэмных журналаў для GNOME."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "_Файл"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "_Праўка"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "_Від"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "_Фільтры"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "_Дапамога"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "_Адкрыць..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "Адкрыць файл журнала"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "_Закрыць"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "Закрыць гэты журнал"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "_Выйсці"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "Выйсці з праглядальніка журналаў"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "_Скапіраваць"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "Скапіраваць вылучанае"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "Вылучыць _усё"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "Вылучыць увесь журнал"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "_Шукаць..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "Пошук слова ці выразу ў журнале"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "Большы шрыфт"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "Меншы шрыфт"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "Звычайны памер шрыфту"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "Кіраванне фільтрамі"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "Кіраванне фільтрамі"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "_Змест"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "Адкрыць даведнік па праглядальніку журналаў"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "_Аб праграме"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "Паказаць дыялогавае акенца з інфармацыяй аб праглядальніку журналаў"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "_Стужка стану"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "Паказваць стужку стану"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "_Бакавы абшар"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "Паказваць бакавы абшар"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "Паказваць толькі адпаведныя радкі"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "Паказваць толькі тыя радкі, якія адпавядаюць ужытым фільтрам"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "_Аўтаматычная пракрутка"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "Аўтаматычна пракручваць журнал уніз пры з'яўленні новых радкоў"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "Не ўдалося прачытаць з \"%s\""
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "Версія: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "Не ўдалося адкрыць наступныя файлы:"

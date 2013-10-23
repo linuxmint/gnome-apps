@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="annotations" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#annotations"/>
+    <desc>Kā izveidot un pielāgot komentārus.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0 licence</p>
+    </license>
+
+  </info>
+
+<title>Komentāru pievienošana</title>
+<p>Komentārs jeb piezīmi var pievienot PDF dokumentam. Tu vari pievienot komentārus, izmantojot <app>dokumentu skatītāja</app> lietotni.</p>
+<p>Kad tu atver failu, tev vajadzētu redzēt sānu paneli kreisajā loga pusē. Ja tu šo paneli neredzi, spied <guiseq><gui>Skats</gui><gui>Sānu panelis</gui></guiseq> vai spiediet <key>F9</key>.</p>
+
+<p>Šī paneļa augšpusē ir izkrītošā izvēlne ar tādām iespējām, kā <gui>Sīktēls</gui>, <gui>Indekss</gui> un <gui>Komentāri</gui> (no kurām dažas var būt <em>nepieejamas</em> dažos dokumentos).</p>
+<p>Lai izveidotu komentāru:</p>
+<steps>
+ <item>
+  <p>Izvēlies <gui>Komentāri</gui> no izkrītošās izvēlnes.</p>
+    <list>
+     <item>
+      <p>Tagad tev vajadzētu redzēt <gui>Saraksts</gui> un <gui>Pievienot</gui> cilnes zem izkrītošās izvēlnes.</p>
+       <media type="image" src="figures/list-add-tabs.png"/>
+     </item>
+    </list>
+ </item>
+ <item>
+  <p>Izvēlies <gui>Pievienot</gui> cilni.</p>
+ </item>
+ <item>
+  <p>Nospied uz ikonas, lai pievienotu teksta anotāciju.</p>
+    <media type="image" src="figures/add-text-annotation.png"/>
+ </item>
+ <item>
+  <p>Nospied uz vietas dokumenta logā, kur vēlies pievienot komentāru. Atvērsies tava <em>komentāra</em> logs.</p>
+ </item>
+ <item>
+  <p>Ievadi tekstu <em>komentāra</em> logā.</p>
+   <note>
+    <p>Tu vari mainīt piezīmes izmēru, piespiežot un pavelkot peli no kāda apakšējā piezīmes stūra.</p>
+   </note>
+ </item>
+ <item>
+  <p>Aizver piezīmi, nospiežot <gui>x</gui> augšējā piezīmes stūrī.</p>
+ </item>
+</steps>
+
+
+</page>

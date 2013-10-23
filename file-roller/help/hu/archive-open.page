@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-open" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <revision pkgversion="3.4" date="2011-12-08" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>Meglévő archívum megnyitása.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Nyissa meg az archívumot</title>
+
+  <p>Meglévő archívumot a következő módszerekkel nyithat meg az <app>Archívumkezelővel</app>:</p>
+
+  <list>
+    <item>
+      <p>Kattintson a <gui>Megnyitás</gui> eszköztárgombra</p>
+    </item>
+    <item>
+      <p>Válassza ki az <guiseq><gui style="menu">Archívum</gui><gui style="menuitem">Megnyitás</gui></guiseq> menüpontot</p>
+    </item>
+  </list>
+
+  <p>Használhatja a <gui>Legutóbbi megnyitása</gui> lehetőséget is:</p>
+
+  <list>
+    <item>
+      <p>Nyomja meg a <media type="image" mime="image/png" src="figures/file-roller-open-recent.png">Legutóbb használt archívum megnyitása</media> eszköztárgombot, és válasszon ki egy fájlt.</p>
+    </item>
+    <item>
+      <p>Válassza ki az <guiseq><gui style="menu">Archívum</gui><gui style="menuitem">Legutóbbi megnyitása</gui></guiseq> menüpontot a legutóbb használt archívumok listájának megjelenítéséhez.</p>
+    </item>
+  </list>
+
+  <note>
+    <p>Ha az <app>Archívumkezelővel</app> nem tudja megnyitni a legutóbb használt archívumot, és az <gui>A fájl nem létezik</gui> hibaüzenetet jeleníti meg, akkor az archívum helye megváltozhatott. Megpróbálhatja használni a <gui>Megnyitás</gui> menüpontot a fájl megkereséséhez.</p>
+  </note>
+
+</page>

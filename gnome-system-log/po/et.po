@@ -1,0 +1,448 @@
+# Gnome utiliitide eesti keele tõlge.
+# Estonian translation of Gnome-utils.
+#
+# Copyright (C) 1999, 2002, 2005, 2006 Free Software Foundation, Inc.
+# Copyright (C) 2007–2011 The GNOME Project.
+# This file is distributed under the same license as the gnome-utils package.
+#
+# Lauris Kaplinski <lauris ariman ee>, 1999.
+# Tõivo Leedjärv <toivo linux ee>, 2002.
+# Ivar Smolin <okul linux ee>, 2005–2011.
+# Priit Laes <amd store20 com>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils MASTER\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2011-03-21 10:50+0200\n"
+"Last-Translator: Ivar Smolin <okul@linux.ee>\n"
+"Language-Team: Estonian <gnome-et@linux.ee>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "Logifailide näitaja"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Süsteemsete logifailide sirvimine või jälgimine"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "Peaakna kõrgus pikslites"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "Salvestatud filtrite nimekiri"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "Salvestatud regulaaravaldisfiltrite nimekiri"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "Käivitamisel avatav logifail"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "Käivitamisel avatavad logifailid"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "Logi kuvamise kirjatüübi suurus"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"Käivitamisel avatava logifailide loetelu määramine. Vaikimisi loetelu "
+"koostatakse faili /etc/syslog.conf põhjal."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "Loginäitaja peaakna kõrguse määramine pikslites."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"Käivitamisel avatava logifaili määramine. Sõltuvalt sinu "
+"operatsioonisüsteemist on selleks vaikimisi kas /var/adm/messages või /var/"
+"log/messages."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"Peaakna puuvaates kasutatava fikseeritud laiusega kirjatüübi suuruse "
+"määramine. Vaikimisi võetakse selle väärtus terminali vaikimisi kirjatüübilt."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "Loginäitaja peaakna laiuse määramine pikslites."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "Peaakna laius pikslites"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "Taust:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "Efekt:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "Kiri:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "Peitmine"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "Esiletõstmine"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "_Nimi:"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "_Regulaaravaldis:"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"See programm on vaba tarkvara. Te võite seda edasi levitada ja/või muuta "
+"vastavalt GNU Üldise Avaliku Litsentsi tingimustele, nagu need on Vaba "
+"Tarkvara Fondi poolt avaldatud; kas Litsentsi versioon number 2 või "
+"(vastavalt Teie valikule) ükskõik milline hilisem versioon."
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"Seda programmi levitatakse lootuses, et see on kasulik, kuid ILMA IGASUGUSE "
+"GARANTIITA; isegi KESKMISE/TAVALISE KVALITEEDIGARANTIITA või SOBIVUSELE "
+"TEATUD KINDLAKS EESMÄRGIKS. Üksikasjade suhtes vaata GNU Üldist Avalikku "
+"Litsentsi."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"Te peaks olema saanud GNU Üldise Avaliku Litsentsi koopia koos selle "
+"programmiga; kui ei, siis võtke ühendust Free Software Foundation'iga, 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"Lauris Kaplinski <lauris ariman ee>, 1999.\n"
+"Tõivo Leedjärv <toivo linux ee>, 2002.\n"
+"Ivar Smolin <okul linux ee>, 2005–2011.\n"
+"Priit Laes <amd store20 com>, 2005."
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "Faili `%s' pole võimalik avada"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "Filtri nimi on tühi!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "Filtri nimes ei tohi olla märki ':'"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "Regulaaravaldis on tühi!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "Regulaaravaldis on vigane: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "Palun määra teksti- ja taustavärvused!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "Redigeeri filtrit"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "Lisa uus filter"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "FIltrid"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_Otsing:"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "Otsi eelmist"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "Stringi eelmise esinemiskoha leidmine"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "Otsi järgmist"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "Stringi järgmise esinemiskoha leidmine"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "Otsingustringi puhastamine"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "Viga gzipiga pakitud logi lahtipakkimisel. Võib-olla on fail rikutud."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "Sul puudub õigus seda faili lugeda."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "See fail pole kas tekstifail või pole see üldse tavaline fail."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr ""
+"See süsteemi logiraamatu näitaja versioon ei toeta gzipiga pakitud logisid."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "Laadimine..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Rakenduse versiooni näitamine"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[LOGIFAIL...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - logide sirvimine ja jälgimine"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "Loginäitaja"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "Süsteemilogi näitaja"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "viimane uuendus: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d rida (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "Logi avamine"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Abiteabe kuvamisel tekkis viga: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "Murtud"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "Ei leitud"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "Süsteemilogi näitaja GNOME keskkonnale."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "_Fail"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "_Redaktor"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "_Vaade"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "_Filtrid"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "A_bi"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "_Ava..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "Uue logifaili avamine"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "_Sulge"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "Käesoleva logi sulgemine"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "_Lõpeta"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "Loginäitaja töö lõpetamine"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "_Kopeeri"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "Valiku kopeerimine"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "_Vali kõik"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "Kogu logi valimine"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "_Otsi..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "Logist sõna või fraasi otsimine"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "Suurem teksti suurus"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "Väiksem teksti suurus"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "Tavaline teksti suurus"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "Halda filtreid"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "Filtrite haldamine"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "_Sisukord"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "Loginäitaja abiteabe sisukorra avamine"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "_Programmist lähemalt"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "Loginäitaja lähema teabe kuvamise dialoogi avamine"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "_Olekuriba"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "Näita olekuriba"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "Külg_paan"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "Külgpaani näitamine"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "Näita ainult vastavusi"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "Näidatakse ainult ridu, mis vastavad ühele valitud filtritest"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "_Automaatkerimine"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "Uute logiridade korral automaatne kerimine"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "Allikast \"%s\" pole võimalik lugeda"
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "Versioon: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "Järgnevaid faile pole võimalik avada:"

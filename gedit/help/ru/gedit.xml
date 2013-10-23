@@ -1,0 +1,1907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appversion "2.16">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "July 2006">
+<!ENTITY app "gedit">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.GNOME.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+
+-->
+<!-- =============Document Header ============================= -->
+<?db.chunk.max_depth 2?>
+<article id="index" lang="ru">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+	 <title>Руководство по Gedit</title>
+	 <copyright>
+		<year>2007</year>
+		<holder>Проект документирования GNOME</holder> </copyright>	 
+	 <copyright>
+		<year>2002</year>
+		<year>2003</year>
+		<year>2004</year>
+		<holder>Sun Microsystems</holder> </copyright>
+	 <copyright>
+		<year>2000</year>
+		<holder>Eric Baudais</holder> </copyright><copyright><year>2006 - 2009.</year><holder>Салихов Тимур (Tima-S@yandex.ru)</holder></copyright>
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+	 <publisher role="maintainer">
+		<publishername>Проект документирования GNOME</publishername>
+	 </publisher>
+
+	 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+	 <authorgroup>
+           <author>
+             <firstname>Joachim</firstname>
+             <surname>Noreiko</surname>
+           </author>
+		<author>
+		  <firstname>Проект документирования GNOME</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>GNOME</orgname>
+		  </affiliation>
+		</author>
+		<author>
+			<firstname>Hal</firstname> 
+			<surname>Canary</surname>
+			<contrib>Добавлена таблица клавиатурных комбинаций</contrib>
+		</author>		
+		<author>
+		  <firstname>Команда документирования Sun Java Desktop System</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>Sun Microsystems</orgname>
+			 <address><email>gdocteam@sun.com</email></address>
+		  </affiliation>
+		</author>
+		<author>
+		  <firstname>Eric</firstname>
+		  <surname>Baudais</surname>
+		  <affiliation>
+			 <orgname>Проект документирования GNOME</orgname>
+			 <address> <email>baudais@okstate.edu</email> </address>
+		  </affiliation>
+		</author>
+		<othercredit role="reviewer">
+			<firstname>Baris</firstname>
+			<surname>Cicek готовил информацию по ранним версиям gedit.</surname>
+			<contrib>Благодарности</contrib>
+    </othercredit>
+		<othercredit role="reviewer">
+			<firstname>Ajit</firstname>
+			<surname>George предоставил информацию о модулях.</surname>
+			<contrib>Благодарности</contrib>
+    </othercredit>
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname>
+	<surname>Translator 1</surname>
+	<affiliation>
+	  <orgname>Latin Translation Team</orgname>
+	  <address> <email>translator@gnome.org</email> </address>
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+	 </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+	 <revhistory>
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+		<revision>
+		  <revnumber>gedit V1.0</revnumber>
+		  <date>2000</date>
+		  <revdescription>
+			 <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Руководство версии 2.0 по gedit.</revnumber>
+		  <date>Март 2002</date>
+		  <revdescription>
+			 <para role="author">Команда документирования Sun GNOME</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Руководство версии 2.1 по gedit.</revnumber>
+		  <date>Июнь 2002</date>
+		  <revdescription>
+			 <para role="author">Команда документирования Sun GNOME</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Руководство версии 2.2 по gedit.</revnumber>
+		  <date>Август 2002</date>
+		  <revdescription>
+			 <para role="author">Команда документирования Sun GNOME</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Руководство версии 2.3 по gedit.</revnumber>
+		  <date>Сентябрь 2002</date>
+		  <revdescription>
+			 <para role="author">Команда документирования Sun GNOME</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Руководство версии 2.4 по gedit.</revnumber>
+		  <date>Январь 2003</date>
+		  <revdescription>
+			 <para role="author">Команда документирования Sun GNOME</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Руководство версии 2.5 по gedit.</revnumber>
+		  <date>Март 2003</date>
+		  <revdescription>
+			 <para role="author">Команда документирования Sun GNOME</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Руководство версии 2.6 по gedit.</revnumber>
+		  <date>Сентябрь 2003</date>
+		  <revdescription>
+			 <para role="author">Команда документирования Sun GNOME</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Руководство версии 2.7 по gedit.</revnumber>
+		  <date>Март 2004</date>
+		  <revdescription>
+			 <para role="author">Команда документирования Sun GNOME</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription>
+		</revision>
+   	<revision>
+		  <revnumber>Руководство версии 2.8 по gedit.</revnumber>
+		  <date>Июль 2006</date>
+		  <revdescription>
+			 <para role="author">Команда документирования Sun Java Desktop System</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription>
+		</revision>
+   		<revision>
+		  <revnumber>Руководство версии 2.9 по gedit.</revnumber>
+		  <date>Июль 2006</date>
+		  <revdescription>
+			 <para role="author">Команда документирования GNOME</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription>
+		</revision>
+	 </revhistory>
+	 <releaseinfo>Данное руководство описывает gedit версии 2.16.</releaseinfo>
+	 <legalnotice>
+		<title>Обратная связь</title>
+		<para>Чтобы сообщить об ошибке или предложить что-то касательно приложения <application>gedit</application> либо этого документа, последуйте ссылке <ulink url="ghelp:user-guide?feedback-bugs" type="help">GNOME Feedback Page</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+	 </legalnotice>
+    <abstract role="description">
+      <para>gedit — текстовый редактор для среды GNOME, простой, но поддерживающий основные функции по работе с текстом, печать, проверку орфографии, поиск и замену, подсветку синтаксиса. Множество дополнительных функций доступны как модули.</para>
+    </abstract>
+  </articleinfo>
+  <indexterm><primary>gedit</primary></indexterm>
+  <indexterm><primary>текстовый редактор</primary></indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="gedit-intro">
+	 <title>Введение</title>
+
+   <!-- removed ids, here as anchors to prevent possible breakage -->
+	 <anchor id="gedit-customize-toolbar"/>
+
+	 <para>Приложение <application>gedit</application> позволяет вам создавать и редактировать текстовые файлы.</para>
+
+	 <para>Цель <application>gedit</application> — быть простым и лёгким в использовании текстовым редактором. Многие возможности могут быть включены <firstterm>модулями</firstterm>, решающими множество задач по редактированию текста.</para>
+  </sect1>
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="gedit-getting-started">
+	 <title>Начало</title>
+
+<!-- ============= To Start gedit ============================ -->
+	 <sect2 id="gedit-to-start">
+		<title>Запуск gedit</title>
+		<para>Можно запустить <application>gedit</application> следующими способами:</para>
+		<variablelist>
+    		<varlistentry>
+    		<term>Меню <guimenu>Приложения</guimenu></term>
+    		<listitem>
+    		<para>Выберите <menuchoice><guisubmenu>Стандартные</guisubmenu><guimenuitem>Текстовый редактор</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    		</varlistentry>
+    		<varlistentry>
+    		<term>Командная строка</term>
+    		<listitem>
+    		<para>Выполните команду: <command>gedit</command></para>
+    		</listitem>
+    		</varlistentry>
+    		</variablelist>
+    <para>По умолчанию, когда вы открываете текстовый документ в файловом менеджере, gedit запускается и отображает открываемый файл.</para>
+	</sect2>
+
+	<sect2 id="gedit-when-you-start">
+
+		<title>Окно gedit</title>
+		<para>Когда запускается <application>gedit</application>, отображается следующее окно:</para>
+
+		<figure id="gedit-window">
+		  <title>Окно gedit</title>
+		  <screenshot>
+			 <mediaobject>
+				<imageobject>
+				  <imagedata fileref="figures/gedit_window.png" format="PNG"/>
+					 </imageobject>
+				<textobject> <phrase>Главное окно gedit.</phrase>
+				</textobject>
+			</mediaobject>
+		  </screenshot>
+		</figure>
+
+		<para>Окно <application>gedit</application> состоит из следующих элементов:</para>
+		<variablelist>
+		  <varlistentry> <term>Строка меню</term>
+			 <listitem>
+				<para>Меню включает в себя все команды необходимые для работы с файлами в <application>gedit</application>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Панель инструментов</term>
+			 <listitem>
+				<para>Панель инструментов включает в себя некоторые команды, доступные из меню.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Область просмотра</term>
+			 <listitem>
+				<para>В области просмотра отображается редактируемый текст.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Строка статуса</term>
+			 <listitem>
+				<para>Строка статуса показывает текущее состояние <application>gedit</application>, а также контекстную информацию о пунктах меню. Информация о состоянии может быть следующей:</para>
+		  <itemizedlist>
+		  <listitem>
+		  <para>Позиция курсора: номер строки и номер столбца, где находится курсор.</para>
+		  </listitem>
+		  <listitem>
+		  <para>Режим редактирования: если редактор находится в режиме вставки, в строке статуса отобразится <guilabel>ВСТ</guilabel>. Если редактор в режиме замены, строка статуса покажет <guilabel>ЗАМ</guilabel>. Нажатие клавиши <keycap>Insert</keycap> меняет режим редактирования.</para>
+		  </listitem>
+		  </itemizedlist>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Боковая панель</term>
+			 <listitem>
+				<para>В боковой панели отображается список открытых документов и другая информация, зависящая от загруженных модулей.</para>
+				<para>По умолчанию боковая панель скрыта. Чтобы увидеть её, выберите <menuchoice><guimenu>Вид</guimenu><guimenuitem>Боковая панель</guimenuitem></menuchoice>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Нижняя панель</term>
+			 <listitem>
+				<para>Нижняя панель используется инструментами программирования, такими как модуль <application>Консоль Python</application>, для отображения результатов работы.</para>
+				<para>По умолчанию нижняя панель скрыта. Чтобы увидеть её, выберите <menuchoice><guimenu>Вид</guimenu><guimenuitem>Нижняя панель</guimenuitem></menuchoice>.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>При щелчке правой кнопкой мыши в окне <application>gedit</application>, появляется всплывающее меню. Оно содержит общие команды редактирования текста.</para>
+
+		<para>Подобно другим приложениям GNOME большинство действий в <application>gedit</application> можно выполнить несколькими способами: через меню, через панель инструментов и с помощью горячих клавиш. Общие для всех приложений горячие клавиши перечислены в <ulink type="help" url="ghelp:user-guide?shortcuts-apps">Руководстве пользователя</ulink>.</para>
+	 </sect2>
+
+<!-- ============= To Open Multiple Files from the Command Line ========= -->
+	 <sect2 id="gedit-run-from-cmd-line">
+		<title>Запуск gedit из командной строки</title>
+		<para>Можно запустить gedit из командной строки с одним или несколькими файлами. Для открытия нескольких файлов введите следующую команду и нажмите клавишу <keycap>Ввод</keycap>:</para>
+		<para><command>gedit <replaceable>файл1.txt файл2.txt файл3.txt</replaceable></command></para>
+		<para>Также, вместо имени файла можно указать URI.</para>
+    <para>Для дополнительной информации о запуске <application>gedit</application> из командной строки смотрите страницы руководства unix для gedit, <ulink url="man:gedit" type="man"><citerefentry><refentrytitle>gedit</refentrytitle><manvolnum>1</manvolnum></citerefentry></ulink>.</para>
+	 </sect2>
+  </sect1>
+<!-- ================ Usage ================================ -->
+  <sect1 id="gedit-usage">
+	 <title>Работа с файлами</title>
+
+<!-- ============= To Create a New File ======================== -->
+	 <sect2 id="gedit-create-new-file">
+		<title>Создание нового документа</title>
+		<para>Чтобы создать новый документ выберите <menuchoice><guimenu>Файл</guimenu><guimenuitem>Создать</guimenuitem></menuchoice>. Новый чистый документ отобразится в окне <application>gedit</application>.</para>
+	 </sect2>
+
+<!-- ============= To Open a File ============================= -->
+	 <sect2 id="gedit-open-file">
+		<title>Открытие файла</title>
+		<para>Чтобы открыть файл выберите <menuchoice><guimenu>Файл</guimenu><guimenuitem>Открыть</guimenuitem></menuchoice>. В диалоге выбора файлов найдите нужный и нажмите кнопку guibutton&gt;Открыть</para>
+
+		<para>Приложение запоминает имена пяти последних открытых файлов и отображает их в меню <menuchoice><guimenu>Файл</guimenu></menuchoice>. Также для отображения списка недавно использованных файлов можно щёлкнуть значок <inlinemediaobject><imageobject><imagedata fileref="figures/gedit_recent_files_menu_icon.png" format="PNG"/></imageobject><textobject><phrase>Значок меню списка недавних документов.</phrase></textobject></inlinemediaobject> на панели инструментов.</para>
+
+		<note><para>В <application>gedit</application> можно открывать несколько файлов. Приложение добавляет вкладку для каждого открытого файла в окно. Смотрите также <xref linkend="gedit-tabs"/>.</para></note>
+
+	 </sect2>
+
+<!-- ============= To Save a File ============================== -->
+	 <sect2 id="gedit-save-file">
+		<title>Сохранение файла</title>
+		<para>Сохранять файлы можно несколькими способами:</para>
+		<itemizedlist>
+		  <listitem><para>Чтобы сохранить изменения в уже существующем файле, выберите <menuchoice><guimenu>Файл</guimenu><guimenuitem>Сохранить</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem><para>Для записи нового файла или записи уже существующего файла под новым именем, выберите <menuchoice><guimenu>Файл</guimenu><guimenuitem>Сохранить как</guimenuitem></menuchoice>. Введите имя для файла в диалоге <guilabel>Сохранить как</guilabel> и нажмите кнопку <guibutton>Сохранить</guibutton>.</para>
+		  </listitem>
+		  <listitem><para>Чтобы сохранить все открытые в данный момент файлы, нужно выбрать <menuchoice><guimenu>Документы</guimenu><guimenuitem>Сохранить всё</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		</itemizedlist>
+		<para>Для закрытия всех открытых в <application>gedit</application> файлов, выберите <menuchoice><guimenu>Документы</guimenu><guimenuitem>Закрыть всё</guimenuitem></menuchoice>.</para>
+	 </sect2>
+
+<!-- ============= To Open a File from a URI ======================= -->
+	 <sect2 id="gedit-open-from-uri">
+		<title>Открытие файла через URI</title>
+		<para>Чтобы открыть файл через Uniform Resource Identifier (URI), выполните следующее:</para>
+		<orderedlist>
+		<listitem>
+		<para>Выберите <menuchoice><guimenu>Файл</guimenu><guimenuitem>Открыть адрес</guimenuitem></menuchoice>. Появится диалог <guilabel>Открыть адрес</guilabel>.</para>
+		</listitem>
+		<listitem>
+		<para>Введите URI файла, что вы хотите открыть.</para>
+		</listitem>
+		<listitem>
+		<para>Используя выпадающий список <guilabel>Кодировка символов</guilabel>, выберите подходящую кодировку.</para>
+		</listitem>
+		<listitem>
+		<para>Нажмите кнопку <guibutton>Открыть</guibutton>.</para>
+		</listitem>
+		</orderedlist>
+		<para><replaceable>URI</replaceable> может содержать <literal>http:</literal>, <literal>ftp:</literal>, <literal>file:</literal> и все протоколы, поддерживаемые <literal>gnome-vfs</literal>.</para>
+		<para>Файлы с некоторых типов URI могут быть открыты только для чтения, поэтому изменения в таких файлах должны быть сохранены в другое место. Например, HTTP позволяет открывать файлы лишь для чтения. Файлы открытые с FTP тоже могут оказаться недоступными для записи, поскольку не все FTP-серверы умеют правильно работать с записью таких файлов.</para>
+		<warning><para>Запись на FTP-серверы может быть включена с помощью приложения <ulink type="help" url="ghelp:gconf-editor"><application>Редактор конфигурации</application></ulink>, установкой ключа <systemitem>/apps/gedit-2/preferences/editor/save/writable_vfs_schemes</systemitem>, но это может приводить к ошибкам.</para></warning>
+	 </sect2>
+
+<!-- ============= Working with tabs ======================== -->
+	 <sect2 id="gedit-tabs">
+	   <title>Работа со вкладками</title>
+
+		 <para>Когда открыто более одного файла, <application>gedit</application> отображает в верхней части области просмотра <firstterm>вкладки</firstterm> для каждого документа. Переключиться на другой документ можно щёлкнув по соответствующей вкладке.</para>
+		 <para>Для перемещения документа в другое окно <application>gedit</application>, перетащите соответствующую вкладку.</para>
+		 <para>Для перемещения документа в новое окно <application>gedit</application>, перетащите вкладку на рабочий стол или выберите <menuchoice><guimenu>Документы</guimenu><guimenuitem>Переместить в новое окно</guimenuitem></menuchoice>.</para>
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="working-with-text">
+    <title>Работа с текстом</title>
+
+<!-- ============= To Edit Text ================================ -->
+	 <sect2 id="gedit-edit-text">
+		<title>Редактирование текста</title>
+		<para>При редактировании текста можно использовать следующие приёмы:</para>
+		<itemizedlist>
+		  <listitem><para>Ввести новый текст с клавиатуры. Мерцающий <firstterm>курсор</firstterm> показывает место ввода текста, изменить которое можно с помощью клавиш управления курсором или щелчком мыши.</para>
+		  </listitem>
+		  <listitem><para>Чтобы скопировать выделенный текст в буфер обмена, выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Копировать</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem><para>Для удаления выделенного текста из файла и перемещения в буфер обмена, выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Вырезать</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem><para>Чтобы удалить выделенный текст, выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Удалить</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem><para>Для вставки содержимого буфера обмена в позицию курсора, нужно выбрать <menuchoice><guimenu>Правка</guimenu><guimenuitem>Вставить</guimenuitem></menuchoice>. Перед вставкой текста необходимо переместить или скопировать нужный текст в буфер обмена из gedit или из другого приложения.</para>
+		  </listitem>
+		  <listitem><para>Чтобы выделить весь текст в файле, нужно выбрать <menuchoice><guimenu>Правка</guimenu><guimenuitem>Выделить всё</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		</itemizedlist>
+	 </sect2>
+<!-- ============== To Undo or Redo Edits ====================== -->
+	 <sect2 id="gedit-undo-redo-edits">
+		<title>Отмена и возврат изменений</title>
+		<para>Для отмены сделанных изменений, выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Отменить</guimenuitem></menuchoice>. Для возврата отмененного, нужно выбрать  <menuchoice><guimenu>Правка</guimenu><guimenuitem>Вернуть</guimenuitem></menuchoice>.</para>
+	 </sect2>
+
+	</sect1>
+	<sect1 id="gedit-find">
+		<title>Поиск и замена</title>
+
+		<para>В <application>gedit</application> существует два способа поиска текста. Можно использовать диалог <guilabel>Найти</guilabel> для поиска текстового блока, или воспользоваться <guilabel>Интерактивным поиском</guilabel> для подсветки текста по мере набора.</para>
+
+<!-- ============= To Find Text ================================ -->
+	 <sect2 id="gedit-find-text">
+		<title>Поиск текста</title>
+		<para>Чтобы найти в файле строку текста, выполните следующие действия:</para>
+		<orderedlist>
+		  <listitem><para>Выберите <menuchoice><guimenu>Поиск</guimenu><guimenuitem>Найти</guimenuitem></menuchoice> для отображения диалога <guilabel>Найти</guilabel></para>
+		  </listitem>
+		  <listitem><para>Введите искомую строку в поле <guilabel>Найти</guilabel>. Можно использовать специальные символы, такие как, символ новой строки или табуляции: смотрите <xref linkend="gedit-find-escapes"/>.</para>
+		  </listitem>
+		  <listitem><para>Нажмите <guibutton>Найти</guibutton> для поиска первого совпадения строк с текущей позиции курсора. Если строка найдена, приложение выделяет первое совпадение. Остальные совпадения строк будут подсвечены.</para>
+		  </listitem>
+		  <listitem><para>Для перехода к следующему совпадению, щёлкните <guibutton>Найти</guibutton> еще раз, или выберите <guimenu>Поиск</guimenu><guimenuitem>Найти следующее</guimenuitem></para>
+		  </listitem>
+		</orderedlist>
+		<para>После закрытия диалога <guilabel>Найти</guilabel>, вы по-прежнему можете перемещаться между найденными совпадениями текста используя <menuchoice><guimenu>Поиск</guimenu><guimenuitem>Найти следующее</guimenuitem></menuchoice> и <menuchoice><guimenu>Поиск</guimenu><guimenuitem>Найти предыдущее</guimenuitem></menuchoice>.</para>
+		<para>Для удаления подсветки текста, выберите <menuchoice><guimenu>Поиск</guimenu><guimenuitem>Очистить подсветку</guimenuitem></menuchoice>.</para>
+	 </sect2>
+
+	 <sect2 id="gedit-find-incremental">
+	   <title>Интерактивный поиск</title>
+
+	   <para>Интерактивный поиск подсвечивает вводимый текст по мере печати буква за буквой. (Подобная функция есть у некоторых веб-браузеров.)</para>
+	   <para>Для начала интерактивного поиска, выберите <menuchoice><guimenu>Поиск</guimenu><guimenuitem>Поиск по мере набора</guimenuitem></menuchoice>. Окно поиска появляется в нижней части области просмотра.</para>
+	   <para>Начните печатать, и текст в документе будет подсвечен. Выделяется первое совпадение от позиции курсора.</para>
+	   <para>Чтобы выделить другие совпадения, в открытом окне «Интерактивный поиск» нажмите <keycombo><keycap>Ctrl</keycap><keycap>G</keycap></keycombo>. Нажмите <keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>G</keycap></keycombo> для возврата к предыдущему совпадению.</para>
+	   <tip><para>Также можно использовать клавиши управления курсором и колесо мыши для перемещения между совпадениями.</para></tip>
+	 </sect2>
+
+<!-- ============= To Find and Replace Text =================== -->
+	 <sect2 id="gedit-find-replace-text">
+		<title>Замена текста</title>
+
+		<para>Для поиска и замены строки в файле на другую строку, выполните следующие действия:</para>
+		<orderedlist>
+		  <listitem><para>Выберите <menuchoice><guimenu>Поиск</guimenu><guimenuitem>Заменить</guimenuitem></menuchoice> для вызова диалогового окна <guilabel>Заменить</guilabel>.</para>
+		  </listitem>
+		  <listitem><para>Напечатайте заменяемую строку в поле <guilabel>Найти</guilabel>. Можно использовать и специальные символы, как например, символ новой строки или символ табуляции: смотрите <xref linkend="gedit-find-escapes"/>.</para></listitem>
+		  <listitem><para>В поле <guilabel>Заменить на</guilabel> введите строку на которую требуется заменить.</para>
+		  </listitem>
+		</orderedlist>
+
+		<para>Для просмотра каждого совпадения строки перед её заменой, щёлкните <guibutton>Найти</guibutton>. Если совпадение есть, <application>gedit</application> выделит его. Для замены нажмите <guibutton>Заменить</guibutton>. Чтобы перейти к следующему совпадению, щёлкните <guibutton>Найти</guibutton> ещё раз.</para>
+		<para>Для замены всех совпадений сразу, нажмите guibutton&gt;Заменить всё</para>
+	 </sect2>
+
+<!-- ============= Find and Replace Options ============================ -->
+  <sect2 id="gedit-find-options">
+		<title>Параметры поиска и замены</title>
+		<para>Диалог <guilabel>Найти</guilabel>, ровно как и диалог <guilabel>Заменить</guilabel>, имеют следующие настройки:</para>
+		<itemizedlist>
+		  <listitem><para>Выберите <guilabel>Учитывать регистр</guilabel>, чтобы найти текст в том регистре, в котором вы его ввели. Например, в этом случае «ТЕКСТ» не то же самое, что и «текст».</para>
+		  </listitem>
+		  <listitem><para>Выберите <guilabel>Только полные слова</guilabel>, чтобы вести поиск только по полным словам. Так, например, «текст» не то же что и «текстура».</para>
+		  </listitem>
+		  <listitem><para>Выберите <guilabel>Обратный поиск</guilabel>, для поиска в обратном направлении, к началу документа.</para>
+		  </listitem>
+		  <listitem><para>При включенном <guilabel>Автоматически переходить к началу</guilabel>, поиск ведется с текущей позиции курсора до конца и, затем, от начала документа до текущей позиции.</para>
+		  </listitem>
+		</itemizedlist>
+  </sect2>
+
+<!-- ============= Special Characters ============================ -->
+	 <sect2 id="gedit-find-escapes">
+	   <title>Специальные символы</title>
+	     <para>В искомый текст можно включать следующие escape-последовательности, представляющие спец. символы:</para>
+			 <variablelist>
+        <varlistentry>
+          <term><literal>\n</literal></term>
+    				<listitem>
+              <para>символ новой строки.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><literal>\t</literal></term>
+    				<listitem>
+              <para>Символ табуляции.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><literal>\r</literal></term>
+    				<listitem>
+              <para>Символ возврата каретки.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><literal>\\</literal></term>
+    				<listitem>
+              <para>При поиске необходимо экранировать символы обратного слеша. Например, если вы ищете  "<literal>\n</literal>", в поле  <guilabel>Найти</guilabel> нужно напечатать "\\n". Иными словами, если вы хотите найти последовательность обратных слэшей, вам необходимо увеличить число вводимых обратных слэшей вдвое.</para>
+    				</listitem>
+        </varlistentry>
+			 </variablelist>
+    </sect2>
+
+<!-- ============= To Position the Cursor on a Specific Line ======================= -->
+    <sect2 id="gedit-goto-line">
+      <title>Установка курсора на определённую строку</title>
+
+      <para>Для установки курсора на определённую строку в текущем файле, выберите <menuchoice><guimenu>Поиск</guimenu><guimenuitem>Перейти к строке</guimenuitem></menuchoice>. Окно для указания строки появится в верхней части области просмотра.</para>
+      <para>Начните вводить номер строки, на которую хотите переместить курсор, и документ прокрутится до указанной строки.</para>
+      <para>Чтобы покинуть окно и перейти к указанной строке, нажмите клавишу <keycap>Ввод</keycap>.</para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="gedit-printing">
+    <title>Печать</title>
+
+<!-- ============= To Set the Page Options ============================ -->
+	 <sect2 id="gedit-page-setup">
+		<title>Установка параметров страницы</title>
+
+		<para>Чтобы настроить параметры страницы, нужно выбрать <menuchoice><guimenu>Файл</guimenu><guimenuitem>Параметры страницы</guimenuitem></menuchoice>. На экране отобразится диалоговое окно <guilabel>Параметры страницы</guilabel>.</para>
+
+		<para>Этот диалог позволит настроить следующие параметры печати:</para>
+
+		<sect3 id="gedit-page-setup-general">
+		<title>Вкладка «Общие»</title>
+	 	<variablelist>
+		  <varlistentry> <term><guilabel>Печать подсветки синтаксиса</guilabel> </term>
+			 <listitem>
+				<para>Выберите эту настройку для печати синтаксической подсветки. Смотрите также <xref linkend="gedit-set-highlightmode"/>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Печать заголовков страниц</guilabel> </term>
+			 <listitem>
+				<para>Параметр включает заголовок для каждой страницы. Заголовок не конфигурируется.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Номера строк</guilabel>
+			 </term>
+			 <listitem>
+				<para>Параметр <guilabel>Печатать номера строк</guilabel> включает печать номеров строк.</para>
+				<para>Используя поле <guilabel>Печатать номера строк каждые ... строк</guilabel>, можно указать как часто будут печататься номера. Например, каждые 5 или каждые 10 строк.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Перенос текста</guilabel> </term>
+			 <listitem>
+                            <para>Параметр <guilabel>Включить режим переноса текста</guilabel> позволяет переносить не убирающийся в строку текст на новую строку. Не влияет на нумерацию строк.</para>
+				<para>Параметр <guilabel>Не разрывать слово между строками</guilabel> позволяет переносить текст по целым словам.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		</sect3>
+
+		<sect3 id="gedit-page-setup-fonts">
+	 		<title>Шрифты</title>
+	 	<variablelist>
+		  <varlistentry> <term><guilabel>Тело</guilabel> </term>
+			 <listitem>
+				<para>Щёлкнув по этой кнопке, можно выбрать шрифт для печати тела текста.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Номера строк</guilabel>
+			 </term>
+			 <listitem>
+				<para>Эта кнопка позволит выбрать шрифт для печати номеров строк.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Верхние и нижние колонтитулы</guilabel> </term>
+			 <listitem>
+				<para>Этой кнопкой выбирается шрифт для печати верхних и нижних колонтитулов.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>Кнопкой <guibutton>Восстановить исходные шрифты</guibutton> можно восстановить шрифты по умолчанию.</para>
+		</sect3>
+
+	 </sect2>
+
+<!-- ============= To Print a File ============================ -->
+	 <sect2 id="gedit-print-file">
+		<title>Печать документа</title>
+		<para><application>Gedit</application> может осуществлять следующие задачи печати:</para>
+		<itemizedlist>
+		  <listitem><para>Печать документа на принтере.</para>
+		  </listitem>
+		  <listitem><para>Печать в файл.</para>
+		  </listitem>
+		</itemizedlist>
+		<para>При печати в файл, <application>gedit</application> создает файл в одном из предпечатных форматов. PostScript и Portable Document Format (PDF) являются общими предпечатными форматами.</para>
+
+		<para>Для предварительного просмотра печатаемой страницы, выберите <menuchoice><guimenu>Файл</guimenu><guimenuitem>Просмотр печати</guimenuitem></menuchoice>.</para>
+
+		<para>Чтобы напечатать текущий документ на принтере или в файл, необходимо вызвать диалоговое окно <guilabel>Печать</guilabel> выполнив, например, menuchoice&gt;<guimenu>Файл</guimenu><guimenuitem>Печать</guimenuitem></para>
+
+		<para>Это окно позволит вам установить следующие параметры печати:</para>
+
+		<sect3 id="print-dialog-job">
+		<title>Вкладка «Задание»</title>
+		<variablelist>
+	 		<varlistentry> <term><guilabel>Диапазон печати</guilabel> </term>
+			 <listitem>
+				<para>Выбор печатаемых страниц</para>
+				<itemizedlist>
+				<listitem>
+				<para><guilabel>Все</guilabel></para>
+				<para>Печать всех страниц в документе.</para>
+				</listitem>
+				<listitem>
+				<para><guilabel>Строки</guilabel></para>
+				<para>В соответствующих полях можно указать номера печатаемых строк.</para>
+				</listitem>
+				<listitem>
+				<para><guilabel>Выделенное</guilabel></para>
+				<para>Будет напечатан только выделенный текст. Если никакой текст не выделен, параметр недоступен.</para>
+				</listitem>
+
+				</itemizedlist>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Копии</guilabel> </term>
+			 <listitem>
+				<para>В поле <guilabel>Число копий</guilabel> можно указать сколько экземпляров документа нужно напечатать.</para>
+				<para>При печати множества экземпляров, можно сортировать страницы по копиям с помощью параметра <guilabel>Сортировать</guilabel>.</para>
+			 </listitem>
+		  	</varlistentry>
+			</variablelist>
+		</sect3>
+
+		<sect3 id="print-dialog-printer">
+		<title>Вкладка «Принтер»</title>
+	<variablelist>
+	  <varlistentry> <term><guilabel>Принтер</guilabel> </term>
+	    <listitem>
+	      <para>Используя этот список, можно выбрать принтер для печати.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Параметры</guilabel> </term>
+	    <listitem>
+	      <para>Здесь можно выбрать настройки принтера.</para>
+	      <para>Чтобы настроить принтер, щёлкните <guibutton>Настроить</guibutton>. Например, можно включить или отключить двухстороннюю печать, или отложенную печать, если подобная функциональность поддерживается принтером.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Адрес</guilabel> </term>
+	    <listitem>
+	      <para>Можно выбрать:</para>
+	      <variablelist>
+	        <varlistentry>
+	          <term><guilabel>CUPS</guilabel></term>
+	          <listitem>
+	            <para>Печать документа на CUPS-принтере.</para>
+	            <note>
+	              <para>Если выбранный принтер — CUPS-принтер, значение списка может быть только <guilabel>CUPS</guilabel>.</para>
+	            </note>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term><guilabel>lpr</guilabel></term>
+	          <listitem>
+	            <para>Печать документа на lpr-принтере.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term><guilabel>Файл</guilabel></term>
+	          <listitem>
+	            <para>Печать в файл PostScript.</para>
+	            <para>С помощью кнопки <guibutton>Сохранить как</guibutton>, можно указать имя и местоположение файла.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term><guilabel>Другой</guilabel></term>
+	          <listitem>
+	            <para>Позволяет использовать указанную команду для печати документа.</para>
+	            <para>Введите в текстовом окне команду, включите все необходимые аргументы.</para>
+	          </listitem>
+	        </varlistentry>
+	      </variablelist>
+            </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Состояние</guilabel> </term>
+	    <listitem>
+	      <para>Функциональность не поддерживается в данной версии gedit.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Тип</guilabel> </term>
+	    <listitem>
+	      <para>Функциональность не поддерживается в данной версии gedit.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Комментарий</guilabel> </term>
+	    <listitem>
+	      <para>Функциональность не поддерживается в данной версии gedit.</para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+	</sect3>
+
+		<sect3 id="print-dialog-paper">
+		<title>Вкладка «Бумага»</title>
+		<variablelist>
+	 		<varlistentry> <term><guilabel>Размер бумаги</guilabel> </term>
+			 <listitem>
+				<para>Можно выбрать из списка размер листа бумаги для последующей печати.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Ширина</guilabel> </term>
+			 <listitem>
+				<para>В этом поле можно указать ширину листа бумаги. Соседний список задает единицы измерения.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Высота</guilabel> </term>
+			 <listitem>
+				<para>Через это поле можно указать высоту листа бумаги.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Ориентация подачи</guilabel> </term>
+			 <listitem>
+				<para>С помощью этого списка можно выбрать ориентацию бумаги в принтере.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Ориентация бумаги</guilabel> </term>
+			 <listitem>
+				<para>Через этот список выбирается ориентация страницы.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Размещение</guilabel> </term>
+			 <listitem>
+				<para>Можно задать размещение страниц. В поле <guilabel>Образец</guilabel> можно просмотреть каждое из сделанных изменений.</para>
+			 </listitem>
+		  	</varlistentry>
+          <varlistentry> <term><guilabel>Источник бумаги</guilabel> </term>
+            <listitem>
+              <para>Из этого списка можно выбрать источник бумаги.</para>             </listitem>
+          </varlistentry>
+		</variablelist>
+		</sect3>
+
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="gedit-programming-features">
+	  <title>Программирование</title>
+
+	  <para>Некоторые из возможностей программирования в <application>gedit</application> поддерживаются модулями. Например, «Список тегов» — модуль, отображающий теги различных языков разметки: смотрите <xref linkend="gedit-tag-list-plugin"/>.</para>
+
+<!-- ============= Syntax Highlighting =================== -->
+	 <sect2 id="gedit-set-highlightmode">
+	 <title>Подсветка синтаксиса</title>
+	 <para>Синтаксическая подсветка делает код более легким в чтении человеком. Различные смысловые элементы текста получают цветовую раскраску.</para>
+
+	 <para><application>Gedit</application> выбирает соответствующий режим подсветки исходя из типа документа. Для замены режима подсветки выберите <menuchoice><guimenu>Вид</guimenu><guimenuitem>Режим подсветки синтаксиса</guimenuitem></menuchoice>, затем выберите один из пунктов меню:</para>
+		  <variablelist>
+		    <varlistentry>
+		      <term><guimenuitem>Обычный</guimenuitem></term>
+		      <listitem>
+		        <para>Без подсветки.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>Исходные тексты</guisubmenu></term>
+		      <listitem>
+		        <para>Подсветка исходных кодов. Из подменю выберите нужный тип.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>Разметка</guisubmenu></term>
+		      <listitem>
+		        <para>Подсвечивает языки разметки. Из подменю можно выбрать нужный.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>Языки сценариев</guisubmenu></term>
+		      <listitem>
+		        <para>Подсветка скриптов. В подменю содержатся некоторые «скриптовые» языки.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>Прочее</guisubmenu></term>
+		      <listitem>
+		        <para>Другие режимы подсветки.</para>
+		      </listitem>
+		    </varlistentry>
+		  </variablelist>
+	 </sect2>
+
+<!-- ============= To Pipe the Output of a Command to a File ======= -->
+	 <sect2 id="gedit-pipe-output">
+		<title>Вставка результатов выполнения команды в файл</title>
+		<para>Можно использовать <application>gedit</application> для вставки результатов выполнения какой-либо команды в текстовый файл. Например, <command>ls | gedit</command>.</para>
+		<para>Вывод команды <command>ls</command> будет помещён в новый текстовый файл в окне <application>gedit</application>.</para>
+		<para>Другой способ — использовать <application>Внешние инструменты</application> для вставки результатов выполнения команды в текущий файл.</para>
+	 </sect2>
+  </sect1>
+
+<!-- ================ Shortcut Keys ============================= -->
+<sect1 id="gedit-shortcutkeys"> 
+  <title>Клавиатурные комбинации</title>
+  <para>Испольуйте комбинации клавиш, чтобы быстрее выполнять действия, нежели с помощью мыши и меню. В следующей таблице представлены все комбинации клавиш <application>gedit</application>.</para>
+  <para>Подробнее о клавиатурных комбинациях можно узнать здесь: <ulink type="help" url="ghelp:user-guide?keyboard-skills">Desktop User Guide</ulink>.</para>
+
+  <!-- ============= Tabs ======================== -->
+	<bridgehead>Вкладки</bridgehead>
+	<para>Клавиши для управления вкладками:</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Клавиши</para></entry>
+          <entry colname="COLSPEC1" align="left"> 
+            <para>Действия</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">               
+          <entry><para>Ctrl + Alt + PageUp</para></entry>
+          <entry><para>Переключиться на следующую вкладку влево.</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Ctrl + Alt + PageDown</para></entry>
+          <entry><para>Переключиться на следующую вкладку вправо.</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Ctrl + W</para></entry>
+          <entry><para>Закрыть вкладку.</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Ctrl + Shift + L</para></entry>
+          <entry><para>Сохранить документы во всех вкладках.</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Ctrl + Shift + W</para></entry>
+          <entry><para>Закрыть все вкладки.</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Alt + n</para></entry>
+          <entry><para>Перейти на n-ю вкладку.</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+  <!-- ============= Files ======================== -->
+	<bridgehead>Файлы</bridgehead>
+	<para>Комбинации клавиш для работы с файлами:</para>
+  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Клавиши</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>Действия</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>Ctrl + N</para></entry>
+                        <entry><para>Создать новый документ.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + O</para></entry>
+                        <entry><para>Открыть документ.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + L</para></entry>
+                        <entry><para>Открыть адрес (URI).</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + S</para></entry>
+                        <entry><para>Сохранить текущий документ.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + S</para></entry>
+                        <entry><para>Сохранить текущий документ под новым именем.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + P</para></entry>
+                        <entry><para>Напечатать текущий документ.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + P</para></entry>
+                        <entry><para>Настроить параметры печати.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + W</para></entry>
+                        <entry><para>Закрыть документ..</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Q</para></entry>
+                        <entry><para>Завершить работу Gedit.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Edit ======================= -->
+	<bridgehead>Правка</bridgehead>
+	<para>Комбинации клавиш для редактирования:</para>	
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Клавиши</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>Действия</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + Z</para></entry>
+                        <entry><para>Отменить последнюю операцию.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + Z</para></entry>
+                        <entry><para>Вернуть последнюю отменённую операцию.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + X</para></entry>
+                        <entry><para>Вырезать выделенный текст и поместить его в буфер обмена.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + C</para></entry>
+                        <entry><para>Скопировать выделенный текст в буфер обмена.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + V</para></entry>
+                        <entry><para>Вставить содержимого буфера обмена.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + A</para></entry>
+                        <entry><para>Выделить весь текст.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + D</para></entry>
+                        <entry><para>Удалить текущую строку.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Alt + Up</para></entry>
+                        <entry><para>Move the selected line up one line.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Alt + Down</para></entry>
+                        <entry><para>Move the selected line down one line.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Panes ======================= -->
+	<bridgehead>Панели</bridgehead>
+	<para>Комбинации клавиш для отображения или скрытия панелей:</para>	
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Клавиши</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>Действия</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>F9</para></entry>
+                        <entry><para>Отобразить или скрыть боковую панель.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + F9</para></entry>
+                        <entry><para>Отобразить или скрыть нижнюю панель.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Search ======================= -->
+	<bridgehead>Поиск</bridgehead>
+	<para>Комбинации клавиш для поиска:</para>	
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Клавиши</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>Действия</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>Ctrl + F</para></entry>
+                        <entry><para>Найти строку.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + G</para></entry>
+                        <entry><para>Найти следующее совпадение.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + G</para></entry>
+                        <entry><para>Найти предыдущее совпадение.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + K</para></entry>
+                        <entry><para>Интерактивный поиск.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + H</para></entry>
+                        <entry><para>Найти и заменить.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + K</para></entry>
+                        <entry><para>Очистить подсветку найденных вхождений.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + I</para></entry>
+                        <entry><para>Перейти к строке по её номеру.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Tools ======================= -->
+	<bridgehead>Инструменты.</bridgehead>
+	<para>Комбинации клавиш для управления инструментами:</para>	
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Клавиши</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>Действия</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>Shift + F7</para></entry>
+                        <entry><para>Проверить орфографию.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Alt + F12</para></entry>
+                        <entry><para>Удалить завершающие пробелы.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + T</para></entry>
+                        <entry><para>Добавить отступ.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + T</para></entry>
+                        <entry><para>Удалить отступ.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>F8</para></entry>
+                        <entry><para>Запустить "make" в текущем каталоге (при наличии модуля).</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Shift + D</para></entry>
+                        <entry><para>Вывести список файлов (при наличии модуля).</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Help ======================= -->
+	<bridgehead>Справка</bridgehead>
+	<para>Комбинации клавиш для управления справочной системой:</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Клавиши</para></entry>
+          <entry colname="COLSPEC1" align="left"> 
+            <para>Действия</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">               
+          <entry><para>F1</para></entry>
+          <entry><para>Открыть руководство пользователя <application>gedit</application>.</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect1>
+
+
+
+<!-- ============= Preferences ============================= -->
+  <sect1 id="gedit-prefs">
+    <title>Параметры</title>
+
+    <para>Для настройки <application>gedit</application> выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Параметры</guimenuitem></menuchoice>. Диалоговое окно <guilabel>Параметры</guilabel> содержит элементы:</para>
+    <itemizedlist>
+      <listitem><para><xref linkend="gedit-prefs-view"/></para></listitem>
+      <listitem><para><xref linkend="gedit-prefs-editor"/></para></listitem>
+      <listitem><para><xref linkend="gedit-prefs-fontsandcolors"/></para></listitem>
+      <listitem><para><xref linkend="gedit-prefs-plugins"/></para></listitem>
+    </itemizedlist>
+
+    <sect2 id="gedit-prefs-view">
+      <title>Настройки вида</title>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Перенос текста</guilabel> </term>
+          <listitem>
+            <para>Выберите <guilabel>Включить режим переноса текста</guilabel>, чтобы длинные строки объединялись в абзацы, а не забегали за край окна. Горизонтальная прокрутка станет не нужной.</para>
+            <para>Параметр <guilabel>Не разрывать слово между двумя строками</guilabel> включает перенос текста между строками по словам. Текст становится легче читать.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Номера строк</guilabel></term>
+          <listitem>
+            <para>Выбор настройки <guilabel>Показывать номера строк</guilabel> отобразит номера строк по левому краю окна <application>gedit</application>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Текущая строка</guilabel></term>
+          <listitem>
+            <para>Выберите параметр <guilabel>Подсвечивать текущую строку</guilabel> для подсветки строки, где находится курсор.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Правая граница</guilabel></term>
+          <listitem>
+            <para>Выберите <guilabel>Отображать правую границу</guilabel>, чтобы отображалась вертикальная линия — правая граница.</para>
+            <para>Используя поле <guilabel>Правая граница у столбца</guilabel>, можно указать положение этой вертикальной линии.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Соответствие скобок</guilabel></term>
+          <listitem>
+            <para>Выберите параметр <guilabel>Подсвечивать соответствующую скобку</guilabel> для подсветки соответствующих скобок, когда курсор установлен на одной из них.</para>
+          </listitem>
+        </varlistentry>
+
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gedit-prefs-editor">
+      <title>Настройки редактирования</title>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Вкладки</guilabel> </term>
+          <listitem>
+            <para>С помощью поля <guilabel>Ширина табуляции</guilabel>, можно задать ширину свободного пространства, вставляемого <application> gedit</application> по нажатию клавиши <keycap>Tab</keycap>.</para>
+            <para>Параметр <guilabel>Вставлять пробелы вместо табуляций</guilabel> укажет <application>gedit</application> по нажатию клавиши <keycap>Tab</keycap> вставлять вместо символа табуляции определённое число пробелов.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Автоматический отступ</guilabel> </term>
+          <listitem>
+            <para>Параметр <guilabel>Включить автоматический отступ</guilabel> определяет будет ли следующая строка начинаться с такого же отступа как и предыдущая.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Сохранение файлов</guilabel> </term>
+          <listitem>
+            <para>При включённой настройке <guilabel>Создавать резервную копию файла перед сохранением</guilabel> каждый раз при сохранении файла, создается его резервная копия. Резервная копия содержит символ ~ в конце имени файла.</para>
+            <para>Параметр <guilabel>Автоматически сохранять каждые ... минут</guilabel> позволяет автоматически сохранять текущий файл через определённые промежутки времени.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gedit-prefs-fontsandcolors">
+      <title>Шрифты и цвета</title>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Шрифт</guilabel> </term>
+          <listitem>
+            <para>Выберите guilabel&gt;Использовать исходный шрифт темы</para>
+            <para>В поле <guilabel>Шрифт редактора</guilabel> отображается текущий шрифт, используемый для отрисовки текста. Щелчок по кнопке позволит установить сам шрифт, его начертание и размер.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Цветовая схема</guilabel></term>
+          <listitem>
+            <para>Вы можете выбрать цветовую схему из списка схем. По умолчанию, представлены следующие цветовые схемы:</para>
+            <variablelist>
+              <varlistentry>
+                <term><guilabel>Классическая</guilabel></term>
+                <listitem>
+                  <para>Классическая цветовая схема. Основана на цветовой схеме gvim.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term><guilabel>Кобальтовая синь</guilabel></term>
+                <listitem>
+                  <para>Синеватая цветовая схема.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term><guilabel>Kate</guilabel></term>
+                <listitem>
+                  <para>Цветовая схема, используемая в текстовом редакторе Kate.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term><guilabel>Забвение</guilabel></term>
+                <listitem>
+                  <para>Темная цветовая схема, использующая цветовую палитру Танго.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term><guilabel>Танго</guilabel></term>
+                <listitem>
+                  <para>Цветовая схема Танго.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+            <para>Чтобы добавить новые цветовые схемы, щёлкните <guilabel>Добавить...</guilabel>и выберите файл с цветовой схемой</para>
+            <para>Чтобы удалить выбранную цветовую схему, щёлкните на кнопке <guilabel>Удалить</guilabel></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gedit-prefs-plugins">
+      <title>Настройка модулей</title>
+      <para>Модули расширяют возможности <application>gedit</application>. Для информации о встроенных модулях смотрите <xref linkend="gedit-plugins-overview"/>.</para>
+
+<!-- ============= To Load gedit Plugins ========================= -->
+	 <sect3 id="gedit-install-plugins">
+		<title>Подключение модулей</title>
+		<para>Чтобы подключить модуль в <application>gedit</application>, следуйте инструкциям:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Параметры</guimenuitem></menuchoice>.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Перейдите на вкладку <guilabel>Модули</guilabel>.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Отметьте модуль который хотите включить.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Щёлкните кнопку <guibutton>Закрыть</guibutton> для закрытия диалога <guilabel>Параметры</guilabel>.</para>
+                  </listitem>
+                </orderedlist>
+	 </sect3>
+
+<!-- ============= To Remove gedit Plugins ========================= -->
+  	 <sect3 id="gedit-remove-plugins">
+  		<title>Отключение модулей</title>
+  		<para>Модули остаются включёнными после выхода из <application>gedit</application>.</para>
+  		<para>Чтобы отключить модуль проделайте следующее:</para>
+                  <orderedlist>
+                    <listitem>
+                      <para>Выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Параметры</guimenuitem></menuchoice>.</para>
+                    </listitem>
+                    <listitem>
+                      <para>Перейдите на вкладку <guilabel>Модули</guilabel>.</para>
+                    </listitem>
+                    <listitem>
+                      <para>Просто снимите галочку с отключаемого модуля.</para>
+                    </listitem>
+                    <listitem>
+                      <para>Щёлкните кнопку <guibutton>Закрыть</guibutton> для закрытия диалога <guilabel>Параметры</guilabel>.</para>
+                    </listitem>
+                  </orderedlist>
+  	 </sect3>
+	 </sect2>
+
+ </sect1>
+<!-- ============= To Use the gedit Plugins ========================= -->
+	 <sect1 id="gedit-plugins">
+		<title>Модули</title>
+		<sect2 id="gedit-plugins-overview">
+		  <title>Работа с модулями</title>
+  		<para>Подключая <firstterm>модули</firstterm>, можно расширить функциональность <application>gedit</application>. Модули — это дополнительные программы. Они могут добавлять новые пункты меню для доступа к предоставляемым ими возможностям.</para>
+  		<para>Некоторые модули идут вместе с <application>gedit</application>, но можно установить и другие. На <ulink type="http" url="http://live.gnome.org/Gedit/Plugins">веб-сайте gedit</ulink> есть список дополнительных модулей.</para>
+  		<para>Для включения или отключения модулей смотрите <link linkend="gedit-prefs-plugins">Настройка модулей</link>.</para>
+  		<para>Следующие модули идут вместе с <application>gedit</application>:</para>
+  		<!-- Not yet documented:
+  		File browser
+  		-->
+  		<itemizedlist>
+  		  <listitem>
+  		    <para><link linkend="gedit-change-case-plugin"><application>Изменить регистр</application></link> позволяет сменить регистр символов выделенного текста.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-document-statistics-plugin">Статистика документа</link></application> показывает число строк, слов и символов в документе.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-external-tools-plugin">Внешние инструменты</link></application> позволяет исполнить внешние команды из <application>gedit</application>.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application>Обозреватель файлов</application> позволяет просмотреть папки и файлы в боковой панели.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-indent-lines-plugin">Отступ</link></application> вставляет или убирает отступ в выделенных строках.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-insert-date-time-plugin">Вставка даты и времени</link></application> вставляет текущую дату и время в позиции курсора.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-modelines-plugin">Modelines</link></application> Поддержка <application>Emacs</application>, <application>Kate</application> и <application>Vim</application>-стиля строк режимов для gedit.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-python-console-plugin">Консоль Python</link></application> позволяет запускать команды на языке программирования Python.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-snippets-plugin">Фрагменты текста</link></application> позволяет быстро вставлять часто используемые фрагменты текста.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-sort-plugin">Сортировка</link></application> сортирует документ или выделенный текст.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-spell-checker-plugin">Проверка орфографии</link></application> проверяет орфографию в текущем документе.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-tag-list-plugin">Список тегов</link></application> предоставляет простой способ вставки в документ часто используемых тегов или строк без необходимости набирать их вручную.</para>
+  		  </listitem>
+  		</itemizedlist>
+
+	<note><para>For more information on creating plugins, see the <ulink type="http" url="http://live.gnome.org/Gedit/Plugins"><application>gedit</application> website</ulink>.</para></note>
+  	</sect2>
+
+<sect2 id="gedit-change-case-plugin">
+<title>Модуль смены регистра символов</title>
+	<para>Модуль <application>Изменить регистр</application> меняет регистр символов выделенного текста.</para>
+	 <para>Если модуль включен, в меню <guimenu>Правка</guimenu> будут доступны следующие пункты меню:</para>
+
+  <informaltable frame="all">
+    <tgroup cols="3" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="33*"/>
+      <colspec colname="COLSPEC1" colwidth="33*"/>
+      <colspec colname="COLSPEC2" colwidth="33*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Пункт меню</para></entry>
+          <entry colname="COLSPEC1">
+            <para>Действие</para></entry>
+          <entry colname="COLSPEC2">
+            <para>Пример</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para><menuchoice><guimenu>Правка</guimenu>
+<guisubmenu>Изменить регистр</guisubmenu><guimenuitem>Все в верхнем регистре</guimenuitem></menuchoice></para></entry>
+          <entry><para>Меняет регистр каждого символа в верхний регистр.</para></entry>
+          <entry><para><literal>Этот текст</literal> превратится в <literal>ЭТОТ ТЕКСТ</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para><menuchoice><guimenu>Правка</guimenu>
+<guisubmenu>Изменить регистр</guisubmenu><guimenuitem>Все в нижнем регистре</guimenuitem></menuchoice></para></entry>
+          <entry><para>Сменяет регистр каждого символа к нижнему регистру.</para></entry>
+          <entry><para><literal>Этот Текст</literal> превратится в <literal>этот текст</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para><menuchoice><guimenu>Правка</guimenu>
+<guisubmenu>Изменить регистр</guisubmenu><guimenuitem>Инвертировать регистр</guimenuitem></menuchoice></para></entry>
+          <entry><para>Меняет регистр каждого символа, нижний к верхнему, а верхний к нижнему.</para></entry>
+          <entry><para><literal>Этот Текст</literal> превратится в <literal>эТОТ тЕКСТ</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para><menuchoice><guimenu>Правка</guimenu>
+<guisubmenu>Изменить регистр</guisubmenu><guimenuitem>Регистр заголовка</guimenuitem></menuchoice></para></entry>
+          <entry><para>Меняет регистр первого символа каждого слова к верхнему регистру.</para></entry>
+          <entry><para><literal>этот текст</literal> превратится в <literal>Этот Текст</literal></para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect2>
+
+<sect2 id="gedit-document-statistics-plugin">
+<title>Модуль «Статистика документа»</title>
+	<para>Модуль <application>Статистика документа</application> подсчитывает число строк, слов, символов с пробелами, символов без пробелов, а также байты в текущем файле. Результаты выводятся в диалоговом окне <guilabel>Статистика документа</guilabel>. Чтобы воспользоваться данным модулем выполните следующие действия:</para>
+		<orderedlist>
+		  <listitem><para>Выберите <menuchoice><guimenu>Сервис</guimenu><guimenuitem>Показать статистику документа</guimenuitem></menuchoice>. Диалог будет содержать поля:</para>
+		      <itemizedlist>
+		      <listitem><para>Число строк в текущем документе.</para>
+		      </listitem>
+		      <listitem><para>Количество слов.</para>
+		      </listitem>
+		      <listitem><para>Число символов вместе с пробелами.</para>
+		      </listitem>
+		      <listitem><para>Число символов, не считая пробелов.</para>
+		      </listitem>
+		      <listitem><para>Число байт.</para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem><para>Можно продолжать редактирование файла и при открытом окне <guilabel>Статистика документа</guilabel>. Кнопка <guibutton>Обновить</guibutton> обновляет содержимое диалога.</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="gedit-external-tools-plugin">
+  <title>Модуль «Внешние инструменты»</title>
+  <para>Модуль <application>Внешние инструменты</application> позволяет выполнить внешние команды и скрипты оболочки. Можно передать команде некоторые данные, а затем использовать ее вывод (например, <application>sed</application>).</para>
+  <para>Используя <guilabel>Менеджер внешних инструментов</guilabel> можно создавать и редактировать команды. Для запуска внешних команд испоьзуйте <guimenu>Сервис</guimenu>.</para>
+
+  <sect3 id="gedit-external-tools-plugin-builtin">
+    <title>Встроенные команды</title>
+    <para>Следующие команды поставляются вместе с модулем:</para>
+    <variablelist>
+      <varlistentry><term>Сборка</term>
+        <listitem>
+          <para>Запускает <application>make</application> в каталоге текущего документа.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Список файлов в каталоге</term>
+        <listitem>
+          <para>Вставляет содержание каталога текущего документа в новый документ.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Переменные окружения</term>
+        <listitem>
+          <para>Отображает список переменных окружения в нижней панели.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Поиск по файлам</term>
+        <listitem>
+          <para>Ищет выражение во всех файлах в каталоге текущего документа, используя шаблоны. Результаты отображаются в нижней панели.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Удалить конечные пробелы</term>
+        <listitem>
+          <para>Удаляет все начинающие и завершающие пробелы в строках.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect3>
+
+  <sect3 id="gedit-external-tools-plugin-define">
+    <title>Определение команд</title>
+    <para>Чтобы добавить внешнюю команду, выберите <menuchoice><guimenu>Сервис</guimenu><guimenuitem>External Tools</guimenuitem></menuchoice>.</para>
+    <para>В окне <guilabel>External Tools Manager</guilabel> щёлкните кнопку <guibutton>Создать</guibutton>. Для новой команды можно указать следующие детали:</para>
+    <variablelist>
+      <varlistentry><term>Описание</term>
+        <listitem>
+          <para>Когда меню команды выбрано, описание отображается в строке статуса.</para>
+        </listitem>     
+      </varlistentry>
+      <varlistentry><term>Комбинация клавиш</term>
+        <listitem>
+          <para>Комбинация клавиш для вызова команды.</para>
+        </listitem>     
+      </varlistentry>
+      <varlistentry><term>Команды</term>
+        <listitem>
+          <para>Запускаемые команды. Можно использовать также и переменные окружения, подробнее смотрите <xref linkend="gedit-external-tools-plugin-variables"/>.</para>
+        </listitem>     
+      </varlistentry>
+      <varlistentry><term>Ввод</term>
+        <listitem>
+          <para>Данные, получаемые командами (как <systemitem>stdin</systemitem>): текст всего текущего документа, выделение, строка или слово.</para>
+        </listitem>     
+      </varlistentry>
+      <varlistentry><term>Окно вывода</term>
+        <listitem>
+          <para>Что делать с выводом команд: отобразить в нижней панели, вставить в новый документ или в текущий; в конец, в позицию курсора, заменить выделенный текст в документе или же заменить весь документ.</para>
+        </listitem>     
+      </varlistentry>
+      <varlistentry><term>Применимость</term>
+        <listitem>
+          <para>Определяет тип документа, к которому применимы команды, например, локальные документы или документы в сети.</para>
+        </listitem>     
+      </varlistentry>
+    </variablelist>
+
+  </sect3>
+  
+  <sect3 id="gedit-external-tools-plugin-edit">
+    <title>Изменение и удаление инструментов</title>
+    <para>Для настройки инструмента выберите его из списка и измените его параметры.</para>
+    <para>Для переименования инструмента, щёлкните его в списке.</para>
+    <para>Чтобы восстановить измененные встроенные инструменты, нажмите <guilabel>Вернуть</guilabel>.</para>
+    <para>Для удаления инструмента, выберите его в списке и нажмите кнопку <guibutton>Удалить</guibutton>. Встроенные инструменты удалить нельзя. Удаляются только инструменты сделанные вами.</para>
+  </sect3>
+  
+  <sect3 id="gedit-external-tools-plugin-variables">    
+    <title>Переменные</title>
+    <para>В поле <guilabel>Команда</guilabel> можно использовать следующие переменные:</para>
+    <itemizedlist>
+      <listitem>
+        <para>GEDIT_CURRENT_DOCUMENT_URI</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_CURRENT_DOCUMENT_NAME</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_CURRENT_DOCUMENT_SCHEME</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_CURRENT_DOCUMENT_PATH</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_CURRENT_DOCUMENT_DIR</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_DOCUMENTS_URI</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_DOCUMENTS_PATH</para>
+      </listitem>
+    </itemizedlist>
+  </sect3>
+</sect2>
+
+<sect2 id="gedit-file-browser-plugin">    
+  <title>Модуль просмотра файловой системы</title>
+  <para>Модуль <application>File Browser</application> отображает папки и файлы в боковой панели, позволяя быстро открывать файлы.</para>
+  <para>Для просмотра папок и файлов выберите <menuchoice><guimenu>Вид</guimenu><guimenuitem>Боковая панель</guimenuitem></menuchoice>, щёлкните вкладку внизу.</para>
+  <sect3 id="gedit-file-browser-plugin-browsing">    
+    <title>Просмотр файлов</title>
+    <para>Вкладка Просмотр файлов изначально отображает закладки. Для просмотра содержимого любого элемента щёлкните по нему дважды.</para>
+    <para>Чтобы подняться на уровень выше, воспользуйтесь выпадающим списком или нажмите клавишу со стрелкой вверх (фокус ввода должен быть на панели).</para>
+    <para>Чтобы просмотреть папку документа, с которым работаете сейчас, щёлкните правой кнопкой на списке файлов и выберите <guimenuitem>Перейти в активному документу</guimenuitem>.</para>
+  </sect3>
+  <sect3 id="gedit-file-browser-plugin-open">    
+    <title>Открытие файла</title>
+    <para>Двойной щелчок на файле открывает его в <application>gedit</application>.</para>
+  </sect3>
+  <sect3 id="gedit-file-browser-plugin-create">    
+    <title>Создание файлов и папок</title>
+    <para>Чтобы создать файл в текущей папке, щёлкните на списке файлов правой кнопкой мыши и выберите <guimenuitem>Создать файл</guimenuitem>.</para>
+    <para>Для создания новой папки в текущей, отображаемой в браузере, щёлкните правой кнопкой мыши в списке файлов и выберите <guimenuitem>Создать папку</guimenuitem>.</para>
+    </sect3>
+</sect2>
+
+<sect2 id="gedit-indent-lines-plugin">
+<title>Модуль «Отступы строк»</title>
+	<para>Модуль <application>Отступ</application> вставляет или убирает отступ в начале строки.</para>
+	<para>Чтобы вставить или убрать отступ, сделайте следующее:</para>
+  	<orderedlist>
+		  <listitem><para>Выделите строки. Если это одна строка, просто оставьте курсор где-нибудь в ее пределах.</para>
+		  </listitem>
+		  <listitem>
+		    <itemizedlist>
+		      <listitem>
+		        <para>Для вставки отступа выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Сделать отступ</guimenuitem></menuchoice>.</para>
+		      </listitem>
+		      <listitem>
+		        <para>Для его удаления: <menuchoice><guimenu>Правка</guimenu><guimenuitem>Убрать отступ</guimenuitem></menuchoice>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+	<para>Количество пробелов, а также будут ли это пробелы или символ табуляции зависят от настроек <guilabel>Метки табуляции</guilabel> в параметрах редактора, смотрите <xref linkend="gedit-prefs-editor"/>.</para>
+
+</sect2>
+
+<sect2 id="gedit-insert-date-time-plugin">
+<title>Модуль вставки даты и времени</title>
+	<para>Модуль <application>Вставка даты и времени</application> вставляет текущую дату и время в текущий документ. Чтобы использовать его:</para>
+		<orderedlist>
+		  <listitem><para>Выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Вставить дату и время</guimenuitem></menuchoice>.</para>
+        <para>Если вы не настраивали данный модуль на вставку даты и времени без запроса формата, то <application>gedit</application> отобразит диалог <guilabel>Вставить дату и время</guilabel>. Выберите из списка нужный формат и щёлкните <guibutton>Вставить</guibutton>. Текущие дата и время будут вставлены в позицию курсора. Диалог закроется автоматически.</para>
+				<para>Если <application>gedit</application> уже настроен для вставки даты и времени определённого формата, диалог <guilabel>Вставить дату и время</guilabel> показан не будет.</para>
+		  </listitem>
+		</orderedlist>
+
+<sect3 id="gedit-date-time-configure">
+<title>Настройка модуля вставки даты и времени</title>
+<para>Для настройки модуля вставки даты и времени, выполните следующее:</para>
+		<orderedlist>
+		  <listitem> <para>Выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Параметры</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem> <para>Перейдите на вкладку <guilabel>Модули</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Выберите модуль <guilabel>Вставка даты и времени</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Щёлкните кнопку <guibutton>Настроить модуль</guibutton>. Появится диалог <guilabel>Настроить модуль вставки даты и времени</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Выберите одну из возможностей:</para>
+		      <itemizedlist>
+		      <listitem><para>Для запроса формата вставки каждый раз, выберите <guilabel>Запрашивать формат</guilabel>.</para>
+		      </listitem>
+		      <listitem><para>Если вы хотите использовать один и тот же формат при вставке даты и времени, и не хотите, чтобы <application>gedit</application> спрашивал о формате каждый раз — ваш выбор <guilabel>Использовать указанный формат</guilabel>. Формат вставки можно выбрать из списка.</para>
+		      </listitem>
+		      <listitem><para>Можно предложить свой собственный формат выбрав <guilabel>Использовать другой формат</guilabel>. Подробнее смотрите <ulink url="man:strftime" type="man"><citerefentry><refentrytitle>strftime</refentrytitle><manvolnum>3</manvolnum></citerefentry></ulink>. При вставке формат также запрашиваться не будет.</para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem> <para>Щёлкните <guibutton>OK</guibutton> для закрытия диалога.</para>
+		  </listitem>
+		  <listitem> <para>Закройте диалог <guilabel>Параметры</guilabel> щелкнув по кнопке <guibutton>Закрыть</guibutton>.</para>
+		  </listitem>
+		</orderedlist>
+</sect3>
+</sect2>
+
+<sect2 id="gedit-modelines-plugin">
+  <title>Модуль «Строки режимов»</title>
+    <para>Модуль <application>Строки режимов</application> позволяет установить индивидуальные настройки документа. <firstterm>Строки режимов</firstterm> представляют собой строки текста в начале или конце документа с параметрами для <application>gedit</application>.</para>
+    <para>Значения параметров установленных с помощью строк режимов имеют преимущество перед значениями тех же параметров установленных через диалог установки параметров.</para>
+    <para>Можно установить следующие параметры с помощью строк режимов:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Ширина табуляции</para>
+      </listitem>
+      <listitem>
+        <para>Ширина отступа</para>
+      </listitem>
+      <listitem>
+        <para>Пробелы вместо табуляций</para>
+      </listitem>
+      <listitem>
+        <para>Перенос текста</para>
+      </listitem>
+      <listitem>
+        <para>Положение правой границы</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Модуль <application>Строки режимов</application> поддерживает некоторые возможности настроек других текстовых редакторов: <application>Emacs</application>, <application>Kate</application> и <application>Vim</application> по заголовку текстового файла.</para>
+
+    <sect3 id="gedit-modelines-plugin-emacs">
+      <title>«Строки режимов» Emacs</title>
+      <para>Сканируются первые две строки в документе.</para>
+      <para>Из настроек <application>Emacs</application> поддерживаются ширина табуляции, отступ выравнивания, режим отступа с помощью табуляции и авто-перенос. Для дополнительной информации смотрите <ulink type="http" url="http://www.delorie.com/gnu/docs/emacs/emacs_486.html">Руководство по GNU Emacs</ulink>.</para>
+    </sect3>
+    <sect3 id="gedit-modelines-plugin-kate">
+      <title>«Строки режимов» Kate</title>
+      <para>Сканируются первые и последние десять строк документа.</para>
+      <para>Из настроек <application>Kate</application> поддерживаются ширина табуляции, ширина отступа, отступ пробелами, перенос слов и номер столбца для переноса. Для дополнительной информации смотрите <ulink type="http" url="http://www.kate-editor.org/article/katepart_modelines">Kate website</ulink>.</para>
+    </sect3>
+    <sect3 id="gedit-modelines-plugin-vim">
+      <title>«Строки режимов» Vim</title>
+      <para>Сканируются первые и последние три строки документа.</para>
+      <para>Из настроек <application>Vim</application> поддерживаются expandtab, ts, tabstop, shiftwidth, wrap и textwidth. Подробнее смотрите <ulink type="http" url="http://vimdoc.sourceforge.net/htmldoc/options.html#modeline">Vim website</ulink>.</para>
+    </sect3>
+</sect2>
+
+<sect2 id="gedit-python-console-plugin">    
+  <title>Модуль «Консоль Python»</title>
+  <para>Модуль <application>Консоль Python</application> позволяет запускать команды на языке программирования python. В нижнюю панель будет добавлена вкладка, в которой можно ввести команду и просмотреть ее вывод.</para>
+  <caution><para>Вводимые команды исполняются безо всякой проверки. Возможны зависания <application>gedit</application>, например, при входе в бесконечный цикл.</para></caution>
+</sect2>
+
+<sect2 id="gedit-snippets-plugin">
+<title>Модуль «Фрагменты текста»</title>
+  <para>Модуль <application>Фрагменты текста</application> позволяет сохранять часто используемые куски текста и, затем быстро вставлять эти куски в любое место в редактируемом документе.</para>
+    <para>Фрагменты текста специфичны для языка текущего документа. Например, работая с HTML-документом, можно выбирать фрагменты для HTML. Некоторые текстовые фрагменты глобальны, они доступны для всех видов документов.</para>
+    <para>Некоторое количество фрагментов поставляется в составе <application>gedit</application>. Их можно менять.</para>
+
+  <sect3 id="gedit-snippets-plugin-insert">
+    <title>Вставка фрагментов</title>
+    <para>Для вставки фрагмента напечатайте его <firstterm>tab trigger</firstterm> и нажмите клавишу <keycap>Tab</keycap>. <firstterm>Tab trigger</firstterm> фрагмента текста — это обычно первые несколько символов нужного фрагмента, либо какая-нибудь еще короткая и легко запоминающаяся последовательность.</para>
+    <para>Другой способ: нажатие <keycombo><keycap>Ctrl</keycap><keycap>Space</keycap></keycombo> позволит выбрать из списка нужный для вставки фрагмент.</para>
+  </sect3>
+
+  <sect3 id="gedit-snippets-plugin-add">
+    <title>Добавление фрагментов</title>
+    <para>Чтобы создать новый фрагмент текста:</para>
+      <orderedlist>
+        <listitem>
+          <para>Выберите <menuchoice><guimenu>Сервис</guimenu><guimenuitem>Управление фрагментами</guimenuitem></menuchoice>. Откроется окно <guilabel>Менеджер фрагментов</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>В списке фрагменты текста сгруппированы по языкам. Выберите язык, для которого хотите добавить фрагмент. Для добавления фрагмента, касающегося всех языков, выберите «Глобальный».</para>
+        </listitem>
+        <listitem>
+          <para>Щёлкните <guibutton>Создать</guibutton>, и новый фрагмент добавится в список.</para>
+        </listitem>
+        <listitem>
+          <para>Введите следующую информацию о фрагменте:</para>
+          <variablelist>
+            <varlistentry><term>Имя</term>
+              <listitem>
+                <para>Введите имя фрагмента в текстовое поле в списке. Имя служит только для отражения сути фрагмента. Можно изменить имя текстового фрагмента, щелкнув по нему мышкой.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Текст фрагмента</term>
+              <listitem>
+                <para>Введите текст самого фрагмента в текстовое поле <guilabel>Редактировать фрагмент</guilabel>. Смотрите также <xref linkend="gedit-snippets-plugin-syntax"/>.</para>
+                <tip><para>Можно переключаться в окно документа без закрытия окна <guilabel>Менеджер фрагментов</guilabel>.</para></tip>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Tab Trigger</term>
+              <listitem>
+                <para>Введите tab trigger для фрагмента. Этот текст нужно напечатать до нажатия клавиши <keycap>Tab</keycap> при вставке фрагмента.</para>
+                <para><guilabel>Tab trigger</guilabel> Может быть либо одним символом, либо словом, состоящим только из букв. Если введенный tab trigger невозможен, он будет подсвечен красным цветом.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Комбинация клавиш</term>
+              <listitem>
+                <para>Введите комбинацию клавиш, для вставки фрагмента.</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+
+        </listitem>
+      </orderedlist>
+  </sect3>
+  <sect3 id="gedit-snippets-plugin-edit">
+    <title>Редактирование и удаление фрагментов</title>
+    <para>Для редактирования фрагмента выберите его из списка и отредактируйте. его текст и параметры.</para>
+    <para>Для переименования фрагмента, щёлкните его в списке.</para>
+    <para>Чтобы восстановить измененные встроенные фрагменты, нажмите <guilabel>Revert</guilabel>.</para>
+    <para>Для удаления фрагмента, выберите его в списке и нажмите кнопку <guibutton>Удалить</guibutton>. Встроенные фрагменты удалить нельзя.</para>
+  </sect3>
+
+  <sect3 id="gedit-snippets-plugin-syntax">
+    <title>Подстановка во фрагментах</title>
+    <para>В дополнение к статичному тексту во фрагменты можно включать и изменяемый текст, либо символы пробелов, куда можно будет добавить текст после вставки фрагмента в документ.</para>
+
+    <para/>
+
+    <para>Можно использовать следующие символы-заменители:</para>
+      <variablelist>
+        <varlistentry><term>Закладки</term>
+          <listitem>
+            <para><literal>$<replaceable>n</replaceable></literal> устанавливает закладку, где <literal>n</literal> — число больше 1.</para>
+            <para><literal>${<replaceable>n</replaceable>:<replaceable>default</replaceable>}</literal> устанавливает закладку со значением по умолчанию.</para>
+            <para>Закладка маркирует место во фрагменте, куда можно добавить текст после вставки фрагмента.</para>
+            <para>После вставки фрагмента, курсор помещается в позицию первой закладки. Можно ввести некоторый текст и, нажав клавишу <keycap>Tab</keycap>, переместиться в позицию следующей закладки. Нумерация закладок и определяет порядок переключения между ними.</para>
+            <para>Нажав комбинацию клавиш <keycombo><keycap>Shift</keycap><keycap>Tab</keycap></keycombo>, можно перейти к предыдущей закладке. Если закладок больше нет, клавиша <keycap>Tab</keycap> перемещает курсор в конец фрагмента, или к концевому символу-заменителю, если таковой имеется.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Зеркала</term>
+          <listitem>
+            <para>Несколько закладок будут отображать один и тот же текст. Зеркала позволяют ввести текст лишь однажды и этот текст будет отображен в нескольких местах во фрагменте.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Концевой символ-заменитель</term>
+          <listitem>
+            <para><literal>$0</literal> определяет концевой символ-заменитель. Позволяет завершить работу с фрагментом, оставив курсор в нужной позиции.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Переменные окружения</term>
+          <listitem>
+            <para>Переменные окружения, такие как <literal>$PATH</literal> и <literal>$HOME</literal> могут быть использованы во фрагментах. Вот полный список переменных окружения, что могут использоваться:</para>
+            <variablelist>
+              <varlistentry><term>$GEDIT_SELECTED_TEXT</term>
+                <listitem>
+                  <para>Текущий выделенный текст.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$GEDIT_FILENAME</term>
+                <listitem>
+                  <para>Полное имя текущего документа. Если документ еще не был сохранен, возвращается пустая строка.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$GEDIT_BASENAME</term>
+                <listitem>
+                  <para>Имя файла без пути, или пустая строка если файл не сохранен.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$GEDIT_CURRENT_WORD</term>
+                <listitem>
+                  <para>Слово в позиции курсора. Слово будет заменено фрагментом текста.</para>
+                </listitem>
+              </varlistentry>
+
+            </variablelist>
+
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Команды shell</term>
+          <listitem>
+            <para><literal>$(<replaceable>cmd</replaceable>)</literal> во фрагменте текста заменяется результатом выполнения <replaceable>cmd</replaceable> в shell.</para>
+            <para><literal>$(<replaceable>n</replaceable>:<replaceable>cmd</replaceable>)</literal> позволяет назначить ссылку этому элементу, где <replaceable>n</replaceable> — число больше 1. С помощью <literal>$<replaceable>n</replaceable></literal> можно вывод одной команды подать на вход другой.</para>
+          </listitem>     
+        </varlistentry>
+        <varlistentry><term>Команды Python</term>
+          <listitem>
+            <para><literal>$&lt;<replaceable>cmd</replaceable>&gt;</literal> заменяется результатами вычислений <replaceable>cmd</replaceable> в интерпретаторе языка python.</para>
+            <para><literal>$&lt;<replaceable>a</replaceable>:<replaceable>cmd</replaceable>&gt;</literal> определяет связь с другими python командами, где <replaceable>a</replaceable> — порядок их во фрагменте. Это позволяет использовать функции python, определённые в других фрагментах. Для указания нескольких зависимостей, разделите их запятыми: <literal>$&lt;<replaceable>a</replaceable>,<replaceable>b</replaceable>:<replaceable>cmd</replaceable>&gt;</literal></para>
+            <para>Для использования переменных в python фрагментах, объявите их как <literal>global</literal>.</para>
+          </listitem>     
+        </varlistentry>
+      </variablelist>
+  </sect3>
+
+</sect2>
+
+<sect2 id="gedit-sort-plugin">
+<title>Модуль сортировки</title>
+	<para>Модуль <application>Сортировка</application> упорядочивает выбранные строки в по алфавиту.</para>
+		  <caution><para>Операцию сортировки нельзя отменить, поэтому лучше сохранить файл перед ее применением. Для возврата к сохраненной версии файла, можно будет выбрать <menuchoice><guimenu>Файл</guimenu><guimenuitem>Восстановить</guimenuitem></menuchoice>.</para>
+		  </caution>
+              <para>Чтобы воспользоваться сортировкой выполните следующие действия:</para>
+		<orderedlist>
+		  <listitem>
+		    <para>Выделите строки для сортировки</para>
+		  </listitem>
+		  <listitem><para>Выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Сортировать</guimenuitem></menuchoice>. Откроется диалог <guilabel>Сортировка</guilabel>.</para>
+		  </listitem>
+		  <listitem><para>Отметьте нужные параметры сортировки:</para>
+		    <itemizedlist>
+    		  <listitem>
+    		    <para>Чтобы сортировать в обратном порядке, выберите <guilabel>В обратном порядке</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Для удаления дублирующих строк, отметьте <guilabel>Убирать повторения</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Чтобы не обращать внимания на регистр символов, выберите <guilabel>Игнорировать регистр</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Можно также производить сортировку игнорируя первые несколько символов строк. Для этого воспользуйтесь полем <guilabel>Начинать со столбца</guilabel>.</para>
+    		  </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para>Кнопка <guibutton>Сортировать</guibutton> выполнит сортировку.</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="gedit-spell-checker-plugin">
+<title>Модуль проверки орфографии</title>
+	<para>Модуль <application>Проверка орфографии</application> проверяет орфографию выделенного текста. Можно настроить <application>gedit</application> на автоматическую проверку орфографии, либо делать это вручную. Языковые настройки и настройки авто-проверки применяются к документу. Для использования модуля, следуйте инструкциям:</para>
+		<orderedlist>
+		  <listitem><para>Выберите <menuchoice><guimenu>Сервис</guimenu><guimenuitem>Установить язык</guimenuitem></menuchoice>. На экране появится диалоговое окно <guilabel>Установить язык</guilabel>. Выберите нужный язык из списка. Щёлкните <guibutton>OK</guibutton> для закрытия диалога.</para>
+		  </listitem>
+		  <listitem><para>Для включения автоматической проверки орфографии выберите <menuchoice><guimenu>Сервис</guimenu><guimenuitem>Автоматически проверять орфографию</guimenuitem></menuchoice>. Для отключения выберите <menuchoice><guimenu>Сервис</guimenu><guimenuitem>Автоматически проверять орфографию</guimenuitem></menuchoice> еще раз. Когда авто-проверка включена, рядом с этим пунктом меню появляется галочка. По умолчанию, авто-проверка выключена.</para>
+                            <para>Неизвестные слова отображаются другим цветом и подчёркиваются. Щелчок правой кнопкой на таком слове и выбор подменю <guimenu>Возможные варианты</guimenu> позволяет:</para>
+		    <itemizedlist>
+		      <listitem><para>Заменить слово на другое, предлагаемое из списка, просто щелкнув по нему.</para>
+		      </listitem>
+		      <listitem><para>Добавить слово в свой персональный словарь, выбрав <menuchoice><guimenu>Возможные варианты</guimenu><guimenuitem>Добавить</guimenuitem></menuchoice>.</para>
+		      </listitem>
+		      <listitem><para>Игнорировать все подобные слова. Так слова не будут помечены как неизвестные, но и не будут добавлены в ваш персональный словарь. Выберите <menuchoice><guimenu>Возможные варианты</guimenu><guimenuitem>Игнорировать все</guimenuitem></menuchoice>. Действует только в пределах текущей сессии <application>gedit</application>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para>Для проверки орфографии вручную, выберите <menuchoice><guimenu>Сервис</guimenu><guimenuitem>Проверить орфографию</guimenuitem></menuchoice>.</para>
+				<para>Если никаких ошибок найдено не было, будет выведено сообщение: нет ошибочных слов.</para>
+				<para>Если же ошибки были встречены, отобразится диалог <guilabel>Проверка орфографии</guilabel>:</para>
+		    <itemizedlist>
+		      <listitem><para><guilabel>Ошибочное слово</guilabel> будет показано в верхней части диалога.</para>
+		      </listitem>
+		      <listitem><para>Поле <guilabel>Заменить на</guilabel> будет содержать предлагаемый вариант написания слова. Можно ввести в это поле свой вариант для замены, либо выбрать альтернативу из списка <guilabel>Варианты</guilabel>.</para>
+		      </listitem>
+		      <listitem><para>Можно проверить написание введённого на замену слова, нажав кнопку <guibutton>Проверить слово</guibutton>. Если написание правильное, в списке <guilabel>Варианты</guilabel> будет надпись <literal>(правильное написание)</literal>. Если же слово неизвестно, в списке <guilabel>Варианты</guilabel> будут отражены уже варианты его написания.</para>
+		      </listitem>
+		      <listitem><para>Для игнорирования неизвестного слова, нажмите <guibutton>Игнорировать</guibutton>. Чтобы игнорировать все подобные слова, нажмите <guibutton>Игнорировать все</guibutton>. Действительно только в пределах текущей сессии <application>gedit</application>.</para>
+		      </listitem>
+		      <listitem><para>Для замены неизвестного слова на слово в текстовом поле <guilabel>Изменить на</guilabel>, щёлкните на кнопке <guibutton>Изменить</guibutton>. Чтобы заменить все подобные неизвестные слова в тексте всего документа, щёлкните <guibutton>Изменить все</guibutton>.</para>
+		      </listitem>
+		      <listitem><para>Добавить неизвестное слово в свой персональный словарь можно щелкнув по кнопке <guibutton>Добавить слово</guibutton>.</para>
+		      </listitem>
+		      <listitem><para>Для закрытия диалога <guilabel>Проверка орфографии</guilabel> щёлкните <guibutton>Закрыть</guibutton>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="gedit-tag-list-plugin">
+<title>Модуль списка тегов</title>
+	<para>Модуль <application>Список тегов</application> позволяет вставлять в документ теги из списка в боковой панели.</para>
+  <para>Для использования модуля:</para>
+		<orderedlist>
+		  <listitem><para>Выберите <menuchoice><guimenu>Вид</guimenu><guimenuitem>Боковая панель</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem>
+		    <para>По умолчанию, в боковой панели отображается вкладка со списком открытых документов. Щёлкните вкладку с изображением «+» внизу панели.</para>
+		  </listitem>
+		  <listitem><para>Выберите подходящую категорию тегов из выпадающего списка, например, <guilabel>HTML - Теги</guilabel>.</para>
+		  </listitem>
+		  <listitem><para>Можно прокручивать список тегов в поисках нужного.</para>
+		  </listitem>
+		  <listitem><para>Чтобы вставить тег в позицию курсора в текущем файле, дважды щёлкните по нужному тегу в списке. Другие способы вставки тегов:</para>
+		    <itemizedlist>
+		      <listitem><para>Для того, чтобы вставить тэг и переместить фокус ввода с боковой панели к окну редактирования текущего документа, нажмите клавишу <keycap>Ввод</keycap>.</para>
+		      </listitem>
+		      <listitem><para>Для вставки тега и сохранения фокуса ввода за списком тегов, нажмите комбинацию клавиш <keycombo><keycap>Shift</keycap><keycap>Return</keycap></keycombo>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+</sect1>
+
+</article>

@@ -1,0 +1,18 @@
+Description: Link against libICE
+ eggsmclient-xsmp uses libICE so we explicitly need to link against it to not
+ fail with stricter linkers like binutils-gold.
+Author: Michael Biebl <biebl@debian.org>
+Bug-Debian: http://bugs.debian.org/554483
+Bug: https://bugzilla.gnome.org/show_bug.cgi?id=624601
+Index: gedit-2.30.3/configure.ac
+===================================================================
+--- gedit-2.30.3.orig/configure.ac	2010-07-17 02:20:45.481463497 +0200
++++ gedit-2.30.3/configure.ac	2010-07-17 02:20:59.029469305 +0200
+@@ -320,6 +320,7 @@
+    test "$os_win32" = "no"; then
+ 	PKG_CHECK_MODULES(EGG_SMCLIENT, [
+ 		sm >= 1.0.0
++		ice
+ 	])
+ else
+ 	EGG_SMCLIENT_CFLAGS=

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="number-display" xml:lang="fi">
+
+    <info>
+        <link type="guide" xref="index#number"/>
+    </info>
+
+	<title>Tulosten muoto</title>
+    
+    <p>Tulosten näyttämismuodon asetukset voidaan määrittää <guiseq><gui>Laskin</gui><gui>Asetukset</gui></guiseq> -valikosta.</p>
+    <table>
+    <tr>
+    <td><p>Desimaalimuoto</p></td>
+    <td><p>Tulokset näytetään desimaalimuodossa</p></td>
+    </tr>
+    <tr>
+    <td><p>Tieteellinen muoto</p></td>
+    <td><p>Tulokset näytetään <link xref="scientific">tieteellisessä muodossa</link></p></td>
+    </tr>
+    <tr>
+    <td><p>Insinöörimuoto</p></td>
+    <td><p>Tulokset näytetään käyttäen tieteellistä merkintätapaa, poikkeuksena eksponentti, joka näytetään aina kolmen monikertana</p></td>
+    </tr>
+    <tr>
+    <td><p>Binäärimuoto</p></td>
+    <td><p>Tulokset näytetään <link xref="base">binäärilukuina</link></p></td>
+    </tr>
+    <tr>
+    <td><p>Oktaalimuoto</p></td>
+    <td><p>Tulokset näytetään <link xref="base">oktaalilukuina</link></p></td>
+    </tr>
+    <tr>
+    <td><p>Heksadesimaaliluku</p></td>
+    <td><p>Tulokset näytetään <link xref="base">heksadesimaalilukuina</link></p></td>
+    </tr>
+    </table>
+    <p>
+    The number of decimal places, if trailing zeroes and if thousands separators are shown can also be configured.
+    </p>
+</page>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="function" xml:lang="el">
+
+    <info>
+        <link type="guide" xref="index#equation"/>
+    </info>
+
+	<title>Συναρτήσεις</title>
+    
+    <p>Οι συναρτήσεις μπορούν να χρησιμοποιηθούν εισάγοντας το όνομα της συνάρτησης ακολουθούμενο από το όρισμα της συνάρτησης. Αν το όρισμα δεν είναι αριθμός ή <link xref="variable">μεταβλητή</link>, τότε χρησιμοποιήστε παρενθέσεις γύρω από το όρισμα.</p>
+    <example>
+    <p>sin 30</p>
+    <p>abs (5−9)</p>
+    </example>
+    <p>Έχουν οριστεί οι εξής συναρτήσεις.</p>
+    <table>
+    <tr>
+    <td><p>abs</p></td>
+    <td><p><link xref="absolute">Absolute Value</link></p></td>
+    </tr>
+    <tr>
+    <td><p>cos</p></td>
+    <td><p><link xref="trigonometry">Cosine</link></p></td>
+    </tr>
+    <tr>
+    <td><p>cosh</p></td>
+    <td><p><link xref="trigonometry">Hyperbolic Cosine</link></p></td>
+    </tr>
+    <tr>
+    <td><p>frac</p></td>
+    <td><p>Κλασματικό μέρος</p></td>
+    </tr>
+    <tr>
+    <td><p>int</p></td>
+    <td><p>Ακέραιο μέρος</p></td>
+    </tr>
+    <tr>
+    <td><p>ln</p></td>
+    <td><p><link xref="logarithm">Natural Logarithm</link></p></td>
+    </tr>
+    <tr>
+    <td><p>log</p></td>
+    <td><p><link xref="logarithm">Logarithm</link></p></td>
+    </tr>
+    <tr>
+    <td><p>not</p></td>
+    <td><p><link xref="boolean">Boolean NOT</link></p></td>
+    </tr>
+    <tr>
+    <td><p>ones</p></td>
+    <td><p>Συμπλήρωμα ως προς 1</p></td>
+    </tr>
+    <tr>
+    <td><p>sin</p></td>
+    <td><p><link xref="trigonometry">Sine</link></p></td>
+    </tr>
+    <tr>
+    <td><p>sinh</p></td>
+    <td><p><link xref="trigonometry">Hyperbolic Sine</link></p></td>
+    </tr>
+    <tr>
+    <td><p>sqrt</p></td>
+    <td><p><link xref="power">Square Root</link></p></td>
+    </tr>
+    <tr>
+    <td><p>tan</p></td>
+    <td><p><link xref="trigonometry">Tangent</link></p></td>
+    </tr>
+    <tr>
+    <td><p>tanh</p></td>
+    <td><p><link xref="trigonometry">Hyperbolic Tangent</link></p></td>
+    </tr>
+    <tr>
+    <td><p>twos</p></td>
+    <td><p>Συμπλήρωμα ως προς 2</p></td>
+    </tr>
+    </table>
+    <p>Το <app>GCalctool</app> δεν υποστηρίζει συναρτήσεις ορισμένες από το χρήστη.</p>
+</page>

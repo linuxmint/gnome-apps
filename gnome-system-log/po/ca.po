@@ -1,0 +1,456 @@
+# Traducció del mòdul gnome-utils de Softcatalà
+# Copyright © 2000-2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-utils package.
+# Softcatalà <tradgnome@softcatala.org>, 2000, 2002.
+# Jordi Mallach <jordi@sindominio.net>, 2002, 2003, 2004, 2005.
+# Josep Puigdemont <josep.puigdemont@gmail.com>, 2005, 2006, 2007.
+# Gil Forcada <gilforcada@guifi.net>, 2006, 2008.
+# Joan Duran <jodufi@gmail.com>, 2008-2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2011-09-06 23:22+0200\n"
+"Last-Translator: Joan Duran <jodufi@gmail.com>\n"
+"Language-Team: Catalan <tradgnome@softcatala.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "Visualitzador de registres"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Visualitza o fes un seguiment dels fitxers de registre del sistema"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "Alçaria en píxels de la finestra principal"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "Llista de filtres desats"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "Llista de filtres d'expressions regulars desades"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "Fitxers de registre a obrir en iniciar"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "Fitxers de registre a obrir en iniciar"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "Mida del tipus de lletra que s'utilitzarà per mostrar el registre"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"Especifica una llista de fitxers de registre a obrir en iniciar. La llista "
+"per defecte es crea llegint /etc/syslog.conf."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr ""
+"Especifica l'alçària de la finestra principal del visualitzador de fitxers "
+"de registres."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"Especifica el fitxer de registre a obrir en iniciar. Per defecte, és /var/"
+"adm/messages o /var/log/messages, depenent del vostre sistema operatiu."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"Especifica la mida del tipus de lletra d'amplada fixa utilitzada per mostrar "
+"el registre en la vista en arbre principal. Per defecte s'utilitza el mateix "
+"valor que el de la mida del tipus de lletra del terminal."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr ""
+"Especifica l'amplada en píxels de la finestra principal del visualitzador de "
+"fitxers de registre."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "Amplada en píxels de la finestra principal"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "Segon pla:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "Efecte:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "Primer pla:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "Oculta"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "Realça"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "_Nom:"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "Expressió _regular:"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo "
+"sota els termes de la Llicència Pública General GNU tal com ha estat "
+"publicada per la Free Software Foundation; ja sigui la versió 2 de la "
+"Llicència o bé (si ho preferiu) qualsevol altra versió posterior."
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"Aquest programa es distribueix amb l'expectativa que serà útil, però SENSE "
+"CAP GARANTIA; ni tan sols la garantia implícita de COMERCIABILITAT o "
+"ADEQUACIÓ PER UN PROPÒSIT PARTICULAR. Vegeu la Llicència Pública General GNU "
+"per obtenir-ne més detalls."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"Hauríeu d'haver rebut una còpia de la Llicència Pública General GNU "
+"juntament amb aquest programa; en cas contrari, escriviu a la  Free Software "
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  "
+"USA"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"Softcatalà <info@softcatala.org>\n"
+"Jordi Mallach <jordi@sindominio.net>\n"
+"Josep Puigdemont <josep.puigdemont@gmail.com>\n"
+"Gil Forcada <gilforcada@guifi.net>\n"
+"Joan Duran <jodufi@gmail.com>"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "No s'ha pogut obrir el fitxer %s"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "El filtre per nom és buit"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "El filtre per nom no pot contenir el caràcter «:»"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "L'expressió regular és buida"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "L'expressió regular no és vàlida: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "Especifiqueu el color de primer pla o de segon pla"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "Edita el filtre"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "Afegeix un filtre nou"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "Filtres"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "Ce_rca:"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "Cerca l'anterior"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "Cerca l'anterior aparició de la cadena"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "Cerca la següent"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "Cerca la següent aparició de la cadena"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "Neteja la cadena de cerca"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr ""
+"S'ha produït un error en descomprimir el registre comprimit amb GZip. Pot "
+"ser que el fitxer estigui malmès."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "No teniu suficients permisos per llegir el fitxer."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "El fitxer no és un fitxer normal o un fitxer de text."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr ""
+"Aquesta versió del registre del sistema no admet registres comprimits amb el "
+"Gzip."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "S'està carregant..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Mostra la versió de l'aplicació"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[FITXER DE REGISTRE...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - Navega i fes un seguiment dels registres"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "Visualitzador de registres del sistema"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "Visualitzador de registres del sistema"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "darrera actualització: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d línies (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "Obre un fitxer de registre"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "S'ha produït un error en mostrar l'ajuda: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "Ajustat"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "No s'ha trobat"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "Un visualitzador de registres del sistema per al GNOME."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "_Filtre"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "_Edita"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "_Mostra"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "_Filtres"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "A_juda"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "_Obre..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "Obre un registre des d'un fitxer"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "Tan_ca"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "Tanca aquest registre"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "_Surt"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "Surt del visualitzador de registres"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "_Copia"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "Copia la selecció"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "_Selecciona-ho tot"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "Selecciona tot el registre"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "_Cerca..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "Cerca una paraula o frase al registre"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "Mida del text més gran"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "Mida del text més petita"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "Mida del text normal"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "Gestiona els filtres"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "Gestiona els filtres"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "_Continguts"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "Obre els continguts de l'ajuda per al visualitzador de registres"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "_Quant a"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr ""
+"Mostra el quadre de diàleg de «Quant a» per al visualitzador de registres"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "_Barra d'estat"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "Mostra la barra d'estat"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "_Subfinestra lateral"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "Mostra la subfinestra lateral"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "Mostra només les coincidències"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr ""
+"Mostra només les línies que coincideixen amb un dels filtres proporcionats"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "Desplaça _automàticament"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "Desplaça automàticament cap abaix quan apareguin línies noves"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "No es pot llegir de «%s»"
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "Versió: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "No s'han pogut obrir els fitxers següents:"

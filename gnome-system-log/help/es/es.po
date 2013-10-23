@@ -1,0 +1,939 @@
+# translation of logview.master.po to Español
+# Spanish translation for logview manual
+#
+# Jorge Gonzalez <jorge.gonzalez.gonzalez@hispalinux.es>, 2005.
+# Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
+# Jorge González <jorgegonz@svn.gnome.org>, 2008, 2009.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: logview.master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-04 14:38+0000\n"
+"PO-Revision-Date: 2011-11-07 15:52+0100\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
+"Language-Team: Español <gnome-es-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: C/pref-font-size.page:8(desc)
+msgid "Increase or decrease the size of the text."
+msgstr "Aumentar o disminuir el tamaño del texto."
+
+#: C/pref-font-size.page:11(name) C/log-view.page:12(name)
+#: C/log-search.page:11(name) C/log-filter.page:12(name)
+#: C/log-copy.page:11(name) C/log-close.page:12(name)
+#: C/introduction.page:11(name)
+msgid "Ekaterina Gerasimova"
+msgstr "Ekaterina Gerasimova"
+
+#: C/pref-font-size.page:12(email) C/log-view.page:13(email)
+#: C/log-search.page:12(email) C/log-filter.page:13(email)
+#: C/log-copy.page:12(email) C/log-close.page:13(email)
+#: C/introduction.page:12(email)
+msgid "kittykat3756@googlemail.com"
+msgstr "kittykat3756@googlemail.com"
+
+#: C/pref-font-size.page:16(p) C/log-view.page:17(p) C/log-search.page:16(p)
+#: C/log-filter.page:17(p) C/log-copy.page:16(p) C/log-close.page:17(p)
+#: C/introduction.page:16(p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Compartir Igual 3.0"
+
+#: C/pref-font-size.page:21(title)
+msgid "Change font size"
+msgstr "Cambiar el tamaño de la tipografía"
+
+#: C/pref-font-size.page:23(p)
+msgid ""
+"You can increase, decrease and reset the font size that the log is displayed "
+"in:"
+msgstr ""
+"Puede aumentar, disminuir y reiniciar el tamaño de la tipografía que la que "
+"se muestran los registros:"
+
+#: C/pref-font-size.page:28(title)
+msgid "Increase font size"
+msgstr "Aumentar el tamaño de la tipografía"
+
+#: C/pref-font-size.page:29(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Zoom In</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>+</key></keyseq>"
+msgstr ""
+"Pulse <guiseq><gui>Ver</gui><gui>Ampliar</gui></guiseq>, o pulse "
+"<keyseq><key>Ctrl</key><key>+</key></keyseq>"
+
+#: C/pref-font-size.page:33(title)
+msgid "Decrease font size"
+msgstr "Reducir el tamaño de la tipografía"
+
+#: C/pref-font-size.page:34(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Zoom Out</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>-</key></keyseq>"
+msgstr ""
+"Pulse <guiseq><gui>Ver</gui><gui>Reducir</gui></guiseq>, o pulse "
+"<keyseq><key>Ctrl</key><key>-</key></keyseq>"
+
+#: C/pref-font-size.page:38(title)
+msgid "Reset to default size"
+msgstr "Restablecer al tamaño predeterminado"
+
+#: C/pref-font-size.page:39(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Normal Size</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>0</key></keyseq>"
+msgstr ""
+"Pulse <guiseq><gui>Ver</gui><gui>Tamaño normal</gui></guiseq>, o pulse "
+"<keyseq><key>Ctrl</key><key>0</key></keyseq>"
+
+#: C/log-view.page:9(desc)
+msgid "Open and view logs."
+msgstr "Abrir y ver registros."
+
+#: C/log-view.page:22(title)
+msgid "Open log"
+msgstr "Abrir registro"
+
+#: C/log-view.page:24(p)
+msgid ""
+"Open logs by clicking <guiseq><gui>File</gui><gui>Open</gui></guiseq>. Your "
+"opened logs will be displayed in the side pane, to the left of the main "
+"area. You can view a log in the side pane by clicking it."
+msgstr ""
+"Abra los registros pulsando en <guiseq><gui>Archivo</gui><gui>Abrir</gui></"
+"guiseq>. Los registros abiertos se mostrarán en el panel lateral, a la "
+"izquierda del área principal. Puede ver un registro del panel lateral "
+"pulsando sobre él."
+
+#: C/log-view.page:29(p)
+msgid ""
+"You can expand some logs. This will show you a list of dates. By clicking "
+"one of the dates, you can view only the log lines from that date, instead of "
+"the whole log."
+msgstr ""
+"Puede expandir algunos registros. Esto le mostrará una lista de fechas. "
+"Pulsando en una de las fechas, puede ver las líneas del registro para esa "
+"fecha, en lugar de el registro completo."
+
+#: C/log-view.page:34(p)
+msgid ""
+"The logs you have open when you quit the log viewer will be opened when you "
+"start it up again."
+msgstr ""
+"Los registros que tenga abiertos cuando salga del visor de sucesos se "
+"abrirán cuando lo abra de nuevo."
+
+#: C/log-search.page:8(desc)
+msgid "Search the text in the log that you are currently viewing."
+msgstr "Buscar el texto en el registro que está viendo actualmente."
+
+#: C/log-search.page:21(title)
+msgid "Search log"
+msgstr "Buscar en el registro"
+
+#: C/log-search.page:23(p)
+#| msgid "Search the log that you are currently viewing by:"
+msgid "To search the log you are currently viewing:"
+msgstr "Para buscar en el registro que está viendo actualmente:"
+
+#: C/log-search.page:27(p)
+#| msgid ""
+#| "Show the find bar by pressing <keyseq><key>Ctrl</key><key>F</key></"
+#| "keyseq>, or by clicking <guiseq><gui>View</gui><gui>Find</gui></guiseq>. "
+#| "The bar will be shown below the log."
+msgid ""
+"Show the <gui>Find</gui> bar by pressing <keyseq><key>Ctrl</key><key>F</"
+"key></keyseq>, or by clicking <guiseq><gui>View</gui><gui>Find</gui></"
+"guiseq>. The bar will be shown below the log."
+msgstr ""
+"Muestre la barra <gui>Buscar</gui> pulsando <keyseq><key>Ctrl</key><key>F</"
+"key></keyseq>, o pulsando <guiseq><gui>Ver</gui><gui>Buscar</gui></guiseq>. "
+"La barra se mostrará debajo del registro."
+
+#: C/log-search.page:33(p)
+msgid ""
+"Enter your search term into the field and press <key>Enter</key> to see the "
+"first result."
+msgstr ""
+"Escriba el término que buscar en el campo y pulse <key>Intro</key> para ver "
+"el primer resultado."
+
+#: C/log-search.page:36(p)
+msgid "The search is case sensitive."
+msgstr "La búsqueda es sensible a mayúsculas"
+
+#: C/log-search.page:40(p)
+msgid ""
+"Use the <gui>Find Previous</gui> and <gui>Find Next</gui> buttons to browse "
+"through the results."
+msgstr ""
+"Use los botones <gui>Buscar anterior</gui> y <gui>Buscar siguiente</gui> "
+"para moverse entre los resultados de la búsqueda."
+
+#: C/log-search.page:43(p)
+msgid "If you can not see the result highlighted, try scrolling to the left."
+msgstr ""
+"Si no ve ningún resultado resaltado, pruebe a moverse hacia la izquierda."
+
+#: C/log-search.page:47(p)
+msgid ""
+"Press <key>Esc</key> to hide the find bar once you are finished with the "
+"search."
+msgstr ""
+"Pulse <key>Esc</key> para ocultar la barra de búsqueda cuando haya terminado."
+
+#: C/log-search.page:50(p)
+msgid ""
+"You can only hide the <gui>find bar</gui> if you are currently focused on "
+"the search field. The bar will hide itself if you view another log."
+msgstr ""
+"Sólo puede ocultar la <gui>barra de búsqueda</gui> si el foco está "
+"actualmente en el campo de búsqueda. La barra se ocultar automáticamente si "
+"abre otro registro."
+
+#: C/log-filter.page:9(desc)
+msgid "Include or exclude shown lines using regular expressions."
+msgstr "Incluir o excluir las líneas mostradas usando expresiones regulares."
+
+#: C/log-filter.page:22(title)
+msgid "Filter log"
+msgstr "Filtrar registro"
+
+#: C/log-filter.page:24(p)
+#| msgid ""
+#| "The log viewer allows you to filter log content based on regular "
+#| "expressions. Set up or manage a new filter by:"
+msgid ""
+"The log viewer allows you to filter log content based on regular "
+"expressions. To set up or manage a new filter:"
+msgstr ""
+"El visor del registro de sucesos le permite filtrar el contenido de un "
+"registro usando expresiones regulares. Para configurar o gestionar un filtro "
+"nuevo:"
+
+#: C/log-filter.page:29(p)
+msgid ""
+"Open the filter manager dialog by clicking <guiseq><gui>Filters:</"
+"gui><gui>Manage Filters</gui></guiseq>."
+msgstr ""
+"Abra el diálogo de gestión de filtros pulsando en <guiseq><gui>Filtros:</"
+"gui><gui>Gestionar filtros</gui></guiseq>."
+
+#: C/log-filter.page:33(p)
+msgid ""
+"Click <gui>Add</gui> to add a new filter, or select an existing filter and "
+"click <gui>Properties</gui> to edit it."
+msgstr ""
+"Pulse <gui>Añadir</gui> para añadir un filtro nuevo, o seleccione un filtro "
+"existente y pulse <gui>Propiedades</gui> para editarlo."
+
+#: C/log-filter.page:37(p)
+msgid "Fill in the form or edit the fields that you wish to change:"
+msgstr "Rellene el formulario o edite los campos que quiera cambiar:"
+
+#: C/log-filter.page:40(title)
+msgid "Name:"
+msgstr "Nombre:"
+
+#: C/log-filter.page:41(p)
+msgid "The identifier for the filter"
+msgstr "El identificador del filtro"
+
+#: C/log-filter.page:44(title)
+msgid "Regular Expression:"
+msgstr "Expresión regular:"
+
+#: C/log-filter.page:45(p)
+msgid "What the filter will filter for"
+msgstr "Para qué se usará el filtro"
+
+#: C/log-filter.page:48(title)
+msgid "Highlight:"
+msgstr "Resaltado:"
+
+#: C/log-filter.page:49(p)
+msgid "This option emphasizes the line containing the regular expression"
+msgstr "Esta opción enfatiza la línea que contiene la expresión regular"
+
+#: C/log-filter.page:52(title)
+msgid "Background:"
+msgstr "Fondo:"
+
+#: C/log-filter.page:53(p)
+msgid "This is the font color"
+msgstr "Este es el color de la tipografía"
+
+#: C/log-filter.page:55(p)
+msgid "The default font color is black, which does not emphasize the text."
+msgstr ""
+"El color predeterminado es la tipografía es negro, que no enfatiza el texto."
+
+#: C/log-filter.page:60(title)
+msgid "Foreground:"
+msgstr "Primer plano:"
+
+#: C/log-filter.page:61(p)
+msgid "This is the highlight color"
+msgstr "Este es el color del resaltado"
+
+#: C/log-filter.page:63(p)
+msgid ""
+"The default highlight color is black, which shows solid black lines as a "
+"result, so it would be wise to change it."
+msgstr ""
+"El color de resaltado predeterminado es el negro, que muestra líneas negras "
+"sólidas como resultado, por que es posible que quiera cambiarlo."
+
+#: C/log-filter.page:70(title)
+msgid "Hide:"
+msgstr "Ocultar:"
+
+#: C/log-filter.page:71(p)
+msgid ""
+"This option hides the lines containing the regular expression from the shown "
+"log"
+msgstr ""
+"Esta opción oculta las líneas que contengan la expresión regular en el "
+"registro mostrado"
+
+#: C/log-filter.page:77(p)
+msgid ""
+"Click <gui>Apply</gui> to save the new filter or save changes to an existing "
+"one"
+msgstr ""
+"Pulse <gui>Aplicar</gui> para guardar el filtro nuevo o para guardar los "
+"cambios en uno ya existente"
+
+#: C/log-filter.page:81(p)
+#| msgid ""
+#| "You are now back at the filter manager dialog, click <gui>Close</gui> "
+#| "button to apply the changes."
+msgid ""
+"Back at the filter manager dialog, click <gui>Close</gui> to apply the "
+"changes."
+msgstr ""
+"Vuelva al diálogo de gestión de filtros y pulse <gui>Cerrar</gui> para "
+"aplicar los cambios."
+
+#: C/log-filter.page:86(p)
+msgid ""
+"Check the box next to the name of the filter that you want to enable in "
+"<gui>Filters:</gui>. If you want to view only the filters which have "
+"<gui>Highlight</gui> enabled and are checked, check <guiseq><gui>Filters:</"
+"gui><gui>Show matches only</gui></guiseq>."
+msgstr ""
+"Marque la casilla junto al nombre del filtro que quiere activar en "
+"<gui>Filtros:</gui>. Si sólo quiere ver los filtros que tienen el "
+"<gui>Resaltado</gui> activado y que están marcados, marque "
+"<guiseq><gui>Filtros:</gui><gui>Sólo mostrar coincidencias</gui></guiseq>."
+
+#: C/log-filter.page:92(p)
+msgid ""
+"If there is a conflict between a hidden and a highlighted filter, the line "
+"many show as an empty white line."
+msgstr ""
+"Si hay un conflicto entre un filtro oculto y uno resaltado, la línea se "
+"puede mostrar como una línea en blanco vacía."
+
+#: C/log-filter.page:97(p)
+msgid ""
+"If you uncheck a filter while viewing only matches, the log will show the "
+"lines without any formatting, regardless of whether they were hidden or "
+"highlighted before. The filter should reset when you check a highlighted "
+"filter."
+msgstr ""
+"Si desmarca un filtro mientras sólo está viendo coincidencias, el registro "
+"mostrará las líneas sin formatear, sin importar si antes estaban resaltadas "
+"u ocultas. El filtro se debe reiniciar cuando marque un filtro resaltado."
+
+#: C/log-copy.page:8(desc)
+msgid "Copy text from the log."
+msgstr "Copiar texto del registro"
+
+#: C/log-copy.page:20(title)
+msgid "Copy log"
+msgstr "Copiar registro"
+
+#: C/log-copy.page:22(p)
+msgid ""
+"Highlight the section of the log that you want to copy with the cursor and "
+"press <keyseq><key>Ctrl</key><key>C</key></keyseq>, or click "
+"<guiseq><gui>Edit</gui><gui>Copy</gui></guiseq>."
+msgstr ""
+"Seleccione con el cursor la sección del registro que quiere copiar y pulse "
+"<keyseq><key>Ctrl</key><key>C</key></keyseq>, o pulse <guiseq><gui>Editar</"
+"gui><gui>Copiar</gui></guiseq>."
+
+#: C/log-copy.page:27(p)
+msgid ""
+"You can press <keyseq><key>Ctrl</key><key>A</key></keyseq>, or click "
+"<guiseq><gui>Edit</gui><gui>Select All</gui></guiseq>, to select all the "
+"text in the log which you are currently viewing."
+msgstr ""
+"Puede pulsar <keyseq><key>Ctrl</key><key>A</key></keyseq>, o "
+"<guiseq><gui>Editar</gui><gui>Seleccionar todo</gui></guiseq>,para "
+"seleccionar todo el texto del registro que está viendo actualmente."
+
+#: C/log-close.page:9(desc)
+msgid "Remove the log you are currently viewing from the <gui>side pane</gui>."
+msgstr ""
+"Quitar el registro que está viendo actualmente del <gui>panel lateral</gui>."
+
+#: C/log-close.page:21(title)
+msgid "Close log"
+msgstr "Cerrar registro"
+
+#: C/log-close.page:23(p)
+msgid ""
+"Close the log that you are currently viewing by pressing <keyseq><key>Ctrl</"
+"key><key>W</key></keyseq>, or by clicking <guiseq><gui>File</gui><gui>Close</"
+"gui></guiseq>. This removes it from the <gui>side pane</gui> until you open "
+"the log again."
+msgstr ""
+"Cierre el registro que está viendo actualmente pulsando <keyseq><key>Ctrl</"
+"key><key>W</key></keyseq>, o pulsando <guiseq><gui>Archivo</gui><gui>Cerrar</"
+"gui></guiseq>. Esto lo quita del <gui>panel lateral</gui> hasta que lo abra "
+"otra vez."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/introduction.page:40(None)
+msgid ""
+"@@image: 'figures/log-viewer-main.png'; md5=019eaf56737c3fd7c1ae085e77962384"
+msgstr ""
+"@@image: 'figures/log-viewer-main.png'; md5=019eaf56737c3fd7c1ae085e77962384"
+
+#: C/introduction.page:8(desc)
+msgid "Introduction to the <app>GNOME System Log</app>."
+msgstr "Introducción al <app>Registro de sucesos de GNOME</app>."
+
+#: C/introduction.page:20(title)
+msgid "Introduction"
+msgstr "Introducción"
+
+#: C/introduction.page:22(p)
+msgid ""
+"<app>Log File Viewer</app> is a graphical, menu-driven viewer that you can "
+"use to view and monitor your system logs. <app>Log File Viewer</app> comes "
+"with a few functions that can help you manage your logs, including a log "
+"monitor and log statistics display."
+msgstr ""
+"<application>Visor de archivos de sucesos</application> es un visor gráfico, "
+"con menús que puede usar para ver y monitorizar los archivos de registro del "
+"sistema. El <application>Visor de archivos de sucesos</application> viene "
+"con unas pocas funciones que le pueden ayudar a gestionar sus registros, "
+"incluyendo un monitor de registros y un visor de estadísticas de registros."
+
+#: C/introduction.page:27(p)
+msgid ""
+"<app>Log File Viewer</app> is useful if you are new to system administration "
+"because it provides an easier, more user-friendly display of your logs than "
+"a text display of the log file. It is also useful for more experienced "
+"administrators, as it contains a monitor to enable you to continuously "
+"monitor crucial logs."
+msgstr ""
+"El <application>Visor de archivos de sucesos</application> es útil si es "
+"nuevo en la administración de sistemas porque proporciona una manera de ver "
+"sus registros más amigable y fácil que un simple visor de texto. También es "
+"útil para los administradores con mas experiencia, ya que incorpora un "
+"monitor que le permite vigilar continuamente los registros cruciales."
+
+#: C/introduction.page:34(p)
+msgid ""
+"<app>Log File Viewer</app> is useful only to those who have access to the "
+"system log files, which generally requires root access."
+msgstr ""
+"<application>Visor de archivos de sucesos</application> es útil sólo para "
+"aquellos que tengan acceso a los registros del sistema, lo que generalmente "
+"requiere acceso como administrador."
+
+#: C/index.page:5(title)
+msgid "Log File Viewer Help"
+msgstr "Ayuda del visor de archivos de sucesos"
+
+#: C/index.page:8(title)
+msgid "Working with the <app>Log File Viewer</app>"
+msgstr "Trabajar con el <app>Visor de archivos de sucesos</app>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/index.page:0(None)
+msgid "translator-credits"
+msgstr ""
+"Daniel Mustieles <daniel.mustieles@gmail.com>, 2011\n"
+"Jorge González <jorgegonz@svn.gnome.org>, 2005, 2009\n"
+"Francisco Javier F. Serrador <serrador@openshine.com>, 2006"
+
+#~ msgid "System Log Viewer Manual"
+#~ msgstr "Manual del visor de Registros de actividad del sistema"
+
+#~ msgid ""
+#~ "System Log Viewer is a graphical user interface to view and monitor "
+#~ "system log files."
+#~ msgstr ""
+#~ "El visor de Registros de actividad del sistema es un visor gráfico para "
+#~ "ver y monitorizar los archivos de registro del sistema."
+
+#~ msgid "2003"
+#~ msgstr "2003"
+
+#~ msgid "Sun Microsystems"
+#~ msgstr "Sun Microsystems"
+
+#~ msgid "2000"
+#~ msgstr "2000"
+
+#~ msgid "Judith Samson"
+#~ msgstr "Judith Samson"
+
+#~ msgid "GNOME Documentation Project"
+#~ msgstr "Proyecto de documentación de GNOME"
+
+#~ msgid ""
+#~ "Permission is granted to copy, distribute and/or modify this document "
+#~ "under the terms of the GNU Free Documentation License (GFDL), Version 1.1 "
+#~ "or any later version published by the Free Software Foundation with no "
+#~ "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
+#~ "can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl"
+#~ "\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+#~ msgstr ""
+#~ "Se otorga permiso para copiar, distribuir y/o modificar este documento "
+#~ "bajo los términos de la Licencia de Documentación Libre de GNU, Versión "
+#~ "1.1 o cualquier otra versión posterior publicada por la Free Software "
+#~ "Foundation; sin Secciones Invariantes ni Textos de Cubierta Delantera ni "
+#~ "Textos de Cubierta Trasera. Puede encontrar una copia de la licencia GFDL "
+#~ "en este <ulink type=\"help\" url=\"ghelp:fdl\">enlace</ulink> o en el "
+#~ "archivo COPYING-DOCS distribuido con este manual."
+
+#~ msgid ""
+#~ "This manual is part of a collection of GNOME manuals distributed under "
+#~ "the GFDL. If you want to distribute this manual separately from the "
+#~ "collection, you can do so by adding a copy of the license to the manual, "
+#~ "as described in section 6 of the license."
+#~ msgstr ""
+#~ "Este manual es parte de una colección de manuales de GNOME distribuido "
+#~ "bajo la GFDL. Si quiere distribuir este manual por separado de la "
+#~ "colección, puede hacerlo añadiendo una copia de la licencia al manual, "
+#~ "tal como se describe en la sección 6 de la licencia."
+
+#~ msgid ""
+#~ "Many of the names used by companies to distinguish their products and "
+#~ "services are claimed as trademarks. Where those names appear in any GNOME "
+#~ "documentation, and the members of the GNOME Documentation Project are "
+#~ "made aware of those trademarks, then the names are in capital letters or "
+#~ "initial capital letters."
+#~ msgstr ""
+#~ "Muchos de los nombres usados por compañías para distinguir sus productos "
+#~ "y servicios son mencionados como marcas comerciales. Donde esos nombres "
+#~ "aparezcan en cualquier documentación de GNOME, y los miembros del "
+#~ "Proyecto de Documentación de GNOME están al corriente de esas marcas "
+#~ "comerciales, entonces los nombres se pondrán en mayúsculas o con la "
+#~ "inicial en mayúsculas."
+
+#~ msgid ""
+#~ "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+#~ "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES "
+#~ "THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+#~ "MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+#~ "RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+#~ "MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+#~ "MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+#~ "WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+#~ "SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES "
+#~ "AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS "
+#~ "DISCLAIMER; AND"
+#~ msgstr ""
+#~ "EL DOCUMENTO SE PROPORCIONA \"TAL CUAL\", SIN GARANTÍA DE NINGÚN TIPO, NI "
+#~ "EXPLÍCITA NI IMPLÍCITA INCLUYENDO, SIN LIMITACIÓN, GARANTÍA DE QUE EL "
+#~ "DOCUMENTO O VERSIÓN MODIFICADA DE ÉSTE CAREZCA DE DEFECTOS COMERCIALES, "
+#~ "SEA ADECUADO A UN FIN CONCRETO O INCUMPLA ALGUNA NORMATIVA. TODO EL "
+#~ "RIESGO RELATIVO A LA CALIDAD, PRECISIÓN Y UTILIDAD DEL DOCUMENTO O SU "
+#~ "VERSIÓN MODIFICADA RECAE EN USTED. SI CUALQUIER DOCUMENTO O VERSIÓN "
+#~ "MODIFICADA DE AQUÉL RESULTARA DEFECTUOSO EN CUALQUIER ASPECTO, USTED (Y "
+#~ "NO EL REDACTOR INICIAL, AUTOR O CONTRIBUYENTE) ASUMIRÁ LOS COSTES DE TODA "
+#~ "REPARACIÓN, MANTENIMIENTO O CORRECCIÓN NECESARIOS. ESTA RENUNCIA DE "
+#~ "GARANTÍA ES UNA PARTE ESENCIAL DE ESTA LICENCIA. NO SE AUTORIZA EL USO DE "
+#~ "NINGÚN DOCUMENTO NI VERSIÓN MODIFICADA DE ÉSTE POR EL PRESENTE, SALVO "
+#~ "DENTRO DEL CUMPLIMIENTO DE LA RENUNCIA;Y"
+
+#~ msgid ""
+#~ "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT "
+#~ "(INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL "
+#~ "WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE "
+#~ "LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR "
+#~ "CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, "
+#~ "DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR "
+#~ "MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR "
+#~ "RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, "
+#~ "EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH "
+#~ "DAMAGES."
+#~ msgstr ""
+#~ "BAJO NINGUNA CIRCUNSTANCIA NI BAJO NINGUNA TEORÍA LEGAL, SEA POR ERROR "
+#~ "(INCLUYENDO NEGLIGENCIA), CONTRATO O DE ALGÚN OTRO MODO, EL AUTOR, EL "
+#~ "ESCRITOR INICIAL, CUALQUIER CONTRIBUIDOR, O CUALQUIER DISTRIBUIDOR DEL "
+#~ "DOCUMENTO O VERSIÓN MODIFICADA DEL DOCUMENTO, O CUALQUIER PROVEEDOR DE "
+#~ "CUALQUIERA DE ESAS PARTES, SERÁ RESPONSABLE ANTE NINGUNA PERSONA POR "
+#~ "NINGÚN DAÑO DIRECTO, INDIRECTO, ESPECIAL, INCIDENTAL O DERIVADO DE NINGÚN "
+#~ "TIPO, INCLUYENDO, SIN LIMITACIÓN DAÑOS POR PÉRDIDA DE MERCANCÍAS, PARO "
+#~ "TÉCNICO, FALLO INFORMÁTICO O MAL FUNCIONAMIENTO O CUALQUIER OTRO POSIBLE "
+#~ "DAÑO O PÉRDIDAS DERIVADAS O RELACIONADAS CON EL USO DEL DOCUMENTO O SUS "
+#~ "VERSIONES MODIFICADAS, AUNQUE DICHA PARTE HAYA SIDO INFORMADA DE LA "
+#~ "POSIBILIDAD DE QUE SE PRODUJESEN DICHOS DAÑOS."
+
+#~ msgid ""
+#~ "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
+#~ "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
+#~ "UNDERSTANDING THAT: <placeholder-1/>"
+#~ msgstr ""
+#~ "ESTE DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL MISMO SE PROPORCIONAN "
+#~ "SEGÚN LAS CONDICIONES ESTABLECIDAS EN LA LICENCIA DE DOCUMENTACIÓN LIBRE "
+#~ "DE GNU (GFDL) Y TENIENDO EN CUENTA QUE: <placeholder-1/>"
+
+#~ msgid "Sun"
+#~ msgstr "Sun"
+
+#~ msgid "GNOME Documentation Team"
+#~ msgstr "Equipo de documentación de GNOME"
+
+#~ msgid "gdocteam@sun.com"
+#~ msgstr "gdocteam@sun.com"
+
+#~ msgid "Judith"
+#~ msgstr "Judith"
+
+#~ msgid "Samson"
+#~ msgstr "Samson"
+
+#~ msgid "judith@samsonsource.com"
+#~ msgstr "judith@samsonsource.com"
+
+#~ msgid "Paul"
+#~ msgstr "Paul"
+
+#~ msgid "Cutler"
+#~ msgstr "Cutler"
+
+#~ msgid "pcutler@gnome.org"
+#~ msgstr "pcutler@gnome.org"
+
+#~ msgid "Vincent"
+#~ msgstr "Vincent"
+
+#~ msgid "Noel"
+#~ msgstr "Noel"
+
+#~ msgid "vincent.noel@gmail.com"
+#~ msgstr "vincent.noel@gmail.com"
+
+#~| msgid "System Log Viewer Manual V2.4"
+#~ msgid "System Log Viewer Manual V2.5"
+#~ msgstr "Manual del visor de registros del sistema V2.5"
+
+#~| msgid "October 2005"
+#~ msgid "October 2009"
+#~ msgstr "Octubre de 2009"
+
+#~ msgid "Paul Cutler <email>pcutler@gnome.org</email>"
+#~ msgstr "Paul Cutler <email>pcutler@gnome.org</email>"
+
+#~ msgid "System Log Viewer Manual V2.4"
+#~ msgstr "Manual del visor de registros del sistema V2.4"
+
+#~ msgid "October 2005"
+#~ msgstr "Octubre de 2005"
+
+#~ msgid "Vincent Noel <email>vincent.noel@gmail.com</email>"
+#~ msgstr "Vincent Noel <email>vincent.noel@gmail.com</email>"
+
+#~ msgid "System Log Viewer Manual V2.3"
+#~ msgstr "Manual del visor de registros del sistema V2.3"
+
+#~ msgid "October 2002"
+#~ msgstr "Octubre de 2003"
+
+#~ msgid "Sun GNOME Documentation Team <email>gdocteam@sun.com</email>"
+#~ msgstr ""
+#~ "Equipo de documentación de GNOME de Sun  <email>gdocteam@sun.com</email>"
+
+#~ msgid "System Log Viewer Manual V2.2"
+#~ msgstr "Manual del visor de registros del sistema V2.2"
+
+#~ msgid "August 2002"
+#~ msgstr "Agosto de 2002"
+
+#~ msgid "System Log Viewer Manual V2.1"
+#~ msgstr "Manual del visor de registros del sistema V2.1"
+
+#~ msgid "July 2002"
+#~ msgstr "Julio de 2002"
+
+#~ msgid "System Log Viewer Manual V2.0"
+#~ msgstr "Manual del visor de registros del sistema V2.0"
+
+#~ msgid "May 2002"
+#~ msgstr "Mayo de 2002"
+
+#~ msgid "Logview Manual"
+#~ msgstr "Manual del visor de registros"
+
+#~ msgid "Judith Samson <email>judith@samsonsource.com</email>"
+#~ msgstr "Judith Samson <email>judith@samsonsource.com</email>"
+
+#~ msgid "This manual describes version 2.12 of System Log Viewer."
+#~ msgstr ""
+#~ "Este manual describe la versión 2.12 del Visor de registros del sistema."
+
+#~ msgid "Feedback"
+#~ msgstr "Comentarios"
+
+#~ msgid ""
+#~ "To report a bug or make a suggestion regarding the System Log Viewer "
+#~ "application or this manual, follow the directions in the <ulink url="
+#~ "\"ghelp:gnome-feedback\" type=\"help\">GNOME Feedback Page</ulink>."
+#~ msgstr ""
+#~ "Para informar de un fallo, o hacer alguna sugerencia concerniente al "
+#~ "Visor de registros del sistema o este manual, siga las indicaciones en la "
+#~ "<ulink url=\"ghelp:gnome-feedback\" type=\"help\">Página de contacto de "
+#~ "GNOME</ulink>."
+
+#~ msgid "System Log Viewer"
+#~ msgstr "Visor de registros del sistema"
+
+#~ msgid "Getting Started"
+#~ msgstr "Iniciando"
+
+#~ msgid ""
+#~ "You can start <application>System Log Viewer</application> in the "
+#~ "following ways:"
+#~ msgstr ""
+#~ "Puede iniciar el<application>Visor de registros del sistema</application> "
+#~ "de las siguientes formas:"
+
+#~ msgid "<guimenu>Applications</guimenu> menu"
+#~ msgstr "Menú <guimenu>Aplicaciones</guimenu>"
+
+#~ msgid ""
+#~ "Choose <menuchoice><guisubmenu>System Tools</guisubmenu><guimenuitem>Log "
+#~ "File Viewer</guimenuitem></menuchoice>."
+#~ msgstr ""
+#~ "Elija <menuchoice><guisubmenu>Herramientas del sistema</"
+#~ "guisubmenu><guimenuitem>Visor de archivos de sucesos</guimenuitem></"
+#~ "menuchoice>."
+
+#~ msgid "Command line"
+#~ msgstr "Línea de comandos"
+
+#~ msgid ""
+#~ "Type <command>gnome-system-log</command>, then press <keycap>Return</"
+#~ "keycap>."
+#~ msgstr ""
+#~ "Teclee <command>gnome-system-log</command>, y pulse <keycap>Intro</"
+#~ "keycap>."
+
+#~ msgid ""
+#~ "When you start <application>System Log Viewer</application>, the "
+#~ "following window is displayed."
+#~ msgstr ""
+#~ "Cuando inicie el <application>Visor de registros del sistema</"
+#~ "application>, se mostrará la siguiente ventana."
+
+#~ msgid "System Log Viewer Window"
+#~ msgstr "Ventana del «Visor de registros del sistema»"
+
+#~ msgid ""
+#~ "Shows System Log Viewer main window. Contains menubar, display area, "
+#~ "scrollbars, and statusbar."
+#~ msgstr ""
+#~ "Muestra la ventana principal del Visor de registros del sistema. Contiene "
+#~ "la barra de menú, el área de visualización, barras de desplazamiento y "
+#~ "barra de estado."
+
+#~ msgid ""
+#~ "The first time you start <application>System Log Viewer</application>, "
+#~ "the application displays several log files by default (such as <filename>/"
+#~ "var/log/messages</filename>). Opened logs are listed on the left side of "
+#~ "the application window. The log selected in this list is displayed in the "
+#~ "main area of the application window."
+#~ msgstr ""
+#~ "La primera vez que inicia el <application>Visor de registros del sistema</"
+#~ "application>, la aplicación muestra varios archivos de registro por "
+#~ "omisión (como <filename>/car/log/messages</filename>). Los registros "
+#~ "abiertos se listan en el lado izquierdo de la ventana de la aplicación. "
+#~ "El registro seleccionado en esta lista se muestra en el área principal de "
+#~ "la ventana de la aplicación."
+
+#~ msgid ""
+#~ "By default, <application>System Log Viewer</application> monitors every "
+#~ "opened log, and any change appears automatically in the main window. See "
+#~ "<xref linkend=\"syslog-monitor\"/> for more information."
+#~ msgstr ""
+#~ "Por omisión, el <application>Visor de registros del sistema</application> "
+#~ "monitoriza cada registro abierto, y cualquier cambio aparece "
+#~ "automáticamente en la ventana principal. Vea la <xref linkend=\"syslog-"
+#~ "monitor\"/> para más información."
+
+#~ msgid "Usage"
+#~ msgstr "Uso"
+
+#~ msgid "To View a Log"
+#~ msgstr "Para ver un registro"
+
+#~ msgid ""
+#~ "To view a log, choose <menuchoice><guimenu>File</"
+#~ "guimenu><guimenuitem>Open</guimenuitem></menuchoice>. In the "
+#~ "<guilabel>Open Log</guilabel> dialog, select the log that you want to "
+#~ "open, then click <guibutton>Open</guibutton>. Use the scrollbars to "
+#~ "scroll through the log."
+#~ msgstr ""
+#~ "Para ver un registro elija <menuchoice><guimenu>Archivo</"
+#~ "guimenu><guimenuitem>Abrir</guimenuitem></menuchoice>. En el diálogo "
+#~ "<guilabel>Abrir registro</guilabel>, seleccione el archivo que quiera "
+#~ "abrir, después pulse <guibutton>Abrir</guibutton>.Use las barras de "
+#~ "desplazamiento para moverse por el registro."
+
+#~ msgid ""
+#~ "You can open as many logs as you want. <application>System Log Viewer</"
+#~ "application> displays one log at a time in the <guilabel>System Log "
+#~ "Viewer</guilabel> window. Opened logs are listed on the left side of the "
+#~ "application window. The log selected in this list is displayed in the "
+#~ "main area of the application window. To display another log already "
+#~ "opened in <application>System Log Viewer</application>, select it in the "
+#~ "log list."
+#~ msgstr ""
+#~ "Puede abrir tantos registros como quiera. El <application>Visor de "
+#~ "registros del sistema</application> muestra un registro cada vez en la "
+#~ "ventana del <application>Visor de registros del sistema</application>. "
+#~ "Los registros abiertos se muestran en el lado izquierdo de la ventana de "
+#~ "aplicaciones. El registro seleccionado en esta lista se muestra en el "
+#~ "área principal de la ventana de aplicaciones. Para mostrar otro registro "
+#~ "ya abierto en el <application>Visor de registros del sistema</"
+#~ "application>, selecciónelo en la lista de registros."
+
+#~ msgid ""
+#~ "Note that <application>System Log Viewer</application> also lets you open "
+#~ "zipped logs (whole filenames end in \".gz\")."
+#~ msgstr ""
+#~ "Note que el <application>Visor de registros del sistema</application> "
+#~ "también le permite abrir registros comprimidos (cuyos nombres de archivo "
+#~ "terminan en «.gz»)."
+
+#~ msgid "To Copy Log Lines to the Clipboard"
+#~ msgstr "Para copiar líneas de registros al portapapeles"
+
+#~ msgid ""
+#~ "To copy one or more log lines to the clipboard, just select the lines in "
+#~ "the main area and choose the <menuchoice><guimenu>Edit</"
+#~ "guimenu><guimenuitem>Copy</guimenuitem></menuchoice> menu option. If you "
+#~ "want to copy the entire log to the clipboard, select it entirely using "
+#~ "the <menuchoice><guimenu>Edit</guimenu><guimenuitem>Select All</"
+#~ "guimenuitem></menuchoice> menu option, then choose "
+#~ "<menuchoice><guimenu>Edit</guimenu><guimenuitem>Copy</guimenuitem></"
+#~ "menuchoice>."
+#~ msgstr ""
+#~ "Para copiar una o más líneas al portapapeles, tan sólo seleccione las "
+#~ "líneas en el área principal y elija la opción de menú  "
+#~ "<menuchoice><guimenu>Editar</guimenu><guimenuitem>Copiar</guimenuitem></"
+#~ "menuchoice>. Si quiere copiar el registro entero al portapapeles, "
+#~ "selecciónelo por completo usando la opción de menú "
+#~ "<menuchoice><guimenu>Editar</guimenu><guimenuitem>Seleccionar todo</"
+#~ "guimenuitem></menuchoice>, después elija <menuchoice><guimenu>Editar</"
+#~ "guimenu><guimenuitem>Copiar</guimenuitem></menuchoice>."
+
+#~ msgid "To Hide the Sidebar"
+#~ msgstr "Para ocultar la barra lateral"
+
+#~ msgid ""
+#~ "To hide the left sidebar, which contains the log list and calendar, just "
+#~ "select the <menuchoice><guimenu>View</guimenu><guimenuitem>Side pane</"
+#~ "guimenuitem></menuchoice> menu option."
+#~ msgstr ""
+#~ "Para ocultar la barra lateral de la izquierda, que contiene la lista de "
+#~ "registros y el calendario, tan sólo seleccione la opción de menú "
+#~ "<menuchoice><guimenu>Ver</guimenu><guimenuitem>Panel lateral</"
+#~ "guimenuitem></menuchoice>."
+
+#~ msgid "To Monitor Logs"
+#~ msgstr "Para monitorizar registros"
+
+#~ msgid ""
+#~ "You can use <application>System Log Viewer</application> to monitor logs. "
+#~ "By default, all logs opened in <application>System Log Viewer</"
+#~ "application> are monitored for changes. If new lines are added to a log "
+#~ "monitored by <application>System Log Viewer</application>, the log name "
+#~ "will appear in bold in the log list. If the log is currently displayed in "
+#~ "the main area, the new lines will appear automatically at the end of the "
+#~ "log and, after five seconds, the log name will turn back to normal in the "
+#~ "list."
+#~ msgstr ""
+#~ "Puede usar el <application>Visor de registros del sistema</application> "
+#~ "para monitorizar registros. Por omisión, todos los registros abiertos en "
+#~ "el <application>Visor de registros del sistema</application> se "
+#~ "monitorizan. Si se añaden líneas nuevas a un registro monitorizado por el "
+#~ "<application>Visor de registros del sistema</application>, el nombre del "
+#~ "registro aparecerá en negrita en la lista de registros. Si el registro "
+#~ "está actualmente mostrado en el área principal, las líneas nuevas "
+#~ "aparecerán automáticamente al final del registro, y después de cinco "
+#~ "segundos, el nombre del registro volverá a ponerse normal en la lista."
+
+#~ msgid "To View Log Information"
+#~ msgstr "Para ver la información del registro"
+
+#~ msgid ""
+#~ "Log information are generally displayed in the status bar, including :"
+#~ msgstr ""
+#~ "La información del registro se muestra generalmente en la barra de "
+#~ "estado, incluyendo:"
+
+#~ msgid "Number of lines in the log."
+#~ msgstr "Número de líneas en el registro."
+
+#~ msgid "Size of the log in bytes."
+#~ msgstr "Tamaño del registro en bytes."
+
+#~ msgid "Date the log was last modified."
+#~ msgstr "Fecha en que se modificó el registro por última vez."
+
+#~ msgid ""
+#~ "The status bar can be displayed or hidden using the "
+#~ "<menuchoice><guimenu>View</guimenu><guimenuitem>Statusbar</guimenuitem></"
+#~ "menuchoice> option."
+#~ msgstr ""
+#~ "La barra de estado se puede mostrar u ocultar usando la opción "
+#~ "<menuchoice><guimenu>Ver</guimenu><guimenuitem>Barra de estado</"
+#~ "guimenuitem></menuchoice>."
+
+#~ msgid ""
+#~ "To close a log, choose <menuchoice><guimenu>File</"
+#~ "guimenu><guimenuitem>Close</guimenuitem></menuchoice>."
+#~ msgstr ""
+#~ "Para cerrar un registro, elija <menuchoice><guimenu>Archivo</"
+#~ "guimenu><guimenuitem>Cerrar</guimenuitem></menuchoice>."
+
+#~ msgid "To Exit System Log Viewer"
+#~ msgstr "Para salir del visor de registros"
+
+#~ msgid ""
+#~ "To exit <application>System Log Viewer</application>, choose "
+#~ "<menuchoice><guimenu>File</guimenu><guimenuitem>Quit</guimenuitem></"
+#~ "menuchoice>."
+#~ msgstr ""
+#~ "Para salir del  <application>Visor de registros del sistema</"
+#~ "application>, elija <menuchoice><guimenu>Archivo</"
+#~ "guimenu><guimenuitem>Salir</guimenuitem></menuchoice>."
+
+#~ msgid ""
+#~ "To stop monitoring a specific log, uncheck the <menuchoice><guimenu>View</"
+#~ "guimenu><guimenuitem>Monitor</guimenuitem></menuchoice> option. Check "
+#~ "this option again to turn monitoring back on."
+#~ msgstr ""
+#~ "Para parar de monitorizar un registro específico, desmarque la opción "
+#~ "<menuchoice><guimenu>Ver</guimenu><guimenuitem>Monitorizar</guimenuitem></"
+#~ "menuchoice>. Marque esta opción de nuevo para activar la monitorización "
+#~ "otra vez."

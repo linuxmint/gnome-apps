@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="toolbar" xml:lang="da">
+
+  <info>
+    <link type="guide" xref="index#tips"/>
+    <desc><link xref="toolbar#view">Vis, skjul</link> eller <link xref="toolbar#edit">rediger</link> værktøjslinjen.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  </info>
+
+<title>Værktøjslinje</title>
+
+<section id="view">
+<title>Vis eller skjul værktøjslinjen</title>
+  <p>Klik på <guiseq><gui>Vis</gui><gui>Værktøjslinje</gui></guiseq>.</p>
+<p>Standardværktøjslinjen indeholder kun en helt grundlæggende samling af værktøjer:</p>
+<media type="image" src="figures/evince-toolbar-default.png" width="475"/>
+<list>
+<item><p><gui>Forrige</gui> og <gui>Næste</gui> for at <link xref="movingaround#between-pages">gå</link> fra side til side.</p></item>
+<item><p>Et redskab til justering af <link xref="movingaround#zoom">zoom-niveauet</link>.</p></item>
+<item><p>Redskabet <link xref="movingaround#between-pages">\"vælg side\".</link></p></item>
+</list>
+<p>Man kan <link xref="toolbar#modify">redigere</link> værktøjslinjen, hvis man hellere vil have andre muligheder end de grundlæggende.</p>
+</section>
+
+<section id="modify">
+<title>Tilføj, fjern og flyt om på værktøjslinjens redskaber.</title>
+<steps>
+<item><p><link xref="toolbar#view">Vis</link> værktøjslinjen.</p></item>
+<item><p>Klik på <guiseq><gui>Redigér</gui><gui>Værktøjslinje</gui></guiseq>.</p></item>
+</steps>
+<p><gui>Redigér værktøjslinje</gui> indeholder de elementer, som aktuelt ikke findes på værktøjslinjen, samt et skilletegn.</p>
+<media type="image" src="figures/evince-toolbar-editor.png" width="475"/>
+
+<terms>
+  <item><title>For at tilføje nye elementer til værktøjslinjen:</title>
+        <p>træk dem fra værktøjslinje-redigeringen til værktøjslinjen.</p></item>
+
+  <item><title>For at fjerne elementer fra værktøjslinjen:</title>
+        <p>træk dem fra værktøjslinjen til værktøjslinje-redigeringen.</p></item>
+
+   <item><title>For at flytte om på elementer på værktøjslinjen:</title>
+         <p>træk dem til deres nye placering på værktøjslinjen.</p></item>
+</terms>
+<p>Klik på <gui>Luk</gui> i værktøjslinje-redigeringen, når du er færdig med at redigere værktøjslinjen.</p>
+</section>
+</page>

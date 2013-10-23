@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="introduction" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.4" date="2012-01-18" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>Einführung in den <app>Archivmanager</app> von GNOME.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jpetersen@jpetersen.org</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008, 2009, 2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@googlemail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Einführung</title>
+
+  <p>Der <app>Archivmanager</app> ist eine Anwendung für die Verwaltung von Archiven, zum Beispiel <file>.zip</file>- oder <file>.tar</file>-Dateien und ist für eine einfache Bedienung ausgelegt. Ihnen stehen sämtliche zum Erstellen, Ändern oder Entpacken von Archiven notwendigen Werkzeuge zur Verfügung.</p>
+
+  <note style="advanced">
+    <p>Ein Archiv besteht aus einer oder mehreren Dateien sowie Metadaten. Es kann teilweise oder als Ganzes verschlüsselt werden. Durch Zusammenfassen von mehreren Dateien in einer einzigen Datei können solche Archivdateien die Datenspeicherung und -übertragung zwischen Rechnern vereinfachen.</p>
+  </note>
+
+  <p>Mit dem <app>Archivmanager</app> können Sie:</p>
+  <list>
+    <item><p>Ein neues Archiv erstellen</p></item>
+    <item><p>Den Inhalt eines vorhandenen Archivs anzeigen</p></item>
+    <item><p>Eine Datei aus einem Archiv anzeigen</p></item>
+    <item><p>Vorhandene Archive verändern</p></item>
+    <item><p>Dateien aus einem Archiv entpacken</p></item>
+  </list>
+
+  <figure>
+    <title>Ein Archiv mit dem <gui>Archivmanager</gui> betrachten</title>
+    <media type="image" mime="image/png" src="figures/file-roller-main-window.png">
+    <p>Bildschirmfoto des Hauptfensters des <app>Archivmanagers</app>.</p>
+    </media>
+  </figure>
+
+</page>

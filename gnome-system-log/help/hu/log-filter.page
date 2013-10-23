@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="log-filter" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#main"/>
+    <link type="seealso" xref="log-search"/>
+    <revision version="3.3" date="2011-10-30" status="review"/>
+    <desc>Sorok megjelenítése vagy elrejtése reguláris kifejezésekkel.</desc>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  </info>
+
+  <title>Napló szűrése</title>
+
+  <p>A naplómegjelenítő képes reguláris kifejezések használatával szűrni a naplókat. Új szűrő beállításához vagy kezeléséhez:</p>
+
+  <steps>
+    <item>
+      <p>Nyissa meg a szűrőkezelő párbeszédablakot a <guiseq><gui>Szűrők:</gui><gui>Szűrők kezelése</gui></guiseq> menüpont kiválasztásával.</p>
+    </item>
+    <item>
+      <p>Új szűrő hozzáadásához nyomja meg a <gui>Hozzáadás</gui> gombot, vagy válasszon ki egy létező szűrőt, és nyomja meg a <gui>Tulajdonságok</gui> gombot a szerkesztéséhez.</p>
+    </item>
+    <item>
+      <p>Töltse ki, vagy szerkessze a megváltoztatni kívánt mezőket:</p>
+      <terms>
+        <item>
+          <title>Név:</title>
+          <p>A szűrő azonosítója</p>
+        </item>
+        <item>
+          <title>Reguláris kifejezés:</title>
+          <p>Mit fog a szűrő szűrni</p>
+        </item>
+        <item>
+          <title>Kiemelés:</title>
+          <p>Ez az opció kiemeli a reguláris kifejezést tartalmazó sort</p>
+          <terms>
+            <item>
+              <title>Háttér:</title>
+              <p>Ez a betű színe</p>
+              <note style="tip">
+                <p>Az alapértelmezett betűszín fekete, amely nem emeli ki a szöveget.</p>
+              </note>
+            </item>
+            <item>
+              <title>Előtér:</title>
+              <p>Ez a kiemelő szín</p>
+              <note style="tip">
+                <p>Az alapértelmezett kiemelőszín fekete, amely homogén fekete sorokat eredményezne, ezért ajánlott megváltoztatni.</p>
+              </note>
+            </item>
+          </terms>
+        </item>
+        <item>
+          <title>Elrejtés:</title>
+          <p>Ez a lehetőség elrejti a reguláris kifejezéseket tartalmazó sorokat a megjelenített naplóból</p>
+        </item>
+      </terms>
+    </item>
+    <item>
+      <p>Nyomja meg az <gui>Alkalmaz</gui> gombot az új szűrő vagy a létező szűrő beállításainak mentéséhez</p>
+    </item>
+    <item>
+      <p>A szűrőkezelő párbeszédablakban nyomja meg a <gui>Bezárás</gui> gombot a változtatások alkalmazásához.</p>
+    </item>
+  </steps>
+
+  <p>Válassza ki az engedélyezni kívánt szűrőket a <gui>Szűrők</gui> menüpontban. Ha csak azokat az engedélyezett szűrőket szeretné látni, amelyeknél ki van választva a <gui>Kiemelés</gui>, akkor jelölje be a <guiseq><gui>Szűrők</gui><gui>Csak a találatok megjelenítése</gui></guiseq> menüpontot.</p>
+
+  <note style="tip">
+    <p>Ha ütközés van egy elrejtési és egy kiemelési szűrő közt, akkor a sor egy üres fehér sorként jelenhet meg.</p>
+  </note>
+
+  <note style="bug">
+    <p>Ha törli egy szűrő kijelölését, miközben csak a találatokat nézi, a napló minden formázás nélkül fogja megjeleníteni a sorokat, tekintet nélkül arra, hogy előtte el voltak-e rejtve vagy ki voltak-e emelve. A szűrő újra működni fog, ha bejelöli a kiemelt szűrőt.</p>
+  </note>
+
+</page>

@@ -1,0 +1,43 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="guide"
+      id="introduction">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision version="3.3" date="2011-10-30" status="review"/>
+    <desc>Introduction to the <app>GNOME System Log</app>.</desc>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Introduction</title>
+
+  <p><app>Log File Viewer</app> is a graphical, menu-driven viewer that you can
+  use to view and monitor your system logs. <app>Log File Viewer</app> comes
+  with a few functions that can help you manage your logs, including a log
+  monitor and log statistics display.</p>
+
+  <p><app>Log File Viewer</app> is useful if you are new to system
+  administration because it provides an easier, more user-friendly display of
+  your logs than a text display of the log file. It is also useful for more
+  experienced administrators, as it contains a monitor to enable you to
+  continuously monitor crucial logs.</p>
+
+  <note style="tip">
+    <p><app>Log File Viewer</app> is useful only to those who have access to the
+    system log files, which generally requires root access.</p>
+  </note>
+
+  <figure>
+    <title> </title>
+    <media type="image" mime="image/png" src="figures/log-viewer-main.png"/>
+  </figure>
+
+</page>

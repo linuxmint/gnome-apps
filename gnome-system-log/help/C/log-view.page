@@ -1,0 +1,37 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="guide"
+      id="log-view">
+
+  <info>
+    <link type="guide" xref="index#main"/>
+    <link type="seealso" xref="log-search"/>
+    <revision version="3.3" date="2011-10-30" status="review"/>
+    <desc>Open and view logs.</desc>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  </info>
+
+  <title>Open log</title>
+
+  <p>Open logs by clicking <guiseq><gui>File</gui><gui>Open</gui></guiseq>. Your
+  opened logs will be displayed in the side pane, to the left of the main area.
+  You can view a log in the side pane by clicking it.</p>
+
+  <note style="tip">
+    <p>You can expand some logs. This will show you a list of dates. By clicking
+    one of the dates, you can view only the log lines from that date, instead of
+    the whole log.</p>
+  </note>
+
+  <p>The logs you have open when you quit the log viewer will be opened when you
+  start it up again.</p>
+
+</page>

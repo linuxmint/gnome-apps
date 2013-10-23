@@ -1,0 +1,459 @@
+# Galician translation for gnome-system-log.
+# Copyright (C) 2011 gnome-system-log's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-system-log package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Fran Dieguez <frandieguez@gnome.org>, 2011, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-system-log master\n"
+"POT-Creation-Date: 2011-11-04 14:38+0000\n"
+"PO-Revision-Date: 2012-01-17 00:15+0100\n"
+"Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
+"Language-Team: Galician <gnome-l10n-gl@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: C/pref-font-size.page:8(desc)
+msgid "Increase or decrease the size of the text."
+msgstr "Aumentar ou disminuír o tamaño do texto."
+
+#: C/pref-font-size.page:11(name) C/log-view.page:12(name)
+#: C/log-search.page:11(name) C/log-filter.page:12(name)
+#: C/log-copy.page:11(name) C/log-close.page:12(name)
+#: C/introduction.page:11(name)
+msgid "Ekaterina Gerasimova"
+msgstr "Ekaterina Gerasimova"
+
+#: C/pref-font-size.page:12(email) C/log-view.page:13(email)
+#: C/log-search.page:12(email) C/log-filter.page:13(email)
+#: C/log-copy.page:12(email) C/log-close.page:13(email)
+#: C/introduction.page:12(email)
+msgid "kittykat3756@googlemail.com"
+msgstr "kittykat3756@googlemail.com"
+
+#: C/pref-font-size.page:16(p) C/log-view.page:17(p) C/log-search.page:16(p)
+#: C/log-filter.page:17(p) C/log-copy.page:16(p) C/log-close.page:17(p)
+#: C/introduction.page:16(p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Compartir Igual 3.0"
+
+#: C/pref-font-size.page:21(title)
+msgid "Change font size"
+msgstr "Cambiar o tamaño do tipo de letra"
+
+#: C/pref-font-size.page:23(p)
+msgid ""
+"You can increase, decrease and reset the font size that the log is displayed "
+"in:"
+msgstr ""
+"Pode aumentar, disminuír e reiniciar o tamaño do tipo de letra que se mostra "
+"os rexistros:"
+
+#: C/pref-font-size.page:28(title)
+msgid "Increase font size"
+msgstr "Aumentar o tamaño do tipo de letra"
+
+#: C/pref-font-size.page:29(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Zoom In</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>+</key></keyseq>"
+msgstr ""
+"Prema <guiseq><gui>Ver</gui><gui>Ampliar</gui></guiseq>, ou prema "
+"<keyseq><key>Ctrl</key><key>+</key></keyseq>"
+
+#: C/pref-font-size.page:33(title)
+msgid "Decrease font size"
+msgstr "Reducir o tamaño do tipo de letra"
+
+#: C/pref-font-size.page:34(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Zoom Out</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>-</key></keyseq>"
+msgstr ""
+"Prema <guiseq><gui>Ver</gui><gui>Reducir</gui></guiseq>, ou prema "
+"<keyseq><key>Ctrl</key><key>-</key></keyseq>"
+
+#: C/pref-font-size.page:38(title)
+msgid "Reset to default size"
+msgstr "Restabelecer o tamaño predeterminado"
+
+#: C/pref-font-size.page:39(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Normal Size</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>0</key></keyseq>"
+msgstr ""
+"Prema <guiseq><gui>Ver</gui><gui>Tamaño normal</gui></guiseq>, ou prema "
+"<keyseq><key>Ctrl</key><key>0</key></keyseq>"
+
+#: C/log-view.page:9(desc)
+msgid "Open and view logs."
+msgstr "Abrir e ver rexistros "
+
+#: C/log-view.page:22(title)
+msgid "Open log"
+msgstr "Abrir rexistro"
+
+#: C/log-view.page:24(p)
+msgid ""
+"Open logs by clicking <guiseq><gui>File</gui><gui>Open</gui></guiseq>. Your "
+"opened logs will be displayed in the side pane, to the left of the main "
+"area. You can view a log in the side pane by clicking it."
+msgstr ""
+"Abra os rexistros premendo en <guiseq><gui>Ficheiro</gui><gui>Abrir</gui></"
+"guiseq>. Os rexistros abertos mostraranse no panel lateral, á esquerda da "
+"área principal. Pode ver un rexistro do panel lateral premendo sobre el."
+
+#: C/log-view.page:29(p)
+msgid ""
+"You can expand some logs. This will show you a list of dates. By clicking "
+"one of the dates, you can view only the log lines from that date, instead of "
+"the whole log."
+msgstr ""
+"Pode expandir algúns rexistros. Isto mostraralle unha lista de datas. "
+"Premendo nunha das datas, pode ver as liñas de rexistro para esa data, no "
+"lugar do rexistro completo."
+
+#: C/log-view.page:34(p)
+msgid ""
+"The logs you have open when you quit the log viewer will be opened when you "
+"start it up again."
+msgstr ""
+"Os rexistros que teña abertos cando sala do visor de sucesos abrirase cando "
+"o abra de novo."
+
+#: C/log-search.page:8(desc)
+msgid "Search the text in the log that you are currently viewing."
+msgstr "Buscar o texto no rexistro que está vendo actualmente."
+
+#: C/log-search.page:21(title)
+msgid "Search log"
+msgstr "Buscar no rexistro"
+
+#: C/log-search.page:23(p)
+#| msgid "Search the log that you are currently viewing by:"
+msgid "To search the log you are currently viewing:"
+msgstr "Para buscar no rexistro que está vendo actualmente:"
+
+#: C/log-search.page:27(p)
+#| msgid ""
+#| "Show the find bar by pressing <keyseq><key>Ctrl</key><key>F</key></"
+#| "keyseq>, or by clicking <guiseq><gui>View</gui><gui>Find</gui></guiseq>. "
+#| "The bar will be shown below the log."
+msgid ""
+"Show the <gui>Find</gui> bar by pressing <keyseq><key>Ctrl</key><key>F</"
+"key></keyseq>, or by clicking <guiseq><gui>View</gui><gui>Find</gui></"
+"guiseq>. The bar will be shown below the log."
+msgstr ""
+"Mostre a barra de <gui>Busca</gui> premendo <keyseq><key>Ctrl</key><key>F</"
+"key></keyseq>, ou premendo en <guiseq><gui>Ver</gui><gui>Buscar</gui></"
+"guiseq>. A barra mostrarase embaixo do rexistro."
+
+#: C/log-search.page:33(p)
+msgid ""
+"Enter your search term into the field and press <key>Enter</key> to see the "
+"first result."
+msgstr ""
+"Escriba o termo que buscar no campo e prema <key>Intro</key> para ver o "
+"primeiro resultado."
+
+#: C/log-search.page:36(p)
+msgid "The search is case sensitive."
+msgstr "A busca é sensíbel a maiúsculas"
+
+#: C/log-search.page:40(p)
+msgid ""
+"Use the <gui>Find Previous</gui> and <gui>Find Next</gui> buttons to browse "
+"through the results."
+msgstr ""
+"Use os botóns <gui>Buscar anterior</gui> e <gui>Buscar seguinte</gui> para "
+"moverse entre os resultados da busca."
+
+#: C/log-search.page:43(p)
+msgid "If you can not see the result highlighted, try scrolling to the left."
+msgstr "Se non ve ningún resultado realzado, probe a moverse cara a esquerda."
+
+#: C/log-search.page:47(p)
+msgid ""
+"Press <key>Esc</key> to hide the find bar once you are finished with the "
+"search."
+msgstr ""
+"Prema <key>Esc</key> para ocultar a barra de busca cando teña rematado."
+
+#: C/log-search.page:50(p)
+msgid ""
+"You can only hide the <gui>find bar</gui> if you are currently focused on "
+"the search field. The bar will hide itself if you view another log."
+msgstr ""
+"Só pode ocultar a <gui>barra de busca</gui> se o foco está actualmente no "
+"campo de busca. A barra ocúltase automaticamente se abre outro rexistro."
+
+#: C/log-filter.page:9(desc)
+msgid "Include or exclude shown lines using regular expressions."
+msgstr "Incluír ou excluír as liñas mostradas usando expresións regulares."
+
+#: C/log-filter.page:22(title)
+msgid "Filter log"
+msgstr "Filtrar rexistro"
+
+#: C/log-filter.page:24(p)
+#| msgid ""
+#| "The log viewer allows you to filter log content based on regular "
+#| "expressions. Set up or manage a new filter by:"
+msgid ""
+"The log viewer allows you to filter log content based on regular "
+"expressions. To set up or manage a new filter:"
+msgstr ""
+"O visor de rexistro permítelle filtrar o contido do rexistro usando "
+"expresións regulares. Para configurar ou xestionar un filtro novo:"
+
+#: C/log-filter.page:29(p)
+msgid ""
+"Open the filter manager dialog by clicking <guiseq><gui>Filters:</"
+"gui><gui>Manage Filters</gui></guiseq>."
+msgstr ""
+"Abra o diálogo de xestión de filtros premendo en <guiseq><gui>Filtros:</"
+"gui><gui>Xestionar filtros</gui></guiseq>."
+
+#: C/log-filter.page:33(p)
+msgid ""
+"Click <gui>Add</gui> to add a new filter, or select an existing filter and "
+"click <gui>Properties</gui> to edit it."
+msgstr ""
+"Prema <gui>Engadir</gui> para engadir un filtro novo, ou seleccoine un "
+"filtro existente e prema <gui>Propiedaes</gui> para editalo."
+
+#: C/log-filter.page:37(p)
+msgid "Fill in the form or edit the fields that you wish to change:"
+msgstr "Complete o formulario ou edite os campos que queira cambiar:"
+
+#: C/log-filter.page:40(title)
+msgid "Name:"
+msgstr "Nome:"
+
+#: C/log-filter.page:41(p)
+msgid "The identifier for the filter"
+msgstr "O identificador do filtro"
+
+#: C/log-filter.page:44(title)
+msgid "Regular Expression:"
+msgstr "Expresión regular:"
+
+#: C/log-filter.page:45(p)
+msgid "What the filter will filter for"
+msgstr "Para que se usará o filtro"
+
+#: C/log-filter.page:48(title)
+msgid "Highlight:"
+msgstr "Realzado:"
+
+#: C/log-filter.page:49(p)
+msgid "This option emphasizes the line containing the regular expression"
+msgstr "Esta opción enfatiza a liña que contén a expresión regular"
+
+#: C/log-filter.page:52(title)
+msgid "Background:"
+msgstr "Fondo:"
+
+#: C/log-filter.page:53(p)
+msgid "This is the font color"
+msgstr "Esta é a cor do tipo de letra"
+
+#: C/log-filter.page:55(p)
+msgid "The default font color is black, which does not emphasize the text."
+msgstr ""
+"A cor predeterminada do tipo de letra é negra, que non enfatiza o texto."
+
+#: C/log-filter.page:60(title)
+msgid "Foreground:"
+msgstr "Primeiro plano:"
+
+#: C/log-filter.page:61(p)
+msgid "This is the highlight color"
+msgstr "Esta é a cor do realzado"
+
+#: C/log-filter.page:63(p)
+msgid ""
+"The default highlight color is black, which shows solid black lines as a "
+"result, so it would be wise to change it."
+msgstr ""
+"A cor de realzado predeterminada é o negro, que mostra liñas negras sólidas "
+"como resultado, por que é posíbel que queira cambialo."
+
+#: C/log-filter.page:70(title)
+msgid "Hide:"
+msgstr "Ocultar:"
+
+#: C/log-filter.page:71(p)
+msgid ""
+"This option hides the lines containing the regular expression from the shown "
+"log"
+msgstr ""
+"Esta opción oculta as liñas que conteñan a expresión regular no rexistro "
+"mostrado"
+
+#: C/log-filter.page:77(p)
+msgid ""
+"Click <gui>Apply</gui> to save the new filter or save changes to an existing "
+"one"
+msgstr ""
+"Prema <gui>Aplicar</gui> para gardar o filtro novo ou para gardar os cambios "
+"nun xa existente"
+
+#: C/log-filter.page:81(p)
+#| msgid ""
+#| "You are now back at the filter manager dialog, click <gui>Close</gui> "
+#| "button to apply the changes."
+msgid ""
+"Back at the filter manager dialog, click <gui>Close</gui> to apply the "
+"changes."
+msgstr ""
+"De volta no diálogo de xestión de filtros. Prema o botón <gui>Pechar</gui> "
+"para aplicar os cambios."
+
+#: C/log-filter.page:86(p)
+msgid ""
+"Check the box next to the name of the filter that you want to enable in "
+"<gui>Filters:</gui>. If you want to view only the filters which have "
+"<gui>Highlight</gui> enabled and are checked, check <guiseq><gui>Filters:</"
+"gui><gui>Show matches only</gui></guiseq>."
+msgstr ""
+"Marque a casilla xunto ao nome do filtro que quere activar en <gui>Filtros:</"
+"gui>. Se só quere ver os filtros que ten o <gui>Realzado</gui> activado e "
+"que están marcados, marque <guiseq><gui>Filtros:</gui><gui>Só mostra "
+"coincidencias</gui></guiseq>."
+
+#: C/log-filter.page:92(p)
+msgid ""
+"If there is a conflict between a hidden and a highlighted filter, the line "
+"many show as an empty white line."
+msgstr ""
+"Se hai un conflito entre un filtro oculto e un realzado, a liña pódese "
+"mostrar como unha liña en branco baleira."
+
+#: C/log-filter.page:97(p)
+msgid ""
+"If you uncheck a filter while viewing only matches, the log will show the "
+"lines without any formatting, regardless of whether they were hidden or "
+"highlighted before. The filter should reset when you check a highlighted "
+"filter."
+msgstr ""
+"Se desmarca un filtro mentres só está vendo coincidencias, o rexistro "
+"mostrará as liñas sen formatar, sen importar se antes estaban realzadas ou "
+"ocultas. O filtro débese reiniciar cando marque un filtro realzado."
+
+#: C/log-copy.page:8(desc)
+msgid "Copy text from the log."
+msgstr "Copiar texto do rexistro"
+
+#: C/log-copy.page:20(title)
+msgid "Copy log"
+msgstr "Copiar rexistro"
+
+#: C/log-copy.page:22(p)
+msgid ""
+"Highlight the section of the log that you want to copy with the cursor and "
+"press <keyseq><key>Ctrl</key><key>C</key></keyseq>, or click "
+"<guiseq><gui>Edit</gui><gui>Copy</gui></guiseq>."
+msgstr ""
+"Seleccione co cursor a sección que quere copiar e prema <keyseq><key>Ctrl</"
+"key><key>C</key></keyseq>, ou prema <guiseq><gui>Editar</gui><gui>Copiar</"
+"gui></guiseq>."
+
+#: C/log-copy.page:27(p)
+msgid ""
+"You can press <keyseq><key>Ctrl</key><key>A</key></keyseq>, or click "
+"<guiseq><gui>Edit</gui><gui>Select All</gui></guiseq>, to select all the "
+"text in the log which you are currently viewing."
+msgstr ""
+"Pode premer <keyseq><key>Ctrl</key><key>A</key></keyseq>, ou "
+"<guiseq><gui>Editar</gui><gui>Seleccionar todo</gui></guiseq>, para "
+"seleccionar todo o texto do rexistro que está vendo actualmente."
+
+#: C/log-close.page:9(desc)
+msgid "Remove the log you are currently viewing from the <gui>side pane</gui>."
+msgstr ""
+"Quitar o rexistro que está vendo actualmente do <gui>panel lateral</gui>."
+
+#: C/log-close.page:21(title)
+msgid "Close log"
+msgstr "Pechar rexistro"
+
+#: C/log-close.page:23(p)
+msgid ""
+"Close the log that you are currently viewing by pressing <keyseq><key>Ctrl</"
+"key><key>W</key></keyseq>, or by clicking <guiseq><gui>File</gui><gui>Close</"
+"gui></guiseq>. This removes it from the <gui>side pane</gui> until you open "
+"the log again."
+msgstr ""
+"Peche o rexistro que está vendo actualmente premendo <keyseq><key>Ctrl</"
+"key><key>W</key></keyseq>, ou prema <guiseq><gui>Ficheiro</gui><gui>Pechar</"
+"gui></guiseq>. ISto quítao do <gui>panel lateral</gui> ate que o abra outra "
+"vez."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/introduction.page:40(None)
+msgid ""
+"@@image: 'figures/log-viewer-main.png'; md5=019eaf56737c3fd7c1ae085e77962384"
+msgstr ""
+"@@image: 'figures/log-viewer-main.png'; md5=019eaf56737c3fd7c1ae085e77962384"
+
+#: C/introduction.page:8(desc)
+msgid "Introduction to the <app>GNOME System Log</app>."
+msgstr "Introdución ao <app>Rexistro de sucesos de GNOME</app>."
+
+#: C/introduction.page:20(title)
+msgid "Introduction"
+msgstr "Introdución"
+
+#: C/introduction.page:22(p)
+msgid ""
+"<app>Log File Viewer</app> is a graphical, menu-driven viewer that you can "
+"use to view and monitor your system logs. <app>Log File Viewer</app> comes "
+"with a few functions that can help you manage your logs, including a log "
+"monitor and log statistics display."
+msgstr ""
+"<app>Visor de ficheiros de sucesos</app> é un visor gráfico, con menús que "
+"pode usar para ver e monitorizar os ficheiros de rexistro do sistema. O "
+"<app>Visor de ficheiros de sucesos</app> ven cunhas poucas funcións que lle "
+"poden axudar a xestionar os seus rexistros, incluíndo un monitor de "
+"rexistros e un visor de estatísticas de rexistros."
+
+#: C/introduction.page:27(p)
+msgid ""
+"<app>Log File Viewer</app> is useful if you are new to system administration "
+"because it provides an easier, more user-friendly display of your logs than "
+"a text display of the log file. It is also useful for more experienced "
+"administrators, as it contains a monitor to enable you to continuously "
+"monitor crucial logs."
+msgstr ""
+"O <app>Visor de ficheiros de sucesos</app> é útil se é novo na "
+"administración de sistemas porque fornece unha maneira de ver os seus "
+"rexistros máis amigábel e doado que un simple visor de texto. Tamén é útil "
+"para os administradores con máis experiencia, xa que incorpora un monitor "
+"que lle permite vixilar continuamente os rexistros cruciais."
+
+#: C/introduction.page:34(p)
+msgid ""
+"<app>Log File Viewer</app> is useful only to those who have access to the "
+"system log files, which generally requires root access."
+msgstr ""
+"<app>Visor de ficheiros de sucesos</app> é útil para aqueles que teñan "
+"acceso aos rexistros do sistema, o que xeralmente require acceso como "
+"administrador."
+
+#: C/index.page:5(title)
+msgid "Log File Viewer Help"
+msgstr "Axuda do visor de ficheiros de sucesos"
+
+#: C/index.page:8(title)
+msgid "Working with the <app>Log File Viewer</app>"
+msgstr "Traballar co <app>Visor de ficheiros de sucesos</app>"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/index.page:0(None)
+msgid "translator-credits"
+msgstr "Fran Dieguez <frandieguez@gnome.org>, 2011."

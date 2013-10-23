@@ -1,0 +1,438 @@
+# Shavian translation for gnome-utils.
+# Copyright (C) 2009 The Gnome Foundation.
+# Thomas Thurman <tthurman@gnome.org>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2010-05-12 18:36 -0400\n"
+"Last-Translator: Thomas Thurman <tthurman@gnome.org>\n"
+"Language-Team: Shavian <ubuntu-l10n-en-shaw@launchpad.net>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "𐑤𐑪𐑜 𐑓𐑲𐑤 𐑝𐑿𐑼"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "𐑝𐑿 𐑹 𐑥𐑪𐑯𐑦𐑑𐑼 𐑕𐑦𐑕𐑑𐑩𐑥 𐑤𐑪𐑜 𐑓𐑲𐑤𐑟"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "𐑣𐑲𐑑 𐑝 𐑞 𐑥𐑱𐑯 𐑢𐑦𐑯𐑛𐑴 𐑦𐑯 𐑐𐑦𐑒𐑕𐑩𐑤𐑟"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "𐑤𐑪𐑜 𐑓𐑲𐑤 𐑑 𐑴𐑐𐑩𐑯 𐑳𐑐 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "𐑤𐑪𐑜 𐑓𐑲𐑤𐑟 𐑑 𐑴𐑐𐑩𐑯 𐑳𐑐 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "𐑕𐑲𐑟 𐑝 𐑞 𐑓𐑪𐑯𐑑 𐑿𐑕𐑑 𐑑 𐑛𐑦𐑕𐑐𐑤𐑱 𐑞 𐑤𐑪𐑜"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+#, fuzzy
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑟 𐑩 𐑤𐑦𐑕𐑑 𐑝 𐑤𐑪𐑜 𐑓𐑲𐑤𐑟 𐑑 𐑴𐑐𐑩𐑯 𐑳𐑐 𐑨𐑑 𐑕𐑑𐑸𐑑𐑳𐑐. 𐑩 𐑛𐑦𐑓𐑷𐑤𐑑 𐑤𐑦𐑕𐑑 𐑦𐑟 𐑒𐑮𐑦𐑱𐑑𐑩𐑛 𐑚𐑲 "
+"𐑮𐑰𐑛𐑦𐑙 /𐑧𐑑𐑕/syslog.conf."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑟 𐑞 𐑣𐑲𐑑 𐑝 𐑞 𐑤𐑪𐑜 𐑝𐑿𐑼 𐑥𐑱𐑯 𐑢𐑦𐑯𐑛𐑴 𐑦𐑯 𐑐𐑦𐑒𐑕𐑩𐑤𐑟."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+#, fuzzy
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑟 𐑞 𐑤𐑪𐑜 𐑓𐑲𐑤 𐑛𐑩𐑕𐑐𐑤𐑱𐑛 𐑨𐑑 𐑕𐑑𐑸𐑑𐑳𐑐. 𐑞 𐑛𐑦𐑓𐑷𐑤𐑑 𐑦𐑟 𐑲𐑞𐑼 /var/adm/𐑥𐑧𐑕𐑦𐑡𐑩𐑟 𐑹 /"
+"var/𐑤𐑪𐑜/𐑥𐑧𐑕𐑦𐑡𐑩𐑟, 𐑛𐑦𐑐𐑧𐑯𐑛𐑦𐑙 𐑪𐑯 𐑿𐑼 𐑪𐑐𐑼𐑱𐑑𐑦𐑙 𐑕𐑦𐑕𐑑𐑩𐑥."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑟 𐑞 𐑕𐑲𐑟 𐑝 𐑞 𐑓𐑦𐑒𐑕𐑑-𐑢𐑦𐑛𐑔 𐑓𐑪𐑯𐑑 𐑿𐑕𐑑 𐑑 𐑛𐑦𐑕𐑐𐑤𐑱 𐑞 𐑤𐑪𐑜 𐑦𐑯 𐑞 𐑥𐑱𐑯 𐑑𐑮𐑰 𐑝𐑿. 𐑞 "
+"𐑛𐑦𐑓𐑷𐑤𐑑 𐑦𐑟 𐑑𐑱𐑒𐑩𐑯 𐑓𐑮𐑪𐑥 𐑞 𐑛𐑦𐑓𐑷𐑤𐑑 𐑑𐑻𐑥𐑦𐑯𐑩𐑤 𐑓𐑪𐑯𐑑 𐑕𐑲𐑟."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑟 𐑞 𐑢𐑦𐑛𐑔 𐑝 𐑞 𐑤𐑪𐑜 𐑝𐑿𐑼 𐑥𐑱𐑯 𐑢𐑦𐑯𐑛𐑴 𐑦𐑯 𐑐𐑦𐑒𐑕𐑩𐑤𐑟."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "𐑢𐑦𐑛𐑔 𐑝 𐑞 𐑥𐑱𐑯 𐑢𐑦𐑯𐑛𐑴 𐑦𐑯 𐑐𐑦𐑒𐑕𐑩𐑤𐑟"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "𐑦𐑓𐑧𐑒𐑑:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "𐑓𐑹𐑜𐑮𐑬𐑯𐑛:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "𐑣𐑲𐑛"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "𐑣𐑲𐑤𐑲𐑑"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "_𐑯𐑱𐑥:"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "_𐑮𐑧𐑜𐑘𐑫𐑤𐑼 𐑦𐑒𐑕𐑐𐑮𐑧𐑖𐑩𐑯:"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"𐑞𐑦𐑕 𐑐𐑮𐑴𐑜𐑮𐑨𐑥 𐑦𐑟 𐑓𐑮𐑰 𐑕𐑪𐑓𐑑𐑢𐑺; 𐑿 𐑒𐑨𐑯 𐑮𐑰𐑛𐑦𐑕𐑑𐑮𐑦𐑚𐑿𐑑 𐑦𐑑 𐑯/𐑹 𐑥𐑪𐑛𐑦𐑓𐑲 𐑦𐑑 𐑳𐑯𐑛𐑼 𐑞 𐑑𐑻𐑥𐑟 𐑝 "
+"𐑞 ·𐑜𐑯𐑿 𐑡𐑧𐑯𐑼𐑩𐑤 𐑐𐑳𐑚𐑤𐑦𐑒 𐑤𐑲𐑕𐑩𐑯𐑕 𐑨𐑟 𐑐𐑳𐑚𐑤𐑦𐑖𐑑 𐑚𐑲 𐑞 𐑓𐑮𐑰 𐑕𐑪𐑓𐑑𐑢𐑺 𐑓𐑬𐑯𐑛𐑱𐑖𐑩𐑯; 𐑲𐑞𐑼 𐑝𐑻𐑠𐑩𐑯 2 "
+"𐑝 𐑞 𐑤𐑲𐑕𐑩𐑯𐑕, 𐑹 (𐑨𐑑 𐑿𐑼 𐑪𐑐𐑖𐑩𐑯) 𐑧𐑯𐑦 𐑤𐑱𐑑𐑼 𐑝𐑻𐑠𐑩𐑯."
+
+#: ../src/logview-about.h:53
+#, fuzzy
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"𐑞𐑦𐑕 𐑐𐑮𐑴𐑜𐑮𐑨𐑥 𐑦𐑟 𐑛𐑦𐑕𐑑𐑮𐑦𐑚𐑿𐑑𐑩𐑛 𐑦𐑯 𐑞 𐑣𐑴𐑐 𐑞𐑨𐑑 𐑦𐑑 𐑢𐑦𐑤 𐑚𐑰 𐑿𐑕𐑓𐑩𐑤, 𐑚𐑳𐑑 𐑢𐑦𐑞𐑬𐑑 𐑧𐑯𐑦 "
+"𐑢𐑪𐑮𐑩𐑯𐑑𐑰; 𐑢𐑦𐑞𐑬𐑑 𐑰𐑝𐑩𐑯 𐑞 𐑦𐑥𐑐𐑤𐑲𐑛 𐑢𐑪𐑮𐑩𐑯𐑑𐑰 𐑝 MERCHANTABILITY 𐑹 𐑓𐑦𐑑𐑯𐑩𐑕 𐑓𐑹 𐑩 "
+"𐑐𐑼𐑑𐑦𐑒𐑿𐑤𐑼 𐑐𐑻𐑐𐑩𐑕.  𐑕𐑰 𐑞 ·𐑜𐑯𐑿 𐑡𐑧𐑯𐑼𐑩𐑤 𐑐𐑳𐑚𐑤𐑦𐑒 𐑤𐑲𐑕𐑩𐑯𐑕 𐑓𐑹 𐑥𐑹 𐑛𐑰𐑑𐑱𐑤𐑟."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"𐑿 𐑖𐑫𐑛 𐑣𐑨𐑝 𐑮𐑦𐑕𐑰𐑝𐑛 𐑩 𐑒𐑪𐑐𐑦 𐑝 𐑞 ·𐑜𐑯𐑿 𐑡𐑧𐑯𐑼𐑩𐑤 𐑐𐑳𐑚𐑤𐑦𐑒 𐑤𐑲𐑕𐑩𐑯𐑕 𐑩𐑤𐑪𐑙 𐑢𐑦𐑞 𐑞𐑦𐑕 𐑐𐑮𐑴𐑜𐑮𐑨𐑥; "
+"𐑦𐑓 𐑯𐑪𐑑, 𐑮𐑲𐑑 𐑑 𐑞 𐑓𐑮𐑰 𐑕𐑪𐑓𐑑𐑢𐑺 𐑓𐑬𐑯𐑛𐑱𐑖𐑩𐑯, 𐑦𐑙𐑒., 51 ·𐑓𐑮𐑨𐑙𐑒𐑤𐑦𐑯 𐑕𐑑𐑮𐑰𐑑, 𐑓𐑦𐑓𐑔 𐑓𐑤𐑹, "
+"·𐑚𐑪𐑕𐑑𐑩𐑯, 𐑥𐑶  02110-1301, 𐑘𐑵𐑧𐑕𐑱"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr "·𐑑𐑪𐑥𐑩𐑕 ·𐑔𐑻𐑥𐑩𐑯"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "𐑦𐑥𐑐𐑪𐑕𐑩𐑚𐑩𐑤 𐑑 𐑴𐑐𐑩𐑯 𐑞 𐑓𐑲𐑤 %s"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "𐑓𐑦𐑤𐑑𐑼 𐑯𐑱𐑥 𐑦𐑟 𐑧𐑥𐑐𐑑𐑦!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "𐑓𐑦𐑤𐑑𐑼 𐑯𐑱𐑥 𐑥𐑱 𐑯𐑪𐑑 𐑒𐑩𐑯𐑑𐑱𐑯 𐑞 ':' 𐑒𐑸𐑩𐑒𐑑𐑼"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "𐑮𐑧𐑜𐑘𐑫𐑤𐑼 𐑦𐑒𐑕𐑐𐑮𐑧𐑖𐑩𐑯 𐑦𐑟 𐑧𐑥𐑐𐑑𐑦!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "𐑮𐑧𐑜𐑘𐑫𐑤𐑼 𐑦𐑒𐑕𐑐𐑮𐑧𐑖𐑩𐑯 𐑦𐑟 𐑦𐑯𐑝𐑨𐑤𐑦𐑛: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "𐑐𐑤𐑰𐑟 𐑕𐑐𐑧𐑕𐑦𐑓𐑲 𐑲𐑞𐑼 𐑓𐑹𐑜𐑮𐑬𐑯𐑛 𐑹 𐑚𐑨𐑒𐑜𐑮𐑬𐑯𐑛 𐑒𐑳𐑤𐑼!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "𐑧𐑛𐑦𐑑 𐑓𐑦𐑤𐑑𐑼"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "𐑨𐑛 𐑯𐑿 𐑓𐑦𐑤𐑑𐑼"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "𐑓𐑦𐑤𐑑𐑼𐑟"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_𐑓𐑲𐑯𐑛:"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "𐑓𐑲𐑯𐑛 𐑐𐑮𐑰𐑝𐑦𐑩𐑕"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "𐑓𐑲𐑯𐑛 𐑐𐑮𐑰𐑝𐑦𐑩𐑕 𐑪𐑒𐑻𐑩𐑯𐑕 𐑝 𐑞 𐑕𐑻𐑗 𐑕𐑑𐑮𐑦𐑙"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "𐑓𐑲𐑯𐑛 𐑯𐑧𐑒𐑕𐑑"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "𐑓𐑲𐑯𐑛 𐑯𐑧𐑒𐑕𐑑 𐑪𐑒𐑻𐑩𐑯𐑕 𐑝 𐑞 𐑕𐑻𐑗 𐑕𐑑𐑮𐑦𐑙"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "𐑒𐑤𐑽 𐑞 𐑕𐑻𐑗 𐑕𐑑𐑮𐑦𐑙"
+
+#: ../src/logview-log.c:595
+#, fuzzy
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "𐑻𐑼 𐑢𐑲𐑤 uncompressing 𐑞 GZipped 𐑤𐑪𐑜. 𐑞 𐑓𐑲𐑤 𐑥𐑲𐑑 𐑚𐑰 𐑒𐑼𐑳𐑐𐑑."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "𐑿 𐑛𐑴𐑯𐑑 𐑣𐑨𐑝 𐑦𐑯𐑳𐑓 𐑐𐑻𐑥𐑦𐑖𐑪𐑯𐑟 𐑑 𐑮𐑰𐑛 𐑞 𐑓𐑲𐑤."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "𐑞 𐑓𐑲𐑤 𐑦𐑟 𐑯𐑪𐑑 𐑩 𐑮𐑧𐑜𐑘𐑫𐑤𐑼 𐑓𐑲𐑤 𐑹 𐑦𐑟 𐑯𐑪𐑑 𐑩 𐑑𐑧𐑒𐑕𐑑 𐑓𐑲𐑤."
+
+#: ../src/logview-log.c:739
+#, fuzzy
+msgid "This version of System Log does not support GZipped logs."
+msgstr "𐑞𐑦𐑕 𐑝𐑻𐑠𐑩𐑯 𐑝 𐑕𐑦𐑕𐑑𐑩𐑥 𐑤𐑪𐑜 𐑛𐑳𐑟 𐑯𐑪𐑑 𐑕𐑩𐑐𐑹𐑑 GZipped 𐑤𐑪𐑜𐑟."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "𐑤𐑴𐑛𐑦𐑙..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "𐑖𐑴 𐑞 𐑩𐑐𐑤𐑦𐑒𐑱𐑕𐑩𐑯'𐑕 𐑝𐑻𐑠𐑩𐑯"
+
+#: ../src/logview-main.c:63
+#, fuzzy
+msgid "[LOGFILE...]"
+msgstr "[LOGFILE...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - 𐑚𐑮𐑬𐑟 𐑯 𐑥𐑪𐑯𐑦𐑑𐑼 𐑤𐑪𐑜𐑟"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "𐑤𐑪𐑜 𐑝𐑿𐑼"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "𐑕𐑦𐑕𐑑𐑩𐑥 𐑤𐑪𐑜 𐑝𐑿𐑼"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "𐑤𐑭𐑕𐑑 𐑳𐑐𐑛𐑱𐑑: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d 𐑤𐑲𐑯𐑟 (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "𐑴𐑐𐑩𐑯 𐑤𐑪𐑜"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "𐑞𐑺 𐑢𐑪𐑟 𐑩𐑯 𐑻𐑼 𐑛𐑦𐑕𐑐𐑤𐑱𐑦𐑙 𐑣𐑧𐑤𐑐: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "𐑮𐑨𐑐𐑑"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "𐑯𐑪𐑑 𐑓𐑬𐑯𐑛"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "𐑩 𐑕𐑦𐑕𐑑𐑩𐑥 𐑤𐑪𐑜 𐑝𐑿𐑼 𐑓𐑹 ·𐑜𐑯𐑴𐑥."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "_𐑓𐑲𐑤"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "_𐑧𐑛𐑦𐑑"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "_𐑝𐑿"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "_𐑓𐑦𐑤𐑑𐑼𐑟"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "_𐑣𐑧𐑤𐑐"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "_𐑴𐑐𐑩𐑯..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "𐑴𐑐𐑩𐑯 𐑩 𐑤𐑪𐑜 𐑓𐑮𐑪𐑥 𐑓𐑲𐑤"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "_𐑒𐑤𐑴𐑟"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "𐑒𐑤𐑴𐑟 𐑞𐑦𐑕 𐑤𐑪𐑜"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "_𐑒𐑢𐑦𐑑"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "𐑒𐑢𐑦𐑑 𐑞 𐑤𐑪𐑜 𐑝𐑿𐑼"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "_𐑒𐑪𐑐𐑦"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "𐑒𐑪𐑐𐑦 𐑞 𐑕𐑦𐑤𐑧𐑒𐑖𐑩𐑯"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "𐑕𐑩𐑤𐑧𐑒𐑑 _𐑷𐑤"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "𐑕𐑩𐑤𐑧𐑒𐑑 𐑞 𐑧𐑯𐑑𐑲𐑼 𐑤𐑪𐑜"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "_𐑓𐑲𐑯𐑛..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "𐑓𐑲𐑯𐑛 𐑩 𐑢𐑻𐑛 𐑹 𐑓𐑮𐑱𐑟 𐑦𐑯 𐑞 𐑤𐑪𐑜"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "𐑚𐑦𐑜𐑼 𐑑𐑧𐑒𐑕𐑑 𐑕𐑲𐑟"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "𐑕𐑥𐑷𐑤𐑼 𐑑𐑧𐑒𐑕𐑑 𐑕𐑲𐑟"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "𐑯𐑹𐑥𐑩𐑤 𐑑𐑧𐑒𐑕𐑑 𐑕𐑲𐑟"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "𐑥𐑨𐑯𐑦𐑡 𐑓𐑦𐑤𐑑𐑼𐑟"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "𐑥𐑨𐑯𐑦𐑡 𐑓𐑦𐑤𐑑𐑼𐑟"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "_𐑒𐑪𐑯𐑑𐑩𐑯𐑑𐑕"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "𐑴𐑐𐑩𐑯 𐑞 𐑣𐑧𐑤𐑐 𐑒𐑪𐑯𐑑𐑩𐑯𐑑𐑕 𐑓𐑹 𐑞 𐑤𐑪𐑜 𐑝𐑿𐑼"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "_𐑩𐑚𐑬𐑑"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "𐑖𐑴 𐑞 𐑩𐑚𐑬𐑑 𐑛𐑲𐑩𐑤𐑪𐑜 𐑓𐑹 𐑞 𐑤𐑪𐑜 𐑝𐑿𐑼"
+
+#: ../src/logview-window.c:851
+#, fuzzy
+msgid "_Statusbar"
+msgstr "_Statusbar"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "𐑖𐑴 𐑕𐑑𐑱𐑑𐑫𐑕 𐑚𐑸"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "𐑕𐑲𐑛 _𐑐𐑱𐑯"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "𐑖𐑴 𐑕𐑲𐑛 𐑐𐑱𐑯"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "𐑖𐑴 𐑥𐑨𐑗𐑩𐑟 𐑴𐑯𐑤𐑦"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "𐑴𐑯𐑤𐑦 𐑖𐑴 𐑤𐑲𐑯𐑟 𐑞𐑨𐑑 𐑥𐑨𐑗 𐑢𐑳𐑯 𐑝 𐑞 𐑜𐑦𐑝𐑩𐑯 𐑓𐑦𐑤𐑑𐑼𐑟"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr ""
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr ""
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "𐑒𐑭𐑯𐑑 𐑮𐑧𐑛 𐑓𐑮𐑪𐑥 \"%s\""
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "𐑝𐑻𐑠𐑩𐑯: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "𐑒𐑫𐑛 𐑯𐑪𐑑 𐑴𐑐𐑩𐑯 𐑞 𐑓𐑪𐑤𐑴𐑦𐑙 𐑓𐑲𐑤𐑟:"

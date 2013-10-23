@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="presentations" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#pres"/>
+    <desc>Kā atskaņot prezentācijas.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0 licence</p>
+    </license>
+
+  </info>
+
+<title>Prezentācijas</title>
+<section id="start-presentation">
+<title>Prezentācijas sākšana</title>
+<p>Lai sāktu prezentāciju:</p>
+<steps>
+ <item>
+  <p><link xref="opening">Open a file</link></p>
+ </item>
+ <item>
+  <p>Spied uz <guiseq><gui>Skats</gui><gui>Prezentācija</gui></guiseq> (vai spied <key>F5</key>).</p>
+  <p>Prezentācija tiks attēlota pa visu ekrānu.</p>
+ </item>
+</steps>
+</section>
+<section id="present">
+ <title>Pārvietošanās pa prezentāciju</title>
+ <p>Izmanto <key>atstarpes</key> <key>→</key>, <key>↓</key> vai kreiso peles klikšķi, lai pārietu uz nākamo kadru.</p>
+ <p>Izmanto <key>←</key>, <key>↑</key> vai labo peles klikšķi, lai pārlektu uz iepriekšējo kadru.</p>
+ <note style="tip">
+  <p>Kā arī tu vari izmantot peles riteni, lai prezentācijā pārvietotos uz priekšu un atpakaļ.</p>
+ </note>
+ <p>Izmanto <key>Esc</key>, lai izietu no prezentācijas.</p>
+</section>
+
+<section id="file-formats">
+<title>Atbalstītie prezentāciju failu formāti</title>
+<p>Sekojošos failu formātus var tikt izmantoti prezentācijām:</p>
+<list>
+ <item><p>Komiksu arhīvs (.cbr un .cbz)</p></item>
+ <item><p>Device Independent formātam (.dvi)</p></item>
+ <item><p>DjVu (.djvu, .djv)</p></item>
+ <item><p>OpenOffice prezentācija (.odp)</p></item>
+ <item><p>Portable Document Format (.pdf)</p></item>
+ <item><p>PostScript (.ps)</p></item>
+</list>
+</section>
+</page>

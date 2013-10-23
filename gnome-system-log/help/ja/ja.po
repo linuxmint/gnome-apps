@@ -1,0 +1,848 @@
+# Japanese translation for gnome-utils.
+# Copyright (C) 2010 gnome-utils's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-utils package.
+# Masatoshi KAMAGASAKO <emerald@gnome.gr.jp>, 2003.
+# Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010-2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils gnome-2-32\n"
+"POT-Creation-Date: 2011-11-13 00:37+0000\n"
+"PO-Revision-Date: 2012-01-01 23:38+0900\n"
+"Last-Translator: Jiro Matsuzawa <jmatsuzawa@src.gnome.org>\n"
+"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+
+#: C/pref-font-size.page:8(desc)
+msgid "Increase or decrease the size of the text."
+msgstr ""
+
+#: C/pref-font-size.page:11(name) C/log-view.page:12(name)
+#: C/log-search.page:11(name) C/log-filter.page:12(name)
+#: C/log-copy.page:11(name) C/log-close.page:12(name)
+#: C/introduction.page:11(name)
+msgid "Ekaterina Gerasimova"
+msgstr ""
+
+#: C/pref-font-size.page:12(email) C/log-view.page:13(email)
+#: C/log-search.page:12(email) C/log-filter.page:13(email)
+#: C/log-copy.page:12(email) C/log-close.page:13(email)
+#: C/introduction.page:12(email)
+msgid "kittykat3756@googlemail.com"
+msgstr ""
+
+#: C/pref-font-size.page:16(p) C/log-view.page:17(p) C/log-search.page:16(p)
+#: C/log-filter.page:17(p) C/log-copy.page:16(p) C/log-close.page:17(p)
+#: C/introduction.page:16(p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr ""
+
+#: C/pref-font-size.page:21(title)
+msgid "Change font size"
+msgstr ""
+
+#: C/pref-font-size.page:23(p)
+msgid ""
+"You can increase, decrease and reset the font size that the log is displayed "
+"in:"
+msgstr ""
+
+#: C/pref-font-size.page:28(title)
+msgid "Increase font size"
+msgstr ""
+
+#: C/pref-font-size.page:29(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Zoom In</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>+</key></keyseq>"
+msgstr ""
+
+#: C/pref-font-size.page:33(title)
+msgid "Decrease font size"
+msgstr ""
+
+#: C/pref-font-size.page:34(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Zoom Out</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>-</key></keyseq>"
+msgstr ""
+
+#: C/pref-font-size.page:38(title)
+msgid "Reset to default size"
+msgstr ""
+
+#: C/pref-font-size.page:39(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Normal Size</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>0</key></keyseq>"
+msgstr ""
+
+#: C/log-view.page:9(desc)
+msgid "Open and view logs."
+msgstr ""
+
+#: C/log-view.page:22(title)
+msgid "Open log"
+msgstr ""
+
+#: C/log-view.page:24(p)
+msgid ""
+"Open logs by clicking <guiseq><gui>File</gui><gui>Open</gui></guiseq>. Your "
+"opened logs will be displayed in the side pane, to the left of the main "
+"area. You can view a log in the side pane by clicking it."
+msgstr ""
+
+#: C/log-view.page:29(p)
+msgid ""
+"You can expand some logs. This will show you a list of dates. By clicking "
+"one of the dates, you can view only the log lines from that date, instead of "
+"the whole log."
+msgstr ""
+
+#: C/log-view.page:34(p)
+msgid ""
+"The logs you have open when you quit the log viewer will be opened when you "
+"start it up again."
+msgstr ""
+
+#: C/log-search.page:8(desc)
+msgid "Search the text in the log that you are currently viewing."
+msgstr ""
+
+#: C/log-search.page:21(title)
+msgid "Search log"
+msgstr ""
+
+#: C/log-search.page:23(p)
+msgid "To search the log you are currently viewing:"
+msgstr ""
+
+#: C/log-search.page:27(p)
+msgid ""
+"Show the <gui>Find</gui> bar by pressing <keyseq><key>Ctrl</key><key>F</"
+"key></keyseq>, or by clicking <guiseq><gui>View</gui><gui>Find</gui></"
+"guiseq>. The bar will be shown below the log."
+msgstr ""
+
+#: C/log-search.page:33(p)
+msgid ""
+"Enter your search term into the field and press <key>Enter</key> to see the "
+"first result."
+msgstr ""
+
+#: C/log-search.page:36(p)
+msgid "The search is case sensitive."
+msgstr ""
+
+#: C/log-search.page:40(p)
+msgid ""
+"Use the <gui>Find Previous</gui> and <gui>Find Next</gui> buttons to browse "
+"through the results."
+msgstr ""
+
+#: C/log-search.page:43(p)
+msgid "If you can not see the result highlighted, try scrolling to the left."
+msgstr ""
+
+#: C/log-search.page:47(p)
+msgid ""
+"Press <key>Esc</key> to hide the find bar once you are finished with the "
+"search."
+msgstr ""
+
+#: C/log-search.page:50(p)
+msgid ""
+"You can only hide the <gui>find bar</gui> if you are currently focused on "
+"the search field. The bar will hide itself if you view another log."
+msgstr ""
+
+#: C/log-filter.page:9(desc)
+msgid "Include or exclude shown lines using regular expressions."
+msgstr ""
+
+#: C/log-filter.page:22(title)
+msgid "Filter log"
+msgstr ""
+
+#: C/log-filter.page:24(p)
+msgid ""
+"The log viewer allows you to filter log content based on regular "
+"expressions. To set up or manage a new filter:"
+msgstr ""
+
+#: C/log-filter.page:29(p)
+msgid ""
+"Open the filter manager dialog by clicking <guiseq><gui>Filters:</"
+"gui><gui>Manage Filters</gui></guiseq>."
+msgstr ""
+
+#: C/log-filter.page:33(p)
+msgid ""
+"Click <gui>Add</gui> to add a new filter, or select an existing filter and "
+"click <gui>Properties</gui> to edit it."
+msgstr ""
+
+#: C/log-filter.page:37(p)
+msgid "Fill in the form or edit the fields that you wish to change:"
+msgstr ""
+
+#: C/log-filter.page:40(title)
+msgid "Name:"
+msgstr ""
+
+#: C/log-filter.page:41(p)
+msgid "The identifier for the filter"
+msgstr ""
+
+#: C/log-filter.page:44(title)
+msgid "Regular Expression:"
+msgstr ""
+
+#: C/log-filter.page:45(p)
+msgid "What the filter will filter for"
+msgstr ""
+
+#: C/log-filter.page:48(title)
+msgid "Highlight:"
+msgstr ""
+
+#: C/log-filter.page:49(p)
+msgid "This option emphasizes the line containing the regular expression"
+msgstr ""
+
+#: C/log-filter.page:52(title)
+msgid "Background:"
+msgstr ""
+
+#: C/log-filter.page:53(p)
+msgid "This is the font color"
+msgstr ""
+
+#: C/log-filter.page:55(p)
+msgid "The default font color is black, which does not emphasize the text."
+msgstr ""
+
+#: C/log-filter.page:60(title)
+msgid "Foreground:"
+msgstr ""
+
+#: C/log-filter.page:61(p)
+msgid "This is the highlight color"
+msgstr ""
+
+#: C/log-filter.page:63(p)
+msgid ""
+"The default highlight color is black, which shows solid black lines as a "
+"result, so it would be wise to change it."
+msgstr ""
+
+#: C/log-filter.page:70(title)
+msgid "Hide:"
+msgstr ""
+
+#: C/log-filter.page:71(p)
+msgid ""
+"This option hides the lines containing the regular expression from the shown "
+"log"
+msgstr ""
+
+#: C/log-filter.page:77(p)
+msgid ""
+"Click <gui>Apply</gui> to save the new filter or save changes to an existing "
+"one"
+msgstr ""
+
+#: C/log-filter.page:81(p)
+msgid ""
+"Back at the filter manager dialog, click <gui>Close</gui> to apply the "
+"changes."
+msgstr ""
+
+#: C/log-filter.page:86(p)
+msgid ""
+"Check the box next to the name of the filter that you want to enable in "
+"<gui>Filters:</gui>. If you want to view only the filters which have "
+"<gui>Highlight</gui> enabled and are checked, check <guiseq><gui>Filters:</"
+"gui><gui>Show matches only</gui></guiseq>."
+msgstr ""
+
+#: C/log-filter.page:92(p)
+msgid ""
+"If there is a conflict between a hidden and a highlighted filter, the line "
+"many show as an empty white line."
+msgstr ""
+
+#: C/log-filter.page:97(p)
+msgid ""
+"If you uncheck a filter while viewing only matches, the log will show the "
+"lines without any formatting, regardless of whether they were hidden or "
+"highlighted before. The filter should reset when you check a highlighted "
+"filter."
+msgstr ""
+
+#: C/log-copy.page:8(desc)
+msgid "Copy text from the log."
+msgstr ""
+
+#: C/log-copy.page:20(title)
+msgid "Copy log"
+msgstr ""
+
+#: C/log-copy.page:22(p)
+msgid ""
+"Highlight the section of the log that you want to copy with the cursor and "
+"press <keyseq><key>Ctrl</key><key>C</key></keyseq>, or click "
+"<guiseq><gui>Edit</gui><gui>Copy</gui></guiseq>."
+msgstr ""
+
+#: C/log-copy.page:27(p)
+msgid ""
+"You can press <keyseq><key>Ctrl</key><key>A</key></keyseq>, or click "
+"<guiseq><gui>Edit</gui><gui>Select All</gui></guiseq>, to select all the "
+"text in the log which you are currently viewing."
+msgstr ""
+
+#: C/log-close.page:9(desc)
+msgid "Remove the log you are currently viewing from the <gui>side pane</gui>."
+msgstr ""
+
+#: C/log-close.page:21(title)
+#, fuzzy
+#| msgid "To Close a Log"
+msgid "Close log"
+msgstr "ログを閉じるには"
+
+#: C/log-close.page:23(p)
+msgid ""
+"Close the log that you are currently viewing by pressing <keyseq><key>Ctrl</"
+"key><key>W</key></keyseq>, or by clicking <guiseq><gui>File</gui><gui>Close</"
+"gui></guiseq>. This removes it from the <gui>side pane</gui> until you open "
+"the log again."
+msgstr ""
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/introduction.page:40(None)
+#, fuzzy
+#| msgid ""
+#| "@@image: 'figures/syslog_window.png'; md5=7cb5e186fe792ed85e408ff33f21eced"
+msgid ""
+"@@image: 'figures/log-viewer-main.png'; md5=019eaf56737c3fd7c1ae085e77962384"
+msgstr ""
+"@@image: 'figures/syslog_window.png'; md5=69c49ecd6949f232e5e0ee74d7a610f1"
+
+#: C/introduction.page:8(desc)
+msgid "Introduction to the <app>GNOME System Log</app>."
+msgstr ""
+
+#: C/introduction.page:20(title)
+msgid "Introduction"
+msgstr "はじめに"
+
+#: C/introduction.page:22(p)
+#, fuzzy
+#| msgid ""
+#| "<application>System Log Viewer</application> is a graphical, menu-driven "
+#| "viewer that you can use to view and monitor your system logs. "
+#| "<application>System Log Viewer</application> comes with a few functions "
+#| "that can help you manage your logs, including a log monitor and log "
+#| "statistics display."
+msgid ""
+"<app>Log File Viewer</app> is a graphical, menu-driven viewer that you can "
+"use to view and monitor your system logs. <app>Log File Viewer</app> comes "
+"with a few functions that can help you manage your logs, including a log "
+"monitor and log statistics display."
+msgstr ""
+"<application>システムログビューアー</application>は、お使いのシステムのログを"
+"閲覧および監視できるグラフィカルでメニュー駆動のビューアーです。<application>"
+"システムログビューアー</application>には、ログモニターやログの統計情報の表示"
+"を含んだ、ログの管理を助けるいくつかの機能が付属しています。"
+
+#: C/introduction.page:27(p)
+#, fuzzy
+#| msgid ""
+#| "<application>System Log Viewer</application> is useful if you are new to "
+#| "system administration because it provides an easier, more user-friendly "
+#| "display of your logs than a text display of the log file. It is also "
+#| "useful for more experienced administrators, as it contains a monitor to "
+#| "enable you to continuously monitor crucial logs."
+msgid ""
+"<app>Log File Viewer</app> is useful if you are new to system administration "
+"because it provides an easier, more user-friendly display of your logs than "
+"a text display of the log file. It is also useful for more experienced "
+"administrators, as it contains a monitor to enable you to continuously "
+"monitor crucial logs."
+msgstr ""
+"<application>システムログビューアー</application>は、ログファイルのテキスト表"
+"示よりも簡単でユーザーフレンドリな表示を提供しているため、システム管理に慣れ"
+"ていない場合に役立ちます。継続的に重大なログを監視できるモニターを含んでいる"
+"ため、より経験を積んだ管理者にとっても有用です。"
+
+#: C/introduction.page:34(p)
+#, fuzzy
+#| msgid ""
+#| "<application>System Log Viewer</application> is useful only to those who "
+#| "have access to the system log files, which generally requires root access."
+msgid ""
+"<app>Log File Viewer</app> is useful only to those who have access to the "
+"system log files, which generally requires root access."
+msgstr ""
+"<application>システムログビューアー</application>は、システムのログファイルに"
+"アクセスできる人にのみ有用で、大抵はルート権限を必要とします。"
+
+#: C/index.page:5(title)
+msgid "Log File Viewer Help"
+msgstr ""
+
+#: C/index.page:8(title)
+msgid "Working with the <app>Log File Viewer</app>"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/index.page:0(None)
+msgid "translator-credits"
+msgstr "赤星 柔充 <yasumichi@vinelinux.org>, 2010-2011"
+
+#~ msgid "System Log Viewer Manual"
+#~ msgstr "システムログビューアマニュアル"
+
+#~ msgid ""
+#~ "System Log Viewer is a graphical user interface to view and monitor "
+#~ "system log files."
+#~ msgstr ""
+#~ "システムログビューアは、システムログファイルを閲覧および監視するためのグラ"
+#~ "フィカルユーザインターフェースです。"
+
+#~ msgid "2003"
+#~ msgstr "2003"
+
+#~ msgid "Sun Microsystems"
+#~ msgstr "サン・マイクロシステムズ"
+
+#~ msgid "2000"
+#~ msgstr "2000"
+
+#~ msgid "Judith Samson"
+#~ msgstr "Judith Samson"
+
+#~ msgid "GNOME Documentation Project"
+#~ msgstr "GNOME ドキュメンテーションプロジェクト"
+
+#~ msgid ""
+#~ "Permission is granted to copy, distribute and/or modify this document "
+#~ "under the terms of the GNU Free Documentation License (GFDL), Version 1.1 "
+#~ "or any later version published by the Free Software Foundation with no "
+#~ "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
+#~ "can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl"
+#~ "\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+#~ msgstr ""
+#~ "このドキュメントをフリーソフトウェア財団発行の GNU フリー文書利用許諾契約"
+#~ "書 (バージョン 1.1 かそれ以降から一つを選択) が定める条件の下で複製、頒"
+#~ "布、あるいは改変することを許可する。変更不可部分、表カバーテキスト、裏カ"
+#~ "バーテキストは存在しない。この利用許諾契約書の複製物は<ulink type=\"help"
+#~ "\" url=\"ghelp:fdl\">このリンク</ulink>、またはこの文書と共に配布されてい"
+#~ "る COPYING-DOCS というファイルに記載されている。"
+
+#~ msgid ""
+#~ "This manual is part of a collection of GNOME manuals distributed under "
+#~ "the GFDL. If you want to distribute this manual separately from the "
+#~ "collection, you can do so by adding a copy of the license to the manual, "
+#~ "as described in section 6 of the license."
+#~ msgstr ""
+#~ "本ドキュメントは GFDL の下で配布されているその他の GNOME マニュアル集の一"
+#~ "部である。これらのマニュアルとは別に本ドキュメントを別個に配布する場合は、"
+#~ "GFDL のセクション6で説明しているように、そのマニュアル集に対するライセンス"
+#~ "の複製を添付することで実現できる。"
+
+#~ msgid ""
+#~ "Many of the names used by companies to distinguish their products and "
+#~ "services are claimed as trademarks. Where those names appear in any GNOME "
+#~ "documentation, and the members of the GNOME Documentation Project are "
+#~ "made aware of those trademarks, then the names are in capital letters or "
+#~ "initial capital letters."
+#~ msgstr ""
+#~ "製品やサービスを区別するために企業によって利用されている名称の多くは商標で"
+#~ "す。これらの名称がGNOMEドキュメンテーションに現れた場合で、GNOMEドキュメン"
+#~ "テーションプロジェクトのメンバーが商標と認識している場合、これらの名前は大"
+#~ "文字あるいは頭文字を大文字で記述しています。"
+
+#~ msgid ""
+#~ "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+#~ "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES "
+#~ "THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+#~ "MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+#~ "RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+#~ "MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+#~ "MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+#~ "WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+#~ "SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES "
+#~ "AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS "
+#~ "DISCLAIMER; AND"
+#~ msgstr ""
+#~ "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+#~ "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES "
+#~ "THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+#~ "MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+#~ "RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+#~ "MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+#~ "MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+#~ "WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+#~ "SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES "
+#~ "AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS "
+#~ "DISCLAIMER; AND"
+
+#~ msgid ""
+#~ "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT "
+#~ "(INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL "
+#~ "WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE "
+#~ "LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR "
+#~ "CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, "
+#~ "DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR "
+#~ "MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR "
+#~ "RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, "
+#~ "EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH "
+#~ "DAMAGES."
+#~ msgstr ""
+#~ "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT "
+#~ "(INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL "
+#~ "WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE "
+#~ "LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR "
+#~ "CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, "
+#~ "DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR "
+#~ "MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR "
+#~ "RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, "
+#~ "EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH "
+#~ "DAMAGES."
+
+#~ msgid ""
+#~ "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
+#~ "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
+#~ "UNDERSTANDING THAT: <placeholder-1/>"
+#~ msgstr ""
+#~ "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
+#~ "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
+#~ "UNDERSTANDING THAT: <placeholder-1/>"
+
+#~ msgid "Sun"
+#~ msgstr "Sun"
+
+#~ msgid "GNOME Documentation Team"
+#~ msgstr "GNOME ドキュメンテーションチーム"
+
+#~ msgid "gdocteam@sun.com"
+#~ msgstr "gdocteam@sun.com"
+
+#~ msgid "Judith"
+#~ msgstr "Judith"
+
+#~ msgid "Samson"
+#~ msgstr "Samson"
+
+#~ msgid "judith@samsonsource.com"
+#~ msgstr "judith@samsonsource.com"
+
+#~ msgid "Paul"
+#~ msgstr "Paul"
+
+#~ msgid "Cutler"
+#~ msgstr "Cutler"
+
+#~ msgid "pcutler@gnome.org"
+#~ msgstr "pcutler@gnome.org"
+
+#~ msgid "Vincent"
+#~ msgstr "Vincent"
+
+#~ msgid "Noel"
+#~ msgstr "Noel"
+
+#~ msgid "vincent.noel@gmail.com"
+#~ msgstr "vincent.noel@gmail.com"
+
+#~ msgid "System Log Viewer Manual V2.5"
+#~ msgstr "システムログビューアマニュアル V2.5"
+
+#~ msgid "October 2009"
+#~ msgstr "2009年10月"
+
+#~ msgid "Paul Cutler <email>pcutler@gnome.org</email>"
+#~ msgstr "Paul Cutler <email>pcutler@gnome.org</email>"
+
+#~ msgid "System Log Viewer Manual V2.4"
+#~ msgstr "システムログビューアマニュアル V2.4"
+
+#~ msgid "October 2005"
+#~ msgstr "2005年10月"
+
+#~ msgid "Vincent Noel <email>vincent.noel@gmail.com</email>"
+#~ msgstr "Vincent Noel <email>vincent.noel@gmail.com</email>"
+
+#~ msgid "System Log Viewer Manual V2.3"
+#~ msgstr "システムログビューアマニュアル V2.3"
+
+#~ msgid "October 2002"
+#~ msgstr "2002年10月"
+
+#~ msgid "Sun GNOME Documentation Team <email>gdocteam@sun.com</email>"
+#~ msgstr ""
+#~ "Sun GNOME ドキュメンテーションチーム <email>gdocteam@sun.com</email>"
+
+#~ msgid "System Log Viewer Manual V2.2"
+#~ msgstr "システムログビューアマニュアル V2.2"
+
+#~ msgid "August 2002"
+#~ msgstr "2002年8月"
+
+#~ msgid "System Log Viewer Manual V2.1"
+#~ msgstr "システムログビューアマニュアル V2.1"
+
+#~ msgid "July 2002"
+#~ msgstr "2002年7月"
+
+#~ msgid "System Log Viewer Manual V2.0"
+#~ msgstr "システムログビューアマニュアル V2.0"
+
+#~ msgid "May 2002"
+#~ msgstr "2002年5月"
+
+#~ msgid "Logview Manual"
+#~ msgstr "ログビューマニュアル"
+
+#~ msgid "Judith Samson <email>judith@samsonsource.com</email>"
+#~ msgstr "Judith Samson <email>judith@samsonsource.com</email>"
+
+#~ msgid "This manual describes version 2.12 of System Log Viewer."
+#~ msgstr ""
+#~ "このマニュアルでは、システムログビューアのバージョン 2.12 について説明しま"
+#~ "す。"
+
+#~ msgid "Feedback"
+#~ msgstr "フィードバック"
+
+#~ msgid ""
+#~ "To report a bug or make a suggestion regarding the System Log Viewer "
+#~ "application or this manual, follow the directions in the <ulink url="
+#~ "\"ghelp:gnome-feedback\" type=\"help\">GNOME Feedback Page</ulink>."
+#~ msgstr ""
+#~ "システムログビューアのアプリケーションやこのマニュアルに対してバグの報告や"
+#~ "提案を行うには、<ulink url=\"ghelp:gnome-feedback\" type=\"help\">GNOME "
+#~ "フィードバックページ</ulink>の指示に従ってください。"
+
+#~ msgid "System Log Viewer"
+#~ msgstr "システムログビューア"
+
+#~ msgid "Getting Started"
+#~ msgstr "起動する"
+
+#~ msgid ""
+#~ "You can start <application>System Log Viewer</application> in the "
+#~ "following ways:"
+#~ msgstr ""
+#~ "次の方法で<application>システムログビューア</application> を起動できます:"
+
+#~ msgid "<guimenu>Applications</guimenu> menu"
+#~ msgstr "<guimenu>アプリケーション</guimenu>メニュー"
+
+#~ msgid ""
+#~ "Choose <menuchoice><guisubmenu>System Tools</guisubmenu><guimenuitem>Log "
+#~ "File Viewer</guimenuitem></menuchoice>."
+#~ msgstr ""
+#~ "<menuchoice><guisubmenu>システムツール</guisubmenu><guimenuitem>ログ・"
+#~ "ビューア</guimenuitem></menuchoice>を選択してください。"
+
+#~ msgid "Command line"
+#~ msgstr "コマンドライン"
+
+#~ msgid ""
+#~ "Type <command>gnome-system-log</command>, then press <keycap>Return</"
+#~ "keycap>."
+#~ msgstr ""
+#~ "<command>gnome-system-log</command> と入力して、<keycap>Return</keycap> を"
+#~ "押してください。"
+
+#~ msgid ""
+#~ "When you start <application>System Log Viewer</application>, the "
+#~ "following window is displayed."
+#~ msgstr ""
+#~ "<application>システムログビューア</application>を起動すると、次のウィンド"
+#~ "ウが表示されます。"
+
+#~ msgid "System Log Viewer Window"
+#~ msgstr "システムログビューアのウィンドウ"
+
+#~ msgid ""
+#~ "Shows System Log Viewer main window. Contains menubar, display area, "
+#~ "scrollbars, and statusbar."
+#~ msgstr ""
+#~ "システムログビューアのメインウィンドウの表示。メニューバー、表示領域、スク"
+#~ "ロールバーおよびステータスバーで構成されている。"
+
+#~ msgid ""
+#~ "The first time you start <application>System Log Viewer</application>, "
+#~ "the application displays several log files by default (such as <filename>/"
+#~ "var/log/messages</filename>). Opened logs are listed on the left side of "
+#~ "the application window. The log selected in this list is displayed in the "
+#~ "main area of the application window."
+#~ msgstr ""
+#~ "初めて<application>システムログビューア</application>を起動すると、デフォ"
+#~ "ルトでいくつかのログファイルが表示されます(<filename>/var/log/messages</"
+#~ "filename> など)。開かれたログは、アプリケーションウィンドウの左側に一覧表"
+#~ "示されます。この一覧で選択されたログが、アプリケーションの主要な領域に表示"
+#~ "されます。"
+
+#~ msgid ""
+#~ "By default, <application>System Log Viewer</application> monitors every "
+#~ "opened log, and any change appears automatically in the main window. See "
+#~ "<xref linkend=\"syslog-monitor\"/> for more information."
+#~ msgstr ""
+#~ "デフォルトでは、<application>システムログビューア</application>は開いてい"
+#~ "るすべてのログを監視し、変更があれば、自動的にメインウィンドウに表示しま"
+#~ "す。詳細は、<xref linkend=\"syslog-monitor\"/>をご覧ください。"
+
+#~ msgid "Usage"
+#~ msgstr "使い方"
+
+#~ msgid "To View a Log"
+#~ msgstr "ログを閲覧するには"
+
+#~ msgid ""
+#~ "To view a log, choose <menuchoice><guimenu>File</"
+#~ "guimenu><guimenuitem>Open</guimenuitem></menuchoice>. In the "
+#~ "<guilabel>Open Log</guilabel> dialog, select the log that you want to "
+#~ "open, then click <guibutton>Open</guibutton>. Use the scrollbars to "
+#~ "scroll through the log."
+#~ msgstr ""
+#~ "ログを閲覧するには、<menuchoice><guimenu>ファイル</guimenu><guimenuitem>開"
+#~ "く</guimenuitem></menuchoice>を選択してください。そして、<guilabel>ファイ"
+#~ "ルの選択</guilabel>というダイアログで開きたいログを選択し、<guibutton>開く"
+#~ "</guibutton>をクリックしてください。ログをスクロールするには、スクロール"
+#~ "バーを利用してください。"
+
+#~ msgid ""
+#~ "You can open as many logs as you want. <application>System Log Viewer</"
+#~ "application> displays one log at a time in the <guilabel>System Log "
+#~ "Viewer</guilabel> window. Opened logs are listed on the left side of the "
+#~ "application window. The log selected in this list is displayed in the "
+#~ "main area of the application window. To display another log already "
+#~ "opened in <application>System Log Viewer</application>, select it in the "
+#~ "log list."
+#~ msgstr ""
+#~ "好きなだけ多くのログを開くことができます。<application>システムログビュー"
+#~ "ア</application>は、そのウィンドウ内に一度に一つのログを表示します。開いて"
+#~ "いるログは、アプリケーションウィンドウの左側に一覧表示されます。この一覧で"
+#~ "選択されたログがアプリケーションウィンドウの主要な領域に表示されます。"
+#~ "<application>システムログビューア</application>で既に開かれている他のログ"
+#~ "を表示するには、このログの一覧から表示したいログを選択してください。"
+
+#~ msgid ""
+#~ "Note that <application>System Log Viewer</application> also lets you open "
+#~ "zipped logs (whole filenames end in \".gz\")."
+#~ msgstr ""
+#~ "<application>システムログビューア</application>は、圧縮されたログを開くこ"
+#~ "ともできます(ファイル名の最後に \".gz\" が付いています)。"
+
+#~ msgid "To Copy Log Lines to the Clipboard"
+#~ msgstr "ログの行をクリップボードにコピーするには"
+
+#~ msgid ""
+#~ "To copy one or more log lines to the clipboard, just select the lines in "
+#~ "the main area and choose the <menuchoice><guimenu>Edit</"
+#~ "guimenu><guimenuitem>Copy</guimenuitem></menuchoice> menu option. If you "
+#~ "want to copy the entire log to the clipboard, select it entirely using "
+#~ "the <menuchoice><guimenu>Edit</guimenu><guimenuitem>Select All</"
+#~ "guimenuitem></menuchoice> menu option, then choose "
+#~ "<menuchoice><guimenu>Edit</guimenu><guimenuitem>Copy</guimenuitem></"
+#~ "menuchoice>."
+#~ msgstr ""
+#~ "1行以上のログをクリップボードにコピーするには、主要な領域でコピーしたい行"
+#~ "を選択し、<menuchoice><guimenu>編集</guimenu><guimenuitem>コピー</"
+#~ "guimenuitem></menuchoice>というメニュー項目を選択してください。ログ全体を"
+#~ "クリップボードにコピーしたい場合は、<menuchoice><guimenu>編集</"
+#~ "guimenu><guimenuitem>すべて選択</guimenuitem></menuchoice>というメニュー項"
+#~ "目を利用してログ全体を選択し、<menuchoice><guimenu>編集</"
+#~ "guimenu><guimenuitem>コピー</guimenuitem></menuchoice>を選択してください。"
+
+#~ msgid "To Hide the Sidebar"
+#~ msgstr "サイドバーを隠すには"
+
+#~ msgid ""
+#~ "To hide the left sidebar, which contains the log list and calendar, just "
+#~ "select the <menuchoice><guimenu>View</guimenu><guimenuitem>Side pane</"
+#~ "guimenuitem></menuchoice> menu option."
+#~ msgstr ""
+#~ "ログの一覧とカレンダーを含んだ左側のサイドバーを隠すには、"
+#~ "<menuchoice><guimenu>表示</guimenu><guimenuitem>サイドバー</guimenuitem></"
+#~ "menuchoice>というメニュー項目を選択してください。"
+
+#~ msgid "To Monitor Logs"
+#~ msgstr "ログを監視するには"
+
+#~ msgid ""
+#~ "You can use <application>System Log Viewer</application> to monitor logs. "
+#~ "By default, all logs opened in <application>System Log Viewer</"
+#~ "application> are monitored for changes. If new lines are added to a log "
+#~ "monitored by <application>System Log Viewer</application>, the log name "
+#~ "will appear in bold in the log list. If the log is currently displayed in "
+#~ "the main area, the new lines will appear automatically at the end of the "
+#~ "log and, after five seconds, the log name will turn back to normal in the "
+#~ "list."
+#~ msgstr ""
+#~ "<application>システムログビューア</application>を利用して、ログを監視でき"
+#~ "ます。デフォルトでは、<application>システムログビューア</application>は開"
+#~ "かれているすべてのログの変更を監視しています。<application>システムログ"
+#~ "ビューア</application>によって監視されているログに新たな行が追加された場"
+#~ "合、ログの一覧にそのログ名が太字で表示されます。もし、そのログが主要な領域"
+#~ "に表示されている場合は、新たな行が自動的にログの最後に表示され、5秒後にロ"
+#~ "グの一覧でログ名が通常の表示に戻ります。"
+
+#~ msgid "To View Log Information"
+#~ msgstr "ログの情報を閲覧するには"
+
+#~ msgid ""
+#~ "Log information are generally displayed in the status bar, including :"
+#~ msgstr ""
+#~ "ログの情報は通常、ステータスバーに表示され、以下の情報を含んでいます:"
+
+#~ msgid "Number of lines in the log."
+#~ msgstr "ログの行数"
+
+#~ msgid "Size of the log in bytes."
+#~ msgstr "ログの大きさ(バイト)"
+
+#~ msgid "Date the log was last modified."
+#~ msgstr "ログの最終更新日時"
+
+#~ msgid ""
+#~ "The status bar can be displayed or hidden using the "
+#~ "<menuchoice><guimenu>View</guimenu><guimenuitem>Statusbar</guimenuitem></"
+#~ "menuchoice> option."
+#~ msgstr ""
+#~ "<menuchoice><guimenu>表示</guimenu><guimenuitem>ステータスバー</"
+#~ "guimenuitem></menuchoice>というオプションを利用してステータスバーを表示あ"
+#~ "るいは非表示にできます。"
+
+#~ msgid ""
+#~ "To close a log, choose <menuchoice><guimenu>File</"
+#~ "guimenu><guimenuitem>Close</guimenuitem></menuchoice>."
+#~ msgstr ""
+#~ "ログを閉じるには、<menuchoice><guimenu>ファイル</guimenu><guimenuitem>閉じ"
+#~ "る</guimenuitem></menuchoice>を選択してください。"
+
+#~ msgid "To Exit System Log Viewer"
+#~ msgstr "システムログビューアを終了するには"
+
+#~ msgid ""
+#~ "To exit <application>System Log Viewer</application>, choose "
+#~ "<menuchoice><guimenu>File</guimenu><guimenuitem>Quit</guimenuitem></"
+#~ "menuchoice>."
+#~ msgstr ""
+#~ "<application>システムログビューア</application>を終了するには、"
+#~ "<menuchoice><guimenu>ファイル</guimenu><guimenuitem>終了</guimenuitem></"
+#~ "menuchoice>を選択してください。"

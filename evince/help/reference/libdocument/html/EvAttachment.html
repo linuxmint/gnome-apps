@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>EvAttachment</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Evince Document Library Reference Manual">
+<link rel="up" href="document-data.html" title="Part II. Document Data">
+<link rel="prev" href="EvAnnotation.html" title="EvAnnotationText">
+<link rel="next" href="EvFormField.html" title="EvFormFieldSignature">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="EvAnnotation.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="document-data.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Evince Document Library Reference Manual</th>
+<td><a accesskey="n" href="EvFormField.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#EvAttachment.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#EvAttachment.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#EvAttachment.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#EvAttachment.properties" class="shortcut">Properties</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="EvAttachment"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EvAttachment.top_of_page"></a>EvAttachment</span></h2>
+<p>EvAttachment</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="EvAttachment.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">struct              <a class="link" href="EvAttachment.html#EvAttachment-struct" title="struct EvAttachment">EvAttachment</a>;
+struct              <a class="link" href="EvAttachment.html#EvAttachmentClass" title="struct EvAttachmentClass">EvAttachmentClass</a>;
+                    <a class="link" href="EvAttachment.html#EvAttachmentPrivate" title="EvAttachmentPrivate">EvAttachmentPrivate</a>;
+#define             <a class="link" href="EvAttachment.html#EV-ATTACHMENT-ERROR:CAPS" title="EV_ATTACHMENT_ERROR">EV_ATTACHMENT_ERROR</a>
+<span class="returnvalue">GQuark</span>              <a class="link" href="EvAttachment.html#ev-attachment-error-quark" title="ev_attachment_error_quark ()">ev_attachment_error_quark</a>           (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a class="link" href="EvAttachment.html" title="EvAttachment"><span class="returnvalue">EvAttachment</span></a> *      <a class="link" href="EvAttachment.html#ev-attachment-new" title="ev_attachment_new ()">ev_attachment_new</a>                   (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *description</code></em>,
+                                                         <em class="parameter"><code><span class="type">GTime</span> mtime</code></em>,
+                                                         <em class="parameter"><code><span class="type">GTime</span> ctime</code></em>,
+                                                         <em class="parameter"><code><span class="type">gsize</span> size</code></em>,
+                                                         <em class="parameter"><code><span class="type">gpointer</span> data</code></em>);
+const <span class="returnvalue">gchar</span> *       <a class="link" href="EvAttachment.html#ev-attachment-get-name" title="ev_attachment_get_name ()">ev_attachment_get_name</a>              (<em class="parameter"><code><a class="link" href="EvAttachment.html" title="EvAttachment"><span class="type">EvAttachment</span></a> *attachment</code></em>);
+const <span class="returnvalue">gchar</span> *       <a class="link" href="EvAttachment.html#ev-attachment-get-description" title="ev_attachment_get_description ()">ev_attachment_get_description</a>       (<em class="parameter"><code><a class="link" href="EvAttachment.html" title="EvAttachment"><span class="type">EvAttachment</span></a> *attachment</code></em>);
+<span class="returnvalue">GTime</span>               <a class="link" href="EvAttachment.html#ev-attachment-get-modification-date" title="ev_attachment_get_modification_date ()">ev_attachment_get_modification_date</a> (<em class="parameter"><code><a class="link" href="EvAttachment.html" title="EvAttachment"><span class="type">EvAttachment</span></a> *attachment</code></em>);
+<span class="returnvalue">GTime</span>               <a class="link" href="EvAttachment.html#ev-attachment-get-creation-date" title="ev_attachment_get_creation_date ()">ev_attachment_get_creation_date</a>     (<em class="parameter"><code><a class="link" href="EvAttachment.html" title="EvAttachment"><span class="type">EvAttachment</span></a> *attachment</code></em>);
+const <span class="returnvalue">gchar</span> *       <a class="link" href="EvAttachment.html#ev-attachment-get-mime-type" title="ev_attachment_get_mime_type ()">ev_attachment_get_mime_type</a>         (<em class="parameter"><code><a class="link" href="EvAttachment.html" title="EvAttachment"><span class="type">EvAttachment</span></a> *attachment</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="EvAttachment.html#ev-attachment-save" title="ev_attachment_save ()">ev_attachment_save</a>                  (<em class="parameter"><code><a class="link" href="EvAttachment.html" title="EvAttachment"><span class="type">EvAttachment</span></a> *attachment</code></em>,
+                                                         <em class="parameter"><code><span class="type">GFile</span> *file</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="EvAttachment.html#ev-attachment-open" title="ev_attachment_open ()">ev_attachment_open</a>                  (<em class="parameter"><code><a class="link" href="EvAttachment.html" title="EvAttachment"><span class="type">EvAttachment</span></a> *attachment</code></em>,
+                                                         <em class="parameter"><code><span class="type">GdkScreen</span> *screen</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="EvAttachment.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GObject
+   +----EvAttachment
+</pre>
+</div>
+<div class="refsect1">
+<a name="EvAttachment.properties"></a><h2>Properties</h2>
+<pre class="synopsis">
+  "<a class="link" href="EvAttachment.html#EvAttachment--ctime" title='The "ctime" property'>ctime</a>"                    <span class="type">gulong</span>                : Write / Construct Only
+  "<a class="link" href="EvAttachment.html#EvAttachment--data" title='The "data" property'>data</a>"                     <span class="type">gpointer</span>              : Write / Construct Only
+  "<a class="link" href="EvAttachment.html#EvAttachment--description" title='The "description" property'>description</a>"              <span class="type">gchar</span>*                : Write / Construct Only
+  "<a class="link" href="EvAttachment.html#EvAttachment--mtime" title='The "mtime" property'>mtime</a>"                    <span class="type">gulong</span>                : Write / Construct Only
+  "<a class="link" href="EvAttachment.html#EvAttachment--name" title='The "name" property'>name</a>"                     <span class="type">gchar</span>*                : Write / Construct Only
+  "<a class="link" href="EvAttachment.html#EvAttachment--size" title='The "size" property'>size</a>"                     <span class="type">guint</span>                 : Write / Construct Only
+</pre>
+</div>
+<div class="refsect1">
+<a name="EvAttachment.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="EvAttachment.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="EvAttachment-struct"></a><h3>struct EvAttachment</h3>
+<pre class="programlisting">struct EvAttachment;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvAttachmentClass"></a><h3>struct EvAttachmentClass</h3>
+<pre class="programlisting">struct EvAttachmentClass {
+	GObjectClass base_class;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvAttachmentPrivate"></a><h3>EvAttachmentPrivate</h3>
+<pre class="programlisting">typedef struct _EvAttachmentPrivate EvAttachmentPrivate;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EV-ATTACHMENT-ERROR:CAPS"></a><h3>EV_ATTACHMENT_ERROR</h3>
+<pre class="programlisting">#define EV_ATTACHMENT_ERROR (ev_attachment_error_quark ())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-attachment-error-quark"></a><h3>ev_attachment_error_quark ()</h3>
+<pre class="programlisting"><span class="returnvalue">GQuark</span>              ev_attachment_error_quark           (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-attachment-new"></a><h3>ev_attachment_new ()</h3>
+<pre class="programlisting"><a class="link" href="EvAttachment.html" title="EvAttachment"><span class="returnvalue">EvAttachment</span></a> *      ev_attachment_new                   (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *description</code></em>,
+                                                         <em class="parameter"><code><span class="type">GTime</span> mtime</code></em>,
+                                                         <em class="parameter"><code><span class="type">GTime</span> ctime</code></em>,
+                                                         <em class="parameter"><code><span class="type">gsize</span> size</code></em>,
+                                                         <em class="parameter"><code><span class="type">gpointer</span> data</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-attachment-get-name"></a><h3>ev_attachment_get_name ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *       ev_attachment_get_name              (<em class="parameter"><code><a class="link" href="EvAttachment.html" title="EvAttachment"><span class="type">EvAttachment</span></a> *attachment</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-attachment-get-description"></a><h3>ev_attachment_get_description ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *       ev_attachment_get_description       (<em class="parameter"><code><a class="link" href="EvAttachment.html" title="EvAttachment"><span class="type">EvAttachment</span></a> *attachment</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-attachment-get-modification-date"></a><h3>ev_attachment_get_modification_date ()</h3>
+<pre class="programlisting"><span class="returnvalue">GTime</span>               ev_attachment_get_modification_date (<em class="parameter"><code><a class="link" href="EvAttachment.html" title="EvAttachment"><span class="type">EvAttachment</span></a> *attachment</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-attachment-get-creation-date"></a><h3>ev_attachment_get_creation_date ()</h3>
+<pre class="programlisting"><span class="returnvalue">GTime</span>               ev_attachment_get_creation_date     (<em class="parameter"><code><a class="link" href="EvAttachment.html" title="EvAttachment"><span class="type">EvAttachment</span></a> *attachment</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-attachment-get-mime-type"></a><h3>ev_attachment_get_mime_type ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *       ev_attachment_get_mime_type         (<em class="parameter"><code><a class="link" href="EvAttachment.html" title="EvAttachment"><span class="type">EvAttachment</span></a> *attachment</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-attachment-save"></a><h3>ev_attachment_save ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            ev_attachment_save                  (<em class="parameter"><code><a class="link" href="EvAttachment.html" title="EvAttachment"><span class="type">EvAttachment</span></a> *attachment</code></em>,
+                                                         <em class="parameter"><code><span class="type">GFile</span> *file</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-attachment-open"></a><h3>ev_attachment_open ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            ev_attachment_open                  (<em class="parameter"><code><a class="link" href="EvAttachment.html" title="EvAttachment"><span class="type">EvAttachment</span></a> *attachment</code></em>,
+                                                         <em class="parameter"><code><span class="type">GdkScreen</span> *screen</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="EvAttachment.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="EvAttachment--ctime"></a><h3>The <code class="literal">"ctime"</code> property</h3>
+<pre class="programlisting">  "ctime"                    <span class="type">gulong</span>                : Write / Construct Only</pre>
+<p>The attachment creation date.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvAttachment--data"></a><h3>The <code class="literal">"data"</code> property</h3>
+<pre class="programlisting">  "data"                     <span class="type">gpointer</span>              : Write / Construct Only</pre>
+<p>The attachment data.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvAttachment--description"></a><h3>The <code class="literal">"description"</code> property</h3>
+<pre class="programlisting">  "description"              <span class="type">gchar</span>*                : Write / Construct Only</pre>
+<p>The attachment description.</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvAttachment--mtime"></a><h3>The <code class="literal">"mtime"</code> property</h3>
+<pre class="programlisting">  "mtime"                    <span class="type">gulong</span>                : Write / Construct Only</pre>
+<p>The attachment modification date.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvAttachment--name"></a><h3>The <code class="literal">"name"</code> property</h3>
+<pre class="programlisting">  "name"                     <span class="type">gchar</span>*                : Write / Construct Only</pre>
+<p>The attachment name.</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvAttachment--size"></a><h3>The <code class="literal">"size"</code> property</h3>
+<pre class="programlisting">  "size"                     <span class="type">guint</span>                 : Write / Construct Only</pre>
+<p>The attachment size.</p>
+<p>Default value: 0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>

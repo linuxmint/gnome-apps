@@ -1,0 +1,449 @@
+# Persian translation of gnome-utils.
+# Copyright (C) 2011 Iranian Free Software Users Group (IFSUG.org)translation team.
+# Copyright (C) 2003, 2005, 2006 Sharif FarsiWeb, Inc.
+# This file is distributed under the same license as the gnome-utils package.
+# Roozbeh Pournader <roozbeh@farsiweb.info>, 2003, 2005.
+# Behnam Esfahbod <behnam@farsiweb.info>, 2005.
+# Sara Khalatbari <sara@bamdad.org>, 2005.
+# Meelad Zakaria <meelad@farsiweb.info>, 2005, 2006.
+# Sanaz shahrokni <sanaz.shahrokni@gmail.com>, 2006.
+# Arash Mousavi <mousavi.arash@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2011-09-06 23:19+0330\n"
+"Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
+"Language-Team: Persian <translate@ifsug.org>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Language: Persian\n"
+"X-Poedit-Country: IRAN, ISLAMIC REPUBLIC OF\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "نمایشگر وقایع ثبت شده"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "نمایش یا پایش پرونده‌های ثبت وقایع سیستم"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "بلندای پنجره‌ی اصلی به مقیاس نقطه‌ای"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "فهرست صافی‌های ذخیره شده"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "فهرست صافی‌های regexp ذخیره شده"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "پرونده‌ٔ ثبتی که هنگام راه‌اندازی باز می‌شود"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "پرونده‌‌های ثبتی که هنگام راه‌اندازی باز می‌شوند"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "اندازه‌ی قلم استفاده شده برای نمایش ثبت وقایع"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"فهرستی از پرونده‌های ثبتی که هنگام راه‌اندازی باز می‌شوند. فهرست پیش‌فرض با "
+"خواندن  /etc/syslog.conf ایجاد می‌شود."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "طول پنجره‌ی اصلی نمایش‌گر ثبت را در مقیاس نقطه‌ای مشخص کنید."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"پرونده‌ی‌ ثبتی نمایش داده شده در زمان راه‌اندازی را مشخص کنید. گزینه‌ٔ پیش‌فرض "
+"بسته به سیستم عامل شما var/adm/messages یا /var/log/messages است."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"اندازه‌ی قلم با عرض ثابت استفاده شده برای نمایش ثبت وقایع در شکل درختی اصلی "
+"را مشخص کنید. گزینه‌ی پیش‌فرض همان اندازه‌ی قلم پایانه است."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "عرض پنجره‌ی اصلی نمایش‌گر ثبت را به نقطه مشخص کنید."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "عرض پنجره‌ی اصلی به نقطه"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "پش‌زمینه:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "جلوه:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "پیش‌زمینه:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "مخفی کردن"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "پُررنگ"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "_نام:"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "_عبارت باقاعده:"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"این نرم‌افزار، یک نرم‌افزار آزاد است؛ شما می‌توانید آن را تحت شرایط اجازه‌نامه‌ی "
+"همگانی عمومی گنو که بنیاد نرم‌افزارهای آزاد منتشر کرده است،‌ تغییر دهید یا "
+"دوباره توزیع کنید. یا نسخه‌ی ۲ اجازه‌نامه یا (به اختیار خودتان) هر نسخه‌ی "
+"بالاتر دیگری."
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"این برنامه با این امید توزیع شده است که به درد بخور باشد، اما بدون هر گونه "
+"ضمانتی؛ حتی بدون ضمانت ضمنی قابل فروش بودن یا مناسب بودن برای یک هدف مشخص. "
+"برای جزئیات بیشتر به اجازه‌نامه‌ی همگانی عمومی گنو را ببینید."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"شما باید نسخه‌ای از اجازه‌نامه‌ی همگانی عمومی گنو دریافت کرده باشد؛ اگر این طور "
+"نیست برای شرکت بنیاد نرم افزارهای آزاد به آدرس زیر بنویسید: Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"آرش موسوی <mousavi.arash@gmail.com>\n"
+"روزبه پورنادر <roozbeh@farsiweb.info>\n"
+"بهنام اسفهبد <behnam@farsiweb.info>\n"
+"سارا خلعت‌بری <sara@bamdad.org>\n"
+"میلاد زکریا <meelad@farsiweb.info>\n"
+"ساناز شاه‌رکنی <sanaz.shahrokni@gmail.com>"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "باز کردن پرونده %s غیرممکن است"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "نام صافی خالی است!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "ممکن است نام صافی حاوی نویسه «:» نباشد"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "عبارت باقاعده خالی است!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "عبارت باقاعده نادرست است: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "لطفا یا رنگ پس‌زمینه یا پیش‌زمینه را مشخص کنید!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "ویرایش صافی"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "اضافه کردن یک صافی جدید"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "صافی‌ها"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_پیدا کردن:"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "پیدا کردن قبلی"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "پیدا کردن مورد قبلی رشته جستجو شده"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "پیدا کردن بعدی"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "پیدا کردن مورد بعدی رشته جستجو شده"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "پاک کردن رشته جستجو"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "خطا در هنگام استخراج وقایع ثبت شده GZipped. پرونده ممکن است خراب باشد."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "شاید اجازه‌ی کافی برای خواندن این پرونده را ندارید."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "پرونده، یک پرونده‌ی معمول یا یک پرونده‌ی متنی نیست."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr "این نسخه از سیستم ثبت وقایع از ثبت وقایع GZipped پشتیبانی نمی‌کند."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "درحال بارگیری..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "نشان دادن شماره‌ی نسخه‌ی برنامه"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[LOGFILE...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr "- مرور و پایش وقایع ثبت‌شده"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "نمایشگر وقایع ثبت شده"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "نمایشگر وقایع سیستم "
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "آخرین بروزرسانی: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%Id سطر (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "_باز کردن ثبت"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "هنگام نمایش راهنما خطایی به رُخ داد: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "پیچیده شد"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "پیدا نشد"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "یک نمایشگر وقایع  ثبت شده‌ی سیستم برای گنوم"
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "_پرونده"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "_ویرایش"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "_نمایش"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "_صافی‌ها"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "_راهنما"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "_باز کردن..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "باز کردن یک ثبت از پرونده"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "_بستن"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "بستن این ثبت"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "_ترک"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "ترک نمایشگر ثبت "
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "_نسخه‌برداری"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "نسخه‌برداری از انتخاب"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "انتخاب _همه"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "انتخاب کل ثبت"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "_پیدا کردن..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "پیدا کردن یک کلمه یا عبارت در وقایع ثبت شده"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "اندازه‌ی متن درشت‌تر"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "اندازه‌ی متن ریزتر"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "اندازه‌ی متن عادی"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "مدیریت صافی‌ها"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "مدیریت صافی‌ها"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "_مندرجات"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "باز کردن محتویات راهنمای نمایشگر ثبت "
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "_درباره"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "نشان دادن محاوره‌ی درباره‌ی نمایشگر ثبت"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "_نوار وضعیت"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "نمایش نوار وضعیت"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "_قاب کناری"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "نشان دادن قاب کناری"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "تنها نمایش موارد مطابق"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "تنها خط‌هایی را نمایش بده که با یکی از صافی‌های داده شده مطابق باشد"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "لغزش _خودکار"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "هنگام نمایش خطهای جدید، خودکار به سمت پایین لغزش کن"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "نمی‌توان از «%s» خواند"
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "نسخه: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "باز کردن پرونده‌های مقابل ممکن نیست:"

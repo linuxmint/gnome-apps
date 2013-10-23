@@ -1,0 +1,451 @@
+# Hungarian translation for gnome-system-log_help
+# Copyright (C) 2012. Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-system-log package.
+#
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2012.
+# Bence Lukacs <lukacs.bence1 at gmail dot com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-system-log_help master\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2012-02-05 22:53+0000\n"
+"PO-Revision-Date: 2012-03-21 23:21+0100\n"
+"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
+"Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-03-04 23:28+0000\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: C/pref-font-size.page:8(desc)
+msgid "Increase or decrease the size of the text."
+msgstr "Betűméret növelése vagy csökkentése."
+
+#: C/pref-font-size.page:11(name) C/log-view.page:12(name) C/log-search.page:11(name) C/log-filter.page:12(name) C/log-copy.page:11(name) C/log-close.page:12(name) C/introduction.page:11(name)
+msgid "Ekaterina Gerasimova"
+msgstr "Ekaterina Gerasimova"
+
+#: C/pref-font-size.page:12(email) C/log-view.page:13(email) C/log-search.page:12(email) C/log-filter.page:13(email) C/log-copy.page:12(email) C/log-close.page:13(email) C/introduction.page:12(email)
+msgid "kittykat3756@googlemail.com"
+msgstr "kittykat3756@googlemail.com"
+
+#: C/pref-font-size.page:16(p) C/log-view.page:17(p) C/log-search.page:16(p) C/log-filter.page:17(p) C/log-copy.page:16(p) C/log-close.page:17(p) C/introduction.page:16(p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0"
+
+#: C/pref-font-size.page:21(title)
+msgid "Change font size"
+msgstr "Betűméret megváltoztatása"
+
+#: C/pref-font-size.page:23(p)
+msgid ""
+"You can increase, decrease and reset the font size that the log is displayed "
+"in:"
+msgstr ""
+"Növelheti, csökkentheti vagy visszaállíthatja az eredetire a naplóban "
+"megjelenő szöveg betűméretét:"
+
+#: C/pref-font-size.page:28(title)
+msgid "Increase font size"
+msgstr "Betűméret növelése"
+
+#: C/pref-font-size.page:29(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Zoom In</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>+</key></keyseq>"
+msgstr ""
+"Válassza a <guiseq><gui>Nézet</gui><gui>Nagyítás</gui></guiseq> menüpontot, "
+"vagy nyomja le a <keyseq><key>Ctrl</key><key>+</key></keyseq> "
+"billentyűkombinációt"
+
+#: C/pref-font-size.page:33(title)
+msgid "Decrease font size"
+msgstr "Betűméret csökkentése"
+
+#: C/pref-font-size.page:34(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Zoom Out</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>-</key></keyseq>"
+msgstr ""
+"Válassza a <guiseq><gui>Nézet</gui><gui>Kicsinyítés</gui></guiseq> "
+"menüpontot, vagy nyomja le a <keyseq><key>Ctrl</key><key>-</key></keyseq> "
+"billentyűkombinációt"
+
+#: C/pref-font-size.page:38(title)
+msgid "Reset to default size"
+msgstr "Eredeti betűméret beállítása"
+
+#: C/pref-font-size.page:39(p)
+msgid ""
+"Click <guiseq><gui>View</gui><gui>Normal Size</gui></guiseq>, or press "
+"<keyseq><key>Ctrl</key><key>0</key></keyseq>"
+msgstr ""
+"Válassza a <guiseq><gui>Nézet</gui><gui>Eredeti méret</gui></guiseq> "
+"menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>0</key></keyseq> "
+"billentyűkombinációt"
+
+#: C/log-view.page:9(desc)
+msgid "Open and view logs."
+msgstr "Naplók megnyitása és olvasása."
+
+#: C/log-view.page:22(title)
+msgid "Open log"
+msgstr "Napló megnyitása"
+
+#: C/log-view.page:24(p)
+msgid ""
+"Open logs by clicking <guiseq><gui>File</gui><gui>Open</gui></guiseq>. Your "
+"opened logs will be displayed in the side pane, to the left of the main "
+"area. You can view a log in the side pane by clicking it."
+msgstr ""
+"Naplók megnyitásához kattintson a "
+"<guiseq><gui>Fájl</gui><gui>Megnyitás</gui></guiseq> menüpontra. A "
+"megnyitott napló meg fog jelenni az ablak bal oldalán lévő oldalsávban. A "
+"napló elolvasásához kattintson rá."
+
+#: C/log-view.page:29(p)
+msgid ""
+"You can expand some logs. This will show you a list of dates. By clicking "
+"one of the dates, you can view only the log lines from that date, instead of "
+"the whole log."
+msgstr ""
+"Egyes naplók legördíthetők. Ekkor egy sor dátumot fog látni. Ha rákattint "
+"egy dátumra, akkor az egész napló helyett csak az akkor készült részeit láthatja."
+
+#: C/log-view.page:34(p)
+msgid ""
+"The logs you have open when you quit the log viewer will be opened when you "
+"start it up again."
+msgstr "A megnyitott naplókat a naplómegjelenítő megjegyzi bezárásakor, és legközelebb újra megnyitja azokat."
+
+#: C/log-search.page:8(desc)
+msgid "Search the text in the log that you are currently viewing."
+msgstr "Keressen az éppen olvasott naplóban."
+
+#: C/log-search.page:21(title)
+msgid "Search log"
+msgstr "Keresés a naplóban"
+
+#: C/log-search.page:23(p)
+msgid "To search the log you are currently viewing:"
+msgstr "Az éppen olvasott naplóban való kereséshez:"
+
+#: C/log-search.page:27(p)
+msgid ""
+"Show the <gui>Find</gui> bar by pressing "
+"<keyseq><key>Ctrl</key><key>F</key></keyseq>, or by clicking "
+"<guiseq><gui>View</gui><gui>Find</gui></guiseq>. The bar will be shown below "
+"the log."
+msgstr ""
+"Jelenítse meg a <gui>Keresősávot</gui> a "
+"<keyseq><key>Ctrl</key><key>F</key></keyseq> billentyűkombináció "
+"lenyomásával, vagy a <guiseq><gui>Nézet</gui><gui>Keresés</gui></guiseq> "
+"menüpont kiválasztásával. A sáv meg fog jelenni a napló alatt."
+
+#: C/log-search.page:33(p)
+msgid ""
+"Enter your search term into the field and press <key>Enter</key> to see the "
+"first result."
+msgstr ""
+"Gépelje be a keresett szöveget, majd nyomja le az <key>Entert</key> a "
+"keresés eredményének megtekintéséhez."
+
+#: C/log-search.page:36(p)
+msgid "The search is case sensitive."
+msgstr "A keresés kis- és nagybetűérzékeny."
+
+#: C/log-search.page:40(p)
+msgid ""
+"Use the <gui>Find Previous</gui> and <gui>Find Next</gui> buttons to browse "
+"through the results."
+msgstr ""
+"Használja az <gui>Előző találat</gui> és a <gui>Következő találat</gui> "
+"gombokat a találatok közti lépkedéshez."
+
+#: C/log-search.page:43(p)
+msgid "If you can not see the result highlighted, try scrolling to the left."
+msgstr "Ha nem látja kiemelve az eredményt, akkor próbáljon meg balra görgetni."
+
+#: C/log-search.page:47(p)
+msgid ""
+"Press <key>Esc</key> to hide the find bar once you are finished with the "
+"search."
+msgstr ""
+"Nyomja meg az <key>Esc</key> billentyűt a sáv elrejtéséhez, ha befejezte a "
+"keresést."
+
+#: C/log-search.page:50(p)
+msgid ""
+"You can only hide the <gui>find bar</gui> if you are currently focused on "
+"the search field. The bar will hide itself if you view another log."
+msgstr ""
+"Csak akkor tudja eltüntetni a <gui>keresősávot</gui>, ha a fókusz éppen a "
+"keresőmezőn van. A sáv automatikusan elrejti magát, ha egy másik naplót kezd "
+"el nézni."
+
+#: C/log-filter.page:9(desc)
+msgid "Include or exclude shown lines using regular expressions."
+msgstr "Sorok megjelenítése vagy elrejtése reguláris kifejezésekkel."
+
+#: C/log-filter.page:22(title)
+msgid "Filter log"
+msgstr "Napló szűrése"
+
+#: C/log-filter.page:24(p)
+msgid ""
+"The log viewer allows you to filter log content based on regular "
+"expressions. To set up or manage a new filter:"
+msgstr ""
+"A naplómegjelenítő képes reguláris kifejezések használatával szűrni a "
+"naplókat. Új szűrő beállításához vagy kezeléséhez:"
+
+#: C/log-filter.page:29(p)
+msgid ""
+"Open the filter manager dialog by clicking "
+"<guiseq><gui>Filters:</gui><gui>Manage Filters</gui></guiseq>."
+msgstr ""
+"Nyissa meg a szűrőkezelő párbeszédablakot a "
+"<guiseq><gui>Szűrők:</gui><gui>Szűrők kezelése</gui></guiseq> menüpont "
+"kiválasztásával."
+
+#: C/log-filter.page:33(p)
+msgid ""
+"Click <gui>Add</gui> to add a new filter, or select an existing filter and "
+"click <gui>Properties</gui> to edit it."
+msgstr ""
+"Új szűrő hozzáadásához nyomja meg a <gui>Hozzáadás</gui> gombot, vagy "
+"válasszon ki egy létező szűrőt, és nyomja meg a <gui>Tulajdonságok</gui> "
+"gombot a szerkesztéséhez."
+
+#: C/log-filter.page:37(p)
+msgid "Fill in the form or edit the fields that you wish to change:"
+msgstr "Töltse ki, vagy szerkessze a megváltoztatni kívánt mezőket:"
+
+#: C/log-filter.page:40(title)
+msgid "Name:"
+msgstr "Név:"
+
+#: C/log-filter.page:41(p)
+msgid "The identifier for the filter"
+msgstr "A szűrő azonosítója"
+
+#: C/log-filter.page:44(title)
+msgid "Regular Expression:"
+msgstr "Reguláris kifejezés:"
+
+#: C/log-filter.page:45(p)
+msgid "What the filter will filter for"
+msgstr "Mit fog a szűrő szűrni"
+
+#: C/log-filter.page:48(title)
+msgid "Highlight:"
+msgstr "Kiemelés:"
+
+#: C/log-filter.page:49(p)
+msgid "This option emphasizes the line containing the regular expression"
+msgstr "Ez az opció kiemeli a reguláris kifejezést tartalmazó sort"
+
+#: C/log-filter.page:52(title)
+msgid "Background:"
+msgstr "Háttér:"
+
+#: C/log-filter.page:53(p)
+msgid "This is the font color"
+msgstr "Ez a betű színe"
+
+#: C/log-filter.page:55(p)
+msgid "The default font color is black, which does not emphasize the text."
+msgstr "Az alapértelmezett betűszín fekete, amely nem emeli ki a szöveget."
+
+#: C/log-filter.page:60(title)
+msgid "Foreground:"
+msgstr "Előtér:"
+
+#: C/log-filter.page:61(p)
+msgid "This is the highlight color"
+msgstr "Ez a kiemelő szín"
+
+#: C/log-filter.page:63(p)
+msgid ""
+"The default highlight color is black, which shows solid black lines as a "
+"result, so it would be wise to change it."
+msgstr ""
+"Az alapértelmezett kiemelőszín fekete, amely homogén fekete sorokat "
+"eredményezne, ezért ajánlott megváltoztatni."
+
+#: C/log-filter.page:70(title)
+msgid "Hide:"
+msgstr "Elrejtés:"
+
+#: C/log-filter.page:71(p)
+msgid ""
+"This option hides the lines containing the regular expression from the shown "
+"log"
+msgstr ""
+"Ez a lehetőség elrejti a reguláris kifejezéseket tartalmazó sorokat a "
+"megjelenített naplóból"
+
+#: C/log-filter.page:77(p)
+msgid ""
+"Click <gui>Apply</gui> to save the new filter or save changes to an existing "
+"one"
+msgstr ""
+"Nyomja meg az <gui>Alkalmaz</gui> gombot az új szűrő vagy a létező szűrő "
+"beállításainak mentéséhez"
+
+#: C/log-filter.page:81(p)
+msgid ""
+"Back at the filter manager dialog, click <gui>Close</gui> to apply the "
+"changes."
+msgstr ""
+"A szűrőkezelő párbeszédablakban nyomja meg a <gui>Bezárás</gui> gombot a "
+"változtatások alkalmazásához."
+
+#: C/log-filter.page:86(p)
+msgid ""
+"Check the box next to the name of the filter that you want to enable in "
+"<gui>Filters:</gui>. If you want to view only the filters which have "
+"<gui>Highlight</gui> enabled and are checked, check "
+"<guiseq><gui>Filters:</gui><gui>Show matches only</gui></guiseq>."
+msgstr ""
+"Válassza ki az engedélyezni kívánt szűrőket a <gui>Szűrők</gui> menüpontban. Ha csak azokat az engedélyezett szűrőket szeretné látni, amelyeknél ki van választva a <gui>Kiemelés</gui>, akkor jelölje be a <guiseq><gui>Szűrők</gui><gui>Csak a találatok "
+"megjelenítése</gui></guiseq> menüpontot."
+
+#: C/log-filter.page:92(p)
+msgid ""
+"If there is a conflict between a hidden and a highlighted filter, the line "
+"many show as an empty white line."
+msgstr ""
+"Ha ütközés van egy elrejtési és egy kiemelési szűrő közt, akkor a sor egy "
+"üres fehér sorként jelenhet meg."
+
+#: C/log-filter.page:97(p)
+msgid ""
+"If you uncheck a filter while viewing only matches, the log will show the "
+"lines without any formatting, regardless of whether they were hidden or "
+"highlighted before. The filter should reset when you check a highlighted "
+"filter."
+msgstr ""
+"Ha törli egy szűrő kijelölését, miközben csak a találatokat nézi, a napló "
+"minden formázás nélkül fogja megjeleníteni a sorokat, tekintet nélkül arra, "
+"hogy előtte el voltak-e rejtve vagy ki voltak-e emelve. A szűrő újra működni "
+"fog, ha bejelöli a kiemelt szűrőt."
+
+#: C/log-copy.page:8(desc)
+msgid "Copy text from the log."
+msgstr "Szöveg másolása a naplóból."
+
+#: C/log-copy.page:20(title)
+msgid "Copy log"
+msgstr "Napló másolása"
+
+#: C/log-copy.page:22(p)
+msgid ""
+"Highlight the section of the log that you want to copy with the cursor and "
+"press <keyseq><key>Ctrl</key><key>C</key></keyseq>, or click "
+"<guiseq><gui>Edit</gui><gui>Copy</gui></guiseq>."
+msgstr ""
+"Jelölje ki a kurzorral a másolni kívánt szöveget, és nyomja meg a "
+"<keyseq><key>Ctrl</key><key>C</key></keyseq> billentyűkombinációt, vagy "
+"válassza a <guiseq><gui>Szerkesztés</gui><gui>Másolás</gui></guiseq> "
+"menüpontot."
+
+#: C/log-copy.page:27(p)
+msgid ""
+"You can press <keyseq><key>Ctrl</key><key>A</key></keyseq>, or click "
+"<guiseq><gui>Edit</gui><gui>Select All</gui></guiseq>, to select all the "
+"text in the log which you are currently viewing."
+msgstr ""
+"Lenyomhatja a <keyseq><key>Ctrl</key><key>A</key></keyseq> "
+"billentyűkombinációt, vagy kiválaszthatja a "
+"<guiseq><gui>Szerkesztés</gui><gui>Összes kijelölése</gui></guiseq> "
+"menüpontot, az éppen olvasott napló teljes szövegének kijelöléséhez."
+
+#: C/log-close.page:9(desc)
+msgid "Remove the log you are currently viewing from the <gui>side pane</gui>."
+msgstr "Az éppen olvasott napló eltávolítása az <gui>oldalsávból</gui>."
+
+#: C/log-close.page:21(title)
+msgid "Close log"
+msgstr "Napló bezárása"
+
+#: C/log-close.page:23(p)
+msgid ""
+"Close the log that you are currently viewing by pressing "
+"<keyseq><key>Ctrl</key><key>W</key></keyseq>, or by clicking "
+"<guiseq><gui>File</gui><gui>Close</gui></guiseq>. This removes it from the "
+"<gui>side pane</gui> until you open the log again."
+msgstr ""
+"Az éppen olvasott naplót a <keyseq><key>Ctrl</key><key>W</key></keyseq> "
+"billentyűkombinációval, vagy a "
+"<guiseq><gui>Fájl</gui><gui>Bezárás</gui></guiseq> kiválasztásával zárhatja "
+"be. Ez eltávolítja a naplót az <gui>oldalsávból</gui>, amíg azt újra meg nem "
+"nyitja."
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/introduction.page:40(None)
+msgid "@@image: 'figures/log-viewer-main.png'; md5=019eaf56737c3fd7c1ae085e77962384"
+msgstr "@@image: 'figures/log-viewer-main.png'; md5=019eaf56737c3fd7c1ae085e77962384"
+
+#: C/introduction.page:8(desc)
+msgid "Introduction to the <app>GNOME System Log</app>."
+msgstr "Bevezetés a <app>GNOME Naplómegjelenítő</app> használatába."
+
+#: C/introduction.page:20(title)
+msgid "Introduction"
+msgstr "Bevezetés"
+
+#: C/introduction.page:22(p)
+msgid ""
+"<app>Log File Viewer</app> is a graphical, menu-driven viewer that you can "
+"use to view and monitor your system logs. <app>Log File Viewer</app> comes "
+"with a few functions that can help you manage your logs, including a log "
+"monitor and log statistics display."
+msgstr ""
+"A <app>Naplómegjelenítő</app> egy grafikus menüvel irányított "
+"megjelenítőprogram, amellyel megnézheti és szemmel tarthatja a "
+"rendszernaplókat. A <app>Naplómegjelenítő</app> sok hasznos funkciót "
+"tartalmaz, amelyek segítenek naplóit kezelni, mint például a naplófigyelő és "
+"a naplóstatisztika."
+
+#: C/introduction.page:27(p)
+msgid ""
+"<app>Log File Viewer</app> is useful if you are new to system administration "
+"because it provides an easier, more user-friendly display of your logs than "
+"a text display of the log file. It is also useful for more experienced "
+"administrators, as it contains a monitor to enable you to continuously "
+"monitor crucial logs."
+msgstr ""
+"A <app>Naplómegjelenítő</app> akkor lehet hasznos, ha Önnek még új feladat a "
+"rendszer adminisztrációja, mert egy könnyebben használható, felhasználóbarát "
+"felületet biztosít, mint a naplók szöveges felületen való megjelenítése. "
+"Továbbá hasznos lehet tapasztalt rendszergazdáknak is, hiszen tartalmaz egy "
+"olyan eszközt, amellyel folyamatosan figyelemmel kísérheti a kritikus "
+"naplókat."
+
+#: C/introduction.page:34(p)
+msgid ""
+"<app>Log File Viewer</app> is useful only to those who have access to the "
+"system log files, which generally requires root access."
+msgstr ""
+"A <app>Naplómegjelenítő</app> csak azoknak hasznos, akik hozzáférnek a "
+"rendszernaplókhoz, amelyekhez általában rendszergazdai jog szükséges."
+
+#: C/index.page:5(title) C/index.page:5(title)
+msgid "Log File Viewer Help"
+msgstr "Naplómegjelenítő súgója"
+
+#: C/index.page:8(title) C/index.page:8(title)
+msgid "Working with the <app>Log File Viewer</app>"
+msgstr "A <app>Naplómegjelenítő</app> használata"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/index.page:0(None)
+msgid "translator-credits"
+msgstr ""
+"Kelemen Gábor <kelemeng at gnome dot hu>, 2012\n"
+"Lukács Bence <lukacs.bence1 at gmail dot com>, 2012"
+

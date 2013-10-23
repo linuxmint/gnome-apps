@@ -1,0 +1,465 @@
+# translation of gnome-utils.master.gu.po to Gujarati
+# Ankit Patel <ankit644@yahoo.com>, 2005, 2006.
+# Ankit Patel <ankit@redhat.com>, 2005, 2007, 2009.
+# Sweta Kothari <swkothar@redhat.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils.master.gu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2009-09-10 14:46+0530\n"
+"Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
+"Language-Team: Gujarati\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "લોગ ફાઇલ દર્શક"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "સિસ્ટમ લોગ ફાઈલો જુઓ અથવા મોનીટર કરો"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "મુખ્ય વિન્ડોની ઊંચાઈ પિક્સેલોમાં"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "પ્રારંભ પર ખુલનાર લોગ ફાઇલ"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "શરૂઆતમાં ખોલવા માટેની લોગ ફાઈલો"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "લોગ દર્શાવવા માટે વપરાતા ફોન્ટનું માપ"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"શરુઆતમાં ખોલવા માટેની લોગ ફાઈલોની યાદી સ્પષ્ટ કરે છે. મૂળભૂત યાદી /etc/syslog.conf "
+"વાંચીને બનાવી શકાય છે."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "લોગ દર્શક મુખ્ય વિન્ડોની ઊંચાઈ પિક્સેલોમાં સ્પષ્ટ કરે છે."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"શરૂઆતમાં દર્શાવાયેલ લોગ ફાઈલ સ્પષ્ટ કરે છે. /var/adm/messages અથવા /var/log/messages "
+"એ મૂળભૂત છે, તમારી ઓપરેટિંગ સિસ્ટમ પર આધાર રાખીને."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"મુખ્ય વૃક્ષ દેખાવમાં લોગ દર્શાવવા માટે વપરાયેલ ચોક્કસ-પહોળાઈના ફોન્ટનું માપ સ્પષ્ટ કરે છે. "
+"મૂળભૂત એ મૂળભૂત ટર્મિનલ ફોન્ટ માપમાંથી લેવાયેલ છે."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "લોગ દર્શક મુખ્ય વિન્ડોની પહોળાઈ પિક્સેલોમાં સ્પષ્ટ કરે છે."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "મુખ્ય વિન્ડોની પહોળાઈ પિક્સેલોમાં"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:2
+#, fuzzy
+msgid "Effect:"
+msgstr "અસરો"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "નામ (_N):"
+
+#: ../data/logview-filter.ui.h:7
+#, fuzzy
+msgid "_Regular Expression:"
+msgstr "નિયમિત સમીકરણ ખાલી નથી!"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr "અંકિત પટેલ <ankit644@yahoo.com>, શ્ર્વેતા કોઠારી <swkothar@redhat.com>"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "ફાઇલ %s ને ખોલવાનું અશક્ય"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "ફિલ્ટર નામ ખાલી છે!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "ફિલ્ટર નામ ':' અક્ષરને સમાવી શકતુ નથી"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "નિયમિત સમીકરણ ખાલી નથી!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "નિયમિત સમીકરણ અયોગ્ય છે: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "મહેરબાની કરીને ક્યાંતો આગળનો અથવા પાછળના રંગને સ્પષ્ટ કરો!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "ફિલ્ટરમાં ફેરફાર કરો"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "નવા ફિલ્ટરને ઉમેરો"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "ફિલ્ટરો"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "શોધો (_F):"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "પહેલાંનું શોધો"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "શોધ શબ્દમાળાનો પહેલાંનો વારો શોધો"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "આગળ શોધો"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "શોધ શબ્દમાળાનો આગળનો વારો શોધો"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "શોધ શબ્દમાળાને સાફ કરો"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "GZip થયેલ લોગ વિસંકુચિત કરતી વખતે ભૂલ. ફાઈલ બગડેલી હોઈ શકે."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "ફાઇલને વાંચવા માટે તમને પૂરતી પરવાનગીઓ નથી."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "ફાઇલ એ નિયમિત ફાઇલ નથી અથવા લખાણ ફાઇલ નથી."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr "સિસ્ટમ લોગની આ આવૃત્તિ GZip થયેલ લોગને આધાર આપતી નથી."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "લોડ કરી રહ્યા છીએ..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "કાર્યક્રમની આવૃત્તિ બતાવો"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[LOGFILE...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - લોગો બ્રાઉઝ કરો અને મોનીટર કરો"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "લોગ દર્શક"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "સિસ્ટમ લોગ જોનાર"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "છેલ્લો સુધારો: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d લીટીઓ (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "લોગ ખોલો"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "મદદ પ્રદર્શિત કરવામાં ભૂલ હતી: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "લપેટાયેલ"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "મળ્યું નહિં"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "જીનોમ માટે સિસ્ટમ લોગ દર્શક."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "ફાઈલ (_F)"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "ફેરફાર કરો (_E)"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "દેખાવ (_V)"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "ફિલ્ટરો (_F)"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "મદદ (_H)"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "ખોલો (_O)..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "ફાઈલમાંથી લોગ ખોલો"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "બંધ કરો (_C)"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "આ લોગ બંધ કરો"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "બહાર નીકળો (_Q)"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "લોગ દર્શક બંધ કરો"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "નકલ કરો (_C)"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "પસંદગીની નકલ કરો"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "બધું પસંદ કરો (_A)"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "વર્તમાન લોગ પસંદ કરો"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "શોધે (_F)..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "લોગ માં શબ્દ અથવા શબ્દસમૂહ ને શોધો"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "મોટું લખાણ માપ"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "નાનું લખાણ માપ"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "સામાન્ય લખાણ માપ"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "ફિલ્ટરો ને સંચાલિત કરો"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "ફિલ્ટરોને સંચાલિત કરો"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "સમાવિષ્ટો (_C)"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "લોગ દર્શક માટે મદદ સમાવિષ્ટો ખોલો"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "વિશે (_A)"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "લોગ દર્શક માટે વિશે સંવાદ બતાવો"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "પરિસ્થિતિદર્શક પટ્ટી (_S)"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "પરિસ્થિતિદર્શક પટ્ટી બતાવો"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "બાજુની તકતી (_P)"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "બાજુની તકતી બતાવો"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "ફક્ત બંધબેસતાઓને બતાવો"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "ફક્ત વાક્યો બતાવો કે જે આપેલ ફિલ્ટરોનાં એક સાથે બંધબેસે"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr ""
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr ""
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr ""
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "આવૃત્તિ: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "નીચેની ફાઇલો ને ખોલી શકાયુ નહિં:"

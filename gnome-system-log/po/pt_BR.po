@@ -1,0 +1,478 @@
+# Brazilian Portuguese translation of GNOME Utils.
+# Copyright (C) 1999-2008 the GNOME Utils authors.
+# This file is distributed under the same license as the gnome-utils package.
+# Alexandre Hautequest <hquest@fesppr.br>, 1999.
+# Ariel Bressan da Silva <ariel@conectiva.com.br>, 2000.
+# Francisco Petrúcio Cavalcante Junior <fpcj@impa.br>, 2001.
+# Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002.
+# Welther José O. Esteves <weltherjoe@yahoo.com.br>, 2004.
+# Afonso Celso Medina <medina@maua.br>, 2005.
+# Guilherme de S. Pastore <gpastore@colband.com.br>, 2005-2006.
+# Luiz Fernando S. Armesto <luiz.armesto@gmail.com>, 2007.
+# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2007-2009.
+# Og Maciel <ogmaciel@gnome.org>, 2007-2008.
+# Rodrigo Flores <rodrigomarquesflores@gmail.com>, 2007.
+# Hugo Doria <hugodoria@gmail.com>, 2007, 2008.
+# Djavan Fagundes <dnoway@gmail.com>, 2008, 2009.
+# Krix Apolinário <krixapolinario@gmail.com>, 2009.
+# Antonio Fernandes C. Neto <fernandesn@gnome.org>, 2010.
+# Rodrigo Padula de Oliveira <contato@rodrigopadula.com>, 2011.
+# André Gondim <andregondim@ubuntu.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2011-08-31 22:30-0300\n"
+"Last-Translator: Antonio Fernandes C. Neto <fernandesn@gnome.org>\n"
+"Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Virtaal 0.2\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: Brazil\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "Visualizador de arquivos de log"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Ver ou monitorar arquivos de log do sistema"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "Altura da janela principal, em pixels"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "Lista de filtros salvos"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "Lista de filtros de expresões regulares salvos"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "Arquivo de log para abrir ao iniciar"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "Arquivo de log para abrir ao iniciar"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "Tamanho da fonte usada para exibir o log"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"Especifica uma lista de logs para abrir ao iniciar. Uma lista padrão é "
+"criada ao ler /etc/syslog.conf."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr ""
+"Especifica a altura da janela principal do visualizador de log, em pixels."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"Especifica o arquivo de log exibido ao iniciar. O padrão é ou /var/adm/"
+"messages ou /var/log/messages, dependendo do seu sistema operacional."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"Especifica o tamanho da fonte de largura fixa usada para exibir o log na "
+"principal visão em árvore. O padrão é definido a partir do tamanho padrão da "
+"fonte de terminal."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr ""
+"Especifica a largura da janela principal do visualizador de log, em pixels."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "Largura da janela principal, em pixels"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "Plano de fundo:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "Efeito:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "Primeiro plano:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "Oculto"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "Destaque"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "_Nome:"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "Expressão _regular:"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"Este programa é um software livre; você pode redistribuí-lo e/ou modificá-lo "
+"sob os termos da Licença Pública Geral GNU como publicada pela Free Software "
+"Foundation (FSF); na versão 2 da Licença, ou (na sua opinião) qualquer "
+"versão."
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"Este programa é distribuído na esperança de que seja útil, mas SEM NENHUMA "
+"GARANTIA; sem mesmo implicar garantias de COMERCIABILIDADE ou ADAPTAÇÃO A UM "
+"PROPÓSITO PARTICULAR.  Veja a Licença Pública Geral GNU (GPL) para mais "
+"detalhes. "
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este "
+"programa; se não, escreva para a Fundação do Software Livre (FSF) Inc., 51 "
+"Franklin St, Fifth Floor, Boston, MA 02110-1301 USA."
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"Alexandre Hautequest <hquest@fesppr.br>\n"
+"Ariel Bressan da Silva <ariel@conectiva.com.br>\n"
+"Evandro Fernandes Giovanini <evandrofg@ig.com.br>\n"
+"Francisco Petrúcio Cavalcante Junior <fpcj@impa.br>\n"
+"Gustavo Maciel Dias Vieira <gustavo@sagui.org>\n"
+"Welther José O. Esteves <weltherjoe@yahoo.com.br>\n"
+"Goedson Teixeira Paixão <goedson@debian.org>\n"
+"Guilherme de S. Pastore <gpastore@colband.com.br>\n"
+"Luiz Fernando S. Armesto <luiz.armesto@gmail.com>\n"
+"Leonardo Ferreira Fontenelle <leonardof@gnome.org>\n"
+"Og Maciel <ogmaciel@gnome.org>\n"
+"Hugo Doria <hugodoria@gmail.com>\n"
+"Djavan Fagundes <dnoway@gmail.com>\n"
+"Krix Apolinário <krixapolinario@gmail.com>\n"
+"Antonio Fernandes C. Neto <fernandesn@gnome.org>\n"
+"Rodrigo Padula de Oliveira <contato@rodrigopadula.com>\n"
+"André Gondim <andregondim@ubuntu.com>"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "Impossível abrir o arquivo %s"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "O nome do filtro está vazio!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "O nome do filtro não pode conter o caractere \":\""
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "A expressão regular está vazia!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "Expressão regular inválida: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr ""
+"Por favor especifique tanto a cor do primeiro plano quanto a do plano de "
+"fundo!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "Editar filtro"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "Adicionar novo filtro"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "Filtros"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_Localizar:"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "Localizar anterior"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "Localizar ocorrência anterior da expressão pesquisada"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "Localizar próxima"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "Localizar próxima ocorrência da expressão pesquisada"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "Limpar a expressão de pesquisa"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr ""
+"Erro ao descompactar um arquivo de log compactado com o GZip. O arquivo pode "
+"estar corrompido."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "Você não tem permissões suficientes para ler o arquivo."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "Este arquivo não é um arquivo comum ou não é um arquivo texto."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr ""
+"Esta versão do sistema de logs não suporta logs compactados com o GZip."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "Carregando..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Mostra a versão do aplicativo"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[ARQUIVODELOG...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - Navegar e monitorar logs"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "Visualizador de log"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "Visualizador de Log do Sistema"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "última atualização: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d linhas (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "Abrir log"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Ocorreu um erro ao exibir a ajuda: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "Quebrado"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "Não localizado"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "Um visualizador de log para o GNOME."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "_Arquivo"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "_Editar"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "_Ver"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "_Filtros"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "Aj_uda"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "_Abrir..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "Abrir um log a partir de um arquivo"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "_Fechar"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "Fecha este log"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "Sai_r"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "Sai do visualizador de log"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "_Copiar"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "Copia a seleção"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "Selecionar _tudo"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "Seleciona todo o log"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "_Localizar..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "Localiza uma palavra ou frase no arquivo de log"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "Tamanho de texto maior"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "Tamanho de texto menor"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "Tamanho de texto normal"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "Gerenciar filtros"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "Gerenciar filtros"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "Su_mário"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "Abre o sumário da ajuda para o visualizador de log"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "_Sobre"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "Mostra o diálogo \"sobre\" para o visualizador de log"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "Barra de _status"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "Mostra a barra de status"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "_Painel lateral"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "Mostrar painel lateral"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "Mostrar somente ocorrências"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "Somente mostrar linhas que combinam com um dos filtros fornecidos"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "_Rolagem automática"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "Rolar automaticamente para baixo quando surgirem novas linhas"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "Não é possível ler \"%s\""
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "Versão: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "Não foi possível abrir os seguintes arquivos:"

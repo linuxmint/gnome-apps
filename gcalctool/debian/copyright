@@ -1,0 +1,50 @@
+This package was debianized by Sebastien Bacher <seb128@debian.org> on
+Thu, 17 Jul 2003 12:55:48 +0200.
+
+It was debianized for the first time by Vincent Renardias <vincent@waw.com>.
+
+It was downloaded from : http://ftp.gnome.org/pub/GNOME/sources/gcalctool/
+
+Upstream Author:
+	Rich Burridge <richburridge@users.sourceforge.net>
+	Sami Pietila <sampie@ariana-dsl.utu.fi>
+	Robert Ancell <robert.ancell@gmail.com>
+
+Copyright:
+    For everything not listed below (plus gcalctool/functions.c, 
+      gcalctool/gtk.c, gcalctool/display.c, gcalctool/display.hi,
+      gcalctool/ui.h)
+    Copyright (c) 1987-2009 Sun Microsystems, Inc.
+
+    for gcalctool/ce_parser.[chy],
+        gcalctool/ce_tokeniser.l,
+        gcalctool/functions.h,
+        gcalctool/parser.h,
+        gcalctool/parser_mac.h:
+    Copyright (C) 2004-2008 Sami Pietila
+
+    for gcalctool/display.[ch],
+        gcalctool/functions.[ch],
+        gcalctool/gtk.c,
+        gcalctool/register.[ch],
+        gcalctool/ui.h:
+    Copyright (c) 2008-2009 Robert Ancell
+
+License:
+
+    This package is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 3 of the License, or
+    (at your option) any later version.
+ 
+    This package is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+ 
+    You should have received a copy of the GNU General Public License
+    along with this package; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+
+On Debian systems, the complete text of the GNU General
+Public License can be found in `/usr/share/common-licenses/GPL-3'.

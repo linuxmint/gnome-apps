@@ -1,0 +1,460 @@
+# Translation into the walloon language.
+#
+# Si vos voloz donner on côp di spale pol ratournaedje di Gnome (ou des
+# ôtes libes programes) sicrijhoz-mu a l' adresse emile
+# <srtxg@chanae.alphanet.ch>; nos avans co bråmint di l' ovraedje a fé.
+#
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Pablo Saratxaga <srtxg@chanae.alphanet.ch> 1999-2002
+# Lucyin Mahin, 2000
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils 1.96.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2002-04-30 14:02MET\n"
+"Last-Translator: Pablo Saratxaga <pablo@mandrakesoft.com>\n"
+"Language-Team: Walon <linux-wa@chanae.alphanet.ch>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+#, fuzzy
+msgid "Log File Viewer"
+msgstr "Po vey les djournås do sistinme"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+#, fuzzy
+msgid "View or monitor system log files"
+msgstr "Vey li fitchî djournå do sistinme"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "Fitchî di djournå a drovi a l' enondaedje"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+#, fuzzy
+msgid "Log files to open up on startup"
+msgstr "Fitchî di djournå a drovi a l' enondaedje"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr ""
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:4
+#, fuzzy
+msgid "Hide"
+msgstr "Muchî Programe"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr ""
+
+#: ../data/logview-filter.ui.h:6
+#, fuzzy
+msgid "_Name:"
+msgstr "No"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr ""
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+
+#. translator credits
+#: ../src/logview-about.h:63
+#, fuzzy
+msgid "translator-credits"
+msgstr ""
+"Ratournaedje e walon fwait pa:\n"
+"Pablo Saratxaga <pablo@mandrakesoft.com>\n"
+"Lucyin Mahin\n"
+"Lorint Hendschel <LorintHendschel@skynet.be>\n"
+"\n"
+"Po ndè saveur di pus sol nouve ortografeye\n"
+"eployeye chal loukîz so:\n"
+"http://rifondou.walon.org/"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:94
+#, fuzzy
+msgid "Filter name is empty!"
+msgstr "Li fitchî est vude"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr ""
+
+#: ../src/logview-filter-manager.c:296
+#, fuzzy
+msgid "Add new filter"
+msgstr "Drovi on novea fitchî log"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr ""
+
+#: ../src/logview-findbar.c:173
+#, fuzzy
+msgid "_Find:"
+msgstr "Trover"
+
+#: ../src/logview-findbar.c:188
+#, fuzzy
+msgid "Find Previous"
+msgstr "_Prôpietés"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr ""
+
+#: ../src/logview-findbar.c:196
+#, fuzzy
+msgid "Find Next"
+msgstr "Trover"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr ""
+
+#: ../src/logview-findbar.c:206
+#, fuzzy
+msgid "Clear the search string"
+msgstr "Shuve les loyéns simbolikes"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr ""
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr ""
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr ""
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr ""
+
+#: ../src/logview-loglist.c:315
+#, fuzzy
+msgid "Loading..."
+msgstr "Cweriaedje..."
+
+#: ../src/logview-main.c:61
+#, fuzzy
+msgid "Show the application's version"
+msgstr "_Catchî l' programe"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr ""
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr ""
+
+#: ../src/logview-main.c:102
+#, fuzzy
+msgid "Log Viewer"
+msgstr "Po vey les djournås do sistinme"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "Po vey les djournås do sistinme"
+
+#: ../src/logview-window.c:211
+#, fuzzy, c-format
+msgid "last update: %s"
+msgstr "Dierinne date:"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr ""
+
+#: ../src/logview-window.c:318
+#, fuzzy
+msgid "Open Log"
+msgstr "Ridant"
+
+#: ../src/logview-window.c:357
+#, fuzzy, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Åk n' a nén stî. «%s» est vude"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr ""
+
+#: ../src/logview-window.c:486
+#, fuzzy
+msgid "Not found"
+msgstr "Dji n' a rén trové"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr ""
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr ""
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "_Candjî"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr ""
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr ""
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "_Aidance"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr ""
+
+#: ../src/logview-window.c:820
+#, fuzzy
+msgid "Open a log from file"
+msgstr "Drovi on novea fitchî log"
+
+#: ../src/logview-window.c:822
+#, fuzzy
+msgid "_Close"
+msgstr "Cosinus"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr ""
+
+#: ../src/logview-window.c:824
+#, fuzzy
+msgid "_Quit"
+msgstr "_Candjî"
+
+#: ../src/logview-window.c:824
+#, fuzzy
+msgid "Quit the log viewer"
+msgstr "Po vey les djournås do sistinme"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "_Copyî"
+
+#: ../src/logview-window.c:827
+#, fuzzy
+msgid "Copy the selection"
+msgstr "Côper li tchuze"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr ""
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr ""
+
+#: ../src/logview-window.c:831
+#, fuzzy
+msgid "_Find..."
+msgstr "_Trover"
+
+#: ../src/logview-window.c:831
+#, fuzzy
+msgid "Find a word or phrase in the log"
+msgstr "Copyî l' tecse"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr ""
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr ""
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr ""
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr ""
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr ""
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr ""
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr ""
+
+#: ../src/logview-window.c:846
+#, fuzzy
+msgid "_About"
+msgstr "Å dfait"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr ""
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "Bår ås _messaedjes"
+
+#: ../src/logview-window.c:851
+#, fuzzy
+msgid "Show Status Bar"
+msgstr "Bår ås _messaedjes"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr ""
+
+#: ../src/logview-window.c:853
+#, fuzzy
+msgid "Show Side Pane"
+msgstr "Mostrer li roye ås informåcions"
+
+#: ../src/logview-window.c:855
+#, fuzzy
+msgid "Show matches only"
+msgstr "Dji n' a rén trové"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr ""
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr ""
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr ""
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr ""
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr ""
+
+#: ../src/logview-window.c:1500
+#, fuzzy
+msgid "Could not open the following files:"
+msgstr "Dji n' a savu drovi %s."

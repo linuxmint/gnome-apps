@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-create" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <revision pkgversion="3.4" date="2012-01-18" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Марта Богданович (Marta Bogdanowicz)</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>Добавить файлы или папки в новый архив.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Юрий Мясоедов</mal:name>
+      <mal:email>omerta13@yandex.ru</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Создать новый архив</title>
+
+  <p>Чтобы создать новый архив с помощью <app>Менеджера архивов</app>, выполните следующее:</p>
+
+  <steps>
+    <item>
+      <p>Нажмите кнопку панели инструментов <gui>Создать новый архив</gui> или выберите <guiseq><gui style="menu">Архив</gui><gui style="menuitem">Создать</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Откроется диалог выбора файлов. Дайте имя новому архивному файлу и выберите его расположение, затем нажмите <gui>Создать</gui>.</p>
+      <note style="tip">
+	<p>В этом диалоговом окне также можно выбрать тип формата файла (доступные расширения будут перечислены ниже). Если вы не выберите формат файла, новый архив будет иметь расширение <file>tar.gz</file>.</p>
+	<p>Нажав <gui>Другие параметры</gui>, вы можете установить пароль или разбить новый архив на несколько более маленьких архивов, выбрав соответствующий параметр и указав объём тома в <gui>МБ</gui> для каждой части.</p>
+      </note>
+    </item>
+    <item>
+      <p>Добавьте файлы в архив, нажав кнопку панели инструментов <gui>Добавить в архив новые файлы и папки</gui> или выбрав <guiseq><gui style="menu">Правка</gui> <gui style="menuitem">Добавить файлы</gui></guiseq>. <app>Менеджер архивов</app> позволяет также добавлять целые папки. Для этого нажмите кнопку панели инструментов <gui>Добавить папку в архив</gui> или выберите <guiseq><gui style="menu">Правка</gui> <gui style="menuitem">Добавить папку</gui></guiseq>.</p>
+      <note style="tip">
+        <p>После добавления папки в архив, приложение предложит некоторые параметры:</p>
+        <list>
+          <item><p>Включать ли вложенные папки.</p></item>
+          <item><p>Выберите файлы, которые должны быть включены.</p></item>
+          <item><p>Выберите вложенные папки или файлы для исключения.</p></item>
+        </list>
+	<p>Не все архивные форматы поддерживают папки, если файловый формат не поддерживает папки, вы не получите предупреждения. Если файловый формат не поддерживает папки, файлы из папок будут добавлены, но сама папка добавлена не будет.</p>
+      </note>
+    </item>
+    <item>
+      <p>Архив готов, как только будет завершено добавление файлов. Архив не нужно сохранять.</p>
+    </item>
+  </steps>
+
+</page>

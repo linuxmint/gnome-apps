@@ -1,0 +1,16 @@
+Description: Don't use both Intltool and GNU gettext build system
+Bug: http://bugs.gnome.org/627789
+
+Index: gedit-2.30.3/configure.ac
+===================================================================
+--- gedit-2.30.3.orig/configure.ac	2010-08-24 12:07:56.998437000 +1000
++++ gedit-2.30.3/configure.ac	2010-08-24 12:08:17.918437001 +1000
+@@ -155,8 +155,6 @@
+ 
+ IT_PROG_INTLTOOL([0.40.0])
+ AC_SUBST([GETTEXT_PACKAGE], [gedit])
+-AM_GNU_GETTEXT_VERSION([0.17])
+-AM_GLIB_GNU_GETTEXT
+ AC_DEFINE([GETTEXT_PACKAGE],[PACKAGE_TARNAME], [Define to the gettext package name.])
+ 
+ dnl ================================================================

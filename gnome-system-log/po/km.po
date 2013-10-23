@@ -1,0 +1,440 @@
+# translation of gnome-system-log.master.po to Khmer
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Khoem Sokhem <khoemsokhem@khmeros.info>, 2012.
+# Morn Met <mornmet@khmeros.info>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-system-log.master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-system-log&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-01-04 16:41+0000\n"
+"PO-Revision-Date: 2012-03-06 15:17+0700\n"
+"Last-Translator: Morn Met <mornmet@khmeros.info>\n"
+"Language-Team: Khmer <support@khmeros.info>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: WordForge 0.8 RC1\n"
+"X-Language: km-KH\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "កម្មវិធី​មើល​ឯកសារ​កំណត់ហេតុ"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "មើល ឬ​ត្រួតពិនិត្យ​ឯកសារ​កំណត់ហេតុ​ប្រព័ន្ធ"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "កម្ពស់​បង្អួច​មេ​គិតជា​ភីកសែល"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "បញ្ជី​តម្រង​ដែល​បាន​រក្សាទុក"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "បញ្ជី​តម្រង​កន្សោម​ធម្មតាដែល​បាន​រក្សាទុក"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "ឯកសារ​កំណត់​ហេតុ​ត្រូវ​​បើក​នៅ​ពេល​ចាប់ផ្ដើម"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "ឯកសារ​កំណត់​ហេតុ​ត្រូវ​បើក​នៅ​ពេល​ចាប់ផ្ដើម"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "ទំហំ​ពុម្ពអក្សរ​ដែល​ត្រូវ​ប្រើ​សម្រាប់​បង្ហាញ​កំណត់ហេតុ"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"បញ្ជាក់​បញ្ជី​ឯកសារ​កំណត់ហេតុ​ត្រូវ​បើក​នៅ​ពេល​ចាប់ផ្ដើម ។ "
+"បញ្ជី​លំនាំដើម​ត្រូវ​បាន​បង្កើត​ដោយ​ការ​អាន /etc/syslog.conf ។"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "បញ្ជាក់​កម្ពស់​បង្អួច​មេ​របស់​កម្មវិធី​មើល​កំណត់ហេតុ​គិតជា​ភីកសែល ។"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"បញ្ជាក់​ឯកសារ​កំណត់ហេតុ​ដែល​ត្រូវ​បង្ហាញ​នៅ​ពេល​ចាប់ផ្ដើម ។ លំនាំ​ដើម​អាច​ជា "
+"/var/adm/messages ឬ /var/log/messages "
+"អាស្រ័យ​ទៅលើ​ប្រព័ន្ធ​ប្រតិបត្តិការ​​របស់​អ្នក ។"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"បញ្ជាក់​ទំហំ​ពុម្ពអក្សរ​ដែល​មាន​ទទឹង​ថេរ "
+"ដែល​នឹង​ត្រូវ​ប្រើ​សម្រាប់​ការ​បង្ហាញ​កំណត់ហេតុ​នៅ​ក្នុង​ទិដ្ឋភាព​មែកធាង​មេ "
+"។ លំនាំដើម​ត្រូវ​បា​ន​យក​មក​ពី​ទំហំ​ពុម្ពអក្សរ​ស្ថានីយ​លំនាំដើម ។"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "បញ្ជាក់​ទទឹង​បង្អួច​មេ​របស់​កម្មវិធី​មើល​កំណត់ហេតុ​គិតជា​ភីកសែល ។"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "ទទឹង​បង្អួច​មេ​គិតជា​ភីកសែល"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "ផ្ទៃ​ខាងក្រោយ ៖"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "បែបផែន ៖"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "ផ្ទៃខាងមុខ ៖"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "លាក់"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "រំលេច"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "ឈ្មោះ ៖"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "កន្សោម​ធម្មតា ៖"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"កម្មវិធី​នេះ គឺជា​កម្មវិធី​ឥត​គិត​ថ្លៃ ដែល​អ្នក​អាច​ធ្វើ​ការ​ចែកចាយបន្ត "
+"និង/ឬ​កែប្រែ​វា​បាន​ដោយ​ស្ថិត​នៅ​ក្រោម​លក្ខខណ្ឌ​នៃ​អាជ្ញាប័ណ្ណ GNU General "
+"Public License ដូច​ដែល​បាន​បោះពុម្ពផ្សាយ​ដោយ​មូលនិធិ​កម្មវិធី​ឥត​គិត​ថ្លៃ "
+"ទាំង​កំណែ ២ នៃ​អាជ្ញាប័ណ្ណ ឬ (តាម​ជម្រើស) កំណែ​ក្រោយ ។"
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"កម្មវិធី​នេះ​ត្រូវ​បាន​ចែកចាយ​ដោយ​សង្ឃឹមថា នឹង​មាន​ប្រយោជន៍ "
+"ប៉ុន្តែ​មិន​មាន​ការ​ធានា ព្រម​ទាំង​មិន​មាន​ការ​ធានា​នូវ​ភាព​ដែល​អាច​លក់​បាន "
+"ឬ​ការ​ធានា​ចំពោះ​គោលបំណង​ជាក់លាក់​ណាមួយ​ទេ ។ សម្រាប់​ព័ត៌មាន​បន្ថែម "
+"សូម​មើល​អាជ្ញាប័ណ្ណ GNU General Public License ។"
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"អ្នក​គួរតែ​ទទួល​បាន​ច្បាប់​ចម្លង​នៃ​អាជ្ញាប័ណ្ណ GNU General Public License "
+"ព្រមគ្នា​ជាមួយ​នឹង​កម្មវិធី​នេះ ប្រសិនបើ​មិន​បាន​ទទួល​ទេ "
+"សូម​សរសេរ​មក​កាន់​មូលនិធិ​កម្មវិធី​ឥត​គិត​ថ្លៃ​តាម​អាសយដ្ឋាន Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា, ចាន់ សម្បត្តិរតនៈ, សុខ សុភា"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "មិន​អាច​បើក​ឯកសារ %s បាន​ឡើយ"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "ឈ្មោះ​តម្រង​ទទេ !"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "ឈ្មោះ​តម្រង​មិន​អាច​មាន​តួអក្សរ ':' បាន​ទេ"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "កន្សោម​ធម្មតា​ គឺ​ទទេ !"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "កន្សោម​ធម្មតា​មិន​ត្រឹមត្រូវ ៖ %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "សូម​បញ្ជាក់​ពណ៌​ផ្ទៃ​ខាងមុខ និង​ខាងក្រោយ !"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "កែសម្រួល​តម្រង"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "បន្ថែម​តម្រង​ថ្មី"
+
+#: ../src/logview-filter-manager.c:508
+msgid "Filters"
+msgstr "តម្រង"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "រក ៖"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "រក​ខាងដើម"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "រក​ការ​កើត​មាន​ឡើង​នៃ​ខ្សែ​អក្សរ​ស្វែងរក​ខាងដើម"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "រក​បន្ទាប់"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "រក​ការ​កើត​មាន​ឡើង​នៃ​ខ្សែ​អក្សរ​ស្វែង​រក​បន្ទាប់"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "សម្អាត​ខ្សែ​អក្សរ​ស្វែងរក"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "កំហុស ខណៈ​ពេល​ពន្លា​កំណត់ហេតុ GZipped ។ ឯកសារ​ប្រហែល​ជា​ខូច ។"
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "អ្នក​មិន​មាន​សិទ្ធិ​គ្រប់គ្រាន់ ដើម្បី​អាន​ឯកសារ​នេះ​ទេ ។"
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "ឯកសារ​មិនមែន​ជា​ឯកសារ​ធម្មតា ឬ​មិនមែន​ជា​ឯកសារ​អត្ថបទ ។"
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr "កំណែ​នៃ​កំណត់ហេតុ​ប្រព័ន្ធ​នេះ​មិន​គាំទ្រ​កំណត់ហេតុ GZipped ឡើយ ។"
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "កំពុងផ្ទុក..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "បង្ហាញ​កំណែ​របស់​កម្មវិធី"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[ឯកសារ​កំណត់ហេតុ...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - រកមើល និង​ត្រួតពិនិត្យ​កំណត់ហេតុ"
+
+#: ../src/logview-main.c:100
+msgid "Log Viewer"
+msgstr "កម្មវិធី​មើល​កំណត់ហេតុ"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "កម្មវិធី​មើល​កំណត់ហេតុ​ប្រព័ន្ធ"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "ធ្វើ​បច្ចុប្បន្នភាព​ចុងក្រោយ ៖ %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d បន្ទាត់ (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "បើក​កំណត់ហេតុ"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "មាន​កំហុស​ក្នុង​ការ​បង្ហាញ​ជំនួយ ៖ %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "បាន​រុំ"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "រក​មិន​ឃើញ"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "កម្មវិធី​មើល​កំណត់ហេតុ​ប្រព័ន្ធ​សម្រាប់ GNOME ។"
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "ឯកសារ"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "កែសម្រួល"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "មើល"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "តម្រង"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "ជំនួយ"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "បើក..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "បើក​កំណត់ហេតុ​ពី​ឯកសារ"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "បិទ"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "បិទ​កំណត់ហេតុ​នេះ"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "ចាកចេញ"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "ចាកចេញ​ពី​កម្មវិធី​មើល​កំណត់ហេតុ"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "ចម្លង"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "ចម្លង​ជម្រើស"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "ជ្រើស​ទាំងអស់"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "ជ្រើស​កំណត់ហេតុ​ទាំងមូល"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "រក..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "រក​ពាក្យ ឬ​ឃ្លា​នៅ​ក្នុង​កំណត់ហេតុ"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "ទំហំ​អត្ថបទ​ធំជាង"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "ទំហំ​អត្ថបទ​តូចជាង"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "ទំហំ​អត្ថបទ​ធម្មតា"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "គ្រប់គ្រង​តម្រង"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "គ្រប់គ្រង​តម្រង"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "មាតិកា"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "បើក​មាតិកា​ជំនួយ​សម្រាប់​កម្មវិធី​មើល​កំណត់ហេតុ"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "អំពី"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "បង្ហាញ​ប្រអប់​អំពី​សម្រាប់​កម្មវិធី​មើល​កំណត់ហេតុ"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "របារ​ស្ថានភាព"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "បង្ហាញ​របារ​ស្ថានភាព"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "ស្លាបព្រិល​ចំហៀង"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "បង្ហាញ​ស្លាបព្រិល​ចំហៀង"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "បង្ហាញ​តែ​ការផ្គូផ្គង​ប៉ុណ្ណោះ"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "បង្ហាញ​តែ​បន្ទាត់​ដែល​ផ្គូផ្គង​នឹង​តម្រង​ណាមួយ"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "រមូរ​ស្វ័យប្រវត្តិ"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "រមូរ​ចុះក្រោម​ដោយស្វ័យប្រវត្តិ នៅ​ពេល​បន្ទាត់​ថ្មី​បង្ហាញ"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "មិន​អាច​អាន​ពី \"%s\""
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "កំណែ ៖"
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "មិន​អាច​បើក​ឯកសារ​ខាងក្រោម​បាន​ទេ ៖"
+

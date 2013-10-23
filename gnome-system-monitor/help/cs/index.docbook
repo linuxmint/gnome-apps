@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.24.4">
+<!ENTITY manrevision "2.2">
+<!ENTITY date "March 2009">
+<!ENTITY app "System Monitor">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="cs">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Příručka V2.2 k aplikaci Sledování systému</title>
+
+    <copyright lang="en">
+      <year>2009</year>
+      <holder>Paul Cutler</holder>
+    </copyright>
+    <copyright lang="en">
+      <year>2004</year>
+      <holder>Sun Microsystems</holder>
+    </copyright>
+    <copyright lang="en">
+      <year>2001</year>
+      <year>2002</year>
+      <year>2004</year>
+      <holder>Bill Day</holder>
+    </copyright>
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+   -->
+
+    <publisher role="maintainer">
+      <publishername>Dokumentační projekt GNOME</publishername>
+    </publisher>
+
+     <legalnotice id="legalnotice">
+	<para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type="help" url="help:fdl">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+         <para>Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, musíte přiložit kopii licence dle popisu v sekci 6 dané licence.</para>
+
+	<para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+        other legal stuff such as "NO WARRANTY" statement. Please do not change
+        any of this. -->
+
+  <authorgroup>
+    <author lang="en">
+      <firstname>Sun</firstname>
+      <surname>GNOME Documentation Team</surname>
+      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+    </author>
+    <author lang="en">
+      <firstname>Bill</firstname>
+      <surname>Day</surname>
+      <affiliation><address><email>billday@bellatlantic.net</email></address></affiliation>
+    </author>
+      <author lang="en">
+        <firstname>Paul</firstname>
+        <surname>Cutler</surname>
+        <affiliation>
+          <orgname>GNOME Documentation Project</orgname>
+          <address><email>pcutler@foresightlinux.org</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+
+    <othercredit role="translator">
+      <firstname>Latin</firstname>
+      <surname>Translator 1</surname>
+      <affiliation>
+        <orgname>Latin Translation Team</orgname>
+        <address> <email>translator@gnome.org</email> </address>
+      </affiliation>
+      <contrib>Latin translation</contrib>
+    </othercredit>
+-->
+    </authorgroup>
+
+    <releaseinfo revision="2.28" role="review">
+      <ulink type="review" url="http://bugzilla.gnome.org/show_bug.cgi?id=500559"/>
+    </releaseinfo>
+
+    <revhistory>
+      <revision lang="en">
+        <revnumber>System Monitor Manual V2.2</revnumber>
+        <date>March 2009</date>
+        <revdescription>
+          <para role="author" lang="en">Paul Cutler
+            <email>pcutler@foresightlinux.org</email>
+          </para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+      <revision lang="en">
+        <revnumber>System Monitor Manual V2.1</revnumber>
+        <date>February 2004</date>
+        <revdescription>
+          <para role="author" lang="en">Sun GNOME Documentation Team</para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+      <revision lang="en">
+        <revnumber>System Monitor Manual V2.0</revnumber>
+        <date>November 2002</date>
+        <revdescription>
+          <para role="author" lang="en">Bill Day <email>billday@bellatlantic.net</email>
+          </para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+      <revision lang="en">
+        <revnumber>Procman Manual V0.11</revnumber>
+        <date>January 2002</date>
+        <revdescription>
+          <para role="author" lang="en">Bill Day
+            <email>billday@bellatlantic.net</email>
+          </para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Tato příručka popisuje aplikaci Sledování systému ve verzi 2.24.4.</releaseinfo>
+
+    <legalnotice>
+      <title>Ohlasy</title>
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci Sledování systému nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:gnome-feedback" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+
+<!-- Translators may also add here feedback address for translations -->
+
+    </legalnotice>
+    <abstract role="description">
+      <para>Aplikace Sledování systému podává uživateli v grafické podobě výsledky sledování činnosti procesoru, sítě a paměti a umožňuje mu prohlížet a zastavovat systémové procesy.</para>
+    </abstract>
+  </articleinfo>
+
+  <indexterm zone="index" lang="en">
+    <primary>System Monitor</primary>
+  </indexterm>
+  <indexterm zone="index" lang="en">
+    <primary>gnome-system-monitor</primary>
+  </indexterm>
+  <indexterm zone="index" lang="en">
+    <primary>procman</primary>
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+ <!-- ============= Introduction ============================== -->
+  <sect1 id="gnome-system-monitor-intro">
+    <title>Úvod</title>
+    <para>Aplikace <application>Sledování systému</application> vám umožňuje zobrazit základní informace o systému a sledovat systémové procesy, využití systémových zdrojů a souborových systémů. Můžete také <application>Sledování systému</application> využít ke změně chování svého systému.</para>
+    <para>Okno aplikace <application>Sledování systému</application> obsahuje čtyři karty:</para>
+    <variablelist>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>System</guilabel>
+        </term>
+        <listitem>
+          <para>Zobrazuje různé základní informace o hardware a software počítače.</para>
+          <variablelist>
+            <varlistentry>
+              <term>Distribuci</term>
+              <listitem>
+                <itemizedlist>
+                  <listitem>
+                    <para>Verzi distribuce</para>
+                  </listitem>
+                  <listitem>
+                    <para>Verzi Linuxového jádra</para>
+                  </listitem>
+                  <listitem>
+                    <para>Verzi GNOME</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Hardware</term>
+              <listitem>
+                <itemizedlist>
+                  <listitem>
+                    <para>Nainstalovanou paměť</para>
+                  </listitem>
+                  <listitem>
+                    <para>Procesory a jejich rychlost</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Stav systému</term>
+              <listitem>
+                <itemizedlist>
+                  <listitem>
+                    <para>V současnosti dostupné místo na disku</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>Processes</guilabel>
+        </term>
+        <listitem>
+          <para>Ukazuje aktivní procesy a vzájemné vztahy mezi nimi. O jednotlivých procesech poskytuje podrobné informace a umožňuje aktivní procesy řídit.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>Resources</guilabel>
+        </term>
+        <listitem>
+          <para>Zobrazuje využití následujících systémových zdrojů:</para>
+          <itemizedlist>
+            <listitem>
+              <para>CPU (Central Procesor Unit / centrální procesorová jednotka)</para>
+            </listitem>
+            <listitem>
+              <para>Paměti a odkládacího prostoru</para>
+            </listitem>
+            <listitem>
+              <para>Sítě</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>File Systems</guilabel>
+        </term>
+        <listitem>
+          <para>Seznam všech připojených souborových systému včetně základních informací u každého.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="gnome-system-monitor-getting-started">
+    <title>Začínáme</title>
+
+<!-- ============= To Start System Monitor ============================ -->
+    <sect2 id="gnome-system-monitor-to-start">
+      <title>Spuštění aplikace Sledování systému</title>
+      <para>Aplikaci <application>Sledování systému</application> můžete spustit následujícími způsoby:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Nabídka <guimenu>Systém</guimenu></term>
+          <listitem>
+            <para lang="en">
+              Choose <menuchoice><guimenu>Administration</guimenu> <guimenuitem>System Monitor</guimenuitem></menuchoice>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Příkazový řádek</term>
+          <listitem>
+            <para>Spusťte následující příkaz: <command>gnome-system-monitor</command></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-when-you-start">
+      <title>Když spustíte Sledování systému</title>
+      <para>Po spuštění aplikace <application>Sledování systému</application> se zobrazí následující okno:</para>
+      <figure id="gnome-system-monitor-window">
+        <title>Okno aplikace Sledování systému</title>
+        <screenshot>
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/gnome-system-monitor_window.png" format="PNG"/>
+            </imageobject>
+            <textobject> <phrase>Shows System Monitor main window.</phrase>
+            </textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+      <para>Okno <application>Sledování systému</application> obsahuje následující části:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Panel nabídek</term>
+          <listitem>
+            <para>Nabídky v panelu nabídek obsahují všechny funkce, které potřebujete pro práci s aplikací <application>Sledování systému</application>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Zobrazovací oblast</term>
+          <listitem>
+            <para>Zobrazovací oblast obsahuje informace sledování systému. Ty jsou rozdělené na následujících čtyřech kartách:</para>
+            <itemizedlist>
+              <listitem>
+                <para lang="en">
+                  <guilabel>System</guilabel>
+                </para>
+                <para>Obsahuje seznam základních vlastností systému, jako jsou verze software, výčet hardware a stav.</para>
+              </listitem>
+              <listitem>
+                <para lang="en">
+                  <guilabel>Processes</guilabel>
+                </para>
+                <para>Obsahuje seznam procesů uspořádaných do tabulky, uvedenou průměrnou zátěž za několik posledních minut a tlačítko <guibutton>Ukončit proces</guibutton>.</para>
+              </listitem>
+              <listitem>
+                <para lang="en">
+                  <guilabel>Resources</guilabel>
+                </para>
+                <para>Obsahuje graf <guilabel>Historie CPU</guilabel>, graf <guilabel>Historie použití paměti a odkládacího prostoru</guilabel> a graf <guilabel>Historie sítě</guilabel>.</para>
+              </listitem>
+              <listitem>
+                <para lang="en">
+                  <guilabel>File Systems</guilabel>
+                </para>
+                <para>Obsahuje tabulku v současnosti připojených souborových systémů.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Stavový řádek</term>
+          <listitem>
+            <para>Stavový řádek zobrazuje informace o aktuální činnosti aplikace <application>Sledování systému</application> a kontextové informace k položkám nabídky.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="gnome-system-monitor-usage">
+    <title>Použití</title>
+
+    <sect2 id="gnome-system-monitor-display-basic-info">
+      <title>Zobrazení základních informací o systému</title>
+      <para>Když chcete zobrazit základní informace o systému, zvolte kartu <guilabel>Systém</guilabel>.</para>
+      <para>Na kartě <guilabel>Systém</guilabel> jsou informace rozdělené do tří skupin:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Informace o systému</para>
+        </listitem>
+        <listitem>
+          <para>Hardware</para>
+        </listitem>
+        <listitem>
+          <para>Stav systému</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-display-processlist">
+      <title>Zobrazení seznamu procesů</title>
+      <para>Když chcete zobrazit seznam procesů, zvolte kartu <guilabel>Procesy</guilabel>.</para>
+      <para>Na kartě <guilabel>Procesy</guilabel> jsou procesy uspořádané do tabulky. Řádky tabulky uvádějí informace o jednotlivých procesech. Sloupce představují pole s informacemi o procesech, jak např. jméno uživatele vlastnícího proces, množství paměti aktuálně použité procesem atd. Zleva doprava to jsou ve výchozím stavu následující sloupce:</para>
+      <itemizedlist>
+          <listitem>
+            <para>Název procesu</para>
+          </listitem>
+          <listitem>
+            <para>Stav</para>
+          </listitem>
+          <listitem>
+            <para>% CPU</para>
+          </listitem>
+          <listitem>
+            <para>Nice</para>
+          </listitem>
+          <listitem>
+            <para>ID</para>
+          </listitem>
+          <listitem>
+            <para>Paměť</para>
+          </listitem>
+      </itemizedlist>
+        <para>Postup jak změnit, které sloupce se v seznamu procesů mají zobrazovat, uvádí <xref linkend="gnome-system-monitor-prefs-proclist"/>.</para>
+
+      <sect3 id="gnome-system-monitor-display-processlist-child">
+        <title>Rodičovské procesy a dceřiné procesy</title>
+        <para>Rodičovský proces je proces, který vytvořil další proces. Onen vytvořený proces je dceřiným procesem původního procesu. Ve výchozím stavu aplikace <application>Sledování systému</application> nezobrazuje závislosti mezi procesy. Pokud se chcete dovědět, jak toto výchozí zobrazení změnit, tak informace uvádí <xref linkend="gnome-system-monitor-modify-processlist-viewdeps"/>.</para>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-display-processlist-priority">
+        <title>Priorita procesu a hodnota nice</title>
+      <para>Procesy běží podle pořadí priority: procesy s vysokou prioritou běží přednostně před procesy s nízkou prioritou. Dceřiné procesy zpravidla dědí prioritu od svého rodičovského procesu.</para>
+      <para>Priorita procesu je dána hodnotou nice procesu a to následovně:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Hodnota nice 0 znamená, že má proces normální prioritu.</para>
+        </listitem>
+        <listitem>
+          <para>Vyšší hodnota nice značí nižší prioritu.</para>
+        </listitem>
+        <listitem>
+          <para>Nižší hodnota nice značí vyšší prioritu.</para>
+        </listitem>
+      </itemizedlist>
+      <para>Informace o tom, jak změnit prioritu procesu, uvádí <xref linkend="gnome-system-monitor-change-priority"/>.</para>
+      </sect3>
+
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-sort-processlist">
+      <title>Seřazení seznamu procesů</title>
+      <para>Pokud chcete seznam procesů seřadit, postupujte následovně:</para>
+      <orderedlist>
+        <listitem>
+          <para>Zvolte kartu <guilabel>Procesy</guilabel> se seznamem procesů.</para>
+        </listitem>
+        <listitem>
+          <para>Ve výchozím stavu jsou procesy seřazené podle názvu v abecedním pořadí. Kliknutím na záhlaví sloupce <guilabel>Název procesu</guilabel> zobrazíte procesy v opačném pořadí.</para>
+        </listitem>
+        <listitem>
+          <para>Kliknutím na záhlaví některého z ostatních sloupců se seřadí procesy podle informací v daném sloupci, v abecedním nebo číselném pořadí.</para>
+        </listitem>
+        <listitem>
+          <para>Opětovným kliknutí na záhlaví sloupce se abecední nebo číselné pořadí obrátí v opačném směru.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-modify-processlist">
+      <title>Změna obsahu seznamu procesů</title>
+      <para>Obsah seznamu procesů můžete změnit způsoby uvedenými dále.</para>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-all">
+        <title>Zobrazení všech procesů</title>
+        <para>Pokud chcete v seznamu procesů zobrazit všechny procesy, postupujte takto:</para>
+        <orderedlist>
+          <listitem>
+            <para>Zvolte kartu <guilabel>Procesy</guilabel> se seznamem procesů.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">
+              Choose
+              <menuchoice>
+                <guimenu>View</guimenu>
+                <guimenuitem>All Processes</guimenuitem>
+              </menuchoice>.
+            </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-my">
+        <title>Zobrazení pouze procesů vlastněných současným uživatelem</title>
+        <para>Pokud chcete v seznamu procesů zobrazit pouze procesy vlastněné současným uživatelem, postupujte takto:</para>
+        <orderedlist>
+          <listitem>
+            <para>Zvolte kartu <guilabel>Procesy</guilabel> se seznamem procesů.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">
+              Choose
+              <menuchoice>
+                <guimenu>View</guimenu>
+                <guimenuitem>My Processes</guimenuitem>
+              </menuchoice>.
+            </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-active">
+        <title>Zobrazení pouze aktivních procesů</title>
+        <para>Pokud chcete v seznamu procesů zobrazit pouze aktivní procesy, postupujte takto:</para>
+        <orderedlist>
+          <listitem>
+            <para>Zvolte kartu <guilabel>Procesy</guilabel> se seznamem procesů.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">
+              Choose
+              <menuchoice>
+                <guimenu>View</guimenu>
+                <guimenuitem>Active Processes</guimenuitem>
+              </menuchoice>.
+            </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-viewdeps">
+        <title>Zobrazení závislostí</title>
+        <para>Pokud chcete v seznamu procesů zobrazit závislosti procesů, postupujte takto:</para>
+        <orderedlist>
+          <listitem>
+            <para>Zvolte kartu <guilabel>Procesy</guilabel> se seznamem procesů.</para>
+          </listitem>
+          <listitem>
+            <para>Zvolte <menuchoice><guimenu>Zobrazit</guimenu><guimenuitem>Závislosti</guimenuitem></menuchoice>.</para>
+          </listitem>
+        </orderedlist>
+        <para>Pokud je v nabídce volba <guimenuitem>Závislosti</guimenuitem> vybraná, procesy jsou vypsané následovně:</para>
+        <itemizedlist>
+          <listitem>
+            <para>Po levé straně názvu procesu je zobrazený symbol trojúhelníčku. Kliknutím na symbol trojúhelníčku můžete zobrazit nebo skrýt dceřiné procesy.</para>
+          </listitem>
+          <listitem>
+            <para>Podřízené procesy jsou odsazené a vypsané pod svým rodičovským procesem.</para>
+          </listitem>
+        </itemizedlist>
+        <para>Pokud není v nabídce volba <guimenuitem>Závislosti</guimenuitem> vybraná:</para>
+        <itemizedlist>
+          <listitem>
+            <para>Nejsou rozlišené rodičovské a dceřiné procesy.</para>
+          </listitem>
+          <listitem>
+            <para>Všechny procesy jsou vypsané souvisle v abecedním pořadí.</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-memory-map">
+      <title>Zobrazení map paměti procesu</title>
+      <para>Jestliže chcete zobrazit mapy paměti procesu, postupujte následovně:</para>
+      <orderedlist>
+        <listitem>
+          <para>Zvolte kartu <guilabel>Procesy</guilabel> se seznamem procesů.</para>
+        </listitem>
+        <listitem>
+          <para>Vyberte proces v seznamu procesů.</para>
+        </listitem>
+        <listitem>
+          <para>Zvolte <menuchoice><guimenu>Zobrazit</guimenu><guimenuitem>Mapy paměti</guimenuitem></menuchoice>.</para>
+        </listitem>
+      </orderedlist>
+      <para>Dialogové okno <guilabel>Mapy paměti</guilabel> zobrazí informace ve formě tabulky. Nad tabulkou paměťové mapy je uvedený název procesu. Uváděno zleva doprava zobrazuje dialog <guilabel>Mapy paměti</guilabel> následující sloupce:</para>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Filename</guilabel></term>
+          <listitem>
+            <para>Umístění sdílené knihovny, kterou proces v současnosti používá. V případě, že je pole prázdné, informace v tomto řádku popisují paměť, kterou vlastní přímo proces, jehož název je uvedený na tabulkou paměťové mapy.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM Start</guilabel></term>
+          <listitem>
+            <para>Adresa na které začíná paměťový segment.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM End</guilabel></term>
+          <listitem>
+            <para>Adresa na které končí paměťový segment.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM Size</guilabel></term>
+          <listitem>
+            <para>Velikost paměťového segmentu.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Flags</guilabel></term>
+          <listitem>
+            <para>Následující příznaky popisují různé typy přístupu k paměťovému segmentu, které může proces mít:</para>
+            <variablelist>
+              <varlistentry>
+                <term>p</term>
+                <listitem>
+                  <para>Paměťový segment je soukromý pro tento proces a ostatní procesy k němu nemají přístup.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>r</term>
+                <listitem>
+                  <para>Proces má oprávnění z paměťového segmentu číst.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>s</term>
+                <listitem>
+                  <para>Paměťový segment je sdílený s ostatními procesy.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>w</term>
+                <listitem>
+                  <para>Proces má oprávnění do paměťového segmentu zapisovat.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>x</term>
+                <listitem>
+                  <para>Proces má oprávnění spouštět instrukce obsažené v tomto paměťovém segmentu.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM Offset</guilabel></term>
+          <listitem>
+            <para>Posun virtuální paměti vůči paměťovému segmentu.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Device</guilabel></term>
+          <listitem>
+            <para>Hlavní a vedlejší číslo zařízení vztahující se k zařízení, na kterém je umístěný soubor se sdílenou knihovnou.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Inode</guilabel></term>
+          <listitem>
+            <para>I-uzel na zařízení, ze kterého byla sdílená knihovna načtená do paměti.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para>Kliknutím na záhlaví sloupce seřadíte údaje podle informací v onom sloupci, v abecedním nebo číselném pořadí. Pokud na záhlaví kliknete znovu, abecední nebo číselné pořadí se obrátí v opačném směru.</para>
+      <para>Kliknutím na tlačítko <guibutton>Zavřít</guibutton> dialogové okno <guilabel>Mapy paměti</guilabel> zavřete.</para>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-change-priority">
+      <title>Změna priority procesu</title>
+      <para>Pokud chcete změnit prioritu procesu, proveďte následující kroky:</para>
+      <orderedlist>
+        <listitem>
+          <para>Zvolte kartu <guilabel>Procesy</guilabel> se seznamem procesů.</para>
+        </listitem>
+        <listitem>
+          <para>Vyberte proces, u kterého chcete prioritu změnit.</para>
+        </listitem>
+        <listitem>
+          <para>Zvolte <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Změnit prioritu</guimenuitem></menuchoice>. Objeví se dialogové okno <guilabel>Změnit prioritu</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Použijte táhlo ke změně hodnoty nice procesu.</para>
+          <para>Hodnota nice určuje prioritu procesu: nižší hodnota nice znamená vyšší prioritu.</para>
+          <para>V případě, že zadáte hodnotu nice menší než nula a nemáte oprávnění uživatele root, budete vyzváni k zadání hesla uživatele root.</para>
+        </listitem>
+        <listitem>
+          <para>Klikněte na tlačítko <guibutton>Změnit prioritu</guibutton>.</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+
+    <sect2 id="gnome-system-monitor-end-process">
+      <title>Ukončení procesu</title>
+      <para>Ukončit proces můžete provedením následujících kroků:</para>
+      <orderedlist>
+        <listitem>
+          <para>Zvolte kartu <guilabel>Procesy</guilabel> se seznamem procesů.</para>
+        </listitem>
+        <listitem>
+          <para>Vyberte proces, který chcete ukončit.</para>
+        </listitem>
+        <listitem>
+          <para>Zvolte <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Ukončit proces</guimenuitem></menuchoice> nebo klikněte na tlačítko <guibutton>Ukončit proces</guibutton>.</para>
+          <para>Standardně se zobrazí upozornění s žádostí o potvrzení. Postup, jak povolit nebo zakázat potvrzovací upozornění, uvádí <xref linkend="gnome-system-monitor-prefs-proclist"/>.</para>
+        </listitem>
+        <listitem>
+          <para>Pro potvrzení, že chcete ukončit proces, klikněte na tlačítko <guibutton>Ukončit proces</guibutton>. Aplikace <application>Sledování systému</application> přinutí proces normálním způsobem skončit.</para>
+        </listitem>
+      </orderedlist>
+      <para>Toto je upřednostňovaný způsob, jak ukončit proces.</para>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-terminate-process">
+      <title>Zabití procesu</title>
+      <para>Jestliže chcete proces zabít, proveďte následující kroky:</para>
+      <orderedlist>
+        <listitem>
+          <para>Zvolte kartu <guilabel>Procesy</guilabel> se seznamem procesů.</para>
+        </listitem>
+        <listitem>
+          <para>Vyberte proces, který chcete zabít.</para>
+        </listitem>
+        <listitem>
+          <para>Zvolte <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Zabít proces</guimenuitem></menuchoice>.</para>
+          <para>Standardně se zobrazí upozornění s žádostí o potvrzení. Postup, jak povolit nebo zakázat potvrzovací upozornění, uvádí <xref linkend="gnome-system-monitor-prefs-proclist"/>.</para>
+        </listitem>
+        <listitem>
+          <para>Klikněte na tlačítko <guibutton>Zabít proces</guibutton> pro potvrzení, že chcete proces skutečně zabít. Aplikace <application>Sledování systému</application> proces ihned násilně ukončí.</para>
+        </listitem>
+      </orderedlist>
+      <para>Zabití procesu byste měli použít jen v případě, že nejde proces ukončit normálně, jak popisuje <xref linkend="gnome-system-monitor-end-process"/>.</para>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-cpu">
+      <title>Sledování využití CPU</title>
+      <para>Když chcete sledovat využití CPU, zvolte kartu <guilabel>Zdroje</guilabel>.</para>
+      <para>Aplikace <application>Sledování systému</application> zobrazuje historii využití CPU v grafické podobě. Pod grafem aplikace navíc zobrazí současné využití CPU v procentech.</para>
+    </sect2>
+
+
+    <sect2 id="gnome-system-monitor-memory">
+      <title>Sledování využití paměti a odkládacího prostoru</title>
+      <para>Když chcete sledovat využití paměti a odkládacího prostoru, zvolte kartu <guilabel>Zdroje</guilabel>.</para>
+      <para>Aplikace <application>Sledování systému</application> zobrazuje historii využití paměti a historii využití odkládacího prostoru v grafické podobě. Pod grafem aplikace navíc zobrazí následující číselné hodnoty:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Použitou část paměti z celkové velikosti paměti</para>
+        </listitem>
+        <listitem>
+          <para>Použitou část odkládacího prostoru z velikosti odkládacího prostoru</para>
+        </listitem>
+      </itemizedlist>
+
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-network">
+      <title>Sledování síťové aktivity</title>
+      <para>Když chcete sledovat síťovou aktivitu, zvolte kartu <guilabel>Zdroje</guilabel>.</para>
+      <para>Aplikace <application>Sledování systému</application> zobrazuje historii sítě v grafické podobě. Pod grafem aplikace navíc zobrazí následující číselné hodnoty:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Přijatých dat za sekundu a celkový objem dat</para>
+        </listitem>
+        <listitem>
+          <para>Odeslaných dat za sekundu a celkový objem dat</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-disk">
+      <title>Sledování souborových systémů</title>
+      <para>Když chcete sledovat souborové systémy, zvolte kartu <guilabel>Souborové systémy</guilabel>.</para>
+      <para>Aplikace <application>Sledování systému</application> zobrazuje připojené souborové systémy ve formátu tabulky. Uváděno zleva doprava zobrazuje tabulka následující sloupce:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Zařízení</term>
+          <listitem>
+            <para>Umístění blokového souboru</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Složka</term>
+          <listitem>
+            <para>Přípojný bod zařízení (tj. složka, přes kterou se k němu přistupuje)</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Typ</term>
+          <listitem>
+            <para>Typ souborového systému</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Celkem</term>
+          <listitem>
+            <para>Celková kapacita</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Volné</term>
+          <listitem>
+            <para>Objem nevyužitého prostoru</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>K dispozici</term>
+          <listitem>
+            <para>Objem prostoru, který lze využít</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Použito</term>
+          <listitem>
+            <para>Objem prostoru, který je využitý (a procentuálně k celkovému objemu)</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="gnome-system-monitor-prefs">
+    <title>Předvolby</title>
+    <para>Jestliže chcete změnit nastavení aplikace <application>Sledování systému</application>, zvolte <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Předvolby</guimenuitem></menuchoice>. Dialogové okno <guilabel>Předvolby</guilabel> obsahuje následující karty:</para>
+
+    <sect2 id="gnome-system-monitor-prefs-proclist">
+      <title>Procesy</title>
+        <variablelist>
+          <varlistentry>
+            <term lang="en">
+              <guilabel>Behavior</guilabel>
+            </term>
+            <listitem>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Update interval in seconds</guilabel>
+                  </para>
+                  <para>Použijte tento číselník k zadání intervalu, ve kterém chcete aktualizovat seznam procesů.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Enable smooth refresh</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, pokud chcete hladké obnovování.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Alert before ending or killing processes</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazovalo upozornění s žádostí o potvrzení, když ukončujete nebo zabíjíte proces.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Divide CPU usage by CPU count</guilabel>
+                  </para>
+                  <para>Touto volbou způsobíte, že každý údaj využití CPU procesem v procentech bude v tabulce procesů podělený počtem CPU.</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term lang="en">
+              <guilabel>Information Fields</guilabel>
+            </term>
+            <listitem>
+              <para>Následující volby použijte k výběru, která pole se mají zobrazovat v seznamu procesů:</para>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Process Name</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazoval název procesu. Tento sloupec může také obsahovat ikonu symbolizující aplikaci svázanou s tímto procesem.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>User</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazovalo jméno uživatele, který proces vlastní.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Status</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazoval současný stav procesu: spí nebo běží.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Virtual Memory</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazovalo množství virtuální paměti, která je pro proces vyhrazená.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Resident Memory</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazovalo množství fyzické paměti, která je pro proces vyhrazená.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Writable Memory</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazovalo množství paměti, do které může proces zapisovat.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Shared Memory</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazovalo množství sdílené paměti, která je pro tento proces vyhrazená. Sdílená paměť je taková, do které mohou přistupovat ostatní procesy.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>X Server Memory</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazovalo množství paměti X serveru, kterou proces využívá.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>% CPU</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se v procentech zobrazoval čas CPU, který v současnosti proces využívá.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>CPU Time</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazovalo množství času CPU, který proces využil.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Started</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazovalo, kdy začal proces běžet.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Nice</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazovala nice hodnota procesu. Hodnota nice určuje prioritu procesu: čím nižší hodnota nice, tím vyšší priorita.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                <guilabel>ID</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazoval identifikátor procesu, známý také jako PID. PID je číslo, které jednoznačně proces identifikuje. Můžete jej využít k práci s procesem z příkazové řádky.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Memory</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazovalo množství systémové paměti, kterou proces v současnosti využívá.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Security Context</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazoval kontext zabezpečení, ve kterém proces běží.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Command Line</guilabel>
+                  </para>
+                  <para>Vyberte tuto volbu, aby se zobrazoval příkazový řádek, který byl použitý ke spuštění procesu, včetně přepínačů.</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-prefs-resmon">
+      <title>Zdroje</title>
+        <variablelist>
+          <varlistentry>
+            <term lang="en"><guilabel>Graphs</guilabel></term>
+            <listitem>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Update interval in seconds</guilabel>
+                  </para>
+                  <para>Použijte tento číselník k nastavení, jak často chcete aktualizovat grafy <application>Sledování systému</application>.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Show network speed in bits</guilabel>
+                  </para>
+                  <para lang="en">
+                    Select this option to use bits instead of bytes for displaying network speed in the <application>System Monitor</application> graphs.
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-prefs-filesystems">
+      <title>Souborové systémy</title>
+        <variablelist>
+          <varlistentry>
+            <term lang="en"><guilabel>Behavior</guilabel></term>
+            <listitem>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Update interval in seconds</guilabel>
+                  </para>
+                  <para>Použijte tento číselník k nastavení, jak často chcete aktualizovat tabulku <guilabel>Souborové systémy</guilabel>.</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Show all file systems</guilabel>
+                  </para>
+                  <para>Tuto volbu vyberte, pokud si přejete zobrazit všechny souborové systémy, včetně dočasných a systémových.</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+
+        </variablelist>
+    </sect2>
+
+  </sect1>
+
+</article>

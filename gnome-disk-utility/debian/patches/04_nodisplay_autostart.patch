@@ -1,0 +1,14 @@
+Description: Clean up Startup Applications dialog by hiding default apps
+Author: Michael Terry <michael.terry@canonical.com>
+Bug-Ubuntu: https://launchpad.net/bugs/803917
+Forwarded: not-needed
+
+Index: gnome-disk-utility-3.0.0/data/gdu-notification-daemon.desktop.in.in.in
+===================================================================
+--- gnome-disk-utility-3.0.0.orig/data/gdu-notification-daemon.desktop.in.in.in	2011-07-01 10:49:03.357746367 +0100
++++ gnome-disk-utility-3.0.0/data/gdu-notification-daemon.desktop.in.in.in	2011-07-01 10:49:23.937746585 +0100
+@@ -13,3 +13,4 @@
+ X-GNOME-Bugzilla-Version=@VERSION@
+ #X-GNOME-AutoRestart=true
+ X-GNOME-Autostart-Delay=10
++NoDisplay=true

@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>EvFormFieldSignature</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Evince Document Library Reference Manual">
+<link rel="up" href="document-data.html" title="Part II. Document Data">
+<link rel="prev" href="EvAttachment.html" title="EvAttachment">
+<link rel="next" href="EvImage.html" title="EvImage">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="EvAttachment.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="document-data.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Evince Document Library Reference Manual</th>
+<td><a accesskey="n" href="EvImage.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#EvFormField.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#EvFormField.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#EvFormField.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="EvFormField"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EvFormField.top_of_page"></a>EvFormFieldSignature</span></h2>
+<p>EvFormFieldSignature</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="EvFormField.synopsis"></a><h2>Synopsis</h2>
+<a name="EvFormFieldText"></a><a name="EvFormFieldButton"></a><a name="EvFormFieldChoice"></a><a name="EvFormFieldSignature"></a><a name="EvFormFieldTextType"></a><a name="EvFormFieldButtonType"></a><a name="EvFormFieldChoiceType"></a><pre class="synopsis">struct              <a class="link" href="EvFormField.html#EvFormField-struct" title="struct EvFormField">EvFormField</a>;
+struct              <a class="link" href="EvFormField.html#EvFormFieldClass" title="struct EvFormFieldClass">EvFormFieldClass</a>;
+struct              <a class="link" href="EvFormField.html#EvFormFieldText-struct" title="struct EvFormFieldText">EvFormFieldText</a>;
+struct              <a class="link" href="EvFormField.html#EvFormFieldTextClass" title="struct EvFormFieldTextClass">EvFormFieldTextClass</a>;
+struct              <a class="link" href="EvFormField.html#EvFormFieldButton-struct" title="struct EvFormFieldButton">EvFormFieldButton</a>;
+struct              <a class="link" href="EvFormField.html#EvFormFieldButtonClass" title="struct EvFormFieldButtonClass">EvFormFieldButtonClass</a>;
+struct              <a class="link" href="EvFormField.html#EvFormFieldChoice-struct" title="struct EvFormFieldChoice">EvFormFieldChoice</a>;
+struct              <a class="link" href="EvFormField.html#EvFormFieldChoiceClass" title="struct EvFormFieldChoiceClass">EvFormFieldChoiceClass</a>;
+struct              <a class="link" href="EvFormField.html#EvFormFieldSignature-struct" title="struct EvFormFieldSignature">EvFormFieldSignature</a>;
+struct              <a class="link" href="EvFormField.html#EvFormFieldSignatureClass" title="struct EvFormFieldSignatureClass">EvFormFieldSignatureClass</a>;
+enum                <a class="link" href="EvFormField.html#EvFormFieldTextType-enum" title="enum EvFormFieldTextType">EvFormFieldTextType</a>;
+enum                <a class="link" href="EvFormField.html#EvFormFieldButtonType-enum" title="enum EvFormFieldButtonType">EvFormFieldButtonType</a>;
+enum                <a class="link" href="EvFormField.html#EvFormFieldChoiceType-enum" title="enum EvFormFieldChoiceType">EvFormFieldChoiceType</a>;
+<a class="link" href="EvFormField.html" title="EvFormFieldSignature"><span class="returnvalue">EvFormField</span></a> *       <a class="link" href="EvFormField.html#ev-form-field-text-new" title="ev_form_field_text_new ()">ev_form_field_text_new</a>              (<em class="parameter"><code><span class="type">gint</span> id</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvFormField.html#EvFormFieldTextType"><span class="type">EvFormFieldTextType</span></a> type</code></em>);
+<a class="link" href="EvFormField.html" title="EvFormFieldSignature"><span class="returnvalue">EvFormField</span></a> *       <a class="link" href="EvFormField.html#ev-form-field-button-new" title="ev_form_field_button_new ()">ev_form_field_button_new</a>            (<em class="parameter"><code><span class="type">gint</span> id</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvFormField.html#EvFormFieldButtonType"><span class="type">EvFormFieldButtonType</span></a> type</code></em>);
+<a class="link" href="EvFormField.html" title="EvFormFieldSignature"><span class="returnvalue">EvFormField</span></a> *       <a class="link" href="EvFormField.html#ev-form-field-choice-new" title="ev_form_field_choice_new ()">ev_form_field_choice_new</a>            (<em class="parameter"><code><span class="type">gint</span> id</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvFormField.html#EvFormFieldChoiceType"><span class="type">EvFormFieldChoiceType</span></a> type</code></em>);
+<a class="link" href="EvFormField.html" title="EvFormFieldSignature"><span class="returnvalue">EvFormField</span></a> *       <a class="link" href="EvFormField.html#ev-form-field-signature-new" title="ev_form_field_signature_new ()">ev_form_field_signature_new</a>         (<em class="parameter"><code><span class="type">gint</span> id</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="EvFormField.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GObject
+   +----EvFormField
+         +----<a class="link" href="EvFormField.html#EvFormFieldButton">EvFormFieldButton</a>
+         +----<a class="link" href="EvFormField.html#EvFormFieldChoice">EvFormFieldChoice</a>
+         +----<a class="link" href="EvFormField.html#EvFormFieldSignature">EvFormFieldSignature</a>
+         +----<a class="link" href="EvFormField.html#EvFormFieldText">EvFormFieldText</a>
+</pre>
+<pre class="synopsis">
+  GObject
+   +----<a class="link" href="EvFormField.html" title="EvFormFieldSignature">EvFormField</a>
+         +----EvFormFieldText
+</pre>
+<pre class="synopsis">
+  GObject
+   +----<a class="link" href="EvFormField.html" title="EvFormFieldSignature">EvFormField</a>
+         +----EvFormFieldButton
+</pre>
+<pre class="synopsis">
+  GObject
+   +----<a class="link" href="EvFormField.html" title="EvFormFieldSignature">EvFormField</a>
+         +----EvFormFieldChoice
+</pre>
+<pre class="synopsis">
+  GObject
+   +----<a class="link" href="EvFormField.html" title="EvFormFieldSignature">EvFormField</a>
+         +----EvFormFieldSignature
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----EvFormFieldTextType
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----EvFormFieldButtonType
+</pre>
+<pre class="synopsis">
+  GEnum
+   +----EvFormFieldChoiceType
+</pre>
+</div>
+<div class="refsect1">
+<a name="EvFormField.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="EvFormField.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="EvFormField-struct"></a><h3>struct EvFormField</h3>
+<pre class="programlisting">struct EvFormField;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvFormFieldClass"></a><h3>struct EvFormFieldClass</h3>
+<pre class="programlisting">struct EvFormFieldClass {
+	GObjectClass parent_class;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvFormFieldText-struct"></a><h3>struct EvFormFieldText</h3>
+<pre class="programlisting">struct EvFormFieldText;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvFormFieldTextClass"></a><h3>struct EvFormFieldTextClass</h3>
+<pre class="programlisting">struct EvFormFieldTextClass {
+	EvFormFieldClass parent_class;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvFormFieldButton-struct"></a><h3>struct EvFormFieldButton</h3>
+<pre class="programlisting">struct EvFormFieldButton;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvFormFieldButtonClass"></a><h3>struct EvFormFieldButtonClass</h3>
+<pre class="programlisting">struct EvFormFieldButtonClass {
+	EvFormFieldClass parent_class;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvFormFieldChoice-struct"></a><h3>struct EvFormFieldChoice</h3>
+<pre class="programlisting">struct EvFormFieldChoice;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvFormFieldChoiceClass"></a><h3>struct EvFormFieldChoiceClass</h3>
+<pre class="programlisting">struct EvFormFieldChoiceClass {
+	EvFormFieldClass parent_class;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvFormFieldSignature-struct"></a><h3>struct EvFormFieldSignature</h3>
+<pre class="programlisting">struct EvFormFieldSignature;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvFormFieldSignatureClass"></a><h3>struct EvFormFieldSignatureClass</h3>
+<pre class="programlisting">struct EvFormFieldSignatureClass {
+	EvFormFieldClass parent_class;
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvFormFieldTextType-enum"></a><h3>enum EvFormFieldTextType</h3>
+<pre class="programlisting">typedef enum {
+	EV_FORM_FIELD_TEXT_NORMAL,
+	EV_FORM_FIELD_TEXT_MULTILINE,
+	EV_FORM_FIELD_TEXT_FILE_SELECT
+} EvFormFieldTextType;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvFormFieldButtonType-enum"></a><h3>enum EvFormFieldButtonType</h3>
+<pre class="programlisting">typedef enum {
+	EV_FORM_FIELD_BUTTON_PUSH,
+	EV_FORM_FIELD_BUTTON_CHECK,
+	EV_FORM_FIELD_BUTTON_RADIO
+} EvFormFieldButtonType;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvFormFieldChoiceType-enum"></a><h3>enum EvFormFieldChoiceType</h3>
+<pre class="programlisting">typedef enum {
+	EV_FORM_FIELD_CHOICE_COMBO,
+	EV_FORM_FIELD_CHOICE_LIST
+} EvFormFieldChoiceType;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-form-field-text-new"></a><h3>ev_form_field_text_new ()</h3>
+<pre class="programlisting"><a class="link" href="EvFormField.html" title="EvFormFieldSignature"><span class="returnvalue">EvFormField</span></a> *       ev_form_field_text_new              (<em class="parameter"><code><span class="type">gint</span> id</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvFormField.html#EvFormFieldTextType"><span class="type">EvFormFieldTextType</span></a> type</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-form-field-button-new"></a><h3>ev_form_field_button_new ()</h3>
+<pre class="programlisting"><a class="link" href="EvFormField.html" title="EvFormFieldSignature"><span class="returnvalue">EvFormField</span></a> *       ev_form_field_button_new            (<em class="parameter"><code><span class="type">gint</span> id</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvFormField.html#EvFormFieldButtonType"><span class="type">EvFormFieldButtonType</span></a> type</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-form-field-choice-new"></a><h3>ev_form_field_choice_new ()</h3>
+<pre class="programlisting"><a class="link" href="EvFormField.html" title="EvFormFieldSignature"><span class="returnvalue">EvFormField</span></a> *       ev_form_field_choice_new            (<em class="parameter"><code><span class="type">gint</span> id</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="EvFormField.html#EvFormFieldChoiceType"><span class="type">EvFormFieldChoiceType</span></a> type</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-form-field-signature-new"></a><h3>ev_form_field_signature_new ()</h3>
+<pre class="programlisting"><a class="link" href="EvFormField.html" title="EvFormFieldSignature"><span class="returnvalue">EvFormField</span></a> *       ev_form_field_signature_new         (<em class="parameter"><code><span class="type">gint</span> id</code></em>);</pre>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18.1</div>
+</body>
+</html>

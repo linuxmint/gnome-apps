@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-edit" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <link type="seealso" xref="archive-create"/>
+    <revision pkgversion="3.4" date="2011-12-08" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>Αλλαγή περιεχομένων του συμπιεσμένου αρχείου σας.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Επεξεργασία ενός συμπιεσμένου αρχείου</title>
+
+  <p>Με τον <app>Διαχειριστή συμπιεσμένων αρχείων</app> μπορείτε να επεξεργαστείτε ένα υπάρχον συμπιεσμένο αρχείο προσθέτοντας νέα αρχεία, αφαιρώντας τα άχρηστα ή μετονομάζοντας τα. Μπορείτε να δουλέψετε με τον ίδιο τρόπο και με τους φακέλους.</p>
+
+  <terms>
+    <item>
+    <title>Προσθήκη αρχείων</title>
+    <p>Προσθέστε αρχεία σ' ένα υπάρχον αρχείο ακολουθώντας τις οδηγίες για τη <link xref="archive-create">δημιουργία ενός συμπιεσμένου αρχείου</link>.</p>
+    </item>
+    <item>
+    <title>Αφαίρεση αρχείων</title>
+      <steps>
+        <item><p>Επιλογή αρχείου.</p></item>
+        <item><p>Πατήστε <guiseq><gui style="menu">Επεξεργασία</gui> <gui style="menuitem">Διαγραφή</gui></guiseq>, ή κάντε δεξί-κλικ στο επιλεγμένο αρχείο, και επιλέξτε <gui>Διαγραφή</gui>.</p></item>
+      </steps>
+    </item>
+    <item>
+    <title>Μετονομασία αρχείων</title>
+      <steps>
+        <item><p>Επιλογή αρχείου.</p></item>
+        <item><p>Κάντε κλικ στην <guiseq><gui style="menu">Επεξεργασία</gui> <gui style="menuitem">Μετονομασία</gui></guiseq>, ή δεξί κλικ στο επιλεγμένο αρχείο, και επιλέξτε <gui>Μετονομασία</gui>.</p></item>
+        <item><p>Εισάγετε το νέο όνομα αρχείου στο διάλογο που θα ανοίξει.</p></item>
+        <item><p>Επιβεβαιώστε το όνομα κάνοντας κλικ στη <gui>Μετονομασία</gui>.</p></item>
+      </steps>
+    </item>
+  </terms>
+
+</page>

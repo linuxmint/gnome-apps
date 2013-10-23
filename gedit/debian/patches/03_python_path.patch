@@ -1,0 +1,34 @@
+Description: CVE-2009-0314: Untrusted search path vulnerability
+Bug: http://bugzilla.gnome.org/show_bug.cgi?id=569214
+
+--- a/plugin-loaders/python/gedit-plugin-loader-python.c
++++ b/plugin-loaders/python/gedit-plugin-loader-python.c
+@@ -486,7 +486,7 @@
+ 	PyObject *mdict, *tuple;
+ 	PyObject *gedit, *geditutils, *geditcommands, *geditplugins;
+ 	PyObject *gettext, *install, *gettext_args;
+-	char *argv[] = { "gedit", NULL };
++	char *argv[] = { GEDIT_PLUGINS_LIBS_DIR, NULL };
+ #ifdef HAVE_SIGACTION
+ 	gint res;
+ 	struct sigaction old_sigint;
+--- a/plugin-loaders/python/Makefile.in
++++ b/plugin-loaders/python/Makefile.in
+@@ -375,6 +375,7 @@
+ 	$(DISABLE_DEPRECATED_CFLAGS)					\
+ 	$(PYGTK_CFLAGS)							\
+ 	$(PYTHON_CFLAGS)						\
++	-DGEDIT_PLUGINS_LIBS_DIR=\"$(GEDIT_PLUGINS_LIBS_DIR)\"		\
+ 	-DGEDIT_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
+ 
+ loader_LTLIBRARIES = libpythonloader.la
+--- a/plugin-loaders/python/Makefile.am
++++ b/plugin-loaders/python/Makefile.am
+@@ -13,6 +13,7 @@
+ 	$(DISABLE_DEPRECATED_CFLAGS)					\
+ 	$(PYGTK_CFLAGS)							\
+ 	$(PYTHON_CFLAGS)						\
++	-DGEDIT_PLUGINS_LIBS_DIR=\"$(GEDIT_PLUGINS_LIBS_DIR)\"		\
+ 	-DGEDIT_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
+ 
+ loader_LTLIBRARIES = libpythonloader.la

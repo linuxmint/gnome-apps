@@ -1,0 +1,457 @@
+# gnome-utils ja.po.
+# Copyright (C) 1998-2011 gnome-util's COPYRIGHT HOLDER
+# Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1998.
+# Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
+# Yukihiro Nakai <nakai@gnome.gr.jp>, 2000.
+# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2000-2002, 2009, 2011.
+# Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+# KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+# Satoru SATOH <ss@gnome.gr.jp>, 2006.
+# Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009, 2010.
+# Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010, 2011.
+# Takayoshi OKANO <kano@na.rim.or.jp>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2011-09-24 18:11+0900\n"
+"Last-Translator: Yasumichi Akahoshi <yasumichi@vinelinux.org>\n"
+"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "ログビューアー"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "システムログを表示したり監視します"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "メインウィンドウの高さ (ピクセル単位)"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "保存したフィルターの一覧"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "保存した正規表現フィルターの一覧"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "起動時に開くログファイル"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "起動時に開くログファイル"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "ログを表示する際に使用するフォントのサイズ"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"起動時に開くログファイルの並びを指定してください。デフォルト値は /etc/syslog."
+"conf の内容から作成します。"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr ""
+"ログビューアーのメインウィンドウの高さをピクセル単位で指定してください。"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"起動時に表示するログファイルを指定してください。デフォルトは /var/adm/"
+"messages または /var/log/messages のどちらかで、ご利用のオペレーティングシス"
+"テムに依存します。"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"ログをメインウィンドウのツリーに表示する時に使用する固定幅のフォントサイズを"
+"指定してください。デフォルト値は GNOME 端末で設定したフォントサイズです。"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "ログビューアーのメインウィンドウの幅をピクセル単位で指定してください。"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "メインウィンドウの幅 (ピクセル単位)"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "背景色:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "効果:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "文字色:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "非表示"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "強調"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "名前(_N):"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "正規表現(_R):"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"このプログラムはフリーソフトウェアです。フリーソフトウェア財団が提供する GNU "
+"一般公衆利用許諾契約書の第二版、あるいは(オプションで)それ以降の版が定める条"
+"項の下で本プログラムを再頒布または変更することができます。"
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"このプログラムは有用とは思いますが、頒布にあたっては市場性または特定の目的に"
+"対する適合性についての暗黙の保証を含めて、いかなる保証も行ないません。詳細は "
+"GNU 一般公衆利用許諾契約書をご覧ください。"
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"あなたは本プログラムと一緒に GNU 一般公衆利用許諾契約書の写しを受け取っている"
+"はずです。そうでない場合は、Free Software Foundation, Inc., 51 Franklin "
+"Street, Fifth Floor, Boston, MA 02110-1301, USA まで連絡してください。"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"相花 毅 <takeshi.aihana@gmail.com>\n"
+"佐藤 暁 <ss@gnome.gr.jp>\n"
+"Sun G11n <gnome_int_l10n@ireland.sun.com>\n"
+"Yuusuke Tahara <tahara@gnome.gr.jp>\n"
+"Yukihiro Nakai <nakai@gnome.gr.jp>\n"
+"草野 貴之 <AE5T-KSN@asahi-net.or.jp>\n"
+"Eiichiro ITANI <emu@ceres.dti.ne.jp>\n"
+"やまねひでき <henrich@debian.or.jp>\n"
+"日本GNOMEユーザー会 http://www.gnome.gr.jp/"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "ファイルを開けません: %s"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "ファイルが空です!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "フィルター名には ':' という文字を含めません"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "正規表現が空です!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "正規表現が正しくありません: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "文字の色あるいは背景色を指定してください!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "フィルターを編集"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "新しいフィルターを追加"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "フィルター"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "検索(_F):"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "前を検索"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "指定した単語をログの先頭に向かって検索します"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "次を検索"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "指定した単語をログの最後に向かって検索します"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "検索する単語をクリアします"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr ""
+"gzip で圧縮されたログの解凍中にエラーが発生しました (ファイルが壊れている可能"
+"性あり)"
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "このファイルを読むための妥当な権限をお持ちではないようです。"
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "そのファイルは通常のファイル (テキスト形式) ではないようです。"
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr ""
+"このバージョンのログビューアーは gzip で圧縮したログの閲覧をサポートしていま"
+"せん。"
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "読み込み中..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "アプリケーションのバージョンを表示する"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[ログファイル...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - ログの閲覧と監視"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "ログビューアー"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "システムログビューアー"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "最終更新日時: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d行 (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "ファイルの選択"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "ヘルプを表示する際にエラーが発生しました: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "ラップ済"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "見つかりませんでした"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "GNOME 向けのシステムログビューアーです。"
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "ファイル(_F)"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "編集(_E)"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "表示(_V)"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "フィルター(_F)"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "ヘルプ(_H)"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "開く(_O)..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "ファイルからログを開きます"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "閉じる(_C)"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "このログを閉じます"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "終了(_Q)"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "ログビューアーを終了します"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "コピー(_C)"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "選択範囲をコピーします"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "すべて選択(_A)"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "ログ全体を選択します"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "検索(_F)..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "ログから単語または語句を検索します"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "文字のサイズを大きくします"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "文字のサイズを小さくします"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "標準の文字サイズにします"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "フィルターを管理"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "フィルターを管理"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "目次(_C)"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "ログビューアーのヘルプの目次を開きます"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "情報(_A)"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "ログビューアーの情報ダイアログを表示します"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "ステータスバー(_S)"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "ステータスバーを表示します"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "サイドバー(_P)"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "サイドバーを表示します"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "マッチしたもののみ表示"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "指定したフィルターの一つにマッチした行だけを表示します"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "自動スクロール(_A)"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "新しい行が現れたら自動的に下にスクロール"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr " \"%s\" から読み取りができません"
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "バージョン: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "次のファイルを開けませんでした:"

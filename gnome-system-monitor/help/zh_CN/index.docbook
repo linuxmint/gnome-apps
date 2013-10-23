@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.24.4">
+<!ENTITY manrevision "2.2">
+<!ENTITY date "March 2009">
+<!ENTITY app "System Monitor">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh-CN">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>系统监视器手册 V2.2</title>
+
+    <copyright lang="en">
+      <year>2009</year>
+      <holder>Paul Cutler</holder>
+    </copyright>
+    <copyright lang="en">
+      <year>2004</year>
+      <holder>Sun Microsystems</holder>
+    </copyright>
+    <copyright lang="en">
+      <year>2001</year>
+      <year>2002</year>
+      <year>2004</year>
+      <holder>Bill Day</holder>
+    </copyright>
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+   -->
+
+    <publisher role="maintainer">
+      <publishername>GNOME 文档项目</publishername>
+    </publisher>
+
+     <legalnotice id="legalnotice">
+	<para>对此文档之复制、颁发和/或修改必须遵循自由软件基金会 (Free Software Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没有固定的部分、没有封面和背页文本。您可以在 <ulink type="help" url="ghelp:fdl">此处</ulink> 或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本。</para>
+         <para>本手册是以 GFDL 许可分发的 GNOME 手册集合中的一部分。如果想要单独分发此手册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。</para>
+
+	<para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 GNOME 文档以及 GNOME 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+        other legal stuff such as "NO WARRANTY" statement. Please do not change
+        any of this. -->
+
+  <authorgroup>
+    <author lang="en">
+      <firstname>Sun</firstname>
+      <surname>GNOME Documentation Team</surname>
+      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+    </author>
+    <author lang="en">
+      <firstname>Bill</firstname>
+      <surname>Day</surname>
+      <affiliation><address><email>billday@bellatlantic.net</email></address></affiliation>
+    </author>
+      <author lang="en">
+        <firstname>Paul</firstname>
+        <surname>Cutler</surname>
+        <affiliation>
+          <orgname>GNOME Documentation Project</orgname>
+          <address><email>pcutler@foresightlinux.org</email></address>
+        </affiliation>
+      </author>
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+
+    <othercredit role="translator">
+      <firstname>Latin</firstname>
+      <surname>Translator 1</surname>
+      <affiliation>
+        <orgname>Latin Translation Team</orgname>
+        <address> <email>translator@gnome.org</email> </address>
+      </affiliation>
+      <contrib>Latin translation</contrib>
+    </othercredit>
+-->
+    </authorgroup>
+
+    <releaseinfo revision="2.28" role="review">
+      <ulink type="review" url="http://bugzilla.gnome.org/show_bug.cgi?id=500559"/>
+    </releaseinfo>
+
+    <revhistory>
+      <revision lang="en">
+        <revnumber>System Monitor Manual V2.2</revnumber>
+        <date>March 2009</date>
+        <revdescription>
+          <para role="author" lang="en">Paul Cutler
+            <email>pcutler@foresightlinux.org</email>
+          </para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+      <revision lang="en">
+        <revnumber>System Monitor Manual V2.1</revnumber>
+        <date>February 2004</date>
+        <revdescription>
+          <para role="author" lang="en">Sun GNOME Documentation Team</para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+      <revision lang="en">
+        <revnumber>System Monitor Manual V2.0</revnumber>
+        <date>November 2002</date>
+        <revdescription>
+          <para role="author" lang="en">Bill Day <email>billday@bellatlantic.net</email>
+          </para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+      <revision lang="en">
+        <revnumber>Procman Manual V0.11</revnumber>
+        <date>January 2002</date>
+        <revdescription>
+          <para role="author" lang="en">Bill Day
+            <email>billday@bellatlantic.net</email>
+          </para>
+          <para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>本手册描述系统监视器2.24.4版</releaseinfo>
+
+    <legalnotice>
+      <title>反馈</title>
+      <para>要对系统监视器程序或本手册报告错误或提出建议，请查看 <ulink url="ghelp:gnome-feedback" type="help">GNOME 反馈页</ulink>的指导。</para>
+
+<!-- Translators may also add here feedback address for translations -->
+
+    </legalnotice>
+    <abstract role="description">
+      <para>系统监视器为用户提供了一个图形界面用来监视 CPU、网络和内存的活动状态的图形界面，并提供了结束系统进程的途径。</para>
+    </abstract>
+  </articleinfo>
+
+  <indexterm zone="index" lang="en">
+    <primary>System Monitor</primary>
+  </indexterm>
+  <indexterm zone="index" lang="en">
+    <primary>gnome-system-monitor</primary>
+  </indexterm>
+  <indexterm zone="index" lang="en">
+    <primary>procman</primary>
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+ <!-- ============= Introduction ============================== -->
+  <sect1 id="gnome-system-monitor-intro">
+    <title>介绍</title>
+    <para><application>系统监视器</application>程序使您能够显示系统的基本信息，并能够监视系统进程、系统资源使用情况和文件系统。您也可以用<application>系统监视器</application>来修改系统的行为。</para>
+    <para><application>系统监视器</application>包含四个标签部分。</para>
+    <variablelist>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>System</guilabel>
+        </term>
+        <listitem>
+          <para>显示计算机硬件和软件的不同基本信息。</para>
+          <variablelist>
+            <varlistentry>
+              <term>发行版</term>
+              <listitem>
+                <itemizedlist>
+                  <listitem>
+                    <para>发行版版本</para>
+                  </listitem>
+                  <listitem>
+                    <para>Linux 内核版本</para>
+                  </listitem>
+                  <listitem>
+                    <para>GNOME 版本</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>硬件</term>
+              <listitem>
+                <itemizedlist>
+                  <listitem>
+                    <para>安装的内存</para>
+                  </listitem>
+                  <listitem>
+                    <para>处理器和速度</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>系统状态</term>
+              <listitem>
+                <itemizedlist>
+                  <listitem>
+                    <para>当前可用磁盘空间</para>
+                  </listitem>
+                </itemizedlist>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>Processes</guilabel>
+        </term>
+        <listitem>
+          <para>显示活动进程和进程之间的相互关系。为每个单独进程提供详细信息，并使您能够控制活动进程。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>Resources</guilabel>
+        </term>
+        <listitem>
+          <para>显示以下系统资源的当前使用情况。</para>
+          <itemizedlist>
+            <listitem>
+              <para>CPU(中央处理器)时间</para>
+            </listitem>
+            <listitem>
+              <para>内存和交换空间</para>
+            </listitem>
+            <listitem>
+              <para>网络使用情况</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en">
+          <guilabel>File Systems</guilabel>
+        </term>
+        <listitem>
+          <para>显示</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="gnome-system-monitor-getting-started">
+    <title>启动</title>
+
+<!-- ============= To Start System Monitor ============================ -->
+    <sect2 id="gnome-system-monitor-to-start">
+      <title>启动系统监视器</title>
+      <para>您可以用以下方式启动<application>系统监视器</application></para>
+      <variablelist>
+        <varlistentry>
+          <term><guimenu>系统</guimenu> 菜单</term>
+          <listitem>
+            <para lang="en">
+              Choose <menuchoice><guimenu>Administration</guimenu> <guimenuitem>System Monitor</guimenuitem></menuchoice>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>命令行</term>
+          <listitem>
+            <para>执行以下命令：<command>gnome-system-monitor</command></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-when-you-start">
+      <title>当您启动系统监视器时</title>
+      <para>当您启动<application>系统监视器</application>后， 将显示以下窗口：</para>
+      <figure id="gnome-system-monitor-window">
+        <title>系统监视器窗口</title>
+        <screenshot>
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/gnome-system-monitor_window.png" format="PNG"/>
+            </imageobject>
+            <textobject> <phrase>Shows System Monitor main window.</phrase>
+            </textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+      <para><application>系统监视器</application> 窗口包含以下组件：</para>
+      <variablelist>
+        <varlistentry>
+          <term>菜单栏</term>
+          <listitem>
+            <para>菜单栏上的菜单包含了使用<application>系统监视器</application>所需的所有命令。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>显示区域</term>
+          <listitem>
+            <para>显示区域包含系统监视区信息。显示区域包含以下标签页：</para>
+            <itemizedlist>
+              <listitem>
+                <para lang="en">
+                  <guilabel>System</guilabel>
+                </para>
+                <para>包含基本系统属性的列表，像系统软件版本和硬件规格及状态。</para>
+              </listitem>
+              <listitem>
+                <para lang="en">
+                  <guilabel>Processes</guilabel>
+                </para>
+                <para>包含了以表格形式组织的进程列表，最近几分钟的系统平均负载列表，以及一个<guibutton>终止进程</guibutton>按钮。</para>
+              </listitem>
+              <listitem>
+                <para lang="en">
+                  <guilabel>Resources</guilabel>
+                </para>
+                <para>包含一个<guilabel>CPU 历史</guilabel>图表，一个<guilabel>内存和交换区历史</guilabel>图表，和一个<guilabel>网络历史</guilabel>图表。</para>
+              </listitem>
+              <listitem>
+                <para lang="en">
+                  <guilabel>File Systems</guilabel>
+                </para>
+                <para>包含当前挂载的文件系统的表格。</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>状态栏</term>
+          <listitem>
+            <para>状态栏显示当前<application>系统监视器</application>的活动和与菜单项相关的信息。</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+
+ <!-- ================ Usage ================================ -->
+ <!-- This section should describe basic usage of the application. -->
+
+  <sect1 id="gnome-system-monitor-usage">
+    <title>使用说明</title>
+
+    <sect2 id="gnome-system-monitor-display-basic-info">
+      <title>显示基本系统信息</title>
+      <para>要显示基本系统信息，请选择<guilabel>系统</guilabel>标签。</para>
+      <para>在<guilabel>系统</guilabel>标签中，信息被组织成三个组。</para>
+      <itemizedlist>
+        <listitem>
+          <para>系统信息</para>
+        </listitem>
+        <listitem>
+          <para>硬件</para>
+        </listitem>
+        <listitem>
+          <para>系统状态</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-display-processlist">
+      <title>显示进程列表</title>
+      <para>要显示进程列表，请选择<guilabel>进程</guilabel>标签</para>
+      <para>在<guilabel>进程</guilabel>标签中，进程以表格形式组织。表的行显示进程信息，列代表进程信息的字段，比如进程所有者的名字、进程当前占用的内存大小等等。默认情况下，<guilabel>进程</guilabel>标签从左至右显示以下列。</para>
+      <itemizedlist>
+          <listitem>
+            <para>进程名称</para>
+          </listitem>
+          <listitem>
+            <para>状态</para>
+          </listitem>
+          <listitem>
+            <para>%CPU</para>
+          </listitem>
+          <listitem>
+            <para>优先级</para>
+          </listitem>
+          <listitem>
+            <para>ID</para>
+          </listitem>
+          <listitem>
+            <para>内存</para>
+          </listitem>
+      </itemizedlist>
+        <para>要了解如何改变在进程列表中显示的列，请参考<xref linkend="gnome-system-monitor-prefs-proclist"/>。</para>
+
+      <sect3 id="gnome-system-monitor-display-processlist-child">
+        <title>父进程和子进程</title>
+        <para>父进程是生成其他进程的进程。生成的进程是其父进程的子进程。默认情况下，<application>系统监视器</application>不显示进程依赖关系。要了解如何改变默认显示，请参考<xref linkend="gnome-system-monitor-modify-processlist-viewdeps"/>。</para>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-display-processlist-priority">
+        <title>进程优先级和 Nice 值</title>
+      <para>进程按照优先级的排列进行：高优先极进程先于低优先级进程运行。子进程通常继承其父进程的优先级。</para>
+      <para>进程优先级用进程的 nice 值进行设定，如下：</para>
+      <itemizedlist>
+        <listitem>
+          <para>nice 值为 0 表示进程拥有常规优先级。</para>
+        </listitem>
+        <listitem>
+          <para>nice 值越低，优先级越高。</para>
+        </listitem>
+        <listitem>
+          <para>nice 值越高，优先级越低。</para>
+        </listitem>
+      </itemizedlist>
+      <para>要了解如何改变进程的优先级，请参考<xref linkend="gnome-system-monitor-change-priority"/>。</para>
+      </sect3>
+
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-sort-processlist">
+      <title>为进程列表排序</title>
+      <para>要为进程列表排序，请执行以下步骤：</para>
+      <orderedlist>
+        <listitem>
+          <para>选择<guilabel>进程</guilabel>标签以显示进程列表。</para>
+        </listitem>
+        <listitem>
+          <para>默认情况下，进程按其名称在字母表中的顺序列出。要以反字母表顺序列出进程，单击列首部的<guilabel>进程名称</guilabel></para>
+        </listitem>
+        <listitem>
+          <para>单击任何列首部即可以此列信息按字母表或数值顺序排序进程。</para>
+        </listitem>
+        <listitem>
+          <para>再次单击列首部，即可以反字母表或数值顺序排列进程。</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-modify-processlist">
+      <title>修改进程列表内容</title>
+      <para>您可以用几种方式修改进程列表中显示的内容。</para>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-all">
+        <title>显示所有进程</title>
+        <para>要显示所有进程，请执行以下步骤。</para>
+        <orderedlist>
+          <listitem>
+            <para>选择<guilabel>进程</guilabel>标签以显示进程列表。</para>
+          </listitem>
+          <listitem>
+            <para lang="en">
+              Choose
+              <menuchoice>
+                <guimenu>View</guimenu>
+                <guimenuitem>All Processes</guimenuitem>
+              </menuchoice>.
+            </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-my">
+        <title>仅显示当前用户的进程</title>
+        <para>要仅显示当前用户的进程，请执行以下步骤：</para>
+        <orderedlist>
+          <listitem>
+            <para>选择<guilabel>进程</guilabel>标签以显示进程列表。</para>
+          </listitem>
+          <listitem>
+            <para lang="en">
+              Choose
+              <menuchoice>
+                <guimenu>View</guimenu>
+                <guimenuitem>My Processes</guimenuitem>
+              </menuchoice>.
+            </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-active">
+        <title>仅显示活动进程</title>
+        <para>要仅显示活动进程，请执行以下步骤：</para>
+        <orderedlist>
+          <listitem>
+            <para>选择<guilabel>进程</guilabel>标签以显示进程列表。</para>
+          </listitem>
+          <listitem>
+            <para lang="en">
+              Choose
+              <menuchoice>
+                <guimenu>View</guimenu>
+                <guimenuitem>Active Processes</guimenuitem>
+              </menuchoice>.
+            </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+
+      <sect3 id="gnome-system-monitor-modify-processlist-viewdeps">
+        <title>显示依赖关系</title>
+        <para>要在进程列表中显示进程间的依赖关系，请执行以下步骤：</para>
+        <orderedlist>
+          <listitem>
+            <para>选择<guilabel>进程</guilabel>标签以显示进程列表。</para>
+          </listitem>
+          <listitem>
+            <para>选择<menuchoice><guimenu>查看</guimenu><guimenuitem>依赖关系</guimenuitem></menuchoice>。</para>
+          </listitem>
+        </orderedlist>
+        <para>如果选中了<guimenuitem>依赖关系</guimenuitem>菜单项， 进程将以下列形式显示</para>
+        <itemizedlist>
+          <listitem>
+            <para>进程名称前的三角符号表示此进程为父进程。单击该三角符号以显示关联的子进程。</para>
+          </listitem>
+          <listitem>
+            <para>子进程被缩进排列，并与其父进程一直列出。</para>
+          </listitem>
+        </itemizedlist>
+        <para>如果<guimenuitem>依赖关系</guimenuitem>菜单项示选中：</para>
+        <itemizedlist>
+          <listitem>
+            <para>父进程和子进程将不加以区分</para>
+          </listitem>
+          <listitem>
+            <para>所有进程以字母顺序列出</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-memory-map">
+      <title>显示进程内存映射</title>
+      <para>要显示进程的内存映射，请执行以下步骤：</para>
+      <orderedlist>
+        <listitem>
+          <para>选择<guilabel>进程</guilabel>标签以显示进程列表。</para>
+        </listitem>
+        <listitem>
+          <para>在进程列表中选中进程。</para>
+        </listitem>
+        <listitem>
+          <para>选择<menuchoice><guimenu>查看</guimenu><guimenuitem>内存映射</guimenuitem></menuchoice>。</para>
+        </listitem>
+      </orderedlist>
+      <para><guilabel>内存映射</guilabel>对话框以表格形式显示信息。内存映射表上方显示进程名称。<guilabel>内存映射</guilabel>对话框从左至右显示以下列：</para>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Filename</guilabel></term>
+          <listitem>
+            <para>进程当前使用的共享库地址。如果此字段为空，则此行显示的内存信息描述的是内存映射表上方显示其名称的进程所占用的内存。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM Start</guilabel></term>
+          <listitem>
+            <para>内存块起始地址。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM End</guilabel></term>
+          <listitem>
+            <para>内存块结束地址。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM Size</guilabel></term>
+          <listitem>
+            <para>内存块的大小。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Flags</guilabel></term>
+          <listitem>
+            <para>下列标识符描述进程可能具有的内存块访问类型。</para>
+            <variablelist>
+              <varlistentry>
+                <term>p</term>
+                <listitem>
+                  <para>该内存块为进程独占，其他进程无法访问。</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>r</term>
+                <listitem>
+                  <para>进程拥有此内存块的读取权限。</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>s</term>
+                <listitem>
+                  <para>该进程块与其他进程共享。</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>w</term>
+                <listitem>
+                  <para>该进程拥有此内存块的写入权限。</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>x</term>
+                <listitem>
+                  <para>该进程拥有此内存块中包含指令的执行权限。</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>VM Offset</guilabel></term>
+          <listitem>
+            <para>虚拟内存的内存块偏移量。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Device</guilabel></term>
+          <listitem>
+            <para>共享库文件所以设备的主、副设备号。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Inode</guilabel></term>
+          <listitem>
+            <para>共享库装入内存的设备 inode 节点号。</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para>单击列首部即可以此列信息按字母表或数值顺序排列数据。再次单击列首部可按反字母表或数值顺序排列数据。</para>
+      <para>点击<guibutton>关闭</guibutton>按钮以关闭<guilabel>内存映射</guilabel>对话框。</para>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-change-priority">
+      <title>改变进程优先级</title>
+      <para>要改变进程优先级，请执行以下步骤：</para>
+      <orderedlist>
+        <listitem>
+          <para>选择<guilabel>进程</guilabel>标签以显示进程列表。</para>
+        </listitem>
+        <listitem>
+          <para>请选择您想要改变优先级的进程。</para>
+        </listitem>
+        <listitem>
+          <para>选择<menuchoice><guimenu>编辑</guimenu><guimenuitem>改变优先级</guimenuitem></menuchoice>。将显示<guilabel>改变优先级</guilabel>对话框。</para>
+        </listitem>
+        <listitem>
+          <para>使用此滑块改变进程的 nice 值。</para>
+          <para>nice 值设置进程的优先级：nice 值越低，优先级越高。</para>
+          <para>要指定一个小于零的 nice 值，非 root 用户需输入 root 密码。</para>
+        </listitem>
+        <listitem>
+          <para>单击<guibutton>改变优先级</guibutton>按钮。</para>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+
+    <sect2 id="gnome-system-monitor-end-process">
+      <title>结束进程</title>
+      <para>要结束一个进程，请执行以下步骤：</para>
+      <orderedlist>
+        <listitem>
+          <para>选择<guilabel>进程</guilabel>标签以显示进程列表。</para>
+        </listitem>
+        <listitem>
+          <para>选择您想要结束的进程。</para>
+        </listitem>
+        <listitem>
+          <para>选择<menuchoice><guimenu>编辑</guimenu><guimenuitem>结束进程</guimenuitem></menuchoice>，或者单击<guibutton>结束进程</guibutton>按钮。</para>
+          <para>默认情况下，将显示确认警告对话框。要了解如何显示或隐藏确认警告，请参见<xref linkend="gnome-system-monitor-prefs-proclist"/>。</para>
+        </listitem>
+        <listitem>
+          <para>单击<guibutton>结束进程</guibutton>按钮以确认您想要结束进程。<application>系统监视器</application>强制程序正常退出。</para>
+        </listitem>
+      </orderedlist>
+      <para>这是一种比较好的结束进程的方式。</para>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-terminate-process">
+      <title>终止进程。</title>
+      <para>要终止进程，请执行以下步骤：</para>
+      <orderedlist>
+        <listitem>
+          <para>选择<guilabel>进程</guilabel>标签以显示进程列表。</para>
+        </listitem>
+        <listitem>
+          <para>选择您想要终止的进程。</para>
+        </listitem>
+        <listitem>
+          <para>选择<menuchoice><guimenu>编辑</guimenu><guimenuitem>杀死进程</guimenuitem></menuchoice>。</para>
+          <para>默认情况下，将显示确认警告对话框。要了解如何显示或隐藏确认警告，请参见<xref linkend="gnome-system-monitor-prefs-proclist"/>。</para>
+        </listitem>
+        <listitem>
+          <para>单击<guibutton>杀死进程</guibutton>按钮以确认您想要终止该进程。<application>系统监视器</application>强制进程立刻结束。</para>
+        </listitem>
+      </orderedlist>
+      <para>通常您只有在按照<xref linkend="gnome-system-monitor-end-process"/>中描述的方法无法正常结束进程时使用终止进程。</para>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-cpu">
+      <title>监视 CPU 使用</title>
+      <para>要监视 CPU 使用，请选择<guilabel>资源</guilabel>标签。</para>
+      <para><application>系统监视器</application>以图形格式显示 CPU 使用历史。以图表下方，<application>系统监视器</application>也以百分率形式显示当前 CPU 使用情况。</para>
+    </sect2>
+
+
+    <sect2 id="gnome-system-monitor-memory">
+      <title>监视内存和交换区使用</title>
+      <para>要监视内存和交换区使用情况，请选择<guilabel>资源</guilabel>标签。</para>
+      <para><application>系统监视器</application>以图形格式显示内存使用历史。在图表下方，<application>系统监视器</application>也显示下列数值：</para>
+      <itemizedlist>
+        <listitem>
+          <para>总内存中占用的内存</para>
+        </listitem>
+        <listitem>
+          <para>总交换区中使用的交换区</para>
+        </listitem>
+      </itemizedlist>
+
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-network">
+      <title>监视网络活动</title>
+      <para>要监视网络活动，请选择<guilabel>资源</guilabel>标签。</para>
+      <para><application>系统监视器</application>以图形格式显示网络使用历史。在图表下方，<application>系统监视器</application>也显示下列数值：</para>
+      <itemizedlist>
+        <listitem>
+          <para>每秒接收数据及总数据量</para>
+        </listitem>
+        <listitem>
+          <para>每秒发送数据及总发送量</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-disk">
+      <title>监视文件系统</title>
+      <para>要监视文件系统，请选择<guilabel>文件系统</guilabel>标签。</para>
+      <para><application>系统监视器</application>以列表格式显示挂载的文件系统，该表显示以下列。</para>
+      <variablelist>
+        <varlistentry>
+          <term>设备</term>
+          <listitem>
+            <para>块文件地址</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>目录</term>
+          <listitem>
+            <para>设备挂载点(访问目录)</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>类型</term>
+          <listitem>
+            <para>文件系统类型</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>总量</term>
+          <listitem>
+            <para>总容量</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>空闲</term>
+          <listitem>
+            <para>未使用空间大小</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>可用</term>
+          <listitem>
+            <para>可用空间大小</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>已用</term>
+          <listitem>
+            <para>已用空间大小(及占总大小的百分率)</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="gnome-system-monitor-prefs">
+    <title>首选项</title>
+    <para>要配置<application>系统监视器</application>，请选择<menuchoice><guimenu>编辑</guimenu><guimenuitem>首选项</guimenuitem></menuchoice>。<guilabel>首选项</guilabel>对话框包含以下标签区段：</para>
+
+    <sect2 id="gnome-system-monitor-prefs-proclist">
+      <title>处理器</title>
+        <variablelist>
+          <varlistentry>
+            <term lang="en">
+              <guilabel>Behavior</guilabel>
+            </term>
+            <listitem>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Update interval in seconds</guilabel>
+                  </para>
+                  <para>使用此选值框指定您想要更新进程列表的时间间隔。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Enable smooth refresh</guilabel>
+                  </para>
+                  <para>选中此项以平滑刷新。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Alert before ending or killing processes</guilabel>
+                  </para>
+                  <para>选中此项则当您试图终止一个进程时将弹出一个确认警告。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Divide CPU usage by CPU count</guilabel>
+                  </para>
+                  <para>选中此项以将进程列表中每个进程的 CPU 占用百分数按 CPU 号分开显示。</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term lang="en">
+              <guilabel>Information Fields</guilabel>
+            </term>
+            <listitem>
+              <para>使用下列选项选择显示在进程列表中的字段：</para>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Process Name</guilabel>
+                  </para>
+                  <para>选中此项以显示进程名称。此列可能也包含表示与进程相关的应用程序的图标。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>User</guilabel>
+                  </para>
+                  <para>选中此项以显示进程所用者的用户名称。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Status</guilabel>
+                  </para>
+                  <para>选中此项以显示当前进程的状态：眨眼或进行。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Virtual Memory</guilabel>
+                  </para>
+                  <para>选中此项以显示分配给进程的虚拟内存大小。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Resident Memory</guilabel>
+                  </para>
+                  <para>选中此项以显示分配给进程的物理内存大小。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Writable Memory</guilabel>
+                  </para>
+                  <para>先中此项以显示进程可写内存的大小。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Shared Memory</guilabel>
+                  </para>
+                  <para>选中此项以显示分配给进程的共享内存大小。共享内存是可被其他进程访问的内存块。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>X Server Memory</guilabel>
+                  </para>
+                  <para>选中此项以显示进程使用的 X 服务器内存大小。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>% CPU</guilabel>
+                  </para>
+                  <para>选中此项以显示进程当前使用的 CPU 时间百分率。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>CPU Time</guilabel>
+                  </para>
+                  <para>选中此项以显示进程已作用的 CPU 时间。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Started</guilabel>
+                  </para>
+                  <para>选中此项以显示进程开始运行的时间。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Nice</guilabel>
+                  </para>
+                  <para>选中此项以显示进程的 nice 值。nice 值设置进程的优先级：nice 值越低，优先极越高。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                <guilabel>ID</guilabel>
+                  </para>
+                  <para>选中此项以显示进程标识符，也即 pid。pid 是一个唯一标识进程的数字。您可以使用 pid 在命令行操纵进程。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Memory</guilabel>
+                  </para>
+                  <para>选中此项以显示进程当前占用的系统内存大小。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Security Context</guilabel>
+                  </para>
+                  <para>选中此项以显示正在运行进程的安全上下文。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Command Line</guilabel>
+                  </para>
+                  <para>选中此选项以显示用以启动此进程的命令行，包括参数。</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-prefs-resmon">
+      <title>资源</title>
+        <variablelist>
+          <varlistentry>
+            <term lang="en"><guilabel>Graphs</guilabel></term>
+            <listitem>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Update interval in seconds</guilabel>
+                  </para>
+                  <para>使用此选值框指定您想要更新<application>系统监视器</application>图表的频率。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Show network speed in bits</guilabel>
+                  </para>
+                  <para lang="en">
+                    Select this option to use bits instead of bytes for displaying network speed in the <application>System Monitor</application> graphs.
+                  </para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-system-monitor-prefs-filesystems">
+      <title>文件系统</title>
+        <variablelist>
+          <varlistentry>
+            <term lang="en"><guilabel>Behavior</guilabel></term>
+            <listitem>
+              <itemizedlist>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Update interval in seconds</guilabel>
+                  </para>
+                  <para>使用此选值框指定您想要更新<guilabel>文件系统</guilabel>列表的频率。</para>
+                </listitem>
+                <listitem>
+                  <para lang="en">
+                    <guilabel>Show all file systems</guilabel>
+                  </para>
+                  <para>选中此项以显示所有文件系统，包括临时和系统文件系统。</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </varlistentry>
+
+        </variablelist>
+    </sect2>
+
+  </sect1>
+
+</article>

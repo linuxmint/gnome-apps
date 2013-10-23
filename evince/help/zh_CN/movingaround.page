@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="movingaround" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="index#reading"/>
+    <desc>导航，滚动和缩放</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+  </info>
+
+<title>在文档中移动</title>
+<p>您可以使用下列办法之一在文档的每页中移动：</p>
+<list>
+ <item>
+  <p>使用鼠标滚轮向上或向下滚屏。要移动页面只需移动鼠标：</p>
+ <steps>
+  <item><p>右键单击页面，选择 <gui>自动滚屏</gui></p></item>
+  <item><p>将鼠标指针向窗口底部移动可向下滚屏；越远就越快。</p></item>
+ <item><p>要停止自动滚动，单击文档中的任何地方。</p></item>
+ </steps>
+ </item>
+ <item>
+  <p>使用文档窗口的滚动条。</p>
+ </item>
+ <item>
+  <p>使用您键盘的向上和向下键。</p>
+ </item>
+ <item>
+  <p>可用您的鼠标拖挪页面，就像您正在抓住页面那样。要这样做：</p>
+
+    <list>
+     <item>
+      <p>移动鼠标到页面上，按住鼠标中键即可拖挪页面。</p>
+     </item>
+      <item>
+      <p>如果您鼠标没有中键，同时按住鼠标左右键，然后拖动。</p>
+     </item>
+    </list>
+</item>
+</list>
+
+<section id="between-pages">
+  <title>快速翻页</title>
+
+  <p>您能够使用下列方法之一在文档的页面中移动：</p>
+
+  <list>
+   <item><p>单击 <link xref="toolbar">工具栏</link> 上的 <gui>上一页</gui> 或 <gui>下一页</gui> 按钮。</p></item>
+   <item><p>使用“转到”菜单：</p>
+    <list>
+     <item><p><guiseq><gui>Go</gui><gui>Next Page</gui></guiseq></p></item>
+     <item><p><guiseq><gui>Go</gui><gui>Previous Page</gui></guiseq></p></item>
+    </list>
+   </item>
+  <item><p>按下键盘上的 <keyseq><key>Ctrl</key><key>Page Up</key></keyseq> 或 <keyseq><key>Ctrl</key><key>Page Down</key></keyseq> 按键。</p></item>
+  <item><p>转至指定页面：</p>
+  <list>
+   <item><p>在 <link xref="toolbar">工具栏</link> 的“选择页面”工具中输入页码后按下 <key>回车</key>。</p></item>
+   <item><p>如果您想到文档的开头或结尾：</p>
+     <list>
+       <item><p>单击 <guiseq><gui>转至</gui><gui>第一页</gui></guiseq>。您也可以按下您键盘上的 <keyseq><key>Ctrl</key><key>Home</key></keyseq>。</p></item>
+       <item><p>单击 <guiseq><gui>转到</gui><gui>最后一页</gui></guiseq> 或在键盘上按下 <keyseq><key>Ctrl</key><key>End</key></keyseq>。</p></item>
+     </list></item>
+    </list></item>
+  <item><p>要一次移动十页，按下 <keyseq><key>Shift</key><key>Page Up</key></keyseq> 或 <keyseq><key>Shift</key><key>Page Down</key></keyseq>。</p>
+
+  <note style="tip"><p>默认一下即移动一页。如果您想可以使用鼠标滚轮或拖移在页面间移动，单击 <guiseq><gui>查看</gui><gui>连续</gui></guiseq>。</p></note>
+  </item>
+</list>
+
+</section>
+
+<section id="navigating">
+  <title>使用页面列表或目录表导航</title>
+
+  <p>欲使侧边栏可见，单击工具栏上的 <guiseq><gui>查看</gui><gui>侧边栏</gui></guiseq>，或按下键盘上的 <key>F9</key>。您应该看到这份文档的所有页的预览。</p>
+
+  <p>您可以单击侧边栏以在页面间移动。</p>
+
+  <note>
+  <p>一些文档有索引或目录表，可以显示在侧边栏。单击侧边栏上部的下拉列表，选择 <gui>索引</gui> 即可查看。</p>
+  <note style="tip"><p>大多数文档并不使用该特性，所以您无法在侧边栏中看到它们的索引。</p></note>
+</note>
+
+</section>
+
+<section id="zoom">
+ <title>放大和缩小</title>
+ <list>
+ <item><p>单击 <guiseq><gui>查看</gui><gui>放大</gui></guiseq> 或使用键盘快捷键 <keyseq><key>Ctrl</key><key>+</key></keyseq> 。</p></item>
+<item><p>单击 <guiseq><gui>查看</gui><gui>缩小</gui></guiseq> 或使用键盘快捷键 <keyseq><key>Ctrl</key><key>-</key></keyseq> 。</p></item>
+</list>
+
+<p>您也可以另外做下列之一：</p>
+<list>
+ <item><p>按住 <key>Ctrl</key> 键时，可用您的鼠标滚轮来缩放。</p></item>
+ <item><p>从上面窗口中的下拉菜单中选择想要的缩放百分比。</p>
+ <media type="image" src="figures/zoom.png"/>
+ </item>
+</list>
+<note>
+<p><gui>适合页长</gui> 选项将使文档页面适合于整个窗口的 <em>高度</em>。</p>
+<p><gui>适合页宽</gui> 选项可以使一个文档页面填满正的窗口的 <em>宽度</em> </p>
+<p>如果您想一次看两页，两页并排，像书本那样，单击 <guiseq><gui>查看</gui><gui>双页</gui></guiseq></p>
+</note>
+<p>您可以使用整个屏幕来查看文档：</p>
+
+<list>
+   <item><p>单击 <guiseq><gui>查看</gui><gui>全屏</gui></guiseq> 或按下 <key>F11</key>。</p></item>
+   <item><p>要退出全屏模式：</p>
+    <list>
+      <item><p>按下 <key>F11</key> 或 <key>Escape</key></p></item>
+      <item><p>或者单击屏幕顶部的 <gui>退出全屏</gui> 按钮。</p></item>
+    </list>
+   </item>
+</list>
+</section>
+
+</page>

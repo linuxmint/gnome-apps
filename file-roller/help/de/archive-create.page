@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="archive-create" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#managing-archives"/>
+    <revision pkgversion="3.4" date="2012-01-18" status="review"/>
+    <revision pkgversion="3.6" date="2012-08-05" status="review"/>
+    <credit type="author">
+      <name>Marta Bogdanowicz</name>
+      <email>majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+    <desc>Dateien oder Ordner zu einem neuen Archiv hinzufügen.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jpetersen@jpetersen.org</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008, 2009, 2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@googlemail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ein neues Archiv erstellen</title>
+
+  <p>Erstellen Sie ein neues Archiv mit dem <app>Archivmanager</app> wie folgt:</p>
+
+  <steps>
+    <item>
+      <p>Klicken Sie auf das Symbol <gui>Ein neues Archiv anlegen</gui> in der Werkzeugleiste oder wählen Sie <guiseq><gui style="menu">Archiv</gui><gui style="menuitem">Neu</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Der Dateiwählerdialog wird geöffnet. Geben Sie Ihrer neuen Archivdatei einen Namen, wählen Sie einen Speicherort und klicken Sie auf <gui>Anlegen</gui>.</p>
+      <note style="tip">
+	<p>In diesem Fenster können Sie auch das zu verwendende Dateiformat auswählen. Die verfügbaren Dateierweiterungen werden unten angezeigt. Falls Sie kein Dateiformat auswählen, wird das neue Archiv eine <file>tar.gz</file>-Datei sein.</p>
+	<p>Durch Anklicken von <gui>Erweiterte Einstellungen</gui> können Sie ein Passwort festlegen oder Ihr neues Archiv in ḱleinere Dateien zerlegen. Wählen Sie hierzu die entsprechende Option aus und geben Sie die Größe für jeden Teil in <gui>MB</gui> an.</p>
+      </note>
+    </item>
+    <item>
+      <p>Fügen Sie die gewünschten Dateien zu Ihrem Archiv hinzu, indem Sie auf das Symbol <gui>Dateien zum Archiv hinzufügen</gui> in der Werkzeugleiste klicken, oder wählen Sie <guiseq><gui style="menu">Bearbeiten</gui><gui style="menu">Dateien hinzufügen</gui></guiseq>. Der <app>Archivmanager</app> erlaubt auch das Hinzufügen ganzer Ordner. Klicken Sie hierzu in der Werkzeugleiste auf das Symbol <gui>Einen Ordner zum Archiv hinzufügen</gui> oder wählen Sie <guiseq><gui style="menu">Bearbeiten</gui><gui style="menu">Einen Ordner hinzufügen …</gui></guiseq>.</p>
+      <note style="tip">
+        <p>Beim Hinzufügen eines Ordners zu Ihrem Archiv stehen Ihnen folgende Optionen zur Verfügung:</p>
+        <list>
+          <item><p>Unterordner einschließen oder nicht.</p></item>
+          <item><p>Wählen Sie, welche Dateien einbezogen werden sollen.</p></item>
+          <item><p>Wählen Sie, welche Unterordner oder Dateien nicht einbezogen werden sollen.</p></item>
+        </list>
+	<p>Nicht alle Archivformate unterstützen Ordner. Falls das für das von Ihnen verwendete Dateiformat zutrifft, werden Sie gewarnt.</p>
+      </note>
+    </item>
+    <item>
+      <p>Sobald Sie mit dem Hinzufügen von Dateien fertig sind, ist Ihr Archiv fertig, ein Speichern ist nicht notwendig.</p>
+    </item>
+  </steps>
+
+</page>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="annotations-save" xml:lang="lv">
+<info>
+  <link type="guide" xref="index#annotations"/>
+ <desc>Kā saglabāt komentārus.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0 licence</p>
+    </license>
+</info>
+<title>Saglabā kopiju ar komentētu PDF</title>
+ <p>Lai saglabātu kopiju ar komentētu PDF darbu nākotnei, izmantojot <app>dokumentu skatītāju</app> vai kādu citu PDF skatīšanas lietotni, <em>kura atbalsta komentārus</em>:</p>
+  <steps>
+   <item>
+     <p>
+      <guiseq><gui>File</gui><gui>Save a copy</gui></guiseq>
+     </p>
+   </item>
+   <item>
+     <p>Izvēlies nosaukumu un mapi kurā vēlies saglabāt failu, spied <gui>Saglabāt</gui>. PDF fails tiks saglabāts šajā mapē.</p>
+    </item>
+   </steps>
+   <p>Komentāri tiek pievienoti vadoties pēc PDF specifikācijas. Tādējādi, lielākajai daļai PDF lasītāju vajadzētu tās nolasīt. Okular dokumentu lasītājs tos neatbalsta. Adobe Reader to spēj.</p>
+
+</page>

@@ -1,0 +1,1046 @@
+# GNOME süsteemijälgija eesti keele tõlge.
+# Estonian translation of GNOME System Monitor.
+#
+# Copyright (C) 2005, 2006 Free Software Foundation, Inc.
+# Copyright (C) 2007-2009 The GNOME Project
+# This file is distributed under the same license as the gnome-system-monitor
+# package.
+#
+# Ivar Smolin <okul@linux.ee>, 2005-2009.
+# Priit Laes <amd store20 com>, 2005, 2006.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2011, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-system-monitor HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=system-"
+"monitor&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-22 17:13+0000\n"
+"PO-Revision-Date: 2012-09-23 10:08+0300\n"
+"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
+"Language-Team: Estonian <>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "System Monitor"
+msgstr "Süsteemijälgija"
+
+msgid "View current processes and monitor system state"
+msgstr "Süsteemi oleku ja protsesside jälgimine"
+
+msgid "Monitor;System;Process;CPU;Memory;Network;History;Usage;"
+msgstr "Monitor;Süsteem;Protsess;Protsessor;CPU;Mälu;Võrk;Ajalugu;Kasutus"
+
+msgid "System"
+msgstr "Süsteem"
+
+msgid "End _Process"
+msgstr "_Lõpeta protsess"
+
+msgid "Processes"
+msgstr "Protsessid"
+
+msgid "CPU History"
+msgstr "Protsessori koormuse ajalugu"
+
+msgid "Memory and Swap History"
+msgstr "Mälu ja saaleala kasutuse ajalugu"
+
+msgid "Memory"
+msgstr "Mälu"
+
+msgid "Swap"
+msgstr "Saaleala"
+
+msgid "Network History"
+msgstr "Võrguliikluse ajalugu"
+
+msgid "Receiving"
+msgstr "Vastuvõtmine"
+
+msgid "Total Received"
+msgstr "Kokku vastu võetud"
+
+msgid "Sent"
+msgstr "Saadetud"
+
+msgid "Total Sent"
+msgstr "Kokku saadetud"
+
+msgid "Resources"
+msgstr "Vahendid"
+
+msgid "File Systems"
+msgstr "Failisüsteemid"
+
+msgid "Search for Open Files"
+msgstr "Avatud failide otsing"
+
+msgid "_Name contains:"
+msgstr "_Nimi sisaldab:"
+
+msgid "Case insensitive matching"
+msgstr "Tõstutundetud vastavused"
+
+msgid "C_lear"
+msgstr "_Puhasta"
+
+msgid "S_earch results:"
+msgstr "O_tsingutulemused:"
+
+msgid "Open Files"
+msgstr "Avatud failid"
+
+msgid "System Monitor Preferences"
+msgstr "Süsteemijälgija eelistused"
+
+msgid "Behavior"
+msgstr "Käitumine"
+
+msgid "_Update interval in seconds:"
+msgstr "_Uuendamise sagedus sekundites:"
+
+msgid "Enable _smooth refresh"
+msgstr "_Sujuva värskenduse lubamine"
+
+msgid "Alert before ending or _killing processes"
+msgstr "Hoiatusdialoog enne protsessi lõpetamist või _kõrvaldamist"
+
+msgid "_Divide CPU usage by CPU count"
+msgstr "_CPU kasutus jagatakse protsessorite arvuga"
+
+msgid "Information Fields"
+msgstr "Andmeväljad"
+
+msgid "Process i_nformation shown in list:"
+msgstr "Protsessi _andmed, mida kuvatakse loendis:"
+
+msgid "Graphs"
+msgstr "Graafikud"
+
+msgid "_Show network speed in bits"
+msgstr "Võrguliiklust kuvatakes _bittides"
+
+msgid "Show _all file systems"
+msgstr "Kuvatakse _kõiki failisüsteeme"
+
+msgid "Change _Priority"
+msgstr "Muuda _tähtsust"
+
+msgid "_Nice value:"
+msgstr "Tähtsuse _väärtus:"
+
+msgid ""
+"<small><i><b>Note:</b> The priority of a process is given by its nice value. "
+"A lower nice value corresponds to a higher priority.</i></small>"
+msgstr ""
+"<small><i><b>Märkus:</b> Protsessi prioriteet on antud tema nice väärtusega. "
+"Madalam nice väärtus tähendab suuremat prioriteeti.</i></small>"
+
+msgid "Show the System tab"
+msgstr "Süsteemi kaardi näitamine"
+
+msgid "Show the Processes tab"
+msgstr "Protsesside saki kuvamine"
+
+msgid "Show the Resources tab"
+msgstr "Ressursside saki kuvamine"
+
+msgid "Show the File Systems tab"
+msgstr "Failisüsteemide saki kuvamine"
+
+msgid "translator-credits"
+msgstr ""
+"Ivar Smolin <okul@linux.ee>, 2005-2009.\n"
+"Priit Laes <amd@store20.com>, 2005, 2006.\n"
+"Mattias Põldaru <mahfiaz@gmail.com>, 2012."
+
+msgid "Device"
+msgstr "Seade"
+
+msgid "Directory"
+msgstr "Kataloog"
+
+msgid "Type"
+msgstr "Liik"
+
+msgid "Total"
+msgstr "Kokku"
+
+msgid "Free"
+msgstr "Vaba"
+
+msgid "Available"
+msgstr "Saadaval"
+
+msgid "Used"
+msgstr "Kasutuses"
+
+#. xgettext: ? stands for unknown
+msgid "?"
+msgstr "?"
+
+msgid "Today %l:%M %p"
+msgstr "Täna %k:%M"
+
+msgid "Yesterday %l:%M %p"
+msgstr "Eile %k:%M"
+
+msgid "%a %l:%M %p"
+msgstr "%a, %k:%M"
+
+msgid "%b %d %l:%M %p"
+msgstr "%d. %b %k:%M"
+
+msgid "%b %d %Y"
+msgstr "%d. %b %Y"
+
+msgid "Fraction"
+msgstr "Alamhulk"
+
+#. TRANSLATORS: description of the pie color picker's (mem, swap) filled percentage property
+msgid "Percentage full for pie color pickers"
+msgstr "Sektori värvuse valija täisprotsent"
+
+msgid "Title"
+msgstr "Pealkiri"
+
+msgid "The title of the color selection dialog"
+msgstr "Värvuse valimise dialoogi pealkiri"
+
+msgid "Pick a Color"
+msgstr "Värvuse valimine"
+
+msgid "Current Color"
+msgstr "Praegune värvus"
+
+msgid "The selected color"
+msgstr "Valitud värvus"
+
+msgid "Type of color picker"
+msgstr "Värvusevalija liik"
+
+msgid "Received invalid color data\n"
+msgstr "Võeti vastu vigased värvuse andmed\n"
+
+msgid "Click to set graph colors"
+msgstr "Graafiku värvide muutmiseks klõpsa siia"
+
+#. xgettext: noun, top level menu.
+#. "File" did not make sense for system-monitor
+msgid "_Monitor"
+msgstr "_Jälgija"
+
+msgid "_Edit"
+msgstr "_Redaktor"
+
+msgid "_View"
+msgstr "_Vaade"
+
+msgid "_Help"
+msgstr "A_bi"
+
+msgid "Search for _Open Files"
+msgstr "_Otsi avatud faile"
+
+msgid "Search for open files"
+msgstr "Avatud failide otsimine"
+
+msgid "Quit the program"
+msgstr "Programmist väljumine"
+
+msgid "_Stop Process"
+msgstr "_Peata protsess"
+
+msgid "Stop process"
+msgstr "Protsessi peatamine"
+
+msgid "_Continue Process"
+msgstr "_Jätka protsessi"
+
+msgid "Continue process if stopped"
+msgstr "Peatatud protsessi jätkamine"
+
+msgid "_End Process"
+msgstr "_Lõpeta protsess"
+
+msgid "Force process to finish normally"
+msgstr "Protsessi sundimine normaalseks lõpetamiseks"
+
+msgid "_Kill Process"
+msgstr "_Kõrvalda protsess"
+
+msgid "Force process to finish immediately"
+msgstr "Protsessi kõrvaldamine jõumeetodil"
+
+msgid "_Change Priority"
+msgstr "_Muuda tähtsust"
+
+msgid "Change the order of priority of process"
+msgstr "Protsessi tähtsuse muutmine"
+
+msgid "Configure the application"
+msgstr "Rakenduse seadistamine"
+
+msgid "_Refresh"
+msgstr "_Värskenda"
+
+msgid "Refresh the process list"
+msgstr "Protsessinimekirja värskendamine"
+
+msgid "_Memory Maps"
+msgstr "_Mäluplaan"
+
+msgid "Open the memory maps associated with a process"
+msgstr "Protsessiga seotud mäluplaani avamine"
+
+#. Translators: this means 'Files that are open' (open is no verb here)
+msgid "Open _Files"
+msgstr "Avatud _failid"
+
+msgid "View the files opened by a process"
+msgstr "Protsessi poolt avatud failide vaatamine"
+
+msgid "_Properties"
+msgstr "_Omadused"
+
+msgid "View additional information about a process"
+msgstr "Protsessi kohta lisateabe kuvamine"
+
+msgid "_Contents"
+msgstr "_Sisukord"
+
+msgid "Open the manual"
+msgstr "Käsiraamatu avamine"
+
+msgid "About this application"
+msgstr "Teave programmi kohta"
+
+msgid "_Dependencies"
+msgstr "Näita _sõltuvusi"
+
+msgid "Show parent/child relationship between processes"
+msgstr "Vanem- ja lapsprotsesside näitamine koos nendevaheliste seostega"
+
+msgid "_Active Processes"
+msgstr "_Aktiivsed protsessid"
+
+msgid "Show active processes"
+msgstr "Kuva ainult aktiivseid protsesse"
+
+msgid "A_ll Processes"
+msgstr "_Kõik protsessid"
+
+msgid "Show all processes"
+msgstr "Kuva kõiki protsesse"
+
+msgid "M_y Processes"
+msgstr "_Minu protsessid"
+
+msgid "Show only user-owned processes"
+msgstr "Ainult kasutaja enda protsesside kuvamine"
+
+msgid "Very High"
+msgstr "Väga kõrge"
+
+msgid "Set process priority to very high"
+msgstr "Protsessi prioriteedi tõstmine väga kõrgeks"
+
+msgid "High"
+msgstr "Kõrge"
+
+msgid "Set process priority to high"
+msgstr "Protsessi prioriteedi tõstmine kõrgeks"
+
+msgid "Normal"
+msgstr "Tavaline"
+
+msgid "Set process priority to normal"
+msgstr "Protsessi prioriteedi määramine tavaliseks"
+
+msgid "Low"
+msgstr "Madal"
+
+msgid "Set process priority to low"
+msgstr "Protsessi prioriteedi langetamine madalaks"
+
+msgid "Very Low"
+msgstr "Väga madal"
+
+msgid "Set process priority to very low"
+msgstr "Protsessi prioriteedi langetamine väga madalaks"
+
+msgid "Custom"
+msgstr "Kohandatud"
+
+msgid "Set process priority manually"
+msgstr "Protsessi prioriteedi määramine käsitsi"
+
+#. Translators: color picker title, %s is CPU, Memory, Swap, Receiving, Sending
+#, c-format
+msgid "Pick a Color for '%s'"
+msgstr "Värvuse valimine '%s' jaoks"
+
+msgid "CPU"
+msgstr "Protsessor"
+
+#, c-format
+msgid "CPU%d"
+msgstr "Protsessor%d"
+
+msgid "Sending"
+msgstr "Saatmine"
+
+#, c-format
+msgid "%u second"
+msgid_plural "%u seconds"
+msgstr[0] "%u sekund"
+msgstr[1] "%u sekundit"
+
+msgid "not available"
+msgstr "pole saadaval"
+
+#. xgettext: 540MiB (53 %) of 1.0 GiB
+#, c-format
+msgid "%s (%.1f%%) of %s"
+msgstr "%s (%.1f%%) %s-st"
+
+msgid "Error"
+msgstr "Viga"
+
+#, c-format
+msgid "'%s' is not a valid Perl regular expression."
+msgstr "'%s' pole korrektne Perli regulaaravaldis."
+
+msgid "Process"
+msgstr "Protsess"
+
+msgid "PID"
+msgstr "PID"
+
+msgid "Filename"
+msgstr "Failinimi"
+
+#. xgettext: virtual memory start
+msgid "VM Start"
+msgstr "VM algus"
+
+#. xgettext: virtual memory end
+msgid "VM End"
+msgstr "VM lõpp"
+
+#. xgettext: virtual memory syze
+msgid "VM Size"
+msgstr "VM Suurus"
+
+msgid "Flags"
+msgstr "Lipud"
+
+#. xgettext: virtual memory offset
+msgid "VM Offset"
+msgstr "VM nihe"
+
+#. xgettext: memory that has not been modified since
+#. it has been allocated
+msgid "Private clean"
+msgstr "Privaatne muutmata"
+
+#. xgettext: memory that has been modified since it
+#. has been allocated
+msgid "Private dirty"
+msgstr "Privaatne ja muudetud"
+
+#. xgettext: shared memory that has not been modified
+#. since it has been allocated
+msgid "Shared clean"
+msgstr "Jagatud muutmata"
+
+#. xgettext: shared memory that has been modified
+#. since it has been allocated
+msgid "Shared dirty"
+msgstr "Jagatud ja muudetud"
+
+msgid "Inode"
+msgstr "Inode"
+
+msgid "Memory Maps"
+msgstr "Mälu jaotumine"
+
+#, c-format
+msgid "_Memory maps for process \"%s\" (PID %u):"
+msgstr "Protsessi \"%s\" (PID %u) _mäluplaan:"
+
+msgid "file"
+msgstr "fail"
+
+msgid "pipe"
+msgstr "toru"
+
+msgid "IPv6 network connection"
+msgstr "IPv6-võrguühendus"
+
+msgid "IPv4 network connection"
+msgstr "IPv4-võrguühendus"
+
+msgid "local socket"
+msgstr "kohalik sokkel"
+
+msgid "unknown type"
+msgstr "tundmatu tüüp"
+
+#. Translators: "FD" here means "File Descriptor". Please use
+#. a very short translation if possible, and at most
+#. 2-3 characters for it to be able to fit in the UI.
+msgid "FD"
+msgstr "FD"
+
+msgid "Object"
+msgstr "Objekt"
+
+#, c-format
+msgid "_Files opened by process \"%s\" (PID %u):"
+msgstr "_Protsessi \"%s\" (PID %u) poolt avatud failid:"
+
+msgid "Main Window width"
+msgstr "Peaakna laius"
+
+msgid "Main Window height"
+msgstr "Peaakna kõrgus"
+
+msgid "Main Window X position"
+msgstr "Peaakna asukoht X-teljel"
+
+msgid "Main Window Y position"
+msgstr "Peaakna asukoht Y-teljel"
+
+msgid "Show process dependencies in tree form"
+msgstr "Protsessi sõltuvuste näitamine puuvaates"
+
+msgid "Solaris mode for CPU percentage"
+msgstr "Solarise protsessorikasutuse režiim"
+
+msgid ""
+"If TRUE, system-monitor operates in 'Solaris mode' where a task's CPU usage "
+"is divided by the total number of CPUs. Otherwise, it operates in 'Irix "
+"mode'."
+msgstr ""
+"Kui märgitud, siis süsteemijälgija tegutseb \"Solarise režiimis\", kus "
+"protsessi protsessorikasutus on jagatuid protsessorite koguarvuga. Vastasel "
+"juhul tegutsetakse \"Irixi režiimis\"."
+
+msgid "Enable/Disable smooth refresh"
+msgstr "Luba/keela sujuv värskendus"
+
+msgid "Show warning dialog when killing processes"
+msgstr "Protsesside kõrvaldamisel kuvada hoiatusdialooge"
+
+msgid "Time in milliseconds between updates of the process view"
+msgstr "Protsessivaate värskendamise sagedus millisekundites"
+
+msgid "Time in milliseconds between updates of the graphs"
+msgstr "Graafikute värskendamise sagedus millisekundites"
+
+msgid "Whether information about all file systems should be displayed"
+msgstr "Kas näidata teavet kõikide failisüsteemide kohta"
+
+msgid ""
+"Whether to display information about all file systems (including types like "
+"'autofs' and 'procfs'). Useful for getting a list of all currently mounted "
+"file systems."
+msgstr ""
+"Kas näidata kõikide failisüsteemide (nende hulgas ka 'autofs' ja 'procfs') "
+"andmeid. See on kasulik kõigi ühendatud failisüsteemide loetelu saamiseks."
+
+msgid "Time in milliseconds between updates of the devices list"
+msgstr "Seadmete loetelu värskendamise sagedus millisekundites"
+
+msgid ""
+"Determines which processes to show by default. 0 is All, 1 is user, and 2 is "
+"active"
+msgstr ""
+"Määrab milliseid protsesse vaikimisi kuvatakse. 0 - kõik, 1 - kasutaja omad "
+"ja 2 - kõik aktiivsed"
+
+msgid "Saves the currently viewed tab"
+msgstr "Hetkel kuvatava kaardi salvestamine"
+
+msgid ""
+"0 for the System Info, 1 for the processes list, 2 for the resources and 3 "
+"for the disks list"
+msgstr ""
+"0 süsteemse teabe jaoks, 1 protsesside loetelu jaoks, 2 ressurside jaoks ja "
+"3 ketaste loetelu jaoks"
+
+msgid "CPU colors"
+msgstr "CPU värvid"
+
+msgid "Each entry is in the format (CPU#, Hexadecimal color value)"
+msgstr "Iga kirje on vormingus (CPU nr, värvikood kuueteistkümnendsüsteemis)"
+
+msgid "Default graph memory color"
+msgstr "Graafiku mälujoone vaikimisi värvus"
+
+msgid "Default graph swap color"
+msgstr "Graafiku saalejoone vaikimisi värvus"
+
+msgid "Default graph incoming network traffic color"
+msgstr "Võrgu siseneva liikluse vaikimisi värvus graafikus"
+
+msgid "Default graph outgoing network traffic color"
+msgstr "Võrgu väljuva liikluse vaikimisi värvus graafikus"
+
+msgid "Show network traffic in bits"
+msgstr "Kuva võrguliiklust bittides"
+
+msgid "Process view sort column"
+msgstr "Protsessivaate sortimistulp"
+
+msgid "Process view columns order"
+msgstr "Protsessivaate tulpade järjestus"
+
+msgid "Process view sort order"
+msgstr "Protsessivaate sortimisjärjestus"
+
+msgid "Width of process 'Name' column"
+msgstr "Protsessi nimeveeru laius"
+
+msgid "Show process 'Name' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis nimeveergu"
+
+msgid "Width of process 'User' column"
+msgstr "Protsessi kasutajaveeru laius"
+
+msgid "Show process 'User' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis kasutajaveergu"
+
+msgid "Width of process 'Status' column"
+msgstr "Protsessi olekuveeru laius"
+
+msgid "Show process 'Status' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis olekuveergu"
+
+msgid "Width of process 'Virtual Memory' column"
+msgstr "Protsessi virtuaalmälu veeru laius"
+
+msgid "Show process 'Virtual Memory' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis virtuaalmälu veergu"
+
+msgid "Width of process 'Resident Memory' column"
+msgstr "Protsessi residentse mälu veeru laius"
+
+msgid "Show process 'Resident Memory' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis residentse mälu veergu"
+
+msgid "Width of process 'Writable Memory' column"
+msgstr "Protsessi kirjutatava mälu veeru laius"
+
+msgid "Show process 'Writable Memory' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis kirjutatava mälu veergu"
+
+msgid "Width of process 'Shared Memory' column"
+msgstr "Protsessi jagatud mälu veeru laius"
+
+msgid "Show process 'Shared Memory' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis jagatud mälu veergu"
+
+msgid "Width of process 'X Server Memory' column"
+msgstr "Protsessi 'X-serveri mälu' veeru laius"
+
+msgid "Show process 'X Server Memory' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis X-serveri mälu veergu"
+
+#, no-c-format
+msgid "Width of process 'CPU %' column"
+msgstr "Protsessi 'CPU %' veeru laius"
+
+#, no-c-format
+msgid "Show process 'CPU %' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis 'CPU %' veergu"
+
+msgid "Width of process 'CPU Time' column"
+msgstr "Protsessi 'CPU aeg' veeru laius"
+
+msgid "Show process 'CPU Time' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis CPU aja veergu"
+
+msgid "Width of process 'Started' column"
+msgstr "Protsessi alustamisaja veeru laius"
+
+msgid "Show process 'Started' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis alustamisaja veergu"
+
+msgid "Width of process 'Nice' column"
+msgstr "Protsessi prioriteedi veeru laius"
+
+msgid "Show process 'Nice' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis prioriteedi veergu"
+
+msgid "Width of process 'PID' column"
+msgstr "Protsessi PID-veeru laius"
+
+msgid "Show process 'PID' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis PID-veergu"
+
+msgid "Width of process 'SELinux Security Context' column"
+msgstr "Protsessi 'SELinux-i turvakontekst' veeru laius"
+
+msgid "Show process 'SELinux Security Context' column on startup"
+msgstr ""
+"Käivitumisel näidatakse protsessitabelis SELinux-i turvakonteksti veergu"
+
+msgid "Width of process 'Command Line' column"
+msgstr "Protsessi käsurea veeru laius"
+
+msgid "Show process 'Command Line' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis käsurea veergu"
+
+msgid "Width of process 'Memory' column"
+msgstr "Protsessi mäluveeru laius"
+
+msgid "Show process 'Memory' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis mälu veergu"
+
+msgid "Width of process 'Waiting Channel' column"
+msgstr "Protsessi ootekanali veeru laius"
+
+msgid "Show process 'Waiting Channel' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis ootekanali veergu"
+
+msgid "Width of process 'Control Group' column"
+msgstr "Protsessi juhtgrupi veeru laius"
+
+msgid "Show process 'Control Group' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis juhtgrupi veergu"
+
+msgid "Width of process 'Unit' column"
+msgstr "Protsessi üksuse veeru laius"
+
+msgid "Show process 'Unit' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis üksuse veergu"
+
+msgid "Width of process 'Session' column"
+msgstr "Protsessi seansiveeru laius"
+
+msgid "Show process 'Session' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis seansiveergu"
+
+msgid "Width of process 'Seat' column"
+msgstr "Protsessi isteveeru laius"
+
+msgid "Show process 'Seat' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis isteveergu"
+
+msgid "Width of process 'Owner' column"
+msgstr "Protsessi omaniku veeru laius"
+
+msgid "Show process 'Owner' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis omaniku veergu"
+
+msgid "Width of process 'Priority' column"
+msgstr "Protsessi tähtsuse veeru laius"
+
+msgid "Show process 'Priority' column on startup"
+msgstr "Käivitumisel näidatakse protsessitabelis tähtsuse veergu"
+
+msgid "Disk view sort column"
+msgstr "Kettavaate sortimistulp"
+
+msgid "Disk view sort order"
+msgstr "Kettavaate sortimisjärjestus"
+
+msgid "Disk view columns order"
+msgstr "Kettavaate tulpade järjestus"
+
+msgid "Memory map sort column"
+msgstr "Mäluvaate sortimistulp"
+
+msgid "Memory map sort order"
+msgstr "Mäluvaate sortimisjärjestus"
+
+msgid "Open files sort column"
+msgstr "Avatud failide vaate sortimistulp"
+
+msgid "Open files sort order"
+msgstr "Avatud failide vaate sortimisjärjestus"
+
+#, c-format
+msgid ""
+"Cannot change the priority of process with PID %d to %d.\n"
+"%s"
+msgstr ""
+"Protsessi PID-iga %d tähtsust pole võimalik %d-ks muuta.\n"
+"%s"
+
+#, c-format
+msgid ""
+"Cannot kill process with PID %d with signal %d.\n"
+"%s"
+msgstr ""
+"Protsessi PID-ga %d pole signaali %d abil võimalik kõrvaldada.\n"
+"%s"
+
+#. xgettext: primary alert message
+#, c-format
+msgid "Kill the selected process »%s« (PID: %u)?"
+msgstr "Kas kõrvaldada valitud protsess »%s« (PID: %u)?"
+
+#. xgettext: secondary alert message
+msgid ""
+"Killing a process may destroy data, break the session or introduce a "
+"security risk. Only unresponsive processes should be killed."
+msgstr ""
+"Protsessi kõrvaldamine võib hävitada sinu andmed, lõhkuda tööseansi või "
+"põhjustada turvariski. Kõrvaldama peaks ainult protsesse, mis ei käitu "
+"õigesti."
+
+#. xgettext: primary alert message
+#, c-format
+msgid "End the selected process »%s« (PID: %u)?"
+msgstr "Kas lõpetada valitud protsessi töö »%s« (PID: %u)?"
+
+#. xgettext: secondary alert message
+msgid ""
+"Ending a process may destroy data, break the session or introduce a security "
+"risk. Only unresponsive processes should be ended."
+msgstr ""
+"Protsessi töö lõpetamine võib hävitada sinu andmed, lõhkuda tööseansi või "
+"põhjustada turvariski. Lõpetama peaks ainult protsesse, mis ei käitu õigesti."
+
+#, c-format
+msgid "(%s Priority)"
+msgstr "(%s prioriteet)"
+
+#, c-format
+msgid "Change Priority of Process »%s« (PID: %u)"
+msgstr "Protsessi prioriteedi muutmine »%s« (PID: %u)"
+
+msgid "Note:"
+msgstr "Märkus:"
+
+msgid ""
+"The priority of a process is given by its nice value. A lower nice value "
+"corresponds to a higher priority."
+msgstr ""
+"Protsessi prioriteet on antud tema nice väärtusega. Madalam nice väärtus "
+"tähendab suuremat prioriteeti."
+
+msgid "Icon"
+msgstr "Ikoon"
+
+msgid "A simple process and system monitor."
+msgstr "Lihtne protsesside ja süsteemi monitor."
+
+msgid "N/A"
+msgstr "pole"
+
+msgid "Process Name"
+msgstr "Protsessi nimi"
+
+msgid "User"
+msgstr "Kasutaja"
+
+msgid "Status"
+msgstr "Olek"
+
+msgid "Virtual Memory"
+msgstr "Virtuaalmälu"
+
+msgid "Resident Memory"
+msgstr "Residentne mälu"
+
+msgid "Writable Memory"
+msgstr "Kirjutatav mälu"
+
+msgid "Shared Memory"
+msgstr "Jagatud mälu"
+
+msgid "X Server Memory"
+msgstr "X serveri mälu"
+
+msgid "CPU Time"
+msgstr "CPU aeg"
+
+#, c-format
+msgid "%lld second"
+msgid_plural "%lld seconds"
+msgstr[0] "%lld sekund"
+msgstr[1] "%lld sekundit"
+
+msgid "Started"
+msgstr "Käivitatud"
+
+msgid "Nice"
+msgstr "Nice"
+
+msgid "Priority"
+msgstr "Prioriteet"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Security Context"
+msgstr "Turvakontekst"
+
+msgid "Command Line"
+msgstr "Käsurida"
+
+#. xgettext: combined noun, the function the process is waiting in, see wchan ps(1)
+msgid "Waiting Channel"
+msgstr "Ootekanal"
+
+msgid "Process Properties"
+msgstr "Protsessi omadused"
+
+#, c-format
+msgid "Properties of process \"%s\" (PID %u):"
+msgstr "Protsessi \"%s\" omadused (PID %u):"
+
+#, no-c-format
+msgid "% CPU"
+msgstr "% CPU"
+
+msgid "Control Group"
+msgstr "Juhtgrupp"
+
+msgid "Unit"
+msgstr "Üksus"
+
+msgid "Session"
+msgstr "Seanss"
+
+# See peaks vist multiseat Linuxi puhul näitama, millise tooli taga oleva kasutaja heaks protsess töötab.
+#. TRANSLATORS: Seat = i.e. the physical seat the session of the process belongs to, only
+#. for multi-seat environments. See http://en.wikipedia.org/wiki/Multiseat_configuration
+msgid "Seat"
+msgstr "Iste"
+
+msgid "Owner"
+msgstr "Omanik"
+
+#, c-format
+msgid "Load averages for the last 1, 5, 15 minutes: %0.2f, %0.2f, %0.2f"
+msgstr "Koormuse näit viimase 1, 5 ja 15 minuti kohta: %0.2f, %0.2f, %0.2f"
+
+#. Translators: The first string parameter is release version (codename),
+#. * the second one is the architecture, 32 or 64-bit
+#, c-format
+msgid "Release %s %s"
+msgstr "Väljalase %s %s"
+
+#. translators: This is the type of architecture, for example:
+#. * "64-bit" or "32-bit"
+#, c-format
+msgid "%d-bit"
+msgstr "%d-bitine"
+
+#, c-format
+msgid "Kernel %s"
+msgstr "Kernel %s"
+
+#, c-format
+msgid "GNOME %s"
+msgstr "GNOME %s"
+
+#. hardware section
+msgid "Hardware"
+msgstr "Riistvara"
+
+msgid "Memory:"
+msgstr "Mälu:"
+
+msgid "Processor:"
+msgstr "Protsessor:"
+
+#. disk space section
+msgid "System Status"
+msgstr "Süsteemi olek"
+
+msgid "Available disk space:"
+msgstr "Vaba kettaruum:"
+
+msgid "Running"
+msgstr "Töötav"
+
+msgid "Stopped"
+msgstr "Seisatud"
+
+msgid "Zombie"
+msgstr "Zombi"
+
+msgid "Uninterruptible"
+msgstr "Katkestamatu"
+
+msgid "Sleeping"
+msgstr "Magav"
+
+#. xgettext: weeks, days
+#, c-format
+msgid "%uw%ud"
+msgstr "%un%up"
+
+#. xgettext: days, hours (0 -> 23)
+#, c-format
+msgid "%ud%02uh"
+msgstr "%up%02ut"
+
+#. xgettext: hours (0 -> 23), minutes, seconds
+#, c-format
+msgid "%u:%02u:%02u"
+msgstr "%u:%02u:%02u"
+
+#. xgettext: minutes, seconds, centiseconds
+#, c-format
+msgid "%u:%02u.%02u"
+msgstr "%u:%02u.%02u"
+
+#, c-format
+msgid "%.1f KiB"
+msgstr "%.1f KiB"
+
+#, c-format
+msgid "%.1f MiB"
+msgstr "%.1f MiB"
+
+#, c-format
+msgid "%.1f GiB"
+msgstr "%.1f GiB"
+
+#, c-format
+msgid "%.1f TiB"
+msgstr "%.1f TiB"
+
+#, c-format
+msgid "%.3g kbit"
+msgstr "%.3g kbit"
+
+#, c-format
+msgid "%.3g Mbit"
+msgstr "%.3g Mbit"
+
+#, c-format
+msgid "%.3g Gbit"
+msgstr "%.3g Gbit"
+
+#, c-format
+msgid "%.3g Tbit"
+msgstr "%.3g Tbit"
+
+#, c-format
+msgid "%u bit"
+msgid_plural "%u bits"
+msgstr[0] "%u bitt"
+msgstr[1] "%u bitti"
+
+#, c-format
+msgid "%u byte"
+msgid_plural "%u bytes"
+msgstr[0] "%u bait"
+msgstr[1] "%u baiti"
+
+#. xgettext: rate, 10MiB/s or 10Mbit/s
+#, c-format
+msgid "%s/s"
+msgstr "%s/s"

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="finding" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#reading"/>
+    <desc>Atrodi vārdu vai frāzi dokumentā.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0 licence</p>
+    </license>
+
+  </info>
+
+<title>Teksta atrašana dokumentā</title>
+<steps>
+    <item><p>Spied <guiseq><gui>Rediģēt</gui><gui>Meklēt</gui></guiseq> vai spied <keyseq><key>Ctrl</key><key>F</key></keyseq> vai <key>/</key>, lai parādītu meklēšanas lauku.</p></item>
+
+    <item><p>Ievadi vārdu vai frāzi, kuru vēlies meklēt un meklēšana sāksies automātiski.</p></item>
+
+    <item><p><gui>Meklēt iepriekšējo</gui> un <gui>Meklēt nākamo</gui> pogas ļauj tev pārlekt no viena meklēšanas rezultāta uz nākamo.</p></item>
+
+    <item>
+     <p>Lai paslēptu meklēšanas joslu, noklikšķini jebkur dokumentā.</p>
+    </item>
+</steps>
+
+<p>Ja vārds vai frāze, ko tu meklē, nav atrodama visā dokumentā, uzleks <em>Nav atrasts</em> paziņojums. Toties, ja tas parādās dokumentā vismaz vienu reizi, parādīsies ziņa, kura tevi informēs par to, cik reizes meklētais vārds ir atrasts katrā lapā. Tas ir novērojams ja tu pārlec no viena rezultāta uz nākamo, kā tas ir paskaidrots iepriekš, vai arī ritini cauri dokumentam.</p>
+
+<note>
+  <p>Meklēt var tikai PDF dokumentos. Daži PDF dokumenti nav meklējami, jo to teksts ir iekodēts dokumentā bildes veidā.</p>
+</note>
+
+</page>

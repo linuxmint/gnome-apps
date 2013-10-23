@@ -1,0 +1,1907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appversion "2.16">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "July 2006">
+<!ENTITY app "gedit">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.GNOME.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+
+-->
+<!-- =============Document Header ============================= -->
+<?db.chunk.max_depth 2?>
+<article id="index" lang="ca">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+	 <title>Manual del gedit</title>
+	 <copyright>
+		<year>2007</year>
+		<holder>Projecte de documentació del GNOME</holder> </copyright>	 
+	 <copyright>
+		<year>2002</year>
+		<year>2003</year>
+		<year>2004</year>
+		<holder>Sun Microsystems</holder> </copyright>
+	 <copyright>
+		<year>2000</year>
+		<holder>Eric Baudais</holder> </copyright><copyright><year>2009</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright>
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+	 <publisher role="maintainer">
+		<publishername>Projecte de documentació del GNOME</publishername>
+	 </publisher>
+
+	 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+	 <authorgroup>
+           <author>
+             <firstname>Joachim</firstname>
+             <surname>Noreiko</surname>
+           </author>
+		<author>
+		  <firstname>Projecte de documentació del GNOME</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>GNOME</orgname>
+		  </affiliation>
+		</author>
+		<author>
+			<firstname>Hal</firstname> 
+			<surname>Canary</surname>
+			<contrib>S'ha afegit la taula de dreceres de teclat</contrib>
+		</author>		
+		<author>
+		  <firstname>Equip de documentació de Sun Java Desktop System</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>Sun Microsystems</orgname>
+			 <address><email>gdocteam@sun.com</email></address>
+		  </affiliation>
+		</author>
+		<author>
+		  <firstname>Eric</firstname>
+		  <surname>Baudais</surname>
+		  <affiliation>
+			 <orgname>Projecte de documentació del GNOME</orgname>
+			 <address> <email>baudais@okstate.edu</email> </address>
+		  </affiliation>
+		</author>
+		<othercredit role="reviewer">
+			<firstname>Baris</firstname>
+			<surname>En Cicek ha proporcionat informació de les primeres revisions de l'aplicació gedit.</surname>
+			<contrib>Reconeixements</contrib>
+    </othercredit>
+		<othercredit role="reviewer">
+			<firstname>Ajit</firstname>
+			<surname>En George ha proporcionat informació sobre els connectors.</surname>
+			<contrib>Reconeixements</contrib>
+    </othercredit>
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname>
+	<surname>Translator 1</surname>
+	<affiliation>
+	  <orgname>Latin Translation Team</orgname>
+	  <address> <email>translator@gnome.org</email> </address>
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+	 </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+	 <revhistory>
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+		<revision>
+		  <revnumber>Gedit v1.0</revnumber>
+		  <date>2000</date>
+		  <revdescription>
+			 <para role="author">Eric Baudais <email>baudais@okstate.edu</email></para>
+			 <para role="publisher">Projecte de documentació del GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Manual del gedit v2.0</revnumber>
+		  <date>Març de 2002</date>
+		  <revdescription>
+			 <para role="author">Equip de documentació del GNOME de Sun</para>
+			 <para role="publisher">Projecte de documentació del GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Manual del gedit v2.1</revnumber>
+		  <date>Juny de 2002</date>
+		  <revdescription>
+			 <para role="author">Equip de documentació del GNOME de Sun</para>
+			 <para role="publisher">Projecte de documentació del GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Manual del gedit v2.2</revnumber>
+		  <date>Agost de 2002</date>
+		  <revdescription>
+			 <para role="author">Equip de documentació del GNOME de Sun</para>
+			 <para role="publisher">Projecte de documentació del GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Manual del gedit v2.3</revnumber>
+		  <date>Setembre de 2002</date>
+		  <revdescription>
+			 <para role="author">Equip de documentació del GNOME de Sun</para>
+			 <para role="publisher">Projecte de documentació del GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Manual del gedit v2.4</revnumber>
+		  <date>Gener de 2003</date>
+		  <revdescription>
+			 <para role="author">Equip de documentació del GNOME de Sun</para>
+			 <para role="publisher">Projecte de documentació del GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Manual del gedit v2.5</revnumber>
+		  <date>Març de 2003</date>
+		  <revdescription>
+			 <para role="author">Equip de documentació del GNOME de Sun</para>
+			 <para role="publisher">Projecte de documentació del GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Manual del gedit v2.6</revnumber>
+		  <date>Setembre de 2003</date>
+		  <revdescription>
+			 <para role="author">Equip de documentació del GNOME de Sun</para>
+			 <para role="publisher">Projecte de documentació del GNOME</para>
+		  </revdescription>
+		</revision>
+		<revision>
+		  <revnumber>Manual del gedit v2.7</revnumber>
+		  <date>Març de 2004</date>
+		  <revdescription>
+			 <para role="author">Equip de documentació del GNOME de Sun</para>
+			 <para role="publisher">Projecte de documentació del GNOME</para>
+		  </revdescription>
+		</revision>
+   	<revision>
+		  <revnumber>Manual del gedit v2.8</revnumber>
+		  <date>Juliol de 2006</date>
+		  <revdescription>
+			 <para role="author">Equip de documentació de Sun Java Desktop System</para>
+			 <para role="publisher">Projecte de documentació del GNOME</para>
+		  </revdescription>
+		</revision>
+   		<revision>
+		  <revnumber>Manual del gedit v2.9</revnumber>
+		  <date>Juliol de 2006</date>
+		  <revdescription>
+			 <para role="author">Projecte de documentació del GNOME</para>
+			 <para role="publisher">Projecte de documentació del GNOME</para>
+		  </revdescription>
+		</revision>
+	 </revhistory>
+	 <releaseinfo>Aquest manual descriu la versió 2.16 del gedit.</releaseinfo>
+	 <legalnotice>
+		<title>Comentaris</title>
+		<para>Per a informar d'un error o fer algun suggeriment sobre l'aplicació <application>gedit</application> o aquest manual, seguiu les indicacions a la <ulink url="ghelp:user-guide?feedback" type="help">pàgina de comentaris del GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+	 </legalnotice>
+    <abstract role="description">
+      <para>El gedit és un editor de text per a l'escriptori del GNOME amb característiques bàsiques però robustes com ara la impressió, la comprovació ortogràfica, la cerca i reemplaçament, i el ressaltat sintàctic. També hi ha disponibles funcions més avançades en forma de connectors.</para>
+    </abstract>
+  </articleinfo>
+  <indexterm><primary>gedit</primary></indexterm>
+  <indexterm><primary>editor de text</primary></indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="gedit-intro">
+	 <title>Introducció</title>
+
+   <!-- removed ids, here as anchors to prevent possible breakage -->
+	 <anchor id="gedit-customize-toolbar"/>
+
+	 <para>L'aplicació <application>gedit</application> us permet crear i editar fitxers de text.</para>
+
+	 <para>L'objectiu del <application>gedit</application> és ser un editor text senzill i fàcil d'utilitzar. Les funcions més potents es poden habilitar amb diferents <firstterm>connectors</firstterm>, permetent una varietat de tasques relacionades amb l'edició de text.</para>
+  </sect1>
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="gedit-getting-started">
+	 <title>Primers passos</title>
+
+<!-- ============= To Start gedit ============================ -->
+	 <sect2 id="gedit-to-start">
+		<title>Com iniciar el gedit</title>
+		<para>Podeu iniciar el <application>gedit</application> de les maneres següents:</para>
+		<variablelist>
+    		<varlistentry>
+    		<term>Menú <guimenu>Aplicacions</guimenu></term>
+    		<listitem>
+    		<para>Trieu <menuchoice><guisubmenu>Accessoris</guisubmenu><guimenuitem>Editor de text</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    		</varlistentry>
+    		<varlistentry>
+    		<term>Línia d'ordres</term>
+    		<listitem>
+    		<para>Executeu l'ordre següent: <command>gedit</command></para>
+    		</listitem>
+    		</varlistentry>
+    		</variablelist>
+    <para>Per defecte, quan obriu un document de text amb el gestor de fitxers, el gedit s'iniciarà i mostrarà el document.</para>
+	</sect2>
+
+	<sect2 id="gedit-when-you-start">
+
+		<title>La finestra del gedit</title>
+		<para>Quan inicieu el <application>gedit</application>, es mostrarà la finestra següent:</para>
+
+		<figure id="gedit-window">
+		  <title>Finestra del gedit</title>
+		  <screenshot>
+			 <mediaobject>
+				<imageobject>
+				  <imagedata fileref="figures/gedit_window.png" format="PNG"/>
+					 </imageobject>
+				<textobject> <phrase>Mostra la finestra principal del gedit.</phrase>
+				</textobject>
+			</mediaobject>
+		  </screenshot>
+		</figure>
+
+		<para>La finestra del <application>gedit</application> conté els elements següents:</para>
+		<variablelist>
+		  <varlistentry> <term>Barra de menú</term>
+			 <listitem>
+				<para>Els menús a la barra de menú contenen totes les ordres que necessiteu per a treballar amb fitxers al <application>gedit</application>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Barra d'eines</term>
+			 <listitem>
+				<para>La barra d'eines conté un subconjunt d'ordres a les quals podeu accedir des de la barra de menú.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Àrea de visualització</term>
+			 <listitem>
+				<para>L'àrea de visualització conté el text del fitxer que esteu editant.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Barra d'estat</term>
+			 <listitem>
+				<para>La barra d'estat mostra la informació sobre l'activitat actual del <application>gedit</application> i la informació contextual sobre els elements del menú. La barra d'estat també mostra la informació següent:</para>
+		  <itemizedlist>
+		  <listitem>
+		  <para>Posició del cursor: el número de línia i el número de columna on està ubicat el cursor.</para>
+		  </listitem>
+		  <listitem>
+		  <para>Mode d'edició: si l'editor està en mode d'inserció, la barra d'estat conté el text <guilabel>INSER</guilabel>. Si l'editor està en mode de sobreescriptura, la barra d'estat conté el text <guilabel>SOBR</guilabel>. Premeu la tecla d'<keycap>Inserció</keycap> per a canviar el mode d'edició.</para>
+		  </listitem>
+		  </itemizedlist>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Subfinestra lateral</term>
+			 <listitem>
+				<para>La subfinestra lateral mostra una llista dels documents oberts i altra informació depenent de quins connectors s'hagin habilitat.</para>
+				<para>Per defecte la subfinestra lateral no es mostra. Per a mostrar-la, trieu <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Subfinestra lateral</guimenuitem></menuchoice>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Subfinestra inferior</term>
+			 <listitem>
+				<para>La subfinestra inferior s'utilitza per a eines de programació com ara el connector <application>Consola Python</application> per a mostrar missatges.</para>
+				<para>Per defecte la subfinestra inferior no es mostra. Per a mostrar-la, trieu <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Subfinestra inferior</guimenuitem></menuchoice>.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>Quan feu clic amb el botó secundari a la finestra del <application>gedit</application>, l'aplicació mostrarà un menú emergent. El menú emergent conté les ordres d'edició més habituals.</para>
+
+		<para>De la mateixa manera que en altres aplicacions del GNOME, les accions del <application>gedit</application> es poden realitzar de diferents maneres: amb el menú, amb la barra d'eines o amb les dreceres de teclat. Les dreceres de teclat habituals a totes les aplicacions són llistades a la <ulink type="help" url="ghelp:user-guide?shortcuts-apps">Guia d'usuari</ulink>.</para>
+	 </sect2>
+
+<!-- ============= To Open Multiple Files from the Command Line ========= -->
+	 <sect2 id="gedit-run-from-cmd-line">
+		<title>Com executar el gedit des d'una línia d'ordres</title>
+		<para>Podeu executar el <application>gedit</application> des d'una línia d'ordres i obrir un fitxer o diversos fitxers. Per a obrir diversos fitxers des d'una línia d'ordres, introduïu l'ordre següent i premeu <keycap>Retorn</keycap>:</para>
+		<para><command>gedit <replaceable>fitxer1.txt fitxer2.txt fitxer3.txt</replaceable></command></para>
+		<para>Alternativament, podeu especificar un URI enlloc d'un nom de fitxer.</para>
+    <para>Per a obtenir més informació sobre com executar el <application>gedit</application> des d'una línia d'ordres, vegeu la pàgina del manual UNIX del gedit, <ulink url="man:gedit" type="man"><citerefentry><refentrytitle>gedit</refentrytitle><manvolnum>1</manvolnum></citerefentry></ulink>.</para>
+	 </sect2>
+  </sect1>
+<!-- ================ Usage ================================ -->
+  <sect1 id="gedit-usage">
+	 <title>Com treballar amb fitxers</title>
+
+<!-- ============= To Create a New File ======================== -->
+	 <sect2 id="gedit-create-new-file">
+		<title>Com crear un document nou</title>
+		<para>Per a crear un document nou, trieu <menuchoice><guimenu>Fitxer</guimenu><guimenuitem>Nou</guimenuitem></menuchoice>. L'aplicació mostrarà un document en blanc nou a la finestra del <application>gedit</application>.</para>
+	 </sect2>
+
+<!-- ============= To Open a File ============================= -->
+	 <sect2 id="gedit-open-file">
+		<title>Com obrir un fitxer</title>
+		<para>Per a obrir un fitxer, trieu <menuchoice><guimenu>Fitxer</guimenu><guimenuitem>Obre</guimenuitem></menuchoice> per a mostrar el diàleg <guilabel>Obertura de fitxers</guilabel>. Seleccioneu el fitxer que voleu obrir i feu clic a <guibutton>Obre</guibutton>. El fitxer es mostrarà a la finestra del <application>gedit</application>.</para>
+
+		<para>L'aplicació enregistra els camins i noms de fitxer dels cinc fitxers més recents que heu editat i mostra els fitxers com a elements del menú al menú <menuchoice><guimenu>Fitxer</guimenu></menuchoice>. També podeu fer clic a la icona <inlinemediaobject><imageobject><imagedata fileref="figures/gedit_recent_files_menu_icon.png" format="PNG"/></imageobject><textobject><phrase>Mostra la icona del menú dels fitxers recents.</phrase></textobject></inlinemediaobject> a la barra d'eines per a mostrar la llista de fitxers recents.</para>
+
+		<note><para>Podeu obrir múltiples fitxers al <application>gedit</application>. L'aplicació afegeix una pestanya a la finestra per a cada fitxer obert. Per a obtenir més informació vegeu la <xref linkend="gedit-tabs"/>.</para></note>
+
+	 </sect2>
+
+<!-- ============= To Save a File ============================== -->
+	 <sect2 id="gedit-save-file">
+		<title>Com desar un fitxer</title>
+		<para>Podeu desar fitxers de les maneres següents:</para>
+		<itemizedlist>
+		  <listitem><para>Per a desar els canvis d'un fitxer existent, trieu <menuchoice><guimenu>Fitxer</guimenu><guimenuitem>Desa</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem><para>Per a desar un fitxer nou o per a desar un fitxer existent sota un nom de fitxer nou, trieu <menuchoice><guimenu>Fitxer</guimenu><guimenuitem>Anomena i desa</guimenuitem></menuchoice>. Introduïu un nom per al fitxer al diàleg <guilabel>Anomena i desa</guilabel> i feu clic a <guibutton>Desa</guibutton>.</para>
+		  </listitem>
+		  <listitem><para>Per a desar tots els fitxers que hi ha actualment oberts al <application>gedit</application>, trieu <menuchoice><guimenu>Documents</guimenu><guimenuitem>Desa-ho tot</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		</itemizedlist>
+		<para>Per a tancar tots els fitxers que hi ha actualment oberts al <application>gedit</application>, trieu <menuchoice><guimenu>Documents</guimenu><guimenuitem>Tanca-ho tot</guimenuitem></menuchoice>.</para>
+	 </sect2>
+
+<!-- ============= To Open a File from a URI ======================= -->
+	 <sect2 id="gedit-open-from-uri">
+		<title>Com obrir un fitxer des d'un URI</title>
+		<para>Per a obrir un fitxer des d'un identificador de recursos uniforme (URI), realitzeu els passos següents:</para>
+		<orderedlist>
+		<listitem>
+		<para>Trieu <menuchoice><guimenu>Fitxer</guimenu><guimenuitem>Obre una ubicació</guimenuitem></menuchoice> per a mostrar el diàleg <guilabel>Obre la ubicació</guilabel>.</para>
+		</listitem>
+		<listitem>
+		<para>Introduïu l'URI del fitxer que voleu obrir.</para>
+		</listitem>
+		<listitem>
+		<para>Utilitzeu la llista desplegable <guilabel>Codificació de caràcters</guilabel> per a seleccionar la codificació de caràcters apropiada.</para>
+		</listitem>
+		<listitem>
+		<para>Feu clic a <guibutton>Obre</guibutton>.</para>
+		</listitem>
+		</orderedlist>
+		<para>Els tipus d'<replaceable>URI</replaceable> vàlids inclouen <literal>http:</literal>, <literal>ftp:</literal>, <literal>file:</literal> i tots els mètodes admesos pel <literal>gnome-vfs</literal>.</para>
+		<para>Els fitxers d'alguns tipus d'URI s'obren com a només lectura i els canvis que realitzeu s'han de desar a una ubicació diferent. L'HTTP només permet la lectura dels fitxers. Els fitxers oberts des d'un FTP són de només lectura perquè no tots els servidors FTP treballen correctament amb el desament remot de fitxers.</para>
+		<warning><para>Es pot habilitar el desament a servidors FTP amb l'<ulink type="help" url="ghelp:gconf-editor"><application>editor de configuració</application></ulink>, en establir la clau <systemitem>/apps/gedit-2/preferences/editor/save/writable_vfs_schemes</systemitem>, però això pot causar errors.</para></warning>
+	 </sect2>
+
+<!-- ============= Working with tabs ======================== -->
+	 <sect2 id="gedit-tabs">
+	   <title>Com treballar amb pestanyes</title>
+
+		 <para>Quan s'ha obert més d'un fitxer, el <application>gedit</application> mostra una <firstterm>pestanya</firstterm> per a cada document sobre l'àrea de visualització. Per a canviar a un altre document, feu clic a la seva pestanya.</para>
+		 <para>Per a moure un document a una altra finestra del <application>gedit</application>, arrossegueu la pestanya corresponent a la finestra on voleu moure'l.</para>
+		 <para>Per a moure un document a una finestra nova del <application>gedit</application>, podeu arrossegar la pestanya a l'escriptori o triar <menuchoice><guimenu>Documents</guimenu><guimenuitem>Mou a una nova finestra</guimenuitem></menuchoice>.</para>
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="working-with-text">
+    <title>Com treballar amb text</title>
+
+<!-- ============= To Edit Text ================================ -->
+	 <sect2 id="gedit-edit-text">
+		<title>Com editar un text</title>
+		<para>Podeu editar el text d'un fitxer de les maneres següents:</para>
+		<itemizedlist>
+		  <listitem><para>Introduïu el text nou des del teclat. El <firstterm>cursor d'inserció</firstterm> parpellejant marca el punt on apareix el text nou. Per a canviar-ho, utilitzeu les tecles de cursor del teclat o feu clic amb el ratolí.</para>
+		  </listitem>
+		  <listitem><para>Per a copiar el text seleccionat al porta-retalls, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Copia</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem><para>Per a suprimir el text seleccionat del fitxer i moure el text seleccionat al porta-retalls, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Retalla</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem><para>Per a suprimir permanentment el text seleccionat del fitxer, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Suprimeix</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem><para>Per a inserir els continguts del porta-retalls a la posició del cursor, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Enganxa</guimenuitem></menuchoice>. Heu de retallar o copiar text abans de poder enganxar-lo al fitxer, ja sigui des del gedit o una altra aplicació.</para>
+		  </listitem>
+		  <listitem><para>Per a seleccionar tot el text d'un fitxer, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Selecciona-ho tot</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		</itemizedlist>
+	 </sect2>
+<!-- ============== To Undo or Redo Edits ====================== -->
+	 <sect2 id="gedit-undo-redo-edits">
+		<title>Com desfer i refer els canvis</title>
+		<para>Per a desfer un canvi que heu fet, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Desfés</guimenuitem></menuchoice>. Per a refer aquesta acció, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Refés</guimenuitem></menuchoice>.</para>
+	 </sect2>
+
+	</sect1>
+	<sect1 id="gedit-find">
+		<title>Com cercar i reemplaçar</title>
+
+		<para>Al <application>gedit</application> hi ha dues maneres de cercar text. Podeu utilitzar el diàleg <guilabel>Cerca</guilabel> per a cercar un fragment específic de text o la <guilabel>Cerca incremental</guilabel> per a ressaltar el text coincident mentre l'introduïu.</para>
+
+<!-- ============= To Find Text ================================ -->
+	 <sect2 id="gedit-find-text">
+		<title>Com trobar un text</title>
+		<para>Per a cercar una cadena de text d'un fitxer, realitzeu els passos següents:</para>
+		<orderedlist>
+		  <listitem><para>Trieu <menuchoice><guimenu>Cerca</guimenu><guimenuitem>Cerca</guimenuitem></menuchoice> per a mostrar el diàleg de <guilabel>Cerca</guilabel>.</para>
+		  </listitem>
+		  <listitem><para>Introduïu la cadena que voleu trobar al camp <guilabel>Cerca</guilabel>. Podeu incloure caràcters especials com ara una línia nova o una tabulació. Vegeu la <xref linkend="gedit-find-escapes"/>.</para>
+		  </listitem>
+		  <listitem><para>Feu clic a <guibutton>Cerca</guibutton> per a cercar la primera ocurrència de la cadena en el fitxer després de la posició actual del cursor. Si el <application>gedit</application> troba la cadena, l'aplicació en seleccionarà la primera ocurrència. Les altres ocurrències de la cadena es ressaltaran.</para>
+		  </listitem>
+		  <listitem><para>Per a trobar l'ocurrència següent de la cadena, feu clic a <guibutton>Cerca</guibutton> o trieu <menuchoice><guimenu>Cerca</guimenu><guimenuitem>Cerca el següent</guimenuitem></menuchoice>. Per a trobar l'ocurrència anterior del text, trieu <menuchoice><guimenu>Cerca</guimenu><guimenuitem>Cerca l'anterior</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		</orderedlist>
+		<para>Després que hàgiu tancat el diàleg <guilabel>Cerca</guilabel>, encara podeu moure la selecció a altres ocurrències de text en seleccionar <menuchoice><guimenu>Cerca</guimenu><guimenuitem>Cerca el següent</guimenuitem></menuchoice> i <menuchoice><guimenu>Cerca</guimenu><guimenuitem>Cerca l'anterior</guimenuitem></menuchoice>.</para>
+		<para>Per a suprimir el ressaltat del text, trieu <menuchoice><guimenu>Cerca</guimenu><guimenuitem>Neteja el ressaltat</guimenuitem></menuchoice>.</para>
+	 </sect2>
+
+	 <sect2 id="gedit-find-incremental">
+	   <title>Cerca incremental</title>
+
+	   <para>La cerca incremental ressalta el text coincident al document mentre l'escriviu lletra per lletra (això és semblant a la funció de cerca de diversos navegadors web).</para>
+	   <para>Per a iniciar la cerca incremental, trieu <menuchoice><guimenu>Cerca</guimenu><guimenuitem>Cerca incremental</guimenuitem></menuchoice>. El quadre de cerca apareixerà a la part superior de l'àrea de visualització.</para>
+	   <para>Comenceu a escriure i el text que coincideixi es ressaltarà al document. La primera instància després de la posició del cursor se seleccionarà.</para>
+	   <para>Per a avançar la selecció a la coincidència següent mentre manteniu el quadre de cerca incremental obert, premeu <keycombo><keycap>Ctrl</keycap><keycap>G</keycap></keycombo>. Premeu <keycombo><keycap>Ctrl</keycap><keycap>Maj</keycap><keycap>G</keycap></keycombo> per a tornar a la coincidència anterior.</para>
+	   <tip><para>També podeu utilitzar les tecles de cursor amunt i avall o la roda del ratolí per a moure la selecció entre coincidències.</para></tip>
+	 </sect2>
+
+<!-- ============= To Find and Replace Text =================== -->
+	 <sect2 id="gedit-find-replace-text">
+		<title>Com reemplaçar un text</title>
+
+		<para>Per a cercar una cadena a un fitxer i reemplaçar la cadena amb una cadena alternativa, realitzeu els passos següents:</para>
+		<orderedlist>
+		  <listitem><para>Trieu <menuchoice><guimenu>Cerca</guimenu><guimenuitem>Reemplaça</guimenuitem></menuchoice> per a mostrar el diàleg <guilabel>Reemplaça</guilabel>.</para>
+		  </listitem>
+		  <listitem><para>Introduïu la cadena que voleu trobar al camp <guilabel>Cerca</guilabel>. Podeu incloure caràcters especials com ara una línia nova o una tabulació. Vegeu la <xref linkend="gedit-find-escapes"/>.</para></listitem>
+		  <listitem><para>Introduïu al camp <guilabel>Reemplaça per</guilabel> la cadena que vulgueu utilitzar per a reemplaçar la cadena cercada.</para>
+		  </listitem>
+		</orderedlist>
+
+		<para>Per a examinar cada ocurrència de la cadena abans de reemplaçar-la, feu clic a <guibutton>Cerca</guibutton>. Si el <application>gedit</application> troba la cadena, l'aplicació la seleccionarà. Feu clic a <guibutton>Reemplaça</guibutton> per a reemplaçar l'ocurrència de la cadena seleccionada. Per a trobar l'ocurrència següent de la cadena, feu clic un altre cop a <guibutton>Cerca</guibutton>.</para>
+		<para>Per a reemplaçar totes les ocurrències de la cadena del document, feu clic a <guibutton>Reemplaça-ho tot</guibutton>.</para>
+	 </sect2>
+
+<!-- ============= Find and Replace Options ============================ -->
+  <sect2 id="gedit-find-options">
+		<title>Opcions de cerca i reemplaçament</title>
+		<para>El diàleg de <guilabel>Cerca</guilabel> i el diàleg <guilabel>Reemplaça</guilabel> tenen les opcions següents:</para>
+		<itemizedlist>
+		  <listitem><para>Seleccioneu l'opció <guilabel>Coincidència de majúscules i minúscules</guilabel> per a només trobar ocurrències de la cadena que coincideixen en majúscules i minúscules amb el text que heu introduït. Per exemple, amb <guilabel>Coincidència de majúscules i minúscules</guilabel> seleccionat, «TEXT» no coincideix amb «text».</para>
+		  </listitem>
+		  <listitem><para>Seleccioneu l'opció <guilabel>Només coincideix la paraula sencera</guilabel> per a només trobar ocurrències de la cadena que coincideixen amb tota la paraula del text que heu introduït. Per exemple, amb <guilabel>Només coincideix la paraula sencera</guilabel> seleccionat, «text» no coincideix amb «textura».</para>
+		  </listitem>
+		  <listitem><para>Seleccioneu l'opció <guilabel>Cerca cap enrere</guilabel> per a cercar enrere cap a l'inici del document.</para>
+		  </listitem>
+		  <listitem><para>Seleccioneu l'opció <guilabel>Continua des de l'inici</guilabel> per a cercar fins al final del document i llavors continuar la cerca des de l'inici del document.</para>
+		  </listitem>
+		</itemizedlist>
+  </sect2>
+
+<!-- ============= Special Characters ============================ -->
+	 <sect2 id="gedit-find-escapes">
+	   <title>Caràcters especials</title>
+	     <para>Podeu incloure les seqüències d'escapada següents al text per a representar caràcters especials per a cercar o reemplaçar:</para>
+			 <variablelist>
+        <varlistentry>
+          <term><literal>\n</literal></term>
+    				<listitem>
+              <para>Especifica una línia nova.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><literal>\t</literal></term>
+    				<listitem>
+              <para>Especifica un caràcter de tabulació.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><literal>\r</literal></term>
+    				<listitem>
+              <para>Especifica un caràcter de retorn.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><literal>\\</literal></term>
+    				<listitem>
+              <para>El caràcter de barra inversa s'ha d'escapar si s'està cercant. Per exemple, si esteu cercant el literal «<literal>\n</literal>», heu d'introduir «\\n» al camp <guilabel>Cerca</guilabel>. O si esteu cercant una seqüència de barres inverses, heu de doblar el nombre de barres inverses que cerqueu.</para>
+    				</listitem>
+        </varlistentry>
+			 </variablelist>
+    </sect2>
+
+<!-- ============= To Position the Cursor on a Specific Line ======================= -->
+    <sect2 id="gedit-goto-line">
+      <title>Com posicionar el cursor a una línia específica</title>
+
+      <para>Per a posicionar del cursor a una línia específica al fitxer actual, trieu <menuchoice><guimenu>Cerca</guimenu><guimenuitem>Vés a la línia</guimenuitem></menuchoice>. Apareixerà el quadre de número de línia a la part superior de l'àrea de visualització.</para>
+      <para>Comenceu a introduir el número de línia on voleu moure el cursor i el document es desplaçarà a la línia especificada.</para>
+      <para>Per a tancar el quadre i moure el cursor a la línia especificada, premeu <keycap>Retorn</keycap>.</para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="gedit-printing">
+    <title>Impressió</title>
+
+<!-- ============= To Set the Page Options ============================ -->
+	 <sect2 id="gedit-page-setup">
+		<title>Com establir les opcions de la pàgina</title>
+
+		<para>Per a establir les opcions de la pàgina, trieu <menuchoice><guimenu>Fitxer</guimenu><guimenuitem>Configuració de la pàgina</guimenuitem></menuchoice> per a mostrar el diàleg <guilabel>Configuració de la pàgina</guilabel>.</para>
+
+		<para>El diàleg <guilabel>Configuració de la pàgina</guilabel> us permet especificar les opcions d'impressió següents:</para>
+
+		<sect3 id="gedit-page-setup-general">
+		<title>Pestanya general</title>
+	 	<variablelist>
+		  <varlistentry> <term><guilabel>Imprimeix el ressaltat de la sintaxi</guilabel> </term>
+			 <listitem>
+				<para>Seleccioneu aquesta opció per a imprimir el ressaltat de la sintaxi. Per a obtenir més informació sobre el ressaltat de la sintaxi, vegeu la <xref linkend="gedit-set-highlightmode"/>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Imprimeix les capçaleres de la pàgina</guilabel> </term>
+			 <listitem>
+				<para>Seleccioneu aquesta opció per a incloure una capçalera a cada pàgina que imprimiu. No podeu configurar la capçalera.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Números de línia</guilabel>
+			 </term>
+			 <listitem>
+				<para>Seleccioneu l'opció <guilabel>Imprimeix els números de línia</guilabel> per a incloure els números de línia quan imprimiu un fitxer.</para>
+				<para>Utilitzeu el quadre de selecció de valors <guilabel>Número cada ... línies</guilabel> per a especificar cada quan s'ha d'imprimir el número de línia. Per exemple cada 5 línies, cada 10 línies, etc.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Ajustament de línia</guilabel> </term>
+			 <listitem>
+                            <para>Seleccioneu l'opció <guilabel>Habilita l'ajustament de text</guilabel> per a ajustar el text a la línia següent quan s'arriba a un número de caràcters, quan imprimiu un fitxer. L'aplicació compta les línies ajustades com a una sola línia per a la numeració.</para>
+				<para>Seleccioneu l'opció <guilabel>No separis les paraules en dues línies</guilabel> per a ajustar el text a la línia següent, a nivell de paraula, quan imprimiu un fitxer.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		</sect3>
+
+		<sect3 id="gedit-page-setup-fonts">
+	 		<title>Tipus de lletres</title>
+	 	<variablelist>
+		  <varlistentry> <term><guilabel>Cos</guilabel> </term>
+			 <listitem>
+				<para>Feu clic a aquest botó per a seleccionar el tipus de lletra a utilitzar per a imprimir el text del cos d'un fitxer.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Números de línia</guilabel>
+			 </term>
+			 <listitem>
+				<para>Feu clic a aquest botó per a seleccionar el tipus de lletra a utilitzar per a imprimir els números de línia.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term><guilabel>Capçaleres i peus de pàgina</guilabel> </term>
+			 <listitem>
+				<para>Feu clic a aquest botó per a seleccionar el tipus de lletra a utilitzar per a imprimir les capçaleres i peus de pàgina d'un fitxer.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>Per a reiniciar els tipus de lletra als tipus de lletra predeterminats per a imprimir un fitxer del <application>gedit</application>, feu clic a <guibutton>Restaura els tipus de lletra predeterminats</guibutton>.</para>
+		</sect3>
+
+	 </sect2>
+
+<!-- ============= To Print a File ============================ -->
+	 <sect2 id="gedit-print-file">
+		<title>Impressió d'un document</title>
+		<para>Podeu utilitzar el <application>gedit</application> per a realitzar les operacions d'impressió següents:</para>
+		<itemizedlist>
+		  <listitem><para>Imprimir un document a una impressora.</para>
+		  </listitem>
+		  <listitem><para>Imprimir la sortida de l'ordre d'imprimir a un fitxer.</para>
+		  </listitem>
+		</itemizedlist>
+		<para>Si imprimiu a un fitxer, el <application>gedit</application> envia la sortida del fitxer a un fitxer de format de preimpressió. Els formats de preimpressió més habituals són el PostScript i el Portable Document Format (PDF).</para>
+
+		<para>Per a previsualitzar les pàgines que voleu imprimir, trieu <menuchoice><guimenu>Fitxer</guimenu><guimenuitem>Previsualitza la impressió</guimenuitem></menuchoice>.</para>
+
+		<para>Per a imprimir el fitxer actual a una impressora o fitxer, trieu <menuchoice><guimenu>Fitxer</guimenu><guimenuitem>Imprimeix</guimenuitem></menuchoice> per a mostrar el diàleg <guilabel>Imprimeix</guilabel>.</para>
+
+		<para>El diàleg <guilabel>Imprimeix</guilabel> us permet especificar les opcions d'impressió següents:</para>
+
+		<sect3 id="print-dialog-job">
+		<title>Pestanya de tasca</title>
+		<variablelist>
+	 		<varlistentry> <term><guilabel>Rang d'impressió</guilabel> </term>
+			 <listitem>
+				<para>Seleccioneu una de les opcions següents per a determinar quantes pàgines imprimir:</para>
+				<itemizedlist>
+				<listitem>
+				<para><guilabel>Tot</guilabel></para>
+				<para>Seleccioneu aquesta opció per a imprimir totes les pàgines del fitxer.</para>
+				</listitem>
+				<listitem>
+				<para><guilabel>Línies</guilabel></para>
+				<para>Seleccioneu aquesta opció per a imprimir només les línies especificades. Utilitzeu els quadres de selecció de valors <guilabel>Des de</guilabel> i <guilabel>A</guilabel> per a especificar el rang de línies.</para>
+				</listitem>
+				<listitem>
+				<para><guilabel>Selecció</guilabel></para>
+				<para>Seleccioneu aquesta opció per a imprimir només el text seleccionat. Aquesta opció només està disponible si seleccioneu text.</para>
+				</listitem>
+
+				</itemizedlist>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Còpies</guilabel> </term>
+			 <listitem>
+				<para>Utilitzeu el quadre de selecció de valors <guilabel>Número de còpies</guilabel> per a especificar el número de còpies que voleu imprimir del fitxer.</para>
+				<para>Si imprimiu diverses còpies del fitxer, seleccioneu l'opció <guilabel>Compagina</guilabel> per a compaginar les còpies impreses.</para>
+			 </listitem>
+		  	</varlistentry>
+			</variablelist>
+		</sect3>
+
+		<sect3 id="print-dialog-printer">
+		<title>Pestanya d'impressora</title>
+	<variablelist>
+	  <varlistentry> <term><guilabel>Impressora</guilabel> </term>
+	    <listitem>
+	      <para>Utilitzeu aquesta llista desplegable per a seleccionar la impressora on voleu per a imprimir el fitxer.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Paràmetres</guilabel> </term>
+	    <listitem>
+	      <para>Utilitzeu aquesta llista desplegable per a seleccionar els paràmetres de la impressora.</para>
+	      <para>Per a configurar la impressora, feu clic a <guibutton>Configura</guibutton>. Per exemple, podeu habilitar o inhabilitar la impressió doble o la impressió retardada, si la impressora admet aquesta funcionalitat.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Ubicació</guilabel> </term>
+	    <listitem>
+	      <para>Utilitzeu aquesta llista desplegable per a seleccionar un dels destins d'impressió següents:</para>
+	      <variablelist>
+	        <varlistentry>
+	          <term><guilabel>CUPS</guilabel></term>
+	          <listitem>
+	            <para>Imprimeix el fitxer a una impressora CUPS.</para>
+	            <note>
+	              <para>Si la impressora seleccionada és una impressora CUPS, el <guilabel>CUPS</guilabel> és l'única entrada d'aquesta llista desplegable.</para>
+	            </note>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term><guilabel>lpr</guilabel></term>
+	          <listitem>
+	            <para>Imprimeix el fitxer a una impressora.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term><guilabel>Fitxer</guilabel></term>
+	          <listitem>
+	            <para>Imprimeix el fitxer a un fitxer PostScript.</para>
+	            <para>Feu clic a <guibutton>Anomena i desa</guibutton> per a mostrar un diàleg on podeu especificar el nom i la ubicació del fitxer PostScript.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term><guilabel>Personalitzat</guilabel></term>
+	          <listitem>
+	            <para>Utilitzeu l'ordre especificada per a imprimir el fitxer.</para>
+	            <para>Introduïu el nom de l'ordre al quadre de text. Incloent tots els arguments de la línia d'ordres.</para>
+	          </listitem>
+	        </varlistentry>
+	      </variablelist>
+            </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Estat</guilabel> </term>
+	    <listitem>
+	      <para>Aquesta funcionalitat no està implementada en aquesta versió del gedit.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Tipus</guilabel> </term>
+	    <listitem>
+	      <para>Aquesta funcionalitat no està implementada en aquesta versió del gedit.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term><guilabel>Comentari</guilabel> </term>
+	    <listitem>
+	      <para>Aquesta funcionalitat no està implementada en aquesta versió del gedit.</para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+	</sect3>
+
+		<sect3 id="print-dialog-paper">
+		<title>Pestanya del paper</title>
+		<variablelist>
+	 		<varlistentry> <term><guilabel>Mida del paper</guilabel> </term>
+			 <listitem>
+				<para>Utilitzeu aquesta llista desplegable per a seleccionar la mida del paper on voleu imprimir el fitxer.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Amplada</guilabel> </term>
+			 <listitem>
+				<para>Utilitzeu aquest quadre de selecció de valors per a especificar l'amplada del paper. Utilitzeu la llista desplegable adjacent per a canviar la unitat de mesura.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Alçada</guilabel> </term>
+			 <listitem>
+				<para>Utilitzeu aquest quadre de selecció de valors per a especificar l'alçada del paper.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Orientació de l'alimentació</guilabel> </term>
+			 <listitem>
+				<para>Utilitzeu aquesta llista desplegable per a seleccionar l'orientació del paper a l'impressora.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Orientació de la pàgina</guilabel> </term>
+			 <listitem>
+				<para>Utilitzeu aquesta llista desplegable per a seleccionar l'orientació de la pàgina.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term><guilabel>Disposició</guilabel> </term>
+			 <listitem>
+				<para>Utilitzeu aquesta llista desplegable per a seleccionar la disposició de la pàgina. Es mostrarà una previsualització de cada disposició que seleccioneu a l'àrea de <guilabel>Previsualització</guilabel>.</para>
+			 </listitem>
+		  	</varlistentry>
+          <varlistentry> <term><guilabel>Safata de paper</guilabel> </term>
+            <listitem>
+              <para>Utilitzeu aquesta llista desplegable per a seleccionar la safata de paper.</para>             </listitem>
+          </varlistentry>
+		</variablelist>
+		</sect3>
+
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="gedit-programming-features">
+	  <title>Funcions de programació</title>
+
+	  <para>Diverses de les funcions per a programar del <application>gedit</application> les proporcionen els connectors. Per exemple, el connector «Llistat de marcadors» proporciona una llista dels marcadors utilitzats normalment per a marcar llenguatges. Vegeu la <xref linkend="gedit-tag-list-plugin"/>.</para>
+
+<!-- ============= Syntax Highlighting =================== -->
+	 <sect2 id="gedit-set-highlightmode">
+	 <title>Ressaltat de la sintaxi</title>
+	 <para>El ressaltat de la sintaxi fa el codi font més fàcil llegir en mostrar les diferents parts del text en diferents colors.</para>
+
+	 <para>El <application>gedit</application> tria un mode apropiat de ressaltat de la sintaxi basat en el tipus de document. Per a reemplaçar el mode de ressaltat de la sintaxi, trieu <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Mode de ressaltat</guimenuitem></menuchoice> i trieu un dels elements de menú següents:</para>
+		  <variablelist>
+		    <varlistentry>
+		      <term><guimenuitem>Normal</guimenuitem></term>
+		      <listitem>
+		        <para>No mostris cap ressaltat de la sintaxi.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>Codis font</guisubmenu></term>
+		      <listitem>
+		        <para>Mostra el ressaltat de la sintaxi per a editar codi font. Utilitzeu el submenú <guisubmenu>Codis font</guisubmenu> per a seleccionar el tipus de codi font.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>Marcatge</guisubmenu></term>
+		      <listitem>
+		        <para>Mostra el ressaltat de la sintaxi per a editar codi de marcatge. Utilitzeu el submenú <guisubmenu>Marcatge</guisubmenu> per a seleccionar el tipus de codi de marcatge.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>Scripts</guisubmenu></term>
+		      <listitem>
+		        <para>Mostra el ressaltat de la sintaxi per a editar codi d'script. Utilitzeu el submenú <guisubmenu>Scripts</guisubmenu> per a seleccionar el tipus de codi d'script.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term><guisubmenu>Altres</guisubmenu></term>
+		      <listitem>
+		        <para>Mostra el ressaltat de la sintaxi per a editar altres tipus de codi. Utilitzeu el submenú <guisubmenu>Altres</guisubmenu> per a seleccionar el tipus de codi.</para>
+		      </listitem>
+		    </varlistentry>
+		  </variablelist>
+	 </sect2>
+
+<!-- ============= To Pipe the Output of a Command to a File ======= -->
+	 <sect2 id="gedit-pipe-output">
+		<title>Condueix la sortida d'una ordre a un fitxer</title>
+		<para>Podeu utilitzar el <application>gedit</application> per a conduir la sortida d'una ordre a un fitxer de text. Per exemple, per a conduir la sortida d'una ordre <command>ls</command> a un fitxer de text, escriviu <command>ls | gedit</command> i premeu <keycap>Retorn</keycap>.</para>
+		<para>La sortida de l'ordre <command>ls</command> es mostrarà a un fitxer de text nou a la finestra del <application>gedit</application>.</para>
+		<para>Alternativament, podeu utilitzar el connector <application>Eines externes</application> per a conduir la sortida d'una ordre al fitxer actual.</para>
+	 </sect2>
+  </sect1>
+
+<!-- ================ Shortcut Keys ============================= -->
+<sect1 id="gedit-shortcutkeys"> 
+  <title>Dreceres de teclat</title>
+  <para>Utilitzeu les dreceres de teclat per a realitzar tasques més ràpidament que amb el ratolí i els menús. Les taules següents llisten totes les dreceres de teclat del <application>gedit</application>.</para>
+  <para>Per a obtenir més informació sobre les dreceres de teclat, vegeu la <ulink type="help" url="ghelp:user-guide?keyboard-skills">Guia d'usuari de l'escriptori</ulink>.</para>
+
+  <!-- ============= Tabs ======================== -->
+	<bridgehead>Pestanyes</bridgehead>
+	<para>Dreceres per a les pestanyes:</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Tecla de drecera</para></entry>
+          <entry colname="COLSPEC1" align="left"> 
+            <para>Ordre</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">               
+          <entry><para>Ctrl + Alt + RePàg</para></entry>
+          <entry><para>Commuta a la pestanya següent a l'esquerra.</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Ctrl + Alt + AvPàg</para></entry>
+          <entry><para>Commuta a la pestanya següent a la dreta.</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Ctrl + W</para></entry>
+          <entry><para>Tanca la pestanya.</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Ctrl + Maj + L</para></entry>
+          <entry><para>Desa totes les pestanyes.</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Ctrl + Maj + W</para></entry>
+          <entry><para>Tanca totes les pestanyes.</para></entry>
+        </row>
+        <row valign="top">               
+          <entry><para>Alt + n</para></entry>
+          <entry><para>Salta a l'enèsima pestanya.</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+  <!-- ============= Files ======================== -->
+	<bridgehead>Fitxers</bridgehead>
+	<para>Dreceres per a treballar amb fitxers:</para>
+  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Tecla de drecera</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>Ordre</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>Ctrl + N</para></entry>
+                        <entry><para>Crea un document nou.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + O</para></entry>
+                        <entry><para>Obre un document.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + L</para></entry>
+                        <entry><para>Obre una ubicació.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + S</para></entry>
+                        <entry><para>Desa el document actual al disc.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Maj + S</para></entry>
+                        <entry><para>Desa el document actual amb un nom de fitxer nou.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + P</para></entry>
+                        <entry><para>Imprimeix el document actual.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Maj + P</para></entry>
+                        <entry><para>Previsualitza la impressió.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + W</para></entry>
+                        <entry><para>Tanca el document actual.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Q</para></entry>
+                        <entry><para>Surt del gedit.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Edit ======================= -->
+	<bridgehead>Edita</bridgehead>
+	<para>Dreceres per a editar documents:</para>	
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Tecla de drecera</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>Ordre</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + Z</para></entry>
+                        <entry><para>Desfés l'última acció.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Maj + Z</para></entry>
+                        <entry><para>Refés l'última acció desfeta.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + X</para></entry>
+                        <entry><para>Retalla el text o regió seleccionat i el col·loca al porta-retalls.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + C</para></entry>
+                        <entry><para>Copia el text o regió seleccionat al porta-retalls.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + V</para></entry>
+                        <entry><para>Enganxa el contingut del porta-retalls.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + A</para></entry>
+                        <entry><para>Selecciona-ho tot.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + D</para></entry>
+                        <entry><para>Suprimeix la línia actual.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Alt + Up</para></entry>
+                        <entry><para>Move the selected line up one line.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Alt + Down</para></entry>
+                        <entry><para>Move the selected line down one line.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Panes ======================= -->
+	<bridgehead>Subfinestres</bridgehead>
+	<para>Dreceres per a mostrar i amagar les subfinestres:</para>	
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Tecla de drecera</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>Ordre</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>F9</para></entry>
+                        <entry><para>Mostra/amaga la subfinestra lateral.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + F9</para></entry>
+                        <entry><para>Mostra/amaga la subfinestra inferior.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Search ======================= -->
+	<bridgehead>Cerca</bridgehead>
+	<para>Dreceres per a cercar:</para>	
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Tecla de drecera</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>Ordre</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>Ctrl + F</para></entry>
+                        <entry><para>Cerca una cadena.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + G</para></entry>
+                        <entry><para>Cerca la instància següent de la cadena.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Maj + G</para></entry>
+                        <entry><para>Cerca la instància anterior de la cadena.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + K</para></entry>
+                        <entry><para>Cerca interactiva.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + H</para></entry>
+                        <entry><para>Cerca i reemplaça.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Maj + K</para></entry>
+                        <entry><para>Neteja el ressaltat.</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + I</para></entry>
+                        <entry><para>Ves a la línia.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Tools ======================= -->
+	<bridgehead>Eines</bridgehead>
+	<para>Dreceres per a les eines:</para>	
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Tecla de drecera</para></entry>
+                        <entry colname="COLSPEC1" align="left"> 
+                          <para>Ordre</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">               
+                        <entry><para>Maj + F7</para></entry>
+                        <entry><para>Comprova l'ortografia (amb connector).</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Alt + F12</para></entry>
+                        <entry><para>Suprimeix els espais al final de les línies (amb connector).</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + T</para></entry>
+                        <entry><para>Sagna (amb connector).</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Maj + T</para></entry>
+                        <entry><para>Suprimeix el sagnat (amb connector).</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>F8</para></entry>
+                        <entry><para>Executa el «make» al directori actual (amb connector).</para></entry>
+                      </row>
+                      <row valign="top">               
+                        <entry><para>Ctrl + Maj + D</para></entry>
+                        <entry><para>Llistat del directori (amb connector).</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Help ======================= -->
+	<bridgehead>Ajuda</bridgehead>
+	<para>Dreceres per a l'ajuda:</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Tecla de drecera</para></entry>
+          <entry colname="COLSPEC1" align="left"> 
+            <para>Ordre</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">               
+          <entry><para>F1</para></entry>
+          <entry><para>Obre el manual d'usuari del <application>gedit</application>.</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect1>
+
+
+
+<!-- ============= Preferences ============================= -->
+  <sect1 id="gedit-prefs">
+    <title>Preferències</title>
+
+    <para>Per a configurar el <application>gedit</application>, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Preferències</guimenuitem></menuchoice>. El diàleg <guilabel>Preferències</guilabel> conté les categories següents:</para>
+    <itemizedlist>
+      <listitem><para><xref linkend="gedit-prefs-view"/></para></listitem>
+      <listitem><para><xref linkend="gedit-prefs-editor"/></para></listitem>
+      <listitem><para><xref linkend="gedit-prefs-fontsandcolors"/></para></listitem>
+      <listitem><para><xref linkend="gedit-prefs-plugins"/></para></listitem>
+    </itemizedlist>
+
+    <sect2 id="gedit-prefs-view">
+      <title>Visualitza les preferències</title>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Ajustament de línia</guilabel> </term>
+          <listitem>
+            <para>Seleccioneu l'opció <guilabel>Habilita l'ajustament de text</guilabel> per a fer que les línies llargues de text es converteixin en paràgrafs enlloc de continuar pel final de la finestra de text. Això evita haver de desplaçar-se horitzontalment.</para>
+            <para>Seleccioneu l'opció <guilabel>No separis les paraules en dues línies</guilabel> per a fer que l'opció d'ajustament del text conservi la paraula sencera quan el text salti a la línia següent. Això fa el text més fàcil de llegir.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Números de línia</guilabel></term>
+          <listitem>
+            <para>Seleccioneu l'opció <guilabel>Mostra els números de línia</guilabel> per a mostrar els números de línia a la banda esquerra de la finestra del <application>gedit</application>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Línia actual</guilabel></term>
+          <listitem>
+            <para>Seleccioneu l'opció <guilabel>Ressalta la línia actual</guilabel> per a ressaltar la línia on està ubicat el cursor.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Marge dret</guilabel></term>
+          <listitem>
+            <para>Seleccioneu l'opció <guilabel>Mostra el marge dret</guilabel> per a mostrar una línia vertical que indica el marge dret.</para>
+            <para>Utilitzeu el quadre de selecció de valors <guilabel>Marge dret a la columna</guilabel> per a especificar la ubicació de la línia vertical.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Coincidència de claudàtors</guilabel></term>
+          <listitem>
+            <para>Seleccioneu l'opció <guilabel>Ressalta el claudàtor concordant</guilabel> per a ressaltar el claudàtor corresponent quan el cursor està ubicat en un caràcter de claudàtor.</para>
+          </listitem>
+        </varlistentry>
+
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gedit-prefs-editor">
+      <title>Preferències de l'editor</title>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Pestanyes</guilabel> </term>
+          <listitem>
+            <para>Utilitzeu el quadre de selecció de valors <guilabel>Amplada de la tabulació</guilabel> per a especificar l'amplada de l'espai que el <application>gedit</application> insereix quan premeu la tecla <keycap>Tab</keycap>.</para>
+            <para>Seleccioneu l'opció <guilabel>Insereix espais en comptes de tabulacions</guilabel> per a especificar que el <application>gedit</application> insereixi espais enlloc d'un caràcter de tabulació quan premeu la tecla <keycap>Tab</keycap>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Sagnat automàtic</guilabel> </term>
+          <listitem>
+            <para>Seleccioneu l'opció <guilabel>Habilita el sagnat automàtic</guilabel> per a especificar que la línia següent inicia el nivell de sagnat a la línia actual.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Desament de fitxers</guilabel> </term>
+          <listitem>
+            <para>Seleccioneu l'opció <guilabel>Crea una còpia de seguretat dels fitxers abans de desar-los</guilabel> per a crear una còpia de seguretat d'un fitxer cada cop que deseu el fitxer. La còpia de seguretat del fitxer conté un ~ al final del nom de fitxer.</para>
+            <para>Seleccioneu l'opció <guilabel>Desa els fitxers automàticament cada ... minuts</guilabel> per a desar automàticament el fitxer actual a intervals regulars. Utilitzeu el quadre de selecció de valors per a especificar l'interval per a desar el fitxer.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gedit-prefs-fontsandcolors">
+      <title>Preferències de tipus de lletra i colors</title>
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Tipus de lletra</guilabel> </term>
+          <listitem>
+            <para>Seleccioneu l'opció <guilabel>Utilitza el tipus de lletra del tema predeterminat</guilabel> per a utilitzar el tipus de lletra del sistema predeterminat per al text a la finestra de text del <application>gedit</application>.</para>
+            <para>El camp <guilabel>Tipus de lletra de l'editor</guilabel> mostra el tipus de lletra que el <application>gedit</application> utilitza per a mostrar el text. Feu clic al botó per a especificar el tipus de lletra, l'estil i la mida a utilitzar per al text.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><guilabel>Esquema de colors</guilabel></term>
+          <listitem>
+            <para>Podeu triar un esquema de color des de la llista d'esquemes de colors. Per defecte, els esquemes de color següents estan instal·lats:</para>
+            <variablelist>
+              <varlistentry>
+                <term><guilabel>Clàssic</guilabel></term>
+                <listitem>
+                  <para>Esquema de color clàssic basat en l'esquema de color del gvim.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term><guilabel>Cobalt</guilabel></term>
+                <listitem>
+                  <para>Esquema de color basat en el blau.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term><guilabel>Kate</guilabel></term>
+                <listitem>
+                  <para>Esquema de color que s'utilitza en l'editor de text Kate.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term><guilabel>Oblivion</guilabel></term>
+                <listitem>
+                  <para>Esquema de color fosc que utilitza la paleta de colors del Tango.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term><guilabel>Tango</guilabel></term>
+                <listitem>
+                  <para>Esquema de color que utilitza la paleta de colors del Tango.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+            <para>Podeu afegir un esquema de color nou fent clic a <guilabel>Afegeix...</guilabel> i seleccionant el fitxer d'esquema de color.</para>
+            <para>Podeu suprimir l'esquema de color seleccionat fent clic a <guilabel>Suprimeix</guilabel></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gedit-prefs-plugins">
+      <title>Preferències dels connectors</title>
+      <para>Els connectors afegeixen funcions extres al <application>gedit</application>. Per a obtenir més informació sobre els connectors i com utilitzar connectors integrats, vegeu la <xref linkend="gedit-plugins-overview"/>.</para>
+
+<!-- ============= To Load gedit Plugins ========================= -->
+	 <sect3 id="gedit-install-plugins">
+		<title>Com habilitar un connector</title>
+		<para>Per a habilitar un connector del <application>gedit</application>, realitzeu els passos següents:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Preferències</guimenuitem></menuchoice>.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Seleccioneu la pestanya <guilabel>Connectors</guilabel>.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Seleccioneu la casella de selecció al costat del nom del connector que voleu habilitar.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Feu clic a <guibutton>Tanca</guibutton> per a tancar el diàleg <guilabel>Preferències</guilabel>.</para>
+                  </listitem>
+                </orderedlist>
+	 </sect3>
+
+<!-- ============= To Remove gedit Plugins ========================= -->
+  	 <sect3 id="gedit-remove-plugins">
+  		<title>Com inhabilitar un connector</title>
+  		<para>Un connector continuarà habilitat quan sortiu del <application>gedit</application>.</para>
+  		<para>Per a inhabilitar un connector del <application>gedit</application>, realitzeu els passos següents:</para>
+                  <orderedlist>
+                    <listitem>
+                      <para>Trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Preferències</guimenuitem></menuchoice>.</para>
+                    </listitem>
+                    <listitem>
+                      <para>Seleccioneu la pestanya <guilabel>Connectors</guilabel>.</para>
+                    </listitem>
+                    <listitem>
+                      <para>Desseleccioneu la casella de selecció al costat del nom del connector que voleu inhabilitar.</para>
+                    </listitem>
+                    <listitem>
+                      <para>Feu clic a <guibutton>Tanca</guibutton> per a tancar el diàleg <guilabel>Preferències</guilabel>.</para>
+                    </listitem>
+                  </orderedlist>
+  	 </sect3>
+	 </sect2>
+
+ </sect1>
+<!-- ============= To Use the gedit Plugins ========================= -->
+	 <sect1 id="gedit-plugins">
+		<title>Connectors</title>
+		<sect2 id="gedit-plugins-overview">
+		  <title>Treball amb connectors</title>
+  		<para>Podeu afegir funcions addicionals al <application>gedit</application> en habilitar <firstterm>connectors</firstterm>. Un connector és un programa addicional que millora la funcionalitat d'una aplicació. Els connectors afegeixen elements nous als menús del <application>gedit</application> per a les funcions noves que proporcionen.</para>
+  		<para>Diversos connectors ja venen integrats amb el <application>gedit</application> i en podeu instal·lar més. El <ulink type="http" url="http://live.gnome.org/Gedit/Plugins">lloc web del gedit</ulink> llista connectors de tercers.</para>
+  		<para>Per a habilitar i inhabilitar connectors o veure quins connectors estan habilitats actualment, vegeu les <link linkend="gedit-prefs-plugins">Preferències dels connectors</link>.</para>
+  		<para>Els connectors següents venen integrats amb el <application>gedit</application>:</para>
+  		<!-- Not yet documented:
+  		File browser
+  		-->
+  		<itemizedlist>
+  		  <listitem>
+  		    <para><link linkend="gedit-change-case-plugin"><application>Canvia les majúscules/minúscules</application></link> us permet canviar les majúscules/minúscules del text seleccionat.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-document-statistics-plugin">Estadístiques del document</link></application> mostra el número de línies, paraules i caràcters al document.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-external-tools-plugin">Eines externes</link></application> us permet executar ordres externes des del <application>gedit</application>.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application>Navegador de fitxers</application> us permet navegar pels fitxers i carpetes a la subfinestra lateral.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-indent-lines-plugin">Sagna les línies</link></application> afegeix i suprimeix el sagnat a les línies seleccionades.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-insert-date-time-plugin">Insereix la data/hora</link></application> afegeix la data i hora actuals a un document.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-modelines-plugin">Modes de línia</link></application> us permet establir preferències d'edició per a documents individuals i admet estils de modes de línia de l'<application>Emacs</application>, el <application>Kate</application> i el <application>Vim</application>.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-python-console-plugin">Consola Python</link></application> us permet executar ordres en el llenguatge de programació Python.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-snippets-plugin">Fragments</link></application> us permet emmagatzemar fragments de text utilitzats freqüentment i inserir-los ràpidament a un document.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-sort-plugin">Ordena</link></application> ordena les línies de text seleccionades en ordre alfabètic.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-spell-checker-plugin">Comprovador d'ortografia</link></application> corregeix l'ortografia del text seleccionat o marca automàticament els errors al document.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="gedit-tag-list-plugin">Llistat de marcadors</link></application> us permet inserir marcadors utilitzats freqüentment per a HTML i altres llenguatges des d'una llista a la subfinestra lateral.</para>
+  		  </listitem>
+  		</itemizedlist>
+
+	<note><para>Per a obtenir més informació sobre com crear connectors, vegeu el <ulink type="http" url="http://live.gnome.org/Gedit/Plugins">lloc web del <application>gedit</application></ulink>.</para></note>
+  	</sect2>
+
+<sect2 id="gedit-change-case-plugin">
+<title>Connector de canvi de les majúscules/minúscules</title>
+	<para>El connector <application>Canvia les majúscules/minúscules</application> canvia les majúscules/minúscules del text seleccionat.</para>
+	 <para>Els elements següents s'afegeixen al menú <guimenu>Edita</guimenu> quan s'habilita el connector <application>Canvia les majúscules/minúscules</application>.</para>
+
+  <informaltable frame="all">
+    <tgroup cols="3" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="33*"/>
+      <colspec colname="COLSPEC1" colwidth="33*"/>
+      <colspec colname="COLSPEC2" colwidth="33*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Element del menú</para></entry>
+          <entry colname="COLSPEC1">
+            <para>Acció</para></entry>
+          <entry colname="COLSPEC2">
+            <para>Exemple</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para><menuchoice><guimenu>Edita</guimenu>
+<guisubmenu>Canvia les majúscules/minúscules</guisubmenu><guimenuitem>Tot en majúscules</guimenuitem></menuchoice></para></entry>
+          <entry><para>Canvia cada caràcter a majúscules</para></entry>
+          <entry><para><literal>Aquest text</literal> es torna <literal>AQUEST TEXT</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para><menuchoice><guimenu>Edita</guimenu>
+<guisubmenu>Canvia les majúscules/minúscules</guisubmenu><guimenuitem>Tot en minúscules</guimenuitem></menuchoice></para></entry>
+          <entry><para>Canvia cada caràcter a minúscules.</para></entry>
+          <entry><para><literal>Aquest text</literal> es torna <literal>aquest text</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para><menuchoice><guimenu>Edita</guimenu>
+<guisubmenu>Canvia les majúscules/minúscules</guisubmenu><guimenuitem>Inverteix les majúscules/minúscules</guimenuitem></menuchoice></para></entry>
+          <entry><para>Canvia cada caràcter en minúscules a majúscules i canvia cada caràcter en majúscules a minúscules.</para></entry>
+          <entry><para><literal>Aquest Text</literal> es torna <literal>aQUEST tEXT</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para><menuchoice><guimenu>Edita</guimenu>
+<guisubmenu>Canvia les majúscules/minúscules</guisubmenu><guimenuitem>Majúscules/minúscules del títol</guimenuitem></menuchoice></para></entry>
+          <entry><para>Canvia els primer caràcter de cada paraula a majúscules.</para></entry>
+          <entry><para><literal>aquest text</literal> es torna <literal>Aquest Text</literal></para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect2>
+
+<sect2 id="gedit-document-statistics-plugin">
+<title>Connector d'estadístiques del document</title>
+	<para>El connector <application>Estadístiques del document</application> compta el número de línies, paraules, caràcters amb espais, caràcters sense espais i bytes del fitxer actual. El connector mostra els resultats al diàleg <guilabel>Estadístiques del document</guilabel>. Per a utilitzar el connector Estadístiques del document, realitzeu els passos següents:</para>
+		<orderedlist>
+		  <listitem><para>Trieu <menuchoice><guimenu>Eines</guimenu><guimenuitem>Estadístiques del document</guimenuitem></menuchoice> per a mostrar el diàleg <guilabel>Estadístiques del document</guilabel>. El diàleg <guilabel>Estadístiques del document</guilabel> mostra la informació següent sobre el fitxer:</para>
+		      <itemizedlist>
+		      <listitem><para>Número de línies al document actual.</para>
+		      </listitem>
+		      <listitem><para>Número de paraules al document actual.</para>
+		      </listitem>
+		      <listitem><para>Número de caràcters, incloent-hi els espais, al document actual.</para>
+		      </listitem>
+		      <listitem><para>Número de caràcters, sense incloure-hi el espais, al document actual.</para>
+		      </listitem>
+		      <listitem><para>Número de bytes al document actual.</para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem><para>Podeu seguir actualitzant el fitxer del <application>gedit</application> mentre el diàleg <guilabel>Estadístiques del document</guilabel> està obert. Per a refrescar els continguts del diàleg <guilabel>Estadístiques del document</guilabel>, feu clic a <guibutton>Actualitza</guibutton>.</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="gedit-external-tools-plugin">
+  <title>Connector d'eines externes</title>
+  <para>El connector <application>Eines externes</application> us permet executar ordres externes des del <application>gedit</application>. Podeu conduir contingut a una ordre i explotar la seva sortida (per exemple el <application>sed</application>) o executar una ordre predefinida (per exemple el <application>make</application>).</para>
+  <para>Utilitzeu el <guilabel>Gestor d'eines externes</guilabel> per a crear i editar ordres. Per a executar una ordre externa, trieu-la des del menú <guimenu>Eines</guimenu>.</para>
+
+  <sect3 id="gedit-external-tools-plugin-builtin">
+    <title>Ordres integrades</title>
+    <para>El connector <application>Eines externes</application> proporciona les ordres següents:</para>
+    <variablelist>
+      <varlistentry><term>Munta</term>
+        <listitem>
+          <para>Executa el <application>make</application> al directori actual del document.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Llistat del directori</term>
+        <listitem>
+          <para>Llista els continguts del directori actual del document en un document nou.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Variables d'entorn</term>
+        <listitem>
+          <para>Mostra la llista de variables d'entorn a la subfinestra inferior.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Grep</term>
+        <listitem>
+          <para>Cerca un terme a tots els fitxers del directori actual del document, utilitzant un patró de coincidència. Els resultats es mostren a la subfinestra inferior.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Suprimeix espais al final de les línies</term>
+        <listitem>
+          <para>Suprimeix tots els espais al final de les línies del document.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect3>
+
+  <sect3 id="gedit-external-tools-plugin-define">
+    <title>Com definir una ordre</title>
+    <para>Per a afegir una ordre externa, trieu <menuchoice><guimenu>Eines</guimenu><guimenuitem>Eines externes</guimenuitem></menuchoice>.</para>
+    <para>A la finestra <guilabel>Gestor d'eines externes</guilabel>, feu clic a <guibutton>Nou</guibutton>. Podeu especificar els detalls següents per a una ordre nova:</para>
+    <variablelist>
+      <varlistentry><term>Descripció</term>
+        <listitem>
+          <para>Aquesta descripció es mostra a la barra d'estat quan es tria l'ordre del menú.</para>
+        </listitem>     
+      </varlistentry>
+      <varlistentry><term>Accelerador</term>
+        <listitem>
+          <para>Introduïu una drecera de teclat per a l'ordre.</para>
+        </listitem>     
+      </varlistentry>
+      <varlistentry><term>Ordres</term>
+        <listitem>
+          <para>Les ordres actuals a executar. Es poden utilitzar diverses variables d'entorn del <application>gedit</application> per a passar contingut a aquestes ordres. Vegeu la <xref linkend="gedit-external-tools-plugin-variables"/>.</para>
+        </listitem>     
+      </varlistentry>
+      <varlistentry><term>Entrada</term>
+        <listitem>
+          <para>El contingut a donar a les ordres (com ara <systemitem>stdin</systemitem>): el text sencer del document actual o la selecció, línia o paraula actual.</para>
+        </listitem>     
+      </varlistentry>
+      <varlistentry><term>Sortida</term>
+        <listitem>
+          <para>Què fer amb la sortida de les ordres: mostrar a la subfinestra inferior, col·locar a un document nou o col·locar al document actual al final, a la posició del cursor o reemplaçant la selecció o tot el document.</para>
+        </listitem>     
+      </varlistentry>
+      <varlistentry><term>Aplicabilitat</term>
+        <listitem>
+          <para>Determina quins tipus de documents poden ser afectats per l'ordre, per exemple si s'han desat o no i si són locals o remots.</para>
+        </listitem>     
+      </varlistentry>
+    </variablelist>
+
+  </sect3>
+  
+  <sect3 id="gedit-external-tools-plugin-edit">
+    <title>Com editar i suprimir eines</title>
+    <para>Per a editar una eina, seleccioneu-la a la llista i realitzeu canvis a les seves propietats.</para>
+    <para>Per a canviar el nom d'una eina, feu clic un altre cop a la llista.</para>
+    <para>Per a restaurar una eina integrada que heu canviat, premeu <guilabel>Recupera</guilabel>.</para>
+    <para>Per a suprimir una eina, seleccioneu-la a la llista i premeu <guibutton>Suprimeix</guibutton>. No podeu suprimir eines integrades, només aquelles que heu creat.</para>
+  </sect3>
+  
+  <sect3 id="gedit-external-tools-plugin-variables">    
+    <title>Variables</title>
+    <para>Podeu utilitzar les variables següents al camp <guilabel>Ordres</guilabel> de la definició de l'ordre:</para>
+    <itemizedlist>
+      <listitem>
+        <para>GEDIT_CURRENT_DOCUMENT_URI</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_CURRENT_DOCUMENT_NAME</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_CURRENT_DOCUMENT_SCHEME</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_CURRENT_DOCUMENT_PATH</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_CURRENT_DOCUMENT_DIR</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_DOCUMENTS_URI</para>
+      </listitem>
+      <listitem>
+        <para>GEDIT_DOCUMENTS_PATH</para>
+      </listitem>
+    </itemizedlist>
+  </sect3>
+</sect2>
+
+<sect2 id="gedit-file-browser-plugin">    
+  <title>Connector de navegador de fitxers</title>
+  <para>El connector <application>Navegador de fitxers</application> mostra el vostres fitxers i carpetes a la subfinestra lateral, permetent-vos obrir ràpidament els fitxers.</para>
+  <para>Per a visualitzar el navegador de fitxers, trieu <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Subfinestra lateral</guimenuitem></menuchoice> i feu clic a la pestanya que mostra la icona del navegador de fitxers a la part inferior de la subfinestra lateral.</para>
+  <sect3 id="gedit-file-browser-plugin-browsing">    
+    <title>Com navegar pels vostres fitxers</title>
+    <para>La pestanya del navegador de fitxers inicialment mostra les adreces d'interes del vostre gestor de fitxers. Per a navegar pels continguts de qualsevol element, feu-hi doble clic.</para>
+    <para>Per a mostrar una carpeta pare, trieu-la a la llista desplegable o premeu la fletxa amunt a la barra d'eines del navegador de fitxers.</para>
+    <para>Per a mostrar la carpeta que conté el document en què esteu treballant actualment, feu clic amb el botó secundari a la llista de fitxers i trieu <guimenuitem>Establiu l'arrel del document actiu</guimenuitem>.</para>
+  </sect3>
+  <sect3 id="gedit-file-browser-plugin-open">    
+    <title>Com obrir un fitxer</title>
+    <para>Per a obrir un fitxer al <application>gedit</application>, feu-hi doble clic a la llista de fitxers.</para>
+  </sect3>
+  <sect3 id="gedit-file-browser-plugin-create">    
+    <title>Com crear fitxers i carpetes</title>
+    <para>Per a crear un fitxer de text nou i buit a la carpeta actual que es mostra al navegador, feu clic amb el botó secundari a la llista de fitxers i trieu <guimenuitem>Fitxer nou</guimenuitem>.</para>
+    <para>Per a crear una carpeta nova a la carpeta actual que es mostra al navegador, feu clic amb el botó secundari a la llista de fitxers i trieu <guimenuitem>Carpeta nova</guimenuitem>.</para>
+    </sect3>
+</sect2>
+
+<sect2 id="gedit-indent-lines-plugin">
+<title>Connector de sagnat de línies</title>
+	<para>El connector <application>Sagna les línies</application> afegeix o suprimeix espai a l'inici de les línies de text.</para>
+	<para>Per a sagnar o desfer el sagnat del text, realitzeu els passos següents:</para>
+  	<orderedlist>
+		  <listitem><para>Seleccioneu les línies que voleu sagnar. Per a sagnar o desfer el sagnat d'una sola línia, col·loqueu el cursor a qualsevol lloc d'aquesta línia.</para>
+		  </listitem>
+		  <listitem>
+		    <itemizedlist>
+		      <listitem>
+		        <para>Per a sagnar el text, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Sagna</guimenuitem></menuchoice>.</para>
+		      </listitem>
+		      <listitem>
+		        <para>Per a suprimir el sagnat, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Desagna</guimenuitem></menuchoice>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+	<para>La quantitat d'espai utilitzat i si s'ha d'utilitzar el caràcter de tabulació o caràcters d'espai; depèn dels paràmetres <guilabel>Tabulacions</guilabel> a l'editor de preferències. Vegeu la <xref linkend="gedit-prefs-editor"/>.</para>
+
+</sect2>
+
+<sect2 id="gedit-insert-date-time-plugin">
+<title>Connector d'inserció de la la data/hora</title>
+	<para>El connector <application>Insereix la data/hora</application> insereix la data i hora actual a un document. Per a utilitzar el connector d'inserir la data/hora, realitzeu els passos següents:</para>
+		<orderedlist>
+		  <listitem><para>Trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Insereix la data i hora</guimenuitem></menuchoice>.</para>
+        <para>Si no teniu configurat el connector d'inserció de la la data/hora per a inserir automàticament la data/hora sense sol·licitar-vos-en el format, el <application>gedit</application> mostrarà el diàleg <guilabel>Insereix la data i hora</guilabel>. Seleccioneu el format apropiat de data/hora de la llista. Feu clic a <guibutton>Insereix</guibutton> per a tancar el diàleg <guilabel>Insereix la data i hora</guilabel>. El <application>gedit</application> inserirà la data/hora a la posició del cursor a la fila actual.</para>
+				<para>Si heu configurat el <application>gedit</application> per a utilitzar un format particular de data/hora, no es mostrarà el diàleg <guilabel>Insereix la data i hora</guilabel>. La data/hora s'inserirà automàticament a la posició del cursor a la fila actual.</para>
+		  </listitem>
+		</orderedlist>
+
+<sect3 id="gedit-date-time-configure">
+<title>Configuració del connector d'inserir la data/hora</title>
+<para>Per a configurar el connector d'inserir la data/hora, realitzeu els passos següents:</para>
+		<orderedlist>
+		  <listitem> <para>Trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Preferències</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem> <para>Seleccioneu la pestanya <guilabel>Connectors</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Seleccioneu el connector <guilabel>Insereix la data/hora</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Feu clic a <guibutton>Configura el connector</guibutton> per a mostrar el diàleg <guilabel>Configura el connector per inserir la data/hora</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Seleccioneu una de les opcions, tal com es mostra:</para>
+		      <itemizedlist>
+		      <listitem><para>Per a especificar el format de data/hora cada cop que inseriu la data/hora, seleccioneu l'opció <guilabel>Pregunta per un format</guilabel>.</para>
+		      </listitem>
+		      <listitem><para>Per a utilitzar el mateix format proporcionat pel <application>gedit</application> cada cop que inseriu la data/hora, seleccioneu l'opció <guilabel>Utilitza el format seleccionat</guilabel>, llavors seleccioneu el format apropiat de la llista. Quan seleccioneu aquesta opció, el <application>gedit</application> no us sol·licitarà el format de la data/hora quan trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Insereix la data i hora</guimenuitem></menuchoice>.</para>
+		      </listitem>
+		      <listitem><para>Per a utilitzar el mateix format personalitzat cada cop que inseriu la data/hora, seleccioneu l'opció <guilabel>Utilitza un format personalitzat</guilabel>, llavors introduïu el format apropiat al quadre de text. Per a obtenir més informació sobre com especificar un format personalitzat, vegeu el <ulink url="man:strftime" type="man"><citerefentry><refentrytitle>strftime</refentrytitle><manvolnum>3</manvolnum></citerefentry></ulink>. Quan seleccioneu aquesta opció, el <application>gedit</application> no us sol·licitarà el format de la data/hora quan trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Insereix la data i hora</guimenuitem></menuchoice>.</para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem> <para>Feu clic a <guibutton>D'acord</guibutton> per a tancar el diàleg <guilabel>Configura el connector per inserir la data/hora</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Per a tancar el diàleg <guilabel>Preferències</guilabel>, feu clic a <guibutton>Tanca</guibutton>.</para>
+		  </listitem>
+		</orderedlist>
+</sect3>
+</sect2>
+
+<sect2 id="gedit-modelines-plugin">
+  <title>Connector de modes de línia</title>
+    <para>El connector <application>Modes de línia</application> us permet establir les preferències per a documents individuals. Un <firstterm>mode de línia</firstterm> és una línia de text a l'inici o final del document amb paràmetres que el <application>gedit</application> reconeix.</para>
+    <para>Les preferències establertes utilitzant els modes de línia tenen preferència sobre les especificades al diàleg de preferències.</para>
+    <para>Podeu establir les preferències següents amb els modes de línia:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Amplada de la tabulació</para>
+      </listitem>
+      <listitem>
+        <para>Amplada del sagnat</para>
+      </listitem>
+      <listitem>
+        <para>Inserir espais en comptes de tabuladors</para>
+      </listitem>
+      <listitem>
+        <para>Ajustament de línia</para>
+      </listitem>
+      <listitem>
+        <para>Amplada del marge dret</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>El connector <application>Modes de línia</application> admet un subconjunt de les opcions que utilitzen altres editors de text com l'<application>Emacs</application>, el <application>Kate</application> i el <application>Vim</application>.</para>
+
+    <sect3 id="gedit-modelines-plugin-emacs">
+      <title>Modes de línia de l'Emacs</title>
+      <para>Les primeres dues línies d'un document s'analitzen cercant modes de línia de l'<application>Emacs</application>.</para>
+      <para>S'admeten les opcions de l'<application>Emacs</application> per a tab-width, indent-offset, indent-tabs-mode i autowrap. Per a obtenir més informació, vegeu el <ulink type="http" url="http://www.delorie.com/gnu/docs/emacs/emacs_486.html">Manual del GNU Emacs</ulink>.</para>
+    </sect3>
+    <sect3 id="gedit-modelines-plugin-kate">
+      <title>Modes de línia del Kate</title>
+      <para>Les primeres i últimes deu línies d'un document s'analitzen cercant modes de línia del <application>Kate</application>.</para>
+      <para>S'admeten les opcions del <application>Kate</application> per a tab-width, indent-width, space-indent, word-wrap i word-wrap-colum. Per a obtenir més informació, vegeu el <ulink type="http" url="http://www.kate-editor.org/article/katepart_modelines">lloc web del Kate</ulink>.</para>
+    </sect3>
+    <sect3 id="gedit-modelines-plugin-vim">
+      <title>Modes de línia del Vim</title>
+      <para>Les primeres i últimes tres línies d'un document s'analitzen cercant modes de línia del <application>Vim</application>.</para>
+      <para>S'admeten les opcions del <application>Vim</application> per a et, expandtab, ts, tabstop, sw, shiftwidth, wrap i textwidth. Per a obtenir més informació, vegeu el <ulink type="http" url="http://vimdoc.sourceforge.net/htmldoc/options.html#modeline">lloc web del Vim</ulink>.</para>
+    </sect3>
+</sect2>
+
+<sect2 id="gedit-python-console-plugin">    
+  <title>Connector de consola Python</title>
+  <para>El connector <application>Consola Python</application> us permet executar ordres en el llenguatge de programació Python des del <application>gedit</application>. En habilitar el connector s'afegirà una pestanya a la subfinestra inferior. Aquest mostra l'última sortida i un camp d'entrada d'ordres.</para>
+  <caution><para>Les ordres introduïdes a la consola Python no es comproven abans d'executar-les. Per tant és possible penjar el <application>gedit</application>, per exemple en introduir un bucle infinit.</para></caution>
+</sect2>
+
+<sect2 id="gedit-snippets-plugin">
+<title>Connector de fragments</title>
+  <para>El connector <application>Fragments</application> us permet emmagatzemar fragments de text utilitzats normalment, anomenats <firstterm>fragments</firstterm>, i inserir-los ràpidament a un document.</para>
+    <para>Els fragments són específics a la sintaxi del llenguatge del document actual. Per exemple, quan esteu treballant amb un document HTML, podeu triar des d'una llista de fragments que són útils per a l'HTML. A més, alguns fragments són globals i estan disponibles a tots els documents.</para>
+    <para>Un número de fragments integrats s'instal·len amb el <application>gedit</application>, els quals poden ser modificats.</para>
+
+  <sect3 id="gedit-snippets-plugin-insert">
+    <title>Com inserir fragments</title>
+    <para>Per a inserir un fragment a un document, teclegeu el seu <firstterm>disparador de tabulador</firstterm> i premeu <keycap>Tab</keycap>. Normalment el disparador de tabulador d'un fragment són les primeres lletres del fragment o alguna altra cosa que sigui curta i fàcil de recordar.</para>
+    <para>Alternativament, premeu <keycombo><keycap>Ctrl</keycap><keycap>Espai</keycap></keycombo> per a veure una llista dels fragments que podeu inserir.</para>
+  </sect3>
+
+  <sect3 id="gedit-snippets-plugin-add">
+    <title>Com afegir fragments</title>
+    <para>Per a crear un fragment nou, feu el següent:</para>
+      <orderedlist>
+        <listitem>
+          <para>Trieu <menuchoice><guimenu>Eines</guimenu><guimenuitem>Gestiona fragments</guimenuitem></menuchoice>. S'obrirà la finestra <guilabel>Gestor de fragments</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>La llista dels fragments està agrupada per llenguatge. Seleccioneu el llenguatge on voleu afegir un fragment, o bé un fragment en aquell grup de llenguatge. Per a afegir un fragment a tots els llenguatges, trieu Global a la part superior de la llista. Per defecte es mostrarà la sintaxi del document en el qual esteu treballant actualment.</para>
+        </listitem>
+        <listitem>
+          <para>Feu clic a <guibutton>Nou</guibutton>. Apareixerà un fragment nou a la llista.</para>
+        </listitem>
+        <listitem>
+          <para>Introduïu la informació següent per al fragment nou:</para>
+          <variablelist>
+            <varlistentry><term>Nom</term>
+              <listitem>
+                <para>Introduïu un nom per al fragment al camp de text a la llista de fragments. El nom d'un fragment només serveix com a recordatori del seu propòsit. Podeu canviar el nom d'un fragment que heu creat en fer-hi clic a la llista.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Text del fragment</term>
+              <listitem>
+                <para>Introduïu el text del fragment al quadre de text <guilabel>Edita el fragment</guilabel>. Per a saber els codis especials que podeu utilitzar, vegeu la <xref linkend="gedit-snippets-plugin-syntax"/>.</para>
+                <tip><para>Podeu tornar a la finestra del document per a copiar text sense tancar la finestra del <guilabel>Gestor de fragments</guilabel>.</para></tip>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Disparador de tabulador</term>
+              <listitem>
+                <para>Introduïu el disparador de tabulador per al fragment. Aquest és el text que heu d'escriure abans de prémer <keycap>Tab</keycap> per a inserir el fragment.</para>
+                <para>L'etiqueta ha de ser una sola paraula amb només lletres o un sol caràcter. El <guilabel>Disparador de tabulador</guilabel> es ressaltarà en vermell si s'ha introduït un disparador de tabulador no vàlid.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Tecla de drecera</term>
+              <listitem>
+                <para>Introduïu una tecla de drecera a utilitzar per a inserir el fragment.</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+
+        </listitem>
+      </orderedlist>
+  </sect3>
+  <sect3 id="gedit-snippets-plugin-edit">
+    <title>Com editar i suprimir fragments</title>
+    <para>Per a editar un fragment, seleccioneu-lo a la llista i realitzeu els canvis a les seves propietats d'activació i text.</para>
+    <para>Per a canviar el nom d'un fragment, feu-hi clic un altre cop a la llista.</para>
+    <para>Per a restaurar un fragment integrat que heu modificat, premeu <guilabel>Recupera</guilabel>.</para>
+    <para>Per a suprimir un fragment, seleccioneu-lo a la llista i premeu <guibutton>Suprimeix</guibutton>. No podeu suprimir fragments integrats, només aquells que heu creat.</para>
+  </sect3>
+
+  <sect3 id="gedit-snippets-plugin-syntax">
+    <title>Substitució de fragments</title>
+    <para>A més d'inserir un text emmagatzemat, un fragment pot incloure text personalitzat o marcar els espais on podeu afegir text un cop s'hagi inserit el fragment al document.</para>
+
+    <para/>
+
+    <para>Podeu utilitzar els codis de text variable següents al text del fragment:</para>
+      <variablelist>
+        <varlistentry><term>Texts variables per a tabuladors</term>
+          <listitem>
+            <para><literal>$<replaceable>n</replaceable></literal> defineix un text variable per a tabulador, on <literal>n</literal> és qualsevol número des d'un en amunt.</para>
+            <para><literal>${<replaceable>n</replaceable>:<replaceable>default</replaceable>}</literal> defineix un text variable per a tabulador amb un valor predeterminat.</para>
+            <para>Un text variable per a tabulador marca un espai al text del fragment on podeu afegir text addicional després d'inserir el fragment.</para>
+            <para>Per a utilitzar els texts variables per a tabuladors, inseriu un fragment de forma normal. El cursor s'ubicarà al primer text variable per a tabulador. Escriviu el text i premeu <keycap>Tab</keycap> per a anar al següent text variable per a tabulador. El número al codi del text variable defineix l'ordre en què avançarà la tabulació a cada ubicació del text.</para>
+            <para>Premeu <keycombo><keycap>Maj</keycap><keycap>Tab</keycap></keycombo> per a tornar al text variable per a tabulador anterior. En prémer <keycap>Tab</keycap> quan no hi ha més texts variables per a tabulador es mourà el cursor al final del text del fragment o al final del text variable si existeix.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Rèpliques de texts variables</term>
+          <listitem>
+            <para>Un text variable per a tabulador repetit replicarà el text variable ja definit. Això us permet escriure un sol cop el text que voleu que aparegui diverses vegades al fragment.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Text variable de final</term>
+          <listitem>
+            <para><literal>$0</literal> defineix el text variable de final. Aquest us permet de finalitzar de treballar amb el fragment amb el cursor a un punt diferent que el final del fragment de text.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Variables d'entorn</term>
+          <listitem>
+            <para>Les variables d'entorn com ara <literal>$PATH</literal> i <literal>$HOME</literal> són substituïdes al fragment de text. També es poden utilitzar les variables d'entorn següents específiques del <application>gedit</application>.</para>
+            <variablelist>
+              <varlistentry><term>$GEDIT_SELECTED_TEXT</term>
+                <listitem>
+                  <para>El text seleccionat actualment.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$GEDIT_FILENAME</term>
+                <listitem>
+                  <para>El nom de fitxer complet del document o una cadena buida si el document encara no s'ha desat.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$GEDIT_BASENAME</term>
+                <listitem>
+                  <para>El nom base del nom de fitxer del document o una cadena buida si el document encara no s'ha desat.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$GEDIT_CURRENT_WORD</term>
+                <listitem>
+                  <para>La paraula a la ubicació del cursor al document. Quan s'utilitza aquesta variable, la paraula actual serà reemplaçada pel fragment de text.</para>
+                </listitem>
+              </varlistentry>
+
+            </variablelist>
+
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Texts variables de l'interpret d'ordres</term>
+          <listitem>
+            <para><literal>$(<replaceable>cmd</replaceable>)</literal> és reemplaçat pel resultat d'executar <replaceable>cmd</replaceable> a l'interpret d'ordres.</para>
+            <para><literal>$(<replaceable>n</replaceable>:<replaceable>cmd</replaceable>)</literal> us permet donar una referència a aquest text variable, on <replaceable>n</replaceable> és qualsevol número de 1 en amunt. Utilitzeu <literal>$<replaceable>n</replaceable></literal> per a utilitzar la sortida d'un text variable de l'interpret d'ordres com a entrada d'una altre.</para>
+          </listitem>     
+        </varlistentry>
+        <varlistentry><term>Texts variables de Python</term>
+          <listitem>
+            <para><literal>$&lt;<replaceable>cmd</replaceable>&gt;</literal> és reemplaçat pel resultat d'avaluar <replaceable>cmd</replaceable> a l'interpretador Python.</para>
+            <para><literal>$&lt;<replaceable>a</replaceable>:<replaceable>cmd</replaceable>&gt;</literal> especifica un altre text variable Python com a dependència, on <replaceable>a</replaceable> proporciona el seu ordre al fragment. Això us permet utilitzar funcions Python definides a un altre fragment. Per a especificar diverses dependències, separeu els números amb comes com aquestes: <literal>$&lt;<replaceable>a</replaceable>,<replaceable>b</replaceable>:<replaceable>cmd</replaceable>&gt;</literal></para>
+            <para>Per a utilitzar una variable a tots els altres fragments Python, declareu-la com a <literal>global</literal>.</para>
+          </listitem>     
+        </varlistentry>
+      </variablelist>
+  </sect3>
+
+</sect2>
+
+<sect2 id="gedit-sort-plugin">
+<title>Connector d'ordenació</title>
+	<para>El connector <application>Ordena</application> col·loca les línies seleccionades de text en ordre alfabètic.</para>
+		  <caution><para>No podeu desfer l'operació d'ordenació, de manera que hauríeu de desar el fitxer abans de realitzar l'ordenació. Per a restaurar la versió desada del fitxer després de l'operació d'ordenar, trieu <menuchoice><guimenu>Fitxer</guimenu><guimenuitem>Restaura</guimenuitem></menuchoice>.</para>
+		  </caution>
+              <para>Per a utilitzar el connector d'ordenació, realitzeu els passos següents:</para>
+		<orderedlist>
+		  <listitem>
+		    <para>Seleccioneu les línies de text que voleu ordenar.</para>
+		  </listitem>
+		  <listitem><para>Trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Ordena</guimenuitem></menuchoice>. S'obrirà el diàleg <guilabel>Ordena</guilabel>.</para>
+		  </listitem>
+		  <listitem><para>Trieu les opcions que voleu per a l'ordenació:</para>
+		    <itemizedlist>
+    		  <listitem>
+    		    <para>Per a ordenar el text en ordre invers, seleccioneu <guilabel>Inverteix l'ordre</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Per a suprimir les línies duplicades, seleccioneu <guilabel>Suprimeix els duplicats</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Per a ignorar les diferències de majúscules i minúscules, seleccioneu <guilabel>Ignora diferències de majúscules i minúscules</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Per a fer que l'ordenació ignori els caràcters a l'inici de les línies, establiu el primer caràcter que s'hauria d'utilitzar per a ordenar al quadre de selecció de valors <guilabel>Comença per la columna</guilabel>.</para>
+    		  </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para>Per a realitzar l'operació d'ordenació, feu clic a <guibutton>Ordena</guibutton>.</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="gedit-spell-checker-plugin">
+<title>Connector de comprovació d'ortografia</title>
+	<para>El connector <application>Comprovador d'ortografia</application> comprova l'ortografia del text seleccionat. Podeu configurar el <application>gedit</application> per a comprovar l'ortografia automàticament o podeu comprovar l'ortografia manualment, en l'idioma especificat. L'idioma i la comprovació automàtica d'ortografia s'apliquen per a cada document. Per a utilitzar el connector de comprovació d'ortografia, realitzeu els passos següents:</para>
+		<orderedlist>
+		  <listitem><para>Trieu <menuchoice><guimenu>Eines</guimenu><guimenuitem>Especifica l'idioma</guimenuitem></menuchoice> per a mostrar el diàleg <guilabel>Especifica l'idioma</guilabel>. Seleccioneu l'idioma apropiat de la llista. Feu clic a <guibutton>D'acord</guibutton> per a tancar el diàleg <guilabel>Especifica l'idioma</guilabel>.</para>
+		  </listitem>
+		  <listitem><para>Per a comprovar l'ortografia automàticament, trieu <menuchoice><guimenu>Eines</guimenu><guimenuitem>Comprova l'ortografia automàticament</guimenuitem></menuchoice>. Per a desseleccionar la comprovació d'ortografia automàtica, trieu un altre cop <menuchoice><guimenu>Eines</guimenu><guimenuitem>Comprova l'ortografia automàticament</guimenuitem></menuchoice>. Quan s'activa la comprovació d'ortografia automàtica es mostra una icona al costat de l'element del menú <guimenuitem>Comprova l'ortografia automàticament</guimenuitem>. La comprovació d'ortografia automàtica està desactivada per defecte, cada cop que s'inicia el <application>gedit</application>.</para>
+                            <para>Les paraules desconegudes es mostren d'un color diferent i subratllades. Feu clic amb el botó secundari a una paraula desconeguda i seleccioneu <guimenu>Suggeriments d'ortografia</guimenu> des del menú emergent:</para>
+		    <itemizedlist>
+		      <listitem><para>Per a substituir la paraula desconeguda amb una altra paraula de la llista, seleccioneu la paraula substituta des del menú emergent <guimenu>Suggeriments d'ortografia</guimenu>.</para>
+		      </listitem>
+		      <listitem><para>Per a afegir la paraula desconeguda al vostre diccionari personal, seleccioneu <menuchoice><guimenu>Suggeriments d'ortografia</guimenu><guimenuitem>Afegeix</guimenuitem></menuchoice>.</para>
+		      </listitem>
+		      <listitem><para>Per a ignorar totes les ocurrències de la paraula desconeguda, de manera que no es marcaran més com a desconegudes però no s'afegiran al vostre diccionari personal, seleccioneu <menuchoice><guimenu>Suggeriments d'ortografia</guimenu><guimenuitem>Ignora-ho tot</guimenuitem></menuchoice>. La paraula desconeguda només s'ignorarà a la sessió actual del <application>gedit</application>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para>Per a comprovar l'ortografia manualment, trieu <menuchoice><guimenu>Eines</guimenu><guimenuitem>Comprova l'ortografia</guimenuitem></menuchoice>.</para>
+				<para>Si no hi ha errors d'ortografia, un diàleg d'<guilabel>Informació</guilabel> mostrarà un missatge indicant que aquest document no conté paraules mal escrites. Feu clic a <guibutton>D'acord</guibutton> per a  tancar el diàleg <guilabel>Informació</guilabel>.</para>
+				<para>Si hi ha errors ortogràfics, es mostrarà el diàleg <guilabel>Comprova l'ortografia</guilabel>:</para>
+		    <itemizedlist>
+		      <listitem><para>La <guilabel>Paraula mal escrita</guilabel> es mostrarà a la part superior del diàleg.</para>
+		      </listitem>
+		      <listitem><para>Es mostrarà un suggeriment ortogràfic conegut al quadre de text <guilabel>Canvia a</guilabel>. Podeu substituir-lo amb una altra paraula coneguda en seleccionar una paraula de la llista <guilabel>Suggeriments</guilabel> o podeu introduir directament el text al quadre de text <guilabel>Canvia a</guilabel>.</para>
+		      </listitem>
+		      <listitem><para>Per a comprovar l'ortografia del text al quadre de text <guilabel>Canvia a</guilabel>, feu clic a <guibutton>Comprova la paraula</guibutton>. Si aquesta és una paraula coneguda, la llista <guilabel>Suggeriments</guilabel> serà substituïda amb el text <literal>(ortografia correcta)</literal>. Si la paraula no és coneguda, apareixeran entrades noves a la llista <guilabel>Suggeriments</guilabel>.</para>
+		      </listitem>
+		      <listitem><para>Per a ignorar l'ocurrència actual de la paraula desconeguda, feu clic a <guibutton>Ignora</guibutton>. Per a ignorar totes les ocurrències de la paraula desconeguda, feu clic a <guibutton>Ignora-ho tot</guibutton>. La paraula desconeguda només s'ignorarà a la sessió actual del <application>gedit</application>.</para>
+		      </listitem>
+		      <listitem><para>Per a canviar l'ocurrència actual de la paraula desconeguda al text del quadre de text <guilabel>Canvia a</guilabel>, feu clic a <guibutton>Canvia</guibutton>. Per a canviar totes les ocurrències de la paraula desconeguda al text al quadre de text <guilabel>Canvia a</guilabel>, feu clic a <guibutton>Canvia-ho tot</guibutton>.</para>
+		      </listitem>
+		      <listitem><para>Per a afegir la paraula desconeguda al vostre diccionari personal, feu clic a <guibutton>Afegeix una paraula</guibutton>.</para>
+		      </listitem>
+		      <listitem><para>Per a tancar el diàleg <guilabel>Comprova l'ortografia</guilabel>, feu clic a <guibutton>Tanca</guibutton>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="gedit-tag-list-plugin">
+<title>Connector del llistat de marcadors</title>
+	<para>El connector <application>Llistat de marcadors</application> us permet inserir marcadors habituals des d'una llista a la subfinestra lateral.</para>
+  <para>Per a utilitzar el connector del llistat de marcadors, realitzeu els passos següents:</para>
+		<orderedlist>
+		  <listitem><para>Trieu <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Subfinestra lateral</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem>
+		    <para>Per defecte, la subfinestra lateral mostra una pestanya que conté una llista de documents oberts. Feu clic a la pestanya que mostra la icona + a la part inferior de la subfinestra lateral per a mostrar la pestanya del llistat de marcadors.</para>
+		  </listitem>
+		  <listitem><para>Seleccioneu la categoria de marcadors apropiada des de la llista desplegable. Per exemple <guilabel>HTML - Marcadors</guilabel>.</para>
+		  </listitem>
+		  <listitem><para>Desplaceu-vos pel llistat de marcadors per a trobar el marcador necessari.</para>
+		  </listitem>
+		  <listitem><para>Per a inserir un marcador a la posició del cursor al fitxer actual, feu doble clic al marcador al llistat de marcadors. També podeu inserir un marcador com segueix:</para>
+		    <itemizedlist>
+		      <listitem><para>Per a inserir un marcador al fitxer actual i canviar el focus des de la subfinestra lateral a l'àrea de visualització, premeu <keycap>Retorn</keycap>.</para>
+		      </listitem>
+		      <listitem><para>Per a inserir un marcador al fitxer actual i mantenir el focus a la finestra <guilabel>Connector del llistat de marcadors</guilabel>, premeu <keycombo><keycap>Maj</keycap><keycap>Retorn</keycap></keycombo>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+</sect1>
+
+</article>

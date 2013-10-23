@@ -1,0 +1,55 @@
+Description: Launchpad integration.
+Author: Daniel Holbach <daniel.holbach@ubuntu.com>
+
+Index: gedit-2.30.2/configure.ac
+===================================================================
+--- gedit-2.30.2.orig/configure.ac	2010-04-19 05:30:19.000000000 +1000
++++ gedit-2.30.2/configure.ac	2010-05-27 14:57:00.895446399 +1000
+@@ -275,6 +275,7 @@
+ 	gtk+-2.0 >= 2.16.0
+ 	gtksourceview-2.0 >= 2.9.7
+ 	gconf-2.0 >= 1.1.11
++	launchpad-integration
+ ])
+ 
+ if test "$os_osx" = "no" &&
+Index: gedit-2.30.2/gedit/gedit-ui.h
+===================================================================
+--- gedit-2.30.2.orig/gedit/gedit-ui.h	2010-03-27 22:02:52.000000000 +1100
++++ gedit-2.30.2/gedit/gedit-ui.h	2010-05-27 14:57:00.895446399 +1000
+@@ -36,6 +36,7 @@
+ #endif
+ 
+ #include <gtk/gtk.h>
++#include <launchpad-integration.h>
+ 
+ #include "gedit-commands.h"
+ 
+Index: gedit-2.30.2/gedit/gedit-ui.xml
+===================================================================
+--- gedit-2.30.2.orig/gedit/gedit-ui.xml	2010-03-23 08:56:56.000000000 +1100
++++ gedit-2.30.2/gedit/gedit-ui.xml	2010-05-27 14:57:00.895446399 +1000
+@@ -147,6 +147,7 @@
+ 
+     <menu name="HelpMenu" action="Help">
+       <menuitem name="HelpContentsMenu" action="HelpContents"/>
++       <placeholder name='LaunchpadItems'/>
+       <menuitem name="HelpAboutMenu" action="HelpAbout"/>
+     </menu>
+   </menubar>
+Index: gedit-2.30.2/gedit/gedit-window.c
+===================================================================
+--- gedit-2.30.2.orig/gedit/gedit-window.c	2010-04-18 03:21:14.000000000 +1000
++++ gedit-2.30.2/gedit/gedit-window.c	2010-05-27 14:57:00.895446399 +1000
+@@ -1594,6 +1594,11 @@
+ 	}
+ #endif
+ 
++	/* Add lpi items */
++	launchpad_integration_add_ui (manager,
++				      "ui/MenuBar/HelpMenu/LaunchpadItems");
++
++
+ 	/* show tooltips in the statusbar */
+ 	g_signal_connect (manager,
+ 			  "connect_proxy",

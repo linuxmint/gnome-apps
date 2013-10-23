@@ -1,0 +1,444 @@
+# Indonesian translation of gnome-utils.
+# Copyright (C) 2003 THE gnome-utils'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-utils package.
+#
+# Mohammad DAMT <mdamt@bisnisweb.com>, 2003-2005.
+# Andika Triwidada <andika@gmail.com>, 2010-2011.
+# Dirgita <dirgitadevina@yahoo.co.id>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils.master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:36-0400\n"
+"PO-Revision-Date: 2011-08-18 12:00+0700\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: GNOME Indonesian Translation Team <gnome@i15n.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Language: Indonesian\n"
+"X-Poedit-Country: Indonesia\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../data/gnome-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "Penilik Berkas Log"
+
+#: ../data/gnome-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Lihat atau pantau berkas log sistem"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Height of the main window in pixels"
+msgstr "Tinggi dari jendela utama dalam piksel"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid "List of saved filters"
+msgstr "Daftar penapis yang disimpan"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "List of saved regexp filters"
+msgstr "Daftar penapis regexp yang disimpan"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid "Log file to open up on startup"
+msgstr "Berkas log yang dibuka saat program dijalankan"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+msgid "Log files to open up on startup"
+msgstr "Berkas log yang dibuka saat program dimulai"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Size of the font used to display the log"
+msgstr "Ukuran huruf yang digunakan untuk menampilkan log"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr ""
+"Tentukan berkas log yang akan dibuka saat program dijalankan. Daftar default "
+"dibuat dengan membaca /etc/syslog.conf."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "Tentukan tinggi jendela utama penampil log dalam piksel."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"Tentukan berkas log yang dibuka saat program dijalankan. Biasanya bernilai/"
+"var/adm/messages atau /var/log/messages bergantung pada sistem operasi."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"Tentukan ukuran dari huruf lebar-tetap yang digunakan menampilkan log pada "
+"tampilan pohon utama. Defaultnya diambil dari ukuran huruf default terminal."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "Tentukan lebar jendela utama penampil log dalam piksel."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
+msgid "Width of the main window in pixels"
+msgstr "Lebar jendela utama dalam piksel"
+
+#: ../data/logview-filter.ui.h:1
+msgid "Background:"
+msgstr "Latar:"
+
+#: ../data/logview-filter.ui.h:2
+msgid "Effect:"
+msgstr "Efek:"
+
+#: ../data/logview-filter.ui.h:3
+msgid "Foreground:"
+msgstr "Latar depan:"
+
+#: ../data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "Sembunyikan"
+
+#: ../data/logview-filter.ui.h:5
+msgid "Highlight"
+msgstr "Sorot"
+
+#: ../data/logview-filter.ui.h:6
+msgid "_Name:"
+msgstr "_Nama:"
+
+#: ../data/logview-filter.ui.h:7
+msgid "_Regular Expression:"
+msgstr "Ekspresi _Reguler:"
+
+#: ../src/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+"Program ini adalah perangkat lunak bebas: Anda dapat menyebarluaskannya dan/"
+"atau mengubahnya di bawah syarat dari GNU General Public License sebagaimana "
+"dipublikasikan oleh Free Software Foundation, bisa Lisensi versi 2, atau "
+"(sesuai pilihan Anda) sebarang versi setelahnya."
+
+#: ../src/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+"Program ini disebarluaskan dengan harapan akan berguna, tapi TANPA JAMINAN "
+"APAPUN; bahkan tanpa jaminan tersirat atas KELAYAKAN JUAL atau KECOCOKAN "
+"BAGI KEPERLUAN TERTENTU. Lihat GNU General Public License untuk rincian "
+"lebih jauh."
+
+#: ../src/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+"Anda seharusnya menerima salinan dari GNU General Public License bersama "
+"dengan program ini; jika tidak, tulis ke Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+
+#. translator credits
+#: ../src/logview-about.h:63
+msgid "translator-credits"
+msgstr ""
+"Ahmad Riza H Nst  <rizahnst@gnome.org>\n"
+"Mohammad DAMT <mdamt@bisnisweb.com>\n"
+"http://id.gnome.org/"
+
+#: ../src/logview-app.c:377
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "Tak mungkin membuka berkas %s"
+
+#: ../src/logview-filter-manager.c:94
+msgid "Filter name is empty!"
+msgstr "Nama tapis kosong!"
+
+#: ../src/logview-filter-manager.c:107
+msgid "Filter name may not contain the ':' character"
+msgstr "Nama penyaring tak boleh memuat karakter ':'"
+
+#: ../src/logview-filter-manager.c:130
+msgid "Regular expression is empty!"
+msgstr "Ekspresi reguler kosong!"
+
+#: ../src/logview-filter-manager.c:146
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "Ekspresi reguler tak valid: %s"
+
+#: ../src/logview-filter-manager.c:242
+msgid "Please specify either foreground or background color!"
+msgstr "Silakan nyatakan warna latar depan atau latar belakang!"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Edit filter"
+msgstr "Sunting tapis"
+
+#: ../src/logview-filter-manager.c:296
+msgid "Add new filter"
+msgstr "Tambah tapis baru"
+
+#: ../src/logview-filter-manager.c:506
+msgid "Filters"
+msgstr "Tapis"
+
+#: ../src/logview-findbar.c:173
+msgid "_Find:"
+msgstr "_Cari:"
+
+#: ../src/logview-findbar.c:188
+msgid "Find Previous"
+msgstr "Temukan Sebelumnya"
+
+#: ../src/logview-findbar.c:191
+msgid "Find previous occurrence of the search string"
+msgstr "Temukan kemunculan string pencarian sebelumnya"
+
+#: ../src/logview-findbar.c:196
+msgid "Find Next"
+msgstr "Temukan Selanjutnya"
+
+#: ../src/logview-findbar.c:199
+msgid "Find next occurrence of the search string"
+msgstr "Temukan kemunculan string pencarian selanjutnya"
+
+#: ../src/logview-findbar.c:206
+msgid "Clear the search string"
+msgstr "Bersihkan string pencarian"
+
+#: ../src/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "Galat ketika mengembangkan log ter-GZip. Berkas mungkin rusak."
+
+#: ../src/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "Anda tidak memiliki cukup hak untuk membaca berkas ini."
+
+#: ../src/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "Berkas bukan berkas biasa atau bukan berkas teks."
+
+#: ../src/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr "Versi Log Sistem tak mendukung log ter-GZip."
+
+#: ../src/logview-loglist.c:315
+msgid "Loading..."
+msgstr "Memuat..."
+
+#: ../src/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Tampilkan versi aplikasinya"
+
+#: ../src/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[LOGFILE...]"
+
+#: ../src/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " - Cari dan pantau log"
+
+#: ../src/logview-main.c:102
+msgid "Log Viewer"
+msgstr "Penampil Log"
+
+#: ../src/logview-window.c:38 ../src/logview-window.c:760
+msgid "System Log Viewer"
+msgstr "Penampil Log Sistem"
+
+#: ../src/logview-window.c:211
+#, c-format
+msgid "last update: %s"
+msgstr "pembaruan terakhir: %s"
+
+#: ../src/logview-window.c:214
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "%d baris (%s) - %s"
+
+#: ../src/logview-window.c:318
+msgid "Open Log"
+msgstr "Buka Log"
+
+#: ../src/logview-window.c:357
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Ada galat saat menampilkan bantuan: %s"
+
+#: ../src/logview-window.c:471
+msgid "Wrapped"
+msgstr "Dilipat"
+
+#: ../src/logview-window.c:486
+msgid "Not found"
+msgstr "Tidak ketemu"
+
+#: ../src/logview-window.c:765
+msgid "A system log viewer for GNOME."
+msgstr "Penampil log untuk GNOME."
+
+#: ../src/logview-window.c:814
+msgid "_File"
+msgstr "_Berkas"
+
+#: ../src/logview-window.c:815
+msgid "_Edit"
+msgstr "_Sunting"
+
+#: ../src/logview-window.c:816
+msgid "_View"
+msgstr "_Tampilan"
+
+#: ../src/logview-window.c:817
+msgid "_Filters"
+msgstr "_Tapis"
+
+#: ../src/logview-window.c:818
+msgid "_Help"
+msgstr "Ba_ntuan"
+
+#: ../src/logview-window.c:820
+msgid "_Open..."
+msgstr "B_uka..."
+
+#: ../src/logview-window.c:820
+msgid "Open a log from file"
+msgstr "Buka log dari sebuah berkas"
+
+#: ../src/logview-window.c:822
+msgid "_Close"
+msgstr "_Tutup"
+
+#: ../src/logview-window.c:822
+msgid "Close this log"
+msgstr "Tutup log ini"
+
+#: ../src/logview-window.c:824
+msgid "_Quit"
+msgstr "_Keluar"
+
+#: ../src/logview-window.c:824
+msgid "Quit the log viewer"
+msgstr "Keluar dari penampil log ini"
+
+#: ../src/logview-window.c:827
+msgid "_Copy"
+msgstr "_Salin"
+
+#: ../src/logview-window.c:827
+msgid "Copy the selection"
+msgstr "Salin teks pilihan"
+
+#: ../src/logview-window.c:829
+msgid "Select _All"
+msgstr "Pilih Semu_a"
+
+#: ../src/logview-window.c:829
+msgid "Select the entire log"
+msgstr "Tampilkan seluruh isi log"
+
+#: ../src/logview-window.c:831
+msgid "_Find..."
+msgstr "_Temukan..."
+
+#: ../src/logview-window.c:831
+msgid "Find a word or phrase in the log"
+msgstr "Cari kata atau frasa dalam log"
+
+#: ../src/logview-window.c:834
+msgid "Bigger text size"
+msgstr "Ukuran teks lebih besar"
+
+#: ../src/logview-window.c:836
+msgid "Smaller text size"
+msgstr "Ukuran teks lebih kecil"
+
+#: ../src/logview-window.c:838
+msgid "Normal text size"
+msgstr "Ukuran teks normal"
+
+#: ../src/logview-window.c:841
+msgid "Manage Filters"
+msgstr "Kelola Tapis"
+
+#: ../src/logview-window.c:841
+msgid "Manage filters"
+msgstr "Kelola tapis"
+
+#: ../src/logview-window.c:844
+msgid "_Contents"
+msgstr "Daftar _Isi"
+
+#: ../src/logview-window.c:844
+msgid "Open the help contents for the log viewer"
+msgstr "Buka daftar isi bantuan"
+
+#: ../src/logview-window.c:846
+msgid "_About"
+msgstr "_Keterangan Program"
+
+#: ../src/logview-window.c:846
+msgid "Show the about dialog for the log viewer"
+msgstr "Tampilkan dialog tentang aplikasi penampil log"
+
+#: ../src/logview-window.c:851
+msgid "_Statusbar"
+msgstr "_Status panel"
+
+#: ../src/logview-window.c:851
+msgid "Show Status Bar"
+msgstr "Tampilkan Panel Status"
+
+#: ../src/logview-window.c:853
+msgid "Side _Pane"
+msgstr "_Panel Samping"
+
+#: ../src/logview-window.c:853
+msgid "Show Side Pane"
+msgstr "Tampilkan Panel Samping"
+
+#: ../src/logview-window.c:855
+msgid "Show matches only"
+msgstr "Hanya tampilkan yang cocok"
+
+#: ../src/logview-window.c:855
+msgid "Only show lines that match one of the given filters"
+msgstr "Hanya tampilkan baris-baris yang cocok dengan penyaring yang diberikan"
+
+#: ../src/logview-window.c:857
+msgid "_Auto Scroll"
+msgstr "Gulung Otom_atis"
+
+#: ../src/logview-window.c:857
+msgid "Automatically scroll down when new lines appear"
+msgstr "Menggulung otomatis ketika muncul baris baru"
+
+#: ../src/logview-window.c:971
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "Tak bisa membaca dari \"%s\""
+
+#: ../src/logview-window.c:1393
+msgid "Version: "
+msgstr "Versi: "
+
+#: ../src/logview-window.c:1500
+msgid "Could not open the following files:"
+msgstr "Tak dapat membuka berkas berikut:"
