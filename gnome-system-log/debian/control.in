@@ -1,9 +1,7 @@
 Source: gnome-system-log
 Section: gnome
 Priority: optional
-Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
-XSBC-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Uploaders: @GNOME_TEAM@
+Maintainer: Linux Mint <root@linuxmint.com>
 Build-Depends: cdbs,
                debhelper (>= 8),
                gnome-pkg-tools (>= 0.10),
@@ -14,8 +12,7 @@ Build-Depends: cdbs,
                zlib1g-dev,
                gnome-doc-utils (>= 0.3.2),
                dh-autoreconf,
-               gnome-common,
-               liblaunchpad-integration-3.0-dev
+               gnome-common
 Standards-Version: 3.9.3
 Homepage: http://live.gnome.org/GnomeUtils
 Vcs-Bzr: http://bazaar.launchpad.net/~ubuntu-desktop/gnome-system-log/ubuntu
