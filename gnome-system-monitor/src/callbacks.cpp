@@ -38,7 +38,6 @@
 #include "load-graph.h"
 #include "disks.h"
 #include "lsof.h"
-#include "sysinfo.h"
 
 void
 cb_kill_sigstop(GtkAction *action, gpointer data)

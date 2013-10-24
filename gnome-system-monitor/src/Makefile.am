@@ -29,7 +29,6 @@ gnome_system_monitor_cpp_files = \
 	cgroups.cpp \
 	procman_gnomesu.cpp \
 	procman_gksu.cpp \
-	sysinfo.cpp \
 	lsof.cpp \
 	selection.cpp \
 	settings-keys.cpp \
