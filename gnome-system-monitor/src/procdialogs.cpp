@@ -546,7 +546,6 @@ procdialog_create_preferences_dialog (ProcData *procdata)
                       G_CALLBACK (prefs_dialog_button_pressed), procdata);
 
     switch (procdata->config.current_tab) {
-        case PROCMAN_TAB_SYSINFO:
         case PROCMAN_TAB_PROCESSES:
             gtk_notebook_set_current_page(GTK_NOTEBOOK(notebook), 0);
             break;

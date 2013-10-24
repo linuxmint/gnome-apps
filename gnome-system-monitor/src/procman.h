@@ -65,7 +65,6 @@ static const unsigned MAX_UPDATE_INTERVAL = 100 * 1000;
 
 namespace procman
 {
-    extern const std::string SHOW_SYSTEM_TAB_CMD;
     extern const std::string SHOW_PROCESSES_TAB_CMD;
     extern const std::string SHOW_RESOURCES_TAB_CMD;
     extern const std::string SHOW_FILE_SYSTEMS_TAB_CMD;
@@ -75,7 +74,6 @@ namespace procman
 
 enum ProcmanTab
 {
-    PROCMAN_TAB_SYSINFO,
     PROCMAN_TAB_PROCESSES,
     PROCMAN_TAB_RESOURCES,
     PROCMAN_TAB_DISKS

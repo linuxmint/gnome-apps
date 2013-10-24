@@ -454,10 +454,7 @@ cb_change_current_page (GtkNotebook *nb, gint num, gpointer data)
             procdata->disk_timeout = 0;
         }
     }
-
-    if (num == PROCMAN_TAB_SYSINFO) {
-        procman::build_sysinfo_ui();
-    }
+    
 }
 
 

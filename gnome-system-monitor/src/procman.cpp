@@ -362,7 +362,7 @@ procman_data_new (GSettings *settings)
     pd->config.disks_update_interval = MAX (pd->config.disks_update_interval, 1000);
     pd->config.whose_process = CLAMP (pd->config.whose_process, 0, 2);
     pd->config.current_tab = CLAMP(pd->config.current_tab,
-                                   PROCMAN_TAB_SYSINFO,
+                                   PROCMAN_TAB_PROCESSES,
                                    PROCMAN_TAB_DISKS);
 
     // delayed initialization as SmoothRefresh() needs ProcData
@@ -589,10 +589,7 @@ cb_server (const gchar *msg, gpointer user_data)
 
     procman_debug("cb_server(%s)", msg);
     if (msg != NULL) {
-        if (procman::SHOW_SYSTEM_TAB_CMD == msg) {
-            procman_debug("Changing to PROCMAN_TAB_SYSINFO via bacon message");
-            set_tab(GTK_NOTEBOOK(procdata->notebook), PROCMAN_TAB_SYSINFO, procdata);
-        } else if (procman::SHOW_PROCESSES_TAB_CMD == msg) {
+        if (procman::SHOW_PROCESSES_TAB_CMD == msg) {
             procman_debug("Changing to PROCMAN_TAB_PROCESSES via bacon message");
             set_tab(GTK_NOTEBOOK(procdata->notebook), PROCMAN_TAB_PROCESSES, procdata);
         } else if (procman::SHOW_RESOURCES_TAB_CMD == msg) {
@@ -642,7 +639,6 @@ init_volume_monitor(ProcData *procdata)
 
 namespace procman
 {
-    const std::string SHOW_SYSTEM_TAB_CMD("SHOWSYSTAB");
     const std::string SHOW_PROCESSES_TAB_CMD("SHOWPROCTAB");
     const std::string SHOW_RESOURCES_TAB_CMD("SHOWRESTAB");
     const std::string SHOW_FILE_SYSTEMS_TAB_CMD("SHOWFSTAB");
@@ -691,10 +687,7 @@ main (int argc, char *argv[])
     {
         char *timestamp;
 
-        timestamp = g_strdup_printf ("%" G_GUINT32_FORMAT, startup_timestamp);
-
-        if (option_group.show_system_tab)
-            bacon_message_connection_send(conn, procman::SHOW_SYSTEM_TAB_CMD.c_str());
+        timestamp = g_strdup_printf ("%" G_GUINT32_FORMAT, startup_timestamp);        
 
         if (option_group.show_processes_tab)
             bacon_message_connection_send(conn, procman::SHOW_PROCESSES_TAB_CMD.c_str());
@@ -739,10 +732,7 @@ main (int argc, char *argv[])
 
     g_assert(procdata->app);
 
-    if (option_group.show_system_tab) {
-        procman_debug("Starting with PROCMAN_TAB_SYSINFO by commandline request");
-        set_tab(GTK_NOTEBOOK(procdata->notebook), PROCMAN_TAB_SYSINFO, procdata);
-    } else if (option_group.show_processes_tab) {
+    if (option_group.show_processes_tab) {
         procman_debug("Starting with PROCMAN_TAB_PROCESSES by commandline request");
         set_tab(GTK_NOTEBOOK(procdata->notebook), PROCMAN_TAB_PROCESSES, procdata);
     } else if (option_group.show_resources_tab) {

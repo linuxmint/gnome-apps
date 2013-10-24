@@ -19,32 +19,6 @@
             <property name="hexpand">True</property>
             <property name="vexpand">True</property>
             <child>
-              <object class="GtkBox" id="sysinfo_box">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="hexpand">True</property>
-                <property name="vexpand">True</property>
-                <property name="border_width">12</property>
-                <property name="spacing">12</property>
-                <child>
-                  <placeholder/>
-                </child>
-                <child>
-                  <placeholder/>
-                </child>
-              </object>
-            </child>
-            <child type="tab">
-              <object class="GtkLabel" id="sysinfo_label">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="label" translatable="yes">System</property>
-              </object>
-              <packing>
-                <property name="tab_fill">False</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkBox" id="proc_box">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
@@ -85,12 +59,10 @@
                 <child>
                   <object class="GtkButton" id="endprocessbutton">
                     <property name="label" translatable="yes">End _Process</property>
-                    <property name="use_action_appearance">False</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="halign">end</property>
-                    <property name="use_action_appearance">False</property>
                     <property name="use_underline">True</property>
                   </object>
                   <packing>
@@ -100,9 +72,6 @@
                   </packing>
                 </child>
               </object>
-              <packing>
-                <property name="position">1</property>
-              </packing>
             </child>
             <child type="tab">
               <object class="GtkLabel" id="proc_label">
@@ -111,7 +80,6 @@
                 <property name="label" translatable="yes">Processes</property>
               </object>
               <packing>
-                <property name="position">1</property>
                 <property name="tab_fill">False</property>
               </packing>
             </child>
@@ -496,7 +464,7 @@
                 </child>
               </object>
               <packing>
-                <property name="position">2</property>
+                <property name="position">1</property>
               </packing>
             </child>
             <child type="tab">
@@ -506,7 +474,7 @@
                 <property name="label" translatable="yes">Resources</property>
               </object>
               <packing>
-                <property name="position">2</property>
+                <property name="position">1</property>
                 <property name="tab_fill">False</property>
               </packing>
             </child>
@@ -536,7 +504,7 @@
                 </child>
               </object>
               <packing>
-                <property name="position">3</property>
+                <property name="position">2</property>
               </packing>
             </child>
             <child type="tab">
@@ -546,7 +514,7 @@
                 <property name="label" translatable="yes">File Systems</property>
               </object>
               <packing>
-                <property name="position">3</property>
+                <property name="position">2</property>
                 <property name="tab_fill">False</property>
               </packing>
             </child>

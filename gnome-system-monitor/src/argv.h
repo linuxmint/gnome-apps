@@ -11,7 +11,6 @@ namespace procman
       public:
         OptionGroup();
 
-        bool show_system_tab;
         bool show_processes_tab;
         bool show_resources_tab;
         bool show_file_systems_tab;
