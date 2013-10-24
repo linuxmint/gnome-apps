@@ -74,7 +74,7 @@ public class Calculator : Gtk.Application
         buttons.notify["mode"].connect ((pspec) => { mode_cb (); });
         mode_cb ();
 
-        if (Environment.get_variable("XDG_CURRENT_DESKTOP") == "Unity")
+        if (Environment.get_variable("DESKTOP_SESSION") != "gnome")
         {
             var menubar = new Menu ();
 
