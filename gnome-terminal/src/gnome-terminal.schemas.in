@@ -138,7 +138,7 @@
       <applyto>/apps/gnome-terminal/profiles/Default/default_show_menubar</applyto>
       <owner>gnome-terminal</owner>
       <type>bool</type>
-      <default>true</default>
+      <default>false</default>
       <locale name="C">
          <short>Whether to show menubar in new windows/tabs</short>
          <long>
@@ -268,7 +268,7 @@
       <applyto>/apps/gnome-terminal/profiles/Default/silent_bell</applyto>
       <owner>gnome-terminal</owner>
       <type>bool</type>
-      <default>false</default>
+      <default>true</default>
       <locale name="C">
          <short>Whether to silence terminal bell</short>
          <long>
@@ -589,7 +589,7 @@
       <applyto>/apps/gnome-terminal/profiles/Default/background_type</applyto>
       <owner>gnome-terminal</owner>
       <type>string</type>
-      <default>solid</default>
+      <default>transparent</default>
       <locale name="C">
          <short>Background type</short>
          <long>
@@ -636,7 +636,7 @@
       <applyto>/apps/gnome-terminal/profiles/Default/background_darkness</applyto>
       <owner>gnome-terminal</owner>
       <type>float</type>
-      <default>0.5</default>
+      <default>0.9</default>
       <locale name="C">
          <short>How much to darken the background image</short>
          <long>
