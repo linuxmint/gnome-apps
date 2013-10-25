@@ -12,6 +12,11 @@ X-GNOME-Bugzilla-Component=BugBuddyBugs
 X-GNOME-Bugzilla-Version=@VERSION@
 Categories=GNOME;GTK;Utility;TerminalEmulator;
 StartupNotify=true
-OnlyShowIn=GNOME
+OnlyShowIn=GNOME;Unity;
 _Keywords=Run;
+Actions=New 
 
+[Desktop Action New]
+_Name=New Terminal
+Exec=gnome-terminal
+OnlyShowIn=Unity 
