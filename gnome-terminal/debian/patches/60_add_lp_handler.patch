@@ -1,0 +1,114 @@
+Description: add a handler for launchpad bug URLs.
+Author: Marc Deslauriers <marc.deslauriers@canonical.com>
+Forwarded: yes, https://bugzilla.gnome.org/show_bug.cgi?id=709087
+Bug-Ubuntu: https://bugs.launchpad.net/ubuntu/+source/gnome-terminal/+bug/1232589
+
+Index: gnome-terminal-3.6.1/src/terminal-screen.c
+===================================================================
+--- gnome-terminal-3.6.1.orig/src/terminal-screen.c	2013-09-28 18:16:12.755593307 -0400
++++ gnome-terminal-3.6.1/src/terminal-screen.c	2013-09-28 18:16:12.747593306 -0400
+@@ -168,6 +168,7 @@
+   { "(?:callto:|h323:|sip:)" USERCHARS_CLASS "[" USERCHARS ".]*(?:" PORT "/[a-z0-9]+)?\\@" HOST, FLAVOR_VOIP_CALL, G_REGEX_CASELESS  },
+   { "(?:mailto:)?" USERCHARS_CLASS "[" USERCHARS ".]*\\@" HOSTCHARS_CLASS "+\\." HOST, FLAVOR_EMAIL, G_REGEX_CASELESS  },
+   { "(?:news:|man:|info:)[[:alnum:]\\Q^_{|}~!\"#$%&'()*+,./;:=?`\\E]+", FLAVOR_AS_IS, G_REGEX_CASELESS  },
++  { "(?:lp: #)[[:digit:]]+", FLAVOR_LP, G_REGEX_CASELESS  },
+ };
+ 
+ static GRegex **url_regexes;
+Index: gnome-terminal-3.6.1/src/terminal-screen.h
+===================================================================
+--- gnome-terminal-3.6.1.orig/src/terminal-screen.h	2013-09-28 18:16:12.755593307 -0400
++++ gnome-terminal-3.6.1/src/terminal-screen.h	2013-09-28 18:16:12.747593306 -0400
+@@ -31,7 +31,8 @@
+   FLAVOR_AS_IS,
+   FLAVOR_DEFAULT_TO_HTTP,
+   FLAVOR_VOIP_CALL,
+-  FLAVOR_EMAIL
++  FLAVOR_EMAIL,
++  FLAVOR_LP
+ } TerminalURLFlavour;
+ 
+ /* Forward decls */
+Index: gnome-terminal-3.6.1/src/terminal-util.c
+===================================================================
+--- gnome-terminal-3.6.1.orig/src/terminal-util.c	2013-09-28 18:16:12.755593307 -0400
++++ gnome-terminal-3.6.1/src/terminal-util.c	2013-09-28 18:38:37.955627750 -0400
+@@ -219,6 +219,9 @@
+     case FLAVOR_AS_IS:
+       uri = g_strdup (orig_url);
+       break;
++    case FLAVOR_LP:
++      uri = terminal_util_get_lp_url (orig_url);
++      break;
+     default:
+       uri = NULL;
+       g_assert_not_reached ();
+@@ -236,6 +239,20 @@
+   g_free (uri);
+ }
+ 
++char *
++terminal_util_get_lp_url (const char *orig_url)
++{
++  char *uri;
++  const char *bugnum = orig_url;
++
++  while (*bugnum && ! g_ascii_isdigit (*bugnum))
++      bugnum++;
++
++  uri = g_strdup_printf ("https://bugs.launchpad.net/bugs/%s", bugnum);
++
++  return uri;
++}
++
+ /**
+  * terminal_util_resolve_relative_path:
+  * @path:
+Index: gnome-terminal-3.6.1/src/terminal-window.c
+===================================================================
+--- gnome-terminal-3.6.1.orig/src/terminal-window.c	2013-09-28 18:16:12.755593307 -0400
++++ gnome-terminal-3.6.1/src/terminal-window.c	2013-09-28 18:16:12.751593306 -0400
+@@ -1228,7 +1228,18 @@
+     return;
+ 
+   clipboard = gtk_widget_get_clipboard (GTK_WIDGET (window), GDK_SELECTION_CLIPBOARD);
+-  gtk_clipboard_set_text (clipboard, info->string, -1);
++
++  if (info->flavour == FLAVOR_LP)
++    {
++      char *uri;
++      uri = terminal_util_get_lp_url (info->string);
++      gtk_clipboard_set_text (clipboard, uri, -1);
++      g_free (uri);
++    }
++  else
++    {
++      gtk_clipboard_set_text (clipboard, info->string, -1);
++    }
+ }
+ 
+ static void
+@@ -1328,7 +1339,9 @@
+ 
+   can_paste = targets != NULL && gtk_targets_include_text (targets, n_targets);
+   can_paste_uris = targets != NULL && gtk_targets_include_uri (targets, n_targets);
+-  show_link = info->string != NULL && (info->flavour == FLAVOR_AS_IS || info->flavour == FLAVOR_DEFAULT_TO_HTTP);
++  show_link = info->string != NULL && (info->flavour == FLAVOR_AS_IS ||
++                                       info->flavour == FLAVOR_DEFAULT_TO_HTTP ||
++                                       info->flavour == FLAVOR_LP);
+   show_email_link = info->string != NULL && info->flavour == FLAVOR_EMAIL;
+   show_call_link = info->string != NULL && info->flavour == FLAVOR_VOIP_CALL;
+ 
+Index: gnome-terminal-3.6.1/src/terminal-util.h
+===================================================================
+--- gnome-terminal-3.6.1.orig/src/terminal-util.h	2013-09-28 18:16:12.755593307 -0400
++++ gnome-terminal-3.6.1/src/terminal-util.h	2013-09-28 18:16:12.751593306 -0400
+@@ -51,6 +51,8 @@
+                              TerminalURLFlavour flavor,
+                              guint32 user_time);
+ 
++char *terminal_util_get_lp_url (const char *orig_url);
++
+ char *terminal_util_resolve_relative_path (const char *path,
+                                            const char *relative_path);
+ 

@@ -1,0 +1,25 @@
+TODO:
+
+default size width, heigth -> "(ii)" type?
+
+
+general gsettings stuff:
+
+- enum/flags should have <summary>/<description> support, for use in dconf-editor
+- g_settings_child_get (), child_set(), "child-changed(child name, child key)" notification
+- proxy settings improvements (common scheme, etc)
+
+
+DONE
+
+scrollbar position -> gtk scrolled window position type
+colours -> string "rgb (r,g,b)" or type "(ddd)" or "(dddd)" like GdkRGBA ?
+colour palette type "as" or "a(ddd)" or "a(dddd)" ?
+silent bell -> audible bell (invert) ?
+
+
+DONE BY REMOVAL
+
+background pixbuf -> make it URI ("s") not path ("ay")
+background 'saturation' -> 1.0 - x ? (invert)
+opacity -> double
