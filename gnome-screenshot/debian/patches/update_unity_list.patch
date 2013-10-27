@@ -1,0 +1,22 @@
+Index: gnome-screenshot-3.8.2/src/gnome-screenshot.desktop.in
+===================================================================
+--- gnome-screenshot-3.8.2.orig/src/gnome-screenshot.desktop.in	2013-05-15 11:56:55.327082791 +0200
++++ gnome-screenshot-3.8.2/src/gnome-screenshot.desktop.in	2013-05-15 11:56:55.323082791 +0200
+@@ -12,7 +12,7 @@
+ X-GNOME-Bugzilla-Bugzilla=GNOME
+ X-GNOME-Bugzilla-Product=gnome-utils
+ X-GNOME-Bugzilla-Component=screenshot
+-Actions=Screen;Window;
++Actions=Screen;Window;Area
+ 
+ [Desktop Action Screen]
+ _Name=Take a Screenshot of the Whole Screen
+@@ -23,3 +23,8 @@
+ _Name=Take a Screenshot of the Current Window
+ Exec=gnome-screenshot -w
+ OnlyShowIn=Unity;
++
++[Desktop Action Area]
++_Name=Take a Screenshot of a Selected Area
++Exec=gnome-screenshot -a
++OnlyShowIn=Unity;

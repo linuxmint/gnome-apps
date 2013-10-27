@@ -1,0 +1,22 @@
+Index: gnome-screenshot-3.8.2/src/screenshot-utils.c
+===================================================================
+--- gnome-screenshot-3.8.2.orig/src/screenshot-utils.c	2013-05-15 11:56:51.619082901 +0200
++++ gnome-screenshot-3.8.2/src/screenshot-utils.c	2013-05-15 11:56:51.615082901 +0200
+@@ -630,6 +630,9 @@
+                                      filename);
+     }
+ 
++  if (!g_strcmp0 (g_getenv ("XDG_CURRENT_DESKTOP"), "Unity"))
++      screenshot = screenshot_fallback_get_pixbuf(rectangle);
++  else {
+   connection = g_application_get_dbus_connection (g_application_get_default ());
+   g_dbus_connection_call_sync (connection,
+                                "org.gnome.Shell.Screenshot",
+@@ -659,6 +662,7 @@
+ 
+       screenshot = screenshot_fallback_get_pixbuf (rectangle);
+     }
++  }
+ 
+   g_free (path);
+   g_free (tmpname);

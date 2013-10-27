@@ -1,0 +1,22 @@
+Index: gnome-screenshot-3.5.2/src/screenshot-application.c
+===================================================================
+--- gnome-screenshot-3.5.2.orig/src/screenshot-application.c	2012-06-04 15:35:08.000000000 +0100
++++ gnome-screenshot-3.5.2/src/screenshot-application.c	2012-06-04 17:09:44.410366278 +0100
+@@ -127,7 +127,7 @@
+ save_pixbuf_handle_error (ScreenshotApplication *self,
+                           GError *error)
+ {
+-  if (screenshot_config->interactive)
++  if (!g_strcmp0 (g_getenv ("XDG_CURRENT_DESKTOP"), "Unity") || screenshot_config->interactive)
+     {
+       ScreenshotDialog *dialog = self->priv->dialog;
+ 
+@@ -348,7 +348,7 @@
+ 
+   screenshot_play_sound_effect ("screen-capture", _("Screenshot taken"));
+ 
+-  if (screenshot_config->interactive)
++  if (!g_strcmp0 (g_getenv ("XDG_CURRENT_DESKTOP"), "Unity") || screenshot_config->interactive)
+     {
+       self->priv->dialog = screenshot_dialog_new (self->priv->screenshot, self->priv->save_uri);
+       g_signal_connect (self->priv->dialog->dialog,
