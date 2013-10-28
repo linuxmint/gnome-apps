@@ -124,12 +124,6 @@ interactive_dialog_key_press_cb (GtkWidget *widget,
                                  GdkEventKey *event,
                                  gpointer user_data)
 {
-  if (event->keyval == GDK_KEY_F1)
-    {
-      screenshot_display_help (GTK_WINDOW (widget));
-      return TRUE;
-    }
-
   return FALSE;
 }
 
@@ -449,9 +443,6 @@ screenshot_interactive_dialog_new (void)
   g_object_get (settings,
                 "gtk-shell-shows-app-menu", &shows_app_menu,
                 NULL);
-  if (!shows_app_menu)
-    gtk_dialog_add_button (GTK_DIALOG (dialog),
-                           GTK_STOCK_HELP, GTK_RESPONSE_HELP);
 
   gtk_dialog_set_default_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK);
 
