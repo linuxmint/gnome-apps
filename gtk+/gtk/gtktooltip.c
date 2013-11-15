@@ -1089,7 +1089,6 @@ gtk_tooltip_position (GtkTooltip *tooltip,
 #define MAX_DISTANCE 32
 
   gtk_widget_realize (GTK_WIDGET (tooltip->current_window));
-  gtk_widget_set_visible (GTK_WIDGET (tooltip->current_window), TRUE);
 
   tooltip->tooltip_widget = new_tooltip_widget;
 
@@ -1097,6 +1096,19 @@ gtk_tooltip_position (GtkTooltip *tooltip,
 
   width = gtk_widget_get_allocated_width (GTK_WIDGET (tooltip->current_window));
   height = gtk_widget_get_allocated_height (GTK_WIDGET (tooltip->current_window));
+  /* if window was hidden, it's allocation was reset to { -1, -1, 1, 1 } and
+   * using such invalid width/height might lead to wrong placement.
+   * In such a case, get the natural size instead to perform calculation.
+   * See bug #698730 */
+  if (width == 1 && height == 1)
+    {
+      GtkRequisition requisition;
+
+      gtk_widget_get_preferred_size (GTK_WIDGET (tooltip->current_window),
+              NULL, &requisition);
+      width = requisition.width;
+      height = requisition.height;
+    }
 
   monitor_num = gdk_screen_get_monitor_at_point (screen,
                                                  tooltip->last_x,
