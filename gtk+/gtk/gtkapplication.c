@@ -47,8 +47,6 @@
 #include <gdk/x11/gdkx.h>
 #endif
 
-extern void _gtk_accessibility_shutdown (void);
-
 /**
  * SECTION:gtkapplication
  * @title: GtkApplication
@@ -425,15 +423,11 @@ gtk_application_shutdown (GApplication *application)
   gtk_application_shutdown_quartz (GTK_APPLICATION (application));
 #endif
 
-  /* Keep this section in sync with gtk_main() */
-
   /* Try storing all clipboard data we have */
   _gtk_clipboard_store_all ();
 
   /* Synchronize the recent manager singleton */
   _gtk_recent_manager_sync ();
-
-  _gtk_accessibility_shutdown ();
 
   G_APPLICATION_CLASS (gtk_application_parent_class)
     ->shutdown (application);

@@ -2208,6 +2208,19 @@ cups_create_printer (GtkPrintBackendCups *cups_backend,
 		   &port,
 		   resource, sizeof (resource));
 
+  if (strncmp (method, "dnssd", 5) == 0)
+    {
+      _httpResolveURI(cups_printer->printer_uri,
+		      uri, sizeof(uri), 0, NULL, NULL);
+      httpSeparateURI (HTTP_URI_CODING_ALL,
+		       uri,
+		       method, sizeof (method),
+		       username, sizeof (username),
+		       hostname, sizeof (hostname),
+		       &port,
+		       resource, sizeof (resource));
+    }
+
   if (strncmp (resource, "/printers/", 10) == 0)
     {
       cups_printer->ppd_name = g_strdup (resource + 10);

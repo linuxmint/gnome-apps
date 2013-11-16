@@ -461,6 +461,7 @@ struct _GtkTreeViewPrivate
 
   guint fixed_height_mode : 1;
   guint fixed_height_check : 1;
+  guint ubuntu_almost_fixed_height_mode : 1;
 
   guint activate_on_single_click : 1;
   guint reorderable : 1;
@@ -550,6 +551,7 @@ enum {
   PROP_ENABLE_SEARCH,
   PROP_SEARCH_COLUMN,
   PROP_FIXED_HEIGHT_MODE,
+  PROP_UBUNTU_ALMOST_FIXED_HEIGHT_MODE,
   PROP_HOVER_SELECTION,
   PROP_HOVER_EXPAND,
   PROP_SHOW_EXPANDERS,
@@ -1066,6 +1068,15 @@ gtk_tree_view_class_init (GtkTreeViewClass *class)
                                      g_param_spec_boolean ("fixed-height-mode",
                                                            P_("Fixed Height Mode"),
                                                            P_("Speeds up GtkTreeView by assuming that all rows have the same height"),
+                                                           FALSE,
+                                                           GTK_PARAM_READWRITE));
+
+    /* Private ubuntu extension to fix bugzilla bug #607447 */
+    g_object_class_install_property (o_class,
+                                     PROP_UBUNTU_ALMOST_FIXED_HEIGHT_MODE,
+                                     g_param_spec_boolean ("ubuntu-almost-fixed-height-mode",
+                                                           "Private Ubuntu extension",
+							   "Private Ubuntu extension",
                                                            FALSE,
                                                            GTK_PARAM_READWRITE));
     
@@ -1751,6 +1762,7 @@ gtk_tree_view_init (GtkTreeView *tree_view)
   tree_view->priv->fixed_height = -1;
   tree_view->priv->fixed_height_mode = FALSE;
   tree_view->priv->fixed_height_check = 0;
+  tree_view->priv->ubuntu_almost_fixed_height_mode = FALSE;
   tree_view->priv->selection = _gtk_tree_selection_new_with_tree_view (tree_view);
   tree_view->priv->enable_search = TRUE;
   tree_view->priv->search_column = -1;
@@ -1843,6 +1855,9 @@ gtk_tree_view_set_property (GObject         *object,
       break;
     case PROP_FIXED_HEIGHT_MODE:
       gtk_tree_view_set_fixed_height_mode (tree_view, g_value_get_boolean (value));
+      break;
+    case PROP_UBUNTU_ALMOST_FIXED_HEIGHT_MODE:
+      tree_view->priv->ubuntu_almost_fixed_height_mode = g_value_get_boolean (value);
       break;
     case PROP_HOVER_SELECTION:
       tree_view->priv->hover_selection = g_value_get_boolean (value);
@@ -8738,7 +8753,15 @@ gtk_tree_view_row_changed (GtkTreeModel *model,
 
   _gtk_tree_view_accessible_changed (tree_view, tree, node);
 
-  if (tree_view->priv->fixed_height_mode
+  if (tree_view->priv->ubuntu_almost_fixed_height_mode
+      && tree_view->priv->fixed_height >= 0)
+    {
+      _gtk_rbtree_node_mark_invalid (tree, node);
+      validate_visible_area (tree_view);
+      if (gtk_widget_get_realized (GTK_WIDGET (tree_view)))
+	gtk_tree_view_node_queue_redraw (tree_view, tree, node);
+    }
+  else if (tree_view->priv->fixed_height_mode
       && tree_view->priv->fixed_height >= 0)
     {
       _gtk_rbtree_node_set_height (tree, node, tree_view->priv->fixed_height);

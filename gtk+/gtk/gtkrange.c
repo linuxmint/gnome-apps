@@ -4174,6 +4174,26 @@ _gtk_range_get_has_origin (GtkRange *range)
   return range->priv->has_origin;
 }
 
+/**
+ * gtk_range_get_event_window:
+ * @range: a #GtkRange
+ *
+ * Returns the range's event window if it is realized, %NULL otherwise.
+ * This function should be rarely needed.
+ *
+ * Return value: (transfer none): @range's event window.
+ *
+ * Since: 2.24
+ */
+GdkWindow*
+gtk_range_get_event_window (GtkRange *range)
+{
+  g_return_val_if_fail (GTK_IS_RANGE (range), NULL);
+  GtkRangePrivate *priv = range->priv;
+
+  return priv->event_window;
+}
+
 void
 _gtk_range_set_stop_values (GtkRange *range,
                             gdouble  *values,

@@ -354,6 +354,7 @@ struct _GtkUIManagerPrivate
   GList *action_groups;
 
   guint last_merge_id;
+  guint last_update_id;
 
   guint update_tag;  
 
@@ -2529,6 +2530,7 @@ update_node (GtkUIManager *manager,
   GtkAction *action;
   const gchar *action_name;
   NodeUIReference *ref;
+  guint update_id;
   
 #ifdef DEBUG_UI_MANAGER
   GList *tmp;
@@ -2541,6 +2543,8 @@ update_node (GtkUIManager *manager,
   
   if (!info->dirty)
     return;
+
+  update_id = manager->private_data->last_update_id;
 
   if (info->type == NODE_TYPE_POPUP)
     {
@@ -3049,6 +3053,8 @@ update_node (GtkUIManager *manager,
       current = child;
       child = current->next;
       update_node (manager, current, in_popup, popup_accels);
+      if (manager->private_data->last_update_id != update_id)
+        return; /* stop now if we have started a new update */
     }
   
   if (info->proxy) 
@@ -3064,6 +3070,7 @@ update_node (GtkUIManager *manager,
   /* handle cleanup of dead nodes */
   if (node->children == NULL && info->uifiles == NULL)
     {
+      g_node_unlink (node);
       if (info->proxy)
 	gtk_widget_destroy (info->proxy);
       if (info->extra)
@@ -3090,6 +3097,7 @@ do_updates (GtkUIManager *manager)
    *    the proxy is reconnected to the new action (or a new proxy widget
    *    is created and added to the parent container).
    */
+  manager->private_data->last_update_id++;
   update_node (manager, manager->private_data->root_node, FALSE, FALSE);
 
   manager->private_data->update_tag = 0;

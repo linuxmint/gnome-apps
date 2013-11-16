@@ -197,14 +197,10 @@ test_add_remove (GtkWidget *widget)
       g_assert_cmpint (add_data.count, ==, i);
       g_assert_cmpint (remove_data.count, ==, j + 1);
       g_assert_cmpint (remove_data.n_children, ==, step_children + i - j - 1);
-      if (parent_data[j].count == 2)
-        g_assert (parent_data[j].parent == NULL);
-      else if (!GTK_IS_ENTRY (widget))
+      if (!GTK_IS_ENTRY (widget))
         {
-          AtkStateSet *set;
-          set = atk_object_ref_state_set (ATK_OBJECT (parent_data[j].parent));
-          g_assert (atk_state_set_contains_state (set, ATK_STATE_DEFUNCT));
-          g_object_unref (set);
+          g_assert_cmpint (parent_data[j].count, ==, 2);
+          g_assert (parent_data[j].parent == NULL);
         }
     }
 

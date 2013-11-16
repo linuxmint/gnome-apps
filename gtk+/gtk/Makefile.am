@@ -175,6 +175,7 @@ deprecated_private_h_sources =			\
 
 gtk_public_h_sources = 		\
 	gtk.h			\
+	ubuntu-private.h	\
 	gtkx.h			\
 	gtk-a11y.h		\
 	gtkaboutdialog.h	\
@@ -277,6 +278,7 @@ gtk_public_h_sources = 		\
 	gtklockbutton.h		\
 	gtkmain.h		\
 	gtkmenu.h		\
+	ubuntumenuitemfactory.h	\
 	gtkmenubar.h		\
 	gtkmenubutton.h		\
 	gtkmenuitem.h		\
@@ -765,6 +767,7 @@ gtk_base_c_sources = 		\
 	gtkmisc.c		\
 	gtkmnemonichash.c	\
 	gtkmodelmenu.c		\
+	ubuntumenuitemfactory.c	\
 	gtkmodelmenuitem.c	\
 	gtkmodifierstyle.c	\
 	gtkmodules.c		\

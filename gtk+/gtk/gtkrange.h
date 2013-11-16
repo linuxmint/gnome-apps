@@ -143,6 +143,7 @@ gdouble            gtk_range_get_fill_level                (GtkRange      *range
 void               gtk_range_set_round_digits              (GtkRange      *range,
                                                             gint           round_digits);
 gint                gtk_range_get_round_digits              (GtkRange      *range);
+GdkWindow*         gtk_range_get_event_window              (GtkRange      *range);
 
 /* internal API */
 gdouble            _gtk_range_get_wheel_delta              (GtkRange       *range,

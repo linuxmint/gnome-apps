@@ -50,7 +50,7 @@
  * use filename matching instead. This doesn't use the content of the
  * file however.
  */
-#undef FTS_MATCHING
+#define FTS_MATCHING
 
 /*
  * GtkSearchEngineTracker object

@@ -173,8 +173,8 @@ html-build.stamp: sgml.stamp $(DOC_MAIN_SGML_FILE) $(content_files)
 	  if test -f $(abs_srcdir)/$$file ; then \
 	    cp $(abs_srcdir)/$$file $(abs_builddir)/html; \
 	  fi; \
-	  if test -f $(abs_builddir)/$$file ; then \
-	    cp $(abs_builddir)/$$file $(abs_builddir)/html; \
+	  if test -f $$file ; then \
+	    cp $$file $(abs_builddir)/html; \
 	  fi; \
 	done;
 	$(GTK_DOC_V_XREF)gtkdoc-fixxref --module=$(DOC_MODULE) --module-dir=html --html-dir=$(HTML_DIR) $(FIXXREF_OPTIONS)

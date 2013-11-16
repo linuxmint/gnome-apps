@@ -2218,6 +2218,7 @@ gtk_radio_tool_button_new_with_stock_from_widget
 gtk_radio_tool_button_set_group
 gtk_range_accessible_get_type
 gtk_range_get_adjustment
+gtk_range_get_event_window
 gtk_range_get_fill_level
 gtk_range_get_flippable
 gtk_range_get_inverted
@@ -4055,3 +4056,5 @@ gtk_window_unfullscreen
 gtk_window_unmaximize
 gtk_window_unstick
 gtk_wrap_mode_get_type
+ubuntu_menu_item_factory_create_menu_item
+ubuntu_menu_item_factory_get_type

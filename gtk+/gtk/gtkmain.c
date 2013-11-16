@@ -1166,15 +1166,11 @@ gtk_main (void)
 
   if (gtk_main_loop_level == 0)
     {
-      /* Keep this section in sync with gtk_application_shutdown() */
-
       /* Try storing all clipboard data we have */
       _gtk_clipboard_store_all ();
 
       /* Synchronize the recent manager singleton */
       _gtk_recent_manager_sync ();
-
-      _gtk_accessibility_shutdown ();
     }
 }
 
@@ -2039,8 +2035,13 @@ gtk_grab_add (GtkWidget *widget)
 {
   GtkWindowGroup *group;
   GtkWidget *old_grab_widget;
+  GtkWidget *toplevel;
 
   g_return_if_fail (widget != NULL);
+
+  toplevel = gtk_widget_get_toplevel (widget);
+  if (toplevel && gdk_window_get_window_type (gtk_widget_get_window (toplevel)) == GDK_WINDOW_OFFSCREEN)
+    return;
 
   if (!gtk_widget_has_grab (widget) && gtk_widget_is_sensitive (widget))
     {
@@ -2127,9 +2128,14 @@ gtk_device_grab_add (GtkWidget *widget,
 {
   GtkWindowGroup *group;
   GtkWidget *old_grab_widget;
+  GdkWindow *toplevel;
 
   g_return_if_fail (GTK_IS_WIDGET (widget));
   g_return_if_fail (GDK_IS_DEVICE (device));
+  
+  toplevel = gdk_window_get_toplevel (gtk_widget_get_window (widget));
+  if (toplevel && gdk_window_get_window_type (toplevel) == GDK_WINDOW_OFFSCREEN)
+    return;
 
   group = gtk_main_get_window_group (widget);
   old_grab_widget = gtk_window_group_get_current_device_grab (group, device);
