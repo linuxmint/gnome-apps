@@ -1,0 +1,26 @@
+From fd581236d2ed099f47789de80dc1924c439fc4f0 Mon Sep 17 00:00:00 2001
+From: Cosimo Cecchi <cosimoc@gnome.org>
+Date: Tue, 17 Sep 2013 18:00:59 +0000
+Subject: Revert "appchooserwidget: check for g_app_info_should_show()"
+
+This reverts commit 84922d331768ba9046d9737dbe66468ac45d41f2.
+
+https://bugzilla.gnome.org/show_bug.cgi?id=702681
+---
+(limited to 'gtk/gtkappchooserwidget.c')
+
+diff --git a/gtk/gtkappchooserwidget.c b/gtk/gtkappchooserwidget.c
+index 1db2d58..d7cc68b 100644
+--- a/gtk/gtkappchooserwidget.c
++++ b/gtk/gtkappchooserwidget.c
+@@ -539,9 +539,6 @@ gtk_app_chooser_widget_add_section (GtkAppChooserWidget *self,
+           !g_app_info_supports_files (app))
+         continue;
+ 
+-      if (!g_app_info_should_show (app))
+-        continue;
+-
+       if (g_list_find_custom (exclude_apps, app,
+                               (GCompareFunc) compare_apps_func))
+         continue;
+

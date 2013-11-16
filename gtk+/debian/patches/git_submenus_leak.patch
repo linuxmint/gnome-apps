@@ -1,0 +1,26 @@
+From 37675d8227e1ada1c99e546d57b9e622bbda3d57 Mon Sep 17 00:00:00 2001
+From: Lars Uebernickel <lars@uebernic.de>
+Date: Wed, 23 Oct 2013 20:42:16 +0000
+Subject: GtkModelMenu: don't leak submenus
+
+gtk_container_remove_child() is not enough to break the reference cycle
+between the removed menu item and the submenu that is attached to it.
+Use gtk_widget_destroy() instead.
+
+https://bugzilla.gnome.org/show_bug.cgi?id=710754
+---
+diff --git a/gtk/gtkmodelmenu.c b/gtk/gtkmodelmenu.c
+index 0c3cc5e..af59a05 100644
+--- a/gtk/gtkmodelmenu.c
++++ b/gtk/gtkmodelmenu.c
+@@ -194,7 +194,7 @@ gtk_model_menu_binding_populate (GtkModelMenuBinding *binding)
+   children = gtk_container_get_children (GTK_CONTAINER (binding->shell));
+   while (children)
+     {
+-      gtk_container_remove (GTK_CONTAINER (binding->shell), children->data);
++      gtk_widget_destroy (children->data);
+       children = g_list_delete_link (children, children);
+     }
+ 
+--
+cgit v0.9.2
