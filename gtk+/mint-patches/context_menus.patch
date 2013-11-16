@@ -1,0 +1,80 @@
+From 58a10c8fe0a781215bce4b2d43413495a244963c Mon Sep 17 00:00:00 2001
+From: Michael Webster <miketwebster@gmail.com>
+Date: Sat, 9 Nov 2013 22:23:52 -0500
+Subject: [PATCH] GtkMenu: Add "initial-menu-shift" style property for popup
+ menus, to enable the default menu position to be moved out from under the
+ pointer.
+
+Prior to Gtk 3.8, this shift was unintentionally provided by
+GtkMenu-horizontal-padding and GtkMenu-vertical-padding.  It was used
+by some themes to prevent unintentional context menu item activation.
+
+https://bugzilla.gnome.org/show_bug.cgi?id=711760
+---
+ gtk/gtkmenu.c | 23 +++++++++++++++++++----
+ 1 file changed, 19 insertions(+), 4 deletions(-)
+
+diff --git a/gtk/gtkmenu.c b/gtk/gtkmenu.c
+index 6754565..8dcc55d 100644
+--- a/gtk/gtkmenu.c
++++ b/gtk/gtkmenu.c
+@@ -714,6 +714,15 @@ gtk_menu_class_init (GtkMenuClass *class)
+                                                              G_PARAM_DEPRECATED));
+ 
+   gtk_widget_class_install_style_property (widget_class,
++                                           g_param_spec_int ("initial-menu-shift",
++                                                             P_("Initial Popup Menu Shift"),
++                                                             P_("For popup menus, shift their position this number of pixels out from under the pointer"),
++                                                             G_MININT,
++                                                             G_MAXINT,
++                                                             0,
++                                                             GTK_PARAM_READABLE));
++
++  gtk_widget_class_install_style_property (widget_class,
+                                            g_param_spec_int ("vertical-offset",
+                                                              P_("Vertical Offset"),
+                                                              P_("When the menu is a submenu, position it this number of pixels offset vertically"),
+@@ -4485,7 +4494,13 @@ gtk_menu_position (GtkMenu  *menu,
+       gint space_left, space_right, space_above, space_below;
+       gint needed_width;
+       gint needed_height;
++      gint initial_menu_shift;
+       GtkBorder padding;
++
++      gtk_widget_style_get (GTK_WIDGET (menu),
++                            "initial-menu-shift", &initial_menu_shift,
++                            NULL);
++
+       gboolean rtl = (gtk_widget_get_direction (widget) == GTK_TEXT_DIR_RTL);
+ 
+       get_menu_padding (widget, &padding);
+@@ -4529,12 +4544,12 @@ gtk_menu_position (GtkMenu  *menu,
+               (!rtl && needed_width >  space_right))
+             {
+               /* position left */
+-              x = x + padding.left - requisition.width + 1;
++              x = x + padding.left - requisition.width + 1 - initial_menu_shift;
+             }
+           else
+             {
+               /* position right */
+-              x = x - padding.right;
++              x = x - padding.right + initial_menu_shift;
+             }
+ 
+           /* x is clamped on-screen further down */
+@@ -4580,9 +4595,9 @@ gtk_menu_position (GtkMenu  *menu,
+           needed_height <= space_below)
+         {
+           if (needed_height <= space_below)
+-            y = y - padding.top;
++            y = y - padding.top + initial_menu_shift;
+           else
+-            y = y + padding.bottom - requisition.height + 1;
++            y = y + padding.bottom - requisition.height + 1 - initial_menu_shift;
+ 
+           y = CLAMP (y, monitor.y,
+                      monitor.y + monitor.height - requisition.height);
+-- 
+1.8.3.2
+

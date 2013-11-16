@@ -1,0 +1,55 @@
+From d5a3eca796298953e39caa9cae0d620460cfddd5 Mon Sep 17 00:00:00 2001
+From: Olivier Brunel <jjk@jjacky.com>
+Date: Fri, 15 Nov 2013 22:12:25 +0100
+Subject: [PATCH] tooltip: Fix possibly briefly appearing at 0x0
+
+When showing a tooltip on the edge of a monitor, the tooltip could be wrongly
+placed and be shown going from one monitor to the next.
+
+This happened because the allocation for current_window might have been reset
+when hidden, and both width & height were set to 1, hence wrong calculations.
+
+Making the window visible could lead to tooltip briefly appearing at 0x0, so
+instead the natural size is requested & used.
+
+https://bugzilla.gnome.org/show_bug.cgi?id=698730
+Signed-off-by: Olivier Brunel <jjk@jjacky.com>
+---
+ gtk/gtktooltip.c | 14 +++++++++++++-
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+
+diff --git a/gtk/gtktooltip.c b/gtk/gtktooltip.c
+index 12e49ae..37bc9ae 100644
+--- a/gtk/gtktooltip.c
++++ b/gtk/gtktooltip.c
+@@ -1096,7 +1096,6 @@ gtk_tooltip_position (GtkTooltip *tooltip,
+ #define MAX_DISTANCE 32
+ 
+   gtk_widget_realize (GTK_WIDGET (tooltip->current_window));
+-  gtk_widget_set_visible (GTK_WIDGET (tooltip->current_window), TRUE);
+ 
+   tooltip->tooltip_widget = new_tooltip_widget;
+ 
+@@ -1104,6 +1103,19 @@ gtk_tooltip_position (GtkTooltip *tooltip,
+ 
+   width = gtk_widget_get_allocated_width (GTK_WIDGET (tooltip->current_window));
+   height = gtk_widget_get_allocated_height (GTK_WIDGET (tooltip->current_window));
++  /* if window was hidden, it's allocation was reset to { -1, -1, 1, 1 } and
++   * using such invalid width/height might lead to wrong placement.
++   * In such a case, get the natural size instead to perform calculation.
++   * See bug #698730 */
++  if (width == 1 && height == 1)
++    {
++      GtkRequisition requisition;
++
++      gtk_widget_get_preferred_size (GTK_WIDGET (tooltip->current_window),
++              NULL, &requisition);
++      width = requisition.width;
++      height = requisition.height;
++    }
+ 
+   monitor_num = gdk_screen_get_monitor_at_point (screen,
+                                                  tooltip->last_x,
+-- 
+1.8.4.2
+
