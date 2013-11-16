@@ -11,13 +11,13 @@ by some themes to prevent unintentional context menu item activation.
 
 https://bugzilla.gnome.org/show_bug.cgi?id=711760
 ---
- gtk/gtkmenu.c | 23 +++++++++++++++++++----
+ gtk+/gtk/gtkmenu.c | 23 +++++++++++++++++++----
  1 file changed, 19 insertions(+), 4 deletions(-)
 
-diff --git a/gtk/gtkmenu.c b/gtk/gtkmenu.c
+diff --git a/gtk+/gtk/gtkmenu.c b/gtk+/gtk/gtkmenu.c
 index 6754565..8dcc55d 100644
---- a/gtk/gtkmenu.c
-+++ b/gtk/gtkmenu.c
+--- a/gtk+/gtk/gtkmenu.c
++++ b/gtk+/gtk/gtkmenu.c
 @@ -714,6 +714,15 @@ gtk_menu_class_init (GtkMenuClass *class)
                                                               G_PARAM_DEPRECATED));
  

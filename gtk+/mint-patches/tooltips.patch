@@ -15,13 +15,13 @@ instead the natural size is requested & used.
 https://bugzilla.gnome.org/show_bug.cgi?id=698730
 Signed-off-by: Olivier Brunel <jjk@jjacky.com>
 ---
- gtk/gtktooltip.c | 14 +++++++++++++-
+ gtk+/gtk/gtktooltip.c | 14 +++++++++++++-
  1 file changed, 13 insertions(+), 1 deletion(-)
 
-diff --git a/gtk/gtktooltip.c b/gtk/gtktooltip.c
+diff --git a/gtk+/gtk/gtktooltip.c b/gtk+/gtk/gtktooltip.c
 index 12e49ae..37bc9ae 100644
---- a/gtk/gtktooltip.c
-+++ b/gtk/gtktooltip.c
+--- a/gtk+/gtk/gtktooltip.c
++++ b/gtk+/gtk/gtktooltip.c
 @@ -1096,7 +1096,6 @@ gtk_tooltip_position (GtkTooltip *tooltip,
  #define MAX_DISTANCE 32
  
