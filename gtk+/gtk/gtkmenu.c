@@ -701,15 +701,6 @@ gtk_menu_class_init (GtkMenuClass *class)
                                                              G_PARAM_DEPRECATED));
 
   gtk_widget_class_install_style_property (widget_class,
-                                           g_param_spec_int ("initial-menu-shift",
-                                                             P_("Initial Popup Menu Shift"),
-                                                             P_("For popup menus, shift their position this number of pixels out from under the pointer"),
-                                                             G_MININT,
-                                                             G_MAXINT,
-                                                             0,
-                                                             GTK_PARAM_READABLE));
-
-  gtk_widget_class_install_style_property (widget_class,
                                            g_param_spec_int ("vertical-offset",
                                                              P_("Vertical Offset"),
                                                              P_("When the menu is a submenu, position it this number of pixels offset vertically"),
@@ -4622,10 +4613,6 @@ gtk_menu_position (GtkMenu  *menu,
       gint needed_height;
       gint initial_menu_shift;
       GtkBorder padding;
-
-      gtk_widget_style_get (GTK_WIDGET (menu),
-                            "initial-menu-shift", &initial_menu_shift,
-                            NULL);
 
       initial_menu_shift = 2;  // hardcode this so all themes work ok
 
