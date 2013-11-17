@@ -4627,6 +4627,8 @@ gtk_menu_position (GtkMenu  *menu,
                             "initial-menu-shift", &initial_menu_shift,
                             NULL);
 
+      initial_menu_shift = 2;  // hardcode this so all themes work ok
+
       gboolean rtl = (gtk_widget_get_direction (widget) == GTK_TEXT_DIR_RTL);
 
       get_menu_padding (widget, &padding);
