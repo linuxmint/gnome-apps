@@ -1,3 +1,14 @@
+gtk+3.0 (3.8.7-0linuxmint1) petra; urgency=low
+
+  * 3.8.4-0ubuntu3 + selected fixes from 3.8.6 + fixes for regressions against petra
+  * Padding in context menu
+  * Full color icons in dialogs
+  * All mime handlers in gtk app chooser
+  * No tooltip regression
+  * Mem leak fix from upstream
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 21 Nov 2013 21:10:20 +0000
+
 gtk+3.0 (3.8.4-0ubuntu3) saucy; urgency=low
 
   * debian/patches/git_padding_value.patch: don't use a negative padding, 
