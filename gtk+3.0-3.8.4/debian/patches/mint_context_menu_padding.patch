@@ -1,0 +1,61 @@
+Index: gtk+3.0-3.8.4/gtk/gtkmenu.c
+===================================================================
+--- gtk+3.0-3.8.4.orig/gtk/gtkmenu.c	2013-08-30 12:08:29.000000000 +0100
++++ gtk+3.0-3.8.4/gtk/gtkmenu.c	2013-11-21 19:53:59.061181427 +0000
+@@ -701,6 +701,15 @@
+                                                              G_PARAM_DEPRECATED));
+ 
+   gtk_widget_class_install_style_property (widget_class,
++                                           g_param_spec_int ("initial-menu-shift",
++                                                             P_("Initial Popup Menu Shift"),
++                                                             P_("For popup menus, shift their position this number of pixels out from under the pointer"),
++                                                             G_MININT,
++                                                             G_MAXINT,
++                                                             0,
++                                                             GTK_PARAM_READABLE));
++
++  gtk_widget_class_install_style_property (widget_class,
+                                            g_param_spec_int ("vertical-offset",
+                                                              P_("Vertical Offset"),
+                                                              P_("When the menu is a submenu, position it this number of pixels offset vertically"),
+@@ -4611,7 +4620,13 @@
+       gint space_left, space_right, space_above, space_below;
+       gint needed_width;
+       gint needed_height;
++      gint initial_menu_shift;
+       GtkBorder padding;
++
++      gtk_widget_style_get (GTK_WIDGET (menu),
++                            "initial-menu-shift", &initial_menu_shift,
++                            NULL);
++
+       gboolean rtl = (gtk_widget_get_direction (widget) == GTK_TEXT_DIR_RTL);
+ 
+       get_menu_padding (widget, &padding);
+@@ -4655,12 +4670,12 @@
+               (!rtl && needed_width >  space_right))
+             {
+               /* position left */
+-              x = x + padding.left - requisition.width + 1;
++              x = x + padding.left - requisition.width + 1 - initial_menu_shift;
+             }
+           else
+             {
+               /* position right */
+-              x = x - padding.right;
++              x = x - padding.right + initial_menu_shift;
+             }
+ 
+           /* x is clamped on-screen further down */
+@@ -4706,9 +4721,9 @@
+           needed_height <= space_below)
+         {
+           if (needed_height <= space_below)
+-            y = y - padding.top;
++            y = y - padding.top + initial_menu_shift;
+           else
+-            y = y + padding.bottom - requisition.height + 1;
++            y = y + padding.bottom - requisition.height + 1 - initial_menu_shift;
+ 
+           y = CLAMP (y, monitor.y,
+                      monitor.y + monitor.height - requisition.height);
