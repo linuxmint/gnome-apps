@@ -3,9 +3,7 @@ SUBDIRS = \
 	Banshee.BooScript \
 	Banshee.Bpm \
 	Banshee.CoverArt \
-	Banshee.Daap \
-	Banshee.Emusic \
-	Banshee.Emusic.Store \
+	Banshee.Daap \	
 	Banshee.FileSystemQueue \
 	Banshee.InternetArchive \
 	Banshee.Fixup \

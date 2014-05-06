@@ -304,8 +304,6 @@ src/Extensions/Banshee.BooScript/Makefile
 src/Extensions/Banshee.Bpm/Makefile
 src/Extensions/Banshee.CoverArt/Makefile
 src/Extensions/Banshee.Daap/Makefile
-src/Extensions/Banshee.Emusic/Makefile
-src/Extensions/Banshee.Emusic.Store/Makefile
 src/Extensions/Banshee.FileSystemQueue/Makefile
 src/Extensions/Banshee.InternetArchive/Makefile
 src/Extensions/Banshee.Fixup/Makefile
