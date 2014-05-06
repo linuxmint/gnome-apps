@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="queue" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="play"/>
+    <desc>Añadir archivos multimedia a su cola de reproducción.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-05-26" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Cola de reproducción</title>    
+  
+  <p>La <gui>Cola de reproducción</gui> le permite añadir música para reproducirla en orden secuencial. Puede añadir varias pistas para escuchar horas de música sin parar. Puede añadir pistas individuales o álbumes completos, y ordenarlos o reordenarlos.</p>
+  
+<section id="addqueue">
+
+  <title>Añadir música a la cola de reproducción</title>
+
+  <p>Desde su colección de música, deberá seleccionar las pistas de música o los álbumes que quiere añadir a la cola de reproducción.</p>
+  
+  <p>Para añadir un álbum completo a la cola de reproducción, usando su ratón pulse en el álbum y, manteniéndolo pulsado, arrástrelo hasta la <gui>Cola de reproducción</gui> en el panel izquierdo de la ventana.</p>
+  
+  <p>Puede añadir pistas de música a la cola de reproducción individualmente o en grupo. Para añadir un archivo individual, arrastre y suéltelo sobre la <gui>Cola de reproducción</gui> en en panel izquierdo de la ventana, o pulse con el botón derecho sobre la pista y elija <gui>Añadir a la cola de reproducción</gui>.</p>
+  
+  <p>Puede seleccionar varios archivos usando su ratón y pulsando <key>Ctrl</key> y eligiendo cada archivo con su ratón, o seleccionando un rango de archivos pulsando <key>Mayús</key> dos veces para seleccionar el rango de archivos. Entonces puede arrastrar y soltar sobre la <gui>Cola de reproducción</gui> en el panel izquierdo de la ventana o pulsar con el botón derecho sobre las pistas y seleccionar <gui>Añadir a la cola de reproducción</gui>.</p>
+  
+</section>
+
+<section id="reorderqueue">
+
+  <title>Organizar la cola de reproducción</title>
+
+  <p>Su cola de reproducción está organizada en el orden en que añade las pistas. Las primeras pistas o álbumes que añade a la cola serán las primeras que se reproduzcan. Puede reordenar su cola de reproducción usando su ratón y arrastrando y soltando una pista o un grupo de pistas en la lista. Elija con su ratón la pista o las pistas que quiere reordenar y suelte el ratón encima del número o del sitio en la lista en que quiere que estén esas pistas en la cola.</p>
+
+</section>  
+  
+<section id="removequeue">
+
+  <title>Quitar pistas de la cola de reproducción</title>
+
+  <p>Puede quitar una pista individual, un grupo de pistas o limpiar la cola de reproducción completa.</p>
+  
+  <p>Para quitar una pista individual o un grupo de pistas, seleccione la pista con su ratón y pulse <key>Supr</key>.</p>
+  
+  <p>Para limpiar la cola de reproducción completa, pulse el botón <gui>Limpiar</gui> en la esquina superior derecha de la cola de reproducción.</p>
+  
+</section>      
+	
+</page>

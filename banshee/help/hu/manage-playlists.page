@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="playlists" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="tags"/>
+    <link type="seealso" xref="coverart"/>
+    <desc>Lejátszólisták létrehozása és kezelése.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-05-26" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Lejátszólisták</title>    
+  
+  <p>A lejátszólisták lehetővé teszik adott sorrendben lejátszandó zeneszámok listájának létrehozását és mentését. A lejátszólistákkal kényelmesen létrehozhatja kedvenc számainak listáját, vagy gyűjteményét feloszthatja kisebb, egyszerűen tallózható listákra. Egyes hordozható médialejátszók lehetővé teszik a lejátszólista átvitelét is, így azt akár magával is viheti.</p>
+  
+  <p>A Banshee támogatja a normál lejátszólistákat, amelyek a hozzájuk adott számokat tartalmazzák, valamint az okos lejátszólistákat. Az okos lejátszólisták automatikusan kerülnek előállításra hallgatási szokásai, kedvenc zenéi és sok más szempont alapján.</p>
+  
+  <section id="manual">
+  
+    <title>Normál lejátszólisták</title>
+  
+    <p>A normál lejátszólista az Ön által felvett és kezelt számok listája. Létrehozhat saját dallistát kedvenc előadója több albumából, kedvenc számaiból vagy egy vidám lejátszólistát az edzés közbeni hallgatáshoz.</p>
+    
+    <p>Új lejátszólistát a <keyseq><key>Ctrl</key><key>N</key></keyseq> megnyomásával, a <guiseq><gui>Média</gui><gui>Új lejátszólista</gui></guiseq> menüpont kiválasztásával, vagy a hozzáadni kívánt számok kijelölésével hozhat létre. Válassza ki a számokat, kattintson rájuk a jobb egérgombbal, és válassza a <guiseq><gui>Hozzáadás a lejátszólistához</gui><gui>Új lejátszólista</gui></guiseq> menüpontot. A kijelölt számokat fogd és vidd módszerrel is áthúzhatja a bal oldali ablaktábla <gui>Zene</gui> elemére. A számokat a <gui>Zene</gui> elemre húzva megjelenik az <gui><em>Új lejátszólista</em></gui> lehetőség. A számokat az <gui><em>Új lejátszólista</em></gui> elemre ejtve létrejön az új lejátszólista. Ismételje ezt a folyamatot, amíg az összes felvenni kívánt számot hozzá nem adta a lejátszólistához.</p>
+
+    <p>A lejátszólista elnevezéséhez válassza azt ki, kattintson rá a jobb egérgombbal, és válassza a helyi menü <gui>Lejátszólista átnevezése</gui> pontját a lejátszólista nevének beírásához.</p>
+    
+    <p>A lejátszólistát átrendezheti fogd és vidd módszerrel, a számokat az új helyükre húzva a lejátszólistában. A számok csak akkor rendezhetők át, ha a lista egyik oszlop szerint sincs rendezve. Az oszlop szerinti rendezés megszüntetéséhez kattintson az oszlopra addig, amíg az oszlop neve melletti fel vagy le nyíl el nem tűnik, ezután átrendezheti a lejátszólistát.</p>
+    
+    <p>A lejátszólista egy számának eltávolításához válassza ki azt a lejátszólistából. Nyomja meg a <key>Delete</key> billentyűt, válassza a <guiseq><gui>Szerkesztés</gui><gui>Eltávolítás a lejátszólistáról</gui></guiseq> menüpontot, vagy kattintson a jobb egérgombbal a számra, és válassza az <gui>Eltávolítás a lejátszólistáról</gui> menüpontot.</p>
+  </section> 
+  
+  <section id="smartplaylists">
+    <title>Okos lejátszólista</title>
+    
+    <p>Az okos lejátszólisták lehetővé teszik dinamikus lejátszólisták gyors létrehozását számos előre megadott változó alapján. Gyorsan létrehozhat egy új lejátszólistát adott előadó, kedvencek és sok más szempont alapján is.</p>
+    
+    <p>Új okos lejátszólista létrehozásához válassza a <guiseq><gui>Média</gui><gui>Új okos lejátszólista</gui></guiseq> menüpontot. Megjelenik egy párbeszédablak az új okos lejátszólista létrehozásához. Adja meg a lejátszólista nevét, majd válassza ki a lejátszólista feltöltéséhez használandó feltételeket. A számok metaadatai közt megtalálható bármely mező közül választhat, például album, előadó vagy év. Válassza ki a feltételt, majd válassza ki a következők egyikét:</p>
+    
+    <list>
+      <item><p>=</p></item>
+      <item><p>nem</p></item>  
+      <item><p>kevesebb, mint</p></item>
+      <item><p>több, mint</p></item>  
+      <item><p>legfeljebb</p></item>
+      <item><p>legalább</p></item>  
+    </list>
+    
+    <p>A <gui>+</gui> gombot megnyomva további feltételt adhat az okos lejátszólistához. Létrehozhat például egy olyan okos lejátszólistát, amely tartalmazza az összes 5 csillagra értékelt 2010-es számot. Ennek a létrehozásához a következőket kell választania:</p>
+    
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Év</gui></p></td> <td><p><gui>=</gui></p> </td> 
+    <td><p><gui>2010</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><gui>Értékelés</gui></p></td> <td><p><gui>=</gui></p></td> 
+    <td><p><gui/>5 csillag</p></td>
+  </tr>
+  </table>
+    
+    <p>Ezután kiválaszthatja, hogy hány számot szeretne felvenni. Jelölje be a <gui>Korlátozás</gui> négyzetet, és adja meg a felvenni kívánt számok mennyiségét.</p>
+  
+  <p>A Banshee tartalmaz előre elkészített okos lejátszólistákat. Nyomja meg a <gui>Megnyitás szerkesztőben</gui> gombot a lejátszólista feltételeinek megjelenítéséhez, vagy azok módosításához. A <gui>Létrehozás és mentés</gui> gomb megnyomásával a lejátszólista mentésre kerül. A program a következő lejátszólistákat tartalmazza:</p>
+  
+  <list>
+    <title>A Banshee okos lejátszólistái</title>
+    <item><p>Kedvencek (Négy és öt csillagra értékelt számok)</p></item>
+    <item><p>Legutóbbi kedvencek (A múlt héten gyakran hallgatott számok)</p></item>  
+    <item><p>Legutóbb hozzáadott (Az elmúlt héten importált számok)</p></item>
+    <item><p>Nem hallgatott (Le nem játszott vagy kihagyott számok)</p></item>
+    <item><p>Mellőzött kedvencek (Több mint két hónapja le nem játszott kedvencek)</p></item>
+    <item><p>700 MB kedvenc (Egy adat CD-nyi kedvenc szám)</p></item>
+    <item><p>80 percnyi kedvenc (Egy hang CD-nyi kedvenc szám)</p></item>
+    <item><p>Nem értékelt (Még nem értékelt számok)</p></item>
+  </list>
+ 
+   </section> 
+ 
+</page>

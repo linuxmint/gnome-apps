@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="ui" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-19" status="stub"/>
+    <desc>Přehled uživatelského rozhraní přehrávače <app>Banshee</app>.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Úvod do uživatelského rozhraní Banshee</title>
+
+  <figure>
+    <title>Okno <gui>Multimediálního přehrávače Banshee</gui></title>
+    <desc><app>Multimediální přehrávač Banshee</app></desc>
+    <media type="image" src="figures/banshee.png" mime="image/png" style="right">
+      <p>Rozhraní kolekce <app>Banshee</app></p>
+    </media>
+  </figure>
+  
+<section id="context">
+  <title>Zdroje</title>
+    <p>Vaše zdroje hudby a videí jsou zobrazeny v levé části okna Banshee. Zdroje vám poskytují rychlý přístup k frontě přehrávání, hudbě, videím, službám Amazon a Last.fm, podcastům a dalším.</p>
+    
+    <note style="tip">
+      <p>Volby nabídky se mění podle toho, který zdroj máte zvolen. Pokud například chcete použít nabídku pro import podcastu, musíte zvolit zdroj podcastů. Volba nabídky pro import podcastu není dostupná, když si prohlížíte video nebo hudební kolekci.</p>
+    </note> 
+</section>
+
+<section id="browser">
+  <title>Procházení kolekcí</title>
+  <p>Když ve zdrojích vyberete zdroj hudby nebo videa, přehrávač Banshee zobrazí váš obsah v prohlížeči kolekce. Podle toho, jaký zdroj jste zvolili, může Banshee zobrazit vaši kolekci hudby nebo videa, odběry podcastů nebo i hudební obchod Amazon, kde můžete hudbu nakupovat.</p>
+</section>
+
+<section id="nowplaying">
+  <title>Právě se přehrává</title>
+  <p>Pokud používáte přehrávač Banshee v režimu celé obrazovky, režim Právě se přehrává skryje kolekci, abyste získali větší pohled na hudbu nebo video, které sledujete. Když posloucháte hudbu, Právě se přehrává zobrazí jméno umělce, album a přebal (pokud je dostupný). Když sledujete video, bude Banshee zobrazovat video.</p>
+  
+  <p>Pokud chcete zapnout režim Právě se přehrává, aby se skrylo uživatelské rozhraní Banshee a použil režim celé obrazovky, zmáčkněte <key>F</key> nebo tlačítko <gui>Celá obrazovka</gui> v pravém horním rohu přehrávače Banshee a nebo zvolte <guiseq><gui>Zobrazit</gui><gui>Celá obrazovka</gui></guiseq>.</p>
+  
+</section>
+
+<section id="library">
+  <title>Kolekce</title>
+  <p>Zobrazení kolekce se v přehrávači Banshee mění v závislosti na zdroji, který máte zvolen. Hudební kolekce zobrazí přebal, umělce a seznam skladeb. Kolekce podcastu zobrazí vaše odběry podcastů, podcasty, které jsou staženy a které ne, a všechny, nové nebo staré podcasty. Na další podrobné informace o správě toho kterého zdroje se prosím podívejte na stránku s nápovědou příslušného zdroje.</p>
+</section>
+
+
+</page>

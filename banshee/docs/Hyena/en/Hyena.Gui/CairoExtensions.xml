@@ -1,0 +1,535 @@
+<Type Name="CairoExtensions" FullName="Hyena.Gui.CairoExtensions">
+  <TypeSignature Language="C#" Value="public static class CairoExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CairoExtensions extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Hyena.Gui</AssemblyName>
+    <AssemblyVersion>0.90.1.25402</AssemblyVersion>
+    <AssemblyVersion>1.3.1.0</AssemblyVersion>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
+    <AssemblyVersion>1.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AlphaBlend">
+      <MemberSignature Language="C#" Value="public static Cairo.Color AlphaBlend (Cairo.Color ca, Cairo.Color cb, double alpha);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Cairo.Color AlphaBlend(valuetype Cairo.Color ca, valuetype Cairo.Color cb, float64 alpha) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Cairo.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ca" Type="Cairo.Color" />
+        <Parameter Name="cb" Type="Cairo.Color" />
+        <Parameter Name="alpha" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="ca">To be added.</param>
+        <param name="cb">To be added.</param>
+        <param name="alpha">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorAdjustBrightness">
+      <MemberSignature Language="C#" Value="public static Cairo.Color ColorAdjustBrightness (Cairo.Color base, double br);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Cairo.Color ColorAdjustBrightness(valuetype Cairo.Color base, float64 br) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Cairo.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="base" Type="Cairo.Color" />
+        <Parameter Name="br" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="base">To be added.</param>
+        <param name="br">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorFromHsb">
+      <MemberSignature Language="C#" Value="public static Cairo.Color ColorFromHsb (double hue, double saturation, double brightness);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Cairo.Color ColorFromHsb(float64 hue, float64 saturation, float64 brightness) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Cairo.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hue" Type="System.Double" />
+        <Parameter Name="saturation" Type="System.Double" />
+        <Parameter Name="brightness" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="hue">To be added.</param>
+        <param name="saturation">To be added.</param>
+        <param name="brightness">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorGetHex">
+      <MemberSignature Language="C#" Value="public static string ColorGetHex (Cairo.Color color, bool withAlpha);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ColorGetHex(valuetype Cairo.Color color, bool withAlpha) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color" Type="Cairo.Color" />
+        <Parameter Name="withAlpha" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="color">To be added.</param>
+        <param name="withAlpha">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorIsDark">
+      <MemberSignature Language="C#" Value="public static bool ColorIsDark (Cairo.Color color);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ColorIsDark(valuetype Cairo.Color color) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color" Type="Cairo.Color" />
+      </Parameters>
+      <Docs>
+        <param name="color">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorShade">
+      <MemberSignature Language="C#" Value="public static Cairo.Color ColorShade (Cairo.Color base, double ratio);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Cairo.Color ColorShade(valuetype Cairo.Color base, float64 ratio) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Cairo.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="base" Type="Cairo.Color" />
+        <Parameter Name="ratio" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="base">To be added.</param>
+        <param name="ratio">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateLayout">
+      <MemberSignature Language="C#" Value="public static Pango.Layout CreateLayout (Gtk.Widget widget, Cairo.Context cairo_context);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Pango.Layout CreateLayout(class Gtk.Widget widget, class Cairo.Context cairo_context) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Pango.Layout</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="widget" Type="Gtk.Widget" />
+        <Parameter Name="cairo_context" Type="Cairo.Context" />
+      </Parameters>
+      <Docs>
+        <param name="widget">To be added.</param>
+        <param name="cairo_context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateLayout">
+      <MemberSignature Language="C#" Value="public static void CreateLayout (Gtk.Widget widget, Cairo.Context cairo_context, ref Pango.Layout layout);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="widget" Type="Gtk.Widget" />
+        <Parameter Name="cairo_context" Type="Cairo.Context" />
+        <Parameter Name="layout" Type="Pango.Layout&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="widget">To be added.</param>
+        <param name="cairo_context">To be added.</param>
+        <param name="layout">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSurfaceForPixbuf">
+      <MemberSignature Language="C#" Value="public static Cairo.Surface CreateSurfaceForPixbuf (Cairo.Context cr, Gdk.Pixbuf pixbuf);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Cairo.Surface CreateSurfaceForPixbuf(class Cairo.Context cr, class Gdk.Pixbuf pixbuf) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Cairo.Surface</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="pixbuf" Type="Gdk.Pixbuf" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="pixbuf">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisposeContext">
+      <MemberSignature Language="C#" Value="public static void DisposeContext (Cairo.Context cr);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DisposeContext(class Cairo.Context cr) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GdkColorToCairoColor">
+      <MemberSignature Language="C#" Value="public static Cairo.Color GdkColorToCairoColor (Gdk.Color color);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Cairo.Color GdkColorToCairoColor(valuetype Gdk.Color color) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Cairo.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color" Type="Gdk.Color" />
+      </Parameters>
+      <Docs>
+        <param name="color">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GdkColorToCairoColor">
+      <MemberSignature Language="C#" Value="public static Cairo.Color GdkColorToCairoColor (Gdk.Color color, double alpha);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Cairo.Color GdkColorToCairoColor(valuetype Gdk.Color color, float64 alpha) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Cairo.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color" Type="Gdk.Color" />
+        <Parameter Name="alpha" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="color">To be added.</param>
+        <param name="alpha">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HsbFromColor">
+      <MemberSignature Language="C#" Value="public static void HsbFromColor (Cairo.Color color, out double hue, out double saturation, out double brightness);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void HsbFromColor(valuetype Cairo.Color color, float64 hue, float64 saturation, float64 brightness) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color" Type="Cairo.Color" />
+        <Parameter Name="hue" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="saturation" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="brightness" Type="System.Double&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="color">To be added.</param>
+        <param name="hue">To be added.</param>
+        <param name="saturation">To be added.</param>
+        <param name="brightness">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopGroupToSource">
+      <MemberSignature Language="C#" Value="public static void PopGroupToSource (Cairo.Context cr);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PopGroupToSource(class Cairo.Context cr) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushGroup">
+      <MemberSignature Language="C#" Value="public static void PushGroup (Cairo.Context cr);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PushGroup(class Cairo.Context cr) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RgbaToColor">
+      <MemberSignature Language="C#" Value="public static Cairo.Color RgbaToColor (uint rgbaColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Cairo.Color RgbaToColor(unsigned int32 rgbaColor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Cairo.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgbaColor" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="rgbaColor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RgbToColor">
+      <MemberSignature Language="C#" Value="public static Cairo.Color RgbToColor (uint rgbColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Cairo.Color RgbToColor(unsigned int32 rgbColor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Cairo.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgbColor" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="rgbColor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundedRectangle">
+      <MemberSignature Language="C#" Value="public static void RoundedRectangle (Cairo.Context cr, double x, double y, double w, double h, double r);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RoundedRectangle(class Cairo.Context cr, float64 x, float64 y, float64 w, float64 h, float64 r) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+        <Parameter Name="w" Type="System.Double" />
+        <Parameter Name="h" Type="System.Double" />
+        <Parameter Name="r" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="w">To be added.</param>
+        <param name="h">To be added.</param>
+        <param name="r">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundedRectangle">
+      <MemberSignature Language="C#" Value="public static void RoundedRectangle (Cairo.Context cr, double x, double y, double w, double h, double r, Hyena.Gui.CairoCorners corners);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RoundedRectangle(class Cairo.Context cr, float64 x, float64 y, float64 w, float64 h, float64 r, valuetype Hyena.Gui.CairoCorners corners) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+        <Parameter Name="w" Type="System.Double" />
+        <Parameter Name="h" Type="System.Double" />
+        <Parameter Name="r" Type="System.Double" />
+        <Parameter Name="corners" Type="Hyena.Gui.CairoCorners" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="w">To be added.</param>
+        <param name="h">To be added.</param>
+        <param name="r">To be added.</param>
+        <param name="corners">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundedRectangle">
+      <MemberSignature Language="C#" Value="public static void RoundedRectangle (Cairo.Context cr, double x, double y, double w, double h, double r, Hyena.Gui.CairoCorners corners, bool topBottomFallsThrough);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RoundedRectangle(class Cairo.Context cr, float64 x, float64 y, float64 w, float64 h, float64 r, valuetype Hyena.Gui.CairoCorners corners, bool topBottomFallsThrough) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+        <Parameter Name="w" Type="System.Double" />
+        <Parameter Name="h" Type="System.Double" />
+        <Parameter Name="r" Type="System.Double" />
+        <Parameter Name="corners" Type="Hyena.Gui.CairoCorners" />
+        <Parameter Name="topBottomFallsThrough" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="w">To be added.</param>
+        <param name="h">To be added.</param>
+        <param name="r">To be added.</param>
+        <param name="corners">To be added.</param>
+        <param name="topBottomFallsThrough">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

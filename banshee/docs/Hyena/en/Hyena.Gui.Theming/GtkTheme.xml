@@ -1,0 +1,486 @@
+<Type Name="GtkTheme" FullName="Hyena.Gui.Theming.GtkTheme">
+  <TypeSignature Language="C#" Value="public class GtkTheme : Hyena.Gui.Theming.Theme" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GtkTheme extends Hyena.Gui.Theming.Theme" />
+  <AssemblyInfo>
+    <AssemblyName>Hyena.Gui</AssemblyName>
+    <AssemblyVersion>0.90.1.25402</AssemblyVersion>
+    <AssemblyVersion>1.3.1.0</AssemblyVersion>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
+    <AssemblyVersion>1.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Hyena.Gui.Theming.Theme</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GtkTheme (Gtk.Widget widget);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Gtk.Widget widget) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="widget" Type="Gtk.Widget" />
+      </Parameters>
+      <Docs>
+        <param name="widget">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawArrow">
+      <MemberSignature Language="C#" Value="public override void DrawArrow (Cairo.Context cr, Gdk.Rectangle alloc, Hyena.Data.SortType type);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="alloc" Type="Gdk.Rectangle" />
+        <Parameter Name="type" Type="Hyena.Data.SortType" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="alloc">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawArrow">
+      <MemberSignature Language="C#" Value="public override void DrawArrow (Cairo.Context cr, Gdk.Rectangle alloc, double rotation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DrawArrow(class Cairo.Context cr, valuetype Gdk.Rectangle alloc, float64 rotation) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="alloc" Type="Gdk.Rectangle" />
+        <Parameter Name="rotation" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="alloc">To be added.</param>
+        <param name="rotation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawColumnHeaderFocus">
+      <MemberSignature Language="C#" Value="public override void DrawColumnHeaderFocus (Cairo.Context cr, Gdk.Rectangle alloc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DrawColumnHeaderFocus(class Cairo.Context cr, valuetype Gdk.Rectangle alloc) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="alloc" Type="Gdk.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="alloc">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawColumnHighlight">
+      <MemberSignature Language="C#" Value="public override void DrawColumnHighlight (Cairo.Context cr, Gdk.Rectangle alloc, Cairo.Color color);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DrawColumnHighlight(class Cairo.Context cr, valuetype Gdk.Rectangle alloc, valuetype Cairo.Color color) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="alloc" Type="Gdk.Rectangle" />
+        <Parameter Name="color" Type="Cairo.Color" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="alloc">To be added.</param>
+        <param name="color">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawFrameBackground">
+      <MemberSignature Language="C#" Value="public override void DrawFrameBackground (Cairo.Context cr, Gdk.Rectangle alloc, Cairo.Color color, Cairo.Pattern pattern);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DrawFrameBackground(class Cairo.Context cr, valuetype Gdk.Rectangle alloc, valuetype Cairo.Color color, class Cairo.Pattern pattern) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="alloc" Type="Gdk.Rectangle" />
+        <Parameter Name="color" Type="Cairo.Color" />
+        <Parameter Name="pattern" Type="Cairo.Pattern" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="alloc">To be added.</param>
+        <param name="color">To be added.</param>
+        <param name="pattern">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawFrameBorder">
+      <MemberSignature Language="C#" Value="public override void DrawFrameBorder (Cairo.Context cr, Gdk.Rectangle alloc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DrawFrameBorder(class Cairo.Context cr, valuetype Gdk.Rectangle alloc) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="alloc" Type="Gdk.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="alloc">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawFrameBorderFocused">
+      <MemberSignature Language="C#" Value="public override void DrawFrameBorderFocused (Cairo.Context cr, Gdk.Rectangle alloc);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="alloc" Type="Gdk.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="alloc">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawHeaderBackground">
+      <MemberSignature Language="C#" Value="public override void DrawHeaderBackground (Cairo.Context cr, Gdk.Rectangle alloc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DrawHeaderBackground(class Cairo.Context cr, valuetype Gdk.Rectangle alloc) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="alloc" Type="Gdk.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="alloc">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawHeaderSeparator">
+      <MemberSignature Language="C#" Value="public override void DrawHeaderSeparator (Cairo.Context cr, Gdk.Rectangle alloc, int x);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DrawHeaderSeparator(class Cairo.Context cr, valuetype Gdk.Rectangle alloc, int32 x) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="alloc" Type="Gdk.Rectangle" />
+        <Parameter Name="x" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="alloc">To be added.</param>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawListBackground">
+      <MemberSignature Language="C#" Value="public override void DrawListBackground (Cairo.Context cr, Gdk.Rectangle alloc, Cairo.Color color);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DrawListBackground(class Cairo.Context cr, valuetype Gdk.Rectangle alloc, valuetype Cairo.Color color) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="alloc" Type="Gdk.Rectangle" />
+        <Parameter Name="color" Type="Cairo.Color" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="alloc">To be added.</param>
+        <param name="color">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawPie">
+      <MemberSignature Language="C#" Value="public override void DrawPie (double fraction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DrawPie(float64 fraction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fraction" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="fraction">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawRowCursor">
+      <MemberSignature Language="C#" Value="public override void DrawRowCursor (Cairo.Context cr, int x, int y, int width, int height, Cairo.Color color, Hyena.Gui.CairoCorners corners);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DrawRowCursor(class Cairo.Context cr, int32 x, int32 y, int32 width, int32 height, valuetype Cairo.Color color, valuetype Hyena.Gui.CairoCorners corners) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="color" Type="Cairo.Color" />
+        <Parameter Name="corners" Type="Hyena.Gui.CairoCorners" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="color">To be added.</param>
+        <param name="corners">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawRowRule">
+      <MemberSignature Language="C#" Value="public override void DrawRowRule (Cairo.Context cr, int x, int y, int width, int height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DrawRowRule(class Cairo.Context cr, int32 x, int32 y, int32 width, int32 height) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawRowSelection">
+      <MemberSignature Language="C#" Value="public override void DrawRowSelection (Cairo.Context cr, int x, int y, int width, int height, bool filled, bool stroked, Cairo.Color color, Hyena.Gui.CairoCorners corners);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DrawRowSelection(class Cairo.Context cr, int32 x, int32 y, int32 width, int32 height, bool filled, bool stroked, valuetype Cairo.Color color, valuetype Hyena.Gui.CairoCorners corners) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="filled" Type="System.Boolean" />
+        <Parameter Name="stroked" Type="System.Boolean" />
+        <Parameter Name="color" Type="Cairo.Color" />
+        <Parameter Name="corners" Type="Hyena.Gui.CairoCorners" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="filled">To be added.</param>
+        <param name="stroked">To be added.</param>
+        <param name="color">To be added.</param>
+        <param name="corners">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawRowSelection">
+      <MemberSignature Language="C#" Value="public void DrawRowSelection (Cairo.Context cr, int x, int y, int width, int height, bool filled, bool stroked, Cairo.Color color, Hyena.Gui.CairoCorners corners, bool flat_fill);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawRowSelection(class Cairo.Context cr, int32 x, int32 y, int32 width, int32 height, bool filled, bool stroked, valuetype Cairo.Color color, valuetype Hyena.Gui.CairoCorners corners, bool flat_fill) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="filled" Type="System.Boolean" />
+        <Parameter Name="stroked" Type="System.Boolean" />
+        <Parameter Name="color" Type="Cairo.Color" />
+        <Parameter Name="corners" Type="Hyena.Gui.CairoCorners" />
+        <Parameter Name="flat_fill" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="width">To be added.</param>
+        <param name="height">To be added.</param>
+        <param name="filled">To be added.</param>
+        <param name="stroked">To be added.</param>
+        <param name="color">To be added.</param>
+        <param name="corners">To be added.</param>
+        <param name="flat_fill">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCairoTextMidColor">
+      <MemberSignature Language="C#" Value="public static Cairo.Color GetCairoTextMidColor (Gtk.Widget widget);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Cairo.Color GetCairoTextMidColor(class Gtk.Widget widget) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Cairo.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="widget" Type="Gtk.Widget" />
+      </Parameters>
+      <Docs>
+        <param name="widget">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGdkTextMidColor">
+      <MemberSignature Language="C#" Value="public static Gdk.Color GetGdkTextMidColor (Gtk.Widget widget);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Gdk.Color GetGdkTextMidColor(class Gtk.Widget widget) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Gdk.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="widget" Type="Gtk.Widget" />
+      </Parameters>
+      <Docs>
+        <param name="widget">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnColorsRefreshed">
+      <MemberSignature Language="C#" Value="protected override void OnColorsRefreshed ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnColorsRefreshed() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

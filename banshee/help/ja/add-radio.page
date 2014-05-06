@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="add-radio" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <link type="seealso" xref="add-podcasts"/>
+    <link type="seealso" xref="import"/>
+    <desc>Banshee上でインターネットラジオステーションを再生、追加、削除します。</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-20" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>インターネットラジオ</title> 
+  
+  <section id="radiodescription">
+     <title>インターネットラジオとは？</title>
+     
+  <p>インターネットラジオステーションは、組織や個人がインターネット上で音楽のライブストリームを可能にします。これは通常のラジオステーションに似ています。インターネットラジオ局は、通常のラジオステーションの同時ストリーム、アマチュア放送独自のストリーム、またはライブDJやコマーシャルを含む商用インターネットラジオステーションを行うことができます。</p>
+  
+  </section>
+  
+  <section id="addradio">
+  
+  <title>ラジオステーションを追加する</title>
+  
+  <p>インターネットラジオステーションをBansheeへ追加するためには、Bansheeの右上にある<gui>ステーションを追加</gui>をクリックするか、もしくは<guiseq><gui>メディア</gui><gui>ステーションを追加</gui></guiseq>を選びます。</p>
+  
+  <p>Webブラウザーを使いインターネットラジオステーションのWebページからストリームのURLへのリンクをコピーしてください。ほとんどのブラウザーでは、リンクの上で右クリックしてメニューから<gui>リンクのURLをコピー</gui>を選びます。</p>
+   
+
+  <p>Bansheeは、<gui>ステーションジャンル</gui>を入力するプロンプトを表示します。インターネットラジオステーションで聞ける音楽の種類をドロップダウンリストから選択してください。ラジオステーションに対する<gui>ステーション名</gui>を入力する必要があります。<gui>ストリームURL</gui>にはラジオステーションのURLをウェブブラウザーなどから貼り付けてください。マウスで右クリックして<gui>貼り付け</gui>を選ぶか、<keyseq><key>Ctrl</key><key>V</key></keyseq>で貼り付けられます。</p>
+  
+  <p>必要に応じて、また、<gui>ステーションの作者</gui>、<gui>説明</gui>と<gui>評価</gui>のフィールドに任意で記入することができます。</p>
+  
+  <p>次に<gui>保存</gui>ボタンを押して、Bansheeのインターネットラジオステーションを保存を押してください。</p>
+  
+  </section>
+  	  	  
+</page>

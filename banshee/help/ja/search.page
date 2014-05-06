@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="search" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="sort"/>
+    <desc>アイテムの検索と基本的な問い合わせの実行</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Bansheeのライブラリを検索</title>    
+  
+  <p>Bansheeは強力な検索式を備えています。基本的な検索キーワードでもライブラリをすばやく簡単に検索できます。また、Bansheeの高度な検索式によって詳細な検索も行えます。</p>
+  
+  <p>Bansheeでアイテムの検索を実行するには、<key>S</key>を押すか、Bansheeのライブラリビューの右上にある<gui>検索ボックス</gui>をクリックします。</p>
+  
+  <p>検索問い合わせは、いくつかの基本的なキーワードで構成されています。たとえば、<em>dave matthews</em>。検索ボックスに<em>dave matthews</em>と入力した場合、Bansheeは、すべてのトラックの情報のすべての項目（トラックのタイトル、アルバムのタイトル、アルバムのアーティスト、発売された年など）から<em>dave</em>と<em>matthews</em>が含まれる結果を返します。検索キーワードの中では<em>dave</em>や<em>Dave</em>、<em>DAVE</em>といった大文字小文字の区別は行わず、同様に扱われます。</p>
+
+<section id="operators">
+  <title>基本的な演算子</title>
+  <p>検索条件の演算子は任意の2つの検索キーワードの間に記述、もしくは検索キーワードの前に記述します。既定の演算は<gui>AND</gui>であり、2つの検索キーワードの間に他の演算子がない場合に使用されます。既定でANDになるため、明示的なAND演算子はありません。</p>
+  
+  <p>その他の基本的な演算子は、<gui>OR</gui>と<gui>NOT</gui>があります。また、これらの3つの演算を使うことにより、メディアを検索するため非常に強力な検索問い合わせを行うことができます。</p>
+  
+</section>
+
+<section id="logical">
+  <title>論理演算子と検索式の例</title>
+  <p>以下は、論理演算子の一覧、および論理演算子を使用した検索結果の例です。</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>演算子</gui></p></td>  <td><p><gui>説明</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><em>default</em>, <em>white space</em></p></td> <td><p>２個のキーワードから検索したい場合、２個のキーワードの間に半角スペースを入れてください。</p></td>
+  </tr>
+  <tr>
+    <td><p>OR, or, <key>|</key>, <key>,</key></p></td> <td><p>検索結果は、任意のフィールドのいずれかの結果を持つ2つの楽曲になります。</p></td>
+  </tr>
+  <tr>
+    <td><p>NOT, not,<key>-</key></p></td> <td><p>NOT、not、<key>-</key>の演算子を記述することにより、検索キーワードを含む検索結果を表示しません。</p></td>
+  </tr>  
+         
+</table>
+
+  <p>論理演算を使用した例:</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>問い合わせ</gui></p></td>  <td><p><gui>説明</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>dave matthews</p></td> <td><p>いずれかの項目に<em>dave</em>と<em>matthews</em>を含んでいるトラックが該当します。</p></td>
+  </tr>
+  <tr>
+    <td><p>dave, matthews</p></td> <td><p>いずれかの項目に<em>dave</em>か<em>matthews</em>を含んでいるトラックが該当します。</p></td>
+  </tr>
+  <tr>
+    <td><p>dave or matthews</p></td> <td><p>いずれかの項目に<em>dave</em>か<em>matthews</em>を含んでいるトラックが該当します。</p></td>
+  </tr> 
+  <tr>
+    <td><p>dave | matthews</p></td> <td><p>いずれかの項目に<em>dave</em>か<em>matthews</em>を含んでいるトラックが該当します。</p></td>
+  </tr>       
+  <tr>
+    <td><p>-"dave matthews"</p></td> <td><p>項目に<em>dave matthews</em>を含んでいないすべてのトラックが表示されます。</p></td>
+  </tr> 
+  
+  </table> 
+  
+  <p>より複雑な検索を行いたい場合、詳しくは、<link xref="adv-search"/>ページを参照してください。</p>
+  
+</section>
+	
+</page>

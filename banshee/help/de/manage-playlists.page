@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="playlists" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="tags"/>
+    <link type="seealso" xref="coverart"/>
+    <desc>Erstellen und Verwalten von Wiedergabelisten.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-05-26" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Wiedergabelisten</title>    
+  
+  <p>Wiedergabelisten ermöglichen Ihnen das Erstellen und Speichern einer Liste aus Musiktiteln, die in einer bestimmten Reihenfolge abgespielt werden sollen. Wiedergabelisten stellen einen bequemen Weg zum Erstellen einer Liste Ihrer Lieblingstiteln oder zum Unterteilen Ihrer Bibliothek in kleinere Listen, die sich leichter durchsuchen lassen. Einige tragbare Abspielgeräte ermöglichen sogar die Übertragung der Wiedergabeliste, so dass Sie sie überall hin mitnehmen können.</p>
+  
+  <p>Banshee unterstützt sowohl gewöhnliche Wiedergabelisten als auch intelligente Wiedergabelisten. Zu gewöhnlichen Wiedergabelisten fügen Sie Titel selbst hinzu. Intelligente Wiedergabelisten werden automatisch anhand Ihrer Hörgewohnheiten, Ihrer Lieblingsmusik und weiterer Anhaltspunkte erstellt.</p>
+  
+  <section id="manual">
+  
+    <title>Gewöhnliche Wiedergabelisten</title>
+  
+    <p>Eine gewöhnliche Wiedergabeliste ist eine Liste aus Titeln, die Sie selbst hinzugefügt haben und selbst verwalten. Sie erstellen Ihre eigene Titelliste aus Titeln Ihres Lieblingsinterpreten aus verschiedenen Alben, aus Ihren neuesten Lieblingsliedern oder eine Wiedergabeliste für Hintergrundmusik bei sportlichen Übungen.</p>
+    
+    <p>Zum Erstellen einer neuen Wiedergabeliste drücken Sie <keyseq><key>Strg</key><key>N</key></keyseq> oder wählen im Menü <guiseq><gui>Menü</gui><gui>Neue Wiedergabeliste</gui></guiseq>. Alternativ können Sie einfach die Titel auswählen, die Sie zur Wiedergabeliste hinzufügen wollen. Klicken Sie mit der rechten Maustaste darauf und wählen Sie <guiseq><gui>Zur Wiedergabeliste hinzufügen</gui><gui>Neue Wiedergabeliste</gui></guiseq>. Sie können die Titel auch auswählen und mit der Maus in die linke Seitenleiste über <gui>Musik</gui> ziehen. Sobald sich der Mauszeiger über <gui>Musik</gui> befindet, erscheint eine neue Option <gui><em>Neue Wiedergabeliste</em></gui>. Lassen Sie die Maustaste los, um die Titel zur Wiedergabeliste hinzuzufügen. Sie können diesen Vorgang so lange wiederholen, bis Sie alle gewünschten Titel zur Wiedergabeliste hinzugefügt haben.</p>
+
+    <p>Um Ihrer Wiedergabeliste einen selbstgewählten Namen zu geben, wählen Sie die Wiedergabeliste aus und klicken Sie dann mit der rechten Maustaste darauf. Wählen Sie anschließend <gui>Wiedergabeliste umbenennen</gui> im Kontextmenü und geben Sie den Namen Ihrer Wiedergabeliste ein.</p>
+    
+    <p>Sie können die Reihenfolge der Wiedergabeliste ändern, indem Sie die Titel durch Ziehen und Ablegen neu anordnen. Titel können nur dann neu geordnet werden, wenn keine der Spalten sortiert ist. Um die Sortierung einer Spalte zu entfernen, klicken Sie auf die Spalte, bis die nach oben und unten zeigenden Pfeile nicht mehr sichtbar sind. Dann können Sie die Wiedergabeliste neu sortieren.</p>
+    
+    <p>Um einen Titel aus der Wiedergabeliste zu löschen, wählen Sie zunächst den oder die zu löschenden Titel aus. Drücken Sie anschließend die <key>Entf</key>-Taste, wählen Sie im Menü <guiseq><gui>Bearbeiten</gui><gui>Aus der Wiedergabeliste entfernen</gui></guiseq> oder klicken Sie mit der rechten Maustaste auf den oder die zu löschenden Titel und klicken Sie im Kontextmenü auf <gui>Aus der Wiedergabeliste entfernen</gui>.</p>
+  </section> 
+  
+  <section id="smartplaylists">
+    <title>Intelligente Wiedergabelisten</title>
+    
+    <p>Intelligente Wiedergabelisten ermöglichen Ihnen die schnelle und einfache Erstellung dynamischer Wiedergabelisten, basierend auf einer Reihe von vorher festgelegten Variablen. Sie können eine neue Wiedergabeliste auf der Basis eines Künstlers, auf Vorlieben oder weiterer Parameter erstellen.</p>
+    
+    <p>Um eine neue intelligente Wiedergabeliste anzulegen, wählen Sie im Menü <guiseq><gui>Medien</gui><gui>Neue intelligente Wiedergabeliste</gui></guiseq>. Ein dialog zum Erstellen der neuen intelligenten Wiedergabeliste wird geöffnet. Geben Sie den Namen Ihrer Wiedergabeliste ein und wählen Sie anschließend die Kriterien aus, auf denen Ihre Wiedergabeliste basieren soll. Sie können aus jedem in den Metadaten der Titel enthaltenen Feld wählen, wie Album, Künstler oder Erscheinungsjahr. Wählen Sie die Kriterien und wählen Sie dann Folgendes aus:</p>
+    
+    <list>
+      <item><p>ist</p></item>
+      <item><p>ist nicht</p></item>  
+      <item><p>weniger als</p></item>
+      <item><p>mehr als</p></item>  
+      <item><p>ist maximal</p></item>
+      <item><p>mindestens</p></item>  
+    </list>
+    
+    <p>Sie können auch auf den <gui>+</gui>-Knopf klicken, um eine zusätzliche Abfrage zu Ihrer intelligenten Wiedergabeliste hinzuzufügen. Beispielsweise könnte Ihre Wiedergabeliste auf allen Titeln basieren, die im Jahr 2010 veröffentlicht wurden und die sie mit 5 Sternen bewertet haben. Mit den folgenden Optionen erstellen Sie eine solche Wiedergabeliste:</p>
+    
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Jahr</gui></p></td> <td><p><gui>ist</gui></p> </td> 
+    <td><p><gui>2010</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><gui>Bewertung</gui></p></td> <td><p><gui>ist</gui></p></td> 
+    <td><p><gui/>5 Sterne</p></td>
+  </tr>
+  </table>
+    
+    <p>Sie können dann optional auswählen, wie viele Titel hinzugefügt werden sollen, indem Sie das Ankreuzfeld <gui>Limit</gui> aktivieren und die gewünschte maximale Anzahl der Titel angeben.</p>
+  
+  <p>Banshee stellt Ihnen auch bereits für Sie erstellte intelligente Wiedergabelisten zur Verfügung. Klicken Sie auf den Knopf <gui>Im Editor öffnen</gui>, um zu sehen, wie die Wiedergabeliste angelegt wurde beziehungsweise wie sie angepasst werden kann. Sobald Sie auf <gui>Erstellen und speichern</gui> klicken, wird die Wiedergabeliste automatisch angelegt und für Sie gespeichert. Folgende Wiedergabelisten werden bereits mitgeliefert:</p>
+  
+  <list>
+    <title>Intelligente Wiedergabelisten in Banshee</title>
+    <item><p>Favoriten (Lieder, die mit vier oder fünf Sternen bewertet wurden)</p></item>
+    <item><p>Aktuelle Favoriten (Lieder, die Sie in der letzten Woche oft gehört haben)</p></item>  
+    <item><p>Kürzlich hinzugefügt (Lieder, die innerhalb der letzten Woche importiert wurden)</p></item>
+    <item><p>Nicht gehört (Lieder, die noch nie abgespielt bzw. stets übersprungen wurden)</p></item>
+    <item><p>Nicht beachtete Favoriten (Favoriten, die in den letzten zwei Monaten nicht abgespielt wurden)</p></item>
+    <item><p>700 MB der Favoriten (eine Daten-CD voll mit Ihren Lieblingsliedern)</p></item>
+    <item><p>80 Minuten der Favoriten (eine Audio-CD voll mit Ihren Lieblingsliedern)</p></item>
+    <item><p>Unbewertet (Lieder, die noch nicht bewertet wurden)</p></item>
+  </list>
+ 
+   </section> 
+ 
+</page>

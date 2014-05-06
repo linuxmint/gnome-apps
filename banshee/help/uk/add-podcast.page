@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="add-podcast" xml:lang="uk">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <link type="seealso" xref="add-radio"/>
+    <link type="seealso" xref="import"/>
+    <desc>Додавання, вилучення та відтворення подкастів в Banshee.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Подкасти</title> 
+  
+  <section id="podcastdescription">
+     <title>Що це таке — подкаст?</title>
+     
+  <p>Подкасти — це доступні в інтернеті, заздалегідь записані програми, подібні до радіо програм, які можна передплатити. Якщо ви підписались до подкасту в Banshee, щоразу, під час виходу нового випуску, Banshee автоматично звантажуватиме його для вас.</p>
+  
+  <p>В мережі є подкасти практично на всі теми,зокрема з музикою, фільмами, Linux тощо. Шукайте в інтернеті через ваш улюблений пошуковий рушій, наприклад введіть «фільм-подкаст» і ви отримаєте багато варіантів для вибору.</p>
+  
+  </section>
+  
+  <section id="addpodcast">
+    <title>Додавання подкасту</title>
+  
+  <p>Щоб додати подкаст в Banshee, потрібно спочатку відвідати домашню сторінку подкасту в інтернеті через переглядач. Майже всі подкасти мають кнопку або посилання для підписання подкасту, скопіюйте це посилання. У більшості переглядачів, можете натиснути праву кнопку миші і в контекстному меню виберіть <gui>Скопіювати посилання</gui>.</p>
+  
+  <p>В Banshee, натисніть кнопку <gui>Підписатись до подкасту</gui> у верхньому правому куті, або виберіть в меню <guiseq><gui>Файл</gui><gui> Підписатись до подкасту</gui></guiseq> чи натисніть комбінацію клавіш <keyseq><key>Shift</key><key>Control</key><key>F</key></keyseq>.</p>
+  
+  <p>Виберіть з спадного меню в Banshee спосіб звантаження нових подкастів. Наявні такі варіанти:</p>
+  
+  <list>
+  	<item><p>Звантажити найсвіжіший епізод (автоматично звантажуватиметься останній епізод)</p></item>
+  	<item><p>Звантажити всі епізоди (автоматично звантажуватимуться всі епізоди)</p></item>
+	<item><p>Дозволити мені самому вирішувати, який епізод звантажувати (дасть вам змогу самому вибрати, що звантажувати)</p></item>
+  </list>
+
+  <p>Після додавання стрічки подкасту, Banshee покаже:</p>
+  
+  <list>
+  	<item><p><gui>Назва</gui>: (назва окремого епізоду)</p></item>
+  	<item><p><gui>Подкаст</gui>: (назва подкасту)</p></item>
+  	<item><p><gui>Опублікований</gui> (дата опублікування або випуску)</p></item>
+  </list>
+  
+  </section>	
+  	  	  
+</page>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="add-podcast" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <link type="seealso" xref="add-radio"/>
+    <link type="seealso" xref="import"/>
+    <desc>Podcastok hozzáadása, eltávolítása és lejátszása.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Podcastok</title> 
+  
+  <section id="podcastdescription">
+     <title>Mi az a podcast?</title>
+     
+  <p>A podcastok a rádióműsorokhoz hasonló rögzített adások, amelyek az interneten érhetők el, és lehetővé teszik a feliratkozást. Ha feliratkozik egy podcastra a Bansheeban, az új adás megjelenésekor a Banshee automatikusan letölti a podcastot, és lehetővé teszi a meghallgatását.</p>
+  
+  <p>Majdnem minden témában találhat podcastokat, beleértve a zenét, a filmeket, a Linuxot és sok mást. Indítson egy keresést kedvenc internetes keresőjével például a „filmes podcast” kifejezésre, és máris számos lehetőség közül válogathat.</p>
+  
+  </section>
+  
+  <section id="addpodcast">
+    <title>Podcast hozzáadása</title>
+  
+  <p>Egy podcastra feliratkozás első lépéseként fel kell keresnie a podcast honlapját az interneten. Majdnem minden podcast rendelkezik egy gombbal vagy hivatkozással a feliratkozáshoz. Másolja ki a podcastra való feliratkozásra szolgáló hivatkozást. Ezt a legtöbb böngészőben a hivatkozás helyi menüjének <gui>Hivatkozás másolása</gui> pontját kiválasztva teheti meg.</p>
+  
+  <p>A Bansheeban nyomja meg a <gui>Feliratkozás új podcastra</gui> gombot a jobb felső sarokban, válassza a <guiseq><gui>Média</gui><gui>Podcast hozzáadása</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Shift</key><key>Ctrl</key><key>F</key></keyseq> kombinációt.</p>
+  
+  <p>A Banshee ezután lehetővé teszi az új podcastok letöltési módjának kiválasztását. A lehetőségei:</p>
+  
+  <list>
+  	<item><p>A legutóbbi epizód letöltése (az utoljára megjelent epizód automatikus letöltése).</p></item>
+  	<item><p>Az összes epizód letöltése (az összes epizód letöltése).</p></item>
+	<item><p>Kiválasztom a letöltendő epizódokat (lehetővé teszi a letölteni kívánt epizódok kiválasztását).</p></item>
+  </list>
+
+  <p>A podcastforrás felvétele után a Banshee megjeleníti a következőket:</p>
+  
+  <list>
+  	<item><p><gui>Név</gui>: (az adott epizód neve)</p></item>
+  	<item><p><gui>Podcast</gui>: (a podcast neve)</p></item>
+  	<item><p><gui>Közzététel</gui> (az epizód közzétételének dátuma)</p></item>
+  </list>
+  
+  </section>	
+  	  	  
+</page>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboardshortcuts" xml:lang="el">
+
+<info>
+    <link type="guide" xref="advanced#keyboard"/>
+  <desc>Συντομεύσεις πληκτρολογίου</desc>
+  <revision pkgversion="2.0" version="0.1" date="2010-05-29" status="draft"/>
+  <credit type="author">
+    <name>Paul Cutler</name>
+    <email>pcutler@gnome.org</email>
+  </credit>
+
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+
+  <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Έλεγχος του Banshee με χρήση συντομεύσεων πληκτρολογίου</title>
+  
+  <section id="playbackcontrol">
+  
+  <title>Έλεγχος αναπαραγωγής</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Πλήκτρο</gui></p></td>  <td><p><gui>Ενέργεια</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>Πλήκτρο διαστήματος</p></td> <td><p>Αναπαραγωγή ή παύση του τρέχοντος τραγουδιού</p></td>
+  </tr>
+  <tr>
+    <td><p>N</p></td>     <td><p>Αναπαραγωγή του επόμενου τραγουδιού</p></td>
+  </tr>
+  <tr>
+    <td><p>B</p></td> <td><p>Αναπαραγωγή του προηγούμενου τραγουδιού</p></td>
+  </tr>
+</table>
+
+  </section>
+  
+  <section id="library">
+  
+  <title>Αλληλεπίδραση με βιβλιοθήκη</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Πλήκτρο</gui></p></td>  <td><p><gui>Ενέργεια</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>/</key>, <keyseq><key>Control</key><key>F</key></keyseq></p></td> <td><p>Μεταφορά της εστίασης στο πεδίο αναζήτησης</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Έλεγχος</key><key>I</key></keyseq></p></td>
+         <td><p>Άνοιγμα του διαλόγου εισαγωγής πολυμέσων</p></td>
+   </tr>      
+</table>
+
+  </section>  
+
+  <section id="playlists">
+  
+  <title>Λίστες αναπαραγωγής</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Πλήκτρο</gui></p></td>  <td><p><gui>Ενέργεια</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Έλεγχος</key><key>N</key></keyseq></p></td> <td><p>Δημιουργία νέας λίστας αναπαραγωγής</p></td>
+  </tr>
+         
+</table>
+
+  </section> 
+  
+    <section id="podcasts">
+  
+  <title>Φορητές εκπομπές</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Πλήκτρο</gui></p></td>  <td><p><gui>Ενέργεια</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>Y</key></p></td> <td><p>Σήμανση των επιλεγμένων επεισοδίων ως παλαιών</p></td>
+  </tr>
+         
+</table>
+
+  </section> 
+  
+  <section id="interface">
+  
+  <title>Διεπαφή</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Πλήκτρο</gui></p></td>  <td><p><gui>Ενέργεια</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>F</key></p></td> <td><p>Εναλλαγή κατάστασης πλήρους οθόνης</p></td>
+  </tr>  
+  <tr>
+    <td><p><keyseq><key>Έλεγχος</key><key>A</key></keyseq></p></td> <td><p>Επιλέξτε όλα τα τραγούδια στην προβολή λίστας αναπαραγωγής</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Έλεγχος</key><key>Shift</key><key>A</key></keyseq></p>
+    </td> <td><p>Αποεπιλογή όλων των τραγουδιών στην προβολή λίστας αναπαραγωγής</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Έλεγχος</key><key>W</key></keyseq></p></td> <td><p>Απόκρυψη του παραθύρου του Banshee (Απαιτεί ενεργοποίηση του πρόσθετου περιοχής ειδοποιήσεων)</p></td>
+  </tr>    
+  <tr>
+    <td><p><keyseq><key>Έλεγχος</key><key>Αριστερό κουμπί του ποντικιού</key></keyseq>
+    </p></td> <td><p>Αναπαραγωγή προηγούμενου τραγουδιού (Απαιτεί ενεργοποίηση του πρόσθετου περιοχής ειδοποιήσεων)</p></td>
+  </tr> 
+  <tr> 
+    <td><p><keyseq><key>Έλεγχος</key><key>Δεξί κουμπί του ποντικιού</key></keyseq>
+    </p></td> <td><p>Αναπαραγωγή επόμενου τραγουδιού (Απαιτεί ενεργοποίηση του πρόσθετου περιοχής ειδοποιήσεων)</p></td>
+  </tr> 
+  <tr> 
+    <td><p><keyseq><key>Έλεγχος</key><key>Μεσαίο κουμπί του ποντικιού</key></keyseq>
+    </p></td> <td><p>Εναλλαγή αναπαραγωγής / παύσης (Απαιτεί ενεργοποίηση του πρόσθετου περιοχής ειδοποιήσεων)</p></td>
+  </tr>    
+         
+</table>
+
+  </section>   
+</page>

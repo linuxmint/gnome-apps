@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="playlists" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="tags"/>
+    <link type="seealso" xref="coverart"/>
+    <desc>Creació i gestió de llistes de reproducció.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-05-26" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Llistes de reproducció</title>    
+  
+  <p>Les llistes de reproducció us permeten crear i desar llistes de cançons per ser reproduïdes en un ordre específic. Les llistes de reproducció són una manera còmode de crear llistes amb les vostres cançons preferides o per dividir la biblioteca en llistes més petites més fàcils de navegar. Alguns reproductors portables multimèdia permeten transferir llistes de reproducció perquè les pugueu utilitzar en aquests dispositius.</p>
+  
+  <p>El Banshee disposa de llistes de reproducció normals, que inclouen les cançons que afegiu. També disposa de llistes de reproducció intel·ligents, que es basen en els hàbits de reproducció, música preferida i d'altres.</p>
+  
+  <section id="manual">
+  
+    <title>Llistes de reproducció normals</title>
+  
+    <p>Una llista de reproducció normal és una llista de cançons a la que afegiu cançons i que gestioneu manualment. Podeu crear llistes de cançons del vostre artista preferit des de múltiples àlbums, per les cançons més noves que preferiu, o per escoltar mentre feu exercici.</p>
+    
+    <p>Podeu crear una nova llista de reproducció prement <keyseq><key>Control</key><key>N</key></keyseq>, des del menú escollint <guiseq><gui>Menú</gui><gui>Llista de reproducció nova</gui></guiseq> o cercant les cançons que us agradaria afegir a la llista de reproducció. Escolliu les cançons, feu clic amb el botó dret del ratolí, i escolliu <guiseq><gui>Afegeix a la llista de reproducció</gui><gui>Llista de reproducció nova</gui></guiseq>.També podeu arrossegar i deixar anar a una llista de reproducció nova seleccionant les cançons i deixant-les anar a la subfinestra esquerra sobre <gui>Música</gui>. Quan arrossegueu sobre <gui>Música</gui>, apareixerà una nova opció <gui><em>Llista de reproducció nova</em></gui>, podeu deixar anar les cançons sobre <gui><em>Llista de reproducció nova</em></gui> per afegir-les a la llista de reproducció. Podeu repetir aquest procés fins afegir totes les cançons que voleu a la llista de reproducció.</p>
+
+    <p>Per a anomenar una llista de reproducció, escolliu la llista de reproducció i feu clic amb el botó dret del ratolí sobre la llista de reproducció i premeu <gui>Canvia el nom</gui> i introduïu el nom de la llista de reproducció.</p>
+    
+    <p>Podeu canviar l'ordre a una llista de reproducció arrossegant i deixant anar la cançó a la nova posició a la llista de reproducció. Les cançons només es poden tornar a ordenar quan la llista de reproducció no està ordenada per cap columna. Per deixar d'ordenar per una columna, premeu sobre la columna fins que la fletxa d'amunt o avall no es mostri i la columna quedi en blanc, llavors torneu a ordenar la llista de reproducció.</p>
+    
+    <p>Per a suprimir una cançó de la llista de reproducció, seleccioneu la cançó que voleu suprimir. Premeu la tecla <key>suprimir</key>, des del menú escolliu <guiseq><gui>Edita</gui><gui>Suprimeix de la llista de reproducció</gui></guiseq> o feu clic amb el botó dret a les cançons amb el ratolí i premeu <gui>Suprimeix de la llista de reproducció</gui>.</p>
+  </section> 
+  
+  <section id="smartplaylists">
+    <title>Llistes de reproducció intel·ligents</title>
+    
+    <p>Les llistes de reproducció intel·ligents us permeten generar ràpidament una llista de reproducció dinàmica basada en un nombre de variables predeterminat. Podeu crear ràpidament una llista de reproducció nova basant-vos en un artista específic, en els preferits o d'altres.</p>
+    
+    <p>Per a crear una llista intel·ligent nova, des del menú escolliu <guiseq><gui>Elements multimèdia</gui><gui>Llista de reproducció intel·ligent nova</gui></guiseq>. Es mostrarà una capsa de diàleg per a crear una llista de reproducció intel·ligent nova. Introduïu el nom de la llista de reproducció i llavors escolliu el criteri en què es basarà la llista de reproducció. Podeu escollir qualsevol camp inclòs a les metadades de la cançó, com ara l'àlbum, l'artista, o l'any. Establiu els criteris i llavors seleccioneu un dels següents:</p>
+    
+    <list>
+      <item><p>és</p></item>
+      <item><p>no és</p></item>  
+      <item><p>menys que</p></item>
+      <item><p>més que</p></item>  
+      <item><p>com a màxim</p></item>
+      <item><p>com a mínim</p></item>  
+    </list>
+    
+    <p>Podeu també prémer el botó <gui>+</gui> i afegir una consulta addicional a la llista de reproducció intel·ligent. Per exemple, podeu crear una llista de reproducció intel·ligent que inclogui cançons del 2010 i que hàgiu valorat amb 5 estrelles. Per a crear aquesta llista de reproducció seleccionaríeu:</p>
+    
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Any</gui></p></td> <td><p><gui>és</gui></p> </td> 
+    <td><p><gui>2010</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><gui>Valoració</gui></p></td> <td><p><gui>és</gui></p></td> 
+    <td><p><gui/>5 estrelles</p></td>
+  </tr>
+  </table>
+    
+    <p>Llavors podeu opcionalment seleccionar quantes cançons s'inclouen pressionant <gui>Limita</gui> a la casella de selecció i seleccionant el nombre de cançons a incloure.</p>
+  
+  <p>Banshee també inclou llistes de reproducció intel·ligents que ja han estat creades per defecte. Premeu el botó <gui>Obre en l'editor</gui> per a veure els criteris de creació de la llista de reproducció intel·ligent o per a modificar-los. Si premeu <gui>Crea i desa</gui> la llista de reproducció es generarà i desarà automàticament. Les següents llistes de reproducció es troben ja creades: </p>
+  
+  <list>
+    <title>Llistes de reproducció intel·ligents del Banshee</title>
+    <item><p>Preferits (cançons amb una valoració de quatre i cinc estrelles)</p></item>
+    <item><p>Preferits recents (cançons que es van escoltar freqüentment la setmana passada)</p></item>  
+    <item><p>Afegits recentment (cançons importades durant l'última setmana)</p></item>
+    <item><p>No escoltats (cançons que no s'han reproduït o s'han omès)</p></item>
+    <item><p>Preferits abandonats (preferits que no s'han reproduït des de fa més de dos mesos)</p></item>
+    <item><p>700 MB de preferits (un CD de dades ple de cançons preferides)</p></item>
+    <item><p>80 minuts de preferits (un CD d'àudio ple de cançons preferides)</p></item>
+    <item><p>Sense valoració (cançons que no han estat valorades)</p></item>
+  </list>
+ 
+   </section> 
+ 
+</page>

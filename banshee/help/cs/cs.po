@@ -1,0 +1,2171 @@
+# Czech translation for banshee.
+# Copyright (C) 2011 banshee's COPYRIGHT HOLDER
+# This file is distributed under the same license as the banshee package.
+#
+# Marek Černocký <marek@manet.cz>, 2011, 2012, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: banshee banshee-2.6\n"
+"POT-Creation-Date: 2013-04-07 13:45+0000\n"
+"PO-Revision-Date: 2013-05-29 01:17+0200\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/ui.page:29(None)
+msgid "@@image: 'figures/banshee.png'; md5=THIS FILE DOESN'T EXIST"
+msgstr "@@image: 'figures/banshee.png'; md5=THIS FILE DOESN'T EXIST"
+
+#: C/ui.page:8(desc)
+msgid "An overview of <app>Banshee's</app> user interface."
+msgstr "Přehled uživatelského rozhraní přehrávače <app>Banshee</app>."
+
+#: C/ui.page:12(name) C/sync.page:12(name) C/sort.page:12(name)
+#: C/search.page:12(name) C/play.page:12(name) C/play-queue.page:12(name)
+#: C/manage-tags.page:13(name) C/manage-playlists.page:13(name)
+#: C/manage-coverart.page:12(name) C/lastfm.page:12(name)
+#: C/keyboardshortcuts.page:10(name) C/introduction.page:12(name)
+#: C/index.page:10(name) C/import.page:11(name) C/extensions.page:11(name)
+#: C/amazon.page:12(name) C/advanced.page:11(name) C/add-radio.page:14(name)
+#: C/add-podcast.page:14(name)
+msgid "Paul Cutler"
+msgstr "Paul Cutler"
+
+#: C/ui.page:13(email) C/sync.page:13(email) C/sort.page:13(email)
+#: C/search.page:13(email) C/play.page:13(email) C/play-queue.page:13(email)
+#: C/manage-tags.page:14(email) C/manage-playlists.page:14(email)
+#: C/manage-coverart.page:13(email) C/lastfm.page:13(email)
+#: C/keyboardshortcuts.page:11(email) C/introduction.page:13(email)
+#: C/index.page:11(email) C/import.page:12(email) C/extensions.page:12(email)
+#: C/amazon.page:13(email) C/advanced.page:12(email)
+#: C/add-radio.page:15(email) C/add-podcast.page:15(email)
+msgid "pcutler@gnome.org"
+msgstr "pcutler@gnome.org"
+
+#: C/ui.page:24(title)
+msgid "Introduction to the Banshee User Interface"
+msgstr "Úvod do uživatelského rozhraní Banshee"
+
+#: C/ui.page:27(title)
+msgid "<gui>Banshee Media Player</gui> window"
+msgstr "Okno <gui>Multimediálního přehrávače Banshee</gui>"
+
+#: C/ui.page:28(app) C/index.page:26(title)
+msgid "Banshee Media Player"
+msgstr "Multimediální přehrávač Banshee"
+
+#: C/ui.page:30(p)
+msgid "<app>Banshee</app> library interface"
+msgstr "Rozhraní kolekce <app>Banshee</app>"
+
+#: C/ui.page:35(title)
+msgid "Sources"
+msgstr "Zdroje"
+
+#: C/ui.page:36(p)
+msgid ""
+"Your music and video sources are shown on the left in Banshee. The sources "
+"give you quick access to your Play Queue, Music, Videos, Amazon, Last.fm, "
+"Podcasts and more."
+msgstr ""
+"Vaše zdroje hudby a videí jsou zobrazeny v levé části okna Banshee. Zdroje "
+"vám poskytují rychlý přístup k frontě přehrávání, hudbě, videím, službám "
+"Amazon a Last.fm, podcastům a dalším."
+
+#: C/ui.page:42(p)
+msgid ""
+"The menu choices will change depending on the source you have chosen. For "
+"example, to use the menu to import a Podcast, you will need to choose the "
+"Podcast source. The menu option for importing a Podcast is not available "
+"when viewing the video or music library."
+msgstr ""
+"Volby nabídky se mění podle toho, který zdroj máte zvolen. Pokud například "
+"chcete použít nabídku pro import podcastu, musíte zvolit zdroj podcastů. "
+"Volba nabídky pro import podcastu není dostupná, když si prohlížíte video "
+"nebo hudební kolekci."
+
+#: C/ui.page:50(title)
+msgid "Library Browser"
+msgstr "Procházení kolekcí"
+
+#: C/ui.page:51(p)
+msgid ""
+"When you select a music or video source from Sources, Banshee will display "
+"your content in the Library browser. Depending on the source you choose, "
+"Banshee can display your music or video library, Podcast subscriptions or "
+"even the Amazon Music Store to allow you to buy music."
+msgstr ""
+"Když ve zdrojích vyberete zdroj hudby nebo videa, přehrávač Banshee zobrazí "
+"váš obsah v prohlížeči kolekce. Podle toho, jaký zdroj jste zvolili, může "
+"Banshee zobrazit vaši kolekci hudby nebo videa, odběry podcastů nebo i "
+"hudební obchod Amazon, kde můžete hudbu nakupovat."
+
+#: C/ui.page:58(title)
+msgid "Now Playing View"
+msgstr "Právě se přehrává"
+
+#: C/ui.page:59(p)
+msgid ""
+"Helpful when using Banshee in full screen mode, the Now Playing mode hides "
+"the library to give you a larger view of the music or video you're watching. "
+"When listening to music, the Now Playing view will show you the artist name, "
+"album and cover art if available. If you are watching a video, Banshee will "
+"display the video."
+msgstr ""
+"Pokud používáte přehrávač Banshee v režimu celé obrazovky, režim Právě se "
+"přehrává skryje kolekci, abyste získali větší pohled na hudbu nebo video, "
+"které sledujete. Když posloucháte hudbu, Právě se přehrává zobrazí jméno "
+"umělce, album a přebal (pokud je dostupný). Když sledujete video, bude "
+"Banshee zobrazovat video."
+
+#: C/ui.page:65(p)
+msgid ""
+"To change Now Playing to hide the Banshee user interface and use the full "
+"screen mode, you can press the <key>F</key>, press the <gui>Fullscreen</gui> "
+"button in the upper right hand corner of Banshee, or choose "
+"<guiseq><gui>View</gui><gui>Fullscreen</gui></guiseq> to start Fullscreen "
+"mode."
+msgstr ""
+"Pokud chcete zapnout režim Právě se přehrává, aby se skrylo uživatelské "
+"rozhraní Banshee a použil režim celé obrazovky, zmáčkněte <key>F</key> nebo "
+"tlačítko <gui>Celá obrazovka</gui> v pravém horním rohu přehrávače Banshee a "
+"nebo zvolte <guiseq><gui>Zobrazit</gui><gui>Celá obrazovka</gui></guiseq>."
+
+#: C/ui.page:74(title)
+msgid "Library"
+msgstr "Kolekce"
+
+#: C/ui.page:75(p)
+msgid ""
+"The Library view in Banshee will change depending on the Source you have "
+"chosen. The Music Library will display cover art, artists in your library, "
+"and list of songs. The Podcast Library will display your Podcast "
+"subscriptions, podcasts that are downloaded or not downloaded, and all, new "
+"or old podcasts. Please see each Source's help page for detailed information "
+"on managing a source."
+msgstr ""
+"Zobrazení kolekce se v přehrávači Banshee mění v závislosti na zdroji, který "
+"máte zvolen. Hudební kolekce zobrazí přebal, umělce a seznam skladeb. "
+"Kolekce podcastu zobrazí vaše odběry podcastů, podcasty, které jsou staženy "
+"a které ne, a všechny, nové nebo staré podcasty. Na další podrobné informace "
+"o správě toho kterého zdroje se prosím podívejte na stránku s nápovědou "
+"příslušného zdroje."
+
+#: C/sync.page:9(desc)
+msgid "Sync your media to a portable media player or smartphone."
+msgstr "Synchronizujte svá média s přenosnými přehrávači a smartfony."
+
+#: C/sync.page:24(title)
+msgid "Sync"
+msgstr "Synchronizace"
+
+#: C/sync.page:26(p)
+msgid ""
+"Banshee supports syncing your music to portable media players and "
+"smartphones. You can add specific music tracks, albums or playlist or allow "
+"Banshee to keep your music player in sync with your entire library. After "
+"your player is connected to your computer you can also play back the songs "
+"on your portable player in Banshee. When syncing music in a lossless format, "
+"such as FLAC, Banshee will automatically transcode your music for you to a "
+"lossy format such as Ogg Vorbis or MP3, if you have the correct codecs "
+"installed."
+msgstr ""
+"Přehrávač Banshee podporuje synchronizaci vaší hudby do přenosných "
+"multimediálních přehrávačů a smartfonů. Můžete přidávat konkrétní hudební "
+"stopy, alba nebo seznamy skladeb nebo dovolit Banshee udržovat váš hudební "
+"přehrávač synchronizovaný s určitou z kolekcí. Po připojení vašeho "
+"přehrávače k počítači můžete na něm také v Banshee přehrávat skladby. Když "
+"synchronizujete hudbu v bezeztrátovém formátu (jako je FLAC) bude Banshee, "
+"pokud máte nainstalovaný správný kodek, překódovávat vaši hudbu do "
+"ztrátového formátu (jako je Ogg nebo MP3)."
+
+#: C/sync.page:37(title)
+msgid "Device Support"
+msgstr "Podpora zařízení"
+
+#: C/sync.page:38(p)
+msgid ""
+"Banshee supports almost all modern portable music players and smartphones "
+"with the notable exception of the Apple iPhone, iPad and iPod Touch."
+msgstr ""
+"Banshee podporuje téměř všechny moderní přenosné hudební přehrávače a "
+"smartfony se známými výjimkami týkajícími se Apple iPhone, iPad a iPod Touch."
+
+#: C/sync.page:42(p)
+msgid ""
+"When you plug your device in, Banshee will display it in the left menu. "
+"Pressing the device icon will take you to your device home page in Banshee "
+"displaying your sync preferences."
+msgstr ""
+"Když své zařízení připojíte, přehrávač Banshee jej zobrazí v nabídce vlevo. "
+"Zmáčknutím ikony zařízení se přenesete na domovskou stránku svého zařízení v "
+"Banshee, která zobrazuje vaše předvolby synchronizace."
+
+#: C/sync.page:50(title)
+msgid "Sync Your Music"
+msgstr "Synchronizace vaší hudby"
+
+#: C/sync.page:51(p)
+msgid ""
+"You can choose to manage the media on your portable music by having Banshee "
+"automatically sync it or manage your music and media manually."
+msgstr ""
+"Můžete zvolit, aby přehrávač Banshee synchronizoval média na vašem přenosném "
+"přehrávači automaticky nebo můžete svoji hudbu a média spravovat ručně."
+
+#: C/sync.page:56(p)
+msgid ""
+"Choose your device from the Banshee menu and then choose how you want to "
+"sync your media, including:"
+msgstr ""
+"Zvolte v nabídce Banshee své zařízení a pak zvolte, jak chcete "
+"synchronizovat svá média, včetně:"
+
+#: C/sync.page:60(p)
+msgid "Music"
+msgstr "hudby"
+
+#: C/sync.page:61(p)
+msgid "Audiobooks"
+msgstr "mluvených knih"
+
+#: C/sync.page:62(p)
+msgid "Videos"
+msgstr "videí"
+
+#: C/sync.page:63(p)
+msgid "Podcast"
+msgstr "podcastů"
+
+#: C/sync.page:66(p)
+msgid "From the dropdown menu next to each of the media, choose from:"
+msgstr "Z rozbalovací nabídky u každého média zvolte z:"
+
+#: C/sync.page:69(p)
+msgid "Manage manually"
+msgstr "Spravovat ručně"
+
+#: C/sync.page:70(p)
+msgid "Sync entire library"
+msgstr "Synchronizovat celou kolekci"
+
+#: C/sync.page:74(p)
+msgid ""
+"If you choose to sync your entire library automatically with your portable "
+"media player make sure your portable media player has enough storage space. "
+"If your library is larger than the space on your portable media player, "
+"Banshee will sync media until your player is full and then stop."
+msgstr ""
+"Pokud zvolíte synchronizaci své celé kolekce s přenosným přehrávačem "
+"automaticky, ujistěte se, že váš přenosný multimediální přehrávač má "
+"dostatek úložného místa. V případě, že je kolekce větší než dostupné místo v "
+"přehrávači, Banshee bude média synchronizovat dokud se přehrávač nezaplní a "
+"pak synchronizaci ukončí."
+
+#: C/sync.page:82(p)
+msgid ""
+"If you have created playlists or smart playlists in your music library, they "
+"will also be displayed as a sync option for Music. This can be helpful when "
+"creating smart playlists, as smart playlists will automatically update as "
+"new content is added based on the playlist rules, and Banshee will sync the "
+"new playlist to your device every time you plug it in."
+msgstr ""
+"Jestliže máte ve své kolekci vytvořen seznam skladeb nebo chytrý seznam "
+"skladeb, bude rovněž zobrazen jako volba synchronizace pro hudbu. To může "
+"být užitečné, když vytváříte chytré seznamy skladeb tak, že chytré seznamy "
+"skladeb budou automaticky aktualizovány, když je přidán nový obsah podle "
+"pravidel seznamu skladeb a Banshee synchronizuje nový seznam skladeb do "
+"zařízení pokaždé, když jej připojíte."
+
+#: C/sync.page:89(p)
+msgid ""
+"Banshee will display the total hard drive space of your portable music "
+"player in a graph in the bottom center of Banshee. The graph will show you "
+"how much space is taken by audio files, video, other and free space. "
+"Directly below that Banshee will show you how many total items are stored on "
+"your portable music player, how many hours or days of listening that is "
+"equal to, and total space used."
+msgstr ""
+"Přehrávač Banshee bude zobrazovat celkové místo na disku vašeho přenosného "
+"multimediálního přehrávače v grafu dole uprostřed okna Banshee. Graf vám "
+"ukáže, kolik prostoru zabírají zvukové soubory, videa, ostatní soubory a "
+"volné místo. Přímo pod ním Banshee zobrazuje, kolik položek celkem je na "
+"vašem přenosném přehrávači uloženo, kolika hodinám či dnům poslechu to "
+"odpovídá a celkové obsazené místo."
+
+#: C/sync.page:100(title)
+msgid "Sync Your Entire Library"
+msgstr "Synchronizace celé vaší kolekce"
+
+#: C/sync.page:101(p)
+msgid ""
+"You can drag and drop media to your portable music player from Banshee. "
+"Select the file or files you want to copy to your portable media player and "
+"then press and hold your right mouse button and drag the file(s) to your "
+"portable media player icon in Banshee. This will copy the files to your "
+"device."
+msgstr ""
+"Média z Banshee do přenosného hudebního přehrávače můžete přenášet způsobem "
+"táhni a pusť. Vyberte soubor či soubory, které chcete překopírovat do "
+"přehrávače a zmáčkněte a držte pravé tlačítko myši a přetáhněte soubor(y) na "
+"ikonu přenosného multimediálního přehrávače v Banshee. Tím se soubory do "
+"vašeho zařízení překopírují."
+
+#: C/sync.page:108(p)
+msgid ""
+"If your music library is encoded in a format that your portable media player "
+"does not support, such as OGG or FLAC, and you have the necessary codecs "
+"installed, Banshee can automatically transcode these files to MP3 when "
+"transferring to your portable media player. Check with your Linux "
+"distribution for the necessary codecs as it is outside the scope of this "
+"help and varies by distribution."
+msgstr ""
+"V případě, že je vaše hudební kolekce kódována ve formátu, který váš hudební "
+"přehrávač nepodporuje, třeba OGG nebo FLAC, a máte nainstalován patřičný "
+"kodek, umí Banshee soubory při přenosu do vašeho přenosného multimediálního "
+"přehrávač automaticky překódovat do MP3. To jak zkontrolovat, zda vaše "
+"distribuce obsahuje potřebné kodeky, je mimo rámec této příručky a liší se "
+"distribuci od distribuce."
+
+#: C/sync.page:117(p)
+msgid ""
+"You may need to eject your device to load the files correctly on your "
+"portable music player. To eject your device in Banshee, using your mouse "
+"right click the device in the Banshee menu and press <gui>Disconnect</gui>."
+msgstr ""
+"Aby se soubory do přenosného multimediálního přehrávače správně načetly, "
+"může být zapotřebí zařízení „vysunout“. V Banshee k tomu použijte kliknutí "
+"pravým tlačítkem myši na zařízení a v nabídce zmáčkněte <gui>Odpojit</gui>."
+
+#: C/sync.page:127(title)
+msgid "Play Music From Your Portable Music Player"
+msgstr "Přehrávání hudby z vašeho přenosného hudebního přehrávače"
+
+#: C/sync.page:128(p)
+msgid ""
+"You can play music stored on your portable music player directly in Banshee. "
+"Choose your player in the Banshee menu on the left and your portable music "
+"player's library will be displayed. You can then play music in Banshee just "
+"as you would music in your own library."
+msgstr ""
+"Hudbu uloženou na svém přenosném multimediálním přehrávači můžete v Banshee "
+"rovnou přehrávat. V nabídce nalevo zvolte svůj přehrávač a zobrazí se "
+"kolekce vašeho přenosného přehrávače. Hudbu pak můžete přehrávat úplně "
+"stejně, jako ze své vlastní kolekce."
+
+#: C/sync.page:135(title)
+msgid "Remove Music From your Portable Music Player"
+msgstr "Odstraňování hudby z vašeho přenosného hudebního přehrávače"
+
+#: C/sync.page:136(p)
+msgid ""
+"To remove songs stored on your portable music player, choose your player in "
+"Banshee to view its library. Then choose the tracks you would like to remove "
+"and right click the tracks and choose <gui>Delete</gui> or from the menu "
+"choose <guiseq><gui>Edit</gui><gui>Delete</gui></guiseq>."
+msgstr ""
+"Pokud chcete odstranit skladbu uloženou ve svém přenosném multimediálním "
+"přehrávači, zvolte v Banshee zobrazení jeho kolekce. Po té zvolte stopu, "
+"kterou si přejete odstranit, klikněte na ni pravým tlačítkem a zvolte "
+"<gui>Odstranit</gui> nebo v nabídce zvolte <guiseq><gui>Upravit</"
+"gui><gui>Odstranit</gui></guiseq>."
+
+#: C/sync.page:142(p)
+msgid ""
+"Deleting files from your portable music player will permanently remove the "
+"files and you will not be able to recover them."
+msgstr ""
+"Odstraněné soubory se z vašeho přenosného hudebního přehrávače smažou trvale "
+"a již je nebudete moci obnovit."
+
+#: C/sort.page:9(desc)
+msgid "Sort your media and add additional columns."
+msgstr "Řaďte si svá média a přidávejte další sloupce."
+
+#: C/sort.page:24(title)
+msgid "Sort your media"
+msgstr "Řazení vašich médií"
+
+#: C/sort.page:28(title)
+msgid "Adding Columns"
+msgstr "Přidávání sloupců"
+
+#: C/sort.page:30(p)
+msgid ""
+"As your library grows, you may want to change your library view to add "
+"additional information about the songs in your library or change the way you "
+"can view and sort your songs, artists or albums."
+msgstr ""
+"Jak vaše kolekce roste, můžete chtít změnit její zobrazení přidáním dalších "
+"informací o skladbách ve vaší kolekci nebo změnou způsobu, jak můžete "
+"zobrazit a seřadit své skladby, umělce a alba."
+
+#: C/sort.page:34(p)
+msgid ""
+"You can add additional columns to the library view in <app>Banshee</app> to "
+"give you more information about the songs and also allow you to sort by. By "
+"default, Banshee displays columns for songs including <gui>Name</gui>, "
+"<gui>Artist</gui>, <gui>Album</gui> and <gui>Time</gui>. To add additional "
+"columns, using your mouse right click on any of the columns and Banshee will "
+"display all available column to choose from. Click the checkbox next to the "
+"name of the column you wish to add to the library view."
+msgstr ""
+"Do zobrazení v přehrávači <app>Banshee</app> můžete přidávat další sloupce, "
+"abyste měli o skladbách více informací a mohli podle nich řadit. Jako "
+"výchozí sloupce pro skladby zobrazuje Banshee <gui>Název</gui>, <gui>Umělce</"
+"gui>, <gui>Album</gui> a <gui>Čas</gui>. Pokud chcete přidat další sloupce, "
+"použijte kliknutí pravým tlačítkem myši na libovolném sloupci a Banshee "
+"zobrazí všechny dostupné sloupce, ze kterých si můžete vybírat. Klikněte na "
+"zaškrtávací políčko vedle názvu sloupce, který si přejete do zobrazení "
+"přidat."
+
+#: C/sort.page:46(title)
+msgid "Sorting Columns"
+msgstr "Řazení sloupců"
+
+#: C/sort.page:47(p)
+msgid ""
+"You can sort your library by using your mouse to click on any of the columns "
+"displayed in library view. If you wish to sort your music library by Artist, "
+"click the <gui>Artist</gui> column header and Banshee will automatically "
+"sort that column alphabetically. Clicking the <gui>Artist</gui> column again "
+"will sort the column in reverse alphabetical order."
+msgstr ""
+"Své kolekce si můžete řadit pomocí myši tak, že kliknete na některý ze "
+"sloupců v zobrazení kolekce. Když si přejete seřadit svoji hudební kolekci "
+"podle umělce, klikněte na záhlaví sloupce <gui>Umělec</gui> a Banshee "
+"sloupec automaticky seřadí podle abecedy. Pokud na sloupce <gui>Umělec</gui> "
+"kliknete znovu, seřadí se abecedně v opačném pořadí."
+
+#: C/search.page:9(desc)
+msgid "Search your media and perfom basic queries."
+msgstr "Prohledávejte svá média a provádějte základní dotazy."
+
+#: C/search.page:24(title)
+msgid "Searching your Banshee Library"
+msgstr "Prohledávání vaší kolekce Banshee"
+
+#: C/search.page:26(p)
+msgid ""
+"Banshee features a powerful search language. You can search your library "
+"quickly and easily with basic search terms or perform detailed searches with "
+"Banshee's advanced search terminology."
+msgstr ""
+"Součástí funkcí Banshee je mocný vyhledávací jazyk. Své kolekce můžete "
+"prohledávat rychle a snadno pomocí základní vyhledávacích výrazů nebo "
+"provádět podrobné hledání pomocí pokročilé vyhledávací terminologie Banshee."
+
+#: C/search.page:30(p)
+msgid ""
+"To perform a search of your media in Banshee, press the <key>S</key> or "
+"click the <gui>Search</gui> box in the upper right hand corner of the "
+"Library view in Banshee."
+msgstr ""
+"Když chcete ve svých médiích v přehrávači Banshee vyhledávat, zmáčkněte "
+"<key>S</key> nebo klikněte do pole <gui>Hledat svoji hudbu</gui> v pravém "
+"horním rohu zobrazení knihovny."
+
+#: C/search.page:35(p)
+msgid ""
+"A search query consists of some basic terms, for example, <em>dave matthews</"
+"em>. By entering <em>dave matthews</em> in the search box, Banshee will "
+"search all metadata fields including Track Title, Album Title, Album Artist, "
+"Year, etc. Any track whose metadata includes <em>dave</em> and <em>matthews</"
+"em> will be returned. Search terms are case insensitive, meaning you don't "
+"have to capitalize. <em>dave</em>, <em>Dave</em>, and <em>DAVE</em> all mean "
+"the same thing when searching."
+msgstr ""
+"Vyhledávací dotazy se skládají z nějakých základních výrazů, například "
+"<em>wabi daněk</em>. Zadáním <em>wabi daněk</em> do vyhledávacího pole bude "
+"Banshee hledat ve všech polích metadat, včetně názvu stopy, názvu alba, "
+"umělce alba, roku atd. Jakákoliv stopa, jejíž data obsahují <em>wabi</em> a "
+"<em>daněk</em>, bude vrácena jako výsledek. Vyhledávací výrazy neberou ohled "
+"na velikost písmen, takže se velikostí písmen nemusíte zabývat. <em>wabi</"
+"em>, <em>Wabi</em> i <em>WABI</em> mají pro hledání stejnou hodnotu."
+
+#: C/search.page:43(title)
+msgid "Basic Operators"
+msgstr "Základní operátory"
+
+#: C/search.page:44(p)
+msgid ""
+"Operators can be placed between any two search words or placed before a "
+"search word. The default operation is <gui>AND</gui> and is used when no "
+"other operators are used between two search terms. Because it is the "
+"default, there is no explicit AND operator."
+msgstr ""
+"Mezi libovolná dvě hledaná slova nebo před hledané slovo lze umisťovat "
+"operátory. Výchozím operátorem je <gui>AND</gui>, který znamená „a zároveň“ "
+"a je použit jako výchozí, když mezi slovy žádný operátor zadán není. Protože "
+"je výchozí, není pro něj žádný symbol AND definován."
+
+#: C/search.page:49(p)
+msgid ""
+"Other basic operators include <gui>OR</gui> and <gui>NOT</gui>. Together, "
+"these three operations can yield very powerful queries to help you search "
+"your media."
+msgstr ""
+"Dalšími základními operátory jsou <gui>OR</gui> a <gui>NOT</gui>. Všechny "
+"tři operátory spolu dohromady umí sestavit velmi mocné dotazy, které vám "
+"pomohou s hledáním médií."
+
+#: C/search.page:56(title)
+msgid "Logical Operators and Examples"
+msgstr "Logické operátory a příklady"
+
+#: C/search.page:57(p)
+msgid ""
+"The following is a list of logical operators and examples of the search "
+"results when searching using them."
+msgstr ""
+"Následuje seznam logických operátorů a příkladů výsledků hledání při jejich "
+"použití."
+
+#: C/search.page:62(gui)
+msgid "Operator"
+msgstr "Operátor"
+
+#: C/search.page:62(gui) C/search.page:84(gui)
+msgid "Description"
+msgstr "Popis"
+
+#: C/search.page:65(p)
+msgid "<em>default</em>, <em>white space</em>"
+msgstr "<em>výchozí</em>, <em>bílý znak</em>"
+
+#: C/search.page:65(p)
+msgid "Search for two terms with a space between the two words or terms."
+msgstr "Hledá dva výrazy s mezerou mezi dvěma slovy nebo výrazy."
+
+#: C/search.page:69(p)
+msgid "OR, or, <key>|</key>, <key>,</key>"
+msgstr "OR, or, <key>|</key>, <key>,</key>"
+
+#: C/search.page:69(p)
+msgid "Search results will be two songs with either result in any field."
+msgstr ""
+"Výsledkem hledání budou skladby s alespoň z jedním z výrazů v libovolném "
+"poli."
+
+#: C/search.page:73(p)
+msgid "NOT, not,<key>-</key>"
+msgstr "NOT, not,<key>-</key>"
+
+#: C/search.page:73(p)
+msgid ""
+"Do not display search results with any search term that follows the operator "
+"of NOT, not,<key>-</key>."
+msgstr ""
+"Nezobrazovat výsledky hledání s libovolným výrazem, který následuje po "
+"operátoru NOT, not nebo <key>-</key>."
+
+#: C/search.page:80(p)
+msgid "Examples of logical operations include:"
+msgstr "Příklady použití logických operátorů:"
+
+#: C/search.page:84(gui)
+msgid "Query"
+msgstr "Dotaz"
+
+#: C/search.page:87(p)
+msgid "dave matthews"
+msgstr "wabi daněk"
+
+#: C/search.page:87(p)
+msgid ""
+"Matches any fields in a track containing both <em>dave</em> and "
+"<em>matthews</em>."
+msgstr ""
+"Odpovídají taková pole ve stopě, která obsahují jak <em>wabi</em>, tak "
+"<em>daněk</em>."
+
+#: C/search.page:92(p)
+msgid "dave, matthews"
+msgstr "wabi, daněk"
+
+#: C/search.page:92(p) C/search.page:97(p) C/search.page:102(p)
+msgid ""
+"Matches any fields in a track containing either <em>dave</em> or "
+"<em>matthews</em>."
+msgstr ""
+"Odpovídají taková pole ve stopě, která obsahují buď <em>wabi</em> nebo "
+"<em>daněk</em> (nebo obojí)."
+
+#: C/search.page:97(p)
+msgid "dave or matthews"
+msgstr "wabi or daněk"
+
+#: C/search.page:102(p)
+msgid "dave | matthews"
+msgstr "wabi | daněk"
+
+#: C/search.page:107(p)
+msgid "-\"dave matthews\""
+msgstr "-\"wabi daněk\""
+
+#: C/search.page:107(p)
+msgid "Displays all tracks whose fields do not contain <em>dave matthews</em>."
+msgstr "Zobrazí všechny stopy, jejichž pole neobsahují <em>wabi daněk</em>."
+
+#: C/search.page:114(p)
+msgid ""
+"For more information on performing more complex search queries, see the "
+"<link xref=\"adv-search\"/> page."
+msgstr ""
+"Více informací o provádění komplexnějších vyhledávacích dotazů najdete na "
+"stránce <link xref=\"adv-search\"/>."
+
+#: C/rb-import.page:8(desc)
+msgid ""
+"Import music and categorizations from the <app>Rhythmbox</app> music player."
+msgstr ""
+"Importujte hudbu a rozdělení do kategorií z multimediálního přehrávače "
+"<app>Rhythmbox</app>."
+
+#: C/rb-import.page:12(title)
+msgid "Import your <app>Rhythmbox</app> library"
+msgstr "Import vaší kolekce <app>Rhythmbox</app>"
+
+#: C/play.page:9(desc)
+msgid "Play your videos and music files."
+msgstr "Přehrávejte svá videa a hudební soubory."
+
+#: C/play.page:24(title)
+msgid "Play Your Media"
+msgstr "Přehrávání vašich médií"
+
+#: C/play.page:27(title)
+msgid "Play your music"
+msgstr "Přehrávání vaší hudby"
+
+#: C/play.page:29(p)
+msgid ""
+"To play music in Banshee, choose the Music source. The music library will "
+"show you all artists in your music library, cover art for each album, and a "
+"list of all songs in your library."
+msgstr ""
+"Když si chcete v Banshee přehrát hudbu, zvolte zdroj Hudba. Hudební knihovna "
+"vám zobrazí všechny umělce ve vaší hudební kolekci, přebaly pro každé z alb "
+"a seznam skladeb ve vaší kolekci."
+
+#: C/play.page:33(p)
+msgid ""
+"Choose the album or song you wish to play from the list of artists, albums "
+"or use the search bar in the upper right hand corner of Banshee."
+msgstr ""
+"Vyberte album nebo skladbu, které si přejete přehrát, ze seznamu umělců, alb "
+"nebo použijte vyhledávací pole v pravém horním rohu Banshee."
+
+#: C/play.page:37(p)
+msgid ""
+"To start playing a song, use your mouse to double click the song name, press "
+"the <key>Spacebar</key>, or choose <guiseq><gui>Playback</gui><gui>Play</"
+"gui></guiseq> from the Banshee menu."
+msgstr ""
+"K započetí přehrávání skladby použijte dvojité kliknutí myší na název "
+"skladby nebo zmáčkněte <key>mezerník</key> a nebo zvolte "
+"<guiseq><gui>Přehrát</gui><gui>Přehrát</gui></guiseq> z nabídky Banshee."
+
+#: C/play.page:42(p)
+msgid ""
+"You can also start playing an album by choosing the album in the album "
+"browser and using your mouse to double click the song name, press the "
+"<key>Spacebar</key>, or choose <guiseq><gui>Playback</gui><gui>Play</gui></"
+"guiseq> from the Banshee menu."
+msgstr ""
+"Můžete spustit i přehrávání alba výběrem alba v prohlížeči alba a dvojitým "
+"kliknutím na název skladby, zmáčknutím <key>mezerníku</key> nebo volbou "
+"<guiseq><gui>Přehrát</gui><gui>Přehrát</gui></guiseq> z nabídky Banshee."
+
+#: C/play.page:48(p)
+msgid ""
+"To play all songs by one artist, choose the artist in the artist browser and "
+"press the <key>Spacebar</key>, or choose <guiseq><gui>Playback</"
+"gui><gui>Play</gui></guiseq> from the Banshee menu."
+msgstr ""
+"Pro přehrání všech skladeb od jednoho umělce zvolte umělce v prohlížeči "
+"umělců a zmáčkněte <key>mezerník</key> nebo zvolte <guiseq><gui>Přehrát</"
+"gui><gui>Přehrát</gui></guiseq> z nabídky Banshee."
+
+#: C/play.page:53(p)
+msgid ""
+"Banshee also displays your Favorite albums (those you play the most), Recent "
+"Favorites, Recently Added and Unheard music. Choose the one you wish to "
+"listen to and you can play songs from each."
+msgstr ""
+"Přehrávač Banshee také zobrazuje vaše oblíbená alba (to jsou ta, které "
+"nejčastěji přehráváte), nedávno oblíbenou, nedávno přidanou a neposlouchanou "
+"hudbu. Jedno z toho si zvolte k poslechu a můžete přehrávat jednotlivé "
+"skladby."
+
+#: C/play.page:61(title)
+msgid "Play a video"
+msgstr "Přehrávání videa"
+
+#: C/play.page:63(p)
+msgid ""
+"Your imported videos are listed alphabetically. To play a video, choose the "
+"video you wish to play from the list and press the <key>Spacebar</key>, or "
+"choose <guiseq><gui>Playback</gui><gui>Play</gui></guiseq> from the Banshee "
+"menu."
+msgstr ""
+"Videa, která jste naimportovali, jsou seřazená abecedně. Když chcete video "
+"přehrávat, vyberte jej v seznamu a zmáčkněte <key>mezerník</key> nebo zvolte "
+"<guiseq><gui>Přehrát</gui><gui>Přehrát</gui></guiseq> z nabídky Banshee."
+
+#: C/play.page:68(p)
+msgid ""
+"Banshee also shows your Favorite videos (those you watch the most) and "
+"Unwatched videos. Choose one and you can play a video from the list."
+msgstr ""
+"Přehrávač Banshee také zobrazuje vaše oblíbená videa (to jsou ta, která "
+"sledujete nejčastěji) a nezhlédnutá videa. Jedno z toho si zvolte a můžete "
+"si přehrávat videa ze seznamu."
+
+#: C/play.page:74(title)
+msgid "Play a Podcast"
+msgstr "Přehrávání podcastu"
+
+#: C/play.page:76(p)
+msgid ""
+"Podcasts shows you all Podcasts you're subscribed to, all Podcast shows "
+"available, and the Podcast browser lists all Podcasts in order of newest "
+"first."
+msgstr ""
+"Zdroj Podcasty vám zobrazuje všechny podcasty, které odebíráte, všechny "
+"podcasty, které jsou dostupné, a prohlížeč podcastů vypisuje všechny "
+"podcasty v pořadí od nejnovějšího."
+
+#: C/play.page:80(p)
+msgid ""
+"To play a Podcast, choose the Podcast you wish to play from the list and "
+"press the <key>Spacebar</key>, or choose <guiseq><gui>Playback</"
+"gui><gui>Play</gui></guiseq> from the Banshee menu."
+msgstr ""
+"Když chcete poslouchat podcast, vyberte jej v seznamu a zmáčkněte "
+"<key>mezerník</key> nebo zvolte <guiseq><gui>Přehrát</gui><gui>Přehrát</"
+"gui></guiseq> z nabídky Banshee."
+
+#: C/play.page:88(title)
+msgid "Play an internet radio station"
+msgstr "Přehrávání stanice internetového rádia"
+
+#: C/play.page:90(p)
+msgid ""
+"The Radio source shows you all internet radio stations you have added to "
+"Banshee alphabetically."
+msgstr ""
+"Zdroj Rádio vám zobrazuje abecedně všechny Internetové rádiové stanice, "
+"které máte do přehrávače Banshee přidány."
+
+#: C/play.page:94(p)
+msgid ""
+"To play an internet radio station, choose the radio station you wish to play "
+"from the list and press the <key>Spacebar</key>, or choose "
+"<guiseq><gui>Playback</gui><gui>Play</gui></guiseq> from the Banshee menu."
+msgstr ""
+"Když chcete Internetovou rádiovou stanici poslouchat, vyberte ji v seznamu a "
+"zmáčkněte <key>mezerník</key> nebo zvolte <guiseq><gui>Přehrát</"
+"gui><gui>Přehrát</gui></guiseq> z nabídky Banshee."
+
+#: C/play-queue.page:9(desc)
+msgid "Add media to your play queue."
+msgstr "Přidávejte média do své fronty přehrávání."
+
+#: C/play-queue.page:18(title)
+msgid "Play Queue"
+msgstr "Fronta přehrávání"
+
+#: C/play-queue.page:20(p)
+msgid ""
+"The <gui>Play Queue</gui> allows you to add music to play in a sequential "
+"order. You can add many tracks to let you listen to hours of music non-stop. "
+"You can add individual tracks or entire albums, and sort or re-order them."
+msgstr ""
+"<gui>Fronta přehrávání</gui> vám umožňuje přidávat hudbu, kterou postupně "
+"chcete přehrát. Můžete si přidat hromadu stop a hodiny pak hudbu poslouchat "
+"bez přestávky. Můžete přidávat samostatné stopy nebo i celá alba a řadit je "
+"a přeuspořádávat."
+
+#: C/play-queue.page:26(title)
+msgid "Add Music to the Play Queue"
+msgstr "Přidávání hudby do fronty přehrávání"
+
+#: C/play-queue.page:28(p)
+msgid ""
+"From your music library, you will need to select the music tracks or albums "
+"you want to add to the play queue."
+msgstr ""
+"Ve své hudební kolekci si musíte vybrat hudební stopy nebo alba, která do "
+"fronty přehrávání chcete přidat."
+
+#: C/play-queue.page:32(p)
+msgid ""
+"To add an entire album to the Play Queue, using your mouse press and hold "
+"the album and drag the album over <gui>Play Queue</gui> in the far left "
+"window pane."
+msgstr ""
+"Pokud chcete přidat do fronty přehrávání celé album, použijte svou myš. "
+"Zmáčkněte a držte album a přetáhněte jej na <gui>Frontu přehrávání</gui> v "
+"levém panelu."
+
+#: C/play-queue.page:37(p)
+msgid ""
+"You can add music tracks to the Play Queue individually or as a group. To "
+"add an individual file, drag and drop it over the <gui>Play Queue</gui> in "
+"the far left window pane, or right click the track and choose <gui>Add to "
+"Play Queue</gui>."
+msgstr ""
+"Hudební stopy můžete do fronty přehrávání přidávat jednotlivě nebo po "
+"skupinách. Jednotlivý soubor přidáte postupem táhni a pusť do <gui>Fronty "
+"přehrávání</gui> v levém panelu okna nebo klikněte na stopu pravým tlačítkem "
+"a zvolte <gui>Přidat do fronty přehrávání</gui>."
+
+#: C/play-queue.page:43(p)
+msgid ""
+"You can select multiple files by using your mouse and pressing <key>Control</"
+"key> and choosing each file with your mouse or select a range of files by "
+"pressing <key>Shift</key> and clicking twice to select that range of files. "
+"You can then drag and drop it over the <gui>Play Queue</gui> in the far left "
+"window pane or right click the tracks and choose <gui>Add to Play Queue</"
+"gui>."
+msgstr ""
+"Více souborů můžete označit svojí myší buď spolu se zmáčknutou klávesou "
+"<key>Control</key> a vybíráním jednotlivých souborů nebo zmáčknutím "
+"<key>Shift</key> a výběrem rozsahu. Výběr můžete do <gui>Fronty přehrávání</"
+"gui> přesunout pomocí táhni a pusť nebo na něj kliknout pravým tlačítkem a "
+"zvolit <gui>Přidat do fronty přehrávání</gui>."
+
+#: C/play-queue.page:56(title)
+msgid "Organize Your Play Queue"
+msgstr "Uspořádání vaší fronty přehrávání"
+
+#: C/play-queue.page:58(p)
+msgid ""
+"Your Play Queue is organized in the order of the tracks you added. The first "
+"tracks or albums you added to the queue will be the first to be played. You "
+"can re-order your Play Queue by using your mouse and dragging and dropping a "
+"track or group of tracks in the list. Choose the track(s) you wish to re-"
+"order with your mouse and release your mouse over the number or place in the "
+"list you wish those files to be in the queue."
+msgstr ""
+"Vaše fronta přehrávání je uspořádána tak, jak jste do ní stopy přidávali. "
+"Stopa nebo album, které jste přidali jako první, budou jako první přehrány. "
+"Pořadí ve frontě můžete měnit myší přetahování stop nebo skupin stop v "
+"seznamu. Vyberte stopu či stopy, u které chcete změnit pořadí, zmáčkněte "
+"tlačítko myši, držte jej a táhněte v seznamu na nové místo. Tam tlačítko "
+"pusťte."
+
+#: C/play-queue.page:70(title)
+msgid "Removing Tracks from the Play Queue"
+msgstr "Odstraňování stop z fronty přehrávání"
+
+#: C/play-queue.page:72(p)
+msgid ""
+"You can remove an individual track, a group of tracks, or clear your entire "
+"play queue."
+msgstr ""
+"Můžete odstraňovat jednotlivé stopy, skupiny stop nebo vymazat celou frontu."
+
+#: C/play-queue.page:76(p)
+msgid ""
+"To remove an individual track or group of tracks, select the track with your "
+"mouse and then press <key>Delete</key>."
+msgstr ""
+"Když chcete odstranit jednotlivou stopu nebo skupinu stop, vyberte stopu "
+"myši a zmáčkněte <key>Delete</key>."
+
+#: C/play-queue.page:80(p)
+msgid ""
+"To clear your entire Play Queue, press the <gui>Clear</gui> button in the "
+"upper right hand corner of the Play Queue."
+msgstr ""
+"Když chcete vymazat celou frontu přehrávání, zmáčkněte tlačítko "
+"<gui>Vyprázdnit</gui> v pravém horním rohu fronty přehrávání."
+
+#: C/manage-tags.page:10(desc)
+msgid "Edit and change music tags and metadata."
+msgstr "Upravujte a měňte hudební štítky a metadata."
+
+#: C/manage-tags.page:25(title)
+msgid "Music Metadata"
+msgstr "Hudební metadata"
+
+#: C/manage-tags.page:29(title)
+msgid "Music metadata"
+msgstr "Hudební metadata"
+
+#: C/manage-tags.page:31(p)
+msgid ""
+"Digital music contains metadata that stores information in the music file "
+"including the artist, album, year recorded, genre, and more. Almost all "
+"music purchased over the internet will have the metadata already embedded "
+"and if you import music from CDs, Banshee will include the metadata when "
+"ripping the CD if available. For more information on ripping CDs and "
+"including the metadata see the <link xref=\"import\"/>."
+msgstr ""
+"Hudba v digitální podobě obsahuje metadata, která uchovávají v souboru "
+"informace jako je umělec, album, rok nahrávky, žánr a další. Většina hudby "
+"šířené po Internetu má metadata již vložena a když si hudbu importujete z "
+"CD, a metadata jsou na CD k dispozici, Banshee je vloží. Více informací o "
+"extrahování dat z CD a vkládání metadat podává kapitola <link xref=\"import"
+"\"/>."
+
+#: C/manage-tags.page:39(p)
+msgid ""
+"Popular metadata formats are ID3v1 and ID3v2 for MP3 files and Vorbis "
+"comments for OGG Vorbis files."
+msgstr ""
+"Populárními formáty metadat pro soubory MP3 jsou ID3v1 a ID3v2 a pro soubory "
+"OGG Vorbis komentáře Vorbis."
+
+#: C/manage-tags.page:42(p)
+msgid ""
+"If you have imported songs that do not contain metadata, <app>Banshee</app> "
+"will display <gui>Unknown</gui> for most fields in the library."
+msgstr ""
+"Pokud máte naimportovány skladby, které metadata neobsahují, bude přehrávač "
+"<app>Banshee</app> u většiny polí v kolekci uvádět <gui>Neznámý</gui>."
+
+#: C/manage-tags.page:50(title)
+msgid "Edit Your Metadata"
+msgstr "Úpravy vašich metadat"
+
+#: C/manage-tags.page:52(p)
+msgid ""
+"You can change and edit the metadata of your songs. Select the song or songs "
+"you want to update and hit the <key>E</key>, choose <guiseq><gui>Edit</"
+"gui><gui>Edit Track Information</gui></guiseq> from the menu, or use your "
+"mouse and right click on the files and select <gui>Edit Track Information</"
+"gui>."
+msgstr ""
+"Metadata můžete u svých skladeb měnit a upravovat. Vyberte skladbu či "
+"skladby, které chcete aktualizovat a zmáčkněte <key>E</key> nebo zvolte v "
+"nabídce <guiseq><gui>Upravit</gui><gui>Upravit informace o stopě</gui></"
+"guiseq> a nebo použijte u souboru pravé tlačítko myši a vyberte <gui>Upravit "
+"informace o stopě</gui>."
+
+#: C/manage-tags.page:59(p)
+msgid ""
+"A dialog box will appear that shows the song's metadata and allow you to "
+"change or update it. The default fields displayed include:"
+msgstr ""
+"Objeví se dialogové okno, které zobrazuje metadata skladby a umožňuje vám je "
+"měnit a aktualizovat. Výchozí zobrazená pole jsou:"
+
+#: C/manage-tags.page:63(gui)
+msgid "Track Title"
+msgstr "Název stopy"
+
+#: C/manage-tags.page:64(gui)
+msgid "Track Artist"
+msgstr "Umělec stopy"
+
+#: C/manage-tags.page:65(gui)
+msgid "Album Title"
+msgstr "Název alba"
+
+#: C/manage-tags.page:66(gui)
+msgid "Genre"
+msgstr "Žánr"
+
+#: C/manage-tags.page:67(gui)
+msgid "Track Number"
+msgstr "Číslo stopy"
+
+#: C/manage-tags.page:68(gui)
+msgid "Disc Number"
+msgstr "Číslo disku"
+
+#: C/manage-tags.page:69(gui) C/manage-playlists.page:109(gui)
+msgid "Year"
+msgstr "Rok"
+
+#: C/manage-tags.page:72(p)
+msgid ""
+"Update the song's information. If you have selected multiple songs to edit "
+"press the right arrow icon to the right of the <gui>Track Title</gui> field "
+"or press the <gui>Forward</gui> button at the bottom of the dialog when "
+"finished with each song. When you have completed editing all metadata, press "
+"<gui>Save</gui>."
+msgstr ""
+"Aktualizujte informace o skladbě. Pokud máte k úpravě vybráno více skladeb, "
+"zmáčkněte po dokončení úprav každé ze skladeb ikonu se šipkou vpravo u pole "
+"<gui>Název stopy</gui> nebo tlačítko <gui>Vpřed</gui> v dolní části "
+"dialogového okna. Po dokončení úprav všech metadat zmáčkněte <gui>Uložit</"
+"gui>."
+
+#: C/manage-playlists.page:10(desc)
+msgid "Create and manage playlists."
+msgstr "Vytvářejte a spravujte seznamy skladeb."
+
+#: C/manage-playlists.page:19(title) C/keyboardshortcuts.page:69(title)
+msgid "Playlists"
+msgstr "Seznamy skladeb"
+
+#: C/manage-playlists.page:21(p)
+msgid ""
+"Playlists allow you to create and save a list of music tracks to be played "
+"in a specific order. Playlists are convenient to create a list of your "
+"favorite songs or to split your library into smaller lists that are easy to "
+"browse through. Some portable media players even allow you to transfer the "
+"playlist so you can take it with you on the go."
+msgstr ""
+"Pomocí seznamů skladeb můžete vytvářet a ukládat seznamy hudebních stop, "
+"které se mají přehrát v zadaném pořadí. Seznamy skladeb jsou vhodné k "
+"vytváření seznamů vašich oblíbených skladeb nebo k rozdělení vaší kolekce do "
+"menších seznamů kvůli snazšímu procházení. Některé přenosné přehrávače "
+"dokonce umožňují načíst seznamy skladeb, takže si je můžete brát na cesty."
+
+#: C/manage-playlists.page:28(p)
+msgid ""
+"Banshee supports normal playlists, which include songs you add to the "
+"playlist, as well as smart playlists. Smart Playlists are automatically "
+"generated playlists based on your listening habits, favorite music, or more."
+msgstr ""
+"Přehrávač Banshee podporuje normální seznamy skladeb, které obsahují "
+"skladby, které jste do seznamu přidali a chytré seznamy skladeb. Chytré "
+"seznamy skladeb se generují automaticky na základě toho, co posloucháte, na "
+"základě vaší oblíbené hudby a dalších věcech."
+
+#: C/manage-playlists.page:34(title)
+msgid "Normal Playlists"
+msgstr "Normální seznamy skladeb"
+
+#: C/manage-playlists.page:36(p)
+msgid ""
+"A normal playlist is a list of songs that you add and manage. You might want "
+"to create your own list of songs by your favorite artist from multiple "
+"albums, your latest favorite songs, or an upbeat playlist to listen to while "
+"you exercise."
+msgstr ""
+"Normální seznam skladeb je seznam, do kterého můžete přidávat skladby a "
+"provádět jejich správu. Můžete chtít vytvořit svůj vlastní seznam skladeb "
+"svého oblíbeného umělce z více alb, ze svých posledních oblíbených skladeb "
+"nebo z motivačních skladeb pro poslech při cvičení."
+
+#: C/manage-playlists.page:42(p)
+msgid ""
+"You can create a new playlist by pressing <keyseq><key>Control</key><key>N</"
+"key></keyseq>, from the menu choosing <guiseq><gui>Media</gui><gui>New "
+"Playlist</gui></guiseq> or by selecing the track(s) you would like to add to "
+"the playlist. Select the track(s), right click them, and choose "
+"<guiseq><gui>Add to Playlist</gui><gui>New Playlist</gui></guiseq>. You can "
+"also drag and drop them to a new playlist by selecting the track(s) and "
+"dragging them to the left hand window pane over <gui>Music</gui>. As you "
+"drag it over <gui>Music</gui>, a new option <gui><em>New Playlist</em></gui> "
+"will appear and you can drop the track(s) over <gui><em>New Playlist</em></"
+"gui> to add them to the playlist. You can repeat this process until you have "
+"added all the tracks you want in the playlist."
+msgstr ""
+"Nový seznam skladeb vytvoříte zmáčknutím <keyseq><key>Control</key><key>N</"
+"key></keyseq>, volbou <guiseq><gui>Média</gui><gui>Nový seznam skladeb</"
+"gui></guiseq> z nabídky nebo výběrem stopy či stop, které byste chtěli "
+"přidat. Vyberte stopu či stopy, klikněte na ně pravým tlačítkem a zvolte "
+"<guiseq><gui>Přidat do seznamu skladeb</gui><gui>Nový seznam skladeb</gui></"
+"guiseq>. Můžete je také táhnout a pustit do nového seznamu tak, že je "
+"vyberete a táhnete do panelu v levé části na zdroj <gui>Hudba</gui>. Jak je "
+"přetáhnete na <gui>Hudba</gui>, objeví se nová volba <gui><em>Nový seznam "
+"skladeb</em></gui> a na tu je můžete upustit. Celý postup můžete libovolným "
+"uvedeným způsobem opakovat, dokud nepřidáte všechny stopy, které chcete."
+
+#: C/manage-playlists.page:56(p)
+msgid ""
+"To give your playlist its own name, select the playlist and right click on "
+"the playlist and press <gui>Rename Playlist</gui> and enter the name of your "
+"playlist."
+msgstr ""
+"Jestli chcete svému seznamu skladeb přidělit vlastní název, vyberte seznam "
+"skladeb, klikněte na něj pravým tlačítkem, zmáčkněte <gui>Přejmenovat</gui> "
+"a zadejte pro seznam název."
+
+#: C/manage-playlists.page:61(p)
+msgid ""
+"You can change the order of the playlist by dragging and dropping the song "
+"to the new position in the playlist. Songs can only be re-ordered in the "
+"playlist when none of the columns are sorted. To unsort a column, press the "
+"column until the up or down arrow is no longer showing and the column is "
+"blank and then re-order the playlist."
+msgstr ""
+"Pořadí seznamu skladeb můžete měnit přetahováním skladeb na nové pozice v "
+"seznamu. Skladby je možné přeuspořádávat, jen když seznam skladeb není "
+"seřazen podle žádného sloupce. Pokud potřebujete řazení podle sloupce "
+"zrušit, klikejte na jeho záhlaví dokud nezmizí šipka nahoru a dolů a seznam "
+"skladeb nezmění pořadí."
+
+#: C/manage-playlists.page:68(p)
+msgid ""
+"To remove a track from the playlist, select the track(s) you wish to remove. "
+"Press the <key>Delete</key>, from the menu choose <guiseq><gui>Edit</"
+"gui><gui>Remove from Playlist</gui></guiseq> or right click the track(s) "
+"with your mouse and press <gui>Remove from Playlist</gui>."
+msgstr ""
+"Pokud chcete stopu ze seznamu skladeb odstranit, vyberte ji (nebo i více "
+"stop). Zmáčkněte <key>Delete</key> nebo v nabídce zvolte "
+"<guiseq><gui>Upravit</gui><gui>Odstranit ze seznamu skladeb</gui></guiseq> a "
+"nebo klikněte na stopu(y) pravým tlačítkem myši a vyberte <gui>Odstranit ze "
+"seznamu skladeb</gui>."
+
+#: C/manage-playlists.page:76(title)
+msgid "Smart Playlist"
+msgstr "Chytré seznamy skladeb"
+
+#: C/manage-playlists.page:78(p)
+msgid ""
+"Smart Playlists allow you to quickly generate a dynamic playlist based on a "
+"number of pre-set variables. You can quickly create a new playlist based on "
+"a specific artist, favorites or more."
+msgstr ""
+"Chytré seznamy skladeb vám dovolují rychle generovat dynamické seznamy "
+"skladeb založené na několika přednastavených proměnných. Můžete rychle "
+"vytvořit seznam skladeb založený na určitém umělci, oblíbených skladbách a "
+"dalším."
+
+#: C/manage-playlists.page:83(p)
+msgid ""
+"To create a new Smart Playlist, from the menu choose <guiseq><gui>Media</"
+"gui><gui>New Smart Playlist</gui></guiseq>. You will be presented with a "
+"dialog to create a new Smart Playlist. Enter the name of your playlist and "
+"then choose the criteria your playlist should be based on. You can choose "
+"from any field included in the song's meatadata, such as Album, Artist or "
+"Year. Choose the criteria and then choose from one of the following:"
+msgstr ""
+"Když chcete vytvořit nový chytrý seznam skladeb, zvolte z nabídky "
+"<guiseq><gui>Média</gui><gui>Nový chytrý seznam skladeb</gui></guiseq>. "
+"Zobrazí se vám dialogové okno na vytvoření chytrého seznamu skladeb. Zadejte "
+"název svého seznamu a zvolte kritéria, na kterých má být seznam skladeb "
+"založen. Můžete volit z polí, které jsou součástí metadat skladby, jako je "
+"album, umělec nebo rok. Po zvolení kritéria zvolte jednu z následujících "
+"podmínek:"
+
+#: C/manage-playlists.page:93(p) C/manage-playlists.page:109(gui)
+#: C/manage-playlists.page:113(gui)
+msgid "is"
+msgstr "je"
+
+#: C/manage-playlists.page:94(p)
+msgid "is not"
+msgstr "není"
+
+#: C/manage-playlists.page:95(p)
+msgid "less than"
+msgstr "méně než"
+
+#: C/manage-playlists.page:96(p)
+msgid "more than"
+msgstr "více než"
+
+#: C/manage-playlists.page:97(p)
+msgid "at most"
+msgstr "nejvíce"
+
+#: C/manage-playlists.page:98(p)
+msgid "at least"
+msgstr "nejméně"
+
+#: C/manage-playlists.page:101(p)
+msgid ""
+"You can also press the <gui>+</gui> button to add an addition query to the "
+"Smart Playlist. For example, you could create a smart playlist that includes "
+"all songs from 2010 that you rated 5 stars. To create this playlist you "
+"would choose:"
+msgstr ""
+"Můžete také zmáčknout tlačítko <gui>+</gui>, kterým přidáte do chytrého "
+"seznamu skladeb další dotaz. Například byste mohli vytvořit chytrý seznam "
+"skladeb, který bude obsahovat všechny skladby z roku 2010 a ohodnocené 5 "
+"hvězdičkami. Takovýto seznam skladeb vytvoříte navolením:"
+
+#: C/manage-playlists.page:110(gui)
+msgid "2010"
+msgstr "2010"
+
+#: C/manage-playlists.page:113(gui)
+msgid "Rating"
+msgstr "Hodnocení"
+
+#: C/manage-playlists.page:114(p)
+msgid "<gui/>5 stars"
+msgstr "<gui/>5 hvězdiček"
+
+#: C/manage-playlists.page:118(p)
+msgid ""
+"You can then optionally select how many songs are included by pressing the "
+"<gui>Limit</gui> to checkbox and choosing the number of songs to be included."
+msgstr ""
+"Volitelně můžete vybrat, jako moc skladeb má seznam obsahovat. Zaškrtněte "
+"políčko <gui>Omezit na</gui> a zvolte počet skladeb, které se mají zahrnout."
+
+#: C/manage-playlists.page:123(p)
+msgid ""
+"Banshee also includes smart playlists already created for you. Press the "
+"<gui>Open in editor</gui> button to view how the playlist created was or to "
+"modify it. If you press <gui>Create and save</gui> the playlist will be "
+"automatically generated and saved for you. The following playlists are "
+"included:"
+msgstr ""
+"Přehrávač Banshee pro vás již má připravené některé chytré seznamy skladeb. "
+"Zmáčknutím tlačítka <gui>Otevřít v editoru</gui> si můžete prohlédnout "
+"pravidla, na kterých je seznam skladeb postaven, nebo je i upravit. Když "
+"zmáčknete <gui>Vytvořit a uložit</gui>, bude pro vás seznam skladeb "
+"automaticky vygenerován a uložen. Předpřipravené jsou tyto seznamy skladeb:"
+
+#: C/manage-playlists.page:131(title)
+msgid "Banshee Smart Playlists"
+msgstr "Chytré seznamy skladeb Banshee"
+
+#: C/manage-playlists.page:132(p)
+msgid "Favorites (Songs rated four and five stars)"
+msgstr "Oblíbené (skladby hodnocené čtyřmi a pěti hvězdičkami)"
+
+#: C/manage-playlists.page:133(p)
+msgid "Recent Favorites (Songs listened to often in the past week)"
+msgstr "Nedávno oblíbené (skladby často poslouchané během minulého týdne)"
+
+#: C/manage-playlists.page:135(p)
+msgid "Recently Added (Songs imported within the last week)"
+msgstr "Nedávno přidané (skladby importované během minulého týdne)"
+
+#: C/manage-playlists.page:136(p)
+msgid "Unheard (Songs that have not been played or skipped)"
+msgstr "Neposlouchané (skladby, které nebyly přehrány nebo byly přeskočeny)"
+
+#: C/manage-playlists.page:137(p)
+msgid "Neglected Favorites (Favorites not played in over two months)"
+msgstr ""
+"Opomenuté oblíbené (skladby, které nebyly přehrané za poslední dva měsíce)"
+
+#: C/manage-playlists.page:139(p)
+msgid "700 MB of Favorites (A data CD worth of favorite songs)"
+msgstr "700 MB oblíbených (oblíbené skladby stojící za jedno CD)"
+
+#: C/manage-playlists.page:140(p)
+msgid "80 Minutes of Favorites (An audio CD worth of favorite songs)"
+msgstr "80 minut oblíbených (oblíbené skladby stojící za jedno CD)"
+
+#: C/manage-playlists.page:142(p)
+msgid "Unrated (Songs that haven't been rated)"
+msgstr "Nehodnocené (skladby, které nebyly hodnoceny)"
+
+#: C/manage-coverart.page:9(desc)
+msgid "Manage or change your albums cover art."
+msgstr "Spravujte a měňte přebaly svých alb."
+
+#: C/manage-coverart.page:24(title)
+msgid "Cover art"
+msgstr "Přebal"
+
+#: C/lastfm.page:9(desc)
+msgid "Enable Last.fm, song reporting and Last.fm radio."
+msgstr "Zapněte Last.fm, oznamování skladeb a rádio Last.fm."
+
+#: C/lastfm.page:24(title)
+msgid "Last.fm"
+msgstr "Last.fm"
+
+#: C/lastfm.page:26(p)
+msgid ""
+"Last.fm is a popular online service that offers both free and paid versions. "
+"Last.fm offers information on music artists and albums and if you create a "
+"user profile Last.fm allows you to track the music you listen to in Banshee "
+"for free. If you subscribe as a paying member, you can also listen to "
+"streaming music from Last.fm in various music clients, including Banshee. "
+"Last.fm offers multiple channels to stream, including recommended music for "
+"you based on your listening habits, your favorites and more."
+msgstr ""
+"Last.fm je populární on-line služba, která nabízí placenou i neplacenou "
+"verzi. Last.fm nabízí informace o zpěvácích a albech a když si vytvoříte "
+"uživatelský profil, umožní vám Last.fm sledovat hudbu, kterou posloucháte v "
+"Banshee zdarma. Pokud se zaregistrujete jako platící člen, můžete poslouchat "
+"i proudové vysílání hudby v různých klientech, včetně Banshee. Last.fm "
+"nabízí proudové vysílání více kanálů, včetně hudby doporučené pro vás na "
+"základě toho, co obvykle posloucháte, vašich oblíbených skladbách a dalších "
+"faktorech."
+
+#: C/lastfm.page:35(title)
+msgid "Enable Last.fm"
+msgstr "Zapnutí Last.fm"
+
+#: C/lastfm.page:36(p)
+msgid ""
+"To get the most out of Last.fm, you will want to create a Last.fm profile. "
+"Visit <link href=\"http://www.last.fm/join\">http://www.last.fm/join</link> "
+"to create an account or choose <guiseq><gui>Edit</gui><gui>Preferences</"
+"gui></guiseq> from the Banshee menu. Once in the preferences select the "
+"<gui>Source Specific</gui> tab, press the <gui>Source</gui> drop down menu, "
+"choose <gui>Last.fm</gui> and finally select the <em>Sign up for Last.fm</"
+"em> link."
+msgstr ""
+"Chcete-li získat z Last.fm co nejvíce, měli byste si založit profil Last.fm. "
+"Pro vytvoření profilu navštivte <link href=\"http://www.last.fm/join"
+"\">http://www.last.fm/join</link> nebo zvolte <guiseq><gui>Upravit</"
+"gui><gui>Předvolby</gui></guiseq> v nabíce Banshee. Zmáčkněte kartu "
+"<gui>Dané zdrojem</gui>, zmáčkněte rozbalovací nabídku <gui>Zdroj</gui>, ve "
+"které zvolte <gui>Last.fm</gui>, a vyberte odkaz <em>Zaregistrovat se na "
+"Last.fm</em>."
+
+#: C/lastfm.page:45(p)
+msgid ""
+"To enable Banshee to report the songs you play on your computer to Last.fm, "
+"sign in to Last.fm in Banshee in the <gui>Source Specific</gui> preferences. "
+"Enter your username and press the <gui>Log in to Last.fm</gui> button. You "
+"will be directed to a Last.fm webpage in your browser to grant Banshee "
+"access. Press the <gui>Yes, allow access</gui> link in your browser and you "
+"will be redirected to a webpage that displays a message that Banshee now has "
+"access to Last.fm. Return to Banshee and press the <gui>Finish Logging In</"
+"gui> button to complete the process."
+msgstr ""
+"Abyste povolili oznamování skladeb, které si ve svém počítači přehráváte, "
+"službě Last.fm, musíte se v Banshee k Last.fm přihlásit v předvolbách "
+"<gui>Dané zdrojem</gui>. Zadejte své uživatelské jméno a zmáčkněte tlačítko "
+"<gui>Přihlásit k Last.fm</gui>. Budete ve svém prohlížeči nasměrování na "
+"webovou stránku Last.fm, abyste mohli přehrávači Banshee udělit přístup. "
+"Zmáčkněte odkaz <gui>Ano, přidělit přístup</gui> a budete přesměrováni na "
+"webovou stránku, která zobrazí zprávu, že Banshee má nyní přístup k Last.fm. "
+"Vraťte se do Banshee a zmáčkněte tlačítko <gui>Dokončit přihlášení</gui>, "
+"čímž celou akci završíte."
+
+#: C/lastfm.page:58(title)
+msgid "Enable Last.fm Song Reporting From Banshee"
+msgstr "Povolení oznamování skladeb Last.fm z Banshee"
+
+#: C/lastfm.page:59(p)
+msgid ""
+"After you have successfully linked Banshee to your Last.fm profile you must "
+"ensure that you have enabled Banshee to report your songs. To enable Banshee "
+"to report the songs to your Last.fm profile go to Banshee's preferences, "
+"select the <gui>Source Specific</gui> tab, select <gui>Last.fm</gui> from "
+"the dropdown, and press the <gui>Enable Song Reporting From Banshee</gui> "
+"checkbox. If you have an active internet connection Banshee will now send "
+"Last.fm information regarding the songs you play. To view your play history "
+"visit your profile on the Last.fm website. Last.fm will automatically update "
+"your music metadata if any of your artist, song title, or album information "
+"is incorrect (although we recommend that you use the Metadata Fixer "
+"extension to correct your files instead)."
+msgstr ""
+"Když máte přehrávač Banshee úspěšně propojený s profilem Last.fm, ujistěte "
+"se, že jste v Banshee povolili oznamování svých skladeb. Pro oznamování "
+"skladeb do svého profilu Last.fm přejděte v předvolbách na kartu <gui style="
+"\"tab\">Dané zdrojem</gui>, v rozbalovacím seznamu vyberte <gui style="
+"\"menuitem\">Last.fm</gui> a zaškrtněte políčko <gui style=\"checkbox"
+"\">Povolit oznamování skladeb</gui>. V případě, že máte funkční internetové "
+"připojení, bude od teď přehrávač Banshee zasílat na Last.fm informace o "
+"skladbách, které přehráváte. Pokud si chcete historii přehrávání "
+"prohlédnout, navštivte svůj profil na webových stránkách Last.fm. Když bude "
+"některý umělec, název skladby nebo název alba nesprávný, Last.fm vaše "
+"hudební metadata automaticky aktualizuje (místo toho ale pro opravy souborů "
+"spíše doporučujeme rozšíření Opravář metadat)."
+
+#: C/lastfm.page:75(title)
+msgid "Enable Last.fm Song Reporting From Your Device"
+msgstr "Povolení oznamování skladeb Last.fm z vašeho zařízení"
+
+#: C/lastfm.page:76(p)
+msgid ""
+"After successfully linking Banshee to your Last.fm profile and enabling "
+"Banshee to report songs to Last.fm you can also enable scrobbling from a "
+"connected device. Banshee will, upon connection of your device, attempt to "
+"scrobble the songs you have played since the device was last connected and "
+"submit them to Last.fm."
+msgstr ""
+"Po úspěšném propojení Banshee s vaším profilem na Last.fm a po povolení "
+"Banshee oznamovat skladby na Last.fm, můžete povolit také sdílení seznamů "
+"skladeb (scrobbling) z připojených zařízení. Po připojení vašeho zařízení se "
+"Banshee pokusí zjistit, které skladby jste přehrávali od posledního "
+"připojení zařízení, a odešle je na Last.fm."
+
+#: C/lastfm.page:82(p)
+msgid ""
+"To enable scrobbling of a connected device go to Banshee's preferences, "
+"select the <gui>Source Specific</gui> tab, select <gui>Last.fm</gui> from "
+"the dropdown, and press the <gui>Enable Song Reporting From Device</gui> "
+"checkbox. If you have an active internet connection Banshee will, upon "
+"connection of your device, now attempt to gather information regarding the "
+"songs that you have played since it was last connected."
+msgstr ""
+"Jestli chcete sdílení seznamů skladeb z připojených zařízení zapnout, jděte "
+"do předvoleb Banshee, vyberte <gui>Dané zdrojem</gui>, v rozbalovacím "
+"seznamu vyberte <gui>Last.fm</gui> a zaškrtněte políčko <gui>Povolit "
+"oznamování skladeb ze zařízení</gui>. Pokud máte funkční internetové "
+"připojení, bude se Banshee po připojení vašeho zařízení pokoušet sesbírat "
+"informace týkající se skladeb, které jste přehrávali od doby, kdy bylo "
+"zařízení naposledy připojeno."
+
+#: C/lastfm.page:89(p)
+msgid ""
+"As with regular Banshee scrobbling submissions Last.fm will automatically "
+"update your music metadata if any of your artist, title, or album "
+"information is incorrect (although we again recommend that you use the "
+"Metadata Fixer extension to correct your files instead)."
+msgstr ""
+"Současně s pravidelným zasíláním seznamů skladem z Banshee na Last.fm se "
+"budou aktualizovat vaše hudbení metadata a to v situaci, kdy je údaj o "
+"umělci, názvu nebo albu uveden nesprávně (ačkoliv místo této funkce vám "
+"doporučujeme používat rozšíření Opravář metadat, které opravuje vaše "
+"soubory)."
+
+#: C/lastfm.page:94(p)
+msgid ""
+"Please note that currently Banshee only supports this feature with Apple "
+"products that are supported by the AppleDevice extension."
+msgstr ""
+"Vezměte prosím na vědomí, že v současnosti Banshee podporuje tuto funkci jen "
+"u produktů společnosti Apple, které jsou podporovány rozšířením AppleDevice."
+
+#: C/lastfm.page:101(title)
+msgid "Listen to Last.fm Radio"
+msgstr "Poslech rádia Last.fm"
+
+#: C/lastfm.page:102(p)
+msgid ""
+"Last.fm radio is free for residents of the United States, United Kingdom and "
+"Germany. Residents of other countries will have to pay for a premium account "
+"with Last.fm to listen to radio. Premium members, in all countries, also "
+"receive premium radio features: listening to playlists and stations of music "
+"you've loved or tagged."
+msgstr ""
+"Rádio Last.fm je zdarma pro obyvatele Spojených států, Velké Británie a "
+"Německa. Obyvatelé ostatních zemí si musí zaplatit prémiový účet, aby mohli "
+"rádio poslouchat. Prémiový členové ve všech zemích získají také přístup k "
+"prémiovým funkcím: poslech seznamů skladeb a stanic hudby, kterou mají rádi "
+"nebo si ji označili."
+
+#: C/lastfm.page:109(p)
+msgid ""
+"In Banshee's sources pane on the left hand side, you will now have a Last.fm "
+"section, including your Last.fm radio stations. You will need an active "
+"internet connection to listen to Last.fm radio. Choose the radio station you "
+"wish to listen to and Banshee will communicate with Last.fm to populate "
+"songs for that radio station. Press the <gui>Play</gui> button in Banshee or "
+"<key>Spacebar</key> to start streaming a Last.fm radio station. You can also "
+"press the <gui>Next</gui> button in Banshee, <key>N</key> or choose "
+"<guiseq><gui>Playback</gui><gui>Next</gui></guiseq> to play the next song in "
+"your radio station queue."
+msgstr ""
+"V panelu zdrojů na levé straně budete mít oddíl Last.fm zahrnující vaše "
+"rádiové stanice Last.fm. Abyste mohli rádio Last.fm poslouchat, potřebujete "
+"aktivní internetové připojení. Zvolte rádiovou stanici, kterou si přejete "
+"poslouchat a přehrávač Banshee bude komunikovat se službou Last.fm, aby "
+"šířil skladby příslušné rádiové stanice. Pro spuštění proudového vysílání "
+"zmáčkněte tlačítko <gui>Přehrát aktuální položku</gui> nebo klávesu "
+"<key>mezerník</key>. Můžete také zmáčknout tlačítko <gui>Přehrát následující "
+"položku</gui>, klávesu <key>N</key> nebo zvolit <guiseq><gui>Přehrát</"
+"gui><gui>Následující</gui></guiseq>, čímž docílíte přehrávání následující "
+"skladby ve frontě rádiové stanice."
+
+#: C/keyboardshortcuts.page:7(desc) C/advanced.page:27(title)
+#: C/advanced.page:29(title)
+msgid "Keyboard Shortcuts"
+msgstr "Klávesové zkratky"
+
+#: C/keyboardshortcuts.page:24(title)
+msgid "Control Banshee using Keyboard Shortcuts"
+msgstr "Ovládání Banshee pomocí klávesových zkratek"
+
+#: C/keyboardshortcuts.page:28(title)
+msgid "Playback Control"
+msgstr "Ovládání přehrávání"
+
+#: C/keyboardshortcuts.page:32(gui) C/keyboardshortcuts.page:53(gui)
+#: C/keyboardshortcuts.page:73(gui) C/keyboardshortcuts.page:90(gui)
+#: C/keyboardshortcuts.page:107(gui)
+msgid "Key"
+msgstr "Klávesa"
+
+#: C/keyboardshortcuts.page:32(gui) C/keyboardshortcuts.page:53(gui)
+#: C/keyboardshortcuts.page:73(gui) C/keyboardshortcuts.page:90(gui)
+#: C/keyboardshortcuts.page:107(gui)
+msgid "Action"
+msgstr "Akce"
+
+#: C/keyboardshortcuts.page:35(p)
+msgid "Space Bar"
+msgstr "Mezerník"
+
+#: C/keyboardshortcuts.page:35(p)
+msgid "Play or Pause the current song"
+msgstr "Přehrát nebo pozastavit aktuální skladbu"
+
+#: C/keyboardshortcuts.page:38(p) C/keyboardshortcuts.page:76(key)
+msgid "N"
+msgstr "N"
+
+#: C/keyboardshortcuts.page:38(p)
+msgid "Play the next song"
+msgstr "Přehrát následující skladbu"
+
+#: C/keyboardshortcuts.page:41(p)
+msgid "B"
+msgstr "B"
+
+#: C/keyboardshortcuts.page:41(p)
+msgid "Play the previous song"
+msgstr "Přehrát předchozí skladbu"
+
+#: C/keyboardshortcuts.page:49(title)
+msgid "Library Interaction"
+msgstr "Práce s kolekcí"
+
+#: C/keyboardshortcuts.page:56(p)
+msgid "<key>/</key>, <keyseq><key>Control</key><key>F</key></keyseq>"
+msgstr "<key>/</key>, <keyseq><key>Control</key><key>F</key></keyseq>"
+
+#: C/keyboardshortcuts.page:56(p)
+msgid "Move the focus to the search box"
+msgstr "Přenést zaměření na vyhledávací pole"
+
+#: C/keyboardshortcuts.page:60(key) C/keyboardshortcuts.page:76(key)
+#: C/keyboardshortcuts.page:114(key) C/keyboardshortcuts.page:118(key)
+#: C/keyboardshortcuts.page:123(key) C/keyboardshortcuts.page:127(key)
+#: C/keyboardshortcuts.page:132(key) C/keyboardshortcuts.page:137(key)
+msgid "Control"
+msgstr "Control"
+
+#: C/keyboardshortcuts.page:60(key)
+msgid "I"
+msgstr "I"
+
+#: C/keyboardshortcuts.page:61(p)
+msgid "Open import media dialog"
+msgstr "Otevřít dialogové okno importu médií"
+
+#: C/keyboardshortcuts.page:76(p)
+msgid "Create New Playlist"
+msgstr "Vytvořit nový seznam skladeb"
+
+#: C/keyboardshortcuts.page:86(title) C/add-podcast.page:26(title)
+msgid "Podcasts"
+msgstr "Podcasty"
+
+#: C/keyboardshortcuts.page:93(key)
+msgid "Y"
+msgstr "Y"
+
+#: C/keyboardshortcuts.page:93(p)
+msgid "Mark the selected episodes as old"
+msgstr "Označit vybraný díl jako starý"
+
+#: C/keyboardshortcuts.page:103(title)
+msgid "Interface"
+msgstr "Rozhraní"
+
+#: C/keyboardshortcuts.page:110(key)
+msgid "F"
+msgstr "F"
+
+#: C/keyboardshortcuts.page:110(p)
+msgid "Toggle full-screen mode"
+msgstr "Přepnout režim celé obrazovky"
+
+#: C/keyboardshortcuts.page:114(key) C/keyboardshortcuts.page:118(key)
+msgid "A"
+msgstr "A"
+
+#: C/keyboardshortcuts.page:114(p)
+msgid "Select all songs in playlist view"
+msgstr "Vybrat všechny skladby zobrazené v seznamu skladeb"
+
+#: C/keyboardshortcuts.page:118(key)
+msgid "Shift"
+msgstr "Shift"
+
+#: C/keyboardshortcuts.page:119(p)
+msgid "Unselect all songs in playlist view"
+msgstr "Zrušit výběr všech skladeb zobrazených v seznamu skladeb"
+
+#: C/keyboardshortcuts.page:123(key)
+msgid "W"
+msgstr "W"
+
+#: C/keyboardshortcuts.page:123(p)
+msgid "Hide Banshee Window (Requires Notification Area Plug-in Enabled"
+msgstr ""
+"Skrýt okno Banshee (vyžaduje aktivovaný zásuvný modul Ikona oznamovací "
+"oblasti)"
+
+#: C/keyboardshortcuts.page:127(key)
+msgid "Left Mouse Button"
+msgstr "Levé tlačítko myši"
+
+#: C/keyboardshortcuts.page:128(p)
+msgid "Play Previous Song (Requires Notification Area Plug-in Enabled"
+msgstr ""
+"Přehrát předchozí skladbu (vyžaduje aktivovaný zásuvný modul Ikona "
+"oznamovací oblasti)"
+
+#: C/keyboardshortcuts.page:132(key)
+msgid "Right Mouse Button"
+msgstr "Pravé tlačítko myši"
+
+#: C/keyboardshortcuts.page:133(p)
+msgid "Play Next Song (Requires Notification Area Plug-in Enabled"
+msgstr ""
+"Přehrát následující skladbu (vyžaduje aktivovaný zásuvný modul Ikona "
+"oznamovací oblasti)"
+
+#: C/keyboardshortcuts.page:137(key)
+msgid "Middle Mouse Button"
+msgstr "Prostřední tlačítko myši"
+
+#: C/keyboardshortcuts.page:138(p)
+msgid "Toggle Play / Pause (Requires Notification Area Plug-in Enabled"
+msgstr ""
+"Přepnout přehrávání/pozastavení (vyžaduje aktivovaný zásuvný modul Ikona "
+"oznamovací oblasti)"
+
+#: C/itunes-import.page:8(desc)
+msgid ""
+"Import music and categorizations from the <app>iTunes</app> media player."
+msgstr ""
+"Importujte hudbu a rozdělení do kategorií ze svého multimediálního "
+"přehrávače <app>iTunes</app>."
+
+#: C/itunes-import.page:12(title)
+msgid "Import your <app>iTunes</app> library"
+msgstr "Import vaší kolekce <app>iTunes</app>"
+
+#: C/introduction.page:8(desc)
+msgid "Introduction to the <app>Banshee Media Player</app>."
+msgstr "Úvod do <app>Multimediálního přehrávače Banshee</app>."
+
+#: C/introduction.page:24(title)
+msgid "Introduction"
+msgstr "Úvod"
+
+#: C/introduction.page:26(p)
+msgid ""
+"<app>Banshee</app> is a media player that allows you to play your music, "
+"videos, and other media as well sync it with portable devices to take your "
+"media on the go."
+msgstr ""
+"<app>Banshee</app> je multimediální přehrávač, který umí přehrávat hudbu, "
+"videa a další média a navíc je synchronizovat s přenosnými zařízeními, "
+"abyste je měli k dispozici i na cestách."
+
+#: C/introduction.page:31(p)
+msgid ""
+"<app>Banshee</app> includes features to import your media, manage its "
+"metadata, and play your music and videos."
+msgstr ""
+"Funkce <app>Banshee</app> zahrnují importování vašich médií, správu jejich "
+"metadat a přehrávání vaší hudby a videí."
+
+#: C/introduction.page:35(p)
+msgid ""
+"Banshee also helps you sync your music and videos to popular portable "
+"devices, such as digital audio players and smartphones. Banshee supports "
+"popular devices including most iPods, Sandisk and Creative MP3 players, and "
+"Android powered phones."
+msgstr ""
+"Banshee vám také pomůže se synchronizací vaší hudby a videí s populárními "
+"přenosnými zařízeními, jako jsou digitální přenosné přehrávače a smartfony. "
+"Banshee podporuje populární zařízení včetně většiny přehrávačů MP3 iPod, "
+"Sandisk a Creative a telefonů se systémem Android."
+
+#: C/index.page:14(name)
+msgid "Sindhu S"
+msgstr "Sindhu S"
+
+#: C/index.page:15(email)
+msgid "sindhus@live.in"
+msgstr "sindhus@live.in"
+
+#: C/index.page:29(title)
+msgid "Add, Remove &amp; Play"
+msgstr "Přidávání, odebírání a přehrávání"
+
+#: C/index.page:33(title)
+msgid "Manage &amp; Sort"
+msgstr "Správa a řazení"
+
+#: C/index.page:37(title)
+msgid "Sync your media with a portable music player"
+msgstr "Synchronizace vašich médií s přenosnými hudebními přehrávači"
+
+#: C/index.page:41(title)
+msgid "Add additional functionality to Banshee"
+msgstr "Přidávání dalších funkcí do Banshee"
+
+#: C/index.page:45(title)
+msgid "Advanced options and help"
+msgstr "Pokročilé volby a nápověda"
+
+#: C/import.page:8(desc)
+msgid "Add music and videos from your computer to your Banshee library."
+msgstr "Přidávejte hudbu a videa ze svého počítače do své kolekce Banshee."
+
+#: C/import.page:15(name)
+msgid "Shaun McCance"
+msgstr "Shaun McCance"
+
+#: C/import.page:16(email)
+msgid "shaunm@gnome.org"
+msgstr "shaunm@gnome.org"
+
+#: C/import.page:21(title)
+msgid "Import music &amp; videos"
+msgstr "Import hudby a videa"
+
+#: C/import.page:23(p)
+msgid ""
+"You can import music and videos stored on your computer into Banshee. "
+"Imported files appear in your sources and can be edited and managed like any "
+"other media in Banshee."
+msgstr ""
+"Do přehrávače Banshee můžete importovat hudbu a videa uložená na svém "
+"počítači. Importované soubory se objeví ve vašich zdrojích a lze je v "
+"Banshee upravovat a spravovat podobně jako ostatní média."
+
+#: C/import.page:27(p)
+msgid ""
+"To import music or video files on your computer, choose <guiseq><gui>Media</"
+"gui><gui>Import Media</gui></guiseq>. A dialog will appear with a number of "
+"choices."
+msgstr ""
+"Pokud chcete zvukové nebo video soubory ve svém počítači importovat, zvolte "
+"<guiseq><gui>Média</gui><gui>Importovat média</gui></guiseq>. Objeví se "
+"dialogové okno s několika volbami."
+
+#: C/import.page:31(p)
+msgid ""
+"Plugins may add additional import choices. See <link xref=\"#plugins\"/> "
+"below."
+msgstr ""
+"Zásuvné moduly mohou přidat další volby importu. Viz <link xref=\"#plugins\"/"
+"> dále."
+
+#: C/import.page:37(gui)
+msgid "Local Folders"
+msgstr "Místní složky"
+
+#: C/import.page:38(p)
+msgid ""
+"Choose this option to import all music and video files within a specified "
+"folder, including all subfolders. You will be prompted with a dialog to "
+"choose a folder to import from."
+msgstr ""
+"Tuto volbu vyberte, když chcete importovat všechny zvukové a video soubory z "
+"určité složky a jejích podsložek. Budete v dialogovém okně dotázáni na volbu "
+"složky, ze které se má importovat."
+
+#: C/import.page:43(gui)
+msgid "Local Files"
+msgstr "Místní soubory"
+
+#: C/import.page:44(p)
+msgid ""
+"Choose this option to import only the specific file or files you select. You "
+"will be prompted with a dialog to choose the file or files to import."
+msgstr ""
+"Tuto volbu vyberte, když chcete importovat jen konkrétní soubory nebo "
+"soubory, které si vyberete. Budete v dialogovém okně dotázáni na volbu "
+"souboru či souborů, které se mají importovat."
+
+#: C/import.page:49(gui)
+msgid "Home Folder"
+msgstr "Domovská složka"
+
+#: C/import.page:50(p)
+msgid ""
+"Choose this option to import all music and video files in your entire home "
+"folder, including files in any subfolders."
+msgstr ""
+"Tuto volbu vyberte, když chcete importovat všechny zvukové a video soubory z "
+"celé vaší domovské složky, včetně souborů v podsložkách."
+
+#: C/import.page:54(gui)
+msgid "Videos From Photos Folder"
+msgstr "Videa ze složky fotografií"
+
+#: C/import.page:55(p)
+msgid ""
+"Many digital cameras can take short videos, and photo-management "
+"applications often download these videos directly into your Photos folder. "
+"Choose this option to import any videos that have been stored in your Photos "
+"folder."
+msgstr ""
+"Řada digitálních fotoaparátů umí pořizovat i krátká videa a aplikace pro "
+"správu fotografií je často načtou přímo do vaší složky Obrázky. Tuto volbu "
+"vyberte, když chcete importovat libovolná videa, která jsou uložena ve vaší "
+"složce Obrázky."
+
+#: C/import.page:63(p)
+msgid ""
+"You can safely import from a folder you have already imported from without "
+"worrying about duplicate entries in your library."
+msgstr ""
+"Bez problémů můžete importovat ze složky, ze které jste již dříve "
+"importovali, aniž byste se museli obávat duplicity ve své kolekci."
+
+#: C/import.page:68(title)
+msgid "Import from a Playlist"
+msgstr "Import ze seznamu skladeb"
+
+#: C/import.page:69(p)
+msgid ""
+"You can also import music from playlists. Most playlist files end in "
+"<em>m3u</em>. To import from a playlist, from the Banshee menu choose "
+"<guiseq><gui>Media</gui><gui>Import Playlist</gui></guiseq> and locate the "
+"playlist file in your folder, select it and press <gui>Import</gui>."
+msgstr ""
+"Hudbu můžete importovat také ze seznamů skladeb. Většina souborů se seznamy "
+"skladeb má příponu <em>m3u</em>. Pokud chcete importovat ze seznamu skladeb, "
+"v nabídce Banshee zvolte <guiseq><gui>Média</gui><gui>Importovat seznam "
+"skladeb</gui></guiseq> a nejděte ve složce správný seznam, vyberte jej a "
+"zmáčkněte <gui>Importovat</gui>."
+
+#: C/import.page:78(title)
+msgid "Additional Import Sources"
+msgstr "Další zdroje pro import"
+
+#: C/import.page:79(p)
+msgid ""
+"Plugins may add additional import choices. The following additional sources "
+"will be available if the appropriate plugins are enabled:"
+msgstr ""
+"Zásuvné moduly mohou doplnit další volby importu. Následující další zdroje "
+"budou dostupné, pokud jsou zapnuté příslušné zásuvné moduly:"
+
+#: C/extensions.page:8(desc)
+msgid "Add additional functionality to Banshee."
+msgstr "Přidejte do Banshee další funkce."
+
+#: C/extensions.page:23(title)
+msgid "Banshee Extensions"
+msgstr "Rozšíření Banshee"
+
+#: C/extensions.page:27(title)
+msgid "Official Banshee Extensions"
+msgstr "Oficiální rozšíření Banshee"
+
+#: C/extensions.page:29(title)
+msgid "Manage extensions for Banshee"
+msgstr "Správa rozšíření pro Banshee"
+
+#: C/extensions.page:34(title)
+msgid "Community Banshee Extensions"
+msgstr "Komunitní rozšíření Banshee"
+
+#: C/extensions.page:36(title)
+msgid "Add community built extensions for Banshee"
+msgstr "Přidávání rozšíření pro Banshee vytvořených komunitou."
+
+#: C/emusic.page:8(desc)
+msgid "Import music purchased from eMusic."
+msgstr "Importujte hudbu zakoupenou z eMusic."
+
+#: C/emusic.page:12(title)
+msgid "Import your eMusic tracks"
+msgstr "Import vašich stop eMusic"
+
+#: C/amazon.page:9(desc)
+msgid "Sync and purchase music from the Amazon MP3 Store."
+msgstr "Synchronizujte a nakupujte hudbu z obchodu s MP3 Amazon."
+
+#: C/amazon.page:24(title)
+msgid "Amazon MP3 Store"
+msgstr "Obchod s MP3 Amazon"
+
+#: C/amazon.page:26(p)
+msgid ""
+"Banshee supports downloading and importing music from the Amazon MP3 store. "
+"You can manually import Amazon music files, purchase music in your web "
+"browser or buy music inside of Banshee. Amazon only offers music for sale as "
+"an MP3 in certain countries and depending on your location, you may not be "
+"able to buy Amazon MP3s."
+msgstr ""
+"Přehrávač Banshee podporuje stahování a import hudby z obchodu s MP3 Amazon. "
+"Můžete ručně importovat hudební soubory Amazon, nakupovat hudbu ve svém "
+"webovém prohlížeči nebo nakupovat hudbu přímo v Banshee. Amazon nabízí hudbu "
+"k prodeji ve formátu MP3 jen v některých zemích a to, zda budete moci v "
+"obchodě Amazon nakupovat MP3 závisí na tom, kde se nacházíte."
+
+#: C/amazon.page:34(p)
+msgid ""
+"Banshee uses an Amazon affiliate code for all music purchases. All money "
+"made via this affiliate code is donated to the GNOME Foundation."
+msgstr ""
+"Přehrávač Banshee používá k nákupu veškeré hudby partnerský kód Amazon. "
+"Všechny peníze, které projdou přes tento partnerský kód jsou darovány nadaci "
+"GNOME Foundation."
+
+#: C/amazon.page:40(title)
+msgid "Purchase Amazon MP3s in your web browser"
+msgstr "Nákup MP3 z obchodu Amazon ve webovém prohlížeči"
+
+#: C/amazon.page:42(p)
+msgid ""
+"Music purchased from Amazon's MP3 store can be automatically downloaded and "
+"imported into Banshee. Banshee associates itself with the .amz file Amazon "
+"provides for MP3 purchases. When you buy music on Amazon, your web browser "
+"will download the .amz file and Banshee will automatically open it and begin "
+"the download and import the music."
+msgstr ""
+"Hudba zakoupená z obchodu s MP3 Amazon může být automaticky stahována a "
+"importována do přehrávače Banshee. Banshee se přidruží k souborům .amz, "
+"které Amazon poskytuje pro zakoupené MP3. Když v obchodě Amazon nakoupíte "
+"hudbu, váš webový prohlížeč stáhne soubor .amz a Banshee jej automaticky "
+"otevře a začne hudbu stahovat a importovat."
+
+#: C/amazon.page:51(title)
+msgid "Buy Amazon MP3s in Banshee"
+msgstr "Nákup MP3 z obchodu Amazon v Banshee"
+
+#: C/amazon.page:53(p)
+msgid ""
+"You can also search for songs on Amazon within Banshee. Choose the Amazon "
+"MP3 Store from the Banshee menu on the left. This will load the Amazon MP3 "
+"Store just as if you were in a web browser. You can search Amazon for the "
+"music you wish to buy and after logging in to Amazon, buy music with one "
+"click. Banshee will automatically download and import your purchase into the "
+"library."
+msgstr ""
+"V rámci přehrávače Banshee můžete také v obchodě Amazon skladby hledat. V "
+"nabídce vlevo zvolte Obchod s MP3 Amazon. Tím se načte obchod s MP3 Amazon "
+"stejně jako ve webovém prohlížeči. Můžete v něm vyhledávat hudbu, kterou si "
+"přejete koupit a po přihlášení do obchodu Amazon si ji můžete jediným "
+"kliknutím i koupit. Banshee váš nákup automaticky stáhne a naimportuje do "
+"kolekce."
+
+#: C/amazon.page:63(title)
+msgid "Import Amazon MP3s manually"
+msgstr "Ruční import MP3 z obchodu Amazon"
+
+#: C/amazon.page:65(p)
+msgid ""
+"When music is purchased from Amazon in a web browser, a file with the "
+"extension .amz is downloaded and saved to your hard drive. To import music "
+"purchased manually from Amazon, in Banshee choose <guiseq><gui>Media</"
+"gui><gui>Import Media</gui></guiseq> from the menu and select the *.amz file "
+"to be imported. Banshee will then open this file and connect to the Amazon "
+"MP3 store to begin the download."
+msgstr ""
+"Když nákup v obchodě Amazon provedete přes webový prohlížeč, soubor s "
+"příponou .amz se stáhne a uloží na váš pevný disk. Pokud chcete zakoupenou "
+"hudbu ručně naimporotvat z obchodu Amazon, zvolte v Banshee z nabídky "
+"<guiseq><gui>Média</gui><gui>Importovat média</gui></guiseq> a vyberte "
+"soubor *.amz, který se má importovat. Banshee tento soubor otevře a připojí "
+"se do obchodu s MP3 Amazon, aby provedla stažení."
+
+#: C/amazon.page:74(p)
+msgid ""
+"Amazon .amz files are only active for a short time. If you do not download "
+"your music quickly, the file will expire and you cannot download your music "
+"from Amazon. Amazon does not publish how long files are active. It is "
+"recommended you download and import any purchases from Amazon within an hour "
+"of purchase."
+msgstr ""
+"Soubory Amazon .amz jsou platné jen pro krátkou dobu. Pokud stažení "
+"neprovedete rychle, vyprší souboru platnost a vy nebudete moci svoji hudbu z "
+"obchodu Amazon stáhnout. Amazon nezveřejňuje, jak dlouho jsou soubory "
+"platné. Je doporučováno stažení a import zakoupené hudby z obchodu Amazon "
+"provést v rozmezí hodiny."
+
+#: C/advanced.page:8(desc)
+msgid "Get help for advanced actions."
+msgstr "Získejte nápovědu k pokročilým akcím."
+
+#: C/advanced.page:23(title)
+msgid "Advanced Options and Help"
+msgstr "Pokročilé volby a nápověda"
+
+#: C/add-radio.page:11(desc)
+msgid "Add, remove and play internet radio stations in Banshee."
+msgstr ""
+"Přidávejte, odebírejte a přehrávejte stanice Internetových rádií v Banshee."
+
+#: C/add-radio.page:26(title)
+msgid "Internet Radio"
+msgstr "Internetové rádio"
+
+#: C/add-radio.page:29(title)
+msgid "What is Internet Radio?"
+msgstr "Co je to Internetové rádio?"
+
+#: C/add-radio.page:31(p)
+msgid ""
+"Internet radio stations are similar to regular radio stations, allowing an "
+"individual or organization to stream music live over the internet. Internet "
+"radio stations can be a simultaneous stream of a regular radio station, an "
+"amateur broadcasting their own station, or commercial internet radio "
+"stations that include live DJs and even commercials."
+msgstr ""
+"Internetová rádiová stanice je podobná běžné rádiové stanici, umožňuje "
+"poslouchat individuální nebo společné proudové vysílání hudby živě přes "
+"Internet. Internetová rádiová stanice může být proud vysílání souběžný ke "
+"klasické rádiové stanici, amatérské hromadné vysílání něčí vlastní stanice "
+"nebo komerční Internetová rádiová stanice včetně živých diskžokejů, a také "
+"reklam."
+
+#: C/add-radio.page:41(title)
+msgid "Add Radio Station"
+msgstr "Přidávání rádiových stanic"
+
+#: C/add-radio.page:43(p)
+msgid ""
+"To add an internet radio station to Banshee, press <gui>Add Station</gui> in "
+"the upper right hand corner of Banshee or, from the menu, choose "
+"<guiseq><gui>Media</gui><gui>Add Station</gui></guiseq>."
+msgstr ""
+"Když chcete do přehrávače Banshee přidat Internetovou rádiovou stanici, "
+"zmáčkněte <gui>Přidat stanici</gui> v pravém horním rohu nebo v nabídce "
+"zvolte <guiseq><gui>Média</gui><gui>Přidat stanici</gui></guiseq>."
+
+#: C/add-radio.page:48(p)
+msgid ""
+"From the internet radio station's webpage, copy the link to their stream URL "
+"in your web browser. In most browsers, you can right click on the link and "
+"press <gui>Copy Link</gui>."
+msgstr ""
+"Z webové stránky stanice zkopírujte ve svém webovém prohlížeči odkaz na "
+"jejich adresu URL proudu. Ve většině prohlížečů to jde udělat kliknutím "
+"pravým tlačítkem na odkaz a zmáčknutím <gui>Kopírovat odkaz</gui>."
+
+#: C/add-radio.page:54(p)
+msgid ""
+"Banshee will prompt you to enter the <gui>Station Genre</gui>. Choose the "
+"kind of music the internet radio station plays from the available drop down "
+"selections. You will then need to enter the <gui>Station Name</gui>. Enter a "
+"name for the radio station. Then press tab or use your mouse to select the "
+"<gui>Stream URL</gui> field to paste the URL of the radio station. Using "
+"your mouse right click and choose <gui>Paste</gui> or press "
+"<keyseq><key>Control</key><key>V</key></keyseq>."
+msgstr ""
+"Banshee vás vyzve k zadání <gui>Žánru stanice</gui>. Z dostupných voleb v "
+"rozbalovacím seznamu zvolte druh hudby, kterou stanice hraje. Pak budete "
+"muset vyplnit <gui>Název stanice</gui>. Zadejte, jak se rádiová stanice "
+"jmenuje. Po té zmáčkněte tabulátor nebo použijte myš k zaměření pole "
+"<gui>Adresa URL proudu</gui> a vložte do něj adresu URL stanice. Použijte k "
+"tomu pravé tlačítko myši a položku <gui>Vložit</gui> nebo zmáčkněte "
+"<keyseq><key>Control</key><key>V</key></keyseq>."
+
+#: C/add-radio.page:62(p)
+msgid ""
+"You can optionally also fill out the fields for <gui>Station Creator</gui>, "
+"<gui>Description</gui>, and <gui>Rating</gui>."
+msgstr ""
+"Volitelně můžete také vyplnit pole <gui>Tvůrce stanice</gui>, <gui>Popis</"
+"gui> a <gui>Hodnocení</gui>."
+
+#: C/add-radio.page:66(p)
+msgid ""
+"Then press <gui>Save</gui> to save the internet radio station in Banshee."
+msgstr ""
+"Nakonec zmáčkněte <gui>Uložit</gui> a tím se Internetová rádiová stanice do "
+"Banshee uloží."
+
+#: C/add-podcast.page:11(desc)
+msgid "Add, remove and play podcasts in Banshee."
+msgstr "Přidávejte, odebírejte a přehrávejte podcasty v Banshee."
+
+#: C/add-podcast.page:29(title)
+msgid "What is a Podcast?"
+msgstr "Co je to podcast"
+
+#: C/add-podcast.page:31(p)
+msgid ""
+"Podcasts are recorded programs, similar to radio programs, that are "
+"available on the internet and allow you to subscribe. When you subscribe to "
+"a podcast in Banshee, each time a new program is released, Banshee will "
+"automatically download the podcast and allow you to listen to it."
+msgstr ""
+"Podcast je zaznamenaný program, podobně jako program rádia, který je "
+"dostupný na Internetu a vy jej můžete odebírat. Když jste v přehrávači "
+"Banshee přihlášeni k odběru nějakého podcastu, tak pokaždé když je vydán "
+"nový program, Banshee jej automaticky stáhne a nabídne vám jej k poslechu."
+
+#: C/add-podcast.page:36(p)
+msgid ""
+"There are podcasts on almost any subject including music, movies, Linux, and "
+"more. Search the internet using your favorite search engine with a search "
+"term such as \"movie podcast\" and you will be presented with many options "
+"to choose from."
+msgstr ""
+"Existují podcasty s téměř jakýmkoliv tématem, včetně hudby, filmů, Linuxu a "
+"dalších věcí. Hledejte na Internetu svým oblíbeným vyhledávačem. K hledání "
+"použijte výraz typu „film podcast“ (respektive anglicky „movie podcast“, "
+"protože nabídka podcastů v angličtině je daleko větší) a můžete si vybírat."
+
+#: C/add-podcast.page:44(title)
+msgid "Add a Podcast"
+msgstr "Přidávání podcastů"
+
+#: C/add-podcast.page:46(p)
+msgid ""
+"To add a Podcast to Banshee you will first need to visit the podcast's home "
+"page on the internet in your browser. Almost all podcasts will have a button "
+"or link displayed to subscribe to the podcast. Copy the link to the "
+"podcast's subscription. In most web browsers, you can right click on the "
+"link and choose <gui>Copy link</gui>."
+msgstr ""
+"Když chcete do přehrávače Banshee přidat podcast, musíte nejprve ve svém "
+"prohlížeči navštívit domovskou stránku onoho podcastu na Intenetu. Většina "
+"podcastů má tlačítko nebo odkaz pro přihlášení k odběru podcastu. Zkopírujte "
+"odkaz do přihlášení k podcastu. Ve většině webových prohlížečů jde kliknout "
+"pravým tlačítkem na odkaz a zvolit <gui>Kopírovat odkaz</gui>."
+
+#: C/add-podcast.page:53(p)
+msgid ""
+"In Banshee, press and choose <gui>Subscribe to Podcasts</gui> in the upper "
+"right hand corner, from the menu choose <guiseq><gui>Media</gui><gui> "
+"Subscribe to Podcast</gui></guiseq> or use the keyboard shortcut "
+"<keyseq><key>Shift</key><key>Control</key><key>F</key></keyseq>."
+msgstr ""
+"V Banshee zmáčkněte <gui>Přidat podcast</gui> v pravém horním rohu nebo "
+"zvolte z nabídky <guiseq><gui>Média</gui><gui>Přidat podcast…</gui></guiseq> "
+"a nebo použijte klávesovou zkratku <keyseq><key>Shift</key><key>Control</"
+"key><key>F</key></keyseq>."
+
+#: C/add-podcast.page:59(p)
+msgid ""
+"Banshee will then allow you to choose how you want to download new podcasts "
+"from a drop down menu. Your choices include:"
+msgstr ""
+"Pak si v Banshee můžete v rozbalovací nabídce zvolit, jak chcete nové "
+"podcasty stahovat. Na výběr je:"
+
+#: C/add-podcast.page:63(p)
+msgid ""
+"Download the Most Recent Episode (This will automatically download the last "
+"episode that was released)."
+msgstr "Stáhnout nejnovější díl (automaticky stáhne poslední vydaný díl)"
+
+#: C/add-podcast.page:65(p)
+msgid "Download All Episodes (This will download all episodes)."
+msgstr "Stáhnout všechny díly (automaticky stáhne všechny díly)"
+
+#: C/add-podcast.page:66(p)
+msgid ""
+"Let Me Decide Which Episodes to Download (This will allow you to choose "
+"which episodes you would like to download)."
+msgstr ""
+"Nechat mě vybrat díly ke stažení (nabídne vám ke zvolení, které díly si "
+"přejete stáhnout)"
+
+#: C/add-podcast.page:70(p)
+msgid "After you have added a Podcast feed, Banshee will display:"
+msgstr "Po té, co kanál podcastu přidáte, Banshee zobrazí:"
+
+#: C/add-podcast.page:73(p)
+msgid "<gui>Name</gui>: (Name of the specific episode)"
+msgstr "<gui>Název</gui>: (název konkrétního dílu)"
+
+#: C/add-podcast.page:74(p)
+msgid "<gui>Podcast</gui>: (Name of the Podcast)"
+msgstr "<gui>Podcast</gui>: (název podcastu)"
+
+#: C/add-podcast.page:75(p)
+msgid "<gui>Published</gui> (Date the episode was published or released)"
+msgstr "<gui>Zveřejněno</gui>: (datum, kdy byl díl zveřejněn nebo vydán)"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/index.page:0(None)
+msgid "translator-credits"
+msgstr "Marek Černocký <marek@manet.cz>"

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync" xml:lang="da">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Synkroniser dine medier til en bærbar medieafspiller eller smarttelefon.</desc>
+    <revision pkgversion="1.8" version="0.1" date="2010-08-29" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Synkroniser</title>    
+  
+  <p>Banshee understøtter synkronisering af din musik til dine bærbare medieafspillere og smarttelefoner. Du kan tilføje specifikke musiknumre, album eller afspilningslister eller tillade, at Banshee holder din musikafspiller synkroniseret med dit bibliotek. Efter din afspiller er blevet forbundet med din computer, kan du også afspille sangene på din bærbare afspiller i Banshee. Når du synkroniserer musik i et ikke-forringende format, såsom FLAC, vil Banshee automatisk omkode din musik til et format med lavere kvalitet såsom Ogg Vorbis eller MP3, hvis du har de passende codec installeret.</p>
+  
+  <section id="devices">
+    <title>Enhedsunderstøttelse</title>
+    <p>Banshee understøtter næsten alle moderne bærbare musikafspillere og smarttelefoner, dog ikke disse vigtige undtagelser: Apple iPhone, Ipdad og iPod Touch.</p>
+  
+  <p>Når du tilslutter din enhed, vil Banshee vise enheden i den venstre menu. Et tryk på enhedsikonet vil føre dig til enhedens hjemmeside i Banshee, der viser dig dine synkroniseringsindstillinger.</p>
+  
+  </section>
+  
+    <section id="sync-settings">
+    <title>Synkroniser din musik</title>
+    <p>Du kan vælge at håndtere medierne på din bærbare ved at lade Banshee synkronisere automatisk eller vælge at håndtere dine medier manuelt.</p>
+    
+    <p>Vælg din enhed fra Banshees menu og vælg så hvordan du ønsker at synkronisere dine medier, inklusive:</p>
+    <list>
+      <item><p>Musik</p></item>
+      <item><p>Lydbøger</p></item>  
+      <item><p>Videoer</p></item>
+      <item><p>Podcast</p></item>  
+    </list>
+    
+    <p>Fra menuen i rullegardinet kan du vælge følgende for hvert medie:</p>
+    <list>
+      <item><p>Håndter manuelt</p></item>
+      <item><p>Synkroniser hele biblioteket</p></item>  
+    </list>    
+    
+    <note style="warning">
+      <p>Hvis du vælger at synkronisere hele biblioteket med din bærbare medieafspiller så sikr dig, at din bærbare afspiller har nok lagerplads. Hvis dit bibliotek er større end pladsen på din bærbare medieafspiller, vil Banshee synkronisere medier indtil afspilleren er fyldt op og så stoppe.</p>
+    </note>
+    
+    <p>Hvis du har oprettet afspilningslister eller intelligente afspilningslister i dit musikbibliotek, så vil de også blive vist som en synkroniseringsindstilling for Musik. Dette kan være brugbart, når der oprettes intelligente afspilningslister, da intelligente afspilningslister automatisk vil blive opdateret med nyt indhold efterhånden som det tilføjes efter afspilningslistens regler, og Banshee vil synkronisere den nye afspilningsliste med din enhed, hver gang du tilslutter den.</p>
+    
+    <p>Banshee vil vise den samlede plads på din bærbare musikafspiller i en graf i bunden af Banshee. Grafen vil vise dig hvor meget plads der er optaget af lydfiler, video, andet og ledig plads. Lige derunder vil Banshee vise dig antallet af filer, der er gemt på din bærbare musikafspiller, hvor mange timer eller dage der kan afspilles uden stop og det samlede forbrug af plads.</p>
+    
+  </section>
+
+  <section id="sync-manually">
+    <title>Synkroniser hele dit bibliotek</title>
+    <p>You can drag and drop media to your portable music player from Banshee.
+    Select the file or files you want to copy to your portable media player
+    and then press and hold your right mouse button and drag the file(s) to
+    your portable media player icon in Banshee.  This will copy the files to 
+    your device.
+    </p>
+    
+    <p>Hvis dit musikbibliotek er kodet, i et format som din bærbare medieafspiller ikke understøtter, såsom OGG eller FLAC, og du har de nødvendige codec installeret, kan Banshee automatisk omkode disse filer til MP3, når du overfører til din bærbare medieafspiller. Undersøg om din Linuxdistribution har de nødvendige codec, da det er uden for denne manuals omfang og varierer per distribution.</p>
+    
+    <note style="tip">
+      <p>Du skal måske skubbe din enhed ud for at indlæse filerne korrekt på din bærbare musikafspiller. For at skubbe en enhed ud i Banshee, brug din mus og højreklik på enheden i Banshees menu og tryk <gui>Afbryd</gui>.</p>
+    </note>
+
+  </section>
+  
+  <section id="pmp-play">
+    <title>Afspil musik fra din bærbare musikafspiller</title>
+    <p>Du kan afspille musik gemt på din bærbare musikafspiller direkte i Banshee. Vælg din afspiller i Banshees menu til venstre og din bærbare musikafspillers bibliotek vil blive vist. Du kan så afspille musik i Banshee på samme måde som i dit bibliotek.</p>
+  </section>
+  
+  <section id="pmp-delete">
+    <title>Fjern musik fra din bærbare musikafspiller</title>
+    <p>To remove songs stored on your portable music player, choose your
+    player in Banshee to view its library.  Then choose the tracks you would
+    like to remove and right click the tracks and choose <gui>Delete</gui> or from the 
+    menu choose <guiseq><gui>Edit</gui><gui>Delete</gui></guiseq>.</p>
+    
+     <note style="warning">
+      <p>Sletning af filer fra din bærbare musikafspiller vil fjerne dem permanent, og du vil ikke kunne gendanne dem.</p>
+    </note>
+    
+  </section>
+
+	
+</page>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="add-podcast" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <link type="seealso" xref="add-radio"/>
+    <link type="seealso" xref="import"/>
+    <desc>Hinzufügen, Entfernen und Abspielen von Podcasts in Banshee.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Podcasts</title> 
+  
+  <section id="podcastdescription">
+     <title>Was ist ein Podcast?</title>
+     
+  <p>Podcasts sind aufgezeichnete Programme, ähnlich wie Radiosendungen, die über das Internet verbreitet werden und die Sie abonnieren können. Wenn Sie in Banshee einen solchen Podcast abonnieren, wird jedes Mal beim Erscheinen einer neuen Folge diese automatisch heruntergeladen, um sie anzuhören.</p>
+  
+  <p>Es gibt Podcasts zu fast allen Themen wie Musik, Filme, Linux und noch vieles mehr. Durchsuchen Sie mit Ihrer Lieblings-Suchmaschine das Internet mit einem Suchbegriff wie »Film Podcast«, und Sie werden viele Treffer erhalten, aus denen Sie wählen können.</p>
+  
+  </section>
+  
+  <section id="addpodcast">
+    <title>Hinzufügen eines Podcasts</title>
+  
+  <p>Um einen Podcast zu Banshee hinzuzufügen, müssen Sie zunächst die Webseite des Podcasts in Ihrem Webbrowser aufrufen. Beinahe alle Podcasts verfügen über einen Knopf oder einen Verweis, über den Sie den Podcast abonnieren können. Kopieren Sie den Verweis zum Abonnement des Podcasts. In den meisten Webbrowsern können Sie den Verweis mit der rechten Maustaste anklicken und <gui>Link-Adresse kopieren</gui> oder <gui>Verweisziel kopieren</gui> im Kontextmenü wählen.</p>
+  
+  <p>Klicken Sie in Banshee auf <gui>Podcast abonnieren</gui> in der oberen rechten Ecke oder wählen Sie im Menü <guiseq><gui>Medien</gui><gui>Podcast abonnieren</gui></guiseq>. Alternativ drücken Sie die Tastenkombination <keyseq><key>Umschalttaste</key><key>Strg</key><key>F</key></keyseq>.</p>
+  
+  <p>Banshee ermöglicht Ihnen dann in einem Auswahlmenü, zu entscheiden, welche Podcasts heruntergeladen werden sollen. Folgende Möglichkeiten stehen bereit:</p>
+  
+  <list>
+  	<item><p>Neueste Folge herunterladen (Dadurch wird automatisch die Folge heruntergeladen, die zuletzt veröffentlicht wurde).</p></item>
+  	<item><p>Alle Folgen herunterladen (Dadurch werden alle Folgen heruntergeladen).</p></item>
+	<item><p>Mich entscheiden lassen, welche Folgen heruntergeladen werden (Dadurch wird Ihnen ermöglicht, aus den verfügbaren Folgen diejenigen auszuwählen, welche Sie herunterladen wollen).</p></item>
+  </list>
+
+  <p>Nachdem Sie die Podcast-Folge hinzugefügt haben, zeigt Banshee Folgendes an:</p>
+  
+  <list>
+  	<item><p><gui>Name</gui>: (Name der bestimmten Folge)</p></item>
+  	<item><p><gui>Podcast</gui>: (Name des Podcasts)</p></item>
+  	<item><p><gui>Veröffentlicht</gui> (Veröffentlichungsdatum der Folge)</p></item>
+  </list>
+  
+  </section>	
+  	  	  
+</page>

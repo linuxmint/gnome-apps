@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="add-podcast" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <link type="seealso" xref="add-radio"/>
+    <link type="seealso" xref="import"/>
+    <desc>Přidávejte, odebírejte a přehrávejte podcasty v Banshee.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Podcasty</title> 
+  
+  <section id="podcastdescription">
+     <title>Co je to podcast</title>
+     
+  <p>Podcast je zaznamenaný program, podobně jako program rádia, který je dostupný na Internetu a vy jej můžete odebírat. Když jste v přehrávači Banshee přihlášeni k odběru nějakého podcastu, tak pokaždé když je vydán nový program, Banshee jej automaticky stáhne a nabídne vám jej k poslechu.</p>
+  
+  <p>Existují podcasty s téměř jakýmkoliv tématem, včetně hudby, filmů, Linuxu a dalších věcí. Hledejte na Internetu svým oblíbeným vyhledávačem. K hledání použijte výraz typu „film podcast“ (respektive anglicky „movie podcast“, protože nabídka podcastů v angličtině je daleko větší) a můžete si vybírat.</p>
+  
+  </section>
+  
+  <section id="addpodcast">
+    <title>Přidávání podcastů</title>
+  
+  <p>Když chcete do přehrávače Banshee přidat podcast, musíte nejprve ve svém prohlížeči navštívit domovskou stránku onoho podcastu na Intenetu. Většina podcastů má tlačítko nebo odkaz pro přihlášení k odběru podcastu. Zkopírujte odkaz do přihlášení k podcastu. Ve většině webových prohlížečů jde kliknout pravým tlačítkem na odkaz a zvolit <gui>Kopírovat odkaz</gui>.</p>
+  
+  <p>V Banshee zmáčkněte <gui>Přidat podcast</gui> v pravém horním rohu nebo zvolte z nabídky <guiseq><gui>Média</gui><gui>Přidat podcast…</gui></guiseq> a nebo použijte klávesovou zkratku <keyseq><key>Shift</key><key>Control</key><key>F</key></keyseq>.</p>
+  
+  <p>Pak si v Banshee můžete v rozbalovací nabídce zvolit, jak chcete nové podcasty stahovat. Na výběr je:</p>
+  
+  <list>
+  	<item><p>Stáhnout nejnovější díl (automaticky stáhne poslední vydaný díl)</p></item>
+  	<item><p>Stáhnout všechny díly (automaticky stáhne všechny díly)</p></item>
+	<item><p>Nechat mě vybrat díly ke stažení (nabídne vám ke zvolení, které díly si přejete stáhnout)</p></item>
+  </list>
+
+  <p>Po té, co kanál podcastu přidáte, Banshee zobrazí:</p>
+  
+  <list>
+  	<item><p><gui>Název</gui>: (název konkrétního dílu)</p></item>
+  	<item><p><gui>Podcast</gui>: (název podcastu)</p></item>
+  	<item><p><gui>Zveřejněno</gui>: (datum, kdy byl díl zveřejněn nebo vydán)</p></item>
+  </list>
+  
+  </section>	
+  	  	  
+</page>

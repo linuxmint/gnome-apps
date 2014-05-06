@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="playlists" xml:lang="pt_BR">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="tags"/>
+    <link type="seealso" xref="coverart"/>
+    <desc>Crie e gerencie listas de reprodução.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-05-26" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Listas de reprodução</title>    
+  
+  <p>Listas de reprodução permitem a você criar e salvar uma lista de músicas que são reproduzidas em uma ordem específica. As listas de reprodução são muito convenientes para criar uma lista com suas músicas favoritas ou para condensar sua biblioteca em listas menores que são mais fáceis de navegar. Alguns reprodutores portáteis permitem que você transfira a lista de reprodução, então você pode tê-la com você fora de casa.</p>
+  
+  <p>O Banshee suporta as playlists normais que incuem as música que você adiciona à playlist, bem como listas de reprodução inteligentes. Estas são listas geradas automaticamente baseado nos seus hábitos, músicas favoritas, e mais.</p>
+  
+  <section id="manual">
+  
+    <title>Listas de reprodução normais</title>
+  
+    <p>Uma lista de reprodução normal é uma lista de músicas que você que você adiciona e gerencia. Você pode querer cirar sua própria lista de músicas do seu artista favorito de vários álbums diferentes, suas mais recentes músicas favoritas, ou uma lista de reprodução com músicas agitadas, para ouvir enquanto se exercita.</p>
+    
+    <p>You can create a new playlist by pressing <keyseq><key>Control</key>
+    <key>N</key></keyseq>, from the menu choosing <guiseq><gui>Media</gui>
+    <gui>New Playlist</gui></guiseq> or by selecing the track(s) you would like
+    to add to the playlist.  Select the track(s), right click them, and choose
+    <guiseq><gui>Add to Playlist</gui><gui>New Playlist</gui></guiseq>.
+    You can also drag and drop them to a new playlist by selecting the track(s) 
+    and dragging them to the left hand
+    window pane over <gui>Music</gui>.  As you drag it over <gui>Music</gui>,
+    a new option <gui><em>New Playlist</em></gui> will appear and you can drop
+    the track(s) over <gui><em>New Playlist</em></gui> to add them to the 
+    playlist.  You can repeat this process until you have added all the tracks
+    you want in the playlist.
+    </p>
+
+    <p>To give your playlist its own name, select the playlist and right click
+    on the playlist and press <gui>Rename Playlist</gui> and enter the name
+    of your playlist.
+    </p>
+    
+    <p>Você pode alterar a ordem da lista de reprodução arrastando e soltando as músicas para a nova posição. Músicas só podem ser reordenadas quando nenhuma das colunas estiverem ordenadas. Para retirar ordem de uma coluna, clique-a até que as setas para baixo e para cima não estejam sendo mais mostradas e, então, reordene a lista de reprodução.</p>
+    
+    <p>To remove a track from the playlist, select the track(s) you wish to 
+    remove.  Press the <key>Delete</key>, from the menu choose 
+    <guiseq><gui>Edit</gui><gui>Remove from Playlist</gui></guiseq> or right
+    click the track(s) with your mouse and press <gui>Remove from Playlist</gui>.
+    </p>
+  </section> 
+  
+  <section id="smartplaylists">
+    <title>Lista de reprodução inteligentes</title>
+    
+    <p>Listas de reprodução inteligentes permitem que você gere rapidamente uma ista de reprodução dinâmica baseada em um número de variáveis pré-configuradas. Você pode criar rapidamente uma lista de reprodução baseada em um artista específico, favoritos e mais.</p>
+    
+    <p>To create a new Smart Playlist, from the menu choose <guiseq>
+    <gui>Media</gui><gui>New Smart Playlist</gui></guiseq>.  You will be 
+    presented with a dialog to create a new Smart Playlist.  Enter
+    the name of your playlist and then choose the criteria your playlist 
+    should be based on.  You can choose from any field included in the song's 
+    meatadata, such as Album, Artist or Year.  Choose the criteria and then
+    choose from one of the following:
+    </p>
+    
+    <list>
+      <item><p>é</p></item>
+      <item><p>não é</p></item>  
+      <item><p>menos que</p></item>
+      <item><p>mais que</p></item>  
+      <item><p>no máximo</p></item>
+      <item><p>no mínimo</p></item>  
+    </list>
+    
+    <p>You can also press the <gui>+</gui> button to add an addition query
+    to the Smart Playlist.  For example, you could create a smart playlist
+    that includes all songs from 2010 that you rated 5 stars.  To create this
+    playlist you would choose:
+    </p>
+    
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Ano</gui></p></td> <td><p><gui>é</gui></p> </td> 
+    <td><p><gui>2010</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><gui>Avaliação</gui></p></td> <td><p><gui>é</gui></p></td> 
+    <td><p><gui/>5 stars</p></td>
+  </tr>
+  </table>
+    
+    <p>You can then optionally select how many songs are included by pressing
+    the <gui>Limit</gui> to checkbox and choosing the number of songs to be
+    included.
+    </p>
+  
+  <p>Banshee also includes smart playlists already created for 
+  you.  Press the <gui>Open in editor</gui> button to view how the playlist
+  created was or to modify it.  If you press <gui>Create and save</gui> the 
+  playlist will be automatically generated and saved for you.  The following
+  playlists are included:
+  </p>
+  
+  <list>
+    <title>Listas de reprodução inteligentes do Banshee</title>
+    <item><p>Favoritos (músicas avaliadas em quatro ou cindo estrelas)</p></item>
+    <item><p>Favoritos recentes (músicas ouvidas muitas vezes na semana passada)</p></item>  
+    <item><p>Adicionadas recentemente (músicas importadas na última semana)</p></item>
+    <item><p>Não ouvidas (músicas que não foram reproduzidas ou foram puladas)</p></item>
+    <item><p>Favoritos esquecidos (favoritos que não foram reproduzidos por mais de 2 meses)</p></item>
+    <item><p>700 MB de favoritos (um CD de dados digno de músicas favoritas)</p></item>
+    <item><p>80 minutos de favoritos (um CD de áudio digno de músicas favoritas)</p></item>
+    <item><p>Sem avaliação (músicas que não foram classificadas)</p></item>
+  </list>
+ 
+   </section> 
+ 
+</page>

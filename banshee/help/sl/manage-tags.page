@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="tags" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="coverart"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Uredite in spremenite oznake in metapodatke glasbe.</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-09" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Metapodatki glasbe</title>
+
+  <section id="metadata">
+
+  <title>Metapodatki glasbe</title>    
+  
+  	<p>Digitalna glasba vsebuje metapodatke, ki v glasbeni datoteki shranjujejo podrobnosti vključno z izvajalcem, albumom, letom snemanja, zvrstjo in več. Skoraj vsa glasba kupljena preko interneta bo imela metapodatke že vstavljene. Med uvažanjem glasbe s CD-jev, bo Banshee pri zajemanju CD-ja vključil metapodatke, če so na voljo. Za več podrobnosti o zajemanju CD-jev in vključevanju metapodatkov si oglejte <link xref="import"/>.</p>
+  	
+  	<p>Priljubljene vrste metapodatkov sta ID3v1 in ID3v2 za datoteke MP3 in opombe Vorbis za datoteke OGG Vorbis.</p>	
+  
+  	<p>Če ste uvozili skladbe brez metapodatkov, bo <app>Banshee</app> prikazal <gui>Neznano</gui> za večino polj v knjižnici.</p>
+  	
+  </section>
+
+  <section id="editmetadata"> 	
+    
+    <title>Urejajte svoje metapodatke</title>
+    
+    <p>Metapodatke svojih skladb lahko spremenite in uredite. Izberite skladbo ali skladbe, ki jih želite posodobiti in pritisnite <key>E</key>, v meniju izberite <guiseq><gui>Uredi</gui><gui>Uredi podatke o  skladbi</gui></guiseq> ali z miško desno kliknite na datoteke in izberite <gui>Uredi podatke o  skladbi</gui></p>
+    
+    <p>Pojavilo se bo polje pogovornega okna, ki prikazuje metapodatke skladbe in vam omgoča njihovo spremembo ali posodobitev. Privzeto prikazana polja vključujejo:</p>
+    
+    <list>
+      <item><p><gui>Naslov skladbe</gui></p></item>
+      <item><p><gui>Izvajalec skladbe</gui></p></item>
+      <item><p><gui>Naslov albuma</gui></p></item>
+      <item><p><gui>Zvrst</gui></p></item>
+      <item><p><gui>Številka skladbe</gui></p></item>
+      <item><p><gui>Številka diska</gui></p></item>
+      <item><p><gui>Leto</gui></p></item>
+    </list>
+    
+    <p>Posodobite podrobnosti o skladbi. Če ste izbrali več skladb za urejanje, pritisnite ikono desne puščice desno od polja <gui>Naslov skladbe</gui> ali pritisnite gumb <gui>Naprej</gui> na dnu pogovornega okna, ko boste končali z urejanjem skladbe. Ko boste dokončali urejanje vseh metapodatkov, pritisnite <gui>Shrani</gui>.</p>
+   
+  </section>
+
+</page>

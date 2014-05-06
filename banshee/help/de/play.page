@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="play" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="queue"/>
+    <desc>Ihre Videos und Musikdateien widergeben.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Ihre Medien wiedergeben</title>
+
+  <section id="playmusic">
+  <title>Ihre Musik wiedergeben</title>    
+  
+  <p>Um Musik in Banshee wiederzugeben, wählen Sie die Musik-Quelle. Die Musikbibliothek zeigt alle Künstler in Ihrer Bibliothek an, Alben-cover für jedes Album, sowie eine Liste aller Titel in Ihrer Bibliothek.</p>
+  
+  <p>Wählen Sie das wiederzugebende Album oder den wiederzugebenden Titel in der Liste der Künstler oder Alben aus, oder benutzen sie das Suchfeld in der oberen rechten Ecke dea Anwendungsfensters von Banshee.</p>
+  
+  <p>Um mit der Wiedergabe eines Liedes zu beginnen, klicken Sie mit der Maus doppelt auf den Titelnamen, drücken Sie die <key>Leertaste</key> oder wählen Sie <guiseq><gui>Wiedergabe</gui><gui>Wiedergabe</gui></guiseq> im Banshee-Menü.</p>
+  
+  <p>Sie können auch ein Album abspielen, indem Sie das Album im Alben-Browser auswählen und dann entweder mit der Maus doppelt auf das erste Lied klicken, die <key>Leertaste</key> drücken oder <guiseq><gui>Wiedergabe</gui><gui>Wiedergabe</gui></guiseq> im Banshee-Menü wählen.</p>
+  
+  <p>Um alle Lieder eines Künstlers abzuspielen, wählen Sie den Künstler im Künstler-Browser aus und drücken Sie die <key>Leertaste</key> oder wählen Sie <guiseq><gui>Wiedergabe</gui><gui>Wiedergabe</gui></guiseq> im Banshee-Menü.</p>
+  
+  <p><app>Banshee</app> zeigt auch Ihre Lieblingsalben an, das sind diejenigen, die Sie am häufigsten abspielen, außerdem kürzlich hinzugefügte Favoriten und noch nicht gehörte Musik. Wählen Sie aus, was Sie hören wollen und Sie können es nacheinander abspielen.</p>
+  
+  </section>
+
+  <section id="playvideo">
+  <title>Ein Video abspielen</title>    
+  
+  <p>Ihre importierten Videos werden alphabetisch aufgelistet. Um ein Video abzuspielen, wählen Sie das gewünschte Video in der Liste aus und drücken Sie die <key>Leertaste</key> oder wählen Sie <guiseq><gui>Wiedergabe</gui><gui>Wiedergabe</gui></guiseq> im Banshee-Menü.</p>
+  
+  <p><app>Banshee</app> zeigt auch Ihre Lieblingsvideos an, das sind diejenigen, die Sie am häufigsten abspielen, außerdem noch nicht abgespielte Videos. Wählen Sie eines aus und Sie können ein Video aus der Liste abspielen.</p>	
+  
+  </section>
+  
+  <section id="playpodcast">
+  <title>Einen Podcast wiedergeben</title>    
+  
+  <p>Unter »Podcasts« werden alle Podcasts, die Sie abonniert haben, sowie alle weiteren verfügbaren Podcasts angezeigt. Der Podcast-Browser listet alle Podcasts in absteigender Reihenfolge auf, angefangen mit dem aktuellsten.</p>
+  
+  <p>Um einen Podcast wiederzugeben, wählen Sie den Podcast in der Liste aus und drücken Sie die <key>Leertaste</key> oder wählen Sie <guiseq><gui>Wiedergabe</gui><gui>Wiedergabe</gui></guiseq> im Banshee-Menü.</p>
+  
+  </section>
+  
+  <section id="playradio">
+  <title>Einen Internet-Radiosender wiedergeben</title>    
+  
+  <p>Die Radio-Quelle zeigt Ihnen alle Internet-Radiosender in alphabetischer Reihenfolge, die sie zu Banshee hinzugefügt haben.</p>
+  
+  <p>Um einen Internet-Radiosender abzuspielen, wählen Sie den gewünschten Sender aus der Liste aus und drücken Sie die <key>Leertaste</key> oder wählen Sie <guiseq><gui>Wiedergabe</gui><gui>Wiedergabe</gui></guiseq> aus dem Banshee-Menü.</p>
+  
+  </section>    
+	
+</page>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="queue" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="play"/>
+    <desc>Ajout de média à votre file d'attente de lecture.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-05-26" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>File d'attente de lecture</title>    
+  
+  <p>La <gui>file d'attente de lecture</gui> vous permet d'ajouter des morceaux à lire dans un ordre séquentiel. Vous pouvez y ajouter beaucoup de pistes pour écouter des heures de musique sans interruption. Vous pouvez y ajouter des pistes seules ou des albums entiers et les trier ou les réorganiser.</p>
+  
+<section id="addqueue">
+
+  <title>Ajout de musique à la file d'attente de lecture</title>
+
+  <p>Sélectionnez dans votre bibliothèque les pistes ou les albums à ajouter à la file d'attente de lecture.</p>
+  
+  <p>Pour ajouter un album entier avec la souris, sélectionnez-le et glissez-le dans la <gui>File d'attente de lecture</gui> du volet de gauche.</p>
+  
+  <p>Vous pouvez ajouter des morceaux à la file d'attente de lecture un à un ou par paquets. Pour ajouter un titre, faites un glisser-déposer avec la souris dans la <gui>File d'attente de lecture</gui> du volet de gauche ou faites un clic droit et choisissez <gui>Ajouter à la file d'attente de lecture</gui> dans le menu contextuel.</p>
+  
+  <p>Vous pouvez ajouter plusieurs pistes en les sélectionnant une à une avec la souris tout en maintenant la touche <key>Ctrl</key> enfoncée, ou ajouter un intervalle de pistes en appuyant sur la touche <key>Maj</key> et en cliquant une deuxième fois pour sélectionner cet ensemble. Faites alors un glisser-déposer de la sélection avec la souris dans la <gui>File d'attente de lecture</gui> du volet de gauche ou faites un clic droit et choisissez <gui>Ajouter à la file d'attente de lecture</gui> dans le menu contextuel.</p>
+  
+</section>
+
+<section id="reorderqueue">
+
+  <title>Organisation de votre file d'attente de lecture</title>
+
+  <p>Votre file d'attente de lecture est classée dans l'ordre d'ajout des morceaux. Les premiers titres ou albums ajoutés à la liste sont les premiers lus. Vous pouvez modifier ce classement avec la souris en faisant un glisser-déposer d'un titre ou d'un ensemble de titres à l'intérieur de cette liste. Sélectionnez-le ou les titres que vous souhaitez déplacer et glissez-les avec la souris à la place ou au numéro de ligne choisi, puis relâchez la souris.</p>
+
+</section>  
+  
+<section id="removequeue">
+
+  <title>Suppression de titres de la file d'attente de lecture</title>
+
+  <p>Vous pouvez supprimer une piste, un ensemble de pistes ou vider entièrement la file d'attente de lecture.</p>
+  
+  <p>Pour supprimer une piste précise ou un ensemble de pistes de la liste, sélectionnez-les avec la souris, puis appuyez sur la touche <key>Suppr</key>.</p>
+  
+  <p>Pour vider entièrement la file d'attente de lecture, appuyez sur le bouton <gui>Effacer</gui> dans le coin supérieur droite de la fenêtre.</p>
+  
+</section>      
+	
+</page>

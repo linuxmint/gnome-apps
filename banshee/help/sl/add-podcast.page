@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="add-podcast" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <link type="seealso" xref="add-radio"/>
+    <link type="seealso" xref="import"/>
+    <desc>Dodajte, odstranite in predvajajte podcaste v Banshee.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Podcasti</title> 
+  
+  <section id="podcastdescription">
+     <title>Kaj je podcast?</title>
+     
+  <p>Podcasti so posneti programi podobni radijskim programom, ki so na voljo na internetu in vam omogočajo naročnino. Ko se v Banshee naročite na podcast, bo ob novem izidu programa Banshee samodejno prejel podcast in vam omogočil njegovo poslušanje.</p>
+  
+  <p>Obstajajo podcasti o skoraj vseh temah vključno z glasbo, filmi, Linuxom in več. Iščite po internetu z uporabo svojega priljubljenega iskalnika z iskalnim nizom kot je "film podcast" in predstavljenih vam bo veliko možnosti za izbiro.</p>
+  
+  </section>
+  
+  <section id="addpodcast">
+    <title>Dodajanje podcasta</title>
+  
+  <p>Za dodajanje podcasta v Banshee boste morali najprej obiskati domačo stran podcasta v svojem spletnem brskalniku. Skoraj vsi podcasti bodo imeli prikazan gumb ali povezavo za naročilo nanj. Kopirajte povezavo na naročilo podcasta. V večini brskalnikov lahko desno kliknete na povezavo in izberete <gui>Kopiraj povezavo</gui>. </p>
+  
+  <p>V zgornjem desnem kotu Banshee izberite <gui>Naroči se na podcaste</gui>, v meniju izberite choose <guiseq><gui>Večpredstavnost</gui><gui> Naroči se na podcast</gui></guiseq> ali uporabite tipkovno bližnjico <keyseq><key>Shift</key><key>Control</key><key>F</key></keyseq>.</p>
+  
+  <p>Banshee vam bo nato v spustnem meniju omogočal izbiro kako želite prejeti nove podcaste. Vaše izbire vključujejo: </p>
+  
+  <list>
+  	<item><p>Prejemi najnovejšo epizodo (to bo samodejno prejelo zadnjo izdano epizodo).</p></item>
+  	<item><p>Prejmi vse epizode (To bo prejelo vse epizode).</p></item>
+	<item><p>Naj sam/a odločim katere epizode naj prejmem (to vam bo omogočilo izbiro epizod, ki jih želite prejeti).</p></item>
+  </list>
+
+  <p>Po dodajanju vira podcasta bo Banshee prikazal:</p>
+  
+  <list>
+  	<item><p><gui>Ime</gui>: (Ime določene epizode)</p></item>
+  	<item><p><gui>Podcast</gui>: (Ime podcasta)</p></item>
+  	<item><p><gui>Objavljeno</gui> (Datum objave ali izida epizode)</p></item>
+  </list>
+  
+  </section>	
+  	  	  
+</page>

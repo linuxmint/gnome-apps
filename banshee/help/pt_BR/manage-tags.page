@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="tags" xml:lang="pt_BR">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="coverart"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Edite e modifique marcações e metadados das músicas.</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-09" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Metadados de músicas</title>
+
+  <section id="metadata">
+
+  <title>Metadados de músicas</title>    
+  
+  	<p>Música digital contém metadados que armazenam informações sobre a música, incluindo artista, álbum, ano de gravação, gênero, e mais. Quase todas as músicas compradas na internet já terão seus metadados inclusos, e se você importar música de CDs o Banshee irá incluir os metadados quando copiando o CD se estes estiverem disponíveis. Para mais informações sobre a cópia de CDs e inclusão de metadados veja o link: <link xref="import"/>.</p>
+  	
+  	<p>Formatos populares de metadados são ID3v1 e ID3v2 para arquivos MP3 e Vorbis comments para arquivos OGG Vorbis.</p>	
+  
+  	<p>If you have imported songs that do not contain metadata, 
+  	<app>Banshee</app> will display <gui>Unknown</gui> for most fields
+  	in the library. </p>
+  	
+  </section>
+
+  <section id="editmetadata"> 	
+    
+    <title>Edite seus metadados</title>
+    
+    <p>You can change and edit the metadata of your songs.  Select the song or
+    songs you want to update and hit the <key>E</key>, choose
+    <guiseq><gui>Edit</gui><gui>Edit Track Information</gui></guiseq> from the menu, or use
+    your mouse and right click on the files and select
+    <gui>Edit Track Information</gui>.
+    </p>
+    
+    <p>Uma caixa de diálogo aparecerá, ela exibe os metadados das músicas e permite que você altere e atualize-os. Os campos mostrados por padrão são:</p>
+    
+    <list>
+      <item><p><gui>Título da faixa</gui></p></item>
+      <item><p><gui>Artista da faixa</gui></p></item>
+      <item><p><gui>Título do álbum</gui></p></item>
+      <item><p><gui>Gênero</gui></p></item>
+      <item><p><gui>Número da faixa</gui></p></item>
+      <item><p><gui>Número do disco</gui></p></item>
+      <item><p><gui>Ano</gui></p></item>
+    </list>
+    
+    <p>Update the song's information.  If you have selected multiple songs to
+    edit press the right arrow icon to the right of the <gui>Track Title</gui>
+    field or press the <gui>Forward</gui> button at the bottom of the dialog
+    when finished with each song.   When you have completed editing all metadata,
+    press <gui>Save</gui>.
+    </p>
+   
+  </section>
+
+</page>

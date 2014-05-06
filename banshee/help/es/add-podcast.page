@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="add-podcast" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <link type="seealso" xref="add-radio"/>
+    <link type="seealso" xref="import"/>
+    <desc>Añadir, eliminar y reproducir podcasts en Banshee.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Podcasts</title> 
+  
+  <section id="podcastdescription">
+     <title>¿Qué es un podcast?</title>
+     
+  <p>Los podcasts son programas grabados, parecidos a los de radio, que se encuentran disponibles en Internet y a los que puede suscribirse. Cuando se suscriba a un podcast en Banshee, el programa irá descargando los nuevos programas automáticamente y le permitirá escucharlos.</p>
+  
+  <p>Se pueden encontrar podcasts sobre prácticamente cualquier tema, como música, películas, Linux y mucho más. Para encontrar podcasts en Internet, utilice su buscador preferido e introduzca términos como «podcasts música» para encontrar un gran número de opciones donde elegir.</p>
+  
+  </section>
+  
+  <section id="addpodcast">
+    <title>Añadir un podcast</title>
+  
+  <p>Para añadir un podcast a Banshee, primero deberá visitar la página web del podcast en Internet. Casi todos los podcasts cuentan con un botón o un enlace que permite suscribirse al podcast. Copie dicho enlace. En la mayoría de los navegadores puede pulsar con el botón derecho en el enlace y seleccionar <gui>Copiar enlace</gui>.</p>
+  
+  <p>En Banshee, pulse en <gui>Subcribirse a un podcast</gui> en la esquina superior derecha o, desde el menú, pulse en <guiseq><gui>Multimedia</gui><gui>Añadir podcast…</gui></guiseq> o bien pulse <keyseq><key>Máyus</key><key>Control</key><key>F</key></keyseq>.</p>
+  
+  <p>Entonces, Banshee le permitirá elegir cómo desea descargar nuevos capítulos desde un menú desplegable. Las opciones son:</p>
+  
+  <list>
+  	<item><p>Descargar los episodios más recientes (esto descargará automáticamente el último episodio publicado del programa).</p></item>
+  	<item><p>Descargar todos los episodios (esto descargará todos los episodios).</p></item>
+	<item><p>Dejar que el usuario decida qué episodios descargar (esto le permitirá elegir qué episodios desea descargar).</p></item>
+  </list>
+
+  <p>Después de añadir un podcast, Banshee le mostrará:</p>
+  
+  <list>
+  	<item><p><gui>Nombre</gui>: (Nombre del episodio)</p></item>
+  	<item><p><gui>Podcast</gui>: (Nombre del podcast)</p></item>
+  	<item><p><gui>Publicado</gui> (Fecha en que se publicó el episodio)</p></item>
+  </list>
+  
+  </section>	
+  	  	  
+</page>

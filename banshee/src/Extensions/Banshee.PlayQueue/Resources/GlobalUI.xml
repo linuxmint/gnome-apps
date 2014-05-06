@@ -1,0 +1,20 @@
+<ui>
+    <popup name="PlayQueueContextMenu">
+        <menuitem action="RefreshPlayQueueAction"></menuitem>
+        <menuitem action="ShufflePlayQueue"></menuitem>
+        <menuitem action="ClearPlayQueueAction"></menuitem>
+        <menuitem action="ClearPlayQueueOnQuitAction"></menuitem>
+        <menuitem action="AddPlayQueueTracksAction"></menuitem>
+        <menuitem name="SourcePreferences" action="SourcePreferencesAction"/>
+    </popup>
+    <popup name="TrackContextMenu" action="TrackContextMenuAction">
+        <placeholder name="AboveAddToPlaylist">
+            <menuitem name="AddToPlayQueue" action="AddToPlayQueueAction"></menuitem>
+            <menu name="AddToPlayQueueAfterMenu" action="AddToPlayQueueAfterAction">
+            	<menuitem name="AddToPlayQueueAfterCurrentTrack" action="AddToPlayQueueAfterCurrentTrackAction"></menuitem>
+            	<menuitem name="AddToPlayQueueAfterCurrentAlbum" action="AddToPlayQueueAfterCurrentAlbumAction"></menuitem>
+            	<menuitem name="AddToPlayQueueAfterCurrentArtist" action="AddToPlayQueueAfterCurrentArtistAction"></menuitem>
+            </menu>
+        </placeholder>
+    </popup>
+</ui>

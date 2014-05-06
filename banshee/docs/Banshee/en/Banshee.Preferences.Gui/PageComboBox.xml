@@ -1,0 +1,68 @@
+<Type Name="PageComboBox" FullName="Banshee.Preferences.Gui.PageComboBox">
+  <TypeSignature Language="C#" Value="public class PageComboBox : Gtk.ComboBox" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PageComboBox extends Gtk.ComboBox" />
+  <AssemblyInfo>
+    <AssemblyName>Banshee.ThickClient</AssemblyName>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Gtk.ComboBox</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PageComboBox (System.Collections.Generic.IList&lt;Banshee.Preferences.Page&gt; pages, Gtk.Notebook notebook);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class Banshee.Preferences.Page&gt; pages, class Gtk.Notebook notebook) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pages" Type="System.Collections.Generic.IList&lt;Banshee.Preferences.Page&gt;" />
+        <Parameter Name="notebook" Type="Gtk.Notebook" />
+      </Parameters>
+      <Docs>
+        <param name="pages">To be added.</param>
+        <param name="notebook">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivePageId">
+      <MemberSignature Language="C#" Value="public string ActivePageId { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ActivePageId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnChanged">
+      <MemberSignature Language="C#" Value="protected override void OnChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChanged() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

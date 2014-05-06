@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="play" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="queue"/>
+    <desc>Reproducir sus archivos de vídeo y música.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Reproducir su contenido multimedia</title>
+
+  <section id="playmusic">
+  <title>Reproducir de música</title>    
+  
+  <p>Para reproducir música en Banshee, elija la fuente Música. La colección de música mostrará todos los artistas, la portada de cada álbum y una lista con todas las canciones de su colección.</p>
+  
+  <p>Elija el álbum o canción que desea reproducir desde la lista de artistas o álbumes, o bien use la barra de búsqueda de la esquina superior derecha de Banshee.</p>
+  
+  <p>Para empezar a reproducir una canción, pulse dos veces en el nombre de la canción, pulse la <key>barra espaciadora</key> o elija <guiseq><gui>Reproducción</gui><gui>Reproducir</gui></guiseq> desde el menú de Banshee.</p>
+  
+  <p>Para empezar a reproducir un álbum, puede elegirlo de la lista de álbumes y hacer doble clic en el nombre de la canción, pulsar la <key>barra espaciadora</key> o elegir <guiseq><gui>Reproducción</gui><gui>Reproducir</gui></guiseq> desde el menú de Banshee.</p>
+  
+  <p>Para reproducir todas las canciones de un artista, elija el artista en la lista de artistas y pulse la <key>barra espaciadora</key>, o elija <guiseq><gui>Reproducción</gui><gui>Reproducir</gui></guiseq> desde el menú de Banshee.</p>
+  
+  <p>Banshee también muestra sus álbumes favoritos (aquellos que más escucha), favoritos recientes, añadidos recientemente y música no oída. Seleccione el que quiere escuchar y puede reproducir canciones de cada uno de ellos.</p>
+  
+  </section>
+
+  <section id="playvideo">
+  <title>Reproducir un vídeo</title>    
+  
+  <p>Los vídeos importados se listan alfabéticamente. Para reproducir un vídeo, escoja el vídeo que desee de la lista y pulse la <key>barra espaciadora</key>, o elija <guiseq><gui>Reproducción</gui><gui>Reproducir</gui></guiseq> desde el menú de Banshee.</p>
+  
+  <p>Banshee también muestra sus vídeos favoritos (aquellos que más ve) y vídeos no vistos. Seleccione uno y puede reproducir un vídeo desde la lista.</p>	
+  
+  </section>
+  
+  <section id="playpodcast">
+  <title>Reproducir un podcast</title>    
+  
+  <p>La colección Podcasts le mostrará todos los podcasts a los que está suscrito, todos las emisiones disponibles, y el explorador de podcasts lista todos los podcasts en orden de más reciente a más antiguo.</p>
+  
+  <p>Para reproducir un podcast, elija el que quiere reproducir de la lista y pulse <key>Espacio</key> o elija <guiseq><gui>Reproducción</gui><gui>Reproducir</gui></guiseq> desde el menú de Banshee.</p>
+  
+  </section>
+  
+  <section id="playradio">
+  <title>Reproducir una emisora de radio de Internet</title>    
+  
+  <p>La fuente «Radio» le muestra, alfabéticamente, todas las emisoras de radio de Internet que ha añadido a Banshee.</p>
+  
+  <p>Para reproducir una emisora de radio de Internet, elija la emisora de radio que quiere reproducir de la lista y pulse <key>Espacio</key> o elija <guiseq><gui>Reproducción</gui><gui>Reproducir</gui></guiseq> desde el menú de Banshee.</p>
+  
+  </section>    
+	
+</page>

@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+libdir=@libdir@
+bansheedir=${libdir}/@PACKAGE@
+
+Name: Banshee WebBrowser
+Description: Embedded web browser for the Banshee Media Framework
+Version: @VERSION@
+Requires: banshee-services banshee-hyena-gui banshee-thickclient
+Libs: -r:${bansheedir}/Banshee.WebBrowser.dll
+

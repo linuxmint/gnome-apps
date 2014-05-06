@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="ui" xml:lang="da">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-19" status="stub"/>
+    <desc>Et overblik over <app>Bansshees</app> brugergrænseflade.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Introduktion til Banshees brugergrænseflade</title>
+
+  <figure>
+    <title>Vindue for <gui>Banshee - medieafspiller</gui></title>
+    <desc><app>Banshee - medieafspiller</app></desc>
+    <media type="image" src="figures/banshee.png" mime="image/png" style="right">
+      <p><app>Banshees</app> biblioteksgrænseflade</p>
+    </media>
+  </figure>
+  
+<section id="context">
+  <title>Kilder</title>
+    <p>Dine musik- og videokilder vises til venstre i Banshee. Kilderne giver dig hurtig adgang til din afspilningskø, musik, videoer, Amazon, Last.fm, podcaster og mere.</p>
+    
+    <note style="tip">
+      <p>Menuvalgene vil ændre sig afhængig af den kilde, du har valgt. Du skal for eksempel vælge podcastkilden, for at bruge menuen til import af en podcast. Menuindstillingen for import af en podcast er ikke tilgængelig, når du kigger på videoer eller musikbiblioteket.</p>
+    </note> 
+</section>
+
+<section id="browser">
+  <title>Biblioteksbrowser</title>
+  <p>Når du vælger en musik- eller videokilde fra kilder, vil Banshee vise dit indhold i biblioteksbrowseren. Afhængig af kilden du vælger, kan Banshee vise dit musik- eller videobibliotek, podcastabonnementer eller endog Amazons musikbutik hvor du kan købe musik.</p>
+</section>
+
+<section id="nowplaying">
+  <title>Visning af Afspiller nu</title>
+  <p>Brugbar når Banshee skal køre i tilstanden fuldskærm, tilstanden Afspiller nu skjuler biblioteket, så den musik eller video du ser på fylder mere af skærmen. Når du lytter til musik, vil visningen Afspiller nu vise dig kunsternavnet, album og omslag, hvis de er tilgængelige. Hvis du kigger på en video, vil Banshee vise videoen.</p>
+  
+  <p>To change Now Playing to hide the Banshee user interface and use the full
+  screen mode, you can press the <key>F</key>, press the <gui>Fullscreen</gui> 
+  button in the upper right hand corner of Banshee, or choose 
+  <guiseq><gui>View</gui><gui>Fullscreen</gui></guiseq> to start Fullscreen
+  mode.</p>
+  
+</section>
+
+<section id="library">
+  <title>Bibliotek</title>
+  <p>Biblioteksvisningen i Banshee vil ændre sig, afhængig af den kilde du har valgt. Musikbiblioteket vil vise omslag, kunstere i dit bibliotek og sanglister. Podcastbiblioteket vil vise dine podcastabonnementer, podcaster som er hentet eller ikke hentet, og alle, nye og gamle podcaster. Se venligst hver kildes hjælpeside for detaljerede information om håndtering af en kilde.</p>
+</section>
+
+
+</page>

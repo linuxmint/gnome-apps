@@ -1,0 +1,25 @@
+<ui>
+  <!-- This is the context menu for the actual notification area -->
+  <popup name="NotificationAreaIconMenu" action="NotificationAreaIconMenuAction">
+    <menuitem name="PlayPause" action="PlayPauseAction"/>
+    <menuitem name="StopWhenFinished" action="StopWhenFinishedAction"/>
+    <separator/>
+    <menuitem name="Next" action="NextAction"/>
+    <menuitem name="Previous" action="PreviousAction"/>
+    <separator/>
+    <placeholder name="NotificationPlaceholder" />
+    <separator/>
+    <menuitem name="ToggleNotifications" action="ToggleNotificationsAction"/>
+    <separator/>
+    <menuitem name="Quit" action="QuitAction"/>
+  </popup>
+  
+  <!-- This menu gets merged into the main menu to add the close window item -->
+  <menubar name="MainMenu">
+    <menu name="MediaMenu" action="MediaMenuAction">
+      <placeholder name="ClosePlaceholder">
+      <menuitem name="Close" action="CloseAction"/>
+      </placeholder>
+    </menu>
+  </menubar>
+</ui>

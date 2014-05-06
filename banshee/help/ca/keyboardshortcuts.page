@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboardshortcuts" xml:lang="ca">
+
+<info>
+    <link type="guide" xref="advanced#keyboard"/>
+  <desc>Dreceres de teclat</desc>
+  <revision pkgversion="2.0" version="0.1" date="2010-05-29" status="draft"/>
+  <credit type="author">
+    <name>Paul Cutler</name>
+    <email>pcutler@gnome.org</email>
+  </credit>
+
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+
+  <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Controleu el Banshee utilitzant dreceres de teclat</title>
+  
+  <section id="playbackcontrol">
+  
+  <title>Control de reproducció</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Tecla</gui></p></td>  <td><p><gui>Acció</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>Barra espaiadora</p></td> <td><p>Reprodueix o posa en pausa la cançó actual</p></td>
+  </tr>
+  <tr>
+    <td><p>N</p></td>     <td><p>Reprodueix la cançó següent</p></td>
+  </tr>
+  <tr>
+    <td><p>B</p></td> <td><p>Reprodueix la cançó anterior</p></td>
+  </tr>
+</table>
+
+  </section>
+  
+  <section id="library">
+  
+  <title>Interacció amb la biblioteca</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Tecla</gui></p></td>  <td><p><gui>Acció</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>/</key>, <keyseq><key>control</key><key>F</key></keyseq></p></td> <td><p>Mou el focus a la capsa de cerca</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Control</key><key>I</key></keyseq></p></td>
+         <td><p>Obre la capsa de diàleg d'importació d'elements multimèdia</p></td>
+   </tr>      
+</table>
+
+  </section>  
+
+  <section id="playlists">
+  
+  <title>Llistes de reproducció</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Tecla</gui></p></td>  <td><p><gui>Acció</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Control</key><key>N</key></keyseq></p></td> <td><p>Crea una nova llista de reproducció</p></td>
+  </tr>
+         
+</table>
+
+  </section> 
+  
+    <section id="podcasts">
+  
+  <title>Podcasts</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Tecla</gui></p></td>  <td><p><gui>Acció</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>Y</key></p></td> <td><p>Marca els episodis seleccionats com a antics</p></td>
+  </tr>
+         
+</table>
+
+  </section> 
+  
+  <section id="interface">
+  
+  <title>Interfície</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Tecla</gui></p></td>  <td><p><gui>Acció</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>F</key></p></td> <td><p>Commuta el mode de pantalla completa</p></td>
+  </tr>  
+  <tr>
+    <td><p><keyseq><key>Control</key><key>A</key></keyseq></p></td> <td><p>Selecciona totes les cançons en la vista de la llista de reproducció</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Control</key><key>Maj</key><key>A</key></keyseq></p>
+    </td> <td><p>Desselecciona totes les cançons en la vista de la llista de reproducció</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Control</key><key>W</key></keyseq></p></td> <td><p>Amaga la finestra del Banshee (requereix tenir el connector «Icona de l'àrea de notificació» habilitat)</p></td>
+  </tr>    
+  <tr>
+    <td><p><keyseq><key>Control</key><key>Botó esquerre del ratolí</key></keyseq>
+    </p></td> <td><p>Reprodueix la cançó anterior (requereix tenir el connector «Icona de l'àrea de notificació» habilitat)</p></td>
+  </tr> 
+  <tr> 
+    <td><p><keyseq><key>Control</key><key>Botó dret del ratolí</key></keyseq>
+    </p></td> <td><p>Reprodueix la cançó següent (requereix tenir el connector «Icona de l'àrea de notificació» habilitat)</p></td>
+  </tr> 
+  <tr> 
+    <td><p><keyseq><key>Control</key><key>Botó central del ratolí</key></keyseq>
+    </p></td> <td><p>Commuta entre reproducció o pausa (requereix tenir el connector «Icona de l'àrea de notificació» habilitat)</p></td>
+  </tr>    
+         
+</table>
+
+  </section>   
+</page>

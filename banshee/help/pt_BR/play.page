@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="play" xml:lang="pt_BR">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="queue"/>
+    <desc>Reproduza seus arquivos de vídeo e música.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Reproduzir suas mídias</title>
+
+  <section id="playmusic">
+  <title>Reproduza suas músicas</title>    
+  
+  <p>Para reproduzir música no Banshee, escolha a fonte da música. A biblioteca de música irá exibir todos os artista na sua biblioteca, capa de cada álbum e uma lista com todas as músicas de sua biblioteca.</p>
+  
+  <p>Escolha o albúm ou música que você deseja reproduzir na lista de artistas e albúms ou use a barra de pesquisa na parte superior direita do Banshee.</p>
+  
+  <p>To start playing a song, use your mouse to double click the song name, 
+  press the <key>Spacebar</key>, or choose <guiseq><gui>Playback</gui>
+  <gui>Play</gui></guiseq> from the Banshee menu.
+  </p>
+  
+  <p>You can also start playing an album by choosing the album in the album
+  browser and using your mouse to double click the song name, 
+  press the <key>Spacebar</key>, or choose <guiseq><gui>Playback</gui>
+  <gui>Play</gui></guiseq> from the Banshee menu.
+  </p>
+  
+  <p>To play all songs by one artist, choose the artist in the artist browser
+  and press the <key>Spacebar</key>, or choose <guiseq><gui>Playback</gui>
+  <gui>Play</gui></guiseq> from the Banshee menu.
+  </p>
+  
+  <p>O Banshee também mostra seus álbuns favoritos (aqueles que você mais ouve), favoritos rececentes, recentemente adicionados e músicas não ouvidas. Escolha quele que você deseja ouvir para que possa reproduzi-los.</p>
+  
+  </section>
+
+  <section id="playvideo">
+  <title>Reproduza um vídeo</title>    
+  
+  <p>Your imported videos are listed alphabetically.  To play a video, 
+  choose the video you wish to play from the list and 
+  press the <key>Spacebar</key>, or choose <guiseq><gui>Playback</gui>
+  <gui>Play</gui></guiseq> from the Banshee menu.</p>
+  
+  <p>O Banshee também exibe seus vídeos favoritos (aqueles que você mais assiste), e vídeos não assistidos. Escolha um e você pode reproduzir um vídeo da lista.</p>	
+  
+  </section>
+  
+  <section id="playpodcast">
+  <title>Reproduza um podcast</title>    
+  
+  <p>Podcasts exibe todos os podcasts que você assina, todos os shows de podcast disponíveis, e o navegador de podcast lista todos os podcasts colocando os mais novos primeiro.</p>
+  
+  <p>To play a Podcast, 
+  choose the Podcast you wish to play from the list and 
+  press the <key>Spacebar</key>, or choose <guiseq><gui>Playback</gui>
+  <gui>Play</gui></guiseq> from the Banshee menu.</p>
+  
+  </section>
+  
+  <section id="playradio">
+  <title>Reproduza uma estação de rádio na internet</title>    
+  
+  <p>A fonte de rádio mostra todas as suas estações de rádio na internet que você adicionou ao Banshee listadas em ordem alfabética.</p>
+  
+  <p>To play an internet radio station, 
+  choose the radio station you wish to play from the list and 
+  press the <key>Spacebar</key>, or choose <guiseq><gui>Playback</gui>
+  <gui>Play</gui></guiseq> from the Banshee menu.</p>
+  
+  </section>    
+	
+</page>

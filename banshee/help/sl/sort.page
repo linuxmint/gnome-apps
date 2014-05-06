@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sort" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="search"/>
+    <desc>Razvrstite svoje večpredstavnostne datoteke in dodajte dodatne stolpce.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Razvrstite svoje večpredstavnostne datoteke</title>
+
+  <section id="addcolumn">
+
+  <title>Dodajanje stolpcev</title>    
+  
+  <p>Medtem ko vaša knjižnica raste, boste morda svoj pogled knjižnice želeli spremeniti za dodajanje dodatnih podatkov o skladbah v vaši knjižnici predvajanje ali spremembo načina ogleda in razvrščanja skladb, izvajalcev ali albumov.</p>
+  
+  <p>Pogledu knjižnice v <app>Banshee</app> lahko dodatne dodatne stolpce, ki vam dajo več podrobnosti o skladbah in vam dovolijo razvrščanje. Privzeto Banshee prikazuje stolpce skladb <gui>Ime</gui>, <gui>Izvajalec</gui>, <gui>Album</gui> in <gui>Čas</gui>. Za dodajanje dodatnih stolpcev z miško desno kliknite na katerikoli stolpec in Banshee bo prikazal vse razpoložljive stolpce. Kliknite izbirno polje poleg imena stolpca, ki ga želite dodati v pogled knjižnice.</p>
+  
+  </section>
+  
+  <section id="sorting">
+    <title>Razvrščanje stolpcev</title>
+    <p>Svojo knjižnico lahko razvrstite tako, da z miško kliknete na enega od stolpcev prikazanih v pogledu knjižnice. Če glasbeno knjižnico razvrstiti po izvajalcu, kliknite na glavo stolpca <gui>Izvajalec</gui> in Banshee bo stolpec samodejno razvrstil po abecedi. Ponoven klik na <gui>Izvajalec</gui> bo stolpec razvrstil v nasprotnem abecednem redu.</p>
+  </section>
+	
+</page>

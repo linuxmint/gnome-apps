@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="lastfm" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="extend#official"/>
+    <link type="seealso" xref="sync"/>
+    <desc>A Last.fm, a számbeküldés és a Last.fm rádió engedélyezése.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-07-15" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Last.fm</title>    
+  
+  <p>A Last.fm egy népszerű online szolgáltatás, amely ingyenes és fizetős változatban is elérhető. A Last.fm információkat kínál a zenei előadókról és albumokról, regisztráció után pedig a Last.fm ingyenesen lehetővé teszi a Bansheeban hallgatott zenék követését. Ha az előfizetéses szolgáltatást választja, akkor a Last.fm-ről sugárzott zenét is hallgathatja számos zenei kliensprogramban, például a Bansheeban. A Last.fm számos csatornát kínál, beleértve a hallgatási szokásai alapján javasolt zenéket, a kedvenceit és sok mást.</p>
+  
+  <section id="enable-lastfm">
+  <title>A Last.fm engedélyezése</title> 
+  <p>A Last.fm teljes kihasználásához létre kell hoznia egy Last.fm profilt. Új fiók létrehozásához keresse fel a <link href="http://www.last.fm/join">http://www.last.fm/join</link> oldalt, vagy válassza a Banshee menüjének <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui></guiseq> pontját. A beállítások között a <gui>Forrásspecifikus</gui> lapon válassza ki a <gui>Forrás</gui> legördülő menüből a <gui>Last.fm</gui> elemet, és kattintson a <em>Last.fm regisztráció</em> hivatkozásra.</p>
+  
+  <p>Ahhoz, hogy a Banshee beküldje a számítógépén lejátszott számok információit a Last.fm-nek, jelentkezzen be a Last.fm-re a Bansheeból a <gui>Forrásspecifikus</gui> beállítások alatt. Adja meg felhasználónevét, és nyomja meg a <gui>Bejelentkezés a Last.fm-be</gui> gombot. A böngészőben megnyílik a Last.fm weboldala, és hozzáférést adhat a Banshee számára. Kattintson a <gui>Yes, allow access</gui> hivatkozásra a böngészőben, az ekkor megnyíló oldal közli, hogy a Banshee már hozzáfér a Last.fm-hez. Térjen vissza a Bansheehoz, és nyomja meg a <gui>Bejelentkezés befejezése</gui> gombot a folyamat befejezéséhez.</p>
+  
+  </section>
+  
+  <section id="songreporting">
+  <title>Enable Last.fm Song Reporting From Banshee</title> 
+  <p>After you have successfully linked Banshee to your Last.fm profile you must
+  ensure that you have enabled Banshee to report your songs.  To enable Banshee to
+  report the songs to your Last.fm profile go to Banshee's preferences, select the
+  <gui>Source Specific</gui> tab, select <gui>Last.fm</gui> from the dropdown, and
+  press the <gui>Enable Song Reporting From Banshee</gui> checkbox. If you have an active internet
+  connection Banshee will now send Last.fm information regarding the songs
+  you play.  To view your play history visit your profile on the Last.fm
+  website.  Last.fm will automatically update your music metadata if any of your
+  artist, song title, or album information is incorrect (although we recommend that
+  you use the Metadata Fixer extension to correct your files instead).
+
+  </p>
+  
+  </section>
+
+  <section id="devicesongreporting">
+  <title>Enable Last.fm Song Reporting From Your Device</title>
+  <p>After successfully linking Banshee to your Last.fm profile and enabling Banshee to 
+  report songs to Last.fm you can also enable scrobbling from a connected device. Banshee 
+  will, upon connection of your device, attempt to scrobble the songs you have played since the 
+  device was last connected and submit them to Last.fm.
+  </p>
+
+  <p>To enable scrobbling of a connected device go to Banshee's preferences, select the 
+  <gui>Source Specific</gui> tab, select <gui>Last.fm</gui> from the dropdown, and press 
+  the <gui>Enable Song Reporting From Device</gui> checkbox.  If you have an 
+  active internet connection Banshee will, upon connection of your device, now attempt to gather 
+  information regarding the songs that you have played since it was last connected.
+  </p>
+
+  <p>As with regular Banshee scrobbling submissions Last.fm will automatically update 
+  your music metadata if any of your artist, title, or album information is incorrect (although we 
+  again recommend that you use the Metadata Fixer extension to correct your files instead).
+  </p>
+
+  <p>Please note that currently Banshee only supports this feature with Apple products that are
+  supported by the AppleDevice extension.
+  </p>
+
+  </section>
+  
+  <section id="lastfm-radio">
+  <title>A Last.fm rádió hallgatása</title> 
+  <p>A Last.fm rádió ingyenes az Egyesült Államok, az Egyesült Királyság és Németország lakói számára. Más országok lakóinak elő kell fizetniük a prémium hozzáférésre a rádió hallgatásához. A prémium előfizetők minden országban prémium rádiószolgáltatásokat kapnak: a kedvelt vagy megcímkézett zenék lejátszólistái és állomásai hallgathatók.</p>
+  
+  <p>A Banshee bal oldali Források ablaktábláján megjelenik egy Last.fm szakasz, beleértve az Ön Last.fm rádióállomásait is. A Last.fm rádió hallgatásához aktív internetkapcsolatra van szükség. Válassza ki a hallgatni kívánt rádióállomást, és a Banshee lekéri a Last.fm-től a rádióállomás feltöltéséhez szükséges számokat. Nyomja meg a Banshee <gui>Lejátszás</gui> gombját, vagy a <key>szóköz</key> billentyűt a Last.fm rádióállomás hallgatásához. A rádióállomás-sor következő számának lejátszásához megnyomhatja a Banshee <gui>Következő</gui> gombját, az <key>N</key> billentyűt, vagy kiválaszthatja a menü <guiseq><gui>Lejátszás</gui><gui>Következő</gui></guiseq> pontját.</p>
+  
+  </section>
+	
+</page>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="play" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="queue"/>
+    <desc>Predvajajte svoje video in glasbene datoteke.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Predvajajte svoje datoteke večpredstavnosti</title>
+
+  <section id="playmusic">
+  <title>Predvajajte svojo glasbo</title>    
+  
+  <p>Za predvajanje glasbe v Banshee izberite vir glasba. Glasbena knjižnica vam bo prikazala vse izvajalce v vaši glasbeni knjižnici, ovojnice za vsak album in seznam vseh skladb v vaši knjižnici.</p>
+  
+  <p>S seznama izvajalcev izberite album ali skladbo, ki jo želite predvajati ali pa uporabite iskalno vrstico v zgornjem desnem kotu Banshee.</p>
+  
+  <p>Za začetek predvajanja skladbe dvokliknite na ime skladbe, pritisnite <key>Preslednico</key> ali v meniju Banshee izberite <guiseq><gui>Predvajanje</gui><gui>Predvajaj</gui></guiseq>.</p>
+  
+  <p>Album lahko začnete predvajati z izbiro albuma v brskalniku albumov in dvoklikom na ime skladbe, pritiskom <key>Preslednice</key> ali izbiro <guiseq><gui>Predvajanje</gui><gui>Predvajaj</gui></guiseq> v meniju Banshee.</p>
+  
+  <p>Za predvajanje vseh skladb enega izvajalca izberite izvajalca v brskalniku izvajalcev in pritisnite <key>Preslednico</key> ali pa v meniju Banshee izberite <guiseq><gui>Predvajanje</gui><gui>Predvajaj</gui></guiseq>.</p>
+  
+  <p>Banshee prikazuje tudi vaše priljubljene albume (tiste, ki jih največ predvajate), nedavno priljubljeno, nedavno dodano in ne slišano glasbo. Izberite seznam, ki ga želite poslušati in lahko boste predvajali skladbe z njega. </p>
+  
+  </section>
+
+  <section id="playvideo">
+  <title>Predvajajte videoposnetke</title>    
+  
+  <p>Vaši uvoženi videi so razvrščeni po abecedi. Za predvajanje videa ga izberite na seznamu in pritisnite <key>Preslednico</key> ali pa v meniju Banshee izberite <guiseq><gui>Predvajanje</gui><gui>Predvajaj</gui></guiseq>.</p>
+  
+  <p>Banshee prikazuje tudi vaše najljubše videoposnetke (tiste, ki jih največ gledate) in ne gledane videoposnetke. Izberite enega in lahko boste predvajali video s seznama. </p>	
+  
+  </section>
+  
+  <section id="playpodcast">
+  <title>Predvajajte podcaste</title>    
+  
+  <p>Vir podcasti vam prikaže vse podcaste na katere ste naročeni, vse razpoložljive oddaje podcastov in vse podcaste v vrstnem redu od novejšega proti starejšemu.</p>
+  
+  <p>Za predvajanja podcasta s seznama izberite podcast, ki ga želite predvajati, ter pritisnite <key>Preslednico</key> ali pa v meniju Banshee izberite <guiseq><gui>Predvajanje</gui><gui>Predvajaj</gui></guiseq>.</p>
+  
+  </section>
+  
+  <section id="playradio">
+  <title>Predvajajte internetno radijsko postajo</title>    
+  
+  <p>Vir radio vam prikaže vse internetne radijske postaje, ki ste jih dodali v Banshee v abecednem vrstnem redu.</p>
+  
+  <p>Za predvajanje internetne radijske postaje s seznama izberite radijsko postajo, ki jo želite predvajati, ter pritisnite <key>Preslednico</key> ali v meniju Banshee izberite <guiseq><gui>Predvajanje</gui><gui>Predvajaj</gui></guiseq>.</p>
+  
+  </section>    
+	
+</page>

@@ -1,0 +1,351 @@
+<Type Name="GtkUtilities" FullName="Hyena.Gui.GtkUtilities">
+  <TypeSignature Language="C#" Value="public static class GtkUtilities" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GtkUtilities extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Hyena.Gui</AssemblyName>
+    <AssemblyVersion>0.90.1.25402</AssemblyVersion>
+    <AssemblyVersion>1.3.1.0</AssemblyVersion>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
+    <AssemblyVersion>1.5.0.0</AssemblyVersion>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AdaptGtkRcStyle">
+      <MemberSignature Language="C#" Value="public static void AdaptGtkRcStyle (Gtk.Widget adaptee, Type adapter);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AdaptGtkRcStyle(class Gtk.Widget adaptee, class System.Type adapter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="adaptee" Type="Gtk.Widget" />
+        <Parameter Name="adapter" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="adaptee">To be added.</param>
+        <param name="adapter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdaptGtkRcStyle">
+      <MemberSignature Language="C#" Value="public static void AdaptGtkRcStyle (Gtk.Widget adaptee, GLib.GType adapter, string widgetPath, string classPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AdaptGtkRcStyle(class Gtk.Widget adaptee, valuetype GLib.GType adapter, string widgetPath, string classPath) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="adaptee" Type="Gtk.Widget" />
+        <Parameter Name="adapter" Type="GLib.GType" />
+        <Parameter Name="widgetPath" Type="System.String" />
+        <Parameter Name="classPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="adaptee">To be added.</param>
+        <param name="adapter">To be added.</param>
+        <param name="widgetPath">To be added.</param>
+        <param name="classPath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorBlend">
+      <MemberSignature Language="C#" Value="public static Gdk.Color ColorBlend (Gdk.Color a, Gdk.Color b);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Gdk.Color ColorBlend(valuetype Gdk.Color a, valuetype Gdk.Color b) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Gdk.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="Gdk.Color" />
+        <Parameter Name="b" Type="Gdk.Color" />
+      </Parameters>
+      <Docs>
+        <param name="a">To be added.</param>
+        <param name="b">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeachWidget&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void ForeachWidget&lt;T&gt; (Gtk.Container container, Hyena.Gui.WidgetAction&lt;T&gt; action) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ForeachWidget&lt;class T&gt;(class Gtk.Container container, class Hyena.Gui.WidgetAction`1&lt;!!T&gt; action) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="container" Type="Gtk.Container" />
+        <Parameter Name="action" Type="Hyena.Gui.WidgetAction&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="container">To be added.</param>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileFilter">
+      <MemberSignature Language="C#" Value="public static Gtk.FileFilter GetFileFilter (string name, System.Collections.Generic.IEnumerable&lt;string&gt; extensions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Gtk.FileFilter GetFileFilter(string name, class System.Collections.Generic.IEnumerable`1&lt;string&gt; extensions) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Gtk.FileFilter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="extensions" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="extensions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileFilter">
+      <MemberSignature Language="C#" Value="public static Gtk.FileFilter GetFileFilter (string name, string[] extensions);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Gtk.FileFilter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="extensions" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="extensions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoImportantModifiersAreSet">
+      <MemberSignature Language="C#" Value="public static bool NoImportantModifiersAreSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool NoImportantModifiersAreSet() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoImportantModifiersAreSet">
+      <MemberSignature Language="C#" Value="public static bool NoImportantModifiersAreSet (Gdk.ModifierType[] modifiers);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool NoImportantModifiersAreSet(valuetype Gdk.ModifierType[] modifiers) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modifiers" Type="Gdk.ModifierType[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="modifiers">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetChooserShortcuts">
+      <MemberSignature Language="C#" Value="public static void SetChooserShortcuts (Gtk.FileChooserDialog chooser, string[] shortcuts);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetChooserShortcuts(class Gtk.FileChooserDialog chooser, string[] shortcuts) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chooser" Type="Gtk.FileChooserDialog" />
+        <Parameter Name="shortcuts" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="chooser">To be added.</param>
+        <param name="shortcuts">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowUri">
+      <MemberSignature Language="C#" Value="public static bool ShowUri (string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ShowUri(string uri) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowUri">
+      <MemberSignature Language="C#" Value="public static bool ShowUri (Gdk.Screen screen, string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ShowUri(class Gdk.Screen screen, string uri) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="screen" Type="Gdk.Screen" />
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="screen">To be added.</param>
+        <param name="uri">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowUri">
+      <MemberSignature Language="C#" Value="public static bool ShowUri (Gdk.Screen screen, string uri, uint timestamp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ShowUri(class Gdk.Screen screen, string uri, unsigned int32 timestamp) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="screen" Type="Gdk.Screen" />
+        <Parameter Name="uri" Type="System.String" />
+        <Parameter Name="timestamp" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="screen">To be added.</param>
+        <param name="uri">To be added.</param>
+        <param name="timestamp">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StyleGetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T StyleGetProperty&lt;T&gt; (Gtk.Widget widget, string property, T default_value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T StyleGetProperty&lt;T&gt;(class Gtk.Widget widget, string property, !!T default_value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>1.5.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="widget" Type="Gtk.Widget" />
+        <Parameter Name="property" Type="System.String" />
+        <Parameter Name="default_value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="widget">To be added.</param>
+        <param name="property">To be added.</param>
+        <param name="default_value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

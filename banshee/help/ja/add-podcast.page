@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="add-podcast" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <link type="seealso" xref="add-radio"/>
+    <link type="seealso" xref="import"/>
+    <desc>Bansheeでポッドキャストを追加、削除および再生</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>ポッドキャスト</title> 
+  
+  <section id="podcastdescription">
+     <title>ポッドキャストとは？</title>
+     
+  <p>ポッドキャストは、インターネット上で購読できるようにラジオ番組を録画ようなものです。Bansheeでポッドキャストは購読することで、Bansheeは自動的にポッドキャストをダウンロードし、新しい番組を聞くことができます。</p>
+  
+  <p>世の中には、音楽、映画、Linuxなど、いろいろなジャンルの多くのポッドキャストがあります。お好みの検索エンジンで"映画 ポッドキャスト"などとインターネットから検索すると多くのポッドキャストが見つかるでしょう。</p>
+  
+  </section>
+  
+  <section id="addpodcast">
+    <title>ポッドキャストの追加</title>
+  
+  <p>ポッドキャストをBansheeに追加するには、まず最初にインターネットからポッドキャストを提供しているホームページをウェブブラウザーでアクセスする必要があります。ほぼすべてのポッドキャストはポッドキャストを購読するボタンまたはリンクが提供されています。ウェブブラウザーでポッドキャスト購読用のリンクを右クリックして<gui>リンクのURLをコピー</gui>を選びます。</p>
+  
+  <p>Bansheeのウィンドウの右上にある<gui>新しいポッドキャストで購読</gui>ボタンを押すか、もしくはBansheeのメニューから<guiseq><gui>メディア</gui><gui>ポッドキャストで購読</gui></guiseq>、それかキーボードのショートカットで<keyseq><key>Shift</key><key>Ctrl</key><key>F</key></keyseq>を押します。</p>
+  
+  <p>Bansheeではドロップダウンメニューから新しいポッドキャストをダウンロードする方法を選択することできます。次のような選択肢があります：</p>
+  
+  <list>
+  	<item><p>最新のエピソードをダウンロードする（これは最後の公開されたエピソードが自動的にダウンロードされます）</p></item>
+  	<item><p>すべてのエピソードをダウンロード（これはすべてのエピソードがダウンロードされます）</p></item>
+	<item><p>どのエピソードをダウンロードするか確認する（これはダウンロードを希望するエピソードを選択できるようになります）</p></item>
+  </list>
+
+  <p>ポッドキャストのフィードを追加した後、Bansheeが表示されます：</p>
+  
+  <list>
+  	<item><p><gui>名前</gui>: （特定のエピソードの名前）</p></item>
+  	<item><p><gui>ポッドキャスト</gui>: （ポッドキャストの名前）</p></item>
+  	<item><p><gui>公開日</gui>（エピソードが発行された日、もしくはリリースされた日）</p></item>
+  </list>
+  
+  </section>	
+  	  	  
+</page>

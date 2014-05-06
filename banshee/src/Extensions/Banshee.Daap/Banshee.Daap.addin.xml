@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Addin 
+    id="Banshee.Daap"
+    version="1.0"
+    compatVersion="1.0"
+    copyright="© 2008 Alexander Hixon. Licensed under the MIT X11 license."
+    name="DAAP Sharing"
+    category="Utilities"
+    description="Browse and listen to music shared over your local network."
+    author="Aaron Bockover, James Willcox, Alexander Hixon, Gabriel Burt"
+    url="http://banshee.fm/"
+    defaultEnabled="true">
+
+  <Dependencies>
+    <Addin id="Banshee.Services" version="1.0"/>
+    <Addin id="Banshee.ThickClient" version="1.0"/>
+  </Dependencies>
+
+  <!--<Extension path="/Banshee/SourceManager/Source">
+    <Source class="Banshee.Daap.DaapSource"/>
+  </Extension>-->
+
+  <Extension path="/Banshee/ServiceManager/Service">
+    <Service class="Banshee.Daap.DaapService"/>
+  </Extension>
+
+</Addin>

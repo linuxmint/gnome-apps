@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="tags" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="coverart"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Edició i modificació de les etiquetes i metadades de la música.</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-09" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Metadades de la música</title>
+
+  <section id="metadata">
+
+  <title>Metadades de la música</title>    
+  
+  	<p>La música digital conté metadades que emmagatzemen informació als fitxers d'àudio incloent-hi l'artista, l'àlbum, l'any d'enregistrament, el gènere i molt més. Gairebé tota la música comprada a través d'Internet ja inclou les metadades incrustades i si importeu la música des de CD, el Banshee inclourà les metadades a l'extreure el CD si estan disponibles. Per a més informació sobre l'extracció de CD, incloent-hi metadades vegeu <link xref="import"/>.</p>
+  	
+  	<p>Alguns formats de metadades populars són ID3v1 i ID3v2 per a fitxers MP3 i els comentaris de Vorbis per a fitxers OGG Vorbis.</p>	
+  
+  	<p>Si heu importat cançons que no contenen metadades, el <app>Banshee</app> mostrarà <gui>Desconegut</gui> per a la majoria dels camps de la biblioteca.</p>
+  	
+  </section>
+
+  <section id="editmetadata"> 	
+    
+    <title>Edició de les metadades</title>
+    
+    <p>Podeu canviar i editar les metadades de les cançons. Seleccioneu la cançó o cançons que voleu actualitzar i premeu la tecla <key>E</key>, seleccioneu <guiseq><gui>Edita</gui><gui>Edita la informació de la cançó</gui></guiseq> des del menú, o utilitzeu el ratolí i feu clic amb el botó dret sobre els fitxers i seleccioneu <gui>Edita la informació de la cançó</gui>.</p>
+    
+    <p>Apareixerà una capsa de diàleg que mostra les metadades de la cançó i us permet canviar-les o actualitzar-les. Els camps mostrats per defecte inclouen:</p>
+    
+    <list>
+      <item><p><gui>Títol de la cançó</gui></p></item>
+      <item><p><gui>Artista de la cançó</gui></p></item>
+      <item><p><gui>Títol de l'àlbum</gui></p></item>
+      <item><p><gui>Gènere</gui></p></item>
+      <item><p><gui>Número de la cançó</gui></p></item>
+      <item><p><gui>Número del disc</gui></p></item>
+      <item><p><gui>Any</gui></p></item>
+    </list>
+    
+    <p>Actualitzeu la informació de la cançó. Si heu escollit múltiples cançons per a editar premeu la icona de la fletxa dreta a la dreta del camp <gui>Títol de la cançó</gui> o premeu el botó <gui>Endavant</gui> a la part superior de la capsa de diàleg quan hàgiu finalitzat amb cada cançó. Un cop hàgiu completat l'edició de totes les metadades, premeu <gui>Desa</gui>.</p>
+   
+  </section>
+
+</page>

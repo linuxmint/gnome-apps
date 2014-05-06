@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="tags" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="coverart"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Édition et modification des étiquettes et métadonnées d'un fichier musical.</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-09" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Métadonnées d'un fichier musical</title>
+
+  <section id="metadata">
+
+  <title>Les métadonnées d'un fichier musical</title>    
+  
+  	<p>La musique numérique contient des métadonnées qui stockent des informations dans le fichier musical comme le nom de l'artiste, le titre de l'album, l'année d'enregistrement, le genre musical et davantage encore. Pratiquement toute musique achetée par le biais d'Internet possède ces métadonnées déjà présentes dans le fichier et si vous importez de la musique à partir d'un CD, Banshee se charge d'y inclure les métadonnées qui s'y trouvent pendant l'extraction du CD. Pour de plus amples informations sur la manière d'extraire un CD avec toutes ses métadonnées, consultez la section <link xref="import"/>.</p>
+  	
+  	<p>Les formats les plus usuels de métadonnées sont ID3v1 et ID3v2 pour les fichiers MP3 et les commentaires Vorbis pour les fichiers OGG Vorbis.</p>	
+  
+  	<p>Si vous importez des titres qui ne contiennent pas de métadonnées, Banshee affiche <gui>Unconnu</gui> dans la plupart des champs de la bibliothèque.</p>
+  	
+  </section>
+
+  <section id="editmetadata"> 	
+    
+    <title>Correction de vos métadonnées</title>
+    
+    <p>Vous pouvez corriger ou modifier les métadonnées de vos chansons. Sélectionnez le ou les titres que vous souhaitez mettre à jour et appuyez sur la touche <key>E</key> ou choisissez dans le menu <guiseq><gui>Édition</gui><gui>Modifier les informations du morceaux</gui></guiseq> ou encore faites un clic droit sur le titre et choisissez <gui>Modifier les informations du morceau</gui> dans le menu contextuel.</p>
+    
+    <p>La boîte de dialogue qui apparaît, affiche les métadonnées du titre et vous permet de les modifier ou de les mettre à jour. Les champs affichés par défaut sont :</p>
+    
+    <list>
+      <item><p><gui>Titre du morceau</gui></p></item>
+      <item><p><gui>Artiste du morceau</gui></p></item>
+      <item><p><gui>Titre de l'album</gui></p></item>
+      <item><p><gui>Genre</gui></p></item>
+      <item><p><gui>Numéro de piste</gui></p></item>
+      <item><p><gui>Numéro du disque</gui></p></item>
+      <item><p><gui>Année</gui></p></item>
+    </list>
+    
+    <p>Mettez à jour les informations du morceau. Si vous avez sélectionné plusieurs titres à modifier, appuyez sur la flèche à droite du champ <gui>Titre du morceau</gui> ou appuyez sur le bouton <gui>Suivant</gui> au bas de la boîte de dialogue pour passer au suivant. Quand vous avez terminé de corriger toutes vos métadonnées, n'oubliez pas d'appuyer sur le bouton <gui>Enregistrer</gui>.</p>
+   
+  </section>
+
+</page>

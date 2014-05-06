@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="ui" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-19" status="stub"/>
+    <desc>Una perspectiva general de la interfície d'usuari del <app>Banshee</app>.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Introducció a la interfície d'usuari del Banshee</title>
+
+  <figure>
+    <title>Finestra del <gui>reproductor multimèdia Banshee</gui></title>
+    <desc><app>Reproductor multimèdia Banshee</app></desc>
+    <media type="image" src="figures/banshee.png" mime="image/png" style="right">
+      <p>Biblioteca de l'interfície del <app>Banshee</app></p>
+    </media>
+  </figure>
+  
+<section id="context">
+  <title>Fonts</title>
+    <p>Les fonts de música i vídeo es mostren a l'esquerra del Banshee. Les fonts us donen accés ràpid a la cua de reproducció, música, vídeos, Amazon, Last.fm, Poscasts i d'altres.</p>
+    
+    <note style="tip">
+      <p>Les opcions de menú canvien depenent de la font que heu triat. Per exemple, per a usar el menú per a importar un Podcast, haureu d'escollir la font Podcast. L'opció del menú per a importar un Podcast no està disponible quan es visualitza la biblioteca de vídeo o música.</p>
+    </note> 
+</section>
+
+<section id="browser">
+  <title>Navegador de la biblioteca</title>
+  <p>Quan escolliu una font de música o vídeo des de «Fonts», el Banshee mostrarà el contingut al navegador de la biblioteca. Depenent de la font que escolliu, el Banshee pot reproduir la música, la biblioteca de vídeos, les subscripcions Podcast, o fins i tot, mostrar la botiga de música d'Amazon perquè pugueu comprar música.</p>
+</section>
+
+<section id="nowplaying">
+  <title>Vista Reproducció ara</title>
+  <p>Quan utilitzeu el Banshee en mode de pantalla completa, el mode «Reproducció ara» amaga la biblioteca per a donar més espai per a visualitzar la música o el vídeo que esteu reproduint. Quan escolteu música, el mode «Reproducció ara» us mostrarà el nom de l'artista, l'àlbum i la coberta si estan disponibles. Si esteu reproduint un vídeo, el Banshee us mostrarà el vídeo.</p>
+  
+  <p>Per a què la Reproducció ara amagui l'interfície d'usuari del Banshee i utilitzi el mode a pantalla completa, podeu prémer <key>F</key>, el botó <gui>Pantalla completa</gui> a la part superior dreta del Banshee, o seleccionar <guiseq><gui>Visualitza</gui><gui>Pantalla completa</gui></guiseq> per a iniciar el mode pantalla completa.</p>
+  
+</section>
+
+<section id="library">
+  <title>Biblioteca</title>
+  <p>La vista biblioteca al Banshee canvia depenent de la font que heu escollit. La biblioteca mostrarà les cobertes, artistes i llistes de cançons. La biblioteca Podcast mostrarà les subscripcions a Podcasts, que estan baixats o sense acabar de baixar o bé Podcasts antics. Vegeu la pàgina d'ajuda per a cada font per a obtenir informació detallada de com gestionar cada font.</p>
+</section>
+
+
+</page>

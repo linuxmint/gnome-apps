@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Sincronitzeu els elements multimèdia amb reproductors multimèdia o telèfons intel·ligents.</desc>
+    <revision pkgversion="1.8" version="0.1" date="2010-08-29" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Sincronització</title>    
+  
+  <p>El Banshee permet la sincronització de música amb reproductors multimèdia portàtils i telèfons intel·ligents. Podeu afegir-hi cançons, àlbums, llistes de producció o permetre que el Banshee mantingui sincronitzada la biblioteca sencera. Després que el reproductor es connecta a l'ordinador, podeu també reproduir cançons del vostre reproductor al Banshee. Quan sincronitzeu la música amb un format sense pèrdua, com ara el FLAC, el Banshee convertirà automàticament la música a un format amb pèrdua com l'Ogg Vorbis o l'MP3, si disposeu els còdecs necessaris instal·lats.</p>
+  
+  <section id="devices">
+    <title>Compatibilitat amb dispositius</title>
+    <p>El Banshee és compatible amb la majoria de reproductors de música portables moderns i telèfons intel·ligents amb les excepcions de l'iPhone, l'iPad i l'iPod Touch d'Apple.</p>
+  
+  <p>Quan connecteu un dispositiu, el Banshee el mostrarà al menú esquerre. En prémer la icona del dispositiu anireu a la pàgina inicial del dispositiu mostrant-se les preferències de sincronització.</p>
+  
+  </section>
+  
+    <section id="sync-settings">
+    <title>Sincronització de la música</title>
+    <p>Podeu escollir gestionar els elements multimèdia al dispositiu portable permetent al Banshee sincronitzar-se automàticament o gestionant la música i elements multimèdia manualment.</p>
+    
+    <p>Escolliu el dispositiu des del menú del Banshee i llavors trieu com voleu sincronitzar els elements multimèdia, incloent-hi:</p>
+    <list>
+      <item><p>Música</p></item>
+      <item><p>Audiollibres</p></item>  
+      <item><p>Vídeos</p></item>
+      <item><p>Podcast</p></item>  
+    </list>
+    
+    <p>Des del menú desplegable al costat de cada element multimèdia, escolliu:</p>
+    <list>
+      <item><p>Gestiona manualment</p></item>
+      <item><p>Sincronitza la biblioteca sencera</p></item>  
+    </list>    
+    
+    <note style="warning">
+      <p>Si escolliu sincronitzar la biblioteca sencera automàticament amb el reproductor multimèdia portàtil assegureu-vos que el reproductor multimèdia té prou espai. Si la biblioteca és més gran que l'espai del que disposeu al reproductor multimèdia portàtil, el Banshee sincronitzarà els elements multimèdia fins que el reproductor estigui ple i llavors s'aturarà.</p>
+    </note>
+    
+    <p>Si heu creat llistes de reproducció o llistes de reproducció intel·ligents en la biblioteca de música, es mostraran també com a opció de sincronització per a la música. Això pot ser útil quan creu llistes de reproducció intel·ligents, ja que el seu contingut s'actualitza automàticament basant-se en les regles de la llista de reproducció, i el Banshee sincronitzarà la nova llista de reproducció amb el dispositiu cada cop que el connecteu.</p>
+    
+    <p>El Banshee mostrarà l'espai total del disc dur del reproductor de música portable en un gràfic a la part inferior central del Banshee. El gràfic mostrarà quan espai ocupen els fitxers d'àudio, vídeo, altres i l'espai lliure. En la part inferior el Banshee mostrarà quants elements totals estan emmagatzemats en el reproductor de música portable, a quantes hores o dies de reproducció es equivalent, i l'espai total utilitzat.</p>
+    
+  </section>
+
+  <section id="sync-manually">
+    <title>Sincronització de la biblioteca sencera</title>
+    <p>Podeu arrossegar i deixar anar elements multimèdia al reproductor de música portable des del Banshee. Seleccioneu el fitxer o fitxers que voleu copiar al reproductor de música portable i llavors mantingueu premut el botó dret del ratolí i deixeu anar els fitxers a la icona del reproductor de música portable al Banshee. Això copiarà els fitxers al dispositiu.</p>
+    
+    <p>Si la vostra biblioteca de música està codificada en un format que no és compatible amb el reproductor de música portable, com ara OGG o FLAC, i disposeu dels còdecs necessaris instal·lats, el Banshee pot automàticament convertir aquests fitxers a MP3 en transferir-los al reproductor de música portable. Consulteu la documentació de la vostra distribució de Linux per a obtenir els còdecs necessaris, ja que està fora de l'abast d'aquesta ajuda i varia per a cada distribució.</p>
+    
+    <note style="tip">
+      <p>És possible que us calgui expulsar el dispositiu per a carregar els fitxers correctament al reproductor de música portable. Per a expulsar el vostre dispositiu al Banshee, utilitzeu el ratolí per fer clic amb el botó dret del ratolí sobre el dispositiu al menú del Banshee i premeu <gui>Desconnecta</gui>.</p>
+    </note>
+
+  </section>
+  
+  <section id="pmp-play">
+    <title>Reproducció de la música des del reproductor de música portable</title>
+    <p>Podeu reproduir música emmagatzemada en el reproductor de música portable directament al Banshee. Seleccioneu el reproductor al menú de l'esquera del Banshee i es mostrarà la biblioteca del reproductor de música portable. A continuació, podeu reproduir la música al Banshee de la mateixa manera que la música de la biblioteca.</p>
+  </section>
+  
+  <section id="pmp-delete">
+    <title>Suprimeix la música des del reproductor de música portable</title>
+    <p>Per a suprimir cançons emmagatzemades al reproductor de música portable, seleccioneu el reproductor al Banshee per a visualitzar a la biblioteca. A continuació, seleccioneu les cançons que voleu suprimir i feu clic amb el botó dret del ratolí i seleccioneu "Suprimeix" o des del menú seleccioneu <guiseq><gui>Edita</gui><gui>Suprimeix</gui></guiseq>.</p>
+    
+     <note style="warning">
+      <p>A l'esborrar fitxers del reproductor de música portable es suprimiran permanentment els fitxers i no podreu recuperar-los.</p>
+    </note>
+    
+  </section>
+
+	
+</page>

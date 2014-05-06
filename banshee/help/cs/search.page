@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="search" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="sort"/>
+    <desc>Prohledávejte svá média a provádějte základní dotazy.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Prohledávání vaší kolekce Banshee</title>    
+  
+  <p>Součástí funkcí Banshee je mocný vyhledávací jazyk. Své kolekce můžete prohledávat rychle a snadno pomocí základní vyhledávacích výrazů nebo provádět podrobné hledání pomocí pokročilé vyhledávací terminologie Banshee.</p>
+  
+  <p>Když chcete ve svých médiích v přehrávači Banshee vyhledávat, zmáčkněte <key>S</key> nebo klikněte do pole <gui>Hledat svoji hudbu</gui> v pravém horním rohu zobrazení knihovny.</p>
+  
+  <p>Vyhledávací dotazy se skládají z nějakých základních výrazů, například <em>wabi daněk</em>. Zadáním <em>wabi daněk</em> do vyhledávacího pole bude Banshee hledat ve všech polích metadat, včetně názvu stopy, názvu alba, umělce alba, roku atd. Jakákoliv stopa, jejíž data obsahují <em>wabi</em> a <em>daněk</em>, bude vrácena jako výsledek. Vyhledávací výrazy neberou ohled na velikost písmen, takže se velikostí písmen nemusíte zabývat. <em>wabi</em>, <em>Wabi</em> i <em>WABI</em> mají pro hledání stejnou hodnotu.</p>
+
+<section id="operators">
+  <title>Základní operátory</title>
+  <p>Mezi libovolná dvě hledaná slova nebo před hledané slovo lze umisťovat operátory. Výchozím operátorem je <gui>AND</gui>, který znamená „a zároveň“ a je použit jako výchozí, když mezi slovy žádný operátor zadán není. Protože je výchozí, není pro něj žádný symbol AND definován.</p>
+  
+  <p>Dalšími základními operátory jsou <gui>OR</gui> a <gui>NOT</gui>. Všechny tři operátory spolu dohromady umí sestavit velmi mocné dotazy, které vám pomohou s hledáním médií.</p>
+  
+</section>
+
+<section id="logical">
+  <title>Logické operátory a příklady</title>
+  <p>Následuje seznam logických operátorů a příkladů výsledků hledání při jejich použití.</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Operátor</gui></p></td>  <td><p><gui>Popis</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><em>výchozí</em>, <em>bílý znak</em></p></td> <td><p>Hledá dva výrazy s mezerou mezi dvěma slovy nebo výrazy.</p></td>
+  </tr>
+  <tr>
+    <td><p>OR, or, <key>|</key>, <key>,</key></p></td> <td><p>Výsledkem hledání budou skladby s alespoň z jedním z výrazů v libovolném poli.</p></td>
+  </tr>
+  <tr>
+    <td><p>NOT, not,<key>-</key></p></td> <td><p>Nezobrazovat výsledky hledání s libovolným výrazem, který následuje po operátoru NOT, not nebo <key>-</key>.</p></td>
+  </tr>  
+         
+</table>
+
+  <p>Příklady použití logických operátorů:</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Dotaz</gui></p></td>  <td><p><gui>Popis</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>wabi daněk</p></td> <td><p>Odpovídají taková pole ve stopě, která obsahují jak <em>wabi</em>, tak <em>daněk</em>.</p></td>
+  </tr>
+  <tr>
+    <td><p>wabi, daněk</p></td> <td><p>Odpovídají taková pole ve stopě, která obsahují buď <em>wabi</em> nebo <em>daněk</em> (nebo obojí).</p></td>
+  </tr>
+  <tr>
+    <td><p>wabi or daněk</p></td> <td><p>Odpovídají taková pole ve stopě, která obsahují buď <em>wabi</em> nebo <em>daněk</em> (nebo obojí).</p></td>
+  </tr> 
+  <tr>
+    <td><p>wabi | daněk</p></td> <td><p>Odpovídají taková pole ve stopě, která obsahují buď <em>wabi</em> nebo <em>daněk</em> (nebo obojí).</p></td>
+  </tr>       
+  <tr>
+    <td><p>-"wabi daněk"</p></td> <td><p>Zobrazí všechny stopy, jejichž pole neobsahují <em>wabi daněk</em>.</p></td>
+  </tr> 
+  
+  </table> 
+  
+  <p>Více informací o provádění komplexnějších vyhledávacích dotazů najdete na stránce <link xref="adv-search"/>.</p>
+  
+</section>
+	
+</page>

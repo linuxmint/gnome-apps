@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sort" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="search"/>
+    <desc>Ordeneu els elements multimèdia i afegiu columnes addicionals.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Ordenació dels elements multimèdia</title>
+
+  <section id="addcolumn">
+
+  <title>Afegiu columnes</title>    
+  
+  <p>A mida que la biblioteca creix, potser voleu canviar la vostra vista biblioteca per afegir informació addicional sobre les cançons o canviar la manera que podeu veure o ordenar la vista biblioteca per a cançons, artistes o àlbums.</p>
+  
+  <p>Podeu afegir columnes addicionals a la vista biblioteca del <app>Banshee</app> per disposar de més informació sobre les cançons, a més de poder-les ordenar. Per defecte, per a cançons, el Banshee mostra les columnes <gui>Nom</gui>, <gui>Artista</gui>, <gui>Àlbum</gui> i <gui>Temps</gui>. Per a afegir columnes addicionals, feu un clic amb el botó dret del ratolí a qualsevol de les columnes i el Banshee mostrarà totes les columnes disponibles. Feu clic a la casella de selecció al costat del nom de la columna que desitgeu afegir a la vista biblioteca.</p>
+  
+  </section>
+  
+  <section id="sorting">
+    <title>Ordenació de columnes</title>
+    <p>Podeu ordenar la biblioteca utilitzant el ratolí fent clic a qualsevol de les columnes mostrades en la vista biblioteca. Si voleu ordenar la biblioteca per artista, feu clic a la capçalera de la columna <gui>Artista</gui> i el Banshee ordenarà automàticament la columna alfabèticament. Fent clic a la columna <gui>Artista</gui> de nou ordenarà la columna en ordre alfabètic invers.</p>
+  </section>
+	
+</page>

@@ -1,0 +1,41 @@
+From: Chow Loong Jin <hyperair@debian.org>
+Date: Sat, 7 Dec 2013 12:32:54 +0800
+Subject: Fix ambiguity in DateTime class
+
+In DateButton.cs, unqualified usage of the DateTime class results in an
+ambiguity between System.DateTime and GLib.DateTime.
+---
+ src/Core/Banshee.Widgets/Banshee.Widgets/DateButton.cs | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/src/Core/Banshee.Widgets/Banshee.Widgets/DateButton.cs b/src/Core/Banshee.Widgets/Banshee.Widgets/DateButton.cs
+index 519a54a..095d2d9 100644
+--- a/src/Core/Banshee.Widgets/Banshee.Widgets/DateButton.cs
++++ b/src/Core/Banshee.Widgets/Banshee.Widgets/DateButton.cs
+@@ -36,7 +36,7 @@ namespace Banshee.Widgets
+     public class DateButton : ToggleButton
+     {
+         private Window popup;
+-        private DateTime date;
++        private System.DateTime date;
+         private Calendar cal;
+         private string displayFormat;
+ 
+@@ -47,7 +47,7 @@ namespace Banshee.Widgets
+         {
+             Toggled += OnToggled;
+             popup = null;
+-            date = DateTime.Now;
++            date = System.DateTime.Now;
+             displayFormat = "yyyy/MM/dd";
+         }
+ 
+@@ -195,7 +195,7 @@ namespace Banshee.Widgets
+             set { displayFormat = value; }
+         }
+ 
+-        public DateTime Date {
++        public System.DateTime Date {
+             get { return date; }
+         }
+     }

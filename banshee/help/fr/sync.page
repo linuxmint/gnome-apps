@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Synchronisation de votre média avec un lecteur multimédia portable ou un smartphone.</desc>
+    <revision pkgversion="1.8" version="0.1" date="2010-08-29" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Synchronisation</title>    
+  
+  <p>Banshee prend en charge la synchronisation de votre musique avec des lecteurs multimédia portables et des smartphones. Vous pouvez soit y ajouter certaines pistes, albums ou listes de lectures, soit autoriser Banshee à synchroniser votre baladeur avec toute votre bibliothèque. Après avoir connecté votre baladeur à votre ordinateur, vous pouvez aussi écouter les morceaux qui y sont stockés. Lorsque vous synchronisez de la musique dans un format sans pertes comme FLAC, Banshee compresse automatiquement vos morceaux en Ogg Vorbis ou MP3 si vous avez installé les codecs adéquats.</p>
+  
+  <section id="devices">
+    <title>Compatibilité matérielle</title>
+    <p>Banshee est compatible avec la plupart des lecteurs multimédia portables et smartphones modernes à l'exception notable des iPhone, iPad et iPodTouch Apple.</p>
+  
+  <p>Quand vous branchez votre matériel, Banshee affiche son icône dans la partie gauche du menu. Cliquez sur cette icône pour ouvrir la page d'accueil de ce matériel dans Banshee et afficher vos préférences de synchronisation.</p>
+  
+  </section>
+  
+    <section id="sync-settings">
+    <title>Synchronisation de votre musique</title>
+    <p>Vous avez le choix entre laisser Banshee synchroniser automatiquement votre musique, ou le faire manuellement.</p>
+    
+    <p>Choisissez votre matériel dans le menu de Banshee et ensuite la façon de synchroniser vos média, parmi :</p>
+    <list>
+      <item><p>la musique</p></item>
+      <item><p>les livres audio</p></item>  
+      <item><p>les vidéos</p></item>
+      <item><p>les podcasts</p></item>  
+    </list>
+    
+    <p>À partir du menu déroulant de chacun des médias, choisissez entre :</p>
+    <list>
+      <item><p>gérer manuellement</p></item>
+      <item><p>synchroniser toute la bibliothèque</p></item>  
+    </list>    
+    
+    <note style="warning">
+      <p>Si vous décidez de synchroniser automatiquement toute votre bibliothèque avec votre baladeur, assurez vous au préalable que celui-ci dispose de suffisamment de mémoire. Au cas où votre bibliothèque serait plus grande que l'espace mémoire disponible de votre lecteur, Banshee le synchronise jusqu'à ce qu'il soit plein puis s'arrête.</p>
+    </note>
+    
+    <p>Si vous avez créé des listes de lectures simples ou intelligentes dans votre bibliothèque musicale, elles sont aussi affichées comme options de synchronisation musicale. Ceci est très pratique lorsque vous créez des listes de lecture intelligentes car celles-ci se mettent automatiquement à jour, au fur et à mesure de vos ajouts, en fonction des règles de la liste de lecture. Banshee synchronise la nouvelle liste avec votre lecteur à chaque branchement.</p>
+    
+    <p>Banshee affiche la totalité du contenu de la mémoire de votre baladeur sous forme d'un graphique situé au bas au centre. Ce graphique montre combien d'espace est actuellement utilisé respectivement par les fichiers audio, vidéo et le reste, ainsi que l'espace encore disponible. Juste en-dessous, Banshee vous indique le nombre total d'éléments actuellement stockés sur votre lecteur, le nombre de jours ou d'heures d'écoute que cela représente, ainsi que l'espace mémoire total utilisé.</p>
+    
+  </section>
+
+  <section id="sync-manually">
+    <title>Synchronisation de toute votre bibliothèque</title>
+    <p>Avec Banshee, vous pouvez utiliser le glisser/copier vers votre baladeur. Sélectionnez le ou les fichiers que vous voulez copier sur votre baladeur et glissez-les avec la souris sur l'icône de votre lecteur de médias.</p>
+    
+    <p>Si votre bibliothèque est encodée sous un format non compatible avec votre baladeur comme OGG ou FLAC et si vous avez installé les codecs adéquats, Banshee fait automatiquement la conversion en MP3 pendant le transfert de vos fichiers vers votre baladeur. Vérifiez la disponibilité des codecs nécessaires pour votre distribution, étant donné que ceci est en-dehors du contexte de ce guide et que cela dépend de la distribution utilisée.</p>
+    
+    <note style="tip">
+      <p>Vous pourriez être amené à retirer le volume pour transférer correctement des fichiers sur votre baladeur. Pour retirer le volume dans Banshee avec la souris, faites un clic droit sur son icône et choisissez <gui>Déconnecter</gui> dans le menu contextuel.</p>
+    </note>
+
+  </section>
+  
+  <section id="pmp-play">
+    <title>Diffusion de musique à partir de votre baladeur</title>
+    <p>Vous pouvez directement diffuser de la musique stockée sur votre baladeur avec Banshee. Cliquez sur votre baladeur dans le volet gauche de Banshee et le contenu de celui-ci s'affiche. Vous pouvez alors diffuser ce contenu comme vous le feriez à partir de votre propre bibliothèque.</p>
+  </section>
+  
+  <section id="pmp-delete">
+    <title>Suppression de pistes de votre baladeur</title>
+    <p>Pour supprimer des morceaux de votre baladeur, cliquez sur celui-ci pour afficher son contenu, sélectionnez les pistes à supprimer, faites un clic droit et choisissez <gui>Supprimer</gui>, ou à partir du menu, choisissez l'élément de menu <guiseq><gui>Édition</gui><gui>Supprimer</gui></guiseq>.</p>
+    
+     <note style="warning">
+      <p>La suppression de fichiers de votre baladeur est un acte irréversible et vous ne pourrez plus les récupérer.</p>
+    </note>
+    
+  </section>
+
+	
+</page>

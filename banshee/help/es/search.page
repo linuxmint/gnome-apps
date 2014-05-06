@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="search" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="sort"/>
+    <desc>Buscar su contenido multimedia y realizar consultas básicas.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Buscar en su colección de Banshee</title>    
+  
+  <p>Banshee tiene un lenguaje de búsquedas potente. Puede buscar en su colección rápida y fácilmente con términos de búsqueda básicos, o realizar búsquedas detalladas con la terminología de búsqueda avanzada de Banshee.</p>
+  
+  <p>Para realizar una búsqueda de su contenido multimedia en Banshee, presione <key>S</key> o pulse en la caja <gui>Buscar</gui> en la esquina superior derecha en la vista de colección de Banshee.</p>
+  
+  <p>Una consulta de búsqueda consiste en algunos términos básicos, por ejemplo, <em>dave matthews</em>. Al introducir <em>dave matthews</em> en la caja de búsqueda, Banshee buscará todos los campos de metadatos, incluyendo «Pista», «Título de la pista», «Título del álbum», «Artista», «Año», etc. Se devolverá cualquier pista cuyos metadatos incluyan <em>dave</em> y <em>matthews</em>. Los términos de búsqueda no son sensibles a las mayúsculas, lo que significa que no tiene que preocuparse de usarlas. <em>dave</em>, <em>Dave</em> y <em>DAVE</em> tienen todos el mismo significado a la hora de buscar.</p>
+
+<section id="operators">
+  <title>Operadores básicos</title>
+  <p>Los operadores se pueden poner entre dos palabras de la búsqueda o ponerse antes de una palabra de la búsqueda. El operador predeterminado es <gui>AND</gui> y se usa cuando no se usan otros operadores entre dos términos de búsqueda. Al ser el operador predeterminado, no existe de manera explícita.</p>
+  
+  <p>Otros operadores básicos son <gui>OR</gui> y <gui>NOT</gui>. Juntos, estos tres operadores puede generar consultas muy potentes para ayudarle a buscar sus archivos multimedia.</p>
+  
+</section>
+
+<section id="logical">
+  <title>Operadores lógicos y ejemplos</title>
+  <p>Lo siguiente es una lista de operadores lógicos y ejemplos de resultados de búsquedas realizadas usándolos.</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Operador</gui></p></td>  <td><p><gui>Descripción</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><em>predeterminado</em>, <em>espacio en blanco</em></p></td> <td><p>Buscar dos términos con un espacio en blanco entre las dos palabras o términos.</p></td>
+  </tr>
+  <tr>
+    <td><p>OR, or, <key>|</key>, <key>,</key></p></td> <td><p>Los resultados de la búsqueda serán dos canciones con resultados en cualquier campo.</p></td>
+  </tr>
+  <tr>
+    <td><p>NOT, not, <key>-</key></p></td> <td><p>No mostrar los resultados de la búsqueda con cualquier término de búsqueda que sigue al operador NOT, not, <key>-</key>.</p></td>
+  </tr>  
+         
+</table>
+
+  <p>Los ejemplos de operaciones lógicas incluyen:</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Consulta</gui></p></td>  <td><p><gui>Descripción</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>dave matthews</p></td> <td><p>Busca cualquier campo de una pista que contenga <em>dave</em> y <em>matthews</em>.</p></td>
+  </tr>
+  <tr>
+    <td><p>dave, matthews</p></td> <td><p>Busca cualquier campo de una pista de una pista que contenga <em>dave</em> o <em>matthews</em>.</p></td>
+  </tr>
+  <tr>
+    <td><p>dave or matthews</p></td> <td><p>Busca cualquier campo de una pista de una pista que contenga <em>dave</em> o <em>matthews</em>.</p></td>
+  </tr> 
+  <tr>
+    <td><p>dave | matthews</p></td> <td><p>Busca cualquier campo de una pista de una pista que contenga <em>dave</em> o <em>matthews</em>.</p></td>
+  </tr>       
+  <tr>
+    <td><p>-"dave matthews"</p></td> <td><p>Muestra todas las pistas cuyos campos no contienen <em>dave matthews</em>.</p></td>
+  </tr> 
+  
+  </table> 
+  
+  <p>Para obtener más información sobre cómo realizar consultas de búsqueda más complejas, consulte la <link xref="adv-search"/></p>
+  
+</section>
+	
+</page>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="import" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <desc>コンピューター上の音楽ファイルやビデオファイルをBansheeのライブラリへ追加します。</desc>
+    <revision pkgversion="1.6" version="1.6" date="2010-07-15" status="review"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>楽曲とビデオのインポート</title>
+
+  <p>お使いのコンピューター上に保存された音楽やビデオをBansheeにインポートすることができます。インポートされたファイルはソースに存在する既存のファイルと同じく編集や管理ができます。</p>
+
+  <p>コンピューター上の音楽ファイルやビデオファイルをインポートするには、<guiseq><gui>メディア</gui><gui>メディアのインポート</gui></guiseq>を選びます。ダイアログには選択肢がいくつか表示されます。</p>
+
+  <note>
+    <p>プラグインによりインポート元の選択肢を追加することができます。 詳しくは<link xref="#plugins"/>をご覧ください。</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>ローカルフォルダー</gui></title>
+      <p>指定されたフォルダー内（すべてのサブフォルダーを含め）のすべての音楽ファイルやビデオファイルをインポートするには、このオプションを選択してください。インポートするフォルダーを選択するダイアログが表示されます。</p>
+    </item>
+    <item>
+      <title><gui>ローカルファイル</gui></title>
+      <p>このオプションを選んだ場合、特定のファイルだけをインポートしたり、選択したファイルをインポートします。インポートしたいファイルを選択するダイアログが表示されます。</p>
+    </item>
+    <item>
+      <title><gui>ホームフォルダー</gui></title>
+      <p>ホームフォルダー内（すべてのサブフォルダー内のファイルを含む）のすべての音楽ファイルやビデオファイルをインポートするには、このオプションを選択してください。</p>
+    </item>
+    <item>
+      <title><gui>写真のフォルダーのビデオ</gui></title>
+      <p>多くのデジタルカメラは、短いビデオを撮ることができます。写真管理アプリケーションの多くは写真のフォルダーに直接これらのビデオをダウンロードします。写真のフォルダーに保存されているすべてのビデオファイルをインポートするには、このオプションを選択してください。</p>
+    </item>
+  </terms>
+
+  <note>
+    <p>ライブラリ内のすでにインポートした重複したエントリを心配することなく、フォルダーから安全にインポートすることができます。</p>
+  </note>
+  
+  <section id="import-playlist">
+    <title>プレイリストからのインポート</title>
+    <p>プレイリストから楽曲をインポートすることができます。<em>m3u</em>形式の拡張子のほとんどのプレイリストファイルに対応しています。プレイリストからインポートするには、Bansheeのメニューから<guiseq><gui>メディア</gui><gui>プレイリストのインポート</gui></guiseq>を選び、プレイリストを含むフォルダーを選択した後に<gui>インポート</gui>をクリックします。</p>
+  </section>
+  
+  <section id="plugins">
+    <title>追加のインポートソース</title>
+    <p>プラグインにてインポート元の選択肢を追加することができます。また、適切なプラグインが有効になっている場合、次の追加のソースが利用できるようになります：</p>
+  </section>
+  	
+</page>

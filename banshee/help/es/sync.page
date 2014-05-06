@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Sincronizar su contenido multimedia con un reproductor portátil o un teléfono inteligente.</desc>
+    <revision pkgversion="1.8" version="0.1" date="2010-08-29" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Sincronizar</title>    
+  
+  <p>Banshee permite sincronizar su música con reproductores portátiles y teléfonos inteligentes. Puede añadir canciones, álbumes enteros o listas de reproducción, o hacer que Banshee sincronice automáticamente su reproductor portátil con toda su colección. Al conectar su reproductor portátil al ordenador también puede reproducir las canciones que se encuentran en él. Al sincronizar archivos que se encuentren en un formato de alta calidad como FLAC, Banshee los convertirá automáticamente a un formato con pérdida como Ogg Vorbis o MP3, siempre y cuando tenga los códecs necesarios instalados.</p>
+  
+  <section id="devices">
+    <title>Soporte de dispositivos</title>
+    <p>Banshee cuenta con soporte para casi todos los reproductores multimedia portátiles y teléfonos inteligentes a excepción del iPhone, iPad y iPod Touch.</p>
+  
+  <p>Cuando conecte su dispositivo, Banshee lo mostrará en el menú de la izquierda. Al pulsar en el icono del dispositivo, le llevará a la página principal del dispositivo en Banshee, mostrando sus preferencias de sincronización.</p>
+  
+  </section>
+  
+    <section id="sync-settings">
+    <title>Sincronizar su música</title>
+    <p>Puede elegir gestionar el contenido multimedia de su reproductor de música portátil haciendo que Banshee lo sincronice automáticamente, o puede gestionar su música y sus archivos multimedia manualmente.</p>
+    
+    <p>Seleccione su dispositivo desde el menú de Banshee y elija cómo quiere sincronizar sus archivos multimedia, incluyendo:</p>
+    <list>
+      <item><p>Música</p></item>
+      <item><p>Audiolibros</p></item>  
+      <item><p>Vídeos</p></item>
+      <item><p>Podcasts</p></item>  
+    </list>
+    
+    <p>En el menú desplegable junto a cada uno de los archivos multimedia, seleccione una opción:</p>
+    <list>
+      <item><p>Gestionar de forma manual</p></item>
+      <item><p>Sincronizar toda la colección</p></item>  
+    </list>    
+    
+    <note style="warning">
+      <p>Si elige sincronizar automáticamente su colección completa con su dispositivo portátil, asegúrese de que su reproductor multimedia tiene espacio suficiente. Si su colección es más grande que el espacio de su reproductor multimedia, Banshee sincronizará el contenido hasta que el reproductor esté lleno.</p>
+    </note>
+    
+    <p>si ha creado listas de reproducción o listas de reproducción inteligentes en su colección de música, también se mostrarán como una opción de sincronización de «Música». Esto puede ser útil para crear listas de reproducción inteligentes, ya que las listas de reproducción inteligentes se actualizarán automáticamente a medida que se añade contenido basado en las reglas de la lista de reproducción, y Banshee sincronizará automáticamente la nueva lista de reproducción con su dispositivo cada vez que lo conecte.</p>
+    
+    <p>Banshee mostrará el espacio total del disco de su reproductor multimedia portátil en un gráfico centrado en la parte inferior de Banshee. El gráfico mostrará cuánto espacio ocupan los archivos de sonido, vídeo, otros y el espacio libre. Justo debajo Banshee mostrará cuántos elementos en total hay almacenados en su reproductor portátil de música, a cuántas horas o días de reproducción equivalen y el espacio usado total.</p>
+    
+  </section>
+
+  <section id="sync-manually">
+    <title>Sincronizar su biblioteca completa</title>
+    <p>Puede arrastrar y soltar archivos multimedia en su reproductor de música portátil desde Banshee. Seleccione el archivo o los archivos que quiera copiar en su reproductor multimedia portátil y mantenga pulsado el botón del ratón mientras arrastra los archivos al icono de su reproductor multimedia portátil en Banshee. Esto copiará los archivos a su dispositivo.</p>
+    
+    <p>Si su colección de música está codificada en un formato que su reproductor multimedia portátil no soporta, como OGG o FLAC, y tiene instalados los códecs necesarios, Banshee puede convertir automáticamente estos archivos a MP3 al transferirlos a su reproductor multimedia portátil. Compruebe que su distribución de Linux tiene los códecs necesarios, ya que esto está fuera del objetivo de esta ayuda y varía según la distribución.</p>
+    
+    <note style="tip">
+      <p>Puede necesitar expulsar su dispositivo para cargar los archivos correctamente en su reproductor multimedia portátil. Para expulsar su dispositivo desde Banshee, pulse con el botón derecho del ratón sobre el dispositivo en el menú de Banshee y pulse <gui>Desconectar</gui>.</p>
+    </note>
+
+  </section>
+  
+  <section id="pmp-play">
+    <title>Reproducir música desde su reproductor portátil</title>
+    <p>Puede reproducir música almacenada en su reproductor de música portátil directamente en Banshee. Elija su reproductor en el menú de Banshee en la parte izquierda y se mostrará la colección de su reproductor de música portátil. Entonces puede reproducir la música en Banshee igual que lo haría desde su propia colección.</p>
+  </section>
+  
+  <section id="pmp-delete">
+    <title>Quitar música de su reproductor portátil</title>
+    <p>Para quitar canciones almacenadas en su reproductor de música portátil, elija su reproductor en Banshee para ver su colección. Elija las pistas que quiere quitar, pulse con el botón derecho sobre las pistas y elija «Eliminar», o elija <guiseq><gui>Editar</gui><gui>Eliminar</gui></guiseq> en el menú.</p>
+    
+     <note style="warning">
+      <p>Al eliminar archivos de su reproductor de música portátil se eliminarán de manera permanente, y no podrá recuperarlos.</p>
+    </note>
+    
+  </section>
+
+	
+</page>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="tags" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="coverart"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>楽曲タグとメタデータの編集および変更</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-09" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>楽曲のメタデータ</title>
+
+  <section id="metadata">
+
+  <title>楽曲のメタデータ</title>    
+  
+  	<p>音楽ファイルの中の情報にはアーティスト、アルバム名、録音した年、ジャンルなどがメタデータが含まれています。インターネット上で購入したほぼすべての音楽ファイルは、メタデータがすでに埋め込まれており、BansheeでCDからリッピングする場合は可能な限りメタデータを含んでリッピングします。メタデータを含んでCDをリッピングする方法の詳細については<link xref="import"/>を参照してください。</p>
+  	
+  	<p>一般的によく使われるメタデータ形式としては、MP3ファイルではID3v1とID3v2、OGG VorbisファイルではVorbis commentsがあります。</p>	
+  
+  	<p>もし、メタデータが含まれていない楽曲をインポートした場合、<app>Banshee</app>のライブラリ内の多くの項目に<gui>不明</gui>と表示されます。</p>
+  	
+  </section>
+
+  <section id="editmetadata"> 	
+    
+    <title>メタデータを編集する</title>
+    
+    <p>トラックの情報を変更できます。情報を変更したいトラックを選択し<key>E</key>を押すか、Bansheeのメニューから<guiseq><gui>編集</gui><gui>トラック情報を編集</gui></guiseq>を選びます。もしくは選択したトラックの上で右クリックして<gui>トラック情報を編集</gui>を選びます。</p>
+    
+    <p>ダイアログボックスにはトラックのメタデータ情報が表示されます。この情報は変更および更新することができます。デフォルトで表示される項目には次のものがあります。</p>
+    
+    <list>
+      <item><p><gui>トラックタイトル</gui></p></item>
+      <item><p><gui>アーティスト</gui></p></item>
+      <item><p><gui>アルバム</gui></p></item>
+      <item><p><gui>ジャンル</gui></p></item>
+      <item><p><gui>トラック番号</gui></p></item>
+      <item><p><gui>ディスク番号</gui></p></item>
+      <item><p><gui>年</gui></p></item>
+    </list>
+    
+    <p>トラックの情報を編集する時、もし複数のトラックを選択した場合には個々のトラックの情報を入力した後に、<gui>タイトル</gui>の項目の右下の<gui>進む</gui>ボタンを押して、すべてのメタデータの編集がおわった後に<gui>保存</gui>をクリックします。</p>
+   
+  </section>
+
+</page>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="play" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="queue"/>
+    <desc>Reproduïu els vostres fitxers amb vídeo i música.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Reproducció d'elements multimèdia</title>
+
+  <section id="playmusic">
+  <title>Reproducció de la música</title>    
+  
+  <p>Per a reproduir música al Banshee escolliu la font de la música. La biblioteca de música mostrarà tots els artistes de la biblioteca, cobertes per cada àlbum i la llista de les cançons que hi ha a la biblioteca.</p>
+  
+  <p>Escolliu l'àlbum o cançó que desitgeu reproduir de la llista d'artistes, àlbums o utilitzeu la barra de cerca de la part superior dreta del Banshee.</p>
+  
+  <p>Per començar a reproduir una cançó, utilitzeu el ratolí fent doble clic al nom de la cançó, premeu la tecla <key>barra espaiadora</key>, o escolliu <guiseq><gui>Reprodueix</gui><gui>Reprodueix</gui></guiseq> des del menú del Banshee.</p>
+  
+  <p>Podeu començar a reproduir un àlbum escollint-lo al navegador d'àlbums i fent doble clic amb el ratolí al nom de la cançó, prement la tecla <key>barra espaiadora</key>, o seleccionant <guiseq><gui>Reprodueix</gui><gui>Reprodueix</gui> </guiseq> des del menú del Banshee.</p>
+  
+  <p>Per a reproduir totes les cançons d'un artista, escolliu l'artista al navegador d'artistes i premeu la <key>barra espaiadora</key>, o escolliu <guiseq><gui>Reprodueix</gui><gui>Reprodueix</gui></guiseq> des del menú del Banshee.</p>
+  
+  <p>El Banshee també mostra els àlbums favorits (els que més reproduïu), els últims elements favorits, o els àlbums recentment afegits o sense escoltar. Escolliu l'àlbum que voleu escoltar i seleccioneu les cançons a reproduir.</p>
+  
+  </section>
+
+  <section id="playvideo">
+  <title>Reproducció de vídeo</title>    
+  
+  <p>Els vídeos importats es mostren alfabèticament. Per a reproduir un vídeo, escolliu de la llista el vídeo que voleu reproduir i premeu la <key>barra espaiadora</key>, o escolliu <guiseq><gui>Reprodueix</gui><gui>Reprodueix</gui></guiseq> des del menú del Banshee.</p>
+  
+  <p>El Banshee també mostra els vídeos favorits (els que més reproduïu) i els vídeos no reproduïts. Escolliu el vídeo que voleu reproduir de la llista.</p>	
+  
+  </section>
+  
+  <section id="playpodcast">
+  <title>Reproducció d'un Podcast</title>    
+  
+  <p>Podcasts mostra tots els Podcasts als que esteu subscrits, tots els Podcasts mostra els disponibles, i les llistes de navegació de Podcast mostren tots els Podcast ordenats pels més recents.</p>
+  
+  <p>Per a reproduir un Podcast, escolliu de la llista el que voleu reproduir i premeu la <key>barra espaiadora</key>, o escolliu <guiseq><gui>Reprodueix</gui><gui>Reprodueix</gui></guiseq> des del menú del Banshee.</p>
+  
+  </section>
+  
+  <section id="playradio">
+  <title>Escolteu una emissora de ràdio Internet</title>    
+  
+  <p>La font de ràdio mostra ordenades alfabèticament totes les emissores Internet que heu afegit al Banshee.</p>
+  
+  <p>Per a reproduir una emissora de ràdio, escolliu de la llista l'emissora que voleu escoltar i premeu la <key>barra espaiadora</key>, o escolliu <guiseq><gui>Reprodueix</gui><gui>Reprodueix</gui></guiseq> des del menú del Banshee.</p>
+  
+  </section>    
+	
+</page>

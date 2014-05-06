@@ -1,0 +1,147 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:e="http://projectmallard.org/experimental/"
+      type="topic" style="task"
+      id="playlists">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="tags"/>
+    <link type="seealso" xref="coverart"/>
+    <desc>Create and manage playlists.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-05-26" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
+  </info>
+
+  <title>Playlists</title>    
+  
+  <p>Playlists allow you to create and save a list of music tracks to be played
+  in a specific order.  Playlists are convenient to create a list of your
+  favorite songs or to split your library into smaller lists that are easy
+  to browse through. Some portable media players even allow you to transfer the 
+  playlist so you can take it with you on the go.
+  </p>
+  
+  <p>Banshee supports normal playlists, which include songs you add to the
+  playlist, as well as smart playlists.  Smart Playlists are automatically 
+  generated playlists based on your listening habits, favorite music, or more.</p>
+  
+  <section id="manual">
+  
+    <title>Normal Playlists</title>
+  
+    <p>A normal playlist is a list of songs that you add and manage.  You might
+    want to create your own list of songs by your favorite artist from 
+    multiple albums, your latest favorite songs, or an upbeat playlist to listen
+    to while you exercise.
+    </p>
+    
+    <p>You can create a new playlist by pressing <keyseq><key>Control</key>
+    <key>N</key></keyseq>, from the menu choosing <guiseq><gui>Media</gui>
+    <gui>New Playlist</gui></guiseq> or by selecing the track(s) you would like
+    to add to the playlist.  Select the track(s), right click them, and choose
+    <guiseq><gui>Add to Playlist</gui><gui>New Playlist</gui></guiseq>.
+    You can also drag and drop them to a new playlist by selecting the track(s) 
+    and dragging them to the left hand
+    window pane over <gui>Music</gui>.  As you drag it over <gui>Music</gui>,
+    a new option <gui><em>New Playlist</em></gui> will appear and you can drop
+    the track(s) over <gui><em>New Playlist</em></gui> to add them to the 
+    playlist.  You can repeat this process until you have added all the tracks
+    you want in the playlist.
+    </p>
+
+    <p>To give your playlist its own name, select the playlist and right click
+    on the playlist and press <gui>Rename Playlist</gui> and enter the name
+    of your playlist.
+    </p>
+    
+    <p>You can change the order of the playlist by dragging and dropping the
+    song to the new position in the playlist.  Songs can only be re-ordered
+    in the playlist when none of the columns are sorted.  To unsort a column,
+    press the column until the up or down arrow is no longer showing and
+    the column is blank and then re-order the playlist.
+    </p>
+    
+    <p>To remove a track from the playlist, select the track(s) you wish to 
+    remove.  Press the <key>Delete</key>, from the menu choose 
+    <guiseq><gui>Edit</gui><gui>Remove from Playlist</gui></guiseq> or right
+    click the track(s) with your mouse and press <gui>Remove from Playlist</gui>.
+    </p>
+  </section> 
+  
+  <section id="smartplaylists">
+    <title>Smart Playlist</title>
+    
+    <p>Smart Playlists allow you to quickly generate a dynamic playlist based
+    on a number of pre-set variables.  You can quickly create a new playlist
+    based on a specific artist, favorites or more.  
+    </p>
+    
+    <p>To create a new Smart Playlist, from the menu choose <guiseq>
+    <gui>Media</gui><gui>New Smart Playlist</gui></guiseq>.  You will be 
+    presented with a dialog to create a new Smart Playlist.  Enter
+    the name of your playlist and then choose the criteria your playlist 
+    should be based on.  You can choose from any field included in the song's 
+    meatadata, such as Album, Artist or Year.  Choose the criteria and then
+    choose from one of the following:
+    </p>
+    
+    <list>
+      <item><p>is</p></item>
+      <item><p>is not</p></item>  
+      <item><p>less than</p></item>
+      <item><p>more than</p></item>  
+      <item><p>at most</p></item>
+      <item><p>at least</p></item>  
+    </list>
+    
+    <p>You can also press the <gui>+</gui> button to add an addition query
+    to the Smart Playlist.  For example, you could create a smart playlist
+    that includes all songs from 2010 that you rated 5 stars.  To create this
+    playlist you would choose:
+    </p>
+    
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Year</gui></p></td> <td><p><gui>is</gui></p> </td> 
+    <td><p><gui>2010</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><gui>Rating</gui></p></td> <td><p><gui>is</gui></p></td> 
+    <td><p><gui></gui>5 stars</p></td>
+  </tr>
+  </table>
+    
+    <p>You can then optionally select how many songs are included by pressing
+    the <gui>Limit</gui> to checkbox and choosing the number of songs to be
+    included.
+    </p>
+  
+  <p>Banshee also includes smart playlists already created for 
+  you.  Press the <gui>Open in editor</gui> button to view how the playlist
+  created was or to modify it.  If you press <gui>Create and save</gui> the 
+  playlist will be automatically generated and saved for you.  The following
+  playlists are included:
+  </p>
+  
+  <list>
+    <title>Banshee Smart Playlists</title>
+    <item><p>Favorites (Songs rated four and five stars)</p></item>
+    <item><p>Recent Favorites (Songs listened to often in the past week)
+    </p></item>  
+    <item><p>Recently Added (Songs imported within the last week)</p></item>
+    <item><p>Unheard (Songs that have not been played or skipped)</p></item>
+    <item><p>Neglected Favorites (Favorites not played in over two months)
+    </p></item>
+    <item><p>700 MB of Favorites (A data CD worth of favorite songs)</p></item>
+    <item><p>80 Minutes of Favorites (An audio CD worth of favorite songs)
+    </p></item>
+    <item><p>Unrated (Songs that haven't been rated)</p></item>
+  </list>
+ 
+   </section> 
+ 
+</page>

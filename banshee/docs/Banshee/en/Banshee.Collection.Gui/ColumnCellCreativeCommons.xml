@@ -1,0 +1,129 @@
+<Type Name="ColumnCellCreativeCommons" FullName="Banshee.Collection.Gui.ColumnCellCreativeCommons">
+  <TypeSignature Language="C#" Value="public class ColumnCellCreativeCommons : Hyena.Data.Gui.ColumnCell, Hyena.Data.Gui.ISizeRequestCell, Hyena.Data.Gui.ITooltipCell" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ColumnCellCreativeCommons extends Hyena.Data.Gui.ColumnCell implements class Hyena.Data.Gui.ISizeRequestCell, class Hyena.Data.Gui.ITooltipCell" />
+  <AssemblyInfo>
+    <AssemblyName>Banshee.ThickClient</AssemblyName>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Hyena.Data.Gui.ColumnCell</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Hyena.Data.Gui.ISizeRequestCell</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Hyena.Data.Gui.ITooltipCell</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColumnCellCreativeCommons (string property, bool expand);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string property, bool expand) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="property" Type="System.String" />
+        <Parameter Name="expand" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="property">To be added.</param>
+        <param name="expand">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTooltipMarkup">
+      <MemberSignature Language="C#" Value="public string GetTooltipMarkup (Hyena.Data.Gui.CellContext cellContext, double columnWidth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetTooltipMarkup(class Hyena.Data.Gui.CellContext cellContext, float64 columnWidth) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cellContext" Type="Hyena.Data.Gui.CellContext" />
+        <Parameter Name="columnWidth" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="cellContext">To be added.</param>
+        <param name="columnWidth">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWidthRange">
+      <MemberSignature Language="C#" Value="public void GetWidthRange (Pango.Layout layout, out int min, out int max);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetWidthRange(class Pango.Layout layout, int32 min, int32 max) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="layout" Type="Pango.Layout" />
+        <Parameter Name="min" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="max" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="layout">To be added.</param>
+        <param name="min">To be added.</param>
+        <param name="max">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public override void Render (Hyena.Data.Gui.CellContext context, Gtk.StateType state, double cellWidth, double cellHeight);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Render(class Hyena.Data.Gui.CellContext context, valuetype Gtk.StateType state, float64 cellWidth, float64 cellHeight) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Hyena.Data.Gui.CellContext" />
+        <Parameter Name="state" Type="Gtk.StateType" />
+        <Parameter Name="cellWidth" Type="System.Double" />
+        <Parameter Name="cellHeight" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="cellWidth">To be added.</param>
+        <param name="cellHeight">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestrictSize">
+      <MemberSignature Language="C#" Value="public bool RestrictSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RestrictSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

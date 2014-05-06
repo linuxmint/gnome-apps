@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboardshortcuts" xml:lang="es">
+
+<info>
+    <link type="guide" xref="advanced#keyboard"/>
+  <desc>Atajos de teclado</desc>
+  <revision pkgversion="2.0" version="0.1" date="2010-05-29" status="draft"/>
+  <credit type="author">
+    <name>Paul Cutler</name>
+    <email>pcutler@gnome.org</email>
+  </credit>
+
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+
+  <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Controlar Banshee por medio de atajos de teclado</title>
+  
+  <section id="playbackcontrol">
+  
+  <title>Control de reproducción</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Tecla</gui></p></td>  <td><p><gui>Acción</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>Barra espaciadora</p></td> <td><p>Reproducir o pausar la canción actual</p></td>
+  </tr>
+  <tr>
+    <td><p>N</p></td>     <td><p>Reproducir la canción siguiente</p></td>
+  </tr>
+  <tr>
+    <td><p>B</p></td> <td><p>Reproducir la canción anterior</p></td>
+  </tr>
+</table>
+
+  </section>
+  
+  <section id="library">
+  
+  <title>Interacción con la colección</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Tecla</gui></p></td>  <td><p><gui>Acción</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>/</key>, <keyseq><key>Ctrl</key><key>F</key></keyseq></p></td> <td><p>Mover el foco a la caja de búsqueda</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>I</key></keyseq></p></td>
+         <td><p>Abrir diálogo de importación de contenido multimedia</p></td>
+   </tr>      
+</table>
+
+  </section>  
+
+  <section id="playlists">
+  
+  <title>Listas de reproducción</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Tecla</gui></p></td>  <td><p><gui>Acción</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>N</key></keyseq></p></td> <td><p>Crear una nueva lista de reproducción</p></td>
+  </tr>
+         
+</table>
+
+  </section> 
+  
+    <section id="podcasts">
+  
+  <title>Podcasts</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Tecla</gui></p></td>  <td><p><gui>Acción</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>Y</key></p></td> <td><p>Marcar los episodios seleccionados como antiguos</p></td>
+  </tr>
+         
+</table>
+
+  </section> 
+  
+  <section id="interface">
+  
+  <title>Interfaz</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Tecla</gui></p></td>  <td><p><gui>Acción</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>F</key></p></td> <td><p>Conmutar el modo de pantalla completa</p></td>
+  </tr>  
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td> <td><p>Seleccionar todas las canciones en la vista de lista de reproducción</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Mayús</key><key>A</key></keyseq></p>
+    </td> <td><p>Deseleccionar todas las canciones en la vista de lista de reproducción</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td> <td><p>Ocultar la ventana de Banshee (requiere tener activada la extensión «Icono en el área de notificación»)</p></td>
+  </tr>    
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Botón izquierdo del ratón</key></keyseq>
+    </p></td> <td><p>Reproducir la canción anterior (requiere tener activada la extensión «Icono en el área de notificación»)</p></td>
+  </tr> 
+  <tr> 
+    <td><p><keyseq><key>Ctrl</key><key>Botón derecho del ratón</key></keyseq>
+    </p></td> <td><p>Reproducir la canción siguiente (requiere tener activada la extensión «Icono en el área de notificación»)</p></td>
+  </tr> 
+  <tr> 
+    <td><p><keyseq><key>Ctrl</key><key>Botón central del ratón</key></keyseq>
+    </p></td> <td><p>Alternar entre Reproducir / Pausar (requiere tener activada la extensión «Icono en el área de notificación»)</p></td>
+  </tr>    
+         
+</table>
+
+  </section>   
+</page>

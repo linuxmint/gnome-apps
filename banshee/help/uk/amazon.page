@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="amazon" xml:lang="uk">
+
+  <info>
+    <link type="guide" xref="index#extensions"/>
+    <link type="seealso" xref=""/>
+    <desc>Синхронізація та придбання музики в магазині Amazon MP3.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-07-11" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Магазин Amazon MP3</title>    
+  
+  <p>Banshee підтримує звантаження та імпортування музики з магазину Amazon MP3. Можете вручну імпортувати музичні файли Amazon, купити їх через ваш переглядач або через Banshee. Amazon пропонує музику лише у форматі MP3 і в певних країнах. Можливо, ви не зможете купити музику в магазині Amazon MP3, якщо ви живете в іншій країні.</p>
+   
+   <note style="important">
+     <p>Banshee використовує код членства в Amazon для всіх музичних покупок. Всі гроші, зароблені через цей код вносяться як пожертва до фундації GNOME.</p>
+   </note>
+   
+  <section id="amazon-browser">
+  <title>Придбання в Amazon MP3 через переглядач</title> 
+  
+  <p>Музика, придбана в магазині Amazon MP3 може автоматично звантажуватись та імпортуватись в Banshee. Banshee асоціює себе з файлами Amazon .amz, що надаються як прибдання MP3. Якщо ви купуєте музику в Amazon, ваш переглядач звантажуватиме файли .amz, а Banshee автоматично відкриватиме такі файли і розпочинатиме їхнє звантаження та імпортування музики.</p>
+  </section>
+  
+  <section id="amazon-banshee">
+  <title>Придбання в Amazon MP3 через Banshee</title> 
+  
+  <p>Також можна виконувати пошук музики в Amazon в межах Banshee. Виберіть джерело «Amazon MP3» в меню Banshee ліворуч і завантажиться магазин Amazon MP3 так само, як і в переглядачі. Знайдіть музику, яку хочете придбати, увійдіть в свій обліковий запис Amazon та купіть її, виконавши всього лише одне клацання. Banshee автоматично звантажить та імпортує вашу купівлю до фонотеки.</p>
+  </section>
+  
+  <section id="amazon-manual">
+  <title>Імпортування з Amazon MP3 вручну</title> 
+  
+  <p>Під час купівлі в Amazon через переглядач, файл з розширенням .amz буде звантажено і збережено на жорсткий диск. Щоб імпортувати його вручну, натисніть в меню Banshee <guiseq><gui>Файл</gui><gui>Імпортувати матеріал</gui></guiseq>, виберіть для імпортування файл *.amz. Banshee відкриє цей файл, з'єднається з магазином Amazon MP3 і розпочне звантаження.</p>
+  
+  <note style="warning">
+    <p>Файли Amazon з роширенням .amz активні лише короткий час. Якщо ви швидко не звантажите їх, вони застаріють і ви не зможете забрати свою купівлю. Amazon не повідомляє, як довго такі файли залишаються активними. Рекомендується звантажувати та імпортувати купівлю в межах години.</p>
+  </note>
+  </section> 
+	
+</page>

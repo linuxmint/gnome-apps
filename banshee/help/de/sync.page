@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Abgleichen Ihrer Medien mit einem tragbaren Abspielgerät oder Smartphone.</desc>
+    <revision pkgversion="1.8" version="0.1" date="2010-08-29" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Abgleich</title>    
+  
+  <p>Banshee unterstützt den Abgleich Ihrer Musik mit tragbaren Musikwiedergabegeräten und Smartphones. Sie können bestimmte Musiktitel, Alben oder Wiedergabelisten hinzufügen oder Banshee gestatten, Ihr Wiedergabegerät direkt mit Ihrer gesamten Bibliothek synchron zu halten. Wenn Sie Ihr Wiedergabegerät angeschlossen haben, dann können sie die darauf befindliche Musik direkt in Banshee abspielen. Beim Abgleich von Musik in einem verlustlosen Format wie z.B. FLAC, wandelt Banshee Ihre Musik automatisch in ein verlustbehaftetes Format wie OggVorbis oder MP3 um, sofern Sie die korrekten Codecs installiert haben.</p>
+  
+  <section id="devices">
+    <title>Geräteunterstützung</title>
+    <p>Banshee unterstützt beinahe alle aktuellen tragbaren Musikwiedergabegeräte und Smartphones, mit den bekannten Ausnahmen für Apple iPhone, iPad und iPod Touch.</p>
+  
+  <p>Wenn Sie Ihr Gerät anschließen, dann zeigt Banshee es im linken Menü an. Ein Klick auf das Symbol des Gerätes zeigt eine Übersichtsseite zu diesem Gerät in Banshee an, in der die Abgleicheinstellungen angezeigt werden.</p>
+  
+  </section>
+  
+    <section id="sync-settings">
+    <title>Ihre Musik abgleichen</title>
+    <p>Sie können wählen, ob die Medien Ihrer tragbaren Geräte automatisch abgeglichen werden sollen oder ob Sie Ihre Musik und Medien manuell verwalten wollen.</p>
+    
+    <p>Wählen Sie Ihr Gerät im Banshee-Menü aus und wählen Sie anschließend, wie Sie Ihre Medien abgleichen wollen:</p>
+    <list>
+      <item><p>Musik</p></item>
+      <item><p>Hörbücher</p></item>  
+      <item><p>Videos</p></item>
+      <item><p>Podcast</p></item>  
+    </list>
+    
+    <p>Wäheln Sie im Auswahlmenü neben jedem der Medien aus folgenden Optionen:</p>
+    <list>
+      <item><p>Manuell verwalten</p></item>
+      <item><p>Gesamte Bibliothek abgleichen</p></item>  
+    </list>    
+    
+    <note style="warning">
+      <p>Wenn Sie sich dafür entscheiden, Ihre gesamte Bibliothek automatisch mit Ihrem tragbaren Wiedergabegerät abgleichen zu lassen, dann stellen Sie bitte sicher, dass genug Speicherplatz zur Verfügung steht. Falls Ihre Bibliothek umfangreicher ist als der auf dem tragbaren Wiedergabegerät vorhandene Speicherplatz, dann gleicht Banshee die Medien so lange ab, bis das Wiedergabegerät voll ist und bricht dann den Vorgang ab.</p>
+    </note>
+    
+    <p>Falls Sie intelligente oder gewöhnliche Wiedergabelisten in Ihrer Musikbibliothek erstellt haben, dann werden diese auch als Abgleichoption für Musik angezeigt. Dies kann beim Erstellen intelligenter Wiedergabelisten hilfreich sein, da diese gemäß den Regeln der Wiedergabeliste automatisch aktualisiert werden, sobald neue Inhalte hinzugefügt werden. Banshee gleicht dann jedes Mal beim anschließen Ihres Gerätes die neue Wiedergabeliste ab.</p>
+    
+    <p>Banshee zeigt den gesamten auf Ihrem tragbaren Wiedergabegerät vorhandenen Speicherplatz in einer Grafik unten in der Mitte des Banshee-Fensters an. Die Grafik zeigt an, wie viel Platz jeweils von Audio-, Video- und anderen Dateien beansprucht wird und wie viel freier Platz verfügbar ist. Direkt darunter zeigt Banshee die Gesamtanzahl der auf Ihrem tragbaren Wiedergabegerät gespeicherten Objekte an, die Gesamtzeit der möglichen Wiedergabe in Tagen und Stunden und den insgasamt genutzten Speicherplatz.</p>
+    
+  </section>
+
+  <section id="sync-manually">
+    <title>Abgleichen Ihrer gesamten Bibliothek</title>
+    <p>Sie können Medien von Banshee auf Ihr tragbares Wiedergabegerät ziehen und dort ablegen. Wählen Sie die Datei oder die Dateien aus, die Sie auf Ihr tragbares Wiedergabegerät kopieren möchten, dann klicken Sie sie mit der rechten Maustaste an, halten diese gedrückt und ziehen die Dateien auf das Symbol Ihres tragbaren Wiedergabegerätes in Banshee. Dadurch werden die Dateien auf Ihr Gerät kopiert.</p>
+    
+    <p>Falls Ihre Musikbibliothek in einem Format vorliegt, mit dem Ihr tragbares Wiedergabegerät nicht umgehen kann, wie OGG oder FLAC, Sie aber die notwendigen Codecs installiert haben, dann kann Banshee diese Dateien bei der Übertragung auf Ihr tragbares Wiedergabegerät automatisch in MP3 umwandeln. Prüfen Sie in Ihrer Distribution, ob die notwendigen Codecs vorhanden sind. Einzelheiten dazu liegen außerhalb des Bereichs dieser Dokumentation und können von Distribution zu Distribution variieren.</p>
+    
+    <note style="tip">
+      <p>Möglicherweise müssen Sie Ihr Gerät »auswerfen«, bevor die Dateien korrekt auf Ihr tragbares Wiedergabegerät geladen werden können. Um Ihr Gerät in Banshee auszuwerfen, klicken Sie mit der rechten Maustaste auf das Gerät im Banshee-Menü und klicken anschließend auf <gui>Trennen</gui>.</p>
+    </note>
+
+  </section>
+  
+  <section id="pmp-play">
+    <title>Abspielen von Musik von tragbaren Abspielgeräten</title>
+    <p>Sie können auf Ihrem tragbaren Wiedergabegerät gespeicherte Musik direkt in Banshee anhören. Wählen Sie Ihr Wiedergabegerät im Banshee-Menü an der linken Seite aus, woraufhin die Bibliothek Ihres tragbaren Wiedergabegerätes angezeigt wird. Sie können Sie Musik dann so wiedergeben, als ob Sie sich direkt in Ihrer eigenen Bibliothek befinden würde.</p>
+  </section>
+  
+  <section id="pmp-delete">
+    <title>Löschen von Musik von tragbaren Abspielgeräten</title>
+    <p>Um Titel zu löschen, die auf Ihrem tragbaren Wiedergabegerät gespeichert sind, wählen Sie Ihr Wiedergabegerät in Banshee aus, um dessen Bibliothek anzuzeigen. Wählen Sie dann die zu löschenden Titel aus, klicken Sie sie mit der rechten Maustaste an und wählen Sie <gui>Löschen</gui>. Alternativ wählen Sie im Menü <guiseq><gui>Bearbeiten</gui><gui>Löschen</gui></guiseq>.</p>
+    
+     <note style="warning">
+      <p>Dateien auf tragbaren Geräten werden dauerhaft entfernt und können nicht wiederhergestellt werden.</p>
+    </note>
+    
+  </section>
+
+	
+</page>

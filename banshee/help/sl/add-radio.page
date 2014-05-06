@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="add-radio" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <link type="seealso" xref="add-podcasts"/>
+    <link type="seealso" xref="import"/>
+    <desc>Dodajte, odstranite in predvajajte internetne radijske postaje v Banshee.</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-20" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Internetni radio</title> 
+  
+  <section id="radiodescription">
+     <title>Kaj je internetni radio?</title>
+     
+  <p>Internetne radijske postaje so podobne običajnim radijskim postajam. Posamezniku ali organizaciji omogočajo živo pretakanje glasbe preko interneta. Internetne radijske postaje so lahko hkraten pretok običajne radijske postaje, amaterji, ki razpršeno oddajajo svojo lastno postajo ali komercialne internetne radijske postaje, ki vključujejo DJ-je in celo reklame.</p>
+  
+  </section>
+  
+  <section id="addradio">
+  
+  <title>Dodajanje radijske postaje</title>
+  
+  <p>Za dodajanje internetne radijske postaje v Banshee v zgornjem desnem kotu Banshee pritisnite <gui>Dodaj postajo</gui> ali pa v meniju izberite <guiseq><gui>Večpredstavnost</gui><gui>Dodaj postajo</gui></guiseq>.</p>
+  
+  <p>S spletne strani internetne radijske postaje v svojem brskalniku kopirajte povezavo do URL-ja njihovega pretoka. V večini brskalnikom lahko desno kliknete na povezavo in pritisnete <gui>Kopiraj povezavo</gui>.</p>
+   
+
+  <p>Banshee vas bo pozval k vnosu <gui>Zvrsti postaje</gui>. Iz razpoložljivih možnosti spustnega menija izberite vrsto glasbe, ki jo internetna radijska postaja predvaja. Vnesti boste morali <gui>Ime postaje</gui>. Nato pritisnite tabulator ali uporabite svojo miško za izbiro pogovornega okna <gui>URL pretoka:</gui>  v katerega prilepite URL radijske postaje.  Z miško desno kliknite in izberite <gui>Prilepi</gui> ali pritisnite <keyseq><key>Control</key>+<key>V</key></keyseq>.</p>
+  
+  <p>Če želite, lahko izpolnite tudi polja <gui>Ustvarjalec postaje</gui>, <gui>Opis</gui> in <gui>Ocena</gui>.</p>
+  
+  <p>Nato pritisnite <gui>Shrani</gui> za shranjevanje internetne radijske postaje v Banshee.</p>
+  
+  </section>
+  	  	  
+</page>

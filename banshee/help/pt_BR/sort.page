@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sort" xml:lang="pt_BR">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="search"/>
+    <desc>Ordene suas mídias e adicione colunas adicionais.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Ordenar suas mídias</title>
+
+  <section id="addcolumn">
+
+  <title>Adicionando colunas</title>    
+  
+  <p>Conforme sua biblioteca cresce, você pode desejar alterar sua visualização da biblioteca para adicionar informações complementares sobre as músicas à sua biblioteca ou alterar a forma de ver e ordenar suas músicas, artistas ou álbums.</p>
+  
+  <p>Você pode adicionar colunas extras para a visualização de biblioteca no <app>Banshee</app> para ter maiores informações sobre as músicas e também permitir ordenar de maneira diferente, por padrão o Banshee mostra as seguintes colunas para músicas <gui>Nome</gui>, <gui>Artista</gui>, <gui>Álbum</gui>, e <gui>Duração</gui>. Para adicionar colunas extra clique com o botão direito do mouse em qualquer uma das colunas, o Banshee irá mostrar todas as colunas disponíveis, para escolhar uma delas marque o checkbox perto do nome da coluna que deseja adicionar à visualização de biblioteca.</p>
+  
+  </section>
+  
+  <section id="sorting">
+    <title>Ordenando colunas</title>
+    <p>Você pode ordenar sua biblioteca clicando com o mouse em qualquer uma das colunas mostradas na visualização de biblioteca, se você deseja ordenar por Artista, clique no topo da coluna <gui>Artista</gui>, e o Banshee automaticamente irá ordenar esta coluna alfabeticamente, clicando novamente na coluna <gui>Artista</gui> o Banshee irá ordenar a coluna na ordem alfabética inversa.</p>
+  </section>
+	
+</page>

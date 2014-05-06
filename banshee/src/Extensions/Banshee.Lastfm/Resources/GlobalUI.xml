@@ -1,0 +1,34 @@
+<ui>
+    <popup name="LastfmSourcePopup" action="LastfmSourcePopupAction">
+        <placeholder name="LastfmAddPlaceholder" />
+        <menuitem name="Connect" action="LastfmConnectAction" />
+        <menu name='SortChildren' action='SortChildrenAction' />
+        <separator />
+        <menuitem name="SourcePreferences" action="SourcePreferencesAction"/>
+    </popup>
+
+    <popup name="LastfmArtistPopup" action="LastfmArtistPopup">
+        <menuitem name="LastfmArtistVisitLastfm" action="LastfmArtistVisitLastfmAction" />
+        <menuitem name="LastfmArtistVisitWikipedia" action="LastfmArtistVisitWikipediaAction" />
+        <!--<menuitem name="LastfmArtistVisitAmazon" action="LastfmArtistVisitAmazonAction" />-->
+        <placeholder name="LastfmArtistPlayPlaceholder" />
+        <menuitem name="LastfmArtistRecommend" action="LastfmArtistRecommendAction" />
+    </popup>
+
+    <popup name="LastfmAlbumPopup" action="LastfmAlbumPopup">
+        <menuitem name="LastfmAlbumVisitLastfm" action="LastfmAlbumVisitLastfmAction" />
+        <menuitem name="LastfmArtistVisitWikipedia" action="LastfmArtistVisitWikipediaAction" />
+        <!--<menuitem name="LastfmAlbumVisitAmazon" action="LastfmAlbumVisitAmazonAction" />-->
+        <placeholder name="LastfmAlbumPlayPlaceholder" />
+        <menuitem name="LastfmAlbumRecommend" action="LastfmAlbumRecommendAction" />
+    </popup>
+
+    <popup name="LastfmTrackPopup" action="LastfmTrackPopup">
+        <menuitem name="LastfmTrackVisitLastfm" action="LastfmTrackVisitLastfmAction" />
+        <menuitem name="LastfmArtistViewVideos" action="LastfmArtistViewVideosAction" />
+        <menuitem name="LastfmArtistVisitWikipedia" action="LastfmArtistVisitWikipediaAction" />
+        <!--<menuitem name="LastfmAlbumVisitAmazon" action="LastfmAlbumVisitAmazonAction" />-->
+        <placeholder name="LastfmTrackPlayPlaceholder" />
+        <!--<menuitem name="LastfmTrackRecommend" action="LastfmTrackRecommendAction" />-->
+    </popup>
+</ui>

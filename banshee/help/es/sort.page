@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sort" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="search"/>
+    <desc>Ordenar su contenido multimedia y añadir columnas adicionales.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Ordenar su contenido multimedia </title>
+
+  <section id="addcolumn">
+
+  <title>Añadir columnas</title>    
+  
+  <p>A medida que su colección crece, puede querer cambiar la vista de su colección para añadir información adicional sobre las canciones de su colección o cambiar la forma en que puede ver y ordenar sus canciones, artistas o álbumes.</p>
+  
+  <p>Puede añadir más columnas a la vista de colección en <app>Banshee</app> para obtener más información sobre las canciones y para permitirle ordenarlas. De manera predeterminada, Banshee muestra columnas para las canciones que incluyen <gui>Nombre</gui>, <gui>Artista</gui>, <gui>Álbum</gui> y <gui>Duración</gui>. Para añadir columnas adicionales, pulse con el botón derecho del ratón en cualquiera de las columnas y Banshee mostrará todas las columnas disponibles para elegir. Pulse en la casilla junto al nombre de la columna que quiere añadir a la vista de colección.</p>
+  
+  </section>
+  
+  <section id="sorting">
+    <title>Ordenar columnas</title>
+    <p>Puede ordenar su colección usando su ratón para pulsar en cualquiera de las columnas mostradas en la vista de colección. Si quiere ordenar su colección de música por artista, pulse en la cabecera de la columna <gui>Artista</gui> y Banshee ordenará automáticamente esa columna por orden alfabético. Pulsando otra vez en la columna <gui>Artista</gui>, la columna se ordenará en orden alfabético inverso.</p>
+  </section>
+	
+</page>

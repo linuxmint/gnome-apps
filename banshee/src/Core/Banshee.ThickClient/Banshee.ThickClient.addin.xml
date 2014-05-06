@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Addin 
+    id="Banshee.ThickClient"
+    isroot="true"
+    version="1.0"
+    compatVersion="1.0"
+    copyright="© 2008 Novell Inc. Licensed under the MIT X11 license."
+    category="required:Core"
+    description="Provides GUI utilities and services."
+    defaultEnabled="true">
+
+  <Dependencies>
+    <Addin id="Banshee.Services" version="1.0" />
+  </Dependencies>
+
+  <!-- Internal Extensions -->
+  
+  <Extension path="/Banshee/Library/ImportSource">
+    <ImportSource class="Banshee.Library.Gui.FolderImportSource"/>
+    <ImportSource class="Banshee.Library.Gui.FileImportSource"/>
+  </Extension>
+  
+  <Extension path="/Banshee/Gui/TrackEditor/NotebookPage">
+    <TrackEditorPage class="Banshee.Gui.TrackEditor.BasicTrackDetailsPage"/>
+    <TrackEditorPage class="Banshee.Gui.TrackEditor.ExtraTrackDetailsPage"/>
+    <TrackEditorPage class="Banshee.Gui.TrackEditor.SortingPage"/>
+    <!--<TrackEditorPage class="Banshee.Gui.TrackEditor.LyricsPage"/>-->
+    <TrackEditorPage class="Banshee.Gui.TrackEditor.StatisticsPage"/>
+    <!--<TrackEditorPage class="Banshee.Gui.TrackEditor.HelpPage"/>-->
+  </Extension>
+  
+  <!-- Exported Extension Points -->
+  
+  <ExtensionPoint path="/Banshee/ThickClient/ActionGroup">
+    <Description>Defines a new GTK+ action group, possibly in conjunction with a Source extension.</Description>
+    <ExtensionNode name="ActionGroup"/>
+  </ExtensionPoint>
+
+  <ExtensionPoint path="/Banshee/ThickClient/SourceView">
+    <Description>Defines a new GTK+ source view, possibly in conjunction with a Source extension.</Description>
+    <ExtensionNode name="SourceView"/>
+  </ExtensionPoint>
+  
+  <ExtensionPoint path="/Banshee/ThickClient/GtkBaseClient/PostInitializeGtk">
+    <Description>An extension point that runs immediately after initializing GTK.</Description>
+    <ExtensionNode name="PostInitializeGtk"/>
+  </ExtensionPoint>
+
+  <ExtensionPoint path="/Banshee/ThickClient/ContextPane">
+    <Description>Defines a new GTK+ context page, for showing contextual information beneath the main track source view.</Description>
+    <ExtensionNode name="ContextPage"/>
+  </ExtensionPoint>
+  
+  <ExtensionPoint path="/Banshee/Gui/TrackEditor/NotebookPage">
+    <Description>Defines a new notebook page for the track editor.</Description>
+    <ExtensionNode name="TrackEditorPage"/>
+  </ExtensionPoint>
+
+  <ExtensionPoint path="/Banshee/Gui/TrackEditor/Modifier">
+    <Description>Defines an extension for the track editor that can modify it in some way.</Description>
+    <ExtensionNode name="Modifier"/>
+  </ExtensionPoint>
+
+  <ExtensionPoint path="/Banshee/Gui/NativeFileChooserDialog">
+    <Description>Defines an extension that provides a custom (possibly native) file chooser dialog.</Description>
+    <ExtensionNode name="NativeFileChooserDialog"/>
+  </ExtensionPoint>
+</Addin>

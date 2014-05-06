@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Szinkronizálja médiafájljait hordozható zenelejátszóra vagy okostelefonra.</desc>
+    <revision pkgversion="1.8" version="0.1" date="2010-08-29" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Szinkronizálás</title>    
+  
+  <p>A Banshee támogatja zenéinek szinkronizálását hordozható médialejátszókra és okostelefonokra. Szinkronizálhat egyes zeneszámokat, albumokat vagy lejátszólistákat, vagy beállíthatja a Bansheet a zenelejátszó szinkronban tartására a teljes gyűjteménnyel. A lejátszója számítógéphez csatlakoztatása után lejátszhatja az azon tárolt zenéit a Bansheeban. Ha veszteségmentes, például FLAC formátumban tárolt zenéit szinkronizálja, a Banshee automatikusan átkódolja veszteséges, például Ogg Vorbis vagy MP3 formátumba, ha a megfelelő kodekek telepítve vannak.</p>
+  
+  <section id="devices">
+    <title>Eszköztámogatás</title>
+    <p>A Banshee majdnem minden modern hordozható zenelejátszót és okostelefont támogat, kivéve az Apple iPhone, iPad és iPod Touch eszközöket.</p>
+  
+  <p>Amikor csatlakoztatja az eszközt, a Banshee megjeleníti azt a bal oldali menüben. Az eszközikon megnyomása eljuttatja az eszköz kezdőoldalára a Bansheeban, amely a szinkronizálási beállításokat jeleníti meg.</p>
+  
+  </section>
+  
+    <section id="sync-settings">
+    <title>Zenéinek szinkronizálása</title>
+    <p>Hagyhatja, hogy a hordozható zenelejátszón lévő médiafájlokat a Banshee automatikusan szinkronizálja, vagy saját kezűleg is kezelheti zenéit és médiafájljait.</p>
+    
+    <p>Válassza ki az eszközt a Banshee menüjéből, és válassza ki, hogyan szeretné szinkronizálni médiafájljait, beleértve a következőket:</p>
+    <list>
+      <item><p>Zene</p></item>
+      <item><p>Hangoskönyvek</p></item>  
+      <item><p>Videók</p></item>
+      <item><p>Podcast</p></item>  
+    </list>
+    
+    <p>Az egyes médiatípusok melletti legördülő menüből válasszon a következőkből:</p>
+    <list>
+      <item><p>Kezelés saját kezűleg</p></item>
+      <item><p>Teljes gyűjtemény szinkronizálása</p></item>  
+    </list>    
+    
+    <note style="warning">
+      <p>Ha a teljes gyűjtemény automatikus szinkronizálását választja a hordozható médialejátszóval, akkor győződjön meg róla, hogy a médialejátszón elegendő szabad hely van. Ha a gyűjteménye nagyobb, mint a hordozható médialejátszón elérhető szabad hely, akkor a Banshee addig szinkronizál, amíg a lejátszó meg nem telik, majd abbahagyja.</p>
+    </note>
+    
+    <p>Ha zenegyűjteményében létrehozott lejátszólistákat vagy okos lejátszólistákat, akkor ezek is megjelennek zeneszinkronizálási lehetőségként. Ez okos lejátszólisták létrehozásakor lehet hasznos, mivel az okos lejátszólisták automatikusan frissülnek a lejátszólista szabályainak megfelelő új tartalom felvételekor, és a Banshee az új lejátszólistát szinkronizálni fogja az eszközre annak minden egyes csatlakoztatásakor.</p>
+    
+    <p>A Banshee ablak közepén alul egy grafikonon megjelenik a hordozható zenelejátszó teljes merevlemez-területe. A grafikon megjeleníti, hogy mennyi helyet foglalnak a hangfájlok, a videók, az egyéb fájlok, és a szabad helyet. Ez alatt közvetlenül megjelenik, hogy összesen hány fájlt tárol a hordozható zenelejátszó, ez hány óra vagy nap alatt hallgatható végig, és az összesen felhasznált hely.</p>
+    
+  </section>
+
+  <section id="sync-manually">
+    <title>Teljes gyűjtemény szinkronizálása</title>
+    <p>A Bansheeból fogd és vidd módszerrel is másolhat fájlokat hordozható zenelejátszójára. Válassza ki az átmásolni kívánt fájlokat, nyomja le és tartsa lenyomva a jobb egérgombot, és húzza a fájlokat a hordozható zenelejátszó ikonjára a Bansheeban. Ez átmásolja a fájlokat az eszközre.</p>
+    
+    <p>Ha zenegyűjteménye olyan, például OGG vagy FLAC formátumban van kódolva, amit a hordozható zenelejátszó nem támogat, és a szükséges kodekek telepítve vannak, akkor a Banshee automatikusan át tudja kódolni ezeket a fájlokat MP3-ba azok átvitelekor a hordozható zenelejátszóra. A szükséges kodekekkel kapcsolatban nézze meg Linux disztribúciója dokumentációját, mivel ezek telepítésének módja disztribúciónként eltér.</p>
+    
+    <note style="tip">
+      <p>A hordozható zenelejátszón lévő fájlok megfelelő betöltéséhez szükség lehet az eszköz kiadására. Az eszköz Bansheeból való kiadásához kattintson a jobb egérgombbal az eszközre a Banshee menüben, és válassza a <gui>Leválasztás</gui> menüpontot.</p>
+    </note>
+
+  </section>
+  
+  <section id="pmp-play">
+    <title>Zene lejátszása hordozható zenelejátszóról</title>
+    <p>A hordozható zenelejátszón tárolt zenéket közvetlenül lejátszhatja a Bansheeban. Válassza ki lejátszóját a Banshee bal oldali menüjéből, és megjelenik a hordozható zenelejátszó gyűjteménye. Ekkor ugyanúgy lejátszhatja a zenét a Bansheeban, mintha az a saját gyűjteményében lenne.</p>
+  </section>
+  
+  <section id="pmp-delete">
+    <title>Zene eltávolítása hordozható zenelejátszóról</title>
+    <p>A hordozható zenelejátszón tárolt dalok eltávolításához válassza ki a lejátszót a Bansheeban a gyűjteményének megjelenítéséhez. Válassza ki az eltávolítani kívánt számokat, kattintson a jobb egérgombbal a számokra, és válassza a <gui>Törlés</gui> menüpontot, vagy a menü <guiseq><gui>Szerkesztés</gui><gui>Törlés</gui></guiseq> menüpontját.</p>
+    
+     <note style="warning">
+      <p>A fájlok törlése a hordozható zenelejátszóról végleges, a törölt fájlok nem állíthatók helyre.</p>
+    </note>
+    
+  </section>
+
+	
+</page>

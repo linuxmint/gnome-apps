@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Synchronizujte svá média s přenosnými přehrávači a smartfony.</desc>
+    <revision pkgversion="1.8" version="0.1" date="2010-08-29" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Synchronizace</title>    
+  
+  <p>Přehrávač Banshee podporuje synchronizaci vaší hudby do přenosných multimediálních přehrávačů a smartfonů. Můžete přidávat konkrétní hudební stopy, alba nebo seznamy skladeb nebo dovolit Banshee udržovat váš hudební přehrávač synchronizovaný s určitou z kolekcí. Po připojení vašeho přehrávače k počítači můžete na něm také v Banshee přehrávat skladby. Když synchronizujete hudbu v bezeztrátovém formátu (jako je FLAC) bude Banshee, pokud máte nainstalovaný správný kodek, překódovávat vaši hudbu do ztrátového formátu (jako je Ogg nebo MP3).</p>
+  
+  <section id="devices">
+    <title>Podpora zařízení</title>
+    <p>Banshee podporuje téměř všechny moderní přenosné hudební přehrávače a smartfony se známými výjimkami týkajícími se Apple iPhone, iPad a iPod Touch.</p>
+  
+  <p>Když své zařízení připojíte, přehrávač Banshee jej zobrazí v nabídce vlevo. Zmáčknutím ikony zařízení se přenesete na domovskou stránku svého zařízení v Banshee, která zobrazuje vaše předvolby synchronizace.</p>
+  
+  </section>
+  
+    <section id="sync-settings">
+    <title>Synchronizace vaší hudby</title>
+    <p>Můžete zvolit, aby přehrávač Banshee synchronizoval média na vašem přenosném přehrávači automaticky nebo můžete svoji hudbu a média spravovat ručně.</p>
+    
+    <p>Zvolte v nabídce Banshee své zařízení a pak zvolte, jak chcete synchronizovat svá média, včetně:</p>
+    <list>
+      <item><p>hudby</p></item>
+      <item><p>mluvených knih</p></item>  
+      <item><p>videí</p></item>
+      <item><p>podcastů</p></item>  
+    </list>
+    
+    <p>Z rozbalovací nabídky u každého média zvolte z:</p>
+    <list>
+      <item><p>Spravovat ručně</p></item>
+      <item><p>Synchronizovat celou kolekci</p></item>  
+    </list>    
+    
+    <note style="warning">
+      <p>Pokud zvolíte synchronizaci své celé kolekce s přenosným přehrávačem automaticky, ujistěte se, že váš přenosný multimediální přehrávač má dostatek úložného místa. V případě, že je kolekce větší než dostupné místo v přehrávači, Banshee bude média synchronizovat dokud se přehrávač nezaplní a pak synchronizaci ukončí.</p>
+    </note>
+    
+    <p>Jestliže máte ve své kolekci vytvořen seznam skladeb nebo chytrý seznam skladeb, bude rovněž zobrazen jako volba synchronizace pro hudbu. To může být užitečné, když vytváříte chytré seznamy skladeb tak, že chytré seznamy skladeb budou automaticky aktualizovány, když je přidán nový obsah podle pravidel seznamu skladeb a Banshee synchronizuje nový seznam skladeb do zařízení pokaždé, když jej připojíte.</p>
+    
+    <p>Přehrávač Banshee bude zobrazovat celkové místo na disku vašeho přenosného multimediálního přehrávače v grafu dole uprostřed okna Banshee. Graf vám ukáže, kolik prostoru zabírají zvukové soubory, videa, ostatní soubory a volné místo. Přímo pod ním Banshee zobrazuje, kolik položek celkem je na vašem přenosném přehrávači uloženo, kolika hodinám či dnům poslechu to odpovídá a celkové obsazené místo.</p>
+    
+  </section>
+
+  <section id="sync-manually">
+    <title>Synchronizace celé vaší kolekce</title>
+    <p>Média z Banshee do přenosného hudebního přehrávače můžete přenášet způsobem táhni a pusť. Vyberte soubor či soubory, které chcete překopírovat do přehrávače a zmáčkněte a držte pravé tlačítko myši a přetáhněte soubor(y) na ikonu přenosného multimediálního přehrávače v Banshee. Tím se soubory do vašeho zařízení překopírují.</p>
+    
+    <p>V případě, že je vaše hudební kolekce kódována ve formátu, který váš hudební přehrávač nepodporuje, třeba OGG nebo FLAC, a máte nainstalován patřičný kodek, umí Banshee soubory při přenosu do vašeho přenosného multimediálního přehrávač automaticky překódovat do MP3. To jak zkontrolovat, zda vaše distribuce obsahuje potřebné kodeky, je mimo rámec této příručky a liší se distribuci od distribuce.</p>
+    
+    <note style="tip">
+      <p>Aby se soubory do přenosného multimediálního přehrávače správně načetly, může být zapotřebí zařízení „vysunout“. V Banshee k tomu použijte kliknutí pravým tlačítkem myši na zařízení a v nabídce zmáčkněte <gui>Odpojit</gui>.</p>
+    </note>
+
+  </section>
+  
+  <section id="pmp-play">
+    <title>Přehrávání hudby z vašeho přenosného hudebního přehrávače</title>
+    <p>Hudbu uloženou na svém přenosném multimediálním přehrávači můžete v Banshee rovnou přehrávat. V nabídce nalevo zvolte svůj přehrávač a zobrazí se kolekce vašeho přenosného přehrávače. Hudbu pak můžete přehrávat úplně stejně, jako ze své vlastní kolekce.</p>
+  </section>
+  
+  <section id="pmp-delete">
+    <title>Odstraňování hudby z vašeho přenosného hudebního přehrávače</title>
+    <p>Pokud chcete odstranit skladbu uloženou ve svém přenosném multimediálním přehrávači, zvolte v Banshee zobrazení jeho kolekce. Po té zvolte stopu, kterou si přejete odstranit, klikněte na ni pravým tlačítkem a zvolte <gui>Odstranit</gui> nebo v nabídce zvolte <guiseq><gui>Upravit</gui><gui>Odstranit</gui></guiseq>.</p>
+    
+     <note style="warning">
+      <p>Odstraněné soubory se z vašeho přenosného hudebního přehrávače smažou trvale a již je nebudete moci obnovit.</p>
+    </note>
+    
+  </section>
+
+	
+</page>

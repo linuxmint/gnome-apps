@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="ui" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-19" status="stub"/>
+    <desc>Un aperçu de l'interface utilisateur de <app>Banshee</app>.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Introduction à l'interface utilisateur de Banshee</title>
+
+  <figure>
+    <title>Fenêtre du <gui>Lecteur multimédia Banshee</gui></title>
+    <desc><app>Lecteur multimédia Banshee</app></desc>
+    <media type="image" src="figures/banshee.png" mime="image/png" style="right">
+      <p>Interface de la bibliothèque <app>Banshee</app></p>
+    </media>
+  </figure>
+  
+<section id="context">
+  <title>Ressources</title>
+    <p>Vos ressources musicales et vidéos apparaissent à gauche dans Banshee. Ces ressources permettent un accès rapide à vos files d'attente de lecture, musiques, vidéos, Amazon, Last.fm, podcasts et davantage encore.</p>
+    
+    <note style="tip">
+      <p>Les options du menu sont différentes selon le choix de votre ressource. Par exemple, pour accéder au menu d'importation de podcast, vous devez sélectionner la ressource Podcast. Si vous êtes déjà en train de parcourir vos bibliothèques de vidéo ou de musique, cette option du menu est inaccessible.</p>
+    </note> 
+</section>
+
+<section id="browser">
+  <title>L'explorateur de bibliothèque</title>
+  <p>En sélectionnant une ressource de musique ou de vidéo parmi vos ressources, Banshee affiche le contenu correspondant dans l'explorateur de bibliothèque. En fonction du choix de la ressource, Banshee peut afficher vos bibliothèques musicales ou vidéos, vos abonnements à des podcasts et même la boutique de musique Amazon pour vous permettre d'acheter de la musique.</p>
+</section>
+
+<section id="nowplaying">
+  <title>Affichage en mode Lecture en cours</title>
+  <p>Pratique lorsque vous utilisez Banshee en mode plein écran, le mode Lecture en cours masque la bibliothèque afin de vous offrir une vue optimale de la musique ou de la vidéo que vous regardez. Si vous écoutez de la musique, le mode Lecture en cours affiche le nom de l'artiste, de l'album et le graphisme de la pochette si disponible. Si vous regardez une vidéo, Banshee diffuse la vidéo.</p>
+  
+  <p>Pour passer du mode Lecture en cours au mode plein écran et cacher l'interface utilisateur de Banshee, vous pouvez appuyer sur la touche <key>F</key>, cliquer sur le bouton <gui>Plein écran</gui> dans le coin supérieur droit ou sélectionner le menu <guiseq><gui>Affichage</gui><gui>Plein écran</gui></guiseq></p>
+  
+</section>
+
+<section id="library">
+  <title>La bibliothèque</title>
+  <p>L'affichage de la bibliothèque dans Banshee est fonction de la ressource que vous avez sélectionnée. La bibliothèque musicale affiche les pochettes, les artistes et la liste des chansons disponibles. La bibliothèque des podcasts affiche vos abonnements en cours, les podcasts téléchargés ou non et tous les nouveaux ou anciens podcasts. Veuillez consulter chaque page d'aide correspondant à chacune des ressources possibles pour de plus amples informations sur chacune d'elle.</p>
+</section>
+
+
+</page>

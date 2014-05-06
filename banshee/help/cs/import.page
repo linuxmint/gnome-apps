@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="import" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <desc>Přidávejte hudbu a videa ze svého počítače do své kolekce Banshee.</desc>
+    <revision pkgversion="1.6" version="1.6" date="2010-07-15" status="review"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Import hudby a videa</title>
+
+  <p>Do přehrávače Banshee můžete importovat hudbu a videa uložená na svém počítači. Importované soubory se objeví ve vašich zdrojích a lze je v Banshee upravovat a spravovat podobně jako ostatní média.</p>
+
+  <p>Pokud chcete zvukové nebo video soubory ve svém počítači importovat, zvolte <guiseq><gui>Média</gui><gui>Importovat média</gui></guiseq>. Objeví se dialogové okno s několika volbami.</p>
+
+  <note>
+    <p>Zásuvné moduly mohou přidat další volby importu. Viz <link xref="#plugins"/> dále.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Místní složky</gui></title>
+      <p>Tuto volbu vyberte, když chcete importovat všechny zvukové a video soubory z určité složky a jejích podsložek. Budete v dialogovém okně dotázáni na volbu složky, ze které se má importovat.</p>
+    </item>
+    <item>
+      <title><gui>Místní soubory</gui></title>
+      <p>Tuto volbu vyberte, když chcete importovat jen konkrétní soubory nebo soubory, které si vyberete. Budete v dialogovém okně dotázáni na volbu souboru či souborů, které se mají importovat.</p>
+    </item>
+    <item>
+      <title><gui>Domovská složka</gui></title>
+      <p>Tuto volbu vyberte, když chcete importovat všechny zvukové a video soubory z celé vaší domovské složky, včetně souborů v podsložkách.</p>
+    </item>
+    <item>
+      <title><gui>Videa ze složky fotografií</gui></title>
+      <p>Řada digitálních fotoaparátů umí pořizovat i krátká videa a aplikace pro správu fotografií je často načtou přímo do vaší složky Obrázky. Tuto volbu vyberte, když chcete importovat libovolná videa, která jsou uložena ve vaší složce Obrázky.</p>
+    </item>
+  </terms>
+
+  <note>
+    <p>Bez problémů můžete importovat ze složky, ze které jste již dříve importovali, aniž byste se museli obávat duplicity ve své kolekci.</p>
+  </note>
+  
+  <section id="import-playlist">
+    <title>Import ze seznamu skladeb</title>
+    <p>Hudbu můžete importovat také ze seznamů skladeb. Většina souborů se seznamy skladeb má příponu <em>m3u</em>. Pokud chcete importovat ze seznamu skladeb, v nabídce Banshee zvolte <guiseq><gui>Média</gui><gui>Importovat seznam skladeb</gui></guiseq> a nejděte ve složce správný seznam, vyberte jej a zmáčkněte <gui>Importovat</gui>.</p>
+  </section>
+  
+  <section id="plugins">
+    <title>Další zdroje pro import</title>
+    <p>Zásuvné moduly mohou doplnit další volby importu. Následující další zdroje budou dostupné, pokud jsou zapnuté příslušné zásuvné moduly:</p>
+  </section>
+  	
+</page>

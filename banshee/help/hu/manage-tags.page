@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="tags" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="coverart"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Zenecímkék és metaadatok szerkesztése.</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-09" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Zene metadatai</title>
+
+  <section id="metadata">
+
+  <title>Zene metaadatai</title>    
+  
+  	<p>A digitalizált zene metaadatokat tartalmazhat, ezek az adatok információkat tárolnak a zenei fájlban, például az előadót, az albumot, a felvétel évét, a műfajt és sok mást. Majdnem minden, az internetről vásárolt zene már tartalmazza a metaadatokat, és ha zenéit CD-ről importálja, a Banshee a CD beolvasásakor fel fogja venni a metaadatokat, ha azok elérhetők. A CD-k beolvasásával és a metaadatok felvételével kapcsolatos további információkért nézze meg a <link xref="import"/> részt.</p>
+  	
+  	<p>A népszerű metaadat-formátumok az ID3v1 és ID3v2 az MP3 fájlokhoz, és a Vorbis megjegyzések OGG Vorbis fájlokhoz.</p>	
+  
+  	<p>Ha metaadatokat nem tartalmazó számokat importált, a <app>Banshee</app> az <gui>Ismeretlen</gui> szót fogja megjeleníteni a gyűjtemény legtöbb mezőjében.</p>
+  	
+  </section>
+
+  <section id="editmetadata"> 	
+    
+    <title>Metaadatok szerkesztése</title>
+    
+    <p>A számok metaadatait szerkesztheti. Válassza ki a frissíteni kívánt számokat, és nyomja meg az <key>E</key> billentyűt, vagy válassza a <guiseq><gui>Szerkesztés</gui><gui>Száminformációk szerkesztése</gui></guiseq> menüpontot, vagy kattintson a jobb egérgombbal a fájlokra, és válassza a <gui>Száminformációk szerkesztése</gui> menüpontot.</p>
+    
+    <p>Megjelenik egy párbeszédablak, amely megjeleníti a szám metaadatait, és lehetővé teszi azok módosítását. Az alapesetben megjelenített mezők:</p>
+    
+    <list>
+      <item><p><gui>Szám címe</gui></p></item>
+      <item><p><gui>Szám előadója</gui></p></item>
+      <item><p><gui>Album címe</gui></p></item>
+      <item><p><gui>Műfaj</gui></p></item>
+      <item><p><gui>Szám sorszáma</gui></p></item>
+      <item><p><gui>Lemezszám</gui></p></item>
+      <item><p><gui>Év</gui></p></item>
+    </list>
+    
+    <p>Frissítse a szám információit. Ha több számot választott ki a szerkesztéshez, és végzett egy szám szerkesztésével, akkor nyomja meg a jobbra nyíl ikont a <gui>Szám címe</gui> mezőtől jobbra, vagy nyomja meg a <gui>Tovább</gui> gombot az ablak alján a következő számra lépéshez. Ha befejezte a metaadatok szerkesztését, akkor nyomja meg a <gui>Mentés</gui> gombot.</p>
+   
+  </section>
+
+</page>

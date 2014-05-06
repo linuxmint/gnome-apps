@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="amazon" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#extensions"/>
+    <link type="seealso" xref=""/>
+    <desc>Amazon MP3ストアで購入した楽曲を同期する</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-07-11" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Amazon MP3ストア</title>    
+  
+  <p>BansheeはAmazon MP3ストアから音楽のダウンロードとインポートをサポートしています。ウェブブラウザーもしくはBansheeの中でAmazonから購入した音楽ファイルは手動でインポートすることができます。Amazonは一部の国ではMP3形式による音楽の販売を提供していますが、場所によってはAmazonからMP3ファイルを購入することができない場合もあります。</p>
+   
+   <note style="important">
+     <p>Bansheeは、すべての楽曲の購入に対してAmazonアフィリエイトコードを使います。このアフィリエイトコードで得たすべての利益はGNOME Foundationに寄付されます。</p>
+   </note>
+   
+  <section id="amazon-browser">
+  <title>ウェブブラウザーからAmazon MP3を購入する</title> 
+  
+  <p>楽曲をAmazon MP3ストアから購入した場合、自動的にダウンロードされてBansheeにインポートされます。 Bansheeは、Amazonと連携して.amzファイルからMP3をダウンロードするための仕組みを提供しています。 Amazonで音楽を購入する場合、Webブラウザーは.amzファイルをダウンロードすると自動的にBansheeを開き、ダウンロードを開始して楽曲をインポートします。</p>
+  </section>
+  
+  <section id="amazon-banshee">
+  <title>Banshee内でAmazon MP3を購入する</title> 
+  
+  <p>Banshee内でAmazonで曲を検索することができます。Bansheeの左側のソースからAmazon MP3ストアを選択してください。これはウェブブラウザーだった場合と同じく、Amazon MP3ストアが読み込まれます。Amazonにログインした後、購入したい音楽を検索することができ、ワンクリックで購入できます。購入した後、Bansheeは自動的にダウンロードし、ライブラリにインポートします。</p>
+  </section>
+  
+  <section id="amazon-manual">
+  <title>Amazon MP3を手動でインポートする</title> 
+  
+  <p>ウェブブラウザーからAmazon MP3ストアで音楽を購入した時、.amz形式の拡張を持ったファイルがハードディスクにダウンロードされます。Amazonから購入した音楽を手動でBansheeへインポートする場合、Bansheeのメニューから<guiseq><gui>メディア</gui><gui>メディアをインポート</gui></guiseq>を選び、.amzファイルを選択してインポートを行います。Bansheeは指定されたファイルを開き、Amazon MP3ストアに接続し、ダウンロードが始まります。</p>
+  
+  <note style="warning">
+    <p>Amazonの.amzファイルには短時間だけ有効なファイルです。購入した音楽をすぐにダウンロードしないでファイルが有効期限切れになるとAmazonから音楽をダウンロードすることはできません。Amazonは.amzファイルがどのぐらいの期間有効なのか確認する方法を公開していません。そのため、ダウンロード購入したらすぐにAmazonからインポートすることをお勧めします。</p>
+  </note>
+  </section> 
+	
+</page>

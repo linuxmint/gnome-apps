@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboardshortcuts" xml:lang="ja">
+
+<info>
+    <link type="guide" xref="advanced#keyboard"/>
+  <desc>キーボードショートカット</desc>
+  <revision pkgversion="2.0" version="0.1" date="2010-05-29" status="draft"/>
+  <credit type="author">
+    <name>Paul Cutler</name>
+    <email>pcutler@gnome.org</email>
+  </credit>
+
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+
+  <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>キーボードショートカットでBansheeを操作する</title>
+  
+  <section id="playbackcontrol">
+  
+  <title>再生操作</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>キー</gui></p></td>  <td><p><gui>アクション</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>Space</p></td> <td><p>現在の楽曲を再生または停止します</p></td>
+  </tr>
+  <tr>
+    <td><p>N</p></td>     <td><p>次の楽曲を再生します</p></td>
+  </tr>
+  <tr>
+    <td><p>B</p></td> <td><p>前の楽曲を再生します</p></td>
+  </tr>
+</table>
+
+  </section>
+  
+  <section id="library">
+  
+  <title>ライブラリの相互作用</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>キー</gui></p></td>  <td><p><gui>アクション</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>/</key>, <keyseq><key>Ctrl</key><key>F</key></keyseq></p></td> <td><p>検索ボックスにフォーカスを移動します</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>I</key></keyseq></p></td>
+         <td><p>メディアのインポートダイアログを開きます</p></td>
+   </tr>      
+</table>
+
+  </section>  
+
+  <section id="playlists">
+  
+  <title>プレイリスト</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>キー</gui></p></td>  <td><p><gui>アクション</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>N</key></keyseq></p></td> <td><p>新しいプレイリストを作成する</p></td>
+  </tr>
+         
+</table>
+
+  </section> 
+  
+    <section id="podcasts">
+  
+  <title>ポッドキャスト</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>キー</gui></p></td>  <td><p><gui>アクション</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>Y</key></p></td> <td><p>マークを付けたエピソードは古いものです。</p></td>
+  </tr>
+         
+</table>
+
+  </section> 
+  
+  <section id="interface">
+  
+  <title>インターフェース</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>キー</gui></p></td>  <td><p><gui>アクション</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>F</key></p></td> <td><p>フルスクリーンを有効にする</p></td>
+  </tr>  
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td> <td><p>プレイリストにあるすべての楽曲を選択します</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>A</key></keyseq></p>
+    </td> <td><p>プレイリストビューから、すべての楽曲の選択を外す</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td> <td><p>Bansheeウィンドウを隠す（通知領域アイコンのプラグインが有効化されている必要があります）</p></td>
+  </tr>    
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>左クリック</key></keyseq>
+    </p></td> <td><p>前の楽曲を再生します（通知領域アイコンのプラグインが有効化されている必要があります）</p></td>
+  </tr> 
+  <tr> 
+    <td><p><keyseq><key>Ctrl</key><key>右クリック</key></keyseq>
+    </p></td> <td><p>次の楽曲を再生します（通知領域アイコンのプラグインが有効化されている必要があります）</p></td>
+  </tr> 
+  <tr> 
+    <td><p><keyseq><key>Ctrl</key><key>中クリック</key></keyseq>
+    </p></td> <td><p>再生と停止を切り替える（通知領域アイコンのプラグインが有効化されている必要があります）</p></td>
+  </tr>    
+         
+</table>
+
+  </section>   
+</page>

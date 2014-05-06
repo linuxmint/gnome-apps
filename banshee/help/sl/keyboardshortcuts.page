@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboardshortcuts" xml:lang="sl">
+
+<info>
+    <link type="guide" xref="advanced#keyboard"/>
+  <desc>Tipkovne bližnjice</desc>
+  <revision pkgversion="2.0" version="0.1" date="2010-05-29" status="draft"/>
+  <credit type="author">
+    <name>Paul Cutler</name>
+    <email>pcutler@gnome.org</email>
+  </credit>
+
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+
+  <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Nadzor Banshee s tipkovnimi bližnjicami</title>
+  
+  <section id="playbackcontrol">
+  
+  <title>Nadzor predvajanja</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Ključ</gui></p></td>  <td><p><gui>Dejanje</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>Preslednica</p></td> <td><p>Predvajanje ali premor predvajanja trenutne pesmi</p></td>
+  </tr>
+  <tr>
+    <td><p>N</p></td>     <td><p>Predvajaj naslednjo skladbo</p></td>
+  </tr>
+  <tr>
+    <td><p>B</p></td> <td><p>Predvajaj predhodno skladbo</p></td>
+  </tr>
+</table>
+
+  </section>
+  
+  <section id="library">
+  
+  <title>Interakcija s knjižnico</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Ključ</gui></p></td>  <td><p><gui>Dejanje</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>Pritisnite <keyseq><key>Control</key><key>H</key></keyseq>.</p></td> <td><p>Premakni žarišče v iskalno polje</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Control</key><key>I</key></keyseq></p></td>
+         <td><p>Odpri pogovorno okno uvažanja</p></td>
+   </tr>      
+</table>
+
+  </section>  
+
+  <section id="playlists">
+  
+  <title>Seznami predvajanja</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Ključ</gui></p></td>  <td><p><gui>Dejanje</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Control</key><key>N</key></keyseq></p></td> <td><p>Ustvari nov seznam predvajanja</p></td>
+  </tr>
+         
+</table>
+
+  </section> 
+  
+    <section id="podcasts">
+  
+  <title>Podcasti</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Ključ</gui></p></td>  <td><p><gui>Dejanje</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>Y</key></p></td> <td><p>Označi izbrane epizode kot stare</p></td>
+  </tr>
+         
+</table>
+
+  </section> 
+  
+  <section id="interface">
+  
+  <title>Vmesnik</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Ključ</gui></p></td>  <td><p><gui>Dejanje</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>F</key></p></td> <td><p>Preklopi celozaslonski način</p></td>
+  </tr>  
+  <tr>
+    <td><p><keyseq><key>Control</key><key>A</key></keyseq></p></td> <td><p>Izberi vse skladbe v pogledu seznama predvajanja</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Control</key><key>Shift</key><key>A</key></keyseq></p>
+    </td> <td><p>Odstrani izbiro vseh skladb v pogledu seznama predvajanja</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Control</key><key>W</key></keyseq></p></td> <td><p>Skrij okno Banshee (zahteva omogočen vstavek obvestilnega področja</p></td>
+  </tr>    
+  <tr>
+    <td><p><keyseq><key>Control</key><key>Levi miškin gumb</key></keyseq>
+    </p></td> <td><p>Predvajaj predhodno skladbo (zahteva omogočen vstavek obvestilnega področja</p></td>
+  </tr> 
+  <tr> 
+    <td><p><keyseq><key>Control</key><key>Desni miškin gumb</key></keyseq>
+    </p></td> <td><p>Predvajaj naslednjo skladbo (zahteva omogočen vstavek obvestilnega področja</p></td>
+  </tr> 
+  <tr> 
+    <td><p><keyseq><key>Control</key><key>Srednji miškin gumb</key></keyseq>
+    </p></td> <td><p>Preklopi predvajanje / premor (zahteva omogočen vstavek obvestilnega področja</p></td>
+  </tr>    
+         
+</table>
+
+  </section>   
+</page>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="search" xml:lang="pt_BR">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="sort"/>
+    <desc>Procure suas mídias e execute soicitações básicas.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Pesquisando na sua biblioteca do Banshee</title>    
+  
+  <p>O Banshee dispõe de uma poderosa linguagem de busca. Você pode rapidamente  e com muita facilidade buscar na sua biblioteca com termos básicos de pesquisa ou executar pesquisas detalhadas com a terminologia de busca avançada do Banshee.</p>
+  
+  <p>Para executar uma busca de suas mídias no Banshee, pressione a tecla <key>S</key>, ou clique caixa <gui>Pesquisar</gui> na parte superior direita da visualização de bibliteca no Banshee.</p>
+  
+  <p>Uma consulta consistem em alguns termos básicos, pro exemplo <em>dave matthews</em>. Digitando <em>dave matthews</em> na caixa de busca, o Banshee irá procurar em todos os campos de metadados, incluindo Título da faixa, Título do álbum, Artista, Ano, etc. Qualquer faixa que tenha nos seus metadados <em>dave</em> e <em>matthews</em> será retornada. Os termos de busca não diferanciam maiúsculas de minúsculas, o que seignifica que você não precisa colocar letras maiúsculas. <em>dave</em>, <em>Dave</em> e <em>DAVE</em> significam a mesma coisa em uma busca.</p>
+
+<section id="operators">
+  <title>Operadores básicos</title>
+  <p>Operadores podem ser colocados entre quaisquer dois termos de busca ou antes de um. A operação padrão é <gui>E</gui>, e é usado quando nenhum outro operador for usado entre dois termos de busca. Graças a este padrão não há explicitamente o operador E.</p>
+  
+  <p>Outros peradores básicos incluem <gui>OU</gui> e <gui>NÃO</gui>. Juntos esses três operadores podem formar consultas muito poderosas para te ajudar a pesquisar suas mídias.</p>
+  
+</section>
+
+<section id="logical">
+  <title>Operadores lógicos e exemplos</title>
+  <p>Abaixo está uma lista de operadores lógicos e exemplos dos resultados das buscas usando-os.</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Operador</gui></p></td>  <td><p><gui>Descrição</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><em>padrão</em>, <em>espaço em branco</em></p></td> <td><p>Busca por dois termos com um espaço entre as duas palavras ou os dois termos.</p></td>
+  </tr>
+  <tr>
+    <td><p>OU, ou, <key>|</key>, <key>,</key></p></td> <td><p>O resultado da busca será duas músicas com um resultado em qualquer campo.</p></td>
+  </tr>
+  <tr>
+    <td><p>NÃO, não,<key>-</key></p></td> <td><p>
+    Do not display search results with any search term that follows the 
+    operator of NOT, not,<key>-</key>.</p></td>
+  </tr>  
+         
+</table>
+
+  <p>Exemplo de operações lógicas incluem:</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Consulta</gui></p></td>  <td><p><gui>Descrição</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>dave matthews</p></td> <td><p>Retorna quaisquer campos de uma faixa contendo ambos, <em>dave</em> e <em>matthews</em>.</p></td>
+  </tr>
+  <tr>
+    <td><p>dave, matthews</p></td> <td><p>Retorna quaisquer campos em uma faixa contendo <em>dave</em> ou <em>matthews</em>.</p></td>
+  </tr>
+  <tr>
+    <td><p>dave ou matthews</p></td> <td><p>Retorna quaisquer campos em uma faixa contendo <em>dave</em> ou <em>matthews</em>.</p></td>
+  </tr> 
+  <tr>
+    <td><p>dave | matthews</p></td> <td><p>Retorna quaisquer campos em uma faixa contendo <em>dave</em> ou <em>matthews</em>.</p></td>
+  </tr>       
+  <tr>
+    <td><p>-"dave matthews"</p></td> <td><p>Exibe todas as faixas cujos campos não contenham <em>dave matthews</em>.</p></td>
+  </tr> 
+  
+  </table> 
+  
+  <p>Para mais informações sobre a execução de consultas mais complexas, veja a <link xref="adv-search"/> página.</p>
+  
+</section>
+	
+</page>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sort" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="search"/>
+    <desc>Sortieren Ihrer Medien und Hinzufügen zusätzlicher Spalten.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Ihre Medien sortieren</title>
+
+  <section id="addcolumn">
+
+  <title>Hinzufügen von Spalten</title>    
+  
+  <p>Mit zunehmender Größe Ihrer Bibliothek kann es sinnvoll werden, die Ansicht der Bibliothek zu ändern, damit zusätzliche Informationen zu den Liedern angezeigt werden, oder auch das Schema anzupassen, nach dem Lieder, Interpreten und Alben angezeigt und sortiert werden können.</p>
+  
+  <p>Sie können zusätzliche Spalten zur Bibliotheksansicht in <app>Banshee</app> hinzufügen, um weitere Informationen über die Titel und die Sortierung anhand dieser Informationen zu ermöglichen. Standardmäßig zeigt Banshee die Spalten <gui>Name</gui>, <gui>Interpret</gui>, <gui>Album</gui> und <gui>Zeit</gui> an. Um zusätzliche Spalten hinzuzufügen, klicken Sie mit der rechten Maustaste auf eine beliebige Spalte, woraufhin Banshee alle zur Auswahl verfügbaren Spalten anzeigt. Klicken Sie in das Ankreuzfeld neben dem Namen der Spalte, die Sie zur Bibliotheksansicht hinzufügen wollen.</p>
+  
+  </section>
+  
+  <section id="sorting">
+    <title>Sortieren der Spalten</title>
+    <p>Sie können mit der Maus in eine beliebige Spalte in der Bibliotheksansicht klicken, um Ihre Bibliothek zu sortieren. Wenn Sie Ihre Musikbibliothek nach Interpreten sortieren wollen, klicken Sie in die Kopfzeile der Spalte <gui>Künstler</gui>, und Banshee sortiert diese Spalte alphabetisch nach dem Namen des Künstlers. Klicken Sie erneut in die Kopfzeile der Spalte <gui>Künstler</gui>, um die Sortierreihenfolge der Spalte umzukehren.</p>
+  </section>
+	
+</page>

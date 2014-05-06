@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Addin 
+    id="Banshee.UPnPClient"
+    version="1.0"
+    compatVersion="1.0"
+    copyright="Copyright © 2011 Tobias 'topfs2' Arrskog. Licensed under the MIT X11 license."
+    name="UPnP Client"
+    category="Utilities"
+    description="Browse and play music and videos shared over your local network using UPnP."
+    author="Tobias 'topfs2' Arrskog"
+    url="http://banshee-project.org/"
+    defaultEnabled="false">
+
+  <Dependencies>
+    <Addin id="Banshee.Services" version="1.0"/>
+    <Addin id="Banshee.ThickClient" version="1.0"/>
+  </Dependencies>
+
+  <Extension path="/Banshee/ServiceManager/Service">
+    <Service class="Banshee.UPnPClient.UPnPService"/>
+  </Extension>
+</Addin>

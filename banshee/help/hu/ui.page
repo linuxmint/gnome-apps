@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="ui" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-19" status="stub"/>
+    <desc>A <app>Banshee</app> felhasználói felületének bemutatása.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>A Banshee felhasználói felületének ismertetése</title>
+
+  <figure>
+    <title><gui>Banshee médialejátszó</gui> ablak</title>
+    <desc><app>Banshee médialejátszó</app></desc>
+    <media type="image" src="figures/banshee.png" mime="image/png" style="right">
+      <p>A <app>Banshee</app> gyűjtemény felület</p>
+    </media>
+  </figure>
+  
+<section id="context">
+  <title>Források</title>
+    <p>Zene- és videoforrásai a Banshee bal oldalán láthatók. A források segítségével gyorsan elérheti a lejátszási sort, a zenéit, videóit, az Amazont, a Last.fm fiókját, podcastjait és sok mást.</p>
+    
+    <note style="tip">
+      <p>A menüpontok a kiválasztott forrástól függően változnak. A menüből Podcast importálásához például a Podcast forrást kell kiválasztania. A Podcast importálására szolgáló menüpont nem érhető el videonézés vagy a zenegyűjtemény böngészése közben.</p>
+    </note> 
+</section>
+
+<section id="browser">
+  <title>Gyűjteményböngésző</title>
+  <p>Ha a Források alatt zenei vagy videoforrást választ, a Banshee megjeleníti a tartalmat a Gyűjteményböngészőben. A választott forrástól függően a Banshee megjelenítheti a zenei vagy videogyűjteményét, Podcast-feliratkozásait vagy akár az Amazon zeneboltot, ahonnan zenét vásárolhat.</p>
+</section>
+
+<section id="nowplaying">
+  <title>Most játszott nézet</title>
+  <p>A Banshee teljes képernyős módban való használatakor igen hasznos a Most játszott nézet, amely elrejti a gyűjteményt, ezzel nagyobb területet biztosít a zene vagy a videó számára. Zene hallgatásakor a Most játszott nézet megjeleníti az előadó nevét, az albumot és a lemezborítót, ha az elérhető. Videó lejátszásakor a Banshee a videót jeleníti meg.</p>
+  
+  <p>A Banshee felhasználói felületét elrejtő és a teljes képernyős módot használó Most játszott nézetre váltáshoz megnyomhatja az <key>F</key> billentyűt vagy a Banshee jobb felső sarkában lévő <gui>Teljes képernyő</gui> gombot, illetve kiválaszthatja a <guiseq><gui>Nézet</gui><gui>Teljes képernyő</gui></guiseq> menüpontot is.</p>
+  
+</section>
+
+<section id="library">
+  <title>Gyűjtemény</title>
+  <p>A Gyűjtemény nézet a kiválasztott Forrástól függően változik. A Zenegyűjtemény a lemezborítót, a gyűjteményben található előadókat és a számok listáját jeleníti meg. A Podcast gyűjtemény megjeleníti a Podcast feliratkozásait, a letöltött vagy le nem töltött podcastokat, és minden új vagy régi podcastot. A források kezelésével kapcsolatos részletekért nézze meg az egyes forrásokhoz tartozó súgóoldalakat.</p>
+</section>
+
+
+</page>

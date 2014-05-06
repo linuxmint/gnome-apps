@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="queue" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="play"/>
+    <desc>Medien zur Wiedergabe-Warteschlange hinzufügen.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-05-26" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Wiedergabe-Warteschlange</title>    
+  
+  <p>Die <gui>Wiedergabe-Warteschlange</gui> ermöglicht Ihnen das Hinzufügen von Musik zum Wiedergeben in einer bestimmten Reihenfolge. Sie können viele Titel hinzufügen, die dann über mehrere Stunden ununterbrochenen Musikgenuss ermöglichen. Sie können einzelne Titel oder ganze Alben hinzufügen und diese sortieren oder neu ordnen.</p>
+  
+<section id="addqueue">
+
+  <title>Musik zur Wiedergabe-Warteschlange hinzufügen</title>
+
+  <p>Es ist erforderlich, aus der Musikbibliothek die Musiktitel oder Alben auszuwählen, die Sie zur Wiedergabe-Warteschlange hinzufügen wollen.</p>
+  
+  <p>Um ein komplettes Album zur Wiedergabe-Warteschlange hinzuzufügen, klicken Sie es mit der Maus an und ziehen Sie es mit gedrückter Maustaste in die <gui>Wiedergabe-Warteschlange</gui> in der äußersten linken Leiste des Fensters.</p>
+  
+  <p>Sie können Musiktitel einzeln oder als Gruppe zur Wiedergabe-Warteschlange hinzufügen. Um eine einzelne Datei hinzuzufügen, ziehen Sie sie mit der Maus in die <gui>Wiedergabe-Warteschlange</gui> in der äußersten linken Leiste des Fensters, oder klicken Sie mit der rechten Maustaste auf den Titel und wählen Sie <gui>Zur Wiedergabe-Warteschlange hinzufügen</gui> im Kontextmenü.</p>
+  
+  <p>Sie können mehrere Dateien auf einmal auswählen, indem Sie die <key>Strg</key>-Taste gedrückt halten und dann jede Datei einzeln mit der Maus anklicken, oder Sie können einen zusammenhängenden Bereich einer Dateiliste auswählen, indem Sie die <key>Umschalttaste</key> gedrückt halten und dann durch Klicken mit der Maus an zwei Stellen in der Liste Beginn und Ende des gewünschten Bereichs markieren. Diesen Bereich können Sie dann in die Wiedergabe-Warteschlange ziehen und dort ablegen, oder klicken Sie mit der rechten Maustaste auf die markierten Lieder und wählen Sie <gui>Zur Warteschlange hinzufügen</gui>.</p>
+  
+</section>
+
+<section id="reorderqueue">
+
+  <title>Organisieren Ihrer Wiedergabe-Warteschlange</title>
+
+  <p>Ihre Wiedergabe-Warteschlange wird in der Reihenfolge organisiert, in der Sie die Titel hinzugefügt haben. Die ersten zur Wiedergabe-Warteschlange hinzugefügten Titel oder Alben werden auch zuerst abgespielt. Sie können die Wiedergabe-Warteschlange neu ordnen, indem Sie die Maus dazu verwenden, um Titel oder Titelgruppen in der Liste zu ziehen und an der gewünschten Stelle abzulegen. Wählen Sie den oder die Titel aus, die Sie neu ordnen wollen, und lassen Sie die Maustaste an der Stelle los, an der Sie die Dateien in der Wiedergabe-Warteschlange ablegen wollen.</p>
+
+</section>  
+  
+<section id="removequeue">
+
+  <title>Titel aus der Wiedergabe-Warteschlange entfernen</title>
+
+  <p>Sie können einen bestimmten Titel oder eine Titelgruppe entfernen oder auch die gesamte Wiedergabe-Warteschlange löschen.</p>
+  
+  <p>Um einen bestimmten Titel oder eine Titelgruppe zu entfernen, wählen Sie den Titel mit der Maus aus und klicken Sie auf <key>Löschen</key>.</p>
+  
+  <p>Um die die gesamte Wiedergabe-Warteschlange zu löschen, klicken Sie auf den <gui>Leeren</gui>-Knopf in der rechten oberen Ecke der Wiedergabe-Warteschlange.</p>
+  
+</section>      
+	
+</page>

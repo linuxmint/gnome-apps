@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Addin 
+    id="Banshee.Gnome"
+    version="1.0"
+    compatVersion="1.0"
+    copyright="© 2008 Novell Inc. Licensed under the MIT X11 license."
+    category="required:Backends"
+    description="Backend providers for the GNOME platform. Includes GConf support and general GNOME integration."
+    defaultEnabled="true">
+
+  <Dependencies>
+    <Addin id="Banshee.Core" version="1.0"/>
+    <Addin id="Banshee.Services" version="1.0"/>
+    <Addin id="Banshee.NowPlaying" version="1.0"/>
+  </Dependencies>
+  
+  <Extension path="/Banshee/ServiceManager/Service">
+    <Service class="Banshee.GnomeBackend.GnomeService"/>
+  </Extension>
+
+  <Extension path="/Banshee/Platform/ConfigurationClient">
+    <ConfigurationClient class="Banshee.GnomeBackend.GConfConfigurationClient"/>
+  </Extension>
+
+  <Extension path="/Banshee/Platform/DiscDuplicator">
+    <DiscDuplicator class="Banshee.GnomeBackend.DiscDuplicator"/>
+  </Extension>
+
+  <!--<Extension path="/Banshee/Platform/DefaultApplicationHelper">
+    <Helper class="Banshee.GnomeBackend.DefaultApplicationHelper"/>
+</Extension>-->
+  
+  <Extension path="/Banshee/PlatformServices/ScreensaverManager">
+    <ScreensaverManager class="Banshee.GnomeBackend.GnomeScreensaverManager"/>
+  </Extension>
+</Addin>

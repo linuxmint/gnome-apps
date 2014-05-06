@@ -1,0 +1,21 @@
+From: Chow Loong Jin <hyperair@debian.org>
+Date: Sun, 17 Nov 2013 03:17:27 +0800
+Subject: Use notify-sharp-3.0 to match Gtk# 3.0
+
+---
+ build/m4/banshee/notify-sharp.m4 | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/build/m4/banshee/notify-sharp.m4 b/build/m4/banshee/notify-sharp.m4
+index 3025b6b..652dfd5 100644
+--- a/build/m4/banshee/notify-sharp.m4
++++ b/build/m4/banshee/notify-sharp.m4
+@@ -5,7 +5,7 @@ AC_DEFUN([BANSHEE_CHECK_NOTIFY_SHARP],
+ 		use_system_notifysharp="yes", use_system_notifysharp="no")
+ 
+ 	if test "x$use_system_notifysharp" = "xyes"; then
+-		PKG_CHECK_MODULES(NOTIFY_SHARP, notify-sharp)
++		PKG_CHECK_MODULES(NOTIFY_SHARP, notify-sharp-3.0)
+ 		AC_SUBST(NOTIFY_SHARP_LIBS)
+ 		AM_CONDITIONAL(EXTERNAL_NOTIFY_SHARP, true)
+ 	else

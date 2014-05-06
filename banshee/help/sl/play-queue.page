@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="queue" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="play"/>
+    <desc>Dodajanje večpredstavnostnih datotek v  čakalno vrsto predvajanja.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-05-26" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Vrsta predvajanja</title>    
+  
+  <p><gui>Čakalna vrsta predvajanja</gui> vam omogoča dodajanje skladb za predvajanje v zaporednem vrstnem redu. Dodate lahko skladbe za ure neprekinjenega poslušanja skladb. Dodate lahko posamezne skladbe ali celotne albume in jih razvrstite ali preuredite.</p>
+  
+<section id="addqueue">
+
+  <title>Dodajanje glasbe v čakalno vrsto predvajanja</title>
+
+  <p>V svoji glasbeni knjižnici boste morali izbrati skladbe ali albume, ki jih želite dodati v čakalno vrsto predvajanja.</p>
+  
+  <p>Za dodajanje celotnega albuma v čakalno vrsto predvajanja s svojo miško pritisnite in držite album in ga povlecite nad <gui>Čakalna vrsta predvajanja</gui> v levem pladnju okna.</p>
+  
+  <p>Skladbe lahko v čakalno vrsto predvajanja dodate posamezno ali kot skupino. Za dodajanje posamezne datoteke jo povlecite in spustite nad <gui>Čakalno vrsto predvajanja</gui> v najbolj levem pladnju okna ali z desnim klikom na skladbo in izbiro <gui>Dodaj v čakalno vrsto predvajanja</gui>.</p>
+  
+  <p>Več datotek lahko izberete tako, da jih klikate z miško medtem ko držite tipko <key>Control</key> in s tem izberete posamezne datoteke ali pa izberete obseg datotek tako, da dvakrat pritisnete tipko <key>Shift</key>. Nato lahko datoteke povlečete in spustite nad <gui>Čakalno vrsto predvajanja</gui> v daljnem levem pladnju okna ali z desnim klikom na skladbe in izbiro <gui>Dodaj v čakalno vrsto predvajanja</gui>.  </p>
+  
+</section>
+
+<section id="reorderqueue">
+
+  <title>Organizacija vaše čakalne vrste predvajanja.</title>
+
+  <p>Vaša čakalna vrsta predvajanja je organizirana v redu dodanih skladb. Prve skladbe ali albume, ki ste jih dodali v čakalno vrsto, bodo prvi predvajani. Svojo čakalno vrsto predvajanja lahko preuredite z vlečenjem in spuščanjem skladbe ali skupine skladb v seznamu predvajanja. Z miško izberite skladb-o/e, ki jih želite preurediti in svojo miško spustite nad številko ali mestom, kjer naj bodo te datoteke v čakalni vrsti predvajanja.</p>
+
+</section>  
+  
+<section id="removequeue">
+
+  <title>Odstranjevanje skladb s čakalne vrste predvajanja</title>
+
+  <p>Odstranite lahko posamezno skladbo, skupino skladb ali počistite svojo celotno čakalno vrsto predvajanja.</p>
+  
+  <p>Za odstranitev posamezne skladbe ali skupine skladb, skladbo izberite z miško in nato pritisnite <key>Izbriši</key>.</p>
+  
+  <p>Za čiščenje svoje celotne čakalne vrste predvajanja pritisnite gumb <gui>Počisti</gui> v zgodnjem desnem kotu čakalne vrste predvajanja.</p>
+  
+</section>      
+	
+</page>

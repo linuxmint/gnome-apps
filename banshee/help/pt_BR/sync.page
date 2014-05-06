@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync" xml:lang="pt_BR">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Sincronize suas mídias com um reprodutor de mídia portátil ou smartphone.</desc>
+    <revision pkgversion="1.8" version="0.1" date="2010-08-29" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Sincronização</title>    
+  
+  <p>O Banshee tem suporta a sincronização de suas músicas com reprodutores de mída portáteis e smartphones. Você pode adicionar faixas de músicas específicas, álbuns ou listas de reprodução ou permitir que o Banshee mantenha seu reprodutor portátil sincronizado com toda a sua biblioteca. Depois que seu reprodutor estiver conectado ao computador você pode também ouvir as músicas do seu reprodutor portátil no Banshee. Quando se está sincronizando música em um formato sem perda ("lossless"), como FLAC, o Banshee irá automaticamente converter suas músicas para um formato com perda como Ogg Vorbis ou MP3, se você dispuser dos codecs corretos instalados.</p>
+  
+  <section id="devices">
+    <title>Suporte a dispositivos</title>
+    <p>O Banshee tem suporte a quase todos os reprodutores portáteis de música e smartphones, com a notável excessão dos dispositivos: Apple iPhone, iPad e iPod Touch.</p>
+  
+  <p>Quando você conectar seu dispositivo o Banshee irá mostrá-lo no menu esquerdo. Clicando no ícone do dispositivo o Banshee exibirá a página do dispositivo, exibindo suas preferências de sincronização.</p>
+  
+  </section>
+  
+    <section id="sync-settings">
+    <title>Sincronize suas músicas</title>
+    <p>Você pode escolher entre a sincronização automática do Banshee ou gerenciando suas músicas e mídias manualmente.</p>
+    
+    <p>Escolha seu dispositivo no menu do Banshee e então selecione como você deseja sincronizar suas mídias, incluindo:</p>
+    <list>
+      <item><p>Música</p></item>
+      <item><p>Livros de áudio</p></item>  
+      <item><p>Vídeos</p></item>
+      <item><p>Podcast</p></item>  
+    </list>
+    
+    <p>No menu de contexto próximo de cada mídia, escolha:</p>
+    <list>
+      <item><p>Gerenciamento manual</p></item>
+      <item><p>Sincronizar toda a biblioteca</p></item>  
+    </list>    
+    
+    <note style="warning">
+      <p>Se você optar por sincronizar toda a sua biblioteca com seu reprodutor portátil automaticamente certifique-se de que seu reprodutor portátil dipõe de capacidade de armazenamento suficiente. Se sua biblioteca for maior que o espaço disponível em seu dispositivo o Banshee irá sincronizar até que o dispositivo esteja cheio, e então vai parar.</p>
+    </note>
+    
+    <p>Se você criou playlists ou playlists inteligentes na sua biblioteca de música, elas também serão mostradas como opções de sincronização para música. Isso pode ser útil quando criar playlists inteligentes, como elas são atulizadas automaticamente toda vez que um arquivo dentro das suas regras é adicionado, e o Banshee sincronizará a nova playlist com seu dispositivo sempre que ele for conectado.</p>
+    
+    <p>O Banhsee vai exibir a capacidade total do seu dispositivo em um gráfico na parte central inferior do Banshee. O gráfico vai mostrar quanto espaço está ocupado por arquivos de áudio, vídeos, e outros bem como o espaço livre. Logo abaixo o Banshee vai exibe quantos itens estão armazenados no seu dispositivo, qual a equivalência em dias e horas de execução e o total de espaço usado.</p>
+    
+  </section>
+
+  <section id="sync-manually">
+    <title>Sincronize toda a sua biblioteca</title>
+    <p>Você pode arrastar e soltar arquivos de mídia no seu dispositivo pelo Banshee. Selecione o arquivo ou os arquivos que deseja copiar para seu reprodutor portátil e então pressione e segure o botão direito do mouse e arraste o(s) arquivo(s) para o ícone do seu dispositivo no Banshee. Esse procedimento copiará os arquivos para o seu dispositivo.</p>
+    
+    <p>Se sua biblioteca de músicas estvier codificada em um formato que seu reprodutor portátil não suporta, como OGG ou FLAC, e você tem os codecs necessários instalados, o Banshe pode converter automaticamente esses arquivos em MP3 quando estiver os transferindo para seu reprodutor portátil. Verifique com sua distribuição Linux pelos codecs necessários já que isso está fora do escopo desse manual e variam de distribuição para distribuição.</p>
+    
+    <note style="tip">
+      <p>You may need to eject your device to load the files correctly
+      on your portable music player.  To eject your device in Banshee,
+      using your mouse right click the device in the Banshee menu and
+      press <gui>Disconnect</gui>.
+      </p>
+    </note>
+
+  </section>
+  
+  <section id="pmp-play">
+    <title>Reproduza músicas do seu reprodutor portátil</title>
+    <p>Você pode reproduzir músicas armazenadas no seu reprodutor portátil diretamente no Banshee, escolha seu dispositivo no menu da esquerda e a biblioteca do seu reprodutor portátil será exibida. Então você poderá reproduzir a música no Banshee da mesma maneira que faz na sua própria biblioteca.</p>
+  </section>
+  
+  <section id="pmp-delete">
+    <title>Remova músicas do seu reprodutor portátil</title>
+    <p>To remove songs stored on your portable music player, choose your
+    player in Banshee to view its library.  Then choose the tracks you would
+    like to remove and right click the tracks and choose <gui>Delete</gui> or from the 
+    menu choose <guiseq><gui>Edit</gui><gui>Delete</gui></guiseq>.</p>
+    
+     <note style="warning">
+      <p>Excluir arquivos do seu reprodutor portátil vai excluir permanentemente os arquivos, e você não poderá recuperá-los.</p>
+    </note>
+    
+  </section>
+
+	
+</page>

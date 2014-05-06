@@ -1,0 +1,21 @@
+From: Iain Lane <laney@ubuntu.com>
+Date: Mon, 23 Jan 2012 23:05:20 +0800
+Subject: Disable Notification area extension by default
+
+---
+ .../Banshee.NotificationArea/Banshee.NotificationArea.addin.xml         | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/Extensions/Banshee.NotificationArea/Banshee.NotificationArea.addin.xml b/src/Extensions/Banshee.NotificationArea/Banshee.NotificationArea.addin.xml
+index 003afb0..abdcf48 100644
+--- a/src/Extensions/Banshee.NotificationArea/Banshee.NotificationArea.addin.xml
++++ b/src/Extensions/Banshee.NotificationArea/Banshee.NotificationArea.addin.xml
+@@ -9,7 +9,7 @@
+     description="Display an icon in the notification area for controlling Banshee."
+     author="Aaron Bockover, Sebastian Dröge, Alexander Hixon, Gabriel Burt, Ruben Vermeersch"
+     url="http://banshee.fm/"
+-    defaultEnabled="true">
++    defaultEnabled="false">
+ 
+   <Dependencies>
+     <Addin id="Banshee.Services" version="1.0"/>

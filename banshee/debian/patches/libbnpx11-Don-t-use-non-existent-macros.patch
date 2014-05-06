@@ -1,0 +1,98 @@
+From: =?UTF-8?q?Micha=C5=82=20Sawicz?= <michal@sawicz.net>
+Date: Sat, 19 Oct 2013 15:51:21 +0200
+Subject: libbnpx11: Don't use non-existent macros
+
+Origin: commit:f36812ddb62dd812aae24f4f9b8fce8d8dec5054
+
+The GTK_WIDGET_REALIZED and GDK_WINDOW_XWINDOW macros are gone in GTK+
+3.x, so we use their replacement.
+
+Also enable gcc warnings when building libbnpx11, so that we get
+warnings for such situations in the future.
+
+Signed-off-by: Bertrand Lorentz <bertrand.lorentz@gmail.com>
+---
+ src/Backends/Banshee.NowPlaying.X11/libbnpx11/Makefile.am  |  2 +-
+ .../Banshee.NowPlaying.X11/libbnpx11/bacon-resize.c        | 14 +++++++-------
+ 2 files changed, 8 insertions(+), 8 deletions(-)
+
+diff --git a/src/Backends/Banshee.NowPlaying.X11/libbnpx11/Makefile.am b/src/Backends/Banshee.NowPlaying.X11/libbnpx11/Makefile.am
+index 842ee3f..e28c0b5 100644
+--- a/src/Backends/Banshee.NowPlaying.X11/libbnpx11/Makefile.am
++++ b/src/Backends/Banshee.NowPlaying.X11/libbnpx11/Makefile.am
+@@ -5,7 +5,7 @@ bnpx11dir = $(pkglibdir)/Backends
+ bnpx11_LTLIBRARIES = libbnpx11.la
+ 
+ libbnpx11_la_SOURCES = $(SOURCES)
+-libbnpx11_la_CFLAGS = $(BNPX_CFLAGS) $(BNPX_GTK_CFLAGS)
++libbnpx11_la_CFLAGS = $(BNPX_CFLAGS) $(BNPX_GTK_CFLAGS) -Wall
+ libbnpx11_la_LIBADD = $(BNPX_LIBS) $(BNPX_GTK_LIBS) -lX11 -lXxf86vm -lXrandr
+ libbnpx11_la_LDFLAGS = -avoid-version -module
+ 
+diff --git a/src/Backends/Banshee.NowPlaying.X11/libbnpx11/bacon-resize.c b/src/Backends/Banshee.NowPlaying.X11/libbnpx11/bacon-resize.c
+index 607b56c..0445ca7 100644
+--- a/src/Backends/Banshee.NowPlaying.X11/libbnpx11/bacon-resize.c
++++ b/src/Backends/Banshee.NowPlaying.X11/libbnpx11/bacon-resize.c
+@@ -165,7 +165,7 @@ set_video_widget (BaconResize *resize, GtkWidget *video_widget)
+ 	int event_basep, error_basep;
+ 	XRRScreenConfiguration *xr_screen_conf;
+ #endif
+-	g_return_if_fail (GTK_WIDGET_REALIZED (video_widget));
++	g_return_if_fail (gtk_widget_get_realized (video_widget));
+ 
+ 	resize->priv->video_widget = video_widget;
+ 
+@@ -185,7 +185,7 @@ set_video_widget (BaconResize *resize, GtkWidget *video_widget)
+ 		goto bail;
+ 
+ 	/* We don't use the output here, checking whether XRRGetScreenInfo works */
+-	xr_screen_conf = XRRGetScreenInfo (GDK_DISPLAY_XDISPLAY (display), GDK_WINDOW_XWINDOW (gdk_screen_get_root_window (screen)));
++	xr_screen_conf = XRRGetScreenInfo (GDK_DISPLAY_XDISPLAY (display), GDK_WINDOW_XID (gdk_screen_get_root_window (screen)));
+ 	if (xr_screen_conf == NULL)
+ 		goto bail;
+  
+@@ -223,7 +223,7 @@ bacon_resize_resize (BaconResize *resize)
+ 	Display *Display;
+ 
+ 	g_return_if_fail (GTK_IS_WIDGET (resize->priv->video_widget));
+-	g_return_if_fail (GTK_WIDGET_REALIZED (resize->priv->video_widget));
++	g_return_if_fail (gtk_widget_get_realized (resize->priv->video_widget));
+ 
+ 	Display = GDK_WINDOW_XDISPLAY (gtk_widget_get_window (resize->priv->video_widget));
+ 	if (Display == NULL)
+@@ -252,7 +252,7 @@ bacon_resize_resize (BaconResize *resize)
+ 	gdk_error_trap_push ();
+ 
+ 	/* Find the XRandR mode that corresponds to the real size */
+-	resize->priv->xr_screen_conf = XRRGetScreenInfo (Display, GDK_WINDOW_XWINDOW (root));
++	resize->priv->xr_screen_conf = XRRGetScreenInfo (Display, GDK_WINDOW_XID (root));
+ 	xr_sizes = XRRConfigSizes (resize->priv->xr_screen_conf, &xr_nsize);
+ 	resize->priv->xr_original_size = XRRConfigCurrentConfiguration (resize->priv->xr_screen_conf, &(resize->priv->xr_current_rotation));
+ 	if (gdk_error_trap_pop ()) {
+@@ -273,7 +273,7 @@ bacon_resize_resize (BaconResize *resize)
+ 	gdk_error_trap_push ();
+ 	XRRSetScreenConfig (Display,
+ 			resize->priv->xr_screen_conf,
+-			GDK_WINDOW_XWINDOW (root),
++			GDK_WINDOW_XID (root),
+ 			(SizeID) i,
+ 			resize->priv->xr_current_rotation,
+ 			CurrentTime);
+@@ -299,7 +299,7 @@ bacon_resize_restore (BaconResize *resize)
+ 	Display *Display;
+ 
+ 	g_return_if_fail (GTK_IS_WIDGET (resize->priv->video_widget));
+-	g_return_if_fail (GTK_WIDGET_REALIZED (resize->priv->video_widget));
++	g_return_if_fail (gtk_widget_get_realized (resize->priv->video_widget));
+ 
+ 	/* We haven't called bacon_resize_resize before, or it exited
+ 	 * as we didn't need a resize. */
+@@ -328,7 +328,7 @@ bacon_resize_restore (BaconResize *resize)
+ 	gdk_error_trap_push ();
+ 	XRRSetScreenConfig (Display,
+ 			resize->priv->xr_screen_conf,
+-			GDK_WINDOW_XWINDOW (root),
++			GDK_WINDOW_XID (root),
+ 			resize->priv->xr_original_size,
+ 			resize->priv->xr_current_rotation,
+ 			CurrentTime);

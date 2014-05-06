@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="keyboardshortcuts" xml:lang="fr">
+
+<info>
+    <link type="guide" xref="advanced#keyboard"/>
+  <desc>Raccourcis claviers</desc>
+  <revision pkgversion="2.0" version="0.1" date="2010-05-29" status="draft"/>
+  <credit type="author">
+    <name>Paul Cutler</name>
+    <email>pcutler@gnome.org</email>
+  </credit>
+
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+
+  <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Navigation dans Banshee avec les raccourcis clavier</title>
+  
+  <section id="playbackcontrol">
+  
+  <title>Contrôle de la lecture</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Touche</gui></p></td>  <td><p><gui>Action</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>Espace</p></td> <td><p>Lecture ou mise en pause du titre en cours</p></td>
+  </tr>
+  <tr>
+    <td><p>N</p></td>     <td><p>Lecture du titre suivant</p></td>
+  </tr>
+  <tr>
+    <td><p>B</p></td> <td><p>Lecture du titre précédent</p></td>
+  </tr>
+</table>
+
+  </section>
+  
+  <section id="library">
+  
+  <title>Interaction avec la bibliothèque</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Touche</gui></p></td>  <td><p><gui>Action</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>/</key>, <keyseq><key>Ctrl</key><key>I</key></keyseq></p></td> <td><p>Déplacement du focus dans la boîte de la recherche</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>I</key></keyseq></p></td>
+         <td><p>Ouverture de la boîte de dialogue d'importation de média</p></td>
+   </tr>      
+</table>
+
+  </section>  
+
+  <section id="playlists">
+  
+  <title>Listes de lecture</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Touche</gui></p></td>  <td><p><gui>Action</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>N</key></keyseq></p></td> <td><p>Création d'une nouvelle liste de lecture</p></td>
+  </tr>
+         
+</table>
+
+  </section> 
+  
+    <section id="podcasts">
+  
+  <title>Podcasts</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Touche</gui></p></td>  <td><p><gui>Action</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>Y</key></p></td> <td><p>Marquage des épisodes sélectionnés comme anciens</p></td>
+  </tr>
+         
+</table>
+
+  </section> 
+  
+  <section id="interface">
+  
+  <title>Interface</title>
+
+<table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Touche</gui></p></td>  <td><p><gui>Action</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><key>F</key></p></td> <td><p>Passage en mode plein écran</p></td>
+  </tr>  
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td> <td><p>Sélection de tous les titres de la liste de lecture</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>Maj</key><key>A</key></keyseq></p>
+    </td> <td><p>Désélection de tous les titres de la liste de lecture</p></td>
+  </tr>
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td> <td><p>Masquage de la fenêtre de Banshee (nécessite que le plugin Icône de zone de notification soit activé)</p></td>
+  </tr>    
+  <tr>
+    <td><p><keyseq><key>Ctrl</key><key>bouton gauche de la souris</key></keyseq>
+    </p></td> <td><p>Lecture du titre précédent (nécessite que le plugin Icône de zone de notification soit activé)</p></td>
+  </tr> 
+  <tr> 
+    <td><p><keyseq><key>Ctrl</key><key>bouton droit de la souris</key></keyseq>
+    </p></td> <td><p>Lecture du titre suivant (nécessite que le plugin Icône de zone de notification soit activé)</p></td>
+  </tr> 
+  <tr> 
+    <td><p><keyseq><key>Ctrl</key><key>bouton central de la souris</key></keyseq>
+    </p></td> <td><p>Passage du mode lecture au mode pause (nécessite que le plugin Icône de zone de notification soit activé)</p></td>
+  </tr>    
+         
+</table>
+
+  </section>   
+</page>

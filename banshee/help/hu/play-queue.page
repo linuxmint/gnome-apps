@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="queue" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="play"/>
+    <desc>Médiafájlok hozzáadása a lejátszási sorhoz.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-05-26" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Lejátszási sor</title>    
+  
+  <p>A <gui>Lejátszási sor</gui> lehetővé teszi a zenék megadott sorrendben való lejátszását. Sok számot hozzáadva órákon át folyamatosan hallgathatja zenéit. Egyedi számokat vagy teljes albumokat is hozzáadhat, valamint rendezheti vagy át is rendezheti azokat.</p>
+  
+<section id="addqueue">
+
+  <title>Zene hozzáadása a lejátszási sorhoz</title>
+
+  <p>Zenegyűjteményéből válassza ki a lejátszási sorhoz adandó számokat vagy albumokat.</p>
+  
+  <p>Teljes album lejátszási sorhoz adásához az egérrel húzza az albumot a bal oldali ablaktábla <gui>Lejátszási sor</gui> elemére.</p>
+  
+  <p>Zeneszámokat a lejátszási sorhoz egyenként vagy csoportosan adhat. Egy fájl hozzáadásához húzza át azt a bal oldali ablaktábla <gui>Lejátszási sor</gui> elemére, vagy kattintson rá a jobb egérgombbal, és válassza a <gui>Hozzáadás a lejátszási sorhoz</gui> menüpontot.</p>
+  
+  <p>Több fájlt is kiválaszthat a <key>Ctrl</key> nyomva tartásával, és az egyes fájlok egérkattintással való kijelölésével, vagy fájlok csoportját is kiválaszthatja a <key>Shift</key> lenyomva tartásával és két kattintással a csoport első és utolsó elemén. Ezután fogd és vidd módszerrel átviheti a fájlokat a bal oldali ablaktábla <gui>Lejátszási sor</gui> elemére, vagy kattintson a számokra a jobb egérgombbal, és válassza a <gui>Hozzáadás a lejátszási sorhoz</gui> elemet.</p>
+  
+</section>
+
+<section id="reorderqueue">
+
+  <title>Rendszerezze lejátszási sorát</title>
+
+  <p>Lejátszási sorában a számok hozzáadásuk sorrendjében szerepelnek. Az elsőként a sorhoz adott számok vagy albumok kerülnek elsőként lejátszásra. Lejátszási sorát fogd és vidd módszerrel átrendezheti. Válassza ki az átrendezni kívánt számokat, és húzza azokat a sor kívánt pozíciójára.</p>
+
+</section>  
+  
+<section id="removequeue">
+
+  <title>Számok eltávolítása a lejátszási sorból</title>
+
+  <p>Eltávolíthat egy számot, számok csoportját, vagy minden számot.</p>
+  
+  <p>Egy szám vagy számok csoportjának eltávolításához válassza ki a számokat az egérrel, és nyomja meg a <key>Delete</key> billentyűt.</p>
+  
+  <p>A teljes lejátszási sor törléséhez nyomja meg a <gui>Törlés</gui> gombot a Lejátszási sor nézet jobb felső sarkában.</p>
+  
+</section>      
+	
+</page>

@@ -1,0 +1,27 @@
+<ui>
+  <menubar name="MainMenu" action="MainMenuAction">
+    <menu name="MediaMenu" action="MediaMenuAction">
+      <placeholder name="BelowOpenLocation">
+        <menuitem action="PlaySongAction"/>
+        <menuitem action="PlayAlbumAction"/>
+      </placeholder>
+    </menu>
+  </menubar>
+
+  <toolbar name="MuinsheeHeaderToolbar">
+    <toolitem action="PlayPauseAction"/>
+    <toolitem action="PreviousAction"/>
+    <placeholder name="NextArrowButton"/>
+    <!--<placeholder name="SeekSlider"/>-->
+    <!--<placeholder name="TrackInfoDisplay"/>-->
+    <!--<placeholder name="SourceActions">
+        <toolitem name="RefreshSmartPlaylist" action="RefreshSmartPlaylistAction"/>
+    </placeholder>-->
+    <separator />
+    <placeholder name="VolumeButton"/>
+    <separator expand="true"/>
+    <toolitem action="ClearPlayQueueAction"/>
+    <toolitem action="PlaySongAction"/>
+    <toolitem action="PlayAlbumAction"/>
+  </toolbar>
+</ui>

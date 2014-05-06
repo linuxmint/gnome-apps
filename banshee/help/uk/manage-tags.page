@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="tags" xml:lang="uk">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="coverart"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Редагування або зміна міток та метаданих.</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-09" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Музичні метадані</title>
+
+  <section id="metadata">
+
+  <title>Музичні метадані</title>    
+  
+  	<p>Цифрова музика містить деякі метадані, що зберігаються в музичному файлі, наприклад: виконавець, альбом, рік запису, жанр тощо. Майже у всі музичні твори, придбані через інтернет, такі метадані вже закладено. Під час імпортування музики з компактого диска, Banshee знайде такі метадані, якщо вони є і додасть їх до музичних файлів. Докладніше про копіювання компактних дисків разом з метаданими, дивіться розділ <link xref="import"/>.</p>
+  	
+  	<p>Популярні формати метаданих: ID3v1 і ID3v2 для файлів MP3 та коментарі Vorbis для файлів OGG Vorbis.</p>	
+  
+  	<p>Якщо імпортовані музичні файли не містять метаданих, <app>Banshee</app> показуватиме слово <gui>Невідомо</gui> майже у всіх полях фонотеки.</p>
+  	
+  </section>
+
+  <section id="editmetadata"> 	
+    
+    <title>Редагування метаданих</title>
+    
+    <p>Метадані доріжок можна редагувати або змінювати. Виберіть одну або кілька доріжок і натисніть клавішу <key>E</key>, або виберіть в меню <guiseq><gui>Зміни</gui><gui>Змінити дані доріжки</gui></guiseq> чи натисніть праву кнопку миші з вказівником на доріжці і в контекстному меню виберіть <gui>Змінити дані доріжки</gui>.</p>
+    
+    <p>З'явиться вікно з метаданими доріжки, що дасть вам змогу змінити або відновити їх. В цьому вікні будуть показані такі поля:</p>
+    
+    <list>
+      <item><p><gui>Назва доріжки</gui></p></item>
+      <item><p><gui>Виконавець доріжки</gui></p></item>
+      <item><p><gui>Назва альбому</gui></p></item>
+      <item><p><gui>Жанр</gui></p></item>
+      <item><p><gui>Номер доріжки</gui></p></item>
+      <item><p><gui>Номер диску</gui></p></item>
+      <item><p><gui>Рік</gui></p></item>
+    </list>
+    
+    <p>Відредагуйте дані доріжки. Якщо ви вибрали кілька доріжок, натискайте піктограму у вигляді стрілки поряд з полем <gui>Назва доріжки</gui> або кнопку <gui>Вперед</gui> у нижній частині вікна, щоб відредагувати дані кожної доріжки. Після завершення редагування, натисніть кнопку <gui>Зберегти</gui>.</p>
+   
+  </section>
+
+</page>

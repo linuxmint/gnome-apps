@@ -1,0 +1,24 @@
+<Type Name="Wicd+StateChangeInternalHandler" FullName="Banshee.Networking.Wicd+StateChangeInternalHandler">
+  <TypeSignature Language="C#" Value="public delegate void Wicd.StateChangeInternalHandler(uint code, object[] foo);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed Wicd/StateChangeInternalHandler extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>Banshee.Services</AssemblyName>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="code" Type="System.UInt32" />
+    <Parameter Name="foo" Type="System.Object[]" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="code">To be added.</param>
+    <param name="foo">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

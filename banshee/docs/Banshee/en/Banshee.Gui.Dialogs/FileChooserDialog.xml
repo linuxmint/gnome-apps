@@ -1,0 +1,138 @@
+<Type Name="FileChooserDialog" FullName="Banshee.Gui.Dialogs.FileChooserDialog">
+  <TypeSignature Language="C#" Value="public class FileChooserDialog : Gtk.FileChooserDialog" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileChooserDialog extends Gtk.FileChooserDialog" />
+  <AssemblyInfo>
+    <AssemblyName>Banshee.ThickClient</AssemblyName>
+    <AssemblyVersion>0.90.1.25406</AssemblyVersion>
+    <AssemblyVersion>1.3.1.0</AssemblyVersion>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Gtk.FileChooserDialog</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileChooserDialog (string title, Gtk.FileChooserAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, valuetype Gtk.FileChooserAction action) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="action" Type="Gtk.FileChooserAction" />
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileChooserDialog (string title, Gtk.Window parent, Gtk.FileChooserAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, class Gtk.Window parent, valuetype Gtk.FileChooserAction action) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="parent" Type="Gtk.Window" />
+        <Parameter Name="action" Type="Gtk.FileChooserAction" />
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <param name="parent">To be added.</param>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateForImport">
+      <MemberSignature Language="C#" Value="public static Banshee.Gui.Dialogs.FileChooserDialog CreateForImport (string title, bool files);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Banshee.Gui.Dialogs.FileChooserDialog CreateForImport(string title, bool files) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Banshee.Gui.Dialogs.FileChooserDialog</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="files" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="title">To be added.</param>
+        <param name="files">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPhotosFolder">
+      <MemberSignature Language="C#" Value="public static string GetPhotosFolder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPhotosFolder() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastFileChooserUri">
+      <MemberSignature Language="C#" Value="public static readonly Banshee.Configuration.SchemaEntry&lt;string&gt; LastFileChooserUri;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Banshee.Configuration.SchemaEntry`1&lt;string&gt; LastFileChooserUri" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Banshee.Configuration.SchemaEntry&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnResponse">
+      <MemberSignature Language="C#" Value="protected override void OnResponse (Gtk.ResponseType response);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnResponse(valuetype Gtk.ResponseType response) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="Gtk.ResponseType" />
+      </Parameters>
+      <Docs>
+        <param name="response">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

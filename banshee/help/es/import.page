@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="import" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <desc>Añadir música y vídeos de su equipo a su colección de Banshee.</desc>
+    <revision pkgversion="1.6" version="1.6" date="2010-07-15" status="review"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Importar música y vídeos</title>
+
+  <p>Puede importar música y vídeos guardados en su equipo en Banshee. Los archivos importados aparecen en sus fuentes y pueden editarse y gestionarse como cualquier otro archivo multimedia de Banshee.</p>
+
+  <p>Para importar archivos de música o vídeo desde su equipo, seleccione <guiseq><gui>Multimedia</gui><gui>Importar contenido multimedia</gui></guiseq>. Aparecerá un diálogo con varias opciones.</p>
+
+  <note>
+    <p>Los complementos pueden añadir opciones adicionales de importación. Consulte la <link xref="#plugins"/> abajo.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Carpetas locales</gui></title>
+      <p>Elija esta opción para importar todos los archivos de música y vídeo de una carpeta específica, incluyendo todas las subcarpetas. Se le presentará un diálogo desde el que escoger la carpeta de la que importar.</p>
+    </item>
+    <item>
+      <title><gui>Archivos locales</gui></title>
+      <p>Elija esta opción para importar sólo los archivos específicos que seleccione. Se mostrará un diálogo en el que podrá elegir qué archivos importar.</p>
+    </item>
+    <item>
+      <title><gui>Carpeta de inicio</gui></title>
+      <p>Elija esta opción para importar todos los archivos de música y vídeo en su carpeta personal, incluyendo los archivos de las subcarpetas.</p>
+    </item>
+    <item>
+      <title><gui>Vídeos de la carpeta de Imágenes</gui></title>
+      <p>Muchas cámaras digitales pueden hacer vídeos cortos, y las aplicaciones de gestión de fotografías a menudo descargan esos vídeos directamente en la carpeta «Imágenes». Elija esta opción para importar cualquier vídeo que se haya guardado en la carpeta «Imágenes».</p>
+    </item>
+  </terms>
+
+  <note>
+    <p>Puede importar con seguridad desde una carpeta desde la que ya haya importado antes sin riesgo de crear entradas duplicadas en su colección.</p>
+  </note>
+  
+  <section id="import-playlist">
+    <title>Importar desde una lista de reproducción</title>
+    <p>También puede importar música desde listas de reproducción. La mayoría de los archivos de listas de reproducción acaban en <em>m3u</em>. Para importar una lista de reproducción, desde el menú de Banshee seleccione <guiseq><gui>Multimedia</gui><gui>Importar lista de reproducción</gui></guiseq> y localice el archivo de la lista de reproducción en su carpeta, selecciónelo y pulse <gui>Importar</gui>.</p>
+  </section>
+  
+  <section id="plugins">
+    <title>Importar desde otras fuentes</title>
+    <p>Algunos complementos le permiten añadir opciones adicionales de importación. Las siguientes fuentes adicionales estarán disponibles si se activan los complementos adecuados:</p>
+  </section>
+  	
+</page>

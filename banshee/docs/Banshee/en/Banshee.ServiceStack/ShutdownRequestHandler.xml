@@ -1,0 +1,23 @@
+<Type Name="ShutdownRequestHandler" FullName="Banshee.ServiceStack.ShutdownRequestHandler">
+  <TypeSignature Language="C#" Value="public delegate bool ShutdownRequestHandler();" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ShutdownRequestHandler extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>Banshee.Services</AssemblyName>
+    <AssemblyVersion>0.90.1.25404</AssemblyVersion>
+    <AssemblyVersion>1.3.1.0</AssemblyVersion>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

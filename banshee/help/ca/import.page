@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="import" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <desc>Afegiu música i vídeos des del vostre ordinador a la biblioteca del Banshee.</desc>
+    <revision pkgversion="1.6" version="1.6" date="2010-07-15" status="review"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Importació de música i vídeos</title>
+
+  <p>Podeu importar música i vídeos ja emmagatzemats a l'ordinador cap al Banshee. Els fitxers importats apareixeran a les fonts i podreu editar-los i gestionar-los com qualsevol altre element multimèdia del Banshee.</p>
+
+  <p>Per a importar fitxers de música o vídeo, escolliu <guiseq><gui>Elements multimèdia</gui><gui>Importa elements multimèdia</gui></guiseq>. Una diàleg apareixerà amb diversos opcions.</p>
+
+  <note>
+    <p>Els connectors poden afegir opcions d'importació addicionals. Vegeu <link xref="#plugins"/> a baix.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Carpetes locals</gui></title>
+      <p>Escolliu aquesta opció per a importar tots els fitxers de música i vídeo d'una carpeta específica, incloent-hi totes els subcarpetes. Una capsa de diàleg us demanarà des de quina carpeta voleu importar.</p>
+    </item>
+    <item>
+      <title><gui>Fitxers locals</gui></title>
+      <p>Escolliu aquesta opció per a importar només un fitxer o fitxers específics que seleccioneu. Us apareixerà una capsa de diàleg on podreu escollir el fitxer o fitxers a importar.</p>
+    </item>
+    <item>
+      <title><gui>Carpeta d'usuari</gui></title>
+      <p>Escolliu aquesta opció per a importar tots els fitxers de vídeo i música de la vostra carpeta d'usuari, incloent-hi els fitxers en les subcarpetes.</p>
+    </item>
+    <item>
+      <title><gui>Vídeos des de la carpeta de fotografies</gui></title>
+      <p>Moltes càmeres digitals poden gravar vídeos curts, i les aplicacions de gestió fotogràfica sovint baixen aquests vídeos directament a la carpeta de fotografies. Seleccioneu aquesta opció per a importar qualsevol vídeo emmagatzemat en la carpeta de fotografies.</p>
+    </item>
+  </terms>
+
+  <note>
+    <p>Podeu importar de forma segura una carpeta que ja heu importat sense preocupar-vos que es produeixin entrades duplicades a la biblioteca.</p>
+  </note>
+  
+  <section id="import-playlist">
+    <title>Importa des d'una llista de reproducció</title>
+    <p>Podeu també importar música de les llistes de reproducció. La majoria de fitxers de llistes de reproducció acaben amb <em>m3u</em>. Per a importar des d'una llista de reproducció, des del menú del Banshee seleccioneu <guiseq><gui>Elements multimèdia</gui><gui>Importa la llista de reproducció</gui></guiseq> i cerqueu el fitxer de la llista de reproducció a la carpeta, seleccioneu-lo i premeu <gui>Importa</gui>.</p>
+  </section>
+  
+  <section id="plugins">
+    <title>Fonts d'importació addicionals</title>
+    <p>Els connectors poden afegir opcions d'importació addicionals. Les següents fonts addicionals estaran disponibles si els connectors apropiats estan habilitats:</p>
+  </section>
+  	
+</page>

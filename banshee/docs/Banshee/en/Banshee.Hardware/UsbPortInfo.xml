@@ -1,0 +1,72 @@
+<Type Name="UsbPortInfo" FullName="Banshee.Hardware.UsbPortInfo">
+  <TypeSignature Language="C#" Value="public class UsbPortInfo : Banshee.Hardware.IUsbPortInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UsbPortInfo extends System.Object implements class Banshee.Hardware.IUsbPortInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Banshee.Services</AssemblyName>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Banshee.Hardware.IUsbPortInfo</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UsbPortInfo (int busNumber, int deviceNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 busNumber, int32 deviceNumber) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="busNumber" Type="System.Int32" />
+        <Parameter Name="deviceNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="busNumber">To be added.</param>
+        <param name="deviceNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusNumber">
+      <MemberSignature Language="C#" Value="public int BusNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BusNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceNumber">
+      <MemberSignature Language="C#" Value="public int DeviceNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeviceNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

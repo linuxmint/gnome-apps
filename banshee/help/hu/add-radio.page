@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="add-radio" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <link type="seealso" xref="add-podcasts"/>
+    <link type="seealso" xref="import"/>
+    <desc>Internetes rádióállomások hozzáadása, eltávolítása és lejátszása a Bansheeban.</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-20" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Internetes rádió</title> 
+  
+  <section id="radiodescription">
+     <title>Mi az az internetes rádió?</title>
+     
+  <p>Az internetes rádióállomások hasonlóak a normál rádióállomásokhoz, amennyiben lehetővé teszik a zene élő továbbítását az interneten. Az internetes rádióállomásokat egyaránt működtetheti egy normál rádióállomás, egy saját adóját továbbító amatőr, vagy élő DJ-ket és akár reklámokat is sugárzó kereskedelmi rádióállomás.</p>
+  
+  </section>
+  
+  <section id="addradio">
+  
+  <title>Rádióállomás hozzáadása</title>
+  
+  <p>Internetes rádióállomás hozzáadásához nyomja meg a Banshee jobb felső sarkában lévő <gui>Állomás hozzáadása</gui> gombot, vagy válassza a <guiseq><gui>Média</gui><gui>Állomás hozzáadása</gui></guiseq> menüpontot.</p>
+  
+  <p>Az internetes rádióállomás weboldaláról másolja ki a műsorra mutató URL-címet a böngészőből. A legtöbb böngészőben a hivatkozás helyi menüjének <gui>Hivatkozás másolása</gui> pontját kell kiválasztani.</p>
+   
+
+  <p>A Banshee bekéri az <gui>Állomás műfaját</gui>. Válassza ki az internetes rádióállomás által játszott zene fajtáját a legördülő menüből. Adja meg az <gui>Állomás nevét</gui>, ez tetszőleges név lehet. Ezután illessze be a <gui>Műsor URL-címe</gui> mezőbe a rádióállomás URL-címét. Végül válassza a helyi menü <gui>Beillesztés</gui> pontját, vagy nyomja meg a <keyseq><key>Ctrl</key><key>V</key></keyseq> kombinációt.</p>
+  
+  <p>Kitöltheti az <gui>Állomás létrehozója</gui>, <gui>Leírás</gui> és az <gui>Értékelés</gui> mezőket is.</p>
+  
+  <p>Ezután nyomja meg a <gui>Mentés</gui> gombot az internetes rádióállomás felvételéhez a Bansheeba.</p>
+  
+  </section>
+  	  	  
+</page>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="tags" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="coverart"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Bearbeiten und Ändern von Markierungen und Metadaten der Musiktitel.</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-09" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Musik-Metadaten</title>
+
+  <section id="metadata">
+
+  <title>Musik-Metadaten</title>    
+  
+  	<p>Digital gespeicherte Musiktitel enthalten Metadaten, welche Informationen wie Name des Künstlers, Album, Jahr der Aufnahme, Genre und noch Einiges mehr enthalten können. In nahezu aller über das Internet verbreiteten Musik sind diese Metadaten bereits integriert. Wenn Sie Musik von CDs importieren, berücksichtigt Banshee diese Metadaten beim Auslesen der CD, falls diese verfügbar sind. Weitere Informationen über das Auslesen von CDs und Einbinden von Metadaten finden Sie in <link xref="import"/>.</p>
+  	
+  	<p>Populäre Metadaten-Formate sind ID3v1 und ID3v2 für MP3-Dateien sowie Vorbis-Kommentare für OGG-Vorbis-Dateien.</p>	
+  
+  	<p>Falls Sie über importierte Titel verfügen, die keine Metadaten enthalten, zeigt <app>Banshee</app> in den meisten Feldern in der Bibliothek <gui>Unbekannt</gui> an.</p>
+  	
+  </section>
+
+  <section id="editmetadata"> 	
+    
+    <title>Metadaten bearbeiten</title>
+    
+    <p>Sie können die Metadaten Ihrer Titel ändern und bearbeiten. Wählen Sie den oder die zu bearbeitenden Titel aus und drücken Sie entweder die Taste <key>E</key>, wählen Sie <guiseq><gui>Bearbeiten</gui><gui>Titelinformationen bearbeiten</gui></guiseq> im Menü oder klicken Sie mit der rechten Maustaste auf die Datei(en) und wählen Sie <gui>Titelinformationen bearbeiten</gui> im Kontextmenü.</p>
+    
+    <p>Ein Dialogfeld erscheint, welches die Metadaten des Titels anzeigt und Ihnen die Änderung oder Aktualisierung ermöglicht. Standardmäßig werden folgende Felder angezeigt:</p>
+    
+    <list>
+      <item><p><gui>Titelbezeichnung</gui></p></item>
+      <item><p><gui>Titel-Interpret</gui></p></item>
+      <item><p><gui>Albumtitel</gui></p></item>
+      <item><p><gui>Genre</gui></p></item>
+      <item><p><gui>Titelnummer</gui></p></item>
+      <item><p><gui>CD-Nummer</gui></p></item>
+      <item><p><gui>Jahr</gui></p></item>
+    </list>
+    
+    <p>Aktualisieren Sie die Titelinformationen. Falls Sie mehrere Titel zur Bearbeitung ausgewählt haben, klicken Sie auf das rechte Pfeilsymbol rechts vom Feld <gui>Stücktitel</gui> oder klicken Sie auf den Knopf <gui>Weiter</gui> unten im Dialog, wenn Sie mit der Bearbeitung des jeweiligen Titels fertig sind. Wenn Sie mit der Bearbeitung sämtlicher Metadaten fertig sind, klicken Sie auf <gui>Speichern</gui>.</p>
+   
+  </section>
+
+</page>

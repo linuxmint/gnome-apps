@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="ui" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-19" status="stub"/>
+    <desc>Ein Überblick über die Benutzeroberfläche von <app>Banshee</app>.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Einführung in die Benutzeroberfläche von Banshee</title>
+
+  <figure>
+    <title>Fenster des <gui>Banshee Medien-Wiedergabeprogramms</gui></title>
+    <desc><app>Banshee Medien-Wiedergabeprogramm</app></desc>
+    <media type="image" src="figures/banshee.png" mime="image/png" style="right">
+      <p>Bibliotheksschnittstelle von <app>Banshee</app></p>
+    </media>
+  </figure>
+  
+<section id="context">
+  <title>Quellen</title>
+    <p>Ihre Musik und Videos werden links in Banshee angezeigt. Über die Quellen erhalten Sie schnellen Zugriff auf Ihre Wiedergabe-Warteschlange, Musik, Videos, Amazon, Last.fm, Podcasts und mehr.</p>
+    
+    <note style="tip">
+      <p>Abhängig von der von Ihnen gewählten Quelle ändert sich die Menüauswahl. Wenn Sie beispielsweise einen Podcast in Banshee importieren, müssen Sie die Podcast-Quelle wählen. Die Menüoption zum Importieren eines Podcasts ist jedoch nicht vorhanden, wenn Sie ein Video abspielen oder die Musikbibliothek betrachten.</p>
+    </note> 
+</section>
+
+<section id="browser">
+  <title>Bibliotheksbrowser</title>
+  <p>Wenn Sie eine Musik- oder Videoquelle wählen, dann zeigt Banshee deren Inhalt im Bibliotheksbrowser an. Abhängig von der gewählten Quelle kann Banshee Ihre Musik- oder Videobibliothek, abonnierte Podcasts oder den Amazon-Musikladen anzeigen, wo Sie Musik kaufen können.</p>
+</section>
+
+<section id="nowplaying">
+  <title>Die »Jetzt wiedergegeben«-Ansicht</title>
+  <p>Bei der Benutzung von Banshee im Vollbildmodus könnte hilfreich sein, dass der »Jetzt wiedergegeben«-Modus die Bibliothek verbirgt, um eine vergrößerte Ansicht auf die Musik oder das Video zu gewähren. Beim Musik hören zeigt Ihnen der »Jetzt wiedergegeben«-Modus die Namen des Künstlers, des Albums und das Alben-Cover an, sofern verfügbar. Beim Ansehen eines Videos zeigt Banshee das Video an.</p>
+  
+  <p>Um während des »Jetzt Wiedergegeben«-Modus die Banshee-Benutzeroberfläche zu verbergen und den Vollbildmodus zu verwenden, drücken Sie entweder die Taste <key>F</key> oder klicken Sie auf den Knopf <gui>Vollbild</gui> in der oberen rechten Ecke des Banshee-Fensters, oder wählen Sie <guiseq>Ansicht<gui/>Vollbild<gui/></guiseq>.</p>
+  
+</section>
+
+<section id="library">
+  <title>Bibliothek</title>
+  <p>Abhängig von der von Ihnen gewählten Quelle ändert sich die Bibliotheksansicht in Banshee. Die Musikbibliothek zeigt Alben-Cover, die Künstler in Ihrer Bibliothek sowie eine Liste der Titel an. Die Podcast-Bibliothek zeigt Ihre abonnierten Podcasts, heruntergeladene oder nicht heruntergeladene Podcasts und alle alten oder neuen Podcasts an. In der Hilfeseite zu den Quellen finden Sie detailliertere Informationen über die Verwaltung einer Quelle.</p>
+</section>
+
+
+</page>

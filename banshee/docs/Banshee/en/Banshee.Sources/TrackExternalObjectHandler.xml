@@ -1,0 +1,24 @@
+<Type Name="TrackExternalObjectHandler" FullName="Banshee.Sources.TrackExternalObjectHandler">
+  <TypeSignature Language="C#" Value="public delegate object TrackExternalObjectHandler(DatabaseTrackInfo a);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TrackExternalObjectHandler extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>Banshee.Services</AssemblyName>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="a" Type="Banshee.Collection.Database.DatabaseTrackInfo" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Object</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="a">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,39 @@
+<Type Name="BansheeDbFormatMigratorMonitor" FullName="Banshee.Gui.BansheeDbFormatMigratorMonitor">
+  <TypeSignature Language="C#" Value="public class BansheeDbFormatMigratorMonitor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BansheeDbFormatMigratorMonitor extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Banshee.ThickClient</AssemblyName>
+    <AssemblyVersion>0.90.1.25406</AssemblyVersion>
+    <AssemblyVersion>1.3.1.0</AssemblyVersion>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BansheeDbFormatMigratorMonitor (Banshee.Database.BansheeDbFormatMigrator migrator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Banshee.Database.BansheeDbFormatMigrator migrator) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="migrator" Type="Banshee.Database.BansheeDbFormatMigrator" />
+      </Parameters>
+      <Docs>
+        <param name="migrator">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

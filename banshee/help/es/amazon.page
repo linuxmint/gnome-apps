@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="amazon" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#extensions"/>
+    <link type="seealso" xref=""/>
+    <desc>Sincronizar y comprar música de la tienda de Amazon MP3.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-07-11" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Tienda de Amazon MP3</title>    
+  
+  <p>Banshee le permite descargar e importar música de la tienda de Amazon MP3.  Puede importar de forma manual sus archivos comprados en Amazon, adquirir música desde el navegador o comprar música desde el propio Banshee. Amazon sólo permite la compra de música en MP3 en algunos países, por lo que dependiendo de su ubicación es posible que no pueda comprar MP3 de Amazon.</p>
+   
+   <note style="important">
+     <p>Banshee emplea un código de afiliado con Amazon en todas las compras de música. Todo el dinero que se gana por medio de este código es donado a la Fundación GNOME.</p>
+   </note>
+   
+  <section id="amazon-browser">
+  <title>Comprar música en MP3 desde Amazon desde el navegador</title> 
+  
+  <p>La música que se compra desde la tienda de Amazon MP3 puede ser descargada e importada a Banshee automáticamente. El programa se asocia con los archivos .amz que Amazon proporciona en la compra de música en MP3. Cuando compre música en Amazon, el navegador descargará el archivo .amz y Banshee lo abrirá automáticamente y comenzará la descarga e importación.</p>
+  </section>
+  
+  <section id="amazon-banshee">
+  <title>Comprar música en MP3 de Amazon desde Banshee</title> 
+  
+  <p>También puede buscar canciones en Amazon desde Banshee. Elija la Tienda de Amazon MP3 desde el menú de la izquierda. Esto cargará la tienda de Amazon MP3 como si la estuviera viendo en el navegador. Tras iniciar sesión en Amazon, podrá buscar música que desea comprar y descargarla con una sola pulsación. Banshee descargará e importará la música comprada a su colección de forma automática.</p>
+  </section>
+  
+  <section id="amazon-manual">
+  <title>Importar música en MP3 de Amazon manualmente</title> 
+  
+  <p>Cuando compra música en Amazon a través del navegador, se descarga un archivo con la extensión .amz que se guarda en su disco duro. Para importar de forma manual la música comprada en Amazon, vaya a <guiseq><gui>Multimedia</gui><gui>Importar contenido multimedia…</gui></guiseq> y seleccione el archivo *.amz que desea importar. Banshee abrirá el archivo y se conectará a la tienda de Amazon MP3 para comenzar la descarga.</p>
+  
+  <note style="warning">
+    <p>Los archivos .amz de Amazon sólo tienen validez por un periodo corto de tiempo. Si tarda mucho en descargar su música, el archivo expirará y no podrá utilizarlo para descargar música desde Amazon. La tienda no da información precisa sobre cuánto tiempo pueden ser utilizados los archivos. Se recomienda que descargue e importe la música de la tienda Amazon MP3 como máximo una hora después de la compra.</p>
+  </note>
+  </section> 
+	
+</page>

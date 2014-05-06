@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="add-radio" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <link type="seealso" xref="add-podcasts"/>
+    <link type="seealso" xref="import"/>
+    <desc>Hinzufügen, Entfernen und Abspielen von Internet-Radiosendern in Banshee.</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-20" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Internet-Radio</title> 
+  
+  <section id="radiodescription">
+     <title>Was ist Internet-Radio?</title>
+     
+  <p>Internet-Radiostationen ähneln herkömmlichen Radiosendern. Sie ermöglichen Einzelpersonen oder Organisationen die Verbreitung von Musik live als Datenstrom über das Internet. Sie können den Datenstrom beispielsweise gleichzeitig mit der Aussendung gewöhnlicher Radiosender verbreiten, Amateuren den Betrieb ihres eigenen Radiosenders ermöglichen oder auch kommerziell mit Live-Moderatoren und sogar Werbespots betrieben werden.</p>
+  
+  </section>
+  
+  <section id="addradio">
+  
+  <title>Neue Radio-Station hinzufügen</title>
+  
+  <p>Um eine Internet-Radiostation in Banshee hinzuzufügen, klicken Sie auf <gui>Sender hinzufügen</gui> in der oberen rechten Ecke des Anwendungsfensters oder klicken Sie im Menü auf <guiseq><gui>Medien</gui><gui>Sender hinzufügen</gui></guiseq>.</p>
+  
+  <p>Kopieren Sie auf der Webseite der Internet-Radiostation den Link zur Datenstrom-Adresse. In den meisten Webbrowsern können Sie mit der rechten Maustaste auf den Link klicken und im Kontextmenü <gui>Link-Adresse kopieren</gui> wählen.</p>
+   
+
+  <p>Banshee fordert Sie auf, das <gui>Sendergenre</gui> einzugeben. Wählen Sie aus den vorgegebenen Einträgen in der Auswahlliste die Musikrichtung aus, die diese Internet-Radiostation spielt. Geben Sie dann den <gui>Sendernamen</gui> ein. Geben Sie einen Namen für die Radiostation ein. Dann drücken Sie die Tabulatortaste oder benutzen Sie die Maus, um das Feld <gui>Stream-Adresse:</gui> anzuwählen. Hier geben Sie die URL der Radiostation ein. Klicken Sie mit der rechten Maustaste in das Eingabefeld und wählen Sie <gui>Einfügen</gui> im Kontextmenü oder drücken Sie <keyseq><key>Strg</key>+<key>V</key></keyseq>.</p>
+  
+  <p>Optional können Sie auch die Felder <gui>Stationsurheber</gui>, <gui>Beschreibung</gui> und <gui>Bewertung</gui> ausfüllen.</p>
+  
+  <p>Dann klicken Sie auf <gui>Speichern</gui>, um den Internet-Radiosender in Banshee zu speichern.</p>
+  
+  </section>
+  	  	  
+</page>

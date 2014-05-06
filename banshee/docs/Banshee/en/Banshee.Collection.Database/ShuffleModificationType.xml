@@ -1,0 +1,45 @@
+<Type Name="ShuffleModificationType" FullName="Banshee.Collection.Database.ShuffleModificationType">
+  <TypeSignature Language="C#" Value="public enum ShuffleModificationType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ShuffleModificationType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Banshee.Services</AssemblyName>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Discard">
+      <MemberSignature Language="C#" Value="Discard" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Banshee.Collection.Database.ShuffleModificationType Discard = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Banshee.Collection.Database.ShuffleModificationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Insertion">
+      <MemberSignature Language="C#" Value="Insertion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Banshee.Collection.Database.ShuffleModificationType Insertion = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Banshee.Collection.Database.ShuffleModificationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

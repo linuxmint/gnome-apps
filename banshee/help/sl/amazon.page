@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="amazon" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#extensions"/>
+    <link type="seealso" xref=""/>
+    <desc>Usklajujte in nakupujte glasbo v trgovini Amazon MP3.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-07-11" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Trgovina Amazon MP3</title>    
+  
+  <p>Banshee podpira prejemanje in uvažanje glasbe iz trgovine Amazon MP3. Glasbene datoteke Amazon lahko ročno uvozite, kupite glasbo v svojem spletnem brskalniku ali kupite glasbo v Banshee.  Amazon ponuja glasbo le v vrsti MP3 v določenih državah in morda glede na vaše mesto ne boste mogli kupiti Amazon MP3-jev.</p>
+   
+   <note style="important">
+     <p>Banshee uporablja pridružitveno kodo Amazon za vse nakupe glasbe. Ves denar zbran s to pridružitveno kodo je doniran fundaciji GNOME.</p>
+   </note>
+   
+  <section id="amazon-browser">
+  <title>Kupite Amazon MP3-je v svojem spletnem brskalniku</title> 
+  
+  <p>Glasbo kupljeno v trgovini Amazon MP3 je mogoče samodejno prejeti in uvoziti v Banshee. Banshee se poveže z datoteko .amz, ki jo Amazon zagotavlja za nakupe MP3. Ko kupite glasbo na Amazonu, bo vaš spletni brskalnik prejel datoteko .amz, Banshee jo bo samodejno odprl in začel prejem in uvoz glasbe.</p>
+  </section>
+  
+  <section id="amazon-banshee">
+  <title>Kupite Amazon MP3-je v Banshee</title> 
+  
+  <p>Skladbe lahko na Amazonu iščete znotraj Banshee. V meniju Banshee na levi izberite trgovino Amazon MP3. To bo naložilo trgovino Amazon MP3 tako, kot če bi bili v spletnem brskalniku. Po Amazonu lahko iščete glasbo, ki jo želite kupiti. Po prijavi v Amazon lahko glasbo kupite z enim klikom. Banshee bo samodejno prejel in uvozil vaš nakup v knjižnico.</p>
+  </section>
+  
+  <section id="amazon-manual">
+  <title>Ročen uvoz Amazon MP3-je</title> 
+  
+  <p>Ko glasbo kupite z Amazona v spletnem brskalniku, bo datoteka z razširitvijo .amz prejeta in shranjena na vaš trdi disk. Za uvoz glasbe ročno kupljene z Amazona v Banshee izberite <guiseq><gui>Večpredstavnost</gui><gui>Uvozi večpredstavnost</gui></guiseq> in izberite datoteko *.amz za uvoz. Banshee bo nato odprl to datoteko in se povezal v trgovino Amazon MP3 za začetek prejema.</p>
+  
+  <note style="warning">
+    <p>Datoteke Amazon .amz so dejavne le za kratek čas. V primeru da svoje glasbe ne boste hitro prejeli, bo datoteka potekla in ne boste mogli prejeti svoje glasbe z Amazona. Amazon ne objavlja kako dolgo so datoteke dejavne. Priporočamo vam, da svoje nakupe z Amazona prejmete in uvozite v eni urni od nakupa.</p>
+  </note>
+  </section> 
+	
+</page>

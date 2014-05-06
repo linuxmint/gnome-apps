@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="ui" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-19" status="stub"/>
+    <desc>Pregled uporabniškega vmesnika <app>Banshee</app>.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Uvod v uporabniški vmesnik Banshee</title>
+
+  <figure>
+    <title>Okno <gui>Banshee predvajalnik večpredstavnostnih datotek</gui></title>
+    <desc><app>Banshee predvajalnik večpredstavnostnih datotek</app></desc>
+    <media type="image" src="figures/banshee.png" mime="image/png" style="right">
+      <p>Vmesnik knjižnice <app>Banshee</app></p>
+    </media>
+  </figure>
+  
+<section id="context">
+  <title>Viri</title>
+    <p>Viri vaše glasbe in videov so v Banshee prikazani na levi.  Viri vam omogočajo hiter   dostop do vaše predvajalne vrste, Glasbe, Videov, Amazona, Last.fm, Podcastov in več.                </p>
+    
+    <note style="tip">
+      <p>Izbire menija se bodo spremenile glede na izbrani vir. Na primer, če hočete videti meni za uvoz podcasta, boste morali izbrati vir Podcast. Možnost menija za uvažanje podcasta ni na voljo pri ogledovanju video ali glasbene knjižnice.</p>
+    </note> 
+</section>
+
+<section id="browser">
+  <title>Brskalnik knjižnice</title>
+  <p>Ko iz virov izberete vir glasbe ali videa, bo Banshee vašo vsebino prikazal v brskalniku knjižnice. Glede na izbrani vir lahko Banshee prikaže vašo glasbeno ali video knjižnico, naročila podcastov ali celo glasbeno trgovino Amazon, ki vam omogoča nakup slabe.</p>
+</section>
+
+<section id="nowplaying">
+  <title>Pogled sedaj se predvaja</title>
+  <p>V načinu predvajanja se knjižnica skrije in je zato več prostora za prikaz videa. Zato je uporaben v celozaslonskem načinu. Med poslušanjem glasbe bo prikazano ime izvajalca, album in ovitek, če je na voljo. Če gledate video, bo Banshee prikazal video.</p>
+  
+  <p>Za skritje uporabniškega vmesnika Banshee in uporabo celozaslonskega načina lahko pritisnete <key>F</key>, pritisnete gumb <gui>Celozaslonski način</gui> v zgornjem desnem kotu programa ali izberete <guiseq><gui>Pogled</gui><gui>Celozaslonski način</gui></guiseq>.</p>
+  
+</section>
+
+<section id="library">
+  <title>Knjižnica</title>
+  <p>Pogled knjižnice se bo v Banshee spremenil glede na vaš izbrani vir. Glasbena knjižnica bo prikazala ovitke, izvajalce v vaši knjižnici in seznam skladb. Knjižnica podcastov bo prikazala vaša naročila podcastov, prejete in ne prejete podcaste in vse, nove in stare podcaste. Oglejte si stran pomoči vsakega vira za podrobnosti o upravljanju virov. </p>
+</section>
+
+
+</page>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Uskladite svoje večpredstavnostne datoteke s prenosnim večpredstavnostnim predvajalnikom ali pametnim telefonom.</desc>
+    <revision pkgversion="1.8" version="0.1" date="2010-08-29" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Usklajevanje</title>    
+  
+  <p>Banshee podpira usklajevanje vaše glasbe s prenosnimi večpredstavnostnimi predvajalniki in pametnimi telefoni. Dodate lahko določene skladbe, albume ali seznam predvajanja ali pa Banshee dovolite usklajevanje celotne knjižnice s svojim glasbenim predvajalnikom. Ko je vaš predvajalnik povezan na računalnik lahko skladbe na prenosnem predvajalniku predvajate v Banshee. Med usklajevanjem glasbe vrste brez izgub kot je FLAC, bo Banshee vašo glasbo samodejno prekodiral v vrsto z izgubai kot je Ogg Vorbis ali MP3, če imate nameščene pravilne kodeke.</p>
+  
+  <section id="devices">
+    <title>Podpora naprav</title>
+    <p>Banshee podpira skoraj vse nove prenosne predvajalnike glasbe z izjemo Apple iPhone, iPad in iPod Touch.</p>
+  
+  <p>Ko vklopite svojo napravo, jo bo Banshee prikazal v levem meniju. Pritisk na ikono naprave vas bo odpeljal na domačo stran naprave v Banshee, ki bo prikazala vaše možnosti usklajevanja.</p>
+  
+  </section>
+  
+    <section id="sync-settings">
+    <title>Uskladite svojo glasbo</title>
+    <p>Večpredstavnostne datoteke na svojem prenosnem predvajalniku glasbe lahko upravljate s samodejnim usklajevanjem Banshee ali pa s svojo glasbo in večpredstavnostne datoteke upravljate ročno.</p>
+    
+    <p>Izberite svojo napravo iz menija Banshee in nato izberite kako želite uskladiti svoje večpredstavnostne datoteke, vključno z:</p>
+    <list>
+      <item><p>Glasba</p></item>
+      <item><p>Zvočne knjige</p></item>  
+      <item><p>Videi</p></item>
+      <item><p>Podcast</p></item>  
+    </list>
+    
+    <p>V spustnem meniju poleg vsakega medija izberite iz:</p>
+    <list>
+      <item><p>Upravljajte ročno</p></item>
+      <item><p>Uskladi celotno knjižnico</p></item>  
+    </list>    
+    
+    <note style="warning">
+      <p>V primeru, da izberete samodejno usklajevanje vaše celotne knjižnice s svojim prenosnim predvajalnikom glasbe, se prepričajte da ima prenosni predvajalnik na voljo dovolj prostora. V primeru, da je vaša knjižnica večja od prostora na vašem prenosnem predvajalniku glasbe, bo Banshee usklajeval večpredstavnostne datoteke dokler vaš predvajalnik in poln in se nato zaustavil.</p>
+    </note>
+    
+    <p>V primeru, da ste v svoji glasbeni knjižnici ustvarili sezname predvajanja , bodo bili prikazani tudi kot možnost usklajevanja za glasbo. To je lahko uporabno pri ustvarjanju pametnih seznamov, saj se bodo pametni seznami ob dodajanju nove vsebine na osnovi pravil seznama predvajanja samodejno posodabljali  . Banshee bo nov seznam predvajanja uskladil z napravo vsakič, ko jo priklopite. </p>
+    
+    <p>Banshee bo prikazal celoten prostor na trdem disku vašega prenosnega predvajalnika glasbe v grafu na spodnjem delu Banshee. Graf bo prikazal koliko prostora zasedajo zvočne, video in druge datoteke, ter koliko prostora je še praznega. Neposredno pod tem vam bo Banshee prikazal koliko je vseh predmetov shranjenih na vašem prenosnem predvajalniku glasbe, koliko uram ali dnem predvajanja to ustreza in koliko prostora je porabljenega.</p>
+    
+  </section>
+
+  <section id="sync-manually">
+    <title>Uskladite svojo celotno knjižnico</title>
+    <p>Večpredstavnostne datoteke lahko iz Banshee spustite na svoj prenosni predvajalnik glasbe. Izberite datoteko ali datoteke, ki jih želite prekopirati na svoj prenosni predvajalnik glasbe. Nato pritisnite in držite desni miškin gumb in povlecite datotek-o/e na ikono svojega prenosnega predvajalnika v Banshee. To bo datoteke skopiralo na vašo napravo.  </p>
+    
+    <p>V primeru da je vaša glasbena knjižnica vrste, ki je vaš prenosni večpredstavnostni prevajalnik ne podpira (na primer OGG ali FLAC) in imate nameščene zahtevane kodeke, lahko Banshee te datoteke samodejno med prenašanjem na veš prenosni predvajalnik večpredstavnosti prekodira v MP3. Za pomoč pri namestitvi kodekov si oglejte dokumentacijo distribucije, saj je izven obsega te pomoči in se med distribucijami razlikuje.</p>
+    
+    <note style="tip">
+      <p>Morda boste morali svojo napravo izvreči za pravilno nalaganje datotek na svoj prenosni predvajalnik glasbe. Za izvrz svoje naprave v Banshee z miško v meniju Banshee desno kliknite na napravo in pritisnite <gui>Odklopi</gui>.</p>
+    </note>
+
+  </section>
+  
+  <section id="pmp-play">
+    <title>Predvajajte glasbo s svojega prenosnega predvajalnika glasbe</title>
+    <p>Glasbo shranjeno na prenosnem predvajalniku glasbe lahko predvajate neposredno v Banshee. Izberite svoj predvajalnik v meniju Banshee na levi in prikazana bo knjižnica vašega predvajalnika glasbe. Nato lahko v Banshee predvajate glasbo kot bi jo predvajali v svoji lastni knjižnici.</p>
+  </section>
+  
+  <section id="pmp-delete">
+    <title>Odstranite glasbo iz svojega prenosnega predvajalnika glasbe</title>
+    <p>Za odstranitev skladb shranjenih na prenosnem predvajalniku glasbe v Banshee izberite svoj predvajalnik za ogled njegove knjižnice. Nato izberite skladbe, ki jih želite izbrisati in izberite "Izbriši" ali v meniju izberite <guiseq><gui>Uredi</gui><gui>Izbriši</gui></guiseq>.</p>
+    
+     <note style="warning">
+      <p>Izbris datotek z vašega prenosnega glasbenega predvajalnika bo datoteke trajno izbrisal in ne boste jih mogli obnoviti.</p>
+    </note>
+    
+  </section>
+
+	
+</page>

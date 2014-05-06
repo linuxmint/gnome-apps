@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="play" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="queue"/>
+    <desc>Lecture de vos vidéos et de vos fichiers musicaux.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Lecture de vos médias</title>
+
+  <section id="playmusic">
+  <title>Lecture de votre musique</title>    
+  
+  <p>Pour écouter de la musique avec Banshee, choisissez la ressource Musique. La bibliothèque musicale affiche tous les artistes qu'elle contient, la pochette de chaque album et la liste de toutes les chansons qu'elle contient.</p>
+  
+  <p>Choisissez dans la liste d'artistes ou d'albums la chanson ou l'album que vous souhaitez écouter, ou faites une recherche dans le champ en haut à droite de Banshee.</p>
+  
+  <p>Pour démarrer l'écoute d'une chanson, faites un double-clic sur son titre, appuyez sur la touche <key>Espace</key>, ou encore choisissez <guiseq><gui>Lecture</gui><gui>Lire</gui></guiseq> dans le menu de Banshee.</p>
+  
+  <p>Vous pouvez aussi démarrer l'écoute d'un album en le sélectionnant dans l'explorateur et en double-cliquant sur le titre voulu ou en appuyant sur la touche <key>Espace</key>, ou encore en choisissant <guiseq><gui>Lecture</gui><gui>Lire</gui></guiseq> dans le menu de Banshee.</p>
+  
+  <p>Pour écouter tous les titres d'un seul artiste, sélectionnez l'artiste dans le navigateur et appuyez sur la touche <key>Espace</key> ou choisissez <guiseq><gui>Lecture</gui><gui>Lire</gui></guiseq> dans le menu de Banshee.</p>
+  
+  <p>Banshee affiche aussi vos albums favoris (ceux que vous écoutez le plus souvent), vos favoris récents, ceux non écoutés et ceux récemment ajoutés. Sélectionnez celui que vous voulez écouter et lisez les chansons de chacun d'eux.</p>
+  
+  </section>
+
+  <section id="playvideo">
+  <title>Lecture d'une vidéo</title>    
+  
+  <p>Vos vidéos importées sont listées dans l'ordre alphabétique. Pour en lancer une, sélectionnez-la dans la liste et appuyez sur la touche <key>Espace</key> ou choisissez <guiseq><gui>Lecture</gui><gui>Lire</gui></guiseq> dans le menu de Banshee.</p>
+  
+  <p>Banshee affiche aussi vos vidéos favorites (celles que vous regardez le plus souvent) et celles non regardées. Choisissez une catégorie et vous pourrez lancer une vidéo de la liste.</p>	
+  
+  </section>
+  
+  <section id="playpodcast">
+  <title>Lecture d'un podcast</title>    
+  
+  <p>La ressource Podcasts affiche tous les podcasts auxquels vous êtes abonné, tous les podcasts disponibles et l'explorateur affiche la liste de tous les podcasts avec les plus récents en tête.</p>
+  
+  <p>Pour lire un podcast, sélectionnez-le dans la liste et appuyez sur la touche <key>Espace</key> ou choisissez <guiseq><gui>Lecture</gui><gui>Lire</gui></guiseq> dans le menu de Banshee.</p>
+  
+  </section>
+  
+  <section id="playradio">
+  <title>Écoute d'une station de radio internet</title>    
+  
+  <p>La ressource Radio affiche dans l'ordre alphabétique toutes les stations radio internet que vous avez ajoutées à Banshee.</p>
+  
+  <p>Pour écouter une station de radio internet, sélectionnez-la dans la liste et appuyez sur la touche <key>Espace</key> ou choisissez <guiseq><gui>Lecture</gui><gui>Lire</gui></guiseq> dans le menu de Banshee.</p>
+  
+  </section>    
+	
+</page>

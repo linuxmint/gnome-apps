@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="search" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="sort"/>
+    <desc>Iščite po svojih večpredstavnostnih datotekah in izvedite osnovne poizvedbe.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Iskanje po vaši knjižnici Banshee</title>    
+  
+  <p>Banshee vsebuje zmogljiv iskalni jezik. Po svoji knjižnici lahko iščete hitro in enostavno z osnovnimi iskalnimi izrazi ali izvedete podrobna iskanja z napredno iskalno terminologijo Banshee. </p>
+  
+  <p>Za izvedbo iskanja vaše večpredstavnosti v Banshee pritisnite <key>S</key> ali kliknite na polje <gui>Iskanje</gui> v zgornjem desnem kotu pogleda knjižnica v Banshee</p>
+  
+  <p>Iskalna poizvedba je sestavljena iz nekaj osnovnih nizov na primer <em>janez novak</em>. Če v iskalno polje vnesete <em>janez novak</em>, bo Banshee preiskal vsa polja metapodatkov, vključno z naslovom skladbe, naslovom albuma, izvajalcem albuma, letom, itd. Vsaka skladba katere metapodatki vsebujejo <em>janez</em> in <em>novak</em> bo vrnjena kot rezultat. Iskalni izrazi so neodvisni od velikosti črk. <em>janez</em>, <em>Janez</em> in <em>JANEZ</em> med iskanjem pomenijo enako stvar.</p>
+
+<section id="operators">
+  <title>Osnovni operatorji</title>
+  <p>Med katerekoli dve iskalni besedi ali pred iskalno besedo je mogoče postaviti operatorje. Privzeti operator je <gui>IN</gui>, ki se uporablja, ko se ne uporablja noben drug operator med dvema iskalnima nizoma. Ker IN je privzeti operator, izreci operator IN ne obstaja.</p>
+  
+  <p>Druga osnovna operatorja sta <gui>ALI</gui> in <gui>NE</gui>. Skupaj lahko ti trije operatorji tvorijo zmogljive poizvedbe, ki vam pomagajo iskati vaše večpredstavnostne datoteke.</p>
+  
+</section>
+
+<section id="logical">
+  <title>Logični operatorji in primeri</title>
+  <p>Sledi seznam logičnih operatorjev in iskalnih rezultatov pri njihovi uporabi.</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Operator</gui></p></td>  <td><p><gui>Opis</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><em>privzeto</em>, <em>presledek</em></p></td> <td><p>Iščite za dva izraza s presledkom med dvema besedama ali izrazoma.</p></td>
+  </tr>
+  <tr>
+    <td><p>OR, or, <key>|</key>, <key>,</key></p></td> <td><p>Rezultat iskanja bosta bila dva izraza s katerimkoli rezultatom v kateremukoli polju.</p></td>
+  </tr>
+  <tr>
+    <td><p>NOT, not,<key>-</key></p></td> <td><p>Ne prikaži rezultatov iskanja s katerimkoli iskalnim izrazom, ki sledi operatorju NE, ne, <key>-</key>.</p></td>
+  </tr>  
+         
+</table>
+
+  <p>Primeri logičnih operacij vključujejo:</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Poizvedba</gui></p></td>  <td><p><gui>Opis</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>janez novak</p></td> <td><p>Ujema se z vsemi polji v skladbi, ki vsebujejo tako <em>janez</em> kot <em>novak</em>.</p></td>
+  </tr>
+  <tr>
+    <td><p>janez, novak</p></td> <td><p>Ujema se s polji v skladbi, ki vsebujejo <em>janez</em> ali <em>novak</em>.</p></td>
+  </tr>
+  <tr>
+    <td><p>janez ali novak</p></td> <td><p>Ujema se s polji v skladbi, ki vsebujejo <em>janez</em> ali <em>novak</em>.</p></td>
+  </tr> 
+  <tr>
+    <td><p>janez | novak</p></td> <td><p>Ujema se s polji v skladbi, ki vsebujejo <em>janez</em> ali <em>novak</em>.</p></td>
+  </tr>       
+  <tr>
+    <td><p>- "janez novak"</p></td> <td><p>Prikaže vse skladbe, katerih polja ne vsebujejo <em>janez novak</em>.</p></td>
+  </tr> 
+  
+  </table> 
+  
+  <p>Za več podrobnosti o izvajanju bolj zapletenih poizvedb iskanja si oglejte stran <link xref="adv-search"/>.</p>
+  
+</section>
+	
+</page>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="add-podcast" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <link type="seealso" xref="add-radio"/>
+    <link type="seealso" xref="import"/>
+    <desc>Afegeix, elimina i reprodueix podcasts al Banshee.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Podcasts</title> 
+  
+  <section id="podcastdescription">
+     <title>Què és un Podcast?</title>
+     
+  <p>Els Podcasts són programes enregistrats, similars als programes de ràdio, que es troben disponibles a Internet als quals us podeu subscriure. En subscriure-us a un Podcast des del Banshee, cada cop que es publica un nou programa, el Banshee baixarà el Podcast automàticament perquè el pugueu escoltar.</p>
+  
+  <p>Hi ha Podcasts gairebé de qualsevol tema, incloent-hi música, pel·lícules, Linux, i molt més. Cerqueu a Internet utilitzant el vostre cercador preferit amb termes com ara «pel·lícula podcast» i obtindreu un conjunt de resultats per a escollir.</p>
+  
+  </section>
+  
+  <section id="addpodcast">
+    <title>Afegiu un Podcast</title>
+  
+  <p>Per a afegir un Podcast al Banshee primer heu de visitar la pàgina del Podcast a Internet amb un navegador web. Gairebé tots els Podcasts tenen un botó o enllaç per subscriure's. Copieu l'enllaç a la subscripció al Podcast. A la majoria de navegadors web, podeu fer clic a l'enllaç amb el botó dret del ratolí i seleccionar <gui>Copia l'enllaç</gui>.</p>
+  
+  <p>Al Bansee, premeu i seleccioneu <gui>Subscriviu-vos al podcast</gui> a la part superior dreta, des del menú escolliu <guiseq><gui>Elements multimèdia</gui> <gui>Subscriviu-vos al podcast</gui></guiseq> o utilitzeu la drecera de teclat <keyseq><key>tecla de majúscules</key><key>control</key><key>F</key></keyseq>.</p>
+  
+  <p>El Banshee us permetrà escollir com voleu baixar els Podcasts nous des del menú desplegable. Les opcions inclouen:</p>
+  
+  <list>
+  	<item><p>Baixa l'episodi més recent (es baixarà l'últim episodi que s'ha publicat)</p></item>
+  	<item><p>Baixa tots els episodis.</p></item>
+	<item><p>Deixeu-me decidir quins episodis baixar.</p></item>
+  </list>
+
+  <p>Un cop hàgiu afegit un canal Podcast, el Banshee mostrarà:</p>
+  
+  <list>
+  	<item><p><gui>Nom</gui>: (nom de l'episodi específic)</p></item>
+  	<item><p><gui>Podcast</gui>: (nom del Podcast)</p></item>
+  	<item><p><gui>Publicat</gui> (data en que l'episodi es va publicar)</p></item>
+  </list>
+  
+  </section>	
+  	  	  
+</page>

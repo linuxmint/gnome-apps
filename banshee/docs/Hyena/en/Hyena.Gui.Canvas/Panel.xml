@@ -1,0 +1,251 @@
+<Type Name="Panel" FullName="Hyena.Gui.Canvas.Panel">
+  <TypeSignature Language="C#" Value="public class Panel : Hyena.Gui.Canvas.CanvasItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Panel extends Hyena.Gui.Canvas.CanvasItem" />
+  <AssemblyInfo>
+    <AssemblyName>Hyena.Gui</AssemblyName>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Hyena.Gui.Canvas.CanvasItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Panel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arrange">
+      <MemberSignature Language="C#" Value="public override void Arrange ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Arrange() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bind">
+      <MemberSignature Language="C#" Value="public override void Bind (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Bind(object o) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonEvent">
+      <MemberSignature Language="C#" Value="public override bool ButtonEvent (Hyena.Gui.Canvas.Point cursor, bool pressed, uint button);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ButtonEvent(valuetype Hyena.Gui.Canvas.Point cursor, bool pressed, unsigned int32 button) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cursor" Type="Hyena.Gui.Canvas.Point" />
+        <Parameter Name="pressed" Type="System.Boolean" />
+        <Parameter Name="button" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="cursor">To be added.</param>
+        <param name="pressed">To be added.</param>
+        <param name="button">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Children">
+      <MemberSignature Language="C#" Value="public Hyena.Gui.Canvas.CanvasItemCollection Children { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Hyena.Gui.Canvas.CanvasItemCollection Children" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Hyena.Gui.Canvas.CanvasItemCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClippedRender">
+      <MemberSignature Language="C#" Value="protected override void ClippedRender (Hyena.Data.Gui.CellContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClippedRender(class Hyena.Data.Gui.CellContext context) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Hyena.Data.Gui.CellContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CursorMotionEvent">
+      <MemberSignature Language="C#" Value="public override bool CursorMotionEvent (Hyena.Gui.Canvas.Point cursor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CursorMotionEvent(valuetype Hyena.Gui.Canvas.Point cursor) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cursor" Type="Hyena.Gui.Canvas.Point" />
+      </Parameters>
+      <Docs>
+        <param name="cursor">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindChildAt">
+      <MemberSignature Language="C#" Value="protected Hyena.Gui.Canvas.CanvasItem FindChildAt (Hyena.Gui.Canvas.Point pt, bool grabHasPriority);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Hyena.Gui.Canvas.CanvasItem FindChildAt(valuetype Hyena.Gui.Canvas.Point pt, bool grabHasPriority) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Hyena.Gui.Canvas.CanvasItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pt" Type="Hyena.Gui.Canvas.Point" />
+        <Parameter Name="grabHasPriority" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="pt">To be added.</param>
+        <param name="grabHasPriority">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindChildAt">
+      <MemberSignature Language="C#" Value="protected Hyena.Gui.Canvas.CanvasItem FindChildAt (double x, double y, bool grabHasPriority);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Hyena.Gui.Canvas.CanvasItem FindChildAt(float64 x, float64 y, bool grabHasPriority) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Hyena.Gui.Canvas.CanvasItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+        <Parameter Name="grabHasPriority" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="grabHasPriority">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTooltipMarkupAt">
+      <MemberSignature Language="C#" Value="public override bool GetTooltipMarkupAt (Hyena.Gui.Canvas.Point pt, out string markup, out Hyena.Gui.Canvas.Rect area);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetTooltipMarkupAt(valuetype Hyena.Gui.Canvas.Point pt, string markup, valuetype Hyena.Gui.Canvas.Rect area) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pt" Type="Hyena.Gui.Canvas.Point" />
+        <Parameter Name="markup" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="area" Type="Hyena.Gui.Canvas.Rect&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pt">To be added.</param>
+        <param name="markup">To be added.</param>
+        <param name="area">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPointerGrabbed">
+      <MemberSignature Language="C#" Value="public override bool IsPointerGrabbed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPointerGrabbed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Measure">
+      <MemberSignature Language="C#" Value="public override Hyena.Gui.Canvas.Size Measure (Hyena.Gui.Canvas.Size available);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Hyena.Gui.Canvas.Size Measure(valuetype Hyena.Gui.Canvas.Size available) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Hyena.Gui.Canvas.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="available" Type="Hyena.Gui.Canvas.Size" />
+      </Parameters>
+      <Docs>
+        <param name="available">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="playlists" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="tags"/>
+    <link type="seealso" xref="coverart"/>
+    <desc>Vytvářejte a spravujte seznamy skladeb.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-05-26" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Seznamy skladeb</title>    
+  
+  <p>Pomocí seznamů skladeb můžete vytvářet a ukládat seznamy hudebních stop, které se mají přehrát v zadaném pořadí. Seznamy skladeb jsou vhodné k vytváření seznamů vašich oblíbených skladeb nebo k rozdělení vaší kolekce do menších seznamů kvůli snazšímu procházení. Některé přenosné přehrávače dokonce umožňují načíst seznamy skladeb, takže si je můžete brát na cesty.</p>
+  
+  <p>Přehrávač Banshee podporuje normální seznamy skladeb, které obsahují skladby, které jste do seznamu přidali a chytré seznamy skladeb. Chytré seznamy skladeb se generují automaticky na základě toho, co posloucháte, na základě vaší oblíbené hudby a dalších věcech.</p>
+  
+  <section id="manual">
+  
+    <title>Normální seznamy skladeb</title>
+  
+    <p>Normální seznam skladeb je seznam, do kterého můžete přidávat skladby a provádět jejich správu. Můžete chtít vytvořit svůj vlastní seznam skladeb svého oblíbeného umělce z více alb, ze svých posledních oblíbených skladeb nebo z motivačních skladeb pro poslech při cvičení.</p>
+    
+    <p>Nový seznam skladeb vytvoříte zmáčknutím <keyseq><key>Control</key><key>N</key></keyseq>, volbou <guiseq><gui>Média</gui><gui>Nový seznam skladeb</gui></guiseq> z nabídky nebo výběrem stopy či stop, které byste chtěli přidat. Vyberte stopu či stopy, klikněte na ně pravým tlačítkem a zvolte <guiseq><gui>Přidat do seznamu skladeb</gui><gui>Nový seznam skladeb</gui></guiseq>. Můžete je také táhnout a pustit do nového seznamu tak, že je vyberete a táhnete do panelu v levé části na zdroj <gui>Hudba</gui>. Jak je přetáhnete na <gui>Hudba</gui>, objeví se nová volba <gui><em>Nový seznam skladeb</em></gui> a na tu je můžete upustit. Celý postup můžete libovolným uvedeným způsobem opakovat, dokud nepřidáte všechny stopy, které chcete.</p>
+
+    <p>Jestli chcete svému seznamu skladeb přidělit vlastní název, vyberte seznam skladeb, klikněte na něj pravým tlačítkem, zmáčkněte <gui>Přejmenovat</gui> a zadejte pro seznam název.</p>
+    
+    <p>Pořadí seznamu skladeb můžete měnit přetahováním skladeb na nové pozice v seznamu. Skladby je možné přeuspořádávat, jen když seznam skladeb není seřazen podle žádného sloupce. Pokud potřebujete řazení podle sloupce zrušit, klikejte na jeho záhlaví dokud nezmizí šipka nahoru a dolů a seznam skladeb nezmění pořadí.</p>
+    
+    <p>Pokud chcete stopu ze seznamu skladeb odstranit, vyberte ji (nebo i více stop). Zmáčkněte <key>Delete</key> nebo v nabídce zvolte <guiseq><gui>Upravit</gui><gui>Odstranit ze seznamu skladeb</gui></guiseq> a nebo klikněte na stopu(y) pravým tlačítkem myši a vyberte <gui>Odstranit ze seznamu skladeb</gui>.</p>
+  </section> 
+  
+  <section id="smartplaylists">
+    <title>Chytré seznamy skladeb</title>
+    
+    <p>Chytré seznamy skladeb vám dovolují rychle generovat dynamické seznamy skladeb založené na několika přednastavených proměnných. Můžete rychle vytvořit seznam skladeb založený na určitém umělci, oblíbených skladbách a dalším.</p>
+    
+    <p>Když chcete vytvořit nový chytrý seznam skladeb, zvolte z nabídky <guiseq><gui>Média</gui><gui>Nový chytrý seznam skladeb</gui></guiseq>. Zobrazí se vám dialogové okno na vytvoření chytrého seznamu skladeb. Zadejte název svého seznamu a zvolte kritéria, na kterých má být seznam skladeb založen. Můžete volit z polí, které jsou součástí metadat skladby, jako je album, umělec nebo rok. Po zvolení kritéria zvolte jednu z následujících podmínek:</p>
+    
+    <list>
+      <item><p>je</p></item>
+      <item><p>není</p></item>  
+      <item><p>méně než</p></item>
+      <item><p>více než</p></item>  
+      <item><p>nejvíce</p></item>
+      <item><p>nejméně</p></item>  
+    </list>
+    
+    <p>Můžete také zmáčknout tlačítko <gui>+</gui>, kterým přidáte do chytrého seznamu skladeb další dotaz. Například byste mohli vytvořit chytrý seznam skladeb, který bude obsahovat všechny skladby z roku 2010 a ohodnocené 5 hvězdičkami. Takovýto seznam skladeb vytvoříte navolením:</p>
+    
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Rok</gui></p></td> <td><p><gui>je</gui></p> </td> 
+    <td><p><gui>2010</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><gui>Hodnocení</gui></p></td> <td><p><gui>je</gui></p></td> 
+    <td><p><gui/>5 hvězdiček</p></td>
+  </tr>
+  </table>
+    
+    <p>Volitelně můžete vybrat, jako moc skladeb má seznam obsahovat. Zaškrtněte políčko <gui>Omezit na</gui> a zvolte počet skladeb, které se mají zahrnout.</p>
+  
+  <p>Přehrávač Banshee pro vás již má připravené některé chytré seznamy skladeb. Zmáčknutím tlačítka <gui>Otevřít v editoru</gui> si můžete prohlédnout pravidla, na kterých je seznam skladeb postaven, nebo je i upravit. Když zmáčknete <gui>Vytvořit a uložit</gui>, bude pro vás seznam skladeb automaticky vygenerován a uložen. Předpřipravené jsou tyto seznamy skladeb:</p>
+  
+  <list>
+    <title>Chytré seznamy skladeb Banshee</title>
+    <item><p>Oblíbené (skladby hodnocené čtyřmi a pěti hvězdičkami)</p></item>
+    <item><p>Nedávno oblíbené (skladby často poslouchané během minulého týdne)</p></item>  
+    <item><p>Nedávno přidané (skladby importované během minulého týdne)</p></item>
+    <item><p>Neposlouchané (skladby, které nebyly přehrány nebo byly přeskočeny)</p></item>
+    <item><p>Opomenuté oblíbené (skladby, které nebyly přehrané za poslední dva měsíce)</p></item>
+    <item><p>700 MB oblíbených (oblíbené skladby stojící za jedno CD)</p></item>
+    <item><p>80 minut oblíbených (oblíbené skladby stojící za jedno CD)</p></item>
+    <item><p>Nehodnocené (skladby, které nebyly hodnoceny)</p></item>
+  </list>
+ 
+   </section> 
+ 
+</page>

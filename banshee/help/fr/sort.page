@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sort" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="search"/>
+    <desc>Trie de vos médias et ajout de colonnes supplémentaires.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Tri de vos médias</title>
+
+  <section id="addcolumn">
+
+  <title>Ajout de colonnes</title>    
+  
+  <p>Au fur et à mesure que votre bibliothèque s'étoffe, vous pourriez être amené à modifier la vue de la bibliothèque pour ajouter des informations supplémentaires sur les chansons de votre bibliothèque ou modifier la façon de retrouver ou visionner certains titres, artistes ou albums.</p>
+  
+  <p>Vous pouvez ajouter des colonnes à l'affichage standard de la bibliothèque <app>Banshee</app> pour avoir plus d'informations disponibles sur les titres et aussi pouvoir effectuer un tri sélectif. Par défaut, Banshee affiche pour les morceaux les colonnes <gui>Nom</gui>, <gui>Artiste</gui>, <gui>Album</gui> et <gui>Durée</gui>. Pour ajouter d'autres colonnes, faites un clic droit sur l'en-tête de l'une d'entre elles et Banshee affiche les autres colonnes disponibles que vous pouvez sélectionner. Cochez la case de celle que vous voulez ajouter.</p>
+  
+  </section>
+  
+  <section id="sorting">
+    <title>Tri par colonnes</title>
+    <p>Vous pouvez trier votre bibliothèque d'un clic de souris sur n'importe quelle colonne affichée. Si vous souhaitez trier votre musique par artiste, cliquez sur l'en-tête de la colonne <gui>Artiste</gui> et Banshee trie automatiquement cette colonne par ordre alphabétique. Un second clic sur la même colonne affiche un tri alphabétique inverse.</p>
+  </section>
+	
+</page>

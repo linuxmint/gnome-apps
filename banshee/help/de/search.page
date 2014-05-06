@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="search" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="sort"/>
+    <desc>Durchsuchen Ihrer Medien und Ausführen einfacher Suchanfragen.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Durchsuchen Ihrer Banshee-Bibliothek</title>    
+  
+  <p>Banshee liefert eine mächtige Suchsprache mit. Sie können schnell und einfach mittels grundlegender Suchbegriffe Ihre Bibliothek durchsuchen oder eine detailliertere Suche mit der erweiterten Terminologie von Banshee durchführen.</p>
+  
+  <p>Um Ihre Medien in Banshee zu durchsuchen, drücken Sie die Taste <key>S</key> oder klicken Sie in das Feld <gui>Suchen</gui> in der oberen rechten Ecke der Bibliotheksansicht in Banshee.</p>
+  
+  <p>Eine Suchanfrage besteht aus zwei einfachen Begriffen, beispielsweise <em>dave matthews</em>. Bei Eingabe von <em>dave matthews</em> im Suchfeld durchsucht Banshee alle Metadaten, wie Titelbezeichnung, Albumtitel, Album-Interpret, Jahr usw. Jeder Titel, dessen Metadaten <em>dave</em> und <em>matthews</em> enthalten, wird ausgegeben. In den Suchbegriffen wird die Groß- und Kleinschreibung nicht berücksichtigt, <em>dave</em>, <em>Dave</em> und <em>DAVE</em> sind in der Suche gleichbedeutend.</p>
+
+<section id="operators">
+  <title>Grundlegende Operatoren</title>
+  <p>Operatoren können zwischen zwei Suchwörter oder auch vor ein Suchwort gesetzt werden. Die vorgegebene Operation ist <gui>AND</gui> und wird immer dann verwendet, wenn keine weiteren Operatoren zwischen zwei Suchbegriffen verwendet werden. Da dies ohnehin die Vorgabe ist, gibt es keinen expliziten AND-Operator.</p>
+  
+  <p>Weitere grundlegende Operatoren sind <gui>OR</gui> und <gui>NOT</gui>. Zusammen erzielen Sie mit diesen drei Operationen erfolgreiche Suchanfragen, die Sie beim Durchsuchen Ihrer Medien unterstützen.</p>
+  
+</section>
+
+<section id="logical">
+  <title>Logische Operatoren und Beispiele</title>
+  <p>Nachfolgend sehen Sie eine Liste logischer Operatoren und Beispiele für Suchergebnisse, wenn Sie diese Operatoren in einer Suche verwenden.</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Operator</gui></p></td>  <td><p><gui>Beschreibung</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><em>Vorgabe</em>, <em>Leerzeichen</em></p></td> <td><p>Sucht nach zwei Begriffen mit einem Leerzeichen zwischen den Wörtern oder Begriffen.</p></td>
+  </tr>
+  <tr>
+    <td><p>OR, or, <key>|</key>, <key>,</key></p></td> <td><p>Als Suchergebnis erhalten Sie zwei Lieder mit je einem Ergebnis in jedem Feld.</p></td>
+  </tr>
+  <tr>
+    <td><p>NOT, not,<key>-</key></p></td> <td><p>Keine Suchergebnisse anzeigen, die den Teil des Suchbegriffs enthalten, der dem Operator NOT folgt, <key>-</key>.</p></td>
+  </tr>  
+         
+</table>
+
+  <p>Beispiele für logische Operationen:</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Abfrage</gui></p></td>  <td><p><gui>Beschreibung</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>dave matthews</p></td> <td><p>Berücksichtigt alle Felder in einem Titel, die sowohl <em>dave</em> als auch <em>matthews</em> enthalten.</p></td>
+  </tr>
+  <tr>
+    <td><p>dave, matthews</p></td> <td><p>Berücksichtigt alle Felder in einem Titel, die entweder <em>dave</em> oder <em>matthews</em> enthalten.</p></td>
+  </tr>
+  <tr>
+    <td><p>dave or matthews</p></td> <td><p>Berücksichtigt alle Felder in einem Titel, die entweder <em>dave</em> oder <em>matthews</em> enthalten.</p></td>
+  </tr> 
+  <tr>
+    <td><p>dave | matthews</p></td> <td><p>Berücksichtigt alle Felder in einem Titel, die entweder <em>dave</em> oder <em>matthews</em> enthalten.</p></td>
+  </tr>       
+  <tr>
+    <td><p>-"dave matthews"</p></td> <td><p>Zeigt alle Titel an, deren Felder nicht <em>dave matthews</em> enthalten.</p></td>
+  </tr> 
+  
+  </table> 
+  
+  <p>Weitere Informationen über die Ausführung komplexerer Suchanfragen finden Sie in <link xref="adv-search"/>.</p>
+  
+</section>
+	
+</page>

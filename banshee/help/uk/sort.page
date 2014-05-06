@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sort" xml:lang="uk">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="search"/>
+    <desc>Сортування матеріалу і додавання нових стовпців.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Сортування матеріалу</title>
+
+  <section id="addcolumn">
+
+  <title>Додавання стовпців</title>    
+  
+  <p>Якщо ваша фонотека постійно наповнюється, можливо ви захочете змінити її перегляд, щоб отримувати додаткову інформацію про композиції або змінити спосіб перегляду та сортування композицій, виконавців та альбомів.</p>
+  
+  <p>Можете додавати стовпчики до переглядача доріжок в <app>Banshee</app>, щоб отримати більше інформації про композиції та нові можливості сортування. Типово, Banshee показує такі стовпчики: <gui>Назва</gui>, <gui>Виконавець</gui>, <gui>Альбом</gui> та <gui>Час</gui>. Щоб додати стовпчики, натисніть праву кнопку миші з вказівником на будь-якому стовпчику і Banshee покаже можливі варіанти додаткових стовпчиків. Поставте галочку поруч із назвою стовпчика, який хочете додати.</p>
+  
+  </section>
+  
+  <section id="sorting">
+    <title>Сортування стовпців</title>
+    <p>Сортувати фонотеку можна клацнувши на будь-якому стовпчику в переглядачі фонотеки. Якщо хочете відсортувати за виконавцем, клацніть на заголовку стовпчика <gui>Виконавець</gui> і Banshee автоматично відсортує вміст у алфавітному порядку. Повторне клацання на тому ж стовпчику відсортує вміст стовпчика в зворотньому алфавітному порядку.</p>
+  </section>
+	
+</page>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="playlists" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="tags"/>
+    <link type="seealso" xref="coverart"/>
+    <desc>Création et gestion des listes de lecture.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-05-26" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Listes de lecture</title>    
+  
+  <p>Les listes de lecture vous permettent de créer et sauvegarder un ensemble de titres à écouter dans un certain ordre. Elles sont pratiques pour créer une liste de vos chansons favorites ou pour ranger votre bibliothèque en listes plus petites et plus faciles à consulter. Quelques marques de baladeurs acceptent même de lire ces listes de sorte que vous pouvez les emporter avec vous telles quelles.</p>
+  
+  <p>Banshee prend en charge les listes de lecture standards, celles où vous ajoutez vous-même vos titres mais aussi les listes de lecture intelligentes. Ces dernières sont générées automatiquement à partir de vos habitudes d'écoute, de vos favoris ou autres.</p>
+  
+  <section id="manual">
+  
+    <title>Listes de lecture standards</title>
+  
+    <p>Une liste de lecture standard est une suite de morceaux que vous ajoutez et que vous gérez vous-même. Vous pourriez par exemple créer une liste de titres de votre artiste favori en piochant dans différents albums, faire une liste de vos derniers favoris, ou encore créer une liste rythmée pour vous accompagner pendant vos exercices physiques.</p>
+    
+    <p>Pour créer une nouvelle liste de lecture, vous pouvez soit presser la combinaison <keyseq><key>Control</key><key>N</key></keyseq>, soit choisir <guiseq><gui>Média</gui><gui>Nouvelle liste de lecture</gui></guiseq> dans le menu, ou encore sélectionner la ou les pistes que vous voulez ajouter et par un clic droit choisir <guiseq><gui>Ajouter à la liste de lecture</gui><gui>Nouvelle liste de lecture</gui></guiseq> dans le menu contextuel. Vous pouvez aussi faire glisser la ou les pistes avec la souris dans la fenêtre de gauche en passant au-dessus de <gui>Musique</gui>. Au passage, une option <gui><em>Nouvelle liste de lecture</em></gui> apparaîtra, et vous pourrez lâcher la ou les pistes dans cette <gui><em>Nouvelle liste de lecture</em></gui> pour les y ajouter. Il vous faudra répéter ce processus avec tous les titres que vous souhaitez y ajouter.</p>
+
+    <p>Pour nommer votre liste de lecture, faites un clic droit dessus, choisissez <gui>Renommer</gui> et saisissez le nom que vous souhaitez lui donner.</p>
+    
+    <p>Vous pouvez modifier le classement de la liste en faisant glisser les titres avec la souris d'une ligne à une autre. Le classement ne peut être modifié que si aucune colonne n'a auparavant été triée. Pour annuler le tri dans une colonne, cliquez dans l'en-tête jusqu'à ce que la flèche haute ou basse disparaisse. Réorganisez ensuite la liste.</p>
+    
+    <p>Pour supprimer un titre de la liste, sélectionnez-le et appuyez sur la touche <key>Suppr</key>, ou faites <guiseq><gui>Édition</gui><gui>Enlever de la liste de lecture</gui></guiseq> dans le menu, ou encore par un clic droit choisissez <gui>Supprimer de la liste</gui> dans le menu contextuel.</p>
+  </section> 
+  
+  <section id="smartplaylists">
+    <title>Liste de lecture intelligente</title>
+    
+    <p>Les listes de lecture intelligentes vous permettent de générer rapidement une liste dynamique basée sur un certain nombre de variables pré-déterminées. Vous pouvez très vite créer une liste de lecture basée sur un nom d'artiste, sur vos favoris ou autres.</p>
+    
+    <p>Pour créer une nouvelle liste de lecture intelligente, allez dans le menu <guiseq><gui>Média</gui><gui>Nouvelle liste de lecture intelligente</gui></guiseq>. Une boîte de dialogue s'affiche pour créer une nouvelle liste de lecture intelligente. Saisissez le nom de la liste et ensuite choisissez les critères sur lesquels elle sera construite. Vos critères peuvent provenir de n'importe quel champ, y compris des métadonnées comme le titre de l'album, le nom de l'artiste ou l'année. Une fois les critères définis, vous devrez spécifier ceci :</p>
+    
+    <list>
+      <item><p>est</p></item>
+      <item><p>n'est pas</p></item>  
+      <item><p>moins de</p></item>
+      <item><p>plus de</p></item>  
+      <item><p>au plus</p></item>
+      <item><p>au moins</p></item>  
+    </list>
+    
+    <p>Vous pouvez aussi appuyer sur le bouton <gui>+</gui> pour ajouter une condition supplémentaire à la liste : par exemple, créer une liste de lecture intelligente avec tous les morceaux de 2010 auxquels vous avez attribué une note de cinq étoiles. Pour générer cette liste, il faut saisir :</p>
+    
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Année</gui></p></td> <td><p><gui>est</gui></p> </td> 
+    <td><p><gui>2010</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><gui>Classement</gui></p></td> <td><p><gui>est</gui></p></td> 
+    <td><p><gui/>5 étoiles</p></td>
+  </tr>
+  </table>
+    
+    <p>L'option supplémentaire <gui>Limiter à</gui> vous permet de choisir le nombre maximum de titres que vous voulez y mettre en cochant cette case.</p>
+  
+  <p>Dans Banshee, vous avez aussi des listes de lectures intelligentes prédéfinies. Sélectionnez-en une et appuyez sur le bouton <gui>Ouvrir dans l'éditeur</gui> pour visionner comment elle se présente ou pour la modifier à votre goût. Quand vous cliquez sur le bouton <gui>Créer et enregistrer</gui> la liste est automatiquement générée et sauvegardée. Voici les liste disponibles :</p>
+  
+  <list>
+    <title>Listes de lecture intelligentes Banshee</title>
+    <item><p>Favoris (morceaux notés quatre ou cinq étoiles)</p></item>
+    <item><p>Favoris récents (morceaux fréquemment écoutés cette semaine)</p></item>  
+    <item><p>Récemment ajoutés (morceaux importés cette semaine)</p></item>
+    <item><p>Non écoutés (morceaux non écoutés ou ignorés)</p></item>
+    <item><p>Favoris négligés (favoris non écoutés pendant les deux derniers mois)</p></item>
+    <item><p>700 Mio de favoris (un CD de données rempli de vos morceaux préférés)</p></item>
+    <item><p>80 minutes de favoris (un CD audio rempli de vos morceaux préférés)</p></item>
+    <item><p>Non notés (morceaux qui n'ont pas été notés)</p></item>
+  </list>
+ 
+   </section> 
+ 
+</page>

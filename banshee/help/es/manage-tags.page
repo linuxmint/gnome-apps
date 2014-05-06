@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="tags" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="coverart"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Editar y cambiar las etiquetas y metadatos de su música.</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-09" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Metadatos de música</title>
+
+  <section id="metadata">
+
+  <title>Metadatos de música</title>    
+  
+  	<p>La música digital contiene metadatos que almacenan información en el archivo de música, incluyendo el artista, el álbum, el año de grabación, el género, etc. La mayor parte de la música comprada por Internet tendrá los metadatos ya incrustados, y si importa música desde CD, Banshee incluirá los metadatos al extraer el CD, si están disponibles. Para obtener más información sobre cómo extraer CD e incluir los metadatos, consulte la <link xref="import"/>.</p>
+  	
+  	<p>Formatos de metadatos populares son ID3v1 y ID3v2 para archivos MP3 y comentarios Vorbis para archivos OGG Vorbis.</p>	
+  
+  	<p>Si ha importado canciones que no contienen metadatos, <app>Banshee</app> mostrará <gui>Desconocido</gui> para la mayoría de los campos de la colección.</p>
+  	
+  </section>
+
+  <section id="editmetadata"> 	
+    
+    <title>Editar sus metadatos</title>
+    
+    <p>Puede cambiar y editar los metadatos de sus canciones. Seleccione la canción o las canciones que quiere actualizar y pulse <key>E</key>, elija <guiseq><gui>Editar</gui><gui>Editar la información de la pista</gui></guiseq> desde el menú o pulse con el botón derecho del ratón sobre los archivos y seleccione <gui>Editar la información de la pista</gui>.</p>
+    
+    <p>Aparecerá un cuadro de diálogo que mostrará los metadatos de la canción y le permitirá cambiarlos o actualizarlos. Los campos predeterminados mostrados incluyen:</p>
+    
+    <list>
+      <item><p><gui>Título de la pista</gui></p></item>
+      <item><p><gui>Artista de la pista</gui></p></item>
+      <item><p><gui>Título del álbum</gui></p></item>
+      <item><p><gui>Género</gui></p></item>
+      <item><p><gui>Número de pista</gui></p></item>
+      <item><p><gui>Número de disco:</gui></p></item>
+      <item><p><gui>Año</gui></p></item>
+    </list>
+    
+    <p>Actualice la información de la canción. Si ha seleccionado varias canciones, para editarlas  pulse el icono con una flecha a la derecha del campo <gui>Título de la pista</gui> o pulse el botón <gui>Adelante</gui> en la parte inferior del diálogo cuando termine con cada canción. Cuando haya terminado de editar todos los metadatos, pulse <gui>Guardar</gui>.</p>
+   
+  </section>
+
+</page>

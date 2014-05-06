@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="import" xml:lang="pt_BR">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <desc>Adicione músicas e vídeos do seu computador para a sua biblioteca Banshee.</desc>
+    <revision pkgversion="1.6" version="1.6" date="2010-07-15" status="review"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Importar músicas &amp; vídeos</title>
+
+  <p>Você pode importar músicas e vídeos armazenados no seu computador para o Banshee. Arquivos importados aparecerão dentro de suas fontes e podem ser editados e gerenciados como qualquer outra mídia no Banshee.</p>
+
+  <p>To import music or video files on your computer, choose <guiseq><gui>Media</gui>
+  <gui>Import Media</gui></guiseq>. A dialog will appear with a number of choices.</p>
+
+  <note>
+    <p>Plug-ins podem adicionar opções importantes. Veja <link xref="#plugins"/> abaixo.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Pastas locais</gui></title>
+      <p>Selecione esta opção para importar todos os arquivos de música e vídeo em uma pasta especificada, incluindo suas subpastas. Será exibido um diálogo para que você escolha a pasta para importar.</p>
+    </item>
+    <item>
+      <title><gui>Arquivos locais</gui></title>
+      <p>Escolha essa opção para importar somente o arquivo específico ou arquivos que você selecionou. Aparacerá uma janela para escolher o arquivo ou os arquivos a importar.</p>
+    </item>
+    <item>
+      <title><gui>Pasta pessoal</gui></title>
+      <p>Escolha esta opção para importar todas as músicas e vídeos de toda a sua pasta principal, incluindo os arquivos em quaisquer subpastas.</p>
+    </item>
+    <item>
+      <title><gui>Vídeos de pastas de fotos</gui></title>
+      <p>Algumas câmeras digitais podem gravar pequenos vídeos, e as aplicações de gerenciamento frequentemente salvam estes vídeos diretamente na sua pasta de fotos. Escolha esta opção para importar qualquer vídeo que tenha sido armazenado na sua pasta de fotos.</p>
+    </item>
+  </terms>
+
+  <note>
+    <p>Você pode importar com segurança arquivos de uma pasta da que você já importou sem preocupar-se em duplicar as entradas na sua biblioteca.</p>
+  </note>
+  
+  <section id="import-playlist">
+    <title>Importar de uma lista de reprodução</title>
+    <p>You can also import music from playlists.  Most playlist files end
+    in <em>m3u</em>. To import from a playlist, from the Banshee menu 
+    choose <guiseq><gui>Media</gui><gui>Import Playlist</gui></guiseq> and 
+    locate the playlist file in your folder, select it and press 
+    <gui>Import</gui>.
+    </p>
+  </section>
+  
+  <section id="plugins">
+    <title>Fontes de importação adicionais</title>
+    <p>Plug-ins podem adicionar opções importantes adicionais. As fontes adicionais abaixo estarão disponíveis se os plug-ins apropriados estiverem habilitados:</p>
+  </section>
+  	
+</page>

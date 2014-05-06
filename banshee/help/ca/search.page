@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="search" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="sort"/>
+    <desc>Cerqueu els elements multimèdia i realitzeu consultes bàsiques.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Cercant a la biblioteca</title>    
+  
+  <p>El Banshee disposa d'un llenguatge de cerca potent. Podeu cercar a la biblioteca de forma ràpida i senzilla utilitzant termes de cerca bàsics o bé realitzant cerques detallades amb la terminologia de cerca avançada del Banshee.</p>
+  
+  <p>Per a realitzar cerques dels vostres elements multimèdia al Banshee, premeu la tecla <key>S</key> o feu clic en la capsa <gui>Cerca</gui> a la part superior dreta de la vista biblioteca al Banshee.</p>
+  
+  <p>Una consulta de cerca consisteix d'algunes termes bàsics, per exemple, <em>lluís llach</em>. En introduir <em>lluís llach</em> en la capsa de cerca, el Banshee cercarà a tots els camps de metadades, incloent-hi el títol de la cançó, el títol de l'àlbum, l'artista, l'any, etc. Qualsevol cançó que inclogui en les seves metadades <em>lluís</em> i <em>llach</em> serà retornada. La cerca de termes no diferència entre majúscules i minúscules. Els termes <em>lluís</em>, <em>Lluís</em>, i <em>LLUÍS</em> tenen el mateix significat en fer una cerca.</p>
+
+<section id="operators">
+  <title>Operadors bàsics</title>
+  <p>Els operadors poden col·locar-se entre dues paraules de cerca o col·locar-se abans d'una paraula de cerca. L'operació per defecte és <gui>AND</gui> i s'utilitza quan cap altre operador es emprat entre dos termes de cerca. Atès que és el predeterminat, l'operador AND no existeix explícitament.</p>
+  
+  <p>Altres operadors bàsics són l'<gui>OR</gui> i el <gui>NOT</gui>. Junts, aquests tres operadors permeten consultes molt potents per ajudar-vos a cercar als elements multimèdia.</p>
+  
+</section>
+
+<section id="logical">
+  <title>Operadors lògics i exemples</title>
+  <p>A continuació es mostra una llista d'operadors lògics i exemples de resultats de cerques realitzes amb operadors lògics.</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Operador</gui></p></td>  <td><p><gui>Descripció</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><em>per defecte</em>, <em>espai en blanc</em></p></td> <td><p>Cerca dos termes amb un espai entre les dos paraules o termes.</p></td>
+  </tr>
+  <tr>
+    <td><p>O, o, <key>|</key>, <key>,</key></p></td> <td><p>Els resultats de la cerca seran dues cançons que continguin qualsevol dels termes en qualsevol camp.</p></td>
+  </tr>
+  <tr>
+    <td><p>NO, no,<key>-</key></p></td> <td><p>Exclou dels resultats de la cerca qualsevol terme que aparegui després de l'operador NO, no, <key>-</key>.</p></td>
+  </tr>  
+         
+</table>
+
+  <p>Els exemples d'operacions lògiques inclouen:</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Consulta</gui></p></td>  <td><p><gui>Descripció</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>lluís llach</p></td> <td><p>Retorna com a resultat de la cerca qualsevol cançó que contingui <em>lluís</em> i <em>llach</em> (ambdós) en qualsevol dels camps.</p></td>
+  </tr>
+  <tr>
+    <td><p>lluís, llach</p></td> <td><p>Retorna com a resultat de la cerca qualsevol cançó que contingui <em>lluís</em> o <em>llach</em> en qualsevol dels camps.</p></td>
+  </tr>
+  <tr>
+    <td><p>lluís o llach</p></td> <td><p>Retorna com a resultat de la cerca qualsevol cançó que contingui <em>lluís</em> o <em>llach</em> en qualsevol dels camps.</p></td>
+  </tr> 
+  <tr>
+    <td><p>lluís | llach</p></td> <td><p>Retorna com a resultat de la cerca qualsevol cançó que contingui <em>lluís</em> o <em>llach</em> en qualsevol dels camps.</p></td>
+  </tr>       
+  <tr>
+    <td><p>-"lluís llach"</p></td> <td><p>Mostra totes les cançons que no contenen <em>lluís llach</em>.</p></td>
+  </tr> 
+  
+  </table> 
+  
+  <p>Per a més informació sobre com realitzar consultes de cerca complexes, vegeu la pàgina <link xref="adv-search"/>.</p>
+  
+</section>
+	
+</page>

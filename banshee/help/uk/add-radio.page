@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="add-radio" xml:lang="uk">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <link type="seealso" xref="add-podcasts"/>
+    <link type="seealso" xref="import"/>
+    <desc>Додавання, вилучення та прослуховування радіостанцій в Banshee.</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-20" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Інтернет-радіо</title> 
+  
+  <section id="radiodescription">
+     <title>Що це таке — інтернет-радіо?</title>
+     
+  <p>Інтернет-радіостанції подібні до звичайних радіостанцій. Вони дають змогу окремим особам або організаціям передавати музику мовлення в прямому ефірі через інтернет. Інтернет-радіостанції можуть використовувати для трансляції, як звичайні радіостанції, так і радіостанції аматорського мовлення або навіть комерційні інтернет-радіостанції з дикторами в прямому ефірі та рекламними роликами.</p>
+  
+  </section>
+  
+  <section id="addradio">
+  
+  <title>Додавання радіостанції</title>
+  
+  <p>Щоб додати інтернет-радіостанцію до Banshee, натисніть кнопку <gui>Додати радіостанцію</gui> у верхньому правому куті Banshee або виберіть в меню <guiseq><gui>Файл</gui><gui>Додати радіостанцію</gui></guiseq>.</p>
+  
+  <p>На сторінці радіостанції скопіюйте посилання на їхній потік. В більшості переглядачів, можна натиснути праву кнопку миші з вказівником на потрібному посиланні та вибрати <gui>Скопіювати посилання</gui>.</p>
+   
+
+  <p>Banshee запропонує вам ввести <gui>Жанр радіостанції</gui>. В спадному списку виберіть з доступних жанр музики, яку передає ця станція, потім в поле <gui>Назва станції</gui> введіть її назву. Натисніть клавішу «tab» або вказівником миші перейдіть у поле <gui>Адреса потоку</gui>, натисніть праву кнопку миші і в контекстному меню виберіть <gui>Вставити</gui> або натисніть <keyseq><key>Control</key><key>V</key></keyseq>, щоб вставити адресу.</p>
+  
+  <p>За бажанням, можете заповнити поля <gui>Автор станції</gui>, <gui>Опис</gui> та <gui>Оцінка</gui>.</p>
+  
+  <p>Потім натисніть кнопку <gui>Зберегти</gui>, щоб зберегти цю радіостанцію в Banshee.</p>
+  
+  </section>
+  	  	  
+</page>

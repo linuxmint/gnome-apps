@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="lastfm" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="extend#official"/>
+    <link type="seealso" xref="sync"/>
+    <desc>Activar Last.fm, el informe de canciones y la radio Last.fm.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-07-15" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Last.fm</title>    
+  
+  <p>Last.fm es un popular servicio en línea que ofrece versión libre y de pago. Last.fm ofrece información sobre artistas y álbumes musicales y, si crea un perfil de usuario, Last.fm le permite seguir la música que escucha en Banshee gratuitamente. Si se suscribe como miembro de pago, también puede escuchar música en «streaming» desde Last.fm en varios clientes de música, incluyendo a Banshee. Last.fm ofrece varios canales, incluyendo música recomendada basada en sus hábitos de escucha, sus favoritos, etc.</p>
+  
+  <section id="enable-lastfm">
+  <title>Activar Last.fm</title> 
+  <p>Para obtener el máximo de Last.fm, querrá crear un perfil de Last.fm. Visite <link href="http://www.last.fm/join">http://www.last.fm/join</link> para crear una cuenta o elija <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq> desde el menú de Banshee. Una vez que esté en las preferencias, seleccione la pestaña <gui>Específicas de las fuentes</gui>, pulse la lista desplegable <gui>Fuente</gui>, elija <gui>Last.fm</gui> y finalmente seleccione el enlace <em>Registrarse en Last.fm</em>.</p>
+  
+  <p>Para permitir que Banshee informe sobre las canciones que reproduce en su equipo a Last.fm, inicie sesión en Last.fm dentro de Banshee en las preferencias <gui>Específicas de las fuentes</gui>. Introduzca su nombre de usuario y pulse el botón <gui>Iniciar sesión en Last.fm</gui>. Se le redirigirá a una web de Last.fm en su navegador para conceder acceso a Banshee. Pulse el enlace <gui>Sí, permitir acceso</gui> en su navegador y se le redirigirá a una web que mostrará un mensaje indicando que Banshee ya tiene acceso a Last.fm. Vuelva a Banshee y pulse el botón <gui>Finalizar el inicio de sesión</gui> para completar el proceso.</p>
+  
+  </section>
+  
+  <section id="songreporting">
+  <title>Activar el informe de canciones en Last.fm desde Banshee</title> 
+  <p>Tras enlazar Banshee con éxito a su perfil de Last.fm, debe asegurarse de que ha permitido que Banshee informe sobre sus canciones. Para permitir que Banshee informe las canciones a su perfil de Last.fm, vaya a las preferencias de Banshee, seleccione la pestaña <gui>Específicas de las fuentes</gui>, seleccione <gui>Last.fm</gui> en la lista desplegable y pulse la casilla <gui>Activar informe de canciones desde Banshee</gui>. Si tiene una conexión activa a Internet, Banhee enviará a Last.fm información relacionada con las canciones que reproduce. Last.fm actualizará automáticamente los metadatos de su música si la información del artista, canción o álbum no es correcta (aunque le recomendamos que, en lugar de eso, use la extensión «Reparar metadatos» para corregir sus archivos).</p>
+  
+  </section>
+
+  <section id="devicesongreporting">
+  <title>Activar el informe de canciones en Last.fm desde su dispositivo</title>
+  <p>Una vez que haya enlazado Banshee con su perfil de Last.fm y haya activado el informe de canciones a Last.fm desde Banshee, también podrá activar el «scrobbling» desde su dispositivo conectado. Al establecer la conexión de su dispositivo, Banshee intentará hacer el «scrobble» de las canciones que se han reproducido desde que el dispositivo se conectó por última vez, y enviarlos a Last.fm.</p>
+
+  <p>Para activar el «scrobbling» de un dispositivo conectado, vaya a las preferencias de Banshee, seleccione la pestaña <gui>Específicas de las fuentes</gui>, seleccione <gui>Last.fm</gui> de la lista desplegable y marque la casilla <gui>Activar informe de canciones desde Banshee</gui>.Si tiene una conexión a Internet activa, Banshee, Banshee tratará de obtener información acerca de las canciones que ha reproducido desde la última vez que conectó el dispositivo.</p>
+
+  <p>Al igual que con los informes regulares de Banshee a Last.fm,  los metadatos de música se actualizarán automáticamente si el artista, título o la información del álbum no es correcta (aunque, de nuevo, recomendamos que use la extensión «Reparador de metadatos» para corregir sus archivos en su lugar).</p>
+
+  <p>Tenga en cuenta que la versión actual de Banshee sólo soporta esta característica con productos de Apple soportados por la extensión AppleDevice.</p>
+
+  </section>
+  
+  <section id="lastfm-radio">
+  <title>Escuchar la radio de Last.fm</title> 
+  <p>La radio de Last.fm es gratuita para los residentes en Estados Unidos, Reino Unido y Alemania. Los residentes en otros países tendrán que obtener una cuenta de pago de Last.fm para escuchar la radio. Los miembros de pago, en todos los países, también reciben características adicionales para la radio: escuchar las listas de reproducción y las emisoras de música que ha etiquetado o marcado como favoritas.</p>
+  
+  <p>En el panel de fuentes de Banshee a la izquierda, tendrá ahora una sección de Last.fm, incluyendo sus emisoras de radio de Last.fm. Necesitará una conexión a Internet activa para escuchar la radio de Last.fm. Elija la emisora de radio que desea escuchar y Banshee se comunicará con Last.fm para reproducir canciones de la radio de Last.fm. Pulse el botón <gui>Reproducir</gui> en Banshee o la <key>barra espaciadora</key> para empezar a reproducir una emisora de radio de Last.fm. También puede pulsar el botón <gui>Siguiente</gui> en Banshee, <key>N</key> o escoger <guiseq><gui>Reproducción</gui><gui>Siguiente</gui></guiseq> para reproducir la siguiente canción en la cola de su emisora de radio.</p>
+  
+  </section>
+	
+</page>

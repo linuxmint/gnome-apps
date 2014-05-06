@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="play" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="queue"/>
+    <desc>Videók és zenefájlok lejátszása.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Médiafájlok lejátszása</title>
+
+  <section id="playmusic">
+  <title>Zenék lejátszása</title>    
+  
+  <p>Zenék lejátszásához válassza a Zene forrást. A zenegyűjtemény megjeleníti a gyűjtemény összes előadóját, az egyes albumok lemezborítóját, és a gyűjtemény összes számának listáját.</p>
+  
+  <p>Válassza ki a lejátszandó albumot vagy számot az előadók vagy albumok listájáról, vagy használja a keresősávot a Banshee jobb felső sarkában.</p>
+  
+  <p>Egy szám lejátszásának megkezdéséhez kattintson duplán az egérrel a szám címére, nyomja meg a <key>szóközt</key>, vagy válassza a Banshee menüjének <guiseq><gui>Lejátszás</gui><gui>Lejátszás</gui></guiseq> pontját.</p>
+  
+  <p>Egy album lejátszása elindítható az album kiválasztásával az albumböngészőben, és a szám címén való dupla kattintással, a <key>szóköz</key> megnyomásával, vagy a Banshee menüjéből a <guiseq><gui>Lejátszás</gui><gui>Lejátszás</gui></guiseq> pont kiválasztásával.</p>
+  
+  <p>Egy előadó összes számának lejátszásához válassza ki az előadót az előadó-böngészőben, és nyomja meg a <key>szóközt</key>, vagy válassza a Banshee menüjéből a <guiseq><gui>Lejátszás</gui><gui>Lejátszás</gui></guiseq> pontot.</p>
+  
+  <p>A Banshee megjeleníti kedvenc albumait (amiket a legtöbbször hallgatott), legutóbbi kedvenceket, legutóbb hozzáadott és nem hallgatott zenéket. Válassza ki a meghallgatni kívánt kategóriát az ahhoz tartozó dalok lejátszásához.</p>
+  
+  </section>
+
+  <section id="playvideo">
+  <title>Videó lejátszása</title>    
+  
+  <p>Az importált videók ábécérendben jelennek meg. Videó lejátszásához válassza ki azt a listából, és nyomja meg a <key>szóközt</key>, vagy válassza a Banshee menüjéből a <guiseq><gui>Lejátszás</gui><gui>Lejátszás</gui></guiseq> pontot.</p>
+  
+  <p>A Banshee megjeleníti kedvenc videóit (amiket a legtöbbet nézett) és nem nézett videóit. Válassza ki az egyiket, és a listából lejátszhatja a videókat.</p>	
+  
+  </section>
+  
+  <section id="playpodcast">
+  <title>Podcast lejátszása</title>    
+  
+  <p>A Podcastok megjeleníti az összes podcastot, amelyre fel van iratkozva, az összes elérhető podcast adást. A podcastböngésző a podcastok felsorolását a legújabbal kezdi.</p>
+  
+  <p>Podcast lejátszásához válassza ki azt a listából, és nyomja meg a <key>szóközt</key>, vagy válassza a Banshee menüjéből a <guiseq><gui>Lejátszás</gui><gui>Lejátszás</gui></guiseq> pontot.</p>
+  
+  </section>
+  
+  <section id="playradio">
+  <title>Internetes rádióállomás lejátszása</title>    
+  
+  <p>A Rádió forrás ábécérendben megjeleníti a Bansheeba felvett összes internetes rádióállomást.</p>
+  
+  <p>Internetes rádióállomás lejátszásához válassza ki azt a listából, és nyomja meg a <key>szóközt</key>, vagy válassza a Banshee menüjéből a <guiseq><gui>Lejátszás</gui><gui>Lejátszás</gui></guiseq> pontot.</p>
+  
+  </section>    
+	
+</page>

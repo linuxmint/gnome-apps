@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="lastfm" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="extend#official"/>
+    <link type="seealso" xref="sync"/>
+    <desc>Zapněte Last.fm, oznamování skladeb a rádio Last.fm.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-07-15" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Last.fm</title>    
+  
+  <p>Last.fm je populární on-line služba, která nabízí placenou i neplacenou verzi. Last.fm nabízí informace o zpěvácích a albech a když si vytvoříte uživatelský profil, umožní vám Last.fm sledovat hudbu, kterou posloucháte v Banshee zdarma. Pokud se zaregistrujete jako platící člen, můžete poslouchat i proudové vysílání hudby v různých klientech, včetně Banshee. Last.fm nabízí proudové vysílání více kanálů, včetně hudby doporučené pro vás na základě toho, co obvykle posloucháte, vašich oblíbených skladbách a dalších faktorech.</p>
+  
+  <section id="enable-lastfm">
+  <title>Zapnutí Last.fm</title> 
+  <p>Chcete-li získat z Last.fm co nejvíce, měli byste si založit profil Last.fm. Pro vytvoření profilu navštivte <link href="http://www.last.fm/join">http://www.last.fm/join</link> nebo zvolte <guiseq><gui>Upravit</gui><gui>Předvolby</gui></guiseq> v nabíce Banshee. Zmáčkněte kartu <gui>Dané zdrojem</gui>, zmáčkněte rozbalovací nabídku <gui>Zdroj</gui>, ve které zvolte <gui>Last.fm</gui>, a vyberte odkaz <em>Zaregistrovat se na Last.fm</em>.</p>
+  
+  <p>Abyste povolili oznamování skladeb, které si ve svém počítači přehráváte, službě Last.fm, musíte se v Banshee k Last.fm přihlásit v předvolbách <gui>Dané zdrojem</gui>. Zadejte své uživatelské jméno a zmáčkněte tlačítko <gui>Přihlásit k Last.fm</gui>. Budete ve svém prohlížeči nasměrování na webovou stránku Last.fm, abyste mohli přehrávači Banshee udělit přístup. Zmáčkněte odkaz <gui>Ano, přidělit přístup</gui> a budete přesměrováni na webovou stránku, která zobrazí zprávu, že Banshee má nyní přístup k Last.fm. Vraťte se do Banshee a zmáčkněte tlačítko <gui>Dokončit přihlášení</gui>, čímž celou akci završíte.</p>
+  
+  </section>
+  
+  <section id="songreporting">
+  <title>Povolení oznamování skladeb Last.fm z Banshee</title> 
+  <p>Když máte přehrávač Banshee úspěšně propojený s profilem Last.fm, ujistěte se, že jste v Banshee povolili oznamování svých skladeb. Pro oznamování skladeb do svého profilu Last.fm přejděte v předvolbách na kartu <gui style="tab">Dané zdrojem</gui>, v rozbalovacím seznamu vyberte <gui style="menuitem">Last.fm</gui> a zaškrtněte políčko <gui style="checkbox">Povolit oznamování skladeb</gui>. V případě, že máte funkční internetové připojení, bude od teď přehrávač Banshee zasílat na Last.fm informace o skladbách, které přehráváte. Pokud si chcete historii přehrávání prohlédnout, navštivte svůj profil na webových stránkách Last.fm. Když bude některý umělec, název skladby nebo název alba nesprávný, Last.fm vaše hudební metadata automaticky aktualizuje (místo toho ale pro opravy souborů spíše doporučujeme rozšíření Opravář metadat).</p>
+  
+  </section>
+
+  <section id="devicesongreporting">
+  <title>Povolení oznamování skladeb Last.fm z vašeho zařízení</title>
+  <p>Po úspěšném propojení Banshee s vaším profilem na Last.fm a po povolení Banshee oznamovat skladby na Last.fm, můžete povolit také sdílení seznamů skladeb (scrobbling) z připojených zařízení. Po připojení vašeho zařízení se Banshee pokusí zjistit, které skladby jste přehrávali od posledního připojení zařízení, a odešle je na Last.fm.</p>
+
+  <p>Jestli chcete sdílení seznamů skladeb z připojených zařízení zapnout, jděte do předvoleb Banshee, vyberte <gui>Dané zdrojem</gui>, v rozbalovacím seznamu vyberte <gui>Last.fm</gui> a zaškrtněte políčko <gui>Povolit oznamování skladeb ze zařízení</gui>. Pokud máte funkční internetové připojení, bude se Banshee po připojení vašeho zařízení pokoušet sesbírat informace týkající se skladeb, které jste přehrávali od doby, kdy bylo zařízení naposledy připojeno.</p>
+
+  <p>Současně s pravidelným zasíláním seznamů skladem z Banshee na Last.fm se budou aktualizovat vaše hudbení metadata a to v situaci, kdy je údaj o umělci, názvu nebo albu uveden nesprávně (ačkoliv místo této funkce vám doporučujeme používat rozšíření Opravář metadat, které opravuje vaše soubory).</p>
+
+  <p>Vezměte prosím na vědomí, že v současnosti Banshee podporuje tuto funkci jen u produktů společnosti Apple, které jsou podporovány rozšířením AppleDevice.</p>
+
+  </section>
+  
+  <section id="lastfm-radio">
+  <title>Poslech rádia Last.fm</title> 
+  <p>Rádio Last.fm je zdarma pro obyvatele Spojených států, Velké Británie a Německa. Obyvatelé ostatních zemí si musí zaplatit prémiový účet, aby mohli rádio poslouchat. Prémiový členové ve všech zemích získají také přístup k prémiovým funkcím: poslech seznamů skladeb a stanic hudby, kterou mají rádi nebo si ji označili.</p>
+  
+  <p>V panelu zdrojů na levé straně budete mít oddíl Last.fm zahrnující vaše rádiové stanice Last.fm. Abyste mohli rádio Last.fm poslouchat, potřebujete aktivní internetové připojení. Zvolte rádiovou stanici, kterou si přejete poslouchat a přehrávač Banshee bude komunikovat se službou Last.fm, aby šířil skladby příslušné rádiové stanice. Pro spuštění proudového vysílání zmáčkněte tlačítko <gui>Přehrát aktuální položku</gui> nebo klávesu <key>mezerník</key>. Můžete také zmáčknout tlačítko <gui>Přehrát následující položku</gui>, klávesu <key>N</key> nebo zvolit <guiseq><gui>Přehrát</gui><gui>Následující</gui></guiseq>, čímž docílíte přehrávání následující skladby ve frontě rádiové stanice.</p>
+  
+  </section>
+	
+</page>

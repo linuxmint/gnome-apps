@@ -1,0 +1,81 @@
+<Type Name="EditorEditableUndoAdapter&lt;T&gt;" FullName="Banshee.Gui.TrackEditor.EditorEditableUndoAdapter&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class EditorEditableUndoAdapter&lt;T&gt; where T : Widget, Editable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EditorEditableUndoAdapter`1&lt;(class Gtk.Widget, class Gtk.Editable) T&gt; extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Banshee.ThickClient</AssemblyName>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <BaseTypeName>Gtk.Widget</BaseTypeName>
+        <InterfaceName>Gtk.Editable</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EditorEditableUndoAdapter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectUndo">
+      <MemberSignature Language="C#" Value="public void ConnectUndo (T entry, Banshee.Gui.TrackEditor.EditorTrackInfo track);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ConnectUndo(!T entry, class Banshee.Gui.TrackEditor.EditorTrackInfo track) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entry" Type="T" />
+        <Parameter Name="track" Type="Banshee.Gui.TrackEditor.EditorTrackInfo" />
+      </Parameters>
+      <Docs>
+        <param name="entry">To be added.</param>
+        <param name="track">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectUndo">
+      <MemberSignature Language="C#" Value="public void DisconnectUndo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DisconnectUndo() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.0.0</AssemblyVersion>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

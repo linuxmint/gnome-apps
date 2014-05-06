@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="ui" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-19" status="stub"/>
+    <desc><app>Banshee</app>のユーザーインターフェースの概要</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Bansheeのユーザーインターフェースについて</title>
+
+  <figure>
+    <title><gui>Bansheeメディアプレイヤー</gui> のウィンドウ</title>
+    <desc><app>Bansheeメディアプレイヤー</app></desc>
+    <media type="image" src="figures/banshee.png" mime="image/png" style="right">
+      <p><app>Banshee</app>ライブラリのインターフェース</p>
+    </media>
+  </figure>
+  
+<section id="context">
+  <title>ソース</title>
+    <p>Bansheeの左側には、音楽、ビデオなどのソースが表示されます。これにより再生キュー、音楽、ビデオ、Amazon、Last.fm、ポッドキャストなどに素早くアクセスすることができます。</p>
+    
+    <note style="tip">
+      <p>メニューの項目は、選択したソースに応じて変わります。たとえば、ポッドキャストを購読するためのメニューを出したい場合、ポッドキャストのソースを選択する必要があります。ポッドキャストを操作するためのメニューの項目が表示されている時には音楽ライブラリやビデオライブラリは利用できません。</p>
+    </note> 
+</section>
+
+<section id="browser">
+  <title>ライブラリブラウザー</title>
+  <p>Bansheeのウィンドウの左側のソースから音楽やビデオのソースを選択すると、ライブラリのブラウザーにコンテンツが表示されます。Bansheeのウィンドウの右側はソースに応じて音楽のライブラリ、ビデオのライブラリ、ポッドキャストの購読、Amazon MP3ストアから音楽を購入ができる画面に変わります。</p>
+</section>
+
+<section id="nowplaying">
+  <title>再生中のビュー</title>
+  <p>Bansheeでフルスクリーンモードで使うと、再生中モードを隠して音楽のライブラリを大きく表示、もしくは再生中のビデオを大きく表示することができます。音楽を再生中の時、アーティスト名とアルバムのカバーアートが表示されます。もしビデオを鑑賞している時であれば、フルスクリーンでビデオを楽しめます。</p>
+  
+  <p>再生中にBansheeのユーザーインターフェースを隠して、フルスクリーンモードに変更したい場合、<key>F</key>を押すか、Bansheeのウィンドウの右上にある<gui>フルスクリーン</gui>ボタンを押します。もしくはBansheeのメニューから<guiseq><gui>表示</gui><gui>フルスクリーン</gui></guiseq>を選ぶとフルスクリーンモードに移行します。</p>
+  
+</section>
+
+<section id="library">
+  <title>ライブラリ</title>
+  <p>Bansheeのライブラリビューは、選択したソースに応じて変わります。音楽のライブラリはライブラリ内のアーティスト、曲のリスト、カバーアートが表示されます。ポッドキャストのライブラリはポッドキャストの購読をダウンロード／ダウンロードされていない。もしくはすべての新しい／古いポッドキャストが表示されます。ソースの管理方法の詳細については各ソースのヘルプページを参照してください。</p>
+</section>
+
+
+</page>

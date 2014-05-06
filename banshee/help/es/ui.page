@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="ui" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-19" status="stub"/>
+    <desc>Una vista general de la interfaz de usuario de <app>Banshee</app>.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Introducción a la interfaz de usuario de Banshee</title>
+
+  <figure>
+    <title>Ventana del <gui>Reproductor multimedia Banshee</gui></title>
+    <desc><app>Reproductor multimedia Banshee</app></desc>
+    <media type="image" src="figures/banshee.png" mime="image/png" style="right">
+      <p>Interfaz de la colección de <app>Banshee</app></p>
+    </media>
+  </figure>
+  
+<section id="context">
+  <title>Fuentes</title>
+    <p>Su música y sus fuentes se muestran a la izquierda de Banshee. Las fuentes le dan acceso directo a la cola de reproducción, música, vídeos, Amazon, Last.fm, podcasts, etc.</p>
+    
+    <note style="tip">
+      <p>Las opciones a elegir en el menú cambiarán según la fuente que se elija. Por ejemplo, para importar un podcast, tendrá que utilizar el menú en la fuente Podcast. Así, la opción de importar podcasts no aparecerá cuando esté viendo la colección de vídeos o música.</p>
+    </note> 
+</section>
+
+<section id="browser">
+  <title>Examinador de colecciones</title>
+  <p>Cuando selecciona una canción o un vídeo desde «Fuentes», Banshee mostrará su contenido en el «Examinador de colecciones». Dependiendo de la fuente que elija, Banshee podrá mostrar su colección de música o de vídeo, subscripciones a Podcasts o incluso la tienda de música de Amazon para permitirle comprar música.</p>
+</section>
+
+<section id="nowplaying">
+  <title>Vista «En reproducción»</title>
+  <p>Útil cuando se usa Banshee en modo a pantalla completa, el modo «En reproducción» oculta la colección para darle una vista más grande de la música o del vídeo que está viendo. Cuando escucha música, la vista «En reproducción» le mostrará el nombre del artista, el álbum y la portada, si está disponible. Si está viendo un vídeo, Banshee mostrará el vídeo.</p>
+  
+  <p>Para cambiar la vista «En reproducción» para ocultar la interfaz de usuario de Banshee y usar el modo a pantalla completa, puede pulsar <key>F</key>, pulsar el botón <gui>Pantalla completa</gui> en la esquina superior derecha de Banshee o elegir <guiseq><gui>Ver</gui><gui>Pantalla completa</gui></guiseq> para iniciar el modo a pantalla completa.</p>
+  
+</section>
+
+<section id="library">
+  <title>Colección</title>
+  <p>La vista «Colección» de Banshee cambiará dependiendo de la fuente que haya elegido. La «Colección de música» mostrará la carátula, los artistas en su colección y lista de canciones. La «Colección de podcast» mostrará sus subscripciones a podcast, los podcast que se han bajado y los que no, y todos los podcast, nuevos o antiguos. Consulte la página de ayuda de «Fuentes» para obtener información detallada sobre cómo gestionar una fuente.</p>
+</section>
+
+
+</page>

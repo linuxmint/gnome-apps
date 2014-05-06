@@ -1,0 +1,1046 @@
+<Overview>
+  <Assemblies>
+    <Assembly Name="Banshee.Core" Version="2.4.0.0">
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("Novell, Inc.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("Copyright (C) 2005-2010 Novell Inc. and others")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("Banshee Media Player")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("Banshee")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+    <Assembly Name="Banshee.Services" Version="2.4.0.0">
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("Novell, Inc.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("Copyright (C) 2005-2010 Novell Inc. and others")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("Banshee Media Player")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("Banshee")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+    <Assembly Name="Banshee.Widgets" Version="2.4.0.0">
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("Novell, Inc.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("Copyright (C) 2005-2010 Novell Inc. and others")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("Banshee Media Player")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("Banshee")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+    <Assembly Name="Banshee.ThickClient" Version="2.4.0.0">
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("Novell, Inc.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("Copyright (C) 2005-2010 Novell Inc. and others")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("Banshee Media Player")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("Banshee")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+  </Assemblies>
+  <Remarks>To be added.</Remarks>
+  <Copyright>To be added.</Copyright>
+  <Types>
+    <Namespace Name="Bacon">
+      <Type Name="VolumeButton" Kind="Class" />
+      <Type Name="VolumeButton+VolumeChangedHandler" Kind="Delegate" />
+    </Namespace>
+    <Namespace Name="Banshee.Addins.Gui">
+      <Type Name="AddinDetailsDialog" />
+      <Type Name="AddinTile" />
+      <Type Name="AddinView" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.AudioProfiles">
+      <Type Name="Pipeline" />
+      <Type Name="Pipeline+Process" />
+      <Type Name="PipelineVariable" />
+      <Type Name="PipelineVariable+PossibleValue" />
+      <Type Name="PipelineVariableControlType" />
+      <Type Name="Profile" />
+      <Type Name="ProfileConfiguration" />
+      <Type Name="ProfileManager" />
+      <Type Name="TestProfileArgs" />
+      <Type Name="TestProfileHandler" />
+    </Namespace>
+    <Namespace Name="Banshee.AudioProfiles.Gui">
+      <Type Name="ProfileComboBox" />
+      <Type Name="ProfileComboBoxConfigurable" />
+      <Type Name="ProfileConfigurationDialog" />
+      <Type Name="ProfileConfigureButton" />
+      <Type Name="TextViewLabel" />
+    </Namespace>
+    <Namespace Name="Banshee.Base">
+      <Type Name="ApplicationContext" />
+      <Type Name="AssemblyResource" Kind="Class" />
+      <Type Name="CoverArtSpec" Kind="Class" />
+      <Type Name="FileNamePattern" Kind="Class" />
+      <Type Name="FileNamePattern+Conversion" Kind="Structure" />
+      <Type Name="FileNamePattern+ExpandTokenHandler" Kind="Delegate" />
+      <Type Name="FileNamePattern+FilterHandler" Kind="Delegate" />
+      <Type Name="InvokeHandler" />
+      <Type Name="LegacyPaths" Kind="Class" />
+      <Type Name="Localization" Kind="Class" />
+      <Type Name="NamingUtil" Kind="Class" />
+      <Type Name="NamingUtil+PostfixDuplicateIncrementHandler" Kind="Delegate" />
+      <Type Name="PathPattern" Kind="Class" />
+      <Type Name="Paths" />
+      <Type Name="PlatformHacks" />
+      <Type Name="ProductAuthor" Kind="Class" />
+      <Type Name="ProductInformation" Kind="Class" />
+      <Type Name="ProductTranslation" Kind="Class" />
+      <Type Name="RateLimiter" Kind="Class" />
+      <Type Name="RateLimiter+RateLimitedMethod" Kind="Delegate" />
+      <Type Name="Resource" />
+      <Type Name="SafeUri" />
+      <Type Name="ThreadAssist" />
+      <Type Name="UriList" />
+      <Type Name="XdgBaseDirectorySpec" />
+    </Namespace>
+    <Namespace Name="Banshee.Base.Tests">
+    </Namespace>
+    <Namespace Name="Banshee.CairoGlyphs">
+      <Type Name="BansheeLineLogo" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Collection">
+      <Type Name="AlbumInfo" Kind="Class" />
+      <Type Name="AlbumListModel" Kind="Class" />
+      <Type Name="ArtistInfo" Kind="Class" />
+      <Type Name="ArtistListModel" Kind="Class" />
+      <Type Name="BansheeListModel`1" DisplayName="BansheeListModel&lt;T&gt;" Kind="Class" />
+      <Type Name="CacheableItem" Kind="Class" />
+      <Type Name="ExportableModel" />
+      <Type Name="FileTrackInfo" Kind="Class" />
+      <Type Name="FilterListModel`1" DisplayName="FilterListModel&lt;T&gt;" Kind="Class" />
+      <Type Name="IBasicTrackInfo" Kind="Interface" />
+      <Type Name="IExportableModel" Kind="Interface" />
+      <Type Name="IHasTrackSelection" />
+      <Type Name="ImportEventArgs" Kind="Class" />
+      <Type Name="ImportEventHandler" Kind="Delegate" />
+      <Type Name="ImportManager" Kind="Class" />
+      <Type Name="InvalidFileException" Kind="Class" />
+      <Type Name="IPodcastInfo" Kind="Interface" />
+      <Type Name="ITrackInfo" Kind="Interface" />
+      <Type Name="MemoryTrackListModel" Kind="Class" />
+      <Type Name="ModelHelper" Kind="Class" />
+      <Type Name="ModelHelper+IdFilterChangedHandler" Kind="Delegate" />
+      <Type Name="ModelHelper+SingleIdFilterHandler`1" DisplayName="ModelHelper+SingleIdFilterHandler&lt;T&gt;" Kind="Delegate" />
+      <Type Name="MoveOnInfoSaveJob" />
+      <Type Name="RescanPipeline" Kind="Class" />
+      <Type Name="SampleTrackInfo" Kind="Class" />
+      <Type Name="SelectAllSelection" Kind="Class" />
+      <Type Name="TrackAttributes" Kind="Enumeration" />
+      <Type Name="TrackFilterType" Kind="Enumeration" />
+      <Type Name="TrackInfo" Kind="Class" />
+      <Type Name="TrackInfo+ExportableAttribute" Kind="Class" />
+      <Type Name="TrackInfo+IsPlayingHandler" Kind="Delegate" />
+      <Type Name="TrackInfo+PlaybackFinishedHandler" Kind="Delegate" />
+      <Type Name="TrackListModel" Kind="Class" />
+      <Type Name="TrackMediaAttributes" Kind="Enumeration" />
+      <Type Name="TrackSyncPipelineElement" Kind="Class" />
+      <Type Name="UnknownTrackInfo" Kind="Class" />
+      <Type Name="YearInfo" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Collection.Database">
+      <Type Name="AlbumListDatabaseModel" />
+      <Type Name="ArtistListDatabaseModel" />
+      <Type Name="Bookmark" Kind="Class" />
+      <Type Name="CachedList`1" DisplayName="CachedList&lt;T&gt;" Kind="Class" />
+      <Type Name="DatabaseAlbumArtistInfo" Kind="Class" />
+      <Type Name="DatabaseAlbumArtistListModel" Kind="Class" />
+      <Type Name="DatabaseAlbumInfo" Kind="Class" />
+      <Type Name="DatabaseAlbumListModel" Kind="Class" />
+      <Type Name="DatabaseArtistInfo" Kind="Class" />
+      <Type Name="DatabaseArtistListModel" Kind="Class" />
+      <Type Name="DatabaseFilterListModel`2" DisplayName="DatabaseFilterListModel&lt;T,U&gt;" Kind="Class" />
+      <Type Name="DatabaseImportManager" Kind="Class" />
+      <Type Name="DatabaseImportManager+TrackPrimarySourceChooser" Kind="Delegate" />
+      <Type Name="DatabaseImportResultArgs" Kind="Class" />
+      <Type Name="DatabaseImportResultHandler" Kind="Delegate" />
+      <Type Name="DatabaseQueryFilterModel`1" DisplayName="DatabaseQueryFilterModel&lt;T&gt;" Kind="Class" />
+      <Type Name="DatabaseTrackInfo" Kind="Class" />
+      <Type Name="DatabaseTrackListModel" Kind="Class" />
+      <Type Name="DatabaseTrackModelCache`1" DisplayName="DatabaseTrackModelCache&lt;T&gt;" Kind="Class" />
+      <Type Name="DatabaseTrackModelProvider`1" DisplayName="DatabaseTrackModelProvider&lt;T&gt;" Kind="Class" />
+      <Type Name="DatabaseYearInfo" Kind="Class" />
+      <Type Name="DatabaseYearListModel" Kind="Class" />
+      <Type Name="FilterModelProvider`1" DisplayName="FilterModelProvider&lt;T&gt;" Kind="Class" />
+      <Type Name="IDatabaseTrackModelCache" Kind="Interface" />
+      <Type Name="IDatabaseTrackModelProvider" Kind="Interface" />
+      <Type Name="IFilterListModel" Kind="Interface" />
+      <Type Name="ISearchable" Kind="Interface" />
+      <Type Name="LibraryAlbumInfo" />
+      <Type Name="LibraryArtistInfo" />
+      <Type Name="QueryFilterInfo`1" DisplayName="QueryFilterInfo&lt;T&gt;" Kind="Class" />
+      <Type Name="RandomBy" Kind="Class" />
+      <Type Name="RandomBy+QueryContext" Kind="Class" />
+      <Type Name="RandomByAlbum" Kind="Class" />
+      <Type Name="RandomByArtist" Kind="Class" />
+      <Type Name="RandomByOff" Kind="Class" />
+      <Type Name="RandomByRating" Kind="Class" />
+      <Type Name="RandomByScore" Kind="Class" />
+      <Type Name="RandomBySlot" Kind="Class" />
+      <Type Name="RandomByTrack" Kind="Class" />
+      <Type Name="ShuffleModificationType" Kind="Enumeration" />
+      <Type Name="Shuffler" Kind="Class" />
+      <Type Name="TrackListDatabaseModel" />
+      <Type Name="TrackUriType" />
+    </Namespace>
+    <Namespace Name="Banshee.Collection.Gui">
+      <Type Name="AlbumListView" Kind="Class" />
+      <Type Name="ArtistListView" Kind="Class" />
+      <Type Name="ArtworkManager" Kind="Class" />
+      <Type Name="ArtworkRenderer" Kind="Class" />
+      <Type Name="BaseTrackListView" Kind="Class" />
+      <Type Name="BetaReleaseViewOverlay" />
+      <Type Name="ColumnCellAlbum" Kind="Class" />
+      <Type Name="ColumnCellCreativeCommons" Kind="Class" />
+      <Type Name="ColumnCellDateTime" Kind="Class" />
+      <Type Name="ColumnCellDiscAndCount" Kind="Class" />
+      <Type Name="ColumnCellDuration" Kind="Class" />
+      <Type Name="ColumnCellFileSize" Kind="Class" />
+      <Type Name="ColumnCellLocation" Kind="Class" />
+      <Type Name="ColumnCellPlaybackIndicator" />
+      <Type Name="ColumnCellPositiveInt" Kind="Class" />
+      <Type Name="ColumnCellQueryText" Kind="Class" />
+      <Type Name="ColumnCellStatusIndicator" Kind="Class" />
+      <Type Name="ColumnCellTrack" Kind="Class" />
+      <Type Name="ColumnCellTrackAndCount" Kind="Class" />
+      <Type Name="ColumnCellTrackNumber" Kind="Class" />
+      <Type Name="CoverArtEditor" Kind="Class" />
+      <Type Name="DataViewChildAlbum" Kind="Class" />
+      <Type Name="DataViewChildImage" Kind="Class" />
+      <Type Name="DateTimeFormat" Kind="Enumeration" />
+      <Type Name="DefaultColumnController" Kind="Class" />
+      <Type Name="PersistentColumnController" Kind="Class" />
+      <Type Name="QueryFilterView`1" DisplayName="QueryFilterView&lt;T&gt;" Kind="Class" />
+      <Type Name="SearchableListView`1" DisplayName="SearchableListView&lt;T&gt;" Kind="Class" />
+      <Type Name="TerseTrackListView" Kind="Class" />
+      <Type Name="TrackFilterListView`1" DisplayName="TrackFilterListView&lt;T&gt;" Kind="Class" />
+      <Type Name="TrackListView" Kind="Class" />
+      <Type Name="XmlColumnController" Kind="Class" />
+      <Type Name="YearListView" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Collection.Indexer">
+      <Type Name="ActionHandler" Kind="Delegate" />
+      <Type Name="CollectionIndexer" Kind="Class" />
+      <Type Name="CollectionIndexerService" Kind="Class" />
+      <Type Name="ICollectionIndexer" Kind="Interface" />
+      <Type Name="ICollectionIndexerService" Kind="Interface" />
+      <Type Name="IIndexerClient" Kind="Interface" />
+      <Type Name="SaveToXmlFinishedHandler" Kind="Delegate" />
+    </Namespace>
+    <Namespace Name="Banshee.Collection.Indexer.RemoteHelper">
+      <Type Name="IndexerClient" />
+    </Namespace>
+    <Namespace Name="Banshee.Configuration">
+      <Type Name="ConfigurationClient" Kind="Class" />
+      <Type Name="DatabaseConfigurationClient" Kind="Class" />
+      <Type Name="DefaultApplicationHelper" Kind="Class" />
+      <Type Name="Extensions" Kind="Class" />
+      <Type Name="IConfigurationClient" Kind="Interface" />
+      <Type Name="IDefaultHelper" Kind="Interface" />
+      <Type Name="MemoryConfigurationClient" Kind="Class" />
+      <Type Name="SchemaEntry" Kind="Class" />
+      <Type Name="SchemaEntry`1" DisplayName="SchemaEntry&lt;T&gt;" Kind="Structure" />
+      <Type Name="XmlConfigurationClient" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Configuration.Schema">
+      <Type Name="ImportSchema" Kind="Class" />
+      <Type Name="LibrarySchema" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.ContextPane">
+      <Type Name="BaseContextPage" Kind="Class" />
+      <Type Name="ContextPageManager" Kind="Class" />
+      <Type Name="ContextPane" Kind="Class" />
+      <Type Name="ContextState" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="Banshee.Database">
+      <Type Name="BansheeDbConnection" Kind="Class" />
+      <Type Name="BansheeDbFormatMigrator" Kind="Class" />
+      <Type Name="BansheeDbFormatMigrator+SlowStartedHandler" Kind="Delegate" />
+      <Type Name="BansheeModelCache`1" DisplayName="BansheeModelCache&lt;T&gt;" Kind="Class" />
+      <Type Name="BansheeModelProvider`1" DisplayName="BansheeModelProvider&lt;T&gt;" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Equalizer">
+      <Type Name="EqualizerManager" Kind="Class" />
+      <Type Name="EqualizerManager+EqualizerSettingEventHandler" Kind="Delegate" />
+      <Type Name="EqualizerSetting" Kind="Class" />
+      <Type Name="EqualizerSettingEventArgs" />
+      <Type Name="EqualizerSettingEventHandler" />
+    </Namespace>
+    <Namespace Name="Banshee.Equalizer.Gui">
+      <Type Name="AmplifierChangedEventArgs" />
+      <Type Name="AmplifierChangedEventHandler" Kind="Delegate" />
+      <Type Name="EqualizerBandScale" Kind="Class" />
+      <Type Name="EqualizerChangedEventArgs" Kind="Class" />
+      <Type Name="EqualizerChangedEventHandler" Kind="Delegate" />
+      <Type Name="EqualizerLevelsBox" Kind="Class" />
+      <Type Name="EqualizerPresetComboBox" Kind="Class" />
+      <Type Name="EqualizerView" Kind="Class" />
+      <Type Name="EqualizerWindow" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Gui">
+      <Type Name="BansheeActionGroup" Kind="Class" />
+      <Type Name="BansheeDbFormatMigratorMonitor" Kind="Class" />
+      <Type Name="BansheeIconFactory" Kind="Class" />
+      <Type Name="BaseClientWindow" Kind="Class" />
+      <Type Name="BookmarksService" Kind="Class" />
+      <Type Name="BookmarkUI" Kind="Class" />
+      <Type Name="CommonServices" Kind="Class" />
+      <Type Name="GlobalActions" Kind="Class" />
+      <Type Name="GtkBaseClient" Kind="Class" />
+      <Type Name="GtkElementsService" Kind="Class" />
+      <Type Name="GtkElementsService+PrimaryWindowCloseHandler" Kind="Delegate" />
+      <Type Name="IClientWindow" Kind="Interface" />
+      <Type Name="IconThemeUtils" Kind="Class" />
+      <Type Name="IDisableKeybindings" Kind="Interface" />
+      <Type Name="IGlobalUIActions" Kind="Interface" />
+      <Type Name="IHasSourceView" Kind="Interface" />
+      <Type Name="InterfaceActionService" Kind="Class" />
+      <Type Name="PersistentPaneController" Kind="Class" />
+      <Type Name="PersistentWindowController" Kind="Class" />
+      <Type Name="PlaybackActions" Kind="Class" />
+      <Type Name="PlaybackRepeatActions" Kind="Class" />
+      <Type Name="PlaybackShuffleActions" Kind="Class" />
+      <Type Name="PlaybackSubtitleActions" Kind="Class" />
+      <Type Name="SourceActions" Kind="Class" />
+      <Type Name="TrackActions" Kind="Class" />
+      <Type Name="ViewActions" Kind="Class" />
+      <Type Name="ViewActions+FullscreenHandler" Kind="Delegate" />
+      <Type Name="WindowPersistOptions" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="Banshee.Gui.Dialogs">
+      <Type Name="AboutDialog" Kind="Class" />
+      <Type Name="BansheeDialog" Kind="Class" />
+      <Type Name="ConfirmShutdownDialog" Kind="Class" />
+      <Type Name="DefaultApplicationHelperDialog" Kind="Class" />
+      <Type Name="ErrorListDialog" Kind="Class" />
+      <Type Name="ExtensionManagerDialog" Kind="Class" />
+      <Type Name="FileChooserDialog" Kind="Class" />
+      <Type Name="GladeDialog" />
+      <Type Name="GladeWindow" />
+      <Type Name="ImageFileChooserDialog" Kind="Class" />
+      <Type Name="OpenLocationDialog" Kind="Class" />
+      <Type Name="PreferencesDialog" />
+      <Type Name="SeekDialog" Kind="Class" />
+      <Type Name="TrackEditor" />
+    </Namespace>
+    <Namespace Name="Banshee.Gui.DragDrop">
+      <Type Name="DragDropList`1" DisplayName="DragDropList&lt;T&gt;" />
+      <Type Name="DragDropTarget" Kind="Class" />
+      <Type Name="DragDropTargetType" Kind="Enumeration" />
+      <Type Name="DragDropUtilities" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Gui.TrackEditor">
+      <Type Name="AlbumArtistEntry" Kind="Class" />
+      <Type Name="BasicTrackDetailsPage" Kind="Class" />
+      <Type Name="EditorEditableUndoAdapter`1" DisplayName="EditorEditableUndoAdapter&lt;T&gt;" Kind="Class" />
+      <Type Name="EditorEntryUndoAdapter" />
+      <Type Name="EditorMode" Kind="Enumeration" />
+      <Type Name="EditorTrackInfo" Kind="Class" />
+      <Type Name="EditorUtilities" Kind="Class" />
+      <Type Name="ExtraTrackDetailsPage" Kind="Class" />
+      <Type Name="FieldOptions" Kind="Enumeration" />
+      <Type Name="FieldPage" Kind="Class" />
+      <Type Name="FieldPage+FieldLabelClosure" Kind="Delegate" />
+      <Type Name="FieldPage+FieldSlot" Kind="Structure" />
+      <Type Name="FieldPage+FieldValueClosure" Kind="Delegate" />
+      <Type Name="GenreEntry" Kind="Class" />
+      <Type Name="HelpPage" Kind="Class" />
+      <Type Name="ICanUndo" Kind="Interface" />
+      <Type Name="IEditorField" Kind="Interface" />
+      <Type Name="ITrackEditorModifier" Kind="Interface" />
+      <Type Name="ITrackEditorPage" Kind="Interface" />
+      <Type Name="LicenseEntry" Kind="Class" />
+      <Type Name="LyricsPage" Kind="Class" />
+      <Type Name="PageNavigationEntry" Kind="Class" />
+      <Type Name="PageType" Kind="Enumeration" />
+      <Type Name="RangeEntry" Kind="Class" />
+      <Type Name="RangeEntry+RangeOrderClosure" Kind="Delegate" />
+      <Type Name="RatingEntry" Kind="Class" />
+      <Type Name="SortingPage" Kind="Class" />
+      <Type Name="SpinButtonEntry" Kind="Class" />
+      <Type Name="StatisticsPage" Kind="Class" />
+      <Type Name="SyncButton" Kind="Class" />
+      <Type Name="TextEntry" Kind="Class" />
+      <Type Name="TextViewEntry" Kind="Class" />
+      <Type Name="TitleEntry" />
+      <Type Name="TrackEditorDialog" Kind="Class" />
+      <Type Name="TrackEditorDialog+EditorTrackOperationClosure" Kind="Delegate" />
+    </Namespace>
+    <Namespace Name="Banshee.Gui.Widgets">
+      <Type Name="ArtworkPopup" Kind="Class" />
+      <Type Name="ClassicTrackInfoDisplay" Kind="Class" />
+      <Type Name="ConnectedMessageBar" Kind="Class" />
+      <Type Name="ConnectedSeekSlider" Kind="Class" />
+      <Type Name="ConnectedVolumeButton" Kind="Class" />
+      <Type Name="CoverArtDisplay" Kind="Class" />
+      <Type Name="LargeTrackInfoDisplay" Kind="Class" />
+      <Type Name="MainMenu" Kind="Class" />
+      <Type Name="NextButton" Kind="Class" />
+      <Type Name="PlaylistMenuItem" Kind="Class" />
+      <Type Name="RepeatActionButton" Kind="Class" />
+      <Type Name="SeekSliderLayout" Kind="Enumeration" />
+      <Type Name="TaskStatusIcon" Kind="Class" />
+      <Type Name="TitledList" Kind="Class" />
+      <Type Name="TrackInfoDisplay" Kind="Class" />
+      <Type Name="UserJobTile" Kind="Class" />
+      <Type Name="UserJobTileHost" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Hardware">
+      <Type Name="DeviceAddedArgs" Kind="Class" />
+      <Type Name="DeviceAddedHandler" Kind="Delegate" />
+      <Type Name="DeviceCommand" Kind="Class" />
+      <Type Name="DeviceCommandAction" Kind="Enumeration" />
+      <Type Name="DeviceCommandHandler" Kind="Delegate" />
+      <Type Name="DeviceRemovedArgs" Kind="Class" />
+      <Type Name="DeviceRemovedHandler" Kind="Delegate" />
+      <Type Name="HardwareManager" Kind="Class" />
+      <Type Name="IBlockDevice" Kind="Interface" />
+      <Type Name="ICdromDevice" Kind="Interface" />
+      <Type Name="ICustomDeviceProvider" Kind="Interface" />
+      <Type Name="IDevice" Kind="Interface" />
+      <Type Name="IDeviceMediaCapabilities" Kind="Interface" />
+      <Type Name="IDiscDuplicator" Kind="Interface" />
+      <Type Name="IDiscVolume" Kind="Interface" />
+      <Type Name="IDiskDevice" Kind="Interface" />
+      <Type Name="IHardwareManager" Kind="Interface" />
+      <Type Name="IUsbDevice" Kind="Interface" />
+      <Type Name="IUsbPortInfo" Kind="Interface" />
+      <Type Name="IVolume" Kind="Interface" />
+      <Type Name="UsbPortInfo" Kind="Class" />
+      <Type Name="VendorProductDeviceNode" Kind="Class" />
+      <Type Name="VendorProductInfo" Kind="Structure" />
+    </Namespace>
+    <Namespace Name="Banshee.I18n">
+      <Type Name="AssemblyCatalogAttribute" Kind="Class" />
+      <Type Name="Catalog" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.IO">
+      <Type Name="DemuxVfs" Kind="Class" />
+      <Type Name="Directory" Kind="Class" />
+      <Type Name="DirectoryScannerPipelineElement" Kind="Class" />
+      <Type Name="ExtensionSet" Kind="Class" />
+      <Type Name="File" Kind="Class" />
+      <Type Name="IDemuxVfs" Kind="Interface" />
+      <Type Name="IDirectory" Kind="Interface" />
+      <Type Name="IFile" Kind="Interface" />
+      <Type Name="IProvider" Kind="Interface" />
+      <Type Name="Provider" Kind="Class" />
+      <Type Name="StreamAssist" Kind="Class" />
+      <Type Name="Utilities" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.IO.GnomeVfs">
+    </Namespace>
+    <Namespace Name="Banshee.IO.SystemIO">
+      <Type Name="DemuxVfs" Kind="Class" />
+      <Type Name="Directory" Kind="Class" />
+      <Type Name="File" Kind="Class" />
+      <Type Name="Provider" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.IO.Unix">
+    </Namespace>
+    <Namespace Name="Banshee.Kernel">
+      <Type Name="DelegateJob" Kind="Class" />
+      <Type Name="DelegateJob+JobDelegate" Kind="Delegate" />
+      <Type Name="IInstanceCriticalJob" Kind="Interface" />
+      <Type Name="IJob" Kind="Interface" />
+      <Type Name="Job" Kind="Class" />
+      <Type Name="JobEventHandler" Kind="Delegate" />
+      <Type Name="JobPriority" Kind="Enumeration" />
+      <Type Name="Scheduler" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Library">
+      <Type Name="HomeDirectoryImportSource" />
+      <Type Name="IImportSource" Kind="Interface" />
+      <Type Name="ImportSourceManager" Kind="Class" />
+      <Type Name="LibraryImportManager" Kind="Class" />
+      <Type Name="LibraryLocationPreference" />
+      <Type Name="LibrarySource" Kind="Class" />
+      <Type Name="MusicFileNamePattern" Kind="Class" />
+      <Type Name="MusicLibrarySource" Kind="Class" />
+      <Type Name="ThreadPoolImportSource" Kind="Class" />
+      <Type Name="VideoLibrarySource" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Library.Gui">
+      <Type Name="FileImportSource" Kind="Class" />
+      <Type Name="FolderImportSource" Kind="Class" />
+      <Type Name="ImportDialog" Kind="Class" />
+      <Type Name="PhotoFolderImportSource" />
+    </Namespace>
+    <Namespace Name="Banshee.MediaEngine">
+      <Type Name="AudioCdRipperErrorArgs" Kind="Class" />
+      <Type Name="AudioCdRipperErrorHandler" Kind="Delegate" />
+      <Type Name="AudioCdRipperProgressArgs" Kind="Class" />
+      <Type Name="AudioCdRipperProgressHandler" Kind="Delegate" />
+      <Type Name="AudioCdRipperTrackFinishedArgs" Kind="Class" />
+      <Type Name="AudioCdRipperTrackFinishedHandler" Kind="Delegate" />
+      <Type Name="BpmEventArgs" Kind="Class" />
+      <Type Name="BpmEventHandler" Kind="Delegate" />
+      <Type Name="DBusPlayerEngineEventHandler" />
+      <Type Name="DBusPlayerEngineStateHandler" />
+      <Type Name="DBusPlayerEventHandler" Kind="Delegate" />
+      <Type Name="DBusPlayerStateHandler" Kind="Delegate" />
+      <Type Name="IAudioCdRipper" Kind="Interface" />
+      <Type Name="IBpmDetector" Kind="Interface" />
+      <Type Name="IEqualizer" Kind="Interface" />
+      <Type Name="IPlayerEngineService" Kind="Interface" />
+      <Type Name="ISupportClutter" Kind="Interface" />
+      <Type Name="ITranscoder" Kind="Interface" />
+      <Type Name="IVisualizationDataSource" Kind="Interface" />
+      <Type Name="NullPlayerEngine" Kind="Class" />
+      <Type Name="PlayerEngine" Kind="Class" />
+      <Type Name="PlayerEngineEvent" />
+      <Type Name="PlayerEngineEventArgs" />
+      <Type Name="PlayerEngineEventHandler" />
+      <Type Name="PlayerEngineService" Kind="Class" />
+      <Type Name="PlayerEngineState" />
+      <Type Name="PlayerEngineStateArgs" />
+      <Type Name="PlayerEngineStateHandler" />
+      <Type Name="PlayerEvent" Kind="Enumeration" />
+      <Type Name="PlayerEventArgs" Kind="Class" />
+      <Type Name="PlayerEventBufferingArgs" Kind="Class" />
+      <Type Name="PlayerEventErrorArgs" Kind="Class" />
+      <Type Name="PlayerEventHandler" Kind="Delegate" />
+      <Type Name="PlayerEventStateChangeArgs" Kind="Class" />
+      <Type Name="PlayerState" Kind="Enumeration" />
+      <Type Name="TrackInterceptHandler" Kind="Delegate" />
+      <Type Name="TranscoderErrorArgs" Kind="Class" />
+      <Type Name="TranscoderErrorHandler" Kind="Delegate" />
+      <Type Name="TranscoderProgressArgs" Kind="Class" />
+      <Type Name="TranscoderProgressHandler" Kind="Delegate" />
+      <Type Name="TranscoderService" Kind="Class" />
+      <Type Name="TranscoderService+TrackTranscodedHandler" Kind="Delegate" />
+      <Type Name="TranscoderService+TranscodeCancelledHandler" Kind="Delegate" />
+      <Type Name="TranscoderService+TranscodeErrorHandler" Kind="Delegate" />
+      <Type Name="TranscoderTrackFinishedArgs" Kind="Class" />
+      <Type Name="TranscoderTrackFinishedHandler" Kind="Delegate" />
+      <Type Name="VideoDisplayContextType" Kind="Enumeration" />
+      <Type Name="VisualizationDataHandler" Kind="Delegate" />
+    </Namespace>
+    <Namespace Name="Banshee.MediaProfiles">
+      <Type Name="MediaProfileManager" Kind="Class" />
+      <Type Name="Pipeline" Kind="Class" />
+      <Type Name="Pipeline+Process" Kind="Structure" />
+      <Type Name="PipelineVariable" Kind="Class" />
+      <Type Name="PipelineVariable+PossibleValue" Kind="Structure" />
+      <Type Name="PipelineVariableControlType" Kind="Enumeration" />
+      <Type Name="Profile" Kind="Class" />
+      <Type Name="ProfileConfiguration" Kind="Class" />
+      <Type Name="TestProfileArgs" Kind="Class" />
+      <Type Name="TestProfileHandler" Kind="Delegate" />
+    </Namespace>
+    <Namespace Name="Banshee.MediaProfiles.Gui">
+      <Type Name="ProfileComboBox" Kind="Class" />
+      <Type Name="ProfileComboBoxConfigurable" Kind="Class" />
+      <Type Name="ProfileConfigurationDialog" Kind="Class" />
+      <Type Name="ProfileConfigureButton" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Metadata">
+      <Type Name="BaseMetadataProvider" Kind="Class" />
+      <Type Name="IMetadataLookupJob" Kind="Interface" />
+      <Type Name="IMetadataProvider" Kind="Interface" />
+      <Type Name="MetadataLookupResultArgs" Kind="Class" />
+      <Type Name="MetadataLookupResultHandler" Kind="Delegate" />
+      <Type Name="MetadataService" Kind="Class" />
+      <Type Name="MetadataServiceJob" Kind="Class" />
+      <Type Name="MetadataSettings" />
+      <Type Name="SaveTrackMetadataJob" Kind="Class" />
+      <Type Name="SaveTrackMetadataService" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Metadata.Embedded">
+      <Type Name="EmbeddedMetadataProvider" Kind="Class" />
+      <Type Name="EmbeddedQueryJob" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Metadata.FileSystem">
+      <Type Name="FileSystemMetadataProvider" Kind="Class" />
+      <Type Name="FileSystemQueryJob" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Metadata.LastFM">
+      <Type Name="LastFMMetadataProvider" Kind="Class" />
+      <Type Name="LastFMQueryJob" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Metadata.MusicBrainz">
+      <Type Name="MusicBrainzMetadataProvider" Kind="Class" />
+      <Type Name="MusicBrainzQueryJob" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Metadata.Rhapsody">
+      <Type Name="RhapsodyMetadataProvider" Kind="Class" />
+      <Type Name="RhapsodyQueryJob" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Metrics">
+      <Type Name="BansheeMetrics" Kind="Class" />
+      <Type Name="Configuration" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Networking">
+      <Type Name="DotNetNetworking" Kind="Class" />
+      <Type Name="INetworkAvailabilityService" Kind="Interface" />
+      <Type Name="INetworkManager" />
+      <Type Name="Network" Kind="Class" />
+      <Type Name="NetworkDetect" />
+      <Type Name="NetworkManager" Kind="Class" />
+      <Type Name="NetworkStateChangedArgs" Kind="Class" />
+      <Type Name="NetworkStateChangedHandler" Kind="Delegate" />
+      <Type Name="NetworkUnavailableException" Kind="Class" />
+      <Type Name="State" Kind="Enumeration" />
+      <Type Name="StateChangeHandler" Kind="Delegate" />
+      <Type Name="Wicd" Kind="Class" />
+      <Type Name="Wicd+StateChangeInternalHandler" Kind="Delegate" />
+    </Namespace>
+    <Namespace Name="Banshee.PlatformServices">
+      <Type Name="IScreensaverManager" Kind="Interface" />
+      <Type Name="ScreensaverManager" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.PlaybackController">
+      <Type Name="IBasicPlaybackController" Kind="Interface" />
+      <Type Name="ICanonicalPlaybackController" Kind="Interface" />
+      <Type Name="IPlaybackController" Kind="Interface" />
+      <Type Name="IPlaybackControllerExportable" />
+      <Type Name="IPlaybackControllerService" Kind="Interface" />
+      <Type Name="PlaybackControllerService" Kind="Class" />
+      <Type Name="PlaybackControllerStoppedHandler" Kind="Delegate" />
+      <Type Name="PlaybackRepeatMode" Kind="Enumeration" />
+      <Type Name="PlaybackShuffleMode" />
+    </Namespace>
+    <Namespace Name="Banshee.PlayerMigration">
+      <Type Name="AmarokPlayerImportSource" />
+    </Namespace>
+    <Namespace Name="Banshee.Playlist">
+      <Type Name="AbstractPlaylistSource" Kind="Class" />
+      <Type Name="ImportPlaylistWorker" Kind="Class" />
+      <Type Name="PlaylistFileUtil" Kind="Class" />
+      <Type Name="PlaylistImportCanceledException" Kind="Class" />
+      <Type Name="PlaylistSource" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Playlist.Gui">
+      <Type Name="PlaylistExportDialog" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Playlists.Formats">
+      <Type Name="AsfReferencePlaylistFormat" Kind="Class" />
+      <Type Name="AsxPlaylistFormat" Kind="Class" />
+      <Type Name="InvalidPlaylistException" Kind="Class" />
+      <Type Name="IPlaylistFormat" Kind="Interface" />
+      <Type Name="M3uPlaylistFormat" Kind="Class" />
+      <Type Name="PlaylistFormatBase" Kind="Class" />
+      <Type Name="PlaylistFormatDescription" Kind="Class" />
+      <Type Name="PlaylistFormatMagicHandler" Kind="Delegate" />
+      <Type Name="PlaylistParser" Kind="Class" />
+      <Type Name="PlsPlaylistFormat" Kind="Class" />
+      <Type Name="XspfPlaylistFormat" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Playlists.Formats.Tests">
+    </Namespace>
+    <Namespace Name="Banshee.Playlists.Formats.Xspf">
+    </Namespace>
+    <Namespace Name="Banshee.Preferences">
+      <Type Name="Collection`1" DisplayName="Collection&lt;T&gt;" Kind="Class" />
+      <Type Name="Page" Kind="Class" />
+      <Type Name="Preference`1" DisplayName="Preference&lt;T&gt;" Kind="Class" />
+      <Type Name="PreferenceBase" Kind="Class" />
+      <Type Name="PreferenceService" Kind="Class" />
+      <Type Name="Root" Kind="Class" />
+      <Type Name="SchemaPreference`1" DisplayName="SchemaPreference&lt;T&gt;" Kind="Class" />
+      <Type Name="SchemaPreferenceUpdatedHandler" Kind="Delegate" />
+      <Type Name="Section" Kind="Class" />
+      <Type Name="SourcePage" Kind="Class" />
+      <Type Name="VoidPreference" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Preferences.Gui">
+      <Type Name="DefaultPreferenceWidgets" Kind="Class" />
+      <Type Name="DescriptionLabel" Kind="Class" />
+      <Type Name="DescriptionLabel+DescriptionHandler" Kind="Delegate" />
+      <Type Name="NotebookPage" Kind="Class" />
+      <Type Name="PageComboBox" Kind="Class" />
+      <Type Name="PreferenceDialog" Kind="Class" />
+      <Type Name="SectionBox" Kind="Class" />
+      <Type Name="WidgetFactory" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Query">
+      <Type Name="AbstractPlaylistQueryValue`1" DisplayName="AbstractPlaylistQueryValue&lt;T&gt;" Kind="Class" />
+      <Type Name="BansheeQuery" Kind="Class" />
+      <Type Name="NaturalIntegerQueryValue" Kind="Class" />
+      <Type Name="PlaybackErrorQueryValue" Kind="Class" />
+      <Type Name="PlaylistQueryValue" Kind="Class" />
+      <Type Name="RatingQueryValue" Kind="Class" />
+      <Type Name="SmartPlaylistQueryValue" Kind="Class" />
+      <Type Name="YearQueryValue" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Query.Gui">
+      <Type Name="BansheeQueryBox" Kind="Class" />
+      <Type Name="PlaybackErrorQueryValueEntry" Kind="Class" />
+      <Type Name="PlaylistQueryValueEntry" Kind="Class" />
+      <Type Name="RatingQueryValueEntry" Kind="Class" />
+      <Type Name="SmartPlaylistQueryValueEntry" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.ServiceStack">
+      <Type Name="Application" Kind="Class" />
+      <Type Name="BatchUserJob" Kind="Class" />
+      <Type Name="Client" Kind="Class" />
+      <Type Name="DbIteratorJob" Kind="Class" />
+      <Type Name="DBusCommandHandler" Kind="Delegate" />
+      <Type Name="DBusCommandService" Kind="Class" />
+      <Type Name="DBusConnection" Kind="Class" />
+      <Type Name="DBusExportableAttribute" Kind="Class" />
+      <Type Name="DBusServiceManager" Kind="Class" />
+      <Type Name="IDBusExportable" Kind="Interface" />
+      <Type Name="IDBusObjectName" Kind="Interface" />
+      <Type Name="IDelayedInitializeService" Kind="Interface" />
+      <Type Name="IdleHandler" Kind="Delegate" />
+      <Type Name="IdleImplementationHandler" Kind="Delegate" />
+      <Type Name="IdleTimeoutRemoveHandler" Kind="Delegate" />
+      <Type Name="IdleTimeoutRemoveImplementationHandler" Kind="Delegate" />
+      <Type Name="IExtensionService" Kind="Interface" />
+      <Type Name="IInitializeService" Kind="Interface" />
+      <Type Name="InterfaceAction" />
+      <Type Name="InvokeHandler" />
+      <Type Name="IRegisterOnDemandService" Kind="Interface" />
+      <Type Name="IRequiredService" Kind="Interface" />
+      <Type Name="IService" Kind="Interface" />
+      <Type Name="IUserJob" Kind="Interface" />
+      <Type Name="JobScheduler" Kind="Class" />
+      <Type Name="ServiceManager" Kind="Class" />
+      <Type Name="ServiceStartedArgs" Kind="Class" />
+      <Type Name="ServiceStartedHandler" Kind="Delegate" />
+      <Type Name="ShutdownRequestHandler" Kind="Delegate" />
+      <Type Name="TestUserJob" Kind="Class" />
+      <Type Name="TimeoutHandler" Kind="Delegate" />
+      <Type Name="TimeoutImplementationHandler" Kind="Delegate" />
+      <Type Name="UserJob" Kind="Class" />
+      <Type Name="UserJobEventArgs" Kind="Class" />
+      <Type Name="UserJobEventHandler" Kind="Delegate" />
+      <Type Name="UserJobManager" />
+    </Namespace>
+    <Namespace Name="Banshee.SmartPlaylist">
+      <Type Name="DependencyComparer" Kind="Class" />
+      <Type Name="Editor" Kind="Class" />
+      <Type Name="SmartPlaylistCore" />
+      <Type Name="SmartPlaylistDefinition" Kind="Class" />
+      <Type Name="SmartPlaylistSource" Kind="Class" />
+      <Type Name="Timer" />
+    </Namespace>
+    <Namespace Name="Banshee.Sources">
+      <Type Name="DatabaseSource" Kind="Class" />
+      <Type Name="DurationStatusFormatHandler" Kind="Delegate" />
+      <Type Name="DurationStatusFormatters" Kind="Class" />
+      <Type Name="ErrorSource" Kind="Class" />
+      <Type Name="ErrorSource+Message" Kind="Class" />
+      <Type Name="IDiskUsageReporter" Kind="Interface" />
+      <Type Name="IDurationAggregator" Kind="Interface" />
+      <Type Name="IFileSizeAggregator" Kind="Interface" />
+      <Type Name="IFilterableSource" Kind="Interface" />
+      <Type Name="IImportable" Kind="Interface" />
+      <Type Name="ISource" Kind="Interface" />
+      <Type Name="ISourceManager" Kind="Interface" />
+      <Type Name="ITrackModelSource" Kind="Interface" />
+      <Type Name="IUnmapableSource" Kind="Interface" />
+      <Type Name="MessageAction" Kind="Class" />
+      <Type Name="PrimarySource" Kind="Class" />
+      <Type Name="PrimarySource+TrackEventHandler" Kind="Delegate" />
+      <Type Name="Source" Kind="Class" />
+      <Type Name="Source+NameComparer" />
+      <Type Name="Source+OpenPropertiesDelegate" Kind="Delegate" />
+      <Type Name="Source+SizeComparer" />
+      <Type Name="SourceAddedArgs" Kind="Class" />
+      <Type Name="SourceAddedHandler" Kind="Delegate" />
+      <Type Name="SourceEventArgs" Kind="Class" />
+      <Type Name="SourceEventHandler" Kind="Delegate" />
+      <Type Name="SourceManager" Kind="Class" />
+      <Type Name="SourceManager+GroupSource" Kind="Class" />
+      <Type Name="SourceMergeType" Kind="Enumeration" />
+      <Type Name="SourceMessage" Kind="Class" />
+      <Type Name="SourceSortType" Kind="Class" />
+      <Type Name="TrackArtworkIdHandler" Kind="Delegate" />
+      <Type Name="TrackEqualHandler" Kind="Delegate" />
+      <Type Name="TrackEventArgs" Kind="Class" />
+      <Type Name="TrackExternalObjectHandler" Kind="Delegate" />
+    </Namespace>
+    <Namespace Name="Banshee.Sources.Gui">
+      <Type Name="CompositeTrackSourceContents" Kind="Class" />
+      <Type Name="FilteredListSourceContents" Kind="Class" />
+      <Type Name="ISourceContents" Kind="Interface" />
+      <Type Name="ITrackModelSourceContents" Kind="Interface" />
+      <Type Name="LazyLoadSourceContents`1" DisplayName="LazyLoadSourceContents&lt;T&gt;" Kind="Class" />
+      <Type Name="ObjectListSourceContents" Kind="Class" />
+      <Type Name="SourceComboBox" Kind="Class" />
+      <Type Name="SourceIconResolver" Kind="Class" />
+      <Type Name="SourceModel" Kind="Class" />
+      <Type Name="SourceModel+Columns" Kind="Enumeration" />
+      <Type Name="SourceModel+EntryType" Kind="Enumeration" />
+      <Type Name="SourceRowEventArgs" Kind="Class" />
+      <Type Name="SourceRowEventHandler" Kind="Delegate" />
+      <Type Name="SourceRowRenderer" Kind="Class" />
+      <Type Name="SourceSwitcherEntry" Kind="Class" />
+      <Type Name="SourceView" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Streaming">
+      <Type Name="CommonTags" Kind="Class" />
+      <Type Name="RadioTrackInfo" Kind="Class" />
+      <Type Name="SaveTrackMetadataJob" />
+      <Type Name="StreamPlaybackError" Kind="Enumeration" />
+      <Type Name="StreamRatingTagger" Kind="Class" />
+      <Type Name="StreamTag" Kind="Structure" />
+      <Type Name="StreamTagger" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Web">
+      <Type Name="BaseHttpServer" Kind="Class" />
+      <Type Name="Browser" Kind="Class" />
+      <Type Name="Browser+OpenUrlHandler" Kind="Delegate" />
+      <Type Name="HttpRequest" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Banshee.Widgets">
+      <Type Name="ActionButton" />
+      <Type Name="ActionToggleButton" />
+      <Type Name="ComplexMenuItem" />
+      <Type Name="CoverArtThumbnail" />
+      <Type Name="CoverArtView" />
+      <Type Name="CustomActionProxy" Kind="Class" />
+      <Type Name="DateButton" Kind="Class" />
+      <Type Name="DictionaryComboBox`1" DisplayName="DictionaryComboBox&lt;T&gt;" Kind="Class" />
+      <Type Name="DiscUsageDisplay" Kind="Class" />
+      <Type Name="DrawingUtilities" />
+      <Type Name="EllipsizeLabel" />
+      <Type Name="FadingAlignment" />
+      <Type Name="GenericToolItem`1" DisplayName="GenericToolItem&lt;T&gt;" />
+      <Type Name="HigMessageDialog" />
+      <Type Name="HoverImageButton" Kind="Class" />
+      <Type Name="LinearProgress" Kind="Class" />
+      <Type Name="LinkLabel" Kind="Class" />
+      <Type Name="LinkLabel+UriOpenHandler" Kind="Delegate" />
+      <Type Name="MenuTile" Kind="Class" />
+      <Type Name="MessagePane" Kind="Class" />
+      <Type Name="MultiStateToggleButton" />
+      <Type Name="PropertyTable" Kind="Class" />
+      <Type Name="RadialProgress" />
+      <Type Name="RatingActionProxy" Kind="Class" />
+      <Type Name="RatingEntry" />
+      <Type Name="RatingMenuItem" />
+      <Type Name="SearchEntry" Kind="Class" />
+      <Type Name="SeekSlider" Kind="Class" />
+      <Type Name="ShadowContainer" />
+      <Type Name="SimpleNotebook" />
+      <Type Name="StreamLabelState" Kind="Enumeration" />
+      <Type Name="StreamPositionLabel" Kind="Class" />
+      <Type Name="Tile" Kind="Class" />
+      <Type Name="TileView" Kind="Class" />
+      <Type Name="ToggleState" />
+      <Type Name="ToggleStateChangedArgs" />
+      <Type Name="ToggleStateChangedHandler" />
+    </Namespace>
+  </Types>
+  <Title>Untitled</Title>
+  <ExtensionMethods>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Banshee.Configuration.IConfigurationClient" />
+      </Targets>
+      <Member MemberName="Get&lt;T&gt;">
+        <MemberSignature Language="C#" Value="public static T Get&lt;T&gt; (this Banshee.Configuration.IConfigurationClient client, Banshee.Configuration.SchemaEntry&lt;T&gt; entry);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Get&lt;T&gt;(class Banshee.Configuration.IConfigurationClient client, valuetype Banshee.Configuration.SchemaEntry`1&lt;!!T&gt; entry) cil managed" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>T</ReturnType>
+        </ReturnValue>
+        <TypeParameters>
+          <TypeParameter Name="T" />
+        </TypeParameters>
+        <Parameters>
+          <Parameter Name="client" Type="Banshee.Configuration.IConfigurationClient" RefType="this" />
+          <Parameter Name="entry" Type="Banshee.Configuration.SchemaEntry&lt;T&gt;" />
+        </Parameters>
+        <Docs>
+          <typeparam name="T">To be added.</typeparam>
+          <param name="client">To be added.</param>
+          <param name="entry">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Banshee.Configuration.Extensions" Member="M:Banshee.Configuration.Extensions.Get``1(Banshee.Configuration.IConfigurationClient,Banshee.Configuration.SchemaEntry{``0})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Banshee.Configuration.IConfigurationClient" />
+      </Targets>
+      <Member MemberName="Get&lt;T&gt;">
+        <MemberSignature Language="C#" Value="public static T Get&lt;T&gt; (this Banshee.Configuration.IConfigurationClient client, Banshee.Configuration.SchemaEntry&lt;T&gt; entry, T fallback);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Get&lt;T&gt;(class Banshee.Configuration.IConfigurationClient client, valuetype Banshee.Configuration.SchemaEntry`1&lt;!!T&gt; entry, !!T fallback) cil managed" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>T</ReturnType>
+        </ReturnValue>
+        <TypeParameters>
+          <TypeParameter Name="T" />
+        </TypeParameters>
+        <Parameters>
+          <Parameter Name="client" Type="Banshee.Configuration.IConfigurationClient" RefType="this" />
+          <Parameter Name="entry" Type="Banshee.Configuration.SchemaEntry&lt;T&gt;" />
+          <Parameter Name="fallback" Type="T" />
+        </Parameters>
+        <Docs>
+          <typeparam name="T">To be added.</typeparam>
+          <param name="client">To be added.</param>
+          <param name="entry">To be added.</param>
+          <param name="fallback">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Banshee.Configuration.Extensions" Member="M:Banshee.Configuration.Extensions.Get``1(Banshee.Configuration.IConfigurationClient,Banshee.Configuration.SchemaEntry{``0},``0)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Banshee.Configuration.IConfigurationClient" />
+      </Targets>
+      <Member MemberName="Get&lt;T&gt;">
+        <MemberSignature Language="C#" Value="public static T Get&lt;T&gt; (this Banshee.Configuration.IConfigurationClient client, string key, T fallback);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Get&lt;T&gt;(class Banshee.Configuration.IConfigurationClient client, string key, !!T fallback) cil managed" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>T</ReturnType>
+        </ReturnValue>
+        <TypeParameters>
+          <TypeParameter Name="T" />
+        </TypeParameters>
+        <Parameters>
+          <Parameter Name="client" Type="Banshee.Configuration.IConfigurationClient" RefType="this" />
+          <Parameter Name="key" Type="System.String" />
+          <Parameter Name="fallback" Type="T" />
+        </Parameters>
+        <Docs>
+          <typeparam name="T">To be added.</typeparam>
+          <param name="client">To be added.</param>
+          <param name="key">To be added.</param>
+          <param name="fallback">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Banshee.Configuration.Extensions" Member="M:Banshee.Configuration.Extensions.Get``1(Banshee.Configuration.IConfigurationClient,System.String,``0)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Banshee.Configuration.IConfigurationClient" />
+      </Targets>
+      <Member MemberName="Get&lt;T&gt;">
+        <MemberSignature Language="C#" Value="public static T Get&lt;T&gt; (this Banshee.Configuration.IConfigurationClient client, string namespce, string key, T fallback);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Get&lt;T&gt;(class Banshee.Configuration.IConfigurationClient client, string namespce, string key, !!T fallback) cil managed" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>T</ReturnType>
+        </ReturnValue>
+        <TypeParameters>
+          <TypeParameter Name="T" />
+        </TypeParameters>
+        <Parameters>
+          <Parameter Name="client" Type="Banshee.Configuration.IConfigurationClient" RefType="this" />
+          <Parameter Name="namespce" Type="System.String" />
+          <Parameter Name="key" Type="System.String" />
+          <Parameter Name="fallback" Type="T" />
+        </Parameters>
+        <Docs>
+          <typeparam name="T">To be added.</typeparam>
+          <param name="client">To be added.</param>
+          <param name="namespce">To be added.</param>
+          <param name="key">To be added.</param>
+          <param name="fallback">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Banshee.Configuration.Extensions" Member="M:Banshee.Configuration.Extensions.Get``1(Banshee.Configuration.IConfigurationClient,System.String,System.String,``0)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Banshee.Configuration.IConfigurationClient" />
+      </Targets>
+      <Member MemberName="Set&lt;T&gt;">
+        <MemberSignature Language="C#" Value="public static void Set&lt;T&gt; (this Banshee.Configuration.IConfigurationClient client, Banshee.Configuration.SchemaEntry&lt;T&gt; entry, T value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set&lt;T&gt;(class Banshee.Configuration.IConfigurationClient client, valuetype Banshee.Configuration.SchemaEntry`1&lt;!!T&gt; entry, !!T value) cil managed" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Void</ReturnType>
+        </ReturnValue>
+        <TypeParameters>
+          <TypeParameter Name="T" />
+        </TypeParameters>
+        <Parameters>
+          <Parameter Name="client" Type="Banshee.Configuration.IConfigurationClient" RefType="this" />
+          <Parameter Name="entry" Type="Banshee.Configuration.SchemaEntry&lt;T&gt;" />
+          <Parameter Name="value" Type="T" />
+        </Parameters>
+        <Docs>
+          <typeparam name="T">To be added.</typeparam>
+          <param name="client">To be added.</param>
+          <param name="entry">To be added.</param>
+          <param name="value">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Banshee.Configuration.Extensions" Member="M:Banshee.Configuration.Extensions.Set``1(Banshee.Configuration.IConfigurationClient,Banshee.Configuration.SchemaEntry{``0},``0)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Banshee.Configuration.IConfigurationClient" />
+      </Targets>
+      <Member MemberName="Set&lt;T&gt;">
+        <MemberSignature Language="C#" Value="public static void Set&lt;T&gt; (this Banshee.Configuration.IConfigurationClient client, string key, T value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Set&lt;T&gt;(class Banshee.Configuration.IConfigurationClient client, string key, !!T value) cil managed" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Void</ReturnType>
+        </ReturnValue>
+        <TypeParameters>
+          <TypeParameter Name="T" />
+        </TypeParameters>
+        <Parameters>
+          <Parameter Name="client" Type="Banshee.Configuration.IConfigurationClient" RefType="this" />
+          <Parameter Name="key" Type="System.String" />
+          <Parameter Name="value" Type="T" />
+        </Parameters>
+        <Docs>
+          <typeparam name="T">To be added.</typeparam>
+          <param name="client">To be added.</param>
+          <param name="key">To be added.</param>
+          <param name="value">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Banshee.Configuration.Extensions" Member="M:Banshee.Configuration.Extensions.Set``1(Banshee.Configuration.IConfigurationClient,System.String,``0)" />
+      </Member>
+    </ExtensionMethod>
+  </ExtensionMethods>
+</Overview>

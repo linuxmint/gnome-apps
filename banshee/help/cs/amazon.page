@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="amazon" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#extensions"/>
+    <link type="seealso" xref=""/>
+    <desc>Synchronizujte a nakupujte hudbu z obchodu s MP3 Amazon.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-07-11" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Obchod s MP3 Amazon</title>    
+  
+  <p>Přehrávač Banshee podporuje stahování a import hudby z obchodu s MP3 Amazon. Můžete ručně importovat hudební soubory Amazon, nakupovat hudbu ve svém webovém prohlížeči nebo nakupovat hudbu přímo v Banshee. Amazon nabízí hudbu k prodeji ve formátu MP3 jen v některých zemích a to, zda budete moci v obchodě Amazon nakupovat MP3 závisí na tom, kde se nacházíte.</p>
+   
+   <note style="important">
+     <p>Přehrávač Banshee používá k nákupu veškeré hudby partnerský kód Amazon. Všechny peníze, které projdou přes tento partnerský kód jsou darovány nadaci GNOME Foundation.</p>
+   </note>
+   
+  <section id="amazon-browser">
+  <title>Nákup MP3 z obchodu Amazon ve webovém prohlížeči</title> 
+  
+  <p>Hudba zakoupená z obchodu s MP3 Amazon může být automaticky stahována a importována do přehrávače Banshee. Banshee se přidruží k souborům .amz, které Amazon poskytuje pro zakoupené MP3. Když v obchodě Amazon nakoupíte hudbu, váš webový prohlížeč stáhne soubor .amz a Banshee jej automaticky otevře a začne hudbu stahovat a importovat.</p>
+  </section>
+  
+  <section id="amazon-banshee">
+  <title>Nákup MP3 z obchodu Amazon v Banshee</title> 
+  
+  <p>V rámci přehrávače Banshee můžete také v obchodě Amazon skladby hledat. V nabídce vlevo zvolte Obchod s MP3 Amazon. Tím se načte obchod s MP3 Amazon stejně jako ve webovém prohlížeči. Můžete v něm vyhledávat hudbu, kterou si přejete koupit a po přihlášení do obchodu Amazon si ji můžete jediným kliknutím i koupit. Banshee váš nákup automaticky stáhne a naimportuje do kolekce.</p>
+  </section>
+  
+  <section id="amazon-manual">
+  <title>Ruční import MP3 z obchodu Amazon</title> 
+  
+  <p>Když nákup v obchodě Amazon provedete přes webový prohlížeč, soubor s příponou .amz se stáhne a uloží na váš pevný disk. Pokud chcete zakoupenou hudbu ručně naimporotvat z obchodu Amazon, zvolte v Banshee z nabídky <guiseq><gui>Média</gui><gui>Importovat média</gui></guiseq> a vyberte soubor *.amz, který se má importovat. Banshee tento soubor otevře a připojí se do obchodu s MP3 Amazon, aby provedla stažení.</p>
+  
+  <note style="warning">
+    <p>Soubory Amazon .amz jsou platné jen pro krátkou dobu. Pokud stažení neprovedete rychle, vyprší souboru platnost a vy nebudete moci svoji hudbu z obchodu Amazon stáhnout. Amazon nezveřejňuje, jak dlouho jsou soubory platné. Je doporučováno stažení a import zakoupené hudby z obchodu Amazon provést v rozmezí hodiny.</p>
+  </note>
+  </section> 
+	
+</page>

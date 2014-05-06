@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="playlists" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="tags"/>
+    <link type="seealso" xref="coverart"/>
+    <desc>Crear y gestionar listas de reproducción.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-05-26" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Listas de reproducción</title>    
+  
+  <p>Las listas de reproducción le permiten crear y guardar una lista de pistas de música para reproducirlas en un orden específico. Las listas de reproducción son adecuadas para crear una lista de sus canciones favoritas o para partir su colección en listas más pequeñas que sean más sencillas de explorar. Algunos reproductores multimedia portátiles le permiten incluso transferir la lista de reproducción para que pueda llevarla consigo.</p>
+  
+  <p>Banshee soporta tanto listas de reproducción normales, que incluyen canciones que añade a la lista, como listas de reproducción inteligentes. Las listas de reproducción inteligentes son listas de reproducción generadas automáticamente basadas en sus hábitos de escucha, su música favorita, etc.</p>
+  
+  <section id="manual">
+  
+    <title>Listas de reproducción normales</title>
+  
+    <p>Una lista de reproducción normal es una lista de canciones que puede añadir y gestionar. Podría querer crear su propia lista de canciones de su artista favorito desde varios álbumes, sus últimas canciones favoritas o una lista de reproducción animada para escuchar mientras hace ejercicio.</p>
+    
+    <p>Puede crear una nueva lista de reproducción pulsando <keyseq><key>Ctrl</key><key>N</key></keyseq>, eligiendo desde el menú <guiseq><gui>Multimedia</gui><gui>Lista de reproducción nueva</gui></guiseq> o seleccionando las pistas que le gustaría añadir a la lista de reproducción. Seleccione las pistas, pulse con el botón derecho y elija <guiseq><gui>Añadir a la lista de reproducción</gui><gui>Lista de reproducción nueva</gui></guiseq>. También puede arrastrar y soltarlas a la nueva lista de reproducción seleccionando las pistas y arrastrándolas al panel izquierdo sobre <gui>Música</gui>. Al arrastrar sobre <gui>Música</gui>, aparecerá una nueva opción <gui><em>Lista de reproducción nueva</em></gui> y podrá soltar las pistas sobre <gui><em>Lista de reproducción nueva</em></gui> para añadirlas a la lista. Puede repetir este proceso hasta que haya añadido a la lista de reproducción todas las pistas que quiera.</p>
+
+    <p>Para darle a su lista de reproducción un nombre propio, seleccione la lista de reproducción, pulse con el botón derecho en la lista, pulse <gui>Renombrar</gui> e introduzca el nombre de la lista de reproducción.</p>
+    
+    <p>Puede cambiar el orden de la lista de reproducción arrastrando y soltando la canción a la nueva posición dentro de la lista. Las canciones sólo se pueden reordenar en la lista de reproducción cuando no se está ordenando por ninguna columna. Para dejar de ordenar por una columna, pulse la columna hasta que ya no aparezcan las flechas de arriba o abajo y la columna esté en blanco, y entonces reordene la lista de reproducción.</p>
+    
+    <p>Para quitar una pista de la lista de reproducción, seleccione las pistas que quiere quitar. Pulse <key>Supr</key>, elija desde el menú  <guiseq><gui>Editar</gui><gui>Quitar de la lista de reproducción</gui></guiseq> o pulse con el botón derecho y luego pulse <gui>Quitar de la lista de reproducción</gui>.</p>
+  </section> 
+  
+  <section id="smartplaylists">
+    <title>Lista de reproducción inteligente</title>
+    
+    <p>Las listas de reproducción inteligentes le permiten generar rápidamente una lista de reproducción dinámica basada en diversas variables preestablecidas. Puede crear rápidamente una lista de reproducción nueva basada en un artista específico, favoritos, etc.</p>
+    
+    <p>Para crear una lista de reproducción inteligente nueva, elija desde el menú <guiseq><gui>Multimedia</gui><gui>Lista de reproducción inteligente nueva</gui></guiseq>. Aparecerá un diálogo para crear una lista de reproducción inteligente nueva. Introduzca el nombre de la lista y después elija los criterios en los que se basará su lista de reproducción. Puede elegir cualquier campo incluido en los metadatos de una canción, como el álbum, el artista o el año. Escoja los criterios y luego elija uno de los siguientes:</p>
+    
+    <list>
+      <item><p>es</p></item>
+      <item><p>no es</p></item>  
+      <item><p>menos que</p></item>
+      <item><p>más que</p></item>  
+      <item><p>como mucho</p></item>
+      <item><p>al menos</p></item>  
+    </list>
+    
+    <p>También puede pulsar el botón <gui>+</gui> para añadir una nueva condición a la lista de reproducción inteligente. Por ejemplo, puede crear una lista de reproducción inteligente que incluya todas las canciones desde 2010 y valoradas con 5 estrellas. Para crear esta lista de reproducción, podría elegir:</p>
+    
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Año</gui></p></td> <td><p><gui>es</gui></p> </td> 
+    <td><p><gui>2010</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><gui>Valoración</gui></p></td> <td><p><gui>es</gui></p></td> 
+    <td><p><gui/>5 estrellas</p></td>
+  </tr>
+  </table>
+    
+    <p>Luego puede seleccionar opcionalmente cuántas canciones se incluirán pulsando en la casilla <gui>Limitar a</gui> y eligiendo el número de canciones que se incluirán.</p>
+  
+  <p>Banshee también incluye listas de reproducción inteligentes creadas para usted. Pulse el botón <gui>Abrir en el editor</gui> para ver cómo se creó la lista de reproducción o para modificarla.</p>
+  
+  <list>
+    <title>Listas de reproducción inteligentes de Banshee</title>
+    <item><p>Favoritos (Canciones valoradas con cuatro o cinco estrellas)</p></item>
+    <item><p>Favoritos recientes (Canciones escuchadas a menudo en la última semana)</p></item>  
+    <item><p>Añadidas recientemente (Canciones importadas durante la última semana)</p></item>
+    <item><p>No oídas (Canciones omitidas o no reproducidas)</p></item>
+    <item><p>Favoritos abandonados (Favoritos no reproducidos en más de dos meses)</p></item>
+    <item><p>700 MB de favoritos (Un CD de datos lleno de canciones favoritas)</p></item>
+    <item><p>80 minutos de favoritos (Un CD de sonido lleno de canciones favoritas)</p></item>
+    <item><p>No valoradas (Canciones que no se han valorado)</p></item>
+  </list>
+ 
+   </section> 
+ 
+</page>

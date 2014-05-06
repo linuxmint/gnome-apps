@@ -1,0 +1,109 @@
+<Type Name="CanvasManager" FullName="Hyena.Gui.Canvas.CanvasManager">
+  <TypeSignature Language="C#" Value="public class CanvasManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CanvasManager extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Hyena.Gui</AssemblyName>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CanvasManager (Hyena.Gui.Canvas.ICanvasHost host);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Hyena.Gui.Canvas.ICanvasHost host) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="host" Type="Hyena.Gui.Canvas.ICanvasHost" />
+      </Parameters>
+      <Docs>
+        <param name="host">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Host">
+      <MemberSignature Language="C#" Value="public Hyena.Gui.Canvas.ICanvasHost Host { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Hyena.Gui.Canvas.ICanvasHost Host" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Hyena.Gui.Canvas.ICanvasHost</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueArrange">
+      <MemberSignature Language="C#" Value="public void QueueArrange (Hyena.Gui.Canvas.CanvasItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void QueueArrange(class Hyena.Gui.Canvas.CanvasItem item) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Hyena.Gui.Canvas.CanvasItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueMeasure">
+      <MemberSignature Language="C#" Value="public void QueueMeasure (Hyena.Gui.Canvas.CanvasItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void QueueMeasure(class Hyena.Gui.Canvas.CanvasItem item) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Hyena.Gui.Canvas.CanvasItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueRender">
+      <MemberSignature Language="C#" Value="public void QueueRender (Hyena.Gui.Canvas.CanvasItem item, Hyena.Gui.Canvas.Rect rect);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void QueueRender(class Hyena.Gui.Canvas.CanvasItem item, valuetype Hyena.Gui.Canvas.Rect rect) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Hyena.Gui.Canvas.CanvasItem" />
+        <Parameter Name="rect" Type="Hyena.Gui.Canvas.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

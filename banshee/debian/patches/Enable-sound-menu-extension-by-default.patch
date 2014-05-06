@@ -1,0 +1,21 @@
+From: Chow Loong Jin <hyperair@debian.org>
+Date: Mon, 23 Jan 2012 23:05:20 +0800
+Subject: Enable sound menu extension by default
+
+---
+ src/Extensions/Banshee.SoundMenu/Banshee.SoundMenu.addin.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/Extensions/Banshee.SoundMenu/Banshee.SoundMenu.addin.xml b/src/Extensions/Banshee.SoundMenu/Banshee.SoundMenu.addin.xml
+index 0765109..a8f5e82 100644
+--- a/src/Extensions/Banshee.SoundMenu/Banshee.SoundMenu.addin.xml
++++ b/src/Extensions/Banshee.SoundMenu/Banshee.SoundMenu.addin.xml
+@@ -9,7 +9,7 @@
+     description="Control Banshee from the Sound Menu."
+     author="Bertrand Lorentz"
+     url="http://banshee-project.org/"
+-    defaultEnabled="false">
++    defaultEnabled="true">
+ 
+   <Dependencies>
+     <Addin id="Banshee.Services" version="1.0"/>

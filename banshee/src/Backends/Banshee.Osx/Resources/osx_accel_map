@@ -1,0 +1,81 @@
+; Nereid GtkAccelMap rc-file         -*- scheme -*-
+; OS X accelerator mappings
+
+;;; OS X Application menu
+(gtk_accel_path "<Actions>/Global/PreferencesAction" "<Primary>comma")
+(gtk_accel_path "<Actions>/Global/QuitAction" "<Primary>q")
+
+;;; MEDIA MENU
+
+; use CMD-O as in iTunes to import media
+(gtk_accel_path "<Actions>/Global/ImportAction" "<Primary>o")
+
+; open location (not present in itunes)
+(gtk_accel_path "<Actions>/Global/OpenLocationAction" "<Primary><Alt>o")
+
+; Close window (mac only)
+(gtk_accel_path "<Actions>/Global/CloseAction" "<Primary>w")
+
+; New Playlist
+(gtk_accel_path "<Actions>/Source/NewPlaylistAction" "<Primary>n")
+
+; New smart playlist
+(gtk_accel_path "<Actions>/Source/NewSmartPlaylistAction" "<Primary><Alt>n")
+
+; (gtk_accel_path "<Actions>/Track/TrackEditorAction" "e")
+; (gtk_accel_path "<Actions>/Track/RemoveTracksFromLibraryAction" "")
+
+
+;;; EDIT MENU
+
+; remove from library (don't delete from disk)
+(gtk_accel_path "<Actions>/Track/RemoveTracksAction" "BackSpace")
+
+; remove from disk drive (delete)
+(gtk_accel_path "<Actions>/Track/DeleteTracksFromDriveAction" "<Primary>BackSpace")
+
+; source properties (like show id3 info etc.)
+(gtk_accel_path "<Actions>/Track/TrackPropertiesAction" "<Primary>i")
+
+; select all
+(gtk_accel_path "<Actions>/Track/SelectAllAction" "<Primary>a")
+
+; select none 
+(gtk_accel_path "<Actions>/Track/SelectNoneAction" "<Shift><Primary>a")
+
+; show/hide the browser
+(gtk_accel_path "<Actions>/BrowserView/BrowserVisibleAction" "<Primary>b")
+
+;;; VIEW MENU
+
+; this is alt-cmd-2 in iTunes but its window related
+(gtk_accel_path "<Actions>/View/ShowEqualizerAction" "<Primary>e")
+
+; fullscreen 
+(gtk_accel_path "<Actions>/View/FullScreenAction" "<Control><Primary>f")
+
+
+;;; HELP MENU
+
+(gtk_accel_path "<Actions>/Global/UserHelp" "<Primary>question")
+
+
+;;; TRACK NAVIGATION
+
+; next track 
+(gtk_accel_path "<Actions>/Playback/NextAction" "<Primary>Right")
+
+; previous track
+(gtk_accel_path "<Actions>/Playback/PreviousAction" "<Primary>Left")
+
+; show current track in file browser 
+(gtk_accel_path "<Actions>/Track/OpenContainingFolderAction" "<Primary><Shift>r")
+
+; jump to current track
+(gtk_accel_path "<Actions>/Playback/JumpToPlayingTrackAction" "<Primary>l")
+
+; Play/Pause
+(gtk_accel_path "<Actions>/Playback/PlayPauseAction" "space")
+
+; stop when finished playing this track
+(gtk_accel_path "<Actions>/Playback/StopWhenFinishedAction" "<Shift>space")

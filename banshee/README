@@ -1,0 +1,63 @@
+Banshee is a multimedia management and playback application for GNOME, with
+support for OS X and Windows as well.
+
+Play your music and videos. Stay entertained and up to date with podcasts
+and video podcasts.  Sync your Android, iPod, and other devices. We think
+you'll love the new Banshee!
+
+         Download  http://banshee.fm/download/
+         Get Help  http://banshee.fm/support/
+     Mailing List  http://mail.gnome.org/mailman/listinfo/banshee-list
+              IRC  #banshee on irc.gnome.org (GIMPNet)
+             Bugs  http://bugzilla.gnome.org/browse.cgi?product=banshee
+              Git  http://git.gnome.org/browse/banshee/
+       Contribute  http://banshee.fm/contribute/
+ Release Schedule  http://banshee.fm/about/calendar/
+             More  http://banshee.fm/
+ 
+=== Dependencies ===
+
+See http://banshee.fm/download/development/ for instructions on building
+on various operating systems/distros.  The listed versions are the minimum
+acceptable; higher versions are fine.
+
+- Required
+  * Mono                2.4.3
+  * SQlite              3.4
+  * GStreamer           0.10.26
+  * Gtk#                2.12.10
+  * GLib                2.22
+  * dbus-sharp          0.7
+  * dbus-sharp-glib     0.5
+  * Mono.Addins         0.6.2
+  * TagLib#             2.0.3.7
+
+- Required unless you pass some --disable flags to configure
+  * libmtp              0.3.0
+  * mono-zeroconf       0.8.0
+  * boo                 0.8.1
+  * gio-sharp           2.22.3
+  * gtk-sharp-beans
+  * gdata-sharp-youtube 1.4
+  * webkit-1.0          1.2.2
+  * gudev-sharp         0.1
+  * gkeyfile-sharp      0.1
+  * libgpod-sharp       0.7.95
+  * mono-upnp           0.1
+
+- Required at run-time:
+  * udev
+  * media-player-info
+  * Brasero >= 0.8.1
+  * Avahi
+  * gst-plugins-bad (providing the bpmdetect GStreamer plugin)
+
+=== Packaging Notes ===
+
+* Follow NEWS for changes to dependencies and other packager instructions
+
+* Pass --with-vendor-build-id="foo" to configure, where foo is like one of:
+
+    openSUSE 11.1
+    home:gabrielburt:branches:Banshee / openSUSE_Factory
+    Banshee Team Daily PPA / Ubuntu 11.04

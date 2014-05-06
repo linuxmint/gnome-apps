@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync" xml:lang="zh_CN">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>同步你的媒体到一个合适的便携媒体播放器或者智能手机上。</desc>
+    <revision pkgversion="1.8" version="0.1" date="2010-08-29" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>同步</title>    
+  
+  <p>Banshee 支持同步你的音乐到你的便携媒体播放器和智能手机上。你可以添加特定的音轨、专辑或者播放列表或让 Banshee 使你的音乐播放器和你的整个库保持同步。在你的播放器和你的电脑连接之后你也可以在 Banshee 中播放你便携播放器上的音乐。当一无损格式同步音乐的时候，比如 FLAC,如果你安装了正确的解码器，Banshee 会自动为你的音乐转换编码到一个有损的格式，例如 Ogg Vorbis 或者 Mp3。</p>
+  
+  <section id="devices">
+    <title>设备支持</title>
+    <p>Bandhee 支持几乎所有的现代便携音乐播放器和智能手机,显著的例外是苹果的 iphone, ipad 和 ipod Touch.</p>
+  
+  <p>当你插入你的设备，Banshee在左边的菜单显示它。按下你的设备图标，你将在 Banshee 中进入你的设备主页并显示你的同步偏好。</p>
+  
+  </section>
+  
+    <section id="sync-settings">
+    <title>同步你的音乐</title>
+    <p>你可以选择让 Banshee 自动同步管理你便携音乐播放器上的媒体,或者手动管理你的音乐和媒体。</p>
+    
+    <p>在 Benshee 的菜单里选择你的设备，然后选择如何同步你的媒体，包括：</p>
+    <list>
+      <item><p>音乐</p></item>
+      <item><p>有声读物</p></item>  
+      <item><p>视频</p></item>
+      <item><p>播客</p></item>  
+    </list>
+    
+    <p>在每个媒体旁边的下拉菜单里，选择：</p>
+    <list>
+      <item><p>手动管理</p></item>
+      <item><p>同步整个库</p></item>  
+    </list>    
+    
+    <note style="warning">
+      <p>如果你选择自动同步你的整个库到你的便携媒体播放器上，确保你的便携媒体播放器有足够的存储空间。如果你的库比大于你便携媒体播放器上的空间，Banshee 将会同步媒体直到你的播放器装满然后停止。</p>
+    </note>
+    
+    <p>如果你在你的音乐库中创建了播放列表或智能播放列表，它们也会作为音乐的同步选项显示。当创建智能播放列表的时候这会有帮助，因为当一个新的播放列表根据播放列表规则被增加，智能播放列表将自动更新,并且 Benshee 将在你每次插入设备时把新的播放列表同步到你的设备上。</p>
+    
+    <p>Benshee 将以图表的方式在底部的中心处显示你便携播放器的总磁盘空间。图表将显示音频、视频文件占用了多少空间还有剩余空间，在正下方 Banshee 会显示在你的便携音乐播放器上储存的存项目总数，和总的使用空间。</p>
+    
+  </section>
+
+  <section id="sync-manually">
+    <title>同步你的整个库</title>
+    <p>你能从 Benshee 拖放你的媒体到你的便携音乐播放器上。选择你想要复制到你便携媒体播放器上的文件然后按住你的鼠标右键不放，拖动文件到 Benshee 里你的便携媒体播放器的图标上。这将会复制文件到你的设备。</p>
+    
+    <p>如果你的便携音乐播放器不支持你的音乐库的编码方式，像 OGG 或者 FLAC ，在你安装了必要的解码器的情况下，当你向你的便携媒体播放器传输文件时 Banshee 会自动把这些文件转码成Mp3。 在你的Linux 发行版中检查必要的解码器，因为这不在这个帮助范围之内且随着发行版的不同而变化。</p>
+    
+    <note style="tip">
+      <p>你或许需要弹出你的设备来向你的便携音乐播放器正确地导入文件。要在 Banshee 里弹出你的设备，用鼠标右键在 Bashee 菜单点击设备然后按下 <gui>Disconnect</gui> 。</p>
+    </note>
+
+  </section>
+  
+  <section id="pmp-play">
+    <title>从你的便携音乐播放器上播放音乐</title>
+    <p>你可以在 Banshee 中直接播放储存在你便携音乐播放器上的音乐。在 Banshee 菜单的左边选择你的播放器，你便携播放器的库将会显示出来。你然后就能在 Banshee 里播放音乐，就像在你自己的库中播放音乐一样。</p>
+  </section>
+  
+  <section id="pmp-delete">
+    <title>从你的便携音乐播放器上删除音乐</title>
+    <p>要在你的便携音乐播放器上删除歌曲，在 Banshee 里选择你的播放器并查看它的库。然后选择你想要删除的音轨，并右键点击音轨选择 <gui>删除</gui> 或者从菜单中选择 <guiseq><gui>编辑</gui><gui>删除</gui></guiseq> 。</p>
+    
+     <note style="warning">
+      <p>从你的便携音乐播放器里删除文件将会永久移除文件，并且你将不能恢复它们。</p>
+    </note>
+    
+  </section>
+
+	
+</page>

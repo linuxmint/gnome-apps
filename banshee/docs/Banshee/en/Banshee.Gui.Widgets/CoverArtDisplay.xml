@@ -1,0 +1,123 @@
+<Type Name="CoverArtDisplay" FullName="Banshee.Gui.Widgets.CoverArtDisplay">
+  <TypeSignature Language="C#" Value="public class CoverArtDisplay : Banshee.Gui.Widgets.TrackInfoDisplay" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CoverArtDisplay extends Banshee.Gui.Widgets.TrackInfoDisplay" />
+  <AssemblyInfo>
+    <AssemblyName>Banshee.ThickClient</AssemblyName>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Banshee.Gui.Widgets.TrackInfoDisplay</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CoverArtDisplay ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArtworkSizeRequest">
+      <MemberSignature Language="C#" Value="protected override int ArtworkSizeRequest { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ArtworkSizeRequest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRenderIdle">
+      <MemberSignature Language="C#" Value="protected override bool CanRenderIdle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRenderIdle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public override void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dispose() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderIdle">
+      <MemberSignature Language="C#" Value="protected override void RenderIdle (Cairo.Context cr);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderIdle(class Cairo.Context cr) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderTrackInfo">
+      <MemberSignature Language="C#" Value="protected override void RenderTrackInfo (Cairo.Context cr, Banshee.Collection.TrackInfo track, bool renderTrack, bool renderArtistAlbum);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderTrackInfo(class Cairo.Context cr, class Banshee.Collection.TrackInfo track, bool renderTrack, bool renderArtistAlbum) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr" Type="Cairo.Context" />
+        <Parameter Name="track" Type="Banshee.Collection.TrackInfo" />
+        <Parameter Name="renderTrack" Type="System.Boolean" />
+        <Parameter Name="renderArtistAlbum" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="cr">To be added.</param>
+        <param name="track">To be added.</param>
+        <param name="renderTrack">To be added.</param>
+        <param name="renderArtistAlbum">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

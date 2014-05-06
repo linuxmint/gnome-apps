@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="amazon" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#extensions"/>
+    <link type="seealso" xref=""/>
+    <desc>Zene szinkronizálása és vásárlása az Amazon MP3-boltból</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-07-11" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Amazon MP3-bolt</title>    
+  
+  <p>A Banshee támogatja a zene letöltését és importálását az Amazon MP3-boltból. Az Amazon zenefájlokat importálhatja saját kezűleg, zenét vásárolhat böngészőjében vagy a Bansheeból. Az Amazon csak bizonyos országokban kínál MP3-formátumban megvásárolható zenét, és a földrajzi helytől függően lehet, hogy nem lesz képes MP3-fájlokat vásárolni.</p>
+   
+   <note style="important">
+     <p>A Banshee minden zenevásárláshoz Amazon partnerkódot használ. A partnerkódon keresztül kapott minden bevételt a fejlesztők a GNOME Foundationnek ajánlanak fel.</p>
+   </note>
+   
+  <section id="amazon-browser">
+  <title>Amazon MP3-fájlok vásárlása webböngészőből</title> 
+  
+  <p>Az Amazon MP3-boltjából vásárolt zene automatikusan letölthető és importálható a Bansheeba. A Banshee társítja magát az Amazon által az MP3-vásárlásokhoz biztosított .amz fájlokhoz. Amikor az Amazontól zenét vásárol, a webböngészője letölti az .amz fájlt, a Banshee pedig automatikusan megnyitja, és megkezdi a letöltést és a zene importálását.</p>
+  </section>
+  
+  <section id="amazon-banshee">
+  <title>Amazon MP3-fájlok vásárlása a Bansheeban</title> 
+  
+  <p>Kereshet számokat az Amazonon a Bansheen belül is. Válassza az Amazon MP3-bolt elemet a Banshee bal oldali ablaktábláján. Ez betölti az Amazon MP3-boltot, mintha a webböngészőben nyitná meg. Megkeresheti a kívánt zenét az Amazon boltban, majd bejelentkezés után egy kattintással megvásárolhatja a zenét. A Banshee a megvásárolt zenét automatikusan letölti és importálja gyűjteményébe.</p>
+  </section>
+  
+  <section id="amazon-manual">
+  <title>Amazon MP3-fájlok importálása saját kezűleg</title> 
+  
+  <p>Ha az Amazon boltjából webböngészőben vásárol zenét, egy .amz kiterjesztésű fájl kerül letöltésre. Az Amazontól vásárolt zenék saját kezűleg importálásához válassza a Banshee menüjének <guiseq><gui>Média</gui><gui>Média importálása</gui></guiseq> pontját, és válassza ki az importálandó *.amz fájlt. A Banshee megnyitja a fájlt, és csatlakozik az Amazon MP3-bolthoz a letöltés megkezdéséhez.</p>
+  
+  <note style="warning">
+    <p>Az Amazon .amz fájljai csak rövid ideig aktívak. Ha nem tölti le gyorsan a zenét, a fájl lejár, és nem töltheti le a zenét az Amazonról. Az Amazon nem hozza nyilvánosságra, hogy meddig aktívak a fájlok. Javasoljuk, hogy egy órán belül töltse le és importálja az Amazonról vásárolt zenéket.</p>
+  </note>
+  </section> 
+	
+</page>

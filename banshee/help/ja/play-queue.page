@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="queue" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="play"/>
+    <desc>メディアを再生キューに追加する</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-05-26" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>再生キュー</title>    
+  
+  <p><gui>再生キュー</gui>に音楽を追加すると順番に再生されます。音楽をノンストップで聞き続けられるぐらい多くのトラックを追加することができます。また、個々のトラックまたはアルバム全体を追加することができます。それらをソートしたり、再生順を並び替えることができます。</p>
+  
+<section id="addqueue">
+
+  <title>楽曲を再生キューに追加する</title>
+
+  <p>音楽ライブラリから、トラックやアルバムを選択して再生キューに追加する必要があります。</p>
+  
+  <p>再生キューにアルバム全体を追加するには、アルバムをマウスでドラッグし、ウィンドウで左側の<gui>再生キュー</gui>の上にアルバムをドロップします。</p>
+  
+  <p>個別のファイルまたはグループのファイルを再生キューに追加することができます。個々のファイルを追加するにはファイルをドラッグして、ウィンドウの一番左の<gui>再生キュー</gui>の上にドロップするか、トラックで右クリックして<gui>再生キューへ追加</gui>を選びます。</p>
+  
+  <p>複数のファイルを選択するには、マウスを使用して<key>Ctrl</key>を押しながら各ファイルの選択を繰り返すか、<key>Shift</key>を押しながら始点と終点を決めて、その範囲のファイルを選択します。そうして、<gui>再生キュー</gui>に選択したファイルをドラッグアンドドロップするか、選択したファイルの上で右クリックし<gui>再生キューへ追加</gui>を選びます。</p>
+  
+</section>
+
+<section id="reorderqueue">
+
+  <title>プレイリストを整理する</title>
+
+  <p>再生キューはトラックを追加した順番で構成されています。再生キューに最初に登録したトラック、またはアルバムから再生されていきます。マウスを使って並べ替えしたいトラックをリスト内でドラッグアンドドロップすることで再生順を変更できます。</p>
+
+</section>  
+  
+<section id="removequeue">
+
+  <title>プレイリストからトラックを削除中</title>
+
+  <p>個々のトラック、トラックのグループを再生キューから削除したり、再生キュー全体をクリアできます。</p>
+  
+  <p>削除するには個々のトラックまたはグループのトラックをマウスで選択し、<key>Delete</key>を押します。</p>
+  
+  <p>再生キューの全体をクリアするには、再生キューのウィンドウの右上の<gui>クリア</gui>ボタンをクリックします。</p>
+  
+</section>      
+	
+</page>

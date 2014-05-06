@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="ui" xml:lang="zh_CN">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-19" status="stub"/>
+    <desc><app>Banshee 的</app> 用户界面的一个概览</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Banshee 用户界面的介绍</title>
+
+  <figure>
+    <title><gui>Banshee 媒体播放器</gui> 窗口</title>
+    <desc><app>Banshee 媒体播放器</app></desc>
+    <media type="image" src="figures/banshee.png" mime="image/png" style="right">
+      <p><app>Banshee</app> 库接口</p>
+    </media>
+  </figure>
+  
+<section id="context">
+  <title>资源</title>
+    <p>你的音乐和视频资源将会出现在 Banshee 的左边。这些资源让你快速进入你的播放队列、音乐、亚马逊、Last.fm、播客还有更多。</p>
+    
+    <note style="tip">
+      <p>菜单选项将会依照你选择的资源改变。例如，使用菜单导入播客，你需要选择播客源。当浏览视频或者音乐库的时候导入播客的菜单选项不可用。</p>
+    </note> 
+</section>
+
+<section id="browser">
+  <title>库浏览器</title>
+  <p>当你从源里选择音乐或者视频资源的时候，Banshee 将在库浏览器里显示你的目录。依照你选择的资源，Banshee 能显示你的音乐或者视频库、播客订阅甚至亚马逊音乐商店来让你购买音乐。</p>
+</section>
+
+<section id="nowplaying">
+  <title>正在播放视图</title>
+  <p>当在全屏模式使用 Banshee 的时候会有帮助，正在播放模式隐藏了媒体库给你更大的视野欣赏音乐或者观看视频。当你听音乐的时候，正在播放视图将显示艺术家的名字、专辑和封面，如果它们存在的话。如果你在观看视频,Banshee 将显示这个视频。</p>
+  
+  <p>要改变正在播放来隐藏 Banshee 的用户界面并使用全屏模式，你可以按 <key>F</key>，按 在 Benshee 右上角的<gui>全屏</gui>键，或者选择 <guiseq><gui>查看</gui><gui>全屏</gui></guiseq> 来选择全屏模式。</p>
+  
+</section>
+
+<section id="library">
+  <title>Library</title>
+  <p>在 Banshee 里库的显示将会根据你选择的资源而改变。音乐库会在你的库中显示封面，艺术家，和歌曲列表。博客库会显示你的播客订阅，已经下载了的或者没有下载的播客，和所有，新的 或旧的播客。请查看每个源的帮助页面获得管理源的详细信息。</p>
+</section>
+
+
+</page>

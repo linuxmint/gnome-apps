@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="lastfm" xml:lang="pt_BR">
+
+  <info>
+    <link type="guide" xref="extend#official"/>
+    <link type="seealso" xref="sync"/>
+    <desc>Habilite Last.fm, relatório de músicas e rádio Last.fm.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-07-15" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Last.fm</title>    
+  
+  <p>Last.fm é um serviço online popular que oferece duas versões, gratuita e paga. O Last.fm oferece informações sobre artistas da música e álbuns, e se você criar um perfil de usuário Last.fm que permite que você acompanhe a música que você ouve no Banshee gratuitamente. Se você inscrever-se como membro pagante, você pode também ouvir à transmissões de músicas do Last.fm em vários clientes, incluindo Banshee. O Last.fm oferece múltiplos canais para transmissão, incluindo músicas recomendadas para os seus hábitos musicais, seus favoritos e mais.</p>
+  
+  <section id="enable-lastfm">
+  <title>Habilitar Last.fm</title> 
+  <p>To get the most out of Last.fm, you will want to create a Last.fm profile.
+  Visit <link href="http://www.last.fm/join">http://www.last.fm/join</link>
+   to create an account or choose 
+  <guiseq><gui>Edit</gui><gui>Preferences</gui></guiseq> from the Banshee
+  menu. Once in the preferences select the <gui>Source Specific</gui> tab, press the
+  <gui>Source</gui> drop down menu, choose <gui>Last.fm</gui> and finally select the
+  <em>Sign up for Last.fm</em> link.
+  </p>
+  
+  <p>To enable Banshee to report the songs you play on your computer to Last.fm,
+  sign in to Last.fm in Banshee in the <gui>Source Specific</gui> preferences.
+  Enter your username and press the <gui>Log in to Last.fm</gui> button.  You 
+  will be directed to a Last.fm webpage in your browser to grant Banshee access.
+  Press the <gui>Yes, allow access</gui> link in your browser and you will be 
+  redirected to a webpage that displays a message that Banshee now has access to
+  Last.fm.  Return to Banshee and press the <gui>Finish Logging In</gui> button
+  to complete the process.
+  </p>
+  
+  </section>
+  
+  <section id="songreporting">
+  <title>Habilitar relatório de músicas do Banshee no Last.fm</title> 
+  <p>After you have successfully linked Banshee to your Last.fm profile you must
+  ensure that you have enabled Banshee to report your songs.  To enable Banshee to
+  report the songs to your Last.fm profile go to Banshee's preferences, select the
+  <gui>Source Specific</gui> tab, select <gui>Last.fm</gui> from the dropdown, and
+  press the <gui>Enable Song Reporting From Banshee</gui> checkbox. If you have an active internet
+  connection Banshee will now send Last.fm information regarding the songs
+  you play.  To view your play history visit your profile on the Last.fm
+  website.  Last.fm will automatically update your music metadata if any of your
+  artist, song title, or album information is incorrect (although we recommend that
+  you use the Metadata Fixer extension to correct your files instead).
+
+  </p>
+  
+  </section>
+
+  <section id="devicesongreporting">
+  <title>Habilitar relatório de músicas do seu dispositivo</title>
+  <p>Após vincular com sucesso o Banshee ao seu perfil do Last.fm e habilitar o Banshee para relatar músicas para o Last.fm, você também pode habilitar scrobble de um dispositivo conectado. O Banshee vai, com a conexão do seu dispositivo, tentar fazer scrobble das músicas que você ouviu a partir da última conexão e enviá-las para o Last.fm.</p>
+
+  <p>To enable scrobbling of a connected device go to Banshee's preferences, select the 
+  <gui>Source Specific</gui> tab, select <gui>Last.fm</gui> from the dropdown, and press 
+  the <gui>Enable Song Reporting From Device</gui> checkbox.  If you have an 
+  active internet connection Banshee will, upon connection of your device, now attempt to gather 
+  information regarding the songs that you have played since it was last connected.
+  </p>
+
+  <p>Da mesma forma que as submissões normais de "scrobbling" do Banshee, Last.fm vai atualizar automaticamente os metadados de suas músicas se alguma informação de artista, título ou álbum estiver incorreta (apesar de que nós, novamente, recomendamos que você use a extensão Reparador de metadados para corrigir seus arquivos).</p>
+
+  <p>Por favor, note que atualmente o Banshee tem suporte a este recurso apenas em produtos da Apple que têm suporte na extensão AppleDevice.</p>
+
+  </section>
+  
+  <section id="lastfm-radio">
+  <title>Ouvir a rádio Last.fm</title> 
+  <p>A rádio Last. fm é gratuita para os moradores dos Estados Unidos, Reino Unido e Alemanha. Moradores de outros países terão que pagar por contas no Last.fm para ouvir a rádio. Membros registrados, em todos os países também ganham funcionalidades adicionais como ouvir as lista de reprodução e estações de música que você amou ou marcou.</p>
+  
+  <p>In Banshee's sources pane on the left hand side, you will now have a 
+  Last.fm section, including your Last.fm radio stations.  You will need an
+  active internet connection to listen to Last.fm radio.  Choose the radio
+  station you wish to listen to and Banshee will communicate with Last.fm
+  to populate songs for that radio station.  Press the <gui>Play</gui> button
+  in Banshee or <key>Spacebar</key> to start streaming a Last.fm radio
+  station.  You can also press the <gui>Next</gui> button in Banshee, 
+  <key>N</key> or choose <guiseq><gui>Playback</gui><gui>Next</gui></guiseq>
+  to play the next song in your radio station queue.
+  </p>
+  
+  </section>
+	
+</page>

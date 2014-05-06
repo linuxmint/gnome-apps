@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="playlists" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="tags"/>
+    <link type="seealso" xref="coverart"/>
+    <desc>Ustvarjanje in upravljanje s seznami predvajanja.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-05-26" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Seznami predvajanja</title>    
+  
+  <p>Seznami predvajanja vam omogočajo ustvarjanje in shranjevanje seznama skladb za predvajanjem v določenem vrstnem redu. Seznami predvajanja so priročni za ustvarjanje seznama vaših najljubših skladb ali za razdelitev knjižnice v manjše sezname skozi katere je lažje brskati. Nekateri prenosni predvajalniki večpredstavnosti vam omogočajo prenos seznama predvajanja, zato ga lahko vzamete s sabo.</p>
+  
+  <p>Banshee podpira običajne sezname predvajanja, ki vključujejo skladbe, ki jih dodate na seznam predvajanja in pametne sezname predvajanja na osnovi vaših navad poslušanja, priljubljene glasbe in več.</p>
+  
+  <section id="manual">
+  
+    <title>Običajni seznami predvajanja</title>
+  
+    <p>Običajen seznam predvajanja je seznam skladb, ki jih dodajate in upravljate. Morda želite ustvariti svoj lasten seznam skladb svojega priljubljenega izvajalca iz več albumov, svojih zadnjih priljubljenih skladb ali poskočen seznam predvajanja za poslušanje med telesno vadbo. </p>
+    
+    <p>Nov seznam predvajanja lahko ustvarite s pritiskom <keyseq><key>Control</key><key>N</key></keyseq>, z izbiro <guiseq><gui>Večpredstavnost</gui><gui>Nov seznam predvajanja</gui></guiseq> ali z izbiro skladb, ki jih želite dodati na seznam predvajanja. Izberite skladb-o/e, desno kliknite na njih in izberite <guiseq><gui>Dodaj na seznam predvajanja</gui><gui>Nov seznam predvajanja</gui></guiseq>. Skladbe lahko na nov seznam predvajanja tudi povlečete in spustite tako, da skladbe izberete in jih povlečete na levi pladenj okna nad <gui>Glasbo</gui>. Ko boste skladbe povlekli nad <gui>Glasbo</gui>, se bo pojavila možnost <gui><em>Nov seznam predvajanja</em></gui>. Za dodajanje skladb jih spustite nad  <gui><em>Nov seznam predvajanja</em></gui>. Opravilo lahko ponavljate toliko časa, dokler nimate na seznamu predvajanja vseh želenih skladb.</p>
+
+    <p>Če želite seznamu predvajanja dati ime, ga izberite, nanj desno kliknite in pritisnite <gui>Preimenuj seznam predvajanja</gui> in vnesite ime svojega seznama predvajanja.</p>
+    
+    <p>Vrsti red seznama predvajanja lahko spremeniti z vlečenjem in spuščanjem skladb na nov položaj v seznamu predvajanja. Skladbe je mogoče v seznamu predvajanja preurejati le, če ni razvrščen noben od stolpcev. Za odstranitev razvrstitve stolpca, pritisnite stolpec tolikokrat, da puščica navzgor ali navzdol ni več prikazana in preuredite seznam predvajanja. </p>
+    
+    <p>Za odstranitev skladbe s seznama predvajanja izberite skladb-o/e, ki jih želite odstraniti. Pritisnite <key>Izbriši</key>, v meniju izberite <guiseq><gui>Uredi</gui><gui>Odstrani s seznama predvajanja</gui></guiseq> ali pa desno kliknite s svojo miško in pritisnite <gui>Odstrani s seznama predvajanja</gui>.</p>
+  </section> 
+  
+  <section id="smartplaylists">
+    <title>Pameten seznam predvajanja</title>
+    
+    <p>Pametni seznami predvajanja vam omogočajo hitro ustvarjanje dinamičnih seznamov predvajanja na osnovni številnih pred-nastavljenih spremenljivk. Nov seznam predvajanja lahko ustvarite na osnovi določenega izvajalca, priljubljenih in več.</p>
+    
+    <p>Za ustvarjanje novega pametnega seznama predvajanj izberite <guiseq><gui>Večpredstavnost</gui><gui>Nov pameten seznam predvajanj</gui></guiseq>. Predstavljeno vam bo pogovorno okno za ustvarjanje novega pametnega seznama predvajanja. Vnesite ime svojega seznama predvajanja in izberite kriterije na katerih naj bo osnovan vaš seznam predvajanja.  Izbirate lahko med katerimikoli polji vključenimi v metapodatke skladbe kot so album, izvajalec ali leto. Izberite kriterije na nato storite nekaj od naslednjega:</p>
+    
+    <list>
+      <item><p>je</p></item>
+      <item><p>ni</p></item>  
+      <item><p>manj kot</p></item>
+      <item><p>več kot</p></item>  
+      <item><p>največ</p></item>
+      <item><p>najmanj</p></item>  
+    </list>
+    
+    <p>Pritisnete lahko tudi gumb <gui>+</gui> za dodajanje poizvedbe dodajanja v pameten seznam. Na primer ustvarite lahko pameten seznam predvajanja, ki vključuje vse skladbe iz leta 2010, ocenjene s 5 zvezdicami. Za ustvarjanje tega seznama predvajanja bi izbrali:</p>
+    
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Leto</gui></p></td> <td><p><gui>je</gui></p> </td> 
+    <td><p><gui>2010</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><gui>Ocena</gui></p></td> <td><p><gui>je</gui></p></td> 
+    <td><p><gui/>5 zvezdic</p></td>
+  </tr>
+  </table>
+    
+    <p>Izbirno lahko izberete koliko skladb je vključenih tako, da pritisnete izbirno polje <gui>Omeji</gui> in izberete število skladb, ki naj bodo vključene.</p>
+  
+  <p>Banshee vključuje tudi pametne sezname predvajanja že ustvarjene za vas. Pritisnite gumb <gui>Odpri v urejevalniku</gui> za ogled kako je bil seznam predvajanja ustvarjen ali za njegovo spreminjanje. Če pritisnete <gui>Ustvari in shrani</gui>, bo seznam predvajanja samodejno ustvarjen in shranjen za vas. Vključeni so naslednji seznami predvajanja:</p>
+  
+  <list>
+    <title>Pametni seznami prevajanja Banshee</title>
+    <item><p>Priljubljene (skladbe, ocenjene s štirimi in petimi zvezdicami)</p></item>
+    <item><p>Nedavno priljubljene (skladbe pogosto poslušane v predhodnem tednu)</p></item>  
+    <item><p>Nedavno dodano (skladbe uvožene v zadnjem tednu)</p></item>
+    <item><p>Ne slišano (skladbe, ki niso bile predvajane ali preskočene)</p></item>
+    <item><p>Zapostavljene priljubljene (priljubljene, ki niso bile predvajanje v dveh mesecih)</p></item>
+    <item><p>700 MB priljubljenih (podatkovni CD priljubljenih skladb)</p></item>
+    <item><p>80 minut priljubljenih (zvočni CD priljubljenih skladb)</p></item>
+    <item><p>Neocenjeno (Skladbe, ki še niso bile ocenjene)</p></item>
+  </list>
+ 
+   </section> 
+ 
+</page>

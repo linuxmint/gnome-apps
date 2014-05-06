@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sort" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="search"/>
+    <desc>Řaďte si svá média a přidávejte další sloupce.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Řazení vašich médií</title>
+
+  <section id="addcolumn">
+
+  <title>Přidávání sloupců</title>    
+  
+  <p>Jak vaše kolekce roste, můžete chtít změnit její zobrazení přidáním dalších informací o skladbách ve vaší kolekci nebo změnou způsobu, jak můžete zobrazit a seřadit své skladby, umělce a alba.</p>
+  
+  <p>Do zobrazení v přehrávači <app>Banshee</app> můžete přidávat další sloupce, abyste měli o skladbách více informací a mohli podle nich řadit. Jako výchozí sloupce pro skladby zobrazuje Banshee <gui>Název</gui>, <gui>Umělce</gui>, <gui>Album</gui> a <gui>Čas</gui>. Pokud chcete přidat další sloupce, použijte kliknutí pravým tlačítkem myši na libovolném sloupci a Banshee zobrazí všechny dostupné sloupce, ze kterých si můžete vybírat. Klikněte na zaškrtávací políčko vedle názvu sloupce, který si přejete do zobrazení přidat.</p>
+  
+  </section>
+  
+  <section id="sorting">
+    <title>Řazení sloupců</title>
+    <p>Své kolekce si můžete řadit pomocí myši tak, že kliknete na některý ze sloupců v zobrazení kolekce. Když si přejete seřadit svoji hudební kolekci podle umělce, klikněte na záhlaví sloupce <gui>Umělec</gui> a Banshee sloupec automaticky seřadí podle abecedy. Pokud na sloupce <gui>Umělec</gui> kliknete znovu, seřadí se abecedně v opačném pořadí.</p>
+  </section>
+	
+</page>

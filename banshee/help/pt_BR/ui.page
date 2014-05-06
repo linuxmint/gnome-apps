@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="ui" xml:lang="pt_BR">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-19" status="stub"/>
+    <desc>Uma visão geral da interface gráfica do <app>Banshee</app>.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Introdução à interface gráfica do Banshee</title>
+
+  <figure>
+    <title>Janela do <gui>Reprodutor de mídia Banshee</gui></title>
+    <desc><app>Reprodutor de mídia Banshee</app></desc>
+    <media type="image" src="figures/banshee.png" mime="image/png" style="right">
+      <p>Interface da biblioteca do <app>Banshee</app></p>
+    </media>
+  </figure>
+  
+<section id="context">
+  <title>Fontes</title>
+    <p>Suas fontes de músicas e vídeos são mostradas no lado esquerdo do Banshee. As fontes dão a você acesso rápido a suas filas de reprodução, músicas, vídeos, Last.fm, podcasts e mais.</p>
+    
+    <note style="tip">
+      <p>As opções do menu mudam de acordo com a fonte que você escolher. Por exemplo, para usar o menu para importar um podcast, você precisa selecionar a fonte do podcast. A opção de menu para importar um podcast não está disponível quando você está visualizando a biblioteca de vídeos ou a biblioteca de músicas.</p>
+    </note> 
+</section>
+
+<section id="browser">
+  <title>Navegador de biblioteca</title>
+  <p>Quando você seleciona uma fonte música ou vídeo das fontes, o Banshee irá mostrar seu conteúdo no navegador da biblioteca. Dependendo da fonte que você selecionou o Banshee pode mostrar suas bibliotecas de música ou vídeo, assinaturas de podcast ou mesmo a loja de músicas da Amazon para que você possa comprar músicas.</p>
+</section>
+
+<section id="nowplaying">
+  <title>Visão de reproduzindo agora</title>
+  <p>De grande ajuda quando se está usando o Banshee no modo tela cheia, o modo "Reproduzindo agora" oculta a biblioteca para proporcionar uma maior visão da música ou vídeo a que você está assistindo. Quando se está ouvindo músicas, a visão "Reproduzindo agora" vai exibir o nome do artista, do álbum e a capa, se disponível. Se você estiver assistindo a um vídeo o Banshee mostrará o vídeo.</p>
+  
+  <p>To change Now Playing to hide the Banshee user interface and use the full
+  screen mode, you can press the <key>F</key>, press the <gui>Fullscreen</gui> 
+  button in the upper right hand corner of Banshee, or choose 
+  <guiseq><gui>View</gui><gui>Fullscreen</gui></guiseq> to start Fullscreen
+  mode.</p>
+  
+</section>
+
+<section id="library">
+  <title>Biblioteca</title>
+  <p>A visualização de biblioteca no Banshee irá mudar dependendo da fonte que houver escolhido. A biblioteca de música irá mostrar arte da capa, artistas em sua biblioteca e lista de músicas. A biblioteca de podcast irá exibir suas assinaturas de podcast, podcasts que são e que não são baixados, e todos os podcasts, novos e velhos. Por favor veja a página de ajuda de cada tipo fonte para informações detalhadas sobre o gerenciamento das fontes.</p>
+</section>
+
+
+</page>

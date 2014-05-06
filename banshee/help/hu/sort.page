@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sort" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="search"/>
+    <desc>Médiafájlok rendezése, és további oszlopok hozzáadása.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Médiafájlok rendezése</title>
+
+  <section id="addcolumn">
+
+  <title>Oszlopok hozzáadása</title>    
+  
+  <p>Ahogyan gyűjteménye növekszik, szükség lehet a gyűjteménynézet módosítására a számokkal kapcsolatos további információk felvételéhez, vagy a számok, előadók vagy albumok megjelenítési és rendezési módjának módosításához.</p>
+  
+  <p>A <app>Banshee</app> gyűjteménynézetéhez további oszlopokat adhat a számokkal kapcsolatos további információk eléréséhez, valamint ezek alapján rendezhet is. Alapbeállítás szerint a Banshee a számokhoz tartozó <gui>Név</gui>, <gui>Előadó</gui>, <gui>Album</gui> és <gui>Idő</gui> oszlopát jeleníti meg. További oszlopok hozzáadásához kattintson a jobb egérgombbal az oszlopokra, és a Banshee megjeleníti az összes elérhető oszlopot. Kattintson a gyűjteményhez felvenni kívánt oszlop neve melletti jelölőnégyzetre.</p>
+  
+  </section>
+  
+  <section id="sorting">
+    <title>Oszlopok rendezése</title>
+    <p>Gyűjteményét rendezheti a gyűjteménynézetben megjelenő bármely oszlop alapján, az egérrel a kívánt oszlopra kattintva. Ha zenéit előadó alapján szeretné rendezni, kattintson az <gui>Előadó</gui> oszlopnévre, és a Banshee automatikusan ábécérendbe rendezi az adott oszlopot. Az <gui>Előadó</gui> oszlopra való ismételt kattintás fordított ábécérendbe rendezi az oszlopot.</p>
+  </section>
+	
+</page>

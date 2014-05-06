@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sort" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="search"/>
+    <desc>アイテムのソートと列の追加</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>アイテムのソート</title>
+
+  <section id="addcolumn">
+
+  <title>列の追加</title>    
+  
+  <p>ライブラリが大きくなるにつれて、ライブラリ内のトラックに追加情報を表示したり、曲のタイトル、アーティストやアルバムでソートする方法を変更するなど、ライブラリビューを変更したくなることでしょう。</p>
+  
+  <p><app>Banshee</app>のライブラリビューに追加の列を加えることができます。そのトラックの詳細な情報を一覧表示することができ、また追加した列を元にソートできるようになります。Bansheeのデフォルトでは<gui>タイトル</gui>、<gui>アーティスト</gui>、<gui>アルバム</gui>、<gui>再生時間</gui>が表示されています。追加の列を追加するには、Bansheeのいずれかの列の上でマウスの右クリックを使用すると、利用可能な列の一覧が表示されるので追加したい列のチェックボックスをオンにしてください。</p>
+  
+  </section>
+  
+  <section id="sorting">
+    <title>列をソート</title>
+    <p>Bansheeのライブラリビューに表示される列のいずれかをマウスでクリックして、ライブラリをソートすることができます。音楽ライブラリをアーティストのアルファベット順にソートしたい場合、<gui>アーティスト</gui>列のヘッダーをクリックすると自動的にソートされます。<gui>アーティスト</gui>列のヘッダーをもう一度クリックするとアルファベットの順逆にソートされます。</p>
+  </section>
+	
+</page>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="play" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="queue"/>
+    <desc>動画と楽曲を再生する</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>メディアを再生する</title>
+
+  <section id="playmusic">
+  <title>楽曲を再生する</title>    
+  
+  <p>Bansheeで音楽を再生するには音楽ソースを選択します。音楽ライブラリには音楽ライブラリ内のすべてのアーティスト、各アルバム用のカバーアート、およびライブラリ内のすべての曲のリストが表示されます。</p>
+  
+  <p>アルバムや曲、アーティスト、アルバムのリストから選択して再生したり、Bansheeの右上隅にある検索ボックスを使用します。</p>
+  
+  <p>曲の再生を開始するには、トラック名をダブルクリックを押しての<key>Space</key>、またはBansheeのメニューから<guiseq><gui>再生</gui><gui>再生</gui></guiseq>を選びます。</p>
+  
+  <p>アルバム一覧からアルバムを選択し、曲の名前をマウスでダブルクリックするか、 <key>Space</key>を押す、もしくはBansheeのメニューから<guiseq><gui>再生</gui><gui>再生</gui></guiseq>を選ぶことでアルバムを再生することができます。</p>
+  
+  <p>１人のアーティストに関するすべての曲を再生するには、アーティストのブラウザーで好きなアーティストを選択して、<key>Space</key>を押すか、Bansheeのメニューから<guiseq><gui>再生</gui><gui>再生</gui>を選びます。</guiseq></p>
+  
+  <p>Bansheeには、お気に入り（頻繁に再生された）、最近のお気に入り、最近追加した項目、再生されていない曲が表示されます。あなたが聞きたいものを選んでください。</p>
+  
+  </section>
+
+  <section id="playvideo">
+  <title>動画を再生する</title>    
+  
+  <p>インポートしたビデオはアルファベット順に表示されます。ビデオを再生するには、リストから再生したいビデオを選んだ後に、<key>Space</key>を押すか、またはBansheeのメニューから<guiseq><gui>再生</gui><gui>再生</gui></guiseq>を選びます。</p>
+  
+  <p>また、Bansheeはお気に入りのビデオ（あなたが頻繁に再生するビデオ）、注目されていないビデオを表示します。いずれかを選択するとリストからビデオを再生することができます。</p>	
+  
+  </section>
+  
+  <section id="playpodcast">
+  <title>ポッドキャストを再生する</title>    
+  
+  <p>ポッドキャストのソースは、購読しているすべてのポッドキャストを表示します。ポッドキャストのブラウザーでは、購読しているすべてのポッドキャストが新しいものから順にリスト表示されます。</p>
+  
+  <p>ポッドキャストを再生する場合、再生したいポッドキャストを選択した後にエピソードを選び、<key>Space</key>を押すか、もしくはBansheeのメニューから<guiseq><gui>再生</gui><gui>再生</gui></guiseq>を選びます。</p>
+  
+  </section>
+  
+  <section id="playradio">
+  <title>インターネットラジオステーションを再生する</title>    
+  
+  <p>ラジオのソースはBansheeに追加したすべてのインターネットラジオステーションをアルファベット順に表示します。</p>
+  
+  <p>インターネットラジオステーションを再生するには、再生したいラジオステーションをリストから選択し、<key>Space</key>を押すか、Bansheeのメニューから<guiseq><gui>再生</gui><gui>再生</gui></guiseq>を選びます。</p>
+  
+  </section>    
+	
+</page>

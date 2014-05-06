@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="amazon" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#extensions"/>
+    <link type="seealso" xref=""/>
+    <desc>Sincronitza i compra música de la botiga Amazon MP3.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-07-11" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Botiga Amazon MP3</title>    
+  
+  <p>El Banshee permet baixar i importar música de la botiga Amazon MP3. Podeu importar manualment fitxers de música, comprar música des del navegador web o des de dins del Banshee. Amazon només ven música en format MP3 en certs països i depenent de la vostra ubicació, és possible que no pugueu comprar d'Amazon MP3.</p>
+   
+   <note style="important">
+     <p>El Banshee utilitza un codi d'afiliació per totes compres de música. Totes les comissions de venda obtingudes amb el codi d'afiliació són donades a la Fundació GNOME.</p>
+   </note>
+   
+  <section id="amazon-browser">
+  <title>Compreu música de l'Amazon MP3 des del navegador</title> 
+  
+  <p>La música comprada a la botiga d'Amazon MP3 pot ser baixada i importada al Banshee automàticament. El Banshee s'associa el mateix amb l'extensió .amz que Amazon utilitza per les compres de MP3. Quan compreu música a Amazon, el navegador web baixarà el fitxer .amz i el Banshee l'obrirà automàticament i començarà a baixar i importar la música.</p>
+  </section>
+  
+  <section id="amazon-banshee">
+  <title>Compreu d'Amazon MP3 des del Banshee</title> 
+  
+  <p>Podeu també cercar cançons a Amazon des del Banshee. Seleccioneu la botiga Amazon MP3 des del menú esquerre del Banshee. Es carregarà la botiga Amazon MP3 com si estiguéssiu a un navegador web. Podeu cercar a Amazon per la música que voleu comprar, i després d'entrar les credencials a Amazon, comprar-la tan sols amb un clic. El Banshee baixarà i importarà automàticament la compra a la biblioteca.</p>
+  </section>
+  
+  <section id="amazon-manual">
+  <title>Importeu música d'Amazon MP3 manualment</title> 
+  
+  <p>Quan compreu música d'Amazon des d'un navegador web, un fitxer amb l'extensió .amz es baixa i es desa al disc dur. Per a importar manualment música comprada des d'Amazon, des del menú del Banshee seleccioneu <guiseq><gui>Elements multimèdia</gui><gui>Importa elements multimèdia</gui></guiseq> i seleccioneu el fitxer *.amz a importar. A continuació, el Banshee obrirà aquest fitxer i es connectarà a la botiga MP3 i començarà la baixada.</p>
+  
+  <note style="warning">
+    <p>Els fitxers Amazon .amz només són vàlids per un període curt de temps. Si no baixeu la música ràpidament, el fitxer caducarà i no podreu baixar la música d'Amazon. Amazon no publica durant quant de temps els fitxers són vàlids. Es recomana que baixeu i importeu qualsevol compra d'Amazon abans d'una hora de fer la compra.</p>
+  </note>
+  </section> 
+	
+</page>

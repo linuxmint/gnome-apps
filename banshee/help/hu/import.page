@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="import" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <desc>Zenék és videók hozzáadása számítógépéről a Banshee gyűjteményéhez.</desc>
+    <revision pkgversion="1.6" version="1.6" date="2010-07-15" status="review"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Zenék és videók importálása</title>
+
+  <p>A számítógépén tárolt zenéket és videókat importálhatja a Bansheeba. Az importált fájlok megjelennek a forrásai közt, és a többi médiához hasonlóan szerkeszthetők és kezelhetők a Bansheeban.</p>
+
+  <p>A számítógépén található zenei vagy videofájlok importálásához válassza a <guiseq><gui>Média</gui><gui>Média importálása</gui></guiseq> menüpontot. Megjelenik a lehetőségeket tartalmazó ablak.</p>
+
+  <note>
+    <p>Bővítmények további importálási lehetőségeket biztosíthatnak. Lásd a <link xref="#plugins"/> részt lentebb.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Helyi mappák</gui></title>
+      <p>Válassza ezt a lehetőséget az összes zenei és videofájl importálásához egy adott mappából, beleértve az összes almappát. A megjelenő párbeszédablakban válassza ki az importálandó mappát.</p>
+    </item>
+    <item>
+      <title><gui>Helyi fájlok</gui></title>
+      <p>Válassza ezt a lehetőséget egyedi fájlok importálásához. A megjelenő párbeszédablakban válassza ki az importálandó fájlokat.</p>
+    </item>
+    <item>
+      <title><gui>Saját mappa</gui></title>
+      <p>Válassza ezt a lehetőséget az összes zenei és videofájl importálásához a saját mappájából, beleértve az almappákban lévő fájlokat is.</p>
+    </item>
+    <item>
+      <title><gui>Videók a Fényképek mappából</gui></title>
+      <p>Számos digitális fényképezőgép képes rövid videók felvételére, és a fényképkezelő alkalmazások ezeket gyakran közvetlenül a Fényképek mappába töltik le. Ezzel a lehetőséggel a Fényképek mappában tárolt videókat importálhatja.</p>
+    </item>
+  </terms>
+
+  <note>
+    <p>Nyugodtan importálhat korábban már importált mappákból, a gyűjteményben ilyenkor nem jelennek meg többször ugyanazok az elemek.</p>
+  </note>
+  
+  <section id="import-playlist">
+    <title>Importálás lejátszólistából</title>
+    <p>Zenéit lejátszólistákból is importálhatja. A legtöbb lejátszólistafájl kiterjesztése <em>m3u</em>. Lejátszólistából való importáláshoz válassza a Banshee menüjének <guiseq><gui>Média </gui><gui>Lejátszólista importálása</gui></guiseq> pontját, keresse meg a lejátszólistafájlt, végül nyomja meg az <gui>Importálás</gui> gombot.</p>
+  </section>
+  
+  <section id="plugins">
+    <title>További importálási források</title>
+    <p>Bővítmények további importálási lehetőségeket biztosíthatnak. A megfelelő bővítmények engedélyezése esetén a következő további források válnak elérhetővé:</p>
+  </section>
+  	
+</page>

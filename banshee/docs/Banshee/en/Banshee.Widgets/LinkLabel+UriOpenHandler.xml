@@ -1,0 +1,26 @@
+<Type Name="LinkLabel+UriOpenHandler" FullName="Banshee.Widgets.LinkLabel+UriOpenHandler">
+  <TypeSignature Language="C#" Value="public delegate bool LinkLabel.UriOpenHandler(string uri);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed LinkLabel/UriOpenHandler extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>Banshee.Widgets</AssemblyName>
+    <AssemblyVersion>0.90.1.25405</AssemblyVersion>
+    <AssemblyVersion>1.3.1.0</AssemblyVersion>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="uri" Type="System.String" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="uri">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

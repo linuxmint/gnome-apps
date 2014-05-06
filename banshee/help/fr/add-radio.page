@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="add-radio" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <link type="seealso" xref="add-podcasts"/>
+    <link type="seealso" xref="import"/>
+    <desc>Ajout, suppression et écoute de stations de radio internet avec Banshee.</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-20" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Radio internet</title> 
+  
+  <section id="radiodescription">
+     <title>Une radio internet, qu'est-ce que c'est ?</title>
+     
+  <p>Les stations radio internet sont similaires aux autres stations historiques et permettent à un individu ou à un groupe d'écouter un flux musical en direct via l'internet. Elles peuvent tout à la fois diffuser un flux en provenance de stations historiques, de stations d'amateurs ou de stations commerciales y compris celles de DJs en direct ou d'autres commerces.</p>
+  
+  </section>
+  
+  <section id="addradio">
+  
+  <title>Ajout d'une station de radio</title>
+  
+  <p>Pour ajouter une station de radio internet à Banshee, appuyez sur le bouton <gui>Ajouter une station</gui> au haut à droite, ou allez dans le menu <guiseq><gui>Média</gui><gui>Ajouter une station</gui></guiseq>.</p>
+  
+  <p>Sur la page Web de la station de radio internet, recopiez l'URL du flux dans votre navigateur. Avec la plupart des navigateurs, un clic droit sur le lien vous propose de <gui>Copier le lien</gui>.</p>
+   
+
+  <p>Banshee ouvre une boîte de dialogue avec plusieurs champs et vous demande d'entrer le genre, le titre et l'URL de flux de la station de radio que vous souhaitez ajouter. Choisissez le <gui>Type de station</gui> dans le menu déroulant. Saisissez le nom de votre station dans le champ adéquat. D'un clic droit dans le champ <gui>URL du flux</gui> choisissez <gui>copier</gui> ou appuyez sur <keyseq><key>Ctrl</key><key>V</key></keyseq>.</p>
+  
+  <p>Vous pouvez aussi remplir les champs facultatifs <gui>Créateur de la station</gui>, <gui>Description</gui> et <gui>Note</gui>.</p>
+  
+  <p>Pour terminer, n'oubliez pas d'<gui>Enregistrer</gui> votre nouvelle station dans Banshee.</p>
+  
+  </section>
+  	  	  
+</page>

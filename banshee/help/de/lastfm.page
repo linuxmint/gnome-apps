@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="lastfm" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="extend#official"/>
+    <link type="seealso" xref="sync"/>
+    <desc>Last.fm, Titelbewertungen und Last.fm-Radio aktivieren.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-07-15" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Last.fm</title>    
+  
+  <p>Last.fm ist ein populärer Onlinedienst, der sowohl freie als auch zu bezahlende Versionen anbietet. Last.fm liefert Informationen über Künstler und Alben. Sobald Sie ein Benutzerprofil in Last.fm angelegt haben, können Sie frei Ihre gehörte Musik in Banshee verfolgen. Wenn Sie sich als zahlendes Mitglied registrieren, können Sie außerdem einen Musik-Datenstrom (Streaming) in verschiedenen Client-Programmen anhören, auch in Banshee. Last.fm bietet mehrere Kanäle für das Streaming an, zum Beispiel für Sie empfehlenswerte Musik, basierend auf Ihren Hörgewohnheiten, Ihren Favoriten und mehr.</p>
+  
+  <section id="enable-lastfm">
+  <title>Last.fm aktivieren</title> 
+  <p>Um Last.fm umfassend zu nutzen, sollten Sie ein Last.fm-Benutzerprofil erstellen. Besuchen Sie <link href="http://www.last.fm/join">http://www.last.fm/join</link>, wo Sie ein Konto erstellen können oder wählen Sie <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui></guiseq> im Banshee-Menü. Klicken Sie dann auf den Reiter <gui>Quellspezifisch</gui> und öffnen Sie das Auswahlmenü <gui>Quelle</gui>. Wählen Sie anschließend <gui>Last.fm</gui> und öffnen Sie den Verweis <em>Bei Last.fm registrieren</em>.</p>
+  
+  <p>Damit Banshee die auf Ihrem Rechner gespielten Titel an Ladt.fm übermitteln kann, melden Sie sich zunächst in den <gui>Quellspezifisch</gui>-Einstellungen in Banshee bei Last.fm an. Geben Sie Ihren Benutzernamen und Ihr Passwort an und klicken Sie auf den Knopf <gui>Bei Last.fm anmelden</gui>. Sie werden zur Last.fm-Webseite in Ihrem Browser weitergeleitet, damit Banshee Zugang erhalten kann. Klicken Sie auf den Verweis <gui>Ja, Zugriff erlauben</gui> in Ihrem Browser, woraufhin Sie wiederum zu einer Webseite weitergeleitet werden, auf der angezeigt wird, dass Banshee nun Zugriff auf Last.fm hat. Kehren Sie zu Banshee zurück und klicken Sie auf den Knopf <gui>Anmelden abschließen</gui>, um den Vorgang abzuschließen.</p>
+  
+  </section>
+  
+  <section id="songreporting">
+  <title>Musikbewertungen für Last.fm in Banshee aktivieren</title> 
+  <p>Nachdem Sie nun Banshee erfolgreich mit Ihrem Last.fm-Benutzerprofil verknüpft haben, müssen Sie sicher stellen, dass Banshee die gespielten Titel übermittelt. Dazu öffnen Sie die Einstellungen von Banshee den Reiter <gui>Quellspezifisch</gui>, wählen <gui>Last.fm</gui> in der Auswahlliste und aktivieren das Ankreuzfeld <gui>Übermittlung von Titeln aktivieren</gui>. Falls Sie über eine aktive Internetverbindung verfügen, sendet Banshee nun Informationen an Last.fm entsprechend Ihrer gehörten Titel. Um die Chronik anzuzeigen, besuchen Sie Ihr Profil auf der Last.fm-Webseite. Last.fm aktualisiert automatisch Ihre Musik-Metadaten, falls einer Ihrer Künstler, Titelnamen oder Albeninformationen nicht korrekt ist. Wir empfehlen jedoch, dass Sie stattdessen die Metadaten-Reparatur zum Korrigieren Ihrer Dateien verwenden.</p>
+  
+  </section>
+
+  <section id="devicesongreporting">
+  <title>Musikbewertungen für Last.fm auf Ihrem Gerät aktivieren</title>
+  <p>After successfully linking Banshee to your Last.fm profile and enabling Banshee to 
+  report songs to Last.fm you can also enable scrobbling from a connected device. Banshee 
+  will, upon connection of your device, attempt to scrobble the songs you have played since the 
+  device was last connected and submit them to Last.fm.
+  </p>
+
+  <p>To enable scrobbling of a connected device go to Banshee's preferences, select the 
+  <gui>Source Specific</gui> tab, select <gui>Last.fm</gui> from the dropdown, and press 
+  the <gui>Enable Song Reporting From Device</gui> checkbox.  If you have an 
+  active internet connection Banshee will, upon connection of your device, now attempt to gather 
+  information regarding the songs that you have played since it was last connected.
+  </p>
+
+  <p>As with regular Banshee scrobbling submissions Last.fm will automatically update 
+  your music metadata if any of your artist, title, or album information is incorrect (although we 
+  again recommend that you use the Metadata Fixer extension to correct your files instead).
+  </p>
+
+  <p>Please note that currently Banshee only supports this feature with Apple products that are
+  supported by the AppleDevice extension.
+  </p>
+
+  </section>
+  
+  <section id="lastfm-radio">
+  <title>Abspielen des Last.fm Internet-Radios</title> 
+  <p>Last-fm-Radio ist frei für Bürger der USA, Großbritanniens und Deutschlands. Bürger anderer Staaten müssen für einen Premium-Zugang bezahlen, um mit Last.fm Radio hören zu können. Premium-Mitglieder in allen Ländern kommen auch in den Genuss von Premium-Radiofunktionen: Abspielen von Wiedergabelisten und Sendern, die Sie mögen oder mit entsprechenden Schlagworten markiert haben.</p>
+  
+  <p>In der linken Seitenleiste von Banshee wird nun ein Last.fm-Eintrag mit Ihren Last.fm-Stationen angezeigt. Sie benötigen eine aktive Internetverbindung, um Last.fm-Radio zu hören. Wählen Sie die gewünschte Station aus, woraufhin Banshee eine Verbindung zu Last.fm aufbaut, um Musiktitel für diese Station zusammenzustellen. Klicken Sie auf den Knopf <gui>Wiedergabe</gui> in Banshee oder drücken Sie die <key>Leertaste</key>, um mit der Übertragung einer Last.fm-Radiostation zu beginnen. Sie können außerdem auf den Knopf <gui>Weiter</gui> in Banshee klicken, auf der Tastatur <key>N</key> drücken oder <guiseq><gui>Wiedergabe</gui><gui>Weiter</gui></guiseq> wählen, um den nächsten Titel in der Warteschlange der Radiostation anzuhören.</p>
+  
+  </section>
+	
+</page>

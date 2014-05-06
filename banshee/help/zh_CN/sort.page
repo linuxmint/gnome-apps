@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sort" xml:lang="zh_CN">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="search"/>
+    <desc>对你的媒体分类并增加附加的栏目</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>对你的媒体分类</title>
+
+  <section id="addcolumn">
+
+  <title>增加栏目</title>    
+  
+  <p>随着你的库增加，你或许会想要改变你的库视图来在库中增加歌曲的附加信息或者改变你查看或者分类歌曲、艺术家、专辑的方式。</p>
+  
+  <p>你可以在 <app>Banshee</app> 的库视图中加入附加的栏目来获得歌曲的更多信息并且你能对它们分类默认情况下，Banshee 显示歌曲的项目包括 <gui>歌曲名</gui> 、 <gui>艺术家</gui> 、 <gui>专辑</gui> 和 <gui>时间</gui> 。要增加附加栏目，用鼠标右键点击任一栏目，Banshee 将显示所有的栏目来让你从中选择。点击你希望增加到库视图里栏目的名字旁边的复选框。</p>
+  
+  </section>
+  
+  <section id="sorting">
+    <title>对栏目分类</title>
+    <p>你能用你的鼠标点击库视图中显示的任何栏目来对你的库分类。如果你希望按艺术家对你的音乐库分类，点击 <gui>艺术家</gui> 栏目头部，Bandhee 将按字母顺序自动分类那个栏目。再次点击 <gui>艺术家</gui> 栏目，将按照逆向的字母顺序对栏目分类。</p>
+  </section>
+	
+</page>

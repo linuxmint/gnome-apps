@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="add-radio" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <link type="seealso" xref="add-podcasts"/>
+    <link type="seealso" xref="import"/>
+    <desc>Přidávejte, odebírejte a přehrávejte stanice Internetových rádií v Banshee.</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-20" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Internetové rádio</title> 
+  
+  <section id="radiodescription">
+     <title>Co je to Internetové rádio?</title>
+     
+  <p>Internetová rádiová stanice je podobná běžné rádiové stanici, umožňuje poslouchat individuální nebo společné proudové vysílání hudby živě přes Internet. Internetová rádiová stanice může být proud vysílání souběžný ke klasické rádiové stanici, amatérské hromadné vysílání něčí vlastní stanice nebo komerční Internetová rádiová stanice včetně živých diskžokejů, a také reklam.</p>
+  
+  </section>
+  
+  <section id="addradio">
+  
+  <title>Přidávání rádiových stanic</title>
+  
+  <p>Když chcete do přehrávače Banshee přidat Internetovou rádiovou stanici, zmáčkněte <gui>Přidat stanici</gui> v pravém horním rohu nebo v nabídce zvolte <guiseq><gui>Média</gui><gui>Přidat stanici</gui></guiseq>.</p>
+  
+  <p>Z webové stránky stanice zkopírujte ve svém webovém prohlížeči odkaz na jejich adresu URL proudu. Ve většině prohlížečů to jde udělat kliknutím pravým tlačítkem na odkaz a zmáčknutím <gui>Kopírovat odkaz</gui>.</p>
+   
+
+  <p>Banshee vás vyzve k zadání <gui>Žánru stanice</gui>. Z dostupných voleb v rozbalovacím seznamu zvolte druh hudby, kterou stanice hraje. Pak budete muset vyplnit <gui>Název stanice</gui>. Zadejte, jak se rádiová stanice jmenuje. Po té zmáčkněte tabulátor nebo použijte myš k zaměření pole <gui>Adresa URL proudu</gui> a vložte do něj adresu URL stanice. Použijte k tomu pravé tlačítko myši a položku <gui>Vložit</gui> nebo zmáčkněte <keyseq><key>Control</key><key>V</key></keyseq>.</p>
+  
+  <p>Volitelně můžete také vyplnit pole <gui>Tvůrce stanice</gui>, <gui>Popis</gui> a <gui>Hodnocení</gui>.</p>
+  
+  <p>Nakonec zmáčkněte <gui>Uložit</gui> a tím se Internetová rádiová stanice do Banshee uloží.</p>
+  
+  </section>
+  	  	  
+</page>

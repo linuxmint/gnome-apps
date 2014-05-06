@@ -1,0 +1,282 @@
+<Type Name="DownloadManager" FullName="Hyena.Downloader.DownloadManager">
+  <TypeSignature Language="C#" Value="public class DownloadManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DownloadManager extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Hyena</AssemblyName>
+    <AssemblyVersion>2.4.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DownloadManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveDownloadCount">
+      <MemberSignature Language="C#" Value="public int ActiveDownloadCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ActiveDownloadCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BufferUpdated">
+      <MemberSignature Language="C#" Value="public event Action&lt;Hyena.Downloader.HttpDownloader&gt; BufferUpdated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Action`1&lt;class Hyena.Downloader.HttpDownloader&gt; BufferUpdated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action&lt;Hyena.Downloader.HttpDownloader&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finished">
+      <MemberSignature Language="C#" Value="public event Action&lt;Hyena.Downloader.HttpDownloader&gt; Finished;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Action`1&lt;class Hyena.Downloader.HttpDownloader&gt; Finished" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action&lt;Hyena.Downloader.HttpDownloader&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxConcurrentDownloaders">
+      <MemberSignature Language="C#" Value="public int MaxConcurrentDownloaders { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConcurrentDownloaders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDownloaderBufferUpdated">
+      <MemberSignature Language="C#" Value="protected virtual void OnDownloaderBufferUpdated (Hyena.Downloader.HttpDownloader downloader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDownloaderBufferUpdated(class Hyena.Downloader.HttpDownloader downloader) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="downloader" Type="Hyena.Downloader.HttpDownloader" />
+      </Parameters>
+      <Docs>
+        <param name="downloader">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDownloaderFinished">
+      <MemberSignature Language="C#" Value="protected virtual void OnDownloaderFinished (Hyena.Downloader.HttpDownloader downloader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDownloaderFinished(class Hyena.Downloader.HttpDownloader downloader) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="downloader" Type="Hyena.Downloader.HttpDownloader" />
+      </Parameters>
+      <Docs>
+        <param name="downloader">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDownloaderProgress">
+      <MemberSignature Language="C#" Value="protected virtual void OnDownloaderProgress (Hyena.Downloader.HttpDownloader downloader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDownloaderProgress(class Hyena.Downloader.HttpDownloader downloader) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="downloader" Type="Hyena.Downloader.HttpDownloader" />
+      </Parameters>
+      <Docs>
+        <param name="downloader">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDownloaderStarted">
+      <MemberSignature Language="C#" Value="protected virtual void OnDownloaderStarted (Hyena.Downloader.HttpDownloader downloader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDownloaderStarted(class Hyena.Downloader.HttpDownloader downloader) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="downloader" Type="Hyena.Downloader.HttpDownloader" />
+      </Parameters>
+      <Docs>
+        <param name="downloader">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PendingDownloadCount">
+      <MemberSignature Language="C#" Value="public int PendingDownloadCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PendingDownloadCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PendingDownloaders">
+      <MemberSignature Language="C#" Value="protected System.Collections.Generic.Queue&lt;Hyena.Downloader.HttpDownloader&gt; PendingDownloaders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Queue`1&lt;class Hyena.Downloader.HttpDownloader&gt; PendingDownloaders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Queue&lt;Hyena.Downloader.HttpDownloader&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Progress">
+      <MemberSignature Language="C#" Value="public event Action&lt;Hyena.Downloader.HttpDownloader&gt; Progress;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Action`1&lt;class Hyena.Downloader.HttpDownloader&gt; Progress" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action&lt;Hyena.Downloader.HttpDownloader&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueDownloader">
+      <MemberSignature Language="C#" Value="public void QueueDownloader (Hyena.Downloader.HttpDownloader downloader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void QueueDownloader(class Hyena.Downloader.HttpDownloader downloader) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="downloader" Type="Hyena.Downloader.HttpDownloader" />
+      </Parameters>
+      <Docs>
+        <param name="downloader">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Started">
+      <MemberSignature Language="C#" Value="public event Action&lt;Hyena.Downloader.HttpDownloader&gt; Started;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Action`1&lt;class Hyena.Downloader.HttpDownloader&gt; Started" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action&lt;Hyena.Downloader.HttpDownloader&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalDownloadCount">
+      <MemberSignature Language="C#" Value="public int TotalDownloadCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TotalDownloadCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitUntilFinished">
+      <MemberSignature Language="C#" Value="public void WaitUntilFinished ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WaitUntilFinished() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>2.4.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

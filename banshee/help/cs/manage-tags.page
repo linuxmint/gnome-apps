@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="tags" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="coverart"/>
+    <link type="seealso" xref="playlists"/>
+    <desc>Upravujte a měňte hudební štítky a metadata.</desc>
+    <revision pkgversion="2.0" version="0.1" date="2010-05-09" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  
+  <title>Hudební metadata</title>
+
+  <section id="metadata">
+
+  <title>Hudební metadata</title>    
+  
+  	<p>Hudba v digitální podobě obsahuje metadata, která uchovávají v souboru informace jako je umělec, album, rok nahrávky, žánr a další. Většina hudby šířené po Internetu má metadata již vložena a když si hudbu importujete z CD, a metadata jsou na CD k dispozici, Banshee je vloží. Více informací o extrahování dat z CD a vkládání metadat podává kapitola <link xref="import"/>.</p>
+  	
+  	<p>Populárními formáty metadat pro soubory MP3 jsou ID3v1 a ID3v2 a pro soubory OGG Vorbis komentáře Vorbis.</p>	
+  
+  	<p>Pokud máte naimportovány skladby, které metadata neobsahují, bude přehrávač <app>Banshee</app> u většiny polí v kolekci uvádět <gui>Neznámý</gui>.</p>
+  	
+  </section>
+
+  <section id="editmetadata"> 	
+    
+    <title>Úpravy vašich metadat</title>
+    
+    <p>Metadata můžete u svých skladeb měnit a upravovat. Vyberte skladbu či skladby, které chcete aktualizovat a zmáčkněte <key>E</key> nebo zvolte v nabídce <guiseq><gui>Upravit</gui><gui>Upravit informace o stopě</gui></guiseq> a nebo použijte u souboru pravé tlačítko myši a vyberte <gui>Upravit informace o stopě</gui>.</p>
+    
+    <p>Objeví se dialogové okno, které zobrazuje metadata skladby a umožňuje vám je měnit a aktualizovat. Výchozí zobrazená pole jsou:</p>
+    
+    <list>
+      <item><p><gui>Název stopy</gui></p></item>
+      <item><p><gui>Umělec stopy</gui></p></item>
+      <item><p><gui>Název alba</gui></p></item>
+      <item><p><gui>Žánr</gui></p></item>
+      <item><p><gui>Číslo stopy</gui></p></item>
+      <item><p><gui>Číslo disku</gui></p></item>
+      <item><p><gui>Rok</gui></p></item>
+    </list>
+    
+    <p>Aktualizujte informace o skladbě. Pokud máte k úpravě vybráno více skladeb, zmáčkněte po dokončení úprav každé ze skladeb ikonu se šipkou vpravo u pole <gui>Název stopy</gui> nebo tlačítko <gui>Vpřed</gui> v dolní části dialogového okna. Po dokončení úprav všech metadat zmáčkněte <gui>Uložit</gui>.</p>
+   
+  </section>
+
+</page>

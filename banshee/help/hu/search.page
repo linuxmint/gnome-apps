@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="search" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="sort"/>
+    <desc>Médiafájlok keresése, és egyszerű lekérdezések.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Keresés a Banshee gyűjteményben</title>    
+  
+  <p>A Banshee tartalmaz egy hatékony keresőnyelvet. Egyszerű keresőkifejezések segítségével gyorsan és egyszerűen kereshet gyűjteményében, vagy részletes kereséseket hajthat végre a Banshee fejlett keresőtechnológiájával.</p>
+  
+  <p>Médiafájlok kereséséhez nyomja meg az <key>S</key> billentyűt, vagy kattintson a <gui>Keresés</gui> dobozra a Gyűjtemény nézet jobb felső sarkában.</p>
+  
+  <p>A keresőkifejezés egyszerű kifejezésekből áll, például: <em>dave matthews</em>. A <em>dave matthews</em> kifejezés beírásakor a keresődobozba a Banshee minden metaadat-mezőben keresni fog, beleértve a szám címe, album címe, album előadója, év stb. mezőket. Minden szám megjelenik, amelynek metadatai közt szerepel a <em>dave</em> és <em>matthews</em> név. A keresőkifejezések nem különböztetik meg a kis- és a nagybetűket. Így a <em>dave</em>, <em>Dave</em> és <em>DAVE</em> kereséskor mind ugyanazt jelentik.</p>
+
+<section id="operators">
+  <title>Alapvető műveletek</title>
+  <p>Bármely két keresőkifejezés közé vagy keresőszó elé elhelyezhetők műveletek. Az alapművelet az <gui>ÉS</gui>, és ha a két keresőkifejezés közt nincs megadva más művelet, akkor ez kerül felhasználásra. Mivel ez az alap, így nincs külön ÉS művelet.</p>
+  
+  <p>További alapvető műveletek az <gui>OR</gui> és a <gui>NOT</gui>. Együtt ez a három művelet nagyon hatékony lekérdezéseket eredményezhet, amelyek segítenek médiafájljai megtalálásában.</p>
+  
+</section>
+
+<section id="logical">
+  <title>Logikai műveletek és példák</title>
+  <p>Az alábbi lista a logikai műveleteket tartalmazza, és az azokkal kapható találatokra ad példákat.</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Művelet</gui></p></td>  <td><p><gui>Leírás</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><em>alap</em>, <em>szóköz</em></p></td> <td><p>Két kifejezés keresése, szóközzel a két szó vagy kifejezés között.</p></td>
+  </tr>
+  <tr>
+    <td><p>OR, or, <key>|</key>, <key>,</key></p></td> <td><p>A találatok a két számot tartalmazzák, amelyek egyike megtalálható valamely mezőben.</p></td>
+  </tr>
+  <tr>
+    <td><p>NOT, not,<key>-</key></p></td> <td><p>Ne jelenítse meg a NOT, not,<key>-</key> műveletet követő keresőkifejezést tartalmazó találatokat.</p></td>
+  </tr>  
+         
+</table>
+
+  <p>Példák logikai műveletekre:</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Lekérdezés</gui></p></td>  <td><p><gui>Leírás</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>dave matthews</p></td> <td><p>Egy szám bármely mezőjére illeszkedik, amely tartalmazza a <em>dave</em> és <em>matthews</em> neveket is.</p></td>
+  </tr>
+  <tr>
+    <td><p>dave, matthews</p></td> <td><p>Egy szám bármely mezőjére illeszkedik, amely tartalmazza a <em>dave</em> vagy <em>matthews</em> nevet.</p></td>
+  </tr>
+  <tr>
+    <td><p>dave or matthews</p></td> <td><p>Egy szám bármely mezőjére illeszkedik, amely tartalmazza a <em>dave</em> vagy <em>matthews</em> nevet.</p></td>
+  </tr> 
+  <tr>
+    <td><p>dave | matthews</p></td> <td><p>Egy szám bármely mezőjére illeszkedik, amely tartalmazza a <em>dave</em> vagy <em>matthews</em> nevet.</p></td>
+  </tr>       
+  <tr>
+    <td><p>-"dave matthews"</p></td> <td><p>Megjeleníti az összes számot, amelyek egyik mezője sem tartalmazza a <em>dave matthews</em> nevet.</p></td>
+  </tr> 
+  
+  </table> 
+  
+  <p>Összetett lekérdezések végrehajtásával kapcsolatos további információkért lásd a <link xref="adv-search"/> oldalt.</p>
+  
+</section>
+	
+</page>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sort" xml:lang="da">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="search"/>
+    <desc>Sorter dine medier og tilføj yderligere kolonner.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Sortering af dine medier</title>
+
+  <section id="addcolumn">
+
+  <title>Tilføjelse af kolonner</title>    
+  
+  <p>Efterhånden som dit bibliotek vokser, kan ønsket om at ændre visningen af dit bibliotek opstå, så du kan vise yderligere information om sangene i dit bibliotek eller ændre måde du viser og sorterer dine sange, kunstnere eller album.</p>
+  
+  <p>Du kan tilføje yderligere kolonner til biblioteksvisningen i <app>Banshee</app> for at give dig yderligere information om sangene, og du kan også sortere på disse. Som standard viser Banshee kolonner for sange, der indeholder <gui>Navn</gui>, <gui>Kunster</gui>, <gui>Album</gui> og <gui>Tid</gui>. For at tilføje yderligere kolonner bruger du højre museknap på en af de eksisterende kolonner og Banshee vil vise alle de kolonner, du kan vælge imellem. Klik på afkrydsningsboksen ved siden af navnet på kolonnen du ønsker at tilføje til biblioteksvisingen.</p>
+  
+  </section>
+  
+  <section id="sorting">
+    <title>Sortering af kolonner</title>
+    <p>Du kan sortere dit bibliotek ved at klikke med musen på en af de viste kolonner i biblioteksvisningen. Hvis du ønsker at sortere dit musikbibliotek efter kunsternavn, så klik på kolonnehovedet <gui>Kunstner</gui> og Banshee vil automatisk sortere den kolonne alfabetisk. Et yderligere klik på kolonnehovedet <gui>Kunstner</gui> vil sortere kolonnen i omvendt alfabetisk rækkefølge.</p>
+  </section>
+	
+</page>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="import" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#media"/>
+    <link type="seealso" xref="remove-media"/>
+    <desc>Dodajte glasbo in videoposnetke s svojega računalnika v vašo knjižnico Banshee.</desc>
+    <revision pkgversion="1.6" version="1.6" date="2010-07-15" status="review"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Shaun McCance</name>
+      <email>shaunm@gnome.org</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Uvozite glasbo in video</title>
+
+  <p>V Banshee lahko uvozite glasbo in videoposnetke shranjene na svojem računalniku. Uvožene datoteke se pojavijo v vaših virih in jih je mogoče urejati in upravljati kot katerekoli druge večpredstavnostne datoteke v Banshee.</p>
+
+  <p>Za uvoz glasbenih ali video datotek s svojega računalnika izberite <guiseq><gui>Večpredstavnost</gui><gui>Uvozi večpredstavnost</gui></guiseq>.  Pojavilo se bo pogovorno okno s številnimi izbirami.</p>
+
+  <note>
+    <p>Vstavki lahko dodajo dodatne možnosti uvoza. Oglejte si <link xref="#plugins"/> spodaj.</p>
+  </note>
+
+  <terms>
+    <item>
+      <title><gui>Krajevne mape</gui></title>
+      <p>Izberite to možnost za uvoz vseh glasbenih in video datotek v določeni mapi, vključno z vsemi podmapami. Odprlo se bo pogovorno okno za izbiro mape za uvoz.</p>
+    </item>
+    <item>
+      <title><gui>Krajevne datoteke</gui></title>
+      <p>Izberite to možnost za uvoz le izbrane datoteke ali datotek. Pozvani boste s pogovornim oknom za izbiro datoteke ali datotek za uvoz.</p>
+    </item>
+    <item>
+      <title><gui>Domača mapa</gui></title>
+      <p>Izberite to možnost za uvoz vseh glasbenih in video datotek v vaši celotni domači mapi vključno z datotekami v katerihkoli podmapah.</p>
+    </item>
+    <item>
+      <title><gui>Videoposnetki iz mape fotografij</gui></title>
+      <p>Veliko digitalnih fotoaparatov lahko posname kratke videoposnetke, ki jih programi za upravljanje fotografij pogosto uvozijo v vašo mapo Slike. Izberite to možnost za uvoz videov, ki so bili shranjeni v vaši mapi Slike. </p>
+    </item>
+  </terms>
+
+  <note>
+    <p>Mapo lahko varno znova uvozite brez skrbi o podvojenih vnosih v svoji knjižnici. </p>
+  </note>
+  
+  <section id="import-playlist">
+    <title>Uvozi s seznama predvajanja</title>
+    <p>Glasbo lahko uvozite tudi s seznamov predvajanja. Večina datotek seznamov predvajanja se konča z <em>m3u</em>. Za uvoz s seznama prevajanja v meniju Banshee izberite  <guiseq><gui>Večpredstavnost</gui><gui>Uvozi seznam predvajanja</gui></guiseq> in v svoji mapi najdite datoteko seznama predvajanja, jo izberite in pritisnite <gui>Uvozi</gui>.</p>
+  </section>
+  
+  <section id="plugins">
+    <title>Dodatni viri uvoza</title>
+    <p>Vstavki lahko dodajo dodatne možnosti uvoza. Če so primerni vstavki omogočeni, bodo na voljo naslednji dodatni viri:</p>
+  </section>
+  	
+</page>

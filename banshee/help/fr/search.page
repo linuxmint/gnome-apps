@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="search" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#manage"/>
+    <link type="seealso" xref="sort"/>
+    <desc>Recherche parmi vos médias et réalisation de requêtes basiques.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2009-01-22" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Recherche dans votre bibliothèque Banshee</title>    
+  
+  <p>Banshee est doté d'un langage de recherche performant. Vous pouvez soit initier une recherche rapide et facile à partir de mots-clés simples, soit lancer une recherche approfondie avec la terminologie avancée de Banshee.</p>
+  
+  <p>Pour effectuer une recherche de médias avec Banshee, appuyez sur la touche <key>S</key> ou cliquez dans la case <gui>Rechercher</gui> dans le coin supérieur droite de l'affichage de la bibliothèque.</p>
+  
+  <p>Une recherche repose sur quelques mots-clés, par exemple <em>dave matthews</em>. En saisissant <em>dave matthews</em> dans le champ Rechercher, Banshee consulte toutes les métadonnées présentes comme le titre de la piste, le titre de l'album, le nom de l'artiste, l'année, etc. Chaque titre contenant les métadonnées <em>dave</em> et <em>matthews</em> est affiché. Les termes de recherche ne sont pas sensibles à la casse, et il est donc inutile de mettre des majuscules. Les termes <em>dave</em>, <em>Dave</em>, et <em>DAVE</em> signifient tous la même chose.</p>
+
+<section id="operators">
+  <title>Opérateurs de base</title>
+  <p>Des opérateurs peuvent être placés entre deux mots-clés ou devant un mot-clé. L'opérateur par défaut est <gui>AND</gui> (ET) et est utilisé quand il n'y en a pas d'autre opérateur entre deux mots. Comme c'est l'opérateur par défaut, il n'y a pas d'opérateur AND explicit.</p>
+  
+  <p>Les autres opérateurs de base sont <gui>OR</gui> et <gui>NOT</gui>. Utilisées conjointement, ces trois opérations permettent de faire des recherches très performantes pour vous aider à faire des recherches dans vos médias.</p>
+  
+</section>
+
+<section id="logical">
+  <title>Opérateurs logiques et exemples</title>
+  <p>Voici une liste d'opérateurs logiques et des exemples de résultats de recherches effectués avec eux.</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Opérateur</gui></p></td>  <td><p><gui>Description</gui></p></td>
+  </tr>
+  <tr>
+    <td><p><em>par défaut</em>, <em>espace</em></p></td> <td><p>Recherche les deux mots séparés par un espace entre les deux.</p></td>
+  </tr>
+  <tr>
+    <td><p>OR, or, <key>|</key>, <key>,</key></p></td> <td><p>Les résultats de la recherche sont deux chansons avec l'un ou l'autre résultat dans n'importe quel champ.</p></td>
+  </tr>
+  <tr>
+    <td><p>NOT, not, <key>-</key></p></td> <td><p>Ne pas afficher de résultats de recherche contenant un des termes de recherche qui suit NOT, not, <key>-</key>.</p></td>
+  </tr>  
+         
+</table>
+
+  <p>Voici des exemples d'opérations logiques :</p>
+  
+  <table frame="all" rules="rows" shade="rows">
+  <tr>
+    <td><p><gui>Recherche</gui></p></td>  <td><p><gui>Description</gui></p></td>
+  </tr>
+  <tr>
+    <td><p>dave matthews</p></td> <td><p>Correspond à n'importe quel champ d'une piste contenant à la fois <em>dave</em> et <em>matthews</em>.</p></td>
+  </tr>
+  <tr>
+    <td><p>dave, matthews</p></td> <td><p>Correspond à n'importe quel champ d'une piste contenant <em>dave</em> ou <em>matthews</em>.</p></td>
+  </tr>
+  <tr>
+    <td><p>dave or matthews</p></td> <td><p>Correspond à n'importe quel champ d'une piste contenant <em>dave</em> ou <em>matthews</em>.</p></td>
+  </tr> 
+  <tr>
+    <td><p>dave | matthews</p></td> <td><p>Correspond à n'importe quel champ d'une piste contenant <em>dave</em> ou <em>matthews</em>.</p></td>
+  </tr>       
+  <tr>
+    <td><p>-"dave matthews"</p></td> <td><p>Affiche toutes les pistes dont les champs ne contiennent pas <em>dave matthews</em>.</p></td>
+  </tr> 
+  
+  </table> 
+  
+  <p>Pour de plus amples informations sur la façon d'effectuer des recherches plus complexes, consultez la page <link xref="adv-search"/>.</p>
+  
+</section>
+	
+</page>

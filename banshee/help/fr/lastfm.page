@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="lastfm" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="extend#official"/>
+    <link type="seealso" xref="sync"/>
+    <desc>Activation de Last.fm, informations sur les titres et la radio Last.fm.</desc>
+    <revision pkgversion="1.6" version="0.1" date="2010-07-15" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Last.fm</title>    
+  
+  <p>Last.fm est un service en ligne bien connu qui offre des versions gratuites ou payantes. Last.fm propose des informations sur des artistes ou des albums et si vous créez un profil Last.fm, vous pouvez surveiller gratuitement la musique que vous écoutez avec Banshee. Si vous ouvrez un compte payant en tant qu'adhérent, vous pouvez en plus écouter les diffusions musicales Last.fm en continu à partir de plusieurs clients dont Banshee. Last.fm vous propose de nombreux canaux de diffusion, y compris ceux les mieux adaptés à vous, en se basant sur vos habitudes d'écoute, vos favoris ou d'autres critères.</p>
+  
+  <section id="enable-lastfm">
+  <title>Activation de Last.fm</title> 
+  <p>Pour obtenir le meilleur de Last.fm, il vous faut créer votre profil Last.fm. Suivez ce lien <link href="http://www.last.fm/join">http://www.last.fm/join</link> pour ouvrir un compte ou bien ouvrez le menu de Banshee <guiseq><gui>Édition</gui><gui>Préférences</gui></guiseq>. Une fois dans les préférences, choisissez l'onglet <gui>Spécifique à la source</gui>, cliquez sur le menu déroulant <gui>Source</gui>, sélectionnez <gui>Last.fm</gui> et enfin cliquez sur le lien <em>S'inscrire sur Last.fm</em>.</p>
+  
+  <p>Pour permettre à Banshee de vous renseigner sur les morceaux diffusés sur votre ordinateur par Last.fm, vous devez vous inscrire sur Last.fm dans Banshee dans les préférences <gui>Spécifique à la source</gui>. Saisissez votre nom d'utilisateur et cliquez sur le bouton <gui>Se connecter à Last.fm</gui>. Vous êtes alors dirigé vers une page Web de Last.fm dans votre navigateur pour y autoriser l'accès de Banshee. Cliquez sur le lien <gui>Autoriser l'accès</gui> dans votre navigateur et vous êtes redirigé sur une autre page qui vous confirme que Banshee a maintenant l'autorisation d'accéder à Last.fm. Retournez dans Banshee et fermez le processus par le bouton <gui>Terminer l'authentification</gui>.</p>
+  
+  </section>
+  
+  <section id="songreporting">
+  <title>Enable Last.fm Song Reporting From Banshee</title> 
+  <p>After you have successfully linked Banshee to your Last.fm profile you must
+  ensure that you have enabled Banshee to report your songs.  To enable Banshee to
+  report the songs to your Last.fm profile go to Banshee's preferences, select the
+  <gui>Source Specific</gui> tab, select <gui>Last.fm</gui> from the dropdown, and
+  press the <gui>Enable Song Reporting From Banshee</gui> checkbox. If you have an active internet
+  connection Banshee will now send Last.fm information regarding the songs
+  you play.  To view your play history visit your profile on the Last.fm
+  website.  Last.fm will automatically update your music metadata if any of your
+  artist, song title, or album information is incorrect (although we recommend that
+  you use the Metadata Fixer extension to correct your files instead).
+
+  </p>
+  
+  </section>
+
+  <section id="devicesongreporting">
+  <title>Enable Last.fm Song Reporting From Your Device</title>
+  <p>After successfully linking Banshee to your Last.fm profile and enabling Banshee to 
+  report songs to Last.fm you can also enable scrobbling from a connected device. Banshee 
+  will, upon connection of your device, attempt to scrobble the songs you have played since the 
+  device was last connected and submit them to Last.fm.
+  </p>
+
+  <p>To enable scrobbling of a connected device go to Banshee's preferences, select the 
+  <gui>Source Specific</gui> tab, select <gui>Last.fm</gui> from the dropdown, and press 
+  the <gui>Enable Song Reporting From Device</gui> checkbox.  If you have an 
+  active internet connection Banshee will, upon connection of your device, now attempt to gather 
+  information regarding the songs that you have played since it was last connected.
+  </p>
+
+  <p>As with regular Banshee scrobbling submissions Last.fm will automatically update 
+  your music metadata if any of your artist, title, or album information is incorrect (although we 
+  again recommend that you use the Metadata Fixer extension to correct your files instead).
+  </p>
+
+  <p>Please note that currently Banshee only supports this feature with Apple products that are
+  supported by the AppleDevice extension.
+  </p>
+
+  </section>
+  
+  <section id="lastfm-radio">
+  <title>Écoute de la radio web Last.fm</title> 
+  <p>La radio web Last.fm est gratuite pour les résidents des États-Unis, du Royaume-Uni et de l'Allemagne. Les habitants des autres pays doivent acquitter une redevance pour écouter cette radio. Les membres payants de tous pays auront aussi accès à certains privilèges comme écouter les listes de lecture et les radios musicales qu'ils ont aimées ou étiquetées.</p>
+  
+  <p>Dans le panneau des sources de Banshee, sur le côté gauche, est apparue une section Last.fm contenant vos stations radio Last.fm. Si vous disposez d'une connexion internet active, vous pouvez choisir une station et Banshee se connecte aux morceaux les plus populaires de celle-ci. Appuyez sur le bouton <gui>Lire</gui> ou sur la touche <key>Espace</key> pour démarrer l'écoute. Pour passer au morceau suivant dans la file d'attente de la radio, appuyez sur le bouton <gui>Suivant</gui> ou sur la touche <key>N</key>, ou encore choisissez le menu <guiseq><gui>Lecture</gui><gui>Suivant</gui></guiseq>.</p>
+  
+  </section>
+	
+</page>
