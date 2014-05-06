@@ -67,7 +67,7 @@ namespace Banshee.GStreamer
                 if (config != null) {
                     profile = config.Profile;
                 } else {
-                    profile = ServiceManager.MediaProfileManager.GetProfileForMimeType ("audio/vorbis")
+                    profile = ServiceManager.MediaProfileManager.GetProfileForMimeType ("audio/mp3")
                         ?? ServiceManager.MediaProfileManager.GetProfileForMimeType ("audio/flac");
                     if (profile != null) {
                         Log.InformationFormat ("Using default/fallback encoding profile: {0}", profile.Name);
