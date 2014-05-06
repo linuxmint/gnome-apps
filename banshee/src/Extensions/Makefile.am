@@ -1,6 +1,4 @@
-SUBDIRS = \
-	Banshee.AmazonMp3 \
-	Banshee.AmazonMp3.Store \
+SUBDIRS = \	
 	Banshee.Audiobook \
 	Banshee.BooScript \
 	Banshee.Bpm \
@@ -31,7 +29,6 @@ SUBDIRS = \
 	Banshee.SqlDebugConsole \
 	Banshee.Torrent \
 	Banshee.RemoteAudio \
-	Banshee.UbuntuOneMusicStore \
 	Banshee.UPnPClient \
 	Banshee.Wikipedia \
 	Banshee.YouTube

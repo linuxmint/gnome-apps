@@ -169,9 +169,6 @@ BANSHEE_CHECK_MEEGO
 dnl Sound menu integration (optional)
 BANSHEE_CHECK_SOUNDMENU
 
-dnl Ubuntu One Music Store (optional)
-BANSHEE_CHECK_UBUNTUONE
-
 dnl i18n
 SHAMROCK_CONFIGURE_I18N($PACKAGE)
 
@@ -302,8 +299,6 @@ src/Dap/Banshee.Dap.Mtp/Makefile
 src/Dap/Banshee.Dap.Karma/Makefile
 
 src/Extensions/Makefile
-src/Extensions/Banshee.AmazonMp3/Makefile
-src/Extensions/Banshee.AmazonMp3.Store/Makefile
 src/Extensions/Banshee.Audiobook/Makefile
 src/Extensions/Banshee.BooScript/Makefile
 src/Extensions/Banshee.Bpm/Makefile
@@ -334,7 +329,6 @@ src/Extensions/Banshee.SqlDebugConsole/Makefile
 src/Extensions/Banshee.Sample/Makefile
 src/Extensions/Banshee.Torrent/Makefile
 src/Extensions/Banshee.RemoteAudio/Makefile
-src/Extensions/Banshee.UbuntuOneMusicStore/Makefile
 src/Extensions/Banshee.UPnPClient/Makefile
 src/Extensions/Banshee.Wikipedia/Makefile
 src/Extensions/Banshee.YouTube/Makefile
@@ -381,7 +375,6 @@ ${PACKAGE}-${VERSION}
     GIO Hardware:          ${enable_gio_hardware} (gudev-sharp, gkeyfile-sharp)
     YouTube:               ${enable_youtube} (gdata-sharp >= 1.4)
     Sound Menu:            ${enable_soundmenu}
-    Ubuntu One Store:      ${enable_ubuntuone} (ubuntuone-sharp >= 0.3.2)
     UPnP:                  ${enable_upnp} (mono-upnp >= $MONOUPNP_REQUIRED)
 
   Build/Development:

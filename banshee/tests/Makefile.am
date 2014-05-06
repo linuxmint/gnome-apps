@@ -17,15 +17,10 @@ TEST_ASSEMBLIES = \
 	Banshee.Services.dll \
 	Banshee.ThickClient.dll \
 	Banshee.Fixup.dll \
-	Banshee.AmazonMp3.exe \
 	Banshee.Dap.Mtp.dll
 
 if ENABLE_GIO
 TEST_ASSEMBLIES += Banshee.Gio.dll
-endif
-
-if ENABLE_UBUNTUONE
-TEST_ASSEMBLIES += Banshee.UbuntuOneMusicStore.dll
 endif
 
 ENV_OPTIONS = TZ=America/Chicago LC_ALL=it_IT LANG=it_IT
