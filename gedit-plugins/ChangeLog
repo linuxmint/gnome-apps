@@ -1,0 +1,1166 @@
+commit 968a348ed0cb8d286ca574cee367722e29c6cf9b
+Author: Jesse van den Kieboom <jesse.vandenkieboom@epfl.ch>
+Date:   2010-03-23
+
+    Reset default func prop cache when reloading module
+
+M	plugins/commander/commander/commands/module.py
+
+commit 09cb41d2ad6e9e24d213607ba77713c7a1772a3d
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-03-21
+
+    Properly escape command name
+
+M	plugins/commander/commander/entry.py
+
+commit e801a837b4827e3fcdc293b1d8da7071888ccd62
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-03-21
+
+    Allow completion of empty command
+
+M	plugins/commander/commander/commands/completion.py
+
+commit 8319db1f44e73cbb9a72812b9e63a4264735ba24
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-03-21
+
+    Removed unused drawing module
+
+M	plugins/commander/commander/Makefile.am
+D	plugins/commander/commander/drawing.py
+M	plugins/commander/commander/entry.py
+
+commit c6ae7a42f845a603b2d4454e7de92864f43b3b1a
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-03-21
+
+    Implemented support for accelerators
+
+M	plugins/commander/commander/commands/Makefile.am
+M	plugins/commander/commander/commands/__init__.py
+A	plugins/commander/commander/commands/accel_group.py
+M	plugins/commander/commander/commands/method.py
+M	plugins/commander/commander/entry.py
+
+commit 06131a7580951e998297039541ca9ab64b8545f9
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-03-21
+
+    Added 'all' arguments to all format functions
+
+M	plugins/commander/modules/format.py
+
+commit 71e11580da24647e3f9802fa284a92c2ade6999f
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-03-21
+
+    Fix error only creating module dir if already exists
+
+M	plugins/commander/modules/edit.py
+
+commit 31d0c0ff7ca1e25b19b5a533bb1772beb9efe61c
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-03-21
+
+    Fixed continuation after align module
+
+M	plugins/commander/modules/Makefile.am
+
+commit e990dd56e060d18882aa96be1761ce97c4e509da
+Author: Jesse van den Kieboom <jesse.vandenkieboom@epfl.ch>
+Date:	2010-03-15
+
+    Added align by adding whitespace on different group
+
+M	plugins/commander/modules/align.py
+
+commit 02ba892dcd516aebbff0490521d7b2a17e16b1d6
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-03-15
+
+    Added new 'align' module
+
+    This module aligns lines of text on columns separated by
+    whitespace. Additionally, a powerful regular expression align
+    function allows to align columns on specific regular expressions
+    and specific groups within that regular expression
+
+M	plugins/commander/modules/Makefile.am
+A	plugins/commander/modules/align.py
+
+commit 775f8738f6c405b061b579e65cdb7827124e7a7c
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-03-15
+
+    Fixed case where run is called without ret argument
+
+M	plugins/commander/commander/commands/__init__.py
+
+commit 324904581018de90a002ce9de033d65e80a98059
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-03-14
+
+    Improved new-command template
+
+M	plugins/commander/modules/edit.py
+
+commit 8e080fb79bc55f7c2660177eb00a309f9b5e1a22
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-03-14
+
+    Made shell background and replace also accessible from the module
+
+M	plugins/commander/modules/shell.py
+
+commit 06182d4a863b61b8d5f8249727acdd5688f5ba5d
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-03-13
+
+    Added autocomplete for commander edit.rename
+
+M	plugins/commander/modules/edit.py
+
+commit 44e267daafc77a2931c6d2cd01bf4240dd3ee1f4
+Author: David Espinosa Alentorn <filferros@yahoo.es>
+Date:	2010-03-14
+
+    Updated Catalan translation
+
+M	po/ca.po
+
+commit f2a7b5a63138c6009a6e55d8beab1ff74370e1e4
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-03-13
+
+    Fixed goto module of commander
+
+    Hide the commander when done. Properly clip the line and column
+    numbers  and scroll to iter
+
+M	plugins/commander/modules/goto.py
+
+commit 6e136d74ca4ab82341c1f675d55e0770eae407c0
+Author: Daniel Nylander <po@danielnylander.se>
+Date:	2010-03-12
+
+    Updated Swedish translation
+
+M	po/sv.po
+
+commit 9a67718503c8d7f6650563cf9b611c5c38ac41e7
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:	2010-03-10
+
+    Updated Polish translation
+
+M	po/pl.po
+
+commit a8e9a872f6672cc0c897478976ea0bf6384ab5e9
+Author: Bruno Brouard <annoa.b@gmail.com>
+Date:	2010-03-06
+
+    Updated French translation
+
+M	po/fr.po
+
+commit 6c3328aa771ea2ed55c689cd615645df45c8e252
+Author: Fran Diéguez <frandieguez@ubuntu.com>
+Date:	2010-03-05
+
+    Updated Galician translation
+
+M	po/gl.po
+
+commit 0a21ecea646c84c3793beafb3be448eeb8dcc109
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2010-02-27
+
+    Minor fix
+
+M	plugins/commander/commander/windowhelper.py
+
+commit be5e979fe6babb0318fa29fab0d79461a0b7e35a
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2010-02-27
+
+    Change the shortcut to control+.
+
+M	plugins/commander/commander/windowhelper.py
+
+commit 986e2429e0786ca000861cd3cc8f64fcf8e313b0
+Author: António Lima <amrlima@gmail.com>
+Date:	2010-02-22
+
+    Updated Portuguese translation
+
+M	po/pt.po
+
+commit 8a217535397976397caff960fcce34b58ddf9bb3
+Author: Aron Xu <aronxu@gnome.org>
+Date:	2010-02-19
+
+    Update Simplified Chinese translation.
+
+M	po/zh_CN.po
+
+commit 94d84120c18ef992aa072a1cc943e12c31a2a70f
+Author: Milo Casagrande <milo@ubuntu.com>
+Date:	2010-02-16
+
+    Updated Italian translation
+
+M	po/it.po
+
+commit 8242035474c698af76ad57b2ce4ea04eecbbb0e5
+Author: Mario Blättermann <mariobl@gnome.org>
+Date:	2010-02-15
+
+    Updated German translation
+
+M	po/de.po
+
+commit e87e33d3a43986691e75b3616601f438b3c0f9e5
+Author: A S Alam <aalam@users.sf.net>
+Date:	2010-02-05
+
+    updating translation for Punjabi by A S Alam
+
+M	po/pa.po
+
+commit 3615a94f4c69aa7050ea5a231103017a24278f34
+Author: Marek Černocký <marek@manet.cz>
+Date:	2010-02-02
+
+    Update Czech translation
+
+M	po/cs.po
+
+commit 737238363541925bdb9018832861033a0311cb68
+Author: Khaled Hosny <khaledhosny@eglug.org>
+Date:	2010-01-26
+
+    Updated Arabic translation
+
+M	po/ar.po
+
+commit 1ec1e0ec02ee35619ecfcba3dd77e7c8ae326074
+Author: Gabor Kelemen <kelemeng@gnome.hu>
+Date:	2010-01-21
+
+    Updated Hungarian translation by Attila Hammer
+
+M	po/hu.po
+
+commit 39f5befb61e34c782b9741871952a11f637c7dee
+Author: Gabor Kelemen <kelemeng@gnome.hu>
+Date:	2010-01-21
+
+    Updated Hungarian translation
+
+M	po/hu.po
+
+commit afa3d7f8557996ff4db5ff9953e27b9905772498
+Author: Jorge González <jorgegonz@svn.gnome.org>
+Date:	2010-01-18
+
+    Updated Spanish translation
+
+M	po/es.po
+
+commit 283c70c9ae5604dbd1806543b7456d7dffb3f925
+Author: Marek Černocký <marek@manet.cz>
+Date:	2010-01-18
+
+    Update Czech translation
+
+M	po/cs.po
+
+commit 2ae0380fe72a47eeeb3241292c425366d58e42f0
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:	2010-01-18
+
+    Updated Slovenian translation
+
+M	po/sl.po
+
+commit cfd59b752b74a5e4daa9159d2e7fb7bcb69152e2
+Author: António Lima <amrlima@gmail.com>
+Date:	2010-01-18
+
+    Updated Portuguese translation
+
+M	po/pt.po
+
+commit ca1f7f4777982ec6e68bf8b8b8cda9b241ddbd1f
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2010-01-17
+
+    Release 2.29.4
+
+M	NEWS
+M	README
+M	configure.ac
+M	po/POTFILES.in
+M	po/POTFILES.skip
+
+commit ff1b937eb6154992017b2e8df440f68914a76e32
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-01-16
+
+    Added MAINTAINERCLEANFILES
+
+M	Makefile.am
+
+commit 8f357dfc249d3ce59e51f39573c39160b2e2209f
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-01-16
+
+    Added new plugin, commander
+
+M	configure.ac
+A	plugins/commander/Makefile.am
+A	plugins/commander/commander.gedit-plugin.desktop.in.in
+A	plugins/commander/commander/Makefile.am
+A	plugins/commander/commander/__init__.py
+A	plugins/commander/commander/commands/Makefile.am
+A	plugins/commander/commander/commands/__init__.py
+A	plugins/commander/commander/commands/completion.py
+A	plugins/commander/commander/commands/exceptions.py
+A	plugins/commander/commander/commands/method.py
+A	plugins/commander/commander/commands/module.py
+A	plugins/commander/commander/commands/result.py
+A	plugins/commander/commander/commands/rollbackimporter.py
+A	plugins/commander/commander/drawing.py
+A	plugins/commander/commander/entry.py
+A	plugins/commander/commander/history.py
+A	plugins/commander/commander/info.py
+A	plugins/commander/commander/transparentwindow.py
+A	plugins/commander/commander/utils.py
+A	plugins/commander/commander/windowhelper.py
+A	plugins/commander/modules/Makefile.am
+A	plugins/commander/modules/bookmark.py
+A	plugins/commander/modules/doc.py
+A	plugins/commander/modules/edit.py
+A	plugins/commander/modules/find/Makefile.am
+A	plugins/commander/modules/find/__init__.py
+A	plugins/commander/modules/find/finder.py
+A	plugins/commander/modules/find/regex.py
+A	plugins/commander/modules/find/test.py
+A	plugins/commander/modules/format.py
+A	plugins/commander/modules/goto.py
+A	plugins/commander/modules/help.py
+A	plugins/commander/modules/move.py
+A	plugins/commander/modules/reload.py
+A	plugins/commander/modules/set.py
+A	plugins/commander/modules/shell.py
+
+commit a4029fc5a41d900a03a992bc47a349474c56936a
+Author: Daniel Nylander <po@danielnylander.se>
+Date:	2010-01-10
+
+    Updated Swedish translation
+
+M	po/sv.po
+
+commit 912f19a6b9cb7eacc9c56af3f3e80deab2ea94e0
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2010-01-08
+
+    Fixed moving bookmark correctly when inserting text at line beginning
+
+M	plugins/bookmarks/gedit-bookmarks-plugin.c
+
+commit ec28a769c74e07c231501c6e473c6a33cf31056f
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:	2010-01-05
+
+    Updated Slovenian translation
+
+M	po/sl.po
+
+commit 69bb6ed8111565a4841c1b5733d94be684e2d4cb
+Author: Claude Paroz <claude@2xlibre.net>
+Date:	2010-01-02
+
+    Updated French translation
+
+    Contributed by Laurent Coudeur and Claude Paroz
+
+M	po/fr.po
+
+commit a7ebf14b5a8575b8e386bc8d344e8006d57c2951
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-12-26
+
+    Use right coding style
+
+M	plugins/drawspaces/gedit-drawspaces-plugin.c
+
+commit 43f1cdef13143ebd52d5d298f2252fdaad0ea765
+Author: Antonio Fernandes C. Neto <fernandes@pelivre.org>
+Date:	2009-12-19
+
+    Updated Brazilian Portuguese translation
+
+M	po/pt_BR.po
+
+commit 3a84a9a35aae1d5bff04c484931f93b3e311c5a2
+Author: Jesse van den Kieboom <jesse.vandenkieboom@epfl.ch>
+Date:	2009-12-14
+
+    Added message bus bindings for bookmarks actions
+
+M	plugins/bookmarks/gedit-bookmarks-plugin.c
+
+commit 67a8532002a4b050ff46748f48e9600f471a477e
+Author: Jorge González <jorgegonz@svn.gnome.org>
+Date:	2009-12-13
+
+    Updated Spanish translation
+
+M	po/es.po
+
+commit f0ba61cc02a2e87a08b456e72e8ecf70fedb8e46
+Author: Amanda Magalhães <amandinhakee@gmail.com>
+Date:	2009-12-06
+
+    Updated Brazilian Portuguese translation.
+
+    Reviewed by Djavan Fagundes <dnoway@gmail.com>
+
+M	po/pt_BR.po
+
+commit 95b38e67a0782aab7dbab8791947720578ed988c
+Author: Jonas Cleve <jonas@jonas-laptop.com>
+Date:	2009-12-03
+
+    Fixed windows-line-ending bug with code comment. Fixes bug #603717.
+
+M	plugins/codecomment/codecomment.py
+
+commit ccabd6362c92a5090f18587a14e26a1ac7b91054
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-12-01
+
+    Remove useless variables.
+
+M	plugins/wordcompletion/gedit-word-completion-plugin.c
+
+commit c28e5d9590b7ac874e3e657c09f6f993757c7d7b
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-12-01
+
+    Release 2.29.3
+
+M	NEWS
+M	README
+M	configure.ac
+M	po/POTFILES.in
+
+commit a3526b925419820c3621e703fa40249d3ee1fb45
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-12-01
+
+    Use an schema file for gconf in the drawspaces plugin. Fixes bug
+    #603346.
+
+M	plugins/drawspaces/Makefile.am
+M	plugins/drawspaces/gedit-drawspaces-plugin.c
+A	plugins/drawspaces/gedit-drawspaces.schemas.in
+
+commit 28b84940771a9a8d94291275ea714db0faa00bde
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-12-01
+
+    Use the new metadata api added in gedit-document.
+
+M	plugins/bookmarks/gedit-bookmarks-plugin.c
+
+commit 0fd016fa44931c003d29f484de28c58738d9741e
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-12-01
+
+    Bump gedit version to 2.29.3
+
+M	configure.ac
+
+commit 218c32ac26f1af2f40ed490e42258bde7edcd36e
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-11-22
+
+    Do not show error if the file doesn't exists, as we are creating it
+    in gedit.
+
+M	plugins/bookmarks/gedit-bookmarks-plugin.c
+
+commit f4002d3376f58798989c1b33064bf72ddd18b149
+Author: António Lima <amrlima@gmail.com>
+Date:	2009-11-21
+
+    Updated Portuguese translation
+
+M	po/pt.po
+
+commit 59f00b8e9f3839783f0f783aaadf1cbf4201d255
+Author: Jorge González <jorgegonz@svn.gnome.org>
+Date:	2009-11-16
+
+    Updated Spanish translation
+
+M	po/es.po
+
+commit 072c274b99abc824d2c47c3e292433dbb6ebbe95
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-11-16
+
+    Release 2.29.2
+
+M	NEWS
+M	README
+M	configure.ac
+
+commit 8095ae0b8c17b3a7bc459dc94d32f07143345b8e
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2009-11-14
+
+    Unregister completion from views on deactivate
+
+M	plugins/wordcompletion/gedit-word-completion-plugin.c
+
+commit 95652867d8c1439b484d8686de580eee7bf569c1
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-11-11
+
+    Use the @VERSION@ variable instead of a hardcoded one.
+
+M	plugins/multiedit/multiedit.gedit-plugin.desktop.in.in
+
+commit 9df4ca17483b6ecc8cf762f6fad85debc492acb3
+Author: Jesse van den Kieboom <jesse.vandenkieboom@epfl.ch>
+Date:	2009-11-11
+
+    Added wordcompletion.gedit-plugin.desktop.in to POTFILES.skip
+
+M	po/POTFILES.skip
+
+commit bdb2ccb701d51fb9c02194dc3ec1c9a1f4d900e1
+Author: Jesse van den Kieboom <jesse.vandenkieboom@epfl.ch>
+Date:	2009-11-11
+
+    Added new plugin: Multi Edit
+
+    The multi edit plugin allows you to edit a document in
+    multiple places at once. When in multi-edit mode, additional
+    insertion points can be inserted in the document. Additionally,
+    in this mode, you can convert a text selection to a column
+    selection and start multi editing in column mode.
+
+M	configure.ac
+A	plugins/multiedit/Makefile.am
+A	plugins/multiedit/multiedit.gedit-plugin.desktop.in.in
+A	plugins/multiedit/multiedit/Makefile.am
+A	plugins/multiedit/multiedit/__init__.py
+A	plugins/multiedit/multiedit/constants.py
+A	plugins/multiedit/multiedit/documenthelper.py
+A	plugins/multiedit/multiedit/signals.py
+A	plugins/multiedit/multiedit/windowhelper.py
+M	po/POTFILES.in
+M	po/POTFILES.skip
+
+commit af2a5b415990e07901f8e82d741efe0c4724b343
+Author: Petr Kovar <pknbe@volny.cz>
+Date:	2009-11-04
+
+    Updated Czech translation by Marek Cernocky
+
+M	po/cs.po
+
+commit bf4d55cc9e2e06891982b6e05a8441ef06efc1b7
+Author: ifelix <ifelix@redhat.com>
+Date:	2009-10-30
+
+    Updated Tamil Translations
+
+M	po/ta.po
+
+commit b8e55a92f212fadcd7f15c9fa7fffbdb93cab846
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-10-29
+
+    Update git.mk from pango
+
+M	git.mk
+
+commit f8b6be169b48b93d3aa0e82cabd0a071869a9eaa
+Author: Daniel Nylander <po@danielnylander.se>
+Date:	2009-10-28
+
+    Updated Swedish translation
+
+M	po/sv.po
+
+commit 7fec542820f34a20370b80f9905a1a40c4889b19
+Author: Manoj Kumar Giri <mgiri@mgiri.csb>
+Date:	2009-10-28
+
+    Updated Oriya Translation
+
+M	po/or.po
+
+commit 5426b1a82be8ae80f04d01b1b8f260757046defc
+Author: Jorge González <jorgegonz@svn.gnome.org>
+Date:	2009-10-27
+
+    Updated Spanish translation
+
+M	po/es.po
+
+commit 7a27785f8b8cecb5314927398d22e8b1e71e5d4a
+Author: krishnababu k <kkrothap@redhat.ocm>
+Date:	2009-10-27
+
+    Updated Telugu Translation
+
+M	po/te.po
+
+commit fb9b1e6de52c1085a71f17b8bb7720fb038a4bc4
+Author: Shankar Prasad <svenkate@redhat.com>
+Date:	2009-10-27
+
+    Updated Kannada(kn) translation
+
+M	po/kn.po
+
+commit a4d94802f489c49fba14501d85806bce86904f58
+Author: Jasper Lievisse Adriaanse <jasper@humppa.nl>
+Date:	2009-10-25
+
+    Fixed typo in configure.ac message
+
+M	configure.ac
+
+commit f7bd7e2f029de1d92050fdcf5190964747998574
+Author: Runa Bhattacharjee <runab@redhat.com>
+Date:	2009-10-21
+
+    Updated Bengali India Translations
+
+M	po/bn_IN.po
+
+commit c75669363d3fb2363d206e73a5da3b9d6600f556
+Author: Sweta Kothari <swkothar@redhat.com>
+Date:	2009-10-20
+
+    Updated Gujarati Translations
+
+M	po/gu.po
+
+commit c8528c0feed5032f4ed7365bf7bd02390a357db0
+Author: Og B. Maciel <ogmaciel@gnome.org>
+Date:	2009-10-18
+
+    Updated Brazilian Portuguese translation.
+
+M	po/pt_BR.po
+
+commit 7ba518f8d316a82e4eb6c82d0d217d8c951e49c6
+Author: Og B. Maciel <ogmaciel@gnome.org>
+Date:	2009-10-18
+
+    Fixing errors reported by inttool.
+
+M	plugins/terminal/terminal.py
+M	po/POTFILES.in
+
+commit f1e2d1cd38086f3379504aa32f9abc6ce43fbbef
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-10-18
+
+    Bump gtksourceview to 2.9.1 and use the non deprecated func.
+
+M	configure.ac
+M	plugins/bookmarks/gedit-bookmarks-plugin.c
+
+commit d3d8604a673c8a234274f2b893489b25c41ad925
+Author: Jorge González <jorgegonz@svn.gnome.org>
+Date:	2009-10-17
+
+    Updated Spanish translation
+
+M	po/es.po
+
+commit d760a75eaee4fed176fc001fcda46830a50b3fca
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-10-16
+
+    Add missing translator
+
+M	NEWS
+
+commit 5b6f659b5df74c38e033f68a884549f0baea45b6
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-10-16
+
+    Release 2.29.1
+
+M	NEWS
+M	README
+M	configure.ac
+
+commit 61ecfadaa4c8e9bb979db06b75f73c0bfdd655ee
+Author: Marek Černocký <marek@manet.cz>
+Date:	2009-10-15
+
+    Update Czech translation.
+
+M	po/cs.po
+
+commit a566cc9d6bb8615ba362411d29094ec2428a02f3
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-10-14
+
+    Added word completion plugin.
+
+M	configure.ac
+A	plugins/wordcompletion/Makefile.am
+A	plugins/wordcompletion/gedit-word-completion-plugin.c
+A	plugins/wordcompletion/gedit-word-completion-plugin.h
+A	plugins/wordcompletion/wordcompletion.gedit-plugin.desktop.in.in
+M	po/POTFILES.in
+
+commit 8960d87b171cc76c95cfd7e53d951b931e74bb5b
+Author: Mario Blättermann <mariobl@gnome.org>
+Date:	2009-10-13
+
+    Updated German translation
+
+M	po/de.po
+
+commit d315a57452a3dafcfe9e880502325f96256255dd
+Author: Daniel Nylander <po@danielnylander.se>
+Date:	2009-10-11
+
+    Updated Swedish translation
+
+M	po/sv.po
+
+commit fc8615af75dd29993ee2afa2301697a7cb0d2382
+Author: Jesse van den Kieboom <jesse@icecrew.nl>
+Date:	2009-10-11
+
+    Added  support for drawing leading, text and trailing spaces
+
+M	plugins/drawspaces/drawspaces.ui
+M	plugins/drawspaces/gedit-drawspaces-plugin.c
+
+commit 8bb4196bf95a051246f54e2ac1096d122939432b
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-09-26
+
+    Release 2.28.0
+
+M	NEWS
+M	README
+M	configure.ac
+
+commit 7a2302b1765c9cda4678fae194d52af7a7af5d29
+Author: Yavor Doganov <yavor@gnu.org>
+Date:	2009-09-20
+
+    Updated Bulgarian translation
+
+M	po/bg.po
+
+commit aa5f3c85beeabd72fa53fdaa3a21bff00414f2c1
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-08-24
+
+    Release 2.27.1
+
+M	NEWS
+M	README
+M	configure.ac
+
+commit d25564c72e76427120c7bf0cbf6fca1fa81f9baa
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-08-23
+
+    Remember the bookmarks using metadata.
+
+    Save the bookmarks when a file is saved using the metadata system
+    provided by gio. Fixes bug #592497
+
+M	plugins/bookmarks/gedit-bookmarks-plugin.c
+
+commit b96ef6b64bad0574d89a481e7073be7a957593c4
+Author: Tomasz Dominikowski <dominikowski@gmail.com>
+Date:	2009-08-20
+
+    Updated Polish translation
+
+M	po/pl.po
+
+commit 72db45606d94bec3e6b4dc9fc994f293a9eee428
+Author: Ani <peter.ani@gmail.com>
+Date:	2009-08-17
+
+    Updated Malayalam translations
+
+M	po/ml.po
+
+commit 37e819e279120ff60109d2e74a58b5e1d831e8fa
+Author: Khaled Hosny <khaledhosny@eglug.org>
+Date:	2009-08-01
+
+    Updated Arabic translation
+
+M	po/ar.po
+
+commit c71ae7a81332379baa80266627104fc537e586f9
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-08-01
+
+    remove executable bit
+
+M	po/ne.po
+
+commit afcccb1a73fdf3764c82b78fedb57bd7e85da139
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-07-26
+
+    Release 2.26.3
+
+M	NEWS
+M	configure.ac
+
+commit 7173b157a8cc78c069a65336bbc38438f5a48407
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-07-26
+
+    Grab focus in the terminal widget
+
+M	plugins/terminal/terminal.py
+
+commit a178771b7d755d7aa11f74eea4b82bf130a1f799
+Author: root <root@murdock.localdomain>
+Date:	2009-07-19
+
+    Grab focus on the terminal on right-click
+
+M	plugins/terminal/terminal.py
+
+commit c0babfb1b83421da6f77af6550121ed4f2403002
+Author: A S Alam <aalam@users.sf.net>
+Date:	2009-07-03
+
+    Updating translation for Punjabi
+
+M	po/pa.po
+
+commit a8c805d57d4cf20fe8d206a7ff5615cd1e17ad09
+Author: Manoj Kumar Giri <mgiri@mgiri.csb>
+Date:	2009-06-29
+
+    Updated Oriya Translation
+
+M	po/or.po
+
+commit 910309a78aee2154f1102d4a5eff85adc848a87e
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-06-27
+
+    Enable silent build with modern automake
+
+M	configure.ac
+
+commit 558071dde8f1448616b88aeedc22e25c29cb7f4b
+Author: Konstantin Lukaschenko <k.lukaschenko@gmail.com>
+Date:	2009-06-24
+
+    Focus terminal after popup menu click. Bug #586847.
+
+M	plugins/terminal/terminal.py
+
+commit a3ed56626eb8a5379594d576e3b7abea7fc8d165
+Author: Runa Bhattacharjee <runab@redhat.com>
+Date:	2009-06-18
+
+    Added Bengali India (bn_IN) to the list of languages
+
+M	po/LINGUAS
+
+commit 329948bd3cd74a9b891e25919941ea809984febd
+Author: Runa Bhattacharjee <runab@redhat.com>
+Date:	2009-06-18
+
+    Adding new translations for Bengali India
+
+A	po/bn_IN.po
+
+commit beed7920f01275bbc4e46a5fbc5a9300e730127e
+Author: Martin Willi <martin@strongswan.org>
+Date:	2009-06-17
+
+    disable drawspaces plugin in deactivate for specific window only
+
+M	plugins/drawspaces/gedit-drawspaces-plugin.c
+
+commit 6628ab2cb8ac222eed8c98d81584725cd0de0f31
+Author: Shankar Prasad <svenkate@redhat.com>
+Date:	2009-06-17
+
+    Updated Kannada translations
+
+M	po/kn.po
+
+commit 952213d92e6599f8c8f8a35605eecef3094e741a
+Author: Amitakhya Phukan <amitakhya@git.gnome.org>
+Date:	2009-06-16
+
+    Added as to LINGUAS
+
+M	po/LINGUAS
+
+commit a647a9ca2510ea4e9de1f9c11d26b4bc1178b3b4
+Author: Amitakhya Phukan <amitakhya@git.gnome.org>
+Date:	2009-06-16
+
+    Updated Assamese translations
+
+A	po/as.po
+
+commit 2e5b81ecc91638a3c4dcd9ad95c74abae1a0a2db
+Author: ifelix <ifelix@redhat.com>
+Date:	2009-06-10
+
+    Tamil translation updated
+
+M	po/ChangeLog
+M	po/ta.po
+
+commit 0432822c9536968b8d3c37a674a65381bba47803
+Author: ifelix <ifelix@redhat.com>
+Date:	2009-06-10
+
+    Tamil translation updated
+
+M	po/ta.po
+
+commit cac02c2c947d677d52c3a450a41f16093ceb3dd5
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-23
+
+    Removed glade files.
+
+D	plugins/drawspaces/drawspaces.glade
+D	plugins/sessionsaver/sessionsaver.glade
+M	po/POTFILES.skip
+
+commit 0034f447793cfe7c6a633f8764af9a405004cb35
+Author: Antón Méixome <meixome@mancomun.org>
+Date:	2009-05-22
+
+    Updated Galician Translation.
+
+M	po/gl.po
+
+commit 0975aeec15434eba75b06b6ab7910d955907f2ee
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-17
+
+    Get the changelog from 2_26_1 instead of 2_26_2.
+
+M	Makefile.am
+
+commit 822ca722941a7d3c5024f40179193068c6b3db54
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-17
+
+    Release 2.26.2
+
+A	ChangeLog
+M	INSTALL
+M	Makefile.am
+M	NEWS
+M	README
+M	configure.ac
+
+commit c81b95108d9f21ee36c25cd2daa49ea9435e2bb7
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-05-05
+
+    Add git.mk to generate automatically the .gitignore file.
+
+M	Makefile.am
+A	git.mk
+M	plugins/Makefile.am
+M	plugins/bookmarks/Makefile.am
+M	plugins/bracketcompletion/Makefile.am
+M	plugins/charmap/Makefile.am
+M	plugins/codecomment/Makefile.am
+M	plugins/colorpicker/Makefile.am
+M	plugins/drawspaces/Makefile.am
+M	plugins/joinlines/Makefile.am
+M	plugins/sessionsaver/Makefile.am
+M	plugins/showtabbar/Makefile.am
+M	plugins/smartspaces/Makefile.am
+M	plugins/terminal/Makefile.am
+
+commit cbfceab5672f7d32237791aa7605e3b969cde4a9
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-05-01
+
+    Fix bug #580594
+
+    Properly disconnect the signal handler when deactivating the plugin
+
+M	plugins/drawspaces/gedit-drawspaces-plugin.c
+
+commit a7addf8bed5d3f65179af4822a23cbda614d658d
+Author: Sweta Kothari <swkothar@redhat.com>
+Date:	2009-04-27
+
+    Committed gu.po file
+
+M	po/gu.po
+
+commit b0336175db5bb753557658b91114967383ce720a
+Author: Mickaël Delahaye <mickael.delahaye@gmail.com>
+Date:	2009-04-20
+
+    Fix terminal plugin
+
+    Bug #579448
+    The 'Change directory' command of the terminal's popup menu used to
+    change the current directory to the parent of the parent directory
+    of the file being edited instead of the parent directory.
+
+M	plugins/terminal/terminal.py
+
+commit 0393f182a9b536b9d688e3df14ddc05c4710ee40
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-04-18
+
+    Whitespace cleanup
+
+    Whitespace cleanup in charmap panel
+
+M	plugins/charmap/gedit-charmap-panel.c
+
+commit f0183f826c8763949d7ef00d228d8bc0f8ab7d42
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-04-18
+
+    Fix compiler warnings
+
+    Fix compiler warnings in the charmap panel
+
+M	plugins/charmap/gedit-charmap-panel.c
+
+commit 0eb723542dafebd1cdd3f6e3516206596442d73e
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-04-18
+
+    Some Cleanups
+
+    Fix some compiler warnings and refactor code a bit
+
+M	plugins/bookmarks/gedit-bookmarks-plugin.c
+
+commit 42979aae56fa2ec78c825c772b0e957c63df7227
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-04-18
+
+    Remove some cruft from configure.ac
+
+    Remove unneeded lines
+
+D	ChangeLog
+M	configure.ac
+M	plugins/Makefile.am
+
+commit 47c647b2dde470613d907ab3bbb3e69d5e48bade
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-04-18
+
+    Autogenerate ChangeLog
+
+    Archive old ChangeLog and autogenerate it from the git log
+
+M	ChangeLog
+C100	ChangeLog	ChangeLog-20090414
+M	Makefile.am
+
+commit 3963115e862b36c93aaf1cee35ed90fc21e2fd48
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
+Date:	2009-04-18
+
+    Removed GNOME_DOC_INIT.
+
+    We don't have a help directory so this is useless in the module.
+
+M	configure.ac
+
+commit b4209d82d35085b2b1991eef3f1d07c8f7ecb42b
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-04-17
+
+    Make xml well formed
+
+    Fix typo that made the doap file not well formed xml
+
+M	gedit-plugins.doap
+
+commit 9dc3687a67963fe8edc5b260e6fc78438afff285
+Author: Paolo Borelli <porelli@gnome.org>
+Date:	2009-04-17
+
+    Add gedit-plugins.doap
+
+    Add doap file used by cgit
+
+A	gedit-plugins.doap
+
+commit 0e20692ae96b25994f3258e4701c7c14406019e1
+Author: Paolo Borelli <pborelli@src.gnome.org>
+Date:	2009-04-11
+
+    fix warnings
+
+    svn path=/trunk/; revision=460
+
+M	plugins/drawspaces/gedit-drawspaces-plugin.c
+
+commit d7c615ef376ee9dac5a51ed812afb832d1cefb5a
+Author: Paolo Borelli <pborelli@src.gnome.org>
+Date:	2009-04-11
+
+    2.26.1
+
+    svn path=/trunk/; revision=458
+
+M	ChangeLog
+M	NEWS
+M	README
+M	configure.ac
+M	po/ChangeLog
+
+commit a2ce4166f9f41383c90aab65bd35a50c53abb381
+Author: Ignacio Casal Quinteiro <nacho.resa@gmail.com>
+Date:	2009-03-31
+
+    Draw spaces should be enabled first time the plugin is activated.
+
+    2009-03-31	Ignacio Casal Quinteiro  <nacho.resa@gmail.com>
+
+	    * plugins/drawspaces/gedit-drawspaces-plugin.c:
+	    Draw spaces should be enabled first time the plugin is
+    activated.
+
+
+    svn path=/trunk/; revision=457
+
+M	ChangeLog
+M	plugins/drawspaces/gedit-drawspaces-plugin.c

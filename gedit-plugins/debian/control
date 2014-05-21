@@ -1,0 +1,60 @@
+Source: gedit-plugins
+Section: gnome
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Loic Minier <lool@dooz.org>
+Uploaders: Andrea Veri <andrea.veri89@gmail.com>, Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Josselin Mouette <joss@debian.org>, Sebastian Dröge <slomo@debian.org>
+Build-Depends: cdbs,
+               debhelper (>= 5),
+               gnome-doc-utils (>= 0.3.2),
+               intltool (>= 0.35.0),
+               libglib2.0-dev (>= 2.16.0),
+               libgtk2.0-dev (>= 2.13.0),
+               libgconf2-dev (>= 1.1.11),
+               libgtksourceview2.0-dev (>= 2.9.1),
+               gedit-dev (>= 2.29.3),
+               python-dev (>= 2.3),
+               python-gobject-dev (>= 2.15.4),
+               python-gtk2-dev (>= 2.12.0),
+               python-gtksourceview2 (>= 2.2.0),
+               libgucharmap2-dev (>= 2.23.0),
+               libvte-dev (>= 1:0.19.4),
+               gnome-pkg-tools (>= 0.11),
+               python-support (>= 0.7.1)
+Standards-Version: 3.8.3
+Homepage: http://live.gnome.org/Gedit/Plugins
+Vcs-Svn: svn://svn.debian.org/svn/pkg-gnome/packages/unstable/gedit-plugins
+Vcs-Browser: http://svn.debian.org/viewsvn/pkg-gnome/packages/unstable/gedit-plugins
+XS-Python-Version: >= 2.3
+
+Package: gedit-plugins
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${python:Depends},
+         gedit (>= 2.25.4),
+         python-gtk2 (>= 2.12.0),
+         python-gobject (>= 2.15.4),
+         python-gconf,
+         python-glade2,
+         python-vte (>= 1:0.19.4),
+         python-gtksourceview2 (>= 2.2.0)
+Description: set of plugins for gedit
+ gedit-plugins contain a set of plugins for gedit, GNOME's text editor.
+ .
+ The following plugins are included:
+  * Bookmarks: Easy document navigation with bookmarks
+  * Bracket Completion: Automatically adds closing brackets.
+  * Commander: Command line interface for advanced editing
+  * Multi Edit: Edit document in multiple places at once
+  * Code comment: Comment out or uncomment a selected block of code.
+  * Join/Split Lines: Join several lines or split long ones
+  * Color Picker: Pick a color from a dialog and insert its hexadecimal representation.
+  * Session Saver: Save and restore your working sessions
+  * Draw Spaces: Draw Spaces and Tabs
+  * Word Completion: Word completion using the completion framework
+  * Smart Spaces: Forget you're not using tabulations.
+  * Character Map: Insert special characters just by clicking on them.
+  * Show/Hide Tabbar: Add a menu entry to show/hide the tabbar.
+  * Embedded Terminal: Embed a terminal in the bottom pane.
+ 

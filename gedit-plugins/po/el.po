@@ -1,0 +1,235 @@
+# translation of el.po to el
+# GNOME gedit Greek translation.
+# Copyright (C) 2000, 2001, 2002, 2007 Free Software Foundation, Inc.
+#
+# spyros:
+#   initial translation
+# simos:
+#
+# Spiros Papadimitriou <spapadim+@cs.cmu.edu>, 2000.
+# Simos Xenitellis <simos@hellug.gr>, 2000, 2001, 2002.
+# Kostas Papadimas <pkst@gmx.net>, 2002.
+#   updated: 37 translated messages, 52 fuzzy translations, 116 untranslated messages.
+# simos: 248 messages, 02Mar2001.
+# kostas: 523 messages, 30Oct2002, completed translation.
+# kostas: updated and finished translation for Gnome 2.1x, 02Dec2002.
+# kostas: 666 (uh?..) messages, 06Jan2003, one more update.
+# Dimitris Glezos <dimitris@glezos.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: el\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-01-27 13:47+0200\n"
+"PO-Revision-Date: 2007-02-03 04:31+0000\n"
+"Last-Translator: Dimitris Glezos <dimitris@glezos.com>\n"
+"Language-Team: el <fedora-trans-el@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../plugins/bracketcompletion/bracketcompletion.gedit-plugin.desktop.in.h:1
+msgid "Automatically adds closing brackets."
+msgstr "Εισάγει αυτόματα παρενθέσεις που κλείνουν."
+
+#: ../plugins/bracketcompletion/bracketcompletion.gedit-plugin.desktop.in.h:2
+msgid "Bracket Completion"
+msgstr "Συμπλήρωση παρενθέσεων"
+
+#: ../plugins/charmap/charmap.gedit-plugin.desktop.in.h:1
+#: ../plugins/charmap/gedit-charmap-plugin.c:254
+msgid "Character Map"
+msgstr "Πίνακας χαρακτήρων"
+
+#: ../plugins/charmap/charmap.gedit-plugin.desktop.in.h:2
+msgid "Insert special characters just by clicking on them."
+msgstr "Εισαγωγή ειδικών χαρακτήρων απλά κάνοντας κλικ πάνω τους."
+
+#: ../plugins/codecomment/codecomment.gedit-plugin.desktop.in.h:1
+msgid "Code comment"
+msgstr "Σχολιασμός κώδικα"
+
+#: ../plugins/codecomment/codecomment.gedit-plugin.desktop.in.h:2
+msgid "Comment out or uncomment a selected block of code."
+msgstr "Σχολιάστε και απο-σχολιάστε ένα επιλεγμένο τμήμα κώδικα."
+
+#: ../plugins/codecomment/codecomment.py:210
+msgid "Co_mment Code"
+msgstr "Σ_χολιάστε κώδικα"
+
+#: ../plugins/codecomment/codecomment.py:212
+msgid "Comment the selected code"
+msgstr "Σχολιάστε τον επιλεγμένο κώδικα"
+
+#: ../plugins/codecomment/codecomment.py:216
+msgid "U_ncomment Code"
+msgstr "Α_ποσχολιάστε κώδικα"
+
+#: ../plugins/codecomment/codecomment.py:218
+msgid "Uncomment the selected code"
+msgstr "Αποσχολιάστε τον επιλεγμένο κώδικα"
+
+#. ex:ts=4:et:
+#: ../plugins/colorpicker/colorpicker.gedit-plugin.desktop.in.h:1
+msgid "Color Picker"
+msgstr "Επιλογή χρωμάτων"
+
+#: ../plugins/colorpicker/colorpicker.gedit-plugin.desktop.in.h:2
+msgid "Pick a color from a dialog and insert its hexadecimal representation."
+msgstr ""
+"Επιλέξτε ένα χρώμα από ένα διάλογο και εισάγετε τη δεκαεξαδική του "
+"αναπαράσταση."
+
+#: ../plugins/colorpicker/colorpicker.py:73
+msgid "Pick _Color..."
+msgstr ""
+
+#: ../plugins/colorpicker/colorpicker.py:74
+msgid "Pick a color from a dialog"
+msgstr "Επιλογή χρωμάτων από ένα διάλογο"
+
+#: ../plugins/colorpicker/colorpicker.py:220
+msgid "Pick Color"
+msgstr ""
+
+#: ../plugins/colorpicker/colorpicker.py:226
+msgid "_Insert"
+msgstr "_Εισαγωγή"
+
+#: ../plugins/drawspaces/drawspaces.gedit-plugin.desktop.in.h:1
+#, fuzzy
+msgid "Draw Spaces"
+msgstr "Έξυπνα διαστήματα"
+
+#: ../plugins/drawspaces/drawspaces.gedit-plugin.desktop.in.h:2
+msgid "Draw Spaces and Tabs"
+msgstr ""
+
+#: ../plugins/drawspaces/drawspaces.glade.h:1
+msgid "Draw non-breaking spaces"
+msgstr ""
+
+#: ../plugins/drawspaces/drawspaces.glade.h:2
+#, fuzzy
+msgid "Draw spaces"
+msgstr "Έξυπνα διαστήματα"
+
+#: ../plugins/drawspaces/drawspaces.glade.h:3
+msgid "Draw tabs"
+msgstr ""
+
+#: ../plugins/drawspaces/drawspaces.glade.h:4
+msgid "Drawing color:"
+msgstr ""
+
+#. ex:ts=4:et:
+#: ../plugins/joinlines/joinlines.gedit-plugin.desktop.in.h:1
+msgid "Join several lines or split long ones"
+msgstr "Ενώστε πολλές γραμμές ή χωρίστε μία μεγάλη"
+
+#: ../plugins/joinlines/joinlines.gedit-plugin.desktop.in.h:2
+msgid "Join/Split Lines"
+msgstr "Ενώστε/χωρίστε γραμμές"
+
+#: ../plugins/joinlines/joinlines.py:56
+msgid "_Join Lines"
+msgstr "Ε_νώστε γραμμές"
+
+#: ../plugins/joinlines/joinlines.py:57
+msgid "Join the selected lines"
+msgstr "Ενώστε τις επιλεγμένες γραμμές"
+
+#: ../plugins/joinlines/joinlines.py:59
+msgid "_Split Lines"
+msgstr "Χ_ωρίστε γραμμές"
+
+#: ../plugins/joinlines/joinlines.py:60
+msgid "Split the selected lines"
+msgstr "Χωρίστε τις επιλεγμένες γραμμές"
+
+#: ../plugins/showtabbar/gedit-show-tabbar-plugin.c:208
+msgid "Tab_bar"
+msgstr "Tab_bar"
+
+#: ../plugins/showtabbar/gedit-show-tabbar-plugin.c:209
+msgid "Show or hide the tabbar in the current window"
+msgstr "Αλλαγή της ορατότητας του tabbar στο τρέχον παράθυρο"
+
+#: ../plugins/showtabbar/gedit-show-tabbar-plugin.schemas.in.h:1
+msgid "Tabbar is Visible"
+msgstr "Το tabbar είναι ορατό"
+
+#: ../plugins/showtabbar/gedit-show-tabbar-plugin.schemas.in.h:2
+msgid "Whether the tabbar should be visible in editing windows."
+msgstr "Αν το tabbar θα είναι ορατή στα παράθυρα επεξεργασίας."
+
+#: ../plugins/showtabbar/showtabbar.gedit-plugin.desktop.in.h:1
+msgid "Add a menu entry to show/hide the tabbar."
+msgstr "Προσθέστε μια καταχώρηση μενού για εμφάνιση/απόκρυψη του tabbar."
+
+#: ../plugins/showtabbar/showtabbar.gedit-plugin.desktop.in.h:2
+msgid "Show/Hide Tabbar"
+msgstr "Εμφάνιση/απόκρυψη του Tabbar"
+
+#: ../plugins/sessionsaver/dialogs.py:165
+msgid "Session Name"
+msgstr "Όνομα συνεδρίας"
+
+#. ex:ts=4:et:
+#: ../plugins/sessionsaver/sessionsaver.gedit-plugin.desktop.in.h:1
+msgid "Save and restore your working sessions"
+msgstr "Αποθηκεύστε και ανακτήστε τις ενεργές συνεδρίες σας"
+
+#: ../plugins/sessionsaver/sessionsaver.gedit-plugin.desktop.in.h:2
+msgid "Session Saver"
+msgstr "Αποθήκευση συνεδριών"
+
+#: ../plugins/sessionsaver/sessionsaver.glade.h:1
+msgid "Session name:"
+msgstr "Όνομα συνεδρίας:"
+
+#: ../plugins/smartspaces/smartspaces.gedit-plugin.desktop.in.h:1
+msgid "Forget you're not using tabulations."
+msgstr "Αδιαφορία μη-χρήσης tabulations."
+
+#: ../plugins/smartspaces/smartspaces.gedit-plugin.desktop.in.h:2
+msgid "Smart Spaces"
+msgstr "Έξυπνα διαστήματα"
+
+#: ../plugins/terminal/terminal.gedit-plugin.desktop.in.h:1
+msgid "Embed a terminal in the bottom pane."
+msgstr "Ενσωμάτωση ενός τερματικού στο κάτω ταμπλώ."
+
+#: ../plugins/terminal/terminal.gedit-plugin.desktop.in.h:2
+msgid "Embedded Terminal"
+msgstr "Ενσωματωμένο τερματικό"
+
+#: ../plugins/terminal/terminal.py:210
+msgid "Terminal"
+msgstr "Τερματικό"
+
+#: ../plugins/terminal/terminal.py:231
+msgid "C_hange Directory"
+msgstr "Α_λλαγή καταλόγου"
+
+#~ msgid "_Color picker"
+#~ msgstr "Επιλογή _χρωμάτων"
+
+#~ msgid "Color picker"
+#~ msgstr "Επιλογή χρωμάτων"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-cancel"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "gtk-delete"
+#~ msgstr "gtk-delete"
+
+#~ msgid "gtk-open"
+#~ msgstr "gtk-open"
+
+#~ msgid "gtk-save"
+#~ msgstr "gtk-save"
