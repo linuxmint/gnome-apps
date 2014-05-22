@@ -17,7 +17,6 @@ Build-Depends: cdbs,
                python-gobject-dev (>= 2.15.4),
                python-gtk2-dev (>= 2.12.0),
                python-gtksourceview2 (>= 2.2.0),
-               libgucharmap2-dev (>= 2.23.0),
                libvte-dev (>= 1:0.19.4),
                gnome-pkg-tools (>= 0.11),
                python-support (>= 0.7.1)
@@ -54,7 +53,6 @@ Description: set of plugins for gedit
   * Draw Spaces: Draw Spaces and Tabs
   * Word Completion: Word completion using the completion framework
   * Smart Spaces: Forget you're not using tabulations.
-  * Character Map: Insert special characters just by clicking on them.
   * Show/Hide Tabbar: Add a menu entry to show/hide the tabbar.
   * Embedded Terminal: Embed a terminal in the bottom pane.
  
