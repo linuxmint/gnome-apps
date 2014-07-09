@@ -49,8 +49,8 @@ have_rar (void)
 
 
 static time_t
-mktime_from_string (char *date_s,
-		    char *time_s)
+mktime_from_string (const char *date_s,
+		    const char *time_s)
 {
 	struct tm   tm = {0, };
 	char      **fields;
@@ -83,6 +83,93 @@ mktime_from_string (char *date_s,
 	return mktime (&tm);
 }
 
+/* Sample rar-5 listing output:
+
+RAR 5.00 beta 8   Copyright (c) 1993-2013 Alexander Roshal   22 Aug 2013
+Trial version             Type RAR -? for help
+
+Archive: test.rar
+Details: RAR 4
+
+ Attributes      Size    Packed Ratio   Date   Time   Checksum  Name
+----------- ---------  -------- ----- -------- -----  --------  ----
+ -rw-r--r--       453       304  67%  05-09-13 09:55  56DA5EF3  loremipsum.txt
+----------- ---------  -------- ----- -------- -----  --------  ----
+                  453       304  67%                            1
+
+ *
+ * Sample rar-4 listing output:
+ *
+
+RAR 4.20   Copyright (c) 1993-2012 Alexander Roshal   9 Jun 2012
+Trial version             Type RAR -? for help
+
+Archive test.rar
+
+Pathname/Comment
+                  Size   Packed Ratio  Date   Time     Attr      CRC   Meth Ver
+-------------------------------------------------------------------------------
+ loremipsum.txt
+                   453      304  67% 05-09-13 09:55 -rw-r--r-- 56DA5EF3 m3b 2.9
+-------------------------------------------------------------------------------
+    1              453      304  67%
+
+ */
+
+static gboolean
+attribute_field_with_space (char *line)
+{
+	/* sometimes when the archive is encrypted the attributes field is
+	 * like this: "*   ..A...."
+	 * */
+	return ((line[0] != ' ') && (line[1] == ' '));
+}
+
+static void
+parse_name_field (char         *line,
+		  FrCommandRar *rar_comm)
+{
+	char     *name_field;
+	FileData *fdata;
+
+	rar_comm->fdata = fdata = file_data_new ();
+
+	/* read file name. */
+
+	fdata->encrypted = (line[0] == '*') ? TRUE : FALSE;
+
+	if (rar_comm->rar5)
+		/* rar-5 output adds trailing spaces to short file names :( */
+		name_field = g_strchomp (g_strdup (_g_str_get_last_field (line, attribute_field_with_space (line) ? 9 : 8)));
+	else
+		name_field = g_strdup (line + 1);
+
+	if (*name_field == '/') {
+		fdata->full_path = g_strdup (name_field);
+		fdata->original_path = fdata->full_path;
+	}
+	else {
+		fdata->full_path = g_strconcat ("/", name_field, NULL);
+		fdata->original_path = fdata->full_path + 1;
+	}
+
+	fdata->link = NULL;
+	fdata->path = _g_path_remove_level (fdata->full_path);
+
+	g_free (name_field);
+}
+
+static gboolean
+attr_field_is_dir (const char   *attr_field,
+                   FrCommandRar *rar_comm)
+{
+        if ((attr_field[0] == 'd') ||
+            (rar_comm->rar5 && attr_field[3] == 'D') ||
+            (!rar_comm->rar5 && attr_field[1] == 'D'))
+                return TRUE;
+
+        return FALSE;
+}
 
 static void
 process_line (char     *line,
@@ -91,14 +178,24 @@ process_line (char     *line,
 	FrCommand     *comm = FR_COMMAND (data);
 	FrCommandRar  *rar_comm = FR_COMMAND_RAR (comm);
 	char         **fields;
-	const char    *name_field;
 
 	g_return_if_fail (line != NULL);
 
 	if (! rar_comm->list_started) {
-		if (strncmp (line, "--------", 8) == 0) {
+		if (strncmp (line, "RAR ", 4) == 0) {
+			int version;
+			sscanf (line, "RAR %d.", &version);
+			rar_comm->rar5 = (version >= 5);
+		}
+		else if (strncmp (line, "UNRAR ", 6) == 0) {
+			int version;
+			sscanf (line, "UNRAR %d.", &version);
+			rar_comm->rar5 = (version >= 5);
+		}
+		else if (strncmp (line, "--------", 8) == 0) {
 			rar_comm->list_started = TRUE;
-			rar_comm->odd_line = TRUE;
+			if (! rar_comm->rar5)
+			    rar_comm->rar4_odd_line = TRUE;
 		}
 		else if (strncmp (line, "Volume ", 7) == 0)
 			FR_ARCHIVE (comm)->multi_volume = TRUE;
@@ -110,24 +207,45 @@ process_line (char     *line,
 		return;
 	}
 
-	if (! rar_comm->odd_line) {
-		FileData *fdata;
+	if (rar_comm->rar4_odd_line || rar_comm->rar5)
+		parse_name_field (line, rar_comm);
+
+	if (! rar_comm->rar4_odd_line) {
+		FileData   *fdata;
+		const char *size_field, *ratio_field, *date_field, *time_field, *attr_field;
 
 		fdata = rar_comm->fdata;
 
 		/* read file info. */
 
-		fields = _g_str_split_line (line, 6);
+		fields = _g_str_split_line (line, attribute_field_with_space (line) ? 7 : 6);
+		if (rar_comm->rar5) {
+			int offset = attribute_field_with_space (line) ? 1 : 0;
+
+			size_field = fields[1+offset];
+			ratio_field = fields[3+offset];
+			date_field = fields[4+offset];
+			time_field = fields[5+offset];
+			attr_field = fields[0+offset];
+		}
+		else {
+			size_field = fields[0];
+			ratio_field = fields[2];
+			date_field = fields[3];
+			time_field = fields[4];
+			attr_field = fields[5];
+		}
 		if (g_strv_length (fields) < 6) {
 			/* wrong line format, treat this line as a filename line */
 			g_strfreev (fields);
 			file_data_free (rar_comm->fdata);
 			rar_comm->fdata = NULL;
-			rar_comm->odd_line = TRUE;
+			rar_comm->rar4_odd_line = TRUE;
+			parse_name_field (line, rar_comm);
 		}
 		else {
-			if ((strcmp (fields[2], "<->") == 0)
-			    || (strcmp (fields[2], "<--") == 0))
+			if ((strcmp (ratio_field, "<->") == 0)
+			    || (strcmp (ratio_field, "<--") == 0))
 			{
 				/* ignore files that span more volumes */
 
@@ -135,10 +253,10 @@ process_line (char     *line,
 				rar_comm->fdata = NULL;
 			}
 			else {
-				fdata->size = g_ascii_strtoull (fields[0], NULL, 10);
-				fdata->modified = mktime_from_string (fields[3], fields[4]);
+				fdata->size = g_ascii_strtoull (size_field, NULL, 10);
+				fdata->modified = mktime_from_string (date_field, time_field);
 
-				if ((fields[5][1] == 'D') || (fields[5][0] == 'd')) {
+				if (attr_field_is_dir (attr_field, rar_comm)) {
 					char *tmp;
 
 					tmp = fdata->full_path;
@@ -154,7 +272,7 @@ process_line (char     *line,
 				}
 				else {
 					fdata->name = g_strdup (_g_path_get_basename (fdata->full_path));
-					if (fields[5][0] == 'l')
+					if (attr_field[0] == 'l')
 						fdata->link = g_strdup (_g_path_get_basename (fdata->full_path));
 				}
 
@@ -166,34 +284,8 @@ process_line (char     *line,
 		}
 	}
 
-	if (rar_comm->odd_line) {
-		FileData *fdata;
-
-		rar_comm->fdata = fdata = file_data_new ();
-
-		/* read file name. */
-
-		fdata->encrypted = (line[0] == '*') ? TRUE : FALSE;
-
-		name_field = line + 1;
-
-		if (*name_field == '/') {
-			fdata->full_path = g_strdup (name_field);
-			fdata->original_path = fdata->full_path;
-		}
-		else {
-			fdata->full_path = g_strconcat ("/", name_field, NULL);
-			fdata->original_path = fdata->full_path + 1;
-		}
-
-		fdata->link = NULL;
-		fdata->path = _g_path_remove_level (fdata->full_path);
-	}
-	else {
-
-	}
-
-	rar_comm->odd_line = ! rar_comm->odd_line;
+	if (! rar_comm->rar5)
+		rar_comm->rar4_odd_line = ! rar_comm->rar4_odd_line;
 }
 
 
@@ -568,6 +660,11 @@ fr_command_rar_handle_error (FrCommand *comm,
 		char *line = scan->data;
 
 		if (strstr (line, "password incorrect") != NULL) {
+			fr_error_take_gerror (error, g_error_new_literal (FR_ERROR, FR_ERROR_ASK_PASSWORD, ""));
+			break;
+		}
+
+		if (strstr (line, "password is incorrect") != NULL) {
 			fr_error_take_gerror (error, g_error_new_literal (FR_ERROR, FR_ERROR_ASK_PASSWORD, ""));
 			break;
 		}
