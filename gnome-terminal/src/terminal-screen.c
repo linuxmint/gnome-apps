@@ -973,9 +973,6 @@ terminal_screen_profile_notify_cb (TerminalProfile *profile,
   if (!prop_name || prop_name == I_(TERMINAL_PROFILE_SCROLL_ON_OUTPUT))
     vte_terminal_set_scroll_on_output (vte_terminal,
                                        terminal_profile_get_property_boolean (profile, TERMINAL_PROFILE_SCROLL_ON_OUTPUT));
-   if (!prop_name || prop_name == I_(TERMINAL_PROFILE_ALTERNATE_SCREEN_SCROLL))
-     vte_terminal_set_alternate_screen_scroll (vte_terminal,
-                                        terminal_profile_get_property_boolean (profile, TERMINAL_PROFILE_ALTERNATE_SCREEN_SCROLL));
   if (!prop_name ||
       prop_name == I_(TERMINAL_PROFILE_SCROLLBACK_LINES) ||
       prop_name == I_(TERMINAL_PROFILE_SCROLLBACK_UNLIMITED))
