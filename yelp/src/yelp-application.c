@@ -40,6 +40,8 @@
 #include "yelp-application.h"
 #include "yelp-window.h"
 
+#define DEFAULT_URI "help:linuxmint"
+
 static gboolean editor_mode = FALSE;
 
 enum {
@@ -387,10 +389,7 @@ yelp_application_command_line (GApplication            *application,
     argv = g_application_command_line_get_arguments (cmdline, NULL);
 
     if (argv[1] == NULL) {
-        if (strcmp(getenv("XDG_CURRENT_DESKTOP"), "GNOME"))
-            open_uri (app, yelp_uri_new ("help:ubuntu-help"), FALSE);
-        else
-            open_uri (app, yelp_uri_new ("help:gnome-help"), FALSE);
+        open_uri (app, yelp_uri_new (DEFAULT_URI), FALSE);
     }
 
     for (i = 1; argv[i]; i++)
@@ -407,10 +406,7 @@ yelp_application_new_window (YelpApplication  *app,
 {
     YelpUri *yuri;
 
-    if (strcmp(getenv("XDG_CURRENT_DESKTOP"), "GNOME"))
-        yuri = yelp_uri_new (uri ? uri : "help:ubuntu-help");
-    else
-        yuri = yelp_uri_new (uri ? uri : "help:gnome-help");
+    yuri = yelp_uri_new (uri ? uri : DEFAULT_URI);
 
     yelp_application_new_window_uri (app, yuri);
 }
