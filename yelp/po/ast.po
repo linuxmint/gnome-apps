@@ -1,0 +1,962 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: yelp.master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=yelp&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-09-07 06:50+0000\n"
+"PO-Revision-Date: 2011-09-07 23:15+0100\n"
+"Last-Translator: ivarela <ivarela@softastur.org>\n"
+"Language-Team: Asturian <alministradores@softastur.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"X-Poedit-Language: Asturian\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../libyelp/yelp-bz2-decompressor.c:146
+#: ../libyelp/yelp-lzma-decompressor.c:155
+msgid "Invalid compressed data"
+msgstr "Datos comprimíos inválidos"
+
+#: ../libyelp/yelp-bz2-decompressor.c:152
+#: ../libyelp/yelp-lzma-decompressor.c:161
+msgid "Not enough memory"
+msgstr "Nun hai memoria abonda"
+
+#: ../libyelp/yelp-docbook-document.c:282
+#: ../libyelp/yelp-info-document.c:238
+#: ../libyelp/yelp-mallard-document.c:271
+#: ../libyelp/yelp-mallard-document.c:423
+#: ../libyelp/yelp-man-document.c:282
+#, c-format
+msgid "The page ‘%s’ was not found in the document ‘%s’."
+msgstr "La páxina «%s» nun s'atopó nel documentu «%s»."
+
+#: ../libyelp/yelp-docbook-document.c:317
+#: ../libyelp/yelp-info-document.c:372
+#: ../libyelp/yelp-man-document.c:417
+#, c-format
+msgid "The file does not exist."
+msgstr "El ficheru nun existe."
+
+#: ../libyelp/yelp-docbook-document.c:327
+#: ../libyelp/yelp-info-document.c:382
+#: ../libyelp/yelp-man-document.c:427
+#, c-format
+msgid "The file ‘%s’ does not exist."
+msgstr "El ficheru ‘%s’ nun esiste."
+
+#: ../libyelp/yelp-docbook-document.c:342
+#, c-format
+msgid "The file ‘%s’ could not be parsed because it is not a well-formed XML document."
+msgstr "El ficheru ‘%s’ nun pudo analizase porque nun correspuende a un documentu XML correutu."
+
+#: ../libyelp/yelp-docbook-document.c:355
+#, c-format
+msgid "The file ‘%s’ could not be parsed because one or more of its included files is not a well-formed XML document."
+msgstr "El ficheru ‘%s’ nun pudo analizase  porque ún o más de los sos ficheros inxertos nun son documentos XML correutos."
+
+#: ../libyelp/yelp-docbook-document.c:765
+msgid "Unknown"
+msgstr "Desconocíu"
+
+#: ../libyelp/yelp-docbook-document.c:826
+#: ../libyelp/yelp-info-document.c:315
+#: ../libyelp/yelp-man-document.c:359
+#, c-format
+msgid "The requested page was not found in the document ‘%s’."
+msgstr "Nun s'atopó la páxina solicitada nel documentu «%s»."
+
+#: ../libyelp/yelp-document.c:266
+msgid "Indexed"
+msgstr "Indizáu"
+
+#: ../libyelp/yelp-document.c:267
+msgid "Whether the document content has been indexed"
+msgstr "Indica si s'indizó'l conteníu del documentu"
+
+#: ../libyelp/yelp-document.c:275
+msgid "Document URI"
+msgstr "URI del documentu"
+
+#: ../libyelp/yelp-document.c:276
+msgid "The URI which identifies the document"
+msgstr "El URI qu'identifica'l documentu"
+
+#: ../libyelp/yelp-document.c:956
+#, c-format
+msgid "Search results for “%s”"
+msgstr "Resultaos de la gueta pa «%s»"
+
+#: ../libyelp/yelp-document.c:968
+#, c-format
+msgid "No matching help pages found in “%s”."
+msgstr "Nun s'alcontraron páxines d'ayuda coincidentes en «%s»."
+
+#: ../libyelp/yelp-document.c:974
+msgid "No matching help pages found."
+msgstr "Nun s'alcontraron páxines d'ayuda coincidentes."
+
+#: ../libyelp/yelp-error.c:37
+#, c-format
+msgid "An unknown error occurred."
+msgstr "Hebo un fallu desconocíu"
+
+#: ../libyelp/yelp-help-list.c:478
+#: ../libyelp/yelp-help-list.c:487
+msgid "All Help Documents"
+msgstr "Tolos documentos d'ayuda"
+
+#: ../libyelp/yelp-info-document.c:397
+#, c-format
+msgid "The file ‘%s’ could not be parsed because it is not a well-formed info page."
+msgstr "El ficheru ‘%s’ nun pudo analizase porque nun ye una páxina d'información correuta."
+
+#: ../libyelp/yelp-location-entry.c:329
+msgid "View"
+msgstr "Ver"
+
+#: ../libyelp/yelp-location-entry.c:330
+msgid "A YelpView instance to control"
+msgstr "Una instancia de YelpApplication pa controlar"
+
+#: ../libyelp/yelp-location-entry.c:345
+msgid "Bookmarks"
+msgstr "Marcadores"
+
+#: ../libyelp/yelp-location-entry.c:346
+msgid "A YelpBookmarks implementation instance"
+msgstr "Una implementación d'instancia de YelpBookmarks"
+
+#: ../libyelp/yelp-location-entry.c:362
+msgid "Enable Search"
+msgstr "Activar gueta"
+
+#: ../libyelp/yelp-location-entry.c:363
+msgid "Whether the location entry can be used as a search field"
+msgstr "Indica si la entrada d'allugamientu se puede usar como un campu de gueta"
+
+#: ../libyelp/yelp-location-entry.c:433
+#: ../src/yelp-window.c:270
+msgid "Search..."
+msgstr "Guetar…"
+
+#: ../libyelp/yelp-location-entry.c:776
+msgid "Clear the search text"
+msgstr "Llimpiar el testu de gueta"
+
+#: ../libyelp/yelp-location-entry.c:825
+#: ../libyelp/yelp-location-entry.c:1523
+msgid "Bookmark this page"
+msgstr "Amestar esta páxina a marcadores"
+
+#: ../libyelp/yelp-location-entry.c:833
+#: ../libyelp/yelp-location-entry.c:1531
+msgid "Remove bookmark"
+msgstr "Desaniciar marcador"
+
+#: ../libyelp/yelp-location-entry.c:1388
+msgid "Loading"
+msgstr "Cargando"
+
+#: ../libyelp/yelp-mallard-document.c:311
+#, c-format
+msgid "The directory ‘%s’ does not exist."
+msgstr "El direutoriu «%s» nun esiste."
+
+#: ../libyelp/yelp-settings.c:154
+msgid "GtkSettings"
+msgstr "GtkSettings"
+
+#: ../libyelp/yelp-settings.c:155
+msgid "A GtkSettings object to get settings from"
+msgstr "Un oxetu GtkSettings del qu'obtener la configuración"
+
+#: ../libyelp/yelp-settings.c:163
+msgid "GtkIconTheme"
+msgstr "GtkIconTheme"
+
+#: ../libyelp/yelp-settings.c:164
+msgid "A GtkIconTheme object to get icons from"
+msgstr "Un oxetu GtkIconTheme del qu'obtener los iconos"
+
+#: ../libyelp/yelp-settings.c:172
+msgid "Font Adjustment"
+msgstr "Axuste de fonte"
+
+#: ../libyelp/yelp-settings.c:173
+msgid "A size adjustment to add to font sizes"
+msgstr "Axuste de tamañu p'amestar a los tamaños de fonte"
+
+#: ../libyelp/yelp-settings.c:181
+msgid "Show Text Cursor"
+msgstr "Amosar el cursor de textu"
+
+#: ../libyelp/yelp-settings.c:182
+msgid "Show the text cursor or caret for accessible navigation"
+msgstr "Amosar el cursor de testu pal restolamientu accesible"
+
+#: ../libyelp/yelp-settings.c:190
+msgid "Editor Mode"
+msgstr "Mou editor"
+
+#: ../libyelp/yelp-settings.c:191
+msgid "Enable features useful to editors"
+msgstr "Activar carauterístiques útiles pa editores"
+
+#: ../libyelp/yelp-sqlite-storage.c:150
+msgid "Database filename"
+msgstr "Nome de base de datos"
+
+#: ../libyelp/yelp-sqlite-storage.c:151
+msgid "The filename of the sqlite database"
+msgstr "El nome de la base de datos sqlite"
+
+#: ../libyelp/yelp-transform.c:171
+msgid "XSLT Stylesheet"
+msgstr "Fueya d'estilu XSLT"
+
+#: ../libyelp/yelp-transform.c:172
+msgid "The location of the XSLT stylesheet"
+msgstr "L'allugamientu de la fueya d'estilu XSLT"
+
+#: ../libyelp/yelp-transform.c:379
+#: ../libyelp/yelp-transform.c:394
+#, c-format
+msgid "The XSLT stylesheet ‘%s’ is either missing or not valid."
+msgstr "La fueya d'estilu XSLT «%s» falta o nun val."
+
+#: ../libyelp/yelp-transform.c:528
+msgid "No href attribute found on yelp:document\n"
+msgstr "Nun s'atopó l'atributu href en yelp:document\n"
+
+#: ../libyelp/yelp-transform.c:543
+msgid "Out of memory"
+msgstr "Memoria escosada"
+
+#: ../libyelp/yelp-view.c:126
+msgid "_Print..."
+msgstr "_Imprentar..."
+
+#: ../libyelp/yelp-view.c:131
+msgid "_Back"
+msgstr "_Atrás"
+
+#: ../libyelp/yelp-view.c:136
+msgid "_Forward"
+msgstr "A_lantre"
+
+#: ../libyelp/yelp-view.c:141
+msgid "_Previous Page"
+msgstr "_Páxina Anterior"
+
+#: ../libyelp/yelp-view.c:146
+msgid "_Next Page"
+msgstr "Páxi_na Siguiente"
+
+#: ../libyelp/yelp-view.c:416
+msgid "Yelp URI"
+msgstr "URI de Yelp"
+
+#: ../libyelp/yelp-view.c:417
+msgid "A YelpUri with the current location"
+msgstr "Un YelpUri col allugamientu actual"
+
+#: ../libyelp/yelp-view.c:425
+msgid "Loading State"
+msgstr "Estáu de la carga"
+
+#: ../libyelp/yelp-view.c:426
+msgid "The loading state of the view"
+msgstr "L'estáu de carga de la vista"
+
+#: ../libyelp/yelp-view.c:435
+msgid "Page ID"
+msgstr "ID de páxina"
+
+#: ../libyelp/yelp-view.c:436
+msgid "The ID of the root page of the page being viewed"
+msgstr "L'ID de la páxina raigañu de la páxina que se ta viendo"
+
+#: ../libyelp/yelp-view.c:444
+msgid "Root Title"
+msgstr "Títulu raigañu"
+
+#: ../libyelp/yelp-view.c:445
+msgid "The title of the root page of the page being viewed"
+msgstr "El títulu de la páxina raigañu de la páxina que se ta viendo"
+
+#: ../libyelp/yelp-view.c:453
+msgid "Page Title"
+msgstr "Títulu de páxina"
+
+#: ../libyelp/yelp-view.c:454
+msgid "The title of the page being viewed"
+msgstr "El títulu de la páxina que se ta viendo"
+
+#: ../libyelp/yelp-view.c:462
+msgid "Page Description"
+msgstr "Descripción de páxina"
+
+#: ../libyelp/yelp-view.c:463
+msgid "The description of the page being viewed"
+msgstr "La descripción de la páxina que se ta viendo"
+
+#: ../libyelp/yelp-view.c:471
+msgid "Page Icon"
+msgstr "Iconu de páxina"
+
+#: ../libyelp/yelp-view.c:472
+msgid "The icon of the page being viewed"
+msgstr "L'iconu de la páxina que se ta viendo"
+
+#: ../libyelp/yelp-view.c:713
+msgid "You do not have PackageKit. Package install links require PackageKit."
+msgstr "Nun tienes PackageKit instaláu. Los enllaces d'instalación de paquetes necesiten PackageKit."
+
+#: ../libyelp/yelp-view.c:991
+msgid "Save Image"
+msgstr "Guardar Imaxe"
+
+#: ../libyelp/yelp-view.c:1086
+msgid "Save Code"
+msgstr "Guardar códigu"
+
+#. Not using a mnemonic because underscores are common in email
+#. * addresses, and we'd have to escape them. There doesn't seem
+#. * to be a quick GTK+ function for this. In practice, there will
+#. * probably only be one menu item for mailto link popups anyway,
+#. * so the mnemonic's not that big of a deal.
+#.
+#: ../libyelp/yelp-view.c:1255
+#, c-format
+msgid "Send email to %s"
+msgstr "Unviar corréu-e a %s"
+
+#: ../libyelp/yelp-view.c:1265
+msgid "_Open Link"
+msgstr "_Abrir enllaz"
+
+#: ../libyelp/yelp-view.c:1270
+msgid "Open Link in New _Window"
+msgstr "Abrir enllaz nuna _ventana nueva"
+
+#: ../libyelp/yelp-view.c:1321
+msgid "_Save Image As..."
+msgstr "Guardar imaxe _como..."
+
+#: ../libyelp/yelp-view.c:1323
+msgid "_Save Video As..."
+msgstr "Guardar videu _como…"
+
+#: ../libyelp/yelp-view.c:1330
+msgid "S_end Image To..."
+msgstr "_Unviar imaxe a…"
+
+#: ../libyelp/yelp-view.c:1332
+msgid "S_end Video To..."
+msgstr "_Unviar videu a…"
+
+#: ../libyelp/yelp-view.c:1343
+msgid "_Copy Text"
+msgstr "_Copiar textu"
+
+#: ../libyelp/yelp-view.c:1356
+msgid "C_opy Code Block"
+msgstr "C_opiar bloque de códigu"
+
+#: ../libyelp/yelp-view.c:1361
+msgid "Save Code _Block As..."
+msgstr "Guardar _bloque de códigu como…"
+
+#: ../libyelp/yelp-view.c:1543
+#, c-format
+msgid "Could not load a document for ‘%s’"
+msgstr "Nun se pudo cargar un documentu pa «%s»"
+
+#: ../libyelp/yelp-view.c:1549
+#, c-format
+msgid "Could not load a document"
+msgstr "Nun se pudo cargar un documentu"
+
+#: ../libyelp/yelp-view.c:1623
+msgid "Document Not Found"
+msgstr "Nun s'atopó'l documentu"
+
+#: ../libyelp/yelp-view.c:1625
+msgid "Page Not Found"
+msgstr "Nun s'alcontró la páxina"
+
+#: ../libyelp/yelp-view.c:1628
+msgid "Cannot Read"
+msgstr "Nun se puede lleer"
+
+#: ../libyelp/yelp-view.c:1634
+msgid "Unknown Error"
+msgstr "Error desconocíu"
+
+#: ../libyelp/yelp-view.c:1654
+msgid "Search for packages containing this document."
+msgstr "Guetar paquetes que contengan esti documentu."
+
+#: ../libyelp/yelp-view.c:1807
+#, c-format
+msgid "The URI ‘%s’ does not point to a valid page."
+msgstr "L'URI «%s» nun apunta a una páxina válida."
+
+#: ../libyelp/yelp-view.c:1813
+#, c-format
+msgid "The URI does not point to a valid page."
+msgstr "L'URI nun apunta a una paxgina válida."
+
+#: ../libyelp/yelp-view.c:1819
+#, c-format
+msgid "The URI ‘%s’ could not be parsed."
+msgstr "Nun pudo analizase'l URI «%s»."
+
+#: ../src/yelp-application.c:65
+msgid "Turn on editor mode"
+msgstr "Activar el mou editor"
+
+#: ../src/yelp-application.c:128
+msgid "_Larger Text"
+msgstr "Testu más _Grande"
+
+#: ../src/yelp-application.c:130
+msgid "Increase the size of the text"
+msgstr "Aumentar el tamañu del testu"
+
+#: ../src/yelp-application.c:133
+msgid "_Smaller Text"
+msgstr "Testu más peque_ñu"
+
+#: ../src/yelp-application.c:135
+msgid "Decrease the size of the text"
+msgstr "Menguar el tamañu del testu"
+
+#: ../src/yelp-application.c:253
+#: ../src/yelp-window.c:1359
+#: ../yelp.desktop.in.in.h:2
+msgid "Help"
+msgstr "Ayuda"
+
+#: ../src/yelp-application.c:288
+msgid "Show Text _Cursor"
+msgstr "Amosar el _cursor de testu"
+
+#: ../src/yelp-window.c:236
+msgid "_Page"
+msgstr "_Páxina"
+
+#: ../src/yelp-window.c:237
+msgid "_View"
+msgstr "_Ver"
+
+#: ../src/yelp-window.c:238
+msgid "_Go"
+msgstr "_Dir"
+
+#: ../src/yelp-window.c:239
+msgid "_Bookmarks"
+msgstr "_Marcadores"
+
+#: ../src/yelp-window.c:242
+msgid "_New Window"
+msgstr "Ventana _Nueva"
+
+#: ../src/yelp-window.c:247
+msgid "_Close"
+msgstr "_Zarrar"
+
+#: ../src/yelp-window.c:252
+msgid "_All Documents"
+msgstr "_Tolos documentos"
+
+#: ../src/yelp-window.c:256
+msgid "_Add Bookmark"
+msgstr "_Amestar Marcador"
+
+#: ../src/yelp-window.c:261
+msgid "_Remove Bookmark"
+msgstr "_Desaniciar marcador"
+
+#: ../src/yelp-window.c:265
+msgid "Find in Page..."
+msgstr "Guetar na páxina..."
+
+#: ../src/yelp-window.c:275
+msgid "Open Location"
+msgstr "Abrir señes"
+
+#: ../src/yelp-window.c:301
+msgid "Application"
+msgstr "Aplicación"
+
+#: ../src/yelp-window.c:302
+msgid "A YelpApplication instance that controls this window"
+msgstr "Una instancia de YelpApplication que controla esta ventana"
+
+#: ../src/yelp-window.c:526
+msgid "Find:"
+msgstr "Guetar:"
+
+#: ../src/yelp-window.c:548
+msgid "Read Later"
+msgstr "Lleer más sero"
+
+#: ../src/yelp-window.c:1179
+#, c-format
+msgid "%i match"
+msgid_plural "%i matches"
+msgstr[0] "%i coincidencia"
+msgstr[1] "%i coincidencies"
+
+#: ../src/yelp-window.c:1188
+msgid "No matches"
+msgstr "Ensin coincidencies"
+
+#: ../yelp.desktop.in.in.h:1
+msgid "Get help with GNOME"
+msgstr "Obtener ayuda con GNOME"
+
+#~ msgid "Games"
+#~ msgstr "Xuegos"
+#~ msgid "Development"
+#~ msgstr "Desarrollu"
+#~ msgid "Applications"
+#~ msgstr "Aplicaciones"
+#~ msgid "OpenSSL Applications"
+#~ msgstr "Aplicaciones OpenSSL"
+#~ msgid "Kernel Routines"
+#~ msgstr "Rutines del núcleu"
+#~ msgid "BLT Functions"
+#~ msgstr "Funciones BLT"
+#~ msgid "Configuration Files"
+#~ msgstr "Ficheros de configuración"
+#~ msgid "Network Audio Sound Functions"
+#~ msgstr "Funciones de soníu en rede (NAS)"
+#~ msgid "Manual Pages"
+#~ msgstr "Páxines del manual"
+#~ msgid "Hardware Devices"
+#~ msgstr "Preseos de Hardware"
+#~ msgid "FORTRAN Functions"
+#~ msgstr "Funciones FORTRAN"
+#~ msgid "Curses Functions"
+#~ msgstr "Funciones Curses"
+#~ msgid "Overviews"
+#~ msgstr "Vistes xenerales"
+#~ msgid "POSIX Functions"
+#~ msgstr "Funciones POSIX"
+#~ msgid "OpenSSL Configuration"
+#~ msgstr "Configuración OpenSSL"
+#~ msgid "OpenSSL Functions"
+#~ msgstr "Funciones OpenSSL"
+#~ msgid "OpenSSL Overviews"
+#~ msgstr "Vistes xenerales OpenSSL"
+#~ msgid "Section 0p"
+#~ msgstr "Seición 0p"
+#~ msgid "Readline Functions"
+#~ msgstr "Funciones Readline"
+#~ msgid "Qt Functions"
+#~ msgstr "Funciones Qt"
+#~ msgid "Perl Functions"
+#~ msgstr "Funciones Perl"
+#~ msgid "POSIX Headers"
+#~ msgstr "Testeres POSIX"
+#~ msgid "Section 3qt"
+#~ msgstr "Seición 3qt"
+#~ msgid "Section 3nas"
+#~ msgstr "Seición 3nas"
+#~ msgid "Section 3p"
+#~ msgstr "Seición 3p"
+#~ msgid "Section 3f"
+#~ msgstr "Seición 3f"
+#~ msgid "Section 3blt"
+#~ msgstr "Seición 3blt"
+#~ msgid "Section 1x"
+#~ msgstr "Seición 1x"
+#~ msgid "Section 1ssl"
+#~ msgstr "Seición 1ssl"
+#~ msgid "Section 1m"
+#~ msgstr "Seición 1m"
+#~ msgid "Section 2"
+#~ msgstr "Seición 2"
+#~ msgid "Section 3readline"
+#~ msgstr "Seición 3readline"
+#~ msgid "Section 5"
+#~ msgstr "Seición 5"
+#~ msgid "Section 4x"
+#~ msgstr "Seición 4x"
+#~ msgid "Section 3tiff"
+#~ msgstr "Seición 3tiff"
+#~ msgid "Section 4"
+#~ msgstr "Seición 4"
+#~ msgid "Section 3ssl"
+#~ msgstr "Seición 3ssl"
+#~ msgid "Section 6x"
+#~ msgstr "Seición 6x"
+#~ msgid "Section 6"
+#~ msgstr "Seición 6"
+#~ msgid "Section 7ssl"
+#~ msgstr "Seición 7ssl"
+#~ msgid "Section 5x"
+#~ msgstr "Seición 5x"
+#~ msgid "Section 5ssl"
+#~ msgstr "Seición 5ssl"
+#~ msgid "Sections 7 and 7gcc"
+#~ msgstr "Seiciones 7 y 7gcc"
+#~ msgid "Sections 8 and 8l"
+#~ msgstr "Seiciones 8 y 8l"
+#~ msgid "Sections 3form and 3menu"
+#~ msgstr "Seiciones 3form y 3menu"
+#~ msgid "Sections 3pm and 3perl"
+#~ msgstr "Seiciones 3pm y 3perl"
+#~ msgid "Sections 3x and 3X11"
+#~ msgstr "Seiciones 3x y 3X11"
+#~ msgid "Sections 3, 3o, and 3t"
+#~ msgstr "Seiciones 3, 3o y 3t"
+#~ msgid "Sections 3ncurses and 3curses"
+#~ msgstr "Seiciones 3ncurses y 3curses"
+#~ msgid "Sections 1, 1p, 1g and 1t"
+#~ msgstr "Seiciones 1, 1p, 1g y 1t"
+#~ msgid "Section 9"
+#~ msgstr "Seición 9"
+#~ msgid "Section 7x"
+#~ msgstr "Seición 7x"
+#~ msgid "System V Form/Menu Functions"
+#~ msgstr "Funciones System V Form/Menu"
+#~ msgid "System Administration"
+#~ msgstr "Alministración del Sistema"
+#~ msgid "System Calls"
+#~ msgstr "Llamaes al sistema"
+#~ msgid "X11 Configuration"
+#~ msgstr "Configuración X11"
+#~ msgid "X11 Functions"
+#~ msgstr "Funciones X11"
+#~ msgid "X11 Devices"
+#~ msgstr "Preseos X11"
+#~ msgid "X11 Applications"
+#~ msgstr "Aplicaciones X11"
+#~ msgid "Termcap Applications"
+#~ msgstr "Aplicaciones Termcap"
+#~ msgid "TIFF Functions"
+#~ msgstr "Funciones TIFF"
+#~ msgid "Amusement"
+#~ msgstr "Entretenimientu"
+#~ msgid "Applications for viewing and manipulating graphics"
+#~ msgstr "Aplicaciones pa ver y tresnar gráficos"
+#~ msgid "Action Games"
+#~ msgstr "Xuegos d'aición"
+#~ msgid "Adventure Games"
+#~ msgstr "Xuegos d'aventures"
+#~ msgid "Applications related to audio and video"
+#~ msgstr "Aplicaciones rellacionáes col soníu y videu"
+#~ msgid "Accessibility"
+#~ msgstr "Accesibilidá"
+#~ msgid "3D Graphics"
+#~ msgstr "Gráficos 3D"
+#~ msgid "2D Graphics"
+#~ msgstr "Gráficos 2D"
+#~ msgid "X11 Overviews"
+#~ msgstr "Vistes xenerales X11"
+#~ msgid "X11 Games"
+#~ msgstr "Xuegos X11"
+#~ msgid "Arcade Games"
+#~ msgstr "Xuegos d'arcade"
+#~ msgid "Archiving Tools"
+#~ msgstr "Ferramientes d'archivu"
+#~ msgid "Applications that teach or aid in learning"
+#~ msgstr "Aplicaciones que deprenden o aiden a deprender"
+#~ msgid "Art"
+#~ msgstr "Arte"
+#~ msgid "Artificial Intelligence"
+#~ msgstr "Intelixencia artificial"
+#~ msgid "Astronomy"
+#~ msgstr "Astronomía"
+#~ msgid "Biology"
+#~ msgstr "Bioloxía"
+#~ msgid "Board Games"
+#~ msgstr "Xuegos de tableru"
+#~ msgid "Blocks Games"
+#~ msgstr "Xuegos de bloques"
+#~ msgid "Building"
+#~ msgstr "Construcción"
+#~ msgid "Charting Tools"
+#~ msgstr "Ferramientes pa gráfiques"
+#~ msgid "Chat"
+#~ msgstr "Chat"
+#~ msgid "Clocks"
+#~ msgstr "Reloxes"
+#~ msgid "Chemistry"
+#~ msgstr "Química"
+#~ msgid "Calculator"
+#~ msgstr "Calculadora"
+#~ msgid "Calendar"
+#~ msgstr "Calendariu"
+#~ msgid "Card Games"
+#~ msgstr "Xuegos de cartes"
+#~ msgid "Dialup"
+#~ msgstr "Marcau telefónicu"
+#~ msgid "Desktop Settings"
+#~ msgstr "Configuración d'Escritoriu"
+#~ msgid "Data Visualization"
+#~ msgstr "Visualización de datos"
+#~ msgid "Debuggers"
+#~ msgstr "Depuradores"
+#~ msgid "Databases"
+#~ msgstr "Bases de datos"
+#~ msgid "Contact Management"
+#~ msgstr "Xestión de contautos"
+#~ msgid "Construction"
+#~ msgstr "Construcción"
+#~ msgid "Computer Science"
+#~ msgstr "Ciencies computacionales"
+#~ msgid "Compression Tools"
+#~ msgstr "Ferramientes pa compresión"
+#~ msgid "Disc Burning"
+#~ msgstr "Grabar discos"
+#~ msgid "Dictionaries"
+#~ msgstr "Diccionarios"
+#~ msgid "Education"
+#~ msgstr "Educación"
+#~ msgid "Economy"
+#~ msgstr "Economía"
+#~ msgid "Electronics"
+#~ msgstr "Electrónica"
+#~ msgid "Electricity"
+#~ msgstr "Electricidá"
+#~ msgid "Emulator"
+#~ msgstr "Emulador"
+#~ msgid "Email Tools"
+#~ msgstr "Ferramientes de corréu-electrónicu"
+#~ msgid "Engineering"
+#~ msgstr "Inxeniería"
+#~ msgid "GUI Designers"
+#~ msgstr "Diseñadores de GUI"
+#~ msgid "File Manager"
+#~ msgstr "Remanador de ficheros"
+#~ msgid "File Tools"
+#~ msgstr "Ferramientes de ficheros"
+#~ msgid "Financial Tools"
+#~ msgstr "Ferramientes financieres"
+#~ msgid "Flow Charting Tools"
+#~ msgstr "Ferramientes de diagrames de fluxu"
+#~ msgid "File Transfer"
+#~ msgstr "Tresferencia de ficheros"
+#~ msgid "Filesystem"
+#~ msgstr "Sistema de ficheros"
+#~ msgid "GNOME Applications"
+#~ msgstr "Aplicaciones de Gnome"
+#~ msgid "GTK"
+#~ msgstr "GTK"
+#~ msgid "Guides for getting involved in development"
+#~ msgstr "Guíes pa integrase nel desarrollu"
+#~ msgid "Generic applications for the KDE environment"
+#~ msgstr "Aplicaciones xenériques pal entornu KDE"
+#~ msgid "Generic applications for the GNOME environment"
+#~ msgstr "Aplicaciones xenériques pal entornu Gnome"
+#~ msgid "Graphics"
+#~ msgstr "Gráficos"
+#~ msgid "Geoscience"
+#~ msgstr "Xeociencies"
+#~ msgid "Geology"
+#~ msgstr "Xeoloxía"
+#~ msgid "Geography"
+#~ msgstr "Xeografía"
+#~ msgid "Hardware Settings"
+#~ msgstr "Axustes del hardware"
+#~ msgid "Ham Radio"
+#~ msgstr "Ham Radio"
+#~ msgid ""
+#~ "Guides and manuals for applications that connect to the outside world"
+#~ msgstr "Guíes y manuales d'aplicaciones que coneuten col mundu esterior"
+#~ msgid "Java"
+#~ msgstr "Java"
+#~ msgid "Internet"
+#~ msgstr "Internet"
+#~ msgid "IDEs"
+#~ msgstr "IDEs"
+#~ msgid "IRC Clients"
+#~ msgstr "Clientes d'IRC"
+#~ msgid "Image Processing"
+#~ msgstr "Procesu d'imaxes"
+#~ msgid "Have some fun"
+#~ msgstr "Folgase"
+#~ msgid "History"
+#~ msgstr "Historia"
+#~ msgid "Instant Messaging"
+#~ msgstr "Mensaxería nel Intre"
+#~ msgid "Midi"
+#~ msgstr "Midi"
+#~ msgid "Medical Software"
+#~ msgstr "Software médicu"
+#~ msgid "Math"
+#~ msgstr "Matemátiques"
+#~ msgid "Logic Games"
+#~ msgstr "Xuegos de lóxica"
+#~ msgid ""
+#~ "Learn more about making your system more accessible for a range of "
+#~ "disabilities"
+#~ msgstr ""
+#~ "Deprender más tocante a facer el sistema más accesible pa delles "
+#~ "discapacidaes"
+#~ msgid "Kids Games"
+#~ msgstr "Xuegos pa nenos"
+#~ msgid "Literature"
+#~ msgstr "Lliteratura"
+#~ msgid "KDE Applications"
+#~ msgstr "Aplicaciones de KDE"
+#~ msgid "Licenses"
+#~ msgstr "Llicencies"
+#~ msgid "Office applications"
+#~ msgstr "Aplicaciones d'oficina"
+#~ msgid "Miscellaneous Documentation"
+#~ msgstr "Documentación variada"
+#~ msgid "Music"
+#~ msgstr "Música"
+#~ msgid "Numerical Analysis"
+#~ msgstr "Analís numbéricu"
+#~ msgid "Mixers"
+#~ msgstr "Amesturadores"
+#~ msgid "News"
+#~ msgstr "Noticies"
+#~ msgid "Monitor"
+#~ msgstr "Monitor"
+#~ msgid "Motif"
+#~ msgstr "Motif"
+#~ msgid "Office Applications"
+#~ msgstr "Aplicaciones d'Oficina"
+#~ msgid "OCR"
+#~ msgstr "OCR"
+#~ msgid "Parallel Computing"
+#~ msgstr "Computación en paralelo"
+#~ msgid "Package Manager"
+#~ msgstr "Xestor de paquetes"
+#~ msgid "Other Documentation"
+#~ msgstr "Otra documentación"
+#~ msgid "PDA Communication"
+#~ msgstr "Comunicación de PDA"
+#~ msgid "P2P"
+#~ msgstr "P2P"
+#~ msgid "Presentation Tools"
+#~ msgstr "Ferramientes pa presentaciones"
+#~ msgid "Players"
+#~ msgstr "Reproductores"
+#~ msgid "Photography"
+#~ msgstr "Fotografía"
+#~ msgid "Physics"
+#~ msgstr "Física"
+#~ msgid "Recorders"
+#~ msgstr "Grabadores"
+#~ msgid "Robotics"
+#~ msgstr "Robótica"
+#~ msgid "Raster Graphics"
+#~ msgstr "Gráficos ráster"
+#~ msgid "Revision Control"
+#~ msgstr "Control de revisiones"
+#~ msgid "Remote Access"
+#~ msgstr "Accesu remotu"
+#~ msgid "Profiling Tools"
+#~ msgstr "Ferramientes de perfilar"
+#~ msgid "Project Management Tools"
+#~ msgstr "Ferramientes de xestión de proyeutos"
+#~ msgid "Printing"
+#~ msgstr "Imprentando"
+#~ msgid "Publishing"
+#~ msgstr "Espublizamientu"
+#~ msgid "Qt"
+#~ msgstr "Qt"
+#~ msgid "Security"
+#~ msgstr "Seguridá"
+#~ msgid "Sequencers"
+#~ msgstr "Secuenciadores"
+#~ msgid "Settings"
+#~ msgstr "Axustes"
+#~ msgid ""
+#~ "Settings users can manipulate to make their environment more pleasant"
+#~ msgstr ""
+#~ "Axustes que los usuarios pueden iguar para facer el so entorno más "
+#~ "prestosu"
+#~ msgid "Role Playing Games"
+#~ msgstr "Xuegos de rol"
+#~ msgid "Scanning"
+#~ msgstr "Escanear"
+#~ msgid "Science"
+#~ msgstr "Ciencia"
+#~ msgid "Simulation Games"
+#~ msgstr "Xuegos de simulación"
+#~ msgid "Sound"
+#~ msgstr "Soníu"
+#~ msgid "Sound &amp; Video"
+#~ msgstr "Soníu y vídeu"
+#~ msgid "Telephony Tools"
+#~ msgstr "Ferramientes de telefonía"
+#~ msgid "Terminal Emulator"
+#~ msgstr "Emulador de terminal"
+#~ msgid "TV"
+#~ msgstr "TV"
+#~ msgid "Telephony"
+#~ msgstr "Telefonía"
+#~ msgid "System"
+#~ msgstr "Sistema"
+#~ msgid "Strategy Games"
+#~ msgstr "Xuegos d'estratexa"
+#~ msgid "Spreadsheet Tools"
+#~ msgstr "Ferramientes pa fueyes de cálculu"
+#~ msgid "Sound &amp; Video Editing"
+#~ msgstr "Edición de soníu y vídeu"
+#~ msgid "Sports Games"
+#~ msgstr "Xuegos de deportes"
+#~ msgid "Sports"
+#~ msgstr "Deportes"
+#~ msgid "Text Editors"
+#~ msgstr "Editores de testu"
+#~ msgid "Text Tools"
+#~ msgstr "Ferramientes de testu"
+#~ msgid "Tuners"
+#~ msgstr "Sintonizadores"
+#~ msgid "Translation Tools"
+#~ msgstr "Ferramientes de traducción"
+#~ msgid "Vector Graphics"
+#~ msgstr "Gráficos vectoriales"
+#~ msgid "Video"
+#~ msgstr "Videu"
+#~ msgid "Video Conference"
+#~ msgstr "Videu conferencia"
+#~ msgid "Viewer"
+#~ msgstr "Visor"
+#~ msgid "Web Browser"
+#~ msgstr "Ñavegador Web"
+#~ msgid "Web Development"
+#~ msgstr "Desarrollu Web"
+#~ msgid "Utilities"
+#~ msgstr "Utilidaes"
+#~ msgid "Word Processors"
+#~ msgstr "Procesadores de testu"
+#~ msgid "GNU Info Pages"
+#~ msgstr "Páxines de GNU Info"
+#~ msgid "Traditional command line help (man)"
+#~ msgstr "Ayuda tradicional de llinia de comandos (man)"
+#~ msgid "Traditional command line help (info)"
+#~ msgstr "Ayuda tradicional de llinia de comandos (info)"
+#~ msgid "Utilities to help you get work done"
+#~ msgstr "Utilidaes p'ayudar a facer el trabayu"
+#~ msgid "Tools to help you manage your computer"
+#~ msgstr "Ferramientes p'ayudar a remanar l'ordenador"
+#~ msgid "Get help with Ubuntu"
+#~ msgstr "Consigui ayuda con Ubuntu"
+#~ msgid "Desktop"
+#~ msgstr "Escritoriu"
+#~ msgid "Welcome to the GNOME Help Browser"
+#~ msgstr "Bienllegáu al visor d'ayuda de GNOME"
+#~ msgid "translator_credits"
+#~ msgstr ""
+#~ "Launchpad Contributions:\n"
+#~ "  Iñigo Varela https://launchpad.net/~ivarela\n"
+#~ "  Xuacu Saturio https://launchpad.net/~xuacusk8"
+

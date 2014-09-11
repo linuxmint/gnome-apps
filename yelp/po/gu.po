@@ -1,0 +1,1204 @@
+# translation of gu.po to Gujarati
+# Ankit Patel <ankit644@yahoo.com>, 2005, 2006.
+# Ankit Patel <ankit@redhat.com>, 2005, 2007.
+# Sweta Kothari <swkothar@redhat.com>, 2008, 2009, 2011, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: gu\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
+"cgi?product=yelp&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2013-04-05 23:43+0000\n"
+"PO-Revision-Date: 2013-04-22 15:36+0530\n"
+"Last-Translator: \n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+#. (itstool) path: msg/msgstr
+#. ID: install.tooltip
+#. This is a format message used to format tooltips on install: links. These
+#. links allow users to install packages by clicking a link in the help. The
+#. tooltip may also be used as the link text, if there's no link text in the
+#. document. Special elements in the message will be replaced with the
+#. appropriate content, as follows:
+#.
+#. <string/> - The package to install
+#.
+#: yelp.xml.in:36
+msgid "Install <string/>"
+msgstr "સ્થાપિત કરો <string/>"
+
+#: ../libyelp/yelp-bz2-decompressor.c:146
+#: ../libyelp/yelp-lzma-decompressor.c:155
+msgid "Invalid compressed data"
+msgstr "અયોગ્ય સંકોચાયેલ માહિતી"
+
+#: ../libyelp/yelp-bz2-decompressor.c:152
+#: ../libyelp/yelp-lzma-decompressor.c:161
+msgid "Not enough memory"
+msgstr "પૂરતી મેમરી નથી"
+
+#: ../libyelp/yelp-docbook-document.c:282 ../libyelp/yelp-info-document.c:238
+#: ../libyelp/yelp-mallard-document.c:306
+#: ../libyelp/yelp-mallard-document.c:457 ../libyelp/yelp-man-document.c:282
+#, c-format
+msgid "The page ‘%s’ was not found in the document ‘%s’."
+msgstr "પાનું ‘%s’ દસ્તાવેજ %s માં મળ્યું નહિં."
+
+#: ../libyelp/yelp-docbook-document.c:317 ../libyelp/yelp-info-document.c:372
+#: ../libyelp/yelp-man-document.c:417
+#, c-format
+msgid "The file does not exist."
+msgstr "ફાઈલ અસ્તિત્વ ધરાવતી નથી."
+
+#: ../libyelp/yelp-docbook-document.c:327 ../libyelp/yelp-info-document.c:382
+#: ../libyelp/yelp-man-document.c:427
+#, c-format
+msgid "The file ‘%s’ does not exist."
+msgstr "ફાઈલ ‘%s’ અસ્તિત્વમાં નથી."
+
+#: ../libyelp/yelp-docbook-document.c:342
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because it is not a well-formed XML "
+"document."
+msgstr "ફાઈલ ‘%s’ નું પદચ્છેદન કરી શક્યા નહિં કારણ કે તે યોગ્ય-બંધારણીય XML દસ્તાવેજ નથી."
+
+#: ../libyelp/yelp-docbook-document.c:355
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because one or more of its included files "
+"is not a well-formed XML document."
+msgstr ""
+"ફાઈલ ‘%s’ નું પદચ્છેદ કરી શક્યા નહિં કારણ કે તેમાં સમાવવામાં આવેલ એક અથવા વધુ ફાઈલો યોગ્ય-"
+"બંધારણીય XML દસ્તાવેજ નથી."
+
+#: ../libyelp/yelp-docbook-document.c:765
+msgid "Unknown"
+msgstr "અજ્ઞાત"
+
+#: ../libyelp/yelp-docbook-document.c:826 ../libyelp/yelp-info-document.c:315
+#: ../libyelp/yelp-man-document.c:359
+#, c-format
+msgid "The requested page was not found in the document ‘%s’."
+msgstr "અરજી થયેલ પાનું દસ્તાવેજ ‘%s’માં મળ્યું નહિં."
+
+#: ../libyelp/yelp-document.c:268
+msgid "Indexed"
+msgstr "ક્રમબદ્દ રાખેલ"
+
+#: ../libyelp/yelp-document.c:269
+msgid "Whether the document content has been indexed"
+msgstr "ક્યાંતો દસ્તાવેજ સમાવિષ્ટ ક્રમબદ્દ રાખેલ છે"
+
+#: ../libyelp/yelp-document.c:277
+msgid "Document URI"
+msgstr "દસ્તાવેજ URI"
+
+#: ../libyelp/yelp-document.c:278
+msgid "The URI which identifies the document"
+msgstr "URI કે જે દસ્તાવેજને ઓળખે છે"
+
+#: ../libyelp/yelp-document.c:994
+#, c-format
+msgid "Search results for “%s”"
+msgstr "“%s” માટે પરિણામોને શોધો"
+
+#: ../libyelp/yelp-document.c:1006
+#, c-format
+msgid "No matching help pages found in “%s”."
+msgstr "“%s” માં મદદ પાનાં બંધબેસતા મળ્યા નથી."
+
+#: ../libyelp/yelp-document.c:1012
+msgid "No matching help pages found."
+msgstr "મદદ પાનાં બંધબેસતા મળ્યા નથી."
+
+#: ../libyelp/yelp-error.c:37
+#, c-format
+msgid "An unknown error occurred."
+msgstr "અજ્ઞાત ભૂલ ઉદ્ભવી."
+
+#: ../libyelp/yelp-help-list.c:549 ../libyelp/yelp-help-list.c:558
+msgid "All Help Documents"
+msgstr "બધા મદદ દસ્તાવેજો"
+
+#: ../libyelp/yelp-info-document.c:397
+#, c-format
+msgid "The file ‘%s’ could not be parsed because it is not a well-formed info page."
+msgstr "ફાઈલ ‘%s’ નું પદચ્છેદન કરી શક્યા નહિં કારણ કે તે યોગ્ય-બંધારણીય જાણકારી પાનું નથી."
+
+#: ../libyelp/yelp-location-entry.c:336
+msgid "View"
+msgstr "દૃશ્ય"
+
+#: ../libyelp/yelp-location-entry.c:337
+msgid "A YelpView instance to control"
+msgstr "નિયંત્રણ રાખવા માટે  YelpView ઘટક"
+
+#: ../libyelp/yelp-location-entry.c:352
+msgid "Bookmarks"
+msgstr "બુકમાર્કો"
+
+#: ../libyelp/yelp-location-entry.c:353
+msgid "A YelpBookmarks implementation instance"
+msgstr "YelpBookmarks અમલીકરણ ઘટક"
+
+#: ../libyelp/yelp-location-entry.c:369
+msgid "Enable Search"
+msgstr "શોધ સક્રિય કરો"
+
+#: ../libyelp/yelp-location-entry.c:370
+msgid "Whether the location entry can be used as a search field"
+msgstr "શું સ્થાન નોંધણી એ શોધ ક્ષેત્ર તરીકે વાપરી શકાય છે"
+
+#: ../libyelp/yelp-location-entry.c:440 ../src/yelp-window.c:270
+msgid "Search..."
+msgstr "શોધ..."
+
+#: ../libyelp/yelp-location-entry.c:783
+msgid "Clear the search text"
+msgstr "શોધ લખાણને સાફ કરો"
+
+#: ../libyelp/yelp-location-entry.c:831 ../libyelp/yelp-location-entry.c:1593
+msgid "Bookmark this page"
+msgstr "આ પાનાંને બુકમાર્ક કરો"
+
+#: ../libyelp/yelp-location-entry.c:839 ../libyelp/yelp-location-entry.c:1601
+msgid "Remove bookmark"
+msgstr "બુકમાર્ક દૂર કરો"
+
+#: ../libyelp/yelp-location-entry.c:1154
+#, c-format
+msgid "Search for “%s”"
+msgstr "“%s” માટે શોધો"
+
+#: ../libyelp/yelp-location-entry.c:1458
+msgid "Loading"
+msgstr "લાવી રહ્યા છે"
+
+#: ../libyelp/yelp-mallard-document.c:345
+#, c-format
+msgid "The directory ‘%s’ does not exist."
+msgstr "ડિરેક્ટરી ‘%s’ અસ્તિત્વમાં નથી."
+
+#: ../libyelp/yelp-settings.c:156
+msgid "GtkSettings"
+msgstr "GtkSettings"
+
+#: ../libyelp/yelp-settings.c:157
+msgid "A GtkSettings object to get settings from"
+msgstr "તેમાંથી સુયોજનોને મેળવવા માટે GtkSettings ઑબ્જેક્ટ"
+
+#: ../libyelp/yelp-settings.c:165
+msgid "GtkIconTheme"
+msgstr "GtkIconTheme"
+
+#: ../libyelp/yelp-settings.c:166
+msgid "A GtkIconTheme object to get icons from"
+msgstr "તેમાંથી ચિહ્નોને મેળવવા માટે GtkIconTheme ઑબ્જેક્ટ"
+
+#: ../libyelp/yelp-settings.c:174
+msgid "Font Adjustment"
+msgstr "ફોન્ટ ગોઠવણી"
+
+#: ../libyelp/yelp-settings.c:175
+msgid "A size adjustment to add to font sizes"
+msgstr "ફોન્ટ માપોને ઉમેરવા માટે માપ ગોઠવણ"
+
+#: ../libyelp/yelp-settings.c:183
+msgid "Show Text Cursor"
+msgstr "લખાણ કર્સરને બતાવો"
+
+#: ../libyelp/yelp-settings.c:184
+msgid "Show the text cursor or caret for accessible navigation"
+msgstr "સુલભ સંશોધક માટે લખાણ કર્સર અથવા ચિહ્ન બતાવો"
+
+#: ../libyelp/yelp-settings.c:192
+msgid "Editor Mode"
+msgstr "સંપાદક સ્થિતિ"
+
+#: ../libyelp/yelp-settings.c:193
+msgid "Enable features useful to editors"
+msgstr "સંપાદકો માટે ઉપયોગી લક્ષણોને સક્રિય કરો"
+
+#: ../libyelp/yelp-sqlite-storage.c:150
+msgid "Database filename"
+msgstr "ડેટાબેઝ ફાઇલનામ"
+
+#: ../libyelp/yelp-sqlite-storage.c:151
+msgid "The filename of the sqlite database"
+msgstr "sqlite ડેટાબેઝનું ફાઇલનામ"
+
+#: ../libyelp/yelp-transform.c:171
+msgid "XSLT Stylesheet"
+msgstr "XSLT શૈલીશીટ"
+
+#: ../libyelp/yelp-transform.c:172
+msgid "The location of the XSLT stylesheet"
+msgstr "XSLT શૈલીશીટનું સ્થાન"
+
+#: ../libyelp/yelp-transform.c:379 ../libyelp/yelp-transform.c:394
+#, c-format
+msgid "The XSLT stylesheet ‘%s’ is either missing or not valid."
+msgstr "XSLT શૈલીશીટ ‘%s’ એ ક્યાં તો ગુમ છે અથવા તે યોગ્ય નથી."
+
+#: ../libyelp/yelp-transform.c:528
+msgid "No href attribute found on yelp:document\n"
+msgstr "yelp:document પર કોઈ href લક્ષણ મળ્યું નહિં\n"
+
+#: ../libyelp/yelp-transform.c:543
+msgid "Out of memory"
+msgstr "મેમરી ની બહાર"
+
+#: ../libyelp/yelp-view.c:131
+msgid "_Print..."
+msgstr "છાપો (_P)..."
+
+#: ../libyelp/yelp-view.c:136
+msgid "_Back"
+msgstr "પાછળ (_B)"
+
+#: ../libyelp/yelp-view.c:141
+msgid "_Forward"
+msgstr "આગળ (_F)"
+
+#: ../libyelp/yelp-view.c:146
+msgid "_Previous Page"
+msgstr "પહેલાનું પાનું (_P)"
+
+#: ../libyelp/yelp-view.c:151
+msgid "_Next Page"
+msgstr "આગળનું પાનું (_N)"
+
+#: ../libyelp/yelp-view.c:423
+msgid "Yelp URI"
+msgstr "Yelp URI"
+
+#: ../libyelp/yelp-view.c:424
+msgid "A YelpUri with the current location"
+msgstr "હાલનાં સ્થાન સાથે YelpUri"
+
+#: ../libyelp/yelp-view.c:432
+msgid "Loading State"
+msgstr "સ્થિતિને લાવી રહ્યા છે."
+
+#: ../libyelp/yelp-view.c:433
+msgid "The loading state of the view"
+msgstr "દૃશ્યની લોડિંગ સ્થિતિ"
+
+#: ../libyelp/yelp-view.c:442
+msgid "Page ID"
+msgstr "પાનું ID"
+
+#: ../libyelp/yelp-view.c:443
+msgid "The ID of the root page of the page being viewed"
+msgstr "પાનાંના રુટ પાનાંનુ ID દર્શાવેલ છે"
+
+#: ../libyelp/yelp-view.c:451
+msgid "Root Title"
+msgstr "રુટ શીર્ષક"
+
+#: ../libyelp/yelp-view.c:452
+msgid "The title of the root page of the page being viewed"
+msgstr "પાનાંના રુટ પાનાંનુ શીર્ષક દર્શાવેલ છે"
+
+#: ../libyelp/yelp-view.c:460
+msgid "Page Title"
+msgstr "પાનું શીર્ષક"
+
+#: ../libyelp/yelp-view.c:461
+msgid "The title of the page being viewed"
+msgstr "પાનાંનુ શીર્ષક દર્શાવેલ છે"
+
+#: ../libyelp/yelp-view.c:469
+msgid "Page Description"
+msgstr "પાનાં વર્ણન"
+
+#: ../libyelp/yelp-view.c:470
+msgid "The description of the page being viewed"
+msgstr "પાનાનુ વર્ણન દર્શાવેલ છે"
+
+#: ../libyelp/yelp-view.c:478
+msgid "Page Icon"
+msgstr "પાનું ચિહ્ન"
+
+#: ../libyelp/yelp-view.c:479
+msgid "The icon of the page being viewed"
+msgstr "પાનાંનુ ચિહ્ન દર્શાવેલ છે"
+
+#: ../libyelp/yelp-view.c:720
+msgid "You do not have PackageKit. Package install links require PackageKit."
+msgstr "તમારી પાસે PackageKit નથી. પેકેજ સ્થાપન કડીઓને PackageKit ની જરૂર છે."
+
+#: ../libyelp/yelp-view.c:1014
+msgid "Save Image"
+msgstr "ઇમેજ સંગ્રહો"
+
+#: ../libyelp/yelp-view.c:1109
+msgid "Save Code"
+msgstr "કોડ સંગ્રહો"
+
+#: ../libyelp/yelp-view.c:1272
+#, c-format
+msgid "Send email to %s"
+msgstr "%s માં ઇમેલને મોકલો"
+
+#: ../libyelp/yelp-view.c:1287
+msgid "_Install Packages"
+msgstr "પેકેજો સ્થાપિત કરો (_I)"
+
+#: ../libyelp/yelp-view.c:1295
+msgid "_Open Link"
+msgstr "કડી ખોલો (_O)"
+
+#: ../libyelp/yelp-view.c:1302
+msgid "_Copy Link Location"
+msgstr "કડી સ્થાનની નકલ કરો (_C)"
+
+#: ../libyelp/yelp-view.c:1308
+msgid "Open Link in New _Window"
+msgstr "નવી વિન્ડોમાં કડીને ખોલો (_W)"
+
+#: ../libyelp/yelp-view.c:1360
+msgid "_Save Image As..."
+msgstr "આ રીતે ઇમેજને સંગ્રહો (_S)..."
+
+#: ../libyelp/yelp-view.c:1362
+msgid "_Save Video As..."
+msgstr "આ રીતે વિડિયોને સંગ્રહો (_S)..."
+
+#: ../libyelp/yelp-view.c:1369
+msgid "S_end Image To..."
+msgstr "તેમાં ઇમેજને મોકલો (_e)..."
+
+#: ../libyelp/yelp-view.c:1371
+msgid "S_end Video To..."
+msgstr "તેમાં વિડિયોને મોકલો (_e)..."
+
+#: ../libyelp/yelp-view.c:1382
+msgid "_Copy Text"
+msgstr "લખાણની નકલ કરો (_C)"
+
+#: ../libyelp/yelp-view.c:1395
+msgid "C_opy Code Block"
+msgstr "કોડ બ્લોકની નકલ કરો (_o)"
+
+#: ../libyelp/yelp-view.c:1400
+msgid "Save Code _Block As..."
+msgstr "આ રીતે કોડ બ્લોક સંગ્રહો (_B)..."
+
+#: ../libyelp/yelp-view.c:1507
+#, c-format
+msgid "See all search results for “%s”"
+msgstr "“%s” માટે બધા શોધ પરિણામો જુઓ"
+
+#: ../libyelp/yelp-view.c:1628
+#, c-format
+msgid "Could not load a document for ‘%s’"
+msgstr "‘%s’ માટે દસ્તાવેજને લાવી શક્યા નહિં"
+
+#: ../libyelp/yelp-view.c:1634
+#, c-format
+msgid "Could not load a document"
+msgstr "દસ્તાવેજને લાવી શક્યા નહિં"
+
+#: ../libyelp/yelp-view.c:1709
+msgid "Document Not Found"
+msgstr "દસ્તાવેજ મળ્યુ નહિં"
+
+#: ../libyelp/yelp-view.c:1711
+msgid "Page Not Found"
+msgstr "પાનું મળ્યું નહિં"
+
+#: ../libyelp/yelp-view.c:1714
+msgid "Cannot Read"
+msgstr "વાંચી શકાતુ નથી"
+
+#: ../libyelp/yelp-view.c:1720
+msgid "Unknown Error"
+msgstr "અજ્ઞાત ભૂલ"
+
+#: ../libyelp/yelp-view.c:1740
+msgid "Search for packages containing this document."
+msgstr "આ દસ્તાવેજને સમાવતા પેકેજો માટે શોધો."
+
+#: ../libyelp/yelp-view.c:1892
+#, c-format
+msgid "The URI ‘%s’ does not point to a valid page."
+msgstr "URI ‘%s’ માન્ય પાનાંને નિર્દેશ કરતુ નથી."
+
+#: ../libyelp/yelp-view.c:1898
+#, c-format
+msgid "The URI does not point to a valid page."
+msgstr "URI માન્ય પાનાંને નિર્દેશ કરતુ નથી."
+
+#: ../libyelp/yelp-view.c:1904
+#, c-format
+msgid "The URI ‘%s’ could not be parsed."
+msgstr "URI ‘%s’ નું પદચ્છેદન કરી શક્યા નહિં."
+
+#: ../src/yelp-application.c:65
+msgid "Turn on editor mode"
+msgstr "સંપાદક સ્થિતિને ચાલુ કરો"
+
+#: ../src/yelp-application.c:128
+msgid "_Larger Text"
+msgstr "વિશાળ લખાણ (_L)"
+
+#: ../src/yelp-application.c:130
+msgid "Increase the size of the text"
+msgstr "લખાણનાં માપને વધારો"
+
+#: ../src/yelp-application.c:133
+msgid "_Smaller Text"
+msgstr "નાનામાં નાનુ લખાણ (_S)"
+
+#: ../src/yelp-application.c:135
+msgid "Decrease the size of the text"
+msgstr "લખાણનાં માપને ઘટાડો"
+
+#: ../src/yelp-application.c:253 ../src/yelp-window.c:1360
+#: ../yelp.desktop.in.in.h:1
+msgid "Help"
+msgstr "મદદ"
+
+#: ../src/yelp-application.c:288
+msgid "Show Text _Cursor"
+msgstr "લખાણ કર્સરને બતાવો (_C)"
+
+#: ../src/yelp-window.c:236
+msgid "_Page"
+msgstr "પાનું (_P)"
+
+#: ../src/yelp-window.c:237
+msgid "_View"
+msgstr "દૃશ્ય (_V)"
+
+#: ../src/yelp-window.c:238
+msgid "_Go"
+msgstr "જાઓ (_G)"
+
+#: ../src/yelp-window.c:239
+msgid "_Bookmarks"
+msgstr "બુકમાર્કો (_B)"
+
+#: ../src/yelp-window.c:242
+msgid "_New Window"
+msgstr "નવી વિન્ડો (_N)"
+
+#: ../src/yelp-window.c:247
+msgid "_Close"
+msgstr "બંધ કરો (_C)"
+
+#: ../src/yelp-window.c:252
+msgid "_All Documents"
+msgstr "બધા દસ્તાવેજો (_A)"
+
+#: ../src/yelp-window.c:256
+msgid "_Add Bookmark"
+msgstr "બુકમાર્ક ઉમેરો (_A)"
+
+#: ../src/yelp-window.c:261
+msgid "_Remove Bookmark"
+msgstr "બુકમાર્ક દૂર કરો (_R)"
+
+#: ../src/yelp-window.c:265
+msgid "Find in Page..."
+msgstr "પાનાંમા શોધો..."
+
+#: ../src/yelp-window.c:275
+msgid "Open Location"
+msgstr "જગ્યા ખોલો"
+
+#: ../src/yelp-window.c:301
+msgid "Application"
+msgstr "કાર્યક્રમ"
+
+#: ../src/yelp-window.c:302
+msgid "A YelpApplication instance that controls this window"
+msgstr "YelpApplication ઘટક કે જે આ વિન્ડોનું નિયંત્રણ કરે છે"
+
+#: ../src/yelp-window.c:429
+msgid "Read Link _Later"
+msgstr "પછી કડીને વાંચો (_L)"
+
+#: ../src/yelp-window.c:526
+msgid "Find:"
+msgstr "શોધો:"
+
+#: ../src/yelp-window.c:548
+msgid "Read Later"
+msgstr "પછી વાંચો"
+
+#: ../src/yelp-window.c:1180
+#, c-format
+msgid "%i match"
+msgid_plural "%i matches"
+msgstr[0] "%i સરખામણી"
+msgstr[1] "%i સરખામણી"
+
+#: ../src/yelp-window.c:1189
+msgid "No matches"
+msgstr "બંધબેસતુ નથી"
+
+#: ../yelp.desktop.in.in.h:2
+msgid "Get help with GNOME"
+msgstr "જીનોમ સાથે મદદ લો"
+
+#: ../yelp.desktop.in.in.h:3
+msgid "documentation;information;manual;"
+msgstr "દસ્તાવેજીકરણ;જાણકારી;પુસ્તિકા;"
+
+#~ msgid "GNU Info Pages"
+#~ msgstr "GNU જાણકારી પાનાંઓ"
+
+#~ msgid "Traditional command line help (info)"
+#~ msgstr "પારંપરિક આદેશ વાક્ય મદદ (જાણ)"
+
+#~ msgid "Applications"
+#~ msgstr "કાર્યક્રમો"
+
+#~ msgid "BLT Functions"
+#~ msgstr "BLT વિધેયો"
+
+#~ msgid "Configuration Files"
+#~ msgstr "રુપરેખાંકન માટેની ફાઇલો"
+
+#~ msgid "Curses Functions"
+#~ msgstr "Curses વિધેયો"
+
+#~ msgid "Development"
+#~ msgstr "વિકાસ"
+
+#~ msgid "FORTRAN Functions"
+#~ msgstr "FORTRAN વિધેયો"
+
+#~ msgid "Games"
+#~ msgstr "રમતો"
+
+#~ msgid "Hardware Devices"
+#~ msgstr "હાર્ડવેર ઉપકરણો"
+
+#~ msgid "Kernel Routines"
+#~ msgstr "કર્નલની દરવખતની ક્રિયાઓ"
+
+#~ msgid "Network Audio Sound Functions"
+#~ msgstr "નેટવર્ક ઓડિયો સાઉન્ડ વિધેયો"
+
+#~ msgid "OpenSSL Applications"
+#~ msgstr "OpenSSL કાર્યક્રમો"
+
+#~ msgid "OpenSSL Configuration"
+#~ msgstr "OpenSSL રૂપરેખાંકન"
+
+#~ msgid "OpenSSL Functions"
+#~ msgstr "OpenSSL વિધેયો"
+
+#~ msgid "OpenSSL Overviews"
+#~ msgstr "OpenSSL અણસારો"
+
+#~ msgid "Overviews"
+#~ msgstr "સંક્ષેપો"
+
+#~ msgid "POSIX Functions"
+#~ msgstr "POSIX વિધેયો"
+
+#~ msgid "POSIX Headers"
+#~ msgstr "POSIX હેડરો"
+
+#~ msgid "Perl Functions"
+#~ msgstr "Perl વિધેયો"
+
+#~ msgid "Qt Functions"
+#~ msgstr "Qt વિધેયો"
+
+#~ msgid "Readline Functions"
+#~ msgstr "Readline વિધેયો"
+
+#~ msgid "Section 0p"
+#~ msgstr "વિભાગ 0p"
+
+#~ msgid "Section 1m"
+#~ msgstr "વિભાગ 1m"
+
+#~ msgid "Section 1ssl"
+#~ msgstr "વિભાગ 1ssl"
+
+#~ msgid "Section 1x"
+#~ msgstr "વિભાગ 1x"
+
+#~ msgid "Section 2"
+#~ msgstr "વિભાગ 2"
+
+#~ msgid "Section 3blt"
+#~ msgstr "વિભાગ 3blt"
+
+#~ msgid "Section 3f"
+#~ msgstr "વિભાગ 3f"
+
+#~ msgid "Section 3nas"
+#~ msgstr "વિભાગ 3nas"
+
+#~ msgid "Section 3p"
+#~ msgstr "વિભાગ 3p"
+
+#~ msgid "Section 3qt"
+#~ msgstr "વિભાગ 3qt"
+
+#~ msgid "Section 3readline"
+#~ msgstr "વિભાગ 3readline"
+
+#~ msgid "Section 3ssl"
+#~ msgstr "વિભાગ 3ssl"
+
+#~ msgid "Section 3tiff"
+#~ msgstr "વિભાગ 3tiff"
+
+#~ msgid "Section 4"
+#~ msgstr "વિભાગ 4"
+
+#~ msgid "Section 4x"
+#~ msgstr "વિભાગ 4x"
+
+#~ msgid "Section 5"
+#~ msgstr "વિભાગ 5"
+
+#~ msgid "Section 5ssl"
+#~ msgstr "વિભાગ 5ssl"
+
+#~ msgid "Section 5x"
+#~ msgstr "વિભાગ 5x"
+
+#~ msgid "Section 6"
+#~ msgstr "વિભાગ 6"
+
+#~ msgid "Section 6x"
+#~ msgstr "વિભાગ 6x"
+
+#~ msgid "Section 7ssl"
+#~ msgstr "વિભાગ 7ssl"
+
+#~ msgid "Section 7x"
+#~ msgstr "વિભાગ 7x"
+
+#~ msgid "Section 9"
+#~ msgstr "વિભાગ 9"
+
+#~ msgid "Sections 1, 1p, 1g and 1t"
+#~ msgstr "વિભાગો 1, 1p, 1g અને 1t"
+
+#~ msgid "Sections 3, 3o, and 3t"
+#~ msgstr "વિભાગો 3, 3o, અને 3t"
+
+#~ msgid "Sections 3form and 3menu"
+#~ msgstr "વિભાગો 3form અને 3menu"
+
+#~ msgid "Sections 3ncurses and 3curses"
+#~ msgstr "વિભાગો 3ncurses અને 3curses"
+
+#~ msgid "Sections 3pm and 3perl"
+#~ msgstr "વિભાગો 3pm અને 3perl"
+
+#~ msgid "Sections 3x and 3X11"
+#~ msgstr "વિભાગો 3x અને 3X11"
+
+#~ msgid "Sections 7 and 7gcc"
+#~ msgstr "વિભાગો 7 અને 7gcc"
+
+#~ msgid "Sections 8 and 8l"
+#~ msgstr "વિભાગો 8 અને 8l"
+
+#~ msgid "System Administration"
+#~ msgstr "સિસ્ટમ સંચાલન"
+
+#~ msgid "System Calls"
+#~ msgstr "સિસ્ટમ કોલ"
+
+#~ msgid "System V Form/Menu Functions"
+#~ msgstr "સિસ્ટમ V ફોર્મ/મેનુ વિધેયો"
+
+#~ msgid "TIFF Functions"
+#~ msgstr "TIFF વિધેયો"
+
+#~ msgid "Termcap Applications"
+#~ msgstr "Termcap કાર્યક્રમો"
+
+#~ msgid "Traditional command line help (man)"
+#~ msgstr "પારંપરિક આદેશ વાક્ય મદદ (man)"
+
+#~ msgid "X11 Applications"
+#~ msgstr "X11 કાર્યક્રમો"
+
+#~ msgid "X11 Configuration"
+#~ msgstr "X11 રૂપરેખાંકન"
+
+#~ msgid "X11 Devices"
+#~ msgstr "X11 ઉપકરણો"
+
+#~ msgid "X11 Functions"
+#~ msgstr "X11 વિધેયો"
+
+#~ msgid "X11 Games"
+#~ msgstr "X11 રમતો"
+
+#~ msgid "X11 Overviews"
+#~ msgstr "X11 અણસારો"
+
+#~ msgid "2D Graphics"
+#~ msgstr "2D ગ્રાફિક્સ"
+
+#~ msgid "3D Graphics"
+#~ msgstr "3D ગ્રાફિક્સ"
+
+#~ msgid "Accessibility"
+#~ msgstr "સુલભતા"
+
+#~ msgid "Action Games"
+#~ msgstr "એક્શન રમતો"
+
+#~ msgid "Adventure Games"
+#~ msgstr "સાહસિક રમતો"
+
+#~ msgid "Amusement"
+#~ msgstr "મનોરંજન"
+
+#~ msgid "Applications for viewing and manipulating graphics"
+#~ msgstr "દેખવા અને ગ્રાફિક્સ વાપરવા માટેના કાર્યક્રમો"
+
+#~ msgid "Applications related to audio and video"
+#~ msgstr "ઓડિઓ અને વિડીઓ ને સંબંધિત કાર્યક્રમો"
+
+#~ msgid "Applications that teach or aid in learning"
+#~ msgstr "કાર્યક્રમો કે જે શીખવવામાં ભણાવે અથવા મદદ કરે છે"
+
+#~ msgid "Arcade Games"
+#~ msgstr "આર્કેડ રમતો"
+
+#~ msgid "Archiving Tools"
+#~ msgstr "પુરાણા સાધનો"
+
+#~ msgid "Art"
+#~ msgstr "આર્ટ"
+
+#~ msgid "Artificial Intelligence"
+#~ msgstr "કૃત્રિમ સમજશક્તિ"
+
+#~ msgid "Astronomy"
+#~ msgstr "ખગોળશાસ્ત્ર"
+
+#~ msgid "Biology"
+#~ msgstr "જીવવિજ્ઞાન"
+
+#~ msgid "Blocks Games"
+#~ msgstr "બ્લોક રમતો"
+
+#~ msgid "Board Games"
+#~ msgstr "બોર્ડ રમતો"
+
+#~ msgid "Building"
+#~ msgstr "ઇમારત"
+
+#~ msgid "Calculator"
+#~ msgstr "કેલ્ક્યુલેટર"
+
+#~ msgid "Calendar"
+#~ msgstr "કેલેન્ડર"
+
+#~ msgid "Card Games"
+#~ msgstr "કાર્રડ રમતો"
+
+#~ msgid "Charting Tools"
+#~ msgstr "નક્ક્ષાના સાધનો"
+
+#~ msgid "Chat"
+#~ msgstr "ચેટ"
+
+#~ msgid "Chemistry"
+#~ msgstr "રસાયણશાસ્ત્ર"
+
+#~ msgid "Clocks"
+#~ msgstr "ઘડિયાળો"
+
+#~ msgid "Compression Tools"
+#~ msgstr "દબાણ સાધનો"
+
+#~ msgid "Computer Science"
+#~ msgstr "કમ્પ્યુટર વિજ્ઞાન"
+
+#~ msgid "Construction"
+#~ msgstr "નિર્માણ"
+
+#~ msgid "Contact Management"
+#~ msgstr "સંપર્ક વ્યવસ્થાપન"
+
+#~ msgid "Data Visualization"
+#~ msgstr "માહિતી દ્રશ્યકરણ"
+
+#~ msgid "Debuggers"
+#~ msgstr "ડિબગરો"
+
+#~ msgid "Desktop"
+#~ msgstr "ડૅસ્કટોપ"
+
+#~ msgid "Desktop Settings"
+#~ msgstr "ડૅસ્કટોપ સુયોજનો"
+
+#~ msgid "Dialup"
+#~ msgstr "ડાયલઅપ"
+
+#~ msgid "Dictionaries"
+#~ msgstr "શબ્દકોષો"
+
+#~ msgid "Disc Burning"
+#~ msgstr "ડિસ્ક બર્ન કરી રહ્યા છે"
+
+#~ msgid "Economy"
+#~ msgstr "અર્થતંત્ર"
+
+#~ msgid "Education"
+#~ msgstr "ભણતર"
+
+#~ msgid "Electricity"
+#~ msgstr "વીજળી"
+
+#~ msgid "Electronics"
+#~ msgstr "ઇલેક્ટ્રૉનિક્સ"
+
+#~ msgid "Email Tools"
+#~ msgstr "ઇમેઇલ સાધનો"
+
+#~ msgid "Emulator"
+#~ msgstr "એમ્યુલેટર"
+
+#~ msgid "Engineering"
+#~ msgstr "ઇજનેરી"
+
+#~ msgid "File Manager"
+#~ msgstr "ફાઇલ વ્યવસ્થાપક"
+
+#~ msgid "File Tools"
+#~ msgstr "ફાઇલ સાધનો"
+
+#~ msgid "File Transfer"
+#~ msgstr "ફાઇલ સ્થાનાન્તર"
+
+#~ msgid "Filesystem"
+#~ msgstr "ફાઇલસિસ્ટમ"
+
+#~ msgid "Financial Tools"
+#~ msgstr "નાણાકીય સાધનો"
+
+#~ msgid "Flow Charting Tools"
+#~ msgstr "પ્રવાહ નક્ષાનાં સાધનો"
+
+#~ msgid "GNOME Applications"
+#~ msgstr "GNOME કાર્યક્રમો"
+
+#~ msgid "GTK"
+#~ msgstr "GTK"
+
+#~ msgid "GUI Designers"
+#~ msgstr "GUI રચીયિતા"
+
+#~ msgid "Generic applications for the GNOME environment"
+#~ msgstr "GNOME પર્યાવરણ માટે સામાન્ય કાર્યક્રમો"
+
+#~ msgid "Generic applications for the KDE environment"
+#~ msgstr "KDE પર્યાવરણ માટે સામાન્ય કાર્યક્રમો"
+
+#~ msgid "Geography"
+#~ msgstr "ભૂગોળ"
+
+#~ msgid "Geology"
+#~ msgstr "ભૂસ્તરશાસ્ત્ર"
+
+#~ msgid "Geoscience"
+#~ msgstr "ભૂસ્તરવિજ્ઞાન"
+
+#~ msgid "Graphics"
+#~ msgstr "ગ્રાફિક્સ"
+
+#~ msgid ""
+#~ "Guides and manuals for applications that connect to the outside world"
+#~ msgstr "કાર્યક્રમો માટે માર્ગદર્શિકાઓ અને પુસ્તિકાએ કે જે બહારની દુનિયાને જોડે છે"
+
+#~ msgid "Guides for getting involved in development"
+#~ msgstr "પ્રગતિમાં સંડોવાયેલુ મેળવવા માટે માર્ગદર્શિકાઓ"
+
+#~ msgid "Ham Radio"
+#~ msgstr "હામ રેડિઓ"
+
+#~ msgid "Hardware Settings"
+#~ msgstr "હાર્ડવેર સુયોજનો"
+
+#~ msgid "Have some fun"
+#~ msgstr "મનોરંજન કરો"
+
+#~ msgid "History"
+#~ msgstr "ઇતિહાસ"
+
+#~ msgid "IDEs"
+#~ msgstr "IDEs"
+
+#~ msgid "IRC Clients"
+#~ msgstr "IRC ક્લાઇન્ટો"
+
+#~ msgid "Image Processing"
+#~ msgstr "ઇમેજ પ્રક્રિયા કરી રહ્યુ છે"
+
+#~ msgid "Instant Messaging"
+#~ msgstr "તરત જ સંદેશો કરી રહ્યા છે"
+
+#~ msgid "Internet"
+#~ msgstr "ઈન્ટરનેટ"
+
+#~ msgid "Java"
+#~ msgstr "Java"
+
+#~ msgid "KDE Applications"
+#~ msgstr "KDE કાર્યક્રમો"
+
+#~ msgid "Kids Games"
+#~ msgstr "બાળકોની રમતો"
+
+#~ msgid ""
+#~ "Learn more about making your system more accessible for a range of "
+#~ "disabilities"
+#~ msgstr "અસમર્થતાના વિસ્તાર માટે તમારી સિસ્ટમને વધારે સુલભ બનાવવા વિશે વધારે શિખો"
+
+#~ msgid "Licenses"
+#~ msgstr "લાઇસન્સો"
+
+#~ msgid "Literature"
+#~ msgstr "સાહિત્ય"
+
+#~ msgid "Logic Games"
+#~ msgstr "લોજિક રમતો"
+
+#~ msgid "Math"
+#~ msgstr "ગણિતશાસ્ત્ર"
+
+#~ msgid "Medical Software"
+#~ msgstr "વૈદ્યકીય સોફ્ટવેર"
+
+#~ msgid "Midi"
+#~ msgstr "મિડિ"
+
+#~ msgid "Miscellaneous Documentation"
+#~ msgstr "વિવિધ દસ્તાવેજો"
+
+#~ msgid "Mixers"
+#~ msgstr "મિશ્રિકો"
+
+#~ msgid "Monitor"
+#~ msgstr "મોનિટર"
+
+#~ msgid "Motif"
+#~ msgstr "મોટિફ"
+
+#~ msgid "Music"
+#~ msgstr "સંગિત"
+
+#~ msgid "News"
+#~ msgstr "સમાચારો"
+
+#~ msgid "Numerical Analysis"
+#~ msgstr "આંકડાકીય પૃથ્થકરણ"
+
+#~ msgid "OCR"
+#~ msgstr "OCR"
+
+#~ msgid "Office Applications"
+#~ msgstr "ઓફિસ કાર્યક્રમો"
+
+#~ msgid "Office applications"
+#~ msgstr "ઓફિસ કાર્યક્રમો"
+
+#~ msgid "Other Documentation"
+#~ msgstr "અન્ય દસ્તાવેજીકરણો"
+
+#~ msgid "P2P"
+#~ msgstr "P2P"
+
+#~ msgid "PDA Communication"
+#~ msgstr "PDA બાતચીત"
+
+#~ msgid "Package Manager"
+#~ msgstr "પેકેજ વ્યવસ્થાપક"
+
+#~ msgid "Parallel Computing"
+#~ msgstr "સમાન્તર ગણતરી કરી રહ્યા છે"
+
+#~ msgid "Photography"
+#~ msgstr "ફોટોગ્રાફી"
+
+#~ msgid "Physics"
+#~ msgstr "ભૌતિક વિજ્ઞાન"
+
+#~ msgid "Players"
+#~ msgstr "ખિલાડીઓ"
+
+#~ msgid "Presentation Tools"
+#~ msgstr "પ્રદર્શન સાધનો"
+
+#~ msgid "Printing"
+#~ msgstr "છાપી રહ્યા છીએ"
+
+#~ msgid "Profiling Tools"
+#~ msgstr "રેખાકૃતિ સાધનો"
+
+#~ msgid "Project Management Tools"
+#~ msgstr "પ્રોજેક્ટ વ્યવસ્થાપક સાધનો"
+
+#~ msgid "Publishing"
+#~ msgstr "પ્રકાશન"
+
+#~ msgid "Qt"
+#~ msgstr "Qt"
+
+#~ msgid "Raster Graphics"
+#~ msgstr "રાસ્ટર ગ્રાફિક્સ"
+
+#~ msgid "Recorders"
+#~ msgstr "રેકોર્ડરો"
+
+#~ msgid "Remote Access"
+#~ msgstr "રિમોટ પ્રવેશ"
+
+#~ msgid "Revision Control"
+#~ msgstr "પુનરાવર્તન નિયંત્રણ"
+
+#~ msgid "Robotics"
+#~ msgstr "રોબોટિક્સ"
+
+#~ msgid "Role Playing Games"
+#~ msgstr "રમતો રમવા માટેની ભૂમિકા"
+
+#~ msgid "Scanning"
+#~ msgstr "સ્કેન કરી રહ્યા છે"
+
+#~ msgid "Science"
+#~ msgstr "વિજ્ઞાન"
+
+#~ msgid "Security"
+#~ msgstr "સુરક્ષા"
+
+#~ msgid "Sequencers"
+#~ msgstr "અનુક્રમકો"
+
+#~ msgid "Settings"
+#~ msgstr "સુયોજનો"
+
+#~ msgid ""
+#~ "Settings users can manipulate to make their environment more pleasant"
+#~ msgstr ""
+#~ "વપરાશકર્તાનાં સુયોજનો તેના પર્યાવરણમાં સુખકારક બનાવવા માટે હોશિયારીથી કામ કરી શકો "
+#~ "છો"
+
+#~ msgid "Simulation Games"
+#~ msgstr "સિમ્યુલેશન રમતો"
+
+#~ msgid "Sound"
+#~ msgstr "અવાજ"
+
+#~ msgid "Sound &amp; Video"
+#~ msgstr "સાઉન્ડ &amp; વીડિયો"
+
+#~ msgid "Sound &amp; Video Editing"
+#~ msgstr "સાઉન્ડ &amp; વીડિયો ફેરફાર કરી રહ્યા છે"
+
+#~ msgid "Sports"
+#~ msgstr "ખેલ-કૂદ"
+
+#~ msgid "Sports Games"
+#~ msgstr "ખેલ-કૂદ રમતો"
+
+#~ msgid "Spreadsheet Tools"
+#~ msgstr "સ્પ્રેડશીટ સાધનો"
+
+#~ msgid "Strategy Games"
+#~ msgstr "યોજના વાળી રમતો"
+
+#~ msgid "System"
+#~ msgstr "સિસ્ટમ"
+
+#~ msgid "TV"
+#~ msgstr "TV"
+
+#~ msgid "Telephony"
+#~ msgstr "ટેલિફોની"
+
+#~ msgid "Telephony Tools"
+#~ msgstr "ટેલિફોની સાધનો"
+
+#~ msgid "Terminal Emulator"
+#~ msgstr "ટર્મિનલ એમ્યુલેટર"
+
+#~ msgid "Text Editors"
+#~ msgstr "લખાણ સંપાદકો"
+
+#~ msgid "Text Tools"
+#~ msgstr "લખાણ સાધનો"
+
+#~ msgid "Tools to help you manage your computer"
+#~ msgstr "તમારા કમ્પ્યૂટરની વ્યવસ્થા કરવા માટેના સાધનો"
+
+#~ msgid "Translation Tools"
+#~ msgstr "ભાષાંતર સાધનો"
+
+#~ msgid "Tuners"
+#~ msgstr "ટયૂનરો"
+
+#~ msgid "Utilities"
+#~ msgstr "ઉપયોગિતાઓ"
+
+#~ msgid "Utilities to help you get work done"
+#~ msgstr "તમારુ કામ પૂરુ થઇ ગયુ છે તે મેળવવા મદદ કરવા માટેની ઉપયોગીતાઓ"
+
+#~ msgid "Vector Graphics"
+#~ msgstr "વેક્ટર ગ્રાફિક્સ"
+
+#~ msgid "Video"
+#~ msgstr "વિડીઓ"
+
+#~ msgid "Video Conference"
+#~ msgstr "વિડીઓ પરિષદ"
+
+#~ msgid "Viewer"
+#~ msgstr "દર્શક"
+
+#~ msgid "Web Browser"
+#~ msgstr "વેબ બ્રાઉઝર"
+
+#~ msgid "Web Development"
+#~ msgstr "વેબ વિકાસ"
+
+#~ msgid "Welcome to the GNOME Help Browser"
+#~ msgstr "જીનોમ મદદ બ્રાઉઝરમાં તમારું સ્વાગત છે"
+
+#~ msgid "Word Processors"
+#~ msgstr "વર્ડ પ્રોસેસરો"

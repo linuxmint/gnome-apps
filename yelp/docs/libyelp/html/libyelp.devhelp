@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="Yelp Reference Manual" link="index.html" author="" name="libyelp">
+  <chapters>
+    <sub name="API Reference" link="ch01.html">
+      <sub name="Widgets" link="ch01.html#idp162703032">
+        <sub name="YelpView" link="YelpView.html"/>
+        <sub name="YelpLocationEntry" link="YelpLocationEntry.html"/>
+      </sub>
+      <sub name="Document Processing" link="ch01s02.html">
+        <sub name="YelpDocument" link="YelpDocument.html"/>
+        <sub name="YelpSimpleDocument" link="YelpSimpleDocument.html"/>
+      </sub>
+      <sub name="YelpUri" link="YelpUri.html"/>
+      <sub name="YelpSettings" link="YelpSettings.html"/>
+      <sub name="yelp-error" link="libyelp-yelp-error.html"/>
+    </sub>
+    <sub name="Object Hierarchy" link="object-tree.html"/>
+    <sub name="API Index" link="api-index-full.html"/>
+  </chapters>
+  <functions>
+    <function name="YelpView" link="YelpView.html#YelpView-struct"/>
+    <function name="YelpViewClass" link="YelpView.html#YelpViewClass"/>
+    <function name="YelpViewActionValidFunc ()" link="YelpView.html#YelpViewActionValidFunc"/>
+    <function name="enum YelpViewState" link="YelpView.html#YelpViewState"/>
+    <function name="yelp_view_state_get_type ()" link="YelpView.html#yelp-view-state-get-type"/>
+    <function name="yelp_view_new ()" link="YelpView.html#yelp-view-new"/>
+    <function name="yelp_view_load ()" link="YelpView.html#yelp-view-load"/>
+    <function name="yelp_view_load_uri ()" link="YelpView.html#yelp-view-load-uri"/>
+    <function name="yelp_view_load_document ()" link="YelpView.html#yelp-view-load-document"/>
+    <function name="yelp_view_get_document ()" link="YelpView.html#yelp-view-get-document"/>
+    <function name="yelp_view_get_action_group ()" link="YelpView.html#yelp-view-get-action-group"/>
+    <function name="yelp_view_add_link_action ()" link="YelpView.html#yelp-view-add-link-action"/>
+    <function name="yelp_view_get_active_link_uri ()" link="YelpView.html#yelp-view-get-active-link-uri"/>
+    <function name="yelp_view_get_active_link_text ()" link="YelpView.html#yelp-view-get-active-link-text"/>
+    <function name="The &quot;page-desc&quot; property" link="YelpView.html#YelpView--page-desc"/>
+    <function name="The &quot;page-icon&quot; property" link="YelpView.html#YelpView--page-icon"/>
+    <function name="The &quot;page-id&quot; property" link="YelpView.html#YelpView--page-id"/>
+    <function name="The &quot;page-title&quot; property" link="YelpView.html#YelpView--page-title"/>
+    <function name="The &quot;root-title&quot; property" link="YelpView.html#YelpView--root-title"/>
+    <function name="The &quot;state&quot; property" link="YelpView.html#YelpView--state"/>
+    <function name="The &quot;yelp-uri&quot; property" link="YelpView.html#YelpView--yelp-uri"/>
+    <function name="The &quot;external-uri&quot; signal" link="YelpView.html#YelpView-external-uri"/>
+    <function name="The &quot;loaded&quot; signal" link="YelpView.html#YelpView-loaded"/>
+    <function name="The &quot;new-view-requested&quot; signal" link="YelpView.html#YelpView-new-view-requested"/>
+    <function name="YelpLocationEntry" link="YelpLocationEntry.html#YelpLocationEntry-struct"/>
+    <function name="YelpLocationEntryClass" link="YelpLocationEntry.html#YelpLocationEntryClass"/>
+    <function name="yelp_location_entry_new ()" link="YelpLocationEntry.html#yelp-location-entry-new"/>
+    <function name="yelp_location_entry_start_search ()" link="YelpLocationEntry.html#yelp-location-entry-start-search"/>
+    <function name="The &quot;bookmarks&quot; property" link="YelpLocationEntry.html#YelpLocationEntry--bookmarks"/>
+    <function name="The &quot;enable-search&quot; property" link="YelpLocationEntry.html#YelpLocationEntry--enable-search"/>
+    <function name="The &quot;view&quot; property" link="YelpLocationEntry.html#YelpLocationEntry--view"/>
+    <function name="The &quot;bookmark-clicked&quot; signal" link="YelpLocationEntry.html#YelpLocationEntry-bookmark-clicked"/>
+    <function name="The &quot;location-selected&quot; signal" link="YelpLocationEntry.html#YelpLocationEntry-location-selected"/>
+    <function name="The &quot;search-activated&quot; signal" link="YelpLocationEntry.html#YelpLocationEntry-search-activated"/>
+    <function name="YelpDocument" link="YelpDocument.html#YelpDocument-struct"/>
+    <function name="YelpDocumentClass" link="YelpDocument.html#YelpDocumentClass"/>
+    <function name="YelpDocumentPriv" link="YelpDocument.html#YelpDocumentPriv"/>
+    <function name="enum YelpDocumentSignal" link="YelpDocument.html#YelpDocumentSignal"/>
+    <function name="YelpDocumentCallback ()" link="YelpDocument.html#YelpDocumentCallback"/>
+    <function name="yelp_document_get_for_uri ()" link="YelpDocument.html#yelp-document-get-for-uri"/>
+    <function name="yelp_document_request_page ()" link="YelpDocument.html#yelp-document-request-page"/>
+    <function name="yelp_document_clear_contents ()" link="YelpDocument.html#yelp-document-clear-contents"/>
+    <function name="yelp_document_get_requests ()" link="YelpDocument.html#yelp-document-get-requests"/>
+    <function name="yelp_document_give_contents ()" link="YelpDocument.html#yelp-document-give-contents"/>
+    <function name="yelp_document_get_mime_type ()" link="YelpDocument.html#yelp-document-get-mime-type"/>
+    <function name="yelp_document_read_contents ()" link="YelpDocument.html#yelp-document-read-contents"/>
+    <function name="yelp_document_finish_read ()" link="YelpDocument.html#yelp-document-finish-read"/>
+    <function name="yelp_document_index ()" link="YelpDocument.html#yelp-document-index"/>
+    <function name="yelp_document_list_page_ids ()" link="YelpDocument.html#yelp-document-list-page-ids"/>
+    <function name="yelp_document_get_page_id ()" link="YelpDocument.html#yelp-document-get-page-id"/>
+    <function name="yelp_document_set_page_id ()" link="YelpDocument.html#yelp-document-set-page-id"/>
+    <function name="yelp_document_get_root_id ()" link="YelpDocument.html#yelp-document-get-root-id"/>
+    <function name="yelp_document_set_root_id ()" link="YelpDocument.html#yelp-document-set-root-id"/>
+    <function name="yelp_document_get_prev_id ()" link="YelpDocument.html#yelp-document-get-prev-id"/>
+    <function name="yelp_document_set_prev_id ()" link="YelpDocument.html#yelp-document-set-prev-id"/>
+    <function name="yelp_document_get_next_id ()" link="YelpDocument.html#yelp-document-get-next-id"/>
+    <function name="yelp_document_set_next_id ()" link="YelpDocument.html#yelp-document-set-next-id"/>
+    <function name="yelp_document_get_up_id ()" link="YelpDocument.html#yelp-document-get-up-id"/>
+    <function name="yelp_document_set_up_id ()" link="YelpDocument.html#yelp-document-set-up-id"/>
+    <function name="yelp_document_get_root_title ()" link="YelpDocument.html#yelp-document-get-root-title"/>
+    <function name="yelp_document_get_page_title ()" link="YelpDocument.html#yelp-document-get-page-title"/>
+    <function name="yelp_document_set_page_title ()" link="YelpDocument.html#yelp-document-set-page-title"/>
+    <function name="yelp_document_get_page_desc ()" link="YelpDocument.html#yelp-document-get-page-desc"/>
+    <function name="yelp_document_set_page_desc ()" link="YelpDocument.html#yelp-document-set-page-desc"/>
+    <function name="yelp_document_get_page_icon ()" link="YelpDocument.html#yelp-document-get-page-icon"/>
+    <function name="yelp_document_set_page_icon ()" link="YelpDocument.html#yelp-document-set-page-icon"/>
+    <function name="yelp_document_has_page ()" link="YelpDocument.html#yelp-document-has-page"/>
+    <function name="yelp_document_signal ()" link="YelpDocument.html#yelp-document-signal"/>
+    <function name="yelp_document_error_pending ()" link="YelpDocument.html#yelp-document-error-pending"/>
+    <function name="The &quot;document-uri&quot; property" link="YelpDocument.html#YelpDocument--document-uri"/>
+    <function name="The &quot;indexed&quot; property" link="YelpDocument.html#YelpDocument--indexed"/>
+    <function name="YelpSimpleDocument" link="YelpSimpleDocument.html#YelpSimpleDocument-struct"/>
+    <function name="YelpSimpleDocumentClass" link="YelpSimpleDocument.html#YelpSimpleDocumentClass"/>
+    <function name="YelpSimpleDocumentPriv" link="YelpSimpleDocument.html#YelpSimpleDocumentPriv"/>
+    <function name="yelp_simple_document_new ()" link="YelpSimpleDocument.html#yelp-simple-document-new"/>
+    <function name="YelpUri" link="YelpUri.html#YelpUri-struct"/>
+    <function name="YelpUriClass" link="YelpUri.html#YelpUriClass"/>
+    <function name="enum YelpUriDocumentType" link="YelpUri.html#YelpUriDocumentType"/>
+    <function name="yelp_uri_new ()" link="YelpUri.html#yelp-uri-new"/>
+    <function name="yelp_uri_new_relative ()" link="YelpUri.html#yelp-uri-new-relative"/>
+    <function name="yelp_uri_new_search ()" link="YelpUri.html#yelp-uri-new-search"/>
+    <function name="yelp_uri_resolve ()" link="YelpUri.html#yelp-uri-resolve"/>
+    <function name="yelp_uri_resolve_sync ()" link="YelpUri.html#yelp-uri-resolve-sync"/>
+    <function name="yelp_uri_is_resolved ()" link="YelpUri.html#yelp-uri-is-resolved"/>
+    <function name="yelp_uri_get_document_type ()" link="YelpUri.html#yelp-uri-get-document-type"/>
+    <function name="yelp_uri_get_canonical_uri ()" link="YelpUri.html#yelp-uri-get-canonical-uri"/>
+    <function name="yelp_uri_get_document_uri ()" link="YelpUri.html#yelp-uri-get-document-uri"/>
+    <function name="yelp_uri_get_file ()" link="YelpUri.html#yelp-uri-get-file"/>
+    <function name="yelp_uri_get_search_path ()" link="YelpUri.html#yelp-uri-get-search-path"/>
+    <function name="yelp_uri_get_page_id ()" link="YelpUri.html#yelp-uri-get-page-id"/>
+    <function name="yelp_uri_get_frag_id ()" link="YelpUri.html#yelp-uri-get-frag-id"/>
+    <function name="yelp_uri_get_query ()" link="YelpUri.html#yelp-uri-get-query"/>
+    <function name="yelp_uri_locate_file_uri ()" link="YelpUri.html#yelp-uri-locate-file-uri"/>
+    <function name="The &quot;resolved&quot; signal" link="YelpUri.html#YelpUri-resolved"/>
+    <function name="YelpSettings" link="YelpSettings.html#YelpSettings-struct"/>
+    <function name="YelpSettingsClass" link="YelpSettings.html#YelpSettingsClass"/>
+    <function name="YelpSettingsPriv" link="YelpSettings.html#YelpSettingsPriv"/>
+    <function name="enum YelpSettingsColor" link="YelpSettings.html#YelpSettingsColor"/>
+    <function name="enum YelpSettingsFont" link="YelpSettings.html#YelpSettingsFont"/>
+    <function name="enum YelpSettingsIcon" link="YelpSettings.html#YelpSettingsIcon"/>
+    <function name="yelp_settings_get_default ()" link="YelpSettings.html#yelp-settings-get-default"/>
+    <function name="yelp_settings_get_color ()" link="YelpSettings.html#yelp-settings-get-color"/>
+    <function name="yelp_settings_get_colors ()" link="YelpSettings.html#yelp-settings-get-colors"/>
+    <function name="yelp_settings_set_colors ()" link="YelpSettings.html#yelp-settings-set-colors"/>
+    <function name="yelp_settings_get_color_param ()" link="YelpSettings.html#yelp-settings-get-color-param"/>
+    <function name="yelp_settings_get_font ()" link="YelpSettings.html#yelp-settings-get-font"/>
+    <function name="yelp_settings_get_font_family ()" link="YelpSettings.html#yelp-settings-get-font-family"/>
+    <function name="yelp_settings_get_font_size ()" link="YelpSettings.html#yelp-settings-get-font-size"/>
+    <function name="yelp_settings_set_fonts ()" link="YelpSettings.html#yelp-settings-set-fonts"/>
+    <function name="yelp_settings_get_font_adjustment ()" link="YelpSettings.html#yelp-settings-get-font-adjustment"/>
+    <function name="yelp_settings_set_font_adjustment ()" link="YelpSettings.html#yelp-settings-set-font-adjustment"/>
+    <function name="yelp_settings_get_icon_size ()" link="YelpSettings.html#yelp-settings-get-icon-size"/>
+    <function name="yelp_settings_set_icon_size ()" link="YelpSettings.html#yelp-settings-set-icon-size"/>
+    <function name="yelp_settings_get_icon ()" link="YelpSettings.html#yelp-settings-get-icon"/>
+    <function name="yelp_settings_set_icons ()" link="YelpSettings.html#yelp-settings-set-icons"/>
+    <function name="yelp_settings_get_icon_param ()" link="YelpSettings.html#yelp-settings-get-icon-param"/>
+    <function name="yelp_settings_get_all_params ()" link="YelpSettings.html#yelp-settings-get-all-params"/>
+    <function name="yelp_settings_get_show_text_cursor ()" link="YelpSettings.html#yelp-settings-get-show-text-cursor"/>
+    <function name="yelp_settings_set_show_text_cursor ()" link="YelpSettings.html#yelp-settings-set-show-text-cursor"/>
+    <function name="yelp_settings_get_editor_mode ()" link="YelpSettings.html#yelp-settings-get-editor-mode"/>
+    <function name="yelp_settings_set_editor_mode ()" link="YelpSettings.html#yelp-settings-set-editor-mode"/>
+    <function name="yelp_settings_cmp_icons ()" link="YelpSettings.html#yelp-settings-cmp-icons"/>
+    <function name="YELP_ERROR" link="libyelp-yelp-error.html#YELP-ERROR:CAPS"/>
+    <function name="enum YelpError" link="libyelp-yelp-error.html#YelpError"/>
+    <function name="yelp_error_copy ()" link="libyelp-yelp-error.html#yelp-error-copy"/>
+    <function name="yelp_error_get_title ()" link="libyelp-yelp-error.html#yelp-error-get-title"/>
+  </functions>
+</book>

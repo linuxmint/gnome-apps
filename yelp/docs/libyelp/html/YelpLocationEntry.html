@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>YelpLocationEntry</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+<link rel="home" href="index.html" title="Yelp Reference Manual">
+<link rel="up" href="ch01.html#idp162703032" title="Widgets">
+<link rel="prev" href="YelpView.html" title="YelpView">
+<link rel="next" href="ch01s02.html" title="Document Processing">
+<meta name="generator" content="GTK-Doc V1.15 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="YelpView.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html#idp162703032"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Yelp Reference Manual</th>
+<td><a accesskey="n" href="ch01s02.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#YelpLocationEntry.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#YelpLocationEntry.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#YelpLocationEntry.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#YelpLocationEntry.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
+                   | 
+                  <a href="#YelpLocationEntry.properties" class="shortcut">Properties</a>
+                   | 
+                  <a href="#YelpLocationEntry.signals" class="shortcut">Signals</a>
+</td></tr>
+</table>
+<div class="refentry" title="YelpLocationEntry">
+<a name="YelpLocationEntry"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="YelpLocationEntry.top_of_page"></a>YelpLocationEntry</span></h2>
+<p>YelpLocationEntry — A location entry with history and search</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="YelpLocationEntry.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;yelp.h&gt;
+
+                    <a href="YelpLocationEntry.html#YelpLocationEntry-struct">YelpLocationEntry</a>;
+                    <a href="YelpLocationEntry.html#YelpLocationEntryClass">YelpLocationEntryClass</a>;
+<span class="returnvalue">GtkWidget</span> *         <a href="YelpLocationEntry.html#yelp-location-entry-new">yelp_location_entry_new</a>             (<em class="parameter"><code><a href="YelpView.html"><span class="type">YelpView</span></a> *window</code></em>,
+                                                         <em class="parameter"><code><span class="type">YelpBookmarks</span> *bookmarks</code></em>);
+<span class="returnvalue">void</span>                <a href="YelpLocationEntry.html#yelp-location-entry-start-search">yelp_location_entry_start_search</a>    (<em class="parameter"><code><a href="YelpLocationEntry.html"><span class="type">YelpLocationEntry</span></a> *entry</code></em>);
+</pre>
+</div>
+<div class="refsect1" title="Object Hierarchy">
+<a name="YelpLocationEntry.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GObject
+   +----GInitiallyUnowned
+         +----GtkWidget
+               +----GtkContainer
+                     +----GtkBin
+                           +----GtkComboBox
+                                 +----YelpLocationEntry
+</pre>
+</div>
+<div class="refsect1" title="Implemented Interfaces">
+<a name="YelpLocationEntry.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+YelpLocationEntry implements
+ AtkImplementorIface,  GtkBuildable,  GtkCellLayout and  GtkCellEditable.</p>
+</div>
+<div class="refsect1" title="Properties">
+<a name="YelpLocationEntry.properties"></a><h2>Properties</h2>
+<pre class="synopsis">
+  "<a href="YelpLocationEntry.html#YelpLocationEntry--bookmarks">bookmarks</a>"                <span class="type">YelpBookmarks</span>*        : Read / Write / Construct Only
+  "<a href="YelpLocationEntry.html#YelpLocationEntry--enable-search">enable-search</a>"            <span class="type">gboolean</span>              : Read / Write / Construct
+  "<a href="YelpLocationEntry.html#YelpLocationEntry--view">view</a>"                     <a href="YelpView.html"><span class="type">YelpView</span></a>*             : Read / Write / Construct Only
+</pre>
+</div>
+<div class="refsect1" title="Signals">
+<a name="YelpLocationEntry.signals"></a><h2>Signals</h2>
+<pre class="synopsis">
+  "<a href="YelpLocationEntry.html#YelpLocationEntry-bookmark-clicked">bookmark-clicked</a>"                               : Run Last
+  "<a href="YelpLocationEntry.html#YelpLocationEntry-location-selected">location-selected</a>"                              : Run Last
+  "<a href="YelpLocationEntry.html#YelpLocationEntry-search-activated">search-activated</a>"                               : Run Last
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="YelpLocationEntry.description"></a><h2>Description</h2>
+<p>
+<a href="YelpLocationEntry.html"><span class="type">YelpLocationEntry</span></a> is a <span class="type">GtkComboBox</span> designed to show the current location,
+provide a drop-down menu of previous locations, and allow the user to perform
+searches.
+</p>
+<p>
+The <span class="type">GtkTreeModel</span> used by a <a href="YelpLocationEntry.html"><span class="type">YelpLocationEntry</span></a> is expected to have at least
+four columns: <span class="type">"entry-text-column"</span> contains the displayed name
+of the location, <span class="type">"desc-column"</span> contains a description
+for each entry, <span class="type">"icon-column"</span> contains an icon name for
+the location, and <span class="type">"flags-column"</span> contains a bit field
+of <span class="type">YelpLocationEntryFlags</span>.  These columns are specified when creating a
+<a href="YelpLocationEntry.html"><span class="type">YelpLocationEntry</span></a> widget with <code class="function">yelp_location_entry_new_with_model()</code>.
+</p>
+<p>
+Usually, a single row in the <span class="type">GtkTreeModel</span> corresponds to a location.  When
+a user selects a row from the drop-down menu, the icon and text for that
+row will be placed in the embedded text entry, and the
+<span class="type">"location-selected"</span> signal will be emitted.
+</p>
+<p>
+If a row has the <code class="literal">YELP_LOCATION_ENTRY_IS_SEARCH</code> flag set, selecting that
+row will not emit the <a href="YelpLocationEntry.html#YelpLocationEntry-location-selected"><span class="type">"location-selected"</span></a> signal.  Instead,
+the <a href="YelpLocationEntry.html"><span class="type">YelpLocationEntry</span></a> widget will be placed into search mode, as if by a
+call to <a href="YelpLocationEntry.html#yelp-location-entry-start-search"><code class="function">yelp_location_entry_start_search()</code></a>.
+</p>
+<p>
+When a row has the <code class="literal">YELP_LOCATION_ENTRY_CAN_BOOKMARK</code> flag set, an icon
+will be displayed in the secondary icon position of the embedded text
+entry allowing the user to bookmark the location.  Clicking this icon
+will cause the FIXME signal to be emitted.
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="YelpLocationEntry.details"></a><h2>Details</h2>
+<div class="refsect2" title="YelpLocationEntry">
+<a name="YelpLocationEntry-struct"></a><h3>YelpLocationEntry</h3>
+<pre class="programlisting">typedef struct _YelpLocationEntry YelpLocationEntry;</pre>
+</div>
+<hr>
+<div class="refsect2" title="YelpLocationEntryClass">
+<a name="YelpLocationEntryClass"></a><h3>YelpLocationEntryClass</h3>
+<pre class="programlisting">typedef struct {
+    GtkComboBoxClass     parent;
+
+    void     (* location_selected)          (YelpLocationEntry *entry);
+    void     (* search_activated)           (YelpLocationEntry *entry);
+    void     (* bookmark_clicked)           (YelpLocationEntry *entry);
+
+    /* Padding for future expansion */
+    void (*_gtk_reserved0) (void);
+    void (*_gtk_reserved1) (void);
+    void (*_gtk_reserved2) (void);
+    void (*_gtk_reserved3) (void);
+} YelpLocationEntryClass;
+</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_location_entry_new ()">
+<a name="yelp-location-entry-new"></a><h3>yelp_location_entry_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkWidget</span> *         yelp_location_entry_new             (<em class="parameter"><code><a href="YelpView.html"><span class="type">YelpView</span></a> *window</code></em>,
+                                                         <em class="parameter"><code><span class="type">YelpBookmarks</span> *bookmarks</code></em>);</pre>
+<p>
+Creates a new <a href="YelpLocationEntry.html"><span class="type">YelpLocationEntry</span></a> widget to control <em class="parameter"><code>view</code></em>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>view</code></em> :</span></p></td>
+<td>A <a href="YelpView.html"><span class="type">YelpView</span></a>.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> A new <a href="YelpLocationEntry.html"><span class="type">YelpLocationEntry</span></a>.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="yelp_location_entry_start_search ()">
+<a name="yelp-location-entry-start-search"></a><h3>yelp_location_entry_start_search ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                yelp_location_entry_start_search    (<em class="parameter"><code><a href="YelpLocationEntry.html"><span class="type">YelpLocationEntry</span></a> *entry</code></em>);</pre>
+<p>
+Puts <em class="parameter"><code>entry</code></em> into search mode.  This focuses the entry and clears its text
+contents.  When the user activates the search, the
+<a href="YelpLocationEntry.html#YelpLocationEntry-search-activated"><span class="type">"search-activated"</span></a> signal will be emitted.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>entry</code></em> :</span></p></td>
+<td>A <a href="YelpLocationEntry.html"><span class="type">YelpLocationEntry</span></a>.
+</td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" title="Property Details">
+<a name="YelpLocationEntry.property-details"></a><h2>Property Details</h2>
+<div class="refsect2" title='The "bookmarks" property'>
+<a name="YelpLocationEntry--bookmarks"></a><h3>The <code class="literal">"bookmarks"</code> property</h3>
+<pre class="programlisting">  "bookmarks"                <span class="type">YelpBookmarks</span>*        : Read / Write / Construct Only</pre>
+<p>
+An instance of an implementation of YelpBookmarks to provide
+bookmark information for this location entry.
+</p>
+</div>
+<hr>
+<div class="refsect2" title='The "enable-search" property'>
+<a name="YelpLocationEntry--enable-search"></a><h3>The <code class="literal">"enable-search"</code> property</h3>
+<pre class="programlisting">  "enable-search"            <span class="type">gboolean</span>              : Read / Write / Construct</pre>
+<p>
+Whether the location entry can act as a search entry.  If search is not
+enabled, the user will not be able to initiate a search by clicking in
+the embedded text entry or selecting a search row in the drop-down menu.
+</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2" title='The "view" property'>
+<a name="YelpLocationEntry--view"></a><h3>The <code class="literal">"view"</code> property</h3>
+<pre class="programlisting">  "view"                     <a href="YelpView.html"><span class="type">YelpView</span></a>*             : Read / Write / Construct Only</pre>
+<p>
+The YelpView instance that this location entry controls.
+</p>
+</div>
+</div>
+<div class="refsect1" title="Signal Details">
+<a name="YelpLocationEntry.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2" title='The "bookmark-clicked" signal'>
+<a name="YelpLocationEntry-bookmark-clicked"></a><h3>The <code class="literal">"bookmark-clicked"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a href="YelpLocationEntry.html"><span class="type">YelpLocationEntry</span></a> *widget,
+                                                        <span class="type">gpointer</span>           user_data)      : Run Last</pre>
+<p>
+This signal will be emitted whenever a user clicks the bookmark icon
+embedded in the location entry.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>widget</code></em> :</span></p></td>
+<td>The <a href="YelpLocationEntry.html"><span class="type">YelpLocationEntry</span></a> for which the signal was emitted.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>User data set when the handler was connected.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title='The "location-selected" signal'>
+<a name="YelpLocationEntry-location-selected"></a><h3>The <code class="literal">"location-selected"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a href="YelpLocationEntry.html"><span class="type">YelpLocationEntry</span></a> *widget,
+                                                        <span class="type">gpointer</span>           user_data)      : Run Last</pre>
+<p>
+This signal will be emitted whenever a user selects a normal row from the
+drop-down menu.  Note that if a row has the flag <code class="literal">YELP_LOCATION_ENTRY_IS_SEARCH</code>,
+clicking the row will cause <em class="parameter"><code>widget</code></em> to enter search mode, and this signal
+will not be emitted.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>widget</code></em> :</span></p></td>
+<td>The <a href="YelpLocationEntry.html"><span class="type">YelpLocationEntry</span></a> for which the signal was emitted.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>User data set when the handler was connected.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title='The "search-activated" signal'>
+<a name="YelpLocationEntry-search-activated"></a><h3>The <code class="literal">"search-activated"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a href="YelpLocationEntry.html"><span class="type">YelpLocationEntry</span></a> *widget,
+                                                        <span class="type">gchar</span>             *text,
+                                                        <span class="type">gpointer</span>           user_data)      : Run Last</pre>
+<p>
+This signal will be emitted whenever the user activates a search, generally
+by pressing <span class="keycap"><strong>Enter</strong></span> in the embedded text entry while <em class="parameter"><code>widget</code></em>
+is in search mode.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>widget</code></em> :</span></p></td>
+<td>The <a href="YelpLocationEntry.html"><span class="type">YelpLocationEntry</span></a> for which the signal was emitted.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>text</code></em> :</span></p></td>
+<td>The search text.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>User data set when the handler was connected.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.15</div>
+</body>
+</html>

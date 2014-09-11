@@ -1,0 +1,567 @@
+# Czech translation of Yelp.
+# Copyright (C) 2002, 2008, 2009, 2010, 2011 the author(s) of Yelp.
+# Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+# Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+# This file is distributed under the same license as the yelp package.
+#
+# Michal Bukovjan <bukm@centrum.cz>, 2002.
+# Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+# Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+# Jakub Friedl <jfriedl@suse.cz>, 2006.
+# Petr Kovar <pknbe@volny.cz>, 2008, 2009, 2011.
+# Marek Černocký <marek@manet.cz>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: yelp\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=yelp&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2013-04-05 23:43+0000\n"
+"PO-Revision-Date: 2013-04-09 23:18+0200\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#. (itstool) path: msg/msgstr
+#. ID: install.tooltip
+#. This is a format message used to format tooltips on install: links. These
+#. links allow users to install packages by clicking a link in the help. The
+#. tooltip may also be used as the link text, if there's no link text in the
+#. document. Special elements in the message will be replaced with the
+#. appropriate content, as follows:
+#.
+#. <string/> - The package to install
+#.
+#: yelp.xml.in:36
+msgid "Install <string/>"
+msgstr "Instalovat <string/>"
+
+#: ../libyelp/yelp-bz2-decompressor.c:146
+#: ../libyelp/yelp-lzma-decompressor.c:155
+msgid "Invalid compressed data"
+msgstr "Neplatná komprimovaná data"
+
+#: ../libyelp/yelp-bz2-decompressor.c:152
+#: ../libyelp/yelp-lzma-decompressor.c:161
+msgid "Not enough memory"
+msgstr "Nedostatek paměti"
+
+#: ../libyelp/yelp-docbook-document.c:282 ../libyelp/yelp-info-document.c:238
+#: ../libyelp/yelp-mallard-document.c:306
+#: ../libyelp/yelp-mallard-document.c:457 ../libyelp/yelp-man-document.c:282
+#, c-format
+msgid "The page ‘%s’ was not found in the document ‘%s’."
+msgstr "Stránka „%s“ nebyla v dokumentu „%s“ nalezena."
+
+#: ../libyelp/yelp-docbook-document.c:317 ../libyelp/yelp-info-document.c:372
+#: ../libyelp/yelp-man-document.c:417
+#, c-format
+msgid "The file does not exist."
+msgstr "Soubor neexistuje."
+
+#: ../libyelp/yelp-docbook-document.c:327 ../libyelp/yelp-info-document.c:382
+#: ../libyelp/yelp-man-document.c:427
+#, c-format
+msgid "The file ‘%s’ does not exist."
+msgstr "Soubor „%s“ neexistuje."
+
+#: ../libyelp/yelp-docbook-document.c:342
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because it is not a well-formed XML "
+"document."
+msgstr ""
+"Soubor „%s“ nelze analyzovat, neboť není správně utvořeným dokumentem XML."
+
+#: ../libyelp/yelp-docbook-document.c:355
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because one or more of its included files "
+"is not a well-formed XML document."
+msgstr ""
+"Soubor „%s“ nelze analyzovat, neboť jeden (nebo více) zahrnutý soubor není "
+"správně utvořeným dokumentem XML."
+
+#: ../libyelp/yelp-docbook-document.c:765
+msgid "Unknown"
+msgstr "Neznámé"
+
+#: ../libyelp/yelp-docbook-document.c:826 ../libyelp/yelp-info-document.c:315
+#: ../libyelp/yelp-man-document.c:359
+#, c-format
+msgid "The requested page was not found in the document ‘%s’."
+msgstr "Požadovaná stránka nebyla v dokumentu „%s“ nalezena."
+
+#: ../libyelp/yelp-document.c:268
+msgid "Indexed"
+msgstr "Indexováno"
+
+#: ../libyelp/yelp-document.c:269
+msgid "Whether the document content has been indexed"
+msgstr "Zda byl obsah dokumentu indexován"
+
+#: ../libyelp/yelp-document.c:277
+msgid "Document URI"
+msgstr "Adresa URI dokumentu"
+
+#: ../libyelp/yelp-document.c:278
+msgid "The URI which identifies the document"
+msgstr "Adresa URI identifikující dokument"
+
+#: ../libyelp/yelp-document.c:994
+#, c-format
+msgid "Search results for “%s”"
+msgstr "Výsledky hledání pro „%s“"
+
+#: ../libyelp/yelp-document.c:1006
+#, c-format
+msgid "No matching help pages found in “%s”."
+msgstr "V „%s“ nebyly nalezeny žádné odpovídající stránky nápovědy."
+
+#: ../libyelp/yelp-document.c:1012
+msgid "No matching help pages found."
+msgstr "Nenalezeny žádné odpovídající stránky nápovědy."
+
+#: ../libyelp/yelp-error.c:37
+#, c-format
+msgid "An unknown error occurred."
+msgstr "Došlo k neznámé chybě."
+
+#: ../libyelp/yelp-help-list.c:549 ../libyelp/yelp-help-list.c:558
+msgid "All Help Documents"
+msgstr "Všechny dokumenty nápovědy"
+
+#: ../libyelp/yelp-info-document.c:397
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because it is not a well-formed info page."
+msgstr ""
+"Soubor „%s“ nelze analyzovat, neboť není správně utvořenou stránkou info."
+
+#: ../libyelp/yelp-location-entry.c:336
+msgid "View"
+msgstr "Zobrazit"
+
+#: ../libyelp/yelp-location-entry.c:337
+msgid "A YelpView instance to control"
+msgstr "Instance YelpView, která se má ovládat"
+
+#: ../libyelp/yelp-location-entry.c:352
+msgid "Bookmarks"
+msgstr "Záložky"
+
+#: ../libyelp/yelp-location-entry.c:353
+msgid "A YelpBookmarks implementation instance"
+msgstr "Instance implementace YelpBookmarks"
+
+#: ../libyelp/yelp-location-entry.c:369
+msgid "Enable Search"
+msgstr "Povolit hledání"
+
+#: ../libyelp/yelp-location-entry.c:370
+msgid "Whether the location entry can be used as a search field"
+msgstr "Zda může být vstupní pole umístění použito jako pole hledání"
+
+#: ../libyelp/yelp-location-entry.c:440 ../src/yelp-window.c:270
+msgid "Search..."
+msgstr "Hledat…"
+
+#: ../libyelp/yelp-location-entry.c:783
+msgid "Clear the search text"
+msgstr "Vymazat hledaný text"
+
+#: ../libyelp/yelp-location-entry.c:831 ../libyelp/yelp-location-entry.c:1593
+msgid "Bookmark this page"
+msgstr "Vložit tuto stránku mezi záložky"
+
+#: ../libyelp/yelp-location-entry.c:839 ../libyelp/yelp-location-entry.c:1601
+msgid "Remove bookmark"
+msgstr "Odstranit záložku"
+
+#: ../libyelp/yelp-location-entry.c:1154
+#, c-format
+msgid "Search for “%s”"
+msgstr "Hledat „%s“"
+
+#: ../libyelp/yelp-location-entry.c:1458
+msgid "Loading"
+msgstr "Načítání"
+
+#: ../libyelp/yelp-mallard-document.c:345
+#, c-format
+msgid "The directory ‘%s’ does not exist."
+msgstr "Složka „%s“ neexistuje."
+
+#: ../libyelp/yelp-settings.c:156
+msgid "GtkSettings"
+msgstr "GtkSettings"
+
+#: ../libyelp/yelp-settings.c:157
+msgid "A GtkSettings object to get settings from"
+msgstr "Objekt GtkSettings, ze kterého se má získat nastavení"
+
+#: ../libyelp/yelp-settings.c:165
+msgid "GtkIconTheme"
+msgstr "GtkIconTheme"
+
+#: ../libyelp/yelp-settings.c:166
+msgid "A GtkIconTheme object to get icons from"
+msgstr "Objekt GtkIconTheme, ze kterého se mají získat ikony"
+
+#: ../libyelp/yelp-settings.c:174
+msgid "Font Adjustment"
+msgstr "Úprava písma"
+
+#: ../libyelp/yelp-settings.c:175
+msgid "A size adjustment to add to font sizes"
+msgstr "Úprava velikosti, která má být provedena u písem"
+
+#: ../libyelp/yelp-settings.c:183
+msgid "Show Text Cursor"
+msgstr "Zobrazovat textový kurzor"
+
+#: ../libyelp/yelp-settings.c:184
+msgid "Show the text cursor or caret for accessible navigation"
+msgstr "Zobrazovat textový kurzor nebo kurzor pro zpřístupněnou navigaci"
+
+#: ../libyelp/yelp-settings.c:192
+msgid "Editor Mode"
+msgstr "Režim úprav"
+
+#: ../libyelp/yelp-settings.c:193
+msgid "Enable features useful to editors"
+msgstr "Povolí vlastnosti užitečné pro editory"
+
+#: ../libyelp/yelp-sqlite-storage.c:150
+msgid "Database filename"
+msgstr "Název souboru databáze"
+
+#: ../libyelp/yelp-sqlite-storage.c:151
+msgid "The filename of the sqlite database"
+msgstr "Název souboru databáze sqlite"
+
+#: ../libyelp/yelp-transform.c:171
+msgid "XSLT Stylesheet"
+msgstr "Stylopis XSLT"
+
+#: ../libyelp/yelp-transform.c:172
+msgid "The location of the XSLT stylesheet"
+msgstr "Umístění stylopisu XSLT"
+
+#: ../libyelp/yelp-transform.c:379 ../libyelp/yelp-transform.c:394
+#, c-format
+msgid "The XSLT stylesheet ‘%s’ is either missing or not valid."
+msgstr "Stylopis XSLT „%s“ buď schází, nebo je neplatný."
+
+#: ../libyelp/yelp-transform.c:528
+msgid "No href attribute found on yelp:document\n"
+msgstr "Schází atribut href v yelp:document\n"
+
+#: ../libyelp/yelp-transform.c:543
+msgid "Out of memory"
+msgstr "Nedostatek paměti"
+
+#: ../libyelp/yelp-view.c:131
+msgid "_Print..."
+msgstr "_Tisk…"
+
+#: ../libyelp/yelp-view.c:136
+msgid "_Back"
+msgstr "_Zpět"
+
+#: ../libyelp/yelp-view.c:141
+msgid "_Forward"
+msgstr "_Vpřed"
+
+#: ../libyelp/yelp-view.c:146
+msgid "_Previous Page"
+msgstr "_Předchozí stránka"
+
+#: ../libyelp/yelp-view.c:151
+msgid "_Next Page"
+msgstr "_Následující stránka"
+
+#: ../libyelp/yelp-view.c:423
+msgid "Yelp URI"
+msgstr "Yelp URI"
+
+#: ../libyelp/yelp-view.c:424
+msgid "A YelpUri with the current location"
+msgstr "YelpUri s aktuálním umístěním"
+
+#: ../libyelp/yelp-view.c:432
+msgid "Loading State"
+msgstr "Stav načítání"
+
+#: ../libyelp/yelp-view.c:433
+msgid "The loading state of the view"
+msgstr "Stav načítání před zobrazením"
+
+#: ../libyelp/yelp-view.c:442
+msgid "Page ID"
+msgstr "ID stránky"
+
+#: ../libyelp/yelp-view.c:443
+msgid "The ID of the root page of the page being viewed"
+msgstr "ID stránky, která je kořenová ve vztahu k zobrazené stránce"
+
+#: ../libyelp/yelp-view.c:451
+msgid "Root Title"
+msgstr "Titulek kořenové stránky"
+
+#: ../libyelp/yelp-view.c:452
+msgid "The title of the root page of the page being viewed"
+msgstr "Titulek stránky, která je kořenová ve vztahu k zobrazené stránce"
+
+#: ../libyelp/yelp-view.c:460
+msgid "Page Title"
+msgstr "Titulek stránky"
+
+#: ../libyelp/yelp-view.c:461
+msgid "The title of the page being viewed"
+msgstr "Titulek zobrazené stránky"
+
+#: ../libyelp/yelp-view.c:469
+msgid "Page Description"
+msgstr "Popis stránky"
+
+#: ../libyelp/yelp-view.c:470
+msgid "The description of the page being viewed"
+msgstr "Popis zobrazené stránky"
+
+#: ../libyelp/yelp-view.c:478
+msgid "Page Icon"
+msgstr "Ikona stránky"
+
+#: ../libyelp/yelp-view.c:479
+msgid "The icon of the page being viewed"
+msgstr "Ikona zobrazené stránky"
+
+#: ../libyelp/yelp-view.c:720
+msgid "You do not have PackageKit. Package install links require PackageKit."
+msgstr "PackageKit není k dispozici. Instalační odkazy PackageKit vyžadují."
+
+#: ../libyelp/yelp-view.c:1014
+msgid "Save Image"
+msgstr "Uložit obrázek"
+
+#: ../libyelp/yelp-view.c:1109
+msgid "Save Code"
+msgstr "Uložit kód"
+
+#: ../libyelp/yelp-view.c:1272
+#, c-format
+msgid "Send email to %s"
+msgstr "Odeslat e-mail na %s"
+
+#: ../libyelp/yelp-view.c:1287
+msgid "_Install Packages"
+msgstr "_Instalovat balíčky"
+
+#: ../libyelp/yelp-view.c:1295
+msgid "_Open Link"
+msgstr "_Otevřít odkaz"
+
+#: ../libyelp/yelp-view.c:1302
+msgid "_Copy Link Location"
+msgstr "_Kopírovat odkaz na umístění"
+
+#: ../libyelp/yelp-view.c:1308
+msgid "Open Link in New _Window"
+msgstr "Otevřít od_kaz v novém okně"
+
+#: ../libyelp/yelp-view.c:1360
+msgid "_Save Image As..."
+msgstr "_Uložit obrázek jako…"
+
+#: ../libyelp/yelp-view.c:1362
+msgid "_Save Video As..."
+msgstr "_Uložit video jako…"
+
+#: ../libyelp/yelp-view.c:1369
+msgid "S_end Image To..."
+msgstr "Od_eslat obrázek na…"
+
+#: ../libyelp/yelp-view.c:1371
+msgid "S_end Video To..."
+msgstr "Od_eslat video na…"
+
+#: ../libyelp/yelp-view.c:1382
+msgid "_Copy Text"
+msgstr "_Kopírovat text"
+
+#: ../libyelp/yelp-view.c:1395
+msgid "C_opy Code Block"
+msgstr "K_opírovat blok kódu"
+
+#: ../libyelp/yelp-view.c:1400
+msgid "Save Code _Block As..."
+msgstr "Uložit _blok kódu jako…"
+
+#: ../libyelp/yelp-view.c:1507
+#, c-format
+msgid "See all search results for “%s”"
+msgstr "Zobrazit všechny výsledky hledání „%s“"
+
+#: ../libyelp/yelp-view.c:1628
+#, c-format
+msgid "Could not load a document for ‘%s’"
+msgstr "Pro „%s“ nelze otevřít dokument"
+
+#: ../libyelp/yelp-view.c:1634
+#, c-format
+msgid "Could not load a document"
+msgstr "Nelze otevřít dokument"
+
+#: ../libyelp/yelp-view.c:1709
+msgid "Document Not Found"
+msgstr "Dokument nenalezen"
+
+#: ../libyelp/yelp-view.c:1711
+msgid "Page Not Found"
+msgstr "Stránka nenalezena"
+
+#: ../libyelp/yelp-view.c:1714
+msgid "Cannot Read"
+msgstr "Nelze číst"
+
+#: ../libyelp/yelp-view.c:1720
+msgid "Unknown Error"
+msgstr "Neznámá chyba"
+
+#: ../libyelp/yelp-view.c:1740
+msgid "Search for packages containing this document."
+msgstr "Hledat balíčky obsahující tento dokument."
+
+#: ../libyelp/yelp-view.c:1892
+#, c-format
+msgid "The URI ‘%s’ does not point to a valid page."
+msgstr "Adresa URI „%s“ neodkazuje na platnou stránku."
+
+#: ../libyelp/yelp-view.c:1898
+#, c-format
+msgid "The URI does not point to a valid page."
+msgstr "Adresa URI neodkazuje na platnou stránku."
+
+#: ../libyelp/yelp-view.c:1904
+#, c-format
+msgid "The URI ‘%s’ could not be parsed."
+msgstr "Adresu URI „%s“ se nezdařilo analyzovat."
+
+#: ../src/yelp-application.c:65
+msgid "Turn on editor mode"
+msgstr "Zapnout režim úprav"
+
+#: ../src/yelp-application.c:128
+msgid "_Larger Text"
+msgstr "Větší t_ext"
+
+#: ../src/yelp-application.c:130
+msgid "Increase the size of the text"
+msgstr "Zvětšit velikost textu"
+
+#: ../src/yelp-application.c:133
+msgid "_Smaller Text"
+msgstr "_Menší text"
+
+#: ../src/yelp-application.c:135
+msgid "Decrease the size of the text"
+msgstr "Zmenšit velikost textu"
+
+#: ../src/yelp-application.c:253 ../src/yelp-window.c:1360
+#: ../yelp.desktop.in.in.h:1
+msgid "Help"
+msgstr "Nápověda"
+
+#: ../src/yelp-application.c:288
+msgid "Show Text _Cursor"
+msgstr "Zobrazovat te_xtový kurzor"
+
+#: ../src/yelp-window.c:236
+msgid "_Page"
+msgstr "_Stránka"
+
+#: ../src/yelp-window.c:237
+msgid "_View"
+msgstr "_Zobrazit"
+
+#: ../src/yelp-window.c:238
+msgid "_Go"
+msgstr "Pře_jít"
+
+#: ../src/yelp-window.c:239
+msgid "_Bookmarks"
+msgstr "Zá_ložky"
+
+#: ../src/yelp-window.c:242
+msgid "_New Window"
+msgstr "_Nové okno"
+
+#: ../src/yelp-window.c:247
+msgid "_Close"
+msgstr "_Zavřít"
+
+#: ../src/yelp-window.c:252
+msgid "_All Documents"
+msgstr "_Všechny dokumenty"
+
+#: ../src/yelp-window.c:256
+msgid "_Add Bookmark"
+msgstr "_Přidat záložku"
+
+#: ../src/yelp-window.c:261
+msgid "_Remove Bookmark"
+msgstr "Odst_ranit záložku"
+
+#: ../src/yelp-window.c:265
+msgid "Find in Page..."
+msgstr "Najít na stránce…"
+
+#: ../src/yelp-window.c:275
+msgid "Open Location"
+msgstr "Otevřít umístění"
+
+#: ../src/yelp-window.c:301
+msgid "Application"
+msgstr "Aplikace"
+
+#: ../src/yelp-window.c:302
+msgid "A YelpApplication instance that controls this window"
+msgstr "Instance YelpApplication kontrolující toto okno"
+
+#: ../src/yelp-window.c:429
+msgid "Read Link _Later"
+msgstr "Od_ložit přečtení odkazu"
+
+#: ../src/yelp-window.c:526
+msgid "Find:"
+msgstr "Najít:"
+
+#: ../src/yelp-window.c:548
+msgid "Read Later"
+msgstr "Odložit četbu"
+
+#: ../src/yelp-window.c:1180
+#, c-format
+msgid "%i match"
+msgid_plural "%i matches"
+msgstr[0] "Odpovídá %i"
+msgstr[1] "Odpovídají %i"
+msgstr[2] "Odpovídá %i"
+
+#: ../src/yelp-window.c:1189
+msgid "No matches"
+msgstr "Nic neodpovídá"
+
+#: ../yelp.desktop.in.in.h:2
+msgid "Get help with GNOME"
+msgstr "Získat nápovědu k GNOME"
+
+#: ../yelp.desktop.in.in.h:3
+msgid "documentation;information;manual;"
+msgstr "dokumentace;informace;příručka;manuál;návod;"

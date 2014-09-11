@@ -1,0 +1,1547 @@
+# translation of eu_to_be_translate.po to Basque
+#
+# Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>, 2005.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2006, 2007, 2008, 2009, 2011.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2012, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: eu_to_be_translate\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-04-02 22:21+0200\n"
+"PO-Revision-Date: 2013-04-02 22:22+0200\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
+"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"\n"
+"\n"
+
+#. (itstool) path: msg/msgstr
+#. ID: install.tooltip
+#. This is a format message used to format tooltips on install: links. These
+#. links allow users to install packages by clicking a link in the help. The
+#. tooltip may also be used as the link text, if there's no link text in the
+#. document. Special elements in the message will be replaced with the
+#. appropriate content, as follows:
+#.
+#. <string/> - The package to install
+#.
+#: yelp.xml.in:36
+msgid "Install <string/>"
+msgstr "Instalatu <string/>"
+
+#: ../libyelp/yelp-bz2-decompressor.c:146
+#: ../libyelp/yelp-lzma-decompressor.c:155
+msgid "Invalid compressed data"
+msgstr "Komprimatutako datu baliogabeak"
+
+#: ../libyelp/yelp-bz2-decompressor.c:152
+#: ../libyelp/yelp-lzma-decompressor.c:161
+msgid "Not enough memory"
+msgstr "Memoriarik ez"
+
+#: ../libyelp/yelp-docbook-document.c:282 ../libyelp/yelp-info-document.c:238
+#: ../libyelp/yelp-mallard-document.c:306
+#: ../libyelp/yelp-mallard-document.c:457 ../libyelp/yelp-man-document.c:282
+#, c-format
+msgid "The page ‘%s’ was not found in the document ‘%s’."
+msgstr "'%s' orrialdea ez da aurkitu '%s' dokumentuan."
+
+#: ../libyelp/yelp-docbook-document.c:317 ../libyelp/yelp-info-document.c:372
+#: ../libyelp/yelp-man-document.c:417
+#, c-format
+msgid "The file does not exist."
+msgstr "Fitxategia ez da existitzen."
+
+#: ../libyelp/yelp-docbook-document.c:327 ../libyelp/yelp-info-document.c:382
+#: ../libyelp/yelp-man-document.c:427
+#, c-format
+msgid "The file ‘%s’ does not exist."
+msgstr "'%s' fitxategia ez da existitzen."
+
+#: ../libyelp/yelp-docbook-document.c:342
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because it is not a well-formed XML "
+"document."
+msgstr ""
+"'%s' fitxategia ezin da analizatu, ez daukalako behar bezalako XML formatua."
+
+#: ../libyelp/yelp-docbook-document.c:355
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because one or more of its included files "
+"is not a well-formed XML document."
+msgstr ""
+"'%s' fitxategia ezin da analizatu, ez duelako txertatutako fitxategi bat edo "
+"gehiago behar bezalako XML formatuan."
+
+#: ../libyelp/yelp-docbook-document.c:765
+msgid "Unknown"
+msgstr "Ezezaguna"
+
+#: ../libyelp/yelp-docbook-document.c:826 ../libyelp/yelp-info-document.c:315
+#: ../libyelp/yelp-man-document.c:359
+#, c-format
+msgid "The requested page was not found in the document ‘%s’."
+msgstr "Eskatutako orrialdea ez da aurkitu '%s' dokumentuan."
+
+#: ../libyelp/yelp-document.c:268
+msgid "Indexed"
+msgstr "Indexatuta"
+
+#: ../libyelp/yelp-document.c:269
+msgid "Whether the document content has been indexed"
+msgstr "Dokumentuaren edukia indexatu egin den edo ez"
+
+#: ../libyelp/yelp-document.c:277
+msgid "Document URI"
+msgstr "Dokumentuaren URIa"
+
+#: ../libyelp/yelp-document.c:278
+msgid "The URI which identifies the document"
+msgstr "Dokumentua identifikatzen duen URIa."
+
+#: ../libyelp/yelp-document.c:994
+#, c-format
+msgid "Search results for “%s”"
+msgstr "'%s' bilaketaren emaitzak"
+
+#: ../libyelp/yelp-document.c:1006
+#, c-format
+msgid "No matching help pages found in “%s”."
+msgstr "Ez da bat datorren laguntzako orrialderik aurkitu \"%s\"(e)n."
+
+#: ../libyelp/yelp-document.c:1012
+msgid "No matching help pages found."
+msgstr "Ez da bat datorren laguntzako orrialderik aurkitu."
+
+#: ../libyelp/yelp-error.c:37
+#, c-format
+msgid "An unknown error occurred."
+msgstr "Errore ezezagun bat gertatu da."
+
+#: ../libyelp/yelp-help-list.c:549 ../libyelp/yelp-help-list.c:558
+msgid "All Help Documents"
+msgstr "Laguntzako dokumentu guztiak"
+
+#: ../libyelp/yelp-info-document.c:397
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because it is not a well-formed info page."
+msgstr ""
+"'%s' fitxategia ezin da analizatu, ez daukalako behar bezalako info formatua."
+
+#: ../libyelp/yelp-location-entry.c:336
+msgid "View"
+msgstr "Ikusi"
+
+#: ../libyelp/yelp-location-entry.c:337
+msgid "A YelpView instance to control"
+msgstr "YelpView instantzia kontrolatzeko"
+
+#: ../libyelp/yelp-location-entry.c:352
+msgid "Bookmarks"
+msgstr "Laster-markak"
+
+#: ../libyelp/yelp-location-entry.c:353
+msgid "A YelpBookmarks implementation instance"
+msgstr "YelpBookmarks inplementazioaren instantzia"
+
+#: ../libyelp/yelp-location-entry.c:369
+msgid "Enable Search"
+msgstr "Gaitu bilaketa"
+
+#: ../libyelp/yelp-location-entry.c:370
+msgid "Whether the location entry can be used as a search field"
+msgstr "Kokalekuaren sarrera erabil daitekeen bilaketako eremu gisa edo ez"
+
+#: ../libyelp/yelp-location-entry.c:440 ../src/yelp-window.c:270
+msgid "Search..."
+msgstr "Bilatu..."
+
+#: ../libyelp/yelp-location-entry.c:783
+msgid "Clear the search text"
+msgstr "Garbitu bilaketako testua"
+
+#: ../libyelp/yelp-location-entry.c:831 ../libyelp/yelp-location-entry.c:1593
+msgid "Bookmark this page"
+msgstr "Sortu orrialde honen laster-marka"
+
+#: ../libyelp/yelp-location-entry.c:839 ../libyelp/yelp-location-entry.c:1601
+msgid "Remove bookmark"
+msgstr "Kendu laster-marka"
+
+#: ../libyelp/yelp-location-entry.c:1154
+#, c-format
+msgid "Search for “%s”"
+msgstr "Bilatu '%s'"
+
+#: ../libyelp/yelp-location-entry.c:1458
+msgid "Loading"
+msgstr "Kargatzen"
+
+#: ../libyelp/yelp-mallard-document.c:345
+#, c-format
+msgid "The directory ‘%s’ does not exist."
+msgstr "'%s' direktorioa ez da existitzen."
+
+#: ../libyelp/yelp-settings.c:156
+msgid "GtkSettings"
+msgstr "GtkSettings"
+
+#: ../libyelp/yelp-settings.c:157
+msgid "A GtkSettings object to get settings from"
+msgstr "GtkSettings objektua hortik ezarpenak lortzeko"
+
+#: ../libyelp/yelp-settings.c:165
+msgid "GtkIconTheme"
+msgstr "GtkIconTheme"
+
+#: ../libyelp/yelp-settings.c:166
+msgid "A GtkIconTheme object to get icons from"
+msgstr "GtkIconTheme objektua hortik ikonoak eskuratzeko"
+
+#: ../libyelp/yelp-settings.c:174
+msgid "Font Adjustment"
+msgstr "Letra-tipoaren doiketa"
+
+#: ../libyelp/yelp-settings.c:175
+msgid "A size adjustment to add to font sizes"
+msgstr "Tamaina doitzea letra-tamainei gehitzeko"
+
+#: ../libyelp/yelp-settings.c:183
+msgid "Show Text Cursor"
+msgstr "Erakutsi testuaren kurtsorea"
+
+#: ../libyelp/yelp-settings.c:184
+msgid "Show the text cursor or caret for accessible navigation"
+msgstr "Erakutsi testuaren kurtsorea erabilerraztasuneki nabigatzeko"
+
+#: ../libyelp/yelp-settings.c:192
+msgid "Editor Mode"
+msgstr "Editore modua"
+
+#: ../libyelp/yelp-settings.c:193
+msgid "Enable features useful to editors"
+msgstr "Gaitu editoreentzako eginbide erabilgarriak"
+
+#: ../libyelp/yelp-sqlite-storage.c:150
+msgid "Database filename"
+msgstr "Datu-basearen fitxategi-izena"
+
+#: ../libyelp/yelp-sqlite-storage.c:151
+msgid "The filename of the sqlite database"
+msgstr "SQLite datu-basearen fitxategi-izena"
+
+#: ../libyelp/yelp-transform.c:171
+msgid "XSLT Stylesheet"
+msgstr "XSLT estilo-orria"
+
+#: ../libyelp/yelp-transform.c:172
+msgid "The location of the XSLT stylesheet"
+msgstr "XSLT estilo-orriaren kokalekua"
+
+#: ../libyelp/yelp-transform.c:379 ../libyelp/yelp-transform.c:394
+#, c-format
+msgid "The XSLT stylesheet ‘%s’ is either missing or not valid."
+msgstr "XSLT '%s' estilo-orria falta da edo ez da baliozkoa."
+
+#: ../libyelp/yelp-transform.c:528
+msgid "No href attribute found on yelp:document\n"
+msgstr "Ez da href atributurik aurkitu yelp:document-en\n"
+
+#: ../libyelp/yelp-transform.c:543
+msgid "Out of memory"
+msgstr "Memoriarik ez"
+
+#: ../libyelp/yelp-view.c:131
+msgid "_Print..."
+msgstr "_Inprimatu..."
+
+#: ../libyelp/yelp-view.c:136
+msgid "_Back"
+msgstr "_Atzera"
+
+#: ../libyelp/yelp-view.c:141
+msgid "_Forward"
+msgstr "A_urrera"
+
+#: ../libyelp/yelp-view.c:146
+msgid "_Previous Page"
+msgstr "_Aurreko orrialdea"
+
+#: ../libyelp/yelp-view.c:151
+msgid "_Next Page"
+msgstr "_Hurrengo orrialdea"
+
+#: ../libyelp/yelp-view.c:423
+msgid "Yelp URI"
+msgstr "Yelp-en URIa"
+
+#: ../libyelp/yelp-view.c:424
+msgid "A YelpUri with the current location"
+msgstr "YelpUri uneko kokalekuarekin"
+
+#: ../libyelp/yelp-view.c:432
+msgid "Loading State"
+msgstr "Egoera kargatzen"
+
+#: ../libyelp/yelp-view.c:433
+msgid "The loading state of the view"
+msgstr "Ikuspegiaren egoera kargatzen"
+
+#: ../libyelp/yelp-view.c:442
+msgid "Page ID"
+msgstr "Orrialdearen IDa"
+
+#: ../libyelp/yelp-view.c:443
+msgid "The ID of the root page of the page being viewed"
+msgstr "Ikusten ari den erroko orrialdearen IDa"
+
+#: ../libyelp/yelp-view.c:451
+msgid "Root Title"
+msgstr "Erroko titulua"
+
+#: ../libyelp/yelp-view.c:452
+msgid "The title of the root page of the page being viewed"
+msgstr "Ikusten ari den erroko orrialdearen titulua"
+
+#: ../libyelp/yelp-view.c:460
+msgid "Page Title"
+msgstr "Orrialdearen titulua"
+
+#: ../libyelp/yelp-view.c:461
+msgid "The title of the page being viewed"
+msgstr "Ikusten ari den orrialdearen titulua"
+
+#: ../libyelp/yelp-view.c:469
+msgid "Page Description"
+msgstr "Orrialdearen azalpena"
+
+#: ../libyelp/yelp-view.c:470
+msgid "The description of the page being viewed"
+msgstr "Ikusten ari den orrialdearen titulua"
+
+#: ../libyelp/yelp-view.c:478
+msgid "Page Icon"
+msgstr "Orrialdearen ikonoa"
+
+#: ../libyelp/yelp-view.c:479
+msgid "The icon of the page being viewed"
+msgstr "Ikusten ari den orrialdearen ikonoa"
+
+#: ../libyelp/yelp-view.c:720
+msgid "You do not have PackageKit. Package install links require PackageKit."
+msgstr ""
+"PackageKit ez dago instalatuta. Estekak instalatzeko PackageKit behar da."
+
+#: ../libyelp/yelp-view.c:1014
+msgid "Save Image"
+msgstr "Gorde irudia"
+
+#: ../libyelp/yelp-view.c:1109
+msgid "Save Code"
+msgstr "Gorde kodea"
+
+#: ../libyelp/yelp-view.c:1272
+#, c-format
+msgid "Send email to %s"
+msgstr "Bidali mezua %s(r)i"
+
+#: ../libyelp/yelp-view.c:1287
+msgid "_Install Packages"
+msgstr "_Instalatu paketeak"
+
+#: ../libyelp/yelp-view.c:1295
+msgid "_Open Link"
+msgstr "_Ireki esteka"
+
+#: ../libyelp/yelp-view.c:1302
+msgid "_Copy Link Location"
+msgstr "_Kopiatu estekaren helbidea"
+
+#: ../libyelp/yelp-view.c:1308
+msgid "Open Link in New _Window"
+msgstr "Ireki esteka leiho _berrian"
+
+#: ../libyelp/yelp-view.c:1360
+msgid "_Save Image As..."
+msgstr "Gorde irudia _honela..."
+
+#: ../libyelp/yelp-view.c:1362
+msgid "_Save Video As..."
+msgstr "Gorde bideoa _honela..."
+
+#: ../libyelp/yelp-view.c:1369
+msgid "S_end Image To..."
+msgstr "_Bidali irudia hona..."
+
+#: ../libyelp/yelp-view.c:1371
+msgid "S_end Video To..."
+msgstr "_Bidali bideoa hona..."
+
+#: ../libyelp/yelp-view.c:1382
+msgid "_Copy Text"
+msgstr "_Kopiatu testua"
+
+#: ../libyelp/yelp-view.c:1395
+msgid "C_opy Code Block"
+msgstr "_Kopiatu kodearen blokea"
+
+#: ../libyelp/yelp-view.c:1400
+msgid "Save Code _Block As..."
+msgstr "Gorde kodearen b_lokea honela..."
+
+#: ../libyelp/yelp-view.c:1507
+#, c-format
+msgid "See all search results for “%s”"
+msgstr "Ikusi '%s' bilaketaren emaitza guztiak"
+
+#: ../libyelp/yelp-view.c:1628
+#, c-format
+msgid "Could not load a document for ‘%s’"
+msgstr "Ezin izan da %s(r)en dokumentua kargatu"
+
+#: ../libyelp/yelp-view.c:1634
+#, c-format
+msgid "Could not load a document"
+msgstr "Ezin izan da dokumentua kargatu"
+
+#: ../libyelp/yelp-view.c:1709
+msgid "Document Not Found"
+msgstr "Ez da dokumentua aurkitu"
+
+#: ../libyelp/yelp-view.c:1711
+msgid "Page Not Found"
+msgstr "Ez da orrialdea aurkitu"
+
+#: ../libyelp/yelp-view.c:1714
+msgid "Cannot Read"
+msgstr "Ezin da irakurri"
+
+#: ../libyelp/yelp-view.c:1720
+msgid "Unknown Error"
+msgstr "Errore ezezaguna"
+
+#: ../libyelp/yelp-view.c:1740
+msgid "Search for packages containing this document."
+msgstr "Bilatu dokumentu hau daukaten paketeak."
+
+#: ../libyelp/yelp-view.c:1892
+#, c-format
+msgid "The URI ‘%s’ does not point to a valid page."
+msgstr "'%s' URIak ez du baliozko orrialde batera zuzentzen."
+
+#: ../libyelp/yelp-view.c:1898
+#, c-format
+msgid "The URI does not point to a valid page."
+msgstr "URIak ez du baliozko orrialde batera zuzentzen."
+
+#: ../libyelp/yelp-view.c:1904
+#, c-format
+msgid "The URI ‘%s’ could not be parsed."
+msgstr "Ezin izan da '%s' URIa analizatu."
+
+#: ../src/yelp-application.c:65
+msgid "Turn on editor mode"
+msgstr "Aktibatu editorearen modua"
+
+#: ../src/yelp-application.c:128
+msgid "_Larger Text"
+msgstr "_Handitu testua"
+
+#: ../src/yelp-application.c:130
+msgid "Increase the size of the text"
+msgstr "Handitu testuaren tamaina"
+
+#: ../src/yelp-application.c:133
+msgid "_Smaller Text"
+msgstr "_Txikiagotu testua"
+
+#: ../src/yelp-application.c:135
+msgid "Decrease the size of the text"
+msgstr "Txikiagotu testuaren tamaina"
+
+#: ../src/yelp-application.c:253 ../src/yelp-window.c:1360
+#: ../yelp.desktop.in.in.h:1
+msgid "Help"
+msgstr "Laguntza"
+
+#: ../src/yelp-application.c:288
+msgid "Show Text _Cursor"
+msgstr "Erakutsi testuaren _kurtsorea"
+
+#: ../src/yelp-window.c:236
+msgid "_Page"
+msgstr "_Orrialdea"
+
+#: ../src/yelp-window.c:237
+msgid "_View"
+msgstr "_Ikusi"
+
+#: ../src/yelp-window.c:238
+msgid "_Go"
+msgstr "_Joan"
+
+#: ../src/yelp-window.c:239
+msgid "_Bookmarks"
+msgstr "Laster-_markak"
+
+#: ../src/yelp-window.c:242
+msgid "_New Window"
+msgstr "_Leiho berria"
+
+#: ../src/yelp-window.c:247
+msgid "_Close"
+msgstr "It_xi"
+
+#: ../src/yelp-window.c:252
+msgid "_All Documents"
+msgstr "Dokumentu _guztiak"
+
+#: ../src/yelp-window.c:256
+msgid "_Add Bookmark"
+msgstr "_Gehitu laster-marka"
+
+#: ../src/yelp-window.c:261
+msgid "_Remove Bookmark"
+msgstr "_Kendu laster-marka"
+
+#: ../src/yelp-window.c:265
+msgid "Find in Page..."
+msgstr "Bilatu orrialdean..."
+
+#: ../src/yelp-window.c:275
+msgid "Open Location"
+msgstr "Ireki helbidea"
+
+#: ../src/yelp-window.c:301
+msgid "Application"
+msgstr "Aplikazioa"
+
+#: ../src/yelp-window.c:302
+msgid "A YelpApplication instance that controls this window"
+msgstr "Leiho hau kontrolatzen duen YelpApplication instantzia"
+
+#: ../src/yelp-window.c:429
+msgid "Read Link _Later"
+msgstr "Irakurri esteka _beranduago"
+
+#: ../src/yelp-window.c:526
+msgid "Find:"
+msgstr "Bilatu:"
+
+#: ../src/yelp-window.c:548
+msgid "Read Later"
+msgstr "Irakurri beranduago"
+
+#: ../src/yelp-window.c:1180
+#, c-format
+msgid "%i match"
+msgid_plural "%i matches"
+msgstr[0] "%d bat dator"
+msgstr[1] "%d bat datozte"
+
+#: ../src/yelp-window.c:1189
+msgid "No matches"
+msgstr "Ez dago bat datorrenik"
+
+#: ../yelp.desktop.in.in.h:2
+msgid "Get help with GNOME"
+msgstr "Eskuratu GNOMEri buruzko laguntza"
+
+#: ../yelp.desktop.in.in.h:3
+msgid "documentation;information;manual;"
+msgstr "dokumentazioa;informazioa;eskuliburua;"
+
+#~ msgid "GNU Info Pages"
+#~ msgstr "GNU Info orriak"
+
+#~ msgid "Traditional command line help (info)"
+#~ msgstr "Komando lerroko laguntza tradizionala (info)"
+
+#~ msgid "Applications"
+#~ msgstr "Aplikazioak"
+
+#~ msgid "BLT Functions"
+#~ msgstr "BLT funtzioak"
+
+#~ msgid "Configuration Files"
+#~ msgstr "Konfigurazio-fitxategiak"
+
+#~ msgid "Curses Functions"
+#~ msgstr "Kurtsoreen funtzioak"
+
+#~ msgid "Development"
+#~ msgstr "Garapena"
+
+#~ msgid "FORTRAN Functions"
+#~ msgstr "FORTRAN funtzioak"
+
+#~ msgid "Games"
+#~ msgstr "Jokoak"
+
+#~ msgid "Hardware Devices"
+#~ msgstr "Hardwarearen gailuak"
+
+#~ msgid "Kernel Routines"
+#~ msgstr "Nukleo-errutinak"
+
+#~ msgid "Network Audio Sound Functions"
+#~ msgstr "Sareko audio-soinuen funtzioak"
+
+#~ msgid "OpenSSL Applications"
+#~ msgstr "OpenSSL aplikazioak"
+
+#~ msgid "OpenSSL Configuration"
+#~ msgstr "OpenSSL konfigurazioa"
+
+#~ msgid "OpenSSL Functions"
+#~ msgstr "OpenSSL funtzioak"
+
+#~ msgid "OpenSSL Overviews"
+#~ msgstr "OpenSSL informazio orokorrak"
+
+#~ msgid "Overviews"
+#~ msgstr "Informazio orokorrak"
+
+#~ msgid "POSIX Functions"
+#~ msgstr "POSIX funtzioak"
+
+#~ msgid "POSIX Headers"
+#~ msgstr "POSIX goiburuak"
+
+#~ msgid "Perl Functions"
+#~ msgstr "Perl funtzioak"
+
+#~ msgid "Qt Functions"
+#~ msgstr "QT funtzioak"
+
+#~ msgid "Readline Functions"
+#~ msgstr "Readline funtzioak"
+
+#~ msgid "Section 0p"
+#~ msgstr "0p atala"
+
+#~ msgid "Section 1m"
+#~ msgstr "1m atala"
+
+#~ msgid "Section 1ssl"
+#~ msgstr "1ssl atala"
+
+#~ msgid "Section 1x"
+#~ msgstr "1x atala"
+
+#~ msgid "Section 2"
+#~ msgstr "2 atala"
+
+#~ msgid "Section 3blt"
+#~ msgstr "3blt atala"
+
+#~ msgid "Section 3f"
+#~ msgstr "3f atala"
+
+#~ msgid "Section 3nas"
+#~ msgstr "3nas atala"
+
+#~ msgid "Section 3p"
+#~ msgstr "3p atala"
+
+#~ msgid "Section 3qt"
+#~ msgstr "3qt atala"
+
+#~ msgid "Section 3readline"
+#~ msgstr "3readline atala"
+
+#~ msgid "Section 3ssl"
+#~ msgstr "3ssl atala"
+
+#~ msgid "Section 3tiff"
+#~ msgstr "3tiff atala"
+
+#~ msgid "Section 4"
+#~ msgstr "4 atala"
+
+#~ msgid "Section 4x"
+#~ msgstr "4x atala"
+
+#~ msgid "Section 5"
+#~ msgstr "5 atala"
+
+#~ msgid "Section 5ssl"
+#~ msgstr "5ssl atala"
+
+#~ msgid "Section 5x"
+#~ msgstr "5x atala"
+
+#~ msgid "Section 6"
+#~ msgstr "6 atala"
+
+#~ msgid "Section 6x"
+#~ msgstr "6x atala"
+
+#~ msgid "Section 7ssl"
+#~ msgstr "7ssl atala"
+
+#~ msgid "Section 7x"
+#~ msgstr "7x atala"
+
+#~ msgid "Section 9"
+#~ msgstr "9 atala"
+
+#~ msgid "Sections 1, 1p, 1g and 1t"
+#~ msgstr "1, 1p, 1g eta 1t atalak"
+
+#~ msgid "Sections 3, 3o, and 3t"
+#~ msgstr "3, 3o eta 3t atalak"
+
+#~ msgid "Sections 3form and 3menu"
+#~ msgstr "3form eta 3menu atalak"
+
+#~ msgid "Sections 3ncurses and 3curses"
+#~ msgstr "3ncurses eta 3curses atalak"
+
+#~ msgid "Sections 3pm and 3perl"
+#~ msgstr "3pm eta 3perl atalak"
+
+#~ msgid "Sections 3x and 3X11"
+#~ msgstr "3x eta 3X11 atalak"
+
+#~ msgid "Sections 7 and 7gcc"
+#~ msgstr "7 eta 7gcc atalak"
+
+#~ msgid "Sections 8 and 8l"
+#~ msgstr "8 eta 8l atalak"
+
+#~ msgid "System Administration"
+#~ msgstr "Sistema-administrazioa"
+
+#~ msgid "System Calls"
+#~ msgstr "Sistemako deia"
+
+#~ msgid "System V Form/Menu Functions"
+#~ msgstr "System V inprimakien/menuen funtzioak"
+
+#~ msgid "TIFF Functions"
+#~ msgstr "TIFF funtzioak"
+
+#~ msgid "Termcap Applications"
+#~ msgstr "Termcap aplikazioak"
+
+#~ msgid "Traditional command line help (man)"
+#~ msgstr "komando lerroko laguntza tradizionala (man)"
+
+#~ msgid "X11 Applications"
+#~ msgstr "X11 aplikazioak"
+
+#~ msgid "X11 Configuration"
+#~ msgstr "X11 konfigurazioa"
+
+#~ msgid "X11 Devices"
+#~ msgstr "X11 gailuak"
+
+#~ msgid "X11 Functions"
+#~ msgstr "X11 funtzioak"
+
+#~ msgid "X11 Games"
+#~ msgstr "X11 jokoak"
+
+#~ msgid "X11 Overviews"
+#~ msgstr "X11 informazio orokorrak"
+
+#~ msgid "2D Graphics"
+#~ msgstr "2D grafikoak"
+
+#~ msgid "3D Graphics"
+#~ msgstr "3D grafikoak"
+
+#~ msgid "Accessibility"
+#~ msgstr "Erabilgarritasuna"
+
+#~ msgid "Action Games"
+#~ msgstr "Ekintza-jokoak"
+
+#~ msgid "Adventure Games"
+#~ msgstr "Abentura-jokoak"
+
+#~ msgid "Amusement"
+#~ msgstr "Denbora-pasa"
+
+#~ msgid "Applications for viewing and manipulating graphics"
+#~ msgstr "Grafikoak ikusteko edo eraldatzeko aplikazioak"
+
+#~ msgid "Applications related to audio and video"
+#~ msgstr "Audio eta bideo inguruko aplikazioak"
+
+#~ msgid "Applications that teach or aid in learning"
+#~ msgstr "Irakasteko edo ikasten laguntzeko aplikazioak"
+
+#~ msgid "Arcade Games"
+#~ msgstr "Arkade-jokoak"
+
+#~ msgid "Archiving Tools"
+#~ msgstr "Artxibaketa-tresnak"
+
+#~ msgid "Art"
+#~ msgstr "Artea"
+
+#~ msgid "Artificial Intelligence"
+#~ msgstr "Adimen artifiziala"
+
+#~ msgid "Astronomy"
+#~ msgstr "Astronomia"
+
+#~ msgid "Biology"
+#~ msgstr "Biologia"
+
+#~ msgid "Blocks Games"
+#~ msgstr "Bloke-jokoak"
+
+#~ msgid "Board Games"
+#~ msgstr "Mahai-jokoak"
+
+#~ msgid "Building"
+#~ msgstr "Eraikuntza"
+
+#~ msgid "Calculator"
+#~ msgstr "Kalkulagailua"
+
+#~ msgid "Calendar"
+#~ msgstr "Egutegia"
+
+#~ msgid "Card Games"
+#~ msgstr "Karta-jokoak"
+
+#~ msgid "Charting Tools"
+#~ msgstr "Diagrama-tresnak"
+
+#~ msgid "Chat"
+#~ msgstr "Berriketa"
+
+#~ msgid "Chemistry"
+#~ msgstr "Kimika"
+
+#~ msgid "Clocks"
+#~ msgstr "Ordulariak"
+
+#~ msgid "Compression Tools"
+#~ msgstr "Konpresio-tresnak"
+
+#~ msgid "Computer Science"
+#~ msgstr "Konputazio zientifikoa"
+
+#~ msgid "Construction"
+#~ msgstr "Eraikuntza"
+
+#~ msgid "Contact Management"
+#~ msgstr "Kontaktu-kudeaketa"
+
+#~ msgid "Data Visualization"
+#~ msgstr "Datuen bisualizazioa"
+
+#~ msgid "Databases"
+#~ msgstr "Datu-baseak"
+
+#~ msgid "Debuggers"
+#~ msgstr "Araztaileak"
+
+#~ msgid "Desktop"
+#~ msgstr "Mahaigaina"
+
+#~ msgid "Desktop Settings"
+#~ msgstr "Mahaigaineko konfigurazioa"
+
+#~ msgid "Dialup"
+#~ msgstr "Modema"
+
+#~ msgid "Dictionaries"
+#~ msgstr "Hiztegiak"
+
+#~ msgid "Disc Burning"
+#~ msgstr "Disko grabazioa"
+
+#~ msgid "Economy"
+#~ msgstr "Ekonomia"
+
+#~ msgid "Education"
+#~ msgstr "Hezkuntza"
+
+#~ msgid "Electricity"
+#~ msgstr "Elektrizitatea"
+
+#~ msgid "Electronics"
+#~ msgstr "Elektronika"
+
+#~ msgid "Email Tools"
+#~ msgstr "Posta-tresnak"
+
+#~ msgid "Emulator"
+#~ msgstr "Emulatzailea"
+
+#~ msgid "Engineering"
+#~ msgstr "Ingeniaritza"
+
+#~ msgid "File Manager"
+#~ msgstr "Fitxategi-kudeatzailea"
+
+#~ msgid "File Tools"
+#~ msgstr "Fitxategi-tresnak"
+
+#~ msgid "File Transfer"
+#~ msgstr "Fitxategi-transferentzia"
+
+#~ msgid "Filesystem"
+#~ msgstr "Fitxategi-sistema"
+
+#~ msgid "Financial Tools"
+#~ msgstr "Finantza-tresnak"
+
+#~ msgid "Flow Charting Tools"
+#~ msgstr "Fluxu-diagramen tresnak"
+
+#~ msgid "GNOME Applications"
+#~ msgstr "GNOMEren aplikazioak"
+
+#~ msgid "GTK"
+#~ msgstr "GTK"
+
+#~ msgid "GUI Designers"
+#~ msgstr "GUI diseinatzaileak"
+
+#~ msgid "Generic applications for the GNOME environment"
+#~ msgstr "GNOME mahaigaineko aplikazio orokorrak"
+
+#~ msgid "Generic applications for the KDE environment"
+#~ msgstr "KDE mahaigaineko aplikazio orokorrak"
+
+#~ msgid "Geography"
+#~ msgstr "Geografia"
+
+#~ msgid "Geology"
+#~ msgstr "Geologia"
+
+#~ msgid "Geoscience"
+#~ msgstr "Lurraren zientziak"
+
+#~ msgid "Graphics"
+#~ msgstr "Grafikoak"
+
+#~ msgid ""
+#~ "Guides and manuals for applications that connect to the outside world"
+#~ msgstr ""
+#~ "Munduko beste lekuekin konektatzeko aplikazioen gidak eta eskuliburuak"
+
+#~ msgid "Guides for getting involved in development"
+#~ msgstr "Garapenean parte hartzeko gidak"
+
+#~ msgid "Ham Radio"
+#~ msgstr "Ham irratia"
+
+#~ msgid "Hardware Settings"
+#~ msgstr "Hardwarearen konfigurazioa"
+
+#~ msgid "Have some fun"
+#~ msgstr "Dibertigarria"
+
+#~ msgid "History"
+#~ msgstr "Historia"
+
+#~ msgid "IDEs"
+#~ msgstr "IDEak"
+
+#~ msgid "IRC Clients"
+#~ msgstr "IRC bezeroak"
+
+#~ msgid "Image Processing"
+#~ msgstr "Irudi prozesamendua"
+
+#~ msgid "Instant Messaging"
+#~ msgstr "Berehalako mezularitza"
+
+#~ msgid "Internet"
+#~ msgstr "Internet"
+
+#~ msgid "Java"
+#~ msgstr "Java"
+
+#~ msgid "KDE Applications"
+#~ msgstr "KDEren aplikazioak"
+
+#~ msgid "Kids Games"
+#~ msgstr "Umeentzako jokoak"
+
+#~ msgid ""
+#~ "Learn more about making your system more accessible for a range of "
+#~ "disabilities"
+#~ msgstr ""
+#~ "Ikasi urritasun barruti baten aurrean zure sistema erabilgarriagoa nola "
+#~ "egin"
+
+#~ msgid "Licenses"
+#~ msgstr "Lizentziak"
+
+#~ msgid "Literature"
+#~ msgstr "Literatura"
+
+#~ msgid "Logic Games"
+#~ msgstr "Logika-jokoak"
+
+#~ msgid "Math"
+#~ msgstr "Matematikak"
+
+#~ msgid "Medical Software"
+#~ msgstr "Medikuntzako softwarea"
+
+#~ msgid "Midi"
+#~ msgstr "Midi"
+
+#~ msgid "Miscellaneous Documentation"
+#~ msgstr "Hainbat dokumentazio"
+
+#~ msgid "Mixers"
+#~ msgstr "Nahastaileak"
+
+#~ msgid "Monitor"
+#~ msgstr "Monitorea"
+
+#~ msgid "Motif"
+#~ msgstr "Motif"
+
+#~ msgid "Music"
+#~ msgstr "Musika"
+
+#~ msgid "News"
+#~ msgstr "Berriak"
+
+#~ msgid "Numerical Analysis"
+#~ msgstr "Analisi numerikoak"
+
+#~ msgid "OCR"
+#~ msgstr "Karaktere-ezagutze optikoa"
+
+#~ msgid "Office Applications"
+#~ msgstr "Bulegoko aplikazioak"
+
+#~ msgid "Office applications"
+#~ msgstr "Bulegoko aplikazioak"
+
+#~ msgid "Other Documentation"
+#~ msgstr "Bestelako dokumentazioa"
+
+#~ msgid "P2P"
+#~ msgstr "P2P"
+
+#~ msgid "PDA Communication"
+#~ msgstr "PDA komunikazioa"
+
+#~ msgid "Package Manager"
+#~ msgstr "Pakete-kudeatzailea"
+
+#~ msgid "Parallel Computing"
+#~ msgstr "Kalkulu paraleloa"
+
+#~ msgid "Photography"
+#~ msgstr "Argazkigintza"
+
+#~ msgid "Physics"
+#~ msgstr "Fisika"
+
+#~ msgid "Players"
+#~ msgstr "Erreproduzitzaileak"
+
+#~ msgid "Presentation Tools"
+#~ msgstr "Aurkezpen-tresnak"
+
+#~ msgid "Printing"
+#~ msgstr "Inprimatzea"
+
+#~ msgid "Profiling Tools"
+#~ msgstr "Profil-tresnak"
+
+#~ msgid "Project Management Tools"
+#~ msgstr "Proiektu-kudeaketen tresnak"
+
+#~ msgid "Publishing"
+#~ msgstr "Argitalpena"
+
+#~ msgid "Qt"
+#~ msgstr "Qt"
+
+#~ msgid "Raster Graphics"
+#~ msgstr "Grafiko gordinak"
+
+#~ msgid "Recorders"
+#~ msgstr "Grabagailuak"
+
+#~ msgid "Remote Access"
+#~ msgstr "Urruneko atzipena"
+
+#~ msgid "Revision Control"
+#~ msgstr "Berrikuspen kontrola"
+
+#~ msgid "Robotics"
+#~ msgstr "Robotika"
+
+#~ msgid "Role Playing Games"
+#~ msgstr "Rol-jokoak"
+
+#~ msgid "Scanning"
+#~ msgstr "Eskaneatzea"
+
+#~ msgid "Science"
+#~ msgstr "Zientzia"
+
+#~ msgid "Security"
+#~ msgstr "Segurtasuna"
+
+#~ msgid "Sequencers"
+#~ msgstr "Sekuentziadoreak"
+
+#~ msgid "Settings"
+#~ msgstr "Konfigurazioak"
+
+#~ msgid ""
+#~ "Settings users can manipulate to make their environment more pleasant"
+#~ msgstr ""
+#~ "Erabiltzaileek kudeatu ditzaketen ezarpenak beraien mahaigaina erosoagoa "
+#~ "izateko"
+
+#~ msgid "Simulation Games"
+#~ msgstr "Simulazio-jokoak"
+
+#~ msgid "Sound"
+#~ msgstr "Soinua"
+
+#~ msgid "Sound &amp; Video"
+#~ msgstr "Soinua eta bideoa"
+
+#~ msgid "Sound &amp; Video Editing"
+#~ msgstr "Soinu eta bideoaren edizioa"
+
+#~ msgid "Sports"
+#~ msgstr "Kirolak"
+
+#~ msgid "Sports Games"
+#~ msgstr "Kirol-jokoak"
+
+#~ msgid "Spreadsheet Tools"
+#~ msgstr "Kalkulu-orrien tresnak"
+
+#~ msgid "Strategy Games"
+#~ msgstr "Estrategia jokoak"
+
+#~ msgid "System"
+#~ msgstr "Sistema"
+
+#~ msgid "TV"
+#~ msgstr "TB"
+
+#~ msgid "Telephony"
+#~ msgstr "Telefonia"
+
+#~ msgid "Telephony Tools"
+#~ msgstr "Telefonia-tresnak"
+
+#~ msgid "Terminal Emulator"
+#~ msgstr "Terminal-emulatzailea"
+
+#~ msgid "Text Editors"
+#~ msgstr "Testu-editoreak"
+
+#~ msgid "Text Tools"
+#~ msgstr "Testu-tresnak"
+
+#~ msgid "Tools to help you manage your computer"
+#~ msgstr "Ordenagailua kudeatzen laguntzeko tresnak"
+
+#~ msgid "Translation Tools"
+#~ msgstr "Itzulpen-tresnak"
+
+#~ msgid "Tuners"
+#~ msgstr "Sintonizadoreak"
+
+#~ msgid "Utilities"
+#~ msgstr "Utilitateak"
+
+#~ msgid "Utilities to help you get work done"
+#~ msgstr "Zure lanak egiten laguntzeko tresnak"
+
+#~ msgid "Vector Graphics"
+#~ msgstr "Bektore grafikoak"
+
+#~ msgid "Video"
+#~ msgstr "Bideoa"
+
+#~ msgid "Video Conference"
+#~ msgstr "Bideo-konferentzia"
+
+#~ msgid "Viewer"
+#~ msgstr "Ikustailea"
+
+#~ msgid "Web Browser"
+#~ msgstr "Web arakatzailea"
+
+#~ msgid "Web Development"
+#~ msgstr "Web garapena"
+
+#~ msgid "Welcome to the GNOME Help Browser"
+#~ msgstr "Ongi etorri GNOMEren Laguntza-arakatzailera"
+
+#~ msgid "Word Processors"
+#~ msgstr "Testu-prozesadorea"
+
+#~ msgid "Re_name"
+#~ msgstr "Al_datu izena"
+
+#~ msgid "_Bookmarks:"
+#~ msgstr "_Laster-markak:"
+
+#~ msgid "Add Bookmark"
+#~ msgstr "Gehitu laster-marka"
+
+#~ msgid "_Title:"
+#~ msgstr "_Titulua:"
+
+#~ msgid "_Location:"
+#~ msgstr "_Kokalekua:"
+
+#~ msgid "Fonts"
+#~ msgstr "Letra-tipoak"
+
+#~ msgid "Preferences"
+#~ msgstr "Hobespenak"
+
+#~ msgid "_Browse with caret"
+#~ msgstr "_Arakatu kurtsorearekin"
+
+#~ msgid "_Fixed width:"
+#~ msgstr "_Zabalera finkoa:"
+
+#~ msgid "_Use system fonts"
+#~ msgstr "_Erabili sistemako letra-tipoak"
+
+#~ msgid "_Variable width:"
+#~ msgstr "_Zabalera aldakorra:"
+
+#~ msgid "Font for fixed text"
+#~ msgstr "Testu finkoaren letra-tipoa"
+
+#~ msgid "Font for text"
+#~ msgstr "Testuaren letra-tipoa"
+
+#~ msgid "Font for text with fixed width."
+#~ msgstr "Zabalera finkoko testuaren letra-tipoa"
+
+#~ msgid "Font for text with variable width."
+#~ msgstr "Zabalera aldakorreko testuaren letra-tipoa"
+
+#~ msgid "Use a keyboard-controllable caret when viewing pages."
+#~ msgstr ""
+#~ "Erabili teklatuarekin kontrola daitekeen kurtsorea orrialdeak ikusteko."
+
+#~ msgid "Use caret"
+#~ msgstr "Erabili kurtsorea"
+
+#~ msgid "Use system fonts"
+#~ msgstr "Erabili sistemako letra-tipoak"
+
+#~ msgid "Use the default fonts set for the system."
+#~ msgstr "Erabili sistemako letra-tipo lehenetsiak."
+
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "Fitxategia ez da baliozko '.desktop' fitxategi bat"
+
+#~ msgid "Unrecognized desktop file Version '%s'"
+#~ msgstr "Mahaigaineko (.desktop) fitxategiaren '%s' bertsioa ezezaguna"
+
+#~ msgid "Starting %s"
+#~ msgstr "%s hasieratzen"
+
+#~ msgid "Application does not accept documents on command line"
+#~ msgstr "Aplikazioak ez ditu dokumenturik onartzen komando-lerroan"
+
+#~ msgid "Unrecognized launch option: %d"
+#~ msgstr "Abiarazteko aukera ezezaguna: %d"
+
+#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#~ msgstr ""
+#~ "Ezin zaio dokumentuaren URIrik eman mahaigaineko 'Type=Link' sarrerari"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "Ez da elementu abiarazgarria"
+
+#~ msgid "Disable connection to session manager"
+#~ msgstr "Desgaitu konexioa saio-kudeatzailearekin"
+
+#~ msgid "Specify file containing saved configuration"
+#~ msgstr "Zehaztu gordetako konfigurazioa duen fitxategia"
+
+#~ msgid "FILE"
+#~ msgstr "FITXATEGIA"
+
+#~ msgid "Specify session management ID"
+#~ msgstr "Zehaztu saio-kudeatzailearen IDa"
+
+#~ msgid "ID"
+#~ msgstr "IDa"
+
+#~ msgid "Session management options:"
+#~ msgstr "Saio-kudeatzailearen aukerak:"
+
+#~ msgid "Show session management options"
+#~ msgstr "Erakutsi saio-kudeatzailearen aukerak"
+
+#~ msgid "Open Bookmark in New Window"
+#~ msgstr "Ireki laster-marka leiho berrian"
+
+#~ msgid "Rename Bookmark"
+#~ msgstr "Aldatu laster-markaren izena"
+
+#~ msgid "A bookmark titled %s already exists for this page."
+#~ msgstr "%s izeneko laster-marka badago lehendik ere orrialde honetan."
+
+#~ msgid "A bookmark titled <b>%s</b> already exists for this page."
+#~ msgstr ""
+#~ "<b>%s</b> izeneko laster-marka jadanik existitzen da orrialde honetan."
+
+#~ msgid "Help Topics"
+#~ msgstr "Laguntzako gaiak"
+
+#~ msgid "File not found"
+#~ msgstr "Ez da fitxategia aurkitu"
+
+#~ msgid "Could not parse file"
+#~ msgstr "Ezin izan da fitxategia analizatu"
+
+#~ msgid "Could Not Read File"
+#~ msgstr "Ezin izan da fitxategia irakurri"
+
+#~ msgid "No information is available about this error."
+#~ msgstr "Ez dago erroreari buruzko informaziorik eskuragarri."
+
+#~ msgid ""
+#~ "The file ‘%s’ could not be read and decoded. The file may be compressed "
+#~ "in an unsupported format."
+#~ msgstr ""
+#~ "Ezin izan da '%s' fitxategia irakurri eta dekodetu. Baliteke fitxategia "
+#~ "onartu gabeko formatu batean konprimituta egotea."
+
+#~ msgid "Use a private session"
+#~ msgstr "Erabili saio pribatua"
+
+#~ msgid "Define which cache directory to use"
+#~ msgstr "Zehaztu zein cache-direktorio erabili behar den"
+
+#~ msgid " GNOME Help Browser"
+#~ msgstr "GNOMEren Laguntza-arakatzailea"
+
+#~ msgid "Directory not found"
+#~ msgstr "Ez da direktorioa aurkitu"
+
+#~ msgid ""
+#~ "The file ‘%s’ could not be parsed because it is not a well-formed man "
+#~ "page."
+#~ msgstr ""
+#~ "'%s' fitxategia ezin da analizatu, ez daukalako behar bezalako man "
+#~ "formatua."
+
+#~ msgid "Preparing to print"
+#~ msgstr "Inprimatzeko prestatzen"
+
+#~ msgid "Printing is not supported on this printer"
+#~ msgstr "Inprimatzea ez dago onartuta inprimagailu honetan"
+
+#~ msgid "Printer %s does not support postscript printing."
+#~ msgstr "%s inprimagailuak ez du PostScript moduan inprimatzea onartzen."
+
+#~ msgid "Waiting to print"
+#~ msgstr "Inprimatzeko zai"
+
+#~ msgid "An error occurred while printing"
+#~ msgstr "Errorea gertatu da inprimatzean"
+
+#~ msgid "It was not possible to print your document: %s"
+#~ msgstr "Ezin da zure dokumentua inprimatu: %s"
+
+#~ msgid "the GNOME Support Forums"
+#~ msgstr "GNOMEko laguntzako foruak"
+
+#~ msgid "No results for \"%s\""
+#~ msgstr "Ez da \"%s\" aurkitu"
+
+#~ msgid ""
+#~ "Try using different words to describe the problem you're having or the "
+#~ "topic you want help with."
+#~ msgstr ""
+#~ "Erabili beste hitz batzuk zein arazo duzun edo laguntza behar duzun gaia "
+#~ "azaltzeko."
+
+#~ msgid ""
+#~ "a:about:an:are:as:at:be:broke:broken:by:can:can't:dialog:dialogue:do:"
+#~ "doesn't:doesnt:don't:dont:explain:for:from:get:gets:got:make:makes:not:"
+#~ "when:has:have:help:how:i:in:is:it:item:me:my:of:on:or:tell:that:the:thing:"
+#~ "this:to:what:where:who:will:with:won't:wont:why:work:working:works"
+#~ msgstr ""
+#~ "bat:honi:honen:honek:izan:dauka:egon:bai:ez:non:nondik:nora:esan: nork:"
+#~ "nori:nor:gauza:da:du:nere:ni:gisa:bezala:dezake:baliteke:egin:noiz: "
+#~ "lagundu:nola:dago:edo:zer:zergatik:honekin:funtzionatu"
+
+#~ msgid "re"
+#~ msgstr "berr:"
+
+#~ msgid "ers:er:ing:es:s:'s"
+#~ msgstr ""
+#~ "tu:kor:tzaile:gaitz:kuntza:ezin:tze:ren:en:i:ri:tzea:tzen:tzeko:ko:eko:"
+#~ "etik:tik:erako:rako:era:ra:kizun:go:era:ari:garri:ki:tegi:tze"
+
+#~ msgid "No Comment"
+#~ msgstr "Iruzkinik ez"
+
+#~ msgid "Search could not be processed"
+#~ msgstr "Ezin izan da bilaketa prozesatu"
+
+#~ msgid "The requested search could not be processed."
+#~ msgstr "Eskatutako bilaketa ezin izan da prozesatu."
+
+#~ msgid "Cannot process the search"
+#~ msgstr "Ezin da bilaketa prozesatu"
+
+#~ msgid "The search processor returned invalid results"
+#~ msgstr "Bilaketako prozesuak emaitz baliogabeak itzuli ditu"
+
+#~ msgid "The page %s was not found in the TOC."
+#~ msgstr "Ezin da %s orrialdea aurkitu aurkibidean."
+
+#~ msgid "The requested page was not found in the TOC."
+#~ msgstr "Eskatutako orrialdea ez da aurkibidean aurkitu."
+
+#~ msgid ""
+#~ "The TOC file could not be parsed because it is not a well-formed XML "
+#~ "document."
+#~ msgstr ""
+#~ "Aurkibidearen fitxategia ezin da analizatu, ez delako behar bezalako XML "
+#~ "dokumentua."
+
+#~ msgid "Broken Transformation"
+#~ msgstr "Eraldaketa hautsita"
+
+#~ msgid ""
+#~ "An unknown error occurred while attempting to transform the document."
+#~ msgstr "Errore ezezaguna gertatu da dokumentua eraldatzean."
+
+#~ msgid "_File"
+#~ msgstr "_Fitxategia"
+
+#~ msgid "_Edit"
+#~ msgstr "_Editatu"
+
+#~ msgid "_Help"
+#~ msgstr "_Laguntza"
+
+#~ msgid "Print This Document ..."
+#~ msgstr "Inprimatu dokumentu hau..."
+
+#~ msgid "Open _Location"
+#~ msgstr "Ireki _helbidea"
+
+#~ msgid "_Close Window"
+#~ msgstr "_Itxi leihoa"
+
+#~ msgid "_Select All"
+#~ msgstr "_Hautatu denak"
+
+#~ msgid "_Find..."
+#~ msgstr "_Bilatu..."
+
+#~ msgid "Find Pre_vious"
+#~ msgstr "Bilatu _aurrekoa"
+
+#~ msgid "Find previous occurrence of the word or phrase"
+#~ msgstr "Hitzaren edo esaldiaren aurreko gertaera bilatzen du"
+
+#~ msgid "Find Ne_xt"
+#~ msgstr "Bilatu _hurrengoa"
+
+#~ msgid "Find next occurrence of the word or phrase"
+#~ msgstr "Hitzaren edo esaldiaren hurrengo gertaera bilatzen du"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Hobespenak"
+
+#~ msgid "_Reload"
+#~ msgstr "_Berritu"
+
+#~ msgid "Show previous page in history"
+#~ msgstr "Erakutsi historiako aurreko orrialdea"
+
+#~ msgid "Show next page in history"
+#~ msgstr "Erakutsi historiako hurrengo orrialdea"
+
+#~ msgid "_Help Topics"
+#~ msgstr "_Laguntzako gaiak"
+
+#~ msgid "Go to the listing of help topics"
+#~ msgstr "Joan lagunako gaien zerrendara"
+
+#~ msgid "_Contents"
+#~ msgstr "_Edukia"
+
+#~ msgid "_Edit Bookmarks..."
+#~ msgstr "_Editatu laster-markak..."
+
+#~ msgid "_Copy Link Address"
+#~ msgstr "_Kopiatu estekaren helbidea"
+
+#~ msgid "Help On this application"
+#~ msgstr "Aplikazio honi buruzko laguntza"
+
+#~ msgid "_About"
+#~ msgstr "Honi _buruz"
+
+#~ msgid "Copy _Email Address"
+#~ msgstr "_Kopiatu postaren helbidea"
+
+#~ msgid "Help Browser"
+#~ msgstr "Laguntza-arakatzailea"
+
+#~ msgid "Unknown Page"
+#~ msgstr "Orrialde ezezaguna"
+
+#~ msgid "The requested URI \"%s\" is invalid"
+#~ msgstr "Eskatutako \"%s\" URIa baliogabea da"
+
+#~ msgid "Unable to load page"
+#~ msgstr "Ezin da orrialdea kargatu"
+
+#~ msgid "Cannot create search component"
+#~ msgstr "Ezin da bilaketako osagaia sortu"
+
+#~ msgid "Find _Previous"
+#~ msgstr "Bilatu _aurrekoa"
+
+#~ msgid "Find _Next"
+#~ msgstr "Bilatu _hurrengoa"
+
+#~ msgid "Phrase not found"
+#~ msgstr "Ez da esaldia aurkitu"
+
+#~ msgid ""
+#~ "The file ‘%s’ could not be read.  This file might be missing, or you "
+#~ "might not have permissions to read it."
+#~ msgstr ""
+#~ "Ezin izan da '%s' fitxategia irakurri. Fitxategia falta da, edo ez "
+#~ "daukazu nahikoa baimen hau irakurtzeko."
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>\n"
+#~ "Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>"
+
+#~ msgid "A documentation browser and viewer for the Gnome Desktop."
+#~ msgstr "GNOME mahaigainaren dokumentazio-arakatzaile eta -ikustaile bat."

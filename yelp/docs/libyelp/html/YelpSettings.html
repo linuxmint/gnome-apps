@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>YelpSettings</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+<link rel="home" href="index.html" title="Yelp Reference Manual">
+<link rel="up" href="ch01.html" title="API Reference">
+<link rel="prev" href="YelpUri.html" title="YelpUri">
+<link rel="next" href="libyelp-yelp-error.html" title="yelp-error">
+<meta name="generator" content="GTK-Doc V1.15 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="YelpUri.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Yelp Reference Manual</th>
+<td><a accesskey="n" href="libyelp-yelp-error.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#YelpSettings.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#YelpSettings.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#YelpSettings.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry" title="YelpSettings">
+<a name="YelpSettings"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="YelpSettings.top_of_page"></a>YelpSettings</span></h2>
+<p>YelpSettings</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="YelpSettings.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">                    <a href="YelpSettings.html#YelpSettings-struct">YelpSettings</a>;
+                    <a href="YelpSettings.html#YelpSettingsClass">YelpSettingsClass</a>;
+                    <a href="YelpSettings.html#YelpSettingsPriv">YelpSettingsPriv</a>;
+enum                <a href="YelpSettings.html#YelpSettingsColor">YelpSettingsColor</a>;
+enum                <a href="YelpSettings.html#YelpSettingsFont">YelpSettingsFont</a>;
+enum                <a href="YelpSettings.html#YelpSettingsIcon">YelpSettingsIcon</a>;
+<a href="YelpSettings.html"><span class="returnvalue">YelpSettings</span></a> *      <a href="YelpSettings.html#yelp-settings-get-default">yelp_settings_get_default</a>           (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">gchar</span> *             <a href="YelpSettings.html#yelp-settings-get-color">yelp_settings_get_color</a>             (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsColor"><span class="type">YelpSettingsColor</span></a> color</code></em>);
+<span class="returnvalue">gchar</span> **            <a href="YelpSettings.html#yelp-settings-get-colors">yelp_settings_get_colors</a>            (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>);
+<span class="returnvalue">void</span>                <a href="YelpSettings.html#yelp-settings-set-colors">yelp_settings_set_colors</a>            (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsColor"><span class="type">YelpSettingsColor</span></a> first_color</code></em>,
+                                                         <em class="parameter"><code>...</code></em>);
+const <span class="returnvalue">gchar</span>*        <a href="YelpSettings.html#yelp-settings-get-color-param">yelp_settings_get_color_param</a>       (<em class="parameter"><code><a href="YelpSettings.html#YelpSettingsColor"><span class="type">YelpSettingsColor</span></a> color</code></em>);
+<span class="returnvalue">gchar</span> *             <a href="YelpSettings.html#yelp-settings-get-font">yelp_settings_get_font</a>              (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsFont"><span class="type">YelpSettingsFont</span></a> font</code></em>);
+<span class="returnvalue">gchar</span> *             <a href="YelpSettings.html#yelp-settings-get-font-family">yelp_settings_get_font_family</a>       (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsFont"><span class="type">YelpSettingsFont</span></a> font</code></em>);
+<span class="returnvalue">gint</span>                <a href="YelpSettings.html#yelp-settings-get-font-size">yelp_settings_get_font_size</a>         (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsFont"><span class="type">YelpSettingsFont</span></a> font</code></em>);
+<span class="returnvalue">void</span>                <a href="YelpSettings.html#yelp-settings-set-fonts">yelp_settings_set_fonts</a>             (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsFont"><span class="type">YelpSettingsFont</span></a> first_font</code></em>,
+                                                         <em class="parameter"><code>...</code></em>);
+<span class="returnvalue">gint</span>                <a href="YelpSettings.html#yelp-settings-get-font-adjustment">yelp_settings_get_font_adjustment</a>   (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>);
+<span class="returnvalue">void</span>                <a href="YelpSettings.html#yelp-settings-set-font-adjustment">yelp_settings_set_font_adjustment</a>   (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> adjustment</code></em>);
+<span class="returnvalue">gint</span>                <a href="YelpSettings.html#yelp-settings-get-icon-size">yelp_settings_get_icon_size</a>         (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>);
+<span class="returnvalue">void</span>                <a href="YelpSettings.html#yelp-settings-set-icon-size">yelp_settings_set_icon_size</a>         (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> size</code></em>);
+<span class="returnvalue">gchar</span> *             <a href="YelpSettings.html#yelp-settings-get-icon">yelp_settings_get_icon</a>              (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsIcon"><span class="type">YelpSettingsIcon</span></a> icon</code></em>);
+<span class="returnvalue">void</span>                <a href="YelpSettings.html#yelp-settings-set-icons">yelp_settings_set_icons</a>             (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsIcon"><span class="type">YelpSettingsIcon</span></a> first_icon</code></em>,
+                                                         <em class="parameter"><code>...</code></em>);
+const <span class="returnvalue">gchar</span> *       <a href="YelpSettings.html#yelp-settings-get-icon-param">yelp_settings_get_icon_param</a>        (<em class="parameter"><code><a href="YelpSettings.html#YelpSettingsIcon"><span class="type">YelpSettingsIcon</span></a> icon</code></em>);
+<span class="returnvalue">gchar</span> **            <a href="YelpSettings.html#yelp-settings-get-all-params">yelp_settings_get_all_params</a>        (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> extra</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *end</code></em>);
+<span class="returnvalue">gboolean</span>            <a href="YelpSettings.html#yelp-settings-get-show-text-cursor">yelp_settings_get_show_text_cursor</a>  (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>);
+<span class="returnvalue">void</span>                <a href="YelpSettings.html#yelp-settings-set-show-text-cursor">yelp_settings_set_show_text_cursor</a>  (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><span class="type">gboolean</span> show</code></em>);
+<span class="returnvalue">gboolean</span>            <a href="YelpSettings.html#yelp-settings-get-editor-mode">yelp_settings_get_editor_mode</a>       (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>);
+<span class="returnvalue">void</span>                <a href="YelpSettings.html#yelp-settings-set-editor-mode">yelp_settings_set_editor_mode</a>       (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><span class="type">gboolean</span> editor_mode</code></em>);
+<span class="returnvalue">gint</span>                <a href="YelpSettings.html#yelp-settings-cmp-icons">yelp_settings_cmp_icons</a>             (<em class="parameter"><code>const <span class="type">gchar</span> *icon1</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *icon2</code></em>);
+</pre>
+</div>
+<div class="refsect1" title="Object Hierarchy">
+<a name="YelpSettings.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GObject
+   +----YelpSettings
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="YelpSettings.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1" title="Details">
+<a name="YelpSettings.details"></a><h2>Details</h2>
+<div class="refsect2" title="YelpSettings">
+<a name="YelpSettings-struct"></a><h3>YelpSettings</h3>
+<pre class="programlisting">typedef struct _YelpSettings YelpSettings;</pre>
+</div>
+<hr>
+<div class="refsect2" title="YelpSettingsClass">
+<a name="YelpSettingsClass"></a><h3>YelpSettingsClass</h3>
+<pre class="programlisting">typedef struct {
+    GObjectClass      parent_class;
+} YelpSettingsClass;
+</pre>
+</div>
+<hr>
+<div class="refsect2" title="YelpSettingsPriv">
+<a name="YelpSettingsPriv"></a><h3>YelpSettingsPriv</h3>
+<pre class="programlisting">typedef struct _YelpSettingsPriv YelpSettingsPriv;</pre>
+</div>
+<hr>
+<div class="refsect2" title="enum YelpSettingsColor">
+<a name="YelpSettingsColor"></a><h3>enum YelpSettingsColor</h3>
+<pre class="programlisting">typedef enum {
+    YELP_SETTINGS_COLOR_BASE,
+    YELP_SETTINGS_COLOR_TEXT,
+    YELP_SETTINGS_COLOR_TEXT_LIGHT,
+    YELP_SETTINGS_COLOR_LINK,
+    YELP_SETTINGS_COLOR_LINK_VISITED,
+    YELP_SETTINGS_COLOR_GRAY_BASE,
+    YELP_SETTINGS_COLOR_DARK_BASE,
+    YELP_SETTINGS_COLOR_GRAY_BORDER,
+    YELP_SETTINGS_COLOR_BLUE_BASE,
+    YELP_SETTINGS_COLOR_BLUE_BORDER,
+    YELP_SETTINGS_COLOR_RED_BASE,
+    YELP_SETTINGS_COLOR_RED_BORDER,
+    YELP_SETTINGS_COLOR_YELLOW_BASE,
+    YELP_SETTINGS_COLOR_YELLOW_BORDER,
+    YELP_SETTINGS_NUM_COLORS
+} YelpSettingsColor;
+</pre>
+</div>
+<hr>
+<div class="refsect2" title="enum YelpSettingsFont">
+<a name="YelpSettingsFont"></a><h3>enum YelpSettingsFont</h3>
+<pre class="programlisting">typedef enum {
+    YELP_SETTINGS_FONT_VARIABLE,
+    YELP_SETTINGS_FONT_FIXED,
+    YELP_SETTINGS_NUM_FONTS
+} YelpSettingsFont;
+</pre>
+</div>
+<hr>
+<div class="refsect2" title="enum YelpSettingsIcon">
+<a name="YelpSettingsIcon"></a><h3>enum YelpSettingsIcon</h3>
+<pre class="programlisting">typedef enum {
+    YELP_SETTINGS_ICON_BUG,
+    YELP_SETTINGS_ICON_IMPORTANT,
+    YELP_SETTINGS_ICON_NOTE,
+    YELP_SETTINGS_ICON_TIP,
+    YELP_SETTINGS_ICON_WARNING,
+    YELP_SETTINGS_NUM_ICONS
+} YelpSettingsIcon;
+</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_get_default ()">
+<a name="yelp-settings-get-default"></a><h3>yelp_settings_get_default ()</h3>
+<pre class="programlisting"><a href="YelpSettings.html"><span class="returnvalue">YelpSettings</span></a> *      yelp_settings_get_default           (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_get_color ()">
+<a name="yelp-settings-get-color"></a><h3>yelp_settings_get_color ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *             yelp_settings_get_color             (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsColor"><span class="type">YelpSettingsColor</span></a> color</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_get_colors ()">
+<a name="yelp-settings-get-colors"></a><h3>yelp_settings_get_colors ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> **            yelp_settings_get_colors            (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_set_colors ()">
+<a name="yelp-settings-set-colors"></a><h3>yelp_settings_set_colors ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                yelp_settings_set_colors            (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsColor"><span class="type">YelpSettingsColor</span></a> first_color</code></em>,
+                                                         <em class="parameter"><code>...</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_get_color_param ()">
+<a name="yelp-settings-get-color-param"></a><h3>yelp_settings_get_color_param ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span>*        yelp_settings_get_color_param       (<em class="parameter"><code><a href="YelpSettings.html#YelpSettingsColor"><span class="type">YelpSettingsColor</span></a> color</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_get_font ()">
+<a name="yelp-settings-get-font"></a><h3>yelp_settings_get_font ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *             yelp_settings_get_font              (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsFont"><span class="type">YelpSettingsFont</span></a> font</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_get_font_family ()">
+<a name="yelp-settings-get-font-family"></a><h3>yelp_settings_get_font_family ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *             yelp_settings_get_font_family       (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsFont"><span class="type">YelpSettingsFont</span></a> font</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_get_font_size ()">
+<a name="yelp-settings-get-font-size"></a><h3>yelp_settings_get_font_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>                yelp_settings_get_font_size         (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsFont"><span class="type">YelpSettingsFont</span></a> font</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_set_fonts ()">
+<a name="yelp-settings-set-fonts"></a><h3>yelp_settings_set_fonts ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                yelp_settings_set_fonts             (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsFont"><span class="type">YelpSettingsFont</span></a> first_font</code></em>,
+                                                         <em class="parameter"><code>...</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_get_font_adjustment ()">
+<a name="yelp-settings-get-font-adjustment"></a><h3>yelp_settings_get_font_adjustment ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>                yelp_settings_get_font_adjustment   (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_set_font_adjustment ()">
+<a name="yelp-settings-set-font-adjustment"></a><h3>yelp_settings_set_font_adjustment ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                yelp_settings_set_font_adjustment   (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> adjustment</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_get_icon_size ()">
+<a name="yelp-settings-get-icon-size"></a><h3>yelp_settings_get_icon_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>                yelp_settings_get_icon_size         (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_set_icon_size ()">
+<a name="yelp-settings-set-icon-size"></a><h3>yelp_settings_set_icon_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                yelp_settings_set_icon_size         (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> size</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_get_icon ()">
+<a name="yelp-settings-get-icon"></a><h3>yelp_settings_get_icon ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *             yelp_settings_get_icon              (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsIcon"><span class="type">YelpSettingsIcon</span></a> icon</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_set_icons ()">
+<a name="yelp-settings-set-icons"></a><h3>yelp_settings_set_icons ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                yelp_settings_set_icons             (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="YelpSettings.html#YelpSettingsIcon"><span class="type">YelpSettingsIcon</span></a> first_icon</code></em>,
+                                                         <em class="parameter"><code>...</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_get_icon_param ()">
+<a name="yelp-settings-get-icon-param"></a><h3>yelp_settings_get_icon_param ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *       yelp_settings_get_icon_param        (<em class="parameter"><code><a href="YelpSettings.html#YelpSettingsIcon"><span class="type">YelpSettingsIcon</span></a> icon</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_get_all_params ()">
+<a name="yelp-settings-get-all-params"></a><h3>yelp_settings_get_all_params ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> **            yelp_settings_get_all_params        (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> extra</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> *end</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_get_show_text_cursor ()">
+<a name="yelp-settings-get-show-text-cursor"></a><h3>yelp_settings_get_show_text_cursor ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            yelp_settings_get_show_text_cursor  (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_set_show_text_cursor ()">
+<a name="yelp-settings-set-show-text-cursor"></a><h3>yelp_settings_set_show_text_cursor ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                yelp_settings_set_show_text_cursor  (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><span class="type">gboolean</span> show</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_get_editor_mode ()">
+<a name="yelp-settings-get-editor-mode"></a><h3>yelp_settings_get_editor_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            yelp_settings_get_editor_mode       (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_set_editor_mode ()">
+<a name="yelp-settings-set-editor-mode"></a><h3>yelp_settings_set_editor_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                yelp_settings_set_editor_mode       (<em class="parameter"><code><a href="YelpSettings.html"><span class="type">YelpSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><span class="type">gboolean</span> editor_mode</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2" title="yelp_settings_cmp_icons ()">
+<a name="yelp-settings-cmp-icons"></a><h3>yelp_settings_cmp_icons ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>                yelp_settings_cmp_icons             (<em class="parameter"><code>const <span class="type">gchar</span> *icon1</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *icon2</code></em>);</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.15</div>
+</body>
+</html>

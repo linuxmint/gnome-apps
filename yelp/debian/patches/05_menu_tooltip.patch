@@ -1,0 +1,15 @@
+# Description: change title to mention Ubuntu rather than GNOME
+# UbuntuSpecific: Ubuntu branding change
+# 
+Index: yelp/yelp.desktop.in.in
+===================================================================
+--- yelp.orig/yelp.desktop.in.in	2013-05-25 20:40:29.942231688 -0600
++++ yelp/yelp.desktop.in.in	2013-05-25 20:42:26.222228288 -0600
+@@ -1,6 +1,6 @@
+ [Desktop Entry]
+ _Name=Help
+-_Comment=Get help with GNOME
++_Comment=Get help with Unity
+ _Keywords=documentation;information;manual;
+ OnlyShowIn=GNOME;Unity;
+ Exec=yelp %u

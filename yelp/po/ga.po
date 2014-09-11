@@ -1,0 +1,562 @@
+# Irish translations for yelp package.
+# Copyright (C) 2003-2013 Free Software Foundation, Inc.
+# This file is distributed under the same license as the yelp package.
+# Paul Duffy <dubhthach@frink.nuigalway.ie>, 2003.
+# Alastair McKinstry <mckinstry@computer.org>, 2004.
+# Seán de Búrca <leftmostcat@gmail.com>, 2007-2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: yelp.master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-30 14:43-0600\n"
+"PO-Revision-Date: 2013-08-30 14:52-0600\n"
+"Last-Translator: Seán de Búrca <leftmostcat@gmail.com>\n"
+"Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : "
+"4;\n"
+
+#. (itstool) path: msg/msgstr
+#. ID: install.tooltip
+#. This is a format message used to format tooltips on install: links. These
+#. links allow users to install packages by clicking a link in the help. The
+#. tooltip may also be used as the link text, if there's no link text in the
+#. document. Special elements in the message will be replaced with the
+#. appropriate content, as follows:
+#.
+#. <string/> - The package to install
+#.
+#: yelp.xml.in:36
+msgid "Install <string/>"
+msgstr "Suiteáil <string/>"
+
+#: ../libyelp/yelp-bz2-decompressor.c:146
+#: ../libyelp/yelp-lzma-decompressor.c:155
+msgid "Invalid compressed data"
+msgstr ""
+
+#: ../libyelp/yelp-bz2-decompressor.c:152
+#: ../libyelp/yelp-lzma-decompressor.c:161
+msgid "Not enough memory"
+msgstr "Cuimhne ídithe"
+
+#: ../libyelp/yelp-docbook-document.c:264 ../libyelp/yelp-info-document.c:239
+#: ../libyelp/yelp-mallard-document.c:307
+#: ../libyelp/yelp-mallard-document.c:458 ../libyelp/yelp-man-document.c:283
+#, c-format
+msgid "The page ‘%s’ was not found in the document ‘%s’."
+msgstr ""
+
+#: ../libyelp/yelp-docbook-document.c:299 ../libyelp/yelp-info-document.c:373
+#: ../libyelp/yelp-man-document.c:418
+#, c-format
+msgid "The file does not exist."
+msgstr "Níl an comhad ann."
+
+#: ../libyelp/yelp-docbook-document.c:309 ../libyelp/yelp-info-document.c:383
+#: ../libyelp/yelp-man-document.c:428
+#, c-format
+msgid "The file ‘%s’ does not exist."
+msgstr "Níl an comhad ‘%s’ ann."
+
+#: ../libyelp/yelp-docbook-document.c:324
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because it is not a well-formed XML "
+"document."
+msgstr ""
+
+#: ../libyelp/yelp-docbook-document.c:337
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because one or more of its included files "
+"is not a well-formed XML document."
+msgstr ""
+
+#: ../libyelp/yelp-docbook-document.c:724
+msgid "Unknown"
+msgstr "Anaithnid"
+
+#: ../libyelp/yelp-docbook-document.c:785 ../libyelp/yelp-info-document.c:316
+#: ../libyelp/yelp-man-document.c:360
+#, c-format
+msgid "The requested page was not found in the document ‘%s’."
+msgstr ""
+
+#: ../libyelp/yelp-document.c:268
+msgid "Indexed"
+msgstr "Innéacsaithe"
+
+#: ../libyelp/yelp-document.c:269
+msgid "Whether the document content has been indexed"
+msgstr ""
+
+#: ../libyelp/yelp-document.c:277
+msgid "Document URI"
+msgstr "URI Cáipéise"
+
+#: ../libyelp/yelp-document.c:278
+msgid "The URI which identifies the document"
+msgstr ""
+
+#: ../libyelp/yelp-document.c:994
+#, c-format
+msgid "Search results for “%s”"
+msgstr "Torthaí cuardaigh le haghaidh “%s”"
+
+#: ../libyelp/yelp-document.c:1006
+#, c-format
+msgid "No matching help pages found in “%s”."
+msgstr "Níor aimsíodh aon leathanach cabhrach i “%s”."
+
+#: ../libyelp/yelp-document.c:1012
+msgid "No matching help pages found."
+msgstr "Níor aimsíodh aon leathanach cabhrach."
+
+#: ../libyelp/yelp-error.c:37
+#, c-format
+msgid "An unknown error occurred."
+msgstr "Tharla earráid anaithnid."
+
+#: ../libyelp/yelp-help-list.c:550 ../libyelp/yelp-help-list.c:559
+msgid "All Help Documents"
+msgstr "Gach Cáipéis Chabhrach"
+
+#: ../libyelp/yelp-info-document.c:398
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because it is not a well-formed info page."
+msgstr ""
+
+#: ../libyelp/yelp-location-entry.c:336
+msgid "View"
+msgstr "Amharc"
+
+#: ../libyelp/yelp-location-entry.c:337
+msgid "A YelpView instance to control"
+msgstr ""
+
+#: ../libyelp/yelp-location-entry.c:352
+msgid "Bookmarks"
+msgstr "Leabharmharcanna"
+
+#: ../libyelp/yelp-location-entry.c:353
+msgid "A YelpBookmarks implementation instance"
+msgstr ""
+
+#: ../libyelp/yelp-location-entry.c:369
+msgid "Enable Search"
+msgstr "Cumasaigh Cuardach"
+
+#: ../libyelp/yelp-location-entry.c:370
+msgid "Whether the location entry can be used as a search field"
+msgstr ""
+
+#: ../libyelp/yelp-location-entry.c:440 ../src/yelp-window.c:270
+msgid "Search..."
+msgstr "Cuardaigh..."
+
+#: ../libyelp/yelp-location-entry.c:783
+msgid "Clear the search text"
+msgstr ""
+
+#: ../libyelp/yelp-location-entry.c:831 ../libyelp/yelp-location-entry.c:1593
+msgid "Bookmark this page"
+msgstr "Cruthaigh leabharmharc don leathanach seo"
+
+#: ../libyelp/yelp-location-entry.c:839 ../libyelp/yelp-location-entry.c:1601
+msgid "Remove bookmark"
+msgstr "Bain leabharmharc"
+
+#: ../libyelp/yelp-location-entry.c:1154
+#, c-format
+msgid "Search for “%s”"
+msgstr "Déan cuardach ar “%s”"
+
+#: ../libyelp/yelp-location-entry.c:1458
+msgid "Loading"
+msgstr "Á luchtú"
+
+#: ../libyelp/yelp-mallard-document.c:346
+#, c-format
+msgid "The directory ‘%s’ does not exist."
+msgstr "Níl an chomhadlann '%s' ann."
+
+#: ../libyelp/yelp-settings.c:156
+msgid "GtkSettings"
+msgstr "GtkSettings"
+
+#: ../libyelp/yelp-settings.c:157
+msgid "A GtkSettings object to get settings from"
+msgstr ""
+
+#: ../libyelp/yelp-settings.c:165
+msgid "GtkIconTheme"
+msgstr "GtkIconTheme"
+
+#: ../libyelp/yelp-settings.c:166
+msgid "A GtkIconTheme object to get icons from"
+msgstr ""
+
+#: ../libyelp/yelp-settings.c:174
+msgid "Font Adjustment"
+msgstr ""
+
+#: ../libyelp/yelp-settings.c:175
+msgid "A size adjustment to add to font sizes"
+msgstr ""
+
+#: ../libyelp/yelp-settings.c:183
+msgid "Show Text Cursor"
+msgstr ""
+
+#: ../libyelp/yelp-settings.c:184
+msgid "Show the text cursor or caret for accessible navigation"
+msgstr ""
+
+#: ../libyelp/yelp-settings.c:192
+msgid "Editor Mode"
+msgstr ""
+
+#: ../libyelp/yelp-settings.c:193
+msgid "Enable features useful to editors"
+msgstr ""
+
+#: ../libyelp/yelp-sqlite-storage.c:149
+#, fuzzy
+msgid "Database filename"
+msgstr "Bunachair Sonraí"
+
+#: ../libyelp/yelp-sqlite-storage.c:150
+msgid "The filename of the sqlite database"
+msgstr ""
+
+#: ../libyelp/yelp-transform.c:171
+msgid "XSLT Stylesheet"
+msgstr "Stílbhileog XSLT"
+
+#: ../libyelp/yelp-transform.c:172
+msgid "The location of the XSLT stylesheet"
+msgstr ""
+
+#: ../libyelp/yelp-transform.c:380 ../libyelp/yelp-transform.c:395
+#, c-format
+msgid "The XSLT stylesheet ‘%s’ is either missing or not valid."
+msgstr ""
+
+#: ../libyelp/yelp-transform.c:529
+msgid "No href attribute found on yelp:document\n"
+msgstr ""
+
+#: ../libyelp/yelp-transform.c:544
+msgid "Out of memory"
+msgstr "Cuimhne ídithe"
+
+#: ../libyelp/yelp-view.c:131
+msgid "_Print..."
+msgstr "_Priontáil..."
+
+#: ../libyelp/yelp-view.c:136
+msgid "_Back"
+msgstr "_Siar"
+
+#: ../libyelp/yelp-view.c:141
+msgid "_Forward"
+msgstr "Ar _Aghaidh"
+
+#: ../libyelp/yelp-view.c:146
+msgid "_Previous Page"
+msgstr "An Leathanach _Roimhe Seo"
+
+#: ../libyelp/yelp-view.c:151
+msgid "_Next Page"
+msgstr "An Chéad Leathanach _Eile"
+
+#: ../libyelp/yelp-view.c:423
+msgid "Yelp URI"
+msgstr "URI Yelp"
+
+#: ../libyelp/yelp-view.c:424
+msgid "A YelpUri with the current location"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:432
+#, fuzzy
+msgid "Loading State"
+msgstr "Á Luchtú..."
+
+#: ../libyelp/yelp-view.c:433
+msgid "The loading state of the view"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:442
+msgid "Page ID"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:443
+msgid "The ID of the root page of the page being viewed"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:451
+msgid "Root Title"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:452
+msgid "The title of the root page of the page being viewed"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:460
+msgid "Page Title"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:461
+msgid "The title of the page being viewed"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:469
+msgid "Page Description"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:470
+msgid "The description of the page being viewed"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:478
+#, fuzzy
+msgid "Page Icon"
+msgstr "Leathanach gan aimsiú"
+
+#: ../libyelp/yelp-view.c:479
+msgid "The icon of the page being viewed"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:720
+msgid "You do not have PackageKit. Package install links require PackageKit."
+msgstr ""
+
+#: ../libyelp/yelp-view.c:1014
+msgid "Save Image"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:1109
+msgid "Save Code"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:1272
+#, c-format
+msgid "Send email to %s"
+msgstr "Seol ríomhphost chuig %s"
+
+#: ../libyelp/yelp-view.c:1287
+msgid "_Install Packages"
+msgstr "_Suiteáil Pacáistí"
+
+#: ../libyelp/yelp-view.c:1295
+msgid "_Open Link"
+msgstr "_Oscail Nasc"
+
+#: ../libyelp/yelp-view.c:1302
+msgid "_Copy Link Location"
+msgstr "_Cóipeáil Suíomh an Naisc"
+
+#: ../libyelp/yelp-view.c:1308
+msgid "Open Link in New _Window"
+msgstr "Oscail Nasc i bh_Fuinneog Nua"
+
+#: ../libyelp/yelp-view.c:1360
+msgid "_Save Image As..."
+msgstr "_Sábháil Íomhá Mar..."
+
+#: ../libyelp/yelp-view.c:1362
+msgid "_Save Video As..."
+msgstr "_Sábháil Físeán Mar..."
+
+#: ../libyelp/yelp-view.c:1369
+msgid "S_end Image To..."
+msgstr "S_eol Íomhá Chuig..."
+
+#: ../libyelp/yelp-view.c:1371
+msgid "S_end Video To..."
+msgstr "S_eol Físeán Chuig..."
+
+#: ../libyelp/yelp-view.c:1382
+msgid "_Copy Text"
+msgstr "_Cóipeáil Téacs"
+
+#: ../libyelp/yelp-view.c:1395
+msgid "C_opy Code Block"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:1400
+msgid "Save Code _Block As..."
+msgstr ""
+
+#: ../libyelp/yelp-view.c:1507
+#, c-format
+msgid "See all search results for “%s”"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:1628
+#, c-format
+msgid "Could not load a document for ‘%s’"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:1634
+#, c-format
+msgid "Could not load a document"
+msgstr ""
+
+#: ../libyelp/yelp-view.c:1709
+msgid "Document Not Found"
+msgstr "Cáipéis gan Aimsiú"
+
+#: ../libyelp/yelp-view.c:1711
+msgid "Page Not Found"
+msgstr "Leathanach gan Aimsiú"
+
+#: ../libyelp/yelp-view.c:1714
+msgid "Cannot Read"
+msgstr "Ní Féidir Léamh"
+
+#: ../libyelp/yelp-view.c:1720
+msgid "Unknown Error"
+msgstr "Earráid Anaithnid"
+
+#: ../libyelp/yelp-view.c:1740
+#, fuzzy
+msgid "Search for packages containing this document."
+msgstr "Cuardaigh ar dhoiciméadú eile"
+
+#: ../libyelp/yelp-view.c:1892
+#, fuzzy, c-format
+msgid "The URI ‘%s’ does not point to a valid page."
+msgstr "Níl an chomhadlann '%s' ann."
+
+#: ../libyelp/yelp-view.c:1898
+#, c-format
+msgid "The URI does not point to a valid page."
+msgstr ""
+
+#: ../libyelp/yelp-view.c:1904
+#, fuzzy, c-format
+msgid "The URI ‘%s’ could not be parsed."
+msgstr "Níl an chomhadlann '%s' ann."
+
+#: ../src/yelp-application.c:65
+msgid "Turn on editor mode"
+msgstr ""
+
+#: ../src/yelp-application.c:128
+msgid "_Larger Text"
+msgstr "Téacs Níos _Mó"
+
+#: ../src/yelp-application.c:130
+msgid "Increase the size of the text"
+msgstr ""
+
+#: ../src/yelp-application.c:133
+msgid "_Smaller Text"
+msgstr "Téacs Níos _Lú"
+
+#: ../src/yelp-application.c:135
+msgid "Decrease the size of the text"
+msgstr ""
+
+#: ../src/yelp-application.c:253 ../src/yelp-window.c:1360
+#: ../yelp.desktop.in.in.h:1
+msgid "Help"
+msgstr "Cabhair"
+
+#: ../src/yelp-application.c:288
+msgid "Show Text _Cursor"
+msgstr "Taispeáin _Cúrsóir Téacs"
+
+#: ../src/yelp-window.c:236
+msgid "_Page"
+msgstr "_Leathanach"
+
+#: ../src/yelp-window.c:237
+msgid "_View"
+msgstr "_Amharc"
+
+#: ../src/yelp-window.c:238
+msgid "_Go"
+msgstr "_Téigh"
+
+#: ../src/yelp-window.c:239
+msgid "_Bookmarks"
+msgstr "Lea_bharmharcanna"
+
+#: ../src/yelp-window.c:242
+msgid "_New Window"
+msgstr "Fuinneog _Nua"
+
+#: ../src/yelp-window.c:247
+msgid "_Close"
+msgstr "_Dún"
+
+#: ../src/yelp-window.c:252
+msgid "_All Documents"
+msgstr "_Gach Cáipéis"
+
+#: ../src/yelp-window.c:256
+msgid "_Add Bookmark"
+msgstr "Cuir Leabharmharc _Leis"
+
+#: ../src/yelp-window.c:261
+msgid "_Remove Bookmark"
+msgstr "_Bain Leabharmharc"
+
+#: ../src/yelp-window.c:265
+msgid "Find in Page..."
+msgstr "Aimsigh i Leathanach..."
+
+#: ../src/yelp-window.c:275
+msgid "Open Location"
+msgstr "Oscail Suíomh"
+
+#: ../src/yelp-window.c:301
+msgid "Application"
+msgstr "Feidhmchlár"
+
+#: ../src/yelp-window.c:302
+msgid "A YelpApplication instance that controls this window"
+msgstr ""
+
+#: ../src/yelp-window.c:429
+msgid "Read Link _Later"
+msgstr "Léigh Nasc ar _Ball"
+
+#: ../src/yelp-window.c:526
+msgid "Find:"
+msgstr "Aimsigh:"
+
+#: ../src/yelp-window.c:548
+msgid "Read Later"
+msgstr "Léigh ar Ball"
+
+#: ../src/yelp-window.c:1180
+#, c-format
+msgid "%i match"
+msgid_plural "%i matches"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+
+#: ../src/yelp-window.c:1189
+msgid "No matches"
+msgstr ""
+
+#: ../yelp.desktop.in.in.h:2
+msgid "Get help with GNOME"
+msgstr "Faigh cabhair ar GNOME"
+
+#: ../yelp.desktop.in.in.h:3
+msgid "documentation;information;manual;"
+msgstr ""

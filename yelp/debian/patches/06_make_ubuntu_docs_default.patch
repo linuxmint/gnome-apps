@@ -1,0 +1,44 @@
+Description: Use ubuntu-help by default instead of gnome-help 
+ except when running GNOME Shell (or Fallback)
+Forwarded: not-needed
+Author: Jeremy Bicha <jbicha@ubuntu.com>
+Index: yelp-3.2.0/src/yelp-application.c
+===================================================================
+--- yelp-3.2.0.orig/src/yelp-application.c	2011-09-22 08:14:56.000000000 -0400
++++ yelp-3.2.0/src/yelp-application.c	2011-09-26 20:57:26.849118625 -0400
+@@ -40,8 +40,6 @@
+ #include "yelp-application.h"
+ #include "yelp-window.h"
+ 
+-#define DEFAULT_URI "help:gnome-help"
+-
+ static gboolean editor_mode = FALSE;
+ 
+ enum {
+@@ -388,8 +386,12 @@
+ 
+     argv = g_application_command_line_get_arguments (cmdline, NULL);
+ 
+-    if (argv[1] == NULL)
+-        open_uri (app, yelp_uri_new (DEFAULT_URI), FALSE);
++    if (argv[1] == NULL) {
++        if (strcmp(getenv("XDG_CURRENT_DESKTOP"), "GNOME"))
++            open_uri (app, yelp_uri_new ("help:ubuntu-help"), FALSE);
++        else
++            open_uri (app, yelp_uri_new ("help:gnome-help"), FALSE);
++    }
+ 
+     for (i = 1; argv[i]; i++)
+         open_uri (app, yelp_uri_new (argv[i]), FALSE);
+@@ -405,7 +407,10 @@
+ {
+     YelpUri *yuri;
+ 
+-    yuri = yelp_uri_new (uri ? uri : DEFAULT_URI);
++    if (strcmp(getenv("XDG_CURRENT_DESKTOP"), "GNOME"))
++        yuri = yelp_uri_new (uri ? uri : "help:ubuntu-help");
++    else
++        yuri = yelp_uri_new (uri ? uri : "help:gnome-help");
+ 
+     yelp_application_new_window_uri (app, yuri);
+ }

@@ -1,0 +1,438 @@
+# Yelp eesti keele tõlge.
+# Estonian translation of Yelp.
+#
+# Copyright (C) 2002–2006 Free Software Foundation, Inc.
+# Copyright (C) 2007–2011 The GNOME Project
+# This file is distributed under the same license as the Yelp package.
+#
+# Tõivo Leedjärv <toivo@linux.ee>, 2002–2004.
+# Allan Sims <allsi@eau.ee>, 2003.
+# Priit Laes <amd store20 com>, 2005, 2006.
+# Ivar Smolin <okul@linux.ee>, 2005–2011.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2012, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: yelp MASTER\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=yelp&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2013-09-10 06:22+0000\n"
+"PO-Revision-Date: 2013-09-11 23:08+0300\n"
+"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
+"Language-Team: Estonian <gnome-et@linux.ee>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. (itstool) path: msg/msgstr
+#. ID: install.tooltip
+#. This is a format message used to format tooltips on install: links. These
+#. links allow users to install packages by clicking a link in the help. The
+#. tooltip may also be used as the link text, if there's no link text in the
+#. document. Special elements in the message will be replaced with the
+#. appropriate content, as follows:
+#.
+#. <string/> - The package to install
+#.
+msgid "Install <string/>"
+msgstr "Paigalda <string/>"
+
+msgid "Invalid compressed data"
+msgstr "Vigaselt pakitud andmed"
+
+msgid "Not enough memory"
+msgstr "Pole piisavalt mälu"
+
+#, c-format
+msgid "The page ‘%s’ was not found in the document ‘%s’."
+msgstr "Dokumendist „%2$s” ei leitud lehete „%1$s”."
+
+#, c-format
+msgid "The file does not exist."
+msgstr "Faili pole olemas."
+
+#, c-format
+msgid "The file ‘%s’ does not exist."
+msgstr "Faili „%s” pole olemas."
+
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because it is not a well-formed XML "
+"document."
+msgstr ""
+"Faili „%s” pole võimalik analüüsida, kuna see pole korrektselt vormindatud "
+"XML-dokument."
+
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because one or more of its included files "
+"is not a well-formed XML document."
+msgstr ""
+"Faili „%s” pole võimalik analüüsida, kuna üks või rohkem selle poolt "
+"kaasatud faili pole korrektselt vormindatud XML-dokumendid."
+
+msgid "Unknown"
+msgstr "Tundmatu"
+
+#, c-format
+msgid "The requested page was not found in the document ‘%s’."
+msgstr "Dokumendist „%s” ei leitud küsitud lehekülge."
+
+msgid "Indexed"
+msgstr "Indekseeritud"
+
+msgid "Whether the document content has been indexed"
+msgstr "Kas dokumendi sisu on indekseeritud või mitte"
+
+msgid "Document URI"
+msgstr "Dokumendi URI"
+
+msgid "The URI which identifies the document"
+msgstr "Dokumenti identifitseeriv URI"
+
+#, c-format
+msgid "Search results for “%s”"
+msgstr "Otsingu \"%s\" tulemused"
+
+#, c-format
+msgid "No matching help pages found in “%s”."
+msgstr "„%s” alt ei leitud sobivaid abiteabe lehti."
+
+msgid "No matching help pages found."
+msgstr "Sobivaid abiteabe lehti ei leitud."
+
+#, c-format
+msgid "An unknown error occurred."
+msgstr "Esines tundmatu viga."
+
+msgid "All Help Documents"
+msgstr "Kõik abidokumendid"
+
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because it is not a well-formed info page."
+msgstr ""
+"Faili „%s” pole võimalik analüüsida, kuna see pole korrektselt vormindatud "
+"teabeleht (info page)."
+
+msgid "View"
+msgstr "Vaade"
+
+msgid "A YelpView instance to control"
+msgstr "Juhitav YelpView instants"
+
+msgid "Bookmarks"
+msgstr "Järjehoidjad"
+
+msgid "A YelpBookmarks implementation instance"
+msgstr "Instantsi YelpBookmarks implementatsioon"
+
+msgid "Enable Search"
+msgstr "Luba otsing"
+
+msgid "Whether the location entry can be used as a search field"
+msgstr "Kas asukohavälja saab kasutada ka otsignuväljana"
+
+msgid "Search..."
+msgstr "Otsimine..."
+
+msgid "Clear the search text"
+msgstr "Otsinguteksti puhastamine"
+
+msgid "Bookmark this page"
+msgstr "Käesoleva lehe lisamine järjehoidjatesse"
+
+msgid "Remove bookmark"
+msgstr "Järjehoidja eemaldamine"
+
+#, c-format
+msgid "Search for “%s”"
+msgstr "Otsi \"%s\""
+
+msgid "Loading"
+msgstr "Laadimine"
+
+#, c-format
+msgid "The directory ‘%s’ does not exist."
+msgstr "Kataloogi „%s” pole olemas."
+
+msgid "GtkSettings"
+msgstr "GtkSettings"
+
+msgid "A GtkSettings object to get settings from"
+msgstr "GtkSettings objekt, millelt sätteid hangitakse"
+
+msgid "GtkIconTheme"
+msgstr "GtkIconTheme"
+
+msgid "A GtkIconTheme object to get icons from"
+msgstr "GtkIconTheme objekt, millelt ikoone hangitakse"
+
+msgid "Font Adjustment"
+msgstr "Kirjatüübi kohendamine"
+
+msgid "A size adjustment to add to font sizes"
+msgstr "Kirjatüübi suuruste kohendamine"
+
+msgid "Show Text Cursor"
+msgstr "Tekstikursori näitamine"
+
+msgid "Show the text cursor or caret for accessible navigation"
+msgstr "Hõlpsama navigeerimise jaoks tekstikursori näitamine"
+
+msgid "Editor Mode"
+msgstr "Redaktorirežiim"
+
+msgid "Enable features useful to editors"
+msgstr "Tekstiredaktorite kasulike võimaluste lubamine"
+
+msgid "Database filename"
+msgstr "Andmebaasifaili nimi"
+
+msgid "The filename of the sqlite database"
+msgstr "Sqlite andmebaasifaili nimi"
+
+msgid "XSLT Stylesheet"
+msgstr "XSLT-laaditabel"
+
+msgid "The location of the XSLT stylesheet"
+msgstr "XSLT-laaditabeli asukoht"
+
+#, c-format
+msgid "The XSLT stylesheet ‘%s’ is either missing or not valid."
+msgstr "XSLT-laaditabel „%s” on puudu või on see vigane."
+
+msgid "No href attribute found on yelp:document\n"
+msgstr "yelp:document küljest ei leitud rekvisiiti \"href\"\n"
+
+msgid "Out of memory"
+msgstr "Mälu otsas"
+
+msgid "_Print..."
+msgstr "_Prindi..."
+
+msgid "_Back"
+msgstr "_Tagasi"
+
+msgid "_Forward"
+msgstr "_Edasi"
+
+msgid "_Previous Page"
+msgstr "_Eelmine leht"
+
+msgid "_Next Page"
+msgstr "_Järgmine leht"
+
+msgid "Yelp URI"
+msgstr "Yelpi URI"
+
+msgid "A YelpUri with the current location"
+msgstr "Praeguse asukoha YelpUri"
+
+msgid "Loading State"
+msgstr "Oleku laadimine"
+
+msgid "The loading state of the view"
+msgstr "Vaate oleku laadimine"
+
+msgid "Page ID"
+msgstr "Lehe ID"
+
+msgid "The ID of the root page of the page being viewed"
+msgstr "Vaadeldava juurlehe ID"
+
+msgid "Root Title"
+msgstr "Juurlehe pealkiri"
+
+msgid "The title of the root page of the page being viewed"
+msgstr "Vaadeldava lehe juurlehe pealkiri"
+
+msgid "Page Title"
+msgstr "Lehe pealkiri"
+
+msgid "The title of the page being viewed"
+msgstr "Vaadatava lehe pealkiri"
+
+msgid "Page Description"
+msgstr "Lehe kirjeldus"
+
+msgid "The description of the page being viewed"
+msgstr "Vaadeldava lehe kirjeldus"
+
+msgid "Page Icon"
+msgstr "Lehe ikoon"
+
+msgid "The icon of the page being viewed"
+msgstr "Vaadeldava lehe ikoon"
+
+msgid "You do not have PackageKit. Package install links require PackageKit."
+msgstr "Sul puudub PackageKit. Pakkide paigaldusviidad vajavad PackageKiti."
+
+msgid "Save Image"
+msgstr "Pildi salvestamine"
+
+msgid "Save Code"
+msgstr "Salvesta kood"
+
+#, c-format
+msgid "Send email to %s"
+msgstr "Saada e-sõnum aadressile %s"
+
+msgid "_Install Packages"
+msgstr "_Paigalda pakid"
+
+msgid "_Open Link"
+msgstr "_Ava viit"
+
+msgid "_Copy Link Location"
+msgstr "_Kopeeri lingi asukoht"
+
+msgid "Open Link in New _Window"
+msgstr "Ava viit _uues aknas"
+
+msgid "_Save Image As..."
+msgstr "Salvesta pilt _kui..."
+
+msgid "_Save Video As..."
+msgstr "Salvesta video _kui..."
+
+msgid "S_end Image To..."
+msgstr "S_aada pilt..."
+
+msgid "S_end Video To..."
+msgstr "S_aada video..."
+
+msgid "_Copy Text"
+msgstr "_Kopeeri tekst"
+
+msgid "C_opy Code Block"
+msgstr "K_opeeri koodiblokk"
+
+msgid "Save Code _Block As..."
+msgstr "Salvesta koodi_blokk kui..."
+
+#, c-format
+msgid "See all search results for “%s”"
+msgstr "Näita kõiki otsingu \"%s\" tulemusi"
+
+#, c-format
+msgid "Could not load a document for ‘%s’"
+msgstr "‘%s’ jaoks pole võimalik dokumenti laadida"
+
+#, c-format
+msgid "Could not load a document"
+msgstr "Dokumenti pole võimalik laadida"
+
+msgid "Document Not Found"
+msgstr "Dokumenti ei leitud"
+
+msgid "Page Not Found"
+msgstr "Lehekülge ei leitud"
+
+msgid "Cannot Read"
+msgstr "Pole võimalik lugeda"
+
+msgid "Unknown Error"
+msgstr "Tundmatu viga"
+
+msgid "Search for packages containing this document."
+msgstr "Seda dokumenti sisaldavate pakkide otsimine."
+
+#, c-format
+msgid "The URI ‘%s’ does not point to a valid page."
+msgstr "URI „%s” ei viita korrektsele lehele."
+
+#, c-format
+msgid "The URI does not point to a valid page."
+msgstr "URI ei viita korrektsele lehele."
+
+#, c-format
+msgid "The URI ‘%s’ could not be parsed."
+msgstr "URI „%s” pole võimalik analüüsida."
+
+msgid "Turn on editor mode"
+msgstr "Redaktorirežiimile lülitumine"
+
+msgid "_Larger Text"
+msgstr "_Suurem tekst"
+
+msgid "Increase the size of the text"
+msgstr "Teksti suuruse suurendamine"
+
+msgid "_Smaller Text"
+msgstr "_Väiksem tekst"
+
+msgid "Decrease the size of the text"
+msgstr "Teksti suuruse vähendamine"
+
+msgid "Help"
+msgstr "Abi"
+
+msgid "Show Text _Cursor"
+msgstr "Näita _tekstikursorit"
+
+msgid "_Page"
+msgstr "_Leht"
+
+msgid "_View"
+msgstr "_Vaade"
+
+msgid "_Go"
+msgstr "_Liikumine"
+
+msgid "_Bookmarks"
+msgstr "_Järjehoidjad"
+
+msgid "_New Window"
+msgstr "_Uus aken"
+
+msgid "_Close"
+msgstr "Sul_ge"
+
+msgid "_All Documents"
+msgstr "_Kõik dokumendid"
+
+msgid "_Add Bookmark"
+msgstr "_Lisa järjehoidja"
+
+msgid "_Remove Bookmark"
+msgstr "_Eemalda järjehoidja"
+
+msgid "Find in Page..."
+msgstr "Otsi lehelt..."
+
+msgid "Open Location"
+msgstr "Asukoha avamine"
+
+msgid "Application"
+msgstr "Rakendus"
+
+msgid "A YelpApplication instance that controls this window"
+msgstr "Seda akent juhtiv YelpApplication instants"
+
+msgid "Read Link _Later"
+msgstr "Loe _hiljem"
+
+msgid "Find:"
+msgstr "Otsi:"
+
+msgid "Read Later"
+msgstr "Loen hiljem"
+
+#, c-format
+msgid "%i match"
+msgid_plural "%i matches"
+msgstr[0] "%i vastavus"
+msgstr[1] "%i vastavust"
+
+msgid "No matches"
+msgstr "Vastavused puuduvad"
+
+msgid "Get help with GNOME"
+msgstr "Abistab GNOME kasutamisel"
+
+msgid "documentation;information;manual;"
+msgstr "dokumentatsioon;informatsioon;manuaal;käsiraamat;juhend;juhised;"

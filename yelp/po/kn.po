@@ -1,0 +1,577 @@
+# translation of yelp.master.kn.po to Kannada
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Shankar Prasad <svenkate@redhat.com>, 2008, 2009, 2013.
+# Shankar <svenkate@redhat.com>, 2013. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: yelp.master.kn\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product="
+"yelp&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2013-01-09 12:33+0000\n"
+"PO-Revision-Date: 2013-10-10 02:32-0400\n"
+"Last-Translator: Shankar <svenkate@redhat.com>\n"
+"Language-Team: Kannada <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: kn\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Zanata 3.2.3\n"
+
+#. (itstool) path: msg/msgstr
+#. ID: install.tooltip
+#. This is a format message used to format tooltips on install: links. These
+#. links allow users to install packages by clicking a link in the help. The
+#. tooltip may also be used as the link text, if there's no link text in the
+#. document. Special elements in the message will be replaced with the
+#. appropriate content, as follows:
+#. <string/> - The package to install
+#: yelp.xml.in:36
+msgid "Install <string/>"
+msgstr "<string/> ಅನ್ನು ಅನುಸ್ಥಾಪಿಸು"
+
+#: ../libyelp/yelp-bz2-decompressor.c:146
+#: ../libyelp/yelp-lzma-decompressor.c:155
+msgid "Invalid compressed data"
+msgstr "ಅಮಾನ್ಯವಾದ ಸಂಕುಚನ ದತ್ತಾಂಶ"
+
+#: ../libyelp/yelp-bz2-decompressor.c:152
+#: ../libyelp/yelp-lzma-decompressor.c:161
+msgid "Not enough memory"
+msgstr "ಸಾಕಷ್ಟು ಮೆಮೊರಿ ಲಭ್ಯವಿಲ್ಲ"
+
+#: ../libyelp/yelp-docbook-document.c:282
+#: ../libyelp/yelp-info-document.c:238
+#: ../libyelp/yelp-mallard-document.c:306
+#: ../libyelp/yelp-mallard-document.c:457
+#: ../libyelp/yelp-man-document.c:282
+#, c-format
+msgid "The page ‘%s’ was not found in the document ‘%s’."
+msgstr "‘%s’ ಪುಟವು ‘%s’ ದಸ್ತಾವೇಜಿನಲ್ಲಿ ಕಂಡುಬಂದಿಲ್ಲ."
+
+#: ../libyelp/yelp-docbook-document.c:317
+#: ../libyelp/yelp-info-document.c:372
+#: ../libyelp/yelp-man-document.c:417
+#, c-format
+msgid "The file does not exist."
+msgstr "ಕಡತವು ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
+
+#: ../libyelp/yelp-docbook-document.c:327
+#: ../libyelp/yelp-info-document.c:382
+#: ../libyelp/yelp-man-document.c:427
+#, c-format
+msgid "The file ‘%s’ does not exist."
+msgstr "ಕಡತ ‘%s’ ವು ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ."
+
+#: ../libyelp/yelp-docbook-document.c:342
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because it is not a well-formed XML "
+"document."
+msgstr ""
+"ಕಡತ ‘%s’ ಅನ್ನು ಪಾರ್ಸ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ ಏಕೆಂದರೆ ಅದು ಸೂಕ್ತವಾಗಿ ರಚಿಸಲಾದ ಒಂದು "
+"XML ಪುಟವಾಗಿಲ್ಲ."
+
+#: ../libyelp/yelp-docbook-document.c:355
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because one or more of its included files "
+"is not a well-formed XML document."
+msgstr ""
+"ಕಡತ ‘%s’ ಅನ್ನು ಪಾರ್ಸ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ ಏಕೆಂದರೆ ಅದು ಒಳಗೊಂಡಿರುವ ಒಂದು ಅಥವ "
+"ಹೆಚ್ಚಿನ ಕಡತಗಳು ಸೂಕ್ತವಾಗಿ ರಚಿಸಲಾದ ಒಂದು XML ಪುಟವಾಗಿಲ್ಲ."
+
+#: ../libyelp/yelp-docbook-document.c:765
+msgid "Unknown"
+msgstr "ಗೊತ್ತಿಲ್ಲದ"
+
+#: ../libyelp/yelp-docbook-document.c:826
+#: ../libyelp/yelp-info-document.c:315
+#: ../libyelp/yelp-man-document.c:359
+#, c-format
+msgid "The requested page was not found in the document ‘%s’."
+msgstr "ಮನವಿ ಮಾಡಲಾದ ಪುಟವು ‘%s’ ದಸ್ತಾವೇಜಿನಲ್ಲಿ ಕಂಡುಬಂದಿಲ್ಲ."
+
+#: ../libyelp/yelp-document.c:268
+msgid "Indexed"
+msgstr "ಅನುಸೂಚಿತ"
+
+#: ../libyelp/yelp-document.c:269
+msgid "Whether the document content has been indexed"
+msgstr "ದಸ್ತಾವೇಜಿನಲ್ಲಿನ ವಿಷಯವನ್ನು ಅನುಸೂಚಿಗೊಳಿಸಲಾಗಿದೆಯೆ"
+
+#: ../libyelp/yelp-document.c:277
+msgid "Document URI"
+msgstr "ದಸ್ತಾವೇಜು URI"
+
+#: ../libyelp/yelp-document.c:278
+msgid "The URI which identifies the document"
+msgstr "ದಸ್ತಾವೇಜನ್ನು ಗುರುತಿಸುವ URI"
+
+#: ../libyelp/yelp-document.c:994
+#, c-format
+msgid "Search results for “%s”"
+msgstr "\"%s\" ಗಾಗಿನ ಹುಡುಕು ಫಲಿತಾಂಶಗಳು"
+
+#: ../libyelp/yelp-document.c:1006
+#, c-format
+msgid "No matching help pages found in “%s”."
+msgstr "“%s” ನಲ್ಲಿ ಯಾವುದೆ ಹೊಂದಿಕೆಯಾಗುವ ನೆರವಿನ ಪುಟಗಳು ಕಾಣಿಸುತ್ತಿಲ್ಲ."
+
+#: ../libyelp/yelp-document.c:1012
+msgid "No matching help pages found."
+msgstr "ಯಾವುದೆ ಹೊಂದಿಕೆಯಾಗುವ ನೆರವಿನ ಪುಟಗಳು ಕಾಣಿಸುತ್ತಿಲ್ಲ."
+
+#: ../libyelp/yelp-error.c:37
+#, c-format
+msgid "An unknown error occurred."
+msgstr "ಒಂದು ಗೊತ್ತಿಲ್ಲದ ದೋಷವು ಎದುರಾಗಿದೆ."
+
+#: ../libyelp/yelp-help-list.c:549
+#: ../libyelp/yelp-help-list.c:558
+msgid "All Help Documents"
+msgstr "ಎಲ್ಲಾ ನೆರವಿನ ದಸ್ತಾವೇಜುಗಳು"
+
+#: ../libyelp/yelp-info-document.c:397
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because it is not a well-formed info page."
+msgstr ""
+"ಕಡತ ‘%s’ ಅನ್ನು ಪಾರ್ಸ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ ಏಕೆಂದರೆ ಅದು ಸೂಕ್ತವಾಗಿ ರಚಿಸಲಾದ ಒಂದು "
+"ಮಾಹಿತಿ (info) ಪುಟವಾಗಿಲ್ಲ."
+
+#: ../libyelp/yelp-location-entry.c:336
+msgid "View"
+msgstr "ನೋಟ"
+
+#: ../libyelp/yelp-location-entry.c:337
+msgid "A YelpView instance to control"
+msgstr "ನಿಯಂತ್ರಿಸಲು YelpView ಸನ್ನಿವೇಶ"
+
+#: ../libyelp/yelp-location-entry.c:352
+msgid "Bookmarks"
+msgstr "ಪುಟಗುರುತುಗಳು"
+
+#: ../libyelp/yelp-location-entry.c:353
+msgid "A YelpBookmarks implementation instance"
+msgstr "YelpBookmarks ಅಳವಡಿಕೆ ಸನ್ನಿವೇಶ"
+
+#: ../libyelp/yelp-location-entry.c:369
+msgid "Enable Search"
+msgstr "ಹುಡುಕಾಟವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸು"
+
+#: ../libyelp/yelp-location-entry.c:370
+msgid "Whether the location entry can be used as a search field"
+msgstr "ಸ್ಥಳದ ನಮೂದನ್ನು ಒಂದು ಹುಡುಕು ಕ್ಷೇತ್ರವಾಗಿ ಬಳಸಬಹುದೆ"
+
+#: ../libyelp/yelp-location-entry.c:440
+#: ../src/yelp-window.c:270
+msgid "Search..."
+msgstr "ಹುಡುಕು..."
+
+#: ../libyelp/yelp-location-entry.c:783
+msgid "Clear the search text"
+msgstr "ಹುಡುಕಾಟವನ್ನು ತೆರವುಗೊಳಿಸು"
+
+#: ../libyelp/yelp-location-entry.c:831
+#: ../libyelp/yelp-location-entry.c:1593
+msgid "Bookmark this page"
+msgstr "ಈ ಪುಟವನ್ನು ಪುಟಗುರುತು ಮಾಡು"
+
+#: ../libyelp/yelp-location-entry.c:839
+#: ../libyelp/yelp-location-entry.c:1601
+msgid "Remove bookmark"
+msgstr "ಪುಟಗುರುತನ್ನು ತೆಗೆದುಹಾಕು"
+
+#: ../libyelp/yelp-location-entry.c:1154
+#, c-format
+msgid "Search for “%s”"
+msgstr "“%s” ಗಾಗಿನ ಹುಡುಕಾಟ"
+
+#: ../libyelp/yelp-location-entry.c:1458
+msgid "Loading"
+msgstr "ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ"
+
+#: ../libyelp/yelp-mallard-document.c:345
+#, c-format
+msgid "The directory ‘%s’ does not exist."
+msgstr "ಕೋಶ ‘%s’ ಅಸ್ತಿತ್ವದಲ್ಲಿ ಇಲ್ಲ."
+
+#: ../libyelp/yelp-settings.c:156
+msgid "GtkSettings"
+msgstr "GtkSettings"
+
+#: ../libyelp/yelp-settings.c:157
+msgid "A GtkSettings object to get settings from"
+msgstr "ಸಿದ್ಧತೆಗಳನ್ನು ಪಡೆದುಕೊಳ್ಳಬೇಕಿರುವ GtkSettings ವಸ್ತು"
+
+#: ../libyelp/yelp-settings.c:165
+msgid "GtkIconTheme"
+msgstr "GtkIconTheme"
+
+#: ../libyelp/yelp-settings.c:166
+msgid "A GtkIconTheme object to get icons from"
+msgstr "ಚಿಹ್ನೆಗಳನ್ನು ಪಡೆದುಕೊಳ್ಳಬೇಕಿರುವ ಒಂದು GtkIconTheme"
+
+#: ../libyelp/yelp-settings.c:174
+msgid "Font Adjustment"
+msgstr "ಅಕ್ಷರಶೈಲಿ ಹೊಂದಾಣಿಕೆ"
+
+#: ../libyelp/yelp-settings.c:175
+msgid "A size adjustment to add to font sizes"
+msgstr "ಅಕ್ಷರಶೈಲಿ ಗಾತ್ರಗಳಿಗೆ ಹೊಂದಿಕೆಯಾಗುವ ಒಂದು ಗಾತ್ರ ಸರಿಹೊಂದಿಕೆ"
+
+#: ../libyelp/yelp-settings.c:183
+msgid "Show Text Cursor"
+msgstr "ಪಠ್ಯ ತೆರೆಸೂಚಕವನ್ನು ತೋರಿಸು"
+
+#: ../libyelp/yelp-settings.c:184
+msgid "Show the text cursor or caret for accessible navigation"
+msgstr "ನಿಲುಕಣಾ ನ್ಯಾವಿಗೇಶನ್‌ಗಾಗಿ ಪಠ್ಯ ತೆರೆಸೂಚಕ ಅಥವ ಕ್ಯಾರೆಟ್ ಅನ್ನು ತೋರಿಸು"
+
+#: ../libyelp/yelp-settings.c:192
+msgid "Editor Mode"
+msgstr "ಸಂಪಾದಕ ಸ್ಥಿತಿ"
+
+#: ../libyelp/yelp-settings.c:193
+msgid "Enable features useful to editors"
+msgstr "ಸಂಪಾದಕಗಳಿಗೆ ಸಹಾಯಕವಾಗುವ ಸೌಲಭ್ಯಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸು"
+
+#: ../libyelp/yelp-sqlite-storage.c:150
+msgid "Database filename"
+msgstr "ದತ್ತಸಂಚಯ ಕಡತದ ಹೆಸರು"
+
+#: ../libyelp/yelp-sqlite-storage.c:151
+msgid "The filename of the sqlite database"
+msgstr "sqlite ದತ್ತಸಂಚಯದ ಕಡತಹೆಸರು"
+
+#: ../libyelp/yelp-transform.c:171
+msgid "XSLT Stylesheet"
+msgstr "XSLT ಶೈಲಿಹಾಳೆ"
+
+#: ../libyelp/yelp-transform.c:172
+msgid "The location of the XSLT stylesheet"
+msgstr "XSLT ಶೈಲಿಹಾಳೆ ಇರುವ ಸ್ಥಳ"
+
+#: ../libyelp/yelp-transform.c:379
+#: ../libyelp/yelp-transform.c:394
+#, c-format
+msgid "The XSLT stylesheet ‘%s’ is either missing or not valid."
+msgstr ""
+"XSLT ಶೈಲಿಹಾಳೆ (ಸ್ಟೈಲ್‌ಶೀಟ್) ‘%s’ ಯು ಒಂದೊ ಕಾಣುತ್ತಿಲ್ಲ, ಅಥವ ಅಮಾನ್ಯವಾದುದಾಗಿದೆ."
+
+#: ../libyelp/yelp-transform.c:528
+msgid "No href attribute found on yelp:document\n"
+msgstr "yelp:ದಸ್ತಾವೇಜಿನಲ್ಲಿ ಯಾವುದೆ href ವೈಶಿಷ್ಟ್ಯವು ಕಂಡುಬಂದಿಲ್ಲ\n"
+
+#: ../libyelp/yelp-transform.c:543
+msgid "Out of memory"
+msgstr "ಮೆಮೊರಿ ಇಲ್ಲ"
+
+#: ../libyelp/yelp-view.c:131
+msgid "_Print..."
+msgstr "ಮುದ್ರಿಸು (_P)..."
+
+#: ../libyelp/yelp-view.c:136
+msgid "_Back"
+msgstr "ಹಿಂದಕ್ಕೆ (_B)"
+
+#: ../libyelp/yelp-view.c:141
+msgid "_Forward"
+msgstr "ಮುಂದಕ್ಕೆ (_F)"
+
+#: ../libyelp/yelp-view.c:146
+msgid "_Previous Page"
+msgstr "ಹಿಂದಿನ ಪುಟ (_P)"
+
+#: ../libyelp/yelp-view.c:151
+msgid "_Next Page"
+msgstr "ಮುಂದಿನ ಪುಟ (_N)"
+
+#: ../libyelp/yelp-view.c:423
+msgid "Yelp URI"
+msgstr "Yelp URI"
+
+#: ../libyelp/yelp-view.c:424
+msgid "A YelpUri with the current location"
+msgstr "ಪ್ರಸಕ್ತ ತಾಣದೊಂದಿಗಿನ YelpUri"
+
+#: ../libyelp/yelp-view.c:432
+msgid "Loading State"
+msgstr "ಲೋಡ್ ಮಾಡುವ ಸ್ಥಿತಿ"
+
+#: ../libyelp/yelp-view.c:433
+msgid "The loading state of the view"
+msgstr "ನೋಟದ ಲೋಡ್ ಆಗುವ ಸ್ಥಿತಿ"
+
+#: ../libyelp/yelp-view.c:442
+msgid "Page ID"
+msgstr "ಪುಟದ ID"
+
+#: ../libyelp/yelp-view.c:443
+msgid "The ID of the root page of the page being viewed"
+msgstr "ನೋಡಲಾಗುತ್ತಿರುವ ಪುಟದ ಮೂಲದ ಪುಟದ ID"
+
+#: ../libyelp/yelp-view.c:451
+msgid "Root Title"
+msgstr "ಮೂಲ ಶೀರ್ಷಿಕೆ"
+
+#: ../libyelp/yelp-view.c:452
+msgid "The title of the root page of the page being viewed"
+msgstr "ನೋಡಲಾಗುತ್ತಿರುವ ಪುಟದ ಮೂಲದ ಪುಟದ ಶೀರ್ಷಿಕೆ"
+
+#: ../libyelp/yelp-view.c:460
+msgid "Page Title"
+msgstr "ಪುಟ ಶೀರ್ಷಿಕೆ"
+
+#: ../libyelp/yelp-view.c:461
+msgid "The title of the page being viewed"
+msgstr "ನೋಡಲಾಗುತ್ತಿರುವ ಪುಟದ ಶೀರ್ಷಿಕೆ"
+
+#: ../libyelp/yelp-view.c:469
+msgid "Page Description"
+msgstr "ಪುಟದ ವಿವರಣೆ"
+
+#: ../libyelp/yelp-view.c:470
+msgid "The description of the page being viewed"
+msgstr "ನೋಡಲಾಗುತ್ತಿರುವ ಪುಟದ ವಿವರಣೆ"
+
+#: ../libyelp/yelp-view.c:478
+msgid "Page Icon"
+msgstr "ಪುಟದ ಚಿಹ್ನೆ"
+
+#: ../libyelp/yelp-view.c:479
+msgid "The icon of the page being viewed"
+msgstr "ನೋಡಲಾಗುತ್ತಿರುವ ಪುಟದ ಚಿಹ್ನೆ"
+
+#: ../libyelp/yelp-view.c:720
+msgid "You do not have PackageKit. Package install links require PackageKit."
+msgstr ""
+"ನೀವು PackageKit ಅನ್ನು ಹೊಂದಿಲ್ಲ. ಪ್ಯಾಕೇಜು ಅನುಸ್ಥಾಪನೆ ಕೊಂಡಿಗಳಿಗೆ PackageKit ನ "
+"ಅಗತ್ಯವಿರುತ್ತದೆ."
+
+#: ../libyelp/yelp-view.c:1014
+msgid "Save Image"
+msgstr "ಚಿತ್ರವನ್ನು ಉಳಿಸು"
+
+#: ../libyelp/yelp-view.c:1109
+msgid "Save Code"
+msgstr "ಸಂಕೇತಗಳನ್ನು ಉಳಿಸು"
+
+#: ../libyelp/yelp-view.c:1272
+#, c-format
+msgid "Send email to %s"
+msgstr "%s ಗೆ ವಿಅಂಚೆಯನ್ನು ಕಳುಹಿಸು"
+
+#: ../libyelp/yelp-view.c:1287
+msgid "_Install Packages"
+msgstr "ಪ್ಯಾಕೇಜುಗಳನ್ನು ಅನುಸ್ಥಾಪಿಸು (_I)"
+
+#: ../libyelp/yelp-view.c:1295
+msgid "_Open Link"
+msgstr "ಕೊಂಡಿಯನ್ನು ತೆರೆ (_O)"
+
+#: ../libyelp/yelp-view.c:1302
+msgid "_Copy Link Location"
+msgstr "ಕೊಂಡಿಯ ತಾಣವನ್ನು ಪ್ರತಿ ಮಾಡು (_C)"
+
+#: ../libyelp/yelp-view.c:1308
+msgid "Open Link in New _Window"
+msgstr "ಕೊಂಡಿಯನ್ನು ಹೊಸ ಕಿಟಕಿಯಲ್ಲಿ ತೆರೆ (_W)"
+
+#: ../libyelp/yelp-view.c:1360
+msgid "_Save Image As..."
+msgstr "ಚಿತ್ರವನ್ನು ಹೀಗೆ ಉಳಿಸು (_S)"
+
+#: ../libyelp/yelp-view.c:1362
+msgid "_Save Video As..."
+msgstr "ವೀಡಿಯೊವನ್ನು ಹೀಗೆ ಉಳಿಸು (_S)..."
+
+#: ../libyelp/yelp-view.c:1369
+msgid "S_end Image To..."
+msgstr "ಚಿತ್ರವನ್ನು ಇಲ್ಲಿಗೆ ಕಳುಹಿಸು (_e)..."
+
+#: ../libyelp/yelp-view.c:1371
+msgid "S_end Video To..."
+msgstr "ವೀಡಿಯೊವನ್ನು ಇಲ್ಲಿಗೆ ಕಳುಹಿಸು (_e)..."
+
+#: ../libyelp/yelp-view.c:1382
+msgid "_Copy Text"
+msgstr "ಪಠ್ಯವನ್ನು ಪ್ರತಿ ಮಾಡು (_C)"
+
+#: ../libyelp/yelp-view.c:1395
+msgid "C_opy Code Block"
+msgstr "ಸಂಕೇತದ ಬ್ಲಾಕ್ ಅನ್ನು ಪ್ರತಿ ಮಾಡು (_o)"
+
+#: ../libyelp/yelp-view.c:1400
+msgid "Save Code _Block As..."
+msgstr "ಸಂಕೇತ ಬ್ಲಾಕ್ ಅನ್ನು ಹೀಗೆ ಉಳಿಸು (_B).."
+
+#: ../libyelp/yelp-view.c:1507
+#, c-format
+msgid "See all search results for “%s”"
+msgstr "\"%s\" ಗಾಗಿನ ಎಲ್ಲಾ ಹುಡುಕು ಫಲಿತಾಂಶಗಳನ್ನು ನೋಡು"
+
+#: ../libyelp/yelp-view.c:1628
+#, c-format
+msgid "Could not load a document for ‘%s’"
+msgstr "‘%s’ ಗಾಗಿ ದಸ್ತಾವೇಜನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
+
+#: ../libyelp/yelp-view.c:1634
+#, c-format
+msgid "Could not load a document"
+msgstr "ದಸ್ತಾವೇಜನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
+
+#: ../libyelp/yelp-view.c:1709
+msgid "Document Not Found"
+msgstr "ದಸ್ತಾವೇಜು ಕಂಡುಬಂದಿಲ್ಲ"
+
+#: ../libyelp/yelp-view.c:1711
+msgid "Page Not Found"
+msgstr "ಪುಟವು ಕಂಡುಬಂದಿಲ್ಲ"
+
+#: ../libyelp/yelp-view.c:1714
+msgid "Cannot Read"
+msgstr "ಓದಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
+
+#: ../libyelp/yelp-view.c:1720
+msgid "Unknown Error"
+msgstr "ಗೊತ್ತಿರದ ದೋಷ"
+
+#: ../libyelp/yelp-view.c:1740
+msgid "Search for packages containing this document."
+msgstr "ಈ ದಸ್ತಾವೇಜನ್ನು ಹೊಂದಿರುವ ಪ್ಯಾಕೇಜುಗಳಿಗಾಗಿ ಹುಡುಕು."
+
+#: ../libyelp/yelp-view.c:1892
+#, c-format
+msgid "The URI ‘%s’ does not point to a valid page."
+msgstr "URI ‘%s’ ಒಂದು ಮಾನ್ಯವಾದ ಪುಟವನ್ನು ಸೂಚಿಸುವುದಿಲ್ಲ."
+
+#: ../libyelp/yelp-view.c:1898
+#, c-format
+msgid "The URI does not point to a valid page."
+msgstr "URI ಒಂದು ಮಾನ್ಯವಾದ ಪುಟವನ್ನು ಸೂಚಿಸುವುದಿಲ್ಲ."
+
+#: ../libyelp/yelp-view.c:1904
+#, c-format
+msgid "The URI ‘%s’ could not be parsed."
+msgstr "‘%s’ URI ಅನ್ನು ಪಾರ್ಸ್ ಮಾಡಲಾಗಿಲ್ಲ."
+
+#: ../src/yelp-application.c:66
+msgid "Turn on editor mode"
+msgstr "ಸಂಪಾದಕ ಸ್ಥಿತಿಯನ್ನು ಚಾಲನೆಗೊಳಿಸು"
+
+#: ../src/yelp-application.c:67
+msgid "Don't steal focus"
+msgstr "ಗಮನವನ್ನು ಕಸಿಯಬೇಡ"
+
+#: ../src/yelp-application.c:130
+msgid "_Larger Text"
+msgstr "ದೊಡ್ಡಗಾತ್ರದ ಪಠ್ಯ (_L)"
+
+#: ../src/yelp-application.c:132
+msgid "Increase the size of the text"
+msgstr "ಪಠ್ಯದ ಗಾತ್ರವನ್ನು ಹೆಚ್ಚಿಸು"
+
+#: ../src/yelp-application.c:135
+msgid "_Smaller Text"
+msgstr "ಸಣ್ಣಗಾತ್ರದ ಪಠ್ಯ (_S)"
+
+#: ../src/yelp-application.c:137
+msgid "Decrease the size of the text"
+msgstr "ಪಠ್ಯದ ಗಾತ್ರವನ್ನು ಕಡಿಮೆ ಮಾಡು"
+
+#: ../src/yelp-application.c:255
+#: ../src/yelp-window.c:1360
+#: ../yelp.desktop.in.in.h:1
+msgid "Help"
+msgstr "ಸಹಾಯ"
+
+#: ../src/yelp-application.c:290
+msgid "Show Text _Cursor"
+msgstr "ಪಠ್ಯದ ತೆರೆಸೂಚಕವನ್ನು ತೋರಿಸು (_C)"
+
+#: ../src/yelp-window.c:236
+msgid "_Page"
+msgstr "ಪುಟ (_P)"
+
+#: ../src/yelp-window.c:237
+msgid "_View"
+msgstr "ನೋಟ (_V)"
+
+#: ../src/yelp-window.c:238
+msgid "_Go"
+msgstr "ತೆರಳು(_G)"
+
+#: ../src/yelp-window.c:239
+msgid "_Bookmarks"
+msgstr "ಪುಟಗುರುತುಗಳು (_B)"
+
+#: ../src/yelp-window.c:242
+msgid "_New Window"
+msgstr "ಹೊಸ ಕಿಟಕಿ (_N)"
+
+#: ../src/yelp-window.c:247
+msgid "_Close"
+msgstr "ಮುಚ್ಚು (_C)"
+
+#: ../src/yelp-window.c:252
+msgid "_All Documents"
+msgstr "ಎಲ್ಲಾ ದಸ್ತಾವೇಜುಗಳು (_A)"
+
+#: ../src/yelp-window.c:256
+msgid "_Add Bookmark"
+msgstr "ಪುಟಗುರುತನ್ನು ಸೇರಿಸು (_A)"
+
+#: ../src/yelp-window.c:261
+msgid "_Remove Bookmark"
+msgstr "ಪುಟಗುರುತನ್ನು ತೆಗೆದುಹಾಕು (_R)"
+
+#: ../src/yelp-window.c:265
+msgid "Find in Page..."
+msgstr "ಪುಟದಲ್ಲಿ ಹುಡುಕು..."
+
+#: ../src/yelp-window.c:275
+msgid "Open Location"
+msgstr "ಸ್ಥಳವನ್ನು ತೆಗೆ"
+
+#: ../src/yelp-window.c:301
+msgid "Application"
+msgstr "ಅನ್ವಯ"
+
+#: ../src/yelp-window.c:302
+msgid "A YelpApplication instance that controls this window"
+msgstr "ಈ ಕಿಟಕಿಯನ್ನು ನಿಯಂತ್ರಿಸುವ YelpApplication ಸನ್ನಿವೇಶ"
+
+#: ../src/yelp-window.c:429
+msgid "Read Link _Later"
+msgstr "ಕೊಂಡಿಯನ್ನು ನಂತರ ಓದು (_L)"
+
+#: ../src/yelp-window.c:526
+msgid "Find:"
+msgstr "ಹುಡುಕು:"
+
+#: ../src/yelp-window.c:548
+msgid "Read Later"
+msgstr "ನಂತರ ಓದು"
+
+#: ../src/yelp-window.c:1180
+#, c-format
+msgid "%i match"
+msgid_plural "%i matches"
+msgstr[0] "%i ಹೊಂದಿಕೆ"
+msgstr[1] "%i ಹೊಂದಿಕೆಗಳು"
+
+#: ../src/yelp-window.c:1189
+msgid "No matches"
+msgstr "ಯಾವುವೂ ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ"
+
+#: ../yelp.desktop.in.in.h:2
+msgid "Get help with GNOME"
+msgstr "GNOME ಬಗ್ಗೆ ನೆರವನ್ನು ಪಡೆದುಕೊಳ್ಳಿ"
+
+#: ../yelp.desktop.in.in.h:3
+msgid "documentation;information;manual;"
+msgstr "ದಸ್ತಾವೇಜೀಕರಣ;ಮಾಹಿತಿ;ಕೈಪಿಡಿ;"

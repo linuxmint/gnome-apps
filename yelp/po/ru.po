@@ -1,0 +1,566 @@
+# Russian translation of yelp
+# Copyright (C) 2002, 2004, 2005, 2006, 2008 Free Software Foundation, Inc.
+#
+# Igor Androsov <blace@mail.ru>, 2002.
+# Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2004.
+# Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ru\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=yelp&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2013-04-05 23:43+0000\n"
+"PO-Revision-Date: 2013-04-04 08:56+0600\n"
+"Last-Translator: Dmitriy S. Seregin <dseregin@59.ru>\n"
+"Language-Team: Russian <gnome-cyr@gnome.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#. (itstool) path: msg/msgstr
+#. ID: install.tooltip
+#. This is a format message used to format tooltips on install: links. These
+#. links allow users to install packages by clicking a link in the help. The
+#. tooltip may also be used as the link text, if there's no link text in the
+#. document. Special elements in the message will be replaced with the
+#. appropriate content, as follows:
+#.
+#. <string/> - The package to install
+#.
+#: yelp.xml.in:36
+msgid "Install <string/>"
+msgstr "Установить <string/>"
+
+#: ../libyelp/yelp-bz2-decompressor.c:146
+#: ../libyelp/yelp-lzma-decompressor.c:155
+msgid "Invalid compressed data"
+msgstr "Недопустимые сжатые данные"
+
+#: ../libyelp/yelp-bz2-decompressor.c:152
+#: ../libyelp/yelp-lzma-decompressor.c:161
+msgid "Not enough memory"
+msgstr "Недостаточно памяти"
+
+#: ../libyelp/yelp-docbook-document.c:282 ../libyelp/yelp-info-document.c:238
+#: ../libyelp/yelp-mallard-document.c:306
+#: ../libyelp/yelp-mallard-document.c:457 ../libyelp/yelp-man-document.c:282
+#, c-format
+msgid "The page ‘%s’ was not found in the document ‘%s’."
+msgstr "Не удалось найти страницу «%s» в документе «%s»."
+
+#: ../libyelp/yelp-docbook-document.c:317 ../libyelp/yelp-info-document.c:372
+#: ../libyelp/yelp-man-document.c:417
+#, c-format
+msgid "The file does not exist."
+msgstr "Файл не существует."
+
+#: ../libyelp/yelp-docbook-document.c:327 ../libyelp/yelp-info-document.c:382
+#: ../libyelp/yelp-man-document.c:427
+#, c-format
+msgid "The file ‘%s’ does not exist."
+msgstr "Файл «%s» не существует."
+
+#: ../libyelp/yelp-docbook-document.c:342
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because it is not a well-formed XML "
+"document."
+msgstr ""
+"Не удалось разобрать файл «%s», потому что он не является корректно "
+"сформированным файлом XML."
+
+#: ../libyelp/yelp-docbook-document.c:355
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because one or more of its included files "
+"is not a well-formed XML document."
+msgstr ""
+"Не удалось разобрать файл «%s», некоторые подключаемые части этого файла не "
+"являются корректно сформированными файлами XML."
+
+#: ../libyelp/yelp-docbook-document.c:765
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: ../libyelp/yelp-docbook-document.c:826 ../libyelp/yelp-info-document.c:315
+#: ../libyelp/yelp-man-document.c:359
+#, c-format
+msgid "The requested page was not found in the document ‘%s’."
+msgstr "Требуемая страница не найдена в документе «%s»."
+
+#: ../libyelp/yelp-document.c:268
+msgid "Indexed"
+msgstr "Проиндексировано"
+
+#: ../libyelp/yelp-document.c:269
+msgid "Whether the document content has been indexed"
+msgstr "Является ли содержимое документа проиндексированным"
+
+#: ../libyelp/yelp-document.c:277
+msgid "Document URI"
+msgstr "URI документа"
+
+#: ../libyelp/yelp-document.c:278
+msgid "The URI which identifies the document"
+msgstr "URI, определяющий документ"
+
+#: ../libyelp/yelp-document.c:994
+#, c-format
+msgid "Search results for “%s”"
+msgstr "Найти результаты для «%s»"
+
+#: ../libyelp/yelp-document.c:1006
+#, c-format
+msgid "No matching help pages found in “%s”."
+msgstr "В «%s» не найдено совпадающих справочных страниц."
+
+#: ../libyelp/yelp-document.c:1012
+msgid "No matching help pages found."
+msgstr "Не найдно совпадений в справочных страницах."
+
+#: ../libyelp/yelp-error.c:37
+#, c-format
+msgid "An unknown error occurred."
+msgstr "Произошла неизвестная ошибка."
+
+#: ../libyelp/yelp-help-list.c:549 ../libyelp/yelp-help-list.c:558
+msgid "All Help Documents"
+msgstr "Вся справочная документация"
+
+#: ../libyelp/yelp-info-document.c:397
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because it is not a well-formed info page."
+msgstr ""
+"Не удалось разобрать файл «%s», потому что он не является корректной "
+"страницей в формате info."
+
+#: ../libyelp/yelp-location-entry.c:336
+msgid "View"
+msgstr "Вид"
+
+#: ../libyelp/yelp-location-entry.c:337
+msgid "A YelpView instance to control"
+msgstr "Управляющий экземпляр YelpView"
+
+#: ../libyelp/yelp-location-entry.c:352
+msgid "Bookmarks"
+msgstr "Закладки"
+
+#: ../libyelp/yelp-location-entry.c:353
+msgid "A YelpBookmarks implementation instance"
+msgstr "Экземпляр реализации YelpBookmarks"
+
+#: ../libyelp/yelp-location-entry.c:369
+msgid "Enable Search"
+msgstr "Включить поиск"
+
+#: ../libyelp/yelp-location-entry.c:370
+msgid "Whether the location entry can be used as a search field"
+msgstr "Может ли поле местоположения использоваться для поиска"
+
+#: ../libyelp/yelp-location-entry.c:440 ../src/yelp-window.c:270
+msgid "Search..."
+msgstr "Найти…"
+
+#: ../libyelp/yelp-location-entry.c:783
+msgid "Clear the search text"
+msgstr "Очистить текст для поиска"
+
+#: ../libyelp/yelp-location-entry.c:831 ../libyelp/yelp-location-entry.c:1593
+msgid "Bookmark this page"
+msgstr "Добавить закладку для этой страницы"
+
+#: ../libyelp/yelp-location-entry.c:839 ../libyelp/yelp-location-entry.c:1601
+msgid "Remove bookmark"
+msgstr "Удалить закладку"
+
+#: ../libyelp/yelp-location-entry.c:1154
+#, c-format
+msgid "Search for “%s”"
+msgstr "Поиск «%s»"
+
+#: ../libyelp/yelp-location-entry.c:1458
+msgid "Loading"
+msgstr "Загрузка"
+
+#: ../libyelp/yelp-mallard-document.c:345
+#, c-format
+msgid "The directory ‘%s’ does not exist."
+msgstr "Каталог «%s» не существует."
+
+#: ../libyelp/yelp-settings.c:156
+msgid "GtkSettings"
+msgstr "GtkSettings"
+
+#: ../libyelp/yelp-settings.c:157
+msgid "A GtkSettings object to get settings from"
+msgstr "Объект GtkSettings для получения параметров"
+
+#: ../libyelp/yelp-settings.c:165
+msgid "GtkIconTheme"
+msgstr "GtkIconTheme"
+
+#: ../libyelp/yelp-settings.c:166
+msgid "A GtkIconTheme object to get icons from"
+msgstr "Объект GtkIconTheme для получения значков"
+
+#: ../libyelp/yelp-settings.c:174
+msgid "Font Adjustment"
+msgstr "Изменение шрифта"
+
+#: ../libyelp/yelp-settings.c:175
+msgid "A size adjustment to add to font sizes"
+msgstr "Размер для добавления в размеры шрифтов"
+
+#: ../libyelp/yelp-settings.c:183
+msgid "Show Text Cursor"
+msgstr "Показывать текстовый курсор"
+
+#: ../libyelp/yelp-settings.c:184
+msgid "Show the text cursor or caret for accessible navigation"
+msgstr "Показывать текстовый курсор или каретку для перемещения по документу"
+
+#: ../libyelp/yelp-settings.c:192
+msgid "Editor Mode"
+msgstr "Режим редактирования"
+
+#: ../libyelp/yelp-settings.c:193
+msgid "Enable features useful to editors"
+msgstr "Включить полезные возможности редактирования"
+
+#: ../libyelp/yelp-sqlite-storage.c:150
+msgid "Database filename"
+msgstr "Имя файла базы данных"
+
+#: ../libyelp/yelp-sqlite-storage.c:151
+msgid "The filename of the sqlite database"
+msgstr "Имя файла базы данных sqlite"
+
+#: ../libyelp/yelp-transform.c:171
+msgid "XSLT Stylesheet"
+msgstr "Таблица стилей XSLT"
+
+#: ../libyelp/yelp-transform.c:172
+msgid "The location of the XSLT stylesheet"
+msgstr "Расположение таблицы стилей XSLT"
+
+#: ../libyelp/yelp-transform.c:379 ../libyelp/yelp-transform.c:394
+#, c-format
+msgid "The XSLT stylesheet ‘%s’ is either missing or not valid."
+msgstr "Таблица стилей XSLT «%s» отсутствует или является некорректной."
+
+#: ../libyelp/yelp-transform.c:528
+msgid "No href attribute found on yelp:document\n"
+msgstr "Отсутстсвует атрибут ссылки в yelp:document\n"
+
+#: ../libyelp/yelp-transform.c:543
+msgid "Out of memory"
+msgstr "Недостаточно памяти"
+
+#: ../libyelp/yelp-view.c:131
+msgid "_Print..."
+msgstr "_Печать…"
+
+#: ../libyelp/yelp-view.c:136
+msgid "_Back"
+msgstr "_Назад"
+
+#: ../libyelp/yelp-view.c:141
+msgid "_Forward"
+msgstr "_Вперёд"
+
+#: ../libyelp/yelp-view.c:146
+msgid "_Previous Page"
+msgstr "_Предыдущая страница"
+
+#: ../libyelp/yelp-view.c:151
+msgid "_Next Page"
+msgstr "_Следующая страница"
+
+#: ../libyelp/yelp-view.c:423
+msgid "Yelp URI"
+msgstr "URI Yelp"
+
+#: ../libyelp/yelp-view.c:424
+msgid "A YelpUri with the current location"
+msgstr "YelpUri с текущим местоположением"
+
+#: ../libyelp/yelp-view.c:432
+msgid "Loading State"
+msgstr "Загрузка состояния…"
+
+#: ../libyelp/yelp-view.c:433
+msgid "The loading state of the view"
+msgstr "Загрузка состояния вида"
+
+#: ../libyelp/yelp-view.c:442
+msgid "Page ID"
+msgstr "ID страницы"
+
+#: ../libyelp/yelp-view.c:443
+msgid "The ID of the root page of the page being viewed"
+msgstr "ID корневой страницы для просматриваемой страницы"
+
+#: ../libyelp/yelp-view.c:451
+msgid "Root Title"
+msgstr "Корневой заголовок"
+
+#: ../libyelp/yelp-view.c:452
+msgid "The title of the root page of the page being viewed"
+msgstr "Заголовок корневой страницы для просматриваемой страницы"
+
+#: ../libyelp/yelp-view.c:460
+msgid "Page Title"
+msgstr "Заголовок страницы"
+
+#: ../libyelp/yelp-view.c:461
+msgid "The title of the page being viewed"
+msgstr "Заголовок просматриваемой страницы"
+
+#: ../libyelp/yelp-view.c:469
+msgid "Page Description"
+msgstr "Описание страницы"
+
+#: ../libyelp/yelp-view.c:470
+msgid "The description of the page being viewed"
+msgstr "Описание просматриваемой страницы"
+
+#: ../libyelp/yelp-view.c:478
+msgid "Page Icon"
+msgstr "Значок страницы"
+
+#: ../libyelp/yelp-view.c:479
+msgid "The icon of the page being viewed"
+msgstr "Значок просматриваемой страницы"
+
+#: ../libyelp/yelp-view.c:720
+msgid "You do not have PackageKit. Package install links require PackageKit."
+msgstr ""
+"Отсутствует приложение PackageKit. Ссылки для установки пакетов требуют "
+"PackageKit."
+
+#: ../libyelp/yelp-view.c:1014
+msgid "Save Image"
+msgstr "Сохранить изображение"
+
+#: ../libyelp/yelp-view.c:1109
+msgid "Save Code"
+msgstr "Сохранить код"
+
+#: ../libyelp/yelp-view.c:1272
+#, c-format
+msgid "Send email to %s"
+msgstr "Сохранить эл. почту в %s"
+
+#: ../libyelp/yelp-view.c:1287
+msgid "_Install Packages"
+msgstr "_Установить пакеты"
+
+#: ../libyelp/yelp-view.c:1295
+msgid "_Open Link"
+msgstr "_Открыть ссылку"
+
+#: ../libyelp/yelp-view.c:1302
+msgid "_Copy Link Location"
+msgstr "_Копировать адрес ссылки"
+
+#: ../libyelp/yelp-view.c:1308
+msgid "Open Link in New _Window"
+msgstr "Открыть ссылку в _новом окне"
+
+#: ../libyelp/yelp-view.c:1360
+msgid "_Save Image As..."
+msgstr "_Сохранить изображение как…"
+
+#: ../libyelp/yelp-view.c:1362
+msgid "_Save Video As..."
+msgstr "_Сохранить видео как…"
+
+#: ../libyelp/yelp-view.c:1369
+msgid "S_end Image To..."
+msgstr "О_тправить изображение…"
+
+#: ../libyelp/yelp-view.c:1371
+msgid "S_end Video To..."
+msgstr "О_тправить видео…"
+
+#: ../libyelp/yelp-view.c:1382
+msgid "_Copy Text"
+msgstr "_Копировать текст"
+
+#: ../libyelp/yelp-view.c:1395
+msgid "C_opy Code Block"
+msgstr "_Копировать блок кода"
+
+#: ../libyelp/yelp-view.c:1400
+msgid "Save Code _Block As..."
+msgstr "Сохранить _блок кода как…"
+
+#: ../libyelp/yelp-view.c:1507
+#, c-format
+msgid "See all search results for “%s”"
+msgstr "Показать все результаты поиска для «%s»"
+
+#: ../libyelp/yelp-view.c:1628
+#, c-format
+msgid "Could not load a document for ‘%s’"
+msgstr "Не удалось загрузить документ для «%s»"
+
+#: ../libyelp/yelp-view.c:1634
+#, c-format
+msgid "Could not load a document"
+msgstr "Не удалось загрузить документ"
+
+#: ../libyelp/yelp-view.c:1709
+msgid "Document Not Found"
+msgstr "Документ не найден"
+
+#: ../libyelp/yelp-view.c:1711
+msgid "Page Not Found"
+msgstr "Страница не найдена"
+
+#: ../libyelp/yelp-view.c:1714
+msgid "Cannot Read"
+msgstr "Не удалось прочитать"
+
+#: ../libyelp/yelp-view.c:1720
+msgid "Unknown Error"
+msgstr "Неизвестная ошибка"
+
+#: ../libyelp/yelp-view.c:1740
+msgid "Search for packages containing this document."
+msgstr "Найти пакеты, содержащие этот документ."
+
+#: ../libyelp/yelp-view.c:1892
+#, c-format
+msgid "The URI ‘%s’ does not point to a valid page."
+msgstr "URI «%s» указывает на недопустимую страницу."
+
+#: ../libyelp/yelp-view.c:1898
+#, c-format
+msgid "The URI does not point to a valid page."
+msgstr "URI указывает на недопустимую страницу."
+
+#: ../libyelp/yelp-view.c:1904
+#, c-format
+msgid "The URI ‘%s’ could not be parsed."
+msgstr "Не удалось разобрать URI «%s»."
+
+#: ../src/yelp-application.c:65
+msgid "Turn on editor mode"
+msgstr "Включить режим редактирования"
+
+#: ../src/yelp-application.c:128
+msgid "_Larger Text"
+msgstr "_Увеличить размер текста"
+
+#: ../src/yelp-application.c:130
+msgid "Increase the size of the text"
+msgstr "Увеличить размер текста"
+
+#: ../src/yelp-application.c:133
+msgid "_Smaller Text"
+msgstr "_Уменьшить размер текста"
+
+#: ../src/yelp-application.c:135
+msgid "Decrease the size of the text"
+msgstr "Уменьшить размер текста"
+
+#: ../src/yelp-application.c:253 ../src/yelp-window.c:1360
+#: ../yelp.desktop.in.in.h:1
+msgid "Help"
+msgstr "Справка"
+
+#: ../src/yelp-application.c:288
+msgid "Show Text _Cursor"
+msgstr "Показывать _курсор"
+
+#: ../src/yelp-window.c:236
+msgid "_Page"
+msgstr "С_траница"
+
+#: ../src/yelp-window.c:237
+msgid "_View"
+msgstr "_Вид"
+
+#: ../src/yelp-window.c:238
+msgid "_Go"
+msgstr "Пере_ход"
+
+#: ../src/yelp-window.c:239
+msgid "_Bookmarks"
+msgstr "_Закладки"
+
+#: ../src/yelp-window.c:242
+msgid "_New Window"
+msgstr "_Создать окно"
+
+#: ../src/yelp-window.c:247
+msgid "_Close"
+msgstr "_Закрыть"
+
+#: ../src/yelp-window.c:252
+msgid "_All Documents"
+msgstr "_Все документы"
+
+#: ../src/yelp-window.c:256
+msgid "_Add Bookmark"
+msgstr "_Добавить закладку"
+
+#: ../src/yelp-window.c:261
+msgid "_Remove Bookmark"
+msgstr "_Удалить закладку"
+
+#: ../src/yelp-window.c:265
+msgid "Find in Page..."
+msgstr "Найти на странице…"
+
+#: ../src/yelp-window.c:275
+msgid "Open Location"
+msgstr "Открыть адрес"
+
+#: ../src/yelp-window.c:301
+msgid "Application"
+msgstr "Приложение"
+
+#: ../src/yelp-window.c:302
+msgid "A YelpApplication instance that controls this window"
+msgstr "Экземпляр YelpApplication, управляющий этим окном"
+
+#: ../src/yelp-window.c:429
+msgid "Read Link _Later"
+msgstr "Прочитать ссылку _позже"
+
+#: ../src/yelp-window.c:526
+msgid "Find:"
+msgstr "Найти:"
+
+#: ../src/yelp-window.c:548
+msgid "Read Later"
+msgstr "Прочитать позже"
+
+#: ../src/yelp-window.c:1180
+#, c-format
+msgid "%i match"
+msgid_plural "%i matches"
+msgstr[0] "%i совпадение"
+msgstr[1] "%i совпадения"
+msgstr[2] "%i совпадений"
+
+#: ../src/yelp-window.c:1189
+msgid "No matches"
+msgstr "Нет совпадений."
+
+#: ../yelp.desktop.in.in.h:2
+msgid "Get help with GNOME"
+msgstr "Получение справки в среде GNOME"
+
+#: ../yelp.desktop.in.in.h:3
+msgid "documentation;information;manual;"
+msgstr "документация;информация;руководство;"

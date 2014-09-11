@@ -1,0 +1,1545 @@
+# translation of yelp.master.ta.po to Tamil
+# translation of yelp.HEAD.ta.po to
+# translation of ta.po to
+# Tamil translation of Yelp.
+# Copyright (C) 2003 Yelp's Dinesh Nadarajah
+# This file is distributed under the same license as the Yelp package.
+#
+# Dinesh Nadarajah <n_dinesh@yahoo.com>, 2003.
+# Dinesh Nadarajah <dinesh_list@sbcglobal.net>, 2004.
+# Felix <ifelix@redhat.com>, 2006.
+# drtvasudevan <agnihot3@gmail.com>, 2006.
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2008, 2009, 2011, 2012.
+# I. Felix <ifelix@redhat.com>, 2009, 2011.
+# Shantha kumar <shkumar@redhat.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: yelp.master.ta\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=yelp&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2013-04-05 23:43+0000\n"
+"PO-Revision-Date: 2013-04-26 13:00+0000\n"
+"Last-Translator: Shantha kumar <shkumar@redhat.com>\n"
+"Language-Team: American English <>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\\n"
+"\n"
+"\n"
+
+#. (itstool) path: msg/msgstr
+#. ID: install.tooltip
+#. This is a format message used to format tooltips on install: links. These
+#. links allow users to install packages by clicking a link in the help. The
+#. tooltip may also be used as the link text, if there's no link text in the
+#. document. Special elements in the message will be replaced with the
+#. appropriate content, as follows:
+#.
+#. <string/> - The package to install
+#.
+#: yelp.xml.in:36
+msgid "Install <string/>"
+msgstr "நிறுவு <string/>"
+
+#: ../libyelp/yelp-bz2-decompressor.c:146
+#: ../libyelp/yelp-lzma-decompressor.c:155
+msgid "Invalid compressed data"
+msgstr "செல்லுபடியாகாத சுருக்கிய தரவு"
+
+#: ../libyelp/yelp-bz2-decompressor.c:152
+#: ../libyelp/yelp-lzma-decompressor.c:161
+msgid "Not enough memory"
+msgstr "நினைவகம் போதாது"
+
+#: ../libyelp/yelp-docbook-document.c:282 ../libyelp/yelp-info-document.c:238
+#: ../libyelp/yelp-mallard-document.c:306
+#: ../libyelp/yelp-mallard-document.c:457 ../libyelp/yelp-man-document.c:282
+#, c-format
+msgid "The page ‘%s’ was not found in the document ‘%s’."
+msgstr " ‘%s’ பக்கம் ஆவணம் ‘%s’ இல் இல்லை"
+
+#: ../libyelp/yelp-docbook-document.c:317 ../libyelp/yelp-info-document.c:372
+#: ../libyelp/yelp-man-document.c:417
+#, c-format
+msgid "The file does not exist."
+msgstr "கோப்பு இருப்பில் இல்லை"
+
+#: ../libyelp/yelp-docbook-document.c:327 ../libyelp/yelp-info-document.c:382
+#: ../libyelp/yelp-man-document.c:427
+#, c-format
+msgid "The file ‘%s’ does not exist."
+msgstr "கோப்பு ‘%s’ இருப்பில் இல்லை."
+
+#: ../libyelp/yelp-docbook-document.c:342
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because it is not a well-formed XML "
+"document."
+msgstr ""
+"கோப்பு ‘%s’ ஐ அலகிட இயலவில்லை. ஏனெனில் அது சரியாக உருவாகாத எக்ஸ்எம்எல் ஆவணம்"
+
+#: ../libyelp/yelp-docbook-document.c:355
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because one or more of its included files "
+"is not a well-formed XML document."
+msgstr ""
+"கோப்பு ‘%s’ ஐ அலகிட இயலவில்லை. ஏனெனில் அதில் ஒன்றோ மேற்பட்டோ சரியாக உருவாகாத "
+"எக்ஸ்எம்எல் ஆவணம் உள்ளது"
+
+#: ../libyelp/yelp-docbook-document.c:765
+msgid "Unknown"
+msgstr "தெரியாத"
+
+#: ../libyelp/yelp-docbook-document.c:826 ../libyelp/yelp-info-document.c:315
+#: ../libyelp/yelp-man-document.c:359
+#, c-format
+msgid "The requested page was not found in the document ‘%s’."
+msgstr "கேட்ட பக்கம் ஆவணம் ‘%s’ இல் இல்லை"
+
+#: ../libyelp/yelp-document.c:268
+msgid "Indexed"
+msgstr "அட்டவணைப் படுத்தப்பட்டது"
+
+#: ../libyelp/yelp-document.c:269
+msgid "Whether the document content has been indexed"
+msgstr "ஆவணத்தின் உள்ளடக்கம் அட்டவணைப் படுத்தப்பட்டதா?"
+
+#: ../libyelp/yelp-document.c:277
+msgid "Document URI"
+msgstr "ஆவண யூஆர்ஐ"
+
+#: ../libyelp/yelp-document.c:278
+msgid "The URI which identifies the document"
+msgstr "யூஆர்ஐ ஆவணத்தை அடையாளம் காட்டுகிறது"
+
+#: ../libyelp/yelp-document.c:994
+#, c-format
+msgid "Search results for “%s”"
+msgstr "\"%s\"க்கான தேடுதல் முடிவு"
+
+#: ../libyelp/yelp-document.c:1006
+#, c-format
+msgid "No matching help pages found in “%s”."
+msgstr "“%s” இல் பொருத்தமான உதவி பக்கங்கள் காணப்படவில்லை"
+
+#: ../libyelp/yelp-document.c:1012
+msgid "No matching help pages found."
+msgstr "பொருத்தமான உதவி பக்கங்கள் காணப்படவில்லை"
+
+#: ../libyelp/yelp-error.c:37
+#, c-format
+msgid "An unknown error occurred."
+msgstr "ஒரு தெரியாத பிழை ஏற்பட்டது."
+
+#: ../libyelp/yelp-help-list.c:549 ../libyelp/yelp-help-list.c:558
+msgid "All Help Documents"
+msgstr "அனைத்து உதவி ஆவணங்கள்"
+
+#: ../libyelp/yelp-info-document.c:397
+#, c-format
+msgid ""
+"The file ‘%s’ could not be parsed because it is not a well-formed info page."
+msgstr ""
+"கோப்பு ‘%s’ ஐ அலகிட இயலவில்லை. ஏனெனில் அது சரியாக உருவாகாத விவரணப் பக்கம்"
+
+#: ../libyelp/yelp-location-entry.c:336
+msgid "View"
+msgstr "காட்சி"
+
+#: ../libyelp/yelp-location-entry.c:337
+msgid "A YelpView instance to control"
+msgstr "கட்டுப்பாட்டுக்கு ஒரு யெல்ப்வ்யூ  சான்று நிகழ்வு"
+
+#: ../libyelp/yelp-location-entry.c:352
+msgid "Bookmarks"
+msgstr "புத்தகக்குறிகள்"
+
+#: ../libyelp/yelp-location-entry.c:353
+msgid "A YelpBookmarks implementation instance"
+msgstr "ஒரு யெல்ப்புக்மார்க்ஸ் செயலாக்க சான்று நிகழ்வு"
+
+#: ../libyelp/yelp-location-entry.c:369
+msgid "Enable Search"
+msgstr "தேடல் இயலுமைப்படுத்து"
+
+#: ../libyelp/yelp-location-entry.c:370
+msgid "Whether the location entry can be used as a search field"
+msgstr "இட உள்ளீடு ஐ தேடல் புலமாக பயன்படுத்தலாமா"
+
+#: ../libyelp/yelp-location-entry.c:440 ../src/yelp-window.c:270
+msgid "Search..."
+msgstr "தேடு..."
+
+#: ../libyelp/yelp-location-entry.c:783
+msgid "Clear the search text"
+msgstr "தேடும் உரையை நீக்குக"
+
+#: ../libyelp/yelp-location-entry.c:831 ../libyelp/yelp-location-entry.c:1593
+msgid "Bookmark this page"
+msgstr "இந்தப் பக்கத்துக்கு புத்தகக்குறி சேர்க்கவும்"
+
+#: ../libyelp/yelp-location-entry.c:839 ../libyelp/yelp-location-entry.c:1601
+msgid "Remove bookmark"
+msgstr "புத்தகக்குறியை நீக்கு"
+
+#: ../libyelp/yelp-location-entry.c:1154
+#, c-format
+msgid "Search for “%s”"
+msgstr "\"%s\"க்காக தேடு"
+
+#: ../libyelp/yelp-location-entry.c:1458
+msgid "Loading"
+msgstr "ஏற்றுகிறது"
+
+#: ../libyelp/yelp-mallard-document.c:345
+#, c-format
+msgid "The directory ‘%s’ does not exist."
+msgstr "அடைவு ‘%s’ இருப்பில் இல்லை."
+
+#: ../libyelp/yelp-settings.c:156
+msgid "GtkSettings"
+msgstr "அமைப்புகள்"
+
+#: ../libyelp/yelp-settings.c:157
+msgid "A GtkSettings object to get settings from"
+msgstr "ஜிடிகேஅமைப்புகள் பொருள் அமைவுகளைப்பெற"
+
+#: ../libyelp/yelp-settings.c:165
+msgid "GtkIconTheme"
+msgstr "ஜிடிகேஐகான் கருத்து"
+
+#: ../libyelp/yelp-settings.c:166
+msgid "A GtkIconTheme object to get icons from"
+msgstr "ஒரு ஜிடிகேஐகான் கருத்துப்பொருள் -சின்னங்களை பெற"
+
+#: ../libyelp/yelp-settings.c:174
+msgid "Font Adjustment"
+msgstr "எழுத்துரு நேர்த்தி"
+
+#: ../libyelp/yelp-settings.c:175
+msgid "A size adjustment to add to font sizes"
+msgstr "எழுத்துரு அளவுகளுக்கு சேர்க்க ஒரு அளவு நேர்த்தி"
+
+#: ../libyelp/yelp-settings.c:183
+msgid "Show Text Cursor"
+msgstr "உரை நிலைக்காட்டி ஐ காட்டு"
+
+#: ../libyelp/yelp-settings.c:184
+msgid "Show the text cursor or caret for accessible navigation"
+msgstr "அணுகக்கூடிய உலாவலுக்கான உரை நிலைக்காட்டி அல்லது காரட் ஐ காட்டு"
+
+#: ../libyelp/yelp-settings.c:192
+msgid "Editor Mode"
+msgstr "திருத்தி பாங்கு"
+
+#: ../libyelp/yelp-settings.c:193
+msgid "Enable features useful to editors"
+msgstr "உரை திருத்திகளுக்கு பயனாகும்  முறைகளை செயல்படுத்து"
+
+#: ../libyelp/yelp-sqlite-storage.c:150
+msgid "Database filename"
+msgstr "தரவுத்தள கோப்புப்பெயர்"
+
+#: ../libyelp/yelp-sqlite-storage.c:151
+msgid "The filename of the sqlite database"
+msgstr "எஸ்க்யூலைட்  தரவுத்தள கோப்புப்பெயர்"
+
+#: ../libyelp/yelp-transform.c:171
+msgid "XSLT Stylesheet"
+msgstr "எக்ஸ்எஸ்எல்டி பாணிசீட்டு"
+
+#: ../libyelp/yelp-transform.c:172
+msgid "The location of the XSLT stylesheet"
+msgstr "எக்ஸ்எஸ்எல்டி பாணிசீட்டின் இடம்"
+
+#: ../libyelp/yelp-transform.c:379 ../libyelp/yelp-transform.c:394
+#, c-format
+msgid "The XSLT stylesheet ‘%s’ is either missing or not valid."
+msgstr "எக்ஸ்எஸ்எல்டி பாணிசீட்டு ‘%s’ இருப்பில் இல்லை அல்லது செல்லுபடியாகாதது."
+
+#: ../libyelp/yelp-transform.c:528
+msgid "No href attribute found on yelp:document\n"
+msgstr "யெல்ப்:ஆவணத்தில் href பண்பு இல்லை\n"
+
+#: ../libyelp/yelp-transform.c:543
+msgid "Out of memory"
+msgstr "நினைவகம் போதாது"
+
+#: ../libyelp/yelp-view.c:131
+msgid "_Print..."
+msgstr "(_P) அச்சிடு..."
+
+#: ../libyelp/yelp-view.c:136
+msgid "_Back"
+msgstr "பின்னோக்கு "
+
+#: ../libyelp/yelp-view.c:141
+msgid "_Forward"
+msgstr "முன்னோக்கு"
+
+#: ../libyelp/yelp-view.c:146
+msgid "_Previous Page"
+msgstr "முந்தைய பக்கம் (_P)"
+
+#: ../libyelp/yelp-view.c:151
+msgid "_Next Page"
+msgstr "அடுத்த பக்கம் (_N)"
+
+#: ../libyelp/yelp-view.c:423
+msgid "Yelp URI"
+msgstr "யெல்ப் யூஆர்ஐ"
+
+#: ../libyelp/yelp-view.c:424
+msgid "A YelpUri with the current location"
+msgstr "நடப்பு இடத்திற்கு ஒரு யெல்ப் யுஆர்ஐ"
+
+#: ../libyelp/yelp-view.c:432
+msgid "Loading State"
+msgstr "ஏற்றப்படும் நிலை"
+
+#: ../libyelp/yelp-view.c:433
+msgid "The loading state of the view"
+msgstr "காட்சியின் ஏற்றப்படும் நிலை"
+
+#: ../libyelp/yelp-view.c:442
+msgid "Page ID"
+msgstr "பக்க அடையாளம் "
+
+#: ../libyelp/yelp-view.c:443
+msgid "The ID of the root page of the page being viewed"
+msgstr "பார்வையிடப்படும் பக்கத்தின் மூல பக்கத்தின் அடையாளம் "
+
+#: ../libyelp/yelp-view.c:451
+msgid "Root Title"
+msgstr "மூல தலைப்பு"
+
+#: ../libyelp/yelp-view.c:452
+msgid "The title of the root page of the page being viewed"
+msgstr "பார்வையிடப்படும் பக்கத்தின் மூல பக்கத்தின் தலைப்பு"
+
+#: ../libyelp/yelp-view.c:460
+msgid "Page Title"
+msgstr "பக்கத் தலைப்பு"
+
+#: ../libyelp/yelp-view.c:461
+msgid "The title of the page being viewed"
+msgstr "பார்வையிடப்படும் பக்கத்தின் தலைப்பு"
+
+#: ../libyelp/yelp-view.c:469
+msgid "Page Description"
+msgstr "பக்கத்தின் விவரம்"
+
+#: ../libyelp/yelp-view.c:470
+msgid "The description of the page being viewed"
+msgstr "பார்வையிடப்படும் பக்கத்தின் விவரம்"
+
+#: ../libyelp/yelp-view.c:478
+msgid "Page Icon"
+msgstr "பக்க சின்னம்"
+
+#: ../libyelp/yelp-view.c:479
+msgid "The icon of the page being viewed"
+msgstr "பார்வையிடப்படும் பக்கத்தின் சின்னம்"
+
+#: ../libyelp/yelp-view.c:720
+msgid "You do not have PackageKit. Package install links require PackageKit."
+msgstr ""
+"உங்களிடம் பேக்கேஜ்கிட் இல்லை. பொதிகளை நிறுவும் தொடுப்புகளுக்கு அது அவசியம்"
+
+#: ../libyelp/yelp-view.c:1014
+msgid "Save Image"
+msgstr "பிம்பத்தை சேமி"
+
+#: ../libyelp/yelp-view.c:1109
+msgid "Save Code"
+msgstr "நிரறொடர் ஐ சேமி"
+
+#: ../libyelp/yelp-view.c:1272
+#, c-format
+msgid "Send email to %s"
+msgstr "%s க்கு மின்னஞ்சல் அனுப்பவும்"
+
+#: ../libyelp/yelp-view.c:1287
+msgid "_Install Packages"
+msgstr "_I பொதிகளை நிறுவுக"
+
+#: ../libyelp/yelp-view.c:1295
+msgid "_Open Link"
+msgstr "_த இணைப்பினை திற"
+
+#: ../libyelp/yelp-view.c:1302
+msgid "_Copy Link Location"
+msgstr "இணைப்பு இடத்தை நகலெடு (_C)"
+
+#: ../libyelp/yelp-view.c:1308
+msgid "Open Link in New _Window"
+msgstr "இணைப்பினை புது சாளரத்தில் திறக்கவும்  (_W)"
+
+#: ../libyelp/yelp-view.c:1360
+msgid "_Save Image As..."
+msgstr "(_S) பிம்பத்தை இப்படிச் சேமி"
+
+#: ../libyelp/yelp-view.c:1362
+msgid "_Save Video As..."
+msgstr "(_S) விடியோவை இப்படிச் சேமி..."
+
+#: ../libyelp/yelp-view.c:1369
+msgid "S_end Image To..."
+msgstr "_e பிம்பத்தை இங்கு அனுப்பு..."
+
+#: ../libyelp/yelp-view.c:1371
+msgid "S_end Video To..."
+msgstr "_e விடியோவை இங்கு அனுப்பு..."
+
+#: ../libyelp/yelp-view.c:1382
+msgid "_Copy Text"
+msgstr "_C உரையை நகலெடு"
+
+#: ../libyelp/yelp-view.c:1395
+msgid "C_opy Code Block"
+msgstr "நிரறொடர் தொகுதியை நகலெடு"
+
+#: ../libyelp/yelp-view.c:1400
+msgid "Save Code _Block As..."
+msgstr "_B நிரறொடர் தொகுதியை இப்படி சேமி..."
+
+#: ../libyelp/yelp-view.c:1507
+#, c-format
+msgid "See all search results for “%s”"
+msgstr "\"%s\"க்கான தேடுதல் முடிவுகள் அனைத்தையும் காண்க"
+
+#: ../libyelp/yelp-view.c:1628
+#, c-format
+msgid "Could not load a document for ‘%s’"
+msgstr "‘%s’ க்கு ஆவணத்தை ஏற்ற முடியவில்லை’"
+
+#: ../libyelp/yelp-view.c:1634
+#, c-format
+msgid "Could not load a document"
+msgstr "ஆவணத்தை ஏற்ற முடியவில்லை"
+
+#: ../libyelp/yelp-view.c:1709
+msgid "Document Not Found"
+msgstr "ஆவணம் காணவில்லை"
+
+#: ../libyelp/yelp-view.c:1711
+msgid "Page Not Found"
+msgstr "பக்கம் காணப்படவில்லை"
+
+#: ../libyelp/yelp-view.c:1714
+msgid "Cannot Read"
+msgstr "படிக்க முடியவில்லை"
+
+#: ../libyelp/yelp-view.c:1720
+msgid "Unknown Error"
+msgstr "தெரியாத பிழை"
+
+#: ../libyelp/yelp-view.c:1740
+msgid "Search for packages containing this document."
+msgstr "இந்த ஆவணம் உள்ள பொதிகளைத் தேடு"
+
+#: ../libyelp/yelp-view.c:1892
+#, c-format
+msgid "The URI ‘%s’ does not point to a valid page."
+msgstr "யூஆர்ஐ ‘%s’ செல்லுபடியாகும் பக்கத்துக்கு சுட்டவில்லை."
+
+#: ../libyelp/yelp-view.c:1898
+#, c-format
+msgid "The URI does not point to a valid page."
+msgstr "யூஆர்ஐ செல்லுபடியாகும் பக்கத்துக்கு சுட்டவில்லை."
+
+#: ../libyelp/yelp-view.c:1904
+#, c-format
+msgid "The URI ‘%s’ could not be parsed."
+msgstr "யூஆர்ஐ ‘%s’ ஐ அலகிட முடியவில்லை"
+
+#: ../src/yelp-application.c:65
+msgid "Turn on editor mode"
+msgstr "திருத்தி பாங்கை இயக்கு"
+
+#: ../src/yelp-application.c:128
+msgid "_Larger Text"
+msgstr "(_L) பெரிய உரை"
+
+#: ../src/yelp-application.c:130
+msgid "Increase the size of the text"
+msgstr "உரையின் அளவை பெரிதாக்கு"
+
+#: ../src/yelp-application.c:133
+msgid "_Smaller Text"
+msgstr "_S சிறிய உரை"
+
+#: ../src/yelp-application.c:135
+msgid "Decrease the size of the text"
+msgstr "உரை அளவை சிறிதாக்கவும்"
+
+#: ../src/yelp-application.c:253 ../src/yelp-window.c:1360
+#: ../yelp.desktop.in.in.h:1
+msgid "Help"
+msgstr "உதவி"
+
+#: ../src/yelp-application.c:288
+msgid "Show Text _Cursor"
+msgstr "_C உரை நிலைக்காட்டியை காட்டு"
+
+#: ../src/yelp-window.c:236
+msgid "_Page"
+msgstr "(_P) பக்கம்"
+
+#: ../src/yelp-window.c:237
+msgid "_View"
+msgstr "பார்வை (_V)"
+
+#: ../src/yelp-window.c:238
+msgid "_Go"
+msgstr "_ச செல் "
+
+#: ../src/yelp-window.c:239
+msgid "_Bookmarks"
+msgstr "_ப புத்தகக்குறிகள் (_B)"
+
+#: ../src/yelp-window.c:242
+msgid "_New Window"
+msgstr "புதிய _சாளரம்"
+
+#: ../src/yelp-window.c:247
+msgid "_Close"
+msgstr "மூடு (_C)"
+
+#: ../src/yelp-window.c:252
+msgid "_All Documents"
+msgstr "_A அனைத்து ஆவணங்கள்"
+
+#: ../src/yelp-window.c:256
+msgid "_Add Bookmark"
+msgstr "புத்தகக்குறியை சேர்"
+
+#: ../src/yelp-window.c:261
+msgid "_Remove Bookmark"
+msgstr "புத்தகக்குறி நீக்கு(_R)"
+
+#: ../src/yelp-window.c:265
+msgid "Find in Page..."
+msgstr "இந்த பக்கத்தில் தேடுக..."
+
+#: ../src/yelp-window.c:275
+msgid "Open Location"
+msgstr "இடத்தை திற"
+
+#: ../src/yelp-window.c:301
+msgid "Application"
+msgstr "பயன்பாடு"
+
+#: ../src/yelp-window.c:302
+msgid "A YelpApplication instance that controls this window"
+msgstr "இந்த சாளரத்தை கட்டுப்படுத்தும் யெல்ப் பயன்பாட்டு சான்று நிகழ்வு"
+
+#: ../src/yelp-window.c:429
+msgid "Read Link _Later"
+msgstr "_L தொடுப்பை பின்னர் படி"
+
+#: ../src/yelp-window.c:526
+msgid "Find:"
+msgstr "தேடுக:"
+
+#: ../src/yelp-window.c:548
+msgid "Read Later"
+msgstr "பின்னர் படி"
+
+#: ../src/yelp-window.c:1180
+#, c-format
+msgid "%i match"
+msgid_plural "%i matches"
+msgstr[0] "%i ஒப்பீடு"
+msgstr[1] "%i ஒப்பீடுகள்"
+
+#: ../src/yelp-window.c:1189
+msgid "No matches"
+msgstr "பொருத்தங்கள் இல்லை"
+
+#: ../yelp.desktop.in.in.h:2
+msgid "Get help with GNOME"
+msgstr "கனோமைப் பற்றி உதவி பெறு"
+
+#: ../yelp.desktop.in.in.h:3
+msgid "documentation;information;manual;"
+msgstr "documentation;information;manual;"
+
+#~ msgid "GNU Info Pages"
+#~ msgstr "ஜிஎன்யு தகவல் பக்கங்கள்"
+
+#~ msgid "Traditional command line help (info)"
+#~ msgstr "பாரம்பரிய ஆணை வரி உதவி (தகவல்)"
+
+#~ msgid "Applications"
+#~ msgstr "செயல்பாடுகள்"
+
+#~ msgid "BLT Functions"
+#~ msgstr "பிஎல்டி செயல்பாடுகள்"
+
+#~ msgid "Configuration Files"
+#~ msgstr "வடிவமைப்பு கோப்புகள்"
+
+#~ msgid "Curses Functions"
+#~ msgstr "கர்ஸஸ் செயல்பாடுகள்"
+
+#~ msgid "Development"
+#~ msgstr "உருவாக்கம்"
+
+#~ msgid "FORTRAN Functions"
+#~ msgstr "போர்ட்ரான் செயல்பாடுகள்"
+
+#~ msgid "Games"
+#~ msgstr "விளையாட்டுகள்"
+
+#~ msgid "Hardware Devices"
+#~ msgstr "வன்பொருள் சாதனங்கள்"
+
+#~ msgid "Kernel Routines"
+#~ msgstr "கெர்னல் வழக்கமான நடைமுறைகள்"
+
+#~ msgid "Network Audio Sound Functions"
+#~ msgstr "வலைப்பின்னல் கேட்பொலி செயல்கள்"
+
+#~ msgid "OpenSSL Applications"
+#~ msgstr "OpenSSL பயன்பாடுகள்"
+
+#~ msgid "OpenSSL Configuration"
+#~ msgstr "OpenSSL கட்டமைப்பு"
+
+#~ msgid "OpenSSL Functions"
+#~ msgstr "OpenSSL பயன்பாடுகள்"
+
+#~ msgid "OpenSSL Overviews"
+#~ msgstr "OpenSSL மேல்பார்வைகள்"
+
+#~ msgid "Overviews"
+#~ msgstr "மேல்பார்வைகள்"
+
+#~ msgid "POSIX Functions"
+#~ msgstr "POSIX செயல்பாடுகள்"
+
+#~ msgid "POSIX Headers"
+#~ msgstr "POSIX தலைப்புகள்"
+
+#~ msgid "Perl Functions"
+#~ msgstr "பெர்ல் செயல்பாடுகள்"
+
+#~ msgid "Qt Functions"
+#~ msgstr "க்யூடி செயல்பாடுகள்"
+
+#~ msgid "Readline Functions"
+#~ msgstr "ரீட்லைன் செயல்பாடுகள்"
+
+#~ msgid "Section 0p"
+#~ msgstr "பிரிவு  0p"
+
+#~ msgid "Section 1m"
+#~ msgstr "பிரிவு 1m"
+
+#~ msgid "Section 1ssl"
+#~ msgstr "பிரிவு 1ssl"
+
+#~ msgid "Section 1x"
+#~ msgstr "பிரிவு  1x"
+
+#~ msgid "Section 2"
+#~ msgstr "பிரிவு 2"
+
+#~ msgid "Section 3blt"
+#~ msgstr "பிரிவு 3blt"
+
+#~ msgid "Section 3f"
+#~ msgstr "பிரிவு 3f"
+
+#~ msgid "Section 3nas"
+#~ msgstr "பிரிவு 3nas"
+
+#~ msgid "Section 3p"
+#~ msgstr "பிரிவு 3p"
+
+#~ msgid "Section 3qt"
+#~ msgstr "பிரிவு 3qt"
+
+#~ msgid "Section 3readline"
+#~ msgstr "பிரிவு 3readline"
+
+#~ msgid "Section 3ssl"
+#~ msgstr "பிரிவு 3ssl"
+
+#~ msgid "Section 3tiff"
+#~ msgstr "பிரிவு 3tiff"
+
+#~ msgid "Section 4"
+#~ msgstr "பிரிவு 4"
+
+#~ msgid "Section 4x"
+#~ msgstr "பிரிவு 4x"
+
+#~ msgid "Section 5"
+#~ msgstr "பிரிவு 5"
+
+#~ msgid "Section 5ssl"
+#~ msgstr "பிரிவு 5ssl"
+
+#~ msgid "Section 5x"
+#~ msgstr "பிரிவு 5x"
+
+#~ msgid "Section 6"
+#~ msgstr "பிரிவு 6"
+
+#~ msgid "Section 6x"
+#~ msgstr "பிரிவு 6x"
+
+#~ msgid "Section 7ssl"
+#~ msgstr "பிரிவு 7ssl"
+
+#~ msgid "Section 7x"
+#~ msgstr "பிரிவு 7x"
+
+#~ msgid "Section 9"
+#~ msgstr " பிரிவு 9"
+
+#~ msgid "Sections 1, 1p, 1g and 1t"
+#~ msgstr "பிரிவுகள் 1, 1p, 1g மற்றும் 1t"
+
+#~ msgid "Sections 3, 3o, and 3t"
+#~ msgstr "பிரிவுகள் 3, 3o, மற்றும் 3t"
+
+#~ msgid "Sections 3form and 3menu"
+#~ msgstr "பிரிவுகள் 3form மற்றும் 3menu"
+
+#~ msgid "Sections 3ncurses and 3curses"
+#~ msgstr "பிரிவுகள் 3ncurses மற்றும் 3curses"
+
+#~ msgid "Sections 3pm and 3perl"
+#~ msgstr "பிரிவுகள் 3pm மற்றும் 3perl"
+
+#~ msgid "Sections 3x and 3X11"
+#~ msgstr "பிரிவுகள் 3x மற்றும் 3X11"
+
+#~ msgid "Sections 7 and 7gcc"
+#~ msgstr "பிரிவுகள் 7 மற்றும் 7gcc"
+
+#~ msgid "Sections 8 and 8l"
+#~ msgstr "பிரிவுகள் 8l மற்றும் 8l"
+
+#~ msgid "System Administration"
+#~ msgstr "கணினி நிர்வாகம்"
+
+#~ msgid "System Calls"
+#~ msgstr "கணினி அழைப்புகள்"
+
+#~ msgid "System V Form/Menu Functions"
+#~ msgstr "அமைப்பு V படிவம் /பட்டி செயல்கள்"
+
+#~ msgid "TIFF Functions"
+#~ msgstr "டிஐஎஃப்எஃப் செயல்பாடுகள்"
+
+#~ msgid "Termcap Applications"
+#~ msgstr "Termcap செயல்பாடுகள்"
+
+#~ msgid "Traditional command line help (man)"
+#~ msgstr "பாரம்பரிய ஆணை வரி உதவி (தகவல்)"
+
+#~ msgid "X11 Applications"
+#~ msgstr "X11 செயல்பாடுகள்"
+
+#~ msgid "X11 Configuration"
+#~ msgstr "X11 கட்டமைப்பு"
+
+#~ msgid "X11 Devices"
+#~ msgstr "X11 சாதனங்கள்"
+
+#~ msgid "X11 Functions"
+#~ msgstr "X11 செயல்பாடுகள்"
+
+#~ msgid "X11 Games"
+#~ msgstr "X11 விளையாட்டுகள்"
+
+#~ msgid "X11 Overviews"
+#~ msgstr "X11 மேல் பார்வைகள்"
+
+#~ msgid "2D Graphics"
+#~ msgstr "இரு பரிமாண வரைகலைகள்"
+
+#~ msgid "3D Graphics"
+#~ msgstr "முப் பரிமாண வரைகலைகள்"
+
+#~ msgid "Accessibility"
+#~ msgstr "அணுகல்"
+
+#~ msgid "Action Games"
+#~ msgstr "செயல் விளையாட்டுகள் "
+
+#~ msgid "Adventure Games"
+#~ msgstr "துணிகரப் பயணம் விளையாட்டுகள்"
+
+#~ msgid "Amusement"
+#~ msgstr "கேளிக்கை"
+
+#~ msgid "Applications for viewing and manipulating graphics"
+#~ msgstr "சித்திரங்களை பார்க்க வனைக்க பயன்பாடுகள்"
+
+#~ msgid "Applications related to audio and video"
+#~ msgstr "ஒலி, ஔதத்தோற்ற சம்பந்தப்பட்ட பயன்பாடுகள்"
+
+#~ msgid "Applications that teach or aid in learning"
+#~ msgstr "கற்பித்தல் அல்லது கற்றல் சம்பந்தப்பட்ட பயன்பாடுகள் "
+
+#~ msgid "Arcade Games"
+#~ msgstr "வில் வளைவு சாலை விளையாட்டுகள்"
+
+#~ msgid "Archiving Tools"
+#~ msgstr "பெட்டக கருவிகள்"
+
+#~ msgid "Art"
+#~ msgstr "சித்திரம்"
+
+#~ msgid "Artificial Intelligence"
+#~ msgstr "செயற்கை அறிவு"
+
+#~ msgid "Astronomy"
+#~ msgstr "வானவியல்"
+
+#~ msgid "Biology"
+#~ msgstr "உயிரியல்"
+
+#~ msgid "Blocks Games"
+#~ msgstr "தொகுதிகள் விளையாட்டுகள்"
+
+#~ msgid "Board Games"
+#~ msgstr "மேசை விளையாட்டுகள்"
+
+#~ msgid "Building"
+#~ msgstr "கட்டிடம்"
+
+#~ msgid "Calculator"
+#~ msgstr "கணக்கிடும் கருவி"
+
+#~ msgid "Calendar"
+#~ msgstr "நாள்காட்டி"
+
+#~ msgid "Card Games"
+#~ msgstr "சீட்டு விளையாட்டுகள்"
+
+#~ msgid "Charting Tools"
+#~ msgstr "வரைபட கருவிகள்"
+
+#~ msgid "Chat"
+#~ msgstr "அரட்டை"
+
+#~ msgid "Chemistry"
+#~ msgstr "இரசாயனம்"
+
+#~ msgid "Clocks"
+#~ msgstr "கடிகாரங்கள்"
+
+#~ msgid "Compression Tools"
+#~ msgstr "சுருக்கக் கருவிகள்"
+
+#~ msgid "Computer Science"
+#~ msgstr "கணினி அறிவியல்"
+
+#~ msgid "Construction"
+#~ msgstr "கட்டுமானம்"
+
+#~ msgid "Contact Management"
+#~ msgstr "தொடர்பு மேலாண்மை"
+
+#~ msgid "Data Visualization"
+#~ msgstr "தரவு காட்சியாக்கம்"
+
+#~ msgid "Databases"
+#~ msgstr "தரவுத்தளங்கள்"
+
+#~ msgid "Debuggers"
+#~ msgstr "வழு திருத்திகள்"
+
+#~ msgid "Desktop"
+#~ msgstr "மேல்மேசை"
+
+#~ msgid "Desktop Settings"
+#~ msgstr "மேல் மேசை அமைப்புகள்"
+
+#~ msgid "Dialup"
+#~ msgstr "டயலப்"
+
+#~ msgid "Dictionaries"
+#~ msgstr "அகராதிகள்"
+
+#~ msgid "Disc Burning"
+#~ msgstr "வட்டு எழுதுதல்"
+
+#~ msgid "Economy"
+#~ msgstr "பொருளாதாரம்"
+
+#~ msgid "Education"
+#~ msgstr "கல்வி"
+
+#~ msgid "Electricity"
+#~ msgstr "மின்சாரம்"
+
+#~ msgid "Electronics"
+#~ msgstr "மின்னணுவியல்"
+
+#~ msgid "Email Tools"
+#~ msgstr "மின்னஞ்சல் கருவிகள்"
+
+#~ msgid "Emulator"
+#~ msgstr "போன்றி"
+
+#~ msgid "Engineering"
+#~ msgstr "பொறியியல்"
+
+#~ msgid "File Manager"
+#~ msgstr "கோப்பு மேலாளர்"
+
+#~ msgid "File Tools"
+#~ msgstr "கோப்பு  கருவிகள்"
+
+#~ msgid "File Transfer"
+#~ msgstr "கோப்பு இடமாற்றம்"
+
+#~ msgid "Filesystem"
+#~ msgstr "கோப்பு அமைப்பு முறை"
+
+#~ msgid "Financial Tools"
+#~ msgstr "நிதிசார் கருவிகள்"
+
+#~ msgid "Flow Charting Tools"
+#~ msgstr "வேலை திட்ட கருவிகள்"
+
+#~ msgid "GNOME Applications"
+#~ msgstr "க்னோம் பயன்பாடுகள்"
+
+#~ msgid "GTK"
+#~ msgstr "ஜிடிகே(GTK)"
+
+#~ msgid "GUI Designers"
+#~ msgstr "வரைகலை பயனர் இடைமுக நிபுணர்கள்"
+
+#~ msgid "Generic applications for the GNOME environment"
+#~ msgstr "க்னோம் சூழலுக்கு பாரம்பரிய பயன்பாடுகள்"
+
+#~ msgid "Generic applications for the KDE environment"
+#~ msgstr "கேடிஇ மேல்மேசை சூழல் குறித்த பாரம்பரிய பயன்பாடுகள்"
+
+#~ msgid "Geography"
+#~ msgstr "புவி இயல் "
+
+#~ msgid "Geology"
+#~ msgstr "புவி ஆராய்வு  இயல் "
+
+#~ msgid "Geoscience"
+#~ msgstr "புவி அறிவியல்"
+
+#~ msgid "Graphics"
+#~ msgstr "வரைகலைகள்"
+
+#~ msgid ""
+#~ "Guides and manuals for applications that connect to the outside world"
+#~ msgstr "வெளியுலகுக்கு தொடர்பு கொள்ளும் பயன்பாடுகளுக்கு வழிகாட்டிகளும் கையேடுகளும்."
+
+#~ msgid "Guides for getting involved in development"
+#~ msgstr "வளர்ச்சியில் பங்கு கொள்ள வழிகாட்டிகள்"
+
+#~ msgid "Ham Radio"
+#~ msgstr "ஹாம் வானொலி"
+
+#~ msgid "Hardware Settings"
+#~ msgstr "வன்பொருள் சாதனங்களின் அமைப்பு"
+
+#~ msgid "Have some fun"
+#~ msgstr "கொஞ்சம் களிக்க"
+
+#~ msgid "History"
+#~ msgstr "வரலாறு"
+
+#~ msgid "IDEs"
+#~ msgstr "ஐடீஇ கள் (IDEs)"
+
+#~ msgid "IRC Clients"
+#~ msgstr "ஐஆர்சி (IRC) சார்ந்தோன்கள்"
+
+#~ msgid "Image Processing"
+#~ msgstr "பிம்பம் செயல்படுத்தல்"
+
+#~ msgid "Instant Messaging"
+#~ msgstr "உடனடி செய்தி பரிமாற்றம்"
+
+#~ msgid "Internet"
+#~ msgstr "இணையம்"
+
+#~ msgid "Java"
+#~ msgstr "ஜாவா"
+
+#~ msgid "KDE Applications"
+#~ msgstr "கேடிஈ நிரல்கள்"
+
+#~ msgid "Kids Games"
+#~ msgstr "சிறு குழந்தைகளின் விளையாட்டுகள்"
+
+#~ msgid ""
+#~ "Learn more about making your system more accessible for a range of "
+#~ "disabilities"
+#~ msgstr "பல உடல் ஊனங்களுக்கு  கணினியை அணுகல் எளிதாக்க மேலும் கற்போம்"
+
+#~ msgid "Licenses"
+#~ msgstr "அனுமதிகள் "
+
+#~ msgid "Literature"
+#~ msgstr "இலக்கியம்"
+
+#~ msgid "Logic Games"
+#~ msgstr "தர்க்க விளையாட்டுகள்"
+
+#~ msgid "Math"
+#~ msgstr "கணிதம்"
+
+#~ msgid "Medical Software"
+#~ msgstr "மருத்துவ மென்பொருள்"
+
+#~ msgid "Midi"
+#~ msgstr "மிடி"
+
+#~ msgid "Miscellaneous Documentation"
+#~ msgstr "பிற ஆவணங்கள்"
+
+#~ msgid "Mixers"
+#~ msgstr "கலவைகள்"
+
+#~ msgid "Monitor"
+#~ msgstr "காட்சி திரை"
+
+#~ msgid "Motif"
+#~ msgstr "மோடிஃப்"
+
+#~ msgid "Music"
+#~ msgstr "இசை"
+
+#~ msgid "News"
+#~ msgstr "செய்திகள்"
+
+#~ msgid "Numerical Analysis"
+#~ msgstr "எண் ஆராய்வு"
+
+#~ msgid "OCR"
+#~ msgstr "ஓசிஆர் (OCR)"
+
+#~ msgid "Office Applications"
+#~ msgstr "அலுவலக பயன்பாடுகள்"
+
+#~ msgid "Office applications"
+#~ msgstr "அலுவலக பயன்பாடுகள்"
+
+#~ msgid "Other Documentation"
+#~ msgstr "பிற ஆவணங்கள்"
+
+#~ msgid "P2P"
+#~ msgstr "பி2பி (P2P)"
+
+#~ msgid "PDA Communication"
+#~ msgstr "பிடிஏ தகவல் தொடர்பு"
+
+#~ msgid "Package Manager"
+#~ msgstr "தொகுப்பு மேலாளர்"
+
+#~ msgid "Parallel Computing"
+#~ msgstr "இணை கணினி செயல்பாடு"
+
+#~ msgid "Photography"
+#~ msgstr "புகைப்படகலை"
+
+#~ msgid "Physics"
+#~ msgstr "பௌதிகம்"
+
+#~ msgid "Players"
+#~ msgstr "போட்டியாளர்"
+
+#~ msgid "Presentation Tools"
+#~ msgstr "முன்வைப்பு கருவிகள்"
+
+#~ msgid "Printing"
+#~ msgstr "அச்சிடுகிறது"
+
+#~ msgid "Profiling Tools"
+#~ msgstr "வரியுருவாக்கும் கருவிகள்"
+
+#~ msgid "Project Management Tools"
+#~ msgstr "செயல்திட்ட மேலாண்மை கருவிகள்"
+
+#~ msgid "Publishing"
+#~ msgstr "வெளியிடுதல்"
+
+#~ msgid "Qt"
+#~ msgstr "க்யூடி(Qt)"
+
+#~ msgid "Raster Graphics"
+#~ msgstr "ராஸ்டர் வரைகலைகள்"
+
+#~ msgid "Recorders"
+#~ msgstr "பதிவு கருவிகள்"
+
+#~ msgid "Remote Access"
+#~ msgstr "தொலைதூர அணுகல்"
+
+#~ msgid "Revision Control"
+#~ msgstr "மீள்பார்வை கட்டுப்பாடு"
+
+#~ msgid "Robotics"
+#~ msgstr "இயந்திரமனிதவியல்"
+
+#~ msgid "Role Playing Games"
+#~ msgstr "வேடமிடும் ு  விளையாட்டுகள்"
+
+#~ msgid "Scanning"
+#~ msgstr "வருடுகிறது"
+
+#~ msgid "Science"
+#~ msgstr "அறிவியல்"
+
+#~ msgid "Security"
+#~ msgstr "பாதுகாப்பு"
+
+#~ msgid "Sequencers"
+#~ msgstr "தொடர் வரிசை படுத்தி "
+
+#~ msgid "Settings"
+#~ msgstr "அமைப்புகள்"
+
+#~ msgid ""
+#~ "Settings users can manipulate to make their environment more pleasant"
+#~ msgstr "சூழலை இன்னும் மகிழ்வானதாக்க பயனர் மாற்றக்கூடிய அமைப்புகள் "
+
+#~ msgid "Simulation Games"
+#~ msgstr "பாவனை விளையாட்டுகள்"
+
+#~ msgid "Sound"
+#~ msgstr "ஒலி"
+
+#~ msgid "Sound &amp; Video"
+#~ msgstr "ஒலி &amp; பார்வை"
+
+#~ msgid "Sound &amp; Video Editing"
+#~ msgstr "ஒலி &amp; விடியோ திருத்தம்"
+
+#~ msgid "Sports"
+#~ msgstr "விளையாட்டுகள்"
+
+#~ msgid "Sports Games"
+#~ msgstr "விளையாட்டு விளையாட்டுகள்"
+
+#~ msgid "Spreadsheet Tools"
+#~ msgstr "விரிதாள் கருவிகள்"
+
+#~ msgid "Strategy Games"
+#~ msgstr "போர் தந்திரம் விளையாட்டுகள்"
+
+#~ msgid "System"
+#~ msgstr "கணினி அமைப்பு"
+
+#~ msgid "TV"
+#~ msgstr "தொலைக்காட்சி பெட்டி"
+
+#~ msgid "Telephony"
+#~ msgstr "தொலைபேசி "
+
+#~ msgid "Telephony Tools"
+#~ msgstr "தொலைபேசி கருவிகள்"
+
+#~ msgid "Terminal Emulator"
+#~ msgstr "முனைய போன்றி"
+
+#~ msgid "Text Editors"
+#~ msgstr "உரை திருத்திகள்"
+
+#~ msgid "Text Tools"
+#~ msgstr "உரை கருவிகள்"
+
+#~ msgid "Tools to help you manage your computer"
+#~ msgstr "உங்கள் கணிணியை மேலாள உதவிக்கருவிகள்"
+
+#~ msgid "Translation Tools"
+#~ msgstr "மொழிபெயர்ப்பு கருவிகள்"
+
+#~ msgid "Tuners"
+#~ msgstr "நுண் பொருத்திகள்"
+
+#~ msgid "Utilities"
+#~ msgstr "கருவிகள்ப்"
+
+#~ msgid "Utilities to help you get work done"
+#~ msgstr "உங்கள் வேலையை செய்து முடிக்க உதவிக்கருவிகள்"
+
+#~ msgid "Vector Graphics"
+#~ msgstr "வெக்டார் வரைகலைகள்"
+
+#~ msgid "Video"
+#~ msgstr "வீடியோ"
+
+#~ msgid "Video Conference"
+#~ msgstr "வீடியோ கூடுதல்"
+
+#~ msgid "Viewer"
+#~ msgstr "காட்சியாளன்"
+
+#~ msgid "Web Browser"
+#~ msgstr "வலை உலாவி"
+
+#~ msgid "Web Development"
+#~ msgstr "வலை உருவாக்கம்"
+
+#~ msgid "Welcome to the GNOME Help Browser"
+#~ msgstr "நோம் உதவி உலாவிக்கு நல்வரவு"
+
+#~ msgid "Word Processors"
+#~ msgstr "சொல் செயலாக்கிகள்"
+
+#~ msgid "Re_name"
+#~ msgstr "_மறுபெயரிடு"
+
+#~ msgid "_Bookmarks:"
+#~ msgstr "புத்தகக்குறிகள் (_B):"
+
+#~ msgid "Add Bookmark"
+#~ msgstr "புத்தகக்குறி சேர்"
+
+#~ msgid "_Title:"
+#~ msgstr "_தலைப்பு:"
+
+#~ msgid "_Location:"
+#~ msgstr "இடம் (_L):"
+
+#~ msgid "Fonts"
+#~ msgstr "எழுத்துருக்கள்"
+
+#~ msgid "Preferences"
+#~ msgstr "முன்னுரிமைகள்"
+
+#~ msgid "_Browse with caret"
+#~ msgstr "இடக்குறியுடன் உலாவு (_B)"
+
+#~ msgid "_Fixed width:"
+#~ msgstr "நிலையான அகலம் (_F):"
+
+#~ msgid "_Use system fonts"
+#~ msgstr "கணினி _எழுத்துருக்களை பயன்படுத்து"
+
+#~ msgid "_Variable width:"
+#~ msgstr "_மாறும் அகலம்"
+
+#~ msgid "Font for fixed text"
+#~ msgstr "நிலையான உரைக்கான எழுத்துரு"
+
+#~ msgid "Font for text"
+#~ msgstr "உரைக்கான எழுத்துரு"
+
+#~ msgid "Font for text with fixed width."
+#~ msgstr "நிலையான அகலத்தில் உரைக்கான எழுத்துரு."
+
+#~ msgid "Font for text with variable width."
+#~ msgstr "மாறும் அகலத்தில் உரைக்கான எழுத்துரு."
+
+#~ msgid "Use a keyboard-controllable caret when viewing pages."
+#~ msgstr "பக்கங்களை பார்க்கும் போது விசைப்பலகை இடக்குறியை .பயன்படுத்து"
+
+#~ msgid "Use caret"
+#~ msgstr "இடக்குறியை பயன்படுத்து"
+
+#~ msgid "Use system fonts"
+#~ msgstr "கணினி எழுத்துருக்களை பயன்படுத்து"
+
+#~ msgid "Use the default fonts set for the system."
+#~ msgstr "கணினிக்கு முன்னிருப்பு எழுத்துரு அமைவினை பயன்படுத்து"
+
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "கோப்பு சரியான .desktop கோப்பில்லை"
+
+#~ msgid "Unrecognized desktop file Version '%s'"
+#~ msgstr "அறியாத பணிமேடை கோப்பு பதிப்பு '%s'"
+
+#~| msgid "Settings"
+#~ msgid "Starting %s"
+#~ msgstr "%sஐ துவக்குகிறது"
+
+#~ msgid "Application does not accept documents on command line"
+#~ msgstr "கட்டளை வரியில் பயன்பாடு ஆவணங்களை ஏற்பதில்லை"
+
+#~ msgid "Unrecognized launch option: %d"
+#~ msgstr "அறியாத துவக்க விருப்பம்: %d"
+
+#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#~ msgstr "URIகளை ஒரு 'Type=Link' பணிமேடை உள்ளீட்டுக்கு ஆவணத்தை கொடுக்க முடியவில்லை"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "ஒரு துவக்கக்கூடிய உருப்படி இல்லை"
+
+#~ msgid "Disable connection to session manager"
+#~ msgstr "அமர்வு மேலாளருக்கு இணைப்பை செயல்நீக்கு"
+
+#~ msgid "Specify file containing saved configuration"
+#~ msgstr "சேமிக்கப்பட்ட கட்டமைப்பை கொண்ட கோப்பினை குறிப்பிடு"
+
+#~ msgid "FILE"
+#~ msgstr "FILE"
+
+#~ msgid "Specify session management ID"
+#~ msgstr "அமர்வு மேலாண்மை IDஐ குறிப்பிடு"
+
+#~| msgid "IDEs"
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Session management options:"
+#~ msgstr "அமர்வு மேலாண்மை விருப்பங்கள்:"
+
+#~ msgid "Show session management options"
+#~ msgstr "அமர்வு மேலாண்மை விருப்பங்களை காட்டு"
+
+#~ msgid "Open Bookmark in New Window"
+#~ msgstr "புத்தகக்குறியை புதிய சாளரத்தில் திறக்கவும்"
+
+#~ msgid "Rename Bookmark"
+#~ msgstr "புத்தகக்குறிக்கு மறுபெயரிடு"
+
+#~ msgid "A bookmark titled %s already exists for this page."
+#~ msgstr "ஒரு புத்தகக்குறி தலைப்பு %s ஏற்கனவே இந்த பக்கத்திற்கு உள்ளது."
+
+#~ msgid "A bookmark titled <b>%s</b> already exists for this page."
+#~ msgstr "ஒரு புத்தகக்குறி தலைப்பு <b>%s</b> ஏற்கனவே இந்த பக்கத்திற்கு உள்ளது."
+
+#~ msgid "Help Topics"
+#~ msgstr "உதவி தலைப்புகள்"
+
+#~ msgid "File not found"
+#~ msgstr "கோப்பு காணவில்லை"
+
+#~ msgid "Could not parse file"
+#~ msgstr "கோப்பை பகுக்க முடியவில்லை"
+
+#~ msgid "Could Not Read File"
+#~ msgstr "கோப்பை படிக்க முடியவில்லை"
+
+#~ msgid "No information is available about this error."
+#~ msgstr "பிழையை பற்றிய தகவல் ஒன்றுமில்லை."
+
+#~ msgid ""
+#~ "The file ‘%s’ could not be read and decoded. The file may be compressed "
+#~ "in an unsupported format."
+#~ msgstr ""
+#~ "கோப்பு ‘%s’ ஐ படிக்கவோ குறியீட்டை புரிந்து கொள்ளவோ இயலவில்லை. அந்த கோப்பு அது "
+#~ "ஆதரவில்லாத வடிவமைப்பில் சுருக்கப் பட்டு இருக்கலாம்."
+
+#~ msgid "Use a private session"
+#~ msgstr "தனிப்பட்ட அமர்வினை பயன்படுத்து"
+
+#~ msgid "Define which cache directory to use"
+#~ msgstr "எந்த தற்காலிக சேமிப்பு அடைவு பயன்படுத்துவது என அறுதியிடுக"
+
+#~ msgid " GNOME Help Browser"
+#~ msgstr "நோம் உதவி உலாவி"
+
+#~ msgid "Directory not found"
+#~ msgstr "அடைவை காணவில்லை"
+
+#~ msgid ""
+#~ "The file ‘%s’ could not be parsed because it is not a well-formed man "
+#~ "page."
+#~ msgstr "கோப்பு ‘%s’ ஐ அலகிட இயலவில்லை. ஏனெனில் அது சரியாக உருவாகாத விவரணப் பக்கம்"
+
+#~ msgid "Preparing to print"
+#~ msgstr "அச்சிட தயாராகிறது"
+
+#~ msgid "Printing is not supported on this printer"
+#~ msgstr "இந்த அச்சு இயந்திரத்தில் அச்சடிக்க ஆதரவில்லை"
+
+#~ msgid "Printer %s does not support postscript printing."
+#~ msgstr "இந்த %s அச்சு இயந்திரத்தில் போஸ்ட் ஸ்கிரிப்ட் அச்சடிக்க ஆதரவில்லை"
+
+#~ msgid "Waiting to print"
+#~ msgstr "அச்சிட காத்திருக்கிறது"
+
+#~ msgid "An error occurred while printing"
+#~ msgstr "அச்சிடும் போது பிழை ஏற்பட்டுள்ளது"
+
+#~ msgid "It was not possible to print your document: %s"
+#~ msgstr "இந்த உங்கள் ஆவணத்தை அச்சிட இயலவில்லை: %s"
+
+#~ msgid "the GNOME Support Forums"
+#~ msgstr "க்னோம் ஆதரவு விவாத மன்றம்"
+
+#~ msgid "No results for \"%s\""
+#~ msgstr "\"%s\"க்கு முடிவுகள இல்லை"
+
+#~ msgid ""
+#~ "Try using different words to describe the problem you're having or the "
+#~ "topic you want help with."
+#~ msgstr ""
+#~ "உதவி தேவையான உங்கள் பிரச்சினை அல்லது தலைப்பை வேறு சொற்களில் விவரித்து முயற்சி செய்."
+
+#~ msgid ""
+#~ "a:about:an:are:as:at:be:broke:broken:by:can:can't:dialog:dialogue:do:"
+#~ "doesn't:doesnt:don't:dont:explain:for:from:get:gets:got:make:makes:not:"
+#~ "when:has:have:help:how:i:in:is:it:item:me:my:of:on:or:tell:that:the:thing:"
+#~ "this:to:what:where:who:will:with:won't:wont:why:work:working:works"
+#~ msgstr ""
+#~ "a:about:an:are:as:at:be:broke:broken:by:can:can't:dialog:dialogue:do:"
+#~ "doesn't:doesnt:don't:dont:explain:for:from:get:gets:got:make:makes:not:"
+#~ "when:has:have:help:how:i:in:is:it:item:me:my:of:on:or:tell:that:the:thing:"
+#~ "this:to:what:where:who:will:with:won't:wont:why:work:working:works"
+
+#~ msgid "re"
+#~ msgstr "re"
+
+#~ msgid "ers:er:ing:es:s:'s"
+#~ msgstr "ers:er:ing:es:s:'s"
+
+#~ msgid "No Comment"
+#~ msgstr "குறிப்பு இல்லை"
+
+#~ msgid "Search could not be processed"
+#~ msgstr "தேடலை செயல்படுத்த முடியவில்லை"
+
+#~ msgid "The requested search could not be processed."
+#~ msgstr "வேண்டப்பட்ட தேடலை செயல்படுத்த முடியவில்லை"
+
+#~ msgid "Cannot process the search"
+#~ msgstr "தேடலை செயல்படுத்த முடியவில்லை"
+
+#~ msgid "The search processor returned invalid results"
+#~ msgstr "தேடுதல் இயக்கி செல்லுபடியாகாத விடைகளை திருப்பியது."
+
+#~ msgid "The page %s was not found in the TOC."
+#~ msgstr "டிஓசி யில் பக்கம்  ‘%s’ காணப்படவில்லை"
+
+#~ msgid "The requested page was not found in the TOC."
+#~ msgstr "டிஓசி யில் கேட்கப்பட்ட பக்கம் காணப்படவில்லை"
+
+#~ msgid ""
+#~ "The TOC file could not be parsed because it is not a well-formed XML "
+#~ "document."
+#~ msgstr ""
+#~ "டிஓசி கோப்பு ஐ அலகிட இயலவில்லை. ஏனெனில் அது சரியாக உருவாகாத எக்ஸ்எம்எல் ஆவணம்"
+
+#~ msgid "Broken Transformation"
+#~ msgstr "சிதைந்த மாறுதல்"
+
+#~ msgid ""
+#~ "An unknown error occurred while attempting to transform the document."
+#~ msgstr "ஆவணத்தை மாற்ற முயன்றபோது தெரியாத தவறு நேர்ந்தது"
+
+#~ msgid "_File"
+#~ msgstr "_க கோப்பு"
+
+#~ msgid "_Edit"
+#~ msgstr "_த தொகு (_E)"
+
+#~ msgid "_Help"
+#~ msgstr "_உதவி"
+
+#~ msgid "Print This Document ..."
+#~ msgstr "இந்த ஆவணத்தை அச்சிடு..."
+
+#~ msgid "Open _Location"
+#~ msgstr "_இடத்தைத் திற"
+
+#~ msgid "_Close Window"
+#~ msgstr "சாளரத்தை மூடு"
+
+#~ msgid "_Select All"
+#~ msgstr "அனைத்தையும் தேர்ந்தெடு"
+
+#~ msgid "Find Pre_vious"
+#~ msgstr "முந்தையதை தேடு"
+
+#~ msgid "Find previous occurrence of the word or phrase"
+#~ msgstr "சொல் அல்லது சொற்றொடரின் முந்தைய தோன்றலை தேடு"
+
+#~ msgid "Find Ne_xt"
+#~ msgstr "அடுத்ததை தேடு"
+
+#~ msgid "Find next occurrence of the word or phrase"
+#~ msgstr "சொல் அல்லது சொற்றொடரின் அடுத்த நிகழ்வை தேடு"
+
+#~ msgid "_Preferences"
+#~ msgstr "முன்னுரிமைகள்"
+
+#~ msgid "_Reload"
+#~ msgstr "மீளேற்று"
+
+#~ msgid "Show previous page in history"
+#~ msgstr "வரலாறில் முன் காண்பித்த பக்கத்திற்குப் போகவும்"
+
+#~ msgid "Show next page in history"
+#~ msgstr "வரலாறில் அடுத்த பக்கத்திற்குப் போகவும்"
+
+#~ msgid "_Help Topics"
+#~ msgstr "_உதவி தலைப்புகள்"
+
+#~ msgid "Go to the listing of help topics"
+#~ msgstr "உதவி தலைப்புகள் பட்டியலுக்கு செல்லவும்"
+
+#~ msgid "_Contents"
+#~ msgstr "_உள்ளடக்கங்கள்"
+
+#~ msgid "_Edit Bookmarks..."
+#~ msgstr "_த புத்தகக்குறிகளை திருத்து..."
+
+#~ msgid "_Copy Link Address"
+#~ msgstr "_ந இணைப்பு முகவரியை நகலெடு"
+
+#~ msgid "Help On this application"
+#~ msgstr "இந்த பயன்பாடுக்கான உதவி"
+
+#~ msgid "_About"
+#~ msgstr "இதனைப் _பற்றி"
+
+#~ msgid "Copy _Email Address"
+#~ msgstr "_ம மின்னஞ்சல் முகவரியை நகலெடு"
+
+#~ msgid "Help Browser"
+#~ msgstr "உதவி உலாவி"
+
+#~ msgid "Unknown Page"
+#~ msgstr "தெரியாத பக்கம்"
+
+#~ msgid "The requested URI \"%s\" is invalid"
+#~ msgstr "வேண்டிய யூஆர்ஐ \"%s\"  செல்லாது"
+
+#~ msgid "Unable to load page"
+#~ msgstr "பக்கத்தை ஏற்ற முடியவில்லை"
+
+#~ msgid "Cannot create search component"
+#~ msgstr "தேடுதல் கூறை உருவாக்க முடியாது"
+
+#~ msgid "Fin_d:"
+#~ msgstr "கண்டுபிடி:"
+
+#~ msgid "Find _Previous"
+#~ msgstr "முந்தையதை தேடு"
+
+#~ msgid "Find _Next"
+#~ msgstr "அடுத்ததை தேடு"
+
+#~ msgid "Phrase not found"
+#~ msgstr "சொற்றொடர் கண்டு பிடிக்கப் படவில்லை"
+
+#~ msgid ""
+#~ "The file ‘%s’ could not be read.  This file might be missing, or you "
+#~ "might not have permissions to read it."
+#~ msgstr ""
+#~ "கோப்பு ‘%s’ ஐ படிக்க இயலவில்லை. கோப்பு காணாமல் போயிருக்கலாம் அல்லது உங்களுக்கு அதை "
+#~ "படிக்க அனுமதி இல்லாதிருக்கலாம்."
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Dinesh Nadarajah <dinesh_list@sbcglobal.net> 2004, Felix <ifelix25@gmail."
+#~ "com> 2006, drtvasudevan <agnihot3@gmail.com> 2006."
+
+#~ msgid "A documentation browser and viewer for the Gnome Desktop."
+#~ msgstr "ஆவணங்கள் உலாவி மற்றும் நோம் மேல்மேசைக்கு காட்சியாளன்."

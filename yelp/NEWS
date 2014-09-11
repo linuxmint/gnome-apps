@@ -1,0 +1,2441 @@
+3.10.2
+======
+* Fixed critical crasher after closing windows
+* Updated translations:
+  kn    (Shankar Prasad)
+  zh_CN (Wylmer Wang)
+
+3.10.1
+======
+* Updated GSettings install rule, #697815
+* Updated translations:
+  ro    (Daniel Șerbănescu)
+
+3.10.0
+======
+* Updated translations:
+  ar    (Khaled Hosny)
+  et    (Mattias Põldaru)
+  lv    (Rūdolfs Mazurs)
+  th    (Theppitak Karoonboonyanan)
+  uk    (Daniel Korostil)
+
+3.9.91
+======
+* Correctly detect Unity for conditional processing, #707352 (Kevin Godby)
+* Fixed build issue with intltool and gettext, #706854 (Seán de Búrca)
+* Updated translations:
+  eo    (Ryan Lortie)
+  fr    (Alexandre Franke)
+  ga    (Seán de Búrca)
+
+3.9.90
+======
+* Various updates for deprecated APIs in GLib and GTK
+* Added support for DocBook conditional processing on desktop environment
+* Updated translations:
+  mr       (Chetan Khona)
+  sk       (Pavol Klačanský)
+  zh_HK    (Chao-Hsiung Liao)
+  zh_TW    (Chao-Hsiung Liao)
+
+3.8.1
+=====
+* Added test token for classic mode (Matthias Clasen)
+* Updated translations:
+  as       (Nilamdyuti Goswami)
+  be       (Ihar Hrachyshka)
+  ca       (Gil Forcada)
+  ca@valencia (Carles Ferrando)
+  cs       (Marek Černocký)
+  da       (Ask H. Larsen)
+  de       (Mario Blättermann)
+  es       (Daniel Mustieles)
+  eu       (Inaki Larranaga Murgoitio)
+  fa       (Arash Mousavi)
+  fi       (Ville-Pekka Vainio)
+  fur      (Fabio Tomat)
+  gl       (Fran Diéguez)
+  gu       (Sweta Kothari)
+  he       (Yaron Shahrabani)
+  hi       (Rajesh Ranjan)
+  hu       (Balázs Úr)
+  id       (Andika Triwidada)
+  it       (Milo Casagrande)
+  lt       (Aurimas Černius)
+  ml       (Anish A)
+  nb       (Kjartan Maraas)
+  or       (ManojKumar Giri)
+  pa       (A S Alam)
+  pt_BR    (Enrico Nicoletto)
+  ru       (Dmitriy S. Seregin)
+  sl       (Matej Urbančič)
+  sr       (Мирослав Николић)
+  sr@latin (Мирослав Николић)
+  ta       (Shantha kumar)
+  te       (Krishnababu Krothapalli)
+  tg       (Victor Ibragimov)
+  tr       (Muhammet Kara)
+
+3.8.0
+=====
+* Stop checking for pangox and X11 (Emilio Pozuelo Monfort)
+* Updated translations:
+  tg    (Victor Ibragimov)
+  ko    (Changwoo Ryu)
+  ja    (Jiro Matsuzawa)
+  pt    (Duarte Loreto)
+  el    (Dimitris Spingos)
+
+3.7.90
+======
+* Updated translations:
+  ug    (Gheyret Kenji)
+
+3.7.4
+=====
+* Updated translations:
+  el    (Dimitris Spingos)
+  kn    (Shankar Prasad)
+  pl    (Piotr Drąg)
+
+3.7.3
+=====
+* Add keywords to the desktop file (Matthias Clasen)
+* Fixed handling of xref links with anchors, #686095 (Tails developers)
+* Fixed various memory management bugs, #683100 (Carlos Garcia Campos)
+* Added local copy of MathJax for MathML display (Shaun McCance)
+* Added support for xdg help system in All Documents (Shaun McCance)
+* Fixed if:test="action:install" (Shaun McCance)
+* Switched to using 'itstool -j' for XSL domain (Shaun McCance)
+
+3.6.1
+=====
+* Updated translations:
+  km    (Khoem Sokhem)
+  ky    (Timur Zhamakeev)
+
+3.6.0
+=====
+* Updated translations:
+  ky    (Timur Zhamakeev)
+  lv    (Rūdolfs Mazurs)
+  th    (Theppitak Karoonboonyanan)
+
+3.5.92
+======
+* Updated translations:
+  ml    (Ani Peter)
+  pl    (Piotr Drąg)
+
+3.5.91
+======
+* Fixed gettext warnings for man and info
+* Allow dots in man page names, #676482 (Matthias Clasen)
+* Updated translations:
+  as    (Nilamdyuti Goswami)
+
+3.5.90
+======
+* Fixed new-style Mallard conditional processing
+* Updated translations:
+  as    (Nilamdyuti Goswami)
+  et    (Mattias Põldaru)
+  gl    (Fran Diéguez)
+  mr    (Sandeep Sheshrao Shedmake)
+  sk    (Pavol Šimo, Pavol Klačanský)
+
+3.4.2
+=====
+* Fixed mistake in handling an XSLT translation message
+* Updated translations:
+  el    (Tom Tryfonidis)
+  ja    (Mitsuya Shibata)
+
+3.4.1
+=====
+* Updated translations:
+  ca    (Jordi Serratosa)
+  ca@valencia (Carles Ferrando)
+  el    (George Stefanakis)
+  id    (Andika Triwidada)
+  lt    (Aurimas Černius)
+
+3.4.0
+=====
+* Updated translations:
+  ar    (Ibrahim Saed)
+  cs    (Marek Černocký)
+  gu    (Sweta Kothari)
+  ml    (Praveen Arimbrathodiyil)
+  tr    (Muhammet Kara)
+  vi    (Nguyễn Thái Ngọc Duy)
+  zh_CN (YunQiang Su)
+
+3.3.92
+======
+* Fixed links to page #fragments, bug #671018
+* Updated translations:
+  as    (Nilamdyuti Goswami)
+  be    (Ihar Hrachyshka)
+  bg    (Ivaylo Valkov)
+  ca    (David Planella)
+  da    (Kenneth Nielsen)
+  de    (Mario Blättermann)
+  en_GB (Bruce Cowan)
+  eo    (Tiffany Antopolski)
+  es    (Daniel Mustieles)
+  et    (Mattias Põldaru)
+  eu    (Inaki Larranaga Murgoitio)
+  fa    (Arash Mousavi)
+  fi    (Timo Jyrinki)
+  fr    (Bruno Brouard)
+  gl    (Fran Diéguez)
+  he    (Yaron Shahrabani)
+  hi    (Rajesh Ranjan)
+  hu    (Gabor Kelemen)
+  it    (Milo Casagrande)
+  ko    (Changwoo Ryu)
+  lv    (Anita Reitere)
+  nb    (Kjartan Maraas)
+  nl    (Hannie Dumoleyn)
+  pa    (A S Alam)
+  pl    (Piotr Drąg)
+  pt    (Duarte Loreto)
+  pt_BR (Antonio Fernandes C. Neto)
+  ru    (Yuri Myasoedov)
+  sl    (Matej Urbančič)
+  sr    (Мирослав Николић)
+  sr@latin (Мирослав Николић)
+  sv    (Daniel Nylander)
+  ta    (Dr.T.Vasudevan)
+  te    (Krishnababu Krothapalli)
+  uk    (Daniel Korostil)
+  zh_HK (Chao-Hsiung Liao)
+  zh_TW (Chao-Hsiung Liao)
+
+3.3.4
+=====
+* Auto-reload Mallard documents
+* Allow all extensions in Mallard documents
+* Added a 'Search for ...' entry to completion
+* Style updates for mobile rendering
+* Fixed updating of titles/info for bookmarks
+* Don't crash when doing stuff to empty windows
+* Delay progress pulse for 500ms, bug #645803
+* Don't call g_thread_init(), bug #663285 (Martin Pitt)
+* Updated translations:
+  be       (Ihar Hrachyshka)
+  be       (Ihar Hrachyshka)
+  bg       (Ivaylo Valkov)
+  da       (Ask H. Larsen)
+  eo       (Kristjan SCHMIDT)
+  es       (Daniel Mustieles)
+  gl       (Fran Diéguez)
+  he       (Yaron Shahrabani)
+  it       (Luca Ferretti)
+  ja       (Hideki Yamane)
+  nb       (Kjartan Maraas)
+  nl       (Hannie Dumoleyn)
+  ru       (Yuri Myasoedov)
+  sl       (Matej Urbančič)
+  sr       (Мирослав Николић)
+  sr@latin (Мирослав Николић)
+  sv       (Daniel Nylander)
+  tr       (Muhammet Kara)
+  ug       (Gheyret Kenji)
+  zh_HK    (Chao-Hsiung Liao)
+  zh_TW    (Chao-Hsiung Liao)
+
+3.3.3
+=====
+* Adjust CSS for yelp-xsl changes
+* Reverting Share button for 3.4
+* Don't segfault without dbus, #660579 (Michael Biebl)
+* Updated translations:
+  fa    (Arash Mousavi)
+  fi    (Timo Jyrinki)
+  mk    (Jovan Naumovski)
+
+3.3.2
+=====
+* Fixed conditional processing check for GNOME 2 environments
+* Fixed racy insertion of link to full search results
+* Don't call deprecated g_thread_init, #663285
+* Updated translations:
+  be       (Kasia Bondarava)
+  cs       (Marek Černocký)
+  de       (Mario Blättermann)
+  eo       (Kristjan SCHMIDT)
+  gl       (Fran Diéguez)
+  nb       (Kjartan Maraas)
+  sl       (Matej Urbančič)
+  sv       (Daniel Nylander)
+  te       (Praveen Illa)
+  tr       (Muhammet Kara)
+  zh_HK    (Pin-hsien Li)
+  zh_TW    (Pin-hsien Li)
+
+3.3.1
+=====
+* Added Share button to IM, email, or copy page link
+* Allow multiple package with install links
+* Set right-click menu for http and install links
+* Link to full search when loading a page from external search
+* Dropped jquery-ui in favor of CSS transitions
+* Updated translations:
+  be    (Ihar Hrachyshka)
+  bg    (Alexander Shopov)
+  en_GB (Bruce Cowan)
+  es    (Jorge González)
+  gl    (Fran Dieguez)
+  he    (Yaron Shahrabani)
+  ko    (Changwoo Ryu)
+  nb    (Kjartan Maraas)
+  sl    (Matej Urbančič)
+  sv    (Daniel Nylander)
+
+3.2.0
+=====
+* Open GNOME Help from the new system by default (Matthias Clasen)
+* Updated translations:
+  as          (Nilamdyuti Goswami)
+  ca@valencia (Carles Ferrando)
+  cs          (Marek Černocký)
+  da          (Aputsiaq Janussen)
+  eu          (Inaki Larranaga Murgoitio)
+  hi          (Rajesh Ranjan)
+  hu          (Gabor Kelemen)
+  ja          (Jiro Matsuzawa)
+  ko          (Changwoo Ryu)
+  sk          (Pavol Klačanský)
+
+3.1.4
+=====
+* Fixed loading of HTML and TXT documents
+* Updated translations:
+  ast   (Xandru Armesto)
+  en_GB (Bruce Cowan)
+  eo    (Tiffany Antopolski)
+  es    (Daniel Mustieles, Jorge González)
+  fa    (Arash Mousavi)
+  fi    (Timo Jyrinki)
+  ja    (Jiro Matsuzawa)
+  pa    (A S Alam)
+  pt    (Duarte Loreto)
+  sk    (Pavol Klačanský)
+  ta    (Dr.T.Vasudevan)
+  zh_CN (Yinghua Wang)
+  zh_HK (Chao-Hsiung Liao)
+  zh_TW (Chao-Hsiung Liao)
+
+3.1.3
+=====
+* Fixed URI in location entry after link click in help URIs, #658023
+* Fixed crashes on info documents (Edward Sheldrake)
+* Updated translations:
+  be    (Ihar Hrachyshka)
+  ca    (Gil Forcada)
+  de    (Mario Blättermann)
+  fr    (Alexandre Franke)
+  gl    (Fran Dieguez)
+  id    (Andika Triwidada)
+  it    (Milo Casagrande)
+  pt_BR (Og B. Maciel)
+  ru    (Yuri Myasoedov)
+  ug    (Abduxukur Abdurixit)
+
+3.1.2
+=====
+* Added Unity to OnlyShowIn
+* Added support for the install: action scheme
+* Don't try to search with NULL URI, bug #655124
+* Fixed crash when opening URI after closing a window
+* Fixed search crash on 64-bit systems
+* Changed the DocBook chunking rules to match yelp-xsl
+* Updated translations:
+  be    (Ihar Hrachyshka)
+  bg    (Alexander Shopov)
+  es    (Jorge González)
+  he    (Yaron Shahrabani)
+  lt    (Aurimas Černius)
+  lv    (Rudolfs Mazurs)
+  nb    (Kjartan Maraas)
+  pl    (Piotr Drąg)
+  sl    (Matej Urbančič)
+  sv    (Daniel Nylander)
+
+3.1.1
+=====
+* Update for changes in yelp-xsl (Shaun McCance)
+* Don't start duplicate Mallard transforms (Shaun McCance)
+* Fixed various bugs in info parsing/transformations (Rupert Swarbrick)
+* Added parameters for Mallard conditional processing (Shaun McCance)
+* Fixed untranslated UI elements, bug #648840 (Matthias Clasen)
+* Updated translations:
+  ca@valencia  (Carles Ferrando)
+  eo           (Kristjan SCHMIDT)
+  hu           (Gabor Kelemen)
+  sr           (Мирослав Николић)
+  sr@latin     (Мирослав Николић)
+
+Changes in 3.0.2
+----------------
+* Adapt to JavaScript fixes in yelp-xsl
+* Fixed problem with loading animation getting stuck
+* Don't use image-loading icon in location entry
+* Fixed DTD catalog references to not point to /home/shaunm
+* Fixed crasher with relative file paths, #647761
+* Updated translations:
+  fi    (Timo Jyrinki)
+  tr    (Muhammet Kara)
+  ug    (Abduxukur Abdurixit)
+  vi    (Lê Trường An, Nguyễn Thái Ngọc Duy)
+
+Changes in 3.0.1
+----------------
+* Fixed startup notification with GtkApplication (Ryan Lortie, Shaun McCance)
+* Use symbolic icons propertly; don't crash (Shaun McCnace)
+* Split words with \W regexp for quick search (Shaun McCance)
+* Actually store existing GSettings in dconf (Shaun McCance)
+* Fixed a GVariantBuilder leak (Ryan Lortie)
+* Updated translations:
+  as    (Amitakhya Phukan)
+  ca    (Jordi Serratosa)
+  fa    (Mahyar Moghimi)
+
+Changes in 3.0.0
+----------------
+* Make sure all translations work (Kjartan Maraas)
+* Updated translations:
+  cs    (Marek Černocký, Petr Kovar)
+  da    (Anders Jenbo)
+  de    (Wolfgang Stöggl)
+  eu    (Inaki Larranaga Murgoitio)
+  hi    (Rajesh Ranjan)
+  it    (Milo Casagrande)
+  ja    (Jiro Matsuzawa)
+  mr    (Sandeep Shedmake)
+  pt_BR (Felipe Borges, Antonio Fernandes C. Neto)
+  ta    (Dr.T.Vasudevan)
+  tr    (Baris Cicek)
+  ug    (Abduxukur Abdurixit)
+  zh_HK (Chao-Hsiung Liao)
+  zh_TW (Chao-Hsiung Liao)
+
+Changes in 2.91.92:
+-------------------
+* Updated translations:
+  en_GB (Bruce Cowan)
+  gl    (Fran Diéguez)
+  hu    (Gabor Kelemen)
+  id    (Dirgita)
+  lv    (Rudolfs Mazurs)
+  nl    (Wouter Bolsterlee)
+  or    (Manoj Kumar Giri)
+  pl    (Piotr Drąg)
+  pt    (Duarte Loreto)
+  ro    (Lucian Adrian Grijincu)
+  ru    (Yuri Myasoedov)
+
+Changes in 2.91.91:
+-------------------
+* Fixed wrong gsettings schema id and switched to rnds paths
+* Make Yelp appear in list of applications in the shell (Florian Müllner)
+* Updated translations:
+  ar    (Khaled Hosny)
+  bg    (Alexander Shopov)
+  ca    (Gil Forcada)
+  de    (Christian Kirbach)
+  es    (Daniel Mustieles)
+  et    (Ivar Smolin)
+  fr    (Laurent Coudeur, Gérard Baylard and Bruno Brouard)
+  he    (Yaron Shahrabani)
+  ko    (Changwoo Ryu)
+  nb    (Kjartan Maraas)
+  pa    (A S Alam)
+  sl    (Matej Urbančič)
+  sv    (Daniel Nylander)
+  uk    (Daniel Korostil)
+  zh_CN (Lele Long)
+
+Changes in 2.91.90:
+-------------------
+* Default to ghelp:gnome-help
+* Full text per-document search, using sqlite FTS
+* Use symbolic icons for bookmarks and location entry
+* Don't require DocBook DTDs; provide entities internally
+* Removed bookmark editor, added bookmark toggle icon
+* Updated translations:
+  ar       (Khaled Hosny)
+  bg       (Ivaylo Valkov)
+  el       (Michael Kotsarinis)
+  es       (Daniel Mustieles, Jorge González)
+  et       (Ivar Smolin)
+  gl       (Fran Diéguez)
+  gu       (Sweta Kothari)
+  he       (Yaron Shahrabani)
+  id       (Andika Triwidada)
+  nb       (Kjartan Maraas)
+  nl       (Hannie Dumoleyn, Redmar)
+  sl       (Matej Urbančič)
+  sr       (Мирослав Николић)
+  sr@latin (Мирослав Николић)
+  uk       (Daniel Korostil)
+  zh_CN    (Aron Xu)
+  zh_HK    (Chao-Hsiung Liao)
+  zh_TW    (Chao-Hsiung Liao)
+
+Changes in 2.91.10:
+-------------------
+* Fixed some issues with previous/next links
+* Better indents and margin in man pages (Rupert Swarbrick)
+* Handle links in man pages (Rupert Swarbrick)
+* Improvements in how error pages are handled
+* Auto-install packages for missing documents
+* Set busy cursor when page is loading
+* Updated translations:
+  ar    (Khaled Hosny)
+  es    (Jorge González)
+  et    (Ivar Smolin)
+  gl    (Fran Diéguez)
+  he    (Yaron Shahrabani)
+  id    (Andika Triwidada)
+  sl    (Matej Urbančič)
+  sv    (Daniel Nylander)
+
+Changes in 2.91.9:
+------------------
+* Updates for GTK+ API changes
+* Added URI scheme handler information (Matthias Clasen)
+* Removed custom man parser, using groff output (Rupert Swarbrick)
+* Don't segfault when bookmarking man pages (Rupert Swarbrick)
+* Updated translations:
+  de    (Mario Blättermann)
+  es    (Jorge González)
+  et    (Ivar Smolin)
+  he    (Yaron Shahrabani)
+  nb    (Kjartan Maraas)
+  ug    (Gheyret T.Kenji)
+
+Changes in 2.91.8:
+------------------
+* Added support for Mallard Facets extension
+* Don't include line numbers when copying code blocks
+* Added automatica syntax highlighting using jQuery.Syntax
+* Added basic support to list all installed documents
+* Hooked up bookmarks functionality
+* Moved more functionality into libyelp
+* Improvements to info page (Rupert Swarbrick)
+* Updates for API changes in GTK+ 3
+* Updated translations:
+  af           (Friedel Wolff)
+  ca@valencia  (Carles Ferrando)
+  de           (Mario Blättermann)
+  es           (Jorge González)
+  et           (Ivar Smolin)
+  gl           (Fran Diéguez)
+  he           (Yaron Shahrabani)
+  id           (Andika Triwidada)
+  ja           (Takayuki KUSANO)
+  kk           (Baurzhan Muftakhidinov)
+  ko           (Changwoo Ryu)
+  pa           (A S Alam)
+  pt_BR        (Henrique P. Machado)
+  ro           (Daniel Șerbănescu, Lucian Adrian Grijincu)
+  sk           (Laco Gubík)
+  sl           (Matej Urbančič)
+  ug           (Gheyret T.Kenji)
+  zh_CN        (Aron Xu)
+  zh_HK        (Chao-Hsiung Liao)
+  zh_TW        (Chao-Hsiung Liao)
+
+Changes in 2.31.7:
+------------------
+* Bumped to GTK+ 3.0
+* Fixed broken gsettings keyfile setup
+* Updated translations:
+  eo      (Kristjan Schmidt)
+  lt      (Aurimas Černius)
+
+Changes in 2.31.6:
+------------------
+* Don't double-add pages, also fixes #621398
+* Adjusted to API changes in GSettingsBackend
+* Only store window size if it really changes
+* Don't segfault on http:// URIs (Rupert Swarbrick)
+* Preserve both page_id and frag_id for file: URIs
+* Added "Copy Code Block" and "Save Code Block As"
+* Update JS fragment highlighter for yelp-xsl changes
+* Get actual link text for read-later links
+* Use index.docbook for help: URIs
+* Transitioned to GDBus
+* Updated translations:
+  et      (Ivar Smolin)
+  th      (Sira Nokyoongtong)
+  gl      (Fran Diéguez)
+  sl      (Matej Urbančič)
+  es      (Jorge González)
+  nb      (Kjartan Maraas)
+  he      (Yaron Shahrabani)
+
+Changes in 2.31.5:
+------------------
+* New "Read Later" feature
+* Support for proposed XDG help: URI scheme
+* Use entire search path when loading Mallard docs
+* Updated for new yelp-xsl common HTML output
+* New bookmarks editor window
+* Man pages are back again
+* Recognize Mallard docs by index.page.stub in editor mode
+* Fix for incorrect bookmarks titles when switching docs
+* Updated translations:
+  de    (Mario Blättermann)
+  es    (Jorge González)
+  et    (Ivar Smolin)
+  gl    (Fran Diéguez)
+  he    (Yaron Shahrabani)
+  nb    (Kjartan Maraas)
+  sl    (Matej Urbančič)
+  zh_CN (Funda Wang)
+
+Changes in 2.31.4:
+------------------
+* Build fixes for gsettings and bumped yelp-xsl requirement
+
+Changes in 2.31.3:
+------------------
+* Added DocBook 5 support (Brian M. Carlson)
+* Accept dragged documents on Yelp windows
+* Context-sensitive right-click menus
+* Store scroll positions in back/forward list
+* Basic print support added
+* Better handling of plain text documents
+* Added emblems to drop-downs on bookmarked locations
+* Updated LZMA decoder to the new API (Javier Jardón)
+* Compile-time options for lzma and bz2
+* Color animation on search entry when focused
+* Find bar added, slides in from bottom
+* Ctrl+S now starts a search
+* Fixed some issues with page titles not being displayed
+* Fixes for relative links in HTML documents
+* Automatically update bookmarks icons and titles
+* Use new common HTML output from yelp-xsl
+* Fixed issue that prevented primary window from being used
+* Updated translations:
+  es    (Jorge González)
+  gl    (Fran Diéguez)
+  id    (Andika Triwidada)
+  or    (Manoj Kumar Giri)
+  sl    (Matej Urbančič)
+
+Changes in 2.31.2:
+------------------
+* Location entry completions are sorted by icon and title.
+* All pages have an icon, help-contents by default.
+* Location entries now pulse when page is loading.
+* Added bookmarks with page icons, stored per-document.
+* Added previous and next menu items for linear documents.
+* Refreshed error pages, look like Yelp note boxes.
+* Window geometry is stored per-document.
+* Added info documents, with slightly nicer formatting.
+* Updated translations:
+  de    (Mario Blättermann)
+  es    (Jorge González)
+  gl    (Fran Diéguez)
+  nb    (Kjartan Maraas)
+  ug    (Gheyret Kenji)
+
+Changes in 2.31.1:
+------------------
+* Completely revamped document-focused interface
+* New mode to show extra information for editors
+* PackageKit install: links (experimental)
+* Use GSettings for settings storage
+* Temporarily missing features:
+  - man and info pages
+  - bookmarks
+  - full-text search
+  - printing
+  - list of installed help
+* Updated translations:
+  bn_IN        (Runa Bhattacharjee)
+  ca@valencia  (Carles Ferrando)
+  crh          (Reşat SABIQ)
+  id           (Andika Triwidada)
+  kn           (Shankar Prasad)
+  nl           (Wouter Bolsterlee)
+  oc           (Yannig Marchegay)
+  or           (Manoj Kumar Giri)
+  sl           (Matej Urbančič)
+  ug           (Gheyret Kenji)
+
+Changes in 2.30.0:
+------------------
+* Updated translations:
+  bn      (Jamil Ahmed)
+  eu      (Inaki Larranaga Murgoitio)
+  lt      (Gintautas Miliauskas)
+  pl      (Piotr Drąg)
+  ru      (Leonid Kanter)
+  sv      (Daniel Nylander)
+  vi      (Clytie)
+
+Changes in 2.29.5:
+------------------
+* Clean up GLib and GTK+ includes (Javier Jardón)
+* Updated translations:
+  gl    (Fran Diéguez)
+
+Changes in 2.29.4:
+------------------
+* Updated translations:
+  th    (Theppitak Karoonboonyanan)
+
+Changes in 2.29.3:
+------------------
+* Fixed issues with xulrunner 1.9.2
+
+Changes in 2.29.2:
+------------------
+* Adapted to changes in gnome-doc-utils XSLT
+
+Changes in 2.29.1:
+------------------
+* Fixed admonition graphics
+* Upped gnome-doc-utils version for fancy new Mallard features
+* Use accessor functions instead direct access (Javier Jardón)
+* Updated translations:
+  ca    (Jordi Serratosa)
+  he    (Yaron Sharabani)
+
+Changes in 2.28.1:
+------------------
+* Use g_timeout_add_seconds to reduce wakeups, bug #581260 (Javier Jardón)
+* Removed debug output, bug #585829 (Vincent Untz)
+* Updated translations:
+  en@shaw    (Thomas Thurman)
+  lv         (Peteris Krisjanis)
+  nn         (Åsmund Skjæveland)
+  ru         (Leonid Kanter)
+
+Changes in 2.28.0:
+------------------
+* Updated translations:
+  as          (Amitakhya Phukan)
+  ca@valencia (Carles Ferrando)
+  da          (Ask H. Larsen)
+  el          (Kostas Papadimas)
+  en_GB       (Philip Withnall)
+  hi          (Rajesh Ranjan)
+  hu          (Gabor Kelemen)
+  ja          (Takayuki KUSANO)
+  kn          (Shankar Prasad)
+  nb          (Kjartan Maraas)
+  or          (Manoj Kumar Giri)
+  pt_BR       (Fábio Nogueira)
+  ro          (Lucian Adrian Grijincu)
+  sl          (Matej Urbančič)
+  te          (krishnababu k)
+  uk          (Maxim V. Dziumanenko)
+
+Changes in 2.27.5:
+------------------
+* Fixed broken history navigation for Mallard documents (Shaun McCance)
+* Make sure link title roles are preserved in cache (Shaun McCance)
+* Fixed jumping to anchors in Mallard documents (Shaun McCance)
+* Updated translations:
+  bn          (Jamil Ahmed)
+  bn_IN       (Runa Bhattacharjee)
+  cs          (Petr Kovar)
+  eu          (Inaki Larranaga Murgoitio)
+  gu          (Sweta Kothari)
+  ml          (Ani)
+  mr          (Sandeep Shedmake)
+  nb          (Kjartan Maraas)
+  pa          (A S Alam)
+  pl          (Tomasz Dominikowski)
+  pt          (Duarte Loreto)
+  pt_BR       (Og B. Maciel)
+  sr          (Miloš Popović)
+  sr@latin    (Miloš Popović)
+  ta          (ifelix)
+  te          (krishnababu k)
+  tr          (Baris Cicek)
+  zh_CN       (Aron Xu)
+
+Changes in 2.27.4:
+------------------
+* Make ghelp URIs work for Mallard documents (Shaun McCance)
+* Replace libgnome by using EggSMClient (Thomas Hindoe Paaboel Andersen)
+* Updated translations:
+  ar    (Khaled Hosny)
+  bg    (Alexander Shopov)
+  br    (Denis Arnaud)
+  ca    (Gil Forcada)
+  de    (Christian Kirbach, Mario Blättermann)
+  es    (Jorge González)
+  et    (Ivar Smolin)
+  fi    (Tommi Vainikainen)
+  fr    (Claude Paroz)
+  ga    (Seán de Búrca)
+  gl    (Antón Méixome)
+  it    (Milo Casagrande)
+  ko    (Changwoo Ryu)
+  nb    (Kjartan Maraas)
+  pt_BR (André Gondim)
+  sv    (Daniel Nylander)
+  zh_HK (Chao-Hsiung Liao)
+  zh_TW (Chao-Hsiung Liao)
+
+Changes in 2.27.3:
+------------------
+* Various code updates (Thomas Hindoe Paaboel Andersen)
+* Updated translations:
+  ar      (Khaled Hosny)
+  fi      (Ilkka Tuohela)
+  fr      (Claude Paroz)
+  he      (Yaron Shahrabani)
+  sv      (Daniel Nylander)
+  ta      (drtvasudevan)
+  uk      (Maxim V. Dziumanenko)
+  vi      (Hai-Nam Nguyen)
+
+Changes in 2.27.2:
+------------------
+* Require Mallard-enabled gnome-doc-utils
+* Fixed various memory management bugs
+* Updated translations:
+  es      (Jorge Gonzalez)
+  pa      (A S Alam)
+  et      (Ivar Smolin)
+  sv      (Daniel Nylander)
+
+Changes in 2.27.1:
+------------------
+* Added experimental support for Mallard
+* Fixed various color theme issues
+
+Changes in 2.26.0:
+------------------
+* Don't assume order of certain man macros, bug #568066 (Andy Owen)
+* Fixed locking issue, bug #568058 (Andy Owen)
+* Updated translations:
+  mai     (Rajesh Ranjan)
+  hi      (Rajesh Ranjan)
+  as      (Amitakhya Phukan)
+  ml      (Ani Peter)
+  te      (Krishnababu K)
+  he      (Yair Hershkovitz)
+
+Changes in 2.25.1:
+------------------
+* RTL fixes, bug #573159, Shaun McCance
+* Fixed libxul[-embedding] detection, Christian Persch
+* Removed deprecated GTK symbols, bug #571868, Thomas H.P. Andersen
+* Fixed crasher, bug #552947, Antonio Litterio
+* Fixed loading of local HTML files, bug #562137, Josselin Mouette
+* Updated translations:
+  ar          (Khaled Hosny)
+  ast         (Mikel González)
+  et          (Ivar Smolin)
+  it          (Milo Casagrande)
+  ko          (Changwoo Ryu)
+  la          (Rafael Garcia)
+  ps          (Zabeeh Khan)
+  sv          (Daniel Nylander)
+  uz          (Nurali Abdurahmonov)
+  uz@cyrillic (Nurali Abdurahmonov)
+  zh_HK       (Chao-Hsiung Liao)
+  zh_TW       (Chao-Hsiung Liao)
+
+Changed in 2.24.0:
+------------------
+
+*Improve a11y under gecko 1.9 
+ - Bug #545162
+ - Huge thanks to Ginn Chen, Willie Walker and Joanmarie Diggs
+* Fix potential race-condition
+ - bug #551757 (Joe Marcus Clarke)
+* fd.o categorisation improvements
+ - bug #552128
+* Updated translations:
+  ar (Djihed Afifi)
+  bn_IN (Runa Bhattacharjee)
+  he (Yair Hershkovitz)
+  hi (Rajesh Ranjan)
+  hr (Robert Sedak)
+  hu (Gabor Kelemen)
+  kn (Shankar Prasad)
+  pt (Duarte Loreto)
+  pt_BR (Vladimir Melo)
+  ro (Mişu Moldovan)
+  sr (Goran Rakić)
+  sr@latin (Goran Rakić)
+  th (Theppitak Karoonboonyanan)
+
+Changed in 2.23.91:
+-------------------
+
+* Fix loading of text files - bug #549986 (Josselin Mouette)
+* Fix glibc info manual chrash - bug #520266 (Matthias Clasen and J.H.M. Dassen)
+* Updated translations:
+  eu (Inaki Larranaga Murgoitio)
+  * Conversion from sr@Latn to sr@latin (Goran Rakic)
+
+Changed in 2.23.2:
+------------------
+* Fix string vulnerability [#546364] - Christian Persch
+* Use "help-browser" icon instead of deprecated "gnome-help" - Luca Ferretti
+* Updated translations:
+  ar    (Djihed Afifi)
+  de    (Jochen Skulj)
+  gu    (Ankit Patel)
+  he    (Yair Hershkovitz)
+  ks    (Rakesh Pandit)
+  oc    (Yannig Marchegay)
+  or    (Manoj Kumar Giri)
+  pt_BR (John Wendell)
+  sq    (Laurent Dhima)
+
+Changed in 2.23.1:
+------------------
+* Add support for Gecko 1.9 (XULRunner) - Christian Persch
+* Move from gnome-vfs to gio - Alon Zakai
+* Fix searching on multibyte characters - Takao Fujiwara
+* Add support for newer Beagles - Arun Raghavan
+* Fix parallel make - Rémi Cardona
+* Make "print whole document" work again
+* Re-add support for gnome-help URIs
+* Only show the help browser in GNOME menus (as other 
+  desktops should ship their own help browser)
+* New translations:
+  fur (Friulian team)
+* Updated translations:
+  ar  (Djihed Afifi)
+  bg  (Alexander Shopov)
+  he  (Yair Hershkovitz)
+  vi  (Clytie Siddall)
+
+Changed in 2.22.1:
+------------------
+* Don't launch external programs under GDM (#525447)
+  - Distributors please note this is a security issue
+* Updated translations:
+  ru      (Yuriy Penkin)
+  cs      (Petr Kovar)
+  nn      (Eskild Hustvedt)
+  et      (Ivar Smolin)
+  ca      (David Planella)
+  hu      (Gabor Kelemen)
+  el      (Giannis Katsampiris)
+
+Changed in 2.22.0:
+------------------
+
+* fix bug #476498
+* Remove some unwanted debug spew
+* Updated translations:
+ * ar (Abdelmonam Kouka and Djihed Afifi)
+ * as (Amitakhya Phukan)
+ * be@latin (Ihar Hrachyshka)
+ * bn_IN (Runa Bhattacharjee)
+ * ca (Gil Forcada)
+ * cs (Petr Kovar
+ * da (Kenneth Nielsen)
+ * de (Jochen Skulj)
+ * en_GB (Philip Withnall)
+ * es (Jorge Gonzalez)
+ * et (Ivar Smolin and Priit Laes)
+ * fi (Ilkka Tuohela)
+ * gl (Ignacio Casal Quinteiro)
+ * he (Yair Hershkovitz)
+ * it (Milo Casagrande)
+ * ja (Takeshi AIHANA)
+ * ko (Changwoo Ryu)
+ * lt (Gintautas Miliauskas)
+ * mk (Jovan Naumovski)
+ * mr (Sandeep Shedmake
+ * ne (Pawan Chitrakar)
+ * nl (Reinout van Schouwen)
+ * oc (Yannig Marchegay)
+ * pl (Artur Flinta and the GNOME PL Team)
+ * pt (Duarte Loreto)
+ * pt_BR (Jonh Wendell)
+ * ta (Tirumurthi Vasudevan
+ * th (Theppitak Karoonboonyanan
+ * tr (Serdar Cicek)
+ * uk (Maxim Dziumanenko)
+ * vi (Nguyễn Thái Ngọc Duy)
+ * zh_HK (Chao-Hsiung Liao)
+ * zh_TW (Chao-Hsiung Liao)
+
+Changed in 2.21.90:
+-------------------
+
+* Fix various compiler warnings
+* Remove additional debug printf
+* Fix man sectioning stuff
+* Fix reloading (Davyd Madeley)
+* Make / activate find
+* Make find go away on focus-out
+* Readd games category
+* Fix some menu titles in TOC
+Bugs fixed:
+ * Crash on backward and then 
+   forward on external links (bug #487849)
+ * Depreciated items in yelp.desktop (bug #500483)
+ * Potential crash in search (bug #501559 - Matt Keenan
+ * Crash on shutdown using XULRunner 1.8 
+   (bug #503317 - Markus Kanet)
+ * Initialise Beagle, allowing its use again
+   (bug #504163)
+* Updated translations:
+  * es (Jorge Gonzalez)
+  * et (Ivar Smolin)
+  * eu (Inaki Larranaga Murgoitio)
+  * fr (Valentin Gatien-Baron and Stéphane Raimbault)
+  * ga (Seán de Búrca)
+  * nb (Kjartan Maraas)
+  * sv (Daniel Nylande)
+
+Changed in 2.21.2:
+------------------
+
+* Add LZMA support - bug #470990 
+  - Per Øyvind Karlsen
+* Fix find bar up to look more like epiphany - bug #483305 
+  - Michael Monreal
+* Make colours reflect theme better
+* Fix crash on NULL search string.  Again.
+* String corrections - bug #505797
+  - Seán de Búrca
+* Updated translations:
+  * ar (Djihed Afifi)
+  * be@latin (Ihar Hrachyshka)
+  * es (Jorge Gonzalez)
+  * et (Priit Laes)
+  * ga (Seán de Búrca)
+  * ko (Changwoo Ryu)
+  * nb (Kjartan Maraas)
+  * oc (Yannig Marchegay)
+  * pt_BR (Leonardo Ferreira Fontenelle)
+  * sl (Matej Urbančič)
+  * sv (Daniel Nylander)
+  * vi (Clytie Siddall)
+
+Changed in 2.21.1:
+------------------
+
+* Port to Rarian 0.8 series
+* Strip '#' and '?' from TOC URIs (bug #482290)
+* Fix debug build (bug #492882)
+* Fix HTML doc loading (bug #493594 - Matthias Clasen)
+* Fix slow search NULL checking (bug #493751)
+* Updated translations:
+  * ar (Djihed Afifi)
+  * be@latin.po (Ihar Hrachyshka)
+  * bn (Khandakar Mujahidul Islam)
+  * gl (Ignacio Casal Quinteiro)
+  * he (Yair Hershkovitz)
+  * it (Milo Casagrande)
+  * ko (Changwoo Ryu)
+  * oc (Yannig Marchegay)
+  * ru (Vasiliy Faronov)
+  * sl (Matej Urbančič)
+  * ta (Tirumurthi Vasudevan)
+
+Changed in 2.20.0:
+------------------
+
+ * Jump to anchors in pages again
+ * Respect theme settings on TOC again
+ * Set automatic IDs on all divisions and respect chunk depth
+ * Various minor fixes and crashers - Hans Petter Jansson and 
+   	   	       	   	      Jens Granseuer
+ * New tangoified icon on TOC
+ * Fix broken figures in docbooks
+ * Better colour theming and icon support
+ * Updated translations:
+   * ar (Djihed Afifi)
+   * be@latin (Ihar Hrachyshka)
+   * bg (Alexander Shopov)
+   * ca (Gil Forcada)
+   * da (Kenneth Nielsen)
+   * de (Andre Klapper and Hendrik Richter)
+   * el (Nikos Charonitakis)
+   * es (Jorge Gonzalez)
+   * et (Ivar Smolin)
+   * eu (Inaki Larranaga Murgoitio)
+   * fi (Ilkka Tuohela)
+   * fr (Stéphane Raimbault and Claude Paroz)
+   * gu (Ankit Patel)
+   * hu (Gabor Kelemen)
+   * ja (Takeshi AIHANA)
+   * ko (Young-Ho Cha)
+   * lt (Gintautas Miliauskas)
+   * mk (Jovan Naumovski)
+   * nb (Kjartan Maraas)
+   * nl (Wouter Bolsterlee)
+   * pl (Artur Flinta)
+   * pt (Duarte Loreto)
+   * pt_BR (Og Maciel and Raphael Higino and Vladimir Melo)
+   * ru (Nickolay V. Shmyrev)
+   * si (Danishka Navin)
+   * sq (Laurent Dhima)
+   * sr (Danilo Šegan)
+   * sr@latin (Danilo Šegan)
+   * sv (Daniel Nylander
+   * ta (Tirumurthi Vasudevan)
+   * th (Theppitak Karoonboonyanan)
+   * tr (Fatih Erguven)
+   * uk (Maxim Dziumanenko)
+   * vi (Clytie Siddall)
+
+
+
+Changed in 2.19.90:
+-------------------
+
+ * Fix distcheck (Rodney Dawes)
+ * Use x-yelp-index instead of index, which unbreaks
+   some docbook files
+ * Write html on command instead of in idle, which
+   fixes info pages
+ * Update some copyrights on files
+ * Make MAINTAINERS meet bkor's high expectations
+ * Add a "phrase not found" message to the find bar
+ * Fix "info <page>" in search bar
+ * Handle malformed .so tags (Matt Keenan - bug #447107)
+ * Better handling of cross links in man pages
+   - Matthias Clasen (bug #431078)
+ * Fix crashes in various info pages
+   - Matthias Clasen (bug #430365)
+ * Remove extra markup from print dialog
+   - Christian Persch (bug #381431)
+ * Fix searching of single ':' using basic search
+   (bug #364768)
+ * Various fixes to basic search
+   - Matthias Clasen (bug #370167)
+ * Handle '\*=' escape sequence in man pages
+   - Björn Lindqvist (bug #358825)
+ * Resolve full paths given with ghelp: uri
+   (bug #464295)
+ * Reduce static data and relocations
+   - Christian Persch (bug #457082)
+ * Fix build on Solaris
+   (bug #462440)
+ * Remove c++ comment
+   (bug #462813)
+ * Mark -help contents as translatable
+   - Gabor Kelemen (bug #450168)
+ * Remove suffix from icon
+   - Sven Arvidsson (bug #463281)
+ * Make error messages less cryptic
+ * Mark print dialog title as translatable
+   - Gabor Kelemen (bug #458693)
+ * Fix building with Beagle again
+   - bug #462056
+ * Register EXSLT extensions
+   - Fixes docbook pages again
+   - Shaun McCance
+ * Updated translations:
+   * be@latin	     (Ihar Hrachyshka)
+   * bn_IN (Runa Bhattacharjee)
+   * es	   (Jorge Gonzalez)
+   * et	   (Priit Laes)
+   * eu	   (Inaki Laranaga Murgoitio)
+   * fi	   (Ilkka Tuohela)
+   * gu    (Ankit Patel)
+   * ja	   (Takeshi AIHANA)
+   * nb	   (Kjartan Maraas)
+   * pt_BR (Leonardo Ferreira Fontenelle)
+   * si	   (Danishka Navin)
+   * sv	   (Daniel Nylander)
+   * ta	   (I. Felix)
+   * th	   (Theppitak Karoonboonyanan)
+	
+Changed in 2.19.1:
+------------------
+* Merge of yelp-spoon (rework) branch
+  - Move to shiny new on-demand pager system
+  - Remove scrollkeeper in favour of Rarian
+  - Update dependancy of gnome-doc-utils to latest version
+  - Make search, man and info pages required
+  - Reduced dependance on libgnome
+  - Large cleanup of other files
+  - Improve printing
+  - Give docbook a nice TOC on the right
+  - Probably many other things I've forgotten
+
+Changed in 2.18.1:
+------------------
+* Updated translations:
+  eu     (Inaki Larranaga Murgoitio)
+  gl     (Ignacio Casal Quinteiro)
+  it     (Luca Ferretti)
+  ku     (Erdal Ronahi)
+  mk     (Jovan Naumovski)
+  sq     (Laurent Dhima)
+  sv     (Daniel Nylander)
+  tr     (Baris Cicek)
+
+Changed in 2.18.0:
+------------------
+* Fix for mozilla API change on trunk (Christian Persch)
+* Updated translations:
+  ar    (Djihed Afifi)
+  be    (Ales Nyakhaychyk)
+  fr    (Jonathan Ernst)
+  he    (Yair Hershkovitz)
+  hu    (Gabor Kelemen)
+  ku    (Erdal Ronahi)
+  lt    (Gintautas Miliauskas)
+  lv    (Raivis Dejus)
+  pl    (Marek Stepien)
+  uk    (Maxim Dziumanenko)
+
+Changed in 2.16.2:
+------------------
+* Don't crash when manpath is unavailable		    (Don Scorgie)
+* Remove markup from translated messages (#360450)	    (Elijah Newren)
+* Fix info links (#364850)		 		    (Don Scorgie)
+* Fix various search crashes (#363949, #364768)		    (Don Scorgie)
+* Don't crash when session-saving (#364790)		    (Don Scorgie)
+* More info page crash fixes (#367410, 376861, 371680)	    (Don Scorgie,
+       	    	       	     	       	       		     Matthias Clasen)
+* Fix print ranges (#370618)				    (Don Scorgie,
+      	    	   					     Christian Persch)
+* Updated Translations:
+ar.po: Djihed Afifi
+de.po: Hendrik Richter
+es.po: Francisco Javier F. Serrador
+nb.po: Kjartan Maraas
+pl.po: Marek Stepien
+
+Changed in 2.16.1:
+------------------
+* Set initial caret state properly in prefs                 (Don Scorgie)
+* Fix build with gecko trunk                                (Christian Persch)
+* Prefer xulrunner over mozilla                             (Chrisitan Persch)
+* Updated Translations:
+el: Kostas Papadimas
+en_GB: David Lodge
+gl: Ignacio Casal Quinteiro
+it: Luca Ferretti
+ka: Vladimer Sichinava
+mg: Thierry Randrianiriana
+sl: Matic Zgur
+wa: Pablo Saratxaga
+
+Changed in 2.16.0:
+-------------------
+* Fix a crash when the category is missing for a document   (Brent Smith)
+* Fix a crash with bzip streams                             (Don Scorgie)
+* Move online url to perminant address at gnome.org         (Don Scorgie)
+* Suppress critical warnings when they aren't critical      (Don Scorgie) 
+* Other info file fixes                                     (Don Scorgie)
+* Fix crash when apropos goes nuts, fixes bug #347467       (Priit Laes)
+* Fix crash on CVS info file                                (Don Scorgie)
+* Updated Translations:
+(ar)
+Vladimir Petkov (bg)
+Runa Bhattacharjee (bn_IN)
+Khandakar Mujahidul Islam (bn)
+Gil Forcada (ca)
+Rhys Jones (cy)
+Hendrik Richter (de)
+Mindu Dorji (dz)
+Kostas Papadimas (el)
+David Lodge (en_GB)
+Francisco Javier F. Serrador (es)
+Iñaki Larrañaga Murgoitio (eu)
+Sanaz Shahrokni (fa)
+Ilkka Tuohela (fi)
+Alastair McKinstry (ga)
+Ankit Patel (gu)
+Rajesh Ranjan (hi)
+Gabor Kelemen (hu)
+Satoru SATOH (ja)
+Vladimer Sichinava (ka)
+Changwoo Ryu (ko)
+Erdal Ronahi (ku)
+Gintautas Miliauskas (lt)
+Raivis Dejus (lv)
+Jovan Naumovski (mk)
+Ani Peter (ml)
+Ketaki Akade, Ashwini Trimukhe (mr)
+Wouter Bolsterlee (nl)
+Subhransu Behera (or)
+A S Alam (pa)
+Leonardo Ferreira Fontenelle (pt_BR)
+Duarte Loreto (pt)
+Mugurel Tudor (ro)
+Leonid Kanter (ru)
+Ivan Noris (sk)
+Горан Ракић (sr)
+Daniel Nylander (sv)
+drtvasudevan (ta)
+Theppitak Karoonboonyanan (th)
+Maxim Dzumanenko (uk)
+Clytie Siddall (vi)
+Funda Wang (zh_CN)
+Woodman Tuen (zh_HK)
+Woodman Tuen (zh_TW)
+
+Changed in 2.15.91:
+-------------------
+* Fix search results to be accessible                       (Don Scorgie)
+* Change "Sound & Vision" to "Sound & Video" in TOC         (Shaun McCance)
+* Fix dbus threading in some cases                          (Don Scorgie)
+* Various Cleanups                                          (Christian Persch,
+							     Brent Smith)
+* Remove online search translation.  Will be done by our
+  own script						    (Don Scorgie)
+* Updated Translations:
+bn_IN: Runa Bhattacharjee
+cs: Jakub Friedl
+de: Hendrik Richter
+es: Francisco Javier F. Serrador
+et: Priit Laes, Ivar Smolin
+eu: Inaki Larranaga
+fi: Ilkka Tuohela
+fr: Christophe Merlet
+gu: Ankit Patel
+id: Ahmad Riza H Nst
+mk: Jovan Naumovski
+mk: Jovan Naumovski
+nb: Kjartan Maraas
+nl: Tino Meinen
+th: Theppitak Karoonboonyanan
+uk: Maxim Dziumanenko
+zh_CN: Funda Wang
+
+
+Changed in 2.15.5:
+------------------
+* Select only 1 translation on the description		    (Don Scorgie)
+  in the TOC
+* Code cleanup						    (Don Scorgie)
+* Move to gtk+ printing instead of libgnomeprint	    (Don Scorgie)
+* Basic search update (bugs #341797, #341800, #347819)	    (Don Scorgie)
+	       bug #335962 on its way to being fixed
+* Bump min Beagle version to 0.2.4			    (Brent Smith)
+* Fix stale socket problem when Beagle is used (bug #348362)(Brent Smith)
+* Add a new "Repeat search online at GNOME Support Forums"
+  to search results (bug #344843)			    (Don Scorgie)
+* Updated Translations:
+ca: Gil Forcada
+cs: Jakub Friedl
+de: Hendrik Richter
+dz: Guntupalli Karunakar and Dzongkhalinux team
+el: Kostas Papadimas
+es: Francisco Javier F. Serrador
+et: Priit Laes
+eu: Inaki Larranaga
+fi: Ilkka Tuohela
+gu: Ankit Patel
+he: Yair Hershkovitz
+ko: Changwoo Ryu
+nl: Tino Meinen
+th: Theppitak Karoonboonyanan
+zh_CN: Funda Wang
+
+Changes in 2.15.4:
+------------------
+* Many TOC structure changes                                (Brent Smith)
+* On demands page loads for TOC                             (Brent Smith)
+* Expand/collapse on double-click.                          (Wouter Bolsterlee)
+* Fix to properly escape ampersand characters, fixes 343372 (Daniel Drake)
+* Add support for the yelp:cache extension element          (Brent Smith)
+* fix big memory leak (use xmlFreeDoc, not xmlFree)         (Brent Smith)
+* Fix 'unknown gecko' error output.                         (Christian Persch)
+* Remove Bonobo server file from CVS                        (Shaun McCance)
+* Use xmlNewTextChild so ampersands aren't treated as       (Shaun McCance)
+  entities                                                  
+* Don't crash on certian *Note types, fixes #344730         (Don Scorgie)
+* Updated translations:
+Vladimir Petkov (bg)
+Khandakar Mujahidul Islam (bn_IN)
+Jakub Friedl (cs)
+Hendrik Richter (de)
+"Last-Translator: Mindu Dorji\n" (dz)
+Francisco Javier F. Serrador (es)
+Priit Laes (et)
+Iñaki Larrañaga Murgoitio (eu)
+Ilkka Tuohela (fi)
+Robert-André Mauchin (fr)
+Ankit Patel (gu)
+Rajesh Ranjan (hi)
+Changwoo Ryu (ko)
+Kjartan Maraas (nb)
+Tino Meinen (nl)
+Felix (ta)
+Theppitak Karoonboonyanan (th)
+Woodman Tuen (zh_HK)
+Woodman Tuen (zh_TW)
+
+Changes in 2.15.3:
+------------------
+* New debugging infrastructure                              (Brent Smith)
+* Add support for translated man pages, fixes #343275       (Brent Smith)
+* Support private instances with -p (Bug #337540)           (Don Scorgie)
+* Switch from Bonobo to DBUS Activation                     (Don Scorgie)
+* Change 'Multimedia' category to 'Sound & Vision' for      (Don Scorgie)
+  consistency (bug #332182)
+* Don't auto-expand sections in left pane (bug #167070)     (Don Scorgie)
+* Don't use mozilla's internal string API, and drop         (Christian Persch)
+  support for gecko 1.7 and non-toolkit geckos. 
+  Bug #343950.
+* Add a deep history framework (bug #67966)                 (Don Scorgie)
+* Make *Notes into hyperlinks (bug #343524)                 (Don Scorgie)
+* Make monospace fonts change size when asked               (Don Scorgie)
+  (bug #344003)
+* Escape & characters when encountered in info              (Don Scorgie)
+  processing (fixes #343372)
+* more helpful message when there are no search results     (Frederic Peters)
+  (fixes #341798)
+* search results message can be translated                  (Frederic Peters)
+  (fixes #341689)
+* limit search results to 20 items (fixes #341434)          (Frederic Peters)
+* cleanup the man_secthash hash table when finished         (Brent Smith)
+* don't increment ptr, fixes #341827                        (Don Scorgie)
+* Fix a bunch of memory leaks                               (Don Scorgie)
+* Fix an invalid write, #342151                             (Don Scorgie)
+* NULL checking.  Suppresses critical warnings on some      (Don Scorgie)
+  info pages
+* If an info file doesn't exist, default to showing         (Don Scorgie)
+  the man page, fixes #341627
+* Fix loading of info pages from subdirectories (emacs)     (Don Scorgie)
+* Update intltool requirement to 0.35.0                     (Brent Smith)
+* Reduce strictness of searching for menus in info pages    (Don Scorgie)
+* Updated translations:
+Jakub Friedl (cs)
+Mindu Dorji (dz)
+Francisco Javier F. Serrador (es)
+Priit Laes (et)
+Iñaki Larrañaga Murgoitio (eu)
+Ankit Patel (gu)
+Raivis Dejus (lv)
+Kjartan Maraas (nb)
+Theppitak Karoonboonyanan (th)
+Pablo Saratxaga (wa)
+
+
+Changes in 2.15.2:
+------------------
+* fix the applyto element for the use_caret gconf key       (Brent Smith)
+* Workaround for manual page inclusion, fixes #340173       (Brent Smith)
+* fix to OMF cache file logic for entries with empty urls   (Brent Smith)
+* fixes for info page parsing, fixes #336838 and #339978    (Don Scorgie)
+* Many fixes for how basic search works, #331831 #339595    (Don Scorgie)
+* move find code into single function for better code reuse (Don Scorgie)
+* use po/LINGUAS                                            (Brian Pebble)
+* Updated translations:
+Hendrik Richter (de)
+Francisco Javier F. Serrador (es)
+Raivis Dejus (lv)
+Kjartan Maraas (nb)
+Tino Meinen (nl)
+Woodman Tuen (zh_HK)
+Woodman Tuen (zh_TW)
+
+Changes in 2.15.1:
+------------------
+* Fix for man cache logic and mansect elements              (Brent Smith)
+* If unable to stat a directory in the cache file, remove   (Brent Smith)
+* Fix a crash in process_omf_pending()                      (Brent Smith)
+* Fix a crash in create_toc_from_omf_cache_file()           (Brent Smith)
+* Build with xulrunner trunk (gecko 1.9). Bug #329429.      (Christian Persch)
+* Re-sync gecko.m4 with epiphany                            (Christian Persch)
+* Clean up configure.in a bit, fixes #337437                (Don Scorgie)
+* Change font size for all locales, fixes #165678           (Christian Persch)
+* Remove obsolete entry for no_NO and translation           (Kjartan Maraas)
+* Add "Contents" entry to the Help menu                     (Brent Smith)
+* fix "About this Document" sensitivity                     (Brent Smith)
+* Strip leading/trailing spaces from search terms, #334568  (Don Scorgie)
+* Add 3perl to the Perl Functions section                   (Brent Smith)
+* various beagle signal and refcount fixes, #334938         (Joe Shaw)
+* Cache information from OMF files, see bug #336699.        (Brent Smith)
+* Move to goption, bug #335874                              (Don Scorgie)
+* fix some memory leaks in TOC info pager                   (Robert Harris)
+* Display a header on the search results, #334923           (Brent Smith)
+* Don't free an object's private data                       (Brent Smith)
+* Keep track of timeout and remove when not needed, #335306 (Don Scorgie)
+* Updated translations:
+Vladimir Petkov (bg)
+Khandakar Mujahidul Islam (bn)
+Jérémy Le Floc'h (br)
+Jordi Mallach (ca)
+Lukas Novotny (cs)
+Rhys Jones (cy)
+Ivar Smolin (et)
+Ilkka Tuohela (fi)
+Laurent Richard (fr)
+Ignacio Casal Quinteiro (gl)
+Ankit Patel (gu)
+Rajesh Ranjan (hi)
+Vladimer Sichinava (ka)
+Žygimantas Beručka (lt)
+Åsmund Skjæveland (nn)
+Gora Mohanty (or)
+Bartosz Kosiorek (pl)
+Leandro A. F. Pereira (pt_BR)
+Mugurel Tudor (ro)
+Leonid Kanter (ru)
+Daniel Nylander (sv)
+Serkan Kenar (tr)
+Maxim Dzumanenko (uk)
+Clytie Siddall (vi)
+Funda Wang (zh_CN)
+
+Changes in 2.14.0:
+------------------
+* Sort search results to provide some sanity                 (Don Scorgie)
+* Fix space problem with manpage search on FreeBSD           (Don Scorgie)
+* Updated translations:
+Vladimir Petkov (bg)
+Ivar Smolin (et)
+Rajesh Ranjan (hi)
+Vladimer Sichinava (ka)
+Žygimantas Beručka (lt)
+Bartosz Kosiorek (pl)
+Leandro A. F. Pereira (pt_BR)
+Mugurel Tudor (ro)
+Leonid Kanter (ru)
+Daniel Nylander (sv)
+Maxim Dzumanenko (uk)
+
+
+Changes in 2.13.6:
+------------------
+* If beagle daemon is not running fall back to basic search  (Joe Shaw)
+* Removed redundant search text entry                        (Joe Shaw)
+* Fix some memory leaks                                      (Brent Smith)
+* Re-applied a11y patch                                      (Brent Smith)
+* set MOZ_DISABLE_PANGO in environ to fix broken characters  (Brent Smith)
+* Escape characters when searching                           (Don Scorgie)
+* Fix resizing issues by focus print preview on html widget  (Don Scorgie)
+* Updated translations:
+  Miloslav Trmac (cs)
+  Rhys Jones (cy)
+  Hendrik Richter (de)
+  Ivar Smolin (et)
+  Iñaki Larrañaga (eu)
+  Mate ORY (hu)
+  Luca Ferretti (it)
+  Takeshi AIHANA (ja)
+  Duarte Loreto (pt)
+  Abel Cheung (zh_HK)
+  Abel Cheung (zh_TW)
+
+Changes in 2.13.5:
+------------------
+* Reverted a11y patch due to issues finding registry      (Brent Smith)
+* 64-bit cleanups related to gsize                        (Robert Harris)
+* Small speedups in TOC processing                        (Brent Smith)
+* Fixed crash with malformed documents                    (Brent Smith)
+* Make relative paths work with second instance of yelp   (Brent Smith)
+* Remove references functions that no longer exist        (Brent Smith)
+* Updated translatations:
+  ca      (Josep Puigdemont i Casamajó)
+  da      (Lasse Bang Mikkelsen)
+  el      (Kostas Papadimas)
+  en_CA   (Adam Weinberger)
+  es      (Francisco Javier F. Serrador)
+  et      (Priit Laes)
+  fi      (Ilkka Tuohela)
+  gl      (Ignacio Casal Quinteiro)
+  gu      (Ankit Patel)
+  nb      (Kjartan Maraas)
+  nl      (Tino Meinen)
+  no      (Kjartan Maraas)
+  sq      (Laurent Dhima)
+  sr      (Slobodan D. Sredojevic)
+  th      (Theppitak Karoonboonyanan)
+  vi      (Clytie Siddall)
+  zh_CN   (Funda Wang)
+
+Changes in 2.13.4:
+------------------
+* Bury man and info under 'Command Line Help'             (Shaun McCance)
+* Workaround for a11y issues.  Should fix bug #157941     (Don Scorgie)
+* Added support for mapping severl man sections, #328172  (Brent Smith)
+* Fixed some memory leaks                                 (Don Scorgie)
+* More robust handling for basic search, #328464          (Don Scorgie)
+* Fixed in TOC handling, #328953                          (Brent Smith)
+* Use the new document font setting by default            (Brent Smith)
+* Fixed some C99 initializations, #328261                 (Jens Granseuer)
+* Fixed a critical warning                                (Brent Smith)
+* Use a newer Beagle for Beagle search                    (Don Scorgie)
+* More robus GConf error handling, #327826                (Brent Smith)
+* Added GTK to the desktop file categories                (Brent Smith)
+* Fixed loading of non-compressed man and info            (Don Scorgie)
+* Fixed crashes on malformed info:dir files               (Don Scorgie)
+* Fixed compilation issues on Solaris                     (Glynn Foster)
+* Updated translations:
+  bg      (Vladimir Petkov)
+  ca      (Josep Puigdemont i Casamajó)
+  da      (Lasse Bang Mikkelsen)
+  da      (Lasse Bang Mikkelsen)
+  en_CA   (Adam Weinberger)
+  es      (Francisco Javier F. Serrador)
+  fi      (Ilkka Tuohela)
+  gl      (Ignacio Casal Quinteiro)
+  gu      (Ankit Patel)
+  hu      (Gabor Kelemen)
+  lt      (Žygimantas Beručka)
+  nb      (Kjartan Maraas)
+  nl      (Tino Meinen)
+  no      (Kjartan Maraas)
+  pt_BR   (Evandro Fernandes Giovanini)
+  ru      (razi)
+  th      (Theppitak Karoonboonyanan)
+  vi      (Clytie Siddall)
+  zh_CN   (Funda Wang)
+
+Changes in 2.13.3:
+------------------
+* Enable info and man support by default
+* Add non-Beagle search fallback                        (Don Scorgie)
+* Make TOC pages XHTML strict compliant                 (Don Scorgie)
+* Fix compilation on Sun Studio                         (Glynn Foster)
+* Fix startup notification                              (Don Scorgie)
+* Update gecko detection                                (Christian Persch)
+* HIG work, #326134                                     (Dennis Cranston)
+* Search /usr/local for info files, #130245             (Don Scorgie)
+* Fix several more info page issues                     (Don Scorgie)
+* Fix some compiler warnings in debug mode              (Brent Smith)
+* Make find menu items insensitive when unavailable     (Don Scorgie)
+* Massive man page parser rework, fixing lots of bugs   (Brent Smith)
+* Fix stripping of query strings, #301741               (Shaun McCance)
+* Various bits of code cleanup                          (Kjartan Maraas,
+                                                         Christian Persch)
+* Add a find previous menu item                         (Christian Persch)
+* Autogenerate ids when unavailable, #154934            (Brent Smith)
+* Fix a crash due to bad mozilla profile, #164689       (Christian Persch)
+* Remove markup from string, #162807                    (Christian Neumair)
+* Add info pages table-of-contents                      (Don Scorgie)
+* Make HTML docs with frames work                       (Don Scorgie)
+* Cleanup of legacy files                               (Brent Smith)
+* Fix more critical issues                              (Brent Smith, Dave Malcom)
+* Don't use xslt to get title nodes                     (Don Scorgie)
+* Updated translations:
+  bg     (Vladimir Petkov)
+  ca     (Josep Puigdemont i Casamajó)
+  en_CA  (Adam Weinberger)
+  es     (Francisco Javier F. Serrador)
+  fi     (Ilkka Tuohela)
+  gl     (Ignacio Casal Quinteiro)
+  gu     (Ankit Patel)
+  ja     (Takeshi AIHANA)
+  lt     (Žygimantas Beručka)
+  nb     (Kjartan Maraas)
+  nl     (Tino Meinen)
+  no     (Kjartan Maraas)
+  sr     (Slobodan D. Sredojevic)
+  th     (Theppitak Karoonboonyanan)
+  vi     (Clytie Siddall)
+  zh_HK  (Chao-Hsiung Liao)
+  zh_TW  (Chao-Hsiung Liao)
+
+
+Changes in 2.13.2:
+------------------
+* Added printing support                   (Chris Lahey, Don Scorgie)
+* Cache man page index for faster startup times         (Brent Smith)
+* Info page improvements, info menu support             (Don Scorgie)
+* Fixed some critical warnings                          (Don Scorgie)
+* Correct a misplaced #endif                            (Matthias Clasen)
+* Use gecko.m4 from Epiphany to detect gecko            (Christian Persch)
+* Use nsIWebBrowserSetup to turn off the global history (Christian Persch)
+* Updated translations:
+  cs      (Miloslav Trmac)
+  en_CA   (Adam Weinberger)
+  gu      (Ankit Patel)
+  ja      (Takeshi AIHANA)
+  nb      (Kjartan Maraas)
+  nl      (Tino Meinen)
+  no      (Kjartan Maraas)
+  th      (Theppitak Karoonboonyanan)
+  zh_CN   (Funda Wang)
+
+Changes in 2.13.1:
+------------------
+* Beagle-based search                                       (Chris Lahey)
+* Added Find Next                                           (Don Scorgie)
+* Make the window display the man page title                (Don Scorgie)
+* Fixed CSS validation errors                               (Don Scorgie)
+* Fixed JavaScript error, #307948                           (Stuart Langridge)
+* Fixed invalid read, #166715                               (Don Scorgie)
+* Improved toc stylesheet performance                       (Brent Smith)
+* Handle xref anchors properly, #93721                      (Don Scorgie)
+* Allow compilation against xulrunner                       (Robert O'Callahan)
+* Remove warning about non existant bookmark file, #310097  (Paolo Borelli)
+* Hide the bookmarks dialog on delete_event, #319502        (Brent Smith)
+* Fixed incorrect free, #319096                             (Matthias Clasen)
+* Don't ship generated files                                (Frederic Crozat)
+* Hide the preferences dialog on delete_event, #318736      (Brent Smith)
+* Desensitive buttons when nothing selected, #318485        (Gabriel Burt)
+* Added "Copy email address" option to popup menu           (Don Scorgie)
+* Allow Enter to find next, #167420           (Jorge Bernal, Brent Smith)
+* Allow Esc to close find bar, #167414        (Jorge Bernal, Brent Smith)
+* Made the man parser ignore macros used by pod2man         (Brent Smith)
+* Handle troff \s+-[N] macros in man pages                  (Brent Smith)
+* Fix the SH, SS, and IP sibling selectors                  (Shaun McCance)
+* General cleanup                                           (Don Scorgie)
+* Updated translations:
+  bg      (Alexander Shopov)
+  bn      (Khandakar Mujahidul Islam)
+  cs      (Miloslav Trmac)
+  en_CA   (Adam Weinberger)
+  es      (Francisco Javier F. Serrador)
+  et      (Priit Laes)
+  fi      (Ilkka Tuohela)
+  gl      (Ignacio Casal Quinteiro)
+  ku      (Erdal Ronahi)
+  ky      (Timur Jamakeev)
+  nb      (Kjartan Maraas)
+  no      (Kjartan Maraas)
+  sk      (Ivan Noris)
+  sv      (Christian Rose)
+  th      (Theppitak Karoonboonyanan)
+
+Changes in 2.12.1:
+------------------
+* Updated translations:
+  ku      (Erdal Ronahi)
+  vi      (Clytie Siddall)
+
+Changes in 2.12.0:
+------------------
+* Enabled F7 keybinding, as per #157941    (Shaun McCance)
+* Don't crash on invalid DocBook, #310420  (Brent Smith)
+* Updated translations:
+  ca      (Jordi Mallach)
+  cy      (Telsa Gwynne)
+  fr      (Christophe Merlet)
+  ko      (Young-Ho Cha)
+  lt      (Žygimantas Beručka)
+  ru      (Leonid Kanter)
+  tr      (Baris Cicek)
+
+Changes in 2.11.92:
+-------------------
+* All sorts of Gecko backend stuff                 (Christian Persch)
+* Fix typo in character code in translator comment (Behdad Esfahbod)
+* Small fixes                                      (Ross Burton)
+* Fix crash                                        (Don Scorgie)
+* Updated translations:
+  el     (Nikos Charonitakis)
+  fa     (Meelad Zakaria)
+  fi     (Ilkka Tuohela)
+  gu     (Ankit Patel)
+  he     (Yuval Tanny)
+  hu     (Gabor Kelemen)
+  id     (Ahmad Riza H Nst)
+  ja     (Takeshi AIHANA)
+  nl     (Reinout van Schouwen)
+  pl     (Bartosz Kosiorek)
+  pt_BR  (Estêvão Samuel Procópio)
+  pt     (Duarte Loreto)
+  ro     (Mugurel Tudor)
+  sq     (Laurent Dhima)
+  sr     (Слободан Д. Средојевић)
+  sv     (Christian Rose)
+  th     (Theppitak Karoonboonyanan)
+  uk     (Maxim Dzumanenko)
+  vi     (Clytie Siddall)
+  zh_CN  (Funda Wang)
+  zh_TW  (Abel Cheung)
+
+Changes in 2.11.1:
+------------------
+* Made bookmark headers insensitive            (Don Scorgie)
+* Use gobject private data, fixing bug #140632 (Christian Persch)
+* All sorts of Gecko backend stuff             (Christian Persch)
+* Position the navbar at the bottom            (Shaun McCance)
+* Changed color parameters around              (Shaun McCance)
+* Added trail of links to parent sections      (Shaun McCance)
+* Added JS magic to the linktrail              (Stuart Langridge)
+* Depend on gnome-doc-utils 0.3.1              (Shaun McCance)
+* Set a minimum font size of 8pt               (Shaun McCance)
+* Updated translations:
+  bg      (Vladimir Petkov)
+  cs      (Miloslav Trmac)
+  da      (Martin Willemoes Hansen)
+  de      (Hendrik Brandt)
+  es      (Francisco Javier F. Serrador)
+  et      (Ivar Smolin)
+  gl      (Ignacio Casal Quinteiro)
+  it      (Alessio Frusciante)
+  nb      (Terance Sola)
+  nl      (Tino Meinen)
+  no      (Terance Sola)
+  sv      (Christian Rose)
+  zh_TW   (Abel Cheung)
+  en_CA   (Adam Weinberger)
+  eu      (Iñaki Larrañaga)
+  el      (Kostas Papadimas)
+
+Changes in 2.10.0:
+------------------
+* Code cleanup (Paolo Borelli)
+* More code cleanup (Kjartan Marass)
+* Still more code cleanup (Ross Burton)
+* Clean code, clean (Davyd Madeley)
+* Fixed compilation and build issues (Christian Persch)
+* Fixed (sans-X)HTML display problem (Ross Burton)
+* Somewhat better wording and organization (Shaun McCance)
+* Fix crash on links to non-existing pages (Chris Lahey)
+* Lots of bookmarks love (Don Scorgie)
+* Nice big Yelp icon on the TOC pages (Shaun McCance)
+* Other prettification work (Shaun McCance)
+* Documents should now sort semi-properly (Shaun McCance)
+* Navigation fixes for the Go menu (Shaun McCance)
+* Updated translations:
+  ar      (Arafat Medini)
+  bg      (Alexander Shopov, Vladimir Petkov)
+  ca      (Jordi Mallach)
+  cs      (Miloslav Trmac)
+  cy      (Rhys Jones)
+  da      (Ole Laursen)
+  de      (Hendrik Brandt, Frank Arnold)
+  el      (Kostas Papadimas, Nikos Charonitakis)
+  en_CA   (Adam Weinberger)
+  en_GB   (David Lodge)
+  es      (Francisco Javier F. Serrador)
+  et      (Priit Laes, Ivar Smolin)
+  eu      (Iñaki Larrañaga)
+  fi      (Pauli Virtanen)
+  fr      (Baptiste Mille-Mathias)
+  gu      (Ankit Patel)
+  hu      (Gabor Kelemen)
+  id      (Ahmad Riza H Nst)
+  ja      (Takeshi AIHANA)
+  ko      (Changwoo Ryu)
+  lt      (½ygimantas Beru­ka)
+  nb      (Kjartan Maraas)
+  ne      (Pawan Chitrakar)
+  nl      (Reinout van Schouwen, Tino Meinen)
+  nn      (Kjartan Maraas)
+  no      (Kjartan Maraas)
+  pl      (Artur Flinta)
+  pt      (Duarte Loreto)
+  pt_BR   (Raphael Higino)
+  ro      (Mugurel Tudor)
+  ru      (Leonid Kanter)
+  rw      (Steve Murphy)
+  sq      (Laurent Dhima)
+  sr      (Danilo ¦egan)
+  sr@Latn (Danilo ¦egan)
+  sv      (Christian Rose)
+  tr      (Serkan Kenar)
+  ug      (Abduxukur Abdurixit)
+  uk      (Maxim Dziumanenko)
+  wa      (Pablo Saratxaga)
+  xh      (Adi Attar)
+  zh_CN   (Funda Wang)
+  zh_TW   (GNOME HK Team)
+
+Changes in 2.9.3:
+-----------------
+* Bookmark improvements (Don Scorgie, shaunm)
+* Added the beloved navigation bar to the bottom of pages (shaunm)
+* Improvements to the Find toolbar (shaunm)
+* Got everything XMLified, no more old HTML (shaunm)
+* Updated translations:
+  bg      (Vladimir Petkov)
+  cs      (Miloslav Trmac)
+  de      (Hendrik Brandt)
+  en_CA   (Adam Weinberger)
+  es      (Francisco Javier F. Serrador)
+  et      (Priit Laes)
+  ja      (Satoru SATOH)
+  lt      (Žygimantas Beručka)
+  nb      (Kjartan Maraas)
+  nl      (Tino Meinen)
+  no      (Kjartan Maraas)
+  sv      (Christian Rose)
+
+Changes in 2.9.2:
+-----------------
+* Added bookmarks, with much work frm Don Scorgie
+* Lots of theme-aware prettification
+* Added compile-time options for man and info, both off by default
+* Massively awesome work on info from Davyd Madeley
+* More work on man pages from James Bowes
+* Fix forkbomb on man: and info: URIs
+* Moved Titlepage to File->About This Document
+* Made reloading documents work
+* Make external links actually wore, from Don Scorgie
+* Fix 'Open Link in New Window', from Don Scorgie
+* Copy and Select All work from James Bowes
+* Enable compilation against firefox, from Christian Persch
+* Updated translations:
+  bg      (Vladimir Petkov)
+  cs      (Miloslav Trmac)
+  da      (Martin Willemoes Hansen)
+  de      (Hendrik Brandt)
+  el      (Simos Xenitellis)
+  en_CA   (Adam Weinberger)
+  en_GB   (David Lodge)
+  es      (Francisco Javier F. Serrador)
+  hu      (Laszlo Dvornik)
+  ja      (Takeshi AIHANA)
+  lt      (Žygimantas Beručka)
+  ms      (Hasbullah Bin Pit)
+  nb      (Kjartan Maraas)
+  ne      (Pawan Chitrakar)
+  nl      (Tino Meinen)
+  nso     (Zuza Software Foundation)
+  ru      (Leonid Kanter)
+  sq      (Laurent Dhima)
+  sv      (Christian Rose)
+  zh_CN   (Funda Wang)
+  zu      (Dwayne Bailey)
+
+Changes in 2.9.1:
+-----------------
+* Switch to Gecko for HTML rendering, thanks to Marco Pesenti Gritti
+* Popup menus on links, thanks to Don Scorgie
+* Working Copy menu item, thanks to Don Scorgie
+* Firefox-style Find toolbar
+* Hidden 'Open Location' dialog
+* Drag and drop from the contents sidebar
+* Nearly everything responds to theme and font changes
+* Preferences for fonts
+* Using XSLT from gnome-doc-utils
+* Icon-themeable admonition graphics
+* Icon-themeable watermarks for blockquote and programlisting
+* Hooked up pager cancellation and stubs for reload
+* Lots of man page work by James Bowes
+* Better history handling when pages error out
+* Switch to GtkUIManager
+* Switch to GtkAboutDialog
+
+Changes in 2.6.0:
+-----------------
+* Fix for for #134534, portable sed usage.          (Laszlo Peter)
+* Updated translations:
+  ar      (Arafat Medini)
+  cs      (Miloslav Trmac)
+  en_GB   (Gareth Owen)
+  hu      (Andras Timar)
+  pa      (Amanpreet Singh Alam)
+  ro      (Mugurel Tudor)
+  ru      (Russian team)
+  sr      (Slobodan Sredojević)
+  sr@Latn (Slobodan Sredojević)
+  zh_CN   (jan2xue)
+
+Changes in 2.5.91:
+------------------
+* Fix for #137216, infinite loop in tree traversal.    (Shaun McCance)
+* Updated translations:
+  be      (Ales Nyakhaychyk)
+  bn      (Sayamindu Dasgupta)
+  da      (Ole Laursen)
+  el      (Nikos Charonitakis)
+  en_CA   (Alexander Winston)
+  ga      (Alastair McKinstry)
+  nn      (Åsmund Skjæveland)
+  pt_BR   (Estêvão Samuel Procópio)
+  sr      (Danilo Šegan)
+  sr@Latn (Danilo Šegan)
+  th      (Paisa Seeluangsawat)
+  uk      (Maxim Dziumanenko)
+
+Changes in 2.5.90:
+------------------
+* Fixed problem where documents in certain categories weren't
+  being displayed.                                       (Shaun McCance)
+* Fixed #134698, because people like my name.            (Shaun McCance)
+* A few stylistic changes to the HTML output.            (Shaun McCance)
+* Implement some dictionary magic from DV which fixes the problem
+  with libxslt 1.1.3 and should provide a speedup.       (Shaun McCance)
+* Updated translations:
+  az      (Mətin Əmirov)
+  et      (Priit Laes)
+  fi      (Lauri Nurmi)
+  fr      (Jean-Michel Ardantz)
+  it      (Luca Ferretti)
+  lt      (Žygimantas Beručka)
+  ta      (Dinesh Nadarajah)
+  zh_TW   (Roy Chan)
+
+Changes in 2.5.6:
+-----------------
+* Don't break with libxslt 1.1.3                           (Shaun McCance)
+* Better author/editor/othercredit support (#134769)       (Shaun McCance)
+* Portability fix in build (#134534)                        (Merino Vidal)
+* Don't crash when the window is closed before the
+  transformation is finished (#134266)                 (Jan Arne Petersen)
+* Don't crash on compulsive page switching                 (Shaun McCance)
+* Some more stylesheet work                                (Shaun McCance)
+* Translation updates:
+  ar      (Arafat Medini)
+  az      (Mətin Əmirov)
+  be      (Ales Nyakhaychyk)
+  ca      (Jordi Mallach)
+  cs      (Miloslav Trmac)
+  cy      (Rhys Jones)
+  da      (Ole Laursen)
+  de      (Christian Neumair)
+  el      (Kostas Papadimas)
+  ko      (Changwoo Ryu)
+  ja      (Takeshi AIHANA)
+  mn      (Sanlig Badral)
+  nn      (Åsmund Skjæveland)
+  no      (Kjartan Maraas)
+  pt      (Duarte Loreto)
+  sq      (Laurent Dhima)
+  sr      (Danilo Šegan)
+  sr@Latn (Danilo Šegan)
+  th      (Paisa Seeluangsawat)
+
+Changes in 2.5.5:
+-----------------
+* Fixed orphaned Contents header                       (Shaun McCance)
+* Implemented releaseinfo element                      (Shaun McCance)
+* Various stylesheet improvements and speed-ups        (Shaun McCance)
+* Stop grabbing focus on the HTML widget all the time  (Shaun McCance)
+* Leak less memory in the DocBook converter            (Shaun McCance)
+* Made the interface more responsive while transforming
+  really large documents                               (Shaun McCance)
+* Fixed stupidly wrong chunking for refentry           (Shaun McCance)
+* Fixed stupidly wrong ulink handling                  (Shaun McCance)
+* Translation updates:
+  ca      (Jordi Mallach)
+  es      (Francisco Javier F. Serrador)
+  hr      (Robert Sedak)
+  ja      (Takeshi AIHANA)
+  ko      (Changwoo Ryu)
+  mn      (Sanlig Badral)
+  nl      (Tino Meinen)
+  pl      (GNOME PL Team)
+  sq      (Laurent Dhima)
+  sv      (Christian Rose)
+  zh_CN   (Funda Wang)
+
+Changes in 2.5.4:
+-----------------
+* Massive amount of mind-numbing work in fixing various scrolling
+  issues, including pages loading at the bottom of the page (#131305)
+  and not scrolling to anchors (#93721).                  (Shaun McCance)
+* Build fix in yelp-window.c.                          (Mikael Hallendal)
+* Handle mailto: URIs correctly again.                    (Shaun McCance)
+* Fix double history problem on first page of a document. (Shaun McCance)
+* Fix history problem for any external links.             (Shaun McCance)
+* Some stylistic changes to the stylesheets.              (Shaun McCance)
+* Don't leak massive amounts of memory in yelp-window.c   (Shaun McCance)
+* Nicer automatic chunk depth determination.              (Shaun McCance)
+* Handle XInclude properly.                               (Shaun McCance)
+* Work around libxml2 bug (now fixed, but I don't want to depend
+  on that recent of a version) which caused the TOC not to get
+  loaded if there was a single bad OMF file.              (Shaun McCance)
+* Allow relative paths to file on the command line.       (Shaun McCance)
+* Updated translations:
+  az      (Mətin Əmirov)
+  cs      (Miloslav Trmac)
+  da      (Ole Laursen
+  de      (Christian Neumair)
+  el      (Kostas Papadimas)
+  es      (Francisco Javier F. Serrador)
+  fr      (Christophe Merlet)
+  ga      (Alastair McKinstry)
+  hu      (Andras Timar)
+  ja      (Takeshi AIHANA)
+  ko      (Changwoo Ryu)
+  lt      (Žygimantas Beručka)
+  ms      (Hasbullah Bin Pit)
+  nl      (Vincent van Adrighem)
+  no      (Kjartan Maraas)
+  pl      (Artur Flinta)
+  pt      (Duarte Loreto)
+  pt_BR   (Estêvão Samuel Procópio)
+  sq      (Laurent Dhima)
+  sr      (Danilo Šegan)
+  sr@Latn (Danilo Šegan)
+  sv      (Christian Rose)
+
+Changes in 2.5.3:
+-----------------
+* Previous and Next changed to Previous Page and Next Page  (Shaun McCance)
+* Set encoding to utf-8 in the generated html (#131186)     (Richard Hult)
+* New man converter, which will be totally unadvertised
+  for the 2.6 release, due to its unreadiness               (Shaun McCance)
+* i18n in place for the XSLT                                (Shaun McCance)
+* Some nice work on the test document, which though not
+  included in the release, has shown some XSLT errors       (Eric Baudais)
+* Fixes and improvements to the DocBook XSLT                (Shaun McCance)
+* Mildly better error dialogs, still need work              (Shaun McCance)
+* Some under-the-hood improvements to the TOC maker         (Shaun McCance)
+* Anchor jumping stuff, which is still giving problems      (Shaun McCance)
+* Added yelp:chunk-depth processing instruction             (Shaun McCance)
+* Handle absolute ghelp: URIs again                         (Shaun McCance)
+* Actually handle HTML pages                                (Shaun McCance)
+* Handle links to stuff that goes outside Yelp              (Shaun McCance)
+* Fix annoying whitespace problem in sidebar                (Shaun McCance)
+* Update translations:
+  ar      (Arafat Medini)
+  ca      (Jordi Mallach)
+  cs      (Miloslav Trmac)
+  de      (Christian Neumair)
+  es      (Francisco Javier F. Serrador)
+  et      (Tõivo Leedjärv)
+  fr      (Sebastien Bacher)
+  hr      (Robert Sedak) 
+  ko      (Changwoo Ryu) 
+  lt      (Žygimantas Beručka)
+  mn      (Sanlig Badral)
+  ms      (Hasbullah Bin Pit)
+  nl      (Tino Meinen)
+  nn      (Åsmund Skjæveland)
+  pl      (GNOME PL Team)
+  pt      (Duarte Loreto)
+  sr      (Danilo Šegan)
+  sr@Latn (Danilo Šegan)
+  sv      (Christian Rose)
+  ja      (Takeshi AIHANA)
+
+Changes in 2.5.2.1:
+-------------------
+* Fix the intltool 0.28 build breakage
+
+Changes in 2.5.2:
+-----------------
+* Lots and lots of work on the Find dialog          (Chee Bin HOH)
+* Page titles now show up in the titlebar           (Shaun McCance)
+* Non-existent pages are discovered faster          (Shaun McCance)
+* Sidebar selection follows loaded page again       (Shaun McCance)
+* Previous, Next, and TOC have menu items           (Shaun McCance)
+* Window icon from the icon theme, more to come     (Shaun McCance)
+* Pretty colored boxes that follow the theme        (Shaun McCance)
+* Admonition graphics work again                    (Shaun McCance)
+* Plenty more work on the DocBook XSLT              (Shaun McCance)
+* Display a busy cursor while loading               (Shaun McCance)
+* Put Titlepage and Contents in the right order     (Shaun McCance)
+* Prevent duplicate entry in history                (Shaun McCance)
+* Do startup notification right                     (Shaun McCance)
+* Various crashers and leaks fixed
+* Updated translations:
+  ar       (Arafat Medini)
+  be       (Ales Nyakhaychyk)
+  ca       (Jordi Mallach)
+  cs       (Miloslav Trmac)
+  da       (Ole Laursen)
+  de       (Christian Neumair)
+  el       (Nikos Charonitakis)
+  es       (Francisco Javier F. Serrador)
+  ja       (Takeshi AIHANA)
+  nl       (Tino Meinen)
+  nn       (Åsmund Skjæveland)
+  pl       (GNOME PL Team)
+  sr       (Danilo Šegan)
+  sr@Latn  (Danilo Šegan)
+  sv       (Christian Rose)
+
+Changes in 2.5.1:
+-----------------
+* Remove empty Categories headers from TOC      (Shaun McCance)
+* Back, Forward, and Find in Page are back      (Chee Bin HOH)  
+* Crashes found and fixed:
+  Joe Markus Clarke (2)
+  Diego González    (1)
+  Shaun McCance     (1)
+* Updated translations:
+  cs      (Miloslav Trmac)
+  lt      (Žygimantas Beručka)
+  mn      (Sanlig Badral)
+  nl      (Tino Meinen)
+  sr      (Danilo Šegan)
+  sr@Latn (Danilo Šegan)
+  th      (Paisa Seeluangsawat)
+  fr      (Jean-Michel Ardantz)
+
+Changes in 2.5.0:
+-----------------
+Completely new transformation system.  This is really just a whole
+slew of changes that I just can't list.  The transformations are
+done entirely differently, in-process, and unthreaded.  A YelpPager
+is used to hold the transformation, and it emits signals when pages
+are ready to be displayed.  The "views" are removed from YelpWindow,
+because everything goes through YelpPager, and it's considerably
+simpler.  There are a lot of regressions and breakages, but the
+new infastructure will prove itself.            (Shaun McCance)
+
+Changes in 2.3.6:
+-----------------
+* A11y fixes to the contents view, #89838       (Shaun McCance)
+* A11y fixes to info viewing, #89838            (Shaun McCance)
+* Updated translations
+  (pt, ja, hi, zh_CN, es and sr)
+
+Changes in 2.3.4:
+-----------------
+* move man and info help converters into Yelp	(Anders Carlsson
+* add StarupNotify support			(Jordi Mallach)
+* additional language support for stylesheets	(Glynn foster, Mike Lei)
+* improve style guide compliance		(Alex Duggan)
+* better warning if document does not exist	(Mikael Hallendal)
+* truly massive stylesheet improvements		(Shaun McCance)
+
+
+Changes in 2.3.3:
+-----------------
+* About window fixes                            (Alex Duggan, Steven Chaplin)
+* Memory leak fixes                             (Narayana Pattipati,
+                                                 Mikael Hallendal,
+						 Kjartan Maraas)
+* Expand the contents tree correctly            (Narayana Pattipati, 
+                                                 Mikael Hallendal)
+* New translations
+  (bn, ga, sr, cy, li)
+* Updated translations
+  (ja, zh_TW, sv, cs, he, sq, ga, fr, es, de, ca, ms, pt, da, be, nl)
+
+Changes in 2.3.0: 
+-----------------
+* Lots of updates to the stylesheets
+* Removed support for gtkthml1 (no CSS)
+* Removed the 'gman' symlink (#103750)
+* Fixed the command line argument parsing
+* Updated translations
+  (mn, id, kn, fa, th, is, eo, ml, de,          
+   fi, zh_TW, zh_CN, ro, es, it, pt, am,       
+   tr, nl, be, th, he)
+
+Changes in 2.2.0:
+-----------------
+* Updated translations
+  (hi, he, vi, de)                              (Christian Neumair,
+                                                 Pablo Saratxaga,
+                                                 Toivo,
+                                                 Gil Osher,
+                                                 Naba Kumar)
+
+Changes in 2.1.5:
+-----------------
+* Stylesheet fixes                              (Padraig O'Briain)
+* Hide unimplemented search options             (Richard Hult)
+* Updated translations 
+  (am, hi, ko, ru, sq, ta)
+
+Changes in 2.1.4:
+-----------------
+* Updated translations 
+  (am, bg, ca, el, es, ja, lv, no, pl, pt_BR, sk, wa)
+
+Changes in 2.1.3:
+-----------------
+* Multihead fix                                 (Mark McLoughlin)
+* Updated translations 
+  (be, fr, hu, da, nl, am, de, fr, sq,
+   bg, zh_CN, sv, pt_BR, ca, no, ms)            (Dmitry G. Mastrukov
+                                                 Christophe Merlet
+                                                 Andras Timar
+                                                 Ole Laursen
+                                                 Vincent van Adrighem
+                                                 Daniel Yacob 
+                                                 Christian Neumair
+                                                 Jean-Michel Ardantz
+                                                 Laurent Dhima
+                                                 Alexander Shopov
+                                                 He Qiangqiang
+                                                 Christian Rose
+                                                 Evandro Fernandes Giovanini
+                                                 Jordi Mallach
+                                                 Kjartan Maraas
+                                                 Hasbullah bin Pit)
+                                                                                                              
+Changes in 2.1.2:
+-----------------
+
+* Search in page                                (Richard Hult)
+* Fixes to yelp-pregenerate                     (Richard Hult)
+* Updated Norwegian (bokmål) translation        (Kjartan Maraas)
+
+Changes in 2.1.1:
+-----------------
+
+* i18n fixes to stylesheets                     (Marius Andreiana)
+* Use GnomeApp instead of GtkWindow             (Paolo Maggi)
+* Fix crash when loading external files         (Mikael Hallendal,
+                                                 Paolo Maggi)
+* Support 'yelp index:' to show index page      (Mikael Hallendal)
+* Updated hungarian translation                 (Andras Timar)
+
+Changes in 2.1.0:
+-----------------
+
+* Added pregeneration of HTML cache.            (Narayana Pattipati)
+* Stylesheet updates                            (sander Vesik)
+* Internal cleanups                             (Mikael Hallendal)
+* a11y fix                                      (Padraig O'Briain)
+* Linking error                                 (Mikael Hallendal)
+
+Changes in 1.0.6:
+-----------------
+
+* Fixed build error on AIX, xlC compiler        (Benjamin Thery)
+* Updated translations (ca)
+* Added translations (ro, cs)
+
+Changes in 1.0.5:
+-----------------
+
+* Fixed a bug causing weird behaviour in the 
+  Content view                                  (Kristian Rietveld)
+
+Changes in 1.0.4:
+-----------------
+
+* Fixed so that background color isn't always 
+  white                                         (Padraig O'Briain)
+* Fixed the desktop file so it validates        (Ross Burton)
+* a11y fix                                      (Padraig O'Briain)
+* Fixed bug causing Yelp to hang on certain 
+  HTML pages                                    (Mikael Hallendal)
+* Updated translation (el).
+
+Changes in 1.0.3:
+-----------------
+
+* Fixed a bug that caused Yelp to segfault on 
+  startup if you used MANPATH instead of 
+  manpath                                       (Mikael Hallendal)
+* Stylesheet improvments                        (Sander Vesik)
+* Updated translations (pt)			(Duarte Loreto)
+
+Changes in 1.0.2:
+-----------------
+
+* Fixed missing info pages and sort info pages  (Mikael Hallendal)
+* Remove duplications in manpath                (Yogeesh MB)
+* Support for gnome2-*2html in libexec          (Brian Cameron)
+* Buffer overflow fix                           (Laavanya K R)
+* Stylesheet fixes                              (Sander Vesik)
+* Fixes for toolbar style                       (Kang Jeong-Hee)
+* Fixed window icon and about box icon          (Nicholas Curran)
+* Various minor fixes                           (Mikael Hallendal,
+					         Padraig O'Briain)
+* Updated translations 
+  (lv, de, am, ca, bg, sv, et, ru, pl, no, sk, fr, ms, ko, nl, da, 
+   wa, vi, hu)
+
+Changes in 1.0.1:
+-----------------
+
+* Updated translations (am, gl, zh_TW, bg)
+
+Changes in 1.0:
+---------------
+
+* Updated translations (nl, ru, ca, et, sv)
+
+Changes in 0.10:
+----------------
+ 
+* Show the open section in the TOC tree          (Mikael Hallendal)
+* Re enabled viewing documents in the index view (Mikael Hallendal)
+* Handle info:dir                                (Mikael Hallendal)
+* Set window title to say which document is 
+  displayed                                      (Mikael Hallendal)
+* Ship docbook DTD                               (Mikael Hallendal)
+* Don't hard code font sizes                     (Mikael Hallendal,
+					 	  Bill Haneman)
+* Fix bug hat made index page only work for 
+  first window                                   (Mikael Hallendal)
+* Better error handling                          (Mikael Hallendal)
+* Fixed session bug (#82605)                     (Yogeesh MB)
+* Fixes to db2html                               (Mikael Hallendal,
+						  James Henstridge)
+
+Changes in 0.9.1:
+-----------------
+
+* Shipping the 1.48 stylesheets with Yelp        (Mikael Hallendal)
+
+Changes in 0.9:
+---------------
+
+* Caching docbook in memory for faster access    (Mikael Hallendal)
+* Fixed bug that caused crashes on Solaris       (Mikael Hallendal) 
+* View info pages in chunks                      (Patanjali Somayaji)
+* Fixed mem leaks                                (Mikael Hallendal,
+					  	  Richard Hult)
+* Stylesheet updates                             (Sander Vesik)
+
+Changes in 0.8:
+---------------
+
+* Async reading of all documents                 (Mikael Hallendal)
+* New nice look from Jimmacs mockups             (Mikael Hallendal,
+                                                  Jakub Steiner)
+* Added support for gtkhtml1                     (Mikael Hallendal)
+* Plugged lots of mem leaks                      (Mikael Hallendal)
+* Fixed the nasty bug that made it crash on      (Mikael Hallendal,
+  Debian unstable.                                Stéphane Démurget)
+* Various bugfixes                               (Mikael Hallendal)
+* Stylesheets improvments                        (Sander Vesik)
+
+Changes in 0.7:
+---------------
+
+* Stylesheets improvement                        (Sander Vesik)
+* URI fixing, now fully support jrb's 
+  uri-scheme                                     (Mikael Hallendal)
+* Cleaned up the error-reporting on stdout       (Mikael Hallendal)
+* Bugfixes for the index-searching               (Mikael Hallendal)
+
+Changes in 0.6.1:
+-----------------
+
+* Docbook fixes                                  (John Fleck)
+* Handle HTML-pages better                       (Mikael Hallendal)
+* Stylesheet updates                             (Sander Vesik)
+* man/info-fix fixing a bug resulting in 
+  sometime man/info didn't get displayed at all  (Mikael Hallendal)
+* Man-fixes when viewing man-pages with a .so 
+  in them.                                       (Mikael Hallendal)
+
+
+Changes in 0.6:
+---------------
+
+* Made the TOC view look better                  (Mikael Hallendal,
+					 	  Tammy Fox)
+* Better error handling when viewing docbook     (Mikael Hallendal)
+* Docbook speedups                               (Mikael Hallendal)
+* Chunking stylesheet fixes                      (Sander Vesik)
+* Fixed a couple of Calum's usability issues     (Mikael Hallendal)
+* Use toolbar settings from GConf                (Mikael Hallendal)
+* Style fixes in the index view                  (Richard Hult)
+* Fixed memory leaks                             (Padraig O'Briain
+						  Mikael Hallendal)
+
+Changes in 0.5:
+---------------
+
+* Support for INFOPATH                           (Mikael Hallendal)
+* Faster in-doc browsing .                       (Mikael Hallendal)
+* Fixed bugs: #72637, #72965, #75081             (Mikael Hallendal)
+* UTF8 Fix                                       (Zbigniew Chyla)
+* Accessibility fixes                            (Padraig O'Briain,
+					 	  Jagadeesh B. G)
+
+Changes in 0.4:
+---------------
+
+* Session management                             (Sandeep V Honde)
+
+Changes in 0.3:
+---------------
+
+* gnome-help symlink                        	 (Alex Larsson)
+* history fixes                            	 (Mikael Hallendal)
+* Added support for index search          	 (Mikael Hallendal)
+* Changed strings suggested by Calum      	 (Mikael Hallendal)
+* Added Go menu with toolbar alternatives 	 (Mikael Hallendal)
+* Lots of bugfixes                               (Mikael Hallendal)

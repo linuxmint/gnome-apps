@@ -1,0 +1,21 @@
+Description: Remove "Search for packages" feature since it doesn't
+ work with Ubuntu's default install. We apparently need to implement
+ org.freedesktop.PackageKit.Modify.InstallProvideFiles
+Forwarded: not-needed
+Bug: https://bugs.launchpad.net/bugs/838540
+Author: Jeremy Bicha <jbicha@ubuntu.com>
+Index: yelp/libyelp/yelp-view.c
+===================================================================
+--- yelp.orig/libyelp/yelp-view.c	2013-05-25 20:42:37.882227947 -0600
++++ yelp/libyelp/yelp-view.c	2013-05-25 20:42:37.874227947 -0600
+@@ -1734,10 +1734,6 @@
+             scheme = "ghelp";
+             pkg = struri + 6;
+         }
+-        if (pkg != NULL)
+-            content_end = g_markup_printf_escaped ("<p><a href='install-%s:%s'>%s</a></p>",
+-                                                   scheme, pkg,
+-                                                   _("Search for packages containing this document."));
+         g_free (struri);
+     }
+ 

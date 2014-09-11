@@ -1,0 +1,1014 @@
+/* -*- Mode: C; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 4 -*- */
+/*
+ * Copyright (C) 2003-2009 Shaun McCance  <shaunm@gnome.org>
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation; either version 2 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public
+ * License along with this program; if not, write to the
+ * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ * Boston, MA 02111-1307, USA.
+ *
+ * Author: Shaun McCance  <shaunm@gnome.org>
+ */
+
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
+#include <glib.h>
+#include <glib/gi18n.h>
+#include <gtk/gtk.h>
+#include <libxml/parser.h>
+#include <libxml/parserInternals.h>
+#include <libxml/xinclude.h>
+
+#include "yelp-docbook-document.h"
+#include "yelp-error.h"
+#include "yelp-settings.h"
+#include "yelp-storage.h"
+#include "yelp-transform.h"
+#include "yelp-debug.h"
+
+#define STYLESHEET DATADIR"/yelp/xslt/db2html.xsl"
+#define DEFAULT_CATALOG "file:///etc/xml/catalog"
+#define YELP_CATALOG "file://"DATADIR"/yelp/dtd/catalog"
+
+typedef enum {
+    DOCBOOK_STATE_BLANK,   /* Brand new, run transform as needed */
+    DOCBOOK_STATE_PARSING, /* Parsing/transforming document, please wait */
+    DOCBOOK_STATE_PARSED,  /* All done, if we ain't got it, it ain't here */
+    DOCBOOK_STATE_STOP     /* Stop everything now, object to be disposed */
+} DocbookState;
+
+enum {
+    DOCBOOK_COLUMN_ID,
+    DOCBOOK_COLUMN_TITLE
+};
+
+static void           yelp_docbook_document_class_init      (YelpDocbookDocumentClass *klass);
+static void           yelp_docbook_document_init            (YelpDocbookDocument      *docbook);
+static void           yelp_docbook_document_dispose         (GObject                  *object);
+static void           yelp_docbook_document_finalize        (GObject                  *object);
+
+static void           docbook_index             (YelpDocument         *document);
+static gboolean       docbook_request_page      (YelpDocument         *document,
+                                                 const gchar          *page_id,
+                                                 GCancellable         *cancellable,
+                                                 YelpDocumentCallback  callback,
+                                                 gpointer              user_data);
+
+static void           docbook_process           (YelpDocbookDocument  *docbook);
+static void           docbook_disconnect        (YelpDocbookDocument  *docbook);
+
+static void           docbook_walk              (YelpDocbookDocument  *docbook);
+static gboolean       docbook_walk_chunkQ       (YelpDocbookDocument  *docbook,
+                                                 xmlNodePtr            cur,
+                                                 gint                  depth,
+                                                 gint                  max_depth);
+static gboolean       docbook_walk_divisionQ    (YelpDocbookDocument  *docbook,
+                                                 xmlNodePtr            cur);
+static gchar *        docbook_walk_get_title    (YelpDocbookDocument  *docbook,
+                                                 xmlNodePtr            cur);
+
+static void           transform_chunk_ready     (YelpTransform        *transform,
+                                                 gchar                *chunk_id,
+                                                 YelpDocbookDocument  *docbook);
+static void           transform_finished        (YelpTransform        *transform,
+                                                 YelpDocbookDocument  *docbook);
+static void           transform_error           (YelpTransform        *transform,
+                                                 YelpDocbookDocument  *docbook);
+static void           transform_finalized       (YelpDocbookDocument  *docbook,
+                                                 gpointer              transform);
+
+G_DEFINE_TYPE (YelpDocbookDocument, yelp_docbook_document, YELP_TYPE_DOCUMENT);
+#define GET_PRIV(object) (G_TYPE_INSTANCE_GET_PRIVATE ((object), YELP_TYPE_DOCBOOK_DOCUMENT, YelpDocbookDocumentPrivate))
+
+typedef struct _YelpDocbookDocumentPrivate  YelpDocbookDocumentPrivate;
+struct _YelpDocbookDocumentPrivate {
+    YelpUri       *uri;
+
+    DocbookState   state;
+
+    GMutex         mutex;
+    GThread       *thread;
+
+    GThread       *index;
+    gboolean       index_running;
+
+    gboolean       process_running;
+    gboolean       transform_running;
+
+    YelpTransform *transform;
+    guint          chunk_ready;
+    guint          finished;
+    guint          error;
+
+    xmlDocPtr     xmldoc;
+    xmlNodePtr    xmlcur;
+    gint          max_depth;
+    gint          cur_depth;
+    gchar        *cur_page_id;
+    gchar        *cur_prev_id;
+    gchar        *root_id;
+};
+
+/******************************************************************************/
+
+static void
+yelp_docbook_document_class_init (YelpDocbookDocumentClass *klass)
+{
+    GObjectClass      *object_class   = G_OBJECT_CLASS (klass);
+    YelpDocumentClass *document_class = YELP_DOCUMENT_CLASS (klass);
+    const gchar *catalog = g_getenv ("XML_CATALOG_FILES");
+
+    /* We ship a faux DocBook catalog. It just contains the common entity
+     * definitions. Documents can use the named entities they expect to
+     * be able to use, but we don't have to depend on docbook-dtds.
+     */
+    if (catalog == NULL)
+        catalog = DEFAULT_CATALOG;
+    if (!strstr(catalog, YELP_CATALOG)) {
+        gchar *newcat = g_strconcat (YELP_CATALOG, " ", catalog, NULL);
+        g_setenv ("XML_CATALOG_FILES", newcat, TRUE);
+        g_free (newcat);
+    }
+
+    object_class->dispose = yelp_docbook_document_dispose;
+    object_class->finalize = yelp_docbook_document_finalize;
+
+    document_class->index = docbook_index;
+    document_class->request_page = docbook_request_page;
+
+    g_type_class_add_private (klass, sizeof (YelpDocbookDocumentPrivate));
+}
+
+static void
+yelp_docbook_document_init (YelpDocbookDocument *docbook)
+{
+    YelpDocbookDocumentPrivate *priv = GET_PRIV (docbook);
+
+    priv->state = DOCBOOK_STATE_BLANK;
+
+    g_mutex_init (&priv->mutex);
+}
+
+static void
+yelp_docbook_document_dispose (GObject *object)
+{
+    YelpDocbookDocumentPrivate *priv = GET_PRIV (object);
+
+    if (priv->uri) {
+        g_object_unref (priv->uri);
+        priv->uri = NULL;
+    }
+
+    G_OBJECT_CLASS (yelp_docbook_document_parent_class)->dispose (object);
+}
+
+static void
+yelp_docbook_document_finalize (GObject *object)
+{
+    YelpDocbookDocumentPrivate *priv = GET_PRIV (object);
+
+    if (priv->xmldoc)
+        xmlFreeDoc (priv->xmldoc);
+
+    g_free (priv->cur_page_id);
+    g_free (priv->cur_prev_id);
+    g_free (priv->root_id);
+
+    g_mutex_clear (&priv->mutex);
+
+    G_OBJECT_CLASS (yelp_docbook_document_parent_class)->finalize (object);
+}
+
+/******************************************************************************/
+
+YelpDocument *
+yelp_docbook_document_new (YelpUri *uri)
+{
+    YelpDocbookDocument *docbook;
+    YelpDocbookDocumentPrivate *priv;
+    gchar *doc_uri;
+
+    g_return_val_if_fail (uri != NULL, NULL);
+
+    doc_uri = yelp_uri_get_document_uri (uri);
+    docbook = (YelpDocbookDocument *) g_object_new (YELP_TYPE_DOCBOOK_DOCUMENT,
+                                                    "document-uri", doc_uri,
+                                                    NULL);
+    g_free (doc_uri);
+    priv = GET_PRIV (docbook);
+
+    priv->uri = g_object_ref (uri);
+
+    return (YelpDocument *) docbook;
+}
+
+/******************************************************************************/
+
+static gboolean
+docbook_request_page (YelpDocument         *document,
+                      const gchar          *page_id,
+                      GCancellable         *cancellable,
+                      YelpDocumentCallback  callback,
+                      gpointer              user_data)
+{
+    YelpDocbookDocumentPrivate *priv = GET_PRIV (document);
+    gchar *docuri;
+    GError *error;
+    gboolean handled;
+
+    debug_print (DB_FUNCTION, "entering\n");
+    debug_print (DB_ARG, "    page_id=\"%s\"\n", page_id);
+
+    if (page_id == NULL)
+        page_id = "//index";
+
+    handled =
+        YELP_DOCUMENT_CLASS (yelp_docbook_document_parent_class)->request_page (document,
+                                                                                page_id,
+                                                                                cancellable,
+                                                                                callback,
+                                                                                user_data);
+    if (handled) {
+        return handled;
+    }
+
+    g_mutex_lock (&priv->mutex);
+
+    switch (priv->state) {
+    case DOCBOOK_STATE_BLANK:
+        priv->state = DOCBOOK_STATE_PARSING;
+        priv->process_running = TRUE;
+        g_object_ref (document);
+        priv->thread = g_thread_new ("docbook-page",
+                                     (GThreadFunc) docbook_process,
+                                     document);
+        break;
+    case DOCBOOK_STATE_PARSING:
+        break;
+    case DOCBOOK_STATE_PARSED:
+    case DOCBOOK_STATE_STOP:
+        docuri = yelp_uri_get_document_uri (priv->uri);
+        error = g_error_new (YELP_ERROR, YELP_ERROR_NOT_FOUND,
+                             _("The page ‘%s’ was not found in the document ‘%s’."),
+                             page_id, docuri);
+        g_free (docuri);
+        yelp_document_signal (document, page_id,
+                              YELP_DOCUMENT_SIGNAL_ERROR,
+                              error);
+        g_error_free (error);
+        break;
+    }
+
+    g_mutex_unlock (&priv->mutex);
+    return FALSE;
+}
+
+/******************************************************************************/
+
+static void
+docbook_process (YelpDocbookDocument *docbook)
+{
+    YelpDocbookDocumentPrivate *priv = GET_PRIV (docbook);
+    YelpDocument *document = YELP_DOCUMENT (docbook);
+    GFile *file = NULL;
+    gchar *filepath = NULL;
+    xmlDocPtr xmldoc = NULL;
+    xmlChar *id = NULL;
+    xmlParserCtxtPtr parserCtxt = NULL;
+    GError *error;
+    gint  params_i = 0;
+    gchar **params = NULL;
+
+    debug_print (DB_FUNCTION, "entering\n");
+
+    file = yelp_uri_get_file (priv->uri);
+    if (file == NULL) {
+        error = g_error_new (YELP_ERROR, YELP_ERROR_NOT_FOUND,
+                             _("The file does not exist."));
+        yelp_document_error_pending (document, error);
+        g_error_free (error);
+        goto done;
+    }
+
+    filepath = g_file_get_path (file);
+    g_object_unref (file);
+    if (!g_file_test (filepath, G_FILE_TEST_IS_REGULAR)) {
+        error = g_error_new (YELP_ERROR, YELP_ERROR_NOT_FOUND,
+                             _("The file ‘%s’ does not exist."),
+                             filepath);
+        yelp_document_error_pending (document, error);
+        g_error_free (error);
+        goto done;
+    }
+
+    parserCtxt = xmlNewParserCtxt ();
+    xmldoc = xmlCtxtReadFile (parserCtxt,
+                              filepath, NULL,
+                              XML_PARSE_DTDLOAD | XML_PARSE_NOCDATA |
+                              XML_PARSE_NOENT   | XML_PARSE_NONET   );
+
+    if (xmldoc == NULL) {
+        error = g_error_new (YELP_ERROR, YELP_ERROR_PROCESSING,
+                             _("The file ‘%s’ could not be parsed because it is"
+                               " not a well-formed XML document."),
+                             filepath);
+        yelp_document_error_pending (document, error);
+        g_error_free (error);
+        goto done;
+    }
+
+    if (xmlXIncludeProcessFlags (xmldoc,
+                                 XML_PARSE_DTDLOAD | XML_PARSE_NOCDATA |
+                                 XML_PARSE_NOENT   | XML_PARSE_NONET   )
+        < 0) {
+        error = g_error_new (YELP_ERROR, YELP_ERROR_PROCESSING, 
+                             _("The file ‘%s’ could not be parsed because"
+                               " one or more of its included files is not"
+                               " a well-formed XML document."),
+                             filepath);
+        yelp_document_error_pending (document, error);
+        g_error_free (error);
+        goto done;
+    }
+
+    g_mutex_lock (&priv->mutex);
+    if (!xmlStrcmp (xmlDocGetRootElement (xmldoc)->name, BAD_CAST "book"))
+        priv->max_depth = 2;
+    else
+        priv->max_depth = 1;
+
+    priv->xmldoc = xmldoc;
+    priv->xmlcur = xmlDocGetRootElement (xmldoc);
+
+    id = xmlGetProp (priv->xmlcur, BAD_CAST "id");
+    if (!id)
+        id = xmlGetNsProp (priv->xmlcur, XML_XML_NAMESPACE, BAD_CAST "id");
+
+    if (id) {
+        priv->root_id = g_strdup ((const gchar *) id);
+        yelp_document_set_page_id (document, NULL, (gchar *) id);
+        yelp_document_set_page_id (document, "//index", (gchar *) id);
+    }
+    else {
+        priv->root_id = g_strdup ("//index");
+        yelp_document_set_page_id (document, NULL, "//index");
+        /* add the id attribute to the root element with value "index"
+         * so when we try to load the document later, it doesn't fail */
+        if (priv->xmlcur->ns)
+            xmlNewNsProp (priv->xmlcur,
+                          xmlNewNs (priv->xmlcur, XML_XML_NAMESPACE, BAD_CAST "xml"),
+                          BAD_CAST "id", BAD_CAST "//index");
+        else
+            xmlNewProp (priv->xmlcur, BAD_CAST "id", BAD_CAST "//index");
+    }
+    yelp_document_set_root_id (document, priv->root_id, priv->root_id);
+    g_mutex_unlock (&priv->mutex);
+
+    g_mutex_lock (&priv->mutex);
+    if (priv->state == DOCBOOK_STATE_STOP) {
+        g_mutex_unlock (&priv->mutex);
+        goto done;
+    }
+    g_mutex_unlock (&priv->mutex);
+
+    docbook_walk (docbook);
+
+    g_mutex_lock (&priv->mutex);
+    if (priv->state == DOCBOOK_STATE_STOP) {
+        g_mutex_unlock (&priv->mutex);
+        goto done;
+    }
+
+    priv->state = DOCBOOK_STATE_PARSED;
+
+    priv->transform = yelp_transform_new (STYLESHEET);
+    priv->chunk_ready =
+        g_signal_connect (priv->transform, "chunk-ready",
+                          (GCallback) transform_chunk_ready,
+                          docbook);
+    priv->finished =
+        g_signal_connect (priv->transform, "finished",
+                          (GCallback) transform_finished,
+                          docbook);
+    priv->error =
+        g_signal_connect (priv->transform, "error",
+                          (GCallback) transform_error,
+                          docbook);
+
+    params = yelp_settings_get_all_params (yelp_settings_get_default (), 2, &params_i);
+    params[params_i++] = g_strdup ("db.chunk.max_depth");
+    params[params_i++] = g_strdup_printf ("%i", priv->max_depth);
+    params[params_i] = NULL;
+
+    priv->transform_running = TRUE;
+    yelp_transform_start (priv->transform,
+                          priv->xmldoc,
+                          NULL,
+			  (const gchar * const *) params);
+    g_strfreev (params);
+    g_mutex_unlock (&priv->mutex);
+
+ done:
+    g_free (filepath);
+    if (id)
+        xmlFree (id);
+    if (parserCtxt)
+        xmlFreeParserCtxt (parserCtxt);
+
+    priv->process_running = FALSE;
+    g_object_unref (docbook);
+}
+
+static void
+docbook_disconnect (YelpDocbookDocument *docbook)
+{
+    YelpDocbookDocumentPrivate *priv = GET_PRIV (docbook);
+    if (priv->chunk_ready) {
+        g_signal_handler_disconnect (priv->transform, priv->chunk_ready);
+        priv->chunk_ready = 0;
+    }
+    if (priv->finished) {
+        g_signal_handler_disconnect (priv->transform, priv->finished);
+        priv->finished = 0;
+    }
+    if (priv->error) {
+        g_signal_handler_disconnect (priv->transform, priv->error);
+        priv->error = 0;
+    }
+    yelp_transform_cancel (priv->transform);
+    g_object_unref (priv->transform);
+    priv->transform = NULL;
+    priv->transform_running = FALSE;
+}
+
+/******************************************************************************/
+
+static void
+docbook_walk (YelpDocbookDocument *docbook)
+{
+    static       gint autoid = 0;
+    gchar        autoidstr[20];
+    xmlChar     *id = NULL;
+    xmlChar     *title = NULL;
+    gchar       *old_page_id = NULL;
+    xmlNodePtr   cur, old_cur;
+    gboolean chunkQ;
+    YelpDocbookDocumentPrivate *priv = GET_PRIV (docbook);
+    YelpDocument *document = YELP_DOCUMENT (docbook);
+
+    debug_print (DB_FUNCTION, "entering\n");
+    debug_print (DB_DEBUG, "  priv->xmlcur->name: %s\n", priv->xmlcur->name);
+
+    /* Check for the db.chunk.max_depth PI and set max chunk depth */
+    if (priv->cur_depth == 0)
+        for (cur = priv->xmlcur; cur; cur = cur->prev)
+            if (cur->type == XML_PI_NODE)
+                if (!xmlStrcmp (cur->name, (const xmlChar *) "db.chunk.max_depth")) {
+                    gint max = atoi ((gchar *) cur->content);
+                    if (max)
+                        priv->max_depth = max;
+                    break;
+                }
+
+    id = xmlGetProp (priv->xmlcur, BAD_CAST "id");
+    if (!id)
+        id = xmlGetNsProp (priv->xmlcur, XML_XML_NAMESPACE, BAD_CAST "id");
+
+    if (docbook_walk_divisionQ (docbook, priv->xmlcur) && !id) {
+        /* If id attribute is not present, autogenerate a
+         * unique value, and insert it into the in-memory tree */
+        g_snprintf (autoidstr, 20, "//autoid-%d", ++autoid);
+        if (priv->xmlcur->ns) {
+            xmlNewNsProp (priv->xmlcur,
+                          xmlNewNs (priv->xmlcur, XML_XML_NAMESPACE, BAD_CAST "xml"),
+                          BAD_CAST "id", BAD_CAST autoidstr);
+            id = xmlGetNsProp (priv->xmlcur, XML_XML_NAMESPACE, BAD_CAST "id");
+        }
+        else {
+            xmlNewProp (priv->xmlcur, BAD_CAST "id", BAD_CAST autoidstr);
+            id = xmlGetProp (priv->xmlcur, BAD_CAST "id"); 
+        }
+    }
+
+    if (docbook_walk_chunkQ (docbook, priv->xmlcur, priv->cur_depth, priv->max_depth)) {
+        title = BAD_CAST docbook_walk_get_title (docbook, priv->xmlcur);
+
+        debug_print (DB_DEBUG, "  id: \"%s\"\n", id);
+        debug_print (DB_DEBUG, "  title: \"%s\"\n", title);
+
+        yelp_document_set_page_title (document, (gchar *) id, (gchar *) title);
+
+        if (priv->cur_prev_id) {
+            yelp_document_set_prev_id (document, (gchar *) id, priv->cur_prev_id);
+            yelp_document_set_next_id (document, priv->cur_prev_id, (gchar *) id);
+            g_free (priv->cur_prev_id);
+        }
+        priv->cur_prev_id = g_strdup ((gchar *) id);
+
+        if (priv->cur_page_id)
+            yelp_document_set_up_id (document, (gchar *) id, priv->cur_page_id);
+        old_page_id = priv->cur_page_id;
+        priv->cur_page_id = g_strdup ((gchar *) id);
+    }
+
+    old_cur = priv->xmlcur;
+    priv->cur_depth++;
+    if (id) {
+        yelp_document_set_root_id (document, (gchar *) id, priv->root_id);
+        yelp_document_set_page_id (document, (gchar *) id, priv->cur_page_id);
+    }
+
+    chunkQ = docbook_walk_chunkQ (docbook, priv->xmlcur, priv->cur_depth, priv->max_depth);
+    if (chunkQ)
+        yelp_document_signal (YELP_DOCUMENT (docbook),
+                              priv->cur_page_id,
+                              YELP_DOCUMENT_SIGNAL_INFO,
+                              NULL);
+
+    for (cur = priv->xmlcur->children; cur; cur = cur->next) {
+        if (cur->type == XML_ELEMENT_NODE) {
+            priv->xmlcur = cur;
+            docbook_walk (docbook);
+        }
+    }
+    priv->cur_depth--;
+    priv->xmlcur = old_cur;
+
+    if (priv->cur_depth == 0) {
+        g_free (priv->cur_prev_id);
+        priv->cur_prev_id = NULL;
+
+        g_free (priv->cur_page_id);
+        priv->cur_page_id = NULL;
+    }
+
+    if (id != NULL)
+        xmlFree (id);
+    if (title != NULL)
+        xmlFree (title);
+}
+
+static gboolean
+docbook_walk_chunkQ (YelpDocbookDocument *docbook,
+                     xmlNodePtr           cur,
+                     gint                 cur_depth,
+                     gint                 max_depth)
+{
+    if (cur_depth <= max_depth)
+        return docbook_walk_divisionQ (docbook, cur);
+    else
+        return FALSE;
+}
+
+static gboolean
+docbook_walk_divisionQ (YelpDocbookDocument *docbook, xmlNodePtr node)
+{
+    return (!xmlStrcmp (node->name, (const xmlChar *) "appendix")     ||
+            !xmlStrcmp (node->name, (const xmlChar *) "article")      ||
+            !xmlStrcmp (node->name, (const xmlChar *) "book")         ||
+            !xmlStrcmp (node->name, (const xmlChar *) "bibliography") ||
+            !xmlStrcmp (node->name, (const xmlChar *) "bibliodiv")    ||
+            !xmlStrcmp (node->name, (const xmlChar *) "chapter")      ||
+            !xmlStrcmp (node->name, (const xmlChar *) "colophon")     ||
+            !xmlStrcmp (node->name, (const xmlChar *) "dedication")   ||
+            !xmlStrcmp (node->name, (const xmlChar *) "glossary")     ||
+            !xmlStrcmp (node->name, (const xmlChar *) "glossdiv")     ||
+            !xmlStrcmp (node->name, (const xmlChar *) "lot")          ||
+            !xmlStrcmp (node->name, (const xmlChar *) "index")        ||
+            !xmlStrcmp (node->name, (const xmlChar *) "part")         ||
+            !xmlStrcmp (node->name, (const xmlChar *) "preface")      ||
+            !xmlStrcmp (node->name, (const xmlChar *) "reference")    ||
+            !xmlStrcmp (node->name, (const xmlChar *) "refentry")     ||
+            !xmlStrcmp (node->name, (const xmlChar *) "sect1")        ||
+            !xmlStrcmp (node->name, (const xmlChar *) "sect2")        ||
+            !xmlStrcmp (node->name, (const xmlChar *) "sect3")        ||
+            !xmlStrcmp (node->name, (const xmlChar *) "sect4")        ||
+            !xmlStrcmp (node->name, (const xmlChar *) "sect5")        ||
+            !xmlStrcmp (node->name, (const xmlChar *) "section")      ||
+            !xmlStrcmp (node->name, (const xmlChar *) "set")          ||
+            !xmlStrcmp (node->name, (const xmlChar *) "setindex")     ||
+            !xmlStrcmp (node->name, (const xmlChar *) "simplesect")   ||
+            !xmlStrcmp (node->name, (const xmlChar *) "toc")          );
+}
+
+static gchar *
+docbook_walk_get_title (YelpDocbookDocument *docbook,
+                        xmlNodePtr           cur)
+{
+    YelpDocbookDocumentPrivate *priv = GET_PRIV (docbook);
+    gchar *infoname = NULL;
+    xmlNodePtr child = NULL;
+    xmlNodePtr title = NULL;
+    xmlNodePtr title_tmp = NULL;
+
+    if (!xmlStrcmp (cur->name, BAD_CAST "refentry")) {
+        /* The title for a refentry element can come from the following:
+         *   refmeta/refentrytitle
+         *   refentryinfo/title[abbrev]
+         *   refnamediv/refname
+         * We take the first one we find.
+         */
+        for (child = cur->children; child; child = child->next) {
+            if (!xmlStrcmp (child->name, BAD_CAST "refmeta")) {
+                for (title = child->children; title; title = title->next) {
+                    if (!xmlStrcmp (title->name, BAD_CAST "refentrytitle"))
+                        break;
+                }
+                if (title)
+                    goto done;
+            }
+            else if (!xmlStrcmp (child->name, BAD_CAST "refentryinfo")) {
+                for (title = child->children; title; title = title->next) {
+                    if (!xmlStrcmp (title->name, BAD_CAST "titleabbrev"))
+                        break;
+                    else if (!xmlStrcmp (title->name, BAD_CAST "title"))
+                        title_tmp = title;
+                }
+                if (title)
+                    goto done;
+                else if (title_tmp) {
+                    title = title_tmp;
+                    goto done;
+                }
+            }
+            else if (!xmlStrcmp (child->name, BAD_CAST "refnamediv")) {
+                for (title = child->children; title; title = title->next) {
+                    if (!xmlStrcmp (title->name, BAD_CAST "refname"))
+                        break;
+                    else if (!xmlStrcmp (title->name, BAD_CAST "refpurpose")) {
+                        title = NULL;
+                        break;
+                    }
+                }
+                if (title)
+                    goto done;
+            }
+            else if (!xmlStrncmp (child->name, BAD_CAST "refsect", 7))
+                break;
+        }
+    }
+    else {
+        /* The title for other elements appears in the following:
+         *   title[abbrev]
+         *   *info/title[abbrev]
+         *   blockinfo/title[abbrev]
+         *   objectinfo/title[abbrev]
+         * We take them in that order.
+         */
+        xmlNodePtr infos[3] = {NULL, NULL, NULL};
+        int i;
+
+        infoname = g_strdup_printf ("%sinfo", cur->name);
+
+        for (child = cur->children; child; child = child->next) {
+            if (!xmlStrcmp (child->name, BAD_CAST "titleabbrev")) {
+                title = child;
+                goto done;
+            }
+            else if (!xmlStrcmp (child->name, BAD_CAST "title"))
+                title_tmp = child;
+            else if (!xmlStrcmp (child->name, BAD_CAST "info"))
+                infos[0] = child;
+            else if (!xmlStrcmp (child->name, BAD_CAST infoname))
+                infos[0] = child;
+            else if (!xmlStrcmp (child->name, BAD_CAST "blockinfo"))
+                infos[1] = child;
+            else if (!xmlStrcmp (child->name, BAD_CAST "objectinfo"))
+                infos[2] = child;
+        }
+
+        if (title_tmp) {
+            title = title_tmp;
+            goto done;
+        }
+
+        for (i = 0; i < 3; i++) {
+            child = infos[i];
+            if (child) {
+                for (title = child->children; title; title = title->next) {
+                    if (!xmlStrcmp (title->name, BAD_CAST "titleabbrev"))
+                        goto done;
+                    else if (!xmlStrcmp (title->name, BAD_CAST "title"))
+                        title_tmp = title;
+                }
+                if (title_tmp) {
+                    title = title_tmp;
+                    goto done;
+                }
+            }
+        }
+    }
+
+ done:
+    g_free (infoname);
+
+    if (title) {
+        xmlChar *title_s = xmlNodeGetContent (title);
+        gchar *ret = g_strdup (title_s);
+        xmlFree (title_s);
+        return ret;
+    }
+    else
+        return g_strdup (_("Unknown"));
+}
+
+/******************************************************************************/
+
+static void
+transform_chunk_ready (YelpTransform       *transform,
+                       gchar               *chunk_id,
+                       YelpDocbookDocument *docbook)
+{
+    YelpDocbookDocumentPrivate *priv = GET_PRIV (docbook);
+    gchar *content;
+
+    debug_print (DB_FUNCTION, "entering\n");
+    g_assert (transform == priv->transform);
+
+    if (priv->state == DOCBOOK_STATE_STOP) {
+        docbook_disconnect (docbook);
+        return;
+    }
+
+    content = yelp_transform_take_chunk (transform, chunk_id);
+    yelp_document_give_contents (YELP_DOCUMENT (docbook),
+                                 chunk_id,
+                                 content,
+                                 "application/xhtml+xml");
+
+    yelp_document_signal (YELP_DOCUMENT (docbook),
+                          chunk_id,
+                          YELP_DOCUMENT_SIGNAL_CONTENTS,
+                          NULL);
+}
+
+static void
+transform_finished (YelpTransform       *transform,
+                    YelpDocbookDocument *docbook)
+{
+    YelpDocbookDocumentPrivate *priv = GET_PRIV (docbook);
+    gchar *docuri;
+    GError *error;
+
+    debug_print (DB_FUNCTION, "entering\n");
+    g_assert (transform == priv->transform);
+
+    if (priv->state == DOCBOOK_STATE_STOP) {
+        docbook_disconnect (docbook);
+        return;
+    }
+
+    docbook_disconnect (docbook);
+
+    /* We want to free priv->xmldoc, but we can't free it before transform
+       is finalized.   Otherwise, we could crash when YelpTransform frees
+       its libxslt resources.
+     */
+    g_object_weak_ref ((GObject *) transform,
+                       (GWeakNotify) transform_finalized,
+                       docbook);
+
+    docuri = yelp_uri_get_document_uri (priv->uri);
+    error = g_error_new (YELP_ERROR, YELP_ERROR_NOT_FOUND,
+                         _("The requested page was not found in the document ‘%s’."),
+                         docuri);
+    g_free (docuri);
+    yelp_document_error_pending ((YelpDocument *) docbook, error);
+    g_error_free (error);
+}
+
+static void
+transform_error (YelpTransform       *transform,
+                 YelpDocbookDocument *docbook)
+{
+    YelpDocbookDocumentPrivate *priv = GET_PRIV (docbook);
+    GError *error;
+
+    debug_print (DB_FUNCTION, "entering\n");
+    g_assert (transform == priv->transform);
+
+    if (priv->state == DOCBOOK_STATE_STOP) {
+        docbook_disconnect (docbook);
+        return;
+    }
+
+    error = yelp_transform_get_error (transform);
+    yelp_document_error_pending ((YelpDocument *) docbook, error);
+    g_error_free (error);
+
+    docbook_disconnect (docbook);
+}
+
+static void
+transform_finalized (YelpDocbookDocument *docbook,
+                     gpointer             transform)
+{
+    YelpDocbookDocumentPrivate *priv = GET_PRIV (docbook);
+ 
+    debug_print (DB_FUNCTION, "entering\n");
+
+    if (priv->xmldoc)
+	xmlFreeDoc (priv->xmldoc);
+    priv->xmldoc = NULL;
+}
+
+/******************************************************************************/
+
+static gboolean
+docbook_index_done (YelpDocbookDocument *docbook)
+{
+    g_object_set (docbook, "indexed", TRUE, NULL);
+    g_object_unref (docbook);
+    return FALSE;
+}
+
+typedef struct {
+    YelpDocbookDocument *docbook;
+    xmlDocPtr doc;
+    xmlNodePtr cur;
+    gchar *doc_uri;
+    GString *str;
+    gint depth;
+    gint max_depth;
+} DocbookIndexData;
+
+static void
+docbook_index_node (DocbookIndexData *index)
+{
+    xmlNodePtr oldcur, child;
+    YelpDocbookDocumentPrivate *priv = GET_PRIV (index->docbook);
+
+    if ((g_str_equal (index->cur->parent->name, "menuchoice") ||
+         g_str_equal (index->cur->parent->name, "keycombo")) &&
+        index->cur->prev != NULL) {
+        g_string_append_c (index->str, ' ');
+    }
+    if (index->cur->type == XML_TEXT_NODE) {
+        g_string_append (index->str, index->cur->content);
+        return;
+    }
+    if (index->cur->type != XML_ELEMENT_NODE ||
+        g_str_has_suffix (index->cur->name, "info") ||
+        g_str_equal (index->cur->name, "remark"))
+        return;
+    oldcur = index->cur;
+    for (child = index->cur->children; child; child = child->next) {
+        index->cur = child;
+        docbook_index_node (index);
+        index->cur = oldcur;
+    }
+}
+
+static void
+docbook_index_chunk (DocbookIndexData *index)
+{
+    xmlChar *id;
+    xmlNodePtr child;
+    gchar *title = NULL;
+    GSList *chunks = NULL;
+    YelpDocbookDocumentPrivate *priv = GET_PRIV (index->docbook);
+
+    id = xmlGetProp (index->cur, BAD_CAST "id");
+    if (id != NULL) {
+        title = docbook_walk_get_title (index->docbook, index->cur);
+        if (index->cur->parent->parent == NULL)
+            yelp_storage_set_root_title (yelp_storage_get_default (),
+                                         index->doc_uri, title);
+        index->str = g_string_new ("");
+    }
+
+    for (child = index->cur->children; child = child->next; child) {
+        if (docbook_walk_chunkQ (index->docbook, child, index->depth, index->max_depth)) {
+            chunks = g_slist_append (chunks, child);
+        }
+        else if (id != NULL) {
+            xmlNodePtr oldcur = index->cur;
+            index->cur = child;
+            docbook_index_node (index);
+            index->cur = oldcur;
+        }
+    }
+
+    if (id != NULL) {
+        YelpUri *uri;
+        gchar *full_uri, *tmp, *body;
+
+        body = g_string_free (index->str, FALSE);
+        index->str = NULL;
+
+        tmp = g_strconcat ("xref:", id, NULL);
+        uri = yelp_uri_new_relative (priv->uri, tmp);
+        g_free (tmp);
+        yelp_uri_resolve_sync (uri);
+        full_uri = yelp_uri_get_canonical_uri (uri);
+        g_object_unref (uri);
+
+        yelp_storage_update (yelp_storage_get_default (),
+                             index->doc_uri, full_uri,
+                             title, "", "yelp-page-symbolic",
+                             body);
+        if (index->cur->parent->parent == NULL)
+            yelp_storage_set_root_title (yelp_storage_get_default (),
+                                         index->doc_uri, title);
+        g_free (full_uri);
+        g_free (body);
+        g_free (title);
+        xmlFree (id);
+    }
+
+    index->depth++;
+    while (chunks != NULL) {
+        xmlNodePtr oldcur = index->cur;
+        index->cur = (xmlNodePtr) chunks->data;
+        docbook_index_chunk(index);
+        index->cur = oldcur;
+        chunks = g_slist_delete_link (chunks, chunks);
+    }
+    index->depth--;
+}
+
+static void
+docbook_index_threaded (YelpDocbookDocument *docbook)
+{
+    DocbookIndexData *index = NULL;
+    xmlParserCtxtPtr parserCtxt = NULL;
+    GFile *file = NULL;
+    gchar *filename = NULL;
+    YelpDocbookDocumentPrivate *priv = GET_PRIV (docbook);
+
+    file = yelp_uri_get_file (priv->uri);
+    if (file == NULL)
+        goto done;
+    filename = g_file_get_path (file);
+
+    index = g_new0 (DocbookIndexData, 1);
+    index->docbook = docbook;
+    index->doc_uri = yelp_uri_get_document_uri (priv->uri);
+
+    parserCtxt = xmlNewParserCtxt ();
+    index->doc = xmlCtxtReadFile (parserCtxt, filename, NULL,
+                                  XML_PARSE_DTDLOAD | XML_PARSE_NOCDATA |
+                                  XML_PARSE_NOENT   | XML_PARSE_NONET   );
+    if (index->doc == NULL)
+        goto done;
+    if (xmlXIncludeProcessFlags (index->doc,
+                                 XML_PARSE_DTDLOAD | XML_PARSE_NOCDATA |
+                                 XML_PARSE_NOENT   | XML_PARSE_NONET   )
+        < 0)
+        goto done;
+
+    index->cur = xmlDocGetRootElement (index->doc);
+    index->depth = 0;
+    if (!xmlStrcmp (index->cur->name, BAD_CAST "book"))
+        index->max_depth = 2;
+    else
+        index->max_depth = 1;
+    docbook_index_chunk (index);
+
+ done:
+    if (file != NULL)
+        g_object_unref (file);
+    if (filename != NULL)
+        g_free (filename);
+    if (index->doc != NULL)
+        xmlFreeDoc (index->doc);
+    if (index->doc_uri != NULL)
+        g_free (index->doc_uri);
+    if (index != NULL)
+        g_free (index);
+    if (parserCtxt != NULL)
+        xmlFreeParserCtxt (parserCtxt);
+
+    priv->index_running = FALSE;
+    g_idle_add ((GSourceFunc) docbook_index_done, docbook);
+}
+
+static void
+docbook_index (YelpDocument *document)
+{
+    YelpDocbookDocumentPrivate *priv;
+    gboolean done;
+
+    g_object_get (document, "indexed", &done, NULL);
+    if (done)
+        return;
+
+    priv = GET_PRIV (document);
+    g_object_ref (document);
+    priv->index = g_thread_new ("docbook-index",
+                                (GThreadFunc) docbook_index_threaded,
+                                document);
+    priv->index_running = TRUE;
+}
