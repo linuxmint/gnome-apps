@@ -55,11 +55,6 @@ static void           help_list_process_docbook      (YelpHelpList          *lis
 static void           help_list_process_mallard      (YelpHelpList          *list,
                                                       HelpListEntry         *entry);
 
-static const char*const known_vendor_prefixes[] = { "gnome",
-                                                    "fedora",
-                                                    "mozilla",
-                                                    NULL };
-
 struct _HelpListEntry
 {
     gchar *id;
@@ -398,14 +393,13 @@ help_list_think (YelpHelpList *list)
         app = g_desktop_app_info_new (tmp);
         g_free (tmp);
 
-        if (app == NULL) {
-            char **prefix;
-            for (prefix = (char **) known_vendor_prefixes; *prefix; prefix++) {
-                tmp = g_strconcat (*prefix, "-", entryid, ".desktop", NULL);
-                app = g_desktop_app_info_new (tmp);
-                g_free (tmp);
-                if (app)
-                    break;
+        if (app == NULL) {                                
+            GtkIconInfo *info = gtk_icon_theme_lookup_icon (theme, "text-x-readme", 22, GTK_ICON_LOOKUP_NO_SVG);
+            if (info != NULL) {
+                const gchar *iconfile = gtk_icon_info_get_filename (info);
+                if (iconfile)
+                    entry->icon = g_filename_to_uri (iconfile, NULL, NULL);
+                gtk_icon_info_free (info);
             }
         }
 

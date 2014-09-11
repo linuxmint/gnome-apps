@@ -360,6 +360,7 @@ docbook_process (YelpDocbookDocument *docbook)
         priv->root_id = g_strdup ((const gchar *) id);
         yelp_document_set_page_id (document, NULL, (gchar *) id);
         yelp_document_set_page_id (document, "//index", (gchar *) id);
+        yelp_document_set_page_icon (document, (gchar *) id, g_strdup ("text-x-readme"));
     }
     else {
         priv->root_id = g_strdup ("//index");
