@@ -48,7 +48,7 @@ enum {
     READ_LATER_CHANGED,
     LAST_SIGNAL
 };
-static gint signals[LAST_SIGNAL] = { 0 };
+static guint signals[LAST_SIGNAL] = { 0 };
 
 G_GNUC_NORETURN static gboolean
 option_version_cb (const gchar *option_name,
