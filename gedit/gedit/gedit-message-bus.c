@@ -141,7 +141,7 @@ enum
 	LAST_SIGNAL
 };
 
-static guint message_bus_signals[LAST_SIGNAL];
+static guint message_bus_signals[LAST_SIGNAL] = { 0 };
 
 static void gedit_message_bus_dispatch_real (GeditMessageBus *bus,
 				 	     GeditMessage    *message);
