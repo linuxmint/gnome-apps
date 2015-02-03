@@ -396,6 +396,8 @@ location_entry_constructed (GObject *object)
     GtkTreeIter iter;
     YelpLocationEntryPrivate *priv = GET_PRIV (object);
 
+    G_OBJECT_CLASS (yelp_location_entry_parent_class)->constructed (object);
+
     /* Set up the text entry child */
     priv->text_entry = gtk_bin_get_child (GTK_BIN (object));
     gtk_entry_set_icon_from_icon_name (GTK_ENTRY (priv->text_entry),
