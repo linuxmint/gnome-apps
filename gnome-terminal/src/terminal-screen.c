@@ -279,7 +279,7 @@ window_uses_argb_visual (TerminalScreen *screen)
   TerminalWindow *window;
 
   window = terminal_screen_get_window (screen);
-  if (window == NULL || !gtk_widget_get_realized (GTK_WIDGET (window)))
+  if (window == NULL)
     return FALSE;
 
   return terminal_window_uses_argb_visual (window);
@@ -1021,9 +1021,10 @@ terminal_screen_profile_notify_cb (TerminalProfile *profile,
         }
       
       /* FIXME: Don't enable this if we have a compmgr. */
-      vte_terminal_set_background_transparent (vte_terminal,
-                                               bg_type == TERMINAL_BACKGROUND_TRANSPARENT &&
-                                               !window_uses_argb_visual (screen));
+      if (window && gtk_widget_get_realized (GTK_WIDGET (window)))
+          vte_terminal_set_background_transparent (vte_terminal,
+                                                   bg_type == TERMINAL_BACKGROUND_TRANSPARENT &&
+                                                   !window_uses_argb_visual (screen));
     }
 
   if (!prop_name || prop_name == I_(TERMINAL_PROFILE_BACKSPACE_BINDING))
