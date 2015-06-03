@@ -1,3 +1,11 @@
+gnome-terminal (3.6.2.2) betsy; urgency=medium
+
+  * terminal-screen.c: Fixed freeze with hi-res displays with hidpi enabled.
+  * Dropped obsolete add_alt_screen_toggle feature
+  * zero-initialize signals arrays and fixed a va_list issue
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 03 Jun 2015 17:09:27 +0200
+
 gnome-terminal (3.6.2.1) betsy; urgency=medium
 
   * Fixed profile edit screen in GTK 3.14
