@@ -279,10 +279,6 @@ profile_notify_sensitivity_cb (TerminalProfile *profile,
     SET_SENSITIVE ("scroll-on-output-checkbutton",
                    !terminal_profile_property_locked (profile, TERMINAL_PROFILE_SCROLL_ON_OUTPUT));
 
-  if (!prop_name || prop_name == I_(TERMINAL_PROFILE_ALTERNATE_SCREEN_SCROLL))
-    SET_SENSITIVE ("alternate-screen-scroll-checkbutton",
-                   !terminal_profile_property_locked (profile, TERMINAL_PROFILE_ALTERNATE_SCREEN_SCROLL));
-
   if (!prop_name || prop_name == I_(TERMINAL_PROFILE_EXIT_ACTION))
     SET_SENSITIVE ("exit-action-combobox",
                    !terminal_profile_property_locked (profile, TERMINAL_PROFILE_EXIT_ACTION));
@@ -918,7 +914,6 @@ terminal_profile_edit (TerminalProfile *profile,
   CONNECT ("scrollbar-position-combobox", TERMINAL_PROFILE_SCROLLBAR_POSITION);
   CONNECT ("scroll-on-keystroke-checkbutton", TERMINAL_PROFILE_SCROLL_ON_KEYSTROKE);
   CONNECT ("scroll-on-output-checkbutton", TERMINAL_PROFILE_SCROLL_ON_OUTPUT);
-  CONNECT ("alternate-screen-scroll-checkbutton", TERMINAL_PROFILE_ALTERNATE_SCREEN_SCROLL);
   CONNECT ("show-menubar-checkbutton", TERMINAL_PROFILE_DEFAULT_SHOW_MENUBAR);
   CONNECT ("solid-radiobutton", TERMINAL_PROFILE_BACKGROUND_TYPE);
   CONNECT ("system-font-checkbutton", TERMINAL_PROFILE_USE_SYSTEM_FONT);

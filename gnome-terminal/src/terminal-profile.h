@@ -94,7 +94,6 @@ typedef enum
 #define TERMINAL_PROFILE_SCROLLBAR_POSITION     "scrollbar-position"
 #define TERMINAL_PROFILE_SCROLL_ON_KEYSTROKE    "scroll-on-keystroke"
 #define TERMINAL_PROFILE_SCROLL_ON_OUTPUT       "scroll-on-output"
-#define TERMINAL_PROFILE_ALTERNATE_SCREEN_SCROLL "alternate-screen-scroll"
 #define TERMINAL_PROFILE_SILENT_BELL            "silent-bell"
 #define TERMINAL_PROFILE_TITLE_MODE             "title-mode"
 #define TERMINAL_PROFILE_TITLE                  "title"
