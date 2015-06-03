@@ -304,7 +304,7 @@ static void ensure_pixbuf_property (TerminalProfile *profile,
                                     guint pixbuf_prop_id,
                                     gboolean *load_failed);
 
-static guint signals[LAST_SIGNAL];
+static guint signals[LAST_SIGNAL] = { 0 };
 static GQuark gconf_key_quark;
 
 G_DEFINE_TYPE (TerminalProfile, terminal_profile, G_TYPE_OBJECT);
