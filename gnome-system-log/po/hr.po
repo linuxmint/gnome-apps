@@ -5,54 +5,71 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:36-0400\n"
-"PO-Revision-Date: 2008-04-15 00:46+0000\n"
-"Last-Translator: Launchpad Translations Administrators <rosetta@launchpad."
-"net>\n"
+"POT-Creation-Date: 2016-05-03 19:40+0200\n"
+"PO-Revision-Date: 2016-05-03 21:01+0200\n"
+"Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2008-05-27 22:39+0000\n"
-"X-Generator: Launchpad (build Unknown)\n"
+"X-Launchpad-Export-Date: 2016-05-03 17:28+0000\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #: ../data/gnome-system-log.desktop.in.in.h:1
-#, fuzzy
 msgid "Log File Viewer"
-msgstr "Preglednik dnevnika"
+msgstr "Preglednik datoteka zapisa"
 
 #: ../data/gnome-system-log.desktop.in.in.h:2
 msgid "View or monitor system log files"
-msgstr ""
+msgstr "Pogledajte ili nadzirite datoteke zapisa sustava"
 
 #: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:1
+msgid "Log file to open up on startup"
+msgstr "Datoteka zapisa za otvaranje pri pokretanju"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
+msgid ""
+"Specifies the log file displayed at startup. The default is either /var/adm/"
+"messages or /var/log/messages, depending on your operating system."
+msgstr ""
+"Određuje datoteku zapisa koja će se prikazati pri pokretanju programa. "
+"Uobičajeno je ili /var/adm/messages ili /var/log/messages, što ovisi o vašem "
+"operativnom sustavu."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
+msgid "Size of the font used to display the log"
+msgstr "Veličina slova korištenog za prikaz zapisa"
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr ""
+"Određuje veličinu slova nepromjenjive širine korištenog za prikaz zapisa u "
+"glavnom pogledu stabla. Širina je uzeta iz zadane veličine slova terminala."
+
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
 msgid "Height of the main window in pixels"
 msgstr "Visina glavnog prozora u pikselima"
 
-#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:2
-msgid "List of saved filters"
-msgstr ""
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "Određuje visinu glavnog prozora preglednika zapisa u pikselima."
 
-#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:3
-msgid "List of saved regexp filters"
-msgstr ""
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+msgid "Width of the main window in pixels"
+msgstr "Širina glavnog prozora u pikselima"
 
-#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:4
-msgid "Log file to open up on startup"
-msgstr "Log datoteka koju treba otvoriti prilikom pokretanja"
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "Određuje širinu glavnog prozora preglednika dnevnika u pikselima."
 
-#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:5
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
 msgid "Log files to open up on startup"
 msgstr "Dnevnici za otvaranje prilikom pokretanja programa"
 
-#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:6
-msgid "Size of the font used to display the log"
-msgstr "Veličina fonta korištenog za prikaz dnevnika"
-
-#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:7
+#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
 msgid ""
 "Specifies a list of log files to open up at startup. A default list is "
 "created by reading /etc/syslog.conf."
@@ -60,65 +77,41 @@ msgstr ""
 "Određuje popis dnevnika koji će se otvoriti prilikom pokretanja programa. "
 "Uobičajen popis je kreiran čitanjem /etc/syslog.conf."
 
-#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:8
-msgid "Specifies the height of the log viewer main window in pixels."
-msgstr "Određuje visinu glavnog prozora preglednika dnevnika u pikselima."
-
-#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:9
-msgid ""
-"Specifies the log file displayed at startup. The default is either /var/adm/"
-"messages or /var/log/messages, depending on your operating system."
-msgstr ""
-"Određuje dnevnik koji će biti prikazan prilikom pokretanja programa. "
-"Uobičajeni je ili /var/adm/messages ili /var/log/messages, u zavisnosti od "
-"vašeg operativnog sustava."
-
-#: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:10
-msgid ""
-"Specifies the size of the fixed-width font used to display the log in the "
-"main tree view. The default is taken from the default terminal font size."
-msgstr ""
-"Određuje veličinu fonta jednake širine korištenog za prikaz dnevnika u "
-"glavnom pogledu stabla. Uobičajeni je uzet iz uobičajene veličine fonta "
-"terminala."
-
 #: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:11
-msgid "Specifies the width of the log viewer main window in pixels."
-msgstr "Određuje širinu glavnog prozora preglednika dnevnika u pikselima."
+msgid "List of saved filters"
+msgstr "Popis spremljenih filtara"
 
 #: ../data/org.gnome.gnome-system-log.gschema.xml.in.h:12
-msgid "Width of the main window in pixels"
-msgstr "Širina glavnog prozora u pikselima"
+msgid "List of saved regexp filters"
+msgstr "Popis spremljenih regexp filtara"
 
 #: ../data/logview-filter.ui.h:1
-msgid "Background:"
-msgstr ""
+msgid "_Name:"
+msgstr "_Naziv"
 
 #: ../data/logview-filter.ui.h:2
-#, fuzzy
-msgid "Effect:"
-msgstr "efekt"
+msgid "_Regular Expression:"
+msgstr "_Uobičajni izrazi (regexp):"
 
 #: ../data/logview-filter.ui.h:3
-msgid "Foreground:"
-msgstr ""
+msgid "Highlight"
+msgstr "Istakni"
 
 #: ../data/logview-filter.ui.h:4
 msgid "Hide"
-msgstr ""
+msgstr "Sakrij"
 
 #: ../data/logview-filter.ui.h:5
-msgid "Highlight"
-msgstr ""
+msgid "Foreground:"
+msgstr "Prednji plan:"
 
 #: ../data/logview-filter.ui.h:6
-msgid "_Name:"
-msgstr "_Ime"
+msgid "Background:"
+msgstr "Pozadina:"
 
 #: ../data/logview-filter.ui.h:7
-#, fuzzy
-msgid "_Regular Expression:"
-msgstr "Ime odgovara regularnom izrazu"
+msgid "Effect:"
+msgstr "Efekt:"
 
 #: ../src/logview-about.h:49
 msgid ""
@@ -127,6 +120,10 @@ msgid ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
 msgstr ""
+"Ovaj program je slobodni softver; možete ga redistribuirati i/ili mijenjati "
+"ga pod uvjetima GNU opće javne licence koju objavljuje Zaklada za Slobodni "
+"softver (Free Software Foundation); ili verzija 2 ove licence ili (prema "
+"vašem izboru) bilo koja kasnija verzija."
 
 #: ../src/logview-about.h:53
 msgid ""
@@ -135,6 +132,9 @@ msgid ""
 "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 "more details."
 msgstr ""
+"Ovaj program se distribuira u nadi da će biti koristan, ali bez IKAKVOG "
+"JAMSTVA; čak i bez impliciranog jamstva UTRŽIVOSTI ili PRILAGOĐENOSTI ZA "
+"ODREĐENU SVRHU. Pogledajte GNU Opću javnu licencu za više detalja."
 
 #: ../src/logview-about.h:57
 msgid ""
@@ -142,317 +142,349 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 51 "
 "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
 msgstr ""
+"Uz ovaj program ste trebali dobiti kopiju GNU opće javne licence. Ako niste, "
+"pišite Zakladi za slobodan softver na adresu Free Software Foundation, Inc., "
+"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA."
 
 #. translator credits
 #: ../src/logview-about.h:63
-#, fuzzy
 msgid "translator-credits"
 msgstr ""
-"lokalizacija@linux.hr\n"
-"  Automatski Prijevod <>\n"
-"  Danijel Studen <dstuden@vuka.hr>\n"
-"  Denis Lackovic <delacko@linux.hr>\n"
-"  Robert Sedak <robert.sedak@sk.t-com.hr>\n"
-"\n"
 "Launchpad Contributions:\n"
-"  Ante Karamatić https://launchpad.net/~ivoks\n"
-"  Launchpad Translations Administrators https://launchpad.net/~rosetta-"
-"admins\n"
-"  Mario Đanić https://launchpad.net/~mario-danic\n"
-"  Senko Rasic https://launchpad.net/~senko\n"
-"  majstor https://launchpad.net/~lcosic"
+"  Launchpad Translations Administrators https://launchpad.net/~rosetta\n"
+"  antisa https://launchpad.net/~antisa\n"
+"  gogo https://launchpad.net/~trebelnik-stefina"
 
 #: ../src/logview-app.c:377
 #, c-format
 msgid "Impossible to open the file %s"
-msgstr ""
+msgstr "Nemoguće otvoriti datoteku %s"
 
 #: ../src/logview-filter-manager.c:94
-#, fuzzy
 msgid "Filter name is empty!"
-msgstr "Datoteka je prazna"
+msgstr "Naziv filtra je prazan!"
 
 #: ../src/logview-filter-manager.c:107
 msgid "Filter name may not contain the ':' character"
-msgstr ""
+msgstr "Naziv filtra ne može sadržavati znak \":\""
 
 #: ../src/logview-filter-manager.c:130
 msgid "Regular expression is empty!"
-msgstr ""
+msgstr "Uobičajeni izraz je prazan!"
 
 #: ../src/logview-filter-manager.c:146
 #, c-format
 msgid "Regular expression is invalid: %s"
-msgstr ""
+msgstr "Uobičajeni izraz nije valjan: %s"
 
-#: ../src/logview-filter-manager.c:242
+#: ../src/logview-filter-manager.c:240
 msgid "Please specify either foreground or background color!"
-msgstr ""
+msgstr "Odredite ili boju prednjeg plana ili pozadine!"
 
-#: ../src/logview-filter-manager.c:296
+#: ../src/logview-filter-manager.c:294
 msgid "Edit filter"
-msgstr ""
+msgstr "Uredi filtar"
 
-#: ../src/logview-filter-manager.c:296
+#: ../src/logview-filter-manager.c:294
 msgid "Add new filter"
-msgstr ""
+msgstr "Dodaj novi filtar"
 
-#: ../src/logview-filter-manager.c:506
-#, fuzzy
+#: ../src/logview-filter-manager.c:507
 msgid "Filters"
-msgstr "_Filter:"
+msgstr "Filtri"
 
 #: ../src/logview-findbar.c:173
-#, fuzzy
 msgid "_Find:"
-msgstr "Pro_nađi"
+msgstr "_Pretraži:"
 
 #: ../src/logview-findbar.c:188
-#, fuzzy
 msgid "Find Previous"
-msgstr "Traži _prethodno"
+msgstr "Pronađi prijašnje"
 
 #: ../src/logview-findbar.c:191
 msgid "Find previous occurrence of the search string"
-msgstr ""
+msgstr "Pronađi prijašnje pojavljivanje traženog pojma"
 
 #: ../src/logview-findbar.c:196
-#, fuzzy
 msgid "Find Next"
-msgstr "_Traži sljedeće"
+msgstr "Pronađi sljedeće"
 
 #: ../src/logview-findbar.c:199
 msgid "Find next occurrence of the search string"
-msgstr ""
+msgstr "Pronađi sljedeće pojavljivanje traženog pojma"
 
 #: ../src/logview-findbar.c:206
-#, fuzzy
 msgid "Clear the search string"
-msgstr "Odaberi \"%s\" opciju za pretraživanje"
+msgstr "Obriši pojam pretrage"
 
-#: ../src/logview-log.c:595
+#: ../src/logview-log.c:593
 msgid "Error while uncompressing the GZipped log. The file might be corrupt."
 msgstr ""
+"Greška pri raspakiravanju GZip sažetog zapisa. Datoteka je možda neispravna."
 
-#: ../src/logview-log.c:642
-#, fuzzy
+#: ../src/logview-log.c:640
 msgid "You don't have enough permissions to read the file."
-msgstr "Možda nemate dozvole za pisanje u ovaj dokument."
+msgstr "Nemate dovoljne dozvole za čitanje datoteke."
 
-#: ../src/logview-log.c:657
+#: ../src/logview-log.c:655
 msgid "The file is not a regular file or is not a text file."
-msgstr ""
+msgstr "Datoteka nije uobičajena datoteka ili nije tekstovna datoteka."
 
-#: ../src/logview-log.c:739
+#: ../src/logview-log.c:737
 msgid "This version of System Log does not support GZipped logs."
-msgstr ""
+msgstr "Ova inačica dnevnika sustava ne podržava GZip sažete zapise."
 
 #: ../src/logview-loglist.c:315
-#, fuzzy
 msgid "Loading..."
-msgstr "Tražim..."
+msgstr "Učitavanje..."
 
 #: ../src/logview-main.c:61
 msgid "Show the application's version"
-msgstr "Prikaži verziju programa"
+msgstr "Prikaži inačicu aplikacije"
 
 #: ../src/logview-main.c:63
 msgid "[LOGFILE...]"
-msgstr ""
+msgstr "[ZAPIS PROMJENA...]"
 
 #: ../src/logview-main.c:67
 msgid " - Browse and monitor logs"
-msgstr " - Pregledavaj i prati dnevnike"
+msgstr " - Pregledavaj i prati zapise"
 
-#: ../src/logview-main.c:102
+#: ../src/logview-main.c:100
 msgid "Log Viewer"
-msgstr "Preglednik dnevnika"
+msgstr "Preglednik zapisa"
 
-#: ../src/logview-window.c:38 ../src/logview-window.c:760
+#: ../src/logview-window.c:38 ../src/logview-window.c:758
 msgid "System Log Viewer"
-msgstr "Preglednik sustavskih logova"
+msgstr "Preglednik dnevnik sustava"
 
 #: ../src/logview-window.c:211
 #, c-format
 msgid "last update: %s"
-msgstr ""
+msgstr "posljednja nadopuna (%s)"
 
 #: ../src/logview-window.c:214
 #, c-format
 msgid "%d lines (%s) - %s"
-msgstr "%d linije (%s) - %s"
+msgstr "%d redka (%s) - %s"
 
 #: ../src/logview-window.c:318
 msgid "Open Log"
-msgstr "Otvori dnevnik"
+msgstr "Otvori zapis"
 
 #: ../src/logview-window.c:357
-#, fuzzy, c-format
+#, c-format
 msgid "There was an error displaying help: %s"
-msgstr ""
-"Došlo je do greške prilikom prikazivanja pomoći. %s\n"
-"%s"
+msgstr "Došlo je do greške pri prikazivanju pomoći: %s"
 
 #: ../src/logview-window.c:471
 msgid "Wrapped"
-msgstr ""
+msgstr "Omotano"
 
 #: ../src/logview-window.c:486
 msgid "Not found"
 msgstr "Nije pronađeno"
 
-#: ../src/logview-window.c:765
+#: ../src/logview-window.c:763
 msgid "A system log viewer for GNOME."
-msgstr "Pregledavatelj log datoteka za GNOME."
+msgstr "Pregledavatelj datoteka zapisa za GNOME."
 
-#: ../src/logview-window.c:814
+#: ../src/logview-window.c:812
 msgid "_File"
 msgstr "_Datoteka"
 
-#: ../src/logview-window.c:815
+#: ../src/logview-window.c:813
 msgid "_Edit"
 msgstr "_Uredi"
 
-#: ../src/logview-window.c:816
+#: ../src/logview-window.c:814
 msgid "_View"
 msgstr "_Pogled"
 
-#: ../src/logview-window.c:817
-#, fuzzy
+#: ../src/logview-window.c:815
 msgid "_Filters"
-msgstr "_Filter:"
+msgstr "_Filtri"
 
-#: ../src/logview-window.c:818
+#: ../src/logview-window.c:816
 msgid "_Help"
 msgstr "_Pomoć"
 
-#: ../src/logview-window.c:820
+#: ../src/logview-window.c:818
 msgid "_Open..."
-msgstr "_Otvori..."
+msgstr "_Otvori…"
+
+#: ../src/logview-window.c:818
+msgid "Open a log from file"
+msgstr "Otvori zapis iz datoteke"
 
 #: ../src/logview-window.c:820
-msgid "Open a log from file"
-msgstr "Otvori datoteku dnevnika"
-
-#: ../src/logview-window.c:822
 msgid "_Close"
 msgstr "_Zatvori"
 
-#: ../src/logview-window.c:822
+#: ../src/logview-window.c:820
 msgid "Close this log"
-msgstr "Zatvori ovaj dnevnik"
+msgstr "Zatvori ovaj zapis"
 
-#: ../src/logview-window.c:824
+#: ../src/logview-window.c:822
 msgid "_Quit"
-msgstr "_Izlaz"
+msgstr "_Zatvori"
 
-#: ../src/logview-window.c:824
+#: ../src/logview-window.c:822
 msgid "Quit the log viewer"
-msgstr "Napusti preglednik dnevnika"
+msgstr "Zatvori preglednik dnevnika"
 
-#: ../src/logview-window.c:827
+#: ../src/logview-window.c:825
 msgid "_Copy"
 msgstr "_Kopiraj"
 
-#: ../src/logview-window.c:827
+#: ../src/logview-window.c:825
 msgid "Copy the selection"
-msgstr "Kopiraj označeno"
+msgstr "Kopiraj odabir"
 
-#: ../src/logview-window.c:829
+#: ../src/logview-window.c:827
 msgid "Select _All"
-msgstr "Označi _sve"
+msgstr "Odaberi _sve"
+
+#: ../src/logview-window.c:827
+msgid "Select the entire log"
+msgstr "Odabeti cijeli zapis"
 
 #: ../src/logview-window.c:829
-msgid "Select the entire log"
-msgstr "Označi cijeli dnevnik"
-
-#: ../src/logview-window.c:831
 msgid "_Find..."
-msgstr ""
+msgstr "_Pretraži..."
 
-#: ../src/logview-window.c:831
-#, fuzzy
+#: ../src/logview-window.c:829
 msgid "Find a word or phrase in the log"
-msgstr "Nađi riječ ili izraz u dokumentu"
+msgstr "Pronađi riječ ili frazu u zapisu"
 
-#: ../src/logview-window.c:834
+#: ../src/logview-window.c:832
 msgid "Bigger text size"
 msgstr "Veća veličina teksta"
 
-#: ../src/logview-window.c:836
+#: ../src/logview-window.c:834
 msgid "Smaller text size"
 msgstr "Manja veličina teksta"
 
-#: ../src/logview-window.c:838
+#: ../src/logview-window.c:836
 msgid "Normal text size"
 msgstr "Normalna veličina teksta"
 
-#: ../src/logview-window.c:841
+#: ../src/logview-window.c:839
 msgid "Manage Filters"
-msgstr ""
+msgstr "Upravljaj filterima"
 
-#: ../src/logview-window.c:841
+#: ../src/logview-window.c:839
 msgid "Manage filters"
-msgstr ""
+msgstr "Upravljaj filterima"
 
-#: ../src/logview-window.c:844
+#: ../src/logview-window.c:842
 msgid "_Contents"
-msgstr "_Sadržaj"
+msgstr "_Priručnik"
 
-#: ../src/logview-window.c:844
+#: ../src/logview-window.c:842
 msgid "Open the help contents for the log viewer"
 msgstr "Otvori sadržaje pomoći za preglednik dnevnika"
 
-#: ../src/logview-window.c:846
+#: ../src/logview-window.c:844
 msgid "_About"
-msgstr "_O programu..."
+msgstr "_O programu"
 
-#: ../src/logview-window.c:846
+#: ../src/logview-window.c:844
 msgid "Show the about dialog for the log viewer"
-msgstr "Prikaži \"O programu\" za preglednik dnevnika"
+msgstr "Prikaži dijalog \"O programu\" za preglednik dnevnika"
 
-#: ../src/logview-window.c:851
+#: ../src/logview-window.c:849
 msgid "_Statusbar"
 msgstr "_Statusna traka"
 
-#: ../src/logview-window.c:851
+#: ../src/logview-window.c:849
 msgid "Show Status Bar"
 msgstr "Prikaži statusnu traku"
 
-#: ../src/logview-window.c:853
+#: ../src/logview-window.c:851
 msgid "Side _Pane"
-msgstr "Bočni _prozor"
+msgstr "Bočni _panel"
+
+#: ../src/logview-window.c:851
+msgid "Show Side Pane"
+msgstr "Prikaži bočni panel"
 
 #: ../src/logview-window.c:853
-msgid "Show Side Pane"
-msgstr "Prikaži bočni prozor"
-
-#: ../src/logview-window.c:855
 msgid "Show matches only"
-msgstr ""
+msgstr "Prikaži samo podudaranja"
+
+#: ../src/logview-window.c:853
+msgid "Only show lines that match one of the given filters"
+msgstr "Samo prikaži redke koji se podudaraju s jednim od zadanih filtra"
 
 #: ../src/logview-window.c:855
-msgid "Only show lines that match one of the given filters"
-msgstr ""
-
-#: ../src/logview-window.c:857
 msgid "_Auto Scroll"
-msgstr ""
+msgstr "_Automatsko pomicanje"
 
-#: ../src/logview-window.c:857
+#: ../src/logview-window.c:855
 msgid "Automatically scroll down when new lines appear"
-msgstr ""
+msgstr "Automatski pomiči dolje kada se pojavi novi redak"
 
-#: ../src/logview-window.c:971
+#: ../src/logview-window.c:969
 #, c-format
 msgid "Can't read from \"%s\""
-msgstr ""
+msgstr "Nemoguće čitati iz \"%s\""
 
-#: ../src/logview-window.c:1393
+#: ../src/logview-window.c:1392
 msgid "Version: "
-msgstr "Inačica: "
+msgstr "Inačica:"
 
-#: ../src/logview-window.c:1500
-#, fuzzy
+#: ../src/logview-window.c:1499
 msgid "Could not open the following files:"
-msgstr "Nisam mogao otvoriti mapu \"%s\"."
+msgstr "Nemoguće otvoriti sljedeće datoteke:"
+
+#~ msgid "logs;debug;error;"
+#~ msgstr "zapisi;otkrivanje grešaka;greška;"
+
+#~ msgid "Show the version of the program."
+#~ msgstr "Prikaži inačicu programa."
+
+#~ msgid "Could not parse arguments"
+#~ msgstr "Nemoguća obrada argumenta"
+
+#~ msgid "Could not register the application"
+#~ msgstr "Nemoguća registracija aplikacije"
+
+#~ msgid "About System Log"
+#~ msgstr "About Dnevniku sustava"
+
+#~ msgid "_Add"
+#~ msgstr "_Dodaj"
+
+#~ msgid "_Properties"
+#~ msgstr "_Svojstva"
+
+#~ msgid "_Remove"
+#~ msgstr "_Ukloni"
+
+#~ msgid "today"
+#~ msgstr "danas"
+
+#~ msgid "yesterday"
+#~ msgstr "jučer"
+
+#~ msgid "Search in \"%s\""
+#~ msgstr "Pretražu u \"%s\""
+
+#~ msgid "updated"
+#~ msgstr "osvježeno"
+
+#~ msgid "_Cancel"
+#~ msgstr "_Odustani"
+
+#~ msgid "_Open"
+#~ msgstr "_Otvori"
+
+#~ msgid "Close"
+#~ msgstr "Zatvori"
+
+#~ msgid "Zoom In"
+#~ msgstr "Uvećaj"
+
+#~ msgid "Zoom Out"
+#~ msgstr "Smanji"
