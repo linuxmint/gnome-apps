@@ -2,7 +2,7 @@ using System;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 
-[assembly: ApplicationVersion ("2.6.2", "2.6.2")]
+[assembly: ApplicationVersion ("2.6.3", "2.6.3")]
 [assembly: ApplicationBuildInformation ("git-checkout", "linux-gnu", "i686", "2014-02-18 23:18:13 CET")]
 
 [assembly: AssemblyVersion ("2.6.0.0")]
