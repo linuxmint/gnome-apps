@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: yelp 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-03 23:01+0200\n"
-"PO-Revision-Date: 2016-05-03 23:07+0200\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"PO-Revision-Date: 2016-10-16 18:43+0200\n"
+"Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -90,11 +90,11 @@ msgstr "Tražena stranica nije pronađena u dokumentu  ‘%s’."
 
 #: ../libyelp/yelp-document.c:268
 msgid "Indexed"
-msgstr "Indeksirano"
+msgstr "Popisano"
 
 #: ../libyelp/yelp-document.c:269
 msgid "Whether the document content has been indexed"
-msgstr "Označava je li sadržaj dokumenta indeksiran"
+msgstr "Treba li sadržaj dokumenta biti popisan"
 
 #: ../libyelp/yelp-document.c:277
 msgid "Document URI"
@@ -107,7 +107,7 @@ msgstr "URI koji identificira dokument"
 #: ../libyelp/yelp-document.c:994
 #, c-format
 msgid "Search results for “%s”"
-msgstr "Rezultati pretraživanja za “%s”"
+msgstr "Rezultati pretrage za “%s”"
 
 #: ../libyelp/yelp-document.c:1006
 #, c-format
@@ -141,7 +141,7 @@ msgstr "Pogled"
 
 #: ../libyelp/yelp-location-entry.c:337
 msgid "A YelpView instance to control"
-msgstr "YelpView primjerak upravljanj"
+msgstr "Primjerak upravljanja Yelp pogleda"
 
 #: ../libyelp/yelp-location-entry.c:352
 msgid "Bookmarks"
@@ -157,7 +157,7 @@ msgstr "Omogući pretragu"
 
 #: ../libyelp/yelp-location-entry.c:370
 msgid "Whether the location entry can be used as a search field"
-msgstr "Označava može li se unesena lokacija koristiti kao polje za pretragu"
+msgstr "Treba li se lokacija upisa koristiti kao polje za pretragu"
 
 #: ../libyelp/yelp-location-entry.c:440 ../src/yelp-window.c:270
 msgid "Search..."
@@ -165,7 +165,7 @@ msgstr "Pretraga..."
 
 #: ../libyelp/yelp-location-entry.c:783
 msgid "Clear the search text"
-msgstr "Očisti traženi tekst"
+msgstr "Ukloni traženi tekst"
 
 #: ../libyelp/yelp-location-entry.c:831 ../libyelp/yelp-location-entry.c:1593
 msgid "Bookmark this page"
@@ -195,15 +195,15 @@ msgstr "GtkPostavke"
 
 #: ../libyelp/yelp-settings.c:157
 msgid "A GtkSettings object to get settings from"
-msgstr "Objekt GtkSettings iz kojeg se dobivaju postavke"
+msgstr "Objekt GtkPostavke iz kojeg se dobivaju postavke"
 
 #: ../libyelp/yelp-settings.c:165
 msgid "GtkIconTheme"
-msgstr "GtkIcon tema"
+msgstr "GtkIkon tema"
 
 #: ../libyelp/yelp-settings.c:166
 msgid "A GtkIconTheme object to get icons from"
-msgstr "Objekt GtkIcon tema iz kojeg se dobivaju ikone"
+msgstr "Objekt GtkIkon tema iz kojeg se dobivaju ikone"
 
 #: ../libyelp/yelp-settings.c:174
 msgid "Font Adjustment"
@@ -227,7 +227,7 @@ msgstr "Način uređivanja"
 
 #: ../libyelp/yelp-settings.c:193
 msgid "Enable features useful to editors"
-msgstr "Omogućuje značajke korisne uređivačima"
+msgstr "Omogućuje značajke korisne urediteljima"
 
 #: ../libyelp/yelp-sqlite-storage.c:149
 msgid "Database filename"
@@ -408,7 +408,7 @@ msgstr "Nemoguće učitatavanje dokumenta za ‘%s’"
 #: ../libyelp/yelp-view.c:1634
 #, c-format
 msgid "Could not load a document"
-msgstr "Nemoguće učitaavanje dokumenta"
+msgstr "Nemoguće učitavanje dokumenta"
 
 #: ../libyelp/yelp-view.c:1709
 msgid "Document Not Found"
@@ -429,12 +429,12 @@ msgstr "Nepoznata greška"
 #: ../libyelp/yelp-view.c:1888
 #, c-format
 msgid "The URI ‘%s’ does not point to a valid page."
-msgstr "URI '%s' ne usmjerava na ispravnu stranicu."
+msgstr "URI '%s' se ne usmjerava na ispravnu stranicu."
 
 #: ../libyelp/yelp-view.c:1894
 #, c-format
 msgid "The URI does not point to a valid page."
-msgstr "URI ne usmjerava na ispravnu stranicu."
+msgstr "URI se ne usmjerava na ispravnu stranicu."
 
 #: ../libyelp/yelp-view.c:1900
 #, c-format
@@ -507,7 +507,7 @@ msgstr "_Ukloni zabilješku"
 
 #: ../src/yelp-window.c:265
 msgid "Find in Page..."
-msgstr "Pronađi na stranici..."
+msgstr "Pretraži na stranici..."
 
 #: ../src/yelp-window.c:275
 msgid "Open Location"
@@ -519,7 +519,7 @@ msgstr "Aplikacija"
 
 #: ../src/yelp-window.c:302
 msgid "A YelpApplication instance that controls this window"
-msgstr "Primjerak Yelp aplikacije koji kontrolira ovaj prozor"
+msgstr "Primjerak Yelp aplikacije koji upravlja ovim prozorom"
 
 #: ../src/yelp-window.c:429
 msgid "Read Link _Later"
